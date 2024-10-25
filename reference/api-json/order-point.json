@@ -1026,8 +1026,8 @@
                       "type":"string",
                       "example":"2024-09-10T14:26:42.109320977Z",
                       "description":{
-                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
                         "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
                         "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
                       }
                     },
@@ -1035,8 +1035,8 @@
                       "type":"string",
                       "example":"2024-09-10T14:26:42.109320977Z",
                       "description":{
-                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
                         "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
                         "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
                       }
                     },
@@ -1087,9 +1087,9 @@
                                 "type": "string",
                                 "example": "cancelled_by_api",
                                 "description": {
-                                  "en":"Details about payment status. It is returned exclusively when the cancellation of the order is made through this endpoint, with the value \"cancelled_by_api\".",
-                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando o cancelamento da order é feito através deste endpoint, com o valor \"cancelled_by_api\".",
-                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la cancelación de la order se realiza por medio de este endpoint, con el valor \"cancelled_by_api\"."
+                                  "en":"Details about payment status. It is returned exclusively when the order is cancelled through the API, with the value \"cancelled_by_api\".",
+                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"cancelled_by_api\".",
+                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"cancelled_by_api\"."
                                 }
                               }
                             }
@@ -1222,7 +1222,7 @@
                         {
                           "title": "cannot_cancel_order",
                           "description": {
-                            "en": "",
+                            "en": "There is a conflict when trying to cancel the order due to its current status. Please remember that orders can only be canceled via the API when \"status=created\". If you are trying to cancel an order with the status \"status=on_terminal\", you will need to do so from the device.",
                             "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=on_terminal\", deberás hacerlo desde la terminal.",
                             "pt": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=on_terminal\", deverá fazê-lo a partir do dispositivo."
                           }
@@ -1468,9 +1468,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid parameters sent.",
-              "pt": "Erro. Parâmetros inválidos enviados.",
-              "es": "Error. Parámetros inválidos."
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content":{
               "application/json":{
@@ -1484,7 +1484,36 @@
                           "title": "client_id_required",
                           "description": {
                             "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
-                            "es": "Clien ID invalido, revisa que envies el Access Token e intenta nuevamente.",
+                            "es": "Clien ID invalido, revisa que envies el Access Token correcto e intenta nuevamente.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "Recurso no encontrado, valida los parametros enviados e intenta enviar la solicitud de nuevo.",
                             "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
                           }
                         }
@@ -1510,10 +1539,10 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "communication_failed",
+                          "title": "internal_error",
                           "description": {
                             "en": "Validation fail. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "es": "Error interno. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "Falha na validação. Tente enviar a solicitação novamente."
                           }
                         }
@@ -1542,16 +1571,8 @@
                           "title": "internal_error",
                           "description": {
                             "en": "Validation fail. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "es": "Error interno. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "Falha na validação. Tente enviar a solicitação novamente."
-                          }
-                        },
-                        {
-                          "title": "invalid_response",
-                          "description": {
-                            "en": "Internal server error. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro interno. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -1576,10 +1597,10 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "timeout",
+                          "title": "internal_error",
                           "description": {
                             "en": "Validation fail. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "es": "Error interno. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "Falha na validação. Tente enviar a solicitação novamente."
                           }
                         }
@@ -1592,8 +1613,8 @@
           }
         },
         "title": {
-          "en": "Cancel order by ID",
-          "pt": "Cancelar order por ID",
+          "en": "Get terminals list",
+          "pt": "Obter lista de terminais",
           "es": "Obtener lista de terminales"
         }
       }
@@ -1615,9 +1636,7 @@
                 "terminals":{
                   "type":"array",
                   "description":{
-                    "en": "xxx",
-                    "es":"Este nodo contendra una lista de terminales que se deseara modificar su modo de operacion -- NOTA: Consultar como redactar que solo se puede enviar un valor en la lista en la version1",
-                    "pt": "xxx"
+                    "es":"Este nodo contendra una lista de terminales que se deseara modificar su modo de operacion"
                   },
                   "items": {
                     "type": "object",
@@ -1747,9 +1766,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid parameters sent.",
-              "pt": "Erro. Parâmetros inválidos enviados.",
-              "es": "Error. Parámetros inválidos."
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content":{
               "application/json":{
@@ -1763,7 +1782,7 @@
                           "title": "unsupported_site",
                           "description": {
                             "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
-                            "es": "Site no valido para hacer la request, revisa si el token que estes usando e intenta ejecutar la peticion nuevamente.",
+                            "es": "Site no valido para hacer la request, revisa si el Access Token que estes usando e intenta ejecutar la peticion nuevamente.",
                             "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
                           }
                         },
@@ -1771,7 +1790,7 @@
                           "title": "invalid_payload",
                           "description": {
                             "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
-                            "es": "Payload invalido, revisa el payload enviado y envie la request nuevamente.",
+                            "es": "Payload invalido, revisa los campos del payload enviado y envie la request nuevamente.",
                             "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
                           }
                         },
@@ -1811,6 +1830,51 @@
                             "es": "La terminal usada no es valida para hacer esta accion.",
                             "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
                           }
+                        },
+                        {
+                          "title": "store_pos_not_found",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "Recurso no encontrado, por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        },
+                        {
+                          "title": "pin_disabled",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "Pin deshabilitado para modo Kiosko, por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "Recurso no encontrado, valida los parametros enviados e intenta enviar la solicitud de nuevo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
                         }
                       ]
                     }
@@ -1834,10 +1898,10 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "communication_failed",
+                          "title": "internal_error",
                           "description": {
                             "en": "Validation fail. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "es": "Error interno. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "Falha na validação. Tente enviar a solicitação novamente."
                           }
                         }
@@ -1866,16 +1930,8 @@
                           "title": "internal_error",
                           "description": {
                             "en": "Validation fail. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "es": "Error interno. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "Falha na validação. Tente enviar a solicitação novamente."
-                          }
-                        },
-                        {
-                          "title": "invalid_response",
-                          "description": {
-                            "en": "Internal server error. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro interno. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -1900,10 +1956,10 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "timeout",
+                          "title": "internal_error",
                           "description": {
                             "en": "Validation fail. Please try submitting the request again.",
-                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "es": "Error interno. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "Falha na validação. Tente enviar a solicitação novamente."
                           }
                         }
