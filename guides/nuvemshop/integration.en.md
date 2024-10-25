@@ -15,7 +15,7 @@ To integrate with Mercado Pago, follow the procedures below.
 3. Now, it's time to grant the necessary permissions to the application. Click **Accept and start using**.
 4. You will be redirected to the Mercado Pago page, where you should log in with your credentials. If you are already logged into your account, please note that **the integration will be automatically completed using the open Mercado Pago account session in the browser being used during installation**.
 5. Carefully read the information about the requested permissions. Check the checkbox to agree to them and proceed by clicking **Continue**.
-6. Review the permissions once again, and if you are confident, click **Authorize this application** to grant the connection.
+6. Review the permissions once again, and if you are confident, click **Authorize this application** to grant the connection. 
 
 ------------
 ----[mlc, mlu, mpe, mco]----

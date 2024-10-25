@@ -14,7 +14,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 3. Agora, é hora de conceder as permissões necessárias para a aplicação. Clique em **Aceitar e começar a usar**.
 4. Você será redirecionado para a página do Mercado Pago, onde deverá fazer login com seus dados. Caso já esteja logado em sua conta, lembre-se que **a integração será efetuada automaticamente a partir da sessão da conta Mercado Pago aberta no navegador em uso durante a instalação**.
 5. Leia com atenção as informações sobre as permissões solicitadas. Marque a caixa de seleção para concordar com elas e prossiga clicando em **Continuar**.
-6. Revise novamente as permissões e, se estiver seguro, clique em **Autorizar esta aplicação** para autorizar a conexão.
+6. Revise novamente as permissões e, se estiver seguro, clique em **Autorizar esta aplicação** para autorizar a conexão. 
 
 ------------
 ----[mpe, mco, mlu, mlc]----
