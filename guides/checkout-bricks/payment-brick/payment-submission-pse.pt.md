@@ -8,7 +8,7 @@ Para efetuar o pagamento com PSE, antes de efetuar o pagamento com os SDKs do ba
 
 | Campo | Descrição | Presente no callback onSubmit do brick | Possíveis valores/validações |
 |---|---|---|---|
-| `transaction_amount` | Valor do pagamento. | Sim | Cualquer valor maior que 0. |
+| `transaction_amount` | Valor do pagamento. | Sim | Qualquer valor maior que 0. |
 | `transaction_details.financial_institution` | Banco informado para efetuar a transferência eletrônica. | Sim | Deve corresponder a um banco existente e não pode ser enviado nulo ou vazio. |
 | `payer.entity_type` | Tipo de pessoa, física ou jurídica. | Sim | `individual` ou `association`. |
 | `payer.identification.type` | Tipo de documento do comprador. | Sim | Valores enviados pelo brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE` (Cédula de Extranjería)<br> -`NIT`<br> -`Otro`<br>Valores aceitos (além dos enviados por brick):<br> -`TE` (Tarjeta de Extranjería)<br> -`RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Pasaporte) |
@@ -22,8 +22,8 @@ Para efetuar o pagamento com PSE, antes de efetuar o pagamento com os SDKs do ba
 | `payer.address.city` | Cidade do comprador. | Não | Deve ter de 1 até 18 posições. |
 | `payer.phone.area_code` |Código de área do telefone do comprador. | Não | Deve ter 3 posições. |
 | `payer.phone.number` | Número de telefone do comprador. | Não | String.<br>Deve ter de 1 até 5 posições e só aceita caracteres numéricos. |
-| `description` | Descrição do produto ou compra. | Não | Não tem |
-| `additional_info.ip_address` | Endereço do IP do comprador, onde o pagamento é gerado. | Não | Não tem |
+| `description` | Descrição do produto ou compra. | Não | String. Não possui número mínimo de caracteres. |
+| `additional_info.ip_address` | Endereço do IP do comprador, onde o pagamento é gerado. | Não | String. Não possui número mínimo de caracteres. |
 | `callback_url` | Página onde o comprador é redirecionado por padrão após efetuar o pagamento dentro da página do banco, quando o comprador indica que deseja retornar à loja.<br>Pode ver mais informações nas seções [Redirecionar o comprador ao PSE](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/pse#bookmark_redirecionar_o_comprador_ao_pse) e [Mostrar status de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/pse#bookmark_mostrar_status_de_pagamento). | Não | Deve ter, no máximo, 512 caracteres e não pode ser nulo ou vazio. |
 | `notification_url` | URL usada para notificar a aplicação de que a transferência foi concluída. | Não | Deve ter, no máximo, 512 caracteres e não pode ser nulo ou vazio. |
 

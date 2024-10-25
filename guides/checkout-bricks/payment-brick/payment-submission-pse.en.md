@@ -22,8 +22,8 @@ To make a payment with PSE, before processing it with the backend SDKs, it is ne
 | `payer.address.city` | City of the buyer. | No | Must have between 1 to 18 positions. |
 | `payer.phone.area_code` | Area code of the buyer's phone. | No | Must have 3 positions. |
 | `payer.phone.number` | Phone number of the buyer. | No | String.<br> Must have between 1 to 5 positions and only accepts numeric characters. |
-| `description` | Description of the product or purchase. | No | Does not have |
-| `additional_info.ip_address` | IP address of the buyer, from where the payment is generated. | No | Does not have |
+| `description` | Description of the product or purchase. | No | String. Does not have a minimum amount of characters. |
+| `additional_info.ip_address` | IP address of the buyer, from where the payment is generated. | No | String. Does not have a minimum amount of characters. |
 | `callback_url` | Page where the buyer is redirected by default after making the payment within the bank's page, when the buyer indicates that he wants to return to the store.<br> More information can be found in the sections [Redirect buyer to PSE](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/pse#bookmark_redirect_buyer_to_pse) and [Show payment status](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/pse#bookmark_show_payment_status). | No | Must have a maximum of 512 characters and cannot be null or empty. |
 | `notification_url` | URL used to notify the application that the transfer has been completed. | No | Must have a maximum of 512 characters and cannot be null or empty. |
 
