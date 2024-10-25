@@ -8,7 +8,7 @@ Ao final do processo de pagamento, é possível redirecionar o comprador novamen
 >
 > Caso queira que o redirecionamento para os pagamentos aprovados com cartão de crédito seja automático, é preciso adicionar também o atributo `auto_return` com valor `approved`. Por padrão, também será exibido um botão de "Voltar ao site". **O tempo de redirecionamento será de até 40 segundos.**.
 > <br><br>
-> **Pagamentos com outros meios de pagamento não possuem o redirecionamento automático para pagamentoa aprovados**, mas o atributo `back_urls` poderá ser configurado e utilizado a partir do botão de "Voltar ao site".
+> **Pagamentos com outros meios de pagamento não possuem o redirecionamento automático para pagamentos aprovados**, mas o atributo `back_urls` poderá ser configurado e utilizado a partir do botão de "Voltar ao site".
 
 Na tabela a seguir você encontra o detalhe de cada um dos possíveis parâmetros de requisição e de resposta.
 
