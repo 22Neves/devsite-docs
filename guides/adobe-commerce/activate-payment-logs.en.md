@@ -16,15 +16,15 @@ Follow the steps below to activate payment logs.
 
 3. In **Other payment methods**, locate the Mercado Pago plugin and click on the **Configure** button to open the settings.
 
-![Configure](/images/adobe-commerce/logs-configure-es-rebranding.png)
+![Configure](/images/adobe-commerce/logs-configure-es.png)
 
 4. In the plugin configuration screen, select **Basic Settings > Developer Support**.
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-![Support](/images/adobe-commerce/logs-support-es-rebranding.png)
+![Support](/images/adobe-commerce/logs-support-es.png)
 
 ------------
 ----[mlb]----
-![Suporte](/images/adobe-commerce/logs-support-pt-rebranding.png)
+![Suporte](/images/adobe-commerce/logs-support-pt.png)
 
 ------------
 5. If checked, uncheck the **Use system value** checkbox and enable the **Debug** option by clicking **Yes**.
