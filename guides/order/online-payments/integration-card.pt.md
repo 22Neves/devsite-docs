@@ -1,10 +1,10 @@
 # Pagamento com cartão
 
-A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
+A integração de pagamentos via cartão é feita via _CardForm_. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
 À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento. Com isso, a implementação do fluxo é transparente para quem realiza a integração.
 
-Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
+Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o _CardForm_.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-pt.png)
 
@@ -48,7 +48,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ## Adicionar formulário de pagamento
 
-A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
+A captura dos dados do cartão é feita através do CardForm da biblioteca `MercadoPago.js`. Nosso _CardForm_ se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
 
 Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
@@ -336,17 +336,17 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 
 > NOTE
 >
-> Importante
+> Nota
 >
 > Caso necessite adicionar ou modificar alguma lógica no fluxo dos métodos do Javascript consulte a documentação [Integração via Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Criar pagamento
 
-Para continuar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos conforme indicado nas etapas anteriores.
+Para continuar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos.
 
 No exemplo da seção anterior, enviamos todos os dados necessários para criar o pagamento para o endpoint `process_payment` do backend.
 
-Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
+Com todas as informações coletadas no backend, envie um **POST** com os atributos necessários ao endpoint [/v1/orders](/developers/pt/reference/order/online-payments/create/post) e execute a requisição para processar o pagamento.
 
 Você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
@@ -657,12 +657,13 @@ A resposta trará o seguinte resultado
     }
 }
 ```
+
 > WARNING
 >
 > Atenção
 >
 > Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Consulte a lista completa dos estados do pagamento e da ordem criada na seção [Status](). <br>
 > <br>
-> Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.
+> Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/order/online-payments/notifications) para mais detalhes.
 
 

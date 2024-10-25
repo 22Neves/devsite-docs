@@ -1,10 +1,10 @@
 # Pago con tarjeta
 
-La integración de los pagos con tarjeta se realiza a través de cardform. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
+La integración de pagos con tarjeta se realiza a través de _CardForm_. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
-Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
+Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando _CardForm_.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
 
@@ -48,7 +48,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ## Añadir formulario de pago
 
-La captura de los datos de la tarjeta se realiza a través del CardForm de la biblioteca MercadoPago.js. Nuestro CardForm se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
+La captura de los datos de la tarjeta se realiza a través del _CardForm_ de la biblioteca `MercadoPago.js`. Nuestro _CardForm_ se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
 
 Para añadir el formulario de pago, inserta el siguiente HTML directamente en el proyecto. 
 
@@ -336,19 +336,19 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 > NOTE
 >
-> Importante
+> Nota
 >
 > Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Crear pago
 
-Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el backend reciba la información del formulario con el token generado y los datos completos como se indicó en las anteriores etapas.
+Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el backend reciba la información del formulario con el token generado y los datos completos.
 
 En el ejemplo de la sección previa, enviamos todos los datos necesarios para la generación del pago al endpoint `process_payment` del backend.
 
-Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
+Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post) y ejecuta la solicitud para procesar el pago.
 
-Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados.
+Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus solicitudes.
 
 [[[
 ```php
@@ -662,9 +662,9 @@ La respuesta devolverá el siguiente resultado
 >
 > Atención
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulte la lista completa de los estados del pago y de la orden creada en la sección [Status]() <br>
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulta la lista completa de estados de un pago y de la orden creada en la sección [Status]() <br>
 > <br>
-> Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
+> Para mantenerte al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/order/online-payments/notifications) para obtener más detalles.
 
 
 

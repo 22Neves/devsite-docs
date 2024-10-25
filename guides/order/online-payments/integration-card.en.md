@@ -1,10 +1,10 @@
 # Payment with card
 
-The integration of card payments is done via cardform. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
+The integration of card payments is done via CardForm. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
-Check below the diagram that illustrates the card payment process using the Card Form.
+Check below the diagram that illustrates the card payment process using the CardForm.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
 
@@ -48,7 +48,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ## Add payment form
 
-The capture of card data is done through the CardForm of the MercadoPago.js library. Our CardForm will connect to your HTML payment form, making it easy to obtain and validate all the data needed to process the payment.
+The capture of card data is done through the CardForm of the `MercadoPago.js` library. Our CardForm will connect to your HTML payment form, making it easy to obtain and validate all the data needed to process the payment.
 
 To add the payment form, insert the HTML below directly into the project.
 
@@ -336,17 +336,17 @@ progressBar.setAttribute("value", "0");
 
 > NOTE
 >
-> Important
+> Note
 >
 > If you need to add or modify some logic in the flow of Javascript methods, consult the documentation [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Create payment
 
-To continue the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data as indicated in the previous steps.
+To continue the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data.
 
 In the example from the previous section, we sent all the necessary data to create the payment to the `process_payment` endpoint of the backend.
 
-With all the information collected in the backend, send a POST with the necessary attributes, paying attention to the parameters `token`, `transaction_amount`, `installments`, `payment_method_id` and the `payer.email` to the endpoint [/v1/payments ](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using our SDKs.
+With all the information collected in the backend, send a **POST** with the necessary attributes to the endpoint [/v1/orders ](/developers/en/reference/order/online-payments/create/post) and execute the request to process the payment.
 
 It is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
@@ -662,9 +662,9 @@ The response will show the following result
 >
 > Attention
 >
-> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". Refer to the complete list of payment statuses and the order created in the [Status]() section. <br>
+> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". Refer to the complete list of payment and order statuses in the [Status]() section. <br>
 > <br>
-> To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
+> To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/order/online-payments/notifications) for more details.
 
 
 ----[mlb]----
