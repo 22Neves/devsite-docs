@@ -1,19 +1,20 @@
 # Back URLs
 
-At the end of the **payment process with credit card**, it is possible to redirect the buyer back to your website via the `back_urls` attribute. This attribute allows you to define the URLs where the buyer should be redirected according to the payment status.
+At the end of the **payment process with credit card**, it is possible to redirect the buyer back to your website via the `back_urls` attribute. This attribute allows you to define the URLs to which the buyer will be redirected, either automatically (`auto_return`) or through the "Return to site" button, depending on the payment status.
 
 > NOTE
 >
 > Automatic redirection
 >
-> If you want the redirection for approved payments to be automatic, you must also add the `auto_return` attribute with the value `approved`. By default, a "Return to site" button will also be displayed.
-> **The redirect time will be 5 seconds**.
+> If you want the redirection for approved payments to be automatic, you must also add the `auto_return` attribute with the value `approved`. By default, a "Return to site" button will also be displayed. **The redirection time will be up to 40 seconds.**
+> <br><br>
+> **Payments with other payment methods do not have automatic redirection for approved payments**, but the `back_urls` attribute can be configured and used through the "Return to site" button.
 
 In the following tables you will find the details of each of the possible request and response parameters.
 
 | Attribute | 	Description |
 | ------------ 	| 	-------- |
-| `auto_return` | Buyers are automatically redirected to site when payment is approved. The default value is `approved`. The redirect time is 40 seconds and this cannot be customized. |
+| `auto_return` | Buyers are automatically redirected to site when payment is **approved**. The default value is `approved`. **The redirection time will be up to 40 seconds and cannot be customized.** |
 | `back_urls` | Return URL to the site. Possible scenarios are:<br/><br/>`success`: Return URL when payment is approved.<br/><br/>`pending`: Return URL when payment is pending.<br/><br/> `failure`: Return URL when payment is rejected.
 
 > WARNING

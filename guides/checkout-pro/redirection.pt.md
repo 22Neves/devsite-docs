@@ -1,19 +1,20 @@
 # URLs de retorno 
 
-Ao final do **processo de pagamento com cartão de crédito**, é possível redirecionar o comprador novamente para o seu site através do atributo `back_urls`. Este atributo permite definir as URLs para onde o comprador deverá ser redirecionado segundo o status do pagamento.
+Ao final do processo de pagamento, é possível redirecionar o comprador novamente para o seu site através do atributo `back_urls`. Este atributo permite definir as URLs para onde o comprador deverá ser redirecionado, automaticamente (`auto_return`) ou através do botão "Voltar ao site", segundo o status do pagamento.
 
 > NOTE
 >
 > Redirecionamento automático
 >
-> Caso queira que o redirecionamento para os pagamentos aprovados seja automático, é preciso adicionar também o atributo `auto_return` com valor `approved`. Por padrão, também será exibido um botão de "Voltar ao site". 
-> **O tempo de redirecionamento será de 5 segundos**.
+> Caso queira que o redirecionamento para os pagamentos aprovados com cartão de crédito seja automático, é preciso adicionar também o atributo `auto_return` com valor `approved`. Por padrão, também será exibido um botão de "Voltar ao site". **O tempo de redirecionamento será de até 40 segundos.**.
+> <br><br>
+> **Pagamentos com outros meios de pagamento não possuem o redirecionamento automático para pagamentoa aprovados**, mas o atributo `back_urls` poderá ser configurado e utilizado a partir do botão de "Voltar ao site".
 
-Nas tabelas a seguir você encontra o detalhe de cada um dos possíveis parâmetros de requisição e de resposta.
+Na tabela a seguir você encontra o detalhe de cada um dos possíveis parâmetros de requisição e de resposta.
 
 | Atributo |	Descrição |
 | ------------ 	|	-------- | 
-| `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. O tempo de redirecionamento é de 40 segundos e não pode ser personalizado. |
+| `auto_return` | Os compradores são redirecionados automaticamente para o _site_ quando o pagamento com cartão de crédito é **aprovado**. O valor padrão é `approved`. **O tempo de redirecionamento será de até 40 segundos e não poderá ser personalizado.** |
 | `back_urls` | URL de retorno ao site. Possíveis cenários são:<br/><br/>`success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
 
 > WARNING
