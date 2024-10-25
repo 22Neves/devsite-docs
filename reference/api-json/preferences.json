@@ -4170,19 +4170,10 @@
                     },
                     "redirect_urls": {
                       "type": "object",
-                      "properties": {
-                        "failure": {
-                          "type": "string",
-                          "example": ""
-                        },
-                        "pending": {
-                          "type": "string",
-                          "example": ""
-                        },
-                        "success": {
-                          "type": "string",
-                          "example": ""
-                        }
+                      "description": {
+                        "en": "URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through the flow Authorization code by OAuth.",
+                        "pt": "URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada por meio do fluxo Authorization code de OAuth. Certifique-se de que seja uma URL estática.",
+                        "es": "URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se utilice el flujo Authorization code de OAuth."
                       }
                     },
                     "sandbox_init_point": {

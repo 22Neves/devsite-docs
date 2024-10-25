@@ -1,36 +1,37 @@
-# Como integrar 3DS com ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------
+# Cómo integrar 3DS con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------
 
-Nesta documentação você encontrará toda a informação necessária para realizar a integração com 3DS com ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API. ------------ Para mais informações sobre como esse tipo de autenticação funciona, veja [3DS 2.0](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval/3ds).
-
-> WARNING
->
-> Importante
->
-> Para realizar a integração com 3DS, é preciso atender a determinados requisitos. Antes de avançar para os próximos passos, revise a seção [Pré-requisitos](/developers/pt/docs/checkout-api/prerequisites) e certifique-se de que todos sejam cumpridos.
-
-## Integrar com 3DS
-
-A autenticação 3DS pode ser feita através de dois fluxos diferentes: **com e sem _Challenge_**, sendo estas etapas adicionais que o comprador deve cumprir para garantir sua identidade. A decisão de incluir ou não o _Challenge_ depende do emissor do cartão e do perfil de risco da transação que está sendo realizada.
-
-> Conheça também as integrações via [Checkout Bricks,](/developers/pt/docs/checkout-bricks/how-tos/integrate-3ds) uma forma de pagamento modular, segura e personalizável, que automatiza vários dos processos descritos a seguir.
-
-Para **transações de baixo risco**, as informações enviadas na finalização da compra são suficientes e as etapas adicionais do _Challenge_ **não são necessárias**. Porém, **para casos de alto risco de fraude**, o _Challenge_ é necessário para **verificar a identidade do comprador**, o que aumenta a aprovação das transações com cartão.
-
-Abaixo estão as etapas para realizar uma integração com 3DS.
-
-1. Utilize o Mercado Pago [SDK JS](/developers/pt/docs/sdks-library/client-side/mp-js-v2) no checkout para gerar o [token do cartão de crédito](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-2. Em seguida, envie os **dados do checkout** junto com o **token do cartão** para o backend.
-3. Feito isso, faça uma chamada para criar um novo pagamento com os dados recebidos. O atributo `three_d_secure_mode` precisa ser enviado com um dos seguintes valores:
-    1. `not_supported`: 3DS não deve ser usado (é o valor padrão).
-    2. `optional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
+En esta documentación encontrarás toda la información necesaria para realizar la integración con 3DS con ----[mlb]---- Checkout Transparente. ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API. ------------ Para obtener más información sobre cómo funciona este tipo de autenticación, consulte [3DS 2.0](/developers/es/docs/checkout-api/how-tos/improve-payment-approval/3ds).
 
 > WARNING
 >
 > Importante
 >
-> Recomendamos utilizar o valor `optional` na implementação do 3DS, por equilibrar segurança e a aprovação de transações.
+> Para integrarse con 3DS, se deben cumplir ciertos requisitos. Antes de continuar con los siguientes pasos, revise la sección [Requisitos previos](/developers/es/docs/checkout-api/prerequisites) y asegúrese de que se cumplan todos.
+
+## Integrar con 3DS
+
+La autenticación 3DS se puede realizar a través de dos flujos distintos: **con o sin _Challenge_**, que son pasos adicionales que el comprador debe completar para garantizar su identidad. La decisión de incluir o no el _Challenge_ depende del emisor de la tarjeta y del perfil de riesgo de la transacción que se realiza.
+
+> Obtenga también información sobre las integraciones a través de [Checkout Bricks,](/developers/es/docs/checkout-bricks/how-tos/integrate-3ds) un método de pago modular, seguro y personalizable que automatiza varios de los procesos que se describen a continuación.
+
+Para **transacciones de bajo riesgo**, la información enviada en el momento del pago es suficiente y los pasos adicionales de _Challenge_ **no son necesarios**. Sin embargo, **para casos donde existe un alto riesgo de fraude**, _Challenge_ es requerido para **verificar la identidad del comprador**, lo que aumenta la conversión de las transacciones con tarjeta.
+
+A continuación se presentan los pasos para realizar una integración con 3DS.
+
+1. Debes usar el [SDK JS](/developers/es/docs/sdks-library/client-side/mp-js-v2) de Mercado Pago en el checkout para generar el [token de la tarjeta de crédito](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
+2. Después, postea los **datos del checkout** junto con el **token de la tarjeta** para su backend.
+3. Allí, haz una llamada para crear un nuevo pago con los datos recibidos. Es necesario que sea enviado el atributo `three_d_secure_mode` con uno de los siguientes valores:
+    1. `not_supported`: no se debe usar 3DS (es el valor por default).
+    2. `optional`: se puede requerir 3DS o no, dependiendo del perfil de riesgo de la transacción.
+    3. `mandatory`: 3DS será requerido obligatoriamente.
+
+> WARNING
+>
+> Importante
+>
+> Recomendamos usar el valor `optional` en la implementación del 3DS, ya que equilibra la seguridad y la aprobación de transacciones. El uso de `mandatory` debe limitarse a integraciones que requieran que todas las transacciones aprobadas pasen por 3DS.
 > <br><br>
-> Além disso, a captura do pagamento deve ser automática (`capture=true`) e a transação deve ser criada com o modo binário desativado (`binary mode= false`), visto que a transação poderá ficar pendente aguardando que o comprador complete o _Challenge_.
+> Además, la captura del pago debe ser automática (`capture=true`) y la transacción debe crearse con el modo binario desactivado (`binary mode=false`), ya que podría quedar pendiente esperando que el comprador complete el _Challenge_.
 
 [[[
 ```php
@@ -223,19 +224,19 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 ```
 ]]]
 
-Caso não seja necessário utilizar o fluxo do _Challenge_, o campo de _status_ do pagamento terá valor `approved` e não será necessário exibi-lo, dessa forma, siga normalmente com o fluxo de sua aplicação. 
+En caso de que no sea necesario utilizar el flujo de _Challenge_, el campo del _status_ del pago tendrá valor `approved` y no será necesario mostrarlo, por lo que puedes seguir con el flujo de tu aplicación. 
 
-Para os casos em que o _Challenge_ é necessário, o _status_ mostrará o valor `pending`, e o `status_detail` será `pending_challenge`.
+Para casos en que el _Challenge_ es necesario, el _status_ mostrará el valor `pending`, y el `status_detail` será `pending_challenge`.
 
 > WARNING
 >
 > Importante
 >
-> Neste último caso, a resposta mostrará um atributo de pagamento chamado `three_ds_info` com os campos `external_resource_url`, que contém a URL do _Challenge_, e `creq`, um identificador da solicitação do _Challenge_. Para exibi-lo e tratar seu resultado siga os passos abaixo.
+> En este último caso, la respuesta mostrará un atributo del pago llamado `three_ds_info` con los campos `external_resource_url`, que contiene la URL del _Challenge_, y `creq`, un identificador del _Challenge_ request. Será necesario mostrar el _Challenge_ y tratar su resultado con los pasos siguientes.
 
-### Visão geral da resposta (informação omitida)
+### Overview del response (se omitió información)
 
-Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para completá-lo. Se não for concluído, o banco recusará a transação e o Mercado Pago considerará o pagamento cancelado. Enquanto o usuário não completar o _Challenge_, o pagamento ficará como `pending_challenge`.
+Cuando se inicia el Challenge, el usuario tiene aproximadamente 5 minutos para completarlo. Si no se completa, el banco rechazará la transacción y Mercado Pago considerará el pago cancelado. Mientras el usuario no complete el Challenge, el estado del pago permanecerá como `pending_challenge`.
 
 [[[
 ```Json
@@ -257,7 +258,7 @@ Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para complet
 ```
 ]]]
 
-4. Para uma melhor visualização do _Challenge_ do 3DS de forma responsiva, você deve adicionar o CSS abaixo. 
+4. Para una mejor visualización del _Challenge_ del 3DS de forma responsiva, debes agregar el CSS que se muestra a continuación.
 
 ```css
   #myframe{
@@ -273,7 +274,7 @@ Quando o _Challenge_ é iniciado, o usuário tem cerca de 5 minutos para complet
   }
 ```
 
-5. Para **exibir o _Challenge_**, é necessário gerar um _iframe_ que contenha um formulário com `method post`, `action` contendo a URL obtida no campo `external_resource_url`, e um input oculto com o valor obtido em `creq`. Em seguida, faça o post do formulário abaixo para iniciar o _Challenge_.
+5. Para **mostrar el _Challenge_**, es necesario que generes un _iframe_ que contenga un formulario con `method post`, `action` que contenga la URL obtenida en el campo `external_resource_url`, y un input oculto con el valor obtenido en `creq`. Después, debes hacer el post del form a continuación para empezar el _challenge_.
 
 [[[
 ```javascript
@@ -283,7 +284,7 @@ function doChallenge(payment) {
     const {
       status,
       status_detail,
-      three_ds_info: { creq, external_resource_url },
+      _three_ds_info: { creq, external_resource_url },
     } = payment;
     if (status === "pending" && status_detail === "pending_challenge") {
       var iframe = document.createElement("iframe");
@@ -310,30 +311,30 @@ function doChallenge(payment) {
     }
   } catch (error) {
     console.log(error);
-    alert("Error doing Challenge, try again later.");
+    alert("Error doing challenge, try again later.");
   }
 }
 
 ```
 ]]]
 
-Quando o _Challenge_ for concluído, o _status_ do pagamento será atualizado para `approved` se a autenticação for bem-sucedida, e `rejected` se não for. Em situações nas quais a autenticação não é realizada, o pagamento permanece `pending`. Esta atualização não é imediata e pode levar alguns instantes.
+Cuando el _Challenge_ es finalizado, el _status_ del pago será actualizado. Será `approved` si la autenticación fue exitosa, `rejected` si no lo fue y, en caso de que la autenticación no fuera  hecha, el pago permanecerá `pending`. Esta actualización no es inmediata, puede tardar unos instantes. 
 
-Consulte a seção abaixo para obter mais detalhes sobre como verificar o _status_ de cada transação.
+Mira la sección a continuación para más detalles sobre cómo consultar el _status_ de cada transacción.
 
-## Verificar status da transação
+## Consultar status de la transacción
 
-Para saber qual é o resultado de cada transação, existem três opções:
+Para saber cuál es el resultado de la transacción, hay tres opciones:
 
-* **Notificações**: Uma notificação da alteração do _status_ do pagamento será recebida por meio de Webhooks e o comprador deverá ser redirecionado para uma tela indicando que a transação foi bem-sucedida. Consulte a seção [Webhooks](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications/webhooks) e saiba como realizar sua configuração..
-* **API de pagamentos**: Será necessário fazer um _pooling_ em [Payments](/developers/pt/reference/payments/_payments/post) e, se o _status_ mudar, redirecionar o comprador para uma tela de confirmação.
-* **Tratar o evento iframe (recomendado)**: Tenha em mente que o evento apenas indica que o _Challenge_ terminou e não que o pagamento chegou a um _status_ final, pois a atualização não é imediata e pode demorar alguns instantes. Faça uma consulta em [Payments](/developers/pt/reference/payments/_payments/post) e, caso o _status_ mude, redirecione o comprador para uma tela indicando que a transação foi realizada com sucesso.
+* **Notificaciones**: Recibirás la notificación del cambio del _status_ del pago usando Webhooks y deberás redireccionar el buyer para una pantalla que indica que la transacción fue exitosa. Consulta la sección de [Webhooks](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications/webhooks) y aprende cómo configurarlos.
+* **API de Payments**: Deberás hacer un pooling en [Payments](/developers/es/reference/payments/_payments/post) y, si el _status_ cambia, redireccionar el buyer para una pantalla de confirmación.
+* **Tratar el evento del iframe (recomendado)**: debes recordar que el evento solo indica que finalizó el _Challenge_ y no que el pago pasó a un _status_ final, dado que la actualización no es inmediata y puede tardar unos instantes. Deberás hacer una consulta en [Payments](/developers/es/reference/payments/_payments/post) y, si el _status_ cambia, redireccionar al buyer para una pantalla que indica que la transacción fue exitosa. 
 
-Para **tratar o evento iframe**, siga as etapas abaixo.
+Para **tratar el evento del iframe**, sigue los pasos a continuación.
 
-### Realizar implantação
+### Realizar implementación
 
-Utilize o código Javascript a seguir para implementar e escutar o evento que indica que o _Challenge_ foi encerrado, assim é possível redirecionar o cliente para a tela de confirmação.
+Utilice el código JavaScript a continuación para implementar y escuchar el evento que indica que el _Challenge_ ha finalizado, de esta manera es posible redirigir al cliente a la pantalla de confirmación.
 
 [[[
 ```javascript
@@ -347,9 +348,9 @@ window.addEventListener("message", (e) => {
 ```
 ]]]
 
-### Buscar status de pagamento
+### Buscar status del pago
 
-O Javascript a seguir indica como buscar o _status_ do pagamento atualizado e exibi-lo na tela de confirmação.
+El siguiente Javascript indica cómo se puede realizar la búsqueda del _status_ de pago actualizado y mostrarlo en la pantalla de confirmación.
 
 [[[
 ```javascript
@@ -381,46 +382,47 @@ async function init() {
 >
 > Importante
 >
-> Caso o pagamento ainda esteja `pending` após o timeout do _Challenge_, será necessário redirecionar o comprador para uma tela informando que o pagamento expirou e que é necessário criar um novo (a atualização não é imediata, pode demorar alguns momentos).
+> Si el pago continúa `pending` después del timeout del _Challenge_, entonces deberás redireccionar al buyer para una pantalla que informe que el pago expiró y que es necesario crear uno nuevo (la actualización no es inmediata, puede tardar unos instantes).
 
-Após seguir estes passos, sua integração está pronta para autenticar transações com 3DS.
+Después de seguir estos pasos, tu integración está lista para autenticar transacciones con 3DS.
 
-## Possíveis status de pagamento 
+## Posibles status del pago 
 
-Uma transação com 3DS pode retornar diferentes _status_ dependendo do tipo de autenticação realizada (com ou sem _Challenge_). 
+Una transacción con 3DS puede devolver diferentes _status_ según el tipo de autenticación realizada (con o sin _Challenge_). En un pago sin _Challenge_, el _status_ de la transacción será directamente `approved` o `rejected`.
 
-Em um pagamento **sem _Challenge_**, o _status_ da transação será diretamente `approved` ou `rejected`. Enquanto que em um pagamento **com _Challenge_**, a transação ficará com _status_ `pending` e o processo de autenticação junto ao banco será iniciado. Somente após esta etapa o _status_ final será exibido.
+En un pago con _Challenge_, la transacción estará en _status_ `pending` y se iniciará el proceso de autenticación con el banco. Solo después de esta etapa se mostrará el _status_ final.
 
-Veja abaixo a tabela com os possíveis _status_ e suas respectivas descrições.
+A continuación se muestra una tabla con los posibles _status_ y sus descripciones correspondientes.
 
-| Status     | Status_detail                 | Descrição                                                         |
-|------------|-------------------------------|-------------------------------------------------------------------|
-| "approved" | "accredited"                  | Transação aprovada sem autenticação.                               |
-| "rejected" | -                            | Transação rejeitada sem autenticação. Para conferir os motivos, consulte a [lista padrão de status detail](https://mercadopago.com.br/developers/pt/docs/checkout-api/response-handling/collection-results).                              |
-| "pending"  | "pending_challenge"           | Transação pendente de autenticação ou _timeout_ do _Challenge_.       |
-| "rejected" | "cc_rejected_3ds_challenge"   | Transação rejeitada devido a falha no _Challenge_.                  |
-| "cancelled" | "expired" | Transação com _Challenge_ cancelada após 24h no _status_ `pending`. |
+| Status    | Status_detail               | Descripción                                                      |
+|-----------|-----------------------------|------------------------------------------------------------------|
+| "approved" | "accredited"                | Transacción aprobada sin autenticación.                          |
+| "rejected" | -                          | Transacción denegada sin autenticación. Para verificar los motivos, consulta la [lista estándar de status detail](https://mercadopago.com.br/developers/es/docs/checkout-api/response-handling/collection-results).                          |
+| "pending"  | "pending_challenge"         | Transacción pendiente de autenticación o _timeout_ del _Challenge_. |
+| "rejected" | "cc_rejected_3ds_challenge" | Transacción denegada debido a falla en el _Challenge_.            |
+| "rejected"| "cc_rejected_3ds_mandatory" | Transacción rechazada por no cumplir validación de 3DS cuando esta es mandatory. |
+| "cancelled" | "expired" | Transacción con _Challenge_ cancelada después de 24 horas en estado pendiente. |
 
-## Teste de integração
+## Prueba de integración
 
-Para que seja possível validar pagamentos com 3DS, disponibilizamos um ambiente de testes do tipo *sandbox* que retorna resultados falsos apenas para simulação e validação da implementação.
+Para facilitar la validación de pagos con 3DS, hemos creado un entorno de pruebas tipo *sandbox*. Este entorno devuelve resultados ficticios que sólo se utilizan para simular y validar la implementación.
 
 > WARNING
 >
 > Importante
 >
-> Para testar a integração é necessário utilizar suas **credenciais de teste**. Certifique-se também de incluir o atributo `three_d_secure_mode`, definindo-o como `optional` para garantir a correta implementação do pagamento 3DS.
+> Para probar la integración, es necesario utilizar sus **credenciales de prueba**. Asegúrese también de incluir el atributo `three_d_secure_mode`, definiéndolo como `optional` o `mandatory`, para garantizar la correcta implementación del pago 3DS. 
 
-Para realizar testes de pagamento em um ambiente *sandbox*, é necessário utilizar cartões específicos que permitem testar a implementação do _Challenge_ com os fluxos de sucesso e falha. A tabela a seguir apresenta os detalhes desses cartões:
+Para probar pagos en un entorno *sandbox*, se deben usar tarjetas específicas que permitan probar la implementación del desafío con flujos de éxito y fallo, según la tabla a continuación:
 
-| Cartão    | Fluxo                    | Número             | Código de segurança | Data de vencimento |
-|-----------|--------------------------|--------------------|---------------------|--------------------|
-| Mastercard | Challenge com sucesso    | 5483 9281 6457 4623 | 123                 | 11/25              |
-| Mastercard | Challenge não autorizado | 5361 9568 0611 7557 | 123                 | 11/25              |
+| Tarjeta     | Flujo                   | Número             | Código de Seguridad | Fecha de Vencimiento |
+|-------------|-------------------------|--------------------|---------------------|----------------------|
+| Mastercard  | Challenge exitoso       | 5483 9281 6457 4623 | 123                 | 11/25                |
+| Mastercard  | Challenge no autorizado | 5361 9568 0611 7557 | 123                 | 11/25                |
+| Mastercard | 3ds mandatory | 5031 7557 3453 0604 | 123 | 11/25 |
 
-Os passos para criar o pagamento são os mesmos. Em caso de dúvida sobre como criar pagamentos com cartão, consulte a [documentação sobre Cartões](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
+Los pasos para crear el pago son los mismos. En caso de duda sobre cómo crear pagos con tarjeta, consulta la [documentación sobre Tarjetas](https://www.mercadopago.com.br/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform). 
 
- 
 [[[
 ```php
 <?php
@@ -651,8 +653,9 @@ curl -X POST \
 
 ### Challenge
 
-Em ambos os fluxos (sucesso e falha), o _Challenge_, que é uma tela semelhante à mostrada abaixo, deve ser exibido dentro do *iframe*:
+En ambos flujos (éxito y falla), el _Challenge_, que es una pantalla similar a la presentada a continuación, se mostrará dentro del *iframe*:
 
-![Challenge](/images/api/sandbox-v1-pt.png)
+![Challenge](/images/api/sandbox-v1-es.png)
 
-O código de verificação fornecido é apenas ilustrativo. Para concluir o fluxo de teste, basta clicar no botão **Confirmar**. Após concluir essa ação, siga as instruções detalhadas na seção [Verificar status da transação](/developers/pt/docs/checkout-api/how-tos/integrate-3ds#bookmark_verificar_status_da_transação) para identificar quando o _Challenge_ foi concluído e como verificar a atualização do pagamento. 
+El código de verificación proporcionado es meramente ilustrativo. Para completar el flujo de prueba, simplemente haz clic en el botón **Confirmar**. 
+Una vez que hayas completado esta acción, sigue las instrucciones detalladas en la sección [Consultar status de la transacción](/developers/es/docs/checkout-api/how-tos/integrate-3ds#bookmark_consultar_status_de_la_transacción) para determinar cuándo se ha finalizado el _Challenge_ y cómo verificar la actualización del pago.
