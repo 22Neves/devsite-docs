@@ -1,18 +1,20 @@
 # URLs de retorno
 
-Al final del proceso de pago, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo te permite definir las URL a las que se debe redirigir el comprador al completar el pago.
+Al final del **proceso de pago con tarjeta de crédito**, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo permite definir las URLs a las que el comprador será redirigido, ya sea automáticamente (`auto_return`) o a través del botón "Volver al sitio", según el estado del pago.
 
 > NOTE
 >
 > Redirección automática
 >
-> Si deseas que la redirección para los pagos aprobados sea automática, debes agregar también el atributo `auto_return` con el valor `approved`. Por defecto, también se mostrará un botón de "Volver al sitio". **El tiempo de redireccionamiento será de 5 segundos**.
+> Si deseas que la redirección para los pagos aprobados con tarjeta de crédito sea automática, debes agregar también el atributo `auto_return` con el valor `approved`. Por defecto, también se mostrará un botón de "Volver al sitio". **El tiempo de redireccionamiento será de hasta 40 segundos.**
+> <br><br>
+> **Los pagos con otros métodos de pago no tienen redirección automática para pagos aprobados**, pero el atributo `back_urls` se podrá configurar y utilizar a través del botón de "Volver al sitio".
 
-En las siguientes tablas encontrarás el detalle de cada uno de los posibles parámetros de request y respuesta.
+E la siguiente tabla encontrarás el detalle de cada uno de los posibles parámetros de request y respuesta.
 
 | Atributo | 	Descripción |
 | ------------ 	| 	-------- |
-| `auto_return` | Los compradores son redirigidos automáticamente al _site_ cuando se aprueba el pago. El valor predeterminado es `approved`. El tiempo de redireccionamiento es de 40 segundos y esto no puede ser personalizado. |
+| `auto_return` | Los compradores son redirigidos automáticamente al _site_ cuando se **aprueba** el pago. El valor predeterminado es `approved`. **El tiempo de redireccionamiento será de hasta 40 segundos y no podrá ser personalizado.** |
 | `back_urls` | URL de retorno al sitio. Los escenarios posibles son:<br/><br/>`success`: URL de retorno cuando se aprueba el pago.<br/><br/>`pending`: URL de retorno cuando el pago está pendiente.<br/><br/> `failure`: URL de retorno cuando se rechaza el pago.
 
 > WARNING
