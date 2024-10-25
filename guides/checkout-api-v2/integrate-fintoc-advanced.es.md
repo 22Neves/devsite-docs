@@ -326,20 +326,20 @@ Para finalizar el pago, es necesario inicializar el *iframe* e implementar el *w
 Luego, abre el *widget* de pago de Fintoc utilizando el metodo `mp.fintoc.open()` y enviando los parámetros necesarios, como se indica a continuación.
 
 ```javascript
-               async function openFintoc() {
-                  try {
-                    await fintoc.open({
-                      institutionId: document.querySelector('#fintoc-institutionId').value,
-                      username: document.querySelector('#fintoc-username').value,
-                      widgetToken: <EXTERNAL_REFERENCE_ID>
-                      onSuccess,
-                      onExit,
-                      onEvent,
-                    })
-                  } catch(e) {
-                    console.error(e)
-                  }
-                }
+async function openFintoc() {
+  try {
+    await fintoc.open({
+      institutionId: <INSTITUTION_ID>,
+      username: <USERNAME>
+      widgetToken: <EXTERNAL_REFERENCE_ID>
+      onSuccess,
+      onExit,
+      onEvent,
+    })
+  } catch(e) {
+    console.error(e)
+  }
+}
 
 ```
 
@@ -348,8 +348,8 @@ Luego, abre el *widget* de pago de Fintoc utilizando el metodo `mp.fintoc.open()
 | `institutionId` | string | Identificador de la [institución financiera](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Cuando es incluido, se preselecciona la institución que aparecerá en la apertura del *widget*. Por ejemplo,  el valor `cl_banco_de_chile` indicará que el *widget* se abra con Banco Estado. | Opcional |
 | `username` | string | Identifica la cuenta del usuario. Si es completado, asegura que al momento de seleccionar el banco con el que se realizará la transacción, el usuario ya esté identificado y sólo tenga que proporcionar su contraseña. | Opcional |
 | `widgetToken` | string | Token creado en el backend al momento de crear un pago. Es el valor recibido para el parámetro `external_reference_id`, que inicializa y configura el *widget*. | Requerido  |
-| `onSuccess` | function | *Callback* que será llamado luego de una creación exitosa del enlace. | Requerido |
-| `onExit` | function | *Callback* que será llamado cuando de que el usuario cierre el enlace antes de tiempo. | Requerido |
+| `onSuccess` | function | *Callback* que será llamado luego de una creación exitosa del *widget*. | Requerido |
+| `onExit` | function | *Callback* que será llamado cuando de que el usuario cierre el *widget* antes de tiempo. | Requerido |
 | `onEvent` | function | *Callback* que será llamado cada vez que el usuario ejecute alguna acción en el *widget*.  | Requerido |
 
 > WARNING

@@ -325,20 +325,20 @@ To finalize the payment, it is necessary to initialize the iframe and implement 
 Then, open Fintoc's payment widget using the `mp.fintoc.open()` method and sending the necessary parameters, as indicated below.
 
 ```javascript
-               async function openFintoc() {
-                  try {
-                    await fintoc.open({
-                      institutionId: document.querySelector('#fintoc-institutionId').value,
-                      username: document.querySelector('#fintoc-username').value,
-                      widgetToken: <EXTERNAL_REFERENCE_ID>
-                      onSuccess,
-                      onExit,
-                      onEvent,
-                    })
-                  } catch(e) {
-                    console.error(e)
-                  }
-                }
+async function openFintoc() {
+  try {
+    await fintoc.open({
+      institutionId: <INSTITUTION_ID>,
+      username: <USERNAME>
+      widgetToken: <EXTERNAL_REFERENCE_ID>
+      onSuccess,
+      onExit,
+      onEvent,
+    })
+  } catch(e) {
+    console.error(e)
+  }
+}
 
 ```
 
@@ -347,8 +347,8 @@ Then, open Fintoc's payment widget using the `mp.fintoc.open()` method and sendi
 | `institutionId` | string | Identifier of the [financial institution](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). When included, it pre-selects the institution that will appear when the widget is opened. For example, the value `cl_banco_de_chile` will make the widget open with Banco Estado. | Optional |
 | `username` | string | Identifies the user's account. If completed, it ensures that when selecting the bank for the transaction, the user is already identified and only needs to provide their password. | Optional |
 | `widgetToken` | string | Token created in the backend when creating a payment. It is the value received for the `external_reference_id` parameter, which initializes and configures the widget. | Required |
-| `onSuccess` | function | Callback that will be called after a successful creation of the link. | Required |
-| `onExit` | function | Callback that will be called if the user closes the link prematurely. | Required |
+| `onSuccess` | function | Callback that will be called after a successful creation of the widget. | Required |
+| `onExit` | function | Callback that will be called if the user closes the widget prematurely. | Required |
 | `onEvent` | function | Callback that will be called each time the user executes an action in the widget. | Required |
 
 > WARNING
