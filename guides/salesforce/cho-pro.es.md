@@ -6,6 +6,6 @@ Checkout Pro es una solución que permite a tus clientes realizar compras a trav
 2. Para activar el medio de pago, posiciónate sobre la opción **Mercardo Pago**. Luego, en la columna "Enabled" y selecciona la opción **Yes** para habilitarlo.
 
 ----[mlb]----
-![chopro-br](/images/salesforce/chopro-br.png)
+![chopro-br](/images/salesforce/chopro-br-es.gif)
 
 ------------
