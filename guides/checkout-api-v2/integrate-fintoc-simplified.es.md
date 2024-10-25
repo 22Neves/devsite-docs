@@ -304,7 +304,7 @@ Para esto, haz la redirección a la URL almacenada en el campo `external_resourc
         "data": {
             "reference_id": "82512912106",
             "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
-            "external_resource_url": "https://mercadopago.cl/banktransfer..."
+            "external_resource_url": "https://mercadopago.cl/banktransfer..." // URL a la que hacer la redirección
         }
    …
 }
