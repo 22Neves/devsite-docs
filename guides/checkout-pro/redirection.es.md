@@ -1,12 +1,13 @@
 # URLs de retorno
 
-Al final del proceso de pago, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo te permite definir las URL a las que se debe redirigir el comprador al completar el pago.
+Al final del **proceso de pago con tarjeta de crédito**, es posible redirigir al comprador a otro entorno del sitio a través del atributo `back_urls`. Este atributo te permite definir las URL a las que se debe redirigir el comprador al completar el pago.
 
 > NOTE
 >
 > Redirección automática
 >
-> Si deseas que la redirección para los pagos aprobados sea automática, debes agregar también el atributo `auto_return` con el valor `approved`. Por defecto, también se mostrará un botón de "Volver al sitio". **El tiempo de redireccionamiento será de 5 segundos**.
+> Si deseas que la redirección para los pagos aprobados sea automática, debes agregar también el atributo `auto_return` con el valor `approved`. Por defecto, también se mostrará un botón de "Volver al sitio". 
+> **El tiempo de redireccionamiento será de 5 segundos**.
 
 En las siguientes tablas encontrarás el detalle de cada uno de los posibles parámetros de request y respuesta.
 

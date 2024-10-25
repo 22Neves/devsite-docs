@@ -553,9 +553,9 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "en": "URLs to return to the sellers website.",
-                      "pt": "Url de retorno ao site do vendedor.",
-                      "es": "URLs de retorno al sitio del vendedor."
+                      "en": "Return URLs to the seller's site for payments made with credit card.",
+                      "pt": "URLs de retorno ao site do vendedor para pagamentos feitos com cartão de crédito.",
+                      "es": "URLs de retorno al sitio del vendedor para pagos realizados con tarjeta de crédito."
                     },
                     "properties": {
                       "success": {
@@ -593,7 +593,7 @@
                     "description": {
                       "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
                       "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                      "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "statement_descriptor": {
@@ -1077,9 +1077,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor.",
-                        "es": "URLs de retorno al sitio del vendedor."
+                        "en": "Return URLs to the seller's site for payments made with credit card.",
+                        "pt": "URLs de retorno ao site do vendedor para pagamentos feitos com cartão de crédito.",
+                        "es": "URLs de retorno al sitio del vendedor para pagos realizados con tarjeta de crédito."
                       },
                       "properties": {
                         "success": {
@@ -2150,9 +2150,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor.",
-                        "es": "URLs de retorno al sitio del vendedor."
+                        "en": "Return URLs to the seller's site for payments made with credit card.",
+                        "pt": "URLs de retorno ao site do vendedor para pagamentos feitos com cartão de crédito.",
+                        "es": "URLs de retorno al sitio del vendedor para pagos realizados con tarjeta de crédito."
                       },
                       "properties": {
                         "failure": {
@@ -3432,9 +3432,9 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "en": "URLs to return to the sellers website.",
-                      "pt": "Url de retorno ao site do vendedor.",
-                      "es": "URLs de retorno al sitio del vendedor."
+                      "en": "Return URLs to the seller's site for payments made with credit card.",
+                      "pt": "URLs de retorno ao site do vendedor para pagamentos feitos com cartão de crédito.",
+                      "es": "URLs de retorno al sitio del vendedor para pagos realizados con tarjeta de crédito."
                     },
                     "properties": {
                       "success": {
@@ -3601,9 +3601,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor.",
-                        "es": "URLs de retorno al sitio del vendedor."
+                        "en": "Return URLs to the seller's site for payments made with credit card.",
+                        "pt": "URLs de retorno ao site do vendedor para pagamentos feitos com cartão de crédito.",
+                        "es": "URLs de retorno al sitio del vendedor para pagos realizados con tarjeta de crédito."
                       },
                       "properties": {
                         "failure": {
