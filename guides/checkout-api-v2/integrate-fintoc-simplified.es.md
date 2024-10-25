@@ -259,7 +259,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 >
 > Importante
 >
-> El pago con Fintoc creado es **válido sólo por 10 minutos**. Pasado ese tiempo, caducará y deberás crear otro.
+> El pago creado con Fintoc es **válido sólo por 10 minutos**. Pasado ese tiempo, caducará y deberás crear otro.
 
 En la respuesta a la creación del pago, dentro del nodo `data` y entre otros parámetros, encontrarás el campo `external_resource_url`, que contendrá la URL necesaria para redireccionar al comprador al sitio de Mercado Pago, para así finalizar la transacción.
 

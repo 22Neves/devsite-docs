@@ -296,7 +296,7 @@ A seguir, você verá um exemplo de resposta a essa solicitação, no qual infor
 
 Uma vez criado o pagamento, é necessário redirecionar o comprador para o Mercado Pago, onde encontrará uma tela já preparada com o *widget* do Fintoc necessário para realizar o pagamento.
 
-Para isso, faça a redireção para a URL armazenada no campo `external_resource_url`, que foi retornada na resposta à criação do pagamento.
+Para isso, faça o redirecionamento para a URL armazenada no campo `external_resource_url`, que foi retornada na resposta à criação do pagamento.
 
 ```json
 {
