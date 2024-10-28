@@ -1,12 +1,12 @@
 # Reserve, capture, and cancel amounts
 
-See below how to manage the transactions made to process the payments for your store.
+See below how to manage the transactions made to process the payments of a store.
 
-## Reservation of amounts
+## Reserve amounts
 
-A reserve of amounts happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
+The reserve of amounts happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
 
-To carry out an authorization of amount reservation, send a **POST** request with all the necessary attributes, including `type_config.capture_mode` set to `manual` to the endpoint [/v1/orders](/developers/en/reference/order/online-payments/create/post). Visit our [API Reference](/developers/en/reference/order/online-payments/create/post) for more information.
+To carry out an authorization of a reserved amount, send a **POST** request with all the necessary attributes as described in our [API Reference](/developers/en/reference/order/online-payments/create/post), including `type_config.capture_mode` set to `manual`, to the endpoint [/v1/orders](/developers/en/reference/order/online-payments/create/post).
 
 [[[
 ```php
@@ -179,48 +179,78 @@ if err != nil {
 fmt.Println(resource)
 ```
 ```curl
-
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-    'https://api.mercadopago.com/v1/payments' \
+    -H 'Authorization: Bearer {{ENV_ACCESS_TOKEN}}' \
+    -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+    'https://api.mercadopago.com/v1/orders \
     -d '
 {
-   "transaction_amount":100,
-   "token":"ff8080814c11e237014c1ff593b57b4d",
-   "description":"Product title",
-   "installments":1,
-   "payment_method_id":"visa",
-   "payer":{
-      "email":"test_user_3931694@testuser.com"
-   },
-   "capture":false
+  "type_config": {
+    "capture_mode": "manual"
+  },
+  "type": "online",
+  "external_reference": "ext_ref_1234",
+  "processing_mode": "automatic",
+  "marketplace": "NONE",
+  "total_amount": "200.00",
+  "payer": {
+    "email": "{{PAYER_EMAIL}}",
+    "identification": {
+      "type": "{{PAYER_DOCUMENT_TYPE}}",
+      "number": "{{PAYER_DOCUMENT_NUMBER}}"
+    }
+  },
+  "transactions": {
+    "payments": [
+      {
+        "amount": "200.00",
+        "payment_method": {
+          "id": "master",
+          "type": "credit_card",
+          "token": "{{CREDIT_CARD_TOKEN}}",
+          "installments": 1
+        }
+      }
+    ]
+  }
 }'
 
 ```
 ]]]
 
 
-The response indicates that the payment is authorized and pending capture.
+The response will indicate that the payment is authorized and pending capture.
 
 
 [[[
 ```json
 {
-"id": PAYMENT_ID,
-...
-"status": "authorized",
-"status_detail": "pending_capture",
-...
-"captured": false,
-...
+  "id": ORDER_ID,
+  ...
+  "status": "action_required",
+  "status_detail": "waiting_capture",
+  ...
+   "type_config": {
+    "capture_mode": "manual"
+  },
+  ...
+ "transactions": {
+    "payments": [
+      {
+        "id": TRANSACTION_ID,
+        "status": "action_required",
+        "status_detail": "waiting_capture"
+      }
+    ]
+  }
 }
+
 ```
 ]]]
 
-In addition, it is also possible to return as `rejected` or `pending`. In case it returns as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
+It is also possible to receive a `rejected` or `pending` status. In case it is returned as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
 
 Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
@@ -228,13 +258,13 @@ Please note that authorized values cannot be used by your client until they are 
 >
 > Important
 >
-> The reservation will be valid for ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
+> The reserve will be valid for ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 
-## Capture of authorized payment
+## Capture an authorized payment
 
 The completion of a payment takes place after the authorized payment has been captured, which means that the amount reserved for the purchase can be debited from the card.
 
-For now, we have a possibility for **subsequent capture**, where the full amount of the reserved payment is captured.
+For now, we only have the possibility of **subsequent capture**, where the full amount of the reserved payment is captured.
 
 > WARNING
 >
@@ -242,16 +272,11 @@ For now, we have a possibility for **subsequent capture**, where the full amount
 >
 > The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ from its creation.
 
-To capture the total amount of a reservation, you need to send a request to the endpoint [/v1/orders/{order_id}/capture](/developers/en/reference/order/online-payments/capture/post), where you should replace `{order_id}` with the ID of the order you want to capture in full. Visit our [API Reference](/developers/en/reference/order/online-payments/capture/post) for more information.
+To capture the total amount of a reservation, you need to send a request to the endpoint [/v1/orders/{order_id}/capture](/developers/en/reference/order/online-payments/capture/post), replacing `{order_id}` with the ID of the order you want to capture in full. 
 
-## Cancellation of reservation
+## Cancel reservation
 
-Cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reservation amount needs to return to the customer's card limit or when a buyer withdraws from the purchase. 
+The cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reserved amount needs to return to the customer's card limit, or when a buyer withdraws from the purchase. 
 
-To cancel a reservation, you must send a request to the endpoint [/v1/orders/{order_id}/cancel](/developers/en/reference/order/online-payments/cancel-order/post). Be sure to replace `{order_id}` with the ID of the order you wish to cancel. Visit our [API Reference](/developers/en/reference/order/online-payments/capture/post) for more information.
+To cancel a reserde, you must send a request to the endpoint [/v1/orders/{order_id}/cancel](/developers/en/reference/order/online-payments/cancel-order/post). Be sure to replace `{order_id}` with the ID of the order you wish to cancel.
 
-> NOTE
->
-> Note
->
-> For more information about refunds and cancellations of payments, see the section [Refunds and Cancellations](/developers/en/docs/order/online-payments/payment-management/cancellations-and-refunds).

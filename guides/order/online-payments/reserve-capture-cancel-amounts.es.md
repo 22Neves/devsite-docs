@@ -1,12 +1,12 @@
-# Reservar, capturar y cancelar valores
+# Reservar, capturar y cancelar fondos
 
-Ve a continuación cómo gestionar las transacciones realizadas para procesar los pagos de su tienda.
+Ve a continuación cómo gestionar las transacciones realizadas para procesar los pagos de una tienda.
 
 ## Reserva de fondos
 
-Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, asegurando que el valor se mantenga hasta la finalización del procesamiento.
+Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, lo que asegura que el valor se mantenga hasta la finalización del procesamiento.
 
-Para realizar una autorización de reserva, envíe un **POST** con todos los atributos necesarios, incluyendo `type_config.capture_mode` definido como `manual` al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post). Visite nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post) para más información.
+Para realizar una autorización de reserva, envía un **POST** con todos los atributos necesarios detallados en nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post), incluyendo `type_config.capture_mode` definido como `manual`, al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post).
 
 [[[
 ```php
@@ -179,49 +179,79 @@ if err != nil {
 fmt.Println(resource)
 ```
 ```curl
-
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-    'https://api.mercadopago.com/v1/payments' \
+    -H 'Authorization: Bearer {{ENV_ACCESS_TOKEN}}' \
+    -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+    'https://api.mercadopago.com/v1/orders \
     -d '
 {
-   "transaction_amount":100,
-   "token":"ff8080814c11e237014c1ff593b57b4d",
-   "description":"Product title",
-   "installments":1,
-   "payment_method_id":"visa",
-   "payer":{
-      "email":"test_user_3931694@testuser.com"
-   },
-   "capture":false
+  "type_config": {
+    "capture_mode": "manual"
+  },
+  "type": "online",
+  "external_reference": "ext_ref_1234",
+  "processing_mode": "automatic",
+  "marketplace": "NONE",
+  "total_amount": "200.00",
+  "payer": {
+    "email": "{{PAYER_EMAIL}}",
+    "identification": {
+      "type": "{{PAYER_DOCUMENT_TYPE}}",
+      "number": "{{PAYER_DOCUMENT_NUMBER}}"
+    }
+  },
+  "transactions": {
+    "payments": [
+      {
+        "amount": "200.00",
+        "payment_method": {
+          "id": "master",
+          "type": "credit_card",
+          "token": "{{CREDIT_CARD_TOKEN}}",
+          "installments": 1
+        }
+      }
+    ]
+  }
 }'
 
 ```
 ]]]
 
-La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
+La respuesta indicará que el pago se encuentra autorizado y pendiente de captura.
 
 [[[
 ```json
 {
-  "id": PAYMENT_ID,
+  "id": ORDER_ID,
   ...
-  "status": "authorized",
-  "status_detail": "pending_capture",
+  "status": "action_required",
+  "status_detail": "waiting_capture",
   ...
-  "captured": false,
+   "type_config": {
+    "capture_mode": "manual"
+  },
   ...
+ "transactions": {
+    "payments": [
+      {
+        "id": TRANSACTION_ID,
+        "status": "action_required",
+        "status_detail": "waiting_capture"
+      }
+    ]
+  }
 }
+
 ```
 ]]]
 
 
-Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
+También es posible que el `status` retorne como `rejected` o `pending`. En este segundo caso, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
-Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar la captura lo antes posible.
 
 > WARNING
 >
@@ -231,9 +261,9 @@ Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta qu
 
 ## Captura de pago autorizado
 
-La finalización de un pago sucede después de la captura del pago autorizado, lo que significa que se puede debitar de la tarjeta el importe reservado para la compra.
+La finalización de un pago sucede después de la captura del pago previamente autorizado, lo que significa que se puede debitar de la tarjeta el importe reservado para la compra.
 
-Por ahora, tenemos una posibilidad de **captura posterior**, donde se captura el monto total del pago reservado.
+Por ahora, tenemos sólo una posibilidad de **captura posterior**, donde se captura el monto total del pago reservado.
 
 > WARNING
 >
@@ -241,17 +271,13 @@ Por ahora, tenemos una posibilidad de **captura posterior**, donde se captura el
 >
 > El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------ desde su creación.
 
-Para realizar la captura del monto total de una reserva, es necesario enviar una solicitud al endpoint [/v1/orders/{order_id}/capture](/developers/es/reference/order/online-payments/capture/post), donde debe reemplazar `{order_id}` por el ID del pedido cuya captura total desea realizar. Visite nuestra [Referencia de API](/developers/es/reference/order/online-payments/capture/post) para más información.
+Para realizar la captura del monto total de una reserva, es necesario enviar una solicitud al endpoint [/v1/orders/{order_id}/capture](/developers/es/reference/order/online-payments/capture/post), reemplazando `{order_id}` por el ID de la order cuya captura total deseas realizar. 
 
 ## Cancelación de reserva
 
 La cancelación de una reserva se produce cuando, por algún motivo, no se aprueba el pago de una compra y se debe devolver el valor de la reserva al límite de la tarjeta del cliente, o cuando un comprador desiste de la compra. 
 
-Para cancelar una reserva, debe enviar una solicitud al endpoint [/v1/orders/{order_id}/cancel](/developers/es/reference/order/online-payments/cancel-order/post). Asegúrese de reemplazar `{order_id}` por el ID del pedido que desea cancelar. Visite nuestra [Referencia de API](/developers/es/reference/order/online-payments/capture/post) para más información.
+Para cancelar una reserva, debes enviar una solicitud al endpoint [/v1/orders/{order_id}/cancel](/developers/es/reference/order/online-payments/cancel-order/post). Asegúrate de reemplazar `{order_id}` por el ID de la order cuya reserva deseas cancelar. 
 
-> NOTE
->
-> Nota
->
-> Para más información sobre reembolsos y cancelaciones de pagos, consulta la sección [Reembolsos y cancelaciones](/developers/es/docs/order/online-payments/payment-management/cancellations-and-refunds).
+
 
