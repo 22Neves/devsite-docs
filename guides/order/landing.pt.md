@@ -52,7 +52,7 @@ bullet_section_with_media:
 
 | Funcionalidade  |  API de Pagamentos  | API de Order |
 | --- | --- |--- |
-| Modo  | Automático  | Automático e manua |
+| Modo  | Automático  | Automático e manual |
 | Operações  | Payments  | [Payments](/developers/pt/docs/order/online-payments/introduction) e [In-store](/developers/pt/docs/order/in-store-payments/introduction) (QR e Point).|
 | Múltiplas transações  | Não possui | Possui |
 | Envio de metadados  | Permite  | Não permite |
