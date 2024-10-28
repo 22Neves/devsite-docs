@@ -36,13 +36,10 @@ Below we show the main differences between the migration steps.
 
 See below for a comparison of the diagrams.
 
-* **V1 sequence diagram**
+![java-v1](/images/sdk/sdk-java-v1-en-3.png)
 
-![java-v1](/images/sdk/sdk-java-v1-en-2.png)
 
-* **V2 sequence diagram**
-
-![java-v2](/images/sdk/sdk-java-v2-en-2.png)
+![java-v2](/images/sdk/sdk-java-v2-en-3.png)
 
 ## Changing the script import
 
