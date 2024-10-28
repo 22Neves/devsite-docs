@@ -6,4 +6,4 @@
 
 > ¡No hace falta que el cliente tenga una cuenta de Mercado Pago para realizar el pago!
 
-![Como funciona](/images/button/byl_crear_compartir-rebranding.png)
+![Como funciona](/images/button/byl_crear_compartir.png)
