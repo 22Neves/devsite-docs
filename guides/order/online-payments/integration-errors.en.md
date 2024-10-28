@@ -1,4 +1,6 @@
-# Integration errors
+# Possible errors
+
+## Integration errors
 
 | Code | Description | Description |
 | --- | --- | --- |

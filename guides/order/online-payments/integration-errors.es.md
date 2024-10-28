@@ -1,4 +1,6 @@
-# Errores de integración
+# Posibles errores
+
+## Errores de integración
 
 | Código | Descripción | Descripción |
 | --- | --- | --- |

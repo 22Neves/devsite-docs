@@ -665,5 +665,3 @@ A resposta trará o seguinte resultado
 > Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Consulte a lista completa dos estados do pagamento e da ordem criada na seção [Status](). <br>
 > <br>
 > Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/order/online-payments/notifications) para mais detalhes.
-
-

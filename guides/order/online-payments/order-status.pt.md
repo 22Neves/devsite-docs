@@ -1,4 +1,4 @@
-# Status pedido
+# Status da order
 
 | Status | `status_detail` | Descrição |
 | --- | --- | --- |

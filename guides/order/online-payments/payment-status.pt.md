@@ -1,4 +1,4 @@
-#  Status pagamento
+# Status do pagamento
 
 | Status | `status_detail` | Descrição |
 | --- | --- | --- |

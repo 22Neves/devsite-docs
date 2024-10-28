@@ -665,19 +665,3 @@ The response will show the following result
 > When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". Refer to the complete list of payment and order statuses in the [Status]() section. <br>
 > <br>
 > To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/order/online-payments/notifications) for more details.
-
-
-----[mlb]----
-> GIT
->
-> Checkout Transparente
->
-> For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> GIT
->
-> Checkout API
->
-> For complete code samples, check out the [Full Integration Examples](https://github.com/mercadopago/card-payment-sample) available on GitHub.
-------------

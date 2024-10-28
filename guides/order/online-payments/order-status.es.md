@@ -1,6 +1,6 @@
-# Estado del pedido
+# Status de la order
 
-| Estado | `status_detail` | Descripción |
+| Status | `status_detail` | Descripción |
 | --- | --- | --- |
 | approved | `accredited` | ¡Listo! Se acreditó tu pago. En tu resumen verás el cargo de `amount` como `statement_descriptor`. |
 | approved | `partially_refunded` | El pago se realizó con al menos un reembolso parcial. |

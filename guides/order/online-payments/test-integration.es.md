@@ -1,4 +1,4 @@
-# Probar integración
+# Prueba de integración
 
 La prueba de integración permite analizar si esta se realizó correctamente y si los pagos se están procesando sin errores, evitando posibles errores al poner el checkout a disposición de los compradores finales.
 

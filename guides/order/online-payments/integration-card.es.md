@@ -665,21 +665,3 @@ La respuesta devolverá el siguiente resultado
 > Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulta la lista completa de estados de un pago y de la orden creada en la sección [Status]() <br>
 > <br>
 > Para mantenerte al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/order/online-payments/notifications) para obtener más detalles.
-
-
-
-----[mlb]----
-> GIT
->
-> Checkout Transparente
->
-> Para ejemplos completos de código, consulta nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> GIT
->
-> Checkout API
->
-> Para ejemplos completos de código, consulta nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
-------------
