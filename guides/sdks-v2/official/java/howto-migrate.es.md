@@ -38,6 +38,7 @@ Vea a continuación una comparación de los diagramas.
 
 ![java-v1](/images/sdk/sdk-java-v1-es-3.png)
 
+
 ![java-v2](/images/sdk/sdk-java-v2-es-3.png)
 
 ## Cambiar la importación del script

@@ -38,7 +38,6 @@ See below for a comparison of the diagrams.
 
 ![java-v1](/images/sdk/sdk-java-v1-en-3.png)
 
-
 ![java-v2](/images/sdk/sdk-java-v2-en-3.png)
 
 ## Changing the script import
