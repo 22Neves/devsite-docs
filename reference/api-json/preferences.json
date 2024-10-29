@@ -553,9 +553,9 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "en": "URLs to return to the sellers website.",
-                      "pt": "Url de retorno ao site do vendedor.",
-                      "es": "URLs de retorno al sitio del vendedor."
+                      "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
+                      "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
+                      "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
                     },
                     "properties": {
                       "success": {
@@ -593,7 +593,7 @@
                     "description": {
                       "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
                       "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                      "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                     }
                   },
                   "statement_descriptor": {
@@ -1077,9 +1077,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor.",
-                        "es": "URLs de retorno al sitio del vendedor."
+                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
+                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
+                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
                       },
                       "properties": {
                         "success": {
@@ -2150,9 +2150,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor.",
-                        "es": "URLs de retorno al sitio del vendedor."
+                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
+                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
+                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
                       },
                       "properties": {
                         "failure": {
@@ -3432,9 +3432,9 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "en": "URLs to return to the sellers website.",
-                      "pt": "Url de retorno ao site do vendedor.",
-                      "es": "URLs de retorno al sitio del vendedor."
+                      "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
+                      "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
+                      "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
                     },
                     "properties": {
                       "success": {
@@ -3601,9 +3601,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "URLs to return to the sellers website.",
-                        "pt": "Url de retorno ao site do vendedor.",
-                        "es": "URLs de retorno al sitio del vendedor."
+                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
+                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
+                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
                       },
                       "properties": {
                         "failure": {
@@ -4170,19 +4170,10 @@
                     },
                     "redirect_urls": {
                       "type": "object",
-                      "properties": {
-                        "failure": {
-                          "type": "string",
-                          "example": ""
-                        },
-                        "pending": {
-                          "type": "string",
-                          "example": ""
-                        },
-                        "success": {
-                          "type": "string",
-                          "example": ""
-                        }
+                      "description": {
+                        "en": "URL (in https) where you want to receive the authorization code when your integration is set up as a marketplace or performed through the flow Authorization code by OAuth.",
+                        "pt": "URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada por meio do fluxo Authorization code de OAuth. Certifique-se de que seja uma URL estática.",
+                        "es": "URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se utilice el flujo Authorization code de OAuth."
                       }
                     },
                     "sandbox_init_point": {
@@ -4592,25 +4583,25 @@
         "type": "String",
         "example": "approved",
         "description": {
-          "en": "If specified, your buyers will be redirected back to your site immediately after completing the purchase.",
-          "pt": "No caso de estar especificado o comprador será redirecionado para o seu site imediatamente após a compra.",
-          "es": "En el caso de estar especificado tu comprador sera redirigido a tu sitio inmediatamente después de la compra."
+          "en": "If specified, the buyer will be automatically redirected to the seller's site after the purchase is approved with a credit card.",
+          "pt": "No caso de estar especificado, o comprador será redirecionado para o site do vendedor automaticamente após a compra aprovada com cartão de crédito.",
+          "es": "En el caso de estar especificado, el comprador será redirigido automáticamente al sitio del vendedor después de que la compra sea aprobada con tarjeta de crédito."
         },
         "enum": [
           {
             "title": "approved",
             "description": {
-              "en": "The redirection takes place only for approved payments.",
-              "es": "El redireccionamiento solo ocurre para pagos aprobados.",
-              "pt": "O redirecionamento ocorre apenas para pagamentos aprovados."
+              "en": "The redirection takes place only for approved payments with a credit card.",
+              "es": "El redireccionamiento solo ocurre para pagos aprobados con tarjeta de crédito.",
+              "pt": "O redirecionamento ocorre apenas para pagamentos aprovados com cartão de crédito."
             }
           },
           {
             "title": "all",
             "description": {
-              "en": "The redirection takes place only for approved payments, forward compatibility only if we change the default behavior.",
-              "es": "El redireccionamiento se realiza únicamente para pagos aprobados, compatibilidad con versiones posteriores solo si cambiamos el comportamiento predeterminado.",
-              "pt": "O redirecionamento ocorre apenas para pagamentos aprovados, compatibilidade futura somente se alterarmos o comportamento padrão."
+              "en": "The redirection takes place only for approved payments with a credit card, forward compatibility only if we change the default behavior.",
+              "es": "El redireccionamiento se realiza únicamente para pagos aprobados con tarjeta de crédito, compatibilidad con versiones posteriores solo si cambiamos el comportamiento predeterminado.",
+              "pt": "O redirecionamento ocorre apenas para pagamentos aprovados com cartão de crédito, compatibilidade futura somente se alterarmos o comportamento padrão."
             }
           }
         ]
