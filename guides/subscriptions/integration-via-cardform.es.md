@@ -1,40 +1,18 @@
-# Tarjeta
+# Card token ID
 
-La integración de los pagos con tarjeta se realiza a través de cardform. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
+La integración de los pagos con tarjeta se realiza a través de _CardForm_. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
-----[mlb]----
 > NOTE
 >
-> Importante
+> Nota
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout Transparente.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
+> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. 
 
-------------
-
-----[mla, mlm, mpe, mlc]----
-> NOTE
->
-> Importante
->
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout API.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
-------------
-
-----[mlu, mco]----
-> NOTE
->
-> Importante
->
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
-
-------------
-
-Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
+Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando _CardForm_.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
-
-Para integrar los pagos con tarjeta en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ sigue las siguientes etapas.
 
 ##  Importar MercadoPago.js
 
@@ -466,12 +444,6 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 ------------
 
-> NOTE
->
-> Importante
->
-> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
-
 ## Enviar pago
 
 Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el backend reciba la información del formulario con el token generado y los datos completos como se indicó en las anteriores etapas.
@@ -480,11 +452,11 @@ En el ejemplo de la sección previa, enviamos todos los datos necesarios para la
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
-> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/checkout-api/how-tos/improve-payment-approval)
+> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/subscriptions/how-tos/improve-payment-approval/reasons-for-rejection)
 > <br><br>
 > Además, deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados.
 
