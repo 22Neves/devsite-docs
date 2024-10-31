@@ -1,6 +1,6 @@
 # Cartão
 
-A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
+A integração de pagamentos via cartão é feita via _CardForm_. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
 À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento. Com isso, a implementação do fluxo é transparente para quem realiza a integração.
 
@@ -29,7 +29,7 @@ A integração de pagamentos via cartão é feita via cardform. Neste modo de in
 
 ------------
 
-Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
+Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o _CardForm_.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-pt.png)
 
@@ -158,7 +158,7 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 >
 > Importante
 >
-> Ao enviar o formulário, um token, chamado de **cardtoken**, é gerado, representando de forma segura os dados do cartão. É possível acessá-lo através da função `cardForm.getCardFormData()`, como mostrado abaixo no callback `onSubmit`. Além disso, este token também é armazenado em um input oculto dentro do formulário no qual poderá ser encontrado com a nomenclatura `MPHiddenInputToken`. Leve em consideração que o cardtoken pode ser usado **somente uma vez** e expira dentro de **7 dias**.
+> Ao enviar o formulário, um _token_, chamado de `CardToken`, é gerado, representando de forma segura os dados do cartão. É possível acessá-lo através da função `cardForm.getCardFormData()`, como mostrado abaixo no _callback_ `onSubmit`. Além disso, este _token_ também é armazenado em um input oculto dentro do formulário no qual poderá ser encontrado com a nomenclatura `MPHiddenInputToken`. Leve em consideração que o `CardToken` pode ser usado **somente uma vez** e expira dentro de **7 dias**.
 
 ----[mla, mlu, mpe, mco, mlb]----
 [[[
@@ -473,11 +473,11 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 
 ## Enviar pagamento
 
-Para continuar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos conforme indicado nas etapas anteriores.
+Para continuar o processo de integração de pagamento via cartão, é necessário que o _backend_  receba a informação do formulário com o _token_ gerado e os dados completos conforme indicado nas etapas anteriores.
 
-No exemplo da seção anterior, enviamos todos os dados necessários para criar o pagamento para o endpoint `process_payment` do backend.
+No exemplo da seção anterior, enviamos todos os dados necessários para criar o pagamento para o endpoint `process_payment` do _backend_ .
 
-Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
+Com todas as informações coletadas no _backend_ , envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
 > NOTE
 >
