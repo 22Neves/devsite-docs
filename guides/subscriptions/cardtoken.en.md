@@ -1,4 +1,4 @@
-# Card token
+# Card token generation
 
 The integration of card payments is done via CardForm. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
 
