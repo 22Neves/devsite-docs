@@ -159,7 +159,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 >
 > Importante
 >
-> Al enviar el formulario, se genera un token que representa de manera segura los datos de la tarjeta, también llamado **cardtoken**. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el callback `onSubmit`. Además, este token también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`. Ten en cuenta que puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
+> Al enviar el formulario, se genera un _token_ que representa de manera segura los datos de la tarjeta, también llamado `CardToken`. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el _callback_ `onSubmit`. Además, este _token_ también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`. Ten en cuenta que puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
 
 ----[mla, mlu, mpe, mco, mlb]----
 [[[
@@ -474,11 +474,11 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 ## Enviar pago
 
-Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el backend reciba la información del formulario con el token generado y los datos completos como se indicó en las anteriores etapas.
+Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el _backend_  reciba la información del formulario con el _token_ generado y los datos completos como se indicó en las anteriores etapas.
 
-En el ejemplo de la sección previa, enviamos todos los datos necesarios para la generación del pago al endpoint `process_payment` del backend.
+En el ejemplo de la sección previa, enviamos todos los datos necesarios para la generación del pago al endpoint `process_payment` del _backend_ .
 
-Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
+Con toda la información recopilada en el _backend_ , envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
 > NOTE
 >

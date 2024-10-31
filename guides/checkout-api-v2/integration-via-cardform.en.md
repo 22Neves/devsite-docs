@@ -1,4 +1,4 @@
-# Cards
+# Card
 
 The integration of card payments is done via CardForm. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
 
@@ -160,7 +160,7 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > Important
 >
-> When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
+> When submitting the form, a token, also known as `CardToken`, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the `CardToken` can **only be used once** and expires within **7 days**.
 
 ----[mla, mlu, mpe, mco, mlb]----
 [[[

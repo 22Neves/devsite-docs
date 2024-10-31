@@ -1,22 +1,22 @@
-# Card token ID
+# Card token
 
-La integración de los pagos con tarjeta se realiza a través de _CardForm_. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
+A integração de pagamentos via cartão é feita via _CardForm_. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
-A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
+À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento. Com isso, a implementação do fluxo é transparente para quem realiza a integração.
 
 > NOTE
 >
 > Nota
 >
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. 
+> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de Card Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do Card Payment para mais detalhes. 
 
-Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando _CardForm_.
+Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o _CardForm_.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-pt.png)
 
-##  Importar MercadoPago.js
+## Importar MercadoPago.js
 
-La primera etapa del proceso de integración de pagos con tarjeta es la captura de los datos de la tarjeta. Esta captura se realiza a través de la inclusión de la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca antes de añadir el formulario de pago.
+A primeira etapa do processo de integração de pagamentos com cartões é a captura de dados do cartão. Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
 
 [[[
 ```html
@@ -31,11 +31,11 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-## Configurar credenciales
+## Configurar credenciais
 
-Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
+As credenciais são chaves únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas virtuais e outras aplicações de forma segura.
 
-Esta es la primera etapa de una estructura de código completa que se debe seguir para integrar correctamente pagos con tarjeta. 
+Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via cartão. 
 
 [[[
 ```html
@@ -52,11 +52,11 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-## Añadir formulario de pago
+## Adicionar formulário de pagamento
 
-La captura de los datos de la tarjeta se realiza a través del CardForm de la biblioteca MercadoPago.js. Nuestro CardForm se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
+A captura dos dados do cartão é feita através do CardForm da biblioteca MercadoPago.js. Nosso CardForm se conectará ao seu formulário de pagamento HTML, facilitando a obtenção e validação de todos os dados necessários para processar o pagamento.
 
-Para añadir el formulario de pago, inserta el siguiente HTML directamente en el proyecto. 
+Para adicionar o formulário de pagamento, insira o HTML abaixo diretamente no projeto. 
 
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
@@ -88,7 +88,7 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
     <input type="email" id="form-checkout__cardholderEmail" />
 
     <button type="submit" id="form-checkout__submit">Pagar</button>
-    <progress value="0" class="progress-bar">Cargando...</progress>
+    <progress value="0" class="progress-bar">Carregando...</progress>
   </form>
 ```
 ]]]
@@ -122,22 +122,22 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
     <input type="email" id="form-checkout__cardholderEmail" />
 
     <button type="submit" id="form-checkout__submit">Pagar</button>
-    <progress value="0" class="progress-bar">Cargando...</progress>
+    <progress value="0" class="progress-bar">Carregando...</progress>
   </form>
 ```
 ]]]
 
 ------------
 
-## Inicializar formulario de pago
+## Inicializar formulário de pagamento
 
-Después de añadir el formulario de pago, es necesario inicializarlo. Esta etapa consiste en relacionar el ID de cada campo del formulario con los atributos correspondientes. La biblioteca se encargará de rellenar, obtener y validar todos los datos necesarios en la confirmación del pago.  
+Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etapa consiste em relacionar o ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários no momento de confirmação do pagamento. 
 
 > NOTE
 >
 > Importante
 >
-> Al enviar el formulario, se genera un token que representa de manera segura los datos de la tarjeta, también llamado **cardtoken**. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el callback `onSubmit`. Además, este token también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`. Ten en cuenta que puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
+> Ao enviar o formulário, um _token_, chamado de `CardToken`, é gerado, representando de forma segura os dados do cartão. É possível acessá-lo através da função `cardForm.getCardFormData()`, como mostrado abaixo no _callback_ `onSubmit`. Além disso, este _token_ também é armazenado em um input oculto dentro do formulário no qual poderá ser encontrado com a nomenclatura `MPHiddenInputToken`. Leve em consideração que o `CardToken` pode ser usado **somente uma vez** e expira dentro de **7 dias**.
 
 ----[mla, mlu, mpe, mco, mlb]----
 [[[
@@ -150,7 +150,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         id: "form-checkout",
         cardNumber: {
           id: "form-checkout__cardNumber",
-          placeholder: "Numero de tarjeta",
+          placeholder: "Número do cartão",
         },
         expirationDate: {
           id: "form-checkout__expirationDate",
@@ -158,19 +158,19 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         },
         securityCode: {
           id: "form-checkout__securityCode",
-          placeholder: "Código de seguridad",
+          placeholder: "Código de segurança",
         },
         cardholderName: {
           id: "form-checkout__cardholderName",
-          placeholder: "Titular de la tarjeta",
+          placeholder: "Titular do cartão",
         },
         issuer: {
           id: "form-checkout__issuer",
-          placeholder: "Banco emisor",
+          placeholder: "Banco emissor",
         },
         installments: {
           id: "form-checkout__installments",
-          placeholder: "Cuotas",
+          placeholder: "Parcelas",
         },        
         identificationType: {
           id: "form-checkout__identificationType",
@@ -178,7 +178,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         },
         identificationNumber: {
           id: "form-checkout__identificationNumber",
-          placeholder: "Número del documento",
+          placeholder: "Número do documento",
         },
         cardholderEmail: {
           id: "form-checkout__cardholderEmail",
@@ -215,7 +215,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
               payment_method_id,
               transaction_amount: Number(amount),
               installments: Number(installments),
-              description: "Descripción del producto",
+              description: "Descrição do produto",
               payer: {
                 email,
                 identification: {
@@ -248,13 +248,13 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 ```javascript
 
     const cardForm = mp.cardForm({
-      amount: "100", // El valor debe ser un número entero.
+      amount: "100", // O valor deve ser um número inteiro.
       iframe: true,
       form: {
         id: "form-checkout",
         cardNumber: {
           id: "form-checkout__cardNumber",
-          placeholder: "Numero de tarjeta",
+          placeholder: "Número do cartão",
         },
         expirationDate: {
           id: "form-checkout__expirationDate",
@@ -262,19 +262,19 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         },
         securityCode: {
           id: "form-checkout__securityCode",
-          placeholder: "Código de seguridad",
+          placeholder: "Código de segurança",
         },
         cardholderName: {
           id: "form-checkout__cardholderName",
-          placeholder: "Titular de la tarjeta",
+          placeholder: "Titular do cartão",
         },
         issuer: {
           id: "form-checkout__issuer",
-          placeholder: "Banco emisor",
+          placeholder: "Banco emissor",
         },
         installments: {
           id: "form-checkout__installments",
-          placeholder: "Cuotas",
+          placeholder: "Parcelas",
         },        
         identificationType: {
           id: "form-checkout__identificationType",
@@ -282,7 +282,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         },
         identificationNumber: {
           id: "form-checkout__identificationNumber",
-          placeholder: "Número del documento",
+          placeholder: "Número do documento",
         },
         cardholderEmail: {
           id: "form-checkout__cardholderEmail",
@@ -319,7 +319,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
               payment_method_id,
               transaction_amount: Number(amount),
               installments: Number(installments),
-              description: "Descripción del producto",
+              description: "Descrição do produto",
               payer: {
                 email,
                 identification: {
@@ -358,7 +358,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         id: "form-checkout",
         cardNumber: {
           id: "form-checkout__cardNumber",
-          placeholder: "Numero de tarjeta",
+          placeholder: "Número do cartão",
         },
         expirationDate: {
           id: "form-checkout__expirationDate",
@@ -366,19 +366,19 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
         },
         securityCode: {
           id: "form-checkout__securityCode",
-          placeholder: "Código de seguridad",
+          placeholder: "Código de segurança",
         },
         cardholderName: {
           id: "form-checkout__cardholderName",
-          placeholder: "Titular de la tarjeta",
+          placeholder: "Titular do cartão",
         },
         issuer: {
           id: "form-checkout__issuer",
-          placeholder: "Banco emisor",
+          placeholder: "Banco emissor",
         },
         installments: {
           id: "form-checkout__installments",
-          placeholder: "Cuotas",
+          placeholder: "Parcelas",
         },        
         cardholderEmail: {
           id: "form-checkout__cardholderEmail",
@@ -415,7 +415,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
               payment_method_id,
               transaction_amount: Number(amount),
               installments: Number(installments),
-              description: "Descripción del producto",
+              description: "Descrição do produto",
               payer: {
                 email,
                 identification: {
@@ -444,21 +444,21 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 ------------
 
-## Enviar pago
+## Enviar pagamento
 
-Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el backend reciba la información del formulario con el token generado y los datos completos como se indicó en las anteriores etapas.
+Para continuar o processo de integração de pagamento via cartão, é necessário que o _backend_ receba a informação do formulário com o _token_ gerado e os dados completos conforme indicado nas etapas anteriores.
 
-En el ejemplo de la sección previa, enviamos todos los datos necesarios para la generación del pago al endpoint `process_payment` del backend.
+No exemplo da seção anterior, enviamos todos os dados necessários para criar o pagamento para o endpoint `process_payment` do _backend_.
 
-Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
+Com todas as informações coletadas no _backend_, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
-> WARNING
+> NOTE
 >
 > Importante
 >
-> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/subscriptions/how-tos/improve-payment-approval/reasons-for-rejection)
+> Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos.](/developers/pt/docs/subscriptions/how-tos/improve-payment-approval/reasons-for-rejection)
 > <br><br>
-> Además, deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados.
+> Além disso, você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
 [[[
 ```php
@@ -517,7 +517,7 @@ payment.create({
 ```
 ```java
 ===
-Encuentra el estado del pago en el campo _status_.
+Encontre o estado do pagamento no campo _status_.
 ===
 
 Map<String, String> customHeaders = new HashMap<>();
@@ -551,11 +551,11 @@ PaymentCreateRequest paymentCreateRequest =
        .build();
 
 client.create(paymentCreateRequest, requestOptions);
- 
+
 ```
 ```ruby
 ===
-Encuentra el estado del pago en el campo _status_.
+Encontre o estado do pagamento no campo _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -589,7 +589,7 @@ puts payment
 ```
 ```csharp
 ===
-Encuentra el estado del pago en el campo _status_.
+Encontre o status do pagamento no campo _status_.
 ===
 using System;
 using MercadoPago.Client.Common;
@@ -628,7 +628,7 @@ Console.WriteLine(payment.Status);
 ```
 ```python
 ===
-Encuentra el estado del pago en el campo _status_.
+Encontre o status do pagamento no campo _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -697,7 +697,7 @@ fmt.Println(resource)
 ```
 ```curl
 ===
-Encuentra el estado del pago en el campo _status_.
+Encontre o status do pagamento no campo _status_.
 ===
  
 curl -X POST \
@@ -721,8 +721,7 @@ curl -X POST \
 ```
 ]]]
 
-
-La respuesta devolverá el siguiente resultado
+A resposta trará o seguinte resultado
 
 ```json
 {
@@ -739,27 +738,27 @@ La respuesta devolverá el siguiente resultado
    ...
 }
 ```
-
 > WARNING
 >
-> Atención
+> Atenção
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
+> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/subscriptions/additional-content/your-integrations/notifications) para mais detalhes.
 
-## Ejemplo de código
+## Exemplo de código
 
 ----[mlb]----
 > GIT
 >
 > Checkout Transparente
 >
-> Para ejemplos completos de código, consulta nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
-------------
+> Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
 
+------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Para ejemplos completos de código, consulta nuestros [ejemplos completos de integración.](http://github.com/mercadopago/card-payment-sample/tree/1.0.0)
+> Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
+
 ------------
