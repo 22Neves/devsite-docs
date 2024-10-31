@@ -6,7 +6,7 @@ Para integrar a solução Split de pagamentos usando o Checkout Pro ou o Checkou
 >
 > Importante
 >
-> Esta documentação é específica para o modelo de Split de pagamentos 1:1. Caso necessite de informações sobre o modelo 1:N, recomendamos entrar em contato com nossa equipe comercial para obter mais detalhes. Além disso, caso seja necessário realizar configurações sobre a data de liberação da comissão (_marketplace fee_ ou _application fee_), entre em contato com o seu **executivo comercial de carteira assessorada**.
+> Esta documentação é específica para o modelo de Split de pagamentos 1:1. O modelo 1:N está disponível apenas para vendedores de carteira assessorada que já estão em contato com a equipe comercial do Mercado Pago. Além disso, caso seja necessário realizar configurações sobre a data de liberação da comissão (_marketplace fee_ ou _application fee_), entre em contato com o seu **executivo comercial de carteira assessorada**.
 
 | Requisito                        | Descrição                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
