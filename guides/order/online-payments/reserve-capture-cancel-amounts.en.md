@@ -250,15 +250,13 @@ The response will indicate that the payment is authorized and pending capture.
 ```
 ]]]
 
-It is also possible to receive a `rejected` or `pending` status. In case it is returned as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
-
-Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
+It is also possible to receive a `rejected` or `pending` status. In these cases, you should pay attention to the notifications to know what the final status of the payment is.
 
 > WARNING
 >
 > Important
 >
-> The reserve will be valid for ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
+> Authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
 ## Capture an authorized payment
 
@@ -270,7 +268,7 @@ For now, we only have the possibility of **subsequent capture**, where the full 
 >
 > Important
 >
-> The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ from its creation.
+> The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ from its creation. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 
 To capture the total amount of a reservation, you need to send a request to the endpoint [/v1/orders/{order_id}/capture](/developers/en/reference/order/online-payments/capture/post), replacing `{order_id}` with the ID of the order you want to capture in full. 
 

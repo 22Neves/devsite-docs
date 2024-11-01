@@ -249,15 +249,14 @@ La respuesta indicará que el pago se encuentra autorizado y pendiente de captur
 ]]]
 
 
-También es posible que el `status` retorne como `rejected` o `pending`. En este segundo caso, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
-
-Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar la captura lo antes posible.
+También es posible que el `status` retorne como `rejected` o `pending`. En estos casos, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
 > WARNING
 >
 > Importante
 >
-> La reserva tendrá una validez de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
+> El cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar esta captura lo antes posible.
+ 
 
 ## Captura de pago autorizado
 
@@ -269,7 +268,7 @@ Por ahora, tenemos sólo una posibilidad de **captura posterior**, donde se capt
 >
 > Importante
 >
-> El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------ desde su creación.
+> El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------ desde su creación. Si no la capturas hasta ese momento, será cancelado. Además, debes guardar el ID del pago para poder finalizar el proceso.
 
 Para realizar la captura del monto total de una reserva, es necesario enviar una solicitud al endpoint [/v1/orders/{order_id}/capture](/developers/es/reference/order/online-payments/capture/post), reemplazando `{order_id}` por el ID de la order cuya captura total deseas realizar. 
 
