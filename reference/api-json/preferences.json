@@ -553,9 +553,9 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
-                      "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
-                      "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
+                      "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status. The use of the protocol (\"https\") in the URL is mandatory.",
+                      "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento. É obrigatório o uso do protocolo (\"https\") na URL.",
+                      "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago. Es obligatorio el uso del protocolo (\"https\") en la URL."
                     },
                     "properties": {
                       "success": {
@@ -591,9 +591,9 @@
                     "type": "string",
                     "example": "https://notificationurl.com",
                     "description": {
-                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
-                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                      "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters. The use of the protocol (\"https\") in the URL is mandatory.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres. Es obligatorio el uso del protocolo (\"https\") en la URL.",
+                      "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL."
                     }
                   },
                   "statement_descriptor": {
@@ -1077,9 +1077,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
-                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
-                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
+                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status. The use of the protocol (\"https\") in the URL is mandatory.",
+                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento. É obrigatório o uso do protocolo (\"https\") na URL.",
+                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago. Es obligatorio el uso del protocolo (\"https\") en la URL."
                       },
                       "properties": {
                         "success": {
@@ -1317,9 +1317,9 @@
                       "example": "https://notificationurl.com",
                       "format": "nullable",
                       "description": {
-                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
-                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters. The use of the protocol (\"https\") in the URL is mandatory.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres. Es obligatorio el uso del protocolo (\"https\") en la URL.",
+                        "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL."
                       }
                     },
                     "statement_descriptor": {
@@ -2426,9 +2426,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
-                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters. The use of the protocol (\"https\") in the URL is mandatory.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres. Es obligatorio el uso del protocolo (\"https\") en la URL.",
+                        "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL."
                       }
                     },
                     "statement_descriptor": {
@@ -2891,7 +2891,7 @@
         "title": {
           "en": "Get preference",
           "pt": "Obter preferência",
-          "es": "Obtener preferencia"
+          "es": "Obtener preferencia" 
         }
       },
       "put": {
@@ -3432,9 +3432,9 @@
                   "back_urls": {
                     "type": "object",
                     "description": {
-                      "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
-                      "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
-                      "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
+                      "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status. The use of the protocol (\"https\") in the URL is mandatory.",
+                      "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento. É obrigatório o uso do protocolo (\"https\") na URL.",
+                      "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago. Es obligatorio el uso del protocolo (\"https\") en la URL."
                     },
                     "properties": {
                       "success": {
@@ -3466,9 +3466,9 @@
                   "notification_url": {
                     "type": "string",
                     "description": {
-                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
-                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                      "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                      "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters. The use of the protocol (\"https\") in the URL is mandatory.",
+                      "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres. Es obligatorio el uso del protocolo (\"https\") en la URL.",
+                      "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL."
                     }
                   },
                   "additional_info": {
@@ -3601,9 +3601,9 @@
                     "back_urls": {
                       "type": "object",
                       "description": {
-                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status.",
-                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento.",
-                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago."
+                        "en": "Return URLs to the seller's site, either automatically (\"auto_return\") or through the 'Return to site' button, depending on the payment status. The use of the protocol (\"https\") in the URL is mandatory.",
+                        "pt": "URLs de retorno ao site do vendedor, automaticamente (\"auto_return\") ou através do botão 'Voltar ao site', segundo o status do pagamento. É obrigatório o uso do protocolo (\"https\") na URL.",
+                        "es": "URLs de retorno al sitio del vendedor, ya sea automáticamente (\"auto_return\") o a través del botón 'Volver al sitio', según el estado del pago. Es obligatorio el uso del protocolo (\"https\") en la URL."
                       },
                       "properties": {
                         "failure": {
@@ -3916,9 +3916,9 @@
                       "example": "https://url.com.br/notificacao",
                       "format": "nullable",
                       "description": {
-                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
-                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
-                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters. The use of the protocol (\"https\") in the URL is mandatory.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres. Es obligatorio el uso del protocolo (\"https\") en la URL.",
+                        "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL."
                       }
                     },
                     "operation_type": {
