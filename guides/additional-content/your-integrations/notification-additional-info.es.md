@@ -128,6 +128,34 @@ En los casos en los que se hayan activado las notificaciones para el tópico `to
 | `type` | Tipo de notificación recibida, de acuerdo al tópico seleccionado previamente. En este caso, será siempre `claim`. |
 | `user_id `| Identificador del usuario para el que se envía la notificación. |
 
+## Contracargos
+
+En los casos en los que se hayan activado las notificaciones para el tópico `topic_chargebacks_wh`, se enviará una notificación Webhooks cuando se inicie un contracargo o cambie su estado, tal como se muestra a continuación:
+
+```json
+{
+    "actions":["changed_case_status"],
+    "api_version":"v1",
+    "application_id":9007201037432480,
+    "data":{
+        "checkout":"PRO",
+        "date_updated":"0001-01-01T00:00:00Z",
+        "id":217000061307271000,
+        "payment_id":81034165129,
+        "product_id":"BC32A57TRPP001U8NHHG",
+        "site_id":"MLA",
+        "transaction_intent_id":""
+        },
+    "date_created":"2024-07-02T22:03:24-04:00",
+    "id":114544942708,
+    "live_mode":true,
+    "type":"topic_chargebacks_wh",
+    "user_id":425424311,
+    "version":1720427447
+}
+```
+
+
 ## Medios de pago offline
 
 En caso de haber integrado medios de pago offline y configurado tus notificaciones con el tópico `payments`, todos los cambios de estado de un pago te serán notificados.
