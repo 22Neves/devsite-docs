@@ -1,35 +1,14 @@
-# Card
+# Card token generation
 
 The integration of card payments is done via CardForm. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
-----[mla, mlm, mpe, mlc]----
 > NOTE
 >
-> Important
->
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **Card Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of Card Payment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout API.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-
-----[mlb]----
-> NOTE
->
-> Important
->
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **Card Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of Card Payment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout Transparente.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-
-----[mlu, mco]----
-> NOTE
->
-> Important
+> Note
 >
 > In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details.
-
-------------
 
 Check below the diagram that illustrates the card payment process using the CardForm.
 
@@ -160,7 +139,7 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > Important
 >
-> When submitting the form, a token, also known as `CardToken`, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the `CardToken` can **only be used once** and expires within **7 days**.
+> When submitting the form, a token, also known as`CardToken`, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the `CardToken` can **only be used once** and expires within **7 days**.
 
 ----[mla, mlu, mpe, mco, mlb]----
 [[[
@@ -467,12 +446,6 @@ progressBar.setAttribute("value", "0");
 
 ------------
 
-> NOTE
->
-> Important
->
-> If you need to add or modify some logic in the flow of Javascript methods, consult the documentation [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
-
 ## Send payment
 
 To continue the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data as indicated in the previous steps.
@@ -485,7 +458,7 @@ With all the information collected in the backend, send a POST with the necessar
 >
 > Important
 >
-> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
+> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval.](/developers/en/docs/subscriptions/how-tos/improve-payment-approval/reasons-for-rejection)
 > <br><br>
 > Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
