@@ -407,19 +407,19 @@ async function openFintoc() {
 
 ```
 
-Puedes probar  distintos escenarios de pago a partir de los **últimos dos dígitos enviados en el campo `amount`**, que te permitirán definir casos de éxito o error. Sigue las indicaciones de la tabla a continuación para cada caso:
+Puedes probar  distintos escenarios de pago a partir de los **últimos dos dígitos enviados en el campo `transaction_amount`**, que te permitirán definir casos de éxito o error. Sigue las indicaciones de la tabla a continuación para cada caso:
 
-| Escenario | Últimos dígitos del campo `amount` | Ejemplo |
+| Escenario | Últimos dígitos del campo `transaction_amount` | Ejemplo |
 |---|---|---|
-| Pago exitoso | 01 | `amount: 10701` |
-| Pago exitoso | 02 | `amount: 10702` |
-| Pago rechazado | 03 | `amount: 10703` |
-| Pago exitoso | 04 | `amount: 10704` |
-| Pago exitoso | 05 | `amount: 17505` |
-| Pago exitoso | 06 | `amount: 3006` |
-| Pago exitoso | 07 | `amount: 3007` |
-| Pago exitoso | 08 | `amount: 3008` |
-| Pago exitoso | 09 | `amount: 3009` |
+| Pago exitoso | 01 | `transaction_amount: 10701` |
+| Pago exitoso | 02 | `transaction_amount: 10702` |
+| Pago rechazado | 03 | `transaction_amount: 10703` |
+| Pago exitoso | 04 | `transaction_amount: 10704` |
+| Pago exitoso | 05 | `transaction_amount: 17505` |
+| Pago exitoso | 06 | `transaction_amount: 3006` |
+| Pago exitoso | 07 | `transaction_amount: 3007` |
+| Pago exitoso | 08 | `transaction_amount: 3008` |
+| Pago exitoso | 09 | `transaction_amount: 3009` |
 
 Dentro del *iframe*, deberás **seleccionar un banco** para realizar la transacción de prueba, que puede ser cualquiera de los exhibidos.  Allí, deberás **iniciar sesión** simulando un usuario comprador con alguna de las **cuentas de prueba** que disponibilizamos a continuación:
 

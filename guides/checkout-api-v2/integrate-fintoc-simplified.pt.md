@@ -304,7 +304,8 @@ Para isso, faça o redirecionamento para a URL armazenada no campo `external_res
         "data": {
             "reference_id": "82512912106",
             "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
-            "external_resource_url": "https://mercadopago.cl/banktransfer..." // URL para fazer o redirecionamento
+            // URL para fazer o redirecionamento
+            "external_resource_url": "https://mercadopago.cl/banktransfer..." 
         }
    …
 }
@@ -337,19 +338,19 @@ https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?call
 
 Para testar o funcionamento da sua integração e do processamento de pagamentos com o Fintoc, você deve [criar um pagamento](/developers/pt/docs/checkout-api/integration-configuration/fintoc/simplified-integration#bookmark_criar_pagamento) utilizando suas [credenciais de teste do Mercado Pago](/developers/pt/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=acesso%20a%20ela.-,Credenciais%20de%20teste,-As%20credenciais%20de).
 
-Os diferentes cenários de pagamento a serem testados dependerão **dos últimos dois dígitos enviados no campo `amount`**, a partir dos quais você poderá definir casos de sucesso ou erro. Siga as indicações da tabela abaixo para cada caso:
+Os diferentes cenários de pagamento a serem testados dependerão **dos últimos dois dígitos enviados no campo `transaction_amount`**, a partir dos quais você poderá definir casos de sucesso ou erro. Siga as indicações da tabela abaixo para cada caso:
 
-| Cenário | Últimos dígitos do campo `amount` | Exemplo |
+| Cenário | Últimos dígitos do campo `transaction_amount` | Exemplo |
 |---|---|---|
-| Pagamento aprovado | 01 | `amount: 10701` |
-| Pagamento aprovado | 02 | `amount: 10702` |
-| Pagamento rejeitado | 03 | `amount: 10703` |
-| Pagamento aprovado | 04 | `amount: 10704` |
-| Pagamento aprovado | 05 | `amount: 17505` |
-| Pagamento aprovado | 06 | `amount: 3006` |
-| Pagamento aprovado | 07 | `amount: 3007` |
-| Pagamento aprovado | 08 | `amount: 3008` |
-| Pagamento aprovado | 09 | `amount: 3009` |
+| Pagamento aprovado | 01 | `transaction_amount: 10701` |
+| Pagamento aprovado | 02 | `transaction_amount: 10702` |
+| Pagamento rejeitado | 03 | `transaction_amount: 10703` |
+| Pagamento aprovado | 04 | `transaction_amount: 10704` |
+| Pagamento aprovado | 05 | `transaction_amount: 17505` |
+| Pagamento aprovado | 06 | `transaction_amount: 3006` |
+| Pagamento aprovado | 07 | `transaction_amount: 3007` |
+| Pagamento aprovado | 08 | `transaction_amount: 3008` |
+| Pagamento aprovado | 09 | `transaction_amount: 3009` |
 
 Dentro do *iframe*, você deverá **selecionar um banco** para realizar a transação de teste, que pode ser qualquer um dos exibidos. Lá, você deverá **fazer login** simulando um usuário comprador com uma das **contas de teste** que disponibilizamos a seguir:
 

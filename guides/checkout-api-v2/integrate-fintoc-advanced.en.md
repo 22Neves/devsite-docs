@@ -406,19 +406,19 @@ async function openFintoc() {
 
 ```
 
-You can test different payment scenarios based on the **last two digits sent in the `amount` field**, which will allow you to define success or error cases. Follow the instructions in the table below for each case:
+You can test different payment scenarios based on the **last two digits sent in the `transaction_amount` field**, which will allow you to define success or error cases. Follow the instructions in the table below for each case:
 
-| Scenario       | Last digits of the `amount` field | Example         |
-|----------------|----------------------------------|-----------------|
-| Successful payment | 01                               | `amount: 10701` |
-| Successful payment | 02                               | `amount: 10702` |
-| Rejected payment   | 03                               | `amount: 10703` |
-| Successful payment | 04                               | `amount: 10704` |
-| Successful payment | 05                               | `amount: 17505` |
-| Successful payment | 06                               | `amount: 3006`  |
-| Successful payment | 07                               | `amount: 3007`  |
-| Successful payment | 08                               | `amount: 3008`  |
-| Successful payment | 09                               | `amount: 3009`  |
+| Scenario | Last digits of the `transaction_amount` field | Example |
+|---|---|---|
+| Successful payment | 01 | `transaction_amount: 10701` |
+| Successful payment | 02 | `transaction_amount: 10702` |
+| Rejected payment | 03 | `transaction_amount: 10703` |
+| Successful payment | 04 | `transaction_amount: 10704` |
+| Successful payment | 05 | `transaction_amount: 17505` |
+| Successful payment | 06 | `transaction_amount: 3006` |
+| Successful payment | 07 | `transaction_amount: 3007` |
+| Successful payment | 08 | `transaction_amount: 3008` |
+| Successful payment | 09 | `transaction_amount: 3009` |
 
 Within the iframe, you must **select a bank** to carry out the test transaction, which can be any of those displayed. There, you should **log in** simulating a buyer user with one of the **test accounts** provided below:
 

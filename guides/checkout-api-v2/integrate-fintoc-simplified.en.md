@@ -304,7 +304,8 @@ To do this, redirect to the URL stored in the `external_resource_url` field, whi
         "data": {
             "reference_id": "82512912106",
             "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
-            "external_resource_url": "https://mercadopago.cl/banktransfer..." // URL to perform the redirection
+            // URL to perform the redirection
+            "external_resource_url": "https://mercadopago.cl/banktransfer..." 
         }
    …
 }
@@ -340,19 +341,20 @@ https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?call
 
 To test the functioning of your integration and the payment processing with Fintoc, you need to [Create a payment](/developers/en/docs/checkout-api/integration-configuration/fintoc/simplified-integration#bookmark_create_payment) using your [Mercado Pago test credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Test%20credentials,-The%20test%20credentials%20for). 
 
-You can test different payment scenarios based on the **last two digits sent in the `amount` field**, which will allow you to define success or error cases. Follow the instructions in the table below for each case:
+You can test different payment scenarios based on the **last two digits sent in the `transaction_amount` field**, which will allow you to define success or error cases. Follow the instructions in the table below for each case:
 
-| Scenario       | Last digits of the `amount` field | Example         |
-|----------------|----------------------------------|-----------------|
-| Successful payment | 01                               | `amount: 10701` |
-| Successful payment | 02                               | `amount: 10702` |
-| Rejected payment   | 03                               | `amount: 10703` |
-| Successful payment | 04                               | `amount: 10704` |
-| Successful payment | 05                               | `amount: 17505` |
-| Successful payment | 06                               | `amount: 3006`  |
-| Successful payment | 07                               | `amount: 3007`  |
-| Successful payment | 08                               | `amount: 3008`  |
-| Successful payment | 09                               | `amount: 3009`  |
+| Scenario | Last digits of the `transaction_amount` field | Example |
+|---|---|---|
+| Successful payment | 01 | `transaction_amount: 10701` |
+| Successful payment | 02 | `transaction_amount: 10702` |
+| Rejected payment | 03 | `transaction_amount: 10703` |
+| Successful payment | 04 | `transaction_amount: 10704` |
+| Successful payment | 05 | `transaction_amount: 17505` |
+| Successful payment | 06 | `transaction_amount: 3006` |
+| Successful payment | 07 | `transaction_amount: 3007` |
+| Successful payment | 08 | `transaction_amount: 3008` |
+| Successful payment | 09 | `transaction_amount: 3009` |
+
 
 Within the iframe, you must **select a bank** to carry out the test transaction, which can be any of those displayed. There, you should **log in** simulating a buyer user with one of the **test accounts** provided below:
 
