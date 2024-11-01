@@ -2428,7 +2428,7 @@
                       "description": {
                         "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters. The use of the protocol (\"https\") in the URL is mandatory.",
                         "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL.",
-                        "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. É obrigatório o uso do protocolo (\"https\") na URL."
+                        "es": "URL de notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres. Es obligatorio el uso del protocolo (\"https\") en la URL."
                       }
                     },
                     "statement_descriptor": {
