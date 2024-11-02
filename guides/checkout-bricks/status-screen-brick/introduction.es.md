@@ -4,7 +4,6 @@ Status Screen Brick le permite mostrar al comprador el estado de una compra real
 
 Con este Brick es posible visualizar el resumen de la compra, procesar confirmaciones adicionales, en el caso de [3DS 2.0](/developers/es/docs/checkout-bricks/how-tos/improve-payment-approval/3ds)  así como saber el estado de pago actual y visualizar el detalle de los tickets de pago.
 
-
 ---
 live_demo_code_action:
  - title: Prueba nuestro Brick
@@ -19,4 +18,17 @@ live_demo_code_action:
 
 El layout de Status Screen Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
+----[mlb]----
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mlb-es.jpg)
+
+------------
+----[mpe]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-es.jpg)
+
+------------
+----[mlm, mla, mco, mlu, mlc]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-es.jpg)
+
+------------
