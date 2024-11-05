@@ -19,9 +19,21 @@ Deve-se levar em consideração dois fluxos para salvar os dados do cartão do c
 ----[mlb]----
 1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados informados.
 
+> NOTE
+>
+> Nota
+>
+> Para mais informações, siga os passos da nossa integração de pagamentos com cartão através do [Checkout Transparente](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission).
+
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados informados. 
+1. No caso de a afiliação incluir o pagamento da primeira parcela, o primeiro pagamento é processado com [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission) seguindo os processos de pagamento ao Mercado Pago. Para isso, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados informados.
+
+> NOTE
+>
+> Nota
+>
+> Para mais informações, siga os passos da nossa integração de pagamentos com cartão através do [Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Checkout Bricks](/developers/pt/docs/checkout-bricks/card-payment-brick/payment-submission).
 
 ------------
 
@@ -420,6 +432,84 @@ curl -X POST \
 > Para mais informações, siga os passos de nossa integração de [pagamentos com cartão do Checkout API](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform) ou utilizando o [Brick de Card Payment.](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
+----[mla, mlb, mco, mlc]----
+## Zero Dollar Auth
+
+Para cartões de crédito e débito de **Visa** e **Mastercard**, a autenticação é realizada através da funcionalidade [Zero Dollar Auth (ZDA)](/developers/pt/docs/zero-dollar-auth/landing).
+
+Zero Dollar Auth é uma funcionalidade para validar cartões de crédito ou débito, com o objetivo de otimizar a experiência do cliente. Com ela, é possível garantir que não haja cobranças efetivas no cartão, eliminando a necessidade de cancelamentos e estornos após a autorização da transação. Para mais informações, acesse a [documentação de ZDA](/developers/pt/docs/zero-dollar-auth/landing).
+
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'X-Card-Validation: card_validation' \
+--data-raw '{
+    "token": "TOKEN",
+    "payment_method_id": "master",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type" : "customer",
+    },
+    "description": "validação de cartão com valor zero dollar",
+    "transaction_amount": 0
+}'
+```
+
+## Pagamento de validação
+
+No caso de **ZDA não estar disponível**, a alternativa é a realização de um **Pagamento de validação**, onde deve ser executada a cobrança de um valor baixo e o reembolso do dinheiro logo em seguida. Veja abaixo um exemplo.
+
+------------
+## Pagamento de validação
+
+Para validar cartões de crédito ou débito com o objetivo de garantir a segurança da transação, será necessário criar um **pagamento de validação** onde deverá ser executada a cobrança de um valor baixo e o reembolso do dinheiro logo em seguida. Veja abaixo um exemplo.
+
+```curl
+===
+Exemplo de cobrança de um valor baixo
+===
+curl -X POST \
+   -H 'accept: application/json' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+   'https://api.mercadopago.com/v1/payments' \
+   -d '{
+         "transaction_amount": 100,
+         "token": "ff8080814c11e237014c1ff593b57b4d",
+         "description": "Blue shirt",
+         "installments": 1,
+         "payment_method_id": "visa",
+         "issuer_id": 310,
+         "payer": {
+           "email": "PAYER_EMAIL"
+         }
+   }'
+```
+
+Depois de realizar essa cobrança, você deve executar o reembolso de acordo com o exemplo abaixo.
+
+```curl
+Exemplo de cobrança de um valor baixo
+===
+curl -X POST \
+'https://api.mercadopago.com/v1/payments/12345678901/refunds'\
+-H 'Content-Type: application/json' \
+-H 'X-Idempotency-Key: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac' \
+-H 'Authorization: Bearer TEST-4397********912-08011*********50d74305b*********a2f9ec0-1********' \
+-d '{
+"amount": 5
+}'
+```
+
+> WARNING
+>
+> Importante
+>
+> É essencial **aguardar pelo menos 5 segundos entre a criação do pagamento e a execução do reembolso**. Além disso, a execução do reembolso depende da existência de um saldo mínimo disponível equivalente ao valor do reembolso em sua conta bancária dentro do Mercado Pago.
+> <br><br>
+> Para mais informações, acesse a documentação do endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) e também a do [v1/payments/{id}/refunds](/reference/chargebacks/_payments_id_refunds/post).
 
 ## Associar cartão ao cliente
 

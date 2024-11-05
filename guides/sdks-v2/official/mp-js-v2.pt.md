@@ -15,7 +15,7 @@ content_section_with_media:
 >
 > Atenção
 >
-> É importante salientar que embora o *Internet Explorer 11* seja compatível e funcione com [Checkout API](/developers/pt/docs/checkout-api/landing)(via [CardForm](https://github.com/mercadopago/sdk-js/blob/main/API/card-form.md) ou [Core Methods](https://github.com/mercadopago/sdk-js/blob/main/API/core-methods.md)) e [Secure Fields](https://github.com/mercadopago/sdk-js/blob/main/API/fields.md), o navegador não é suportado oficialmente pelo Mercado Pago.
+> É importante salientar que embora o *Internet Explorer 11* seja compatível com alguns fluxos do [Checkout API](/developers/pt/docs/checkout-api/landing), o navegador não é suportado oficialmente pelo Mercado Pago.
 
 ---
 bullet_section_with_media: 
