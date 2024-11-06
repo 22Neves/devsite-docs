@@ -1285,18 +1285,18 @@
           "mp-point"
         ],
         "description":{
-          "en":"This endpoint allows you to obtain a list of the terminals associated with their respective cash register, branch, and operating mode. In case of success, the request will return a response with status 200",
-          "pt":"Este endpoint permite que você obtenha uma lista dos terminals associadas à sua respectiva caixa, filial e modo de operação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Este endpoint te permite obtener una listado de los terminals asociadas a su respectiva caja, sucursal y modo de operacion. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en":"This endpoint allows you to obtain a list of the Point terminals associated with their respective point of sale, store, and operating mode. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite que você obtenha uma lista dos terminals Point associadas à sua respectiva caixa, filial e modo de operação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint te permite obtener una listado de las terminals Point asociadas a su respectiva caja, sucursal y modo de operación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
             "name": "limit",
             "in": "query",
             "description": {
-              "en": "Pagination limit",
-              "pt": "Limite de paginação",
-              "es": "Límite de paginación"
+              "en": "Pagination limit. This parameter specifies the maximum number of records you want to get in the response. It must be a numeric value, greater than or equal to 1 and less than or equal to 50. The default value is 50.",
+              "pt": "Limite de paginação. Especifica o número máximo de registros que você deseja obter na resposta. Deve ser um valor numérico maior ou igual a 1 e menor ou igual a 50. O valor padrão é 50.",
+              "es": "Límite de paginación. Especifica el número máximo de registros que deseas obtener en la respuesta. Debe ser un valor numérico, mayor o igual a 1 y menor o igual a 50. El valor por defecto es 50."
             },
             "schema": {
               "type": "integer",
@@ -1307,9 +1307,9 @@
             "name": "offset",
             "in": "query",
             "description": {
-              "en": "Pagination offset",
-              "pt": "Offset de paginação",
-              "es": "Offset de paginación"
+              "en": "Pagination offset. This parameter determines the starting point from which the records should be obtained. It must be a numerical value greater than or equal to zero (0). Its default value is zero (0).",
+              "pt": "Offset de paginação. Determina o ponto inicial a partir do qual os registros devem ser obtidos. Deve ser um valor numérico maior ou igual a zero (0). Seu valor padrão é zero (0).",
+              "es": "Offset de paginación. Determina el punto de inicio desde el cual se deben obtener los registros. Debe ser un valor numérico mayor o igual a cero (0). Su valor por defecto es cero (0)."
             },
             "schema": {
               "type": "integer",
@@ -1332,17 +1332,17 @@
                     "data":{
                       "type":"object",
                       "description":{
-                        "en":"This node allows you to obtain a list of available Point terminals associated with your Mercado Pago account.",
-                        "pt":"Este nó permite obter uma lista de terminals da Point disponíveis associados à sua conta do Mercado Pago.",
-                        "es":"Este nodo te permite obtener un listado de terminals de la Point disponibles asociados a tu cuenta de Mercado Pago."
+                        "en":"This node contains a list of available Point terminals associated with your Mercado Pago account.",
+                        "pt":"Este nó contém uma lista de terminals Point disponíveis associados à sua conta do Mercado Pago.",
+                        "es":"Este nodo contiene el listado de terminals Point asociadas a tu cuenta de Mercado Pago disponibles."
                       },
                       "properties":{
                         "terminals":{
                           "type":"array",
                           "description":{
-                            "en":"This node will contain the information that relates each terminal to its box, branch and mode of operation.",
-                            "pt":"Este nó conterá as informações que relacionam cada terminal ao seu caixa, agência e modo de funcionamento.",
-                            "es":"Este nodo contendra la informacion que relaciona cada terminal a su caja, sucursal y modo de operacion."
+                            "en":"This node contains the information related to each terminal, including the associated point of sale and store, and its operation mode.",
+                            "pt":"Este nó contém as informações relacionadas a cada terminal, incluindo seu caixa e loja associados, e modo de operação.",
+                            "es":"Este nodo contiene la información relacionada a cada terminal, incluyendo su caja y sucursal asociadas, y modo de operación."
                           },
                           "items": {
                             "type": "object",
@@ -1352,32 +1352,32 @@
                                 "example": "PAX_A910__SMARTPOS1234345545",
                                 "description": {
                                   "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the terminal.",
-                                  "es": "Identificador único de la terminal. Podrás identificar el terminal de Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
-                                  "pt": "Identificador exclusivo do terminal. Você pode identificar o terminal da Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
+                                  "es": "Identificador único de la terminal. Podrás identificar la terminal Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera de la terminal física.",
+                                  "pt": "Identificador exclusivo do terminal. Você pode identificar o terminal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
                                 }
                               },
                               "pos_id": {
                                 "type": "integer",
                                 "description": {
-                                  "en": "Identifier of the Point of Sale to which the terminal is associated.",
-                                  "es": "Identificador de la caja a la que está asociado la terminal.",
-                                  "pt": "Identificador da caixa à qual o terminal está associado."
+                                  "en": "Identifier of the point of sale associated with the Point terminal.",
+                                  "es": "Identificador de la caja a la que está asociada la terminal Point.",
+                                  "pt": "Identificador da caixa à qual o terminal Point está associado."
                                 },
                                 "example": 47792476
                               },
                               "store_id": {
                                 "type": "string",
                                 "description": {
-                                  "en": "Identifier of the store to which the terminal is associated.",
-                                  "pt": "Identificador da loja à qual o terminal está associado.",
-                                  "es": "Identificador de la sucursal a la que está asociado la terminal."
+                                  "en": "Identifier of the store associated with the Point terminal.",
+                                  "pt": "Identificador da loja à qual o terminal Point está associado.",
+                                  "es": "Identificador de la sucursal a la que está asociada la terminal Point."
                                 },
                                 "example": 47792478
                               },
                               "external_pos_id": {
                                 "type": "string",
                                 "description": {
-                                  "en": "External identifier of the store to which the POS belongs, defined by the integrator during its creation.",
+                                  "en": "External identifier of the store to which the point of sale belongs, defined by the integrator during its creation.",
                                   "es": "Identificador externo de la sucursal a la que pertenece la caja, definido por el integrador durante su creación.",
                                   "pt": "Identificador externo da loja a qual pertence a caixa, definido pelo integrador durante sua criação."
                                 },
@@ -1386,25 +1386,25 @@
                               "operating_mode": {
                                 "type": "string",
                                 "description":{
-                                  "en": "Operating mode defined currently for the terminal.",
-                                  "es": "Modo de operación en el que está funcionando la terminal actualmente.",
-                                  "pt": "Modo de operação em que o terminal está funcionando atualmente"
+                                  "en": "Operating mode defined for the terminal at the time of the request.",
+                                  "es": "Modo de operación en el que está funcionando la terminal al momento de la requisición.",
+                                  "pt": "Modo de operação em que o terminal está funcionando na hora de requisição."
                                 },
-                                "example": "“PDV” | “STANDALONE” | SELFSERVICE | UNDEFINED",
+                                "example": "\"PDV\" | \"STANDALONE\" | \"SELFSERVICE\" | \"UNDEFINED\"",
                                 "enum": [
                                   {
                                     "title": "PDV",
                                     "description": {
-                                      "en": "Point of Sale operating mode. It's when the terminal is integrated with the API",
-                                      "es": "Modo operativo Punto de Venta. Es el modo en el que opera la terminal cuando está integrado vía API.",
-                                      "pt": "Modo operacional Ponto de Venda. É o forma como o terminal funciona quando integrado via API. "
+                                      "en": "Point of Sale (POS) operating mode. It's when the terminal is integrated with the API",
+                                      "es": "Modo operativo Punto de Venta (PDV). Es el modo en el que opera la terminal cuando está integrada vía API.",
+                                      "pt": "Modo operacional Ponto de Venda (PDV). É o forma como o terminal funciona quando integrado via API. "
                                     }
                                   },
                                   {
                                     "title": "STANDALONE",
                                     "description": {
                                       "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
-                                      "es": "Configuración del temrinal por defecto. Es el modo en el que opera la terminal cuando no está integrado vía API.",
+                                      "es": "Configuración de la terminal por defecto. Es el modo en el que opera cuando no está integrada vía API.",
                                       "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
                                     }
                                   },
@@ -1412,16 +1412,16 @@
                                     "title": "SELFSERVICE",
                                     "description": {
                                       "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                                      "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrado en modo desatendido de rompefilas.",
+                                      "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando está integrada en modo desatendido de rompefilas.",
                                       "pt": "Configuração do terminal em modo quiosque. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
                                     }
                                   },
                                   {
                                     "title": "UNDEFINED",
                                     "description": {
-                                      "en": "The configuration that the terminal has is not recognized",
-                                      "es": "La configuración que tiene la terminal no es reconocida",
-                                      "pt": "A configuração que o terminal possui não é reconhecida"
+                                      "en": "The configuration that the terminal has is not recognized.",
+                                      "es": "La configuración que tiene la terminal no es reconocida.",
+                                      "pt": "A configuração que o terminal possui não é reconhecida."
                                     }
                                   }
                                 ]
@@ -1485,9 +1485,9 @@
                         {
                           "title": "client_id_required",
                           "description": {
-                            "en": "Invalid Client ID, check that you sent the correct Access Token and try again.",
-                            "es": "Clien ID invalido, revisa que envies el Access Token correcto e intenta nuevamente.",
-                            "pt": "ID de cliente inválido, verifique se você enviou o token de acesso correto e tente novamente."
+                            "en": "Invalid Client ID, check if you have sent the correct Access Token and try again.",
+                            "es": "Client ID invalido, revisa haber enviado el Access Token correcto e intenta nuevamente.",
+                            "pt": "ID de cliente inválido, verifique se você enviou o Access Token correto e tente novamente."
                           }
                         }
                       ]
@@ -1514,9 +1514,9 @@
                         {
                           "title": "not_found",
                           "description": {
-                            "en": "Resource not found, validate the parameters sent and try to send the request again.",
-                            "es": "Recurso no encontrado, valida los parametros enviados e intenta enviar la solicitud de nuevo.",
-                            "pt": "Recurso não encontrado, valide os parâmetros enviados e tente enviar novamente a solicitação."
+                            "en": "Resource not found. Validate the query params sent and try to send the request again.",
+                            "es": "Recurso no encontrado. Valida los query params enviados e intenta enviar la solicitud de nuevo.",
+                            "pt": "Recurso não encontrado. Valide os query params enviados e tente enviar novamente a solicitação."
                           }
                         }
                       ]
@@ -1616,7 +1616,7 @@
         },
         "title": {
           "en": "Get list of terminals",
-          "pt": "Obtenha lista de terminals",
+          "pt": "Obter lista de terminals",
           "es": "Obtener lista de terminals"
         }
       }
@@ -1638,9 +1638,9 @@
                 "terminals":{
                   "type":"array",
                   "description":{
-                    "en":"This node will contain a list of terminals that you want to modify their operating mode.",
-                    "pt":"Este nó conterá uma lista de terminals cujo modo de operação deve ser modificado.",
-                    "es":"Este nodo contendra una lista de terminals que se deseara modificar su modo de operacion."
+                    "en":"This node will contain the list of terminals which operating mode you want to modify.",
+                    "pt":"Este nó conterá uma lista de terminals cujo modo de operação será modificado.",
+                    "es":"Este nodo contendrá la lista de terminals para las que se desea modificar el modo de operación."
                   },
                   "items": {
                     "type": "object",
@@ -1649,33 +1649,33 @@
                         "type": "string",
                         "example": "PAX_A910__SMARTPOS1234345545",
                         "description": {
-                          "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the terminal.",
-                          "es": "Identificador único del terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
+                          "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the physical terminal.",
+                          "es": "Identificador único de la terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera de la terminal física.",
                           "pt": "Identificador exclusivo do terminal. Você pode identificar o temrinal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
                         }
                       },
                       "operating_mode": {
                         "type": "string",
                         "description":{
-                          "en": "Operating mode defined currently for the terminal. It must be one of the following options.",
-                          "es": "Modo en el que se desea que opere la terminal. Debe ser una de las siguientes opciones.",
-                          "pt": "Modo de operação em que o terminal está funcionando atualmente. Deve ser uma das seguintes opções."
+                          "en": "Operating mode desired for the terminal to function. It must be one of the following options:",
+                          "es": "Modo de operación en el que se desea que funcione la terminal. Debe ser una de las siguientes opciones:",
+                          "pt": "Modo de operação no qual você deseja que o terminal funcione. Deve ser uma das seguintes opções:"
                         },
-                        "example": "“PDV” | “STANDALONE” | SELFSERVICE",
+                        "example": "\"PDV\" | \"STANDALONE\" | \"SELFSERVICE\"",
                         "enum": [
                           {
                             "title": "PDV",
                             "description": {
-                              "en": "Point of Sale operating mode. It's when the terminal is integrated with the API",
-                              "es": "Modo operativo Punto de Venta. Es el modo en el que opera la terminal cuando está integrado vía API.",
-                              "pt": "Modo operacional Ponto de Venda. É o forma como o terminal funciona quando integrado via API. "
+                              "en": "Point of Sale (POS) operating mode. It's when the terminal is integrated with the API",
+                              "es": "Modo operativo Punto de Venta (PDV). Es el modo en el que opera la terminal cuando está integrada vía API.",
+                              "pt": "Modo operacional Ponto de Venda (PDV). É o forma como o terminal funciona quando integrado via API. "
                             }
                           },
                           {
                             "title": "STANDALONE",
                             "description": {
                               "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
-                              "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrado vía API.",
+                              "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
                               "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
                             }
                           },
@@ -1683,7 +1683,7 @@
                             "title": "SELFSERVICE",
                             "description": {
                               "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                              "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrado en modo desatendido de rompefilas.",
+                              "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrada en modo desatendido de rompefilas.",
                               "pt": "Configuração do terminal em modo kiosko. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
                             }
                           }
@@ -1711,9 +1711,9 @@
                     "terminals":{
                       "type":"array",
                       "description":{
-                        "en":"This node will contain the terminal's response with its new mode of operation.",
-                        "pt":"Este nó conterá a resposta do terminal com seu novo modo de operação.",
-                        "es":"Este nodo contendra la respuesta del terminal con su nuevo modo de operacion"
+                        "en":"This node will contain the terminal's information with its new operating mode.",
+                        "pt":"Este nó conterá as informações do terminal com seu novo modo de operação.",
+                        "es":"Este nodo contendra la información de la terminal con su nuevo modo de operación."
                       },
                       "items": {
                         "type": "object",
@@ -1722,33 +1722,33 @@
                             "type": "string",
                             "example": "PAX_A910__SMARTPOS1234345545",
                             "description": {
-                              "en": "terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the terminal.",
-                              "es": "Identificador único de la terminal. Podrás identificar el terminal Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
-                              "pt": "Identificador exclusivo do terminal. Você pode identificar o terminal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
+                              "en": "Terminal unique identifier. You can identify the Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the physical terminal.",
+                              "es": "Identificador único de la terminal. Podrás identificar la terminal Point por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
+                              "pt": "Identificador exclusivo do terminal. Você pode identificar o terminal Point pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
                             }
                           },
                           "operating_mode": {
                             "type": "string",
                             "description":{
-                              "en": "Operating mode defined currently for the terminal.",
-                              "es": "Modo en el que se desea que opere la terminal. Debe ser una de las siguientes opciones.",
-                              "pt": "Modo de operação em que o terminal está funcionando atualmente"
+                              "en": "Operating mode defined for the terminal. It can be one of the following options:",
+                              "es": "Modo de operación definido para la terminal. Puede ser una de las siguientes opciones:",
+                              "pt": "Modo de operação definido para o terminal. Pode ser uma das seguintes opções:"
                             },
                             "example": "“PDV” | “STANDALONE” | SELFSERVICE",
                             "enum": [
                               {
                                 "title": "PDV",
                                 "description": {
-                                  "en": "Point of Sale operating mode. It's when the terminal is integrated with the API",
-                                  "es": "Modo operativo Punto de Venta. Es el modo en el que opera la terminal cuando está integrado vía API.",
-                                  "pt": "Modo operacional Ponto de Venda. É o forma como o terminal funciona quando integrado via API. "
+                                  "en": "Point of Sale (POS) operating mode. It's when the terminal is integrated with the API.",
+                                  "es": "Modo operativo Punto de Venta (PDV). Es el modo en el que opera la terminal cuando está integradA vía API.",
+                                  "pt": "Modo operacional Ponto de Venda (PDV). É o forma como o terminal funciona quando integrado via API. "
                                 }
                               },
                               {
                                 "title": "STANDALONE",
                                 "description": {
                                   "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
-                                  "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrado vía API.",
+                                  "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
                                   "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
                                 }
                               },
@@ -1756,7 +1756,7 @@
                                 "title": "SELFSERVICE",
                                 "description": {
                                   "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                                  "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrado en modo desatendido de rompefilas.",
+                                  "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrada en modo desatendido de rompefilas.",
                                   "pt": "Configuração do terminal em modo kiosko. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
                                 }
                               }
@@ -1787,25 +1787,25 @@
                         {
                           "title": "unsupported_site",
                           "description": {
-                            "en": "Site not valid to make the request, check the Access Token you are using and try to execute the request again.",
-                            "es": "Site no valido para hacer la request, revisa si el Access Token que estes usando e intenta ejecutar la peticion nuevamente.",
-                            "pt": "Site inválido para fazer a solicitação, verifique se o Access Token que você está utilizando e tente executar a solicitação novamente."
+                            "en": "Invalid site for this request. Check the sent Access Token and try to execute the request again.",
+                            "es": "Site inválido para hacer la requisición. Revisa el Access Token enviado e intenta ejecutar la solicitud nuevamente.",
+                            "pt": "Site inválido para fazer a solicitação. Verifique o Access Token enviado e tente executar a solicitação novamente."
                           }
                         },
                         {
                           "title": "invalid_payload",
                           "description": {
-                            "en": "Invalid payload, check the fields of the sent payload and send the request again.",
-                            "es": "Payload invalido, revisa los campos del payload enviado y envie la request nuevamente.",
-                            "pt": "Payload inválido, verifique os campos do payload enviado e envie a solicitação novamente."
+                            "en": "Invalid payload. Check the sent fields and try to make the request again.",
+                            "es": "Payload inválido. Revisa los campos enviados e intenta realizar la solicitud nuevamente.",
+                            "pt": "Payload inválido. Verifique os campos enviados e tente fazer a solicitação novamente."
                           }
                         },
                         {
                           "title": "client_id_required",
                           "description": {
-                            "en": "Invalid Client ID, check that you sent the correct Access Token and try again.",
-                            "es": "Clien ID invalido, revisa que envies el Access Token correcto e intenta nuevamente.",
-                            "pt": "ID de cliente inválido, verifique se você enviou o token de acesso correto e tente novamente."
+                            "en": "Invalid Client ID. Check if you have sent the correct Access Token and try again.",
+                            "es": "Client ID invalido. Revisa haber enviado el Access Token correcto e intenta nuevamente.",
+                            "pt": "ID de cliente inválido. Verifique se você enviou o Access Token correto e tente novamente."
                           }
                         }
                       ]
@@ -1832,17 +1832,17 @@
                         {
                           "title": "terminal_not_allowed_action",
                           "description": {
-                            "en": "The terminal used is not valid to perform this action.",
-                            "es": "La terminal usada no es valida para hacer esta accion.",
-                            "pt": "O terminal utilizado não é válido para realizar esta ação."
+                            "en": "The terminal identified in the \"id\" field is not allowed to perform this action.",
+                            "es": "La terminal identificada en el campo \"id\" no permite realizar esta acción.",
+                            "pt": "O terminal identificado no campo \"id\" não permite executar esta ação."
                           }
                         },
                         {
                           "title": "store_pos_not_found",
                           "description": {
-                            "en": "Resource not found, please check the returned message and try submitting the request again.",
-                            "es": "Recurso no encontrado, por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
-                            "pt": "Recurso não encontrado. Revise a mensagem retornada e tente enviar a solicitação novamente."
+                            "en": "The point of sale associated with the terminal could not be found. Please check the returned message and try submitting the request again.",
+                            "es": "La sucursal asociada a la terminal no fue encontrada. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
+                            "pt": "A loja associada ao terminal não foi encontrada. Revise a mensagem retornada e tente enviar a solicitação novamente."
                           }
                         },
                         {
@@ -1877,9 +1877,9 @@
                         {
                           "title": "not_found",
                           "description": {
-                            "en": "Resource not found, validate the parameters sent and try to send the request again.",
-                            "es": "Recurso no encontrado, valida los parametros enviados e intenta enviar la solicitud de nuevo.",
-                            "pt": "Recurso não encontrado, valide os parâmetros enviados e tente enviar novamente a solicitação."
+                            "en": "Resource not found. Validate the parameters sent and try the request again.",
+                            "es": "Recurso no encontrado. Valida los parametros enviados e intenta realizar la solicitud de nuevo.",
+                            "pt": "Recurso não encontrado. Valide os parâmetros enviados e tente realizar novamente a solicitação."
                           }
                         }
                       ]
