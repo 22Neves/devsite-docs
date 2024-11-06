@@ -234,7 +234,7 @@ func main() {
 
 	request := payment.Request{
 		TransactionAmount: 5000,
-               Description: "Product title",
+    Description: "Product title",
 		PaymentMethodID:   "fintoc",
 		Payer: &payment.PayerRequest{
 			Email: "test_user_123@testuser.com",
