@@ -6,7 +6,7 @@ To integrate the Split payments solution using the Checkout Pro or the Checkout 
 >
 > Important
 >
-> This documentation is specific to the 1:1 Split payments model. If you need information about the 1:N model, we recommend contacting our sales team for more details. Additionally, if it is necessary to make configurations regarding the commission release date (marketplace fee or application fee), contact your **assisted commercial executive**.
+> This documentation is specific to the 1:1 Split payments model. The 1:N model is available only to sellers with an advised portfolio who are in contact with the Mercado Pago commercial team. Additionally, if it is necessary to make configurations regarding the commission release date (marketplace fee or application fee), contact your **assisted commercial executive**.
 
 | Requirement                      | Description                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

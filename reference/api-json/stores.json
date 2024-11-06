@@ -176,7 +176,7 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Example Street Name, 3039, Buenos Aires, Buenos Aires.",
+                          "example": "Example Street Name, 0123, City name, State name.",
                           "description": {
                             "es": "Campo que devuelve la dirección completa de la tienda creada.",
                             "pt": "Campo que retorna o endereço completo da loja criada.",
@@ -433,9 +433,9 @@
                     "type": "object",
                     "required": true,
                     "description": {
-                      "en": "Store location.",
-                      "pt": "Localização da Loja",
-                      "es": "Ubicación de la Sucursal"
+                      "en": "Store location. It is essential that this field is filled with the accurate location data of the store, as this can prevent issues related to tax collection. Additionally, correct completion ensures that your store has visibility on the map of stores that accept payments through the Mercado Pago app, which can increase your revenue.",
+                      "pt": "Localização da loja. É fundamental que este campo seja preenchido com os dados reais da localização da loja, pois isso pode evitar problemas relacionados à cobrança de impostos. Além disso, o preenchimento correto garante que sua loja tenha visibilidade no mapa de lojas que aceitam pagamentos pelo app do Mercado Pago, o que pode aumentar sua receita.",
+                      "es": "Ubicación de la sucursal. Es fundamental que este campo se complete con los datos reales de la ubicación de la tienda, ya que esto puede evitar problemas relacionados con la cobranza de impuestos. Además, un llenado correcto garantiza que su sucursal tenga visibilidad en el mapa de tiendas que aceptan pagos a través de la app de Mercado Pago, lo que puede aumentar sus ingresos."
                     },
                     "properties": {
                       "street_number": {
@@ -445,7 +445,7 @@
                           "pt": "Número da rua",
                           "es": "Número de la calle"
                         },
-                        "example": "3039"
+                        "example": "0123"
                       },
                       "street_name": {
                         "type": "string",
@@ -463,7 +463,7 @@
                           "pt": "Cidade.",
                           "es": "Ciudad."
                         },
-                        "example": "Buenos Aires"
+                        "example": "City name."
                       },
                       "state_name": {
                         "type": "string",
@@ -472,7 +472,7 @@
                           "pt": "Estado.",
                           "es": "Provincia."
                         },
-                        "example": "Buenos Aires."
+                        "example": "State name."
                       },
                       "latitude": {
                         "type": "number",
@@ -481,7 +481,7 @@
                           "pt": "Latitude.",
                           "es": "Latitud."
                         },
-                        "example": -32.8897322
+                        "example": 27.175193925922862
                       },
                       "longitude": {
                         "type": "number",
@@ -490,7 +490,7 @@
                           "pt": "Longitude.",
                           "es": "Longitud."
                         },
-                        "example": -68.8443275
+                        "example": 78.04213533235064
                       },
                       "reference": {
                         "type": "string",
@@ -624,7 +624,7 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Example Street Name, 3039, Buenos Aires, Buenos Aires.",
+                          "example": "Example Street Name, 0123, City name, State name.",
                           "description": {
                             "es": "Campo que devuelve la dirección completa de la tienda creada.",
                             "pt": "Campo que retorna o endereço completo da loja criada.",
@@ -633,7 +633,7 @@
                         },
                         "latitude": {
                           "type": "number",
-                          "example": -32.8897322,
+                          "example": 27.175193925922862,
                           "description": {
                             "es": "Latitud.",
                             "pt": "Latitude.",
@@ -642,7 +642,7 @@
                         },
                         "longitude": {
                           "type": "number",
-                          "example": -68.8443275,
+                          "example": 78.04213533235064,
                           "description": {
                             "es": "Longitud.",
                             "pt": "Longitude.",
@@ -1134,7 +1134,7 @@
                               "properties": {
                                 "address_line": {
                                   "type": "string",
-                                  "example": "Example Street Name, 3039, Buenos Aires, Buenos Aires.",
+                                  "example": "Example Street Name, 0123, City name, State name.",
                                   "description": {
                                     "es": "Campo que devuelve la dirección completa de la tienda creada.",
                                     "pt": "Campo que retorna o endereço completo da loja criada.",
@@ -1152,7 +1152,7 @@
                                 },
                                 "latitude": {
                                   "type": "number",
-                                  "example": -32.8897322,
+                                  "example": 27.175193925922862,
                                   "description": {
                                     "es": "Latitud",
                                     "pt": "Latitude",
@@ -1161,7 +1161,7 @@
                                 },
                                 "longitude": {
                                   "type": "number",
-                                  "example": -68.8443275,
+                                  "example": 78.04213533235064,
                                   "description": {
                                     "es": "Longitud",
                                     "pt": "Longitude",
@@ -1371,7 +1371,7 @@
                       "pt": "Nome da loja",
                       "es": "Nombre de la Sucursal"
                     },
-                    "example": "Sucursal Instore 2"
+                    "example": "Sucursal Instore"
                   },
                   "business_hours": {
                     "description": {
@@ -1452,14 +1452,14 @@
                       "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
                       "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                     },
-                    "example": "SUC002"
+                    "example": "SUC001"
                   },
                   "location": {
                     "type": "object",
                     "description": {
-                      "en": "Store location.",
-                      "pt": "Localização da Loja",
-                      "es": "Ubicación de la Sucursal"
+                      "en": "Store location. It is essential that this field is filled with the accurate location data of the store, as this can prevent issues related to tax collection. Additionally, correct completion ensures that your store has visibility on the map of stores that accept payments through the Mercado Pago app, which can increase your revenue.",
+                      "pt": "Localização da loja. É fundamental que este campo seja preenchido com os dados reais da localização da loja, pois isso pode evitar problemas relacionados à cobrança de impostos. Além disso, o preenchimento correto garante que sua loja tenha visibilidade no mapa de lojas que aceitam pagamentos pelo app do Mercado Pago, o que pode aumentar sua receita.",
+                      "es": "Ubicación de la sucursal. Es fundamental que este campo se complete con los datos reales de la ubicación de la tienda, ya que esto puede evitar problemas relacionados con la cobranza de impuestos. Además, un llenado correcto garantiza que su sucursal tenga visibilidad en el mapa de tiendas que aceptan pagos a través de la app de Mercado Pago, lo que puede aumentar sus ingresos."
                     },
                     "properties": {
                       "street_number": {
@@ -1487,7 +1487,7 @@
                           "pt": "Cidade.",
                           "es": "Ciudad."
                         },
-                        "example": "Buenos Aires"
+                        "example": "City name."
                       },
                       "state_name": {
                         "type": "string",
@@ -1496,7 +1496,7 @@
                           "pt": "Estado.",
                           "es": "Provincia."
                         },
-                        "example": "Buenos Aires."
+                        "example": "State name."
                       },
                       "latitude": {
                         "type": "number",
@@ -1505,7 +1505,7 @@
                           "pt": "Latitude",
                           "es": "Latitud"
                         },
-                        "example": -32.8897322
+                        "example": 27.175193925922862
                       },
                       "longitude": {
                         "type": "number",
@@ -1514,7 +1514,7 @@
                           "pt": "Longitude",
                           "es": "Longitud"
                         },
-                        "example": -68.8443275
+                        "example": 78.04213533235064
                       },
                       "reference": {
                         "type": "string",
@@ -1617,7 +1617,7 @@
                       "properties": {
                         "address_line": {
                           "type": "string",
-                          "example": "Example Street Name, 3039, Buenos Aires, Buenos Aires.",
+                          "example": "Example Street Name, 0123, City name, State name.",
                           "description": {
                             "es": "Campo que devuelve la dirección completa de la tienda creada.",
                             "pt": "Campo que retorna o endereço completo da loja criada.",
@@ -1626,7 +1626,7 @@
                         },
                         "latitude": {
                           "type": "number",
-                          "example": -32.8897322,
+                          "example": 27.175193925922862,
                           "description": {
                             "es": "Latitude.",
                             "pt": "Latitude.",
@@ -1635,7 +1635,7 @@
                         },
                         "longitude": {
                           "type": "number",
-                          "example": -68.8443275,
+                          "example": 78.04213533235064,
                           "description": {
                             "es": "Longitude.",
                             "pt": "Longitude.",

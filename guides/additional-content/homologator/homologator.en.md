@@ -59,13 +59,29 @@ You can perform a manual evaluation of your integration, as long as your integra
 To manually measure the quality of your integration, access the [Your Integrations](/developers/panel/app) menu. There, you will have 2 options to access the measurement tool:
 
  * You can locate the desired application and, from the **">"** button, enter the screen from which you can evaluate your integration.
+----[mla, mlm, mlu, mco, mlc, mpe]----
   ![Your integrations](/homologator/integration-quality-your-integrations-es.png)
+------------ 
+----[mlb]----
+ ![Suas integrações](/homologator/integration-quality-your-integrations-pt.png)
+------------
  * You can select the desired application and, from the [Application details](/developers/en/docs/your-integrations/application-details), click **Start measurement** within the "Status" panel, for a first measurement, or **Measure again** for a re-evaluation if you've done one before.
+----[mla, mlm, mlu, mco, mlc, mpe]----
   ![Application Details](/homologator/integration-quality-aplication-details-es.png)
-
+------------ 
+----[mlb]----
+ ![Detalhes da sua aplicação](/homologator/integration-quality-aplication-details-pt.png)
+------------
 Once inside the **"Measure the Quality of Your Integration"** section, follow the steps below.
 
 1. Enter the `payment ID` of the last productive payment made with [production credentials](/developers/en/docs/your-integrations/credentials) of the application you wish to evaluate. 
+
+----[mla, mlm, mlu, mco, mlc, mpe]----
+ ![homologación manual](/homologator/integration-quality-payment-id-es.png)
+------------ 
+----[mlb]----
+ ![medição manual](/homologator/integration-quality-payment-id-pt.png)
+------------
 
 2. Finally, click on **Measure quality** again.
 
@@ -75,7 +91,12 @@ By doing this, the manually quality measurement will be performed. Access [How t
 
 Whether you conducted a manual quality measurement or received the results of your automatic evaluation, you will find the following screen in the [Application details](/developers/panel/app):
 
+----[mla, mlm, mlu, mco, mlc, mpe]----
 ![measurement results](/homologator/integration-quality-results-es.png)
+------------ 
+----[mlb]----
+![resultados da medição](/homologator/integration-quality-results-pt.png)
+------------
 
 1. **Score**: indicates how safe your application's configuration is and if it is aligned with Mercado Pago's best integration practices. The **minimum score** for your application to meet the requirements is **73**, but **we recommend achieving 100 points to enhance the user experience and increase the payment approval rate**.
 2. **Last Measurement Date** and **payment ID**: indicates the day and time of the last measurement and the `payment ID` on which the application's quality score is based.

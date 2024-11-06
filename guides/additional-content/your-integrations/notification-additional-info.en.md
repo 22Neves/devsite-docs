@@ -127,6 +127,33 @@ In cases where notifications for the topic `topic_claims_integration_wh` have be
 | `type` | Type of notification received, according to the previously selected topic. In this case, it will always be `claim`. |
 | `user_id `| User identifier for whom the notification is sent. |
 
+## Chargebacks
+
+In cases where notifications for the topic `topic_chargebacks_wh` have been activated, a Webhooks notification will be sent when a chargeback is initiated or its status is changed, as shown below:
+
+```json
+{
+    "actions":["changed_case_status"],
+    "api_version":"v1",
+    "application_id":9007201037432480,
+    "data":{
+        "checkout":"PRO",
+        "date_updated":"0001-01-01T00:00:00Z",
+        "id":217000061307271000,
+        "payment_id":81034165129,
+        "product_id":"BC32A57TRPP001U8NHHG",
+        "site_id":"MLA",
+        "transaction_intent_id":""
+        },
+    "date_created":"2024-07-02T22:03:24-04:00",
+    "id":114544942708,
+    "live_mode":true,
+    "type":"topic_chargebacks_wh",
+    "user_id":425424311,
+    "version":1720427447
+}
+```
+
 ## Offline payment methods
 
 If you have integrated payments with offline payment methods and configured your notifications with the payments topic, you should know that all changes in payment status will be notified to you.

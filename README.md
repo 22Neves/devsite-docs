@@ -30,9 +30,8 @@ Pagina Principal          Jerarquía               Identificador     Idioma  For
 4. Crear un `pull Request` al `branch` `development`, de preferencia proveer contenido traducido en los lenguajes soportados esto permitirá que tu contribución pueda verse reflejada en el sitio en menor tiempo.
 5. El contenido será revisado y comentado por nuestro equipo, puede que te solicitemos algunas correcciones antes de aprobar la contribución.
 
-
-
 ## ¿En qué puedo contribuir? ##
+
 - **Traducciones**, Los issues pendientes de traduccion serán marcados con el Tag (Missing Translation) para su fácil identificacion.
 - **Corrección de estilo**, Si identificas algun error gramatical o el contenido se muestra poco claro y crees que puede ser mejorado, tu ayuda será bien recibida.
 - **Corrección de Snippets**, Si identificas algun snippet de código que no está funcionando adecuadamente o no retorna los resultados que se indican en la documentación los ajustes o correcciones son bienvenidos.
