@@ -7,9 +7,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "Check all the information related to a chargeback for your product or service with the ID of the chargeback you want",
-          "pt": "Veja todas as informações de operações contestadas de seu produto ou serviço com a identificação do estorno que você deseja",
-          "es": "Consulta toda la información de un contracargo de tu producto o servicio con el ID del contracargo que quieras"
+          "en": "This endpoint allows you to check the status of a payment chargeback iniciated by a payer. You must inform the ID of the chargeback that was notified to you and, if the request is correct, a response with status code 200 and all the information related to it will be returned",
+          "pt": "Este endpoint permite consultar o estado do processo de desconhecimento de um pagamento por parte de um pagador. Você deverá informar o ID do estorno que lhe foi notificado e, caso a solicitação esteja correta, lhe será devolvida uma resposta com status code 200 e todas as informações relacionadas a ele",
+          "es": "Este endpoint permite consultar el estado del proceso de desconocimiento de un pago por parte de un pagador. Deberás informar el ID del contracargo que te fue notificado y, si la solicitud es correcta, te será devuelta una respuesta con status code 200 y toda la información relativa al mismo"
         },
         "parameters": [
           {
