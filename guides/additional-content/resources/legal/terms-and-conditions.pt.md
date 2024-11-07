@@ -361,13 +361,12 @@ Qualquer pessoa que não aceitar estes Termos e Condições para Desenvolvedores
 
 **1.11 Mercado Pago:** É o Mercadopago.com Representações Ltda.
 
-**1.12 Responsable de Tratamiento:** Refere-se à pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador;
+**1.12 Responsável pelo tratamento:** Refere-se à pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador;
 **1.13 Termos e Condições:** São estes Termos e Condições para Desenvolvedores do Mercado Pago, por meio dos quais o Mercado Pago disponibiliza aos Desenvolvedores a API, para que, a partir de seu uso ou aplicação, sejam desenvolvidos Aplicativos que empreguem conteúdos do Site, sejam integrados ou interajam com ele e/ou com os serviços prestados pelo Mercado Pago ou facilitem o seu uso. 
-
 
 **1.14 Titular de Datos:** pessoa natural a quem se referem os dados pessoais que são objeto de tratamento nos termos dos presentes Termos e Condições e quem tem direitos sobre eles, de acordo com as disposições da Lei de Proteção de Dados Pessoais.
 
-**1.15 Tratar, tratamiento de Datos:** significa qualquer operação efectuada sobre os Dados Pessoais, incluindo mas não se limitando à recolha, consulta, receção, utilização, transferência, recuperação, extração, manipulação, registo, organização, armazenamento, manutenção, alojamento, adaptação, alteração, posse, divulgação, difusão (por transmissão, difusão ou qualquer outra forma de disponibilização), bloqueio, apagamento, destruição, venda ou licenciamento.
+**1.15 Tratar, tratamento de Dados:** significa qualquer operação efectuada sobre os Dados Pessoais, incluindo mas não se limitando à recolha, consulta, receção, utilização, transferência, recuperação, extração, manipulação, registo, organização, armazenamento, manutenção, alojamento, adaptação, alteração, posse, divulgação, difusão (por transmissão, difusão ou qualquer outra forma de disponibilização), bloqueio, apagamento, destruição, venda ou licenciamento.
 
 **1.16 Website:** É o website do Mercado Pago Developers (disponibilizado no URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers) e todas suas versões pertencentes ao Mercado Pago e/ou ao Mercado Livre.
 
@@ -576,7 +575,7 @@ O Desenvolvedor, sem caráter taxativo, deverá:
 
 **Incidentes**
 
-No momento que tomar conhecimento de um incidente de segurança cibernética, o Desenvolvedor deverá notificar o Mercado Pago através [deste formulário](https://docs.google.com/forms/d/e/1FAIpQLSdnyVbe99JjH-_wafeFS7yI097YK0a2_1UcY4-agGR6gDAL0Q/viewform?usp=sf_link), de maneira imediata, dentro de um prazo que não poderá ultrapassar, em nenhum caso, as vinte e quatro (24) horas, detalhando as circunstâncias e particularidades do caso e incluindo todas as informações disponíveis e relevantes. Se couber, dentro das vinte e quatro (24) horas do recebimento da referida notificação, o Desenvolvedor deverá fornecer ao Mercado Pago uma cópia de toda comunicação escrita emanada de entidades governamentais e/ou reguladoras e de toda demanda e/ou petição apresentada perante a Justiça e/ou junto a entidades governamentais e/ou reguladoras, que tenham relação ou sejam originadas a partir do incidente.
+No momento que tomar conhecimento de um incidente de segurança cibernética, o Desenvolvedor deverá notificar o Mercado Pago através [deste formulário](https://docs.google.com/forms/d/e/1FAIpQLSdnyVbe99JjH-_wafeFS7yI097YK0a2_1UcY4-agGR6gDAL0Q/viewform?usp%20=sf_link), de maneira imediata, dentro de um prazo que não poderá ultrapassar, em nenhum caso, as vinte e quatro (24) horas, detalhando as circunstâncias e particularidades do caso e incluindo todas as informações disponíveis e relevantes. Se couber, dentro das vinte e quatro (24) horas do recebimento da referida notificação, o Desenvolvedor deverá fornecer ao Mercado Pago uma cópia de toda comunicação escrita emanada de entidades governamentais e/ou reguladoras e de toda demanda e/ou petição apresentada perante a Justiça e/ou junto a entidades governamentais e/ou reguladoras, que tenham relação ou sejam originadas a partir do incidente.
 
 <u>Medidas corretivas</u>. Caso ocorra um incidente de segurança cibernética, o Desenvolvedor deverá adotar as ações de correção e de ressarcimento que o Mercado Pago pudesse razoavelmente solicitar e que resultem habituais para as circunstâncias do caso (por exemplo: encaminhar comunicações de incumprimento aos indivíduos afetados), e continuar com as fases de detecção, análise e mitigação, e erradicação e recuperação; sendo que, em cada uma das fases, o Mercado Pago deverá ser notificado sobre o avanço das medidas implementadas, bem como sobre a análise realizada que explique a abrangência do incidente.
 
@@ -602,7 +601,7 @@ RESSALVADO O DISPOSTO EXPRESSAMENTE NOS TERMOS E CONDIÇÕES, E NA MEDIDA MÁXIM
 
 O MERCADO PAGO NÃO DECLARA NEM GARANTE QUE O WEBSITE, OS SERVIÇOS DO MERCADO LIVRE E/OU DO MERCADO PAGO E A API FUNCIONEM DE FORMA SEGURA. A API E TODOS OS PRODUTOS E SERVIÇOS FORNECIDOS PELO MERCADO PAGO EM DECORRÊNCIA DESTES TERMOS E CONDIÇÕES SÃO FORNECIDOS “NO ESTADO EM QUE SE ENCONTRAM”, “COM TODOS OS DEFEITOS” E “CONFORME DISPONIBILIDADE”. OS DESENVOLVEDORES ASSUMEM O RISCO DE SUA UTILIZAÇÃO E RECONHECEM E CONCORDAM QUE NÃO ACEITARAM ESTES TERMOS E CONDIÇÕES COM BASE EM QUALQUER GARANTIA OU DECLARAÇÃO QUE NÃO ESTEJA CONTIDA NESSES TERMOS. 
 
-O MERCADO LIVRE E/OU O MERCADO PAGO NÃO SERÃO RESPONSÁVEIS POR DANOS EMERGENTES, DIRETOS, INDIRETOS, NEM LUCRO CESSANTE OU PERDA DE CHANCES, NEM SERÃO OBRIGADOA AO PAGAMENTO DE INDENIZAÇÃO DE QUALQUER NATUREZA. 
+O MERCADO LIVRE E/OU O MERCADO PAGO NÃO SERÃO RESPONSÁVEIS POR DANOS EMERGENTES, DIRETOS, INDIRETOS, NEM LUCRO CESSANTE OU PERDA DE CHANCES, NEM SERÃO OBRIGADOS AO PAGAMENTO DE INDENIZAÇÃO DE QUALQUER NATUREZA. 
 
 OS DESENVOLVEDORES RECONHECEM E ACEITAM QUE AS LIMITAÇÕES DE RESPONSABILIDADE AJUSTADAS NESTES TERMOS SÃO RAZOÁVEIS, DADO QUE CONSTITUEM UM ELEMENTO ESSENCIAL PARA MANTER AS CONDIÇÕES ECONÔMICAS DA RELAÇÃO ENTRE O MERCADO PAGO E O DESENVOLVEDOR.
 
@@ -619,7 +618,7 @@ As “Informações Confidenciais” incluem todas as informações fornecidas a
 
 ## 15. Término
 
-O Mercado Pago reserva-se o direito de revogar, suspender ou interromper, total ou parcialmente, a licença de uso e acesso à API e qualquer outro direito conferido sob estes Termos e Condições, de forma imotivada e a qualquer tempo, independendo de notificação e sem que isso gere responsabilidade em relação ao Desenvolvedor, seus fornecedores, os Usuários do Aplicativo ou terceiros.
+O Mercado Pago reserva-se o direito de revogar, suspender ou interromper, total ou parcialmente, a licença de uso e acesso à API e qualquer outro direito conferido sob estes Termos e Condições, de forma imotivada e a qualquer tempo, independente de notificação e sem que isso gere responsabilidade em relação ao Desenvolvedor, seus fornecedores, os Usuários do Aplicativo ou terceiros.
 
 Ainda, se o Mercado Pago razoavelmente entender que um Desenvolvedor ou seus fornecedores de serviços descumpriram os Termos e Condições, o Mercado Pago poderá adotar todas as medidas que considerar apropriadas, tais como, por exemplo, realizar uma advertência, iniciar uma investigação ou suspender ou revogar, sem aviso prévio, a licença de uso da API. 
 
@@ -635,7 +634,7 @@ Este acordo será regido em todos seus termos pelas leis vigentes na República 
 
 17.2 Se o uso da API for feito em conjunto com o uso de outros serviços fornecidos pelo Mercado Pago, os termos e condições e políticas do Mercado Pago aplicáveis a esses serviços serão, ainda, aplicáveis e, portanto, deverão ser respeitados pelos Desenvolvedores.
 
-17.3 O Mercado Livre e/ou o Mercado Pago poderão utilizar os dados de contato fornecidos pelos Desenvolvedores para fins de encaminhar a eles informações sobre o Mercado Livre e/ou o Mercado Pago, o website ou a API ou quaisquer informações que o Mercado Livre e/ou o Mercado Pago entenderem que possam ser de seu interesse. Os Desenvolvedores autorizam o Mercado Libre e/ou o Mercado Pago a coletar, armazenar, utilizar e processar quaisquer informações que os Desenvolvedores lhe forneçam de acordo com as Políticas de Privacidade do Mercado Livre e/ou do Mercado Pago.
+17.3 O Mercado Livre e/ou o Mercado Pago poderão utilizar os dados de contato fornecidos pelos Desenvolvedores para fins de encaminhar a eles informações sobre o Mercado Livre e/ou o Mercado Pago, o website ou a API ou quaisquer informações que o Mercado Livre e/ou o Mercado Pago entenderem que possam ser de seu interesse. Os Desenvolvedores autorizam o Mercado Livre e/ou o Mercado Pago a coletar, armazenar, utilizar e processar quaisquer informações que os Desenvolvedores lhe forneçam de acordo com as Políticas de Privacidade do Mercado Livre e/ou do Mercado Pago.
 
 17.4 Toda notificação realizada sob estes Termos e Condições poderá ser encaminhada por e-mail, a menos que haja disposição contrária nestes termos.
 
