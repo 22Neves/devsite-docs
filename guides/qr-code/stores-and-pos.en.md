@@ -50,5 +50,3 @@ Go to [Create POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/ref
 > Note
 >
 > After the Point of Sale creation, you will see the QR files in the `Response` section, with other relevant data.
-
-If you wish, you can check our [tutorial videos on how to create a store and a POS](/developers/en/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

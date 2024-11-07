@@ -1,4 +1,3 @@
-
 ----[mla]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
@@ -341,7 +340,7 @@ Qualquer pessoa que não aceitar estes Termos e Condições para Desenvolvedores
  
 **1.1 API:** É a Interface de Programação de Aplicativos do Mercado Pago e quaisquer ferramentas disponibilizadas aos Desenvolvedores. 
  
-**1.2 Aplicativo:** É o aplicativo de software, o website ou outra interface que o Desenvolvedor desenvolver, possuir ou operar para interagir com a API, com o Website e/ou com os serviços prestados pelo Mercado Pago.
+**1.2 Aplicativo:** É o aplicativo de software, o website ou outra interface que o Desenvolvedor desenvolver, possuir ou operar para interagir com a API, com o website e/ou com os serviços prestados pelo Mercado Pago.
  
 **1.3 Chaves de Acesso:** São as chaves de segurança confidenciais fornecidas ao Desenvolvedor pelo Mercado Pago para a utilização da API, tais como o nome de Usuário do Desenvolvedor, sua chave de acesso ao Mercado Pago e a senha de identificação do Aplicativo atribuída automaticamente pelo Mercado Pago, assim como aquelas compartilhadas por terceiros aos fins de realizar desenvolvimentos para essas contas. 
  
@@ -384,7 +383,7 @@ Qualquer pessoa que não aceitar estes Termos e Condições para Desenvolvedores
 
 O Mercado Pago confere aos Desenvolvedores, enquanto fizerem uso da API, uma licença limitada, não exclusiva, pessoal, revogável e não transferível de uso da API, apenas para os fins listados abaixo e sujeita às limitações estabelecidas nestes Termos e Condições: 
 
-2.1.1 Facilitar, aprimorar e/ou potencializar o uso e as funcionalidades do Website e dos serviços prestados pelo Mercado Pago;
+2.1.1 Facilitar, aprimorar e/ou potencializar o uso e as funcionalidades do website e dos serviços prestados pelo Mercado Pago;
 
 2.1.2 Permitir ao seu Aplicativo interagir com o Conteúdo do Mercado Pago, para obter as informações necessárias para facilitar seu uso pelos Usuários do Aplicativo. 
 
@@ -404,7 +403,7 @@ O Mercado Pago poderá limitar discricionariamente a quantidade de chamadas de A
 
 ### 2.4 Aplicativos
 
-Os Desenvolvedores poderão desenvolver, exibir ou distribuir Aplicativos que interajam com a API, com o Website ou com o Conteúdo do Mercado Pago. Cada Desenvolvedor será o único responsável perante os Usuários do Aplicativo ou qualquer terceiro pelos Aplicativos que desenvolver, assim como por seu funcionamento, uso e respectivas consequências. Os Aplicativos deverão observar e cumprir toda a normativa aplicável em cada jurisdição onde seu uso for permitido. 
+Os Desenvolvedores poderão desenvolver, exibir ou distribuir Aplicativos que interajam com a API, com o website ou com o Conteúdo do Mercado Pago. Cada Desenvolvedor será o único responsável perante os Usuários do Aplicativo ou qualquer terceiro pelos Aplicativos que desenvolver, assim como por seu funcionamento, uso e respectivas consequências. Os Aplicativos deverão observar e cumprir toda a normativa aplicável em cada jurisdição onde seu uso for permitido. 
 
 O Mercado Pago não irá recomendar, fazer referência a, controlar, revisar, administrar, patrocinar, aprovar, garantir ou endossar os Aplicativos. 
 
@@ -412,7 +411,7 @@ Os Desenvolvedores deverão abster-se de incluir no título pelo qual o Aplicati
 
 Os Desenvolvedores reconhecem e aceitam que o Mercado Pago poderá desenvolver produtos, serviços ou aplicativos que possam concorrer com os Aplicativos ou qualquer outro produto ou serviço desenvolvido pelos Desenvolvedores. 
 
-Os Desenvolvedores autorizam o Mercado Pago a: (i) realizar cópias, modificações, distribuição ou testes internos do Aplicativo ou outros processos que o Mercado Pago considere necessários; e (ii) exibir no Website ou qualquer outro documento, por qualquer outro meio, imagens ligadas ao conteúdo ou funcionamento do Aplicativo.
+Os Desenvolvedores autorizam o Mercado Pago a: (i) realizar cópias, modificações, distribuição ou testes internos do Aplicativo ou outros processos que o Mercado Pago considere necessários; e (ii) exibir no website ou qualquer outro documento, por qualquer outro meio, imagens ligadas ao conteúdo ou funcionamento do Aplicativo.
 
 ## 3. Certificações
 
@@ -452,7 +451,7 @@ O Mercado Pago poderá revogar a licença de uso prevista nesta cláusula, a qua
 
 Os Desenvolvedores conferem ao Mercado Pago uma licença de uso não exclusiva, gratuita, sem limitação territorial, temporal ou de qualquer outra natureza para que, a seu exclusivo critério, utilize os nomes comerciais, marcas, logomarcas, desenhos e nomes de domínio ou de titularidade dos Desenvolvedores (as “Marcas dos Desenvolvedores”), para fins de promover ou divulgar a participação deles como Desenvolvedores e/ou divulgar a existência do Aplicativo.
 
-Quando um Desenvolvedor solicitar ao Mercado Pago a inclusão de um Aplicativo no Website ou a hospedagem de um Aplicativo pelo Mercado Pago, o Desenvolvedor estará autorizando o Mercado Pago para que: (i) utilize as Marcas dos Desenvolvedores; (ii) hospede o Aplicativo, ofereça links para ele ou o incorpore de qualquer outra forma aos serviços prestados pelo Mercado Pago; (iii) realize cópias, modificações, distribuição, testes internos ou outros processos que Mercado Pago considere necessários; e (iv) exiba no Website ou qualquer outro website ou outro documento, imagens ligadas ao conteúdo ou funcionamento do Aplicativo. 
+Quando um Desenvolvedor solicitar ao Mercado Pago a inclusão de um Aplicativo no website ou a hospedagem de um Aplicativo pelo Mercado Pago, o Desenvolvedor estará autorizando o Mercado Pago para que: (i) utilize as Marcas dos Desenvolvedores; (ii) hospede o Aplicativo, ofereça links para ele ou o incorpore de qualquer outra forma aos serviços prestados pelo Mercado Pago; (iii) realize cópias, modificações, distribuição, testes internos ou outros processos que Mercado Pago considere necessários; e (iv) exiba no website ou qualquer outro website ou outro documento, imagens ligadas ao conteúdo ou funcionamento do Aplicativo. 
 
 ## 5. Conteúdo do Mercado Pago
 
@@ -514,21 +513,21 @@ D. Comercializar, distribuir, copiar, reproduzir ou armazenar o Conteúdo do Mer
 
 E. Modificar, desmontar ou descompilar a API ou o Conteúdo do Mercado Pago, realizar engenharia reversa, interferir ou alterar a API ou os servidores ou redes que fornecem a API ou realizar quaisquer outras alterações. Tampouco poderão contornar limitações técnicas nem desabilitar, alterar ou tentar evitar qualquer mecanismo que limite o uso da API. 
 
-F. Utilizar robôs, harvesters, spiders, scraping ou outra tecnologia para acessar o Conteúdo do Mercado Pago ou o Website ou os serviços prestados pelo Mercado Pago, ou utilizá-los para obter quaisquer informações que não sejam fornecidas pelo Mercado Pago em decorrência destes Termos e Condições. 
+F. Utilizar robôs, harvesters, spiders, scraping ou outra tecnologia para acessar o Conteúdo do Mercado Pago ou o website ou os serviços prestados pelo Mercado Pago, ou utilizá-los para obter quaisquer informações que não sejam fornecidas pelo Mercado Pago em decorrência destes Termos e Condições. 
 
 G. Criar, conscientemente, um Aplicativo que possa ser utilizado para infringir os Termos e Condições Gerais ou qualquer outra política do Mercado Pago, assim como qualquer lei aplicável. 
 
-H. Utilizar a API de forma tal que exceda um volume de pedidos razoável, constitua abuso ou uso excessivo, sobrecarregue, interfira ou prejudique de qualquer maneira o Website, os serviços do Mercado Pago e/ou suas redes. 
+H. Utilizar a API de forma tal que exceda um volume de pedidos razoável, constitua abuso ou uso excessivo, sobrecarregue, interfira ou prejudique de qualquer maneira o website, os serviços do Mercado Pago e/ou suas redes. 
 
-I. Permitir que um Aplicativo, ou a utilização da API ou do Conteúdo do Mercado Pago por um Aplicativo: (i) seja falso, incompleto, impreciso ou enganoso; (ii) infrinja direitos de terceiros, incluindo, entre outros, direitos de autor, patentes, marcas, segredos comerciais ou outros direitos de propriedade intelectual, ou direitos de intimidade de terceiros ou de privacidade de dados; (iii) infrinja qualquer lei, norma, portaria, contrato, regulamento aplicável ou prática geralmente aceita na atividade que o Desenvolvedor realize ou na que o Aplicativo utilize (ex. aquelas relativas ao comércio e exportação, os serviços financeiros e a indústria dos cartões de crédito e de débito, a proteção ao consumidor, a concorrência desleal, a discriminação ou a falsa publicidade); (iv) seja difamatória ou ameaçadora; (v) contenha vírus ou outras rotinas de programação de computadores que possam danificar, interferir, interceptar ou expropriar qualquer sistema ou conjunto de dados; (vi) prejudique, de qualquer forma, o funcionamento do Website e/ou dos serviços prestados pelo Mercado Pago ou interfira nos mecanismos de segurança, identificação e autenticação empregados pelo Mercado Pago para o Website e/ou seus serviços; (vii) gere ou possa gerar ao Mercado Pago qualquer responsabilidade ou lhe provoque perda total ou parcial dos serviços de seus fornecedores de serviços de Internet ou outros fornecedores; (viii) infrinja as normas PCI_DSS ou capture e/ou armazene dados de transações realizadas pelos Usuários do Mercado Pago com cartões de crédito ou débito ou informações financeiras desses usuários, o que envolve a proibição expressa e irrestrita de armazenar informações de cartões de crédito ou débito, dados dos titulares de cartões, códigos de segurança, etc. em qualquer base de dados, cofre, website, data warehouse ou qualquer outro tipo de armazenamento que seja da propriedade do Desenvolvedor ou de terceiros; (ix) capture ou armazene chaves de segurança dos Usuários do Mercado Pago, ou números de documentos de identidade, de carteiras de habilitação ou da Previdência de uma forma não autorizada nestes Termos e Condições ou nos Termos e Condições Gerais ou nas Políticas de Privacidade do Mercado Livre e do Mercado Pago.
+I. Permitir que um Aplicativo, ou a utilização da API ou do Conteúdo do Mercado Pago por um Aplicativo: (i) seja falso, incompleto, impreciso ou enganoso; (ii) infrinja direitos de terceiros, incluindo, entre outros, direitos de autor, patentes, marcas, segredos comerciais ou outros direitos de propriedade intelectual, ou direitos de intimidade de terceiros ou de privacidade de dados; (iii) infrinja qualquer lei, norma, portaria, contrato, regulamento aplicável ou prática geralmente aceita na atividade que o Desenvolvedor realize ou na que o Aplicativo utilize (ex. aquelas relativas ao comércio e exportação, os serviços financeiros e a indústria dos cartões de crédito e de débito, a proteção ao consumidor, a concorrência desleal, a discriminação ou a falsa publicidade); (iv) seja difamatória ou ameaçadora; (v) contenha vírus ou outras rotinas de programação de computadores que possam danificar, interferir, interceptar ou expropriar qualquer sistema ou conjunto de dados; (vi) prejudique, de qualquer forma, o funcionamento do website e/ou dos serviços prestados pelo Mercado Pago ou interfira nos mecanismos de segurança, identificação e autenticação empregados pelo Mercado Pago para o website e/ou seus serviços; (vii) gere ou possa gerar ao Mercado Pago qualquer responsabilidade ou lhe provoque perda total ou parcial dos serviços de seus fornecedores de serviços de Internet ou outros fornecedores; (viii) infrinja as normas PCI_DSS ou capture e/ou armazene dados de transações realizadas pelos Usuários do Mercado Pago com cartões de crédito ou débito ou informações financeiras desses usuários, o que envolve a proibição expressa e irrestrita de armazenar informações de cartões de crédito ou débito, dados dos titulares de cartões, códigos de segurança, etc. em qualquer base de dados, cofre, website, data warehouse ou qualquer outro tipo de armazenamento que seja da propriedade do Desenvolvedor ou de terceiros; (ix) capture ou armazene chaves de segurança dos Usuários do Mercado Pago, ou números de documentos de identidade, de carteiras de habilitação ou da Previdência de uma forma não autorizada nestes Termos e Condições ou nos Termos e Condições Gerais ou nas Políticas de Privacidade do Mercado Livre e do Mercado Pago.
 
 J. Fornecer dados ou informações ao Mercado Pago, a menos que o Desenvolvedor declare e garanta sua veracidade e a titularidade dos direitos necessários para fornecer esses dados ou informações ao Mercado Pago.
 
-## 8. Modificações da API, do Website e/ou dos serviços. Manutenção
+## 8. Modificações da API, do website e/ou dos serviços. Manutenção
 
-O Mercado Pago não terá nenhuma obrigação de atualizar a API. Contudo, a seu exclusivo critério, poderá a qualquer tempo: (i) modificar a API e/ou a quantidade permitida de chamadas de API; (ii) suas bases de dados; (iii) qualquer Website ou serviço prestado pelo Mercado Pago; ou (iv) qualquer dos benefícios ou funções fornecidos com relação à utilização da API. 
+O Mercado Pago não terá nenhuma obrigação de atualizar a API. Contudo, a seu exclusivo critério, poderá a qualquer tempo: (i) modificar a API e/ou a quantidade permitida de chamadas de API; (ii) suas bases de dados; (iii) qualquer website ou serviço prestado pelo Mercado Pago; ou (iv) qualquer dos benefícios ou funções fornecidos com relação à utilização da API. 
 
-O Desenvolvedor está ciente e aceita que, na hipótese de que o Mercado Pago decida implementar atualizações ou modificações conforme previsto no parágrafo acima, tais atualizações ou modificações podem implicar mudanças substanciais nas funcionalidades da API ou poderão afetar o Aplicativo de modo que os Desenvolvedores devam realizar mudanças nos seus Aplicativos, às suas próprias custas, para poder manter a compatibilidade ou a interface com a API ou o Website ou os serviços prestados pelo Mercado Pago. 
+O Desenvolvedor está ciente e aceita que, na hipótese de que o Mercado Pago decida implementar atualizações ou modificações conforme previsto no parágrafo acima, tais atualizações ou modificações podem implicar mudanças substanciais nas funcionalidades da API ou poderão afetar o Aplicativo de modo que os Desenvolvedores devam realizar mudanças nos seus Aplicativos, às suas próprias custas, para poder manter a compatibilidade ou a interface com a API ou o website ou os serviços prestados pelo Mercado Pago. 
 
 O Mercado Pago não é obrigado a fornecer qualquer serviço de suporte ou manutenção relacionado a API. 
 
@@ -591,9 +590,9 @@ Caso ocorra um incidente de segurança cibernética ou, na suposição de que o 
 
 ## 11. Titularidade
 
-O Mercado Pago é detentor e conserva todos os direitos de propriedade intelectual relacionados à API, ao Conteúdo do Mercado Pago, ao Website, aos serviços prestados pelo Mercado Pago e a qualquer conteúdo ou tecnologia do Mercado Pago criado ou decorrente daqueles. Os Desenvolvedores são detentores e conservam todos os direitos de propriedade intelectual relacionados ao seu Aplicativo e/ou aos seus desenvolvimentos. Esses Termos e Condições não concedem licenças tácitas. Qualquer direito não expressamente concedido aos Desenvolvedores em decorrência destes Termos e Condições fica reservado ao Mercado Pago. 
+O Mercado Pago é detentor e conserva todos os direitos de propriedade intelectual relacionados à API, ao Conteúdo do Mercado Pago, ao website, aos serviços prestados pelo Mercado Pago e a qualquer conteúdo ou tecnologia do Mercado Pago criado ou decorrente daqueles. Os Desenvolvedores são detentores e conservam todos os direitos de propriedade intelectual relacionados ao seu Aplicativo e/ou aos seus desenvolvimentos. Esses Termos e Condições não concedem licenças tácitas. Qualquer direito não expressamente concedido aos Desenvolvedores em decorrência destes Termos e Condições fica reservado ao Mercado Pago. 
 
-Os Desenvolvedores não poderão realizar atos que infrinjam os direitos de propriedade do Mercado Pago sobre a API, o Website ou o Conteúdo do Mercado Pago. 
+Os Desenvolvedores não poderão realizar atos que infrinjam os direitos de propriedade do Mercado Pago sobre a API, o website ou o Conteúdo do Mercado Pago. 
 
 Os Desenvolvedores conferem ao Mercado Pago uma licença ilimitada, irrevogável, perpétua, susceptível de cessão, transferível e gratuita de uso de todas as sugestões que realizem relacionadas com a API e/ou com o seu uso.
 
@@ -636,20 +635,20 @@ Este acordo será regido em todos seus termos pelas leis vigentes na República 
 
 17.2 Se o uso da API for feito em conjunto com o uso de outros serviços fornecidos pelo Mercado Pago, os termos e condições e políticas do Mercado Pago aplicáveis a esses serviços serão, ainda, aplicáveis e, portanto, deverão ser respeitados pelos Desenvolvedores.
 
-17.3 O Mercado Livre e/ou o Mercado Pago poderão utilizar os dados de contato fornecidos pelos Desenvolvedores para fins de encaminhar a eles informações sobre o Mercado Livre e/ou o Mercado Pago, o Website ou a API ou quaisquer informações que o Mercado Livre e/ou o Mercado Pago entenderem que possam ser de seu interesse. Os Desenvolvedores autorizam o Mercado Libre e/ou o Mercado Pago a coletar, armazenar, utilizar e processar quaisquer informações que os Desenvolvedores lhe forneçam de acordo com as Políticas de Privacidade do Mercado Livre e/ou do Mercado Pago.
+17.3 O Mercado Livre e/ou o Mercado Pago poderão utilizar os dados de contato fornecidos pelos Desenvolvedores para fins de encaminhar a eles informações sobre o Mercado Livre e/ou o Mercado Pago, o website ou a API ou quaisquer informações que o Mercado Livre e/ou o Mercado Pago entenderem que possam ser de seu interesse. Os Desenvolvedores autorizam o Mercado Libre e/ou o Mercado Pago a coletar, armazenar, utilizar e processar quaisquer informações que os Desenvolvedores lhe forneçam de acordo com as Políticas de Privacidade do Mercado Livre e/ou do Mercado Pago.
 
 17.4 Toda notificação realizada sob estes Termos e Condições poderá ser encaminhada por e-mail, a menos que haja disposição contrária nestes termos.
 
 17.5 Estes Termos e Condições não criam entre o Mercado Livre e/ou o Mercado Pago e o Desenvolvedor uma relação de parceria, sociedade, vínculo empregatício, joint venture, mandato ou agência. O uso do termo “Partner” no âmbito do Programa de Desenvolvedores Certificados somente faz referência à participação dos Desenvolvedores nesse programa.
 
-17.6 Anexos: Os documentos a seguir fazem parte integrante e indissociável dos Termos e Condições, sendo a eles incorporados, podendo ser consultados no Website mediante o link fornecido abaixo ou acessando diretamente as páginas correspondentes:
+17.6 Anexos: Os documentos a seguir fazem parte integrante e indissociável dos Termos e Condições, sendo a eles incorporados, podendo ser consultados no website mediante o link fornecido abaixo ou acessando diretamente as páginas correspondentes:
 
 * [Termos e Condições Gerais de Uso do Mercado Pago](https://www.mercadopago.com.br/ajuda/_299) <br>
 * [Termos e condições do Mercado Pago Point](https://www.mercadopago.com.br/ajuda/_1772) <br>
 
 ## 18. Modificações dos Termos e Condições
 
-O Mercado Pago poderá alterar, a qualquer tempo, os Termos e Condições, notificando os Desenvolvedores por meio da publicação de uma versão atualizada desses Termos e Condições no Website, com menção à data da última modificação. Todos os termos modificados entrarão em vigor 10 (dez) dias após a publicação.
+O Mercado Pago poderá alterar, a qualquer tempo, os Termos e Condições, notificando os Desenvolvedores por meio da publicação de uma versão atualizada desses Termos e Condições no website, com menção à data da última modificação. Todos os termos modificados entrarão em vigor 10 (dez) dias após a publicação.
 
 ## 19. Termos em maiúsculas
 
