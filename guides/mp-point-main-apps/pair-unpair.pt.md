@@ -85,7 +85,7 @@ bluetoothPairing.unPairDevice(address, callback);
 |**address (String)**| Localização do dispositivo selecionado, obtida por `[BluetoothDeviceModel]`.|
 |**callback ((MPResponse&lt;Pair&lt;BluetoothBondState, BluetoothDeviceModel&gt;&gt;) -> Unit)**| Função de devolução da chamada que proporciona o resultado do processo de emparelhamento. O `[MPResponse]` encapsula o estado, o erro (se houver) e os dados no caso de sucesso, que contêm um `(Pair)` composto por `[BluetoothBondState]` e `[BluetoothDeviceModel]`.|
 |**NONE (BOND_NONE)**| Indica que o dispositivo não está emparelhado.|
-|**BONDING (BOND_BONDING)**| Indica que o dispositivo está em processo de emparelhamento |
+|**BONDING (BOND_BONDING)**| Indica que o dispositivo está em processo de emparelhamento. |
 |**BONDED (BOND_BONDED)**| Indica que o dispositivo está emparelhado.|
 |**id (String)**| Identificador do dispositivo.|
 |**boundState (Int)**| Estado de emparejação do dispositivo. Pode ser `true` ou `false`.|
