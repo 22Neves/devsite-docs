@@ -1390,7 +1390,7 @@
                                   "es": "Modo de operación en el que está funcionando la terminal al momento de la requisición.",
                                   "pt": "Modo de operação em que o terminal está funcionando na hora de requisição."
                                 },
-                                "example": "\"PDV\" | \"STANDALONE\" | \"SELFSERVICE\" | \"UNDEFINED\"",
+                                "example": "PDV | STANDALONE | SELFSERVICE | UNDEFINED",
                                 "enum": [
                                   {
                                     "title": "PDV",
@@ -1635,59 +1635,62 @@
           "content": {
             "application/json": {
               "schema": {
-                "terminals":{
-                  "type":"array",
-                  "description":{
-                    "en":"This node will contain the list of terminals which operating mode you want to modify.",
-                    "pt":"Este nó conterá uma lista de terminals cujo modo de operação será modificado.",
-                    "es":"Este nodo contendrá la lista de terminals para las que se desea modificar el modo de operación."
-                  },
-                  "items": {
-                    "type": "object",
-                    "properties": { 
-                      "id": {
-                        "type": "string",
-                        "example": "PAX_A910__SMARTPOS1234345545",
-                        "description": {
-                          "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the physical terminal.",
-                          "es": "Identificador único de la terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera de la terminal física.",
-                          "pt": "Identificador exclusivo do terminal. Você pode identificar o temrinal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
-                        }
-                      },
-                      "operating_mode": {
-                        "type": "string",
-                        "description":{
-                          "en": "Operating mode desired for the terminal to function. It must be one of the following options:",
-                          "es": "Modo de operación en el que se desea que funcione la terminal. Debe ser una de las siguientes opciones:",
-                          "pt": "Modo de operação no qual você deseja que o terminal funcione. Deve ser uma das seguintes opções:"
-                        },
-                        "example": "\"PDV\" | \"STANDALONE\" | \"SELFSERVICE\"",
-                        "enum": [
-                          {
-                            "title": "PDV",
-                            "description": {
-                              "en": "Point of Sale (POS) operating mode. It's when the terminal is integrated with the API",
-                              "es": "Modo operativo Punto de Venta (PDV). Es el modo en el que opera la terminal cuando está integrada vía API.",
-                              "pt": "Modo operacional Ponto de Venda (PDV). É o forma como o terminal funciona quando integrado via API. "
-                            }
-                          },
-                          {
-                            "title": "STANDALONE",
-                            "description": {
-                              "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
-                              "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
-                              "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                            }
-                          },
-                          {
-                            "title": "SELFSERVICE",
-                            "description": {
-                              "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                              "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrada en modo desatendido de rompefilas.",
-                              "pt": "Configuração do terminal em modo kiosko. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
-                            }
+                "type": "object",
+                "properties": {
+                  "terminals":{
+                    "type":"array",
+                    "description":{
+                      "en":"This node will contain the list of terminals which operating mode you want to modify.",
+                      "pt":"Este nó conterá uma lista de terminals cujo modo de operação será modificado.",
+                      "es":"Este nodo contendrá la lista de terminals para las que se desea modificar el modo de operación."
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": { 
+                        "id": {
+                          "type": "string",
+                          "example": "PAX_A910__SMARTPOS1234345545",
+                          "description": {
+                            "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the physical terminal.",
+                            "es": "Identificador único de la terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera de la terminal física.",
+                            "pt": "Identificador exclusivo do terminal. Você pode identificar o temrinal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
                           }
-                        ]
+                        },
+                        "operating_mode": {
+                          "type": "string",
+                          "description":{
+                            "en": "Operating mode desired for the terminal to function. It must be one of the following options:",
+                            "es": "Modo de operación en el que se desea que funcione la terminal. Debe ser una de las siguientes opciones:",
+                            "pt": "Modo de operação no qual você deseja que o terminal funcione. Deve ser uma das seguintes opções:"
+                          },
+                          "example": "PDV | STANDALONE | SELFSERVICE",
+                          "enum": [
+                            {
+                              "title": "PDV",
+                              "description": {
+                                "en": "Point of Sale (POS) operating mode. It's when the terminal is integrated with the API",
+                                "es": "Modo operativo Punto de Venta (PDV). Es el modo en el que opera la terminal cuando está integrada vía API.",
+                                "pt": "Modo operacional Ponto de Venda (PDV). É o forma como o terminal funciona quando integrado via API. "
+                              }
+                            },
+                            {
+                              "title": "STANDALONE",
+                              "description": {
+                                "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                                "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
+                                "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
+                              }
+                            },
+                            {
+                              "title": "SELFSERVICE",
+                              "description": {
+                                "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
+                                "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrada en modo desatendido de rompefilas.",
+                                "pt": "Configuração do terminal em modo kiosko. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
+                              }
+                            }
+                          ]
+                        }
                       }
                     }
                   }
@@ -1734,7 +1737,7 @@
                               "es": "Modo de operación definido para la terminal. Puede ser una de las siguientes opciones:",
                               "pt": "Modo de operação definido para o terminal. Pode ser uma das seguintes opções:"
                             },
-                            "example": "“PDV” | “STANDALONE” | SELFSERVICE",
+                            "example": "“PDV” | “STANDALONE” | “SELFSERVICE” ",
                             "enum": [
                               {
                                 "title": "PDV",
@@ -1832,9 +1835,9 @@
                         {
                           "title": "terminal_not_allowed_action",
                           "description": {
-                            "en": "The terminal identified in the \"id\" field is not allowed to perform this action.",
-                            "es": "La terminal identificada en el campo \"id\" no permite realizar esta acción.",
-                            "pt": "O terminal identificado no campo \"id\" não permite executar esta ação."
+                            "en": "The terminal identified in the \"id\" field is not allowed to perform this action. The only terminals allowed for this request are \"PAX_A910\" y \"NEWLAND_N950\".",
+                            "es": "La terminal identificada en el campo \"id\" no permite realizar esta acción. Las únicas terminals habilitadas para esta requisición son \"PAX_A910\" y \"NEWLAND_N950\".",
+                            "pt": "O terminal identificado no campo \"id\" não permite executar esta ação. Os únicos terminals habilitados para esta solicitação são \"PAX_A910\" e \"NEWLAND_N950\"."
                           }
                         },
                         {
