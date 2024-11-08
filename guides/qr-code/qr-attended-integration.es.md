@@ -46,9 +46,3 @@ Las notificaciones son la **forma automática de aviso de la creación de nuevas
 Dirígete a [Notificaciones](/developers/es/docs/qr-code/additional-content/your-integrations/notifications) para saber cómo implementarlas. 
 
 Específicamente, deberás activar las notificaciones del tópico `merchant_order`, que son aquellas asociadas a pedidos. Podrás identificar cada uno de ellos por medio del parámetro `external_reference`.
-
-> NOTE
->
-> Nota
->
-> Si lo deseas, puedes ver el [video tutorial sobre cómo integrar un Código QR modelo atendido](/developers/es/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

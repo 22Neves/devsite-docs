@@ -1,6 +1,6 @@
-# Integration via Cardform
+# Card
 
-The integration of card payments is done via cardform. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
+The integration of card payments is done via CardForm. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
@@ -31,7 +31,7 @@ As the card data is entered, an automatic search takes place for the issuer info
 
 ------------
 
-Check below the diagram that illustrates the card payment process using the Card Form.
+Check below the diagram that illustrates the card payment process using the CardForm.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
 
@@ -160,7 +160,7 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > Important
 >
-> When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
+> When submitting the form, a token, also known as `CardToken`, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the `CardToken` can **only be used once** and expires within **7 days**.
 
 ----[mla, mlu, mpe, mco, mlb]----
 [[[

@@ -4,7 +4,7 @@
 >
 > Tarjetas
 
-Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
+Con toda la información recopilada en el _backend_ , envía un **POST** con los atributos requeridos al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
 > NOTE
 >
@@ -296,9 +296,9 @@ curl -X POST \
 }
 ```
 
-El _callback_ `onSubmit` de Brick contiene todos los datos necesarios para crear un pago; sin embargo, si lo deseas, puedes incluir detalles adicionales que pueden facilitar el reconocimiento de la compra por parte del comprador y aumentar la tasa de aprobación del pago.
+El _callback_ _onSubmit_ de Brick contiene todos los datos necesarios para crear un pago; sin embargo, si lo deseas, puedes incluir detalles adicionales que pueden facilitar el reconocimiento de la compra por parte del comprador y aumentar la tasa de aprobación del pago.
 
-Para hacer esto, agrega campos relevantes para el objeto enviado, que viene en la respuesta del callback onSubmit de Brick. Algunos de estos campos son: `description` (este campo se puede mostrar en los tickets emitidos) y `external_reference` (ID de compra en tu sitio web, lo que permite un reconocimiento de compra más fácil). También es posible añadir datos adicionales sobre el comprador.
+Para hacer esto, agrega campos relevantes para el objeto enviado, que viene en la respuesta del _callback_ _onSubmit_ de Brick. Algunos de estos campos son: `description` (este campo se puede mostrar en los tickets emitidos) y `external_reference` (ID de compra en tu sitio web, lo que permite un reconocimiento de compra más fácil). También es posible añadir datos adicionales sobre el comprador.
 
 > NOTE
 >

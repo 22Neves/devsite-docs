@@ -50,5 +50,3 @@ Accede a [Crear caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/
 > Nota
 >
 > Una vez creada la caja, podrás ver en el `Response` los links a distintos entregables del QR, junto con otros datos relevantes de la caja.
-
-Si lo deseas, puedes ver nuestro [video tutorial para conocer cómo crear sucursales y cajas](/developers/es/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

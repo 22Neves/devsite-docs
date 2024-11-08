@@ -51,5 +51,3 @@ Acesse [Criar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/r
 >
 >
 > Uma vez criado o caixa, você poderá ver no `Response` os links para os diferentes entregáveis do QR, junto com outros dados relevantes do caixa.
-
-Se deseja, você pode assistir ao [vídeo tutorial para conhecer como é criar lojas e caixas](/developers/pt/docs/qr-code/resources/tutorial-videos/qr-videos-attended).

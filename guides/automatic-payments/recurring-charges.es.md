@@ -19,9 +19,21 @@ Se deben considerar dos flujos para guardar los datos de la tarjeta del cliente:
 ----[mlb]----
 1. En caso de que la afiliación incluya el pago de la primera cuota, este primer pago se procesa con [Checkout Transparente](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o [Checkout Bricks](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission) siguiendo los procesos de pago a Mercado Pago. Para ello, tu backend debe poder recibir la información del formulario con el token generado y los datos proporcionados.
 
+> NOTE
+>
+> Nota
+>
+> Para más información, seguí los pasos de nuestra integración de pagos con tarjeta a través del [Checkout Transparente](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o utilizando el [Checkout Bricks](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission).
+
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 1. En caso de que la afiliación incluya el pago de la primera cuota, este primer pago se procesa con [Checkout API](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o [Checkout Bricks](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission) siguiendo los procesos de pago a Mercado Pago. Para ello, tu backend debe poder recibir la información del formulario con el token generado y los datos proporcionados.
+
+> NOTE
+>
+> Nota
+>
+> Para más información, seguí los pasos de nuestra integración de pagos con tarjeta a través del [Checkout API](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o utilizando el [Checkout Bricks](/developers/es/docs/checkout-bricks/card-payment-brick/payment-submission).
 
 ------------
 
@@ -420,6 +432,84 @@ curl -X POST \
 > Para obtener más información, sigue los pasos de nuestra integración de pagos con tarjeta de [Checkout API](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform) o utilizando el [Brick de Card Payment.](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
+----[mla, mlb, mco, mlc]----
+## Zero Dollar Auth
+
+Para tarjetas de crédito y débito de las marcas **Visa** y **Mastercard**, la autenticación se da a través de la funcionalidad [Zero Dollar Auth (ZDA)](/developers/es/docs/zero-dollar-auth/landing).
+
+Zero Dollar Auth es una funcionalidad para validar tarjetas de crédito o débito, con el objetivo de optimizar la experiencia del cliente. Con ella, es posible asegurar que no haya cargos efectivos en la tarjeta, eliminando la necesidad de cancelaciones y contracargos después de la autorización de la transacción. Para más información, accedé a la [documentacion de ZDA](/developers/es/docs/zero-dollar-auth/landing).
+
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'X-Card-Validation: card_validation' \
+--data-raw '{
+    "token": "TOKEN",
+    "payment_method_id": "master",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type" : "customer",
+    },
+    "description": "validação de cartão com valor zero dollar",
+    "transaction_amount": 0
+}'
+```
+
+## Pago de validación
+
+En caso de que ZDA no esté disponible, la alternativa es realizar un **Pago de validación**, donde se debe cobrar un monto bajo y reembolsar el dinero inmediatamente después. A continuación, se muestra un ejemplo.
+
+------------
+## Pago de validación
+
+Para validar tarjetas de crédito o débito con el objetivo de garantizar la seguridad de la transacción, será necesario crear un **pago de validación** donde se deberá realizar el cobro de un monto bajo y el reembolso del dinero inmediatamente después. A continuación, se muestra un ejemplo.
+
+```curl
+===
+Ejemplo de cobro de un monto bajo
+===
+curl -X POST \
+   -H 'accept: application/json' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+   'https://api.mercadopago.com/v1/payments' \
+   -d '{
+         "transaction_amount": 100,
+         "token": "ff8080814c11e237014c1ff593b57b4d",
+         "description": "Blue shirt",
+         "installments": 1,
+         "payment_method_id": "visa",
+         "issuer_id": 310,
+         "payer": {
+           "email": "PAYER_EMAIL"
+         }
+   }'
+```
+
+Después de realizar este cargo, debes ejecutar el reembolso, de acuerdo con el ejemplo a continuación.
+
+```curl
+Ejemplo de cobro de un monto bajo
+===
+curl -X POST \
+'https://api.mercadopago.com/v1/payments/12345678901/refunds'\
+-H 'Content-Type: application/json' \
+-H 'X-Idempotency-Key: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac' \
+-H 'Authorization: Bearer TEST-4397********912-08011*********50d74305b*********a2f9ec0-1********' \
+-d '{
+"amount": 5
+}'
+```
+
+> WARNING
+>
+> Importante
+>
+> Es esencial **esperar al menos 5 segundos entre la creación del pago y la ejecución de su reembolso**. Además, la ejecución del reembolso depende de la existencia de un saldo disponible mínimo equivalente al reembolso en tu cuenta bancaria dentro de Mercado Pago.
+> <br><br>
+> Para más información, accedé a la documentacion del endpoint [v1/payments](/developers/es/reference/payments/_payments/post) y también la del [v1/payments/{id}/refunds](/reference/chargebacks/_payments_id_refunds/post).
 
 ## Asociar tarjeta al cliente
 
