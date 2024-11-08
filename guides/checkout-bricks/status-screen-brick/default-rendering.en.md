@@ -93,4 +93,17 @@ import { StatusScreen } from '@mercadopago/sdk-react';
 
 The result of rendering the Brick should look like the image below.
 
-![status-screen-Brick](checkout-bricks/status-screen-brick-en.jpg)
+----[mlb]----
+![status-screen-brick](checkout-bricks/status-screen-brick-mlb-en.jpg)
+
+------------
+----[mpe]----
+
+![status-screen-brick](checkout-bricks/status-screen-brick-mpe-en.jpg)
+
+------------
+----[mlm, mla, mco, mlu, mlc]----
+
+![status-screen-brick](checkout-bricks/status-screen-brick-all-en.jpg)
+
+------------
