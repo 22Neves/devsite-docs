@@ -29,13 +29,6 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
  * **Otros medios de pago**: selecciona otros medios de pago que deseas habilitar en su tienda, como Pix, Linha de Crédito, boleto bancário (deberás también indicar en el campo inferior el **número de días de vencimiento del boleto**), entre otros. La opción de pago Pix solo se mostrará si existe una Clave Pix registrada en Mercado Pago. Si aún no lo has creado, consulta el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y ve el paso a paso.
  
 ------------
-----[mpe, mco, mlu, mlc]---- 
- * **Tarjeta de crédito**. Selecciona las tarjetas que desea habilitar en tu tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. Para configurar un pago a cuotas sin interés, consulta la sección de [Descuentos, financiación e intereses](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
- * **Tarjeta de débito**. Selecciona las tarjetas que desea habilitar en tu tienda. 
- * **Otros medios de pago**: Selecciona otros tipos de medios de pago que desea habilitar en tu tienda.
-
------------- 
-
 8. Por último, haz clic en **Guardar cambios**.
 
 ¡Listo! El Checkout Pro de Mercado Pago está preparado para recibir los pagos de tu tienda.

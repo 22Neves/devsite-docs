@@ -11,7 +11,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 5. Na tela em questão, habilite a opção **Mercado Pago**.
 6. Para configurar as experiências de pagamento da sua loja, clique em **Configurar**.
 7. Em Checkout Mercado Pago, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
- ----[mlb]---- 
+----[mlb]---- 
  * **Cartão de crédito**. Selecione as bandeiras que deseja habilitar em sua loja e indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. Para configurar um parcelamento sem acréscimos, veja a seção de [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
  * **Cartão de débito**. Selecione as bandeiras que deseja habilitar em sua loja. 
  * **Outros meios de pagamentos**. Selecione outros tipos de meios de pagamento que deseja habilitar em sua loja, como Pix, Linha de Crédito, boleto bancário (indique também, no campo logo abaixo, o **número de dias para vencimento do boleto**), entre outros. A opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, assista o [vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
@@ -29,13 +29,6 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  * **Outros meios de pagamentos**. Selecione outros tipos de meios de pagamento que deseja habilitar em sua loja, como Meses sin Tarjeta, OXXO, Paycash, entre outros. Logo abaixo, indique também o **número de dias para vencimento do ticket** dos meios de pagamentos.
 
 ------------
-----[mpe, mco, mlu, mlc]---- 
- * **Cartão de crédito**. Selecione as bandeiras que deseja habilitar em sua loja e, logo abaixo, indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. 
- * **Cartão de débito**. Selecione as bandeiras que deseja habilitar em sua loja. 
- * **Outros meios de pagamentos**. Selecione outros tipos de meios de pagamento que deseja habilitar em sua loja.
-
-------------
-
 8. Por fim, clique em **Salvar alterações**.
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.

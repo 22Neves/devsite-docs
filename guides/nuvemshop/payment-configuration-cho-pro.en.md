@@ -24,18 +24,12 @@ To integrate Checkout Pro, follow the steps below.
  * **Other payment methods**. Select other types of payment methods that you want to enable in your store, such as Installment without a card (if you want to display this option at your store's checkout, read the [documentation](/developers/en/docs/nuvemshop/payments-configuration/mercado-credito)). Just below, also indicate the **number of days for the ticket to expire** of the means of payment that require it.
 
 ------------
-----[mpe, mco, mlu, mlc]----
- * **Credit card**. Select the brands you want to enable in your store and, just below, also indicate the **maximum number of installments to be allowed for purchases in installments**. To set up an installment payment without additional charges, see the section on [Discounts, installments, and interest](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments). 
- * **Debit card**. Select the flags you want to enable in your store. 
-
-------------
 ----[mlm]----
  * **Credit card**. Select the brands you want to enable in your store and, just below, also indicate the **maximum number of installments to be allowed for purchases in installments**. To set up an installment payment without additional charges, see the section on [Discounts, installments, and interest](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments). 
  * **Debit card**. Select the flags you want to enable in your store. 
  * **Other payment methods**. Select other types of payment methods that you want to enable in your store, such as Installment without a card (if you want to display this option at your store's checkout, read the [documentation](/developers/en/docs/nuvemshop/payments-configuration/mercado-credito)), OXXO, Paycash etc. Just below, also indicate the **number of days for the ticket to expire** of the means of payment that require it.
 
 ------------
-
 6. Finally, click on **Save changes**.
 
 Ready! Mercado Pago's Checkout Pro is ready to process payments for your store.
