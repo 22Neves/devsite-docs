@@ -5,9 +5,11 @@ A **Linha de Crédito** é a modalidade de financiamento do Mercado Pago que ofe
 
 Com a Linha de Crédito Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
-Atualmente a **Linha de Crédito** é oferecida em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**) e agora também é possível acessá-lo diretamente do checkout da loja. 
-
-> Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configuração de pagamentos > Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para configurá-lo.
+> NOTE
+>
+> Nota
+>
+> Você também poderá utilizar a modalidade de financiamento do Mercado Pago atráves da habilitação da "Linha de Crédito" como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do[Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
 
 Para **exibir a Linha de Crédito no checkout da sua loja**, siga os passos abaixo.
 
@@ -19,9 +21,11 @@ O **Meses sin Tarjeta** é a modalidade de financiamento do Mercado Pago que ofe
 
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
-Atualmente o **Meses sin Tarjeta** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**) e agora também é possível acessá-lo diretamente do checkout da loja. 
-
-> Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configuração de pagamentos > Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para configurá-lo.
+> NOTE
+>
+> Nota
+>
+> Você também poderá utilizar a modalidade de financiamento do Mercado Pago atráves da habilitação da "Linha de Crédito" como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do[Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
 
 Para **exibir o Meses sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
@@ -33,9 +37,11 @@ O **Cuotas sin Tarjeta** é a modalidade de financiamento do Mercado Pago que of
 
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
-Atualmente o **Cuotas sin Tarjeta** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**) e agora também é possível acessá-lo diretamente do checkout da loja. 
-
-> Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configuração de pagamentos > Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para configurá-lo.
+> NOTE
+>
+> Nota
+>
+> Você também poderá utilizar a modalidade de financiamento do Mercado Pago atráves da habilitação da "Linha de Crédito" como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do[Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
 
 Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
