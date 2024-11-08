@@ -1,16 +1,8 @@
 # Online payments
 
-----[mlb]----
-**Checkout Transparente** from Mercado Pago allows the entire checkout process, from filling in user information to completing the payment, to take place in a single environment without the need to redirect to an external page outside your store.
-
-------------
-----[mla, mlm]----
-**Checkout API** from Mercado Pago allows the entire checkout process, from filling in user information to completing the payment, to take place in a single environment without the need to redirect to an external page outside your store.
-
-------------
 An online payment order can be created to be processed in two ways: **Automatic mode** and **Manual mode**.
 
-## Automatic Mode
+## Automatic mode
 
 The Automatic Mode is the default mode of the application. Here, the transaction is completed in a single step, and modifications are limited. To create the order in automatic mode, you need to ensure that the `processing_mode` field, that responsible for defining the format of creation and processing of the transaction, is set to `automatic` and that all information is being sent in this single request.
 
@@ -22,7 +14,7 @@ The allowed operations are:
 - [**Cancel order**](/developers/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed/ finalized.
 - [**Refund order**](/developers/en/reference/order/online-payments/refund/post): in automatic mode, the refund will always be total.
 
-## Manual Mode
+## Manual mode
 
 The Manual Mode is where it is possible to divide the processing of the transaction into steps that can be configured and executed incrementally. It allows customization of each step of the payment process, adapting to different needs and scenarios. To create the order in manual mode, you need to ensure that the `processing_mode` field, that is responsible for defining the format of creation and processing of the transaction, is set to `manual`.
 
