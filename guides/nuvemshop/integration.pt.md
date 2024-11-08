@@ -3,18 +3,10 @@
 ----[mlm, mla, mlb]----
 Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo. 
 
-> WARNING
->
-> Atenção
->
-> Caso esteja utilizando a antiga versão do plugin do Mercado Pago, acesse a [documentação](/developers/pt/docs/nuvemshop/how-tos/migration) para saber como migrar para a versão atual.
-
 1. Acesse a [Página do aplicativo.](https://www.nuvemshop.com.br/loja-aplicativos-nuvem/mercado-pago) 
 2. Clique em **Instalar aplicativo**.
 3. Agora, é hora de conceder as permissões necessárias para a aplicação. Clique em **Aceitar e começar a usar**.
 4. Você será redirecionado para a página do Mercado Pago, onde deverá fazer login com seus dados. Caso já esteja logado em sua conta, lembre-se que **a integração será efetuada automaticamente a partir da sessão da conta Mercado Pago aberta no navegador em uso durante a instalação**.
-5. Leia com atenção as informações sobre as permissões solicitadas. Marque a caixa de seleção para concordar com elas e prossiga clicando em **Continuar**.
-6. Revise novamente as permissões e, se estiver seguro, clique em **Autorizar esta aplicação** para autorizar a conexão. 
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -36,8 +28,7 @@ Para **vincular sua conta do Mercado Pago à Nuvemshop,** siga os passos abaixo:
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
 
 ------------
-
-Feitas as configurações iniciais, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado.
+Feitas as configurações iniciais, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado. Veja a seção de [Configuração de pagamentos](/developers/pt/docs/nuvemshop/payment-configuration) para mais informações sobre a habilitação dos meios de pagamento em sua loja.
 
 > WARNING
 >
@@ -49,13 +40,21 @@ Feitas as configurações iniciais, configure as experiências de pagamento da s
 
 Se, por algum motivo, você precisar trocar a conta atual do Mercado Pago por outra, siga os passos abaixo.
 
-----[mlm, mla, mlb]----
-1. Caso ainda esteja conectado a sua conta Mercado Pago em um navegador, desconecte-a clicando em **Encerrar sessão**.
-2. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos**. 
-3. Faça uma busca pelo plugin do Mercado Pago, localize-o na lista de meios de pagamentos e clique em **Desinstalar**.
-   ![Desinstalar](/images/nuvemshop/desin-pt.gif)
-4. Novamente, localize o plugin do Mercado Pago na lista de aplicativos e clique em **Instalar**.
-5. Por fim, você será redirecionado ao Mercado Pago para que possa entrar com os dados da sua conta. Para autorizar a conexão, clique em **Permitir**.
+----[mlb, mla, mlm]----
+1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos**.
+2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
+3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração**.
+4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
+5. No Painel Administrativo do plugin do Mercado Pago, **clique no ícone do seu perfil**, localizado no canto superior direito da tela.
+6. Clique em **Alterar conta** e, em seguida, novamente em **Alterar conta**.
+
+> WARNING
+>
+> Importante
+>
+> Ao alterar a conta você mudará a conta do Mercado Pago em que irá receber os pagamentos.
+
+Pronto! Inicie a seção com a nova conta que deseja usar. Você poderá alterá-la a qualquer momento.
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -66,5 +65,3 @@ Se, por algum motivo, você precisar trocar a conta atual do Mercado Pago por ou
 5. Pronto! Basta você refazer o processo para **ativar uma nova conta**.
 
 ------------
-
-Pronto! A instalação foi realizada com sucesso e agora você pode receber pagamentos.

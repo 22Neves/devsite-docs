@@ -46,7 +46,7 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the steps below.
 
 ------------
-1. In your store's Administrative Panel at Nuvemshop, access **Potencializar > My apps**.
+1. In your store's Administrative Panel at Tiendanube, access **Potencializar > My apps**.
 2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings**.
 4. Scroll down to the bottom of the page and click on **More settings on the Mercado Pago site**.

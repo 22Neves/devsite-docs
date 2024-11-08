@@ -3,18 +3,10 @@
 Para integrar Mercado Pago a tu Tiendanube, sigue los procedimientos a continuación.
 
 ----[mlb, mlm, mla]----
-> WARNING
->
-> Atención
->
-> Si estás usando la versión anterior del plugin de Mercado Pago, consulta la [documentación](/developers/es/docs/nuvemshop/how-tos/migration) para saber cómo migrar a la versión actual.
-
 1. Accede a la [Página de la aplicación.](https://www.tiendanube.com/tienda-aplicaciones-nube/mercado-pago)
 2. Haz clic en **Instalar aplicación**.
 3. Deberás otorgar los permisos necesarios para la aplicación. Haz clic en **Aceptar y empezar a usar**.
 4. Serás redirigido a la página de Mercado Pago, donde deberás iniciar sesión con tus datos. Ten en cuenta que **la integración se llevará a cabo automáticamente desde la cuenta de Mercado Pago abierta en el navegador durante la instalación**, por lo que deberás verificar si ya has iniciado sesión previamente.
-5. Lee con atención la información sobre los permisos solicitados. Marca la casilla de verificación para aceptarlos y haz clic en **Continuar**.
-6. Revisa nuevamente los permisos y, si estás seguro, haz clic en **Autorizar esta aplicación** para autorizar la conexión. 
 
 ------------
 ----[mlm, mla]----
@@ -41,7 +33,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
 
 ------------
-Una vez que hayas realizado esta configuración inicial, configura también las experiencias de pago de tu tienda de acuerdo con el tipo de pago seleccionado.
+Una vez que hayas realizado esta configuración inicial, configura también las experiencias de pago de tu tienda de acuerdo con el tipo de checkout seleccionado. Consulta la sección de [Configuración de pagos](/developers/es/docs/nuvemshop/payment-configuration) para más información sobre cómo habilitar los medios de pago en tu tienda.
 
 > WARNING
 >
@@ -52,13 +44,22 @@ Una vez que hayas realizado esta configuración inicial, configura también las 
 ## Cambiar cuenta de Mercado Pago
 
 Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario cerrar y reinstalar la aplicación. Para hacerlo, sigue los pasos a continuación.
-----[mlm, mla, mlb]----
-1. Si todavía estás conectado a tu cuenta de Mercado Pago en un navegador, desconéctate accediendo al "Menú de opciones" y, luego, haz clic en **Salir**.
-2. En el Panel Administrativo de tu Tiendanube, accede a **Mis aplicaciones > Ver todas las aplicaciones**. 
-3. Busca el plugin de Mercado Pago, localízalo en la lista de métodos de pago y haz clic en **Desinstalar**.
-   ![Desinstalar](/images/nuvemshop/desin-es.gif)
-4. Localiza el plugin Mercado Pago en la lista de aplicaciones y haz clic en **Instalar**.
-5. Finalmente, vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en **Permitir**.
+
+----[mlb, mla, mlm]----
+1. En el Panel Administrativo de tu tienda en Tiendanube, accede a **Mis aplicaciones**.
+2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
+3. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
+4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
+5. En el Panel Administrativo del plugin de Mercado Pago, **haz clic en el ícono de tu perfil** (ubicado en la esquina superior derecha de la pantalla).
+6. Haz clic en **Cambiar cuenta** y luego en **Cambiar cuenta** nuevamente.
+
+> WARNING
+>
+> Importante
+>
+> Al cambiar la cuenta, modificarás la cuenta de Mercado Pago en la que recibirás los pagos.
+
+¡Listo! Inicia la sesión con la nueva cuenta que deseas utilizar. Podrás cambiarla en cualquier momento.
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -69,5 +70,3 @@ Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario 
 5. ¡Y listo! La desvinculación fue exitosa y ahora puedes **agregar una nueva cuenta**.
 
 ------------
-
-¡Y listo! La instalación fue exitosa y ahora puedes recibir pagos.

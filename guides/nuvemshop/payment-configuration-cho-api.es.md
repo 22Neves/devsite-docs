@@ -14,7 +14,7 @@ Con el [Checkout API](/developers/es/guides/checkout-api/landing), todo el proce
 Para integrar Checkout API, siga los pasos a continuación.
 
 ------------
-1. En el Panel Administrativo de tu tienda en Nuvemshop, accede a **Mis aplicaciones**.
+1. En el Panel Administrativo de tu tienda en Tiendanube, accede a **Mis aplicaciones**.
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
 3. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.

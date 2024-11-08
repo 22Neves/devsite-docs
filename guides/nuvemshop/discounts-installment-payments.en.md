@@ -30,7 +30,7 @@ You can customize these settings according to your needs, **through your store's
 ------------
 * **External Checkout (Checkout Pro)**: You can define a global percentage discount for customers who choose the External Checkout. Enter the percentage value to deduct from the total purchase amount.
 
-## Configuration via the Mercado Pago plugin in Nuvemshop
+## Configuration via the Mercado Pago plugin in Tiendanube
 
 You can also set up the installment experiences for each checkout in your store through the Mercado Pago plugin's own Administrative Panel. To do this:
 
@@ -66,7 +66,7 @@ Within your Mercado Pago account, you can check and configure the number of inte
 2. Go to the **Your business > Costs** section and select the **Checkout** option.
 3. In "Interest-free months", click on **Set up months**.
 4. Enable the option **Offer interest-free installments with a credit card** and then choose the number of months you want to offer.
-5. After configuring the interest-free installment options, go to your store on Nuvemshop.
+5. After configuring the interest-free installment options, go to your store on Tiendanube.
 6. In your store's Administrative Panel at Tiendanube, access **My apps**.
 7. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 8. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings**.
