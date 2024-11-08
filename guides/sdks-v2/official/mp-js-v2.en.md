@@ -9,7 +9,24 @@ content_section_with_media:
 
 >>>> Compatible browsers <<<<
 
-![Compatible navigators](sdk/mp-jsv2.png)
+![Compatible navigators](sdk/mp-jsv2-browsers.png)
+
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> It is important to note that while *Internet Explorer 11* is compatible with some [Checkout Transparente,](/developers/en/docs/checkout-api/landing) flows, the browser is not officially supported by Mercado Pago.
+
+------------
+----[mla, mlm, mlu, mco, mlc, mpe]----
+> WARNING
+>
+> Important
+>
+> It is important to note that while *Internet Explorer 11* is compatible with some [Checkout API,](/developers/en/docs/checkout-api/landing) flows, the browser is not officially supported by Mercado Pago.
+
+------------
 
 ---
 bullet_section_with_media: 
