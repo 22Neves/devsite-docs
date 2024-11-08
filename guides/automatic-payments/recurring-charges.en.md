@@ -19,9 +19,21 @@ Two flows should be considered for saving the customer's card data:
 ----[mlb]----
 1. In the case where the affiliation includes the payment of the first installment, the first payment is processed with [Checkout Transparente](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or [Checkout Bricks](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission) following the payment processes to Mercado Pago. For this, it is necessary that your backend can receive the information from the form with the generated token and the provided data.
 
+> NOTE
+>
+> Note
+>
+> For more information, follow the steps for our card payment integration through the [Checkout Transparente](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or using the [Checkout Bricks](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission).
+
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 1. In the case where the affiliation includes the payment of the first installment, the first payment is processed with [Checkout API](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or [Checkout Bricks](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission) following the payment processes to Mercado Pago. For this, it is necessary that your backend can receive the information from the form with the generated token and the provided data.
+
+> NOTE
+>
+> Note
+>
+> For more information, follow the steps for our card payment integration through the [Checkout API](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or using the [Checkout Bricks](/developers/en/docs/checkout-bricks/card-payment-brick/payment-submission).
 
 ------------
 
@@ -420,6 +432,84 @@ curl -X POST \
 > For more information, follow the steps of our integration for card payments with [Checkout API](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) or using the [Card Payment Brick.](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering)
 
 ------------
+----[mla, mlb, mco, mlc]----
+## Zero Dollar Auth
+
+For **Visa** and **Mastercard** credit and debit cards, authentication is done through the [Zero Dollar Auth (ZDA)](/developers/en/docs/zero-dollar-auth/landing) functionality.
+
+Zero Dollar Auth is a feature for validating credit or debit cards, aimed at optimizing the customer experience. With it, it is possible to ensure that there are no actual charges on the card, eliminating the need for cancellations and chargebacks after the transaction authorization. For more information, access the [ZDA documentation](/developers/en/docs/zero-dollar-auth/landing).
+
+```curl
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'X-Card-Validation: card_validation' \
+--data-raw '{
+    "token": "TOKEN",
+    "payment_method_id": "master",
+    "payer": {
+        "id": "{{customer_id}}",
+        "type" : "customer",
+    },
+    "description": "validação de cartão com valor zero dollar",
+    "transaction_amount": 0
+}'
+```
+
+## Validation payment
+
+If ZDA is not available, the alternative is to carry out a **Validation Ppyment**, where a small amount should be charged, and the money refunded immediately afterward. See an example below.
+
+------------
+## Validation payment
+
+To validate credit or debit cards in order to ensure the security of the transaction, it will be necessary to create a **validation payment** where a small amount should be charged and the money refunded immediately afterward. See an example below.
+
+```curl
+===
+Example of charging a small amount
+===
+curl -X POST \
+   -H 'accept: application/json' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+   'https://api.mercadopago.com/v1/payments' \
+   -d '{
+         "transaction_amount": 100,
+         "token": "ff8080814c11e237014c1ff593b57b4d",
+         "description": "Blue shirt",
+         "installments": 1,
+         "payment_method_id": "visa",
+         "issuer_id": 310,
+         "payer": {
+           "email": "PAYER_EMAIL"
+         }
+   }'
+```
+
+After making this charge, you must execute the refund, according to the example below.
+
+```curl
+Example of charging a small amount
+===
+curl -X POST \
+'https://api.mercadopago.com/v1/payments/12345678901/refunds'\
+-H 'Content-Type: application/json' \
+-H 'X-Idempotency-Key: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac' \
+-H 'Authorization: Bearer TEST-4397********912-08011*********50d74305b*********a2f9ec0-1********' \
+-d '{
+"amount": 5
+}'
+```
+
+> WARNING
+>
+> Important
+>
+> It is essential to **wait at least 5 seconds between creating the payment and executing the refund**. Additionally, executing the refund depends on having a minimum available balance equivalent to the refund amount in your bank account within Mercado Pago.
+> <br><br>
+> For more information, access the documentation for the endpoint [v1/payments](/developers/en/reference/payments/_payments/post) and also for the [v1/payments/{id}/refunds](/reference/chargebacks/_payments_id_refunds/post).
 
 ## Associate card with the customer
 
