@@ -248,4 +248,4 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 >
 > Atención
 >
-> Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con su tienda.
+> Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
