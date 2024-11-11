@@ -106,6 +106,48 @@
                       "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento. O limite máximo é de 150 caracteres.",
                       "es":"Descripción del producto o servicio comprado, el motivo de la order de pago. El límite máximo es de 150 caracteres."
                     }
+                  },
+                  "integration_data":{
+                    "type":"object",
+                    "description":{
+                      "en":"Contains information about the Mercado Pago application that created the order.",
+                      "pt":"Contém informações sobre a aplicação do Mercado Pago que criou a order.",
+                      "es":"Contiene información sobre la aplicación de Mercado Pago que creó la order."
+                    },
+                    "properties":{
+                      "platform_id":{
+                        "type":"string",
+                        "example":"1234567890",
+                        "description":{
+                          "en":"Identifier of the Mercado Pago application that created the order.",
+                          "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                          "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                        }
+                      },
+                      "integrator_id":{
+                        "type":"string",
+                        "example":"1234567890",
+                        "description":{
+                          "en":"Identifier of the user who develops the integration that creates the order.",
+                          "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
+                          "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                        }
+                      },
+                      "sponsor":{
+                        "type":"object",
+                        "properties":{
+                          "id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Mercado Pago's USER_ID of the integrator system.",
+                              "pt": "USER_ID da conta Mercado Pago do sistema integrador.",
+                              "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador."
+                            },
+                            "example": "446566691"
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -188,6 +230,38 @@
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
                             "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                          }
+                        },
+                        "platform_id":{
+                          "type":"string",
+                          "example":"1234567890",
+                          "description":{
+                            "en":"Identifier of the Mercado Pago application that created the order.",
+                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                            "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                          }
+                        },
+                        "integrator_id":{
+                          "type":"string",
+                          "example":"1234567890",
+                          "description":{
+                            "en":"Identifier of the user who develops the integration that creates the order.",
+                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
+                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                          }
+                        },
+                        "sponsor":{
+                          "type":"object",
+                          "properties":{
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Mercado Pago's USER_ID of the integrator system.",
+                                "pt": "USER_ID da conta Mercado Pago do sistema integrador.",
+                                "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador."
+                              },
+                              "example": "446566691"
+                            }
                           }
                         }
                       }
@@ -611,6 +685,38 @@
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
                             "es":"Identificador de la aplicación de Mercado Pago que creó la order."
                           }
+                        },
+                        "platform_id":{
+                          "type":"string",
+                          "example":"1234567890",
+                          "description":{
+                            "en":"Identifier of the Mercado Pago application that created the order.",
+                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                            "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                          }
+                        },
+                        "integrator_id":{
+                          "type":"string",
+                          "example":"1234567890",
+                          "description":{
+                            "en":"Identifier of the user who develops the integration that creates the order.",
+                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
+                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                          }
+                        },
+                        "sponsor":{
+                          "type":"object",
+                          "properties":{
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Mercado Pago's USER_ID of the integrator system.",
+                                "pt": "USER_ID da conta Mercado Pago do sistema integrador.",
+                                "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador."
+                              },
+                              "example": "446566691"
+                            }
+                          }
                         }
                       }
                     },
@@ -958,6 +1064,38 @@
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
                             "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                          }
+                        },
+                        "platform_id":{
+                          "type":"string",
+                          "example":"1234567890",
+                          "description":{
+                            "en":"Identifier of the Mercado Pago application that created the order.",
+                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                            "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                          }
+                        },
+                        "integrator_id":{
+                          "type":"string",
+                          "example":"1234567890",
+                          "description":{
+                            "en":"Identifier of the user who develops the integration that creates the order.",
+                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
+                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                          }
+                        },
+                        "sponsor":{
+                          "type":"object",
+                          "properties":{
+                            "id": {
+                              "type": "string",
+                              "description": {
+                                "en": "Mercado Pago's USER_ID of the integrator system.",
+                                "pt": "USER_ID da conta Mercado Pago do sistema integrador.",
+                                "es": "USER_ID de la cuenta de Mercado Pago del sistema integrador."
+                              },
+                              "example": "446566691"
+                            }
                           }
                         }
                       }
@@ -1684,9 +1822,9 @@
                             {
                               "title": "SELFSERVICE",
                               "description": {
-                                "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                                "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrada en modo desatendido de rompefilas.",
-                                "pt": "Configuração do terminal em modo kiosko. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
+                                "en": "Configuring the terminal in \"kiosk mode\". It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use. In order to configure the terminal in this mode, it is necessary to have previously configured its pin or password.",
+                                "es": "Configuración de la terminal en \"modo kiosco\". Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínima soporte al usuario en su uso. Para poder configurar a la terminal en este modo, es necesario previamente haber configurado su pin o contraseña.",
+                                "pt": "Configuração do terminal em \"modo quiosque\". É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização. Para configurar o terminal neste modo é necessário ter previamente configurado seu pin ou senha."
                               }
                             }
                           ]
@@ -1758,9 +1896,9 @@
                               {
                                 "title": "SELFSERVICE",
                                 "description": {
-                                  "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                                  "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrada en modo desatendido de rompefilas.",
-                                  "pt": "Configuração do terminal em modo kiosko. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
+                                  "en": "Configuring the terminal in \"kiosk mode\". It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use. In order to successfully change to this operating mode, you must have previously configured its pin or password.",
+                                  "es": "Configuración de la terminal en \"modo kiosco\". Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínima soporte al usuario en su uso. Para poder cambiar exitosamente a este modo de operación, deberás haber configurado previamente su pin o contraseña.",
+                                  "pt": "Configuração do terminal em \"modo quiosque\". É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização. Para poder alterar com sucesso este modo de operação, você deve ter previamente configurado seu pin ou senha."
                                 }
                               }
                             ]
@@ -1851,9 +1989,9 @@
                         {
                           "title": "pin_disabled",
                           "description": {
-                            "en": "Pin disabled for kioskko mode, please check the returned message and try to send the request again.",
-                            "es": "Pin deshabilitado para modo Kiosko, por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
-                            "pt": "Pin desativado para modo quiosque. Revise a mensagem retornada e tente enviar a solicitação novamente."
+                            "en": "You were trying to change the operating mode to \"SELFSERVICE\" without previously enabling the pin in the terminal. Enable the necessary pin from said terminal and try again.",
+                            "es": "Se quiso alterar el modo de operación a \"SELFSERVICE\" sin habilitar previamente el pin en la terminal. Habilita el pin necesario desde la misma terminal e inténtalo nuevamente.",
+                            "pt": "Houve uma tentativa de alterar o modo de operação para \"SELFSERVICE\" sem habilitar previamente o pin no terminal. Habilite o pin necessário no mesmo terminal e tente novamente."
                           }
                         }
                       ]
@@ -1984,6 +2122,282 @@
           "en": "Update terminal operation mode",
           "pt": "Atualizar modo de operação do terminal",
           "es": "Actualizar modo de operación de la terminal"
+        }
+      }
+    },
+    "/v1/orders/{order_id}/refund": {
+      "post": {
+        "tags": [
+          "mp-point"
+        ],
+        "description": {
+          "en": "This endpoint allows to create a refund for a payment transactions associated with an order for Mercado Pago Point. In case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite criar uma devolução total de uma transação de pagamento associada a uma order para Mercado Pago Point. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Este endpoint permite crear una devolución total de una transacción de pago asociada a una order para Mercado Pago Point. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+        },
+        "parameters": [
+          {
+            "name":"order_id",
+            "in":"path",
+            "description":{
+              "en": "ID of the order that contains the associated payment transaction to be refunded. This value is returned in the response to the \"Create order\" request.",
+              "pt": "ID da order que contém a transação de pagamento associada para ser reembolsada. Esse valor é retornado na resposta à requisição \"Criar order\".",
+              "es": "ID de la order que contiene asociada la transacción de pago a ser reembolsada. Este valor es devuelto en la respuesta a la solicitud \"Crear order\"."
+            },
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example": "01J49MMW3SSBK5PSV3DFR32959"
+            }
+          },
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id":{
+                      "type":"string",
+                      "example":"123",
+                      "description":{
+                        "en":"ID of the order created in the request, automatically generated by Mercado Pago.",
+                        "pt":"ID da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                        "es":"ID de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                      }
+                    },
+                    "status":{
+                      "type":"string",
+                      "example":"created",
+                      "description":{
+                        "en":"Current status of the order or the transaction.",
+                        "pt":"Status atual da order ou da transação.",
+                        "es":"Estado actual de la order o de la transacción."
+                      },
+                      "enum": [
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The order has been succesfully refunded.",
+                            "es": "La order ha sido reembolsada de manera exitosa.",
+                            "pt": "A order foi reembolsada com sucesso."
+                          }
+                        }
+                      ]
+                    },
+                    "status_detail": {
+                      "type": "string",
+                      "example": "refunded",
+                      "description": {
+                        "en":"Details about payment status. It is returned exclusively when the order is cancelled through the API, with the value \"cancelled_by_api\".",
+                        "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"cancelled_by_api\".",
+                        "es":"Detalles sobre el estado de la devolucion. Es devuelto exclusivamente cuando la order tuvo una devolucion por medio de la API."
+                      }
+                    },
+                    "transactions":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the transaction associated with the order.",
+                        "pt":"Contém informações sobre a transação associada a uma order.",
+                        "es":"Contiene información sobre la transacción asociada a una order."
+                      },
+                      "properties":{
+                        "refunds":{
+                          "type":"array",
+                          "required": true,
+                          "description":{
+                            "en":"Contains information about the refund associated with the order.",
+                            "pt":"Contém informações sobre o reembolso associado à order.",
+                            "es":"Contiene información sobre el reembolso asociado a una order."
+                          },
+                          "items": {
+                            "type": "object",
+                            "properties": { 
+                              "id":{
+                                "type":"string",
+                                "example":"ref_01J67CQQH5904WDBVZEM1234D",
+                                "description":{
+                                  "en":"Identifier of the refund transaction, automatically generated by Mercado Pago.",
+                                  "pt":"Identificador da transação de reembolso, gerado automaticamente pelo Mercado Pago.",
+                                  "es":"Identificador de la transacción de reembolso, generado automáticamente por Mercado Pago."
+                                }
+                              },
+                              "transaction_id":{
+                                "type":"string",
+                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                                "description":{
+                                  "en":"Identifier of the payment transaction that is being refunded.",
+                                  "pt":"Identificador da transação de pagamento sendo reembolsada.",
+                                  "es":"Identificador de la transacción de pago que está siendo reembolsada."
+                                }
+                              },
+                              "reference_id": {
+                                "type": "string",
+                                "example": "12345678",
+                                "description": {
+                                  "pt": "Identificador do pagamento associado à order.",
+                                  "en": "ID of the payment associated with the order.",
+                                  "es": "Identificador del pago asociado a la order."
+                                }
+                              },
+                              "amount": {
+                                "type": "string",
+                                "example": "24.90",
+                                "description": {
+                                  "pt": "Valor do reembolso.",
+                                  "en": "Refund amount.",
+                                  "es": "Monto del reembolso."
+                                }
+                              },
+                              "status":{
+                                "type":"string",
+                                "example":"created",
+                                "description":{
+                                  "en":"Current status of the transaction.",
+                                  "pt":"Status atual da transação.",
+                                  "es":"Estado actual de la transacción."
+                                },
+                                "enum": [
+                                  {
+                                    "title": "processed",
+                                    "description": {
+                                      "en": "All transactions have been succesfully processed.",
+                                      "es": "La transacción asociada a la order fue procesada exitosamente.",
+                                      "pt": "A transação associada à order foi processada com sucesso."
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la solicitud enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used with a different request within the last 24 hours. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado con una solicitud distinta en un tiempo menor a 24 horas. Por favor, vuelve a intentar realizar la petición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado em uma solicitação diferente em um período menor que 24 horas. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Generic error. Please try submitting the request again.",
+                            "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Refund order",
+          "pt": "Reembolsar uma order",
+          "es": "Reembolsar una order"
         }
       }
     }
