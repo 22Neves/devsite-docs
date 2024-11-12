@@ -334,11 +334,6 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 ------------
 
-> NOTE
->
-> Nota
->
-> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Crear pago
 
@@ -348,7 +343,11 @@ En el ejemplo de la sección previa, enviamos todos los datos necesarios para la
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post) y ejecuta la solicitud para procesar el pago.
 
-Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus solicitudes.
+> WARNING
+>
+> Importante
+>
+> Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus solicitudes.
 
 [[[
 ```php
@@ -662,6 +661,6 @@ La respuesta devolverá el siguiente resultado
 >
 > Atención
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulta la lista completa de estados de un pago y de la orden creada en la sección [Status]() <br>
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulta la lista completa de estados de un pago y de la orden creada en la sección [Status](/developers/es/docs/order/status-errors/payment-status) <br>
 > <br>
 > Para mantenerte al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/order/online-payments/notifications) para obtener más detalles.

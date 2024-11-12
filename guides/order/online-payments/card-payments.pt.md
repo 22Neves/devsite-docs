@@ -334,12 +334,6 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 
 ------------
 
-> NOTE
->
-> Nota
->
-> Caso necessite adicionar ou modificar alguma lógica no fluxo dos métodos do Javascript consulte a documentação [Integração via Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
-
 ## Criar pagamento
 
 Para continuar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos.
@@ -348,7 +342,11 @@ No exemplo da seção anterior, enviamos todos os dados necessários para criar 
 
 Com todas as informações coletadas no backend, envie um **POST** com os atributos necessários ao endpoint [/v1/orders](/developers/pt/reference/order/online-payments/create/post) e execute a requisição para processar o pagamento.
 
-Você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
+> WARNING
+>
+> Importante
+>
+> Você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
 [[[
 ```php
@@ -662,6 +660,6 @@ A resposta trará o seguinte resultado
 >
 > Atenção
 >
-> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Consulte a lista completa dos estados do pagamento e da ordem criada na seção [Status](). <br>
+> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Consulte a lista completa dos estados do pagamento e da ordem criada na seção [Status](/developers/pt/docs/order/status-errors/payment-status). <br>
 > <br>
 > Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/order/online-payments/notifications) para mais detalhes.

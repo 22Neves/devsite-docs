@@ -1,6 +1,6 @@
 # Reservar, capturar e cancelar valores
 
-Veja abaixo como gerenciar as transações realizadas para processar os pagamentos da sua loja.
+Ao integrar os pagamentos com Ordem manualmente, é possível processá-los reservando fundos e posteriormente capturá-los. Veja abaixo como gerenciar as transações realizadas.
 
 ## Reserva de valores
 

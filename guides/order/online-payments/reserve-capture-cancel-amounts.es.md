@@ -1,6 +1,6 @@
 # Reservar, capturar y cancelar fondos
 
-Ve a continuación cómo gestionar las transacciones realizadas para procesar los pagos de una tienda.
+Al integrar pagos con Order de modo manual, es posible procesarlos realizando una reserva de fondos y su posterior captura. Ve a continuación cómo gestionar las transacciones realizadas.
 
 ## Reserva de fondos
 

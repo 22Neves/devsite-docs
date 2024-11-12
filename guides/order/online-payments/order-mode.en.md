@@ -9,7 +9,7 @@ The Automatic Mode is the default mode of the application. Here, the transaction
 The allowed operations are:
 
 - [**Create and process order**](/developers/en/reference/order/online-payments/create/post): responsible for creating the order and simultaneously processing the transaction.
-- [**Get order**](/developers/en/reference/order/online-payments/get-order/get): allows you to locate an existing order intent.
+- [**Get order**](/developers/en/reference/order/online-payments/get-order/get): allows you to obtain information about an order, including its status in real time.
 - [**Capture order**](/developers/en/reference/order/online-payments/capture/post): enables the capture of the authorized amount of an order. This option is only valid for credit cards.
 - [**Cancel order**](/developers/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed/ finalized.
 - [**Refund order**](/developers/en/reference/order/online-payments/refund/post): in automatic mode, total or partial refunds can be created for a payment. The order will be fully refunded if all transactions are refunded completely.

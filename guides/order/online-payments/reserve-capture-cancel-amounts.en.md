@@ -1,6 +1,6 @@
 # Reserve, capture, and cancel amounts
 
-See below how to manage the transactions made to process the payments of a store.
+By integrating Order payments in manual mode, it is possible to process them by reserving funds and subsequently capturing them. See below how to manage the transactions made.
 
 ## Reserve amounts
 

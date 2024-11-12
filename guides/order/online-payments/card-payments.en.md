@@ -334,12 +334,6 @@ progressBar.setAttribute("value", "0");
 
 ------------
 
-> NOTE
->
-> Note
->
-> If you need to add or modify some logic in the flow of Javascript methods, consult the documentation [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
-
 ## Create payment
 
 To continue the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data.
@@ -348,7 +342,11 @@ In the example from the previous section, we sent all the necessary data to crea
 
 With all the information collected in the backend, send a **POST** with the necessary attributes to the endpoint [/v1/orders ](/developers/en/reference/order/online-payments/create/post) and execute the request to process the payment.
 
-It is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
+> WARNING
+>
+> Important
+>
+> It is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 [[[
 ```php
@@ -662,6 +660,6 @@ The response will show the following result
 >
 > Attention
 >
-> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". Refer to the complete list of payment and order statuses in the [Status]() section. <br>
+> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". Refer to the complete list of payment and order statuses in the [Status](/developers/en/docs/order/status-errors/payment-status) section. <br>
 > <br>
 > To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/order/online-payments/notifications) for more details.

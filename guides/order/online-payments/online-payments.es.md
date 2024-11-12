@@ -27,7 +27,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout Transparente
  - card_description: Permite que todo el proceso de finalización de compra, desde el llenado de los datos del usuario hasta la realización del pago, ocurra en un único entorno, sin la necesidad de redirigir a una página externa a la tienda.
- - card_button: /developers/es/docs/order/online-payments/online-payments
+ - card_button: /developers/es/docs/order/online-payments/prerequisites
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -44,7 +44,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout API
  - card_description: Permite que todo el proceso de finalización de compra, desde el llenado de los datos del usuario hasta la realización del pago, ocurra en un único entorno, sin la necesidad de redirigir a una página externa a la tienda.
- - card_button: /developers/es/docs/order/online-payments/online-payments
+ - card_button: /developers/es/docs/order/online-payments/prerequisites
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
