@@ -27,11 +27,15 @@ Para realizar uma compra de teste, você precisará simular um usuário comprado
 3. Insira os dados de um de nossos [cartões de teste](/developers/pt/docs/order/additional-content/your-integrations/test/cards).
 4. Confirme a compra.
 
-Pronto! Uma vez concluídos esses passos, a integração estará completa e você poderá usar suas credenciais de produção no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------. Para mais informações sobre a saída para produção, consulte a seção [Requisitos para entrar em produção](/developers/pt/docs/order/online-payments/go-to-production-requirements).
-
-## Cartões de teste
+### Cartões de teste
 
 [TXTSNIPPET][/guides/snippets/test-integration/test-cards]
+
+## 3. Verifique a compra de teste
+
+Para verificar se a compra de teste foi bem-sucedida, envie um **GET** para o endpoint [/v1/orders/{id}](/developers/pt/reference/order/online-payments/get-order/get), substituindo `id ` pela identificação da order, recebida na resposta à sua criação.
+
+Pronto! Uma vez concluídos esses passos, a integração estará completa e você poderá usar suas credenciais de produção no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------. Para mais informações sobre a saída para produção, consulte a seção [Requisitos para entrar em produção](/developers/pt/docs/order/online-payments/go-to-production-requirements).
 
 ## Requisitos para entrar em produção
 

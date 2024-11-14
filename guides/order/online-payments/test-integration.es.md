@@ -24,15 +24,20 @@ Para realizar una compra de prueba, deberás simular en la tienda un usuario com
 
 1. Selecciona algún producto o servicio e inicia el proceso de compra.
 2. En el checkout de la tienda, ingresa el correo electrónico. Recuerda que debe ser diferente al correo que usas en Mercado Pago.
-4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/docs/order/additional-content/your-integrations/test/cards).
+4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/docs/order/online-payments/integration-test#bookmark_tarjetas_de_prueba).
 3. Confirma la compra.
 
-
-¡Listo! Una vez finalizados estos pasos, la integración estará completa y podrás usar tus credenciales de producción en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para más información sobre la salida a producción, consulta la sección [Requisitos para salir a producción](/developers/es/docs/order/online-payments/go-to-production-requirements)
-
-## Tarjetas de prueba
+### Tarjetas de prueba
 
 [TXTSNIPPET][/guides/snippets/test-integration/test-cards]
+
+## 3. Verificar compra de prueba
+
+Para verificar que la compra de prueba se realizó correctamente, envía un GET al endpoint [/v1/orders/{id}](/developers/es/reference/order/online-payments/get-order/get), reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
+
+
+¡Listo! Una vez finalizados estos pasos, la integración estará completa y podrás usar tus credenciales de producción en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para más información sobre la salida a producción, consulta la sección [Requisitos para salir a producción](/developers/es/docs/order/online-payments/integration-test#requisitosparasaliraproduccin)
+
 
 ## Requisitos para salir a producción
 

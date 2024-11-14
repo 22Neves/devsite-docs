@@ -24,14 +24,19 @@ To conduct a test purchase, you need to simulate a buying user in the store. We 
 
 1. Select a product or service and start the purchase process.
 2. In the store's checkout, enter the email address. Remember that it must be different from the email you use on Mercado Pago.
-3. Enter the details of one of our [test cards](/developers/en/docs/order/additional-content/your-integrations/test/cards).
+3. Enter the details of one of our [test cards](/developers/pt/docs/order/online-payments/integration-test#cartesdeteste).
 4. Confirm the purchase.
 
-That's it! Once these steps are done, the integration will be complete, and you will be able to use your production credentials in ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------. For more information about going into production, please refer to the section [Requirements for Going to Production](/developers/en/docs/order/online-payments/go-to-production-requirements).
-
-## Test cards
+### Test cards
 
 [TXTSNIPPET][/guides/snippets/test-integration/test-cards]
+
+## 3. Verify test purchase
+
+To verify that the test purchase was successful, send a **GET** to the endpoint [/v1/orders/{id}](/developers/en/reference/order/online-payments/get-order/get), replacing `id ` by the identification of the order, received in the response to its creation.
+
+
+That's it! Once these steps are done, the integration will be complete, and you will be able to use your production credentials in ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------. For more information about going into production, please refer to the section [Requirements for Going to Production](/developers/en/docs/order/online-payments/integration-test#bookmark_requirements_to_go_to_production).
 
 ## Requirements to go to production
 
