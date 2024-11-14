@@ -119,18 +119,18 @@
                         "type":"string",
                         "example":"1234567890",
                         "description":{
-                          "en":"Identifier of the Mercado Pago application that created the order.",
-                          "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
-                          "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                          "en":"Identifier of the platform, assigned by Mercado Pago.",
+                          "pt":"Identificador da plataforma atribuído pelo Mercado Pago.",
+                          "es":"Identificador de la plataforma asignado por el equipo de Mercado Pago."
                         }
                       },
                       "integrator_id":{
                         "type":"string",
                         "example":"1234567890",
                         "description":{
-                          "en":"Identifier of the user who develops the integration that creates the order.",
-                          "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
-                          "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                          "en":"Identifier of the user who develops the integration that creates the order, assigned by Mercado Pago.",
+                          "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada, atribuído pelo Mercado Pago.",
+                          "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order, asignado por Mercado Pago."
                         }
                       },
                       "sponsor":{
@@ -236,18 +236,18 @@
                           "type":"string",
                           "example":"1234567890",
                           "description":{
-                            "en":"Identifier of the Mercado Pago application that created the order.",
-                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
-                            "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                            "en":"Identifier of the platform, assigned by Mercado Pago.",
+                            "pt":"Identificador da plataforma atribuído pelo Mercado Pago.",
+                            "es":"Identificador de la plataforma asignado por el equipo de Mercado Pago."
                           }
                         },
                         "integrator_id":{
                           "type":"string",
                           "example":"1234567890",
                           "description":{
-                            "en":"Identifier of the user who develops the integration that creates the order.",
-                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
-                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                            "en":"Identifier of the user who develops the integration that creates the order, assigned by Mercado Pago.",
+                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada, atribuído pelo Mercado Pago.",
+                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order, asignado por Mercado Pago."
                           }
                         },
                         "sponsor":{
@@ -690,18 +690,18 @@
                           "type":"string",
                           "example":"1234567890",
                           "description":{
-                            "en":"Identifier of the Mercado Pago application that created the order.",
-                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
-                            "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                            "en":"Identifier of the platform, assigned by Mercado Pago.",
+                            "pt":"Identificador da plataforma atribuído pelo Mercado Pago.",
+                            "es":"Identificador de la plataforma asignado por el equipo de Mercado Pago."
                           }
                         },
                         "integrator_id":{
                           "type":"string",
                           "example":"1234567890",
                           "description":{
-                            "en":"Identifier of the user who develops the integration that creates the order.",
-                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
-                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                            "en":"Identifier of the user who develops the integration that creates the order, assigned by Mercado Pago.",
+                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada, atribuído pelo Mercado Pago.",
+                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order, asignado por Mercado Pago."
                           }
                         },
                         "sponsor":{
@@ -1070,18 +1070,18 @@
                           "type":"string",
                           "example":"1234567890",
                           "description":{
-                            "en":"Identifier of the Mercado Pago application that created the order.",
-                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
-                            "es":"Identificador de la plataforma o modulo que ofrece Mercado Pago."
+                            "en":"Identifier of the platform, assigned by Mercado Pago.",
+                            "pt":"Identificador da plataforma atribuído pelo Mercado Pago.",
+                            "es":"Identificador de la plataforma asignado por el equipo de Mercado Pago."
                           }
                         },
                         "integrator_id":{
                           "type":"string",
                           "example":"1234567890",
                           "description":{
-                            "en":"Identifier of the user who develops the integration that creates the order.",
-                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada.",
-                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order."
+                            "en":"Identifier of the user who develops the integration that creates the order, assigned by Mercado Pago.",
+                            "pt":"Identificador do usuário que desenvolve a integração com a qual a order está sendo criada, atribuído pelo Mercado Pago.",
+                            "es":"Identificador del usuario que desarrolla la integración con la que se está creando la order, asignado por Mercado Pago."
                           }
                         },
                         "sponsor":{
@@ -1928,9 +1928,9 @@
                         {
                           "title": "unsupported_site",
                           "description": {
-                            "en": "Invalid site for this request. Check the sent Access Token and try to execute the request again.",
-                            "es": "Site inválido para hacer la requisición. Revisa el Access Token enviado e intenta ejecutar la solicitud nuevamente.",
-                            "pt": "Site inválido para fazer a solicitação. Verifique o Access Token enviado e tente executar a solicitação novamente."
+                            "en": "Invalid site for this request. The only available locations/sites are Argentina, Brazil, Chile and Mexico. Check the sent Access Token and try to execute the request again.",
+                            "es": "Sitio inválido para hacer la requisición. Las únicas ubicaciones/sitios disponibles son Argentina, Brasil, Chile y México. Revisa el Access Token enviado e intenta ejecutar la solicitud nuevamente.",
+                            "pt": "Site inválido para fazer a solicitação. Os únicos locais/sites disponíveis são Argentina, Brasil, Chile e México. Verifique o Access Token enviado e tente executar a solicitação novamente."
                           }
                         },
                         {
@@ -2181,9 +2181,9 @@
                       "type":"string",
                       "example":"123",
                       "description":{
-                        "en":"ID of the order created in the request, automatically generated by Mercado Pago.",
-                        "pt":"ID da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                        "es":"ID de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                        "en":"Identifier of the order to be refunded, received in the response to its creation.",
+                        "pt":"Identificador da order reembolsada, recebido na resposta à sua criação.",
+                        "es":"Identificador de la order que va a ser reembolsada, recibido en la respuesta a su creación."
                       }
                     },
                     "status":{
@@ -2209,9 +2209,9 @@
                       "type": "string",
                       "example": "refunded",
                       "description": {
-                        "en":"Details about payment status. It is returned exclusively when the order is cancelled through the API, with the value \"cancelled_by_api\".",
-                        "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"cancelled_by_api\".",
-                        "es":"Detalles sobre el estado de la devolucion. Es devuelto exclusivamente cuando la order tuvo una devolucion por medio de la API."
+                        "en":"Details about the refund status. It is returned exclusively when the order is reimbursed through the API",
+                        "pt":"Detalhes sobre o status do reembolso. É devolvido exclusivamente quando a order é reembolsada através da API.",
+                        "es":"Detalles sobre el estado del reembolso. Es devuelto exclusivamente cuando la order es reembolsada por medio de la API."
                       }
                     },
                     "transactions":{
@@ -2246,18 +2246,18 @@
                                 "type":"string",
                                 "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
                                 "description":{
-                                  "en":"Identifier of the payment transaction that is being refunded.",
-                                  "pt":"Identificador da transação de pagamento sendo reembolsada.",
-                                  "es":"Identificador de la transacción de pago que está siendo reembolsada."
+                                  "en":"Identifier of the payment transaction that is being refunded, received in the response to its creation.",
+                                  "pt":"Identificador da transação de pagamento sendo reembolsada, recebido na resposta à sua criação.",
+                                  "es":"Identificador de la transacción de pago que está siendo reembolsada, devuelto en la respuesta a su creación."
                                 }
                               },
                               "reference_id": {
                                 "type": "string",
                                 "example": "12345678",
                                 "description": {
-                                  "pt": "Identificador do pagamento associado à order.",
-                                  "en": "ID of the payment associated with the order.",
-                                  "es": "Identificador del pago asociado a la order."
+                                  "pt": "Identificador que associa o pagamento e o respetivo reembolso.",
+                                  "en": "ID that associates the payment and its refund.",
+                                  "es": "Identificador que asocia el pago y su respectivo reembolso."
                                 }
                               },
                               "amount": {
