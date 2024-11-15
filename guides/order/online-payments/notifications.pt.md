@@ -1,6 +1,6 @@
 # Notificações
 
-As notificações são mensagens enviadas pelo servidor do Mercado Pago a partir de eventos realizados em sua aplicação. Para que essas notificações sejam enviadas, é necessário ativar diferentes tópicos de notificação, seja em [Suas integrações](/developers/panel/app) ou ao criar um pagamento. Isso permitirá que você obtenha informações sobre os diferentes eventos ocorridos.
+As notificações são mensagens enviadas pelo servidor do Mercado Pago a partir de eventos realizados em sua aplicação. 
 
 Webhooks (também conhecido como retorno de chamada web) utiliza HTTP REST para notificar instantaneamente as atualizações e oferece maior segurança na integração por meio de uma assinatura secreta. Este método de validação garante que as notificações recebidas são enviadas pelo Mercado Pago.
 
@@ -339,7 +339,7 @@ Para garantir que as notificações estejam configuradas corretamente, é necess
 1. Após configurar as URLs e os eventos desejados, clique em **Salvar** para salvar a configuração.
 2. Após isso, clique em **Simular** para testar se a URL indicada está recebendo as notificações corretamente.
 3. Na tela de simulação, selecione a URL a ser testada, podendo ser uma URL de **teste** ou de **produção**.
-4. Em seguida, selecione o evento **tOrder (Mercado Pago)** e insira a **identificação** que será enviada no corpo da notificação.
+4. Em seguida, selecione o evento **Order (Mercado Pago)** e insira a **identificação** que será enviada no corpo da notificação.
 5. Por fim, clique em **Enviar teste** para verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 
 ## Ações necessárias após receber uma notificação

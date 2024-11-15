@@ -2,7 +2,7 @@
 
 Notifications are messages sent by the Mercado Pago server based on events that occur in your application. 
 
-Webhooks (also known as web callbacks) Uses HTTP REST to instantly notify updates and provides greater integration security through a secret signature, a validation method that ensures notifications received were sent by Mercado Pago.
+Webhooks (also known as web callbacks) uses HTTP REST to instantly notify updates and provides greater integration security through a secret signature, a validation method that ensures notifications received were sent by Mercado Pago.
 
 Once configured, the Webhook will be sent whenever one or more registered events occur, eliminating the need for constant checks and thus preventing system overload and data loss in critical situations.
 
@@ -346,7 +346,7 @@ When you receive a notification on your platform, Mercado Pago expects a respons
 
 The **waiting time** for confirmation of receipt of notifications is **22 seconds**. If this confirmation is not sent, the system will understand that the notification was not received and will **retry sending every 15 minutes** until a response is received. After the third attempt, the interval will be extended, but the attempts will continue.
 
-After responding to the notification and confirming its receipt, you can obtain the complete information of the notified resource by making a **GET**  request to the [/v1/orders/{id}](/developers/es/reference/order/online-payments/get-order/get) endpoint.
+After responding to the notification and confirming its receipt, you can obtain the complete information of the notified resource by making a **GET**  request to the [/v1/orders/{id}](/developers/en/reference/order/online-payments/get-order/get) endpoint.
 
 > NOTE
 >
