@@ -178,7 +178,7 @@ O detalhamento de cada um dos parâmetros citados acima, bem como seus respectiv
 | `description`       | string  | Título do produto.                                                                                                                         | Opcional             | "Video game"                                |
 | `installments`      | number  | Quantidade de parcelas. Como se trata de um pagamento com cartão de débito, a quantidade de parcelas será 1.                               | Obrigatório          | 1                                         |
 | `payment_method_id` | string  | "yape" para todos os casos.                                                                                                               | Obrigatório          | "yape"                                      |
-| `payer.email`       | string  | Email do pagador.                                                                                                                          | Obrigatório          | "test_user_12345@testuser.com"         |
+| `payer.email`       | string  | Email do pagador.                                                                                                                          | Obrigatório          | "test_user_12345@gmail.com"         |
 
 [[[
 ```java
