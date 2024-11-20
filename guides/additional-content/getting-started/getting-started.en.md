@@ -21,11 +21,11 @@ bullet_section_with_media:
 
 The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ------------ to create one for free.
 
+### Your integrations
+
+If you choose a product that requires integration, you will need to access [Your integrations](https://www.mercadopago.com/developers/panel/app), which allows you to manage code development integrations, your applications, perform tests, and set up notifications that provide you with information about transactions.
+
 If you already have a Mercado Libre account, access [Your integrations](https://www.mercadopago.com/developers/panel/app) with the same username and password.
-
-# Your integrations
-
-With your account already active, you have access to [Your integrations](https://www.mercadopago.com/developers/panel/app), which allows you to manage code development integrations, your applications, perform tests, and configure notifications that provide you with information about transactions.
 
 ---
 bullet_section_with_media:
@@ -39,14 +39,21 @@ bullet_section_with_media:
 
 Solutions for those who sell on websites, through WhatsApp, or social media. The fees, based on the receipt period and/or the number of interest-free installments offered to the buyer, are automatically applied to sales. For further details, please refer to the links below.
 
+### Solutions without integration
+
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender) | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | Basic |
+| [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/suscripciones) | Manages recurring payments simply and without the need for integration. Allows customers to pay without the need for a website. | Basic |
+
+### Solutions with integration
+
 ----[mlb]----
 | Solution | Description | Necessary knowledge |
 |:---|:---|:---|
 | [Checkout Pro](/developers/en/docs/checkout-pro/landing) | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | Intermediate |
 | [Checkout Transparente](/developers/en/docs/checkout-api/landing) | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | Advanced |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | Advanced |
-| [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender) | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | Basic |
-| [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/suscripciones) | Manages recurring payments simply and without the need for integration. Allows customers to pay without the need for a website. | Basic |
 | [Subscriptions](/developers/en/docs/subscriptions/landing) | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | Intermediate |
 ------------
 
@@ -56,26 +63,7 @@ Solutions for those who sell on websites, through WhatsApp, or social media. The
 | [Checkout Pro](/developers/en/docs/checkout-pro/landing) | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | Intermediate |
 | [Checkout API](/developers/en/docs/checkout-api/landing) | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | Advanced |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | Advanced |
-| [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/link-de-pago) | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | Basic |
-| [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/suscripciones) | Manages recurring payments simply and without the need for integration. Allows customers to pay without the need for a website. | Basic |
 | [Subscriptions](/developers/en/docs/subscriptions/landing) | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | Intermediate |
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-#### Receiving payments
-   - [Applicable fees for receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/33403)
-#### Installments
-   - [Installment costs](https://www.mercadopago[FAKER][URL][DOMAIN]/help/19032)
-   - [Applicable fees for offering interest-free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/cuotas-sin-interes_3299)
-
-------------
-----[mlb]----
-#### Receiving payments
-   - [Applicable fees for receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
-#### Installments
-   - [Installment costs](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
-   - [Applicable fees for offering interest-free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
-
 ------------
 
 ## Offer in-person payments
@@ -126,6 +114,37 @@ With our **frontend SDKs**, you can make calls for card tokens and use many othe
 
 <br>
 
+### Learn about the costs and fees of Mercado Pago
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+#### Receiving payments
+   - [Applicable fees for receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/33403)
+#### Installments
+   - [Installment costs](https://www.mercadopago[FAKER][URL][DOMAIN]/help/19032)
+   - [Applicable fees for offering interest-free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/cuotas-sin-interes_3299)
+
+------------
+----[mlb]----
+#### Receiving payments
+   - [Applicable fees for receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custo-receber-pagamentos_453)
+#### Installments
+   - [Installment costs](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/custos-parcelamento_322)
+   - [Applicable fees for offering interest-free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
+
+------------
+
+<br>
+
+# How to start integrating
+
+If you're not sure where to start based on your programming knowledge, don't worry. We have different solutions that fit your needs. Follow the diagram below to find out which product is right for you.
+
+![Getting started](/images/getting-started/getting-started-diagram2-en.png)
+
+For details on the **accepted payment methods in each country**, consult the complete list of [available payment methods](/developers/en/docs/sales-processing/payment-methods).
+
+<br>
+
 ## Availability of solutions in each country
 
 ----[mlb]----
@@ -155,16 +174,6 @@ With our **frontend SDKs**, you can make calls for card tokens and use many othe
 | [QR Code](/developers/en/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
 | [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | ✔ | ✔ | - | - | ✔ | - | - |
 ------------
-
-<br>
-
-# How to start integrating
-
-If you're not sure where to start based on your programming knowledge, don't worry. We have different solutions that fit your needs. Follow the diagram below to find out which product is right for you.
-
-![Getting started](/images/getting-started/getting-started-diagram2-en.png)
-
-For details on the **accepted payment methods in each country**, consult the complete list of [available payment methods](/developers/en/docs/sales-processing/payment-methods).
 
 ---
 bullet_section_with_media:
