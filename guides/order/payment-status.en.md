@@ -15,8 +15,8 @@ Check the list of the `status` and `status_detail` that a payment can get.
 | `action_required` | `waiting_transfer` | The transaction requires an additional action and is awaiting the transfer of funds. This means that the payment has been initiated, but the funds have not yet been transferred to the seller's account. |
 | `at_terminal` | `at_terminal` | **Exclusive status for in-store payments**. The transaction is at the terminal. This means that it is being verified at the payment terminal. |
 | `cancelled` | `cancelled_transaction` | The transaction has been canceled and will not be completed. |
-| `cancelled` | `cancelled_by_api` | The transaction has been canceled via API and will not be completed. |
-| `cancelled` | `cancelled_in_terminal` | The transaction has been canceled at the terminal and will not be completed. |
+| `cancelled` | `cancelled_by_api` | **Exclusive status for in-store payments**.The transaction has been canceled via API and will not be completed. |
+| `cancelled` | `cancelled_in_terminal` | **Exclusive status for in-store payments**.The transaction has been canceled at the terminal and will not be completed. |
 | `charged_back` | `in_process` | The transaction has suffered a chargeback. This means it has been disputed and the amount is being reverted. |
 | `charged_back` | `settled` | The transaction has suffered a chargeback. This means it has been disputed and the amount was credited to the seller. |
 | `charged_back` | `reimbursed` | The transaction has suffered a chargeback. This means it has been disputed and the amount was refunded to the buyer. |

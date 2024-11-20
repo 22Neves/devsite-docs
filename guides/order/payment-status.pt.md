@@ -15,8 +15,8 @@ Veja a lista de possíveis `status` e `status_detail` que um pagamento pode assu
 | `action_required` | `waiting_transfer` | A transação requer uma ação adicional e está aguardando a transferência dos valores. Isso significa que o pagamento foi iniciado, mas os valores ainda não foram transferidos para a conta do vendedor. |
 | `at_terminal` | `at_terminal` | Status **exclusivo para pagamentos presenciais**. A transação está no terminal. Isso significa que está sendo verificada no terminal de pagamento. |
 | `cancelled` | `cancelled_transaction` | A transação foi cancelada e não será concluída. |
-| `cancelled` | `cancelled_by_api` | A transação foi cancelada vía API e não será concluída. |
-| `cancelled` | `cancelled_in_terminal` | A transação foi cancelada no terminal e não será concluída. |
+| `cancelled` | `cancelled_by_api` | Status **exclusivo para pagamentos presenciais**. A transação foi cancelada vía API e não será concluída. |
+| `cancelled` | `cancelled_in_terminal` | Status **exclusivo para pagamentos presenciais**. A transação foi cancelada no terminal e não será concluída. |
 | `charged_back` | `in_process` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor está sendo revertido. |
 | `charged_back` | `settled` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor foi disponibilizado ao vendedor. |
 | `charged_back` | `reimbursed` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor foi reembolsado ao comprador.  |

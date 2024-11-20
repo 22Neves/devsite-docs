@@ -15,8 +15,8 @@ Consulta la lista de `status` y `status_detail` que puede tomar un pago.
 | `action_required` | `waiting_transfer` | La transacción requiere una acción adicional y está esperando la transferencia de los fondos. Esto significa que el pago ha sido iniciado, pero los fondos aún no se han transferido a la cuenta del vendedor. |
 | `at_terminal` | `at_terminal` | Estado **exclusivo para pagos presenciales**. La transacción está en la terminal. Esto significa que está siendo verificada en la terminal de pago. |
 | `cancelled` | `cancelled_transaction` | La transacción ha sido cancelada y no se completará. |
-| `cancelled` | `cancelled_by_api` | La transacción ha sido cancelada vía API y no se completará. |
-| `cancelled` | `cancelled_in_terminal` | La transacción ha sido cancelada en la terminal y no se completará. |
+| `cancelled` | `cancelled_by_api` | Estado **exclusivo para pagos presenciales**. La transacción ha sido cancelada vía API y no se completará. |
+| `cancelled` | `cancelled_in_terminal` | Estado **exclusivo para pagos presenciales**. La transacción ha sido cancelada en la terminal y no se completará. |
 | `charged_back` | `in_process` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto está siendo revertido. |
 | `charged_back` | `settled` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto fue acreditado al vendedor. |
 | `charged_back` | `reimbursed` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto fue reembolsado al comprador. |
