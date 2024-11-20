@@ -730,7 +730,63 @@
                       }
                     },
                     "status":{
-                      "$ref": "#/components/schemas/status"
+                      "type":"string",
+                      "example":"created",
+                      "description":{
+                        "en":"Current status of the order or the transaction.",
+                        "pt":"Status atual da order ou da transação.",
+                        "es":"Estado actual de la order o de la transacción."
+                      },
+                      "enum": [
+                        {
+                          "title": "created",
+                          "description": {
+                            "en": "The order has been succesfully created.",
+                            "es": "La order ha sido creada de manera exitosa.",
+                            "pt": "A order foi criada com sucesso."
+                          }
+                        },
+                        {
+                          "title": "at_terminal",
+                          "description": {
+                            "en": "The order was obtained by the terminal and is ready for process.",
+                            "es": "La order fue obtenida por la terminal y está lista para ser procesada.",
+                            "pt": "A order foi obtida no terminal e está pronta para ser processada."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "The order has been cancelled, either through the API or the terminal.",
+                            "es": "La order fue cancelada desde el API o desde la temrinal.",
+                            "pt": "A order foi cancelada na API ou no terminal."
+                          }
+                        },
+                        {
+                          "title": "processed",
+                          "description": {
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "La transacción asociada a la order fue procesada exitosamente.",
+                            "pt": "A transação associada à order foi processada com sucesso."
+                          }
+                        },
+                        {
+                          "title": "failed",
+                          "description": {
+                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The order has been succesfully refunded.",
+                            "es": "La order ha sido reembolsada de manera exitosa.",
+                            "pt": "A order foi reembolsada com sucesso."
+                          }
+                        }
+                      ]
                     },
                     "created_date":{
                       "type":"string",
@@ -1119,43 +1175,11 @@
                       },
                       "enum": [
                         {
-                          "title": "created",
-                          "description": {
-                            "en": "The order has been succesfully created.",
-                            "es": "La order ha sido creada de manera exitosa.",
-                            "pt": "A order foi criada com sucesso."
-                          }
-                        },
-                        {
-                          "title": "on_terminal",
-                          "description": {
-                            "en": "The order was obtained by the terminal and is ready for process.",
-                            "es": "La order fue obtenida por la terminal y está lista para ser procesada.",
-                            "pt": "A order foi obtida no temrinal e está pronta para ser processada."
-                          }
-                        },
-                        {
                           "title": "cancelled",
                           "description": {
                             "en": "The order has been cancelled, either through the API or the terminal.",
                             "es": "La order fue cancelada desde el API o desde la terminal.",
-                            "pt": "A order foi cancelada na API ou no temrinal."
-                          }
-                        },
-                        {
-                          "title": "processed",
-                          "description": {
-                            "en": "All transactions have been succesfully processed.",
-                            "es": "La transacción asociada a la order fue procesada exitosamente.",
-                            "pt": "A transação associada à order foi processada com sucesso."
-                          }
-                        },
-                        {
-                          "title": "failed",
-                          "description": {
-                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                            "pt": "A order foi cancelada na API ou no terminal."
                           }
                         }
                       ]
@@ -1219,7 +1243,23 @@
                                 }
                               },
                               "status":{
-                                "$ref": "#/components/schemas/status"
+                                "type":"string",
+                                "example":"cancelled",
+                                "description":{
+                                  "en":"Current status of the transaction.",
+                                  "pt":"Status atual da transação.",
+                                  "es":"Estado actual de la transacción."
+                                },
+                                "enum": [
+                                  {
+                                    "title": "cancelled",
+                                    "description": {
+                                      "en": "The order has been cancelled, either through the API or the terminal.",
+                                      "es": "La order fue cancelada desde el API o desde la terminal.",
+                                      "pt": "A order foi cancelada na API ou no terminal."
+                                    }
+                                  }
+                                ]
                               },
                               "status_detail": {
                                 "type": "string",
@@ -1360,9 +1400,9 @@
                         {
                           "title": "cannot_cancel_order",
                           "description": {
-                            "en": "There is a conflict trying to cancel the order due to its current status. Please note that orders can only be cancelled via API when \"status=created\". If you are trying to cancel an order with status \"status=on_terminal\", you will need to do from the terminal.",
-                            "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=on_terminal\", deberás hacerlo desde la terminal.",
-                            "pt": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=on_terminal\", deverá fazê-lo a partir do terminal."
+                            "en": "There is a conflict trying to cancel the order due to its current status. Please note that orders can only be cancelled via API when \"status=created\". If you are trying to cancel an order with status \"status=at_terminal\", you will need to do from the terminal.",
+                            "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=at_terminal\", deberás hacerlo desde la terminal.",
+                            "pt": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=at_terminal\", deverá fazê-lo a partir do terminal."
                           }
                         }
                       ]
@@ -1417,7 +1457,7 @@
         }
       }
     },
-    "terminals/v1/list":{
+    "/terminals/v1/list":{
       "get":{
         "tags":[
           "mp-point"
@@ -1451,7 +1491,7 @@
             },
             "schema": {
               "type": "integer",
-              "example": 0
+              "example": 1
             }
           }
         ],
@@ -1759,7 +1799,7 @@
         }
       }
     },
-    "terminals/v1/setup":{
+    "/terminals/v1/setup":{
       "patch":{
         "tags":[
           "mp-point"
@@ -2188,7 +2228,7 @@
                     },
                     "status":{
                       "type":"string",
-                      "example":"created",
+                      "example":"refunded",
                       "description":{
                         "en":"Current status of the order or the transaction.",
                         "pt":"Status atual da order ou da transação.",
@@ -2585,7 +2625,7 @@
             }
           },
           {
-            "title": "on_terminal",
+            "title": "at_terminal",
             "description": {
               "en": "The order was obtained by the terminal and is ready for process.",
               "es": "La order fue obtenida por la terminal y está lista para ser procesada.",
