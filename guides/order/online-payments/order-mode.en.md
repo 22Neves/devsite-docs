@@ -1,4 +1,4 @@
-# Online payments
+# Orders
 
 An online payment order can be created to be processed in two ways: **Automatic mode** and **Manual mode**.
 
@@ -9,10 +9,12 @@ The Automatic Mode is the default mode of the application. Here, the transaction
 The allowed operations are:
 
 - [**Create and process order**](/developers/en/reference/order/online-payments/create/post): responsible for creating the order and simultaneously processing the transaction.
-- [**Get order**](/developers/en/reference/order/online-payments/get-order/get): allows you to locate an existing order intent.
+- [**Get order**](/developers/en/reference/order/online-payments/get-order/get): allows you to obtain information about an order, including its status in real time.
 - [**Capture order**](/developers/en/reference/order/online-payments/capture/post): enables the capture of the authorized amount of an order. This option is only valid for credit cards.
 - [**Cancel order**](/developers/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed/ finalized.
-- [**Refund order**](/developers/en/reference/order/online-payments/refund/post): in automatic mode, the refund will always be total.
+- [**Refund order**](/developers/en/reference/order/online-payments/refund/post): in automatic mode, total or partial refunds can be created for a payment. The order will be fully refunded if all transactions are refunded completely.
+   - **Total refund**: the value to be refunded should not be indicated in the request’s `body`, that must be empty.
+   - **Partial refund**: the amount to be refunded must be specified in the request’s `body` along with de transaction ID. All other transactions will remain as they are, and only the modified transaction will be refunded.   
 
 ## Manual mode
 
@@ -28,5 +30,5 @@ The allowed operations are:
 - [**Get order**](/developers/en/reference/order/online-payments/get-order/get): allows you to locate an existing order intent.
 - [**Cancel order**](/developers/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed.
 - [**Refund order or transaction**](/developers/en/reference/order/online-payments/refund/post): in manual mode, total or partial refunds can be created for a payment. The order will be fully refunded if all transactions are refunded completely.
-   - **Total refund**: the value to be refunded should not be indicated in the request’s `body`.
-   - **Partial refund**: the amount to be refunded must be specified in the request’s `body`. All other transactions will remain as they are, and only the modified transaction will be refunded.   
+   - **Total refund**: the value to be refunded should not be indicated in the request’s `body`, that must be empty.
+   - **Partial refund**: the amount to be refunded must be specified in the request’s `body` along with de transaction ID. All other transactions will remain as they are, and only the modified transaction will be refunded.  

@@ -9,10 +9,12 @@ O Modo automático, como o nome propõe, é o modo padrão da aplicação. Por e
 As operações permitidas são: 
 
 - [**Criar e processar order**](/developers/pt/reference/order/online-payments/create/post): responsável pela criação da order já com o processamento da transação simultâneo.
-- [**Obter order**](/developers/pt/reference/order/online-payments/get-order/get): permite localizar uma intenção de order existente.
+- [**Obter order**](/developers/pt/reference/order/online-payments/get-order/get): permite obter informações sobre uma order, incluindo o seu status em tempo real.
 - [**Capturar order**](/developers/pt/reference/order/online-payments/capture/post): possibilita a captura do valor autorizado de uma order. Essa opção só é válida para cartões de crédito.
 - [**Cancelar order**](/developers/pt/reference/order/online-payments/cancel-order/post): responsável pelo cancelamento de uma order já existente, mas que ainda não foi processado. 
-- [**Reembolsar order**](/developers/pt/reference/order/online-payments/refund/post): no caso do modo automático, o estorno sempre será total. 
+- [**Reembolsar order**](/developers/pt/reference/order/online-payments/refund/post): no caso do modo automático, podem ser criados estornos totais ou parciais de um pagamento. A order será reembolsada totalmente se todas as transações forem estornadas por completo. 
+  - **Reembolso total**: não deverá ser indicado o valor a ser reembolsado no `body` da requisição, que deve ser enviado vazio.
+  - **Reembolso parcial**: deverá ser especificada a quantia a ser reembolsada no `body` da requisição junto com o ID da transação. Todas as outras transações permanecerão como estão e somente a transação alterada será reembolsada. 
 
 ## Modo manual
 
@@ -25,8 +27,8 @@ As operações permitidas são:
 - **[Alterar](/developers/pts/reference/order/online-payments/update-transaction/patch) e/ou [remover](/developers/es/reference/order/online-payments/delete-transaction/delete) transação**: a alteração e remoção de transações só pode ser feita no modo manual e permitem mudar informações de pagamento que já tinham sido adicionadas anteriormente à order. São operações que modificam um item dentro de qualquer campo do parâmetro `transactions`.
 - [**Capturar order**](/developers/pt/reference/order/online-payments/capture/post): responsável por capturar o valor autorizado de um order. Essa opção só é válida para cartões de crédito.
 - [**Processar transação**](/developers/pt/reference/order/online/process-order/post): possibilitada a execução das transações criadas e/ou alteradas no modo manual. 
-- [**Obter order**](/developers/pt/reference/order/online-payments/get-order/get): permite localizar uma intenção de order existente.
+- [**Obter order**](/developers/pt/reference/order/online-payments/get-order/get): permite obter informações sobre uma order, incluindo o seu status em tempo real.
 - [**Cancelar order**](/developers/pt/reference/order/online-payments/cancel-order/post): responsável pelo cancelamento de um order já existente, mas não que ainda não foi processado. 
 - [**Reembolsar order ou transação**](/developers/pt/reference/order/online-payments/refund/post): no modo manual podem ser criados estornos totais ou parciais de um pagamento. A order será reembolsada totalmente se todas as transações forem estornadas por completo. 
-  - **Reembolso total**: não deverá ser indicado o valor a ser reembolsado no `body` da requisição.
-  - **Reembolso parcial**: deverá ser especificada a quantia a ser reembolsada no `body` da requisição. Todas as outras transações permanecerão como estão e somente a transação alterada será reembolsada. 
+  - **Reembolso total**: não deverá ser indicado o valor a ser reembolsado no `body` da requisição, que deve ser enviado vazio.
+  - **Reembolso parcial**: deverá ser especificada a quantia a ser reembolsada no `body` da requisição junto com o ID da transação. Todas as outras transações permanecerão como estão e somente a transação alterada será reembolsada. 

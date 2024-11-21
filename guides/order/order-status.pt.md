@@ -1,44 +1,22 @@
 # Status da order
 
-| Status | `status_detail` | Descrição |
-| --- | --- | --- |
-| approved | `accredited` | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`. |
-| approved | `partially_refunded` | O pagamento foi feito com pelo menos um reembolso parcial. |
-| authorized | `pending_capture` | O pagamento foi autorizado e aguarda [captura](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment). |
-| in_process | `offline_process` | Por falta de processamento online, o pagamento está sendo processado de maneira offline. |
-| in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 dias úteis informaremos por e-mail se foi creditado. |
-| in_process | `pending_review_manual` | Estamos processando seu pagamento.<br/><br/>Não se preocupe, em menos de 2 dias úteis informaremos por e-mail se foi creditado ou se necessitamos de mais informação. |
-| pending | `pending_waiting_transfer` |Nos casos de transferência bancária, o `status_detail` é obtido aguardando que o usuário finalize o processo de pagamento no seu banco. |
-| pending | `pending_waiting_payment` | Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário realize o pagamento. |
-| pending | `pending_challenge` | Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge. |
-| cancelled | `expired` | O pagamento foi cancelado após ficar com status pendente por 30 dias.| 
-| cancelled | `by_collector` | O pagamento foi cancelado pelo collector.| 
-| cancelled | `by_payer` | O pagamento foi cancelado pelo pagador.|
-| charged_back | `settled` | O dinheiro foi retido após um processo de estorno. |
-| charged_back | `reimbursed` | O dinheiro foi devolvido após um processo de estorno.|
-| charged_back | `in_process` | O pagamento está em processo de recuperação pois o pagador desconhece a transação.|
-| refunded | `refunded` | O pagamento foi devolvido pelo collector.|
-| refunded | `by_admin` | o pagamento foi devolvido.|
-| rejected | `bank_error` | Se a forma de pagamento for transferência bancária, o pagamento foi rejeitado devido a um erro com o banco. |
-| rejected | `cc_rejected_3ds_challenge` | Pagamento rejeitado por não superar o challenge 3DS. |
-| rejected | `cc_rejected_3ds_mandatory` | Pagamento rejeitado por não ter o challenge 3DS quando é obrigatório. |
-| rejected | `cc_rejected_bad_filled_card_number` | Revise o número do cartão. |
-| rejected | `cc_rejected_bad_filled_date` | Revise a data de vencimento. |
-| rejected | `cc_rejected_bad_filled_other` | Revise os dados. |
-| rejected | `cc_rejected_bad_filled_security_code` | Revise o código de segurança do cartão. |
-| rejected | `cc_rejected_blacklist` | Não pudemos processar seu pagamento. |
-| rejected | `cc_rejected_call_for_authorize` | Você deve autorizar ao `payment_method_id` o pagamento do valor ao Mercado Pago. |
-| rejected | `cc_rejected_card_disabled` | Ligue para o `payment_method_id` para ativar seu cartão. O telefone está no verso do seu cartão. |
-| rejected | `cc_rejected_card_error` | Não conseguimos processar seu pagamento. |
-| rejected | `cc_rejected_duplicated_payment` | Você já efetuou um pagamento com esse valor. Caso precise pagar novamente, utilize outro cartão ou outra forma de pagamento. |
-| rejected | `cc_rejected_high_risk` | Seu pagamento foi recusado.<br/><br/>Escolha outra forma de pagamento. Recomendamos meios de pagamento em dinheiro. |
-| rejected | `cc_rejected_insufficient_amount` | O `payment_method_id` possui saldo insuficiente. |
-| rejected | `cc_rejected_invalid_installments` | O `payment_method_id` não processa pagamentos em `installments` parcelas. |
-| rejected | `cc_rejected_max_attempts` | Você atingiu o limite de tentativas permitido.<br/><br/>Escolha outro cartão ou outra forma de pagamento. |
-| rejected | `cc_rejected_other_reason` | `payment_method_id` não processa o pagamento. |
-| rejected | `cc_amount_rate_limit_exceeded` | O pagamento foi rejeitado porque superou o limite (CAP - Capacidade Máxima Permitida) do meio de pagamento. |
-| rejected | `rejected_insufficient_data` | O pagamento foi rejeitado devido à falta de todas as informações obrigatórias necessárias no envio. | 
-| rejected | `rejected_by_bank` | Operação recusada pelo banco. |
-| rejected | `rejected_by_regulations` | Pagamento recusado devido a regulamentações. |
-| rejected | `insufficient_amount` | Pagamento rejeitado por valores insuficientes. | ----[mlb]----
-| rejected |  `cc_rejected_card_type_not_allowed` | O pagamento foi rejeitado porque o usuário não tem a função crédito habilitada em seu cartão multiplo (débito e crédito). | ------------
+Veja a lista de possíveis `status` e `status_detail` que uma order pode assumir. 
+
+| `status` | `status_detail` | Descrição |
+|:---:|:---:|:---:|
+| `created` | `created` | A order foi criada com sucesso. Nesse momento, ainda não foi iniciada nenhuma ação de processamento, e a order está no estado inicial de espera. |
+| `processed` | `accredited` | A order foi processada com sucesso e o pagamento foi creditado. |
+| `processed` | `partially_refunded` | A order foi processada e uma parte do valor foi reembolsada. Isso indica que, embora a transação tenha sido concluída, houve um reembolso parcial do valor pago em favor do pagador. |
+| `processing` | `in_process` | A order está em processamento. Isso significa que a transação está em andamento e ainda não foi concluída.  |
+| `action_required` | `check_on_terminal` | Status **exclusivo para pagamentos presenciais**. A transação requer uma ação adicional no terminal. É necessário realizar uma verificação ou uma confirmação no terminal onde foi efetuado o pagamento. |
+| `action_required` | `waiting_payment` | A order requer uma ação adicional do pagador e está aguardando o pagamento. Isso significa que a transação foi iniciada, mas o pagamento ainda não foi concluído. |
+| `action_required` | `waiting_capture` | A order requer uma ação adicional do vendedor e está aguardando a captura do pagamento. Isso significa que o pagamento foi autorizado, mas ainda não foi capturado. |
+| `action_required` | `waiting_transfer` | A order requer uma ação adicional do pagador e está aguardando a transferência dos valores. Isso significa que o pagamento foi iniciado, mas os valores ainda não foram transferidos para a conta do vendedor. |
+| `at_terminal` | `at_terminal` | Status **exclusivo para pagamentos presenciais**. A order está no terminal. Isso significa que a transação está aguardando o processamento no terminal de pagamento. |
+| `cancelled` | `cancelled` | A order foi cancelada e não será concluída. |
+| `charged_back` | `in_process` | A order sofreu um chargeback. Isso significa que uma das transações da ordem foi contestada e está em processo de avaliação. |
+| `charged_back` | `settled` | A order sofreu um chargeback. Isso significa que a transação foi liquidada. Isso pode ocorrer quando o valor da transação foi processado e confirmado. |
+| `charged_back` | `reimbursed` | A order sofreu um chargeback. Isso significa que a transação foi reembolsada e o valor da transação foi devolvido ao pagador após o estorno.  |
+| `expired` | `expired` | A order expirou. Isso significa que a transação não foi concluída dentro do tempo limite e, portanto, foi encerrada. |
+| `failed` | `failed` | A order falhou. Isso significa que a transação não foi bem-sucedida e não será concluída. |
+| `refunded` | `refunded` | A order foi reembolsada. Isso significa que o valor da transação foi devolvido integralmente ao pagador. |

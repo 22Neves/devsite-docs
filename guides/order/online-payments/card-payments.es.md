@@ -10,7 +10,7 @@ Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utiliz
 
 ## Cifrar tarjeta - SDK JS
 
-La primera etapa del proceso de integración de pagos con tarjeta es la captura de los datos de la tarjeta. Esta captura se realiza a través de la inclusión de la biblioteca `MercadoPago.js` en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca antes de añadir el formulario de pago.
+La primera etapa del proceso de integración de pagos con tarjeta es la captura de los datos de la tarjeta. Esta captura se realiza a través de la inclusión de la biblioteca `MercadoPago.js` en tu proyecto, la configuración de credenciales, y la inclusión del formulario de pago para su posterior inicialización. Utiliza el siguiente código para importar la biblioteca antes de añadir el formulario de pago.
 
 [[[
 ```html
@@ -25,7 +25,7 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-## Configurar credenciales
+### Configurar credenciales
 
 Las credenciales son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
 
@@ -46,7 +46,7 @@ const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 ```
 ]]]
 
-## Añadir formulario de pago
+### Añadir formulario de pago
 
 La captura de los datos de la tarjeta se realiza a través del _CardForm_ de la biblioteca `MercadoPago.js`. Nuestro _CardForm_ se conectará a tu formulario de pago HTML, facilitando la obtención y validación de todos los datos necesarios para procesar el pago.
 
@@ -123,7 +123,7 @@ Para añadir el formulario de pago, inserta el siguiente HTML directamente en el
 
 ------------
 
-## Inicializar formulario de pago
+### Inicializar formulario de pago
 
 Después de añadir el formulario de pago, es necesario inicializarlo. Esta etapa consiste en relacionar el ID de cada campo del formulario con los atributos correspondientes. La biblioteca se encargará de rellenar, obtener y validar todos los datos necesarios en la confirmación del pago.  
 
@@ -334,11 +334,6 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 
 ------------
 
-> NOTE
->
-> Nota
->
-> Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
 ## Crear pago
 
@@ -348,243 +343,13 @@ En el ejemplo de la sección previa, enviamos todos los datos necesarios para la
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post) y ejecuta la solicitud para procesar el pago.
 
-Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus solicitudes.
+> WARNING
+>
+> Importante
+>
+> Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus solicitudes.
 
 [[[
-```php
-<?php
-  use MercadoPago\Client\Payment\PaymentClient;
-  use MercadoPago\Client\Common\RequestOptions;
-  use MercadoPago\MercadoPagoConfig;
-
-  MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
-
-  $client = new PaymentClient();
-  $request_options = new RequestOptions();
-  $request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
-
-  $payment = $client->create([
-    "transaction_amount" => (float) $_POST['<TRANSACTION_AMOUNT>'],
-    "token" => $_POST['<TOKEN>'],
-    "description" => $_POST['<DESCRIPTION>'],
-    "installments" => $_POST['<INSTALLMENTS>'],
-    "payment_method_id" => $_POST['<PAYMENT_METHOD_ID'],
-    "issuer_id" => $_POST['<ISSUER>'],
-    "payer" => [
-      "email" => $_POST['<EMAIL>'],
-      "identification" => [
-        "type" => $_POST['<IDENTIFICATION_TYPE'],
-        "number" => $_POST['<NUMBER>']
-      ]
-    ]
-  ], $request_options);
-  echo implode($payment);
-?>
-```
-```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
-
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
-
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
-})
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
-```
-```java
-===
-Encuentra el estado del pago en el campo _status_.
-===
-
-Map<String, String> customHeaders = new HashMap<>();
-    customHeaders.put("x-idempotency-key", <SOME_UNIQUE_VALUE>);
- 
-MPRequestOptions requestOptions = MPRequestOptions.builder()
-    .customHeaders(customHeaders)
-    .build();
-
-MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
-
-PaymentClient client = new PaymentClient();
-
-PaymentCreateRequest paymentCreateRequest =
-   PaymentCreateRequest.builder()
-       .transactionAmount(request.getTransactionAmount())
-       .token(request.getToken())
-       .description(request.getDescription())
-       .installments(request.getInstallments())
-       .paymentMethodId(request.getPaymentMethodId())
-       .payer(
-           PaymentPayerRequest.builder()
-               .email(request.getPayer().getEmail())
-               .firstName(request.getPayer().getFirstName())
-               .identification(
-                   IdentificationRequest.builder()
-                       .type(request.getPayer().getIdentification().getType())
-                       .number(request.getPayer().getIdentification().getNumber())
-                       .build())
-               .build())
-       .build();
-
-client.create(paymentCreateRequest, requestOptions);
- 
-```
-```ruby
-===
-Encuentra el estado del pago en el campo _status_.
-===
-require 'mercadopago'
-sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
-
-custom_headers = {
- 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
-}
-
-custom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
-
-payment_data = {
- transaction_amount: params[:transactionAmount].to_f,
- token: params[:token],
- description: params[:description],
- installments: params[:installments].to_i,
- payment_method_id: params[:paymentMethodId],
- payer: {
-   email: params[:email],
-   identification: {
-     type: params[:identificationType],
-     number: params[:identificationNumber]
-   }
- }
-}
- 
-payment_response = sdk.payment.create(payment_data, custom_request_options)
-payment = payment_response[:response]
- 
-puts payment
- 
-```
-```csharp
-===
-Encuentra el estado del pago en el campo _status_.
-===
-using System;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Config;
-using MercadoPago.Resource.Payment;
- 
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
-
-var requestOptions = new RequestOptions();
-requestOptions.CustomHeaders.Add("x-idempotency-key", "<SOME_UNIQUE_VALUE>");
- 
-var paymentRequest = new PaymentCreateRequest
-{
-   TransactionAmount = decimal.Parse(Request["transactionAmount"]),
-   Token = Request["token"],
-   Description = Request["description"],
-   Installments = int.Parse(Request["installments"]),
-   PaymentMethodId = Request["paymentMethodId"],
-   Payer = new PaymentPayerRequest
-   {
-       Email = Request["email"],
-       Identification = new IdentificationRequest
-       {
-           Type = Request["identificationType"],
-           Number = Request["identificationNumber"],
-       },
-   },
-};
- 
-var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest, requestOptions);
- 
-Console.WriteLine(payment.Status);
- 
-```
-```python
-===
-Encuentra el estado del pago en el campo _status_.
-===
-import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
-
-request_options = mercadopago.config.RequestOptions()
-request_options.custom_headers = {
-    'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
-}
-
-payment_data = {
-   "transaction_amount": float(request.POST.get("transaction_amount")),
-   "token": request.POST.get("token"),
-   "description": request.POST.get("description"),
-   "installments": int(request.POST.get("installments")),
-   "payment_method_id": request.POST.get("payment_method_id"),
-   "payer": {
-       "email": request.POST.get("email"),
-       "identification": {
-           "type": request.POST.get("type"), 
-           "number": request.POST.get("number")
-       }
-   }
-}
- 
-payment_response = sdk.payment().create(payment_data, request_options)
-payment = payment_response["response"]
- 
-print(payment)
-```
-```go
-accessToken := "{{ACCESS_TOKEN}}"
-
-
-cfg, err := config.New(accessToken)
-if err != nil {
-   fmt.Println(err)
-   return
-}
-
-
-client := payment.NewClient(cfg)
-
-
-request := payment.Request{
-   TransactionAmount: <transaction_amount>,
-   Token: <token>,
-   Description: <description>,
-   PaymentMethodID:   <paymentMethodId>,
-   Payer: &payment.PayerRequest{
-      Email: <email>,
-      Identification: &payment.IdentificationRequest{
-         Type: <type>,
-         Number: <number>,
-      },
-   },
-}
-
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-   fmt.Println(err)
-}
-
-
-fmt.Println(resource)
-```
 ```curl
 curl -X POST \
     'https://api.mercadopago.com/v1/orders'\
@@ -662,6 +427,6 @@ La respuesta devolverá el siguiente resultado
 >
 > Atención
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulta la lista completa de estados de un pago y de la orden creada en la sección [Status]() <br>
+> Consulta la lista completa de estados de un pago y de la order creada en la sección [Status](/developers/es/docs/order/status-errors/payment-status) <br>
 > <br>
 > Para mantenerte al día con las actualizaciones, debes configurar tu sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulta [Notificaciones](/developers/es/docs/order/online-payments/notifications) para obtener más detalles.

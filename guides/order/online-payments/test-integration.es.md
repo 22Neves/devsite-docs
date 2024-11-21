@@ -24,12 +24,50 @@ Para realizar una compra de prueba, deberás simular en la tienda un usuario com
 
 1. Selecciona algún producto o servicio e inicia el proceso de compra.
 2. En el checkout de la tienda, ingresa el correo electrónico. Recuerda que debe ser diferente al correo que usas en Mercado Pago.
-4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/docs/order/additional-content/your-integrations/test/cards).
+4. Ingresa los datos de una de nuestras [tarjetas de prueba](/developers/es/docs/order/online-payments/integration-test#bookmark_tarjetas_de_prueba).
 3. Confirma la compra.
 
-
-¡Listo! Una vez finalizados estos pasos, la integración estará completa y podrás usar tus credenciales de producción en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para más información sobre la salida a producción, consulta la sección [Requisitos para salir a producción](/developers/es/docs/order/online-payments/go-to-production-requirements)
-
-## Tarjetas de prueba
+### Tarjetas de prueba
 
 [TXTSNIPPET][/guides/snippets/test-integration/test-cards]
+
+## 3. Verificar compra de prueba
+
+Para verificar que la compra de prueba se realizó correctamente, envía un GET al endpoint [/v1/orders/{id}](/developers/es/reference/order/online-payments/get-order/get), reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
+
+
+¡Listo! Una vez finalizados estos pasos, la integración estará completa y podrás usar tus credenciales de producción en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para más información sobre la salida a producción, consulta la sección [Requisitos para salir a producción](/developers/es/docs/order/online-payments/integration-test#requisitosparasaliraproduccin)
+
+
+## Requisitos para salir a producción
+
+Una vez finalizado el proceso de integración, el ambiente estará listo para ser colocado en producción. En esta documentación, detallaremos los requisitos necesarios para realizar este pasaje de manera eficaz y segura, garantizando que tu integración esté preparada para recibir pagos reales.
+
+### Activar credenciales de producción
+
+Para comenzar a recibir pagos, deberás **activar las credenciales de producción** y reemplazar las de prueba. 
+
+Para hacerlo, ingresa al [Panel del Desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y, en el menú lateral, accede a **Producción > Credenciales de producción**. Allí encontrarás tu _Public Key_ y _Access Token_ productivos, que deberán reemplazar a los de prueba utilizados en etapas previas.
+
+![Credenciales de producción](/images/woocomerce/test-prod-credentials-es.png)
+
+Para más información, consulta nuestra documemntación de [Credenciales](/developers/es/guides/additional-content/your-integrations/credentials).
+
+### Certificado SSL 
+
+Para que tu integración sea segura y cuide los datos involucrados en las transacciones, **es necesario que tengas un certificado SSL y que el formulario de pagos sea disponibilizado en una página HTTPS**. Esto permite proteger las transacciones que realicen los compradores y sus datos.
+Durante las pruebas puedes no tenerlo, pero es obligatorio para salir a producción.
+
+Con este proceso, se busca garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas. 
+
+Si bien durante la etapa de pruebas puedes no contar con el certificado, este es obligatorio para salir a producción. Para más información, conoce [los términos y condiciones de Mercado Pago](/developers/es/guides/resources/legal/terms-and-conditions).
+
+### Consideraciones adicionales
+
+#### Aprobación de pagos
+
+Conoce qué medidas puedes llevar adelante para mejorar la [aprobación de pagos](/developers/es/guides/additional-content/how-tos/payment-rejections), tales como el envío de información del ítem y del pagador, datos de envío e información de industria, entre otros.
+
+### Notificaciones
+
+Mantén actualizado el estado de las órdenes en tus sistemas usando y procesando de forma correcta las [notificaciones Webhooks](/developers/es/docs/order/online-payments/notifications).

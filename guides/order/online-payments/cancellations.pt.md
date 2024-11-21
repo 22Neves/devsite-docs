@@ -20,7 +20,7 @@ Nesta documentação, você encontra as instruções e os links dos endpoints ne
 
 Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguintes fatores: 
 
-- **Prazo de vencimento**: Um pagamento expira após 30 dias sem confirmação e o cancelamento é automático. O status final dessa transação aparecerá como `cancelled` ou `expired`. Essas informações serão exibidas na resposta da chamada à API de cancelamento, nos campos `status` e `status_detail`.
+- **Prazo de vencimento**: Um pagamento expira após 30 dias sem confirmação e o cancelamento é automático. O status final dessa transação aparecerá como `cancelled` ou `expired`. Essas informações serão exibidas na resposta da chamada à API [Obter order](/developers/pt/reference/order/online-payments/get-order/get), nos campos `status` e `status_detail`.
 
 - **Status de pagamento**: Os cancelamentos somente poderão ser realizados caso o status de pagamento esteja como `action_required`. Esse status é exibido na resposta da chamada à API de cancelamento nos campos `status` e `status_detail`.
 

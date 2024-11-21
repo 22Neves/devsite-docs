@@ -1,35 +1,38 @@
 # Status del pago
 
-| Status | `status_detail` | Descripción |
-| --- | --- | --- |
-| approved | `accredited` | ¡Listo! Se acreditó tu pago. En tu resumen verás el cargo de `amount` como `statement_descriptor`. |
-| approved | `partially_refunded` | El pago se realizó con al menos un reembolso parcial. |
-| authorized | `pending_capture` | El pago fue autorizado y está a la espera de [ser capturado](/developers/es/docs/order/payment-management/capture-authorized-payment). |
-| in_process | `offline_process` | Por una falta de procesamiento online, el pago está siendo procesado de manera offline. |
-| in_process | `pending_contingency` | Estamos procesando tu pago.<br/><br/>No te preocupes, menos de 2 días hábiles te avisaremos por e-mail si se acreditó. |
-| in_process | `pending_review_manual` | Estamos procesando tu pago.<br/><br/>No te preocupes, menos de 2 días hábiles te avisaremos por e-mail si se acreditó o si necesitamos más información. |
-| pending | `pending_waiting_transfer` | Para los casos de transferencia bancaria, este `status_detail` se obtiene al esperar a que el usuario termine el proceso de pago en su banco. |
-| pending | `pending_waiting_payment` | Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario realice el pago. |
-| pending | `pending_challenge` | Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a causa de un challenge. |
-| rejected | `bank_error` | Si el medio de pago es transferencia bancaria, el pago fue rechazado por un error con el banco. |
-| rejected | `cc_rejected_3ds_mandatory` | Pago rechazado por no tener el challenge 3DS cuando es obligatorio. |
-| rejected | `cc_rejected_bad_filled_card_number` | Revisa el número de tarjeta. |
-| rejected | `cc_rejected_bad_filled_date` | Revisa la fecha de vencimiento. |
-| rejected | `cc_rejected_bad_filled_other` | Revisa los datos. |
-| rejected | `cc_rejected_bad_filled_security_code` | Revisa el código de seguridad de la tarjeta. |
-| rejected | `cc_rejected_blacklist` | No pudimos procesar tu pago. |
-| rejected | `cc_rejected_call_for_authorize` | Debes autorizar ante `payment_method_id` el pago de `amount`. |
-| rejected | `cc_rejected_card_disabled` | Llama a `payment_method_id` para activar tu tarjeta o usa otro medio de pago.<br/><br/>El teléfono está al dorso de tu tarjeta. |
-| rejected | `cc_rejected_card_error` | No pudimos procesar tu pago. |
-| rejected | `cc_rejected_duplicated_payment` | Ya hiciste un pago por ese valor.<br/><br/>Si necesitas volver a pagar usa otra tarjeta u otro medio de pago. |
-| rejected | `cc_rejected_high_risk` | Tu pago fue rechazado.<br/><br/>Elige otro de los medios de pago, te recomendamos con medios en efectivo. |
-| rejected | `cc_rejected_insufficient_amount` | Tu `payment_method_id` no tiene fondos suficientes. |
-| rejected | `cc_rejected_invalid_installments` | `payment_method_id` no procesa pagos en `installments` (cuotas/meses). |
-| rejected | `cc_rejected_max_attempts` | Llegaste al límite de intentos permitidos.<br/><br/>Elige otra tarjeta u otro medio de pago. |
-| rejected | `cc_rejected_other_reason` | `payment_method_id` no procesó el pago. | 
-| rejected | `cc_amount_rate_limit_exceeded` | El pago fue rechazado porque superó el límite (CAP - Capacidad Máxima Permitida) del medio de pago. |
-| rejected | `rejected_insufficient_data` | El pago fue rechazado debido a falta de toda la información obligatoria requerida. | 
-| rejected | `rejected_by_bank` | Operación rechazada por el banco. |
-| rejected | `rejected_by_regulations` | Pago rechazado por regulaciones. |
-| rejected | `insufficient_amount` | Pago rechazado por montos insuficientes. | ----[mlb]----
-| rejected |  `cc_rejected_card_type_not_allowed` | El pago fue rechazado porque el usuario no tiene habilitada la función crédito en su tarjeta múltiple (débito y crédito). | ------------
+Consulta la lista de `status` y `status_detail` que puede tomar un pago.
+
+| `status` | `status_detail` | Descripción |
+|:---:|:---:|:---:|
+| `created` | `created` | La transacción fue creada con éxito, pero aún no ha sido procesada. Este es el estado inicial de una transacción después de su creación. |
+| `processed` | `accredited` | La transacción fue procesada con éxito y el monto ha sido efectivamente acreditado. |
+| `processed` | `partially_refunded` | La transacción fue procesada con éxito y una parte del monto fue reembolsada. Esto indica que, aunque la transacción se ha completado, hubo una devolución parcial del monto pagado a favor del pagador. |
+| `processing` | `in_process` | La transacción está en procesamiento. Esto significa que la transacción está en curso y aún no se ha completado. |
+| `processing` | `pending_review_manual` | La transacción está en curso. Este estado indica que está esperando una revisión manual. Esto generalmente ocurre cuando la orden necesita una evaluación adicional antes de continuar. |
+| `action_required` | `check_on_terminal` | Estado **exclusivo para pagos presenciales**. La transacción requiere una acción adicional en la terminal. Es necesario realizar una verificación o confirmación en la terminal donde se realizó el pago para verificar su estado. |
+| `action_required` | `waiting_payment` | La transacción requiere una acción adicional y está esperando el pago. Esto significa que la transacción ha sido iniciada, pero el pago aún no se ha completado. |
+| `action_required` | `waiting_capture` | La transacción requiere una acción adicional y está esperando la captura del pago. Esto significa que el pago ha sido autorizado, pero aún no ha sido capturado. |
+| `action_required` | `waiting_transfer` | La transacción requiere una acción adicional y está esperando la transferencia de los fondos. Esto significa que el pago ha sido iniciado, pero los fondos aún no se han transferido a la cuenta del vendedor. |
+| `at_terminal` | `at_terminal` | Estado **exclusivo para pagos presenciales**. La transacción está en la terminal. Esto significa que está siendo verificada en la terminal de pago. |
+| `cancelled` | `cancelled_transaction` | La transacción ha sido cancelada y no se completará. |
+| `cancelled` | `cancelled_by_api` | Estado **exclusivo para pagos presenciales**. La transacción ha sido cancelada vía API y no se completará. |
+| `cancelled` | `cancelled_in_terminal` | Estado **exclusivo para pagos presenciales**. La transacción ha sido cancelada en la terminal y no se completará. |
+| `charged_back` | `in_process` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto está siendo revertido. |
+| `charged_back` | `settled` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto fue acreditado al vendedor. |
+| `charged_back` | `reimbursed` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto fue reembolsado al comprador. |
+| `expired` | `expired` | La transacción ha expirado. Esto significa que no se completó dentro del tiempo límite y, por lo tanto, fue terminada. |
+| `refunded` | `refunded` | La orden ha sido reembolsada. Esto significa que el monto de la transacción ha sido devuelto íntegramente al pagador. |
+| `failed` | `bad_filled_card_data` | La transacción falló debido a datos de la tarjeta completados incorrectamente. Esto puede incluir información como el número de la tarjeta, CVV, fecha de vencimiento, entre otros. |
+| `failed` | `invalid_card_token` | La transacción falló. Esto significa que la transacción falló debido a un token de tarjeta inválido. |
+| `failed` | `high_risk` | La transacción falló debido a un alto riesgo detectado. Esto puede ocurrir cuando el sistema de detección de fraudes identifica un posible riesgo en la transacción. |
+| `failed` | `rejected_by_issuer` | La transacción falló debido a un rechazo por parte del emisor de la tarjeta. |
+| `failed` | `required_call_for_authorize` | La transacción falló porque se requiere una llamada para autorización. Esto puede ocurrir cuando el emisor de la tarjeta exige una verificación adicional antes de aprobar la transacción. |
+| `failed` | `max_attempts_exceeded` | La transacción falló debido a que se excedió el número máximo de intentos. Esto puede ocurrir cuando el número de intentos de pago supera el límite permitido por el sistema. |
+| `failed` | `card_disabled` | La transacción falló debido a que la tarjeta está desactivada. Esto puede ocurrir cuando la tarjeta ha sido bloqueada o desactivada por el emisor. |
+| `failed` | `insufficient_amount` | La transacción falló debido a un monto insuficiente. Esto puede ocurrir cuando el saldo disponible no es suficiente para cubrir el monto de la transacción. |
+| `failed` | `amount_limit_exceeded` | La transacción falló debido a que se excedió el límite de monto. Esto puede ocurrir cuando el monto de la transacción supera el límite permitido por el emisor de la tarjeta o por el sistema. |
+| `failed` | `processing_error` | La transacción falló debido a un error de procesamiento. Esto puede ocurrir cuando hay un problema técnico o un error en el sistema que impide la finalización de la transacción. Si el problema persiste, comunícate con soporte, y proporciona el `x-request-id` junto con los detalles sobre la operación realizada. |
+| `failed` | `invalid_installments` | La transacción falló debido a cuotas inválidas. Esto puede ocurrir cuando el número de cuotas seleccionadas no es aceptado por el emisor de la tarjeta o por el sistema. |
+| `failed` | `pending_challenge` | La transacción falló debido a un desafío pendiente. Esto puede ocurrir cuando la transacción requiere una verificación adicional, como una autenticación 3DS, que no se ha completado. |
+| `failed` | `3ds_challenge_expired` | La transacción falló debido a la expiración del desafío 3DS. Esto puede ocurrir cuando el tiempo para completar la autenticación 3DS ha expirado. |
+| `failed` | `pending_challenge` | La transacción falló debido a la falla en el desafío 3DS. Esto puede ocurrir cuando la autenticación 3DS no tiene éxito. |
