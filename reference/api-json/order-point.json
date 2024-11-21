@@ -490,7 +490,7 @@
                           "description": {
                             "en": "The Point terminal does not belong to the user who submitted the request. Check if the value sent for \"terminal_id\" is correct or if the terminal is linked to your account.",
                             "es": "La terminal Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"terminal_id\" es correcto o si la terminal está vinculado a tu cuenta.",
-                            "pt": "O temrinal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o terminal está vinculado à sua conta."
+                            "pt": "O terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o terminal está vinculado à sua conta."
                           }
                         }
                       ]
@@ -758,7 +758,7 @@
                           "title": "cancelled",
                           "description": {
                             "en": "The order has been cancelled, either through the API or the terminal.",
-                            "es": "La order fue cancelada desde el API o desde la temrinal.",
+                            "es": "La order fue cancelada desde el API o desde la terminal.",
                             "pt": "A order foi cancelada na API ou no terminal."
                           }
                         },
@@ -2511,7 +2511,7 @@
                 "title": "debit_card",
                 "description": {
                   "en": "The terminal will only accept payments with debit card.",
-                  "es": "La temrinal aceptará pagos exclusivamente con tarjeta de débito.",
+                  "es": "La terminal aceptará pagos exclusivamente con tarjeta de débito.",
                   "pt": "O terminal aceitará exclusivamente pagamentos com cartão de débito."
                 }
               },
@@ -2519,7 +2519,7 @@
                 "title": "credit_card",
                 "description": {
                   "en": "The terminal will only accept payments with credit card.",
-                  "es": "La temrinal aceptará pagos exclusivamente con tarjeta de crédito.",
+                  "es": "La terminal aceptará pagos exclusivamente con tarjeta de crédito.",
                   "pt": "O terminal aceitará exclusivamente pagamentos com cartão de crédito."
                 }
               },
@@ -2636,7 +2636,7 @@
             "title": "cancelled",
             "description": {
               "en": "The order has been cancelled, either through the API or the terminal.",
-              "es": "La order fue cancelada desde el API o desde la temrinal.",
+              "es": "La order fue cancelada desde el API o desde la terminal.",
               "pt": "A order foi cancelada na API ou no terminal."
             }
           },
