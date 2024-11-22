@@ -85,9 +85,9 @@
                             "type": "string",
                             "required": true,
                             "description": {
-                              "en": "Payment total amount. ",
-                              "pt": "Valor total da order de pagamento.",
-                              "es": "Monto total de la order de pago."
+                              "en": "Payment total amount. For Chile (MLC), it must be an integer.",
+                              "pt": "Valor total da order de pagamento. Para o Chile (MLC) deve ser um número inteiro.",
+                              "es": "Monto total de la order de pago. Para Chile (MLC) debe ser un número entero."
                             },
                             "example": "24.90"
                           }
@@ -2338,6 +2338,35 @@
               }
             }
           },
+          "400": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la petición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
           "401": {
             "description": {
               "en": "Error.",
@@ -2358,6 +2387,35 @@
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la solicitud enviando el valor correcto.",
                             "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect, therefore the order could not be found. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto, por lo que la order no puede ser encontrada. Por favor, verifícalo y vuelve a intentar realizar la solicitud enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto, razão pela qual a order não pode ser encontrada. Verifique e tente a enviar requisição novamente com o valor correto."
                           }
                         }
                       ]
