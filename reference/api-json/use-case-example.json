@@ -688,7 +688,8 @@
                                                                     "en": "Individual Taxpayer Registration, Brazil.",
                                                                     "es": "Individual Taxpayer Registration, Brazil.",
                                                                     "pt": "Individual Taxpayer Registration, Brazil."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLB"]
                                                             },
                                                             {
                                                                 "title": "CNPJ",
@@ -696,7 +697,8 @@
                                                                     "en": "National Register of Legal Entities, Brazil.",
                                                                     "es": "National Register of Legal Entities, Brazil.",
                                                                     "pt": "National Register of Legal Entities, Brazil."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLB"]
                                                             },
                                                             {
                                                                 "title": "CUIT",
@@ -704,7 +706,8 @@
                                                                     "en": "Unique Tax Identification Code, Argentina.",
                                                                     "es": "Unique Tax Identification Code, Argentina.",
                                                                     "pt": "Unique Tax Identification Code, Argentina."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLA"]
                                                             },
                                                             {
                                                                 "title": "CUIL",
@@ -712,7 +715,8 @@
                                                                     "en": "Unique Labor Identification Code, Argentina.",
                                                                     "es": "Unique Labor Identification Code, Argentina.",
                                                                     "pt": "Unique Labor Identification Code, Argentina."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLA"]
                                                             },
                                                             {
                                                                 "title": "DNI",
@@ -720,7 +724,8 @@
                                                                     "en": "National Identity Document, Argentina.",
                                                                     "es": "National Identity Document, Argentina.",
                                                                     "pt": "National Identity Document, Argentina."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLA"]
                                                             },
                                                             {
                                                                 "title": "CURP",
@@ -728,7 +733,8 @@
                                                                     "en": "Single Population Registration Code, Mexico.",
                                                                     "es": "Single Population Registration Code, Mexico.",
                                                                     "pt": "Single Population Registration Code, Mexico."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLM"]
                                                             },
                                                             {
                                                                 "title": "RFC",
@@ -736,7 +742,8 @@
                                                                     "en": "Federal Registry of Taxpayers, Mexico.",
                                                                     "es": "Federal Registry of Taxpayers, Mexico.",
                                                                     "pt": "Federal Registry of Taxpayers, Mexico."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLM"]
                                                             },
                                                             {
                                                                 "title": "CC",
@@ -744,7 +751,8 @@
                                                                     "en": "Citizenship Card, Colombia.",
                                                                     "es": "Citizenship Card, Colombia.",
                                                                     "pt": "Citizenship Card, Colombia."
-                                                                }
+                                                                },
+                                                                "siteId": ["MCO"]
                                                             },
                                                             {
                                                                 "title": "RUT",
@@ -752,7 +760,8 @@
                                                                     "en": "Single Tax List, Chile.",
                                                                     "es": "Single Tax List, Chile.",
                                                                     "pt": "Single Tax List, Chile."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLC"]
                                                             },
                                                             {
                                                                 "title": "CI",
@@ -760,7 +769,8 @@
                                                                     "en": "Identity Card, Uruguay.",
                                                                     "es": "Identity Card, Uruguay.",
                                                                     "pt": "Identity Card, Uruguay."
-                                                                }
+                                                                },
+                                                                "siteId": ["MLU"]
                                                             }
                                                         ],
                                                         "example": "CPF"
@@ -808,7 +818,8 @@
                                                     "en": "Instant digital payment method used in Brazil.",
                                                     "es": "Instant digital payment method used in Brazil.",
                                                     "pt": "Instant digital payment method used in Brazil."
-                                                }
+                                                },
+                                                "siteId": ["MLB"]
                                             },
                                             {
                                                 "title": "Account_money",
@@ -824,7 +835,8 @@
                                                     "en": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
                                                     "es": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization.",
                                                     "pt": "Digital payment method used in Argentina that immediately debits an amount from an account, requesting prior authorization."
-                                                }
+                                                },
+                                                "siteId": ["MLA"]
                                             },
                                             {
                                                 "title": "Ted",
@@ -832,7 +844,8 @@
                                                     "en": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
                                                     "es": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;",
                                                     "pt": "It is the Electronic Transfer Available payment, used in Brazil, that has fees to be used. The payment is made the same day of the transaction, but for this it is necessary to make the transfer within the stipulated period;"
-                                                }
+                                                },
+                                                "siteId": ["MLB"]
                                             },
                                             {
                                                 "title": "Cvu",
@@ -840,7 +853,8 @@
                                                     "en": "Payment method used in Argentina.",
                                                     "es": "Payment method used in Argentina.",
                                                     "pt": "Payment method used in Argentina."
-                                                }
+                                                },
+                                                "siteId": ["MLA"]
                                             }
                                         ],
                                         "required": true,
@@ -2700,9 +2714,9 @@
                 "userCases": [
                     {
                         "name": {
-                            "en": "Create payment with visa",
-                            "pt": "Criar pagamento visa",
-                            "es": "Crear pago con visa "
+                            "en": "Create payment with master",
+                            "pt": "Criar pagamento master",
+                            "es": "Crear pago con master "
                         }
                     },
                     {
@@ -2712,7 +2726,7 @@
                             "es": "Crear pago con Rapipago"
                         },
                         "siteId": [
-                            "MLA"
+                            "MLA","MLB", "allSites"
                         ],
                         "requestBody": {
                             "content": {
@@ -2721,6 +2735,9 @@
                                         "properties": {
                                             "payment_method_id": {
                                                 "example": "rapipago"
+                                            },
+                                            "transaction_amount": {
+                                                "example": "disabled"
                                             }
                                         }
                                     }
@@ -2759,9 +2776,9 @@
                     },
                     {
                         "name": {
-                            "en": "Create payment with master",
-                            "pt": "Criar pagamento master",
-                            "es": "Crear pago con master"
+                            "en": "Create payment with visa",
+                            "pt": "Criar pagamento visa",
+                            "es": "Crear pago con visa"
                         },
                         "siteId": [
                             "allSites"
@@ -2772,7 +2789,7 @@
                                     "schema": {
                                         "properties": {
                                             "payment_method_id": {
-                                                "example": "master"
+                                                "example": "visa"
                                             }
                                         }
                                     }
@@ -2789,10 +2806,10 @@
                                                     "example": 123456
                                                 },
                                                 "payment_method_id": {
-                                                    "example": "master"
+                                                    "example": "visa"
                                                 },
                                                 "description": {
-                                                    "example": "Test payment master"
+                                                    "example": "Test payment visa"
                                                 }
                                             }
                                         }
@@ -6957,7 +6974,8 @@
                             "en": "Argentine peso.",
                             "es": "Argentine peso.",
                             "pt": "Argentine peso."
-                        }
+                        },
+                        "siteId": ["MLA"]
                     },
                     {
                         "title": "BRL",
@@ -6965,7 +6983,8 @@
                             "en": "Brazilian real.",
                             "es": "Brazilian real.",
                             "pt": "Brazilian real."
-                        }
+                        },
+                        "siteId": ["MLB"]
                     },
                     {
                         "title": "CLP",
@@ -6973,7 +6992,8 @@
                             "en": "Chilean peso.",
                             "es": "Chilean peso.",
                             "pt": "Chilean peso."
-                        }
+                        },
+                        "siteId": ["MLC"]
                     },
                     {
                         "title": "MXN",
@@ -6981,7 +7001,8 @@
                             "en": "Mexican peso.",
                             "es": "Mexican peso.",
                             "pt": "Mexican peso."
-                        }
+                        },
+                        "siteId": ["MLM"]
                     },
                     {
                         "title": "COP",
@@ -6989,7 +7010,8 @@
                             "en": "Colombian peso.",
                             "es": "Colombian peso.",
                             "pt": "Colombian peso."
-                        }
+                        },
+                        "siteId": ["MCO"]
                     },
                     {
                         "title": "PEN",
@@ -6997,7 +7019,8 @@
                             "en": "Peruvian sol.",
                             "es": "Peruvian sol.",
                             "pt": "Peruvian sol."
-                        }
+                        },
+                        "siteId": ["MLP"]
                     },
                     {
                         "title": "UYU",
@@ -7005,7 +7028,8 @@
                             "en": "Uruguayan peso.",
                             "es": "Uruguayan peso.",
                             "pt": "Uruguayan peso."
-                        }
+                        },
+                        "siteId": ["MLU"]
                     },
                     {
                         "title": "VES",
@@ -7013,7 +7037,8 @@
                             "en": "Venezuelan Bolivar.",
                             "es": "Venezuelan Bolivar.",
                             "pt": "Venezuelan Bolivar."
-                        }
+                        },
+                        "siteId": ["MLV"]
                     },
                     {
                         "title": "MCN",
