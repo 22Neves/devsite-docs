@@ -266,15 +266,6 @@
                         }
                       }
                     },
-                    "collector_id":{
-                      "type":"number",
-                      "example":448876418,
-                      "description":{
-                        "en":"It is the identification of the user who receives the money.",
-                        "pt":"É identificador do usuário que recebe o dinheiro.",
-                        "es":"Es el identificador del usuario que recibe el dinero."
-                      }
-                    },
                     "status":{
                       "$ref": "#/components/schemas/status"
                     },
@@ -720,15 +711,6 @@
                         }
                       }
                     },
-                    "collector_id":{
-                      "type":"number",
-                      "example":448876418,
-                      "description":{
-                        "en":"It is the identification of the user who receives the money.",
-                        "pt":"É identificador do usuário que recebe o dinheiro.",
-                        "es":"Es el identificador del usuario que recibe el dinero."
-                      }
-                    },
                     "status":{
                       "type":"string",
                       "example":"created",
@@ -1156,15 +1138,6 @@
                         }
                       }
                     },
-                    "collector_id":{
-                      "type":"number",
-                      "example":448876418,
-                      "description":{
-                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
-                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
-                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
-                      }
-                    },
                     "status":{
                       "type":"string",
                       "example":"cancelled",
@@ -1568,7 +1541,7 @@
                                   "es": "Modo de operación en el que está funcionando la terminal al momento de la requisición.",
                                   "pt": "Modo de operação em que o terminal está funcionando na hora de requisição."
                                 },
-                                "example": "PDV | STANDALONE | SELF_SERVICE | UNDEFINED",
+                                "example": "PDV | STANDALONE | UNDEFINED",
                                 "enum": [
                                   {
                                     "title": "PDV",
@@ -1584,14 +1557,6 @@
                                       "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
                                       "es": "Configuración de la terminal por defecto. Es el modo en el que opera cuando no está integrada vía API.",
                                       "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                                    }
-                                  },
-                                  {
-                                    "title": "SELF_SERVICE",
-                                    "description": {
-                                      "en": "Setting the terminal to kiosko mode. It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use.",
-                                      "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínimo soporte al usuario en su uso.",
-                                      "pt": "Configuração do terminal em modo quiosque. É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização."
                                     }
                                   },
                                   {
@@ -1646,35 +1611,6 @@
               }
             }
           },
-          "400": {
-            "description": {
-              "en": "Error.",
-              "pt": "Erro.",
-              "es": "Error."
-            },
-            "content":{
-              "application/json":{
-                "schema":{
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "client_id_required",
-                          "description": {
-                            "en": "Invalid Client ID, check if you have sent the correct Access Token and try again.",
-                            "es": "Client ID invalido, revisa haber enviado el Access Token correcto e intenta nuevamente.",
-                            "pt": "ID de cliente inválido, verifique se você enviou o Access Token correto e tente novamente."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
           "404": {
             "description": {
               "en": "Error.",
@@ -1692,9 +1628,9 @@
                         {
                           "title": "not_found",
                           "description": {
-                            "en": "Resource not found. Validate the query params sent and try to send the request again.",
-                            "es": "Recurso no encontrado. Valida los query params enviados e intenta enviar la solicitud de nuevo.",
-                            "pt": "Recurso não encontrado. Valide os query params enviados e tente enviar novamente a solicitação."
+                            "en": "Resource not found. Please check the returned message and try submitting your request again.",
+                            "es": "Recurso no encontrado. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
+                            "pt": "Recurso não encontrado. Revise a mensagem retornada e tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -1841,7 +1777,7 @@
                             "es": "Modo de operación en el que se desea que funcione la terminal. Debe ser una de las siguientes opciones:",
                             "pt": "Modo de operação no qual você deseja que o terminal funcione. Deve ser uma das seguintes opções:"
                           },
-                          "example": "PDV | STANDALONE | SELF_SERVICE",
+                          "example": "PDV | STANDALONE ",
                           "enum": [
                             {
                               "title": "PDV",
@@ -1857,14 +1793,6 @@
                                 "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
                                 "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
                                 "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                              }
-                            },
-                            {
-                              "title": "SELF_SERVICE",
-                              "description": {
-                                "en": "Configuring the terminal in \"kiosk mode\". It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use. In order to configure the terminal in this mode, it is necessary to have previously configured its pin or password.",
-                                "es": "Configuración de la terminal en \"modo kiosco\". Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínimo soporte al usuario en su uso. Para poder configurar a la terminal en este modo, es necesario previamente haber configurado su pin o contraseña.",
-                                "pt": "Configuração do terminal em \"modo quiosque\". É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização. Para configurar o terminal neste modo é necessário ter previamente configurado seu pin ou senha."
                               }
                             }
                           ]
@@ -1915,7 +1843,7 @@
                               "es": "Modo de operación definido para la terminal. Puede ser una de las siguientes opciones:",
                               "pt": "Modo de operação definido para o terminal. Pode ser uma das seguintes opções:"
                             },
-                            "example": "“PDV” | “STANDALONE” | “SELF_SERVICE” ",
+                            "example": "“PDV” | “STANDALONE” ",
                             "enum": [
                               {
                                 "title": "PDV",
@@ -1931,14 +1859,6 @@
                                   "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
                                   "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
                                   "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                                }
-                              },
-                              {
-                                "title": "SELF_SERVICE",
-                                "description": {
-                                  "en": "Configuring the terminal in \"kiosk mode\". It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use. In order to successfully change to this operating mode, you must have previously configured its pin or password.",
-                                  "es": "Configuración de la terminal en \"modo kiosco\". Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínimo soporte al usuario en su uso. Para poder cambiar exitosamente a este modo de operación, deberás haber configurado previamente su pin o contraseña.",
-                                  "pt": "Configuração do terminal em \"modo quiosque\". É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização. Para poder alterar com sucesso este modo de operação, você deve ter previamente configurado seu pin ou senha."
                                 }
                               }
                             ]
@@ -1980,14 +1900,6 @@
                             "es": "Payload inválido. Revisa los campos enviados e intenta realizar la solicitud nuevamente.",
                             "pt": "Payload inválido. Verifique os campos enviados e tente fazer a solicitação novamente."
                           }
-                        },
-                        {
-                          "title": "client_id_required",
-                          "description": {
-                            "en": "Invalid Client ID. Check if you have sent the correct Access Token and try again.",
-                            "es": "Client ID invalido. Revisa haber enviado el Access Token correcto e intenta nuevamente.",
-                            "pt": "ID de cliente inválido. Verifique se você enviou o Access Token correto e tente novamente."
-                          }
                         }
                       ]
                     }
@@ -2024,14 +1936,6 @@
                             "en": "The point of sale associated with the terminal could not be found. Please check the returned message and try submitting the request again.",
                             "es": "La sucursal asociada a la terminal no fue encontrada. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "A loja associada ao terminal não foi encontrada. Revise a mensagem retornada e tente enviar a solicitação novamente."
-                          }
-                        },
-                        {
-                          "title": "pin_disabled",
-                          "description": {
-                            "en": "You were trying to change the operating mode to \"SELF_SERVICE\" without previously enabling the pin in the terminal. Enable the necessary pin from said terminal and try again.",
-                            "es": "Se quiso alterar el modo de operación a \"SELF_SERVICE\" sin habilitar previamente el pin en la terminal. Habilita el pin necesario desde la misma terminal e inténtalo nuevamente.",
-                            "pt": "Houve uma tentativa de alterar o modo de operação para \"SELF_SERVICE\" sem habilitar previamente o pin no terminal. Habilite o pin necessário no mesmo terminal e tente novamente."
                           }
                         }
                       ]
