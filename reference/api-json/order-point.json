@@ -85,9 +85,9 @@
                             "type": "string",
                             "required": true,
                             "description": {
-                              "en": "Payment total amount. ",
-                              "pt": "Valor total da order de pagamento.",
-                              "es": "Monto total de la order de pago."
+                              "en": "Payment total amount. For Chile (MLC), it must be an integer.",
+                              "pt": "Valor total da order de pagamento. Para o Chile (MLC) deve ser um número inteiro.",
+                              "es": "Monto total de la order de pago. Para Chile (MLC) debe ser un número entero."
                             },
                             "example": "24.90"
                           }
@@ -264,15 +264,6 @@
                             }
                           }
                         }
-                      }
-                    },
-                    "collector_id":{
-                      "type":"number",
-                      "example":448876418,
-                      "description":{
-                        "en":"It is the identification of the user who receives the money.",
-                        "pt":"É identificador do usuário que recebe o dinheiro.",
-                        "es":"Es el identificador del usuario que recibe el dinero."
                       }
                     },
                     "status":{
@@ -490,7 +481,7 @@
                           "description": {
                             "en": "The Point terminal does not belong to the user who submitted the request. Check if the value sent for \"terminal_id\" is correct or if the terminal is linked to your account.",
                             "es": "La terminal Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"terminal_id\" es correcto o si la terminal está vinculado a tu cuenta.",
-                            "pt": "O temrinal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o terminal está vinculado à sua conta."
+                            "pt": "O terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o terminal está vinculado à sua conta."
                           }
                         }
                       ]
@@ -720,15 +711,6 @@
                         }
                       }
                     },
-                    "collector_id":{
-                      "type":"number",
-                      "example":448876418,
-                      "description":{
-                        "en":"It is the identification of the user who receives the money.",
-                        "pt":"É identificador do usuário que recebe o dinheiro.",
-                        "es":"Es el identificador del usuario que recibe el dinero."
-                      }
-                    },
                     "status":{
                       "type":"string",
                       "example":"created",
@@ -758,7 +740,7 @@
                           "title": "cancelled",
                           "description": {
                             "en": "The order has been cancelled, either through the API or the terminal.",
-                            "es": "La order fue cancelada desde el API o desde la temrinal.",
+                            "es": "La order fue cancelada desde el API o desde la terminal.",
                             "pt": "A order foi cancelada na API ou no terminal."
                           }
                         },
@@ -1156,15 +1138,6 @@
                         }
                       }
                     },
-                    "collector_id":{
-                      "type":"number",
-                      "example":448876418,
-                      "description":{
-                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
-                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
-                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
-                      }
-                    },
                     "status":{
                       "type":"string",
                       "example":"cancelled",
@@ -1463,9 +1436,9 @@
           "mp-point"
         ],
         "description":{
-          "en":"This endpoint allows you to obtain a list of the Point terminals associated with their respective point of sale, store, and operating mode. In case of success, the request will return a response with status 200",
-          "pt":"Este endpoint permite que você obtenha uma lista dos terminals Point associadas à sua respectiva caixa, filial e modo de operação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Este endpoint te permite obtener una listado de las terminals Point asociadas a su respectiva caja, sucursal y modo de operación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en":"This endpoint allows you to obtain a list of the Point terminals associated with your account, with the information corresponding to their respective point of sale, store, and operating mode. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite que você obtenha uma lista dos terminals Point associadas à sua conta, com as informações correspondentes à sua respectiva caixa, filial e modo de operação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint te permite obtener una listado de las terminals Point asociadas a tu cuenta, con la información correspondiente a su respectiva caja, sucursal y modo de operación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -1568,7 +1541,7 @@
                                   "es": "Modo de operación en el que está funcionando la terminal al momento de la requisición.",
                                   "pt": "Modo de operação em que o terminal está funcionando na hora de requisição."
                                 },
-                                "example": "PDV | STANDALONE | SELFSERVICE | UNDEFINED",
+                                "example": "PDV | STANDALONE | UNDEFINED",
                                 "enum": [
                                   {
                                     "title": "PDV",
@@ -1584,14 +1557,6 @@
                                       "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
                                       "es": "Configuración de la terminal por defecto. Es el modo en el que opera cuando no está integrada vía API.",
                                       "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                                    }
-                                  },
-                                  {
-                                    "title": "SELFSERVICE",
-                                    "description": {
-                                      "en": "Setting the terminal to kiosko mode. This is the mode in which the terminal operates when it is integrated in unattended queue-breaker mode.",
-                                      "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando está integrada en modo desatendido de rompefilas.",
-                                      "pt": "Configuração do terminal em modo quiosque. É o modo em que o terminal opera quando está integrado no modo disjuntor de fila autônomo."
                                     }
                                   },
                                   {
@@ -1646,35 +1611,6 @@
               }
             }
           },
-          "400": {
-            "description": {
-              "en": "Error.",
-              "pt": "Erro.",
-              "es": "Error."
-            },
-            "content":{
-              "application/json":{
-                "schema":{
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "client_id_required",
-                          "description": {
-                            "en": "Invalid Client ID, check if you have sent the correct Access Token and try again.",
-                            "es": "Client ID invalido, revisa haber enviado el Access Token correcto e intenta nuevamente.",
-                            "pt": "ID de cliente inválido, verifique se você enviou o Access Token correto e tente novamente."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
           "404": {
             "description": {
               "en": "Error.",
@@ -1692,9 +1628,9 @@
                         {
                           "title": "not_found",
                           "description": {
-                            "en": "Resource not found. Validate the query params sent and try to send the request again.",
-                            "es": "Recurso no encontrado. Valida los query params enviados e intenta enviar la solicitud de nuevo.",
-                            "pt": "Recurso não encontrado. Valide os query params enviados e tente enviar novamente a solicitação."
+                            "en": "Resource not found. Please check the returned message and try submitting your request again.",
+                            "es": "Recurso no encontrado. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
+                            "pt": "Recurso não encontrado. Revise a mensagem retornada e tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -1829,9 +1765,9 @@
                           "type": "string",
                           "example": "PAX_A910__SMARTPOS1234345545",
                           "description": {
-                            "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the physical terminal.",
-                            "es": "Identificador único de la terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera de la terminal física.",
-                            "pt": "Identificador exclusivo do terminal. Você pode identificar o temrinal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico."
+                            "en": "Terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the physical terminal. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\".",
+                            "es": "Identificador único de la terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera de la terminal física. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\".",
+                            "pt": "Identificador exclusivo do terminal. Você pode identificar o terminal Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do terminal físico. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"PAX_A910__SMARTPOS123456789\"."
                           }
                         },
                         "operating_mode": {
@@ -1841,7 +1777,7 @@
                             "es": "Modo de operación en el que se desea que funcione la terminal. Debe ser una de las siguientes opciones:",
                             "pt": "Modo de operação no qual você deseja que o terminal funcione. Deve ser uma das seguintes opções:"
                           },
-                          "example": "PDV | STANDALONE | SELFSERVICE",
+                          "example": "PDV | STANDALONE ",
                           "enum": [
                             {
                               "title": "PDV",
@@ -1857,14 +1793,6 @@
                                 "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
                                 "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
                                 "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                              }
-                            },
-                            {
-                              "title": "SELFSERVICE",
-                              "description": {
-                                "en": "Configuring the terminal in \"kiosk mode\". It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use. In order to configure the terminal in this mode, it is necessary to have previously configured its pin or password.",
-                                "es": "Configuración de la terminal en \"modo kiosco\". Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínima soporte al usuario en su uso. Para poder configurar a la terminal en este modo, es necesario previamente haber configurado su pin o contraseña.",
-                                "pt": "Configuração do terminal em \"modo quiosque\". É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização. Para configurar o terminal neste modo é necessário ter previamente configurado seu pin ou senha."
                               }
                             }
                           ]
@@ -1915,7 +1843,7 @@
                               "es": "Modo de operación definido para la terminal. Puede ser una de las siguientes opciones:",
                               "pt": "Modo de operação definido para o terminal. Pode ser uma das seguintes opções:"
                             },
-                            "example": "“PDV” | “STANDALONE” | “SELFSERVICE” ",
+                            "example": "“PDV” | “STANDALONE” ",
                             "enum": [
                               {
                                 "title": "PDV",
@@ -1931,14 +1859,6 @@
                                   "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
                                   "es": "Configuración de la terminal por defecto. Es el modo en el que opera la terminal cuando no está integrada vía API.",
                                   "pt": "Configuração padrão do terminal. É a forma como o terminal opera quando não está integrado via API."
-                                }
-                              },
-                              {
-                                "title": "SELFSERVICE",
-                                "description": {
-                                  "en": "Configuring the terminal in \"kiosk mode\". It is the mode in which the terminal operates when it is integrated in unattended mode, with minimal user support in its use. In order to successfully change to this operating mode, you must have previously configured its pin or password.",
-                                  "es": "Configuración de la terminal en \"modo kiosco\". Es el modo en el que opera la terminal cuando está integrada en modo desatendido, con mínima soporte al usuario en su uso. Para poder cambiar exitosamente a este modo de operación, deberás haber configurado previamente su pin o contraseña.",
-                                  "pt": "Configuração do terminal em \"modo quiosque\". É o modo em que o terminal opera quando está integrado em modo autônomo, com mínimo suporte do usuário na sua utilização. Para poder alterar com sucesso este modo de operação, você deve ter previamente configurado seu pin ou senha."
                                 }
                               }
                             ]
@@ -1980,14 +1900,6 @@
                             "es": "Payload inválido. Revisa los campos enviados e intenta realizar la solicitud nuevamente.",
                             "pt": "Payload inválido. Verifique os campos enviados e tente fazer a solicitação novamente."
                           }
-                        },
-                        {
-                          "title": "client_id_required",
-                          "description": {
-                            "en": "Invalid Client ID. Check if you have sent the correct Access Token and try again.",
-                            "es": "Client ID invalido. Revisa haber enviado el Access Token correcto e intenta nuevamente.",
-                            "pt": "ID de cliente inválido. Verifique se você enviou o Access Token correto e tente novamente."
-                          }
                         }
                       ]
                     }
@@ -2024,14 +1936,6 @@
                             "en": "The point of sale associated with the terminal could not be found. Please check the returned message and try submitting the request again.",
                             "es": "La sucursal asociada a la terminal no fue encontrada. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
                             "pt": "A loja associada ao terminal não foi encontrada. Revise a mensagem retornada e tente enviar a solicitação novamente."
-                          }
-                        },
-                        {
-                          "title": "pin_disabled",
-                          "description": {
-                            "en": "You were trying to change the operating mode to \"SELFSERVICE\" without previously enabling the pin in the terminal. Enable the necessary pin from said terminal and try again.",
-                            "es": "Se quiso alterar el modo de operación a \"SELFSERVICE\" sin habilitar previamente el pin en la terminal. Habilita el pin necesario desde la misma terminal e inténtalo nuevamente.",
-                            "pt": "Houve uma tentativa de alterar o modo de operação para \"SELFSERVICE\" sem habilitar previamente o pin no terminal. Habilite o pin necessário no mesmo terminal e tente novamente."
                           }
                         }
                       ]
@@ -2311,7 +2215,7 @@
                               },
                               "status":{
                                 "type":"string",
-                                "example":"created",
+                                "example":"processed",
                                 "description":{
                                   "en":"Current status of the transaction.",
                                   "pt":"Status atual da transação.",
@@ -2338,6 +2242,35 @@
               }
             }
           },
+          "400": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la petición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
           "401": {
             "description": {
               "en": "Error.",
@@ -2358,6 +2291,35 @@
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la solicitud enviando el valor correcto.",
                             "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect, therefore the order could not be found. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto, por lo que la order no puede ser encontrada. Por favor, verifícalo y vuelve a intentar realizar la solicitud enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto, razão pela qual a order não pode ser encontrada. Verifique e tente a enviar requisição novamente com o valor correto."
                           }
                         }
                       ]
@@ -2457,7 +2419,7 @@
             "type":"string",
             "description": {
               "en": "Identifier of the terminal that will obtain the order. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\". The serial number can be found on the rear label of the terminal.",
-              "es": "Identificador de la terminal Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial de la temrinal puede ser hallado en la etiqueta trasera del mismo.",
+              "es": "Identificador de la terminal Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial de la terminal puede ser hallado en la etiqueta trasera del mismo.",
               "pt": "Identificador do terminal que obterá a order. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"PAX_A910__SMARTPOS123456789\". O serial do terminal pode ser encontrado na etiqueta traseira."
             },
             "example":"PAX_A910__SMARTPOS1423",
@@ -2511,7 +2473,7 @@
                 "title": "debit_card",
                 "description": {
                   "en": "The terminal will only accept payments with debit card.",
-                  "es": "La temrinal aceptará pagos exclusivamente con tarjeta de débito.",
+                  "es": "La terminal aceptará pagos exclusivamente con tarjeta de débito.",
                   "pt": "O terminal aceitará exclusivamente pagamentos com cartão de débito."
                 }
               },
@@ -2519,7 +2481,7 @@
                 "title": "credit_card",
                 "description": {
                   "en": "The terminal will only accept payments with credit card.",
-                  "es": "La temrinal aceptará pagos exclusivamente con tarjeta de crédito.",
+                  "es": "La terminal aceptará pagos exclusivamente con tarjeta de crédito.",
                   "pt": "O terminal aceitará exclusivamente pagamentos com cartão de crédito."
                 }
               },
@@ -2636,7 +2598,7 @@
             "title": "cancelled",
             "description": {
               "en": "The order has been cancelled, either through the API or the terminal.",
-              "es": "La order fue cancelada desde el API o desde la temrinal.",
+              "es": "La order fue cancelada desde el API o desde la terminal.",
               "pt": "A order foi cancelada na API ou no terminal."
             }
           },
