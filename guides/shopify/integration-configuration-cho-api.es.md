@@ -75,6 +75,12 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 
 12. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
 
+> WARNING
+>
+> Atención
+>
+> 
+
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
 13. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.

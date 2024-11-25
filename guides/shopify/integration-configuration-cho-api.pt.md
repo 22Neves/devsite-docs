@@ -73,6 +73,12 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 
 12. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para finalizar a instalação.
 
+> WARNING
+>
+> Atenção
+>
+> É importante salientar que, caso alguma das bandeiras de cartão de crédito listada em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado. 
+
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
 13. Após concluir a instalação, retorne ao painel administrativo da loja e clique em **Configurações > Pagamentos**.
