@@ -34,7 +34,7 @@ If you already have a MercadoPagoV1 gateway affiliation, you will now need to cr
 | Integrator ID |  If you are a developer, fill in with your **Mercado Pago identification**.  |
 | Moeda - Moneda |  ----[mlu]---- Configure the store's currency (**USD** or **Local**). ------------ ----[mla, mlm, mlb, mco, mpe, mlc]---- This field identifies the store's currency. You don’t need to fill it. ------------ |
 | Merchant Account | This field identifies the merchant account. You don’t need to fill it. |
-| Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | You can configure a delay in VTEX's automatic capture of a payment by selecting from the drop-down options. If you don't want to configure it, select **"desativado"/"desactivado"**. |
+| Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | In this field, set the timeframe for capturing approved payments to **immediate**. |
 | Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Set a range of time in which the payment methods will no longer be available for the purchase. You can select a time range from the drop-down options, or choose **"não cancelar”/"no cancelar"**. |
 
 6. Click on **Save**, and you are done! Your MercadoPagoV2 gateway affiliation is set.

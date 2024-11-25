@@ -168,6 +168,65 @@
                             "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                           },
                           "required": true
+                        },
+                        "fiscal_data": {
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Apresenta os dados fiscais do item."
+                          },
+                          "enum": [
+                            {
+                              "title": "sat",
+                              "example": "123",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                              }
+                            },
+                            {
+                              "title": "sat_measurement_id",
+                              "example": "H87",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Indica se o item é perigoso ou não."
+                              }
+                            },
+                            {
+                              "title": "measurement_unit",
+                              "example": "Pieza",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                              }
+                            },
+                            {
+                              "title": "package_id",
+                              "example": "4G",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Identificação da chave do pacote."
+                              }
+                            },
+                            {
+                              "title": "dangerous_material_idOP",
+                              "example": "1",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Identificação da chave do material perigoso."
+                              }
+                            }
+                          ]
                         }
                       }
                     }
