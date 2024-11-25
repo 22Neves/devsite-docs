@@ -227,6 +227,65 @@
                               }
                             }
                           ]
+                        },
+                        "dimensions": {
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Apresenta as dimensões do item a ser enviado."
+                          },
+                          "enum": [
+                            {
+                              "title": "unit",
+                              "example": "s",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Unidade de medida do item."
+                              }
+                            },
+                            {
+                              "title": "height",
+                              "example": "1.1",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Altura do item"
+                              }
+                            },
+                            {
+                              "title": "width",
+                              "example": "16.4",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Largura do item."
+                              }
+                            },
+                            {
+                              "title": "length",
+                              "example": "24.6",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Comprimento do item."
+                              }
+                            },
+                            {
+                              "title": "weight",
+                              "example": "620",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Peso do item."
+                              }
+                            }
+                          ]
                         }
                       }
                     }
