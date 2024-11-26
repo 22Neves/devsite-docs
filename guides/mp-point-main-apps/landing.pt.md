@@ -78,4 +78,12 @@ available_payments: credit, debit, mercadopago
 ---
 ------------
 
+----[mlc]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
 > Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)

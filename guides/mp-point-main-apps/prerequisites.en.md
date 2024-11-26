@@ -4,8 +4,8 @@ Before you start developing your solution, take a look at the requirements that 
 
 | Requirement | Description |
 |---|---|
-| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Suas integrações](/developers/pt/docs/main-apps/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação.|
-| Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the **Client ID**. [Click here](/developers/en/docss/main-apps/additional-content/your-integrations/credentials) for more information. |
+| Application  | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Your integrations](/developers/es/docs/main-apps/additional-content/your-integrations/introduction) for more information on how to create an application. |
+| Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the **Client ID**. Check the [Credentials documentation](/developers/en/docss/main-apps/additional-content/your-integrations/credentials) for more information. |
 | Mercado Pago's Point Smart | [Mercado Pago Point](/developers/en/docs/mp-point/landing) is the Mercado Pago card machine that allows buyers to pay in person quickly and securely using credit or debit cards.|
 | Device pre-configuration| In order for the machines to operate in **Integrated mode** and for the pre-configuration to be carried out, share with Mercado Pago the account that will be used for the integration, as well as the cash register and store configurations and the serial numbers of the devices. |
 |Development kit | To start development, download the [Development kit](https://github.com/mercadolibre/point-mainapp-demo-android) provided by Mercado Pago. |
