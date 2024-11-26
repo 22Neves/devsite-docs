@@ -1,6 +1,12 @@
 # Suas integrações
 
-Suas integrações é o seu ambiente de gerenciamento de integrações criado automaticamente com um ID de usuário (o Mercado Pago ID) quando você abre uma conta no Mercado Pago. Nele, você pode criar uma nova aplicação no [Painel do desenvolvedor](/developers/panel/app) ou acessar a página de [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) de cada uma das aplicações listadas, além de solicitar acessos a credenciais de uma aplicação que você não gerencia. 
+Suas integrações é o seu ambiente de gerenciamento de integrações criado automaticamente com um ID de usuário (o Mercado Pago ID) quando você abre uma conta no Mercado Pago. Nele, você pode criar uma nova aplicação no [Painel do desenvolvedor](/developers/panel/app) ou acessar a página de [Detalhes da aplicação](/developers/pt/guides/additional-content/your-integrations/application-details) de cada uma das aplicações listadas, além de solicitar acessos a credenciais de uma aplicação que você não gerencia.
+
+> WARNING
+> 
+> Importante
+>
+> Por questões de segurança do Mercado Pago, o ambiente de **Suas integrações não está disponível para usuários menores de idade**.
 
 ## Detalhes da aplicação
 

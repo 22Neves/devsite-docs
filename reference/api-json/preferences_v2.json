@@ -168,6 +168,124 @@
                             "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                           },
                           "required": true
+                        },
+                        "fiscal_data": {
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Apresenta os dados fiscais do item."
+                          },
+                          "enum": [
+                            {
+                              "title": "sat",
+                              "example": "123",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                              }
+                            },
+                            {
+                              "title": "sat_measurement_id",
+                              "example": "H87",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Indica se o item é perigoso ou não."
+                              }
+                            },
+                            {
+                              "title": "measurement_unit",
+                              "example": "Pieza",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                              }
+                            },
+                            {
+                              "title": "package_id",
+                              "example": "4G",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Identificação da chave do pacote."
+                              }
+                            },
+                            {
+                              "title": "dangerous_material_idOP",
+                              "example": "1",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Identificação da chave do material perigoso."
+                              }
+                            }
+                          ]
+                        },
+                        "dimensions": {
+                          "description": {
+                            "en": ".",
+                            "pt": ".",
+                            "es": "Apresenta as dimensões do item a ser enviado."
+                          },
+                          "enum": [
+                            {
+                              "title": "unit",
+                              "example": "s",
+                              "type": "string",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Unidade de medida do item."
+                              }
+                            },
+                            {
+                              "title": "height",
+                              "example": "1.1",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Altura do item"
+                              }
+                            },
+                            {
+                              "title": "width",
+                              "example": "16.4",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Largura do item."
+                              }
+                            },
+                            {
+                              "title": "length",
+                              "example": "24.6",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Comprimento do item."
+                              }
+                            },
+                            {
+                              "title": "weight",
+                              "example": "620",
+                              "type": "float",
+                              "description": {
+                                "en": ".",
+                                "es": ".",
+                                "pt": "Peso do item."
+                              }
+                            }
+                          ]
                         }
                       }
                     }

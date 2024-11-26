@@ -2,6 +2,12 @@
 
 Your Integrations is your integration management environment automatically created with a user ID (the Mercado Pago ID) when you open an account on Mercado Pago. In it, you can create a new application in the [Developer Dashboard](/developers/panel/app) or access the [Application details](/developers/en/guides/additional-content/your-integrations/application-details) page for each listed application, as well as request access to credentials for an application you don't manage.
 
+> WARNING
+> 
+> Important
+>
+> For security reasons related to Mercado Pago, the environment for **Your integrations is not available for users under the age of majority**.
+
 ## Application details
 
 The [Application details](/developers/en/guides/additional-content/your-integrations/application-details) page consists of different sections, each with a different purpose.
