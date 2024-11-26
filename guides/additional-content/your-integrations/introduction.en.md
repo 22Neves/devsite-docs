@@ -6,7 +6,7 @@ Your Integrations is your integration management environment automatically creat
 > 
 > Important
 >
-> For security reasons related to Mercado Pago, the environment for **Your integrations is not available for users under the age of majority**.
+> For security reasons related to Mercado Pago, the environment for **"Your integrations" is not available for users under the age of majority**.
 
 ## Application details
 

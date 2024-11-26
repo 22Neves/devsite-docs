@@ -6,7 +6,7 @@ Tus integraciones es un entorno que te permite gestionar tus integraciones. Este
 > 
 > Importante
 >
-> Por cuestiones de seguridad de Mercado Pago, el ambiente de **Tus integraciones no está disponible para usuarios menores de edad**.
+> Por cuestiones de seguridad de Mercado Pago, la sección de **"Tus integraciones" no está disponible para usuarios menores de edad**.
 
 ## Detalles de la aplicación
 

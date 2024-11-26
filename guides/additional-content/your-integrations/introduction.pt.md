@@ -6,7 +6,7 @@ Suas integrações é o seu ambiente de gerenciamento de integrações criado au
 > 
 > Importante
 >
-> Por questões de segurança do Mercado Pago, o ambiente de **Suas integrações não está disponível para usuários menores de idade**.
+> Por questões de segurança do Mercado Pago, a seção de **"Suas integrações" não está disponível para usuários menores de idade**.
 
 ## Detalhes da aplicação
 
