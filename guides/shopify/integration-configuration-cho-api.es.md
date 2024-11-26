@@ -79,7 +79,7 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 >
 > Atención
 >
-> Es importante señalar que, si alguna de las marcas de tarjetas de crédito listadas en pantalla es deshabilitada, el procesamiento de pagos para la marca en cuestión será bloqueado. Para que los pagos vuelvan a la normalidad, reactívala.
+> Es importante señalar que, si alguna de las marcas de tarjetas de crédito listadas en pantalla es deshabitada, se bloqueará el procesamiento de pagos para ella.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
@@ -181,7 +181,7 @@ Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a
 >
 > Atención
 >
-> Es importante señalar que, si alguna de las marcas de tarjetas de crédito listadas en pantalla es deshabilitada, el procesamiento de pagos para la marca en cuestión será bloqueado. Para que los pagos vuelvan a la normalidad, reactívala.
+> Es importante señalar que, si alguna de las marcas de tarjetas de crédito listadas en pantalla es deshabitada, se bloqueará el procesamiento de pagos para ella.
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 

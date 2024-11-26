@@ -54,7 +54,7 @@ To install Mercado Pago Tarjetas through the Shopify admin panel, follow the ste
 >
 > Attention
 >
-> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **Automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
@@ -180,7 +180,7 @@ To install Mercado Pago Tarjetas through the Shopify admin panel, follow the ste
 >
 > Attention
 >
-> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **Automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
@@ -306,7 +306,7 @@ To install Mercado Pago Tarjetas through the Shopify admin panel, follow the ste
 >
 > Attention
 >
-> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **Automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
@@ -355,7 +355,7 @@ To install Mercado Pago Tarjetas via Marketplace, follow the steps below:
 >
 > Attention
 >
-> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
@@ -432,7 +432,7 @@ To install Mercado Pago Cartões through the Shopify admin panel, follow the ste
 >
 > Attention
 >
-> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
@@ -473,7 +473,7 @@ To install Mercado Pago Cartões via Marketplace, follow the steps below:
 >
 > Attention
 >
-> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 

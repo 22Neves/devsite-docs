@@ -77,7 +77,7 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 >
 > Atenção
 >
-> É importante salientar que, caso alguma das bandeiras de cartão de crédito listadas em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado. Para que os pagamentos voltem a normalidade, reative-a.
+> É importante salientar que, caso alguma das bandeiras de cartão de crédito listadas em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado.
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
@@ -179,7 +179,7 @@ Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
 >
 > Atenção
 >
-> É importante salientar que, caso alguma das bandeiras de cartão de crédito listadas em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado. Para que os pagamentos voltem a normalidade, reative-a.
+> É importante salientar que, caso alguma das bandeiras de cartão de crédito listadas em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado.
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
