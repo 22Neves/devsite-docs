@@ -35,7 +35,7 @@ Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás crear ahora
 | Moeda - Moneda | ----[mlu]---- Configura la moneda de la tienda (**USD** o **Local**). ------------ ----[mla, mlm, mlb, mco, mpe, mlc]---- Este campo identifica la moneda de la tienda. No es necesario que lo completes. ------------ |
 | Merchant Account | Este campo identifica la cuenta del merchant. No es necesario que lo completes. |
 | Prazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | En este campo, configura como **inmediato** el plazo para la captura de los pagos aprobados. |
-| Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Configure el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". |
+| Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". |
 
 6. Haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 
