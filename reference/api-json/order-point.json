@@ -328,7 +328,23 @@
                                 }
                               },
                               "status":{
-                                "$ref": "#/components/schemas/status"
+                                "type":"string",
+                                "example":"created",
+                                "description":{
+                                  "en":"Current status of the order or the transaction.",
+                                  "pt":"Status atual da order ou da transação.",
+                                  "es":"Estado actual de la order o de la transacción."
+                                },
+                                "enum": [
+                                  {
+                                    "title": "created",
+                                    "description": {
+                                      "en": "The order has been succesfully created.",
+                                      "es": "La order ha sido creada de manera exitosa.",
+                                      "pt": "A order foi criada com sucesso."
+                                    }
+                                  }
+                                ]
                               }
                             }
                           }
