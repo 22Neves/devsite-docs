@@ -3211,9 +3211,9 @@
                     "checkout-api"
                 ],
                 "description": {
-                    "en": "Performs the full refund of associated transactions.",
-                    "pt": "Este endpoint executa a devolução total das transações associadas.",
-                    "es": "Realiza la devolución completa de las transacciones asociadas."
+                    "en": "This endpoint performs a full or partial refund of the transactions associated with an order. To perform a full refund, you must not send the amount to be refunded in the request body. To perform a partial refund you must indicate the amount to be refunded, along with the \"transaction.id\" of the transaction you wish to return. In case of success, the request will return a response with status 200",
+                    "pt": "Este endpoint executa a devolução total ou parcial das transações associadas a uma order. Para fazer o reembolso total, você não deve enviar o valor a ser reembolsado no body da solicitação. Para efetuar um reembolso parcial deverá indicar o valor a ser reembolsado, juntamente com o \"transaction.id\" da transação que deseja devolver. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es": "Este endpoint permite realizar la devolución total o parcial de los valores asociados a una order. Para realizar un reembolso total, no debes enviar el monto a reembolsar en el body de la requisición. Para realizar un reembolso parcial sí debes indicar el valor a ser reembolsado, junto con el \"transaction.id\" de la transacción que deseas devolver. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
@@ -3735,9 +3735,9 @@
                     "checkout-api"
                 ],
                 "description": {
-                    "en":"This endpoint allows to totally capture an order previously created in manual mode. Every associated payment will be captured in total",
-                    "pt":"Este endpoint permite capturar totalmente uma order previamente criada no modo manual. Cada payment associado será capturado totalmente",
-                    "es":"Este endpoint permite capturar en su totalidad una order previamente creada en modo manual. Cada payment asociado se capturará en su totalidad"
+                    "en":"This endpoint allows to totally capture an order previously created in manual mode. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
+                    "pt":"Este endpoint permite capturar totalmente uma order previamente criada no modo manual. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es":"Este endpoint permite capturar en su totalidad una order previamente creada en modo manual. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
