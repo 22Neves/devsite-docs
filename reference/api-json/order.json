@@ -3729,9 +3729,9 @@
                     "checkout-api"
                 ],
                 "description": {
-                    "en": "Capture Order totally. Every payment will be captured in total.",
-                    "pt": "Capture a Order totalmente. Cada payment será capturado totalmente.",
-                    "es": "Capturar la Order en su totalidad. Cada payment se capturará en su totalidad."
+                    "en":"This endpoint allows to totally capture an order previously created in manual mode. Every associated payment will be captured in total",
+                    "pt":"Este endpoint permite capturar totalmente uma order previamente criada no modo manual. Cada payment associado será capturado totalmente",
+                    "es":"Este endpoint permite capturar en su totalidad una order previamente creada en modo manual. Cada payment asociado se capturará en su totalidad"
                 },
                 "parameters": [
                     {
