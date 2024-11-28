@@ -14,4 +14,4 @@ Para poder integrar el plugin de Mercado Pago en tu tienda de Shopify, debes cum
 >
 > Atención
 >
-> Es importante señalar que la integración con Mercado Pago no es compatible con la función de **Store Credit** de la plataforma Shopify.
+> Es importante señalar que la integración con Mercado Pago no es compatible con la función **Store Credit** de la plataforma Shopify.
