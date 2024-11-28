@@ -1,6 +1,6 @@
 # Obtener información
 
-A través de la función `getInformation` de la clase `SmartInformationTools`, recuperas información detallada sobre un dispositivo y el SDK de las integraciones. Accede a esta función por el a través del objeto `MPManager`, como en el ejemplo a continuación:
+A través de la función `getInformation` de la clase `SmartInformationTools`, recuperas información detallada sobre un dispositivo y el SDK de las integraciones. Accede a esta función a través del objeto `MPManager`, como en el ejemplo a continuación:
 
 [[[
 ```kotlin

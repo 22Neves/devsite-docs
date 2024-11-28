@@ -97,15 +97,15 @@ paymentFlow.launchPaymentFlowActivity(paymentFlowData, context, callback);
 ```
 ]]]
 
-| Campo | Descripción | Obligatorio/ Opcional |
+| Campo | Descripción |
 |---|---|
-|**amount (String)**| Monto usado para iniciar el flujo de pago.| Obligatorio |
-|**description (String)**| Descripción usada para iniciar el flujo de pago.| Opcional |
-|**intentSuccess (Uri)**| URI que se utiliza para lanzar un deeplink que redirige a la pantalla de éxito. Para un funcionamiento correcto, es necesario utilizar la funcionalidad adicional `buildCallbackUri`. Para más información, consulta [Construir una URI para apertura del flujo de pago](/developers/es/docs/main-apps/payments/start-payment-flow#bookmark_construir_una_uri_para_apertura_del_flujo_de_pago) | Obligatorio |
-|**intentError (Uri)**| URI que se utiliza para lanzar un deeplink que redirige a la pantalla de error. Para un funcionamiento correcto, es necesario utilizar la funcionalidad adicional `buildCallbackUri`. Para más información, consulta [Construir una URI para apertura del flujo de pago](/developers/es/docs/main-apps/payments/start-payment-flow#bookmark_construir_una_uri_para_apertura_del_flujo_de_pago) | Obligatorio |
-|**paymentMethod (String)**| Medio de pago para realizar la operación. | Opcional |
-|**installments (Integer)**| Número de cuotas usado para iniciar el flujo de pago. Está **disponible solo para Brasil**. | Opcional |
-|**printOnTerminal (Booleano)**| Flag que permite imprimir de forma automática  en el dispositivo. Por defecto está en `true`.  | Opcional |
+|**amount (String)**| Monto usado para iniciar el flujo de pago.|
+|**description (String)**| Opcional. Descripción usada para iniciar el flujo de pago.|
+|**intentSuccess (Uri)**| URI que se utiliza para lanzar un deeplink que redirige a la pantalla de éxito. Para un funcionamiento correcto, es necesario utilizar la funcionalidad adicional `buildCallbackUri`. Para más información, consulta [Construir una URI para apertura del flujo de pago](/developers/es/docs/main-apps/payments/start-payment-flow#bookmark_construir_una_uri_para_apertura_del_flujo_de_pago) | 
+|**intentError (Uri)**| URI que se utiliza para lanzar un deeplink que redirige a la pantalla de error. Para un funcionamiento correcto, es necesario utilizar la funcionalidad adicional `buildCallbackUri`. Para más información, consulta [Construir una URI para apertura del flujo de pago](/developers/es/docs/main-apps/payments/start-payment-flow#bookmark_construir_una_uri_para_apertura_del_flujo_de_pago) | 
+|**paymentMethod (String)**| Opcional. Medio de pago para realizar la operación. | 
+|**installments (Integer)**| Opcional. Número de cuotas usado para iniciar el flujo de pago. Está **disponible solo para Brasil**. |
+|**printOnTerminal (Booleano)**| Opcional. Flag que permite imprimir de forma automática  en el dispositivo. Por defecto está en `true`.  |
 |**launchPaymentFlowActivity**| Este método inicia el flujo de pago usando la app SmartPOS.|
 |**paymentFlowData (PaymentFlowData)**| Modelo de datos necesario para la apertura del flujo.|
 |**context (Context)**| Contexto de dónde se inciará el flujo.|

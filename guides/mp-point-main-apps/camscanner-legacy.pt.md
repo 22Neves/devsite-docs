@@ -1,14 +1,23 @@
-# Escanear códigos de barras e QR
+# Método legacy para iniciar a câmera
 
-Abaixo você encontrará informações de como iniciar e gerenciar o escâner da [Point Smart](/developers/pt/docs/mp-point/landing) para a leitura de **códigos de barra e QR**.
+A função `initBarcodeScanner` da classe `CameraScanner` em nosso SDK é utilizada para invocar a funcionalidade de leitura de códigos que está no dispositivo Point Smart. Além disso, uma função adicional deve ser implementada na atividade que a utiliza para manipular a resposta de leitura.
 
-## Código de barras
+> WARNING
+>
+> Importante
+>
+> Este método para iniciar a câmera scanner é considerado _legacy_. Recomendamos atualizar sua integração para o [método Callback](/developers/pt/docs/main-apps/payments/camscanner/callback) para ter uma implementação simplificada.
 
-Para iniciar a leitura de códigos de barras da [Point Smart](/developers/pt/docs/mp-point/landing), use a função `initBarcodeScanner` da classe `CameraScanner`. 
+Consulte como iniciar a leitura de códigos QR e de barras e como gerenciar as respostas a seguir.
 
-Esse processo utiliza uma chamada de câmera mediante `startActivityForResult`, de modo que o método `onActivityResult` deve ser implementado na atividade para manipular a resposta de leitura. 
 
-Confira o exemplo a seguir.
+## Código de Barras
+
+Para iniciar a leitura de códigos de barras do Point Smart, comece usando a função `initBarcodeScanner` da classe `CameraScanner`.
+
+Esse processo faz uma chamada à câmera através de `startActivityForResult`, de modo que o método `onActivityResult` permita gerenciar a resposta de leitura.
+
+Para sua implementação, consulte o exemplo a seguir.
 
 [[[
 ```kotlin

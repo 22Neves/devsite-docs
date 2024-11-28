@@ -1,4 +1,4 @@
-# Start payment flow
+# Legacy method
 
 To provide a seamless experience in your app, our SDKs facilitate the initialization of the payment flow through the `PaymentFlow` class. Additionally, it is necessary to use two essential functionalities:
  * `buildCallbackUri`: builds the URI to handle successful payments and errors, and allows you to define redirection routes after the payment.
@@ -96,15 +96,15 @@ paymentFlow.launchPaymentFlowActivity(paymentFlowData, context, callback);
 ```
 ]]]
 
-| Field | Description | Required/ Optional |
+| Field | Description |
 |---|---|
-|**amount (String)**| Amount used to initiate the payment flow.| Required |
-|**description (String)**| Description used to initiate the payment flow.| Optional |
-|**intentSuccess (Uri)**| URI used to launch a deeplink that redirects to the success screen. For proper functioning, it is necessary to use the additional functionality `buildCallbackUri`. For more information, see [Build a URI to open the payment flow](/developers/en/docs/main-apps/payments/start-payment-flow#bookmark_build_a_uri_to_open_the_payment_flow). | Required |
-|**intentError (Uri)**| URI used to launch a deeplink that redirects to the error screen. For proper functioning, it is necessary to use the additional functionality `buildCallbackUri`. For more information, see [Build a URI to open the payment flow](/developers/en/docs/main-apps/payments/start-payment-flow#bookmark_build_a_uri_to_open_the_payment_flow). | Required |
-|**paymentMethod (String)**| Payment method to perform the operation. | Optional |
-|**installments (Integer)**| Number of installments used to initiate the payment flow. It is **available only for Brazil**. | Optional |
-|**printOnTerminal (Boolean)**| Flag that allows automatic printing on the device. By default, it is set to `true`. | Optional |
+|**amount (String)**| Amount used to initiate the payment flow.|
+|**description (String)**| Optional. Description used to initiate the payment flow.|
+|**intentSuccess (Uri)**| URI used to launch a deeplink that redirects to the success screen. For proper functioning, it is necessary to use the additional functionality `buildCallbackUri`. For more information, see [Build a URI to open the payment flow](/developers/en/docs/main-apps/payments/start-payment-flow#bookmark_build_a_uri_to_open_the_payment_flow). |
+|**intentError (Uri)**| URI used to launch a deeplink that redirects to the error screen. For proper functioning, it is necessary to use the additional functionality `buildCallbackUri`. For more information, see [Build a URI to open the payment flow](/developers/en/docs/main-apps/payments/start-payment-flow#bookmark_build_a_uri_to_open_the_payment_flow). |
+|**paymentMethod (String)**| Optional. Payment method to perform the operation. |
+|**installments (Integer)**| Optional. Number of installments used to initiate the payment flow. It is **available only for Brazil**. |
+|**printOnTerminal (Boolean)**| Optional. Flag that allows automatic printing on the device. By default, it is set to `true`. |
 |**launchPaymentFlowActivity**| This method initiates the payment flow using the SmartPOS app. |
 |**paymentFlowData (PaymentFlowData)**| Data model required to open the flow. |
 |**context (Context)**| Context from where the flow will be initiated. |

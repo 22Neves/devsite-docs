@@ -1,14 +1,23 @@
-# Scan barcodes and QR codes
+# Legacy Method for launching the camera
 
-Below you will find information on how to start and manage the [Point Smart](/developers/pt/docs/mp-point/landing) scanner for reading **barcodes and QR codes**.
+The `initBarcodeScanner` function of the `CameraScanner` class in our SDK is used to invoke the code reading functionality found in the Point Smart device. In addition, an extra function must be implemented in the activity that uses it to handle the reading response.
 
-## Barcode
+> WARNING
+>
+> Important
+>
+> This method to launch the scanner camera is considered legacy. We recommend updating your integration to the [Callback method](/developers/en/docs/main-apps/payments/camscanner/callback) for a simplified implementation.
 
-To begin reading QR codes of the [Point Smart](/developers/en/docs/mp-point/landing), use the `initBarcodeScanner` feature of the `CameraScanner` class. 
+Check how to initiate the reading of QR codes and barcodes, and how to handle the responses below.
 
-This process uses a camera request through `startActivityForResult`, and the method `onActivityResult` must be implemented in the activity to handle the reading response.
 
-Check the example below:
+## Barcodes
+
+To start reading barcodes codes with the Point Smart, begin by using the `initBarcodeScanner` function of the `CameraScanner` class.
+
+This process makes a camera call through `startActivityForResult`, so the `onActivityResult` method allows you to manage the reading response.
+
+For its implementation, see the example below.
 
 [[[
 ```kotlin
@@ -23,11 +32,11 @@ cameraScanner.initBarcodeScanner(this);
 
 ## QR code
 
-To begin reading QR codes of the [Point Smart](/developers/en/docs/mp-point/landing), use the `initQRCodeScanner` feature of the `CameraScanner` class. 
+To start reading QR codes with the Point Smart, begin by using the `initBarcodeScanner` function of the `CameraScanner` class.
 
-This process uses a camera request through `startActivityForResult`, and the method `onActivityResult` must be implemented in the activity to handle the reading response.
+This process makes a camera call through `startActivityForResult`, so the `onActivityResult` method allows you to manage the reading response.
 
-Check the example below:
+For its implementation, see the example below.
 
 [[[
 ```kotlin
