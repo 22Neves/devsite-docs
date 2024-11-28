@@ -51,15 +51,15 @@ Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos aba
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração**.
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
 ----[mla]----
-5. Na tela em questão, habilite a opção **Cuotas sin Tarjeta de Mercado Pago**.
+5. Na tela de configuração dos checkouts, habilite a opção **Cuotas sin Tarjeta de Mercado Pago**.
 
 ------------
 ----[mlm]----
-5. Na tela em questão, habilite a opção **Meses sin Tarjeta de Mercado Pago**.
+5. Na tela de configuração dos checkouts, habilite a opção **Meses sin Tarjeta de Mercado Pago**.
 
 ------------
 ----[mlb]----
-5. Na tela em questão, habilite a opção **Linha de Crédito**.
+5. Na tela de configuração dos checkouts, habilite a opção **Linha de Crédito**.
 
 ------------
 6. Por fim, clique em **Salvar alterações**.

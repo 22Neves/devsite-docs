@@ -45,7 +45,7 @@ Se, por algum motivo, você precisar trocar a conta atual do Mercado Pago por ou
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração**.
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
-5. No Painel Administrativo do plugin do Mercado Pago, **clique no ícone do seu perfil**, localizado no canto superior direito da tela.
+5. No tela de configuração dos checkouts, **clique no ícone do seu perfil**, localizado no canto superior direito da tela.
 6. Clique em **Alterar conta** e, em seguida, novamente em **Alterar conta**.
 
 > WARNING
@@ -58,7 +58,7 @@ Pronto! Inicie a seção com a nova conta que deseja usar. Você poderá alterá
 
 ------------
 ----[mpe, mco, mlu, mlc]----
-1. Desconectar de sua conta Mercado Pago, caso conectada em um navegador.
+1. Desconecte de sua conta Mercado Pago, caso esteja conectada em um navegador.
 2. Clique no "Menu de opções" e depois em "Sair".
 3. Acesse as [configurações de meios de pagamentos](https://lojavirtualnuvem.com.br/admin/payments/), no painel de administração de sua loja, localize o "Mercado Pago" na lista de meios de pagamentos e clique em "Editar".
 4. Clique em "Mudar usuário" para desvincular a conta atual.

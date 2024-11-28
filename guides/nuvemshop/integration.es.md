@@ -50,7 +50,7 @@ Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario 
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
 3. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
-5. En el Panel Administrativo del plugin de Mercado Pago, **haz clic en el ícono de tu perfil** (ubicado en la esquina superior derecha de la pantalla).
+5. En la pantalla de configuración de los checkouts, **haz clic en el ícono de tu perfil** (ubicado en la esquina superior derecha de la pantalla).
 6. Haz clic en **Cambiar cuenta** y luego en **Cambiar cuenta** nuevamente.
 
 > WARNING

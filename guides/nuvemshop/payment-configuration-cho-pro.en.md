@@ -8,7 +8,7 @@ To integrate Checkout Pro, follow the steps below.
 2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings**.
 4. Scroll down to the bottom of the page and click on **More settings on the Mercado Pago site**.
-5. Enable the **Mercado Pago** option.
+5. On the checkout settings screen, enable the **Mercado Pago** option.
 6. To configure your store's payment experiences, click on **Configure**.
 7. In Mercado Pago Checkout, choose the payment methods you want to offer in the Mercado Pago payment environment, which can be:
 

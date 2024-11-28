@@ -17,7 +17,7 @@ To integrate the Checkout API, follow the steps below.
 2. Find the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit configuration**.
 4. Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
-5. On the relevant screen, navigate to the area ----[mlb]---- "Checkout Transparente" ------------ ----[mla, mlm]---- "Checkout API" ------------ and enable the desired payment option, which can be:
+5. On the checkout settings screen, navigate to the area ----[mlb]---- "Checkout Transparente" ------------ ----[mla, mlm]---- "Checkout API" ------------ and enable the desired payment option, which can be:
   * **Credit and/or debit cards**:
     * **Credit**. Select the card brands you want to enable in your store and also indicate the maximum number of installments permitted for installment purchases. To configure an installment plan without increases, see the section on [Discounts, installments, and interest](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
     * **Debit**. Select the card brands you want to enable in your store.

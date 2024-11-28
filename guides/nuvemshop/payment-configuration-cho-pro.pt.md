@@ -8,7 +8,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração**.
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
-5. Na tela em questão, habilite a opção **Mercado Pago**.
+5. Na tela de configuração dos checkouts, habilite a opção **Mercado Pago**.
 6. Para configurar as experiências de pagamento da sua loja, clique em **Configurar**.
 7. Em Checkout Mercado Pago, escolha os meios de pagamento que deseja oferecer no ambiente de pagamento do Mercado Pago, podendo ser: 
 ----[mlb]---- 
@@ -30,5 +30,18 @@ Para integrar o Checkout Pro, siga os passos abaixo.
 
 ------------
 8. Por fim, clique em **Salvar alterações**.
+
+----[mlb]---- 
+![nuvemshop - checkout pro - mlb](/images/nuvemshop/integration-checkout-pro-mlb.png)
+
+------------
+----[mla]---- 
+![nuvemshop - checkout pro - mla](/images/nuvemshop/integration-checkout-pro-mla.png)
+
+------------
+----[mlm]---- 
+![nuvemshop - checkout pro - mlm](/images/nuvemshop/integration-checkout-pro-mlm.png)
+
+------------
 
 Pronto! O Checkout Pro do Mercado Pago está pronto para receber os pagamentos da sua loja.

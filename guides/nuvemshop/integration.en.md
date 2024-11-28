@@ -43,7 +43,7 @@ If, for any reason, you need to change your current Mercado Pago account for ano
 2. Find the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit configuration**.
 4. Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
-5. In the Administrative Panel of the Mercado Pago plugin, **click on the icon of your profile**, located in the upper right corner of the screen.
+5. On the checkout settings screen, **click on the icon of your profile**, located in the upper right corner of the screen.
 6. Click on **Change acount** and then on **Change account** again.
 
 > WARNING

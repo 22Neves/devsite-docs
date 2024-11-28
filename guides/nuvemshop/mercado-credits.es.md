@@ -53,21 +53,21 @@ Para **configurar o Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los 
 3. En la lista de métodos de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 4. Desliza hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
 ----[mla]----
-5. En la pantalla, activa la opción **Cuotas sin Tarjeta de Mercado Pago**.
+5. En la pantalla de configuración de los checkouts, activa la opción **Cuotas sin Tarjeta de Mercado Pago**.
 6. Por último, haz clic en **Guardar cambios**.
 
 ¡Listo! La modalidad de financiación está habilitada en tu tienda.
 
 ------------
 ----[mlm]----
-5. En la pantalla en cuestión, activa la opción **Meses sin Tarjeta de Mercado Pago**.
+5. En la pantalla de configuración de los checkouts, activa la opción **Meses sin Tarjeta de Mercado Pago**.
 6. Por último, haz clic en **Guardar cambios**.
 
 ¡Listo! La modalidad de financiamiento está habilitada en tu tienda.
 
 ------------
 ----[mlb]----
-5. En la pantalla en cuestión, activa la opción **Linha de Crédito**.
+5. En la pantalla de configuración de los checkouts, activa la opción **Linha de Crédito**.
 6. Por último, haz clic en **Guardar cambios**.
 
 ¡Listo! La modalidad de financiamiento está habilitada en tu tienda.
