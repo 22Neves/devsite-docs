@@ -46,7 +46,7 @@ bitmapPrinter.print(imageToPrint, callback);
 |**dataToPrint (Bitmap)**| La imagen bitmap que se imprimirá.|
 |**callback ((MPResponse&lt;String&gt;) -> Unit)**| Función de devolución del llamado que ofrece la operación de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un **String** representando el ID o estado de la impresión.|
 
-----[mla, mlm , mlb]----
+----[mla, mlm, mlb]----
 ## Imprimir Custom Tag
 
 La función `print` de la clase `BitmapPrinter` en nuestro SDK también puede ser utilizada para crear impresiones personalizadas. Esto se realiza a partir de un patrón, llamado Custom Tag, que consiste en enviar un string con diferentes tags de control para su posterior interpretación por nuestro sistema, lo que arroja como resultado un comprobante físico. 

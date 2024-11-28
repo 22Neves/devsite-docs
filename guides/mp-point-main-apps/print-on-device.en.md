@@ -47,7 +47,7 @@ bitmapPrinter.print(imageToPrint, callback);
 |**dataToPrint (Bitmap)**| The bitmap image that will be printed.|
 |**callback ((MPResponse&lt;String&gt;) -> Unit)**| Request response feature that provides the result of the printing operation. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, which contain a String representing the ID or status of the printing.|
 
-----[mla, mlm , mlb]----
+----[mla, mlm, mlb]----
 ## Print Custom Tag
 
 The `print` function of the `BitmapPrinter` class in our SDK can also be used to create custom prints. This is done based on a pattern called a Custom Tag, which consists of sending a string with different control tags for subsequent interpretation by our system, resulting in a physical receipt.
