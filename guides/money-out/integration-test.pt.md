@@ -139,7 +139,102 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 | Qualquer outro valor | Serão gerados novos recursos com status `status` e `processed`. |
 
 ------------ 
+----[mla, mlm, mlc]----
 
+----[mla]---- 
+```curl
+curl --request POST \
+  --url https://api.mercadopago.com/v1/transaction-intents/process \
+  --header 'Authorization: Bearer TEST-461396*********1-111215-*********cd39015a8*********bc3cb-1*********' \
+  --header 'content-type: application/json' \
+  --header 'x-enforce-signature: false' \
+  --data '{
+  "external_reference": "external_ref_1234",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.com.ar/notification"
+    }
+  },
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25
+        }
+      ]
+    },
+    "to": {
+      "total_amount": 25,
+      "accounts": [
+        {
+          "amount": 25,
+          "bank_id": "015",
+          "number": "0150533701000132688355",
+          "holder": "Victor Hugo",
+          "owner": {
+              "identification": {
+                  "number": "20209642647",
+                  "type": "CUIT"
+              }
+          },
+          "type": "savings_account",
+          "description": "envio de 25"
+        }
+      ]
+    },
+    "total_amount": 25
+  }
+}'
+```
+
+------------
+----[mlm]---- 
+```curl
+curl --request POST \
+  --url https://api.mercadopago.com/v1/transaction-intents/process \
+  --header 'Authorization: Bearer TEST-6133*********794-11121*********edd13abd8*********82868e9-1*********' \
+  --header 'content-type: application/json' \
+  --header 'x-enforce-signature: false' \
+  --data '{
+  "external_reference": "12345",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
+  },
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25
+        }
+      ]
+    },
+    "to": {
+      "total_amount": 25,
+      "accounts": [
+        {
+          "amount": 25,
+          "bank_id": "646",
+          "number": "646180110400000007",
+          "holder": "JUAN JOSE MARIA",
+          "type": "savings_account",
+          "description": "envio de 25"
+        }
+      ]
+    },
+    "total_amount": 25
+  }
+}'
+```
+
+------------
 ----[mlc]---- 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
@@ -185,6 +280,8 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
     }
 }'
 ```
+
+------------
 
 > WARNING
 >
