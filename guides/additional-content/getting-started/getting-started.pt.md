@@ -23,7 +23,7 @@ O primeiro passo para começar a integrar, seja para você ou para outras pessoa
 
 ### Suas integrações
 
-Se você escolher um produto que requeira integração, deverá acessar [Suas integrações](https://www.mercadopago.com/developers/panel/app), que permite gerenciar integrações com desenvolvimento de código, seus aplicativos, realizar testes e configurar notificações que fornecem informações sobre as transações.
+Se você escolher um produto que requeira integração, deverá acessar [Suas integrações](https://www.mercadopago.com/developers/panel/app), que permite gerenciar integrações com desenvolvimento de código, suas aplicações, realizar testes e configurar notificações que fornecem informações sobre as transações.
 
 Se você já tem uma conta no Mercado Livre, acesse [Suas integrações](https://www.mercadopago.com/developers/panel/app) com o mesmo usuário e senha.
 
@@ -50,8 +50,8 @@ Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos inte
 ----[mlb]----
 | Solução | Descrição | Conhecimentos necessários |
 |:---|:---|:---|
-| [Checkout Pro](/developers/pt/docs/checkout-pro/landing) | Processe pagamentos no ambiente do Mercado Pago, de forma segura e simples com um design prontos para usar. Desenvolvemos este checkout otimizado para aumentar a conversão. | Intermediário |
-| [Checkout Transparente](/developers/pt/docs/checkout-api/landing) | Uma solução versátil para que você construa seu processador de pagamentos no seu site. Você controla toda a experiência, de configurações básicas a avançadas. | Avançado|
+| [Checkout Pro](/developers/pt/docs/checkout-pro/landing) | Processe pagamentos no ambiente do Mercado Pago, de forma segura e simples com um design pronto para usar. Desenvolvemos este checkout otimizado para aumentar a conversão. | Intermediário |
+| [Checkout Transparente](/developers/pt/docs/checkout-api/landing) | Uma solução versátil para que você construa seu processador de pagamentos no seu site. Você tem o controle total sobre a experiência, desde as configurações básicas até as mais avançadas. | Avançado |
 | [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Uma solução de pagamento modular, segura e personalizável, onde você controla toda a experiência e escolhe qual Brick e tema usar com base nas necessidades do seu site. | Avançado |
 | [Assinaturas](/developers/pt/docs/subscriptions/landing) | Automatiza as cobranças recorrentes através de uma assinatura. Você pode configurar a frequência dos pagamentos e o valor a ser cobrado. | Intermediário |
 ------------
@@ -59,8 +59,8 @@ Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos inte
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Solução | Descrição | Conhecimentos necessários |
 |:---|:---|:---|
-| [Checkout Pro](/developers/pt/docs/checkout-pro/landing) | Processe pagamentos no ambiente do Mercado Pago, de forma segura e simples com um design prontos para usar. Desenvolvemos este checkout otimizado para aumentar a conversão. | Intermediário |
-| [Checkout API](/developers/pt/docs/checkout-api/landing) | Uma solução versátil para que você construa seu processador de pagamentos no seu site. Você controla toda a experiência, de configurações básicas a avançadas. | Avançado| 
+| [Checkout Pro](/developers/pt/docs/checkout-pro/landing) | Processe pagamentos no ambiente do Mercado Pago, de forma segura e simples com um design pronto para usar. Desenvolvemos este checkout otimizado para aumentar a conversão. | Intermediário |
+| [Checkout API](/developers/pt/docs/checkout-api/landing) | Uma solução versátil para que você construa seu processador de pagamentos no seu site. Você tem o controle total sobre a experiência, desde as configurações básicas até as mais avançadas. | Avançado | 
 | [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Uma solução de pagamento modular, segura e personalizável, onde você controla toda a experiência e escolhe qual Brick e tema usar com base nas necessidades do seu site. | Avançado |
 | [Assinaturas](/developers/pt/docs/subscriptions/landing) | Automatiza as cobranças recorrentes através de uma assinatura. Você pode configurar a frequência dos pagamentos e o valor a ser cobrado. | Intermediário |
 ------------
@@ -74,7 +74,7 @@ Soluções para quem vende de casa, na rua, no carro ou na loja.
 |:---|:---|:---|
 | [Código QR](/developers/pt/docs/qr-code/landing)| Escolha um modelo de integração para gerar códigos QR e fornecer uma experiência completa de pagamento presencial. | Intermediário |
 | [Mercado Pago Point](/developers/pt/docs/mp-point/landing) | Integre o Mercado Pago Point e conecte a maquininha de cartão a qualquer sistema iOS ou Android para aceitar pagamentos nas frentes de caixa. | Intermediário |
-| [Mercado Pago Delivery](/developers/pt/docs/mp-delivery/introduction) | Uma solução de entrega de refeições sob demanda, na qual o cliente acessa em uma lista de restaurantes cadastrados, faz seu pedido e paga diretamente pelo app do Mercado Pago. | Intermediário |
+| [Mercado Pago Delivery](/developers/pt/docs/mp-delivery/introduction) | Uma solução de entrega de refeições sob demanda, na qual o cliente acessa uma lista de restaurantes cadastrados, faz seu pedido e paga diretamente pelo app do Mercado Pago. | Intermediário |
 ------------
 
 ----[mpe, mco, mlu, mlc]----
