@@ -1,12 +1,12 @@
 # Printing
 
-It is possible to use the thermal printer of the Point Smart devices to print bitmap images ----[mlc]----, DTE,------------ or custom images based on patterns called Custom Tags.
+It is possible to use the thermal printer of the Point Smart devices to print bitmap images----[mlc]----, DTE,------------ or custom images based on patterns called Custom Tags.
 
 > NOTE
 >
 > Note
 >
-> If you want to print with an external printer, you will need to pair it with your device using Bluetooth functionality. Go to [Printing with an external printer](/developers/en/docs/main-apps/bluetooth/print-external-printer) for more information.
+> If you want to print with an external printer, you will need to pair it with your device using Bluetooth functionality. Go to [Print with an external printer](/developers/en/docs/main-apps/bluetooth/print-external-printer) for more information.
 
 ## Print Bitmap
 
@@ -16,24 +16,24 @@ To print bitmap images with the Point Smart printer, use the **print** function 
 ```kotlin
 val bitmapPrinter = MPManager.bitmapPrinter
 
-val imageToPrint: Bitmap = bitmap // Obtener la imagen bitmap que se imprimirá
+val imageToPrint: Bitmap = bitmap // Get the bitmap image that will be printed
 
 bitmapPrinter.print(imageToPrint) { response ->
    response.doIfSuccess { printResult ->
-       // Gerenciar a impressão bem-sucedida
+       // Handle success
    }.doIfError { error ->
-       // anage error in the printing operation
+       // Handle error in the printing operation
 ```
 ```java
 final BitmapPrinter bitmapPrinter = MPManager.INSTANCE.getBitmapPrinter();
 
-final Bitmap imageToPrint = bitmap // Obtener la imagen bitmap que se imprimirá
+final Bitmap imageToPrint = bitmap // Get the bitmap image that will be printed
 
 final Function1<MPResponse<String>, Unit> callback = (final MPResponse<String> response) -> {
  if (response.getStatus() == ResponseStatus.SUCCESS) {
-   // Gerenciar a impressão bem-sucedida
+   // Handle success
  } else {
-   // anage error in the printing operation
+   // Handle error in the printing operation
  }
  return Unit.INSTANCE;
 };
@@ -58,23 +58,11 @@ Below is an example of how this functionality can be implemented:
 ```kotlin
 val bitmapPrinter = MPManager.bitmapPrinter
 
-val customTagToPrint: String = "{br}{b}Hello world{/b}{br}-----------------{br}{br}{s}this is a test text{/s}" 
+val customTagToPrint: String = "{br}{b}this is a test text{/s}" 
 
-/*
+val paymentMethodName: String? = null // Optional parameter that allows printing the name of the payment method used.
 
-Optional parameter that allows printing the name of the payment method used.
-
-*/
-
-val paymentMethodName: String? = null
-
-/*
-
-Optional parameter that allows printing the pdf417 barcode (the stain). Default value: null
-
-*/
-
-val printPdf417InReceipt: Boolean? = null
+val printPdf417InReceipt: Boolean? = null // Optional parameter that allows printing the pdf417 barcode (the stain). Default value: null
 
 bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InReceipt) { response ->
    response.doIfSuccess { printResult ->
@@ -86,24 +74,13 @@ bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InReceipt) {
 ```java
 final BitmapPrinter bitmapPrinter = MPManager.INSTANCE.getBitmapPrinter();
 
-final String customTagToPrint = "{br}{b}Hello world{/b}{br}-----------------{br}{br}{s}this is a test text{/s}"
-
-/*
-
-Optional parameter that allows printing the name of the payment method.
-
-*/
+final String customTagToPrint = "{br}{b}this is a test text{/s}"
 
 @Nullable
-final String paymentMethodName;
+final String paymentMethodName; // Optional parameter that allows printing the name of the payment method.
 
-/*
-
-Optional parameter that allows printing the pdf417 barcode (the stain).
-
-*/
 @Nullable
-final Boolean printPdf417InReceipt;
+final Boolean printPdf417InReceipt; // Optional parameter that allows printing the pdf417 barcode (the stain).
 
 final Function1<MPResponse<String>, Unit> callback = (final MPResponse<String> response) -> {
  if (response.getStatus() == ResponseStatus.SUCCESS) {
@@ -137,30 +114,12 @@ You can see below how to implement prints of Custom Tags and DTEs.
 ```kotlin
 val bitmapPrinter = MPManager.bitmapPrinter
 
-/*
+val customTagToPrint: String = "{br}{b}this is a test text{/s}"  // If you need to print a DTE, replace the custom tag string with the xml
 
-If you need to print a DTE, replace the custom tag string with the xml
+val paymentMethodName: String? = null // Optional parameter that allows printing the name of the payment method used in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
 
-*/
-
-val customTagToPrint: String = "{br}{b}Hello world{/b}{br}-----------------{br}{br}{s}this is a test text{/s}" 
-
-/*
-
-Optional parameter that allows printing the name of the payment method used in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
-
-*/
-
-val paymentMethodName: String? = null
-
-/*
-
-Optional parameter that allows printing the pdf417 barcode (the stain) in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
-
-*/
-
-val printPdf417InReceipt: Boolean? = null
-
+val printPdf417InReceipt: Boolean? = null // Optional parameter that allows printing the pdf417 barcode (the stain) in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
+ 
 bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InReceipt) { response ->
    response.doIfSuccess { printResult ->
        // Handle the successful print
@@ -171,29 +130,13 @@ bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InReceipt) {
 ```java
 final BitmapPrinter bitmapPrinter = MPManager.INSTANCE.getBitmapPrinter();
 
-/*
-
-If you need to print a DTE, replace the custom tag string with the xml
-
-*/
-final String customTagToPrint = "{br}{b}Hello world{/b}{br}-----------------{br}{br}{s}this is a test text{/s}"
-
-/*
-
-Optional parameter that allows printing the name of the payment method in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
-
-*/
+final String customTagToPrint = "{br}{b}this is a test text{/s}" // If you need to print a DTE, replace the custom tag string with the xml
 
 @Nullable
-final String paymentMethodName;
+final String paymentMethodName; // Optional parameter that allows printing the name of the payment method in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
 
-/*
-
-Optional parameter that allows printing the pdf417 barcode (the stain) in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
-
-*/
 @Nullable
-final Boolean printPdf417InReceipt;
+final Boolean printPdf417InReceipt; // Optional parameter that allows printing the pdf417 barcode (the stain) in case you want to print an electronic receipt (DTE type 39,41). Default value: null.
 
 final Function1<MPResponse<String>, Unit> callback = (final MPResponse<String> response) -> {
  if (response.getStatus() == ResponseStatus.SUCCESS) {

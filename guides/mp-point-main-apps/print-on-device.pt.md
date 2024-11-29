@@ -1,12 +1,12 @@
 # Impressões
 
-É possível utilizar a impressora térmica dos dispositivos Point Smart para realizar impressões de imagens em bitmap ----[mlc]----, DTE,------------ ou imagens personalizadas a partir de padrões chamados Custom Tags.
+É possível utilizar a impressora térmica dos dispositivos Point Smart para realizar impressões de imagens em bitmap----[mlc]----, DTE,------------ ou imagens personalizadas a partir de padrões chamados Custom Tags.
 
 > NOTE
 >
 > Nota
 >
-> Se você deseja realizar impressões com uma impressora externa, deverá emparelhá-la com seu dispositivo utilizando a funcionalidade Bluetooth. Acesse [Imprimir com uma impressora externa](/developers/pt/docs/main-apps/bluetooth/print-external-printer) para mais informações. 
+> Se você deseja realizar impressões com uma impressora externa, deverá emparelhá-la com seu dispositivo utilizando a funcionalidade Bluetooth. Acesse [Imprimir com impressora externa](/developers/pt/docs/main-apps/bluetooth/print-external-printer) para mais informações. 
 
 ## Imprimir Bitmap
 
@@ -58,23 +58,11 @@ A seguir, é mostrado um exemplo de como essa funcionalidade pode ser implementa
 ```kotlin
 val bitmapPrinter = MPManager.bitmapPrinter
 
-val customTagToPrint: String = "{br}{b}Olá mundo{/b}{br}-----------------{br}{br}{s}este é um texto de  teste{/s}" 
+val customTagToPrint: String = "{br}{b}este é um texto de  teste{/s}" 
 
-/*
+val paymentMethodName: String? = null // Parâmetro opcional que permite imprimir o nome do método de pagamento usado.
 
-Parâmetro opcional que permite imprimir o nome do método de pagamento usado.
-
-*/
-
-val paymentMethodName: String? = null
-
-/*
-
-Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha). Valor padrão: null
-
-*/
-
-val printPdf417InBoleta: Boolean? = null
+val printPdf417InBoleta: Boolean? = null // Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha). Valor padrão: null
 
 bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InBoleta) { response ->
    response.doIfSuccess { printResult ->
@@ -86,28 +74,17 @@ bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InBoleta) { 
 ```java
 final BitmapPrinter bitmapPrinter = MPManager.INSTANCE.getBitmapPrinter();
 
-final String customTagToPrint = "{br}{b}Olá mundo{/b}{br}-----------------{br}{br}{s}este é um texto de teste{/s}"
-
-/*
-
-Parâmetro opcional que permite imprimir o nome do método de pagamento.
-
-*/
+final String customTagToPrint = "{br}{b}este é um texto de teste{/s}"
 
 @Nullable
-final String paymentMethodName;
+final String paymentMethodName; // Parâmetro opcional que permite imprimir o nome do método de pagamento.
 
-/*
-
-Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha).
-
-*/
 @Nullable
-final Boolean printPdf417InBoleta;
+final Boolean printPdf417InBoleta; // Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha).
 
 final Function1<MPResponse<String>, Unit> callback = (final MPResponse<String> response) -> {
  if (response.getStatus() == ResponseStatus.SUCCESS) {
-   // Manter a impressão bem-sucedida
+   // Tratar a impressão bem-sucedida
  } else {
    // Tratar o erro na operação de impressão
 
@@ -137,66 +114,33 @@ Você pode ver a seguir como implementar impressões de Custom Tags e DTEs.
 ```kotlin
 val bitmapPrinter = MPManager.bitmapPrinter
 
-/*
+val customTagToPrint: String = "{br}{b}este é um texto de teste{/s}" // Se você precisa imprimir um DTE, troque a string custom tag pelo xml.
 
-Se você precisa imprimir um DTE, troque a string custom tag pelo xml.
+val paymentMethodName: String? = null // Parâmetro opcional que permite imprimir o nome do método de pagamento usado em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
 
-*/
-
-val customTagToPrint: String = "{br}{b}Olá mundo{/b}{br}-----------------{br}{br}{s}este é um texto de teste{/s}"
-
-/*
-
-Parâmetro opcional que permite imprimir o nome do método de pagamento usado em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
-
-*/
-
-val paymentMethodName: String? = null
-
-/*
-
-Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha) em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
-
-*/
-
-val printPdf417InBoleta: Boolean? = null
+val printPdf417InBoleta: Boolean? = null // Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha) em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
 
 bitmapPrinter.print(customTagToPrint, paymentMethodName, printPdf417InBoleta) { response ->
    response.doIfSuccess { printResult ->
-       // Manter a impressão bem-sucedida
+       // Tratar a impressão bem-sucedida
 
    }.doIfError { error ->
        // Tratar o erro na operação de impressão
 ```
 ```java
 final BitmapPrinter bitmapPrinter = MPManager.INSTANCE.getBitmapPrinter();
-/*
 
-Se você precisa imprimir um DTE, troque a string custom tag pelo xml.
-
-*/
-final String customTagToPrint = "{br}{b}Olá mundo{/b}{br}-----------------{br}{br}{s}este é um texto de teste{/s}"
-
-/*
-
-Parâmetro opcional que permite imprimir o nome do método de pagamento em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
-
-*/
+final String customTagToPrint = "{br}{b}este é um texto de teste{/s}" // Se você precisa imprimir um DTE, troque a string custom tag pelo xml.
 
 @Nullable
-final String paymentMethodName;
+final String paymentMethodName; // Parâmetro opcional que permite imprimir o nome do método de pagamento em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
 
-/*
-
-Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha) em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
-
-*/
 @Nullable
-final Boolean printPdf417InBoleta;
+final Boolean printPdf417InBoleta; // Parâmetro opcional que permite imprimir o código de barras pdf417 (a mancha) em caso de querer fazer a impressão de um recibo eletrônico (DTE tipo 39,41). Valor padrão: null.
 
 final Function1<MPResponse<String>, Unit> callback = (final MPResponse<String> response) -> {
  if (response.getStatus() == ResponseStatus.SUCCESS) {
-   // Manter a impressão bem-sucedida
+   // Tratar a impressão bem-sucedida
  } else {
    // Tratar o erro na operação de impressão
 

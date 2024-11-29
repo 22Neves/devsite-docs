@@ -6,7 +6,7 @@ La función `initBarcodeScanner` de la clase `CameraScanner` en nuestro SDK se u
 >
 > Importante
 >
-> Este método para lanzar la cámara scanner es considerado _legacy_. Recomendamos actualizar tu integración al [método Callback](/developers/es/docs/main-apps/payments/camscanner/callback) para contar con una implementación simplificada.
+> Este método para lanzar la cámara scanner es considerado _legacy_. Recomendamos actualizar tu integración al [método Callback](/developers/es/docs/main-apps/camscanner/callback) para contar con una implementación simplificada.
 
 Consulta cómo iniciar la lectura de códigos QR y de barras, y cómo manejar las respuestas, a continuación.
 

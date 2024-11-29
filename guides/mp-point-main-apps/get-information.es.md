@@ -41,7 +41,7 @@ smartInformationTools.getInformation(callback);
 ```
 ]]]
 
-----[mla, mlb]---- 
+----[mla, mlb, mlc]---- 
 |Campo|Descripción|
 |---|---|
 |**smartDevice**| Detalles del dispositivo.|

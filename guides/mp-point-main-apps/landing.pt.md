@@ -11,7 +11,7 @@ content_section_with_media:
 
 >>>> Disponibilidade por país <<<<
 ---
-available_countries: mlb, mla, mlm
+available_countries: mlb, mla, mlm, mlc
 
 ---
 
