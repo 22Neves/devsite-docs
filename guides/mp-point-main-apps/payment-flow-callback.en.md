@@ -2,7 +2,7 @@
 
 The callback method is a simple way to initialize the payment flow with Main Apps. It uses the new `launchPaymentFlow` method in the `PaymentFlow` class and allows for response handling through callbacks, making implementation and subsequent management easier.
 
-Start your integration using our SDKs to initialize the payment flow through the `PaymentFlow` class like this:
+Start your integration using our SDKs to initialize the payment flow through the `PaymentFlow` class as follows:
 
 [[[
 ```kotlin
@@ -133,6 +133,6 @@ PaymentResponse paymentResponse = new PaymentResponse(
 |**Paymentamount**| Amount used to initiate the payment flow.|
 |**paymentSnDevice**| Serial number of the device where the transaction was made.|
 |**paymentBrandName**| Value of the franchise used to make the payment. |
-|**paymentInstallments:**| Number of installments/months that the user chose when making the payment. |
+|**paymentInstallments:**| Number of installments/months that the customer chose when making the payment. |
 |**paymentLastFourDigits**| Last four digits of the customer's card used for the payment. |
 |**paymentStatusError**| Field for tracking problems and errors related to the transaction. |

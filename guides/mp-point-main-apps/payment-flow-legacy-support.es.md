@@ -11,7 +11,7 @@ Para ofrecer una experiencia fluida en tu app, nuestros SDKs facilitan la inicia
 > Este método de inicialización del flujo de pago es considerado _legacy_. Recomendamos actualizar tu integración al [método Callback](/developers/es/docs/main-apps/payments/start-payment-flow/callback-method) para contar con una implementación simplificada.
 
 
-Comienza tu integración utilizando nuestros SDKs para inicializar el flujo de pago a través de la clase `PaymentFlow` de esta forma:
+Comienza tu integración utilizando nuestros SDKs para inicializar el flujo de pago a través de la clase `PaymentFlow` de la siguiente manera:
 
 [[[
 ```kotlin

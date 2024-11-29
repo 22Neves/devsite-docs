@@ -1,6 +1,6 @@
 # Iniciar câmera via callback
 
-Esta modalide centraliza o fluxo de lançamento da câmera scanner em um único método, `launchScanner`, que junto com a utilização de callbacks para o manuseio de respostas, simplifica o processo de implementação e leitura de códigos.
+Esta modalidade centraliza o fluxo de lançamento da câmera scanner em um único método, `launchScanner`, que junto com a utilização de callbacks para o manuseio de respostas, simplifica o processo de implementação e leitura de códigos.
 
 Para essa implementação, você deverá diferenciar qual tipo de código deseja escanear através da classe `ScanType`, e fornecer o callback a ser chamado com o resultado da operação, como mostrado no exemplo abaixo e nas descrições dos campos a serem preenchidos.
 

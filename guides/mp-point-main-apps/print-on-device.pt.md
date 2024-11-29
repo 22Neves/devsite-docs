@@ -20,20 +20,20 @@ val imageToPrint: Bitmap = bitmap // Obter a imagem bitmap que será impres
 
 bitmapPrinter.print(imageToPrint) { response ->
    response.doIfSuccess { printResult ->
-       // Manejar la impresión exitosa
+       // Gerenciar a impressão bem-sucedida
    }.doIfError { error ->
-       // Manejar el error en la operación de impresión
+       // Gerenciar o erro na operação de impressão
 ```
 ```java
 final BitmapPrinter bitmapPrinter = MPManager.INSTANCE.getBitmapPrinter();
 
-final Bitmap imageToPrint = bitmap // Obtener la imagen Bitmap que se imprimirá
+final Bitmap imageToPrint = bitmap // Obter a imagem Bitmap que será impressa 
 
 final Function1<MPResponse<String>, Unit> callback = (final MPResponse<String> response) -> {
  if (response.getStatus() == ResponseStatus.SUCCESS) {
-   // Manejar la impresión exitosa
+   // Gerenciar a operação bem-sucedida 
  } else {
-   // Manejar el error en la operación de impresión
+   // Gerenciar o erro na operação de impressão 
  }
  return Unit.INSTANCE;
 };

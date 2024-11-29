@@ -2,7 +2,7 @@
 
 El método callback es un modo sencillo para inicializar el flujo de pago con Main Apps. Utiliza el nuevo método `launchPaymentFlow` en la clase `PaymentFlow` y permite el manejo de respuestas a través de callbacks, lo que facilita su implementación y la gestión posterior. 
 
-Comienza tu integración utilizando nuestros SDKs para inicializar el flujo de pago a través de la clase `PaymentFlow` de esta forma:
+Comienza tu integración utilizando nuestros SDKs para inicializar el flujo de pago a través de la clase `PaymentFlow` de la siguiente manera:
 
 [[[
 ```kotlin
@@ -133,6 +133,6 @@ PaymentResponse paymentResponse = new PaymentResponse(
 |**Paymentamount**| Monto usado para iniciar el flujo de pago.|
 |**paymentSnDevice**| Número de serie del dispositivo en el que se realizó la transacción.|
 |**paymentBrandName**| Valor de la franquicia con que se realizó el pago. |
-|**paymentInstallments:**| Número de cuotas/meses que el usuario eligió al realizar el pago. |
+|**paymentInstallments:**| Número de cuotas/meses que el cliente eligió al realizar el pago. |
 |**paymentLastFourDigits**| Últimos cuatro dígitos de la tarjeta del cliente que realizó el pago. |
 |**paymentStatusError**| Campo para registrar problemas y errores de la transacción. |

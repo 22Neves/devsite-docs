@@ -1,8 +1,8 @@
-# Método Callback
+# Método callback
 
 O método callback é uma maneira simples de inicializar o fluxo de pagamento com Main Apps. Ele utiliza o novo método `launchPaymentFlow` na classe `PaymentFlow` e permite o gerenciamento de respostas por meio de callbacks, facilitando sua implementação e a gestão subsequente.
 
-Comece sua integração utilizando nossos SDKs para inicializar o fluxo de pagamento através da classe `PaymentFlow` desta forma:
+Comece sua integração utilizando nossos SDKs para inicializar o fluxo de pagamento através da classe `PaymentFlow` da seguinte forma:
 
 [[[
 ```kotlin
@@ -90,10 +90,10 @@ paymentFlow.launchPaymentFlow(paymentFlowData, callback);
 |**amount (String)**| Valor usado para iniciar o fluxo de pagamento.|
 |**description (String)**| Opcional. Descrição usada para iniciar o fluxo de pagamento.|
 |**paymentMethod (String)**| Opcional. Meio de pagamento para realizar a operação. |
-|**installments (Integer)**| Opcional. Número de parcelas usado para iniciar o fluxo de pagamento. Está **disponível apenas para o Brasil**. |
+|**installments (Integer)**| Opcional. Número de parcelas usado para iniciar o fluxo de pagamento. Está **disponível apenas para Brasil**. |
 |**printOnTerminal (Boolean)**| Opcional. Flag que permite imprimir de forma automática no dispositivo. Por padrão, está em `true`.  |
 
-Ao ser processada a operação de pagamento, você receberá um objeto `MPResponse` com um `PaymentResponse` que conterá todas as informações relativas ao mesmo, conforme mostrado nas descrições abaixo.
+Após o processamento da operação de pagamento, você receberá um objeto `MPResponse` com um `PaymentResponse`, que conterá todas as informações pertinentes relativas ao mesmo, conforme detalhado nas descrições a seguir.
 
 [[[
 ```kotlin
@@ -128,11 +128,11 @@ PaymentResponse paymentResponse = new PaymentResponse(
 | Campo | Descrição |
 |---|---|
 |**paymentMethod**| Meio de pagamento para realizar a transação. |
-|**paymentReference**| Número que serve como identificador único da transação. |
+|**paymentReference**| Número que atua como identificador exclusivo da transação. |
 |**paymentCreationDate**| Data de criação da transação. |
 |**Paymentamount**| Valor usado para iniciar o fluxo de pagamento.|
 |**paymentSnDevice**| Número de série do dispositivo em que a transação foi realizada.|
 |**paymentBrandName**| Valor da franquia com que foi realizado o pagamento. |
-|**paymentInstallments:**| Número de parcelas/meses que o usuário escolheu ao realizar o pagamento. |
+|**paymentInstallments:**| Número de parcelas/meses que o cliente escolheu ao realizar o pagamento. |
 |**paymentLastFourDigits**| Últimos quatro dígitos do cartão do cliente que realizou o pagamento. |
 |**paymentStatusError**| Campo para registrar problemas e erros da transação. |

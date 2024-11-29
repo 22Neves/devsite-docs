@@ -10,7 +10,7 @@ To provide a seamless experience in your app, our SDKs facilitate the initializa
 >
 > This method for initializing the payment flow is considered legacy. We recommend updating your integration to the [Callback method](/developers/en/docs/main-apps/payments/start-payment-flow/callback-method) for a simplified implementation.
 
-Start your integration using our SDKs to initialize the payment flow through the `PaymentFlow` class like this:
+Start your integration using our SDKs to initialize the payment flow through the `PaymentFlow` class as follows:
 
 [[[
 ```kotlin
