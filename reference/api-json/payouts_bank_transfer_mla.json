@@ -175,11 +175,11 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
-                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
+                                  "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts), \"cvu\" (CVU accounts) e \"savings_account\" (savings account).",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias), \"mercadopago\" (contas do Mercado Pago), \"cvu\" (contas CVU) e \"savings_account\" (poupança).",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago), \"cvu\" (cuentas CVU) e \"savings_account\" (ahorro)."
                                 },
-                                "example": "current"
+                                "example": "checking_account"
                               },
                               "number": {
                                 "type": "string",
@@ -636,11 +636,11 @@
                                     "type": "string",
                                     "required": true,
                                     "description": {
-                                      "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
-                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
-                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
+                                      "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts), \"cvu\" (CVU accounts) e \"savings_account\" (savings account).",
+                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias), \"mercadopago\" (contas do Mercado Pago), \"cvu\" (contas CVU) e \"savings_account\" (poupança).",
+                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago), \"cvu\" (cuentas CVU) e \"savings_account\" (ahorro)."
                                     },
-                                    "example": "current"
+                                    "example": "checking_account"
                                   },
                                   "number":{
                                     "type": "number",

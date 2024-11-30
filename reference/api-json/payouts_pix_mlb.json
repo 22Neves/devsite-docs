@@ -155,9 +155,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "en": "Destination account type. The possible values are \"current\", for Pix accounts, and \"mercadopago\", for Mercado Pago accounts.",
-                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\", para contas Pix, e \"mercadopago\", para contas do Mercado Pago.",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\", para cuentas Pix, y \"mercadopago\", para cuentas Mercado Pago."
+                                  "en": "Destination account type. The possible values are \"current\" (Pix accounts) and \"mercadopago\" (Mercado Pago accounts).",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas Pix) e \"mercadopago\" (contas do Mercado Pago).",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas Pix) y \"mercadopago\" (cuentas Mercado Pago)."
                                 },
                                 "example": "current"
                               },

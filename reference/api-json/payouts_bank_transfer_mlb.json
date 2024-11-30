@@ -155,9 +155,9 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "en": "Destination account type. The possible values are \"current\", for bank accounts, and \"mercadopago\", for Mercado Pago accounts.",
-                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\", para contas bancárias, e \"mercadopago\", para contas do Mercado Pago.",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\", para cuentas bancarias, y \"mercadopago\", para cuentas Mercado Pago."
+                                  "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
                                 },
                                 "example": "current"
                               },
@@ -690,14 +690,15 @@
                                     },
                                     "example": "0000014"
                                   },
-                                  "type":{
+                                  "type": {
                                     "type": "string",
-                                    "description":{
-                                      "en": "Destination account type.",
-                                      "es": "Tipo de cuenta de destino.",
-                                      "pt": "Tipo de conta de destino"
+                                    "required": true,
+                                    "description": {
+                                       "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
+                                       "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
+                                       "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
                                     },
-                                    "example": "checking_account"
+                                    "example": "current"
                                   },
                                   "number":{
                                     "type": "number",
@@ -1395,14 +1396,15 @@
                                     },
                                     "example": "0000014"
                                   },
-                                  "type":{
+                                  "type": {
                                     "type": "string",
-                                    "description":{
-                                      "en": "Destination account type.",
-                                      "es": "Tipo de cuenta de destino.",
-                                      "pt": "Tipo de conta de destino"
+                                    "required": true,
+                                    "description": {
+                                      "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
+                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
+                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
                                     },
-                                    "example": "checking_account"
+                                    "example": "current"
                                   },
                                   "number":{
                                     "type": "number",

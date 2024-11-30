@@ -175,11 +175,11 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
-                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
+                                  "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias) , \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
                                 },
-                                "example": "current"
+                                "example": "checking_account"
                               },
                               "number": {
                                 "type": "string",
@@ -190,47 +190,6 @@
                                   "es": "Número único que representa cada cuenta bancaria. En este caso, debes enviar el número único de la cuenta de destino."
                                 },
                                 "example": "10266732"
-                              },
-                              "owner": {
-                                "type": "object",
-                                "required": true,
-                                "description": {
-                                  "en": "Destination account holder information.",
-                                  "pt": "Informação do titular da conta de destino.",
-                                  "es": "Información del titular de la cuenta de destino."
-                                },
-                                "properties": {
-                                  "identification": {
-                                    "type": "object",
-                                    "description": {
-                                      "en": "Information corresponding to the identification documentation of the destination account holder.",
-                                      "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
-                                      "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
-                                    },
-                                    "properties": {
-                                      "type": {
-                                        "type": "string",
-                                        "required": true,
-                                        "description": {
-                                          "en": "Refers to the type of identification. It must be \"RUT\".",
-                                          "pt": "Refere-se ao tipo de identificação. Deve ser \"RUT\".",
-                                          "es": "Se refiere al tipo de identificación. Debe ser \"RUT\"."
-                                        },
-                                        "example": "RUT"
-                                      },
-                                      "number": {
-                                        "type": "string",
-                                        "required": true,
-                                        "description": {
-                                          "en": "The number refers to the identifier of the destination account holder.",
-                                          "pt": "O número se refere ao identificador do titular da conta de destino.",
-                                          "es": "El número hace referencia al identificador del titular de la cuenta de destino."
-                                        },
-                                        "example": "111111111111"
-                                      }
-                                    }
-                                  }
-                                }
                               }
                             }
                           }
@@ -585,44 +544,6 @@
                                     ],
                                     "example": "approved"
                                   },
-                                  "owner": {
-                                    "type": "object",
-                                    "description": {
-                                      "en": "Destination account holder information.",
-                                      "pt": "Informação do titular da conta de destino.",
-                                      "es": "Información del titular de la cuenta de destino."
-                                    },
-                                    "properties": {
-                                      "identification": {
-                                        "type": "object",
-                                        "description": {
-                                          "en": "Information corresponding to the identification documentation of the destination account holder.",
-                                          "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
-                                          "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
-                                        },
-                                        "properties": {
-                                          "number": {
-                                            "type": "number",
-                                            "description": {
-                                              "en": "The number refers to the identifier of the destination account holder. ",
-                                              "pt": "O número se refere ao identificador do titular da conta de destino. ",
-                                              "es": "El número hace referencia al identificador del titular de la cuenta de destino. "
-                                            },
-                                            "example": "1234567890"
-                                          },
-                                          "type": {
-                                            "type":"string",
-                                            "description": {
-                                              "en": "Refers to the type of identification.",
-                                              "pt": "Refere-se ao tipo de identificação.",
-                                              "es": "Se refiere al tipo de identificación."
-                                            },
-                                            "example": "RUT"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
                                   "bank_id": {
                                     "type": "number",
                                     "description": {
@@ -636,11 +557,11 @@
                                     "type": "string",
                                     "required": true,
                                     "description": {
-                                      "en": "Destination account type. The possible values are \"current\" (bank accounts) and \"mercadopago\" (Mercado Pago accounts).",
-                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"current\" (contas bancárias) e \"mercadopago\" (contas do Mercado Pago).",
-                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"current\" (cuentas bancarias) y \"mercadopago\" (cuentas Mercado Pago)."
+                                      "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
+                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias) , \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
+                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
                                     },
-                                    "example": "current"
+                                    "example": "checking_account"
                                   },
                                   "number":{
                                     "type": "number",
@@ -725,14 +646,6 @@
                             "en":"Invalid value for field \"transaction.to.accounts[0].identification.number\".  Verify the allowed values.",
                             "es":"Valor inválido para el campo \"transaction.to.accounts[0].identification.number\". Verifica los valores permitidos. ",
                             "pt":"Valor inválido para o campo \"transaction.to.accounts[0].identification.number\". Verifique os valores permitidos."
-                          }
-                        },
-                        {
-                          "title":"Invalid identification type",
-                          "description":{
-                            "en":"Invalid value for field \"transaction.to.accounts[0].owner.identification.type\". Verify the allowed values.",
-                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].owner.identification.type\". Verifica los valores permitidos",
-                            "pt":"Valor inválido para o campo \"transaction.to.accounts[0].owner.identification.type\". Verifique os valores permitidos."
                           }
                         },
                         {
