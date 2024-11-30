@@ -203,9 +203,9 @@
                                   "identification": {
                                     "type": "object",
                                     "description": {
-                                      "en": "Information corresponding to the identification documentation of the destination account holder.",
-                                      "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
-                                      "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
+                                      "en": "Information corresponding to the identification documentation of the destination account holder. Access the endpoint '/v1/identification_type' to check all available identification types by country and get a list with the details of each one and their properties.",
+                                      "pt": "Informação correspondente à documentação de identificação do titular da conta de destino. Acesse o endpoint '/v1/identification_type' para consultar todos os tipos de documento disponíveis por país e obter uma lista com os detalhes de cada um deles e suas propriedades.",
+                                      "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino. Accede al endpoint '/v1/identification_type' para consultar todos los tipos de documento disponibles por país y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
                                     },
                                     "properties": {
                                       "type": {
@@ -596,9 +596,9 @@
                                       "identification": {
                                         "type": "object",
                                         "description": {
-                                          "en": "Information corresponding to the identification documentation of the destination account holder.",
-                                          "pt": "Informação correspondente à documentação de identificação do titular da conta de destino.",
-                                          "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino."
+                                          "en": "Information corresponding to the identification documentation of the destination account holder. Access the endpoint '/v1/identification_type' to check all available identification types by country and get a list with the details of each one and their properties.",
+                                          "pt": "Informação correspondente à documentação de identificação do titular da conta de destino. Acesse o endpoint '/v1/identification_type' para consultar todos os tipos de documento disponíveis por país e obter uma lista com os detalhes de cada um deles e suas propriedades.",
+                                          "es": "Información correspondiente a la documentación identificatoria del titular de la cuenta de destino. Accede al endpoint '/v1/identification_type' para consultar todos los tipos de documento disponibles por país y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
                                         },
                                         "properties": {
                                           "number": {
