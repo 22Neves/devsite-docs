@@ -4446,7 +4446,7 @@
                     "identification": {
                         "type": "object",
                         "description": {
-                            "en": "Payer's personal identification. ",
+                            "en": "Payer's personal identification.",
                             "pt": "Identificação pessoal do pagador",
                             "es": "Identificación personal del pagador"
                         },
@@ -4456,7 +4456,7 @@
                                 "required": true,
                                 "example": "CPF",
                                 "description": {
-                                    "en": "Payer's identification document type. Access the endpoint '/v1/identification_type' to check all available identification types by country and get a list with the details of each one and their properties. ",
+                                    "en": "Payer's identification document type. Access the endpoint '/v1/identification_type' to check all available identification types by country and get a list with the details of each one and their properties.",
                                     "pt": "Tipo de documento de identificação. Acesse o endpoint '/v1/identification_type' para consultar todos os tipos de documento disponíveis por país e obter uma lista com os detalhes de cada um deles e suas propriedades.",
                                     "es": "Tipo de documento de identificación. Accede al endpoint '/v1/identification_type' para consultar todos los tipos de documento disponibles por país y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
                                 }
