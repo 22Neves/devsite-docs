@@ -4,7 +4,7 @@ Em nosso SDK, você pode buscar impressoras e outros dispositivos bluetooth, al�
 
 ## Obter dispositivos emparelhados
 
-A obtenção da lista dos dispositivos emparelhados com a [Point Smart](/developers/pt/docs/mp-point/landing) é feita usando a função `getPairedDevices`, da classe `BluetoothDiscoverDevices`. Confira abaixo como acessá-la por meio do objeto `MPManager`.
+A obtenção da lista dos dispositivos emparelhados com a Point Smart é feita usando a função `getPairedDevices`, da classe `BluetoothDiscoverDevices`. Confira abaixo como acessá-la por meio do objeto `MPManager`.
 
 [[[
 ```kotlin
@@ -48,7 +48,7 @@ bluetoothDiscoverDevices.getPairedDevices(callback);
 
 ## Obter impressoras emparelhadas
 
-Use a função `getPairedPrinterDevices` da classe `BluetoothDiscoverDevices` para consultar a lista de impressoras bluetooth emparelhadas com a [Point Smart](/developers/pt/docs/mp-point/landing). O acesso é feito através do objeto `MPManager`, como no exemplo abaixo.
+Use a função `getPairedPrinterDevices` da classe `BluetoothDiscoverDevices` para consultar a lista de impressoras bluetooth emparelhadas com a Point Smart. O acesso é feito através do objeto `MPManager`, como no exemplo abaixo.
 
 [[[
 ```kotlin
@@ -90,7 +90,7 @@ bluetoothDiscoverDevices.getPairedPrinterDevices(callback);
 |**address (String)**| Endereço MAC do dispositivo bluetooth.|
 |**isConnected (Boolean)**| Indica se o dispositivo está conectado. Em caso positivo, a resposta é `true`; se estiver desconectado, aparece como `false`.|
 
-## Iniciar busca
+## Iniciar busca de dispositivos
 
 A função `startDiscovery` da classe `BluetoothDiscoverDevices` inicia o descobrimento de dispositivos bluetooth. O acesso é feito através do objeto `MPManager`. Este método facilita a implementação dinâmica da lógica baseada em eventos na sua solução. Assim:
 

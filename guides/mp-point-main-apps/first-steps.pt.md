@@ -92,7 +92,7 @@ class MainApplication : Application() {
    }
 }
 ```
-```javascript
+```java
 public class MainApplication extends Application {
 
  @Override
@@ -141,7 +141,7 @@ paymentFlow.launchPaymentFlowActivity(
    }
 }
 ```
-```javascript
+```java
 PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
 
 HashMap<String, String> metadata = new HashMap<>();

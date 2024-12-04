@@ -6,7 +6,8 @@ Before you start developing your solution, take a look at the requirements that 
 |---|---|
 | Application  | Applications are the different integrations in one or more stores. You can create an application for each solution you implement to keep everything organized and on track for easier management. Check [Your integrations](/developers/es/docs/main-apps/additional-content/your-integrations/introduction) for more information on how to create an application. |
 | Credentials | Unique passwords with which we identify an integration in your account. To perform the integrations, you will need the **Client ID**. Check the [Credentials documentation](/developers/en/docss/main-apps/additional-content/your-integrations/credentials) for more information. |
-| Mercado Pago's Point Smart | [Mercado Pago Point](/developers/en/docs/mp-point/landing) is the Mercado Pago card machine that allows buyers to pay in person quickly and securely using credit or debit cards.|
+|Store and POS | The stores and POS created in Mercado Pago allow you to manage the sales made in a business. To create them, access the [Mercado Pago Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/stores#from-section=menu)|
+| Mercado Pago's Point Smart | Point Smart is the Mercado Pago card machine that allows buyers to pay in person quickly and securely using credit or debit cards.|
 | Device pre-configuration| In order for the machines to operate in **Integrated mode** and for the pre-configuration to be carried out, share with Mercado Pago the account that will be used for the integration, as well as the cash register and store configurations and the serial numbers of the devices. |
 |Development kit | To start development, download the [Development kit](https://github.com/mercadolibre/point-mainapp-demo-android) provided by Mercado Pago. |
 |Android Studio| OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts. Install the [integrated development environment](https://developer.android.com/studio) to build and debug the main apps. |
@@ -14,7 +15,7 @@ Before you start developing your solution, take a look at the requirements that 
 
 ## Point Smart technical specifications
 
-To ensure that the integration is successful, consider the [Point Smart](/developers/en/docs/mp-point/landing) machine's characteristics and how the application will adapt to them.
+To ensure that the integration is successful, consider the Point Smart machine's characteristics and how the application will adapt to them.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 

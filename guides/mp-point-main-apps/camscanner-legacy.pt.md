@@ -32,7 +32,7 @@ cameraScanner.initBarcodeScanner(this);
 
 ## Código QR
 
-Para iniciar a leitura de códigos QR da [Point Smart](/developers/pt/docs/mp-point/landing), use a função `initQRCodeScanner` da classe `CameraScanner`. 
+Para iniciar a leitura de códigos QR da Point Smart, use a função `initQRCodeScanner` da classe `CameraScanner`. 
 
 Esse processo utiliza uma chamada de câmera mediante `startActivityForResult`, de modo que o método `onActivityResult` deve ser implementado na atividade para manipular a resposta de leitura. 
 

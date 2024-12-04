@@ -1,10 +1,10 @@
 # Emparelhar e desemparelhar
 
-Nesta seção, você entenderá como emparelhar e desemparelhar dispositivos com a [Point Smart](/developers/pt/docs/mp-point/landing) usando a classe `BluetoothDevicesPairing`.
+Nesta seção, você entenderá como emparelhar e desemparelhar dispositivos com a Point Smart usando a classe `BluetoothDevicesPairing`.
 
 ## Emparelhar um dispositivo
 
-Use a função `pairDevice` da classe `BluetoothDevicesPairing` para emparelhar um dispositivo com a [Point Smart](/developers/pt/docs/mp-point/landing) enviando apenas o endereço `(address)`. O acesso é feito por meio do objeto `MPManager`, como mostrado abaixo.
+Use a função `pairDevice` da classe `BluetoothDevicesPairing` para emparelhar um dispositivo com a Point Smart enviando apenas o endereço `(address)`. O acesso é feito por meio do objeto `MPManager`, como mostrado abaixo.
 
 [[[
 ```kotlin
