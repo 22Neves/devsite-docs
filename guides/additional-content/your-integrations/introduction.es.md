@@ -2,6 +2,12 @@
 
 Tus integraciones es un entorno que te permite gestionar tus integraciones. Este se crea automáticamente con un ID de usuario (el ID de Mercado Pago) cuando abres una cuenta en Mercado Pago. En él, puedes crear una nueva aplicación dentro del [Panel del desarrollador](/developers/panel/app) o acceder a la página [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) de cada una de las aplicaciones listadas. Además, también puedes solicitar acceso a las credenciales de una aplicación que no administres.
 
+> WARNING
+> 
+> Importante
+>
+> Por cuestiones de seguridad de Mercado Pago, la sección de **"Tus integraciones" no está disponible para usuarios menores de edad**.
+
 ## Detalles de la aplicación
 
 La página de [Detalles de la aplicación](/developers/es/guides/additional-content/your-integrations/application-details) se compone de diferentes secciones y cada una cumple un objetivo específico:

@@ -4,7 +4,6 @@ Si ya tienes registrada una afiliación de gateway MercadoPagoV1, debes saber qu
 
 MercadoPagoV2 te permitirá disponibilizar los mismos medios de pago y sumar, además, pagos ----[mla, mlb]---- en cuotas sin tarjeta o------------ ----[mlm]---- en meses sin tarjeta o------------ en efectivo. También podrás activar **3DS (3-D Secure)**,  un protocolo creado para proteger transacciones en tiendas online mediante una capa adicional de verificación de identidad antes de la autorización final, lo que volverá tus transacciones todavía más seguras y aumentará la tasa de aprobación de tus pagos.
 
-
 Para realizar la migración de MercadoPagoV1 a MercadoPagoV2, sigue los siguientes pasos:
 
 ## 1. Registra una afiliación de gateway MercadoPagoV2
@@ -35,13 +34,12 @@ Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás crear ahora
 | Integrator ID | Si eres desarrollador, completa con tu **identificación de Mercado Pago**. |
 | Moeda - Moneda | ----[mlu]---- Configura la moneda de la tienda (**USD** o **Local**). ------------ ----[mla, mlm, mlb, mco, mpe, mlc]---- Este campo identifica la moneda de la tienda. No es necesario que lo completes. ------------ |
 | Merchant Account | Este campo identifica la cuenta del merchant. No es necesario que lo completes. |
-| Prazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | Puedes configurar un retraso en la captura del pago que hace VTEX seleccionando de entre las opciones deplegables. Si no quieres configurarlo, selecciona "Desactivado". |
+| Prazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | En este campo, configura como **inmediato** el plazo para la captura de los pagos aprobados. |
 | Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". |
 
 6. Haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 
 ![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
-
 
 ## 2. Configurar medios de pago
 
@@ -55,6 +53,5 @@ Para hacerlo, sigue los pasos enumerados debajo.
 4. Repite el proceso con el resto de los medios de pago que hayas disponibilizado en tu plataforma.
 
 ![Configure v2 in payment methods](/images/vtex/migration-payment-conditions.gif) 
-
 
 Al concluir el proceso, tendrás configurada tu nueva afiliación de gateway MercadoPagoV2 y podrás continuar operando con Mercado Pago, aprovechando las nuevas ventajas que este conector te ofrece.
