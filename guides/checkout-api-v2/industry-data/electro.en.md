@@ -9,6 +9,7 @@ Add all the additional information you want.
 | --- | --- | --- |
 | `id` | String | Code |
 | `title` | String | Name |
+| `description` | String | Description of the item. |
 | `category_id` | String | Category |
 | `quantity` | Integer | Quantity |
 | `unit_price` | Float | Unit price |
