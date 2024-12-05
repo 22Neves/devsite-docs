@@ -19,6 +19,7 @@ Check this list with all the possible errors that the API can return, and how to
 | Request Error | 400 | `invalid_order_mode_for_operation` | The reported mode is not valid for this operation. Verify if you are using the correct mode according to the desired operation. |
 | Request Error | 400 | `invalid_order_type` | The type of the order is invalid. Check if the type used is valid for the operation. |
 | Request Error | 400 | `invalid_transaction_id` | The transaction ID is invalid. Ensure that the ID is correct. |
+| Processing error | 402 | `failed` | There was an error processing one of the transactions. Check the returned message for more information. |
 | Request Error | 404 | `order_not_found` | The order was not found. Check if the provided ID is correct. |
 | Request Error | 404 | `transaction_not_found` | The transaction was not found. Check if the provided ID is correct. |
 | Request Error | 409 | `cannot_refund_order` | Ensure that the order is in a status that allows for a refund to be made. |
