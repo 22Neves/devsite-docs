@@ -17,6 +17,7 @@ Adicione todas as informações adicionais que você deseja.
 | `passenger` | Object |Informações adicionais sobre passageiros. |
 | `first_name`| String | Nome do passageiro. |
 | `last_name` | String | Sobrenome do passageiro. |
+| `identification` | Object | Informações de identificação do passageiro. |
 | `type` | String | Tipo de identificação do passageiro. Está dentro do objeto `identification`. |
 | `number` | String | Número de identificação do passageiro. Está dentro do objeto `identification`. |
 | `route` | Object |Informações da rota. |

@@ -17,6 +17,7 @@ Add all the additional information you want.
 | `passenger` | Object | Additional passenger information. |
 | `first_name`| String | Passenger's first name. |
 | `last_name` | String | Passenger's last name. |
+| `identification` | Object | Passenger identification information. |
 | `type` | String | Type of passenger identification. It is found within the `identification` object. |
 | `number` | String | Passenger's identification number. It is found within the `identification` object. |
 | `route` | Object | Route information. |
