@@ -1,53 +1,52 @@
-# Venta directa
+# Automóveis e náutica
 
-## Campos a enviar
-Agrega toda la información adicional que quieras.
+## Campos para enviar
+Adicione todas as informações adicionais que você deseja.
 
-### Sobre los ítems
+### Sobre itens
 
-| Array `items` | Tipo | Descripción |
+| Array `items` | Tipo | Descrição |
 | --- | --- | --- |
 | `id` | String | Código. |
-| `title` | String | Nombre. |
-| `description` | String | Descripción. |
-| `category_id` | String | Categoría. |
-| `quantity` | Integer | Cantidad. |
-| `unit_price` | Float | Precio unitario. |
+| `title` | String | Nome. |
+| `description` | String | Descrição. |
+| `category_id` | String | Categoria. |
+| `quantity` | Integer | Quantidade. |
+| `unit_price` | Float | Preço unitário. |
 
-### Sobre el comprador
+### Sobre o comprador
 
-| Object `payer` | Tipo | Descripción |
+| Object `payer` | Tipo | Descrição |
 | --- | --- | --- |
-| `first_name` | String | Nombre. |
-| `last_name` | String | Apellido. |
-| `identification` | Object | Datos de identificación. |
-| `identification_type` | String | Tipo de identificación. |
-| `identification_number` | String | Número de identificación. |
-| `phone` | Object | Teléfono. |
+| `first_name` | String | Nome. |
+| `last_name` | String | Sobrenome. |
+| `identification` | Object | Dados de identificação. |
+| `identification_type` | String | Tipo de identificação. |
+| `identification_number` | String | Número de identificação. |
+| `phone` | Object | Telefone. |
 | `area_code` | Integer | Código de área. |
-| `number` | Integer | Número de teléfono. |
-| `address` | Object | Datos de dirección. |
+| `number` | Integer | Número de telefone. |
+| `address` | Object | Dados do endereço. |
 | `zip_code` | String | Código postal. |
-| `street_name` | String | Nombre de calle. |
-| `street_number` | Integer | Número de calle. |
-| `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
-| `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
-| `last_purchase` | Date | Fecha de la última compra en el sitio. |
+| `street_name` | String | Nome da rua. |
+| `street_number` | Integer | Número da rua. |
+| `authentication_type` | Enum |  Tipo de autenticação. Podem ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
+| `registration_date` | Date | Data de registro do comprador no site. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
+| `last_purchase` | Date | Data da última compra no site. |
 
-### Sobre envíos
+### Sobre envios
 
-| Object `shipment` | Tipo | Descripción |
+| Object `shipment` | Tipo | Descrição |
 | --- | --- | --- |
-| `receiver_address` | Object | Datos de dirección del comprador. |
-| `zip_code` | String | Código postal |
-| `state_name` | String | Provincia |
-| `city_name` | String | Ciudad |
-| `street_number` | Integer | Número de calle |
-| `floor` | String | Piso |
-| `apartment` | String | Apartamento |
-| `local_pickup` | Boolean | `1` si se retira en sucursal, `0` si no lo hace. |
+| `receiver_address` | Object | Dados do endereço do comprador. |
+| `zip_code` | String | Código postal. |
+| `state_name` | String | Província. |
+| `city_name` | String | Cidade. |
+| `street_number` | Integer | Número da rua. |
+| `floor` | String | Piso. |
+| `apartment` | String | Apartamento. |
+| `local_pickup` | Boolean | `True` se retira na agência ou na loja, `False` se não retira. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
@@ -56,7 +55,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Authorization: Bearer ACCESS_TOKEN' \
 --header 'X-Meli-Session-Id: {{device_id}} \
 --data-raw '{
-    "transaction_amount": 1500.00,
+    "transaction_amount": 15000.00,
     "installments": 1,
     "statement_descriptor": "LOJA 123",
     "capture": true,
@@ -82,17 +81,16 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1234",
-                "title": "Direct sale",
-                "description": "Gold ring",
-                "category_id": "jewelry",
+                "title": "Serviço",
+                "description": "Descrição de serviço",
+                "category_id": "truck",
                 "quantity": 1,
-                "unit_price": 1500
+                "unit_price": 15000
             }
         ],
         "payer": {
             "first_name": "Nome",
             "last_name": "Sobrenome",
-            "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
@@ -108,11 +106,11 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
             "registration_date": "2020-08-06T09:25:04.000-03:00"
         },
         "shipments": {
-            "local_pickup": "1",
+            "local_pickup": true,
             "receiver_address": {
                 "zip_code": "306233-2003",
                 "street_name": "Av. das Nações Unidas",
-                "street_number": "3003",
+                "street_number": "330033",
                 "floor": "5",
                 "apartment": "502",
                 "state_name": "DF",
@@ -122,4 +120,3 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
     }
 }'
 ```
-
