@@ -11,12 +11,12 @@ Para realizar un pago con PSE, antes de crearlo con los SDKs del backend, es nec
 | `transaction_amount` | Valor del pago. | Sí | Cualquier valor mayor que 0. |
 | `transaction_details.financial_institution` | Banco informado para efectuar la transferencia electrónica. | Sí | Debe corresponder a un banco existente y no puede ser enviado nulo o vacío. |
 | `payer.entity_type` | Tipo de persona, física ou jurídica. | Sí | `individual` o `association`. |
-| `payer.identification.type` | Tipo de documento del comprador. | Sí | Valores enviados por el brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE` (Cédula de Extranjería)<br> -`NIT`<br> -`Otro`<br>Valores aceptados (además de los enviados por el brick):<br> -`TE` (Tarjeta de Extranjería)<br> -`RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Pasaporte) |
+| `payer.identification.type` | Tipo de documento del comprador. | Sí | Valores enviados por el brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE` (Cédula de Extranjería)<br> -`NIT`<br> -`Otro`<br>Valores aceptados (además de los enviados por el brick):<br> -`TE` (Tarjeta de Extranjería)<br> -`RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Pasaporte) <br> - `DI` (Documento de Identificación) |
 | `payer.identification.number` | Número de documento del comprador. | Sí | String. <br>Debe tener entre 1 y 15 caracteres numéricos. Si es "pasaporte", aceptará valores alfanuméricos. |
 | `payer.first_name` | Nombre del comprador. | No | Debe tener entre 1 y 32 caracteres. |
 | `payer.last_name` | Apellido del comprador | No | Debe tener entre 1 y 32 caracteres. |
 | `payer.address.zip_code` | Código postal del comprador. | No | Debe tener exactamente 5 caracteres. |
-| `payer.address.street_name` | Nombre de la calle donde reside el comprador. | No | Debe tener entre 1 y 18 caracteres. |
+| `payer.address.street_name` | Nombre de la calle donde reside el comprador. | No | Debe tener entre 1 y 18 caracteres. | 
 | `payer.address.street_number` | Número de residencia del comprador. | No | Debe tener entre 1 y 5 caracteres. |
 | `payer.address.neighborhood` | Nombre del barrio donde reside el comprador. | No | Debe tener entre 1 y 18 caracteres. |
 | `payer.address.city` | Ciudad donde reside el comprador. | No | Debe tener entre 1 y 18 caracteres. |

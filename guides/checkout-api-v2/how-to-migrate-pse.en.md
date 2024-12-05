@@ -4,7 +4,6 @@ Checkout API currently has a new PSE integration, which will allow buyers to use
 
 If **you already have a PSE integration implemented** in Checkout API, you can upgrade to this new version by including new fields during payment creation. Follow the steps below to learn how to do it correctly.
  
-
 > WARNING
 >
 > Important
@@ -116,30 +115,35 @@ This is a change comparing with the old integration, in which this differentiati
 
 To obtain the document types automatically, use the following function:
 
-
 ```javascript
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
-   const personTypesElement = document.getElementById('form-checkout__personType');
-   updateSelectOptions(personTypesElement.value);
+	const personTypesElement = document.getElementById('form-checkout__personType');
+	updateSelectOptions(personTypesElement.value);
 });
-function updateSelectOptions(selectedValue){
-   
-   const naturalDocTypes = [
-       new Option('C.C', 'CC'),
-       new Option('C.E.', 'CE')
-   ];
-   const juridicaDocTypes = [
-       new Option('NIT', 'NIT')
-   ];
-   const idDocTypes = document.getElementById('form-checkout__identificationType');
-   
-   if(selectedValue === 'natural') {
-       idDocTypes.options.length = 0;
-       naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   } else {
-       idDocTypes.options.length = 0;
-       juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   }
+
+function updateSelectOptions(selectedValue) {
+
+	const naturalDocTypes = [
+		new Option('C.C', 'CC'),
+		new Option('C.E.', 'CE'),
+		new Option('Pasaporte', 'PAS'),
+		new Option('Tarjeta de Extranjería', 'TE'),
+		new Option('Tarjeta de Identidad ', 'TI'),
+		new Option('Registro Civil', 'RC'),
+		new Option('Documento de Identificación', 'DI')
+	];
+	const juridicaDocTypes = [
+		new Option('NIT', 'NIT')
+	];
+	const idDocTypes = document.getElementById('form-checkout__identificationType');
+
+	if (selectedValue === 'natural') {
+		idDocTypes.options.length = 0;
+		naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	} else {
+		idDocTypes.options.length = 0;
+		juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	}
 }
 ```
 
@@ -247,7 +251,6 @@ To get the dynamic elements of the previous examples created with these javascri
 
 ``` 
 
-
 > SERVER_SIDE
 >
 > h2
@@ -259,7 +262,6 @@ Sending a payment with the new PSE implementation involves only a few changes.
 You must send a **POST** with the required parameters to the [/v1/payments](/developers/en/reference/payments/_payments/post) endpoint and execute the request, but it will be necessary to add the new required fields (`address` and `phone`). 
 
 Below you can see a complete example for reference, followed by a description of each field to send:
-
 
 [[[
 ```php
@@ -604,7 +606,7 @@ The table below has the full list of **required fields** for your reference:
 | `transaction_amount` | Payment amount. | Must be greater than 0. | - |
 | `transaction_details.financial_institution` | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s recommended to consume the information every hour. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Type of person, natural or legal. | *individual* or *association* | - |
-| `payer.identification.type` | Buyer's document type. | Accepted values: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS (Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.type` | Buyer's document type. | Accepted values: <br> - `RC` (Registro Civil de Nacimiento) <br> - `TI` (Tarjeta de Identidad) <br> - `CC` (Cedula de Ciudadania)  <br> - `TE` (Tarjeta de Extranjeria) <br> - `CE` (Cedula de Extranjeria) <br> - `PAS` (Pasaporte) <br> - `NIT`<br> - `DI` (Documento de Identificación) | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `payer.identification.number` | Buyer's document number. | String <br> Must have between 1 and 15 numeric positions. If it is of the 'passport' type, it will accept alphanumeric values.| - |
 | `payer.first_name` | Buyer's first name. | Must have between 1 and 32 positions. | - |
 | `payer.last_name` | Buyer's last name. | Must have between 1 and 32 positions. | - |

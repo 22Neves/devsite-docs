@@ -218,27 +218,33 @@ Para crear un pago con PSE es necesario obtener el tipo y número de documento d
 
 ```javascript
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
-   const personTypesElement = document.getElementById('form-checkout__personType');
-   updateSelectOptions(personTypesElement.value);
+	const personTypesElement = document.getElementById('form-checkout__personType');
+	updateSelectOptions(personTypesElement.value);
 });
-function updateSelectOptions(selectedValue){
-   
-   const naturalDocTypes = [
-       new Option('C.C', 'CC'),
-       new Option('C.E.', 'CE')
-   ];
-   const juridicaDocTypes = [
-       new Option('NIT', 'NIT')
-   ];
-   const idDocTypes = document.getElementById('form-checkout__identificationType');
-   
-   if(selectedValue === 'natural') {
-       idDocTypes.options.length = 0;
-       naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   } else {
-       idDocTypes.options.length = 0;
-       juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   }
+
+function updateSelectOptions(selectedValue) {
+
+	const naturalDocTypes = [
+		new Option('C.C', 'CC'),
+		new Option('C.E.', 'CE'),
+		new Option('Pasaporte', 'PAS'),
+		new Option('Tarjeta de Extranjería', 'TE'),
+		new Option('Tarjeta de Identidad ', 'TI'),
+		new Option('Registro Civil', 'RC'),
+		new Option('Documento de Identificación', 'DI')
+	];
+	const juridicaDocTypes = [
+		new Option('NIT', 'NIT')
+	];
+	const idDocTypes = document.getElementById('form-checkout__identificationType');
+
+	if (selectedValue === 'natural') {
+		idDocTypes.options.length = 0;
+		naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	} else {
+		idDocTypes.options.length = 0;
+		juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	}
 }
 ```
 
@@ -685,7 +691,7 @@ Los siguientes campos para enviar un pago son **obligatorios** y deberás comple
 | `transaction_amount` | Monto del pago.  | Debe ser mayor a 0. | - |
 | `transaction_details.financial_institution` | Banco informado en el POST para hacer la transferencia electrónica. Se debe mostrar al usuario el listado de bancos y permitirle seleccionar. El listado se actualiza, por lo que se recomienda consumir la información cada una hora. | No debe ser nulo ni vacío y debe corresponder a un banco existente. | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de personería, natural o jurídica.  | *individual* o *association* | - |
-| `payer.identification.type` | Tipo de documento del comprador. | Valores aceptados: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS (Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.type` | Tipo de documento del comprador. | Valores aceptados: <br> - `RC` (Registro Civil de Nacimiento) <br> - `TI` (Tarjeta de Identidad) <br> - `CC` (Cedula de Ciudadania)  <br> - `TE` (Tarjeta de Extranjeria) <br> - `CE` (Cedula de Extranjeria) <br> - `PAS` (Pasaporte) <br> - `NIT` <br> - `DI` (Documento de Identificación) | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `payer.identification.number` | Tipo y número de documento del comprador. | String <br> Debe tener de 1 hasta 15 posiciones numéricas. Si el tipo es 'Pasaporte', aceptará valores alfanumericos | - |
 | `payer.first_name` | Nombre del comprador.| Debe tener de 1 hasta 32 posiciones. | - |
 | `payer.last_name` | Apellido del comprador. | Debe tener de 1 hasta 32 posiciones. | - |
