@@ -1,0 +1,3 @@
+[submodule "dx-devsite-snippets"]
+	path = dx-devsite-snippets
+	url = https://github.com/melisource/fury_dx-devsite-snippets
