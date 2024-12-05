@@ -7,30 +7,30 @@ Agrega toda la información adicional que quieras.
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Código |
+| `id` | String | Código. |
 | `title` | String | Nombre |
-| `category_id` | String | Categoría |
-| `quantity` | Integer | Cantidad |
-| `unit_price` | Float | Precio unitario |
+| `category_id` | String | Categoría. |
+| `quantity` | Integer | Cantidad. |
+| `unit_price` | Float | Precio unitario. |
 | `warranty` | Boolean | `True` si el producto tiene garantía, `False` si no la tiene. |
 
 ### Sobre el comprador
 
 | Object `payer` | Tipo | Descripción |
 | --- | --- | --- |
-| `first_name` | String | Nombre |
-| `last_name` | String | Apellido |
-| `identification` | Object | Datos de identificación |
-| `identification_type` | String | Tipo de identificación |
-| `identification_number` | String | Número de identificación |
-| `phone` | Object | Teléfono |
-| `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfono |
-| `address` | Object | Datos de dirección |
-| `zip_code` | String | Código postal |
-| `street_name` | String | Nombre de calle |
-| `street_number` | Integer | Número de calle |
-| `authentication_type` | Enum | Tipo de autenticación ("Gmail" - "Facebook" - "Web Nativa" - "Otro") |
+| `first_name` | String | Nombre. |
+| `last_name` | String | Apellido. |
+| `identification` | Object | Datos de identificación. |
+| `identification_type` | String | Tipo de identificación. |
+| `identification_number` | String | Número de identificación. |
+| `phone` | Object | Teléfono. |
+| `area_code` | Integer | Código de área. |
+| `number` | Integer | Número de teléfono. |
+| `address` | Object | Datos de dirección. |
+| `zip_code` | String | Código postal. |
+| `street_name` | String | Nombre de calle. |
+| `street_number` | Integer | Número de calle. |
+| `authentication_type` | Enum | Tipo de autenticación ("Gmail" - "Facebook" - "Web Nativa" - "Otro"). |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
 | `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
 | `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
@@ -40,12 +40,12 @@ Agrega toda la información adicional que quieras.
 
 | Object `shipment` | Tipo | Descripción |
 | --- | --- | --- |
-| `pick_up_on_seller` | Boolean | `True` si retira en sucursal, `False` si no lo hace |
+| `local_pickup` | Boolean | `True` si retira en sucursal, `False` si no lo hace. |
 | `receiver_address` | Object | Datos de dirección del comprador. |
-| `zip_code` | String | Código postal |
-| `state_name` | String | Provincia |
-| `city_name` | String | Ciudad |
-| `street_number` | Integer | Número de calle |
+| `zip_code` | String | Código postal. |
+| `state_name` | String | Provincia. |
+| `city_name` | String | Ciudad. |
+| `street_number` | Integer | Número de calle. |
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```

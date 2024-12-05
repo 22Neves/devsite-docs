@@ -7,32 +7,32 @@ Adicione todas as informações adicionais que você deseja.
 
 | Array `items` | Tipo | Descrição|
 | --- | --- | --- |
-| `id` | String | Código |
-| `title` | String | Nome |
+| `id` | String | Código. |
+| `title` | String | Nome. |
 | `type` | String | Tipo |
-| `description` | String | Descrição|
-| `picture_url` | String | Imagem URL |
-| `category_id` | String | Categoria |
-| `quantity` | Integer | Quantidade |
-| `unit_price` | Float | Preço unitário |
+| `description` | String | Descrição. |
+| `picture_url` | String | Imagem URL. |
+| `category_id` | String | Categoria. |
+| `quantity` | Integer | Quantidade. |
+| `unit_price` | Float | Preço unitário. |
 
 ### Sobre o comprador
 
-| Object `payer` | Tipo | descrição |
+| Object `payer` | Tipo | Descrição |
 | --- | --- | --- |
-| `first_name` | String | Nome |
-| `last_name` | String | Sobrenome |
-| `identification` | Object | Dados de identificação |
-| `identification_type` | String | Tipo de identificação |
-| `identification_number` | String | Número de identificação |
-| `phone` | Object | Telefone |
-| `area_code` | Integer | Código de área |
-| `number` | Integer | Número de telefone |
-| `address` | Object | Dados do endereço |
-| `zip_code` | String | Código postal |
-| `street_name` | String | Nome da rua |
-| `street_number` | Integer | Número da rua |
-| `authentication_type` | Enum | Tipo de autenticação ("Gmail" - "Facebook" - "Web Nativa" - "Outro") |
+| `first_name` | String | Nome. |
+| `last_name` | String | Sobrenome. |
+| `identification` | Object | Dados de identificação. |
+| `identification_type` | String | Tipo de identificação. |
+| `identification_number` | String | Número de identificação. |
+| `phone` | Object | Telefone. |
+| `area_code` | Integer | Código de área. |
+| `number` | Integer | Número de telefone. |
+| `address` | Object | Dados do endereço. |
+| `zip_code` | String | Código postal. |
+| `street_name` | String | Nome da rua. |
+| `street_number` | Integer | Número da rua. |
+| `authentication_type` | Enum | Tipo de autenticação. Podem ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
 | `registration_date` | Date | Data de registro do comprador no site. |
 | `is_prime_user` | Boolean | `True` se é, `False` se nao é. |
 | `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |

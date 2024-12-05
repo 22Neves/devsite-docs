@@ -7,32 +7,32 @@ Add all the additional information you want.
 
 | Array `items` | Type | Description |
 | --- | --- | --- |
-| `id` | String | Code |
-| `title` | String | Name |
-| `type` | String | Type |
-| `description` | String | Description |
-| `picture_url` | String | Picture URL |
-| `category_id` | String | Category |
-| `quantity` | Integer | Quantity |
-| `unit_price` | Float | Unit price |
+| `id` | String | Code. |
+| `title` | String | Name. |
+| `type` | String | Type. |
+| `description` | String | Description. |
+| `picture_url` | String | Picture URL. |
+| `category_id` | String | Category. |
+| `quantity` | Integer | Quantity. |
+| `unit_price` | Float | Unit price. |
 
 #### About the buyer
 
 | Object `payer` | Type | Description |
 | --- | --- | --- |
-| `first_name` | String | Name |
-| `last_name` | String | Surname |
-| `identification` | Object | Identification data |
-| `identification_type` | String | Identification type |
-| `identification_number` | String | Identification number |
-| `phone` | Object | Phone |
-| `area_code` | Integer | Area Code |
-| `number` | Integer | Phone number |
-| `address` | Object | Adress data |
+| `first_name` | String | Name. |
+| `last_name` | String | Surname. |
+| `identification` | Object | Identification data. |
+| `identification_type` | String | Identification type. |
+| `identification_number` | String | Identification number. |
+| `phone` | Object | Phone. |
+| `area_code` | Integer | Area Code. |
+| `number` | Integer | Phone number. |
+| `address` | Object | Adress data. |
 | `zip_code` | String | Postal code |
-| `street_name` | String | Street name |
-| `street_number` | Integer | Street number |
-| `authentication_type` | Enum | Authentication type ("Gmail" - "Facebook" - "Native web" - "Other") |
+| `street_name` | String | Street name. |
+| `street_number` | Integer | Street number. |
+| `authentication_type` | Enum | Type of authentication. They can be "Gmail," "Facebook," "Native Web," or "Other". |
 | `registration_date` | Date | Buyer's registration date on the site. |
 | `is_prime_user` | Boolean | `True` if it is, `False` if it is not. |
 | `is_first_purchase_online` | Boolean | `True` if it is, `False` if it is not. |
@@ -43,10 +43,10 @@ Add all the additional information you want.
 | Object `shipment` | Type | Description |
 | --- | --- | --- |
 | `receiver_address` | Object | Address of the buyer. |
-| `zip_code` | String | Postal code |
-| `state_name` | String | Province |
-| `city_name` | String | City |
-| `street_number` | Integer | Street number |
+| `zip_code` | String | Postal code. |
+| `state_name` | String | Province. |
+| `city_name` | String | City. |
+| `street_number` | Integer | Street number. |
 | `express_shipment` | Boolean | `True` if it is, `False` if it is not. |
 
 ```curl 

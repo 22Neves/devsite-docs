@@ -7,14 +7,14 @@ Agrega toda la información adicional que quieras.
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Código |
-| `title` | String | Nombre |
-| `type` | String | Tipo |
-| `description` | String | Descripción |
-| `picture_url` | String | URL de imagen |
-| `category_id` | String | Categoría |
-| `quantity` | Integer | Cantidad |
-| `unit_price` | Float | Precio unitario |
+| `id` | String | Código. |
+| `title` | String | Nombre. |
+| `type` | String | Tipo. |
+| `description` | String | Descripción. |
+| `picture_url` | String | URL de imagen. |
+| `category_id` | String | Categoría. |
+| `quantity` | Integer | Cantidad. |
+| `unit_price` | Float | Precio unitario. |
 
 
 ### Sobre el comprador
@@ -44,10 +44,10 @@ Agrega toda la información adicional que quieras.
 | Object `shipment` | Tipo | Descripción |
 | --- | --- | --- |
 | `receiver_address` | Object | Datos de dirección del comprador. |
-| `zip_code` | String | Código postal |
-| `state_name` | String | Provincia |
-| `city_name` | String | Ciudad |
-| `street_number` | Integer | Número de calle |
+| `zip_code` | String | Código postal. |
+| `state_name` | String | Provincia. |
+| `city_name` | String | Ciudad. |
+| `street_number` | Integer | Número de calle. |
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl 
