@@ -1,52 +1,52 @@
 # Electro
 
-## Campos a enviar
-Agrega toda la información adicional que quieras.
+## Fields to send
+Add all the additional information you want.
 
-### Sobre los ítems
+### About items
 
-| Array `items` | Tipo | Descripción |
+| Array `items` | Type | Description |
 | --- | --- | --- |
-| `id` | String | Código |
-| `title` | String | Nombre |
-| `category_id` | String | Categoría |
-| `quantity` | Integer | Cantidad |
-| `unit_price` | Float | Precio unitario |
-| `warranty` | Boolean | `True` si el producto tiene garantía, `False` si no la tiene. |
+| `id` | String | Code |
+| `title` | String | Name |
+| `category_id` | String | Category |
+| `quantity` | Integer | Quantity |
+| `unit_price` | Float | Unit price |
+| `warranty` | Boolean | `True` if the product has a guarantee, `False` if it does not. |
 
-### Sobre el comprador
+### About the buyer
 
-| Object `payer` | Tipo | Descripción |
+| Object `payer` | Type | Description |
 | --- | --- | --- |
-| `first_name` | String | Nombre |
-| `last_name` | String | Apellido |
-| `identification` | Object | Datos de identificación |
-| `identification_type` | String | Tipo de identificación |
-| `identification_number` | String | Número de identificación |
-| `phone` | Object | Teléfono |
-| `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfono |
-| `address` | Object | Datos de dirección |
-| `zip_code` | String | Código postal |
-| `street_name` | String | Nombre de calle |
-| `street_number` | Integer | Número de calle |
-| `authentication_type` | Enum | Tipo de autenticación ("Gmail" - "Facebook" - "Web Nativa" - "Otro") |
-| `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
-| `last_purchase` | Date | Fecha de la última compra en el sitio. |
+| `first_name` | String | Name |
+| `last_name` | String | Surname |
+| `identification` | Object | Identification data |
+| `identification_type` | String | Identification type |
+| `identification_number` | String | Identification number |
+| `phone` | Object | Phone |
+| `area_code` | Integer | Area Code |
+| `number` | Integer | Phone number |
+| `address` | Object | Adress data |
+| `zip_code` | String | Postal code |
+| `street_name` | String | Street name |
+| `street_number` | Integer | Street number |
+| `authentication_type` | Enum | Authentication type ("Gmail" - "Facebook" - "Native web" - "Other") |
+| `registration_date` | Date | Buyer's registration date on the site. |
+| `is_prime_user` | Boolean | `True` if it is, `False` if it is not. |
+| `is_first_purchase_online` | Boolean | `True` if it is, `False` if it is not. |
+| `last_purchase` | Date | Date of the last purchase on the site. |
 
-### Sobre envíos
+### About shipments
 
-| Object `shipment` | Tipo | Descripción |
+| Object `shipment` | Type | Description |
 | --- | --- | --- |
-| `pick_up_on_seller` | Boolean | `True` si retira en sucursal, `False` si no lo hace |
-| `receiver_address` | Object | Datos de dirección del comprador. |
-| `zip_code` | String | Código postal |
-| `state_name` | String | Provincia |
-| `city_name` | String | Ciudad |
-| `street_number` | Integer | Número de calle |
-| `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
+| `pick_up_on_seller` | Boolean | `True` if you withdraw in branch, `False` if you do not. |
+| `receiver_address` | Object | Address of the buyer. |
+| `zip_code` | String | Postal code |
+| `state_name` | String | Province |
+| `city_name` | String | City |
+| `street_number` | Integer | Street number |
+| `express_shipment` | Boolean | `True` if it is, `False` if it is not. |
 
 ```
 curl --location 'https://api.mercadopago.com/v1/payments' \
@@ -81,8 +81,8 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1234",
-                "title": "Producto",
-                "description": "Descripción del producto",
+                "title": "Product",
+                "description": "Product description",
                 "warranty": true,
                 "category_id": "kitchen",
                 "quantity": 1,
@@ -90,8 +90,8 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
             }
         ],
         "payer": {
-            "first_name": "Nombre",
-            "last_name": "Apellido",
+            "first_name": "Name",
+            "last_name": "Surname",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
