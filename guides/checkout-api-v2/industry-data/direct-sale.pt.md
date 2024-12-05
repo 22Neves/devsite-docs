@@ -1,4 +1,4 @@
-# Eletro
+# Venda direta
 
 ## Campos para enviar
 Adicione todas as informações adicionais que você deseja.
@@ -9,11 +9,10 @@ Adicione todas as informações adicionais que você deseja.
 | --- | --- | --- |
 | `id` | String | Código. |
 | `title` | String | Nome. |
-| `description` | String | Descrição do item. |
+| `description` | String | Descrição. |
 | `category_id` | String | Categoria. |
 | `quantity` | Integer | Quantidade. |
 | `unit_price` | Float | Preço unitário. |
-| `warranty` | Boolean | `True` se o produto tiver garantia, `False` se não tiver. |
 
 ### Sobre o comprador
 
@@ -24,7 +23,7 @@ Adicione todas as informações adicionais que você deseja.
 | `identification` | Object | Dados de identificação. |
 | `identification_type` | String | Tipo de identificação. |
 | `identification_number` | String | Número de identificação. |
-| `phone` | Object | Telefone. |
+| `phone` | Object | telefone. |
 | `area_code` | Integer | Código de área. |
 | `number` | Integer | Número de telefone. |
 | `address` | Object | Dados do endereço. |
@@ -41,23 +40,23 @@ Adicione todas as informações adicionais que você deseja.
 
 | Object `shipment` | Tipo | Descrição |
 | --- | --- | --- |
-| `local_pickup` | Boolean | `True` se retira na agência ou na loja, `False` se não retira. |
 | `receiver_address` | Object | Dados do endereço do comprador. |
 | `zip_code` | String | Código postal. |
 | `state_name` | String | Província. |
 | `city_name` | String | Cidade. |
 | `street_number` | Integer | Número da rua. |
-| `express_shipment` | Boolean | `True` se é, `False` se não é. |
+| `floor` | String | Piso. |
+| `apartment` | String | Apartamento. |
+| `local_pickup` | Boolean | `1` se retira na agência ou na loja, `0` se não retira. |
 
-
-```
+```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
 --header 'X-Idempotency-Key: {{uuid}}' \
 --header 'Authorization: Bearer ACCESS_TOKEN' \
---header 'X-Meli-Session-Id: {{device_id}}' \
+--header 'X-Meli-Session-Id: {{device_id}} \
 --data-raw '{
-    "transaction_amount": 150.00,
+    "transaction_amount": 1500.00,
     "installments": 1,
     "statement_descriptor": "LOJA 123",
     "capture": true,
@@ -83,12 +82,11 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1234",
-                "title": "Produto",
-                "description": "Descrição do produto",
-                "warranty": true,
-                "category_id": "kitchen",
+                "title": "Direct sale",
+                "description": "Gold ring",
+                "category_id": "jewelry",
                 "quantity": 1,
-                "unit_price": 150
+                "unit_price": 1500
             }
         ],
         "payer": {
@@ -110,7 +108,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
             "registration_date": "2020-08-06T09:25:04.000-03:00"
         },
         "shipments": {
-            "express_shipment": "1",
             "local_pickup": "1",
             "receiver_address": {
                 "zip_code": "306233-2003",
@@ -118,10 +115,11 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
                 "street_number": "3003",
                 "floor": "5",
                 "apartment": "502",
-                "state_name":"SP",
-                "city_name":"Osasco"
+                "state_name": "DF",
+                "city_name": "Bogota"
             }
         }
     }
 }'
 ```
+

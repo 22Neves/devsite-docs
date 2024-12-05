@@ -31,7 +31,7 @@ Agrega toda la información adicional que quieras.
 | `zip_code` | String | Código postal. |
 | `street_name` | String | Nombre de calle. |
 | `street_number` | Integer | Número de calle. |
-| `authentication_type` | Enum | Tipo de autenticación ("Gmail" - "Facebook" - "Web Nativa" - "Otro"). |
+| `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
 | `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
 | `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
