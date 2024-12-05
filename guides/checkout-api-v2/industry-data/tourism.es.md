@@ -7,41 +7,41 @@ Agrega toda la información adicional que quieras.
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Código |
-| `title` | String | Nombre |
-| `description` | String | Descripción |
-| `category_id` | String | Categoría |
-| `quantity` | Integer | Cantidad |
-| `unit_price` | Float | Precio unitario |
+| `id` | String | Código. |
+| `title` | String | Nombre. |
+| `description` | String | Descripción. |
+| `category_id` | String | Categoría. |
+| `quantity` | Integer | Cantidad. |
+| `unit_price` | Float | Precio unitario. |
 | `category_descriptor` | Object | Descripción de la categoría. |
 | `passenger` | Object | Información adicional del pasajero. |
-| `first_name`| String | Nombre del pasajero |
-| `last_name` | String | Apellido del pasajero |
+| `first_name`| String | Nombre del pasajero. |
+| `last_name` | String | Apellido del pasajero. |
 | `type` | String | Tipo de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
 | `number` | String | Número de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
-| `route` | Object | Información de la ruta |
-| `departure` | String | Salida |
-| `destination` | String | Llegada |
-| `departure_date_time` | Date | Fecha de salida |
-| `arrival_date_time` | Date | Fecha de llegada |
-| `company` | String | Compañía |
+| `route` | Object | Información de la ruta. |
+| `departure` | String | Salida. |
+| `destination` | String | Llegada. |
+| `departure_date_time` | Date | Fecha de salida. |
+| `arrival_date_time` | Date | Fecha de llegada. |
+| `company` | String | Compañía. |
 
 ### Sobre el comprador
 
 | Objeto `payer` | Tipo | Descripción |
 | --- | --- | --- |
-| `first_name` | String | Nombre |
-| `last_name` | String | Apellido |
-| `identification` | Object | Datos de identificación |
-| `identification_type` | String | Tipo de identificación |
-| `identification_number` | String | Número de identificación |
-| `phone` | Object | Teléfono |
-| `area_code` | Integer | Código de área |
-| `number` | Integer | Número de teléfono |
-| `address` | Object | Datos de dirección |
-| `zip_code` | String | Código postal |
-| `street_name` | String | Nombre de calle |
-| `street_number` | Integer | Número de calle |
+| `first_name` | String | Nombre. |
+| `last_name` | String | Apellido. |
+| `identification` | Object | Datos de identificación. |
+| `identification_type` | String | Tipo de identificación. |
+| `identification_number` | String | Número de identificación. |
+| `phone` | Object | Teléfono. |
+| `area_code` | Integer | Código de área. |
+| `number` | Integer | Número de teléfono. |
+| `address` | Object | Datos de dirección. |
+| `zip_code` | String | Código postal. |
+| `street_name` | String | Nombre de calle. |
+| `street_number` | Integer | Número de calle. |
 | `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
 | `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
