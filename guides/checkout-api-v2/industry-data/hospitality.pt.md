@@ -1,47 +1,47 @@
-# Hotelería
+# Hospitalidade
 
-## Campos a enviar
-Agrega toda la información adicional que quieras.
+## Campos para enviar
+Adicione todas as informações adicionais que você deseja.
 
-### Sobre los ítems
+### Sobre itens
 
-| Array `items` | Tipo | Descripción |
+| Array `items` | Tipo | Descrição |
 | --- | --- | --- |
 | `id` | String | Código. |
-| `title` | String | Nombre. |
-| `category_id` | String | Categoría. |
-| `quantity` | Integer | Cantidad. |
-| `unit_price` | Float | Precio unitario. |
-| `event_date` | Date | Fecha del evento. |
-| `category_descriptor` | Object | Descripción de la categoría. |
-| `passenger` | Object | Información adicional del pasajero. |
-| `first_name`| String | Nombre del pasajero. |
-| `last_name` | String | Apellido del pasajero. |
-| `identification` | Object | Información de identificación del pasajero. |
-| `type` | String | Tipo de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
-| `number` | String | Número de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
+| `title` | String | Nome. |
+| `category_id` | String | Categoria. |
+| `quantity` | Integer | Quantidade. |
+| `unit_price` | Float | Preço unitário. |
+| `event_date` | Date |Data do evento. |
+| `category_descriptor` | Object | Descrição de la categoría. |
+| `passenger` | Object |Informações adicionais sobre passageiros. |
+| `first_name`| String | Nome do passageiro. |
+| `last_name` | String | Sobrenome do passageiro. |
+| `identification` | Object | Informações de identificação do passageiro. |
+| `type` | String | Tipo de identificação do passageiro. Está dentro do objeto `identification`. |
+| `number` | String | Número de identificação do passageiro. Está dentro do objeto `identification`. |
 
-### Sobre el comprador
+### Sobre o comprador
 
-| Object `payer` | Tipo | Descripción |
+| Object `payer` | Tipo | Descrição |
 | --- | --- | --- |
-| `first_name` | String | Nombre. |
-| `last_name` | String | Apellido. |
-| `identification` | Object | Datos de identificación. |
-| `identification_type` | String | Tipo de identificación. |
-| `identification_number` | String | Número de identificación. |
-| `phone` | Object | Teléfono. |
+| `first_name` | String | Nome. |
+| `last_name` | String | Sobrenome. |
+| `identification` | Object | Dados de identificação. |
+| `identification_type` | String | Tipo de identificação. |
+| `identification_number` | String | Número de identificação. |
+| `phone` | Object | Telefone. |
 | `area_code` | Integer | Código de área. |
-| `number` | Integer | Número de teléfono. |
-| `address` | Object | Datos de dirección. |
+| `number` | Integer | Número de telefone. |
+| `address` | Object | Dados do endereço. |
 | `zip_code` | String | Código postal. |
-| `street_name` | String | Nombre de calle. |
-| `street_number` | Integer | Número de calle. |
-| `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
-| `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
-| `last_purchase` | Date | Fecha de la última compra en el sitio. |
+| `street_name` | String | Nome da rua. |
+| `street_number` | Integer | Número da rua. |
+| `authentication_type` | Enum | Tipo de autenticação. Podem ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
+| `registration_date` | Date | Data de registro do comprador no site. |
+| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
+| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
+| `last_purchase` | Date | Data da última compra no site. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
