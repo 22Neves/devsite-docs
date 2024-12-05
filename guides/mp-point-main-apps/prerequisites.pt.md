@@ -28,4 +28,4 @@ Para garantir que a integração seja exitosa, considere as características da 
 |Armazenamento interno|6GB| 16/32/64GB |
 |Meios de pagamento processados|Chip & PIN <br> NFC sem contato <br> Magnetic Stripe| Chip e PIN <br> Cartões sem contato <br> Carteiras baseadas em NFC ou código QR |
 |Arquitetura|ARMv7| ARMv7-M security core, 192MHz |
-|Android System Web View (renderização das WebViews nos aplicativos Android)|Pacote: com.android.webview <br> Versão: 52.0.2743.100 <br> |Pacote: com.android.webview <br> Versão: 93.0.4577.62 <br> |
+|Android System Web View (renderização das WebViews nos aplicativos Android)|Pacote: com.android.webview <br> Versão: 52.0.2743.100 |Pacote: com.android.webview <br> Versão: 93.0.4577.62 |
