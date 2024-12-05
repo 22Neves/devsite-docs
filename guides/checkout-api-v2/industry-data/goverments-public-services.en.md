@@ -1,41 +1,41 @@
-# Gobierno y servicios públicos
+# Government and public services
 
-## Campos a enviar
-Agrega toda la información adicional que quieras.
+## Fields to send 
+Add all the additional information you want.
 
-### Sobre los ítems
+### About items
 
-| Array `items` | Tipo | Descripción |
+| Array `items` | Type | Description |
 | --- | --- | --- |
-| `id` | String | Código. |
-| `title` | String | Nombre. |
-| `description` | String | Descripción. |
-| `category_id` | String | Categoría. |
-| `quantity` | Integer | Cantidad. |
-| `unit_price` | Float | Precio unitario. |
-| `event_date` | Date | Fecha del evento. |
+| `id` | String | Code. |
+| `title` | String | Name. |
+| `description` | String | Description. |
+| `category_id` | String | Category. |
+| `quantity` | Integer | Quantity. |
+| `unit_price` | Float | Unit price. |
+| `event_date` | Date | Event date. |
 
-### Sobre el comprador
+### About the buyer
 
-| Object `payer` | Tipo | Descripción |
+| Object `payer` | Type | Description |
 | --- | --- | --- |
-| `first_name` | String | Nombre. |
-| `last_name` | String | Apellido. |
-| `identification` | Object | Datos de identificación. |
-| `identification_type` | String | Tipo de identificación. |
-| `identification_number` | String | Número de identificación. |
-| `phone` | Object | Teléfono. |
-| `area_code` | Integer | Código de área. |
-| `number` | Integer | Número de teléfono. |
-| `address` | Object | Datos de dirección. |
-| `zip_code` | String | Código postal. |
-| `street_name` | String | Nombre de calle. |
-| `street_number` | Integer | Número de calle. |
-| `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
-| `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
-| `last_purchase` | Date | Fecha de la última compra en el sitio. |
+| `first_name` | String | Name. |
+| `last_name` | String | Surname.|
+| `identification` | Object | Identification data. |
+| `identification_type` | String | Identification type. |
+| `identification_number` | String | Identification number. |
+| `phone` | Object | Phone. |
+| `area_code` | Integer | Area code. |
+| `number` | Integer | Phone number. |
+| `address` | Object | Adress data. |
+| `zip_code` | String | Postal code. |
+| `street_name` | String | Street name. |
+| `street_number` | Integer | Street number. |
+| `authentication_type` | Enum | Type of authentication. They can be "Gmail," "Facebook," "Native Web," or "Other". |
+| `registration_date` | Date | Buyer's registration date on the site. |
+| `is_prime_user` | Boolean | `True` if it is, `False` if it is not. |
+| `is_first_purchase_online` | Boolean | `True` if it is, `False` if it is not. |
+| `last_purchase` | Date | Date of the last purchase on the site. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
