@@ -1627,35 +1627,6 @@
               }
             }
           },
-          "404": {
-            "description": {
-              "en": "Error.",
-              "pt": "Erro.",
-              "es": "Error."
-            },
-            "content":{
-              "application/json":{
-                "schema":{
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "not_found",
-                          "description": {
-                            "en": "Resource not found. Please check the returned message and try submitting your request again.",
-                            "es": "Recurso no encontrado. Por favor, revisa el mensaje retornado e intenta enviar la solicitud nuevamente.",
-                            "pt": "Recurso não encontrado. Revise a mensagem retornada e tente enviar a solicitação novamente."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
           "424": {
             "description": {
               "en": "Error.",

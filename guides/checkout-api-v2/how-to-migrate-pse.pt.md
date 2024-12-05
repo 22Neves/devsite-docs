@@ -115,30 +115,35 @@ Esta é uma mudança em relação à antiga integração, na qual esta diferenci
 
 Para obter os tipos de documentos automaticamente, utilize a seguinte função:
 
-
 ```javascript
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
-   const personTypesElement = document.getElementById('form-checkout__personType');
-   updateSelectOptions(personTypesElement.value);
+	const personTypesElement = document.getElementById('form-checkout__personType');
+	updateSelectOptions(personTypesElement.value);
 });
-function updateSelectOptions(selectedValue){
-   
-   const naturalDocTypes = [
-       new Option('C.C', 'CC'),
-       new Option('C.E.', 'CE')
-   ];
-   const juridicaDocTypes = [
-       new Option('NIT', 'NIT')
-   ];
-   const idDocTypes = document.getElementById('form-checkout__identificationType');
-   
-   if(selectedValue === 'natural') {
-       idDocTypes.options.length = 0;
-       naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   } else {
-       idDocTypes.options.length = 0;
-       juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   }
+
+function updateSelectOptions(selectedValue) {
+
+	const naturalDocTypes = [
+		new Option('C.C', 'CC'),
+		new Option('C.E.', 'CE'),
+		new Option('Pasaporte', 'PAS'),
+		new Option('Tarjeta de Extranjería', 'TE'),
+		new Option('Tarjeta de Identidad ', 'TI'),
+		new Option('Registro Civil', 'RC'),
+		new Option('Documento de Identificación', 'DI')
+	];
+	const juridicaDocTypes = [
+		new Option('NIT', 'NIT')
+	];
+	const idDocTypes = document.getElementById('form-checkout__identificationType');
+
+	if (selectedValue === 'natural') {
+		idDocTypes.options.length = 0;
+		naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	} else {
+		idDocTypes.options.length = 0;
+		juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	}
 }
 ```
 
@@ -245,7 +250,6 @@ Para que os elementos dinâmicos dos exemplos anteriores criados com estes javas
  })();
 
 ``` 
-
 
 > SERVER_SIDE
 >
@@ -602,7 +606,7 @@ A tabela a seguir tem a lista completa de campos obrigatórios para sua referên
 | `transaction_amount` | Valor do pagamento.  | Deve ser maior que 0. | - |
 | `transaction_details.financial_institution` | Banco informado no POST para efetuar a transferência eletrônica. A lista de bancos deve ser mostrada ao usuário e permitida a seleção. A lista é atualizada, por isso é recomendável consumir as informações a cada hora. | No debe ser nulo ni vacío y debe corresponder a un banco existente. | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Tipo de pessoa, física ou jurídica. | *individual* ou *association* | - |
-| `payer.identification.type` | Tipo de documento do comprador. | Valores aceitos: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS (Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.type` | Tipo de documento do comprador. | Valores aceitos: <br> - `RC` (Registro Civil de Nacimiento) <br> - `TI` (Tarjeta de Identidad) <br> - `CC` (Cedula de Ciudadania)  <br> - `TE` (Tarjeta de Extranjeria) <br> - `CE` (Cedula de Extranjeria) <br> - `PAS` (Pasaporte) <br> - `NIT` <br> - `DI` (Documento de Identificación)| curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `payer.identification.number` | Número do documento do comprador. | String <br> Deve ter de 1 até 15 posições numéricas. Se é do tipo 'passaporte', aceitará valores alfanuméricos.| - |
 | `payer.first_name` | Nome do comprador.| Deve ter de 1 até 32 posições. | - |
 | `payer.last_name` | Sobrenome do comprador. | Deve ter de 1 até 32 posições. | - |
@@ -618,7 +622,6 @@ A tabela a seguir tem a lista completa de campos obrigatórios para sua referên
 | `notification_url` | URL usada para notificar a aplicação de que a transferência foi concluída. | Não deve ser nulo ou vazio e deve ter, no máximo, 512 caracteres. | - |
 
 A resposta mostrará o status `pendente` até que o comprador realize o pagamento. Além disso, na resposta à requisição, o parâmetro `external_resource_url` retornará uma URL para a qual você deverá redirecionar o comprador para que ele conclua o fluxo de pagamento.
-
 
 ```json
 {
@@ -666,7 +669,6 @@ Após o comprador realizar o pagamento na plataforma do banco escolhido, haverá
 Na nova versão, o **callback URL é um campo obrigatório**, por isso é importanteter em mente que é necessário tratar os diferentes estados da transação.
 
 Abaixo, apresentamos exemplos de mensagens que você pode exibir, alinhadas aos três possíveis status em que o pagamento pode se encontrar.
-
 
 #### Status aprovado
 
