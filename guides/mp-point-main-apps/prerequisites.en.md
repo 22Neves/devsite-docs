@@ -15,18 +15,17 @@ Before you start developing your solution, take a look at the requirements that 
 
 ## Point Smart technical specifications
 
-To ensure that the integration is successful, consider the Point Smart machine's characteristics and how the application will adapt to them.
+To ensure that the integration is successful, consider the Point Smart machine's characteristics, wether it is the A910 or the N950, and how the application will adapt to them.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 
-| Especificación | Descripción |
-|---|---|
-|Model|A910|
-|Screen| 5'' IPS WXGA 720 x 1280 Pixels <br> Multi-Point Capacitive HD Touch Screen |
-|Operating system|Android 6|
-|Printer|Sí <br> 40 Lines/Sec <br> Paper roll outer diameter: 40mm |
-|RAM memory|1GB|
-|Internal storage|6GB|
-|Payment methods processed|Chip & PIN <br> NFC Contactless <br> Magnetic Stripe|
-|Architecture|ARMv7|
-|Android System Web View|Package: com.android.webview <br> Version: 52.0.2743.100 <br> Use: Render the WebViews on Android apps.|
+| Especificación | A910 | N950 |
+|---|---|---|
+|Screen| 5'' IPS WXGA 720 x 1280 Pixels <br> Multi-Point Capacitive HD Touch Screen | 5.99-inch TFT full color LCD display, 1440 x 720 pixels,  with adjustable backlight, capacitive multi-touch screen and electronic signature |
+|Operating system|Android 6| Android 12|
+|Printer| Yes <br> 40 Lines/Sec <br> Paper roll outer diameter: 40mm | High-speed thermal printer, 80 mm/s. <br> Paper roll diameter: 40mm <br> Paper width: 58mm |
+|RAM memory|1GB| 2/3/4 GB |
+|Internal storage|6GB| 16/32/64GB |
+|Payment methods processed|Chip & PIN <br> NFC Contactless <br> Magnetic Stripe| Chip & PIN <br>  Contactless cards <br> NFC or QR-code based wallets |
+|Architecture|ARMv7| ARMv7-M security core, 192MHz |
+|Android System Web View (render the WebViews on Android apps)|Package: com.android.webview <br> Version: 52.0.2743.100 |Package: com.android.webview <br> Version: 93.0.4577.62 |

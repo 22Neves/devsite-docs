@@ -15,18 +15,17 @@ Antes de começar a desenvolver sua solução, veja as condições que devem ser
 
 ## Especificações técnicas da Point Smart
 
-Para garantir que a integração seja exitosa, considere as características da maquininha Point Smart e como o aplicativo se adaptará a elas.
+Para garantir que a integração seja exitosa, considere as características da maquininha Point Smart que você possui, seja o A910 ou o N950, e como o aplicativo se adaptará a elas.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 
-| Especificação | Descrição |
-|---|---|
-|Modelo|A910|
-|Tela| 5'' IPS WXGA 720 x 1280 Pixels <br> Multi-Point Capacitive HD Touch Screen |
-|Sistema operacional|Android 6|
-|Impressora|Sí <br> 40 Lines/Sec <br> Paper roll outer diameter: 40mm |
-|Memória RAM|1GB|
-|Armazenamento interno|6GB|
-|Meios de pagamento processados|Chip & PIN <br> NFC Contactless <br> Magnetic Stripe|
-|Arquitetura|ARMv7|
-|Android System Web View|Pacote: com.android.webview <br> Versão: 52.0.2743.100 <br> Uso: Renderizar as WebViews nos aplicativos Android.|
+| Especificação | A910 | N950 |
+|---|---|---|
+|Tela| 5'' IPS WXGA 720 x 1280 Pixels <br> Multi-Point Capacitive HD Touch Screen | LCD colorida TFT de 5,99 polegadas, 1440 x 720 pixels, com luz de fundo ajustável, tela multitoque capacitiva e assinatura eletrônica |
+|Sistema operacional|Android 6| Android 12 |
+|Impressora|Sim <br> 40 Linhas/Sec <br> Diâmetro do rolo de papel: 40mm | Impressora térmica de alta velocidade, 80 mm/s. <br> Diâmetro do rolo de papel: 40mm <br> Largura do papel: 58mm |
+|Memória RAM|1GB| 2/3/4 GB |
+|Armazenamento interno|6GB| 16/32/64GB |
+|Meios de pagamento processados|Chip & PIN <br> NFC sem contato <br> Magnetic Stripe| Chip e PIN <br> Cartões sem contato <br> Carteiras baseadas em NFC ou código QR |
+|Arquitetura|ARMv7| ARMv7-M security core, 192MHz |
+|Android System Web View (renderização das WebViews nos aplicativos Android)|Pacote: com.android.webview <br> Versão: 52.0.2743.100 <br> | |Pacote: com.android.webview <br> Versão: 93.0.4577.62 <br> |

@@ -15,18 +15,17 @@ Antes de empezar a desarrollar tu solución, consulta las condiciones que debes 
 
 ## Especificaciones técnicas de Point Smart
 
-Para garantizar que la integración sea exitosa, considera las características del lector Point Smart y cómo la app se adaptará a ellas.
+Para garantizar que la integración sea exitosa, considera las características del lector Point Smart que posees, sea el A910 o el N950, y cómo la app se adaptará a ellas.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 
-| Especificación | Descripción |
-|---|---|
-|Modelo|A910|
-|Pantalla| 5'' IPS WXGA 720 x 1280 Pixels <br> Multi-Point Capacitive HD Touch Screen |
-|Sistema operativo|Android 6|
-|Impresora|Sí <br> 40 Lines/Sec <br> Paper roll outer diameter: 40mm |
-|Memoria RAM|1GB|
-|Almacenamiento interno|6GB|
-|Medios de pago procesados|Chip & PIN <br> NFC Contactless <br> Magnetic Stripe|
-|Arquitectura|ARMv7|
-|Android System Web View|Paquete: com.android.webview <br> Versión: 52.0.2743.100 <br> Uso: Renderizar las WebViews en apps Android.|
+| Especificación | A910 | N950 |
+|---|---|---|
+|Pantalla| 5'' IPS WXGA 720 x 1280 Pixels <br> Multi-Point Capacitive HD Touch Screen | LCD TFT a todo color de 5,99 pulgadas, 1440 x 720 píxeles, con retroiluminación regulable, pantalla multitáctil capacitiva y firma electrónica |
+|Sistema operativo|Android 6| Android 12|
+|Impresora|Sí <br> 40 Líneas/Sec <br> Diámetro del rollo de papel: 40mm | Impresora térmica de alta velocidad, 80 mm/s. <br> Diámetro del rollo de papel: 40 mm <br> Ancho del papel: 58 mm |
+|Memoria RAM|1GB| 2/3/4 GB |
+|Almacenamiento interno|6GB| 16/32/64GB |
+|Medios de pago procesados|Chip & PIN <br> NFC Contactless <br> Magnetic Stripe| Chip y PIN <br> Tarjetas sin contacto <br> Billeteras basadas en NFC o código QR|
+|Arquitectura|ARMv7| ARMv7-M security core, 192MHz|
+|Android System Web View (renderización de las WebViews en apps Android)|Paquete: com.android.webview <br> Versión: 52.0.2743.100 | Paquete: com.google.android.webview <br>Versión: 93.0.4577.62 |
