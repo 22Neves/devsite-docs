@@ -4,7 +4,8 @@
         "/v1/orders": {
             "post": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-automatic",
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
@@ -633,7 +634,8 @@
         "/v1/orders/{id}": {
             "get": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-automatic",
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "Consult all order information using the ID obtained in the response to its creation. n case of success, the request will return a response with status 200",
@@ -1112,7 +1114,8 @@
         "/v1/orders/{order_id}/cancel": {
             "post": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-automatic",
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled. In case of success, the request will return a response with status 200",
@@ -1663,7 +1666,7 @@
         "/v1/orders/{order_id}/transactions": {
             "post": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in manual mode (processing the transaction in stages that can be configured and executed incrementally), with the 'processing_mode' field filled with 'manual' value. In case of success, the request will return a response with status 201",
@@ -2180,7 +2183,7 @@
         "/v1/orders/{order_id}/transactions/{transaction_id}": {
             "delete": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "This endpoint allows you to delete a payment transaction from the order. In case of success, the request will return a response with status 204",
@@ -2308,7 +2311,7 @@
             },
             "put": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "This endpoint allows updating the information of a payment transaction in the order.",
@@ -2769,7 +2772,7 @@
         "/v1/orders/{order_id}/process": {
             "post": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
@@ -3292,7 +3295,8 @@
         "/v1/orders/{order_id}/refund": {
             "post": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-automatic",
+                    "checkout-api-manual"
                 ],
                 "description": {
                     "en": "This endpoint performs a full or partial refund of the transactions associated with an order. To perform a full refund, you must not send the amount to be refunded in the request body. To perform a partial refund you must indicate the amount to be refunded, along with the transaction ID you wish to return. In case of success, the request will return a response with status 201",
@@ -3819,12 +3823,13 @@
         "/v1/orders/{order_id}/capture": {
             "post": {
                 "tags": [
-                    "checkout-api"
+                    "checkout-api-automatic",
+                    "checkout-api-manual"
                 ],
                 "description": {
-                    "en":"This endpoint allows to totally capture an order previously created in manual mode. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
-                    "pt":"Este endpoint permite capturar totalmente uma order previamente criada no modo manual. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es":"Este endpoint permite capturar en su totalidad una order previamente creada en modo manual. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en":"This endpoint allows to totally capture a previously authorized order. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
+                    "pt":"Este endpoint permite capturar totalmente uma order previamente autorizada. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es":"Este endpoint permite capturar en su totalidad una order previamente autorizada. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {

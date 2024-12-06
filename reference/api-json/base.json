@@ -70,6 +70,20 @@
         "url": "/docs/checkout-api/landing"
       }
     },
+    "checkout-api-automatic": {
+      "description": {
+        "pt": "Checkout Transparente - Modo automático",
+        "en": "Checkout API - Automatic Mode",
+        "es": "Checkout API - Modo automático"
+      }
+    },
+    "checkout-api-manual": {
+      "description": {
+        "pt": "Checkout Transparente - Modo manual",
+        "en": "Checkout API - Manual Mode",
+        "es": "Checkout API - Modo manual"
+      }
+    },
     "cash-out": {
       "description": {
         "pt": "Retirada de dinheiro",
