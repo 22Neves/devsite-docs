@@ -58,15 +58,15 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 --data-raw '{
     "transaction_amount": 150.00,
     "installments": 1,
-    "statement_descriptor": "STORE 123",
+    "statement_descriptor": "LOJA 123",
     "capture": true,
     "binary_mode": false,
     "sponsor_id": null,
     "application_fee": null,
     "payment_method_id": "debvisa",
     "token": "{{card_token_id}}",
-    "external_reference": "REQUEST01",
-    "description": "NEW REQUEST",
+    "external_reference": "Pedido01",
+    "description": "PEDIDO NOVO",
     "notification_url": "{{notification_url}}",
     "metadata": {
         "order_number": "order_01"
