@@ -346,7 +346,7 @@ Para integrar Money Out con destino a cuentas bancarias, deberás enviar un **PO
 > Nota
 >
 > Ten en cuenta que sólo se permite el envío de dinero a una cuenta de destino (`transaction.to`) por llamado.
-
+------------
 ----[mla]---- 
 ```curl
 curl --request POST \
@@ -400,7 +400,7 @@ curl --request POST \
 ```curl
 curl --request POST \
   --url https://api.mercadopago.com/v1/transaction-intents/process \
-  --header 'Authorization: Bearer TEST-613370*********4-111215-*********d13abd8c1*********868e9-1*********' \
+  --header 'Authorization: Bearer TEST-6133*********794-11121*********edd13abd8*********82868e9-1*********' \
   --header 'content-type: application/json' \
   --header 'x-enforce-signature: false' \
   --data '{
@@ -520,7 +520,7 @@ curl -X POST \
 
 ------------
 
-Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, que indica que la transacción fue aceptada, como en el ejemplo a continuación. 
+Si la ejecución fue exitosa, recibirás una respuesta con `status code 200`, que indica que la transacción fue aceptada, como en el ejemplo a continuación. 
 
 > WARNING
 >
@@ -530,62 +530,60 @@ Si la ejecución fue exitosa, recibirás una respuesta con `status code 202`, qu
 
 ----[mla]---- 
 ```curl
-curl --request POST \
-  --url https://api.mercadopago.com/v1/transaction-intents/process \
-  --header 'Authorization: Bearer TEST-4613*********761-11121*********92cd39015*********7bbc3cb-1*********' \
-  --header 'content-type: application/json' \
-  --header 'x-enforce-signature: false' \
-  --data '{
+{
+  "created_date": "2024-11-13T15:04:25.699+00:00",
   "external_reference": "external_ref_1234",
+  "id": "22dvqmseu9m",
+  "last_updated_date": "2024-11-13T15:04:31.256+00:00",
   "point_of_interaction": {
     "type": "PSP_TRANSFER"
   },
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "http://example.com.ar/notification"
+      "notification_url": "http://example.ar/notification"
     }
   },
+  "status": "processed",
   "transaction": {
     "from": {
       "accounts": [
         {
-          "amount": 25
+          "amount": 25,
+          "status_details": []
         }
       ]
     },
+    "paid_amount": 25,
+    "payer": {
+      "id": 1992483656
+    },
+    "refunded_amount": 0,
     "to": {
-      "total_amount": 25,
       "accounts": [
         {
           "amount": 25,
-          "bank_id": "015",
-          "number": "0150533701000132688355",
-          "holder": "Victor Hugo",
-          "owner": {
-              "identification": {
-                  "number": "20209642647",
-                  "type": "CUIT"
-              }
-          },
-          "type": "savings_account",
-          "description": "envio de 25"
+          "description": "envio de 25",
+          "origin_id": "01JCK0VSV3TBSAADAGJQKG4GTY",
+          "status_details": [
+            "approved"
+          ]
         }
       ]
     },
-    "total_amount": 25
+    "total_amount": 25,
+    "statement_descriptor": "",
+    "binary_mode": false
   }
-}'
+}
 ```
 ------------
 ----[mlm]---- 
 ```curl
-curl --request POST \
-  --url https://api.mercadopago.com/v1/transaction-intents/process \
-  --header 'Authorization: Bearer TEST-6133*********794-11121*********dd13abd8c*********2868e9-1*********' \
-  --header 'content-type: application/json' \
-  --header 'x-enforce-signature: false' \
-  --data '{
+{
+  "created_date": "2024-11-13T14:18:07.052+00:00",
   "external_reference": "12345",
+  "id": "22dvqmseu6a",
+  "last_updated_date": "2024-11-13T14:18:07.663+00:00",
   "point_of_interaction": {
     "type": "PSP_TRANSFER"
   },
@@ -594,30 +592,36 @@ curl --request POST \
       "notification_url": "http://example.mx/notification"
     }
   },
+  "status": "processed",
   "transaction": {
     "from": {
       "accounts": [
         {
-          "amount": 25
+          "amount": 25,
+          "status_details": []
         }
       ]
     },
+    "paid_amount": 0,
+    "payer": {
+      "id": 1992483662
+    },
+    "refunded_amount": 0,
     "to": {
-      "total_amount": 25,
       "accounts": [
         {
           "amount": 25,
-          "bank_id": "646",
-          "number": "646180110400000007",
-          "holder": "JUAN JOSE MARIA",
-          "type": "savings_account",
-          "description": "envio de 25"
+          "description": "envio de 25",
+          "origin_id": "01JCJY70ACGJ2AP8433JGG0ZRY",
+          "status_details": []
         }
       ]
     },
-    "total_amount": 25
+    "total_amount": 25,
+    "statement_descriptor": "",
+    "binary_mode": false
   }
-}'
+}
 ```
 ------------
 ----[mlc]---- 
@@ -778,7 +782,6 @@ En la siguiente tabla puedes encontrar los principales eventos, plazos y tiempo 
 | Cuarto intento | 48 horas | 5 segundos |
 | Quinto intento | 96 horas | 5 segundos |
 
-
 ## Obtener información sobre una transacción
 
 Si lo deseas, puedes obtener información sobre una transacción. Esto puede ser útil para corroborar que la misma fue creada correctamente, para consultar su `status`, o para verificar la información recibida en tus notificaciones.
@@ -852,6 +855,11 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
   "point_of_interaction": {
     "type": "PSP_TRANSFER"
   },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
+  },
   "status": "processed",
   "transaction": {
     "from": {
@@ -883,7 +891,6 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
   }
 }
 ```
-
 ------------
 ----[mlc]---- 
 ```json
@@ -939,7 +946,6 @@ Si los datos enviados en el llamado son correctos, recibirás una respuesta como
   }
 }
 ```
-
 ------------
 
 Para conocer los detalles de cada atributo devuelto, consulta la respuesta a [Configurar retiros](/developers/es/docs/money-out/integration-configuration#bookmark_integration_configuration).

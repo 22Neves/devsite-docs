@@ -139,8 +139,6 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 | Qualquer outro valor | Serão gerados novos recursos com status `status` e `processed`. |
 
 ------------ 
-----[mla, mlm, mlc]----
-
 ----[mla]---- 
 ```curl
 curl --request POST \
@@ -231,9 +229,7 @@ curl --request POST \
     },
     "total_amount": 25
   }
-}'
 ```
-
 ------------
 ----[mlc]---- 
 ```curl
@@ -282,7 +278,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 ```
 
 ------------
-
+----[mla, mlm, mlc]---- 
 > WARNING
 >
 > Importante

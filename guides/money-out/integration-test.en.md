@@ -1,4 +1,4 @@
-# Integration Test
+# Integration test
 
 Before going live, we recommend testing the proper functioning of your integration and transaction processing. This will allow you to verify if the integration was done correctly and if payments are being processed without errors.
 
@@ -139,8 +139,6 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 | Any other value | New resources will be generated with a `status` of `processed`. |
 
 ------------ 
-----[mla, mlm, mlc]----
-
 ----[mla]---- 
 ```curl
 curl --request POST \
@@ -198,7 +196,7 @@ curl --request POST \
   --header 'Authorization: Bearer TEST-6133*********794-11121*********edd13abd8*********82868e9-1*********' \
   --header 'content-type: application/json' \
   --header 'x-enforce-signature: false' \
-  --data '{
+  --data ' {
   "external_reference": "12345",
   "point_of_interaction": {
     "type": "PSP_TRANSFER"
@@ -231,9 +229,8 @@ curl --request POST \
     },
     "total_amount": 25
   }
-}'
-```
 
+```
 ------------
 ----[mlc]---- 
 ```curl
@@ -282,7 +279,7 @@ curl --location 'https://api.mercadopago.com/v1/transaction-intents/process' \
 ```
 
 ------------
-
+----[mla, mlm, mlc]---- 
 > WARNING
 >
 > Important

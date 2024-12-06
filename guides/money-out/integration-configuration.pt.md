@@ -346,7 +346,7 @@ Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias,
 > Nota
 >
 > Tenha em mente que cada chamada permite o envio de dinheiro para apenas uma conta de destino (`transaction.to`).
-
+------------
 ----[mla]---- 
 ```curl
 curl --request POST \
@@ -400,7 +400,7 @@ curl --request POST \
 ```curl
 curl --request POST \
   --url https://api.mercadopago.com/v1/transaction-intents/process \
-  --header 'Authorization: Bearer TEST-6133*********794-11121*********dd13abd8c*********2868e9-1*********' \
+  --header 'Authorization: Bearer TEST-6133*********794-11121*********edd13abd8*********82868e9-1*********' \
   --header 'content-type: application/json' \
   --header 'x-enforce-signature: false' \
   --data '{
@@ -520,7 +520,7 @@ curl -X POST \
 
 ------------
 
-Se a execução for bem-sucedida, você receberá como resposta um `status code 202`, indicando que a transação foi aceita, como no exemplo a seguir. 
+Se a execução for bem-sucedida, você receberá como resposta um `status code 200`, indicando que a transação foi aceita, como no exemplo a seguir. 
 
 > WARNING
 >
@@ -529,7 +529,7 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 > Esta resposta pode demorar alguns segundos. Se seu `status` for `pending`, deve-se executar a requisição para [Obter informações sobre uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_obter_informações_sobre_uma_transação) para verificar sua atualização.
 
 ----[mla]---- 
-```json
+```curl
 {
   "created_date": "2024-11-13T15:04:25.699+00:00",
   "external_reference": "external_ref_1234",
@@ -576,10 +576,9 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
   }
 }
 ```
-
 ------------
 ----[mlm]---- 
-```json
+```curl
 {
   "created_date": "2024-11-13T14:18:07.052+00:00",
   "external_reference": "12345",
@@ -587,6 +586,11 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
   "last_updated_date": "2024-11-13T14:18:07.663+00:00",
   "point_of_interaction": {
     "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
   },
   "status": "processed",
   "transaction": {
@@ -619,7 +623,6 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
   }
 }
 ```
-
 ------------
 ----[mlc]---- 
 ```json
@@ -862,6 +865,11 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
   "point_of_interaction": {
     "type": "PSP_TRANSFER"
   },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
+  },
   "status": "processed",
   "transaction": {
     "from": {
@@ -893,7 +901,6 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
   }
 }
 ```
-
 ------------
 ----[mlc]---- 
 ```json
@@ -949,7 +956,6 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
   }
 }
 ```
-
 ------------
 
 Para obter detalhes sobre cada atributo retornado, consulte a resposta à [Configurar retiradas de dinheiro](/developers/pt/docs/money-out/integration-configuration#bookmark_integration_configuration).
