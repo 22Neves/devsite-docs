@@ -380,7 +380,7 @@ curl -X POST \
 ```
 ]]]
 
-A resposta trará o seguinte resultado
+A resposta para uma requisição de sucesso será:
 
 ```json
 {
@@ -419,6 +419,58 @@ A resposta trará o seguinte resultado
     "type_config": {
         "capture_mode": "automatic"
     }
+}
+```
+
+A resposta para casos onde a transação falhou será:
+
+```json
+{
+  "errors": [
+    {
+      "code": "failed",
+      "message": "The following transactions failed",
+      "details": [
+        "pay_01JE71J4APB80344T8QMSZK48V: rejected_by_issuer"
+      ]
+    }
+  ],
+  "data": {
+    "id": "01JE71J4APB80344T8QHV6W42A",
+    "type": "online",
+    "processing_mode": "automatic",
+    "external_reference": "ext_ref_1234",
+    "capture_mode": "automatic",
+    "total_amount": "200.00",
+    "country_code": "BRA",
+    "status": "failed",
+    "status_detail": "failed",
+    "created_date": "2024-12-03T19:57:07.798976826Z",
+    "last_updated_date": "2024-12-03T19:57:10.276894389Z",
+    "integration_data": {
+      "application_id": "130106526144588"
+    },
+    "payer": {
+      "email": "test_user_9835778@testuser.com"
+    },
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01JE71J4APB80344T8QMSZK48V",
+          "amount": "200.00",
+          "status": "failed",
+          "status_detail": "rejected_by_issuer",
+          "reference_id": "22dvqmsfohy",
+          "payment_method": {
+            "id": "master",
+            "type": "credit_card",
+            "token": "756bf5ae9e03b14a47c7afd8e77ab7f8",
+            "installments": 1
+          },
+        }
+      ]
+    }
+  }
 }
 ```
 

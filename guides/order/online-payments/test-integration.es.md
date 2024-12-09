@@ -20,7 +20,7 @@ Por último, utiliza esas credenciales para realizar las solicitudes necesarias 
 
 ## 2. Hacer compra de prueba
 
-Para realizar una compra de prueba, deberás simular en la tienda un usuario comprador. Recomendamos iniciar sesión con algún mail personal, que debe ser distinto al de la cuenta de Mercado Pago.
+Para realizar una compra de prueba, deberás simular en la tienda un usuario comprador.
 
 1. Selecciona algún producto o servicio e inicia el proceso de compra.
 2. En el checkout de la tienda, ingresa el correo electrónico. Recuerda que debe ser diferente al correo que usas en Mercado Pago.
@@ -38,14 +38,13 @@ Para verificar que la compra de prueba se realizó correctamente, envía un GET 
 
 ¡Listo! Una vez finalizados estos pasos, la integración estará completa y podrás usar tus credenciales de producción en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para más información sobre la salida a producción, consulta la sección [Requisitos para salir a producción](/developers/es/docs/order/online-payments/integration-test#requisitosparasaliraproduccin)
 
-
 ## Requisitos para salir a producción
 
-Una vez finalizado el proceso de integración, el ambiente estará listo para ser colocado en producción. En esta documentación, detallaremos los requisitos necesarios para realizar este pasaje de manera eficaz y segura, garantizando que tu integración esté preparada para recibir pagos reales.
+Una vez finalizado el proceso de integración, el ambiente estará listo para ser colocado en producción. En esta documentación, detallaremos los requisitos necesarios para realizar este pasaje de manera eficaz y segura, garantizando que tu integración esté preparada para recibir transaciones reales.
 
 ### Activar credenciales de producción
 
-Para comenzar a recibir pagos, deberás **activar las credenciales de producción** y reemplazar las de prueba. 
+Para comenzar a recibir pagos, deberás **activar las credenciales de producción de tu usuario real** y reemplazar las credenciales de tu usuario de prueba.
 
 Para hacerlo, ingresa al [Panel del Desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) y, en el menú lateral, accede a **Producción > Credenciales de producción**. Allí encontrarás tu _Public Key_ y _Access Token_ productivos, que deberán reemplazar a los de prueba utilizados en etapas previas.
 
@@ -64,7 +63,7 @@ Si bien durante la etapa de pruebas puedes no contar con el certificado, este es
 
 ### Consideraciones adicionales
 
-#### Aprobación de pagos
+#### Aprobación de transaciones
 
 Conoce qué medidas puedes llevar adelante para mejorar la [aprobación de pagos](/developers/es/guides/additional-content/how-tos/payment-rejections), tales como el envío de información del ítem y del pagador, datos de envío e información de industria, entre otros.
 

@@ -3,7 +3,7 @@
 O teste de integração permite analisar se ela foi realizada corretamente e se os pagamentos estão sendo processados sem erros, evitando possíveis problemas ao disponibilizar o checkout para os compradores finais.
 
 Para realizar esses testes, você precisará:
- * **[Usuário de teste](/developers/pt/docs/order/additional-content/your-integrations/test/accounts)**: possui as mesmas funcionalidades que um usuário real do Mercado Pago, permitindo testar o funcionamento do seu desenvolvimento sem comprometer dados reais. Para criá-lo, acesse [Suas integrações](/developers/panel/app) e logo **Contas de teste > Criar contas de teste]**.
+ * **[Usuário de teste](/developers/pt/docs/order/additional-content/your-integrations/test/accounts)**: possui as mesmas funcionalidades que um usuário real do Mercado Pago, permitindo testar o funcionamento do seu desenvolvimento sem comprometer dados reais. Para criá-lo, acesse [Suas integrações](/developers/panel/app) e logo **Contas de teste > Criar contas de teste**.
  * **[Cartões de teste](/developers/pt/docs/order/additional-content/your-integrations/test/cards)**: utilize cartões de teste de métodos de pagamento locais e simule diferentes respostas de pagamento, sem necessidade de usar um cartão real.
 
 Siga os passos abaixo para testar sua integração.
@@ -20,7 +20,7 @@ Por fim, utilize essas credenciais para realizar as requisições necessárias p
 
 ## 2. Fazer uma compra de teste
 
-Para realizar uma compra de teste, você precisará simular um usuário comprador na loja. Recomendamos fazer login com um e-mail pessoal que deve ser diferente do e-mail da sua conta do Mercado Pago.
+Para realizar uma compra de teste, você precisará simular um usuário comprador na loja.
 
 1. Selecione um produto ou serviço e inicie o processo de compra.
 2. No checkout da loja, insira o e-mail. Lembre-se de que ele deve ser diferente do e-mail que você usa no Mercado Pago.
@@ -39,11 +39,11 @@ Pronto! Uma vez concluídos esses passos, a integração estará completa e voc�
 
 ## Requisitos para entrar em produção
 
-Ao finalizar o processo de integração, o ambiente estará pronto para ser colocado em produção. Nesta documentação, detalharemos os requisitos necessário para realizar essa mudança de maneira eficaz e segura, garantindo que a integração esteja preparada para o recebimento de pagamentos reais.
+Ao finalizar o processo de integração, o ambiente estará pronto para ser colocado em produção. Nesta documentação, detalharemos os requisitos necessário para realizar essa mudança de maneira eficaz e segura, garantindo que a integração esteja preparada para o recebimento de transações reais.
 
 ### Ativar credenciais de produção
 
-Para começar a receber pagamentos, você deve **ativar as credenciais de produção** e substituir as credenciais de teste. 
+Para começar a receber pagamentos, você deve **ativar as credenciais de produção de seu usuário real** e substituir as credenciais de seu usuário de teste. 
 
 Para isso, acesse o [Painel do Desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) e, no menu lateral, acesse **Produção > Credenciais de Produção**. Ali você encontrará seu _Public Key_ e _Access Token_ produtivos, que devem substituir os de teste utilizados nas etapas anteriores.
 
@@ -59,14 +59,11 @@ Adotar estas medidas não apenas reforça a segurança dos dados dos usuários, 
 
 Embora a exigência do certificado SSL não se aplique durante o período de testes, sua implementação é obrigatória para entrar em produção. Para mais informações, [confira os termos e condições do Mercado Pago](/developers/pt/guides/resources/legal/terms-and-conditions).
 
-
 ### Considerações adicionais
 
-#### Aprovação de pagamentos
+#### Aprovação de transações
 
-Para otimizar a taxa de aprovação de pagamentos, diversas estratégias podem ser adotadas, abrangendo desde a inclusão precisa de informações relacionadas ao item vendido e aos dados do comprador, até a entrega de detalhes sobre o envio e especificidades do setor de atuação. 
-
-Para mais informações sobre os principais motivos pelos quais um pagamento pode ser recusado e como fazer para evitar essas recusas, acesse a documentação [Como melhorar a aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/payment-rejections)
+Conheça quais medidas você pode adotar para melhorar a [aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/payment-rejections), como o envio de informações do item e do pagador, dados de envio e informações da indústria, entre outros.
 
 #### Notificações
 

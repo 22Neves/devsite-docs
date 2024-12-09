@@ -20,7 +20,7 @@ Finally, use those credentials to make the necessary requests to proceed with th
 
 ## 2. Make a test purchase
 
-To conduct a test purchase, you need to simulate a buying user in the store. We recommend logging in with a personal email that differs from the one used for your Mercado Pago account.
+To conduct a test purchase, you need to simulate a buying user in the store.
 
 1. Select a product or service and start the purchase process.
 2. In the store's checkout, enter the email address. Remember that it must be different from the email you use on Mercado Pago.
@@ -35,17 +35,15 @@ To conduct a test purchase, you need to simulate a buying user in the store. We 
 
 To verify that the test purchase was successful, send a **GET** to the endpoint [/v1/orders/{id}](/developers/en/reference/order/online-payments/get-order/get), replacing `id ` by the identification of the order, received in the response to its creation.
 
-
 That's it! Once these steps are done, the integration will be complete, and you will be able to use your production credentials in ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------. For more information about going into production, please refer to the section [Requirements for Going to Production](/developers/en/docs/order/online-payments/integration-test#bookmark_requirements_to_go_to_production).
 
 ## Requirements to go to production
 
-When completing the integration process, your environement will be ready to be set into production. In this documentation, you will find the necessary requirements you need to meet to do this in a secure and effective way, guaranteeing that your integration is ready to receive real payments.
-
+When completing the integration process, your environement will be ready to be set into production. In this documentation, you will find the necessary requirements you need to meet to do this in a secure and effective way, guaranteeing that your integration is ready to receive real transactions.
 
 ### Activate production credentials
 
-To start receiving payments, you must **activate your production credentials** and replace the test credentials. 
+To start receiving payments, you must **activate the production credentials of your real user** and replace the credentials of your test user.
 
 To do so, enter the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) and, in the side menu, access **Production > Production credentials**. There, you will find your productive _Public Key_ and _Access Token_, which should replace the test ones used in previous stages.
 
@@ -63,7 +61,7 @@ Although an SSL certificate may not be required during the testing phase, it is 
 
 ### Additional considerations
 
-#### Payment approval
+#### Transactions approval
 
 Get to know what measures you can take to improve your [payment approval](/developers/en/guides/additional-content/how-tos/payment-rejections), such as submitting the item and payer information, shipping data, and industry information, among others.
 

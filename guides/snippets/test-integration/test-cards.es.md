@@ -95,7 +95,7 @@ Para **probar diferentes resultados de pago**, completa el estado deseado en el 
 | :--- | :---: | :---: | :---: |
 | Elo | 5067 7667 8388 8311 | 123 | 11/25 |
 
-Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `card_holder_name`) de la tarjeta:
+Para **probar diferentes resultados de pago**, completa el estado deseado en el nombre del titular (campo `cardholder_name`) de la tarjeta:
  
 | Estado de pago | Descripción | Documento de identidad |
 | --- | --- | --- |
