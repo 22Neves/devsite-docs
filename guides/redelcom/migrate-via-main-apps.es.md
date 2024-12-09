@@ -2,7 +2,7 @@
 
 Si actualmente utilizas una integración local con Redelcom, la solución equivalente que ofrece Mercado Pago es **Main Apps**. 
 
-Las **Main Apps** son aplicaciones de gestión de negocio que se pueden integrar a **[Point Smart](/developers/es/docs/mp-point/landing)**, un dispositivo de pago de tipo SmartPOS. Estas apps se convierten en la interfaz principal, permitiendo que el vendedor use el lector para procesar pagos de forma integrada con Mercado Pago.
+Las **Main Apps** son aplicaciones de gestión de negocio que se pueden integrar a **Point Smart**, un dispositivo de pago de tipo SmartPOS. Estas apps se convierten en la interfaz principal, permitiendo que el vendedor use el lector para procesar pagos de forma integrada con Mercado Pago.
 
 ## Requisitos previos
 Para garantizar una migración exitosa a las Main Apps, debes cumplir con los siguientes requisitos previos:  

@@ -2,7 +2,7 @@
 
 If you are currently using a local integration with Redelcom, the equivalent solution offered by Mercado Pago is **Main Apps**.
 
-The Main Apps are business management applications that can be integrated with **[Point Smart](/developers/en/docs/mp-point/landing)**, a SmartPOS payment device. These apps become the main interface, allowing the seller to use the reader to process payments integrated with Mercado Pago.
+The Main Apps are business management applications that can be integrated with **Point Smart**, a SmartPOS payment device. These apps become the main interface, allowing the seller to use the reader to process payments integrated with Mercado Pago.
 
 ## Prerequisites
 
