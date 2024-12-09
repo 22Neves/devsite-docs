@@ -20,7 +20,7 @@ Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com m
 >
 > Importante
 >
-> Para oferecer o PSE como método de pagamento, certifique-se primeiro de instalar o **aplicativo PSE desenvolvido pela VTEX**. Se ainda não o fez, acesse **Configuração de Conta>Aplicativos > Loja de Aplicativos**, e procure por **Banks for PSE**. 
+> Para oferecer o PSE como método de pagamento, certifique-se primeiro de instalar o **aplicativo PSE desenvolvido pela VTEX**. Se ainda não o fez, acesse **Configuração de Conta >Aplicativos > Loja de Aplicativos**, e procure por **Banks for PSE**. 
 > <br>
 > Se o aplicativo não estiver disponível na loja, solicite sua instalação à equipe da VTEX por meio de um ticket no [Suporte VTEX](https://help.vtex.com/pt/support).
 
@@ -35,22 +35,26 @@ Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com m
 ----[mlm]----
 
 Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com meios de pagamento offline, como Oxxo, Paycash, Banamex ou Bancomer.
+
 ------------
 
 
 ----[mlu]----
 
 Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com meios de pagamento offline, como Abitab ou Redpagos.
+
 ------------
 
 ----[mlc]----
 
 Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com meios de pagamento offline, como Wip.
+
 ------------
 
 ----[mpe]----
 
 Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com meios de pagamento offline, como Pago Efectivo.
+
 ------------
 
 
@@ -64,6 +68,15 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
     3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
 
 4. Clique em **Salvar** para ativar a configuração.
+
+----[mco]----
+> WARNING
+>
+> Importante
+>
+> O método de pagamento Efecty não está disponível no conector **MercadoPagoV2**. Para poder processar pagamentos com este método, certifique-se configurar a condição de pagamento como **MercadoPagoOff**.
+
+------------
 
 ![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
 
