@@ -22,7 +22,7 @@ A API de Order fornece diversos endpoints que permitem executar as mesmas funcio
 > 
 > Importante
 >
-> Para utilizar esses endpoints, é necessário que seu terminal esteja configurado no modo `PDV`. Se estiver configurado no modo `STANDALONE`, entenderemos que você deseja processar pagamentos de forma não integrada, o que impedirá o uso da nossa API. Para configurar seu terminal no modo PDV, utilize o endpoint [Alterar o modo de operação](/developers/es/reference/order/in-person/point/change-operation-mode/patch), que permite modificar o modo de operação dos _terminals_.
+> Para utilizar esses endpoints, é necessário que seu terminal esteja configurado no modo `PDV`. Se estiver configurado no modo `STANDALONE`, entenderemos que você deseja processar pagamentos de forma não integrada, o que impedirá o uso da nossa API. Para configurar seu terminal no modo PDV, utilize o endpoint [Alterar o modo de operação](/developers/es/reference/order/in-person/point/change-operation-mode/patch), que permite modificar o modo de operação dos terminals.
 
 - [_Obter terminals_](/developers/pt/reference/order/in-person-payments/point/terminal/get): Este endpoint permite obter uma lista dos _terminals_ Point disponíveis associados à sua conta do Mercado Pago. Ele indicará seu respectivo ID e o modo de operação em que está funcionando.
 - [Atualizar o modo de operação do terminal](/developers/pt/reference/order/in-person-payments/point/change-operation-mode/patch): Caso o terminal com o qual você esteja tentando integrar esteja no modo operacional `STANDALONE` ou `SELF_SERVICE`, será necessário atualizá-lo para o modo PDV utilizando este endpoint. Assim, você poderá operar de forma integrada com nossa API.
