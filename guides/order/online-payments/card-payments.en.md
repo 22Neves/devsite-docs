@@ -12,7 +12,6 @@ Check below the diagram that illustrates the card payment process using the Card
 
 The first step in the card payment integration process is capturing card data. This capture is made by including the `MercadoPago.js` library in your project, fsetting up credentials, and including the payment form for subsequent initialization. Use the code below to import the library before adding the payment form.
 
-[[[
 ```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -22,7 +21,6 @@ The first step in the card payment integration process is capturing card data. T
 npm install @mercadopago/sdk-js
 
 ```
-]]]
 
 ### Configure credentials
 
@@ -30,7 +28,6 @@ Credentials are unique keys with which we identify an integration in your accoun
 
 This is the first step of a complete code structure that must be followed for the correct integration of payment via card. 
 
-[[[
 ```html
 <script>
   const mp = new MercadoPago("YOUR_PUBLIC_KEY");
@@ -44,7 +41,6 @@ await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ```
-]]]
 
 ### Add payment form
 
@@ -52,8 +48,6 @@ The capture of card data is done through the CardForm of the `MercadoPago.js` li
 
 To add the payment form, insert the HTML below directly into the project.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
-[[[
 ```html
   <style>
     #form-checkout {
@@ -85,43 +79,6 @@ To add the payment form, insert the HTML below directly into the project.
     <progress value="0" class="progress-bar">Loading...</progress>
   </form>
 ```
-]]]
-
-------------
-----[mlm]----
-[[[
-```html
-  <style>
-    #form-checkout {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-    }
-
-    .container {
-      height: 18px;
-      display: inline-block;
-      border: 1px solid rgb(118, 118, 118);
-      border-radius: 2px;
-      padding: 1px 2px;
-    }
-  </style>
-  <form id="form-checkout">
-    <div id="form-checkout__cardNumber" class="container"></div>
-    <div id="form-checkout__expirationDate" class="container"></div>
-    <div id="form-checkout__securityCode" class="container"></div>
-    <input type="text" id="form-checkout__cardholderName" />
-    <select id="form-checkout__issuer"></select>
-    <select id="form-checkout__installments"></select>
-    <input type="email" id="form-checkout__cardholderEmail" />
-
-    <button type="submit" id="form-checkout__submit">Pay</button>
-    <progress value="0" class="progress-bar">Loading...</progress>
-  </form>
-```
-]]]
-
-------------
 
 ### Initialize payment form
 
@@ -133,206 +90,111 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
-[[[
 ```javascript
-
 const cardForm = mp.cardForm({
-amount: "100.5",
-iframe: true,
-form: {
-id: "form-checkout",
-cardNumber: {
-id: "form-checkout__cardNumber",
-placeholder: "Card Number",
-},
-expirationDate: {
-id: "form-checkout__expirationDate",
-placeholder: "MM/YY",
-},
-securityCode: {
-id: "form-checkout__securityCode",
-placeholder: "Security Code",
-},
-cardholderName: {
-id: "form-checkout__cardholderName",
-placeholder: "Cardholder",
-},
-issuer: {
-id: "form-checkout__issuer",
-placeholder: "Issuing bank",
-},
-installments: {
-id: "form-checkout__installments",
-placeholder: "Installments",
-},
-identificationType: {
-id: "form-checkout__identificationType",
-placeholder: "Document type",
-},
-identificationNumber: {
-id: "form-checkout__identificationNumber",
-placeholder: "Document number",
-},
-cardholderEmail: {
-id: "form-checkout__cardholderEmail",
-placeholder: "Email",
-},
-},
-callbacks: {
-onFormMounted: error => {
-if (error) return console.warn("Form Mounted handling error: ", error);
-console.log("Form mounted");
-},
-onSubmit: event => {
-event.preventDefault();
+    amount: "100.5",
+    iframe: true,
+    form: {
+        id: "form-checkout",
+        cardNumber: {
+            id: "form-checkout__cardNumber",
+            placeholder: "Card number",
+        },
+        expirationDate: {
+            id: "form-checkout__expirationDate",
+            placeholder: "MM/YY",
+        },
+        securityCode: {
+            id: "form-checkout__securityCode",
+            placeholder: "Security code",
+        },
+        cardholderName: {
+            id: "form-checkout__cardholderName",
+            placeholder: "Cardholder name",
+        },
+        issuer: {
+            id: "form-checkout__issuer",
+            placeholder: "Issuing bank",
+        },
+        installments: {
+            id: "form-checkout__installments",
+            placeholder: "Installments",
+        },
+        identificationType: {
+            id: "form-checkout__identificationType",
+            placeholder: "Document type",
+        },
+        identificationNumber: {
+            id: "form-checkout__identificationNumber",
+            placeholder: "Document number",
+        },
+        cardholderEmail: {
+            id: "form-checkout__cardholderEmail",
+            placeholder: "Email",
+        },
+    },
+    callbacks: {
+        onFormMounted: error => {
+            if (error) return console.warn("Form Mounted handling error: ", error);
+            console.log("Form mounted");
+        },
+        onSubmit: event => {
+            event.preventDefault();
 
-const {
-paymentMethodId: payment_method_id,
-issuerId: issuer_id,
-cardholderEmail: email,
-amount,
-token,
-installments,
-identificationNumber,
-identificationType,
-} = cardForm.getCardFormData();
+            const {
+                paymentMethodId: payment_method_id,
+                issuerId: issuer_id,
+                cardholderEmail: email,
+                amount,
+                token,
+                installments,
+                identificationNumber,
+                identificationType,
+            } = cardForm.getCardFormData();
 
-fetch("/process_payment", {
-method: "POST",
-headers: {
-"Content-Type": "application/json",
-},
-body: JSON.stringify({
-token,
-issuer_id,
-payment_method_id,
-transaction_amount: Number(amount),
-installments: Number(installments),
-description: "Product Description",
-payer: {
-email,
-identification: {
-type: identificationType,
-number: identificationNumber,
-},
-},
-}),
-});
-},
-onFetching: (resource) => {
-console.log("Fetching resource: ", resource);
+            fetch("/process_order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    total_amount: amount, // should be a string in the format ..0.00
+                    description: description,
+                    payer: {
+                        email,
+                        identification: {
+                            type: identificationType,
+                            number: identificationNumber
+                        }
+                    },
+                    transactions: [
+                        {
+                            amount, // should be a string in the format ..0.00
+                            payment_method: {
+                                token,
+                                id: payment_method_id,
+                                type: type, // should be “credit_card” ou “debit_card”,
+                                installments: Number(installments)
+                            }
+                        }
+                    ]
+                }),
+            });
+        },
+        onFetching: (resource) => {
+            console.log("Fetching resource: ", resource);
 
-// Animate progress bar
-const progressBar = document.querySelector(".progress-bar");
-progressBar.removeAttribute("value");
+            // Animate progress bar
+            const progressBar = document.querySelector(".progress-bar");
+            progressBar.removeAttribute("value");
 
-return() => {
-progressBar.setAttribute("value", "0");
-};
-}
-},
+            return () => {
+                progressBar.setAttribute("value", "0");
+            };
+        }
+    },
 });
 ```
-]]]
-
-------------
-----[mlm]----
-[[[
-```javascript
-
-const cardForm = mp.cardForm({
-amount: "100.5",
-iframe: true,
-form: {
-id: "form-checkout",
-cardNumber: {
-id: "form-checkout__cardNumber",
-placeholder: "Card Number",
-},
-expirationDate: {
-id: "form-checkout__expirationDate",
-placeholder: "MM/YY",
-},
-securityCode: {
-id: "form-checkout__securityCode",
-placeholder: "Security Code",
-},
-cardholderName: {
-id: "form-checkout__cardholderName",
-placeholder: "Cardholder",
-},
-issuer: {
-id: "form-checkout__issuer",
-placeholder: "Issuing bank",
-},
-installments: {
-id: "form-checkout__installments",
-placeholder: "Installments",
-},
-cardholderEmail: {
-id: "form-checkout__cardholderEmail",
-placeholder: "Email",
-},
-},
-callbacks: {
-onFormMounted: error => {
-if (error) return console.warn("Form Mounted handling error: ", error);
-console.log("Form mounted");
-},
-onSubmit: event => {
-event.preventDefault();
-
-const {
-paymentMethodId: payment_method_id,
-issuerId: issuer_id,
-cardholderEmail: email,
-amount,
-token,
-installments,
-identificationNumber,
-identificationType,
-} = cardForm.getCardFormData();
-
-fetch("/process_payment", {
-method: "POST",
-headers: {
-"Content-Type": "application/json",
-},
-body: JSON.stringify({
-token,
-issuer_id,
-payment_method_id,
-transaction_amount: Number(amount),
-installments: Number(installments),
-description: "Product Description",
-payer: {
-email,
-identification: {
-type: identificationType,
-number: identificationNumber,
-},
-},
-}),
-});
-},
-onFetching: (resource) => {
-console.log("Fetching resource: ", resource);
-
-// Animate progress bar
-const progressBar = document.querySelector(".progress-bar");
-progressBar.removeAttribute("value");
-
-return() => {
-progressBar.setAttribute("value", "0");
-};
-}
-},
-});
-```
-]]]
-
-------------
 
 ## Create payment
 
@@ -348,7 +210,6 @@ With all the information collected in the backend, send a **POST** with the nece
 >
 > It is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
-[[[
 ```curl
 curl -X POST \
     'https://api.mercadopago.com/v1/orders'\
@@ -378,7 +239,6 @@ curl -X POST \
     }
 }'
 ```
-]]]
 
 The response for a successful request will be:
 
@@ -389,8 +249,10 @@ The response for a successful request will be:
     "processing_mode": "automatic",
     "external_reference": "ext_ref_1234",
     "total_amount": "200.00",
-    "site_id": "MLB",
+    "country_code": "BRA",
     "status": "processed",
+    "status_detail": "accredited",
+    "capture_mode": "automatic",
     "created_date": "2024-10-21T11:26:19.17922368Z",
     "last_updated_date": "2024-10-21T11:26:20.923603158Z",
     "integration_data": {
@@ -404,8 +266,8 @@ The response for a successful request will be:
             {
                 "id": "pay_01JAQD7X1BXGY2Q59VYP036JDN",
                 "amount": "200.00",
-                "status": "processed",
                 "reference_id": "0001hyhhbz",
+                "status": "processed",
                 "status_detail": "accredited",
                 "payment_method": {
                     "id": "master",
@@ -415,9 +277,6 @@ The response for a successful request will be:
                 }
             }
         ]
-    },
-    "type_config": {
-        "capture_mode": "automatic"
     }
 }
 ```
@@ -480,4 +339,4 @@ The response for cases where the transaction failed will be:
 >
 > Refer to the complete list of payment and order statuses in the [Status](/developers/en/docs/order/status-errors/payment-status) section. <br>
 > <br>
-> To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/order/online-payments/notifications) for more details.
+> To keep up with updates, you need to configure your system to receive order notifications and status updates. See [Notifications](/developers/en/docs/order/online-payments/notifications) for more details.

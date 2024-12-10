@@ -4,7 +4,7 @@ An online payment order can be created to be processed in two ways: **Automatic 
 
 ## Automatic mode
 
-The Automatic Mode is the default mode of the application. Here, the transaction is completed in a single step, and modifications are limited. To create the order in automatic mode, you need to ensure that the `processing_mode` field, that responsible for defining the format of creation and processing of the transaction, is set to `automatic` and that all information is being sent in this single request.
+The automatic mode is the default mode of the application. Through this mode, the transaction is completed in a single step, and modifications are limited. To create the order in automatic mode, the `processing_mode` field, which is responsible for defining the creation and processing format of the transaction, will be set to `automatic`, and all information is sent in a single request.
 
 The allowed operations are:
 

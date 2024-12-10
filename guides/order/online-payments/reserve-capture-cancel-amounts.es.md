@@ -1,14 +1,13 @@
 # Reservar, capturar y cancelar fondos
 
-Al integrar pagos con Order de modo manual, es posible procesarlos realizando una reserva de fondos y su posterior captura. Ve a continuación cómo gestionar las transacciones realizadas.
+Al integrar transacciones con Order, es posible procesarlas realizando una reserva de fondos y su posterior captura. Ve a continuación cómo gestionar las transacciones realizadas.
 
 ## Reserva de fondos
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, lo que asegura que el valor se mantenga hasta la finalización del procesamiento.
 
-Para realizar una autorización de reserva, envía un **POST** con todos los atributos necesarios detallados en nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post), incluyendo `type_config.capture_mode` definido como `manual`, al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post).
+Para realizar una autorización de reserva, envía un **POST** con todos los atributos necesarios detallados en nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post), incluyendo `capture_mode` definido como `manual`, al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post).
 
-[[[
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -18,9 +17,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/orders \
     -d '
 {
-  "type_config": {
-    "capture_mode": "manual"
-  },
+  "capture_mode": "manual",
   "type": "online",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
@@ -47,13 +44,10 @@ curl -X POST \
     ]
   }
 }'
-
 ```
-]]]
 
 La respuesta indicará que el pago se encuentra autorizado y pendiente de captura.
 
-[[[
 ```json
 {
   "id": ORDER_ID,
@@ -61,9 +55,7 @@ La respuesta indicará que el pago se encuentra autorizado y pendiente de captur
   "status": "action_required",
   "status_detail": "waiting_capture",
   ...
-   "type_config": {
-    "capture_mode": "manual"
-  },
+    "capture_mode": "manual",
   ...
  "transactions": {
     "payments": [
@@ -75,12 +67,43 @@ La respuesta indicará que el pago se encuentra autorizado y pendiente de captur
     ]
   }
 }
-
 ```
-]]]
 
+En caso de que la captura sea rechazada, se devolverá una respuesta en el siguiente formato:
 
-También es posible que el `status` retorne como `rejected` o `pending`. En estos casos, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
+```json
+{
+  "errors": [
+    {
+      "code": "failed",
+      "message": "The following transactions failed",
+      "details": [
+        "pay_01JE797F7RX989RWQJHP4VHF94: required_call_for_authorize"
+      ]
+    }
+  ],
+  "data": {
+    "id": "01JE797F7RX989RWQJHMY34WJ4",
+    "capture_mode": "manual",
+    "status": "failed",
+    "status_detail": "failed",
+    ...
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01JE797F7RX989RWQJHP4VHF94",
+          "amount": "200.00",
+          "status": "failed",
+          "status_detail": "required_call_for_authorize"
+          ...
+        }
+      ]
+    }
+  }
+}
+```
+
+También es posible que el status retorne como `pending`. En estos casos, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
 > WARNING
 >
@@ -88,7 +111,6 @@ También es posible que el `status` retorne como `rejected` o `pending`. En esto
 >
 > El cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar esta captura lo antes posible.
  
-
 ## Captura de pago autorizado
 
 La finalización de un pago sucede después de la captura del pago previamente autorizado, lo que significa que se puede debitar de la tarjeta el importe reservado para la compra.
@@ -108,6 +130,3 @@ Para realizar la captura del monto total de una reserva, es necesario enviar una
 La cancelación de una reserva se produce cuando, por algún motivo, no se aprueba el pago de una compra y se debe devolver el valor de la reserva al límite de la tarjeta del cliente, o cuando un comprador desiste de la compra. 
 
 Para cancelar una reserva, debes enviar una solicitud al endpoint [/v1/orders/{order_id}/cancel](/developers/es/reference/order/online-payments/cancel-order/post). Asegúrate de reemplazar `{order_id}` por el ID de la order cuya reserva deseas cancelar. 
-
-
-

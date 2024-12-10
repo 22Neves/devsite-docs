@@ -1,14 +1,13 @@
 # Reservar, capturar e cancelar valores
 
-Ao integrar os pagamentos com Ordem manualmente, é possível processá-los reservando fundos e posteriormente capturá-los. Veja abaixo como gerenciar as transações realizadas.
+Ao integrar transações com Order, é possível processá-las reservando fundos e posteriormente capturá-las. Veja abaixo como gerenciar as transações realizadas.
 
 ## Reserva de valores
 
 Uma reserva de valores acontece quando uma compra é realizada e seu montante é reservado do limite total do cartão, garantindo que o valor fique guardado até a conclusão do processamento.
 
-Para realizar uma autorização de reserva de valores, envie um **POST** com todos os atributos necessários conforme indicado na [Referência de API](/developers/pt/reference/order/online-payments/create/post), incluindo `type_config.capture_mode` definido como `manual`, ao endpoint [/v1/orders](/developers/pt/reference/order/online-payments/create/post). 
+Para realizar uma autorização de reserva de valores, envie um **POST** com todos os atributos necessários conforme indicado na [Referência de API](/developers/pt/reference/order/online-payments/create/post), incluindo `capture_mode` definido como `manual`, ao endpoint [/v1/orders](/developers/pt/reference/order/online-payments/create/post). 
 
-[[[
 ```curl
 
 curl -X POST \
@@ -19,9 +18,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/orders \
     -d '
 {
-  "type_config": {
-    "capture_mode": "manual"
-  },
+  "capture_mode": "manual",
   "type": "online",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
@@ -48,16 +45,10 @@ curl -X POST \
     ]
   }
 }'
-
-
 ```
-]]]
-
 
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 
-
-[[[
 ```json
 {
   "id": ORDER_ID,
@@ -65,9 +56,7 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
   "status": "action_required",
   "status_detail": "waiting_capture",
   ...
-   "type_config": {
-    "capture_mode": "manual"
-  },
+    "capture_mode": "manual",
   ...
  "transactions": {
     "payments": [
@@ -79,18 +68,49 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
     ]
   }
 }
-
 ```
-]]]
 
-Além disso, também é possível retornar como `rejeitado` ou `pendente`. Caso isso aconteça, você deverá ficar atento às notificações para saber qual o status final do pagamento.
+Caso a captura seja recusada, será retornada uma resposta no seguinte formato:
+
+```json
+{
+  "errors": [
+    {
+      "code": "failed",
+      "message": "The following transactions failed",
+      "details": [
+        "pay_01JE797F7RX989RWQJHP4VHF94: required_call_for_authorize"
+      ]
+    }
+  ],
+  "data": {
+    "id": "01JE797F7RX989RWQJHMY34WJ4",
+    "capture_mode": "manual",
+    "status": "failed",
+    "status_detail": "failed",
+    ...
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01JE797F7RX989RWQJHP4VHF94",
+          "amount": "200.00",
+          "status": "failed",
+          "status_detail": "required_call_for_authorize"
+          ...
+        }
+      ]
+    }
+  }
+}
+```
+
+Além disso, também é possível que o status retorne como `pendente`. Caso isso aconteça, você deverá ficar atento às notificações para saber qual o status final do pagamento.
 
 > WARNING
 >
 > Importante
 >
 > Os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Por isso, recomendamos realizar a captura o quanto antes.
- 
 
 ## Captura de pagamento autorizado
 

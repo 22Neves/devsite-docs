@@ -22,13 +22,13 @@ future_product_avaible:
  - card_linkProof:
  - card_linkProofDescription:
  - card_linkAvailable: true
- - card_avaible: true
+ - card_avaible: false
  - card_icon: User
  - card_title: Pagos presenciales
- - card_description: XXX
- - card_button: /developers/es/docs/order/in-store-payments/introduction
- - card_buttonDescription: Saber más
- - card_pillText: DISPONIBLE
+ - card_description: Recursos para vender en una tienda física o desde donde quieras, utilizando la Point de Mercado Pago para pagos con tarjetas y código QR.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: MUY PRONTO
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:

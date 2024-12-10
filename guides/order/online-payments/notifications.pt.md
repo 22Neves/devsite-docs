@@ -6,18 +6,17 @@ Webhooks (também conhecido como retorno de chamada web) utiliza HTTP REST para 
 
 Uma vez configuradas, as notificações Webhooks serão enviadas sempre que ocorrer um ou mais eventos cadastrados. Isso evita a necessidade de verificações constantes, prevenindo a sobrecarga do sistema e a perda de dados em situações críticas. 
 
-
 ## Configurar notificações Webhooks
 
 As notificações Webhooks podem ser configuradas para cada uma das aplicações criadas em  [Suas integrações](/developers/panel/app). Você também poderá configurar uma URL de teste que, junto com suas credenciais de teste, permitirá testar o funcionamento correto das suas notificações antes de sair à produção.
 
 Uma vez configuradas, as notificações Webhooks serão enviadas sempre que ocorrer um ou mais eventos cadastrados. Isso evita a necessidade de verificações constantes, prevenindo a sobrecarga do sistema e a perda de dados em situações críticas. 
 
-Para configurar as notificações Webhooks de Order, siga as estapas descritas abaixo.
+Para configurar as notificações Webhooks de Order, siga as etapas descritas abaixo.
 
 1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções.
 2. No menu à esquerda, vá até **Webhooks > Configurar notificações** e configure as URLs que serão usadas para receber as notificações. Recomendamos utilizar uma URL diferente para o modo de teste e o modo produção:
-    * **URL modo teste:** fornece uma URL que permite testar o correto funcionamento das notificações dessa aplicação durante a fase de teste ou desenvolvimento. O teste dessas notificações deverá ser realizado exclusivamente com as **credenciais de teste de usuários produtivos**.
+    * **URL modo teste:** fornece uma URL que permite testar o correto funcionamento das notificações dessa aplicação durante a fase de teste ou desenvolvimento.
     * **URL modo produção:** fornece uma URL para receber notificações com sua integração produtiva. Essas notificações deverão ser configuradas com **credenciais produtivas**.
 
 ![webhooks](/images/dashboard/webhooks-pt.png)
@@ -26,28 +25,44 @@ Para configurar as notificações Webhooks de Order, siga as estapas descritas a
 >
 > Nota
 > 
-> Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?cliente=(nomedovendedor)` ao final da URL indicada para identificar os vendedores.
+> Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?client=(nomedovendedor)` ao final da URL indicada para identificar os vendedores.
 
-3. Selecione o eventos **Order (Mercado Pago)** para receber as notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento pode ser qualquer atualização no objeto relatado, incluindo criação e atualização de orders e processamento de transações.
-
-4. Por fim, clique e **Salvar** para gerar uma **assinatura secreta** exclusiva para a sua aplicação, permitindo validar a autenticidade das notificações recebidas e garantir que tenham sido enviadas pelo Mercado Pago. A assinatura gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja altamente recomendável. Para renová-la, clique no botão de **Redefinição** ao lado da assinatura.
+3. Selecione o evento **Order (Mercado Pago)** para receber as notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento pode ser qualquer atualização no objeto relatado, incluindo criação e atualização de orders e processamento de transações.
+4. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** exclusiva para a sua aplicação, permitindo validar a autenticidade das notificações recebidas e garantir que tenham sido enviadas pelo Mercado Pago. A assinatura gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja altamente recomendável. Para renová-la, clique no botão de **Redefinição** ao lado da assinatura.
 
 ## Validar origem da notificação
 
-As notificações enviadas pelo Mercado Pago serão semelhantes ao exemplo abaixo para um alerta do tópico `payment`:
+As notificações enviadas pelo Mercado Pago serão semelhantes ao exemplo abaixo para um alerta do tópico `order`:
 
 ```json
 {
- "id": 12345,
- "live_mode": true,
- "type": "payment",
- "date_created": "2015-03-25T10:04:58.396-04:00",
- "user_id": 44444,
- "api_version": "v1",
- "action": "payment.created",
- "data": {
-     "id": "999999999"
- }
+  "action": "processed",
+  "type": "order",
+  "user_id": "123456",
+  "application_id": "789012",
+  "live_mode": true,
+  "api_version": "v1",
+  "date_created": "2024-01-01T00:00:00Z",
+  "data": {
+    "id": "01J35M8KHVFY0GQGDZJ94QXKMJ",
+    "type": "online",
+    "external_reference": "ext_ref_1234",
+    "status": "processed",
+    "version": 1,
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01J3E4R55CTGYCEXCKSQB6RKDE",
+          "status": "processed",
+          "payment_method": {
+            "id": "visa",
+            "type": "credit_card",
+            "installments": 1
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -60,7 +75,9 @@ Esta assinatura será enviada no _header_ `x-signature`, conforme o exemplo abai
 
 ```
 
-Para configurar essa validação, é necessário extrair a chave contida no _header_ e compará-la com a chave fornecida para sua aplicação em Suas integrações. Para isso, siga as etapas abaixo. No final, disponibilizamos alguns SDKs com um exemplo de código completo para facilitar o processo:
+Para configurar essa validação, é necessário extrair a chave contida no _header_ e compará-la com a chave fornecida para sua aplicação em Suas integrações. Para isso, siga as etapas abaixo. 
+
+> Mais abaixo disponibilizamos alguns exemplos de códigos (SDKs) para facilitar o processo:
 
 1. Para extrair o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de 2 elementos. O valor para o prefixo  `ts` é o _timestamp_ (em milissegundos) da notificação, e `v1` é a assinatura encriptada. Seguindo o exemplo apresentado acima, `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Utilizando o _template_ e as descrições abaixo, substitua os parâmetros pelos dados recebidos na sua notificação.
@@ -351,9 +368,3 @@ O **tempo de espera** para a confirmação da recepção das notificações ser�
 Após responder à notificação e confirmar seu recebimento, é possível obter as informações completas do recurso notificado enviando um **GET** ao endpoint [/v1/orders/{id}](/developers/pt/reference/order/online-payments/get-order/get).
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.
-
-> NOTE
->
-> Nota
->
-> Voçê pode visualizar os eventos disparados sobre uma determinada integração, verificar o status e obter informações detalhadas desses eventos através do Painel de notificações. Consulte mais informações acessando a [documentação](/developers/pt/docs/your-integrations/notifications/webhooks#paineldenotificaes).  

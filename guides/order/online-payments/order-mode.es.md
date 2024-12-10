@@ -4,9 +4,9 @@ Un pedido de pagos online puede ser creado para ser procesado de dos maneras: **
 
 ## Modo automático
 
-El Modo automático, es el modo predeterminado de la aplicación. A través de este, la transacción se completa en una sola etapa y las modificaciones son limitadas. Para crear la order en modo automático, es necesario asegurarse de que el campo `processing_mode`, que es responsable de definir el formato de creación y procesamiento de la transacción, esté como `automatic` y que toda la información se envíe en esta única solicitud. 
+El Modo automático, es el modo predeterminado de la aplicación. A través de este, la transacción se completa en una sola etapa y las modificaciones son limitadas. Para crear la order en modo automático, el campo `processing_mode`, que es responsable de definir el formato de creación y procesamiento de la transacción, vá a estar como `automatic` y toda la información es enviada en una única solicitud.
 
-Las operaciones permitidas son:
+Las operaciones permitidas son:    
 
 - [**Crear y procesar order**](/developers/es/reference/order/online-payments/create/post): responsable por la creación de la order y el procesamiento de la transacción en simultáneo.
 - [**Obtener order**](/developers/es/reference/order/online-payments/get-order/get): permite obtener información sobre un pedido, incluido su status en tiempo real.

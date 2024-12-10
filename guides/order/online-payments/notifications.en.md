@@ -14,7 +14,7 @@ To do set up Webhooks notifications, follow the steps below.
 
 1. Access [Your integrations](/developers/panel/app) and select the application for which you want to enable notifications. If you haven't created an application yet, access the [Developer Dashboard documentation](/developers/en/docs/your-integrations/dashboard) and follow the instructions to do so.
 2. In the left menu, click on **Webhooks > Configure notifications** and configure the URLs that will be used to receive notifications. We recommend using different URLs for testing mode and production mode:
-    * **Test mode URL:** provide a URL that allows testing the correct operation of notifications for this application during the testing or development phase. Testing these notifications should be done exclusively with the **test credentials of productive users**.
+    * **Test mode URL:** provide a URL that allows testing the correct operation of notifications for this application during the testing or development phase.
     * **Production mode URL:** provide a URL to receive notifications with your productive integration. These notifications should be configured with **productive credentials**.
 
 ![webhooks](/images/dashboard/webhooks-es.png)
@@ -23,28 +23,44 @@ To do set up Webhooks notifications, follow the steps below.
 >
 > Note
 > 
-> If you need to identify multiple accounts, you can add the parameter `?cliente=(sellersname)` to the endpoint URL to identify the sellers.
+> If you need to identify multiple accounts, you can add the parameter `?client=(sellersname)` to the endpoint URL to identify the sellers.
 
 3. Select the **Order (Mercado Pago)** event to receive notifications sent in `JSON` format via an `HTTP POST` to the URL specified earlier. An event can be any type of update on the reported object, including the creation and update of an order, and transactions processing.
-
 4. Finally, click on **Save**. This will generate a unique **secret signature** for your application, allowing you to validate the authenticity of received notifications, ensuring they were sent by Mercado Pago. Note that the generated signature does not have an expiration date, and its periodic renewal is not mandatory but highly recommended. Simply click the **Reset** button next to the signature to renew it.
 
 ## Validate notification origin
 
-Notifications sent by Mercado Pago will be similar to the following example for a `payment` topic alert:
+Notifications sent by Mercado Pago will be similar to the following example for a `order` topic alert:
 
 ```json
 {
- "id": 12345,
- "live_mode": true,
- "type": "payment",
- "date_created": "2015-03-25T10:04:58.396-04:00",
- "user_id": 44444,
- "api_version": "v1",
- "action": "payment.created",
- "data": {
-     "id": "999999999"
- }
+  "action": "processed",
+  "type": "order",
+  "user_id": "123456",
+  "application_id": "789012",
+  "live_mode": true,
+  "api_version": "v1",
+  "date_created": "2024-01-01T00:00:00Z",
+  "data": {
+    "id": "01J35M8KHVFY0GQGDZJ94QXKMJ",
+    "type": "online",
+    "external_reference": "ext_ref_1234",
+    "status": "processed",
+    "version": 1,
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01J3E4R55CTGYCEXCKSQB6RKDE",
+          "status": "processed",
+          "payment_method": {
+            "id": "visa",
+            "type": "credit_card",
+            "installments": 1
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -58,7 +74,9 @@ This signature will be sent in the `x-signature` header, as shown in the example
 
 ```
 
-To configure this validation, you need to extract the key contained in the header and compare it with the key provided for your application in Your integrations. You can do this by following the steps below. At the end, we provide some SDKs with a **complete code example** to facilitate the process:
+To configure this validation, you need to extract the key contained in the header and compare it with the key provided for your application in Your integrations. You can do this by following the steps below. 
+
+> Below we provide some code examples (SDKs) to facilitate the process:
 
 1. To extract the timestamp (`ts`) and the signature from the `x-signature` header, split the content of the header by the "," character, which will result in a list of 2 elements. The value for the `ts` prefix is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature. Following the example presented above, `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Using the template and descriptions below, replace the parameters with the data received in your notification.
@@ -347,10 +365,3 @@ When you receive a notification on your platform, Mercado Pago expects a respons
 The **waiting time** for confirmation of receipt of notifications is **22 seconds**. If this confirmation is not sent, the system will understand that the notification was not received and will **retry sending every 15 minutes** until a response is received. After the third attempt, the interval will be extended, but the attempts will continue.
 
 After responding to the notification and confirming its receipt, you can obtain the complete information of the notified resource by making a **GET**  request to the [/v1/orders/{id}](/developers/en/reference/order/online-payments/get-order/get) endpoint.
-
-> NOTE
->
-> Nota
->
-> You can check the events triggered on a specific integration, check its status, and obtain detailed information about these events through the Notifications Dashboard. See more information in our [documentation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_panel_de_notificaciones).  
-

@@ -1,14 +1,13 @@
 # Reserve, capture, and cancel amounts
 
-By integrating Order payments in manual mode, it is possible to process them by reserving funds and subsequently capturing them. See below how to manage the transactions made.
+By integrating Order transactions, it is possible to process them by reserving funds and subsequently capturing them. See below how to manage the transactions made.
 
 ## Reserve amounts
 
 The reserve of amounts happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
 
-To carry out an authorization of a reserved amount, send a **POST** request with all the necessary attributes as described in our [API Reference](/developers/en/reference/order/online-payments/create/post), including `type_config.capture_mode` set to `manual`, to the endpoint [/v1/orders](/developers/en/reference/order/online-payments/create/post).
+To carry out an authorization of a reserved amount, send a **POST** request with all the necessary attributes as described in our [API Reference](/developers/en/reference/order/online-payments/create/post), including `capture_mode` set to `manual`, to the endpoint [/v1/orders](/developers/en/reference/order/online-payments/create/post).
 
-[[[
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -18,9 +17,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/orders \
     -d '
 {
-  "type_config": {
-    "capture_mode": "manual"
-  },
+  "capture_mode": "manual",
   "type": "online",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
@@ -47,15 +44,10 @@ curl -X POST \
     ]
   }
 }'
-
 ```
-]]]
-
 
 The response will indicate that the payment is authorized and pending capture.
 
-
-[[[
 ```json
 {
   "id": ORDER_ID,
@@ -63,9 +55,7 @@ The response will indicate that the payment is authorized and pending capture.
   "status": "action_required",
   "status_detail": "waiting_capture",
   ...
-   "type_config": {
-    "capture_mode": "manual"
-  },
+  "capture_mode": "manual",
   ...
  "transactions": {
     "payments": [
@@ -77,11 +67,43 @@ The response will indicate that the payment is authorized and pending capture.
     ]
   }
 }
-
 ```
-]]]
 
-It is also possible to receive a `rejected` or `pending` status. In these cases, you should pay attention to the notifications to know what the final status of the payment is.
+If the capture is declined, a response will be returned in the following format:
+
+```json
+{
+  "errors": [
+    {
+      "code": "failed",
+      "message": "The following transactions failed",
+      "details": [
+        "pay_01JE797F7RX989RWQJHP4VHF94: required_call_for_authorize"
+      ]
+    }
+  ],
+  "data": {
+    "id": "01JE797F7RX989RWQJHMY34WJ4",
+    "capture_mode": "manual",
+    "status": "failed",
+    "status_detail": "failed",
+    ...
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01JE797F7RX989RWQJHP4VHF94",
+          "amount": "200.00",
+          "status": "failed",
+          "status_detail": "required_call_for_authorize"
+          ...
+        }
+      ]
+    }
+  }
+}
+```
+
+It is also possible to receive a `pending` status. In these cases, you should pay attention to the notifications to know what the final status of the payment is.
 
 > WARNING
 >
@@ -108,4 +130,3 @@ To capture the total amount of a reservation, you need to send a request to the 
 The cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reserved amount needs to return to the customer's card limit, or when a buyer withdraws from the purchase. 
 
 To cancel a reserde, you must send a request to the endpoint [/v1/orders/{order_id}/cancel](/developers/en/reference/order/online-payments/cancel-order/post). Be sure to replace `{order_id}` with the ID of the order you wish to cancel.
-

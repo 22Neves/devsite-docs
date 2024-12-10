@@ -12,7 +12,6 @@ Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utiliz
 
 A primeira etapa do processo de integração de pagamentos com cartões é a captura de dados do cartão. Esta captura é feita a partir da inclusão da biblioteca `MercadoPago.js` em seu projeto, a configuração de credenciais e a inclusão do formulário de pagamento para posterior inicialização. Utilize o código abaixo para importar a biblioteca antes de adicionar o formulário de pagamento.
 
-[[[
 ```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -23,7 +22,6 @@ A primeira etapa do processo de integração de pagamentos com cartões é a cap
 npm install @mercadopago/sdk-js
 
 ```
-]]]
 
 ### Configurar credenciais
 
@@ -31,7 +29,6 @@ As credenciais são chaves únicas com as quais identificamos uma integração n
 
 Esta é a primeira etapa de uma estrutura completa de código que deverá ser seguida para a correta integração do pagamento via cartão. 
 
-[[[
 ```html
 <script>
   const mp = new MercadoPago("YOUR_PUBLIC_KEY");
@@ -44,7 +41,6 @@ await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
 
 ```
-]]]
 
 ### Adicionar formulário de pagamento
 
@@ -133,206 +129,111 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 >
 > Ao enviar o formulário, um token, chamado de **cardtoken**, é gerado, representando de forma segura os dados do cartão. É possível acessá-lo através da função `cardForm.getCardFormData()`, como mostrado abaixo no callback `onSubmit`. Além disso, este token também é armazenado em um input oculto dentro do formulário no qual poderá ser encontrado com a nomenclatura `MPHiddenInputToken`. Leve em consideração que o cardtoken pode ser usado **somente uma vez** e expira dentro de **7 dias**.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
-[[[
 ```javascript
-
-    const cardForm = mp.cardForm({
-      amount: "100.5",
-      iframe: true,
-      form: {
+const cardForm = mp.cardForm({
+    amount: "100.5",
+    iframe: true,
+    form: {
         id: "form-checkout",
         cardNumber: {
-          id: "form-checkout__cardNumber",
-          placeholder: "Número do cartão",
+            id: "form-checkout__cardNumber",
+            placeholder: "Número do cartão",
         },
         expirationDate: {
-          id: "form-checkout__expirationDate",
-          placeholder: "MM/YY",
+            id: "form-checkout__expirationDate",
+            placeholder: "MM/AA",
         },
         securityCode: {
-          id: "form-checkout__securityCode",
-          placeholder: "Código de segurança",
+            id: "form-checkout__securityCode",
+            placeholder: "Código de segurança",
         },
         cardholderName: {
-          id: "form-checkout__cardholderName",
-          placeholder: "Titular do cartão",
+            id: "form-checkout__cardholderName",
+            placeholder: "Titular do cartão",
         },
         issuer: {
-          id: "form-checkout__issuer",
-          placeholder: "Banco emissor",
+            id: "form-checkout__issuer",
+            placeholder: "Banco emissor",
         },
         installments: {
-          id: "form-checkout__installments",
-          placeholder: "Parcelas",
-        },        
+            id: "form-checkout__installments",
+            placeholder: "Parcelas",
+        },
         identificationType: {
-          id: "form-checkout__identificationType",
-          placeholder: "Tipo de documento",
+            id: "form-checkout__identificationType",
+            placeholder: "Tipo de documento",
         },
         identificationNumber: {
-          id: "form-checkout__identificationNumber",
-          placeholder: "Número do documento",
+            id: "form-checkout__identificationNumber",
+            placeholder: "Número do documento",
         },
         cardholderEmail: {
-          id: "form-checkout__cardholderEmail",
-          placeholder: "E-mail",
+            id: "form-checkout__cardholderEmail",
+            placeholder: "E-mail",
         },
-      },
-      callbacks: {
+    },
+    callbacks: {
         onFormMounted: error => {
-          if (error) return console.warn("Form Mounted handling error: ", error);
-          console.log("Form mounted");
+            if (error) return console.warn("Form Mounted handling error: ", error);
+            console.log("Form mounted");
         },
         onSubmit: event => {
-          event.preventDefault();
+            event.preventDefault();
 
-          const {
-            paymentMethodId: payment_method_id,
-            issuerId: issuer_id,
-            cardholderEmail: email,
-            amount,
-            token,
-            installments,
-            identificationNumber,
-            identificationType,
-          } = cardForm.getCardFormData();
+            const {
+                paymentMethodId: payment_method_id,
+                issuerId: issuer_id,
+                cardholderEmail: email,
+                amount,
+                token,
+                installments,
+                identificationNumber,
+                identificationType,
+            } = cardForm.getCardFormData();
 
-          fetch("/process_payment", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              token,
-              issuer_id,
-              payment_method_id,
-              transaction_amount: Number(amount),
-              installments: Number(installments),
-              description: "Descrição do produto",
-              payer: {
-                email,
-                identification: {
-                  type: identificationType,
-                  number: identificationNumber,
+            fetch("/process_order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
                 },
-              },
-            }),
-          });
+                body: JSON.stringify({
+                    total_amount: amount, // deve ser uma string com o formato ..0.00
+                    description: description,
+                    payer: {
+                        email,
+                        identification: {
+                            type: identificationType,
+                            number: identificationNumber
+                        }
+                    },
+                    transactions: [
+                        {
+                            amount, // deve ser uma string com o formato ..0.00
+                            payment_method: {
+                                token,
+                                id: payment_method_id,
+                                type: type, // deve ser “credit_card” ou “debit_card”,
+                                installments: Number(installments)
+                            }
+                        }
+                    ]
+                }),
+            });
         },
         onFetching: (resource) => {
-          console.log("Fetching resource: ", resource);
+            console.log("Fetching resource: ", resource);
 
-          // Animate progress bar
-          const progressBar = document.querySelector(".progress-bar");
-          progressBar.removeAttribute("value");
+            // Animate progress bar
+            const progressBar = document.querySelector(".progress-bar");
+            progressBar.removeAttribute("value");
 
-          return () => {
-            progressBar.setAttribute("value", "0");
-          };
+            return () => {
+                progressBar.setAttribute("value", "0");
+            };
         }
-      },
-    });
+    },
+});
 ```
-]]]
-
-------------
-----[mlm]----
-[[[
-```javascript
-
-    const cardForm = mp.cardForm({
-      amount: "100.5",
-      iframe: true,
-      form: {
-        id: "form-checkout",
-        cardNumber: {
-          id: "form-checkout__cardNumber",
-          placeholder: "Número do cartão",
-        },
-        expirationDate: {
-          id: "form-checkout__expirationDate",
-          placeholder: "MM/YY",
-        },
-        securityCode: {
-          id: "form-checkout__securityCode",
-          placeholder: "Código de segurança",
-        },
-        cardholderName: {
-          id: "form-checkout__cardholderName",
-          placeholder: "Titular do cartão",
-        },
-        issuer: {
-          id: "form-checkout__issuer",
-          placeholder: "Banco emissor",
-        },
-        installments: {
-          id: "form-checkout__installments",
-          placeholder: "Parcelas",
-        },        
-        cardholderEmail: {
-          id: "form-checkout__cardholderEmail",
-          placeholder: "E-mail",
-        },
-      },
-      callbacks: {
-        onFormMounted: error => {
-          if (error) return console.warn("Form Mounted handling error: ", error);
-          console.log("Form mounted");
-        },
-        onSubmit: event => {
-          event.preventDefault();
-
-          const {
-            paymentMethodId: payment_method_id,
-            issuerId: issuer_id,
-            cardholderEmail: email,
-            amount,
-            token,
-            installments,
-            identificationNumber,
-            identificationType,
-          } = cardForm.getCardFormData();
-
-          fetch("/process_payment", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              token,
-              issuer_id,
-              payment_method_id,
-              transaction_amount: Number(amount),
-              installments: Number(installments),
-              description: "Descrição do produto",
-              payer: {
-                email,
-                identification: {
-                  type: identificationType,
-                  number: identificationNumber,
-                },
-              },
-            }),
-          });
-        },
-        onFetching: (resource) => {
-          console.log("Fetching resource: ", resource);
-
-          // Animate progress bar
-          const progressBar = document.querySelector(".progress-bar");
-          progressBar.removeAttribute("value");
-
-          return () => {
-            progressBar.setAttribute("value", "0");
-          };
-        }
-      },
-    });
-```
-]]]
-
-------------
 
 ## Criar pagamento
 
@@ -348,7 +249,6 @@ Com todas as informações coletadas no backend, envie um **POST** com os atribu
 >
 > Você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
-[[[
 ```curl
 curl -X POST \
     'https://api.mercadopago.com/v1/orders'\
@@ -378,7 +278,6 @@ curl -X POST \
     }
 }'
 ```
-]]]
 
 A resposta para uma requisição de sucesso será:
 
@@ -389,8 +288,10 @@ A resposta para uma requisição de sucesso será:
     "processing_mode": "automatic",
     "external_reference": "ext_ref_1234",
     "total_amount": "200.00",
-    "site_id": "MLB",
+    "country_code": "BRA",
     "status": "processed",
+    "status_detail": "accredited",
+    "capture_mode": "automatic",
     "created_date": "2024-10-21T11:26:19.17922368Z",
     "last_updated_date": "2024-10-21T11:26:20.923603158Z",
     "integration_data": {
@@ -404,8 +305,8 @@ A resposta para uma requisição de sucesso será:
             {
                 "id": "pay_01JAQD7X1BXGY2Q59VYP036JDN",
                 "amount": "200.00",
-                "status": "processed",
                 "reference_id": "0001hyhhbz",
+                "status": "processed",
                 "status_detail": "accredited",
                 "payment_method": {
                     "id": "master",
@@ -415,14 +316,11 @@ A resposta para uma requisição de sucesso será:
                 }
             }
         ]
-    },
-    "type_config": {
-        "capture_mode": "automatic"
     }
 }
 ```
 
-A resposta para casos onde a transação falhou será:
+A resposta para casos em que a transação falhou será:
 
 ```json
 {
@@ -480,4 +378,4 @@ A resposta para casos onde a transação falhou será:
 >
 > Consulte a lista completa dos estados do pagamento e da ordem criada na seção [Status](/developers/pt/docs/order/status-errors/payment-status). <br>
 > <br>
-> Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/order/online-payments/notifications) para mais detalhes.
+> Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de order e suas atualizações de status. Veja [Notificações](/developers/pt/docs/order/online-payments/notifications) para mais detalhes.

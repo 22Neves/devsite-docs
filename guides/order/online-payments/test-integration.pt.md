@@ -18,7 +18,7 @@ Em seguida, vá para **Detalhes da aplicação > Credenciais** dentro de [Suas i
 
 Por fim, utilize essas credenciais para realizar as requisições necessárias para continuar com a compra de teste.
 
-## 2. Fazer uma compra de teste
+## 2. Realizar uma compra de teste
 
 Para realizar uma compra de teste, você precisará simular um usuário comprador na loja.
 
@@ -31,17 +31,17 @@ Para realizar uma compra de teste, você precisará simular um usuário comprado
 
 [TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
-## 3. Verifique a compra de teste
+## 3. Verificar a compra de teste
 
 Para verificar se a compra de teste foi bem-sucedida, envie um **GET** para o endpoint [/v1/orders/{id}](/developers/pt/reference/order/online-payments/get-order/get), substituindo `id ` pela identificação da order, recebida na resposta à sua criação.
 
-Pronto! Uma vez concluídos esses passos, a integração estará completa e você poderá usar suas credenciais de produção no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------. Para mais informações sobre a saída para produção, consulte a seção [Requisitos para entrar em produção](/developers/pt/docs/order/online-payments/go-to-production-requirements).
+Pronto! Uma vez concluídos esses passos, a integração estará completa e você poderá usar suas credenciais de produção no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------.
 
 ## Requisitos para entrar em produção
 
-Ao finalizar o processo de integração, o ambiente estará pronto para ser colocado em produção. Nesta documentação, detalharemos os requisitos necessário para realizar essa mudança de maneira eficaz e segura, garantindo que a integração esteja preparada para o recebimento de transações reais.
+Ao finalizar o processo de integração, o ambiente estará pronto para ser colocado em produção. Veja abaixo os requisitos necessário para realizar essa mudança de maneira eficaz e segura, garantindo que a integração esteja preparada para o recebimento de transações reais.
 
-### Ativar credenciais de produção
+### 1. Ativar credenciais de produção
 
 Para começar a receber pagamentos, você deve **ativar as credenciais de produção de seu usuário real** e substituir as credenciais de seu usuário de teste. 
 
@@ -51,7 +51,7 @@ Para isso, acesse o [Painel do Desenvolvedor](https://www.mercadopago[FAKER][URL
 
 Para obter mais informações, consulte nossa documentação sobre [Credenciais](/developers/pt/guides/additional-content/your-integrations/credentials).
 
-### Certificado SSL
+### 2. Implementar certificado SSL
 
 Para garantir uma integração segura e que proteja os dados de cada transação, é necessário implementar um certificado SSL. Além disso, é importante que a forma de pagamento seja disponibilizada em uma página web que utilize o protocolo HTTPS. Este protocolo assegura a criptografia dos dados transmitidos entre o cliente e o servidor.
 
@@ -59,12 +59,6 @@ Adotar estas medidas não apenas reforça a segurança dos dados dos usuários, 
 
 Embora a exigência do certificado SSL não se aplique durante o período de testes, sua implementação é obrigatória para entrar em produção. Para mais informações, [confira os termos e condições do Mercado Pago](/developers/pt/guides/resources/legal/terms-and-conditions).
 
-### Considerações adicionais
+### 3.Configurar notificações
 
-#### Aprovação de transações
-
-Conheça quais medidas você pode adotar para melhorar a [aprovação de pagamentos](/developers/pt/guides/additional-content/how-tos/payment-rejections), como o envio de informações do item e do pagador, dados de envio e informações da indústria, entre outros.
-
-#### Notificações
-
-Mantenha o status dos pedidos atualizados em seus sistemas, usando e processando as [notificações Webhooks](/developers/es/docs/order/online-payments/notifications).
+Mantenha o status dos pedidos atualizados em seus sistemas, usando e processando as [notificações Webhooks](/developers/pt/docs/order/online-payments/notifications).

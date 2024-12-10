@@ -22,13 +22,13 @@ future_product_avaible:
  - card_linkProof:
  - card_linkProofDescription:
  - card_linkAvailable: true
- - card_avaible: true
+ - card_avaible: false
  - card_icon: User
  - card_title: In-store payments
- - card_description: XXX
- - card_button: /developers/en/docs/order/in-store-payments/introduction
- - card_buttonDescription: Learn more
- - card_pillText: AVAILABLE
+ - card_description:Resources to sell in a physical store or wherever you want, using Mercado Pago's Point for card and QR code payments.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: SOON
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:

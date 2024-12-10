@@ -6,14 +6,13 @@ Now, you can start implementing these solutions using Order API, our unified API
 
 | Functionality | Payments API | Order API |
 | --- | --- |--- |
-| Mode | Automatic | Automatic and manual |
-| Operations | Payments | Online payments and [In-store payments](/developers/en/docs/order/in-store-payments/introduction) (QR and Point)|
-| Multiple transactions | Not supported | Supported |
-| Sending metadata | Allowed | Not allowed |
+| Mode | Automatic | Automatic and manual. |
+| Operations | Payments | Online payments and In-store payments (Mercado Pago's Point).|
+| Multiple transactions | ❌| ✅ |
+| Sending metadata | ✅ | ❌ |
 | Sending Notification URL | Allows in the payload. | Does not allow in the payload and must be configured in [Your integrations > Application details](/developers/en/docs/order/additional-content/your-integrations/application-details). |
 | Validations with complete error responses | Validates one error at a time. | Returns a list of all errors. |
 | Return of PII data | Returns in some scenarios (e.g., approved). | Does not return in any scenario. |
-
 
 Learn what options are currently available to integrate online payments using the Order API.
 

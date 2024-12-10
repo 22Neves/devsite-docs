@@ -14,7 +14,7 @@ Para configurar notificaciones Webhooks de Order, sigue los pasos a continuació
 
 1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación para la que deseas activar las notificaciones. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
 2. En el menú de la izquierda, selecciona **Webhooks > Configurar notificaciones**, y configura las URLs que serán utilizadas para recibirlas. Recomendamos utilizar dos URLs diferentes para el modo de pruebas y el modo producción:
-    * **URL modo pruebas:** proporciona una URL que permita probar el correcto funcionamiento de las notificaciones de la aplicación durante la etapa de desarrollo. La prueba de estas notificaciones deberá ser realizada exclusivamente con **credenciales de prueba del usuario productivo** con el que creaste la aplicación.
+    * **URL modo pruebas:** proporciona una URL que permita probar el correcto funcionamiento de las notificaciones de la aplicación durante la etapa de desarrollo.
     * **URL modo producción:** proporciona una URL para recibir notificaciones con tu integración productiva. Estas notificaciones deberán ser configuradas con tus **credenciales productivas**.
 
 ![webhooks](/images/dashboard/webhooks-es.png)
@@ -23,28 +23,44 @@ Para configurar notificaciones Webhooks de Order, sigue los pasos a continuació
 >
 > Nota
 > 
-> En caso de ser necesario identificar múltiples cuentas, agrega el parámetro `?cliente=(nombredelvendedor)` al final de la URL indicada para identificar a los vendedores.
+> En caso de ser necesario identificar múltiples cuentas, agrega el parámetro `?client=(nombredelvendedor)` al final de la URL indicada para identificar a los vendedores.
 
 3. Selecciona el evento **Order (Mercado Pago)** para recibir notificaciones, que serán enviadas en formato `JSON` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento puede ser cualquier actualización sobre el tópico reportado, incluyendo creación y actualización de orders, y procesamiento de transacciones.
-
 4. Por último, haz clic en **Guardar**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Ten en cuenta que esta clave generada no tiene plazo de caducidad y su renovación periódica no es obligatoria, aunque sí recomendada. Para hacerlo, basta con cliquear en el botón **Restablecer**. 
 
 ## Validar origen de una notificación
 
-Las notificaciones enviadas por Mercado Pago serán semejantes al siguiente ejemplo para un alerta del tópico `payment`:
+Las notificaciones enviadas por Mercado Pago serán semejantes al siguiente ejemplo para un alerta del tópico `order`:
 
 ```json
 {
- "id": 12345,
- "live_mode": true,
- "type": "payment",
- "date_created": "2015-03-25T10:04:58.396-04:00",
- "user_id": 44444,
- "api_version": "v1",
- "action": "payment.created",
- "data": {
-     "id": "999999999"
- }
+  "action": "processed",
+  "type": "order",
+  "user_id": "123456",
+  "application_id": "789012",
+  "live_mode": true,
+  "api_version": "v1",
+  "date_created": "2024-01-01T00:00:00Z",
+  "data": {
+    "id": "01J35M8KHVFY0GQGDZJ94QXKMJ",
+    "type": "online",
+    "external_reference": "ext_ref_1234",
+    "status": "processed",
+    "version": 1,
+    "transactions": {
+      "payments": [
+        {
+          "id": "pay_01J3E4R55CTGYCEXCKSQB6RKDE",
+          "status": "processed",
+          "payment_method": {
+            "id": "visa",
+            "type": "credit_card",
+            "installments": 1
+          }
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -58,7 +74,9 @@ Esta clave será enviada en el _header_ `x-signature`, que será similar al ejem
 
 ```
 
-Para confirmar la validación, es necesario extraer la clave contenida en el *header* y compararla con la clave otorgada para tu aplicación en Tus integraciones. Esto podrá ser hecho siguiendo el paso a paso a continuación. Además, al final, disponibilizamos nuestros SDKs con ejemplos de códigos completos para facilitar el proceso.
+Para confirmar la validación, es necesario extraer la clave contenida en el *header* y compararla con la clave otorgada para tu aplicación en Tus integraciones. Esto podrá ser hecho siguiendo el paso a paso a continuación. 
+
+> Más abajo proporcionamos algunos ejemplos de códigos (SDKs) para facilitar el proceso:
 
 1. Para extraer el _timestamp_ (`ts`) y la clave del _header_ `x-signature`, divide el contenido del _header_ por el carácter `,`, lo que resultará en una lista de elementos. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y `v1` es la clave encriptada. Siguiendo el ejemplo presentado anteriormente, `ts=1704908010` y `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
@@ -349,9 +367,3 @@ El **tiempo de espera** para esa confirmación será de **22 segundos**. Si no s
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el recurso notificado enviando un **GET** al endpoint [/v1/orders/{id}](/developers/es/reference/order/online-payments/get-order/get).
 
 Con esta información podrás realizar las actualizaciones necesarias en tu plataforma, como actualizar un pago aprobado.
-
-> NOTE
->
-> Nota
->
-> Puedes visualizar todos los eventos disparados sobre una determinada integración, verificar el estado de las notificaciones, y obtener información detallada sobre esos eventos a través del Panel de notificaciones. Consulta más información accediendo a la [documentación](/developers/es/docs/your-integrations/notifications/webhooks#bookmark_panel_de_notificaciones).  

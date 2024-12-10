@@ -6,10 +6,10 @@ Agora é possível começar a implementar essas soluções usando Order API, nos
 
 | Funcionalidade  |  API de Pagamentos  | API de Order |
 | --- | --- |--- |
-| Modo  | Automático  | Automático e manual |
-| Operações  | Pagamentos  | Pagamentos online e [Pagamentos presenciais](/developers/pt/docs/order/in-store-payments/introduction) (QR e Point).|
-| Múltiplas transações  | Não possui | Possui |
-| Envio de metadados  | Permite  | Não permite |
+| Modo  | Automático  | Automático e manual. |
+| Operações  | Pagamentos  | Pagamentos online e Pagamentos presenciais (Point do Mercado Pago).|
+| Múltiplas transações  | ❌ | ✅ |
+| Envio de metadados  | ✅  | ❌ |
 | Envio de Notification Url  | Permite no _payload_.  | Não permite no _payload_ e deve ser configurado em [Suas integrações > Detalhes da aplicação](/developers/pt/docs/order/additional-content/your-integrations/application-details). |
 | Validações com respostas de erros completas  | Valida um erro por vez.  | Retorna uma lista com todos os erros. |
 | Retorno de dados PII | Retorna em alguns cenários (ex: aprovado.).  | Não retorna em nenhum cenário. |
@@ -35,6 +35,7 @@ future_product_avaible:
 
 ------------
 ----[mla, mlm]----
+
 ---
 future_product_avaible:
  - card_avaible: true
