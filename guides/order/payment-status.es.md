@@ -1,6 +1,6 @@
-# Status del pago
+# Status de la transacción
 
-Consulta la lista de `status` y `status_detail` que puede tomar un pago.
+Consulta la lista de `status` y `status_detail` que puede tomar una transacción.
 
 | `status` | `status_detail` | Descripción |
 |:---:|:---:|:---:|

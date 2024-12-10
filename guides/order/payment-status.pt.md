@@ -1,6 +1,6 @@
-# Status do pagamento
+# Status da transação
 
-Veja a lista de possíveis `status` e `status_detail` que um pagamento pode assumir. 
+Veja a lista de possíveis `status` e `status_detail` que uma transação pode assumir. 
 
 | `status` | `status_detail` | Descrição |
 |:---:|:---:|:---:|

@@ -1,6 +1,6 @@
-# Payment status
+# Transaction status
 
-Check the list of the `status` and `status_detail` that a payment can get.
+Check the list of the `status` and `status_detail` that a transaction can get.
 
 | `status` | `status_detail` | Description |
 |:---:|:---:|:---:|
