@@ -20,7 +20,7 @@ This is how the attended model works:
 
 ## Create an order
 
-For more information on how to create orders access our [API Reference](/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+For more information on how to create orders access our [API Reference](/developers/en/reference/instore_orders/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
 > If you must pay taxes for the products in your order, visit the [Considerations IVA Colombia section](/developers/en/guides/additional-content/localization/iva-colombia).
@@ -35,7 +35,7 @@ The order is available for **scanning and payment** after its creation.
 
 ## Eliminate an order
 
-For more information on how to delete the order associated with a QR before its expiration, or closing, see our [API Reference](/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
+For more information on how to delete the order associated with a QR before its expiration, or closing, see our [API Reference](/developers/en/reference/instore_orders/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
 
 > The response will be an `HTTP 204 No Content`.
 

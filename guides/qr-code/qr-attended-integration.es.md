@@ -20,7 +20,7 @@ En el diagrama a continuación puedes ver cómo funciona el modelo atendido:
 
 ## Crear una orden
 
-Para obtener información sobre cómo crear órdenes accede a nuestra [Referencia de API](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+Para obtener información sobre cómo crear órdenes accede a nuestra [Referencia de API](/developers/es/reference/instore_orders/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
 > Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](/developers/es/guides/additional-content/localization/iva-colombia).
@@ -35,7 +35,7 @@ Una vez creada la orden, ya se encuentra disponible para ser **escaneada y pagad
 
 ## Eliminar una orden
 
-Para obtener información sobre cómo eliminar la orden asociada a un QR antes de que expire por vigencia, o se cierre, accede a nuestra [Referencia de API](/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
+Para obtener información sobre cómo eliminar la orden asociada a un QR antes de que expire por vigencia, o se cierre, accede a nuestra [Referencia de API](/developers/es/reference/instore_orders/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
 
 > La respuesta será un `HTTP 204 No Content`.
 
