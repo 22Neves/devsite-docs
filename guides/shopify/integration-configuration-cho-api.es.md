@@ -9,6 +9,8 @@ Para integrar Mercado Pago Cartões, instala la aplicación a través del [panel
 >
 > Atención
 >
+> La integración con Mercado Pago Cartões no es compatible con la función **multi currency** de la plataforma Shopify.
+> <br><br>
 > Esta nueva aplicación es exclusiva para pagos con tarjetas. Para configurar pagos con Pix, consulta la [documentación correspondiente](/developers/es/docs/shopify/integration-configuration/pix). Para pagos con boleto bancário, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). 
 
 ------------
@@ -18,6 +20,12 @@ Para integrar Mercado Pago Cartões, instala la aplicación a través del [panel
 **Mercado Pago Tarjetas** ([Checkout API](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
 
 Para integrar el Mercado Pago Tarjetas, instala la aplicación a través del [panel de Shopify](/developers/es/docs/shopify/integration-configuration/checkout-cards#instalarvapaneldeshopify) o a través del [Marketplace](/developers/es/docs/shopify/integration-configuration/checkout-cards#instalarvamarketplace). Después de la instalación, podrás [configurar meses sin intereses](/developers/es/docs/shopify/integration-configuration/checkout-cards#bookmark_configura_meses_sin).
+
+> WARNING
+>
+> Atención
+>
+> La integración con Mercado Pago Tarjetas no es compatible con la función **multi currency** de la plataforma Shopify.
 
 ------------
 
