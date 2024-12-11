@@ -20,7 +20,7 @@ Assim é como o modelo atendido funciona:
 
 ## Criar um pedido
 
-Para obter mais informações sobre como criar pedidos, consulte nossa [Referência de API](/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+Para obter mais informações sobre como criar pedidos, consulte nossa [Referência de API](/developers/pt/reference/instore_orders/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
 > Se você tiver que pagar IVA pelos produtos em seu pedido, consulte a [seção Considerações IVA Colômbia](/developers/pt/guides/additional-content/localization/iva-colombia).
@@ -35,7 +35,7 @@ Assim que o pedido for criado, ele estará disponível para ser **escaneado e pa
 
 ## Eliminar um pedido
 
-Para remover o pedido associado a um QR antes da sua expiração, o encerramento, consulte nossa [Referência de API](/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
+Para remover o pedido associado a um QR antes da sua expiração, o encerramento, consulte nossa [Referência de API](/developers/pt/reference/instore_orders/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete).
 
 A resposta será um `HTTP 204 No Content`.
 
