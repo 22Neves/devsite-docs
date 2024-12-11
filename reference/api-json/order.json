@@ -572,7 +572,15 @@
                                                         "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
                                                         "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
                                                     }
-                                                }
+                                                },
+                                                {
+                                                    "title": "invalid_email_for_sandbox",
+                                                    "description": {
+                                                        "en": "Email format is invalid for sandbox environment, must contains \"@testuser.com\".",
+                                                        "es": "El formato del email es inválido para el ambiente de sandbox, debe contener \"@testuser.com\".",
+                                                        "pt": "O formato do email é inválido para o ambiente de sandbox, deve conter \"@testuser.com\"."
+                                                    }
+                                                }                                                 
                                             ]
                                         }
                                     }
@@ -1118,9 +1126,9 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled. In case of success, the request will return a response with status 200",
-                    "pt": "Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es": "Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en": "Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" or \"created\" can be canceled. In case of success, the request will return a response with status 200",
+                    "pt": "Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" ou \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es": "Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\" o \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
@@ -1207,7 +1215,7 @@
                                         },
                                         "status_detail": {
                                             "type": "string",
-                                            "example": "cancelled",
+                                            "example": "canceled_transaction",
                                             "description": {
                                                 "en": "Details about payment status.",
                                                 "pt": "Detalhes sobre o status do pagamento.",
@@ -1215,7 +1223,7 @@
                                             },
                                             "enum": [
                                                 {
-                                                    "title": "cancelled",
+                                                    "title": "canceled_transaction",
                                                     "description": {
                                                         "en": "The order has been cancelled successfully.",
                                                         "es": "La order fue cancelada exitosamente.",
@@ -2117,6 +2125,14 @@
                                                         "en": "Incorrect information was sent. Check the message returned in the error details to find out what the problem was and try again.",
                                                         "es": "Se envió información incorrecta. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
                                                         "pt": "Informações incorretas foram enviadas. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                                                    }
+                                                },
+                                                {
+                                                    "title": "exceeded_number_of_transactions",
+                                                    "description": {
+                                                        "en": "An error occurred in the request. The order accepts a maximum of two transactions. Remove the excess transactions.",
+                                                        "es": "Ocurrió un error en la solicitud. La order acepta un máximo de dos transacciones. Elimine las transacciones excedentes.",
+                                                        "pt": "Ocorreu um erro na requisição. A order aceita, no máximo, duas transações. Remova as transações excedentes."
                                                     }
                                                 }
                                             ]

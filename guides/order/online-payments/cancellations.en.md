@@ -22,6 +22,6 @@ Before canceling a purchase, the following factors must be considered:
 
 - **Expiration date**: an order expires after 30 days without confirmation and the cancellation is automatic. The final status of this transaction will appear as `cancelled` or `expired`. This information will be displayed in the response of the [Get order](/developers/en/reference/order/online-payments/get-order/get) API call, in the fields `status` and `status_detail`.
 
-- **Payment status**: cancellations can only be made if the payment status is`action_required`. Theis status is displayed in the response of the Cancellation API call in the fields `status` and `status_detail`.
+- **Payment status**: cancellations can only be made if the payment status is `action_required` or `created`. Theis status is displayed in the response of the Cancellation API call in the fields `status` and `status_detail`.
 
 If these requisites are met, and you wish to cancel an order, access our [API Reference](/developers/en/reference/order/online-payments/cancel-order/post).
