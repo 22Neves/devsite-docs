@@ -14,6 +14,20 @@
         "parameters": [
           {
             "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "Bearer TEST-123456-78910-abcdefg-12345678910"
+            },
+            "description": {
+              "en": "Access Token obtained through the developer panel. Must be sent in all requests.",
+              "pt": "Access Token obtido através do painel de desenvolvedores. Obrigatório ser enviado em todas requisições.",
+              "es": "Access Token obtenido a través del panel de desarrollador. Obligatorio ser enviado en todas las solicitudes."
+            }
+          },
+          {
+            "in": "header",
             "name": "X-Idempotency-Key",
             "required": true,
             "schema": {
@@ -71,16 +85,6 @@
                     },
                     "example": "MP0001"
                   },
-                  "point_of_interaction": {
-                    "required": true,
-                    "type": "object",
-                    "description": {
-                      "en": "Fix value. It must always be {\"type\":\"PSP_TRANSFER\"}",
-                      "pt": "Valor fixo. Deve sempre ser preenchido como {\"type\":\"PSP_TRANSFER\"}",
-                      "es": "Valor fijo. Siempre debe ser {\"type\":\"PSP_TRANSFER\"}"
-                    },
-                    "example": "{\"type\":\"PSP_TRANSFER\"}"
-                  },
                   "seller_configuration": {
                     "required": false,
                     "type": "object",
@@ -101,7 +105,7 @@
                               "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres.",
                               "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. "
                             },
-                            "example": "http://example.cl/notification"
+                            "example": "http://example.mx/notification"
                           }
                         }
                       }
@@ -171,16 +175,6 @@
                                 },
                                 "example": "99999004"
                               },
-                              "type": {
-                                "type": "string",
-                                "required": true,
-                                "description": {
-                                  "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
-                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias) , \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
-                                },
-                                "example": "checking_account"
-                              },
                               "number": {
                                 "type": "string",
                                 "required": true,
@@ -190,6 +184,36 @@
                                   "es": "Número único que representa cada cuenta bancaria. En este caso, debes enviar el número único de la cuenta de destino."
                                 },
                                 "example": "10266732"
+                              },
+                              "holder": {
+                                "type": "string",
+                                "required": true,
+                                "description": {
+                                  "en": "First and last name of the destination account holder",
+                                  "pt": "Nome e sobrenome do titular da conta de destino",
+                                  "es": "Nombre y apellido del titular de la cuenta objetivo."
+                                },
+                                "example": "Victor Hugo"
+                              },
+                              "type": {
+                                "type": "string",
+                                "required": true,
+                                "description": {
+                                  "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias), \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
+                                },
+                                "example": "checking_account"
+                              },
+                              "description": {
+                                "type": "string",
+                                "required": false,
+                                "description": {
+                                  "en": "Short text describing the operation.",
+                                  "pt": "Texto curto de descrição da operação.",
+                                  "es": "Texto breve que describe la operación."
+                                },
+                                "example": "Victor Hugo"
                               }
                             }
                           }
@@ -293,7 +317,7 @@
                                 "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. ",
                                 "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado."
                               },
-                              "example": "http://example.cl/notification"
+                              "example": "http://example.mx/notification"
                             }
                           }
                         }
@@ -301,7 +325,7 @@
                     },
                     "status": {
                       "type": "string",
-                      "example": "approved",
+                      "example": "processed",
                       "description": {
                         "es": "Estado actual de la transacción",
                         "pt": "Status atual da transação",
@@ -543,34 +567,6 @@
                                       }
                                     ],
                                     "example": "approved"
-                                  },
-                                  "bank_id": {
-                                    "type": "number",
-                                    "description": {
-                                      "en": "Identification number of the bank to which the destination account belongs.",
-                                      "es": "Número identificador del banco al que pertenece la cuenta de destino.",
-                                      "pt": "Número identificador do banco ao qual pertence a conta de destino."
-                                    },
-                                    "example": "0000014"
-                                  },
-                                  "type": {
-                                    "type": "string",
-                                    "required": true,
-                                    "description": {
-                                      "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
-                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias) , \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
-                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
-                                    },
-                                    "example": "checking_account"
-                                  },
-                                  "number":{
-                                    "type": "number",
-                                    "description": {
-                                      "en": "Unique number that represents the destination bank account.",
-                                      "es": "Número único que representa la cuenta de destino.",
-                                      "pt": "Número único que representa a conta de destino."
-                                    },
-                                    "example": "123456"
                                   }
                                 }
                               }
@@ -855,5 +851,4 @@
       }
     }
   }
-} 
-
+}
