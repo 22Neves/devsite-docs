@@ -34,7 +34,7 @@ Si no estás utilizando una plataforma de comercio electrónico, marca **No** y 
 6. Marca la casilla de selección **No soy un robot**.
 7. Haz clic en **Crear aplicación**.
 
-![Crear aplicación](/images/dashboard/dashboard-es.gif)
+![Crear aplicación](/images/dashboard/dashboard-es-animated.gif)
 
 Cada vez que creas una aplicación, se genera automáticamente una nueva tarjeta con el nombre, el número y el estado de calidad de la aplicación en el [Panel del desarrollador](/developers/panel/app).
 
