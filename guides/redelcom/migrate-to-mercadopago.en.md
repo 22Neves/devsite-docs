@@ -1,6 +1,6 @@
 # How to migrate to the Mercado Pago ecosystem
 
-If you are already using the integration with Redelcom to process payments, it is important to be aware that this solution will soon be **discontinued**. Therefore, **migrating to Mercado Pago will be mandatory** for you to continue processing payments securely and efficiently.
+In 2025, **Redelcom will operate as Mercado Pago**, so you will need to migrate your integration to our ecosystem to continue operating in the future.
 
 **Mercado Pago** offers equivalent solutions for each of the Redelcom integrations, incorporating the highest standards of quality and security.
 

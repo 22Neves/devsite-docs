@@ -1,6 +1,6 @@
 # Cómo migrar al ecosistema Mercado Pago
 
-Si ya utilizas la integración con Redelcom para procesar pagos, es importante que estés al tanto de que, próximamente, esta solución será **descontinuada**. Por lo tanto, **la migración a Mercado Pago será obligatoria** para que sigas procesando pagos de manera segura y eficiente. 
+En 2025, **Redelcom pasará a operar como Mercado Pago**, por eso deberás realizar la migración de tu integración a nuestro ecosistema para seguir operando en un futuro.
 
 **Mercado Pago** ofrece soluciones equivalentes a cada una de las integraciones Redelcom, incorporando los más altos estándares de calidad y seguridad. 
 
