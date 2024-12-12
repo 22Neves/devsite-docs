@@ -37,7 +37,7 @@ bullet_section_with_media:
 
 ## Processar pagamentos online
 
-Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos integração facilitada e acesso gratuito à nossa API. As taxas, baseadas no período de recebimento e/ou na quantidade de parcelas sem juros oferecidas ao comprador, são automaticamente aplicadas às vendas. Para mais detalhes, consulte os links abaixo.
+Soluções para quem vende pelo site, WhatsApp ou redes sociais. Oferecemos integração facilitada e acesso gratuito à nossa API.
 
 ### Soluções sem integração
 | Solução | Descrição | Conhecimentos necessários |
@@ -114,6 +114,8 @@ Com nossas **SDKs de frontend**, você pode fazer chamadas para o token do cart�
 <br>
 
 ### Conheça os custos e taxas do Mercado Pago
+
+As taxas, baseadas no período de recebimento e/ou na quantidade de parcelas sem juros oferecidas ao comprador, são automaticamente aplicadas às vendas. Para mais detalhes, consulte os links abaixo.
 
 ----[mlb]----
 #### Recebimento de pagamentos
