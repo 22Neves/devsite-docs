@@ -57,7 +57,7 @@ bluetoothPrinter.print(dataToPrint, callback);
 |**ERROR_DATA_TO_PRINT_NULL**| Indica que los datos para imprimir son nulos.|
 |**ERROR_PRINTER_NOT_FOUND**| Indica que no se encontraron impresoras emparejadas.|
 
-## Imprimir usando una impressora externa con dirección específica
+## Imprimir usando una impresora externa con dirección específica
 
 Para imprimir con una impresora externa identificada por tu dirección, usa la función print de la clase `BluetoothPrinter`. El acceso se debe hacer a través del objeto `MPManager`, como se ejemplifica a continuación.
 

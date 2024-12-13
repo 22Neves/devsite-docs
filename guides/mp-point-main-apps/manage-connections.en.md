@@ -4,7 +4,7 @@ On our SDK, you can search for printers and other bluetooth devices, in addition
 
 ## Manage paired devices
 
-To get the list of paired devices with [Point Smart](/developers/en/docs/mp-point/landing) use the `getPairedDevices feature`, from the `BluetoothDiscoverDevices` class. Check below how to access it through the `MPManager`.
+To get the list of paired devices with Point Smart use the `getPairedDevices feature`, from the `BluetoothDiscoverDevices` class. Check below how to access it through the `MPManager`.
 
 [[[
 ```kotlin
@@ -48,7 +48,7 @@ bluetoothDiscoverDevices.getPairedDevices(callback);
 
 ## Get paired printers
 
-Use the `getPairedPrinterDevices` feature from the `BluetoothDiscoverDevices` class to check the list of bluetooth printers with the [Point Smart](/developers/en/docs/mp-point/landing). The access is done through the `MPManager object`, as in the example below.
+Use the `getPairedPrinterDevices` feature from the `BluetoothDiscoverDevices` class to check the list of bluetooth printers with the Point Smart. The access is done through the `MPManager object`, as in the example below.
 
 [[[
 ```kotlin
@@ -90,7 +90,7 @@ bluetoothDiscoverDevices.getPairedPrinterDevices(callback);
 |**address (String)**| MAC address of the bluetooth device.|
 |**isConnected (Boolean)**| Indicates if the device is connected. In a positive case, the answer is `true`; if disconnected, it appears as `false`.|
 
-## Start search
+## Start search for devices
 
 The `startDiscovery` feature from the `BluetoothDiscoverDevices` class starts the discovery of bluetooth devices. The access is through the `MPManager` object. This method makes the dynamic implementation of the logic based on events in your solution easier. Like this:
 

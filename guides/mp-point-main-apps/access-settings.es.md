@@ -1,4 +1,4 @@
-# Acceder a la configuración
+# Configurar bluetooth
 
 Usa el método `launch` de la clase `BluetoothUiSettings` para iniciar la actividad de configuración de bluetooth de Mercado Pago. Este componente ofrece diversas funcionalidades, cómo activar y desactivar, buscar dispositivos, emparejar y desemparejar, entre otros. Consulta cómo acceder.
 
