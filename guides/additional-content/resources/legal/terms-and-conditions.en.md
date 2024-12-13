@@ -1,4 +1,4 @@
-----[mla, mlm]----
+----[mla]----
 # Terms and Conditions for Mercado Pago Developers
 
 _Last modified: 08/14/2024_
