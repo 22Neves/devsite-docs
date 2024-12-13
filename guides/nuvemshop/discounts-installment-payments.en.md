@@ -1,22 +1,15 @@
 # Discounts, installments, and interest
 
-With Mercado Pago, you have the flexibility to offer exclusive benefits to your customers, such as credits, discounts, and special conditions, in a personalized and optional manner. You can customize these settings according to your needs, through your store's Administrative Panel, directly on the Mercado Pago website, or from your linked Mercado Pago account.
+With Mercado Pago, you have the flexibility to offer exclusive benefits to your customers, such as credits, discounts, and special conditions, in a personalized and optional manner.
+
+You can customize these settings according to your needs, **through your store's Administrative Panel, directly on the Mercado Pago website, or from your linked Mercado Pago account**.
 
 ## Administration panel
 
-Within your store's Administration Panel, click on **Edit** to configure the following options:
-----[mlm, mpe, mco, mlu, mlc]----
-![Panel](/images/nuvemshop/admines.png)
+1. In your Nuvemshop store's Admin Panel, go to **My apps**.
+2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
+3. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings** to set the configurations below.
 
-------------
-----[mla]----
-![Panel](/images/nuvemshop/admines-ar.png)
-
-------------
-----[mlb]----
-![Painel](/images/nuvemshop/adminpt.png)
-
-------------
 ### Installments
 
 * **Minimum installment amount**: This setting is optional and allows you to set a minimum limit for the installment amount.
@@ -24,77 +17,67 @@ Within your store's Administration Panel, click on **Edit** to configure the fol
 ### Discounts
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 * **Checkout API**: These optional settings allow you to establish specific discounts for different payment methods with Checkout API. Configure the discount in percentage applied to customers who choose to pay with:
-   * Bank slip
+   * Boleto bancário
    * Credit card
    * Pay in cash networks
 ------------
 ----[mlb]----
 * **Transparent Checkout**: These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
-   * Bank slip
+   * Boleto bancário
    * Credit card
    * Pix
 
 ------------
 * **External Checkout (Checkout Pro)**: You can define a global percentage discount for customers who choose the External Checkout. Enter the percentage value to deduct from the total purchase amount.
 
-## Mercado Pago checkout administration panel in Nuvemshop
+## Configuration via the Mercado Pago plugin in Tiendanube
 
-You can also configure installment experiences for each Checkout in your store through the Mercado Pago Checkout Administration Panel. To do this, click on **Edit on the Mercado Pago site**.
+You can also set up the installment experiences for each checkout in your store through the Mercado Pago plugin's own Administrative Panel. To do this:
 
-### Mercado Pago Checkout (Checkout Pro)
+### Checkout Pro
 
-In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Mercado Pago Checkout:
+1. In the Administrative Panel of your store on Tiendanube, go to **My apps**.
+2. Find the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
+3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit configuration**.
+4, Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
+5. On the relevant screen, find the payment method "Checkout Pro" and click on **Configure**.
+6. In this section, you can define the **maximum number of installments** that your customers can use when making a payment with Checkout Pro.
 
-----[mlm, mpe, mco, mlu, mlc]----
-![Pro](/images/nuvemshop/parc-pro-es.gif)
-
-------------
-----[mla]----
-![Panel](/images/nuvemshop/parc-pro-es-arg.gif)
-
-------------
-----[mlb]----
-![Pro](/images/nuvemshop/parc-pro-pt.gif)
-
-------------
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-#### Checkout API
+### Checkout API
 
 ------------
 ----[mlb]----
-#### Transparent Checkout
+### Checkout Transparente
 
 ------------
-
-In this section, you can set the **maximum number of months**, with and without interest, in which your customers can make payments using the Transparent Checkout:
-
-----[mlm, mpe, mco, mlu, mlc]----
-![API](/images/nuvemshop/parc-api-es.gif)
-
-------------
-----[mla]----
-![API](/images/nuvemshop/parc-api-es-arg.gif)
-
-------------
-----[mlb]----
-![API](/images/nuvemshop/parc-cho-api-pt.gif)
-
-------------
+1. In the Administrative Panel of your store on Tiendanube, go to **My Apps**.
+2. Find the Mercado Pago plugin in the list of applications and click on **Actions > Configure&&.
+3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit configuration**.
+4. Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
+5. Find the payment method ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ and click on **Configure**.
+6. In this section, you can define the maximum number of installments that your customers can use when making a payment with ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
 
 ## Mercado Pago account
 
 Within your Mercado Pago account, you can check and configure the number of interest-free months you want to offer to your customers. In this option, your customers can make installment purchases without interest, and you assume the financing fee.
 
-1. On the Mercado Pago website, click on **Configure installments and interest**.
-2. You will be redirected to the Mercado Pago account linked to your store.
-3. Click on **Sell in interest-free installments**.
-4. Select how many months you want to offer by marking the corresponding option and click continue.
-5. Set the minimum values to offer interest-free installments and click **Save**.
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. Go to the **Your business > Costs** section and select the **Checkout** option.
+3. In "Interest-free months", click on **Set up months**.
+4. Enable the option **Offer interest-free installments with a credit card** and then choose the number of months you want to offer.
+5. After configuring the interest-free installment options, go to your store on Tiendanube.
+6. In your store's Administrative Panel at Tiendanube, access **My apps**.
+7. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
+8. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings**.
+9. Scroll down to the bottom of the page and click on **More settings on the Mercado Pago site**.
+10. Find the desired payment method and click on **Configure**.
+11. Finally, click on Synchronize so that the configured installment plan is synced with your store.
 
-![Account](/images/nuvemshop/conta-es.gif)
-----[mla]----
-If the number of configured installments does not reflect in your store, you can force synchronization by clicking **Sync** in the Tiendanube panel.
-
-![Sync](/images/nuvemshop/nuvemshop-sincronizar_cuotas.png)
+> WARNING
+>
+> Attention
+>
+> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 
 ------------

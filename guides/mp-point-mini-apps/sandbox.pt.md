@@ -22,7 +22,7 @@
 
 4. Por fim, clique no botão **Instalar** novamente.
 
-![miniapps-sandbox4](/mini-apps/miniapps-sandbox4-pt.png)
+![miniapps-sandbox4](/mini-apps/miniapps-sandbox1-pt.png)
 
 5. Quando o mini app for instalado, ele será visto da seguinte forma:
 
