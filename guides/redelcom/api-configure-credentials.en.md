@@ -1,5 +1,11 @@
 # Configure your credentials
 
+> WARNING
+>
+> Important
+>
+> In 2025, **Redelcom will operate as Mercado Pago**. Therefore, you must migrate your integration to our ecosystem to continue operating in the future. Consult [our documentation](/developers/en/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration) to know how to migrate your API integration to Order API, te equivalent Mercado Pago solution.
+
 You can generate payment requests on Redelcom terminals using [our API](https://api-dev.redelcom.cl:20010/v2).
 
 </center>

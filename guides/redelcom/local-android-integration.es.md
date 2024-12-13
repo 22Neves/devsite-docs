@@ -1,5 +1,11 @@
 # Integración Android
 
+> WARNING
+>
+> Importante
+>
+> En 2025, **Redelcom pasará a operar como Mercado Pago**. Por eso, deberás realizar la migración de tu integración a nuestro ecosistema para seguir operando en un futuro. Consulta [nuestra documentación](/developers/es/docs/redelcom/how-tos/migrate-to-mercadopago/local-integration) para saber cómo migrar tu integración local a Main Apps, la solución equivalente dentro de Mercado Pago.
+
 Puedes comenzar a operar localmente con Redelcom instalando tu **aplicación en Android (APK)** en el dispositivo Redelcom vía USB. 
 
 Tu app se comunicará con el sistema RDCPass localmente, permitiéndote procesar pagos, realizar recargas de telecomunicaciones o pagos de cuentas, y emitir Documentos Tributarios Electrónicos o boletas desde el mismo dispositivo Redelcom.
