@@ -63,8 +63,8 @@
               "example": "false"
             },
             "description": {
-              "en": "Boolean to indicate whether the integrator will or will not send the signature. It must be \"false\" for test environements, and \"true\" for production environments, when the signature is mandatory. ",
-              "pt": "Booleano para indicar se o integrador irá ou não enviar a assinatura. Deve ser \"false\" para ambiente de teste, \"true\" para ambiente produtivo, que é quando é obrigatório o envio da assinatura. ",
+              "en": "Boolean to indicate whether the integrator will or will not send the signature. It must be \"false\" for test environements, and \"true\" for production environments, when the signature is mandatory.",
+              "pt": "Booleano para indicar se o integrador irá ou não enviar a assinatura. Deve ser \"false\" para ambiente de teste, \"true\" para ambiente produtivo, que é quando é obrigatório o envio da assinatura.",
               "es": "Booleano para indicar si el integrador enviará o no la firma. Debe ser \"false\" en ambiente de pruebas y \"true\" en ambiente productivo, que es cuando es obligatorio enviar la firma."
             }
           }
@@ -103,7 +103,7 @@
                             "description": {
                               "en": "URL available to receive notifications of events related to the transaction, such as changes in its status. This field has a 500 character limit.",
                               "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres.",
-                              "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. "
+                              "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres."
                             },
                             "example": "http://example.mx/notification"
                           }
@@ -189,8 +189,8 @@
                                 "type": "string",
                                 "required": true,
                                 "description": {
-                                  "en": "First and last name of the destination account holder",
-                                  "pt": "Nome e sobrenome do titular da conta de destino",
+                                  "en": "First and last name of the destination account holder.",
+                                  "pt": "Nome e sobrenome do titular da conta de destino.",
                                   "es": "Nombre y apellido del titular de la cuenta objetivo."
                                 },
                                 "example": "Victor Hugo"
@@ -224,7 +224,7 @@
                         "required": true,
                         "description": {
                           "en": "Total amount of the transaction. It must be the same value as in \"from.accounts.amount\" and \"to.accounts.amount\".",
-                          "pt": "Montante total da transação. Deve ser o mesmo valor indicado para \"from.accounts.amount\" e \"to.accounts.amount\". ",
+                          "pt": "Montante total da transação. Deve ser o mesmo valor indicado para \"from.accounts.amount\" e \"to.accounts.amount\".",
                           "es": "Monto total de la transacción. Debe ser el mismo valor indicado para \"from.accounts.amount\" y \"to.accounts.amount\"."
                         },
                         "example": "100.00"
@@ -270,7 +270,7 @@
                       "type": "string",
                       "description": {
                         "en": "Unique transaction identifier, automatically generated.",
-                        "pt": "Identificador único da transação, gerado automaticamente",
+                        "pt": "Identificador único da transação, gerado automaticamente.",
                         "es": "Identificador único de la transacción, generado automáticamente." 
                       },
                       "example": "0d5020ed"
@@ -304,7 +304,7 @@
                       "description": {
                         "en": "Object containing settings of the user performing the transaction.",
                         "pt": "Objeto contendo configurações do usuário que realiza a transação.",
-                        "es": "Objeto que contiene configuraciones del usuario que realiza la transacción. "
+                        "es": "Objeto que contiene configuraciones del usuario que realiza la transacción."
                       },
                       "properties": {
                         "notification_info": {
@@ -314,7 +314,7 @@
                               "type": "string",
                               "description": {
                                 "en": "URL available to receive notifications of events related to the transaction, such as changes in its status.",
-                                "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. ",
+                                "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status.",
                                 "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado."
                               },
                               "example": "http://example.mx/notification"
@@ -360,8 +360,8 @@
                           "title": "rejected",
                           "description": {
                             "en": "The transaction was rejected. You can check the reasons in the \"to.accounts.status_detail\" field.",
-                            "es": "La transacción fue rechazada. Puedes encontrar los motivos en el campo \"to.accounts.status_detail\". ",
-                            "pt": "A transação foi rejeitada. Você pode ver os motivos no campo \"to.accounts.status_detail\""
+                            "es": "La transacción fue rechazada. Puedes encontrar los motivos en el campo \"to.accounts.status_detail\".",
+                            "pt": "A transação foi rejeitada. Você pode ver os motivos no campo \"to.accounts.status_detail\"."
                           }
                         }
                       ]
@@ -480,7 +480,7 @@
                                       {
                                         "title": "approved",
                                         "description": {
-                                          "en": "The transaction processing was made successfully",
+                                          "en": "The transaction processing was made successfully.",
                                           "es": "El procesamiento de la transacción se realizó de manera exitosa.",
                                           "pt": "O processamento da transação foi bem-sucedido."
                                         }
@@ -529,8 +529,8 @@
                                         "title": "by_provider",
                                         "description": {
                                           "en": "The transaction was rejected by the provider.",
-                                          "es": "La transacción fue rechazada por el proveedor. ",
-                                          "pt": "A transação foi rejeitada pelo provedor. "
+                                          "es": "La transacción fue rechazada por el proveedor.",
+                                          "pt": "A transação foi rejeitada pelo provedor."
                                         }
                                       },
                                       {
@@ -631,7 +631,7 @@
                         {
                           "title":"Invalid amount",
                           "description":{
-                            "en":"Invalid value for field \"transaction.from.accounts[0].amount\". Verify the amounts allowed for the transaction. ",
+                            "en":"Invalid value for field \"transaction.from.accounts[0].amount\". Verify the amounts allowed for the transaction.",
                             "es":"Valor inválido para el campo \"transaction.from.accounts[0].amount\". Verifica los montos permitidos para la transacción.",
                             "pt":"Valor inválido para o campo \"transaction.from.accounts[0].amount\". Verifique os valores permitidos para a transação."
                           }
@@ -640,16 +640,16 @@
                           "title":"Invalid identification number",
                           "description":{
                             "en":"Invalid value for field \"transaction.to.accounts[0].identification.number\".  Verify the allowed values.",
-                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].identification.number\". Verifica los valores permitidos. ",
+                            "es":"Valor inválido para el campo \"transaction.to.accounts[0].identification.number\". Verifica los valores permitidos.",
                             "pt":"Valor inválido para o campo \"transaction.to.accounts[0].identification.number\". Verifique os valores permitidos."
                           }
                         },
                         {
                           "title":"Account is disabled",
                           "description":{
-                            "en":"The Mercado Pago account is disabled",
-                            "es":"La cuenta de Mercado Pago está desactivada",
-                            "pt":"A conta do Mercado Pago está desativada"
+                            "en":"The Mercado Pago account is disabled.",
+                            "es":"La cuenta de Mercado Pago está desactivada.",
+                            "pt":"A conta do Mercado Pago está desativada."
                           }
                         },
                         {
@@ -671,9 +671,9 @@
                         {
                           "title":"Flow not specified",
                           "description":{
-                            "en":"The header X-Flow-id only supports \"transfer\" or \"management\"",
-                            "es":"El header X-Flow-id acepta solo \"transfer\" o \"management\"",
-                            "pt":"O header X-Flow-id suporta apenas \"transfer\" ou \"management\""
+                            "en":"The header X-Flow-id only supports \"transfer\" or \"management\".",
+                            "es":"El header X-Flow-id acepta solo \"transfer\" o \"management\".",
+                            "pt":"O header X-Flow-id suporta apenas \"transfer\" ou \"management\"."
                           }
                         },
                         {
@@ -687,17 +687,17 @@
                         {
                           "title":"Key PSP error",
                           "description":{
-                            "en":"Attempt to consult an external PSP key that is already registered in Mercado Pago",
-                            "es":"Intento de consultar una clave PSP externa que ya está registrada en Mercado Pago",
-                            "pt":"Tentativa de consultar uma chave PSP externa que já está cadastrada no MercadoPago"
+                            "en":"Attempt to consult an external PSP key that is already registered in Mercado Pago.",
+                            "es":"Intento de consultar una clave PSP externa que ya está registrada en Mercado Pago.",
+                            "pt":"Tentativa de consultar uma chave PSP externa que já está cadastrada no MercadoPago."
                           }
                         },
                         {
                           "title":"Invalid Body",
                           "description":{
-                            "en":"The request body has an invalid format",
+                            "en":"The request body has an invalid format.",
                             "es":"El cuerpo de la llamada tiene un formato inválido.",
-                            "pt":"O body da requisição tem um formato inválido"
+                            "pt":"O body da requisição tem um formato inválido."
                           }
                         },
                         {
@@ -713,7 +713,7 @@
                           "description":{
                             "en":"Financial identity not found. Check the \"to.accounts.bank_id\" field.",
                             "es":"La institución financiera no fue encontrada. Revisa el campo \"to.accounts.bank_id\".",
-                            "pt":"A instituição financeira não foi localizada. Verifique o campo \"to.accounts.bank_id\""
+                            "pt":"A instituição financeira não foi localizada. Verifique o campo \"to.accounts.bank_id\"."
                           }
                         },
                         {
@@ -801,9 +801,9 @@
                         {
                           "title":"internal_server_error",
                           "description":{
-                            "en":"There was an error communicating with transaction_intent",
-                            "es":"Hubo un error en la comunicación con transaction_intent",
-                            "pt":"Houve um erro na comunicação com transaction_intent"
+                            "en":"There was an error communicating with transaction_intent.",
+                            "es":"Hubo un error en la comunicación con transaction_intent.",
+                            "pt":"Houve um erro na comunicação com transaction_intent."
                           }
                         }
                       ]
@@ -830,9 +830,9 @@
                         {
                           "title":"bad_gateway",
                           "description":{
-                            "en":"Error processing request",
-                            "es":"Error procesando la llamada",
-                            "pt":"Erro de processamento na requisição"
+                            "en":"Error processing request.",
+                            "es":"Error procesando la llamada.",
+                            "pt":"Erro de processamento na requisição."
                           }
                         }
                       ]
