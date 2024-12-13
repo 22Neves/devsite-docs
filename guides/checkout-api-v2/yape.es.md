@@ -178,7 +178,7 @@ El detalle de cada uno de los parámetros mencionados anteriormente, así como s
 | `description`       | string  | Título del producto.                                                                                                                              | Opcional             | "Video game"                             |
 | `installments`      | number  | Cantidad de cuotas. Al tratarse de un pago con tarjeta de débito, la cantidad de cuotas será 1.                                                    | Obligatorio          | 1                                         |
 | `payment_method_id` | string  | `yape` para todos los casos.                                                                                                                      | Obligatorio          | `yape`                                    |
-| `payer.email`       | string  | Email del pagador.                                                                                                                                | Obligatorio          | "test_user_12345@testuser.com"            |
+| `payer.email`       | string  | Email del pagador.                                                                                                                                | Obligatorio          | "test_user_12345@gmail.com"            |
 
 
 [[[

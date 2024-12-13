@@ -52,6 +52,14 @@ To configure these payment methods, access the administration panel of your VTEX
     3. In the **Status** field, activate the payment condition using the slider button. 
 4. Click **Save** to activate the configuration.
 
+----[mco]----
+> WARNING
+>
+> Importante
+>
+> The Efecty payment method is not available in the **MercadoPagoV2** connector. To process payments with this method, make sure to set the payment condition as **MercadoPagoOff**.
+
+------------
 ![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
 
 > NOTE 

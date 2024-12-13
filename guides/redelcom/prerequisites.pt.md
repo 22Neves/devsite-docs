@@ -1,5 +1,11 @@
 # Pré-requisitos
 
+> WARNING
+>
+> Importante
+>
+> Em 2025, **Redelcom passará a operar como Mercado Pago**. Para garantir a continuidade de suas operações, é necessário migrar sua integração para o nosso ecossistema. Consulte nossa documentação para orientações sobre a migração, seja para [integração via API](/developers/pt/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration) ou [integração local](/developers/pt/docs/redelcom/how-tos/migrate-to-mercadopago/local-integration).
+
 Para oferecer pagamentos com o Redelcom, é essencial atender aos seguintes requisitos:
 
 | Tipo de Integração | Requisitos            | Descrição |

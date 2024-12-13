@@ -4,7 +4,7 @@ Confira como ativar, desativar e validar o estado atual do bluetooth utilizando 
 
 ## Ativar o bluetooth
 
-Para ativar o bluetooth na maquininha [Smart](/developers/pt/docs/mp-point/landing), use a função `turnOn` da classe `BluetoothIgnitor` em nosso SDK. Você pode acessar essa função através do objeto `MPManager`, como no exemplo abaixo.
+Para ativar o bluetooth na maquininha Smart, use a função `turnOn` da classe `BluetoothIgnitor` em nosso SDK. Você pode acessar essa função através do objeto `MPManager`, como no exemplo abaixo.
 
 [[[
 ```kotlin
@@ -52,7 +52,7 @@ bluetoothIgnitor.turnOn(callback);
 
 ## Desativar o bluetooth
 
-Para desativar o bluetooth na [Point Smart](/developers/pt/docs/mp-point/landing), use a função `turnOff` da classe `BluetoothIgnitor`. O acesso também é feito através do `MPManager`, como mostrado a seguir.
+Para desativar o bluetooth na Point Smart, use a função `turnOff` da classe `BluetoothIgnitor`. O acesso também é feito através do `MPManager`, como mostrado a seguir.
 
 [[[
 ```kotlin
@@ -101,7 +101,7 @@ bluetoothIgnitor.turnOff(callback);
 
 ## Validar o estado atual do bluetooth
 
-A função `getCurrentState` da classe `BluetoothIgnitor` é empregada para validar o estado de ativação do bluetooth na [Point Smart](/developers/pt/docs/mp-point/landing). O acesso é feito pela instância `BluetoothIgnitor` através do `MPManager`, como no exemplo abaixo.
+A função `getCurrentState` da classe `BluetoothIgnitor` é empregada para validar o estado de ativação do bluetooth na Point Smart. O acesso é feito pela instância `BluetoothIgnitor` através do `MPManager`, como no exemplo abaixo.
 
 [[[
 ```kotlin

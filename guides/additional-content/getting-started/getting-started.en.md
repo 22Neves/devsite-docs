@@ -21,11 +21,11 @@ bullet_section_with_media:
 
 The first step to start integrating, whether for yourself or for someone else, is to **have a Mercado Pago or Mercado Libre account**. If you don't have a Mercado Pago account, ----[mlb]----[**click here**](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[**click here**](https://www.mercadopago.com.ar/hub/registration/landing) ------------  ----[mlm]----[**click here**](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[**click here**](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[**click here**](https://www.mercadopago.com.co/hub/registration/landing) ------------ ----[mlu]----[**click here**](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[**click here**](https://www.mercadopago.cl/hub/registration/landing) ------------ to create one for free.
 
+### Your integrations
+
+If you choose a product that requires integration, you will need to access [Your integrations](https://www.mercadopago.com/developers/panel/app), which allows you to manage code development integrations, your applications, perform tests, and set up notifications that provide you with information about transactions.
+
 If you already have a Mercado Libre account, access [Your integrations](https://www.mercadopago.com/developers/panel/app) with the same username and password.
-
-# Your integrations
-
-With your account already active, you have access to [Your integrations](https://www.mercadopago.com/developers/panel/app), which allows you to manage code development integrations, your applications, perform tests, and configure notifications that provide you with information about transactions.
 
 ---
 bullet_section_with_media:
@@ -37,7 +37,87 @@ bullet_section_with_media:
 
 ## Process online payments
 
-Solutions for those who sell on websites, through WhatsApp, or social media. The fees, based on the receipt period and/or the number of interest-free installments offered to the buyer, are automatically applied to sales. For further details, please refer to the links below.
+Solutions for those who sell on websites, through WhatsApp, or social media.
+
+### Solutions without integration
+
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender) | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | Basic |
+| [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/suscripciones) | Manages recurring payments simply and without the need for integration. Allows customers to pay without the need for a website. | Basic |
+
+### Solutions with integration
+
+----[mlb]----
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [Checkout Pro](/developers/en/docs/checkout-pro/landing) | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | Intermediate |
+| [Checkout Transparente](/developers/en/docs/checkout-api/landing) | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | Advanced |
+| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | Advanced |
+| [Subscriptions](/developers/en/docs/subscriptions/landing) | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | Intermediate |
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [Checkout Pro](/developers/en/docs/checkout-pro/landing) | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | Intermediate |
+| [Checkout API](/developers/en/docs/checkout-api/landing) | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | Advanced |
+| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | Advanced |
+| [Subscriptions](/developers/en/docs/subscriptions/landing) | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | Intermediate |
+------------
+
+## Offer in-person payments
+
+Solutions for those who sell from home, on the street, in the car, or in the store.
+
+----[mla]----
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [QR Code](/developers/en/docs/qr-code/landing) | Choose an integration model to generate QR codes and provide a complete in-person payment experience. | Intermediate |
+| [Mercado Pago Point](/developers/en/docs/mp-point/landing) | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | Intermediate |
+| [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | A on-demand food delivery solution in which the customer accesses a list of registered restaurants, places an order, and pays directly through the Mercado Pago app. | Intermediate |
+------------
+
+----[mpe, mco, mlu, mlc]----
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [Mercado Pago Point](/developers/en/docs/mp-point/landing) | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | Intermediate |
+------------
+
+----[mlb]----
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [QR Code](/developers/en/docs/qr-code/landing) | Choose an integration model to generate QR codes and provide a complete in-person payment experience. | Intermediate |
+| [Mercado Pago Point](/developers/en/docs/mp-point/landing) | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | Intermediate |
+------------
+
+----[mlm]----
+| Solution | Description | Necessary knowledge |
+|:---|:---|:---|
+| [Mercado Pago Point](/developers/en/docs/mp-point/landing) | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | Intermediate |
+------------
+
+
+## Process payments on e-commerce platforms
+
+Install Checkout Pro or ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparente ------------ in your store and **start offering payments with Mercado Pago** on your e-commerce platform. Integrating solutions by connecting to a platform is simple and fast. The entire process is done in the Mercado Pago business panel and on the platform itself.
+
+Find our plugin on platforms like **Shopify**, **WooCommerce**, ----[mla, mlm, mpe, mco, mlu, mlc]----**Tiendanube**----------------[mlb]----**Nuvemshop**------------, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, and many more.
+
+## Use our SDKs
+
+With Mercado Pago's SDK libraries, you can reduce client-side and server-side integration time.
+
+By using our **backend SDKs**, you get easy access to the server-side functionality of our solutions. This allows you to create and query the status of various transactions, integrate payments through cards and other methods, as well as make refunds or chargebacks.
+
+With our **frontend SDKs**, you can make calls for card tokens and use many other integration features.
+
+<br>
+
+### Learn about the costs and fees of Mercado Pago
+
+The fees, based on the receipt period and/or the number of interest-free installments offered to the buyer, are automatically applied to sales. For further details, please refer to the links below.
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 #### Receiving payments
    - [Applicable fees for receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/help/33403)
@@ -54,105 +134,6 @@ Solutions for those who sell on websites, through WhatsApp, or social media. The
    - [Applicable fees for offering interest-free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/oferecer-parcelas-sem-juros-para-compradores_454)
 
 ------------
-----[mlb]----
-| Solution | Description | Integration Complexity |
-|:---|:---|:---|
-| Checkout Pro | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | 🔵🔵⚪⚪ |
-| Checkout Transparente | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | 🔵🔵🔵🔵 |
-| Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | 🔵⚪⚪⚪ |
-| Subscriptions | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | 🔵🔵⚪⚪ |
-| Checkout Bricks | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | 🔵🔵🔵⚪ |
-| Wallet Connect | Process payments automatically through the Mercado Pago digital wallet. With Wallet Connect it is possible to make payments using the balance available in the Mercado Pago account or cards. | 🔵🔵🔵🔵 |
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-| Solution | Description | Integration Complexity |
-|:---|:---|:---|
-| Checkout Pro | Process payments in Mercado Pago in a simple and secure way with a ready-to-use design. We have developed this optimized checkout to increase your conversion. | 🔵🔵⚪⚪ |
-| Checkout API | A versatile solution so that you build your payment processor on your website. You control the entire experience, from basic to advanced settings. | 🔵🔵🔵🔵 |
-| Payment Link | Create a payment link in just a few steps and use it to collect payments via chat and social media. No technical knowledge is required. | 🔵⚪⚪⚪ |
-| Subscriptions | Automates recurrent payment collections with a subscription. You can set up the payment frequency and the amount to be charged. | 🔵🔵⚪⚪ |
-| Checkout Bricks | A modular, secure and customizable payment solution, where you control the entire experience and choose which brick and layout to use based on your site's needs. | 🔵🔵🔵⚪ |
-| Wallet Connect | Process payments automatically through the Mercado Pago digital wallet. With Wallet Connect it is possible to make payments using the balance available in the Mercado Pago account or cards. | 🔵🔵🔵🔵 |
-------------
-
-## Offer in-person payments
-
-Solutions for those who sell from home, on the street, in the car, or in the store.
-
-----[mla]----
-| Solution | Description | Integration Complexity |
-|:---|:---|:---|
-| QR Code | Choose an integration model to generate QR codes and provide a complete in-person payment experience. | 🔵🔵⚪⚪ |
-| Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
-| Mercado Pago Delivery | A on-demand food delivery solution in which the customer accesses a list of registered restaurants, places an order, and pays directly through the Mercado Pago app. | 🔵🔵⚪⚪ |
-------------
-
-----[mpe, mco, mlu, mlc]----
-| Solution | Description | Integration Complexity |
-|:---|:---|:---|
-| Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
-------------
-
-----[mlb]----
-| Solution | Description | Integration Complexity |
-|:---|:---|:---|
-| QR Code | Choose an integration model to generate QR codes and provide a complete in-person payment experience. | 🔵🔵⚪⚪ |
-| Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
-------------
-
-----[mlm]----
-| Solution | Description | Integration Complexity |
-|:---|:---|:---|
-| Mercado Pago Point | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | 🔵🔵🔵⚪ |
-------------
-
-
-## Process payments on e-commerce platforms
-
-Install Checkout Pro or ----[mla, mlm, mpe, mco, mlu, mlc]----Checkout API ------------ ----[mlb]----Checkout Transparente ------------ in your store and **start offering payments with Mercado Pago** on your e-commerce platform. Integrating solutions by connecting to a platform is simple and fast. The entire process is done in the Mercado Pago business panel and on the platform itself.
-
-Find our plugin on platforms like **Shopify**, **WooCommerce**, **Tiendanube**, **VTEX**, **Wix**, **Adobe Commerce (Magento)**, and many more.
-
-## Use our SDKs
-
-With Mercado Pago's SDK libraries, you can reduce client-side and server-side integration time.
-
-By using our **backend SDKs**, you get easy access to the server-side functionality of our solutions. This allows you to create and query the status of various transactions, integrate payments through cards and other methods, as well as make refunds or chargebacks.
-
-With our **frontend SDKs**, you can make calls for card tokens and use many other integration features.
-
-<br>
-
-## Availability of solutions in each country
-
-----[mlb]----
-| Solution | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br>Uruguay |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Payment Link | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Subscriptions | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Wallet Connect | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
-| QR Code | ✔ | ✔ | ✔ | - | - | - | ✔ |
-| Mercado Pago Point | ✔ | ✔ | - | - | ✔ | - | - |
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-| Solution | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br>Uruguay |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout Bricks | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Payment Link | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Subscriptions | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Wallet Connect | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Mercado Pago Delivery | ✔ | - | - | - | - | - | - |
-| QR Code | ✔ | ✔ | ✔ | - | - | - | ✔ |
-| Mercado Pago Point | ✔ | ✔ | - | - | ✔ | - | - |
-------------
 
 <br>
 
@@ -163,6 +144,38 @@ If you're not sure where to start based on your programming knowledge, don't wor
 ![Getting started](/images/getting-started/getting-started-diagram2-en.png)
 
 For details on the **accepted payment methods in each country**, consult the complete list of [available payment methods](/developers/en/docs/sales-processing/payment-methods).
+
+<br>
+
+## Availability of solutions in each country
+
+----[mlb]----
+| Solution | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br>Uruguay |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [Checkout Pro](/developers/en/docs/checkout-pro/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Checkout Transparente](/developers/en/docs/checkout-api/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Subscription plans](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/suscripciones)| ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Subscriptions](/developers/en/docs/subscriptions/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Mercado Pago Point](/developers/en/docs/mp-point/landing) | ✔ | - | - | - | - | - | - |
+| [QR Code](/developers/en/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
+| [Mercado Pago Point](/developers/en/docs/mp-point/landing) | ✔ | ✔ | - | - | ✔ | - | - |
+------------
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+| Solution | 🇦🇷 <br> Argentina | 🇧🇷 <br> Brazil | 🇨🇱 <br> Chile | 🇨🇴 <br> Colombia | 🇲🇽 <br> Mexico | 🇵🇪 <br> Peru | 🇺🇾 <br>Uruguay |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [Checkout Pro](/developers/en/docs/checkout-pro/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Checkout API](/developers/en/docs/checkout-api/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+|[Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/link-de-pago) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Subscription plans](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/suscripciones) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Subscriptions](/developers/en/docs/subscriptions/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | ✔ | - | - | - | - | - | - |
+| [QR Code](/developers/en/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
+| [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | ✔ | ✔ | - | - | ✔ | - | - |
+------------
 
 ---
 bullet_section_with_media:

@@ -176,7 +176,7 @@ Details of each parameter mentioned above, as well as their respective possible 
 | `description`     | string  | Product title.                                                                                                                        | Optional            | "Video game"                             |
 | `installments`    | number  | Number of installments. As it is a debit card payment, the number of installments will be 1.                                          | Required            | 1                                        |
 | `payment_method_id`| string  | `yape` for all cases.                                                                                                                 | Required            | `yape`                                    |
-| `payer.email`     | string  | Payer's email.                                                                                                                        | Required            | "test_user_12345@testuser.com"           |
+| `payer.email`     | string  | Payer's email.                                                                                                                        | Required            | "test_user_12345@gmail.com"           |
 
 [[[
 ```java

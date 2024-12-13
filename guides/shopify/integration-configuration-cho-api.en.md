@@ -3,13 +3,15 @@
 
 **Mercado Pago Cartões** ([Checkout Transparente](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards, where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
+To integrate Mercado Pago Cartões, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
+
 > WARNING
 >
 > Attention
 >
+> The integration with Mercado Pago Cartões is not compatible with the **multi currency** feature of the Shopify platform.
+> <br><br>
 > This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
-
-To integrate Mercado Pago Cartões, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
 
 ------------
 ----[mlm, mco, mlc]----
@@ -18,6 +20,12 @@ To integrate Mercado Pago Cartões, install the application through the [Shopify
 **Mercado Pago Tarjetas** ([Checkout API](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards, where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
 To integrate Mercado Pago Tarjetas, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
+
+> WARNING
+>
+> Attention
+>
+> The integration with Mercado Pago Tarjetas is not compatible with the **multi currency** feature of the Shopify platform.
 
 ------------
 ----[mco]----
@@ -49,6 +57,13 @@ To install Mercado Pago Tarjetas through the Shopify admin panel, follow the ste
 
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Tarjetas, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
+
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **Automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 15. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
@@ -91,6 +106,13 @@ To install Mercado Pago Tarjetas via Marketplace, follow the steps below:
 
 7. Click on **Save credentials**.
 8. Finally, click on the **Verify activation** option of Mercado Pago Tarjetas, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+
 9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 11. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
@@ -161,6 +183,13 @@ To install Mercado Pago Tarjetas through the Shopify admin panel, follow the ste
 
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Tarjetas, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
+
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **Automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 15. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
@@ -203,6 +232,13 @@ To install Mercado Pago Tarjetas via Marketplace, follow the steps below:
 
 7. Click on **Save credentials**.
 8. Finally, click on the **Verify activation** option of Mercado Pago Tarjetas, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked. To restore normal payment processing, please reactivate it.
+
 9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 11. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
@@ -273,6 +309,13 @@ To install Mercado Pago Tarjetas through the Shopify admin panel, follow the ste
 
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Tarjetas, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
+
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **Automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 15. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
@@ -315,6 +358,13 @@ To install Mercado Pago Tarjetas via Marketplace, follow the steps below:
 
 7. Click on **Save credentials**.
 8. Finally, click on the **Verify activation** option of Mercado Pago Tarjetas, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
+
 9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 11. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
@@ -386,6 +436,12 @@ To install Mercado Pago Cartões through the Shopify admin panel, follow the ste
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
 
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
+
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 > WARNING
@@ -420,6 +476,12 @@ To install Mercado Pago Cartões via Marketplace, follow the steps below:
 
 7. Click on **Save credentials**.
 8. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+
+> WARNING
+>
+> Attention
+>
+> It is important to note that if any of the credit card brands displayed on the screen is disabled, the processing of payments for that specific brand will be blocked.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 

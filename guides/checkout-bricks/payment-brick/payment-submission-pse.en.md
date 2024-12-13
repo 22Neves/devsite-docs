@@ -11,7 +11,7 @@ To make a payment with PSE, before processing it with the backend SDKs, it is ne
 | `transaction_amount` | Payment amount. | Yes | Any value greater than 0. |
 | `transaction_details.financial_institution` | Bank specified to make the electronic transfer. | Yes | Must correspond to an existing bank and cannot be sent null or empty. |
 | `payer.entity_type` | Type of entity, individual or association. | Yes | `individual` or `association`. |
-| `payer.identification.type` | Type of document of the buyer. | Yes | Values sent by the brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE`  (Cédula de Extranjería)<br> -`NIT`<br> -`Otro`<br> Accepted values (in addition to those sent by the brick):<br> -`TE` (Tarjeta de Extranjería<br> - `RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Passport) |
+| `payer.identification.type` | Type of document of the buyer. | Yes | Values sent by the brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE`  (Cédula de Extranjería) <br> -`NIT`<br> -`Otro`<br> Accepted values (in addition to those sent by the brick):<br> -`TE` (Tarjeta de Extranjería) <br> - `RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Passport) <br> - `DI` (Documento de Identificación)  |
 | `payer.identification.number` | Document number of the buyer. | Yes | String.<br> Must have between 1 to 15 numeric positions. If it is of the type "passport", it will accept alphanumeric values. |
 | `payer.first_name` | First name of the buyer. | No | Must have between 1 to 32 positions. |
 | `payer.last_name` | Last name of the buyer. | No | Must have between 1 to 32 positions. |

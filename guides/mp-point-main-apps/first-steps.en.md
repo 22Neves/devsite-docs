@@ -67,10 +67,14 @@ dependencies {
 4. Still in the **AndroidManifest.xml** file, define the main activity that will be set as the application launcher. Add the following `intent-filter`:
 
 ```xml
-<intent-filter>                
-                <action android:name="android.intent.action.MAIN" />               
-                <category android:name="android.intent.category.DEFAULT" />               
-                <category android:name="android.intent.category.HOME" />
+<intent-filter>
+
+   ...
+
+   <category android:name="android.intent.category.LAUNCHER" />
+
+   <category android:name="android.intent.category.HOME" />
+
 </intent-filter>
 ```
 
@@ -89,7 +93,7 @@ class MainApplication : Application() {
    }
 }
 ```
-```javascript
+```java
 public class MainApplication extends Application {
 
  @Override
@@ -138,7 +142,7 @@ paymentFlow.launchPaymentFlowActivity(
    }
 }
 ```
-```javascript
+```java
 PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
 
 HashMap<String, String> metadata = new HashMap<>();

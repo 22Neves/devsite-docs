@@ -11,7 +11,7 @@ Para efetuar o pagamento com PSE, antes de efetuar o pagamento com os SDKs do ba
 | `transaction_amount` | Valor do pagamento. | Sim | Qualquer valor maior que 0. |
 | `transaction_details.financial_institution` | Banco informado para efetuar a transferência eletrônica. | Sim | Deve corresponder a um banco existente e não pode ser enviado nulo ou vazio. |
 | `payer.entity_type` | Tipo de pessoa, física ou jurídica. | Sim | `individual` ou `association`. |
-| `payer.identification.type` | Tipo de documento do comprador. | Sim | Valores enviados pelo brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE` (Cédula de Extranjería)<br> -`NIT`<br> -`Otro`<br>Valores aceitos (além dos enviados por brick):<br> -`TE` (Tarjeta de Extranjería)<br> -`RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Pasaporte) |
+| `payer.identification.type` | Tipo de documento do comprador. | Sim | Valores enviados pelo brick:<br> -`CC` (Cédula de Ciudadanía)<br> -`CE` (Cédula de Extranjería)<br> -`NIT`<br> -`Otro`<br>Valores aceitos (além dos enviados por brick):<br> -`TE` (Tarjeta de Extranjería)<br> -`RC` (Registro Civil de Nacimiento)<br> -`TI` (Tarjeta de Identidad)<br> -`PAS` (Pasaporte) <br> - `DI` (Documento de Identificación) |
 | `payer.identification.number` | Número do documento do comprador. | Sim | String. <br>Deve ter de 1 até 15 posições numéricas. Se é do tipo "pasaporte", aceitará valores alfanuméricos. |
 | `payer.first_name` | Nome do comprador. | Não | Deve ter de 1 até 32 posições. |
 | `payer.last_name` | Sobrenome do comprador | Não | Deve ter de 1 até 32 posições. |
