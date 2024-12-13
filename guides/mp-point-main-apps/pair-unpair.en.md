@@ -1,6 +1,6 @@
 # Pair and unpair
 
-In this section, you’ll learn how to pair and unpair devices with a [Point Smart](/developers/en/docs/mp-point/landing) by using a `BluetoothDevicesPairing` class.
+In this section, you’ll learn how to pair and unpair devices with a Point Smart by using a `BluetoothDevicesPairing` class.
 
 ## Pair a device
 

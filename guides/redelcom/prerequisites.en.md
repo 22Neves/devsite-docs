@@ -1,5 +1,12 @@
 # Prerequisites
 
+
+> WARNING
+>
+> Important
+>
+> In 2025, **Redelcom will operate as Mercado Pago**. Therefore, you must migrate your integration to our ecosystem to continue operating in the future. Consult our documentation to know how to do it, whether you have an [integration via API](/developers/en/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration) or a [local integration](/developers/en/docs/redelcom/how-tos/migrate-to-mercadopago/local-integration).
+
 To offer payments with Redelcom, it is essential to meet the following requirements:
 
 | Integration Type   | Requirements            | Description |
