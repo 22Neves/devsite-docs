@@ -516,7 +516,7 @@ curl -X POST \
 | `transaction.to.accounts.bank_id` | *Body*. Identification number of the bank to which the destination account belongs. | Required | 99999004 |
 | `transaction.to.accounts.type` | *Body*. Destination account type. Possible values are `current`, for bank accounts, and `mercadopago`, for Mercado Pago accounts. | Required | `current` / `mercadopago` |
 | `transaction.to.accounts.number` | *Body*. Unique number representing the destination bank account. | Required | `10266732` |
-| `transaction.total_amount `| *Body*.Total amount of the transaction. It must be the same value indicated for `from.accounts.amount` and `to.accounts.amount`. | Required | 100,00 |
+| `transaction.total_amount `| *Body*. Total amount of the transaction. It must be the same value indicated for `from.accounts.amount` and `to.accounts.amount`. | Required | 100,00 |
 
 ------------
 
