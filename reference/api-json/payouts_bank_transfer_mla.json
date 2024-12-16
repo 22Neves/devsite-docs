@@ -191,7 +191,7 @@
                                 "description": {
                                   "en": "First and last name of the destination account holder",
                                   "pt": "Nome e sobrenome do titular da conta de destino",
-                                  "es": "Nombre y apellido del titular de la cuenta objetivo."
+                                  "es": "Nombre y apellido del titular de la cuenta de destino."
                                 },
                                 "example": "Victor Hugo"
                               },
