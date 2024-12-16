@@ -117,7 +117,7 @@
                   "type": "object",
                   "properties": {
                     "id": {
-                      "type": "integer",
+                      "type": "number",
                       "example": 123,
                       "description": {
                         "en": "Unique ID that identifies the test user.",
