@@ -7,9 +7,9 @@
           "money-out" 
         ],
         "description": {
-          "en": "Generate money out operations from a Mercado Pago account to other accounts (internal or external), as long as the withdrawal account has funds",
-          "pt": "Gera operações de saída de dinheiro desde uma conta do Mercado Pago a outras contas (internas ou externas), desde que a conta de retirada tenha fundos",
-          "es": "Genera operaciones de salida de dinero desde una cuenta de Mercado Pago a otras cuentas (internas o externas), siempre que la cuenta de retiro tenga fondos"
+          "en": "Generate money out operations from a Mercado Pago account to other accounts (internal or external), as long as the withdrawal account has funds. In case of success, the request will return a response with status 200",
+          "pt": "Gera operações de saída de dinheiro desde uma conta do Mercado Pago a outras contas (internas ou externas), desde que a conta de retirada tenha fundos. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Genera operaciones de salida de dinero desde una cuenta de Mercado Pago a otras cuentas (internas o externas), siempre que la cuenta de retiro tenga fondos. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
@@ -775,9 +775,9 @@
                         {
                           "title":"Rate Limit",
                           "description":{
-                            "en":"The consultation service reached the rpm limit in order not to exceed the limit allowed by Bacen and not receive fines.",
-                            "es":"El servicio de consulta alcanzó el límite de rpm para no exceder el límite permitido por el Bacen y no recibir multas.",
-                            "pt":"O serviço de consulta atingiu o limite de rpm para não ultrapassar o limite permitido pelo Bacen e não receber multas."
+                            "en":"The consultation service reached the rpm limit in order not to exceed the limit allowed by Banco Central and not receive fines.",
+                            "es":"El servicio de consulta alcanzó el límite de rpm para no exceder el límite permitido por el Banco Central y no recibir multas.",
+                            "pt":"O serviço de consulta atingiu o limite de rpm para não ultrapassar o limite permitido pelo Banco Central e não receber multas."
                           }
                         },
                         {
