@@ -370,7 +370,7 @@
                       "description": {
                         "en": "Object that contains information about the transaction.",
                         "pt": "Objeto que contém informações sobre a transação.",
-                        "es": "Objeto que contiene la información sobre la transacción."
+                        "es": "Objeto que contiene información sobre la transacción."
                       },
                       "properties": {
                         "from": {
