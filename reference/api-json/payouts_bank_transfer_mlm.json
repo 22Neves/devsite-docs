@@ -201,7 +201,7 @@
                                 "description": {
                                   "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
                                   "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias), \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) y \"savings_account\" (ahorro)."
                                 },
                                 "example": "checking_account"
                               },
