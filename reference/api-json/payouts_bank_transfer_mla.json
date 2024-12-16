@@ -4,7 +4,7 @@
     "/v1/transaction-intents/process": {
       "post": {
         "tags": [
-          "money-out"
+          "money-out" 
         ],
         "description": {
           "en": "Generate money out operations from a Mercado Pago account to other accounts (internal or external), as long as the withdrawal account has funds",
@@ -327,7 +327,6 @@
                     },
                     "point_of_interaction": {
                       "type": "object",
-                      "example": "{\"type\":\"PSP_TRANSFER\"}",
                       "properties": {
                         "type": {
                           "type": "string",
@@ -336,7 +335,7 @@
                             "pt": "Ponto de interação. É um valor fixo, sempre {\"type\":\"PSP_TRANSFER\"}.",
                             "es": "Punto de interacción. Es un valor fijo, siempre {\"type\":\"PSP_TRANSFER\"}."
                           },
-                          "example": "{\"type\":\"PSP_TRANSFER\"}"
+                          "example": "PSP_TRANSFER"
                         }
                       }
                     },
@@ -511,7 +510,8 @@
                                     "example": "01AAAM001A1AY43FBR8WCM9CES"
                                   },
                                   "status_details": {
-                                    "type":"array",
+                                    "type":"string",
+                                    "example": "approved",
                                     "description": {
                                       "es": "Información detallada del estado de la operación.",
                                       "pt": "Informação detalhada do status da operação.",
@@ -606,8 +606,7 @@
                                           "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
                                         }
                                       }
-                                    ],
-                                    "example": "approved"
+                                    ]
                                   }
                                 }
                               }
@@ -901,3 +900,4 @@
     }
   }
 } 
+
