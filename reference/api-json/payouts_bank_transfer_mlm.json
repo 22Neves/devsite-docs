@@ -695,7 +695,7 @@
                           "title":"Invalid Body",
                           "description":{
                             "en":"The request body has an invalid format",
-                            "es":"El cuerpo de la llamada tiene un formato inválido.",
+                            "es":"El body de la llamada tiene un formato inválido.",
                             "pt":"O body da requisição tem um formato inválido"
                           }
                         },
