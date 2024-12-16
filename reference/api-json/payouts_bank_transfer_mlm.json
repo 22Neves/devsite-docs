@@ -334,7 +334,7 @@
                         {
                           "title": "approved",
                           "description": {
-                            "en": "The transaction processing was made successfully.",
+                            "en": "The transaction was processed successfully.",
                             "es": "El procesamiento de la transacción se realizó de manera exitosa.",
                             "pt": "O processamento da transação foi bem-sucedido."
                           }
