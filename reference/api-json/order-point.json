@@ -212,8 +212,8 @@
                         "es":"Descripción del producto o servicio comprado, el motivo de la order de pago."
                       }
                     },
-                    "site_id":{
-                      "$ref": "#/components/schemas/site_id"
+                    "country_code":{
+                      "$ref": "#/components/schemas/country_code"
                     },
                     "integration_data":{
                       "type":"object",
@@ -708,8 +708,8 @@
                         "es":"Descripción del producto o servicio comprado, el motivo de la order de pago."
                       }
                     },
-                    "site_id":{
-                      "$ref": "#/components/schemas/site_id"
+                    "country_code":{
+                      "$ref": "#/components/schemas/country_code"
                     },
                     "integration_data":{
                       "type":"object",
@@ -830,13 +830,7 @@
                                 "$ref": "#/components/schemas/status"
                               },
                               "status_detail": {
-                                "type": "string",
-                                "example": "cancelled_by_api",
-                                "description": {
-                                  "en":"Details about payment status. It is returned exclusively when the order is cancelled through the API, with the value \"cancelled_by_api\".",
-                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"cancelled_by_api\".",
-                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"cancelled_by_api\"."
-                                }
+                                "$ref": "#/components/schemas/status"
                               },
                               "reference_id": {
                                 "type": "string",
@@ -1151,8 +1145,8 @@
                         "es":"Descripción del producto comprado, el motivo de la order de pago."
                       }
                     },
-                    "site_id":{
-                      "$ref": "#/components/schemas/site_id"
+                    "country_code":{
+                      "$ref": "#/components/schemas/country_code"
                     },
                     "integration_data":{
                       "type":"object",
@@ -2585,8 +2579,7 @@
                   "pt": "Este parâmetro corresponde apenas a transações na Brasil (MLB) e só é permitido quando \"default_type = credit_card\". Deve ser um valor inteiro entre 1 e 72.",
                   "es": "Este parametro corresponde a transacciones en Brasil (MLB) y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor entero entre 1 y 72. "
                 },
-                "example":"6",
-                "required": true
+                "example":"6"
               },
               "installments_cost":{
                 "type":"string",
@@ -2613,25 +2606,24 @@
                     }
                   }
                 ],
-                "example":"seller",
-                "required": true
+                "example":"seller"
               }
             }
           }
 
         }
       },
-      "site_id":{
+      "country_code":{
         "type":"string",
         "description":{
           "en":"Site or location identifier from where the order was created, according to a predefined list.",
           "pt":"Identificador do site ou local de onde a order foi criada, conforme lista pré-determinada.",
           "es":"Identificador del sitio o ubicación desde donde se creó la order, según lista predeterminada."
         },
-        "example": "MLB",
+        "example": "BRA",
         "enum": [
           {
-            "title": "MLB",
+            "title": "BRA",
             "description": {
               "en": "Order created in Brazil.",
               "es": "Order creada en Brasil.",
@@ -2639,7 +2631,7 @@
             }
           },
           {
-            "title": "MLA",
+            "title": "ARG",
             "description": {
               "en": "Order created in Argentina.",
               "es": "Order creada en Argentina.",
@@ -2647,7 +2639,7 @@
             }
           },
           {
-            "title": "MLM",
+            "title": "MEX",
             "description": {
               "en": "Order created in Mexico.",
               "es": "Order creada en Mexico.",
@@ -2655,7 +2647,7 @@
             }
           },
           {
-            "title": "MLC",
+            "title": "CHL",
             "description": {
               "en": "Order created in Chile.",
               "es": "Order creada en Chile.",
