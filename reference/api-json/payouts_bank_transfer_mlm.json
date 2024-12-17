@@ -476,8 +476,8 @@
                                       "pt": "Informação detalhada do status da operação.",
                                       "en": "Detailed information about the status of the operation."
                                     },
-                                    "properties": {
-                                      "type": "object",
+                                    "items": {
+                                      "type":"object",
                                       "properties": {
                                         "approved": {
                                           "type":"string",
