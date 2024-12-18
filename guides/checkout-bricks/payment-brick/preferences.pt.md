@@ -249,8 +249,6 @@ preference_data = {
 ```
 ]]]
 
-------------
-
 ----[mla, mlb]----
 
 ## Aceite pagamentos com 2 cartões de crédito
