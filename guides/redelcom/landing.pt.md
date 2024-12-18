@@ -60,6 +60,6 @@ bullet_section_with_media:
 --- mini_landing_separator ---
 >>>> Tipos de pagamento aceitos <<<<
 ---
-available_payments: efectivo, cartera, credit, debit
+available_payments: credit, debit
 
 ----
