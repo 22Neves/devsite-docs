@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: Ofrece una experiencia de checkout transparente con posibilidad de personalización según cada tienda, es seguro ya que la información de pago es procesada a través de Mercado Pago y tiene un proceso de integración más simple, minimizando los tiempos de producción y desarrollo.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
+ - image: /checkout-bricks/bricks-landing.png
 ---
 
 --- mini_landing_separator ---
