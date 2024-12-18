@@ -58,11 +58,7 @@ const customization = {
 ![default-payment-option-mlm](checkout-bricks/default-payment-option-mlm-en.png)
 
 ------------
-----[mlu]----
-![default-payment-option-mlu](checkout-bricks/default-payment-option-mlu-en.png)
-
-------------
-----[mpe, mco]----
+----[mpe, mco, mlu]----
 ![default-payment-option-all](checkout-bricks/default-payment-option-all-en.png)
 
 ------------

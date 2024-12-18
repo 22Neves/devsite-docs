@@ -40,7 +40,18 @@ Just passing these two properties, Brick will automatically give the user the op
 >
 > Only no expired cards will be shown to the buyer, expired cards will not be made available.
 
-![payment-Brick-cc](checkout-bricks/payment-brick-cc.en.gif)
+----[mlb]----
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-en.mlb.png)
+
+------------
+----[mlm]----
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-en.mlm.png)
+
+------------
+----[mla, mpe, mco, mlu, mlc]---- 
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-en.all.png)
+
+------------
 
 ----[mlb]----
 To learn how to create, modify and get the `customerId` and `cardsIds`, see the [Cards and customers management](/developers/en/docs/checkout-api/customer-management) section of the Checkout Transparente documentation.

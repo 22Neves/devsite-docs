@@ -36,8 +36,8 @@ O layout do Card Payment Brick foi construído com base nas melhores práticas d
 ![cardform](checkout-bricks/card-form-mlm-pt.png)
 
 ------------
-----[]----
-![mpe, mlu, mco](checkout-bricks/card-form-all-pt.png)
+----[mpe, mlu, mco]----
+![cardform](checkout-bricks/card-form-all-pt.png)
 
 ------------
 
