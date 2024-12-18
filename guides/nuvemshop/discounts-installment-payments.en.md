@@ -10,22 +10,27 @@ You can customize these settings according to your needs, **through your store's
 2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings** to set the configurations below.
 
-### Installments
+----[mlb]----
+![discounts mlb](/images/nuvemshop/discounts-mlb.png)
 
-* **Minimum installment amount**: This setting is optional and allows you to set a minimum limit for the installment amount.
+------------
+----[mlm, mla, mpe, mco, mlu, mlc]----
+![discounts all](/images/nuvemshop/discounts-all.png)
+
+------------
 
 ### Discounts
+
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-* **Checkout API**: These optional settings allow you to establish specific discounts for different payment methods with Checkout API. Configure the discount in percentage applied to customers who choose to pay with:
+* **Checkout transparente**: These optional settings allow you to establish specific discounts for different payment methods with Checkout API. Configure the discount in percentage applied to customers who choose to pay with:
    * Boleto bancário
    * Credit card
-   * Pay in cash networks
+   * Pago en efectivo
 ------------
 ----[mlb]----
-* **Transparent Checkout**: These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
+* **Checkout transparente**: These optional settings allow you to establish specific discounts for different payment methods with Transparent Checkout. Configure the discount in percentage applied to customers who choose to pay with:
    * Boleto bancário
    * Credit card
-   * Pix
 
 ------------
 * **External Checkout (Checkout Pro)**: You can define a global percentage discount for customers who choose the External Checkout. Enter the percentage value to deduct from the total purchase amount.
@@ -43,6 +48,19 @@ You can also set up the installment experiences for each checkout in your store 
 5. On the relevant screen, find the payment method "Checkout Pro" and click on **Configure**.
 6. In this section, you can define the **maximum number of installments** that your customers can use when making a payment with Checkout Pro.
 
+----[mlb]----
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+
+------------
+----[mlm]----
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+
+------------
+----[mla]----
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+
+------------
+
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 ### Checkout API
 
@@ -57,6 +75,19 @@ You can also set up the installment experiences for each checkout in your store 
 4. Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
 5. Find the payment method ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ and click on **Configure**.
 6. In this section, you can define the maximum number of installments that your customers can use when making a payment with ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
+
+----[mlb]----
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+
+------------
+----[mlm]----
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+
+------------
+----[mla]----
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+
+------------
 
 ## Mercado Pago account
 
