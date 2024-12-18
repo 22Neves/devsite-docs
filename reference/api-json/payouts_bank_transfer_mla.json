@@ -517,9 +517,9 @@
                                       "pt": "Informação detalhada do status da operação.",
                                       "en": "Detailed information about the status of the operation."
                                     },
-                                    "properties": {
+                                    "items": {
                                       "type": "object",
-                                      "items": {
+                                      "properties": {
                                         "approved": {
                                           "type":"string",
                                           "description": {
@@ -608,7 +608,7 @@
                                             "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
                                           }
                                         }
-                                      }
+                                      }  
                                     }  
                                   }
                                 }
