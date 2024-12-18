@@ -9,7 +9,7 @@ content_section_with_media:
 
 >>>> Availability by countrys<<<<
 ---
-available_countries: mlb, mla, mlm
+available_countries: mlb, mla, mlm, mlc
 
 ---
 
@@ -74,6 +74,14 @@ available_payments: credit, debit, mercadopago
 ------------
 
 ----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
+----[mlc]---- 
 
 ---
 available_payments: credit, debit, mercadopago

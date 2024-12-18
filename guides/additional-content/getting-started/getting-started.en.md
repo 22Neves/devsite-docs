@@ -37,7 +37,7 @@ bullet_section_with_media:
 
 ## Process online payments
 
-Solutions for those who sell on websites, through WhatsApp, or social media. The fees, based on the receipt period and/or the number of interest-free installments offered to the buyer, are automatically applied to sales. For further details, please refer to the links below.
+Solutions for those who sell on websites, through WhatsApp, or social media.
 
 ### Solutions without integration
 
@@ -115,6 +115,8 @@ With our **frontend SDKs**, you can make calls for card tokens and use many othe
 <br>
 
 ### Learn about the costs and fees of Mercado Pago
+
+The fees, based on the receipt period and/or the number of interest-free installments offered to the buyer, are automatically applied to sales. For further details, please refer to the links below.
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 #### Receiving payments

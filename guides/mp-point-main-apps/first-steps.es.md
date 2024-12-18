@@ -1,8 +1,8 @@
 # Primeros pasos
 
-Asegúrate de tener la **Demo App** instalada en el dispositivo SmartPOS del [Kit de Desarrollo](https://drive.google.com/drive/folders/1Mglpa2c3FmYs4L9iskczagBMPGjHCMbY?usp=share_link). Esta app puede servir como referencia en la integración.
+La integración de Main Apps se realiza por medio de SDKs. Para comenzar, instala la **Demo App** del [Kit de Desarrollo](https://drive.google.com/drive/folders/1Mglpa2c3FmYs4L9iskczagBMPGjHCMbY?usp=share_link) en el dispositivo SmartPOS. Esta app puede servir como referencia en la integración.
 
-Para usar el [SDK](/developers/es/docs/sdks-library/landing), sigue estos pasos:
+Luego, sigue estos pasos para poder utilizar los [SDKs](/developers/es/docs/sdks-library/landing):
 
 1. Agrega la biblioteca del Kit de Desarrollo en el directorio **app/libs**.
 2. Incluye la dependencia para la biblioteca en el archivo **.gradle** del módulo en el que se usará el SDK. Así:
@@ -15,9 +15,9 @@ dependencies {
 }
 ```
 
-3. La configuración correcta de metadata en el archivo **AndroidManifest.xml** es crucial para garantizar el funcionamiento óptimo y la integración completa de nuestro SDK en tu aplicación. La metadata permite definir configuraciones esenciales y personalizadas que el SDK necesita para operar adecuadamente, adaptándose a las necesidades específicas de cada aplicación y su entorno de uso. Para ello, configure las siguientes información:
+3. La configuración correcta de metadata en el archivo **AndroidManifest.xml** es crucial para garantizar el funcionamiento óptimo y la integración completa de nuestras SDKs en tu aplicación. La metadata permite definir configuraciones esenciales y personalizadas que el SDK necesita para operar adecuadamente, adaptándose a las necesidades específicas de cada aplicación y su entorno de uso. Para ello, configura la siguiente información:
 
-   - **CLIENT_ID**: para identificar las transacciones de los integradores, indica la [credencial](/developers/es/docs/main-apps/additional-content/your-integrations/credentials) **Client ID** que fue asignada a la aplicación creada en el [Panel del desarrollador](/developers/es/docs/checkout-bricks/additional-content/your-integrations/dashboard).
+   - **CLIENT_ID**: para identificar las transacciones de los integradores, indica la [credencial](/developers/es/docs/main-apps/additional-content/your-integrations/credentials) **Client ID** que fue asignada a la aplicación creada en [Tus integraciones](/developers/es/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
    ```xml
    <application
@@ -40,7 +40,7 @@ dependencies {
    > <br><br>
    > Además, asegúrate de que el valor del **Client ID** termine con la letra "L" para indicar que es un número del tipo _Long_. Esto es necesario para que el SDK procese correctamente el valor.
 
-   - **OAUTH_ENABLED**: utiliza el campo `OAUTH_ENABLED` para activar el protocolo de autorización [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction), que es necesario cuando los dispositivos se utilizarán con cuentas diferentes a la del desarrollador de la aplicación. Este campo es opcional y, si no se agrega en la metadata, se considerará el valor predeterminado `false`.
+   - **OAUTH_ENABLED**: utiliza el campo `OAUTH_ENABLED` para activar el protocolo de autorización [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction), necesario para cuando los dispositivos se utilicen con cuentas diferentes a la del desarrollador de la aplicación. Este campo es opcional y, si no se agrega en la metadata, se considerará el valor predeterminado `false`.
 
    ```xml
    <application
@@ -62,15 +62,19 @@ dependencies {
    >
    > Es crucial que el nombre de la metadata sea exactamente `com.mercadolibre.android.sdk.OAUTH_ENABLED`. Cualquier variación en el nombre puede resultar en la falta de reconocimiento del campo por parte del SDK.
    > <br><br>
-   > Asegúrate de definir correctamente el valor del campo solo con `true` o `false`, de acuerdo con la necesidad de habilitar o no el protocolo [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction). Si no se especifica, el valor predeterminado será `false`.
+   > Asegúrate de definir correctamente el valor del campo sólo con `true` o `false`, de acuerdo con la necesidad de habilitar o no el protocolo [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction). Si no se especifica, el valor predeterminado será `false`.
 
 4. Aún en el archivo **AndroidManifest.xml**, define la actividad principal que se establecerá como _launcher_ de la app. Agrega los siguientes `intent-filter`:
 
 ```xml
-<intent-filter>                
-                <action android:name="android.intent.action.MAIN" />               
-                <category android:name="android.intent.category.DEFAULT" />               
-                <category android:name="android.intent.category.HOME" />
+<intent-filter>
+
+   ...
+
+   <category android:name="android.intent.category.LAUNCHER" />
+
+   <category android:name="android.intent.category.HOME" />
+
 </intent-filter>
 ```
 
@@ -89,7 +93,7 @@ class MainApplication : Application() {
    }
 }
 ```
-```javascript
+```java
 public class MainApplication extends Application {
 
  @Override
@@ -105,7 +109,7 @@ public class MainApplication extends Application {
 ```
 ]]]
 
-5. Empieza a usar el SDK para procesar pagos:
+5. Empieza a utilizar el SDK para procesar pagos:
 
 [[[
 ```kotlin
@@ -138,7 +142,7 @@ paymentFlow.launchPaymentFlowActivity(
    }
 }
 ```
-```javascript
+```java
 PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
 
 HashMap<String, String> metadata = new HashMap<>();

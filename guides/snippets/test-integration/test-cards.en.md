@@ -97,7 +97,7 @@ To **test different payment results**, fill in the desired status in the cardhol
 | :--- | :---: | :---: | :---: |
 | Elo | 5067 7667 8388 8311 | 123 | 11/25 |
 
-To **test different payment results**, fill in the desired status in the cardholder's name (field `card_holder_name`):
+To **test different payment results**, fill in the desired status in the cardholder's name (field `cardholder_name`):
  
 | Payment Status | Description | Identity document |
 | --- | --- | --- |

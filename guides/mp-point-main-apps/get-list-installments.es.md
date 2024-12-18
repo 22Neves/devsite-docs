@@ -1,5 +1,5 @@
 
-----[mla, mlb]---- 
+----[mla, mlb, mlc]---- 
 # Obtener lista de cuotas 
 
 Para obtener la lista de cuotas asociadas a un monto específico, usa la función `getInstallmentsAmount`. Puedes acceder a ella a través de la `PaymentInstallmentTools`, a través del objeto `MPManager`.
@@ -18,7 +18,7 @@ La función `getInstallmentsAmount` simplifica el proceso de obtención de infor
 
 > WARNING
 >
-> Attention
+> Importante
 >
 > Por el momento, esta opción solo está disponible para soluciones implementadas en Brasil.
 
@@ -29,7 +29,7 @@ Para usar la función, debes:
 
 De esta manera:
 
-----[mla, mlb]---- 
+----[mla, mlb, mlc]---- 
 [[[
 ```kotlin
 MPManager.paymentInstallmentTools.getInstallmentsAmount(
@@ -105,7 +105,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 |**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de mensualidades. Asegúrate de manejar adecuadamente tanto el caso de éxito como el caso de error en la solicitud de la lista.|
 |**amount (String)**|Monto con el cual se determina la lista de mensualidades.|
 |**installment (Int)**|Número de mensualidades.|
-|**amount (Double)**|Monto de cada mensualidade.|
-|**financialAmount (Double)**|Porcentaje de interés de cada mensualidade.|
+|**amount (Double)**|Monto de cada mensualidad.|
+|**financialAmount (Double)**|Porcentaje de interés de cada mensualidad.|
 
 ------------

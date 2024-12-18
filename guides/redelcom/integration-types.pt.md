@@ -4,6 +4,12 @@ Você pode escolher entre 2 tipos diferentes de integração, que irão variar c
 
 Consulte a tabela a seguir para obter detalhes sobre cada tipo de integração disponível e selecione o que melhor se adequa ao seu modelo de negócios.
 
+> WARNING
+>
+> Importante
+>
+> Em 2025, **Redelcom passará a operar como Mercado Pago**. Para garantir a continuidade de suas operações, é necessário migrar sua integração para o nosso ecossistema. Consulte nossa documentação para orientações sobre a migração, seja para [integração via API](/developers/pt/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration) ou [integração local](/developers/pt/docs/redelcom/how-tos/migrate-to-mercadopago/local-integration).
+
 | Tipo de Integração | Descrição |
 |--------------------|-------------|
 | Integração Local   | A comunicação no POS (dispositivo) é realizada entre o APP Android (APK) do integrador e um aplicativo da Redelcom, denominado RDCPass. O usuário fornece os dados necessários para a geração de comprovantes, e o POS se encarrega de produzi-los. |

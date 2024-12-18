@@ -67,7 +67,7 @@ Para isso, de acordo com o seu país, utilize algum dos cartões de **crédito**
 | Mastercard | 5287 3383 1025 3304 | 123 | 11/25 |
 | Visa | 4002 7686 9439 5619 | 123 | 11/25 |
 
-Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `card_holder_name`):
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão (campo `cardholder_name`):
  
 | Status de pagamento | Descrição | Documento de identidade |
 | --- | --- | --- |

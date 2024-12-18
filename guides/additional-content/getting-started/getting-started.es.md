@@ -39,7 +39,7 @@ bullet_section_with_media:
 
 ## Procesa pagos online
 
-Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. Ofrecemos integraciones sencillas y acceso gratuito a nuestra API. Las tarifas, basadas en el período de recepción de pagos y/o en la cantidad de cuotas sin interés ofrecidas al comprador, se aplican automáticamente a las ventas. Para más detalles, consulta los enlaces a continuación.
+Soluciones para quienes vendan por sitio web, desde WhatsApp o redes sociales. Ofrecemos integraciones sencillas y acceso gratuito a nuestra API. 
 
 ### Soluciones sin integración
 | Solución | Descripción | Conocimientos necesarios |
@@ -115,6 +115,8 @@ Con las **SDKs de frontend**, puedes realizar llamadas para el token de tarjetas
 <br>
 
 ### Conoce los costos y tarifas de Mercado Pago
+
+Las tarifas, basadas en el período de recepción de pagos y/o en la cantidad de cuotas sin interés ofrecidas al comprador, se aplican automáticamente a las ventas. Para más detalles, consulta los enlaces a continuación.
 
 ----[mla, mpe, mco, mlu, mlc]----
 #### Recepción de pagos

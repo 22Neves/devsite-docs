@@ -1,4 +1,4 @@
-# Access settings
+# Set bluetooth
 
 Use the `launch` method of the `BluetoothUiSettings` class to start with the bluetooth settings on Mercado Pago. That component provides several features, like activating and deactivating, searching for devices, and pairing and unpairing, among others. Check how to access it.
 
