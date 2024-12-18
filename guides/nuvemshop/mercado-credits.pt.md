@@ -64,4 +64,17 @@ Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos aba
 ------------
 6. Por fim, clique em **Salvar alterações**.
 
+----[mlb]---- 
+![credits](/images/nuvemshop/integration-credits-mlb.png)
+
+------------
+----[mla]---- 
+![credits](/images/nuvemshop/integration-credits-mla.png)
+
+------------
+----[mlm]---- 
+![credits](/images/nuvemshop/integration-credits-mlm.png)
+
+------------
+
 Pronto! A modalidade de financiamento está habilitada em sua loja.
