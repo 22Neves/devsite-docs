@@ -48,5 +48,5 @@ smartInformationTools.getInformation(callback);
 |**serialNumber**| POS machine serial number.|
 |**brandName**| POS machine brand.|
 |**modelName**| POS machine model.|
-|**paymentModuleVersion**| Version of the payment module of the [SmartPOS](/developers/en/docs/mp-point/landing).|
+|**paymentModuleVersion**| Version of the payment module of the SmartPOS.|
 |**nativeSdkVersion**| Integration SDK version.|

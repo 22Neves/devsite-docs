@@ -8,7 +8,7 @@ To obtain information about payments, the user or to perform any operation on th
 
 ## Ecosystem version
 
-In the application configuration, check the version of the device's operating system. Point Smart uses Android 6, which implies a minimum API Level of 23.
+In the application configuration, check the version of the device's operating system. **Point Smart A910** uses Android 6, which implies a minimum API Level of 23. **Point Smart N950** uses Android 12, which implies a minimum API Level of 31.
 
 SmartPOS devices have an AOSP operating system, and for this reason do not have many Google and Firebase services. Check which ones are available on the [official Firebase page](https://firebase.google.com/docs/android/android-play-services).
 

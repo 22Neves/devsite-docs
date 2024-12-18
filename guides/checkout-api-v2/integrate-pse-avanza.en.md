@@ -128,7 +128,6 @@ Once the payment methods are obtained, you can list the available banks for paym
 
 For the list of payment methods to be consumed by the frontend in the following steps, you will need to create a new `GET /payment_methods` endpoint in your application.
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -220,27 +219,33 @@ To create a payments with PSE, it is also necessary to obtain the user's documen
 
 ```javascript
 document.getElementById('form-checkout__personType').addEventListener('change', e => {
-   const personTypesElement = document.getElementById('form-checkout__personType');
-   updateSelectOptions(personTypesElement.value);
+	const personTypesElement = document.getElementById('form-checkout__personType');
+	updateSelectOptions(personTypesElement.value);
 });
-function updateSelectOptions(selectedValue){
-   
-   const naturalDocTypes = [
-       new Option('C.C', 'CC'),
-       new Option('C.E.', 'CE')
-   ];
-   const juridicaDocTypes = [
-       new Option('NIT', 'NIT')
-   ];
-   const idDocTypes = document.getElementById('form-checkout__identificationType');
-   
-   if(selectedValue === 'natural') {
-       idDocTypes.options.length = 0;
-       naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   } else {
-       idDocTypes.options.length = 0;
-       juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
-   }
+
+function updateSelectOptions(selectedValue) {
+
+	const naturalDocTypes = [
+		new Option('C.C', 'CC'),
+		new Option('C.E.', 'CE'),
+		new Option('Pasaporte', 'PAS'),
+		new Option('Tarjeta de Extranjería', 'TE'),
+		new Option('Tarjeta de Identidad ', 'TI'),
+		new Option('Registro Civil', 'RC'),
+		new Option('Documento de Identificación', 'DI')
+	];
+	const juridicaDocTypes = [
+		new Option('NIT', 'NIT')
+	];
+	const idDocTypes = document.getElementById('form-checkout__identificationType');
+
+	if (selectedValue === 'natural') {
+		idDocTypes.options.length = 0;
+		naturalDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	} else {
+		idDocTypes.options.length = 0;
+		juridicaDocTypes.forEach(item => idDocTypes.options.add(item, undefined));
+	}
 }
 ```
 
@@ -687,7 +692,7 @@ The following are **mandatory** fields that must be completed when sending a pay
 | `transaction_amount` | Payment amount. | Must be greater than 0. | - |
 | `transaction_details.financial_institution` | Bank informed in the POST to make the electronic transfer. You must show the list to the user and allow him to select. This list usually refreshes, so it’s recommended to consume the information every hour. | - | https://api.mercadopago.com/v1/payment_methods/search?site_id=MCO&id=pse&public_key=YOUR_PUBLIC_KEY  |
 | `payer.entity_type` | Type of person, natural or legal. | *individual* or *association* | - |
-| `payer.identification.type` | Buyer's document type. | Accepted values: <br> - RC (Registro Civil de Nacimiento) <br> - TI (Tarjeta de Identidad) <br> - CC (Cedula de Ciudadania)  <br> - TE (Tarjeta de Extranjeria) <br> - CE (Cedula de Extranjeria) <br> - PAS (Pasaporte) <br> - NIT | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
+| `payer.identification.type` | Buyer's document type. | Accepted values: <br> - `RC` (Registro Civil de Nacimiento) <br> - `TI` (Tarjeta de Identidad) <br> - `CC` (Cedula de Ciudadania)  <br> - `TE` (Tarjeta de Extranjeria) <br> - `CE` (Cedula de Extranjeria) <br> - `PAS` (Pasaporte) <br> - `NIT` <br> - `DI` (Documento de Identificación) | curl -X GET \ <br> 'https://api.mercadopago.com/v1/identification_types' \ <br> -H 'Authorization: Bearer **YOUR_PUBLIC_KEY**' |
 | `payer.identification.number` | Buyer's document number. | String <br> Must have between 1 and 15 numeric positions. If it is of the 'passport' type, it will accept alphanumeric values.| - |
 | `payer.first_name` | Buyer's first name. | Must have between 1 and 32 positions. | - |
 | `payer.last_name` | Buyer's last name. | Must have between 1 and 32 positions. | - |

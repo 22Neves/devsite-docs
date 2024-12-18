@@ -52,28 +52,31 @@ To configure payments with **Efecty**, send a **POST** with the following parame
 ?>
 ```
 ```node
-import { Payment, MercadoPagoConfig } from 'mercadopago';
+const mercadopago = require('mercadopago');
+import { MercadoPagoConfig, Payment } from '@src/index';
 
-const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
+const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>', options: { timeout: 5000 } });
 
-payment.create({
-    body: { 
-        transaction_amount: req.transaction_amount,
-        token: req.token,
-        description: req.description,
-        installments: req.installments,
-        payment_method_id: req.paymentMethodId,
-        issuer_id: req.issuer,
-            payer: {
-            email: req.email,
-            identification: {
-        type: req.identificationType,
-        number: req.number
-    }}},
-    requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }
-})
-.then((result) => console.log(result))
-.catch((error) => console.log(error));
+const payment = new Payment(client);
+
+payment
+  .create({
+    body: {
+      transaction_amount: 100,
+      token: '<TOKEN>',
+      description: '<DESCRIPTION>',
+      installments: 1,
+      payment_method_id: '<PAYMENT_METHOD_ID>',
+      issuer_id: 310,
+      payer: {
+        email: '<EMAIL>',
+        identification: {
+          number: '12345678909',
+          type: 'CPF',
+        },
+      },
+    },
+  }).then(console.log).catch(console.log);
 ```
 ```java
 Map<String, String> customHeaders = new HashMap<>();

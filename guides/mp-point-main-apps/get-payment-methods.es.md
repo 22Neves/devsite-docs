@@ -1,6 +1,6 @@
 # Obtener medios de pago
 
-A través del `MPManager`, usa la instancia `PaymentsMethodsTools` con la función `getPaymentMethods`. Los medios de pagos se mostrarán por un **ENUM** llamado `PaymentMethod`, como en el ejemplo a continuación.
+A través del `MPManager`, usa la instancia `PaymentsMethodsTools` con la función `getPaymentMethods`. Los medios de pago se mostrarán por un **ENUM** llamado `PaymentMethod`, como en el ejemplo a continuación.
 
 [[[
 ```kotlin

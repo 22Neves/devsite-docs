@@ -1,6 +1,6 @@
 # Obtener información
 
-A través de la función `getInformation` de la clase `SmartInformationTools`, recuperas información detallada sobre un dispositivo y el SDK de las integraciones. Accede a esta función por el a través del objeto `MPManager`, como en el ejemplo a continuación:
+A través de la función `getInformation` de la clase `SmartInformationTools`, recuperas información detallada sobre un dispositivo y el SDK de las integraciones. Accede a esta función a través del objeto `MPManager`, como en el ejemplo a continuación:
 
 [[[
 ```kotlin
@@ -41,7 +41,7 @@ smartInformationTools.getInformation(callback);
 ```
 ]]]
 
-----[mla, mlb]---- 
+----[mla, mlb, mlc]---- 
 |Campo|Descripción|
 |---|---|
 |**smartDevice**| Detalles del dispositivo.|
@@ -49,7 +49,7 @@ smartInformationTools.getInformation(callback);
 |**serialNumber**| Número de serie del lector.|
 |**brandName**| Nombre de la marca del lector.|
 |**modelName**| Nombre del modelo del lector.|
-|**paymentModuleVersion**| Versión del módulo de pago del [SmartPOS](/developers/en/docs/mp-point/landing).|
+|**paymentModuleVersion**| Versión del módulo de pago del SmartPOS.|
 |**nativeSdkVersion**| Versión del SDK de las integraciones.|
 
 ------------ 
@@ -61,7 +61,7 @@ smartInformationTools.getInformation(callback);
 |**serialNumber**| Número de serie de la terminal.|
 |**brandName**| Nombre de la marca de la terminal.|
 |**modelName**| Nombre del modelo de la terminal.|
-|**paymentModuleVersion**| Versión del módulo de pago del [SmartPOS](/developers/en/docs/mp-point/landing).|
+|**paymentModuleVersion**| Versión del módulo de pago del SmartPOS.|
 |**nativeSdkVersion**| Versión del SDK de las integraciones.|
 
 ------------

@@ -2,7 +2,6 @@
 
 Se você já possui um cadastro de afiliação do gateway MercadoPagoV1, deve estar ciente de que em breve ele será descontinuado e **a migração para MercadoPagoV2 se tornará obrigatória** para continuar processando pagamentos em lojas VTEX.
 
-
 O MercadoPagoV2 permite disponibilizar os mesmos meios de pagamento e também adicionar pagamentos em dinheiro ----[mla, mlm, mlb]----ou parcelados sem cartão------------. Também será possível ativar o **3DS (3-D Secure)**, um protocolo criado para proteger transações em lojas online por meio de uma camada adicional de verificação de identidade antes da autorização final, o que tornará suas transações ainda mais seguras e aumentará a taxa de aprovação de seus pagamentos.
 
 Para realizar a migração do MercadoPagoV1 para o MercadoPagoV2, siga os seguintes passos:
@@ -35,7 +34,7 @@ Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá c
 | Integrator ID | Se você é um desenvolvedor, preencha com sua **identificação do Mercado Pago**. |
 | Moeda | ----[mlu]---- Configure a moeda da loja (**USD** ou **Local**). ------------ ----[mla, mlm, mlb, mco, mpe, mlc]---- Este campo identifica a moeda da loja. Você não precisa completá-lo. ------------ |
 | Merchant Account | Este campo identifica a conta do merchant. Você não precisa completá-lo. |
-| Prazo de captura de pagamento aprobado | Você pode configurar um atraso na captura do pagamento que a VTEX realiza selecionando nas opções do menu suspenso. Se não quiser configurá-lo, selecione **"Desativado"**. |
+| Prazo de captura de pagamento aprobado | Neste campo, configure como **imediato** o prazo para captura dos pagamentos aprovados. |
 | Tempo para cancelar carrito abandonado | Configure o intervalo de tempo que deve ser aguardado até que os meios de pagamento habilitados não estejam disponíveis para efetuar a compra. Você pode selecionar um intervalo de tempo nas opções suspensas ou escolher **“não cancelar”**. |
 
 6. Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.

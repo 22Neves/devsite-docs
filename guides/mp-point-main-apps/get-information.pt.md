@@ -48,5 +48,5 @@ smartInformationTools.getInformation(callback);
 |**serialNumber**| Número de série da maquininha.|
 |**brandName**| Nome da marca da maquininha.|
 |**modelName**| Nome do modelo da maquininha.|
-|**paymentModuleVersion**| Versão do módulo de pagamento do [SmartPOS](/developers/pt/docs/mp-point/landing).|
+|**paymentModuleVersion**| Versão do módulo de pagamento do SmartPOS.|
 |**nativeSdkVersion**| Versão do SDK de integrações.|

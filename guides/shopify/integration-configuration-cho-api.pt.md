@@ -9,7 +9,9 @@ Para integrar o Mercado Pago Cartões, instale o aplicativo via [painel da Shopi
 >
 > Atenção
 >
-> Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
+> A integração com Mercado Pago Cartões não é compatível com o recurso **multi currency** da plataforma Shopify.
+> <br><br>
+> Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm, mco, mlc]----
@@ -18,6 +20,12 @@ Para integrar o Mercado Pago Cartões, instale o aplicativo via [painel da Shopi
 O **Mercado Pago Tarjetas** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
 
 Para integrar o Mercado Pago Tarjetas, instale o aplicativo via [painel da Shopify](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_painel_da_shopify) ou via [Marketplace](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_marketplace). Após a instalação, você poderá [configurar parcelas sem acréscimo](/developers/pt/docs/shopify/integration-configuration/checkout-cards#configurarparcelassemacrscimo).
+
+> WARNING
+>
+> Atenção
+>
+> A integração com Mercado Pago Cartões não é compatível com o recurso **multi currency** da plataforma Shopify.
 
 ------------
 
@@ -72,6 +80,12 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 > Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
 12. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para finalizar a instalação.
+
+> WARNING
+>
+> Atenção
+>
+> É importante salientar que, caso alguma das bandeiras de cartão de crédito listadas em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado.
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
@@ -168,6 +182,12 @@ Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
 > Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
 8. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para finalizar a instalação.
+
+> WARNING
+>
+> Atenção
+>
+> É importante salientar que, caso alguma das bandeiras de cartão de crédito listadas em tela for desabilitada, o processamento de pagamentos para a bandeira em questão será bloqueado.
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
