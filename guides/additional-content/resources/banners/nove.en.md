@@ -14,7 +14,7 @@ width="735" height="40"/>
 
 ### Preview:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/735x40_banner_psj_9x.jpg" alt="Mercado Pago - Meios de pagamento" width="735" height="40"/>
+![9](/images/banners/9-installments-01.jpg)
 
 ## 575 x 40 px
 
@@ -58,7 +58,7 @@ width="120" height="240"/>
 
 ### Preview:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x240_banner_psj_9x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="240"/>
+![9](/images/banners/9-installments-05.jpg)
 
 ## 120 x 600 px
 
@@ -72,4 +72,4 @@ width="120" height="600"/>
 
 ### Preview:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/PSJ/120x600_banner_psj_9x.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="600"/>
+![9](/images/banners/9-installments-06.jpg)
