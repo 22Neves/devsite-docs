@@ -10,7 +10,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: It offers a transparent payment experience with the possibility of customization according to each store, it is secure since the payment information is processed through Mercado Pago and it has a simpler integration process, minimizing production and development times.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
+ - image: /checkout-bricks/bricks-landing.png
 ---
 
 --- mini_landing_separator ---

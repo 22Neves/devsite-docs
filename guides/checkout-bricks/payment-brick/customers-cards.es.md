@@ -40,7 +40,18 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 >
 > Solo se mostrarán al comprador las tarjetas no caducadas, las tarjetas caducadas no estarán disponibles.
 
-![payment-Brick-cc](checkout-bricks/payment-brick-cc.es.gif)
+----[mlb]----
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-es-mlb.png)
+
+------------
+----[mlm]----
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-es-mlm.png)
+
+------------
+----[mla, mpe, mco, mlu, mlc]---- 
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-es-all.png)
+
+------------
 
 ----[mlb]----
 Para obtener información sobre cómo crear, modificar y obtener `customerId` y `cardsIds`, consulte la sección [Gestión de tarjetas y clientes](/developers/es/docs/checkout-api/customer-management) de la documentación de Checkout Transparente.

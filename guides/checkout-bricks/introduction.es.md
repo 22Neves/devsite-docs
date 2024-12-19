@@ -42,15 +42,20 @@ El Checkout Bricks se puede instanciar/renderizar con diferentes temas y caracte
 ------------
 ----[mla]----
 
-![themes-mla](checkout-bricks/themes-mla-es.jpg) 
+![themes-mla](checkout-bricks/themes-mla-es.png) 
 
 ------------
 ----[mlm]----
 
-![themes-mlm](checkout-bricks/themes-mlm-es.jpg) 
+![themes-mlm](checkout-bricks/themes-mlm-es.png) 
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mlc]----
+
+![themes-mlc](checkout-bricks/themes-mlc-es.png) 
+
+------------
+----[mpe, mco, mlu]----
 
 ![themes-all](checkout-bricks/themes-all-es.png)
 

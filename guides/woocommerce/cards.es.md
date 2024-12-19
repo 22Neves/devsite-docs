@@ -46,6 +46,4 @@ Es posible personalizar las opciones en la sección de configuraciones avanzadas
 - **Descuento en los checkouts de Mercado Pago**: ingresa un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 - **Comisión en los checkouts de Mercado Pago**: ingresa un valor porcentual adicional que desees cobrar como comisión a los clientes que elijan este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 
-![Configuraciones avanzadas](/images/woocomerce/api-advanced-settings-cards-es.gif)
-
 Para guardar los cambios en la configuración, haz clic en el botón **Concluir configuración**.
