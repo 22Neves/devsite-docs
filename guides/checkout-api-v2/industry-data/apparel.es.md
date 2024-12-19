@@ -1,7 +1,9 @@
 # Apparel
 
+Estos son los datos específicos para la industria apparel que puedes agregar a tu integración para mejorar la aprobación de los pagos.
+
 ## Campos a enviar
-Agrega toda la información adicional que quieras.
+Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre el comprador
 
@@ -13,16 +15,16 @@ Agrega toda la información adicional que quieras.
 | `type` | String | Tipo de identificación. Se encuentra dentro del objeto `identification`. |
 | `number` | String | Número de identificación. Se encuentra dentro del objeto `identification`. |
 | `phone` | Object | Teléfono del comprador. |
-| `area_code` | Integer | Código de área del comprador. |
-| `number` | Integer | Número de teléfono del comprador. |
+| `area_code` | Integer | Código de área del comprador. Se encuentra dentro del objeto `phone`. |
+| `number` | Integer | Número de teléfono del comprador. Se encuentra dentro del objeto `phone`. |
 | `address` | Object | Datos del domicilio del comprador. |
-| `zip_code` | String | Código postal del comprador. |
-| `street_name` | String | Nombre de calle del domicilio del comprador. |
-| `street_number` | Integer | Número de calle del domicilio del comprador. |
+| `zip_code` | String | Código postal del comprador. Se encuentra dentro del objeto `address`. |
+| `street_name` | String | Nombre de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
+| `street_number` | Integer | Número de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. `True` si lo es, `False` si no lo es. |
+| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `True` si lo es o `False` si no lo es. |
+| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `True` si lo es o `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ### Sobre los ítems
@@ -36,7 +38,7 @@ Agrega toda la información adicional que quieras.
 | `picture_url` | String | URL de imagen que representa al ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
 
 ### Sobre envíos
 

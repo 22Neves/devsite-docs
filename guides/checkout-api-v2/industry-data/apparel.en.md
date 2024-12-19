@@ -1,22 +1,11 @@
-## Apparel
+# Apparel
 
-### Fields to send
-Add all the additional information you want.
+These are the specific data for the apparel industry that you can add to your integration to improve payment approval.
 
-#### About items
+## Fields to send
+Add any additional information that you consider necessary.
 
-| Array `items` | Type | Description |
-| --- | --- | --- |
-| `id` | String | Code. |
-| `title` | String | Name. |
-| `type` | String | Type. |
-| `description` | String | Description. |
-| `picture_url` | String | Picture URL. |
-| `category_id` | String | Category. |
-| `quantity` | Integer | Quantity. |
-| `unit_price` | Float | Unit price. |
-
-#### About the buyer
+### About the buyer
 
 | Object `payer` | Type | Description |
 | --- | --- | --- |
@@ -38,16 +27,29 @@ Add all the additional information you want.
 | `is_first_purchase_online` | Boolean | `True` if it is, `False` if it is not. |
 | `last_purchase` | Date | Date of the last purchase on the site. |
 
-#### About shipments
+### About items
+
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `type` | String | Item type. |
+| `description` | String | Item description. |
+| `picture_url` | String | Image URL representing the item. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
+
+### About shipments
 
 | Object `shipment` | Type | Description |
 | --- | --- | --- |
-| `receiver_address` | Object | Address of the buyer. |
-| `zip_code` | String | Postal code. |
-| `state_name` | String | Province. |
-| `city_name` | String | City. |
-| `street_number` | Integer | Street number. |
-| `express_shipment` | Boolean | `True` if it is, `False` if it is not. |
+| `receiver_address` | Object | Shipping address data. |
+| `zip_code` | String | Postal code for the shipment. |
+| `state_name` | String | Province to which the order is shipped. |
+| `city_name` | String | City to which the order is shipped. |
+| `street_number` | Integer | Street number of the shipment. |
+| `express_shipment` | Boolean | Indicates if the shipment is express. `True` if it is, `False` if it is not. |
 
 ```curl 
 curl --location 'https://api.mercadopago.com/v1/payments' \
