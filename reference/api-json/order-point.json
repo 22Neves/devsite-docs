@@ -96,7 +96,7 @@
                     }
                   },
                   "config":{
-                    "$ref": "#/components/schemas/config"
+                    "$ref": "#/components/schemas/config_request"
                   },
                   "description":{
                     "type":"string",
@@ -212,6 +212,15 @@
                         "es":"Descripción del producto o servicio comprado, el motivo de la order de pago."
                       }
                     },
+                    "processing_mode":{
+                      "type":"string",
+                      "example":"automatic",
+                      "description":{
+                          "en":"Indicates how the order will be processed. For Point orders, the only allowed value is \"automatic\", that sets the order to be ready to process.",
+                          "pt":"Indica como o order será processada. Para orders Point, o único valor permitido será \"automatic\", e indica que o order está pronta para ser processada.",
+                          "es":"Indica cómo será procesada la order. Para orders Point, el único valor posible es \"automatic\", que indica que la order está lista para ser procesada."
+                        }
+                    },
                     "country_code":{
                       "$ref": "#/components/schemas/country_code"
                     },
@@ -323,7 +332,7 @@
                       }
                     },
                     "config":{
-                      "$ref": "#/components/schemas/config"
+                      "$ref": "#/components/schemas/config_response"
                     },
                     "transactions":{
                       "type":"object",
@@ -335,7 +344,6 @@
                       "properties":{
                         "payments":{
                           "type":"array",
-                          "required": true,
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -699,6 +707,15 @@
                         "es":"Es una referencia externa de la order, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
                       }
                     },
+                    "processing_mode":{
+                      "type":"string",
+                      "example":"automatic",
+                      "description":{
+                          "en":"Indicates how the order will be processed. For Point orders, the only allowed value is \"automatic\", that sets the order to be ready to process.",
+                          "pt":"Indica como o order será processada. Para orders Point, o único valor permitido será \"automatic\", e indica que o order está pronta para ser processada.",
+                          "es":"Indica cómo será procesada la order. Para orders Point, el único valor posible es \"automatic\", que indica que la order está lista para ser procesada."
+                        }
+                    },
                     "description":{
                       "type":"string",
                       "example":"Point Mini",
@@ -787,7 +804,7 @@
                       }
                     },
                     "config":{
-                      "$ref": "#/components/schemas/config"
+                      "$ref": "#/components/schemas/config_response"
                     },
                     "transactions":{
                       "type":"object",
@@ -799,7 +816,6 @@
                       "properties":{
                         "payments":{
                           "type":"array",
-                          "required": true,
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -849,7 +865,6 @@
                         },
                         "refunds":{
                           "type":"array",
-                          "required": true,
                           "description":{
                             "en":"Contains information about the refund associated with the order.",
                             "pt":"Contém informações sobre o reembolso associado à order.",
@@ -1148,6 +1163,15 @@
                     "country_code":{
                       "$ref": "#/components/schemas/country_code"
                     },
+                    "processing_mode":{
+                      "type":"string",
+                      "example":"automatic",
+                      "description":{
+                          "en":"Indicates how the order will be processed. For Point orders, the only allowed value is \"automatic\", that sets the order to be ready to process.",
+                          "pt":"Indica como o order será processada. Para orders Point, o único valor permitido será \"automatic\", e indica que o order está pronta para ser processada.",
+                          "es":"Indica cómo será procesada la order. Para orders Point, el único valor posible es \"automatic\", que indica que la order está lista para ser procesada."
+                        }
+                    },
                     "integration_data":{
                       "type":"object",
                       "description":{
@@ -1218,24 +1242,14 @@
                         }
                       ]
                     },
-                    "status_detail":{
-                      "type":"string",
-                      "example":"canceled",
-                      "description":{
-                        "en":"Detailed status of the order or the transaction.",
-                        "pt":"Detalhes do status atual da order ou da transação.",
-                        "es":"Detalle del estado actual de la order o de la transacción."
-                      },
-                      "enum": [
-                        {
-                          "title": "canceled",
-                          "description": {
-                            "en": "The order has been canceled, either through the API or the terminal.",
-                            "es": "La order fue cancelada desde el API o desde la terminal.",
-                            "pt": "A order foi cancelada na API ou no terminal."
-                          }
-                        }
-                      ]
+                    "status_detail": {
+                      "type": "string",
+                      "example": "canceled_by_api",
+                      "description": {
+                        "en":"Details about payment status. It is returned exclusively when the order is canceled through the API, with the value \"cancelsed_by_api\".",
+                        "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"canceled_by_api\".",
+                        "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"canceled_by_api\"."
+                      }
                     },
                     "created_date":{
                       "type":"string",
@@ -1256,7 +1270,7 @@
                       }
                     },
                     "config":{
-                      "$ref": "#/components/schemas/config"
+                      "$ref": "#/components/schemas/config_response"
                     },
                     "transactions":{
                       "type":"object",
@@ -1268,7 +1282,6 @@
                       "properties":{
                         "payments":{
                           "type":"array",
-                          "required": true,
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -1318,9 +1331,9 @@
                                 "type": "string",
                                 "example": "canceled_by_api",
                                 "description": {
-                                  "en":"Details about payment status. It is returned exclusively when the cancellation of the order is made through this endpoint, with the value \"cancelled_by_api\".",
-                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando o cancelamento da order é feito através deste endpoint, com o valor \"cancelled_by_api\".",
-                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la cancelación de la order se realiza por medio de este endpoint, con el valor \"cancelled_by_api\"."
+                                  "en":"Details about payment status. It is returned exclusively when the cancellation of the order is made through this endpoint, with the value \"canceled_by_api\".",
+                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando o cancelamento da order é feito através deste endpoint, com o valor \"canceled_by_api\".",
+                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la cancelación de la order se realiza por medio de este endpoint, con el valor \"canceled_by_api\"."
                                 }
                               }
                             }
@@ -2219,7 +2232,6 @@
                       "properties":{
                         "refunds":{
                           "type":"array",
-                          "required": true,
                           "description":{
                             "en":"Contains information about the refund associated with the order.",
                             "pt":"Contém informações sobre o reembolso associado à order.",
@@ -2401,6 +2413,14 @@
                             "es": "El valor enviado como header de idempotencia ya fue utilizado con una solicitud distinta en un tiempo menor a 24 horas. Por favor, vuelve a intentar realizar la petición enviando un nuevo valor.",
                             "pt": "O valor enviado como header de idempotência já foi utilizado em uma solicitação diferente em um período menor que 24 horas. Por favor, tente a solicitação novamente enviando um novo valor."
                           }
+                        },
+                        {
+                          "title": "order_already_refunded",
+                          "description": {
+                            "en": "The order was already refunded.",
+                            "es": "La order ya fue reembolsada",
+                            "pt": "A order já foi reembolsada."
+                          }
                         }
                       ]
                     }
@@ -2457,7 +2477,7 @@
   },
   "components": {
     "schemas": {
-      "config":{
+      "config_request":{
         "type":"object",
         "description":{
           "en":"Order type configuration.",
@@ -2613,6 +2633,160 @@
 
         }
       },
+      "config_response":{
+        "type":"object",
+        "description":{
+          "en":"Order type configuration.",
+          "pt":"Configuração do tipo de order.",
+          "es":"Configuración del tipo de order."
+        },
+        "properties":{
+          "point": {
+            "type":"object",
+            "description":{
+              "en":"Point order configuration.",
+              "pt":"Configuração da order Point.",
+              "es":"Configuración de la order Point."
+            },
+            "properties":{
+              "terminal_id":{
+                "type":"string",
+                "description": {
+                  "en": "Identifier of the terminal that will obtain the order. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\". The serial number can be found on the rear label of the terminal.",
+                  "es": "Identificador de la terminal Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial de la terminal puede ser hallado en la etiqueta trasera del mismo.",
+                  "pt": "Identificador do terminal que obterá a order. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"PAX_A910__SMARTPOS123456789\". O serial do terminal pode ser encontrado na etiqueta traseira."
+                },
+                "example":"PAX_A910__SMARTPOS1423"
+              },
+              "print_on_terminal":{
+                "type":"string",
+                "description":{
+                  "en":"Indicates whether the terminal should print the receipt of the transaction. Its default value will be \"seller_ticket\".",
+                  "pt":"Indica se o terminal deve imprimir o comprovante da transação. Seu valor padrão será \"seller_ticket\".",
+                  "es":"Indica si la terminal deberá imprimir el ticket comprobante de la transacción. Su valor por defecto será \"seller_ticket\"."
+                },
+                "enum": [
+                  {
+                    "title": "seller_ticket",
+                    "description": {
+                      "en": "Value that determines the printing of the ticket for the seller.",
+                      "es": "Valor que define la impresión del ticket para el vendedor.",
+                      "pt": "Valor que define a impressão do comprovante para o vendedor."
+                    }
+                  },
+                  {
+                    "title": "no_ticket",
+                    "description": {
+                      "en": "Value that determines that the ticket must not be printed.",
+                      "es": "Valor que define que el ticket no debe ser impreso.",
+                      "pt": "Valor que define que o comprovante não deve ser impresso."
+                    }
+                  }
+                ]
+              },
+              "ticket_number":{
+                "type":"string",
+                "example": "S0392JED",
+                "description": {
+                  "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the terminal ticket, if its printing whas selected. This parameter only corresponds to transactions in Argentina (MLA).",
+                  "pt": "Um valor alfanumérico para identificar o número da fatura ou do ticket. Ele será impresso no comprovante do terminal, no caso a impressão tenha sido selecionada. Este parâmetro corresponde apenas a transações na Argentina (MLA).",
+                  "es": "Valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket de la terminal, en caso de seleccionar su impresión. Este parametro corresponde a transacciones en Argentina (MLA)."
+                }
+              }
+            }
+          },
+          "payment_method":{
+            "type":"object",
+            "description":{
+              "en":"Order's payment method configuration.",
+              "pt":"Configuração do meio de pagamento da order.",
+              "es":"Configuración relativa al método de pago de la order."
+            },
+            "properties":{
+              "default_type":{
+                "type":"string",
+                "example":"credit_card",
+                "description":{
+                  "en":"Indicates the payment method that the terminal will accept. By default, it will accept all payment methods and will allow the customer to select the payment method they want. If not, the possible values ​​are the following:",
+                  "pt":"Indica o meio de pagamento que o terminal aceitará. Por padrão, aceitará todos os meios de pagamento e permitirá que o cliente selecione o meio de pagamento que deseja. Caso contrário, os valores possíveis são os seguintes:",
+                  "es":"Indica el medio de pago que aceptará la terminal. Por defecto, aceptará todos los medios de pago y permitirá al cliente seleccionar el que desee. Si no, los valores posibles son los siguientes:" 
+                },
+                "enum": [
+                  {
+                    "title": "debit_card",
+                    "description": {
+                      "en": "The terminal will only accept payments with debit card.",
+                      "es": "La terminal aceptará exclusivamente pagos con tarjeta de débito.",
+                      "pt": "O terminal aceitará exclusivamente pagamentos com cartão de débito."
+                    }
+                  },
+                  {
+                    "title": "credit_card",
+                    "description": {
+                      "en": "The terminal will only accept payments with credit card.",
+                      "es": "La terminal aceptará exclusivamente pagos con tarjeta de crédito.",
+                      "pt": "O terminal aceitará exclusivamente pagamentos com cartão de crédito."
+                    }
+                  },
+                  {
+                    "title": "qr",
+                    "description": {
+                      "en": "The terminal will only accept payments with a QR code.",
+                      "es": "La terminal aceptará exclusivamente pagos con un código QR.",
+                      "pt": "O terminal aceitará exclusivamente pagamentos com um código QR."
+                    }
+                  },
+                  {
+                    "title": "voucher_card",
+                    "description": {
+                      "en": "The terminal will only accept payments with voucher cards, and will offer the possibility to pay with Sodexo or Alelo in its screen. This parameter only corresponds to transactions in Brasil (MLB).",
+                      "es": "La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo. Este parametro corresponde a transacciones en Brasil (MLB).",
+                      "pt": "O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo. Este parâmetro corresponde apenas a transações na Brasil (MLB)"
+                    }
+                  }
+                ]
+              },
+              "default_installments":{
+                "type":"string",
+                "description": {
+                  "en": "This parameter only corresponds to transactions in Brasil (MLB) and is allowed only when \"default_type = credit_card\". It must be an integer value between 1 and 72.",
+                  "pt": "Este parâmetro corresponde apenas a transações na Brasil (MLB) e só é permitido quando \"default_type = credit_card\". Deve ser um valor inteiro entre 1 e 72.",
+                  "es": "Este parametro corresponde a transacciones en Brasil (MLB) y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor entero entre 1 y 72. "
+                },
+                "example":"6"
+              },
+              "installments_cost":{
+                "type":"string",
+                "description": {
+                  "en": "This parameter only corresponds to transactions in Brasil (MLB) and is allowed only when \"default_type = credit_card\". It must be a string value between the following options:",
+                  "es": "Este parametro corresponde a transacciones en Brasil (MLB)y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor de string de entre las siguientes opciones:",
+                  "pt": "Este parâmetro corresponde apenas a transações na Brasil (MLB) e só é permitido quando \"default_type = credit_card\". Deve ser um valor de string das seguintes opções: "
+                },
+                "enum": [
+                  {
+                    "title": "seller",
+                    "description": {
+                      "en": "The cost of the installments will be absorbed by the seller.",
+                      "es": "El costo de la financiación será absorbido por el vendedor.",
+                      "pt": "O custo das parcelas será absorvido pelo vendedor."
+                    }
+                  },
+                  {
+                    "title": "buyer",
+                    "description": {
+                      "en": "The cost of the installments will be absorbed by the buyer.",
+                      "es": "El costo de la financiación será absorbido por el comprador.",
+                      "pt": "O custo das parcelas será absorvido pelo pagador."
+                    }
+                  }
+                ],
+                "example":"seller"
+              }
+            }
+          }
+
+        }
+      },
       "country_code":{
         "type":"string",
         "description":{
@@ -2681,6 +2855,15 @@
               "pt": "Número de parcelas selecionado.",
               "en": "Number of installments selected.",
               "es": "Cantidad de cuotas seleccionada."
+            }
+          },
+          "id": {
+            "type": "string",
+            "example": "master",
+            "description": {
+              "pt": "Identificador do meio de pagamento ou bandeira do cartão. Utilize o endpoint '/v1/payment_methods' para acessar a lista completa de meios de pagamento disponíveis.",
+              "en": "Payment method identifier or card brand. Access the '/v1/payment_methods' endpoint to check all the available payment methods and get a detailed list.",
+              "es": "Identificador del medio el pago o bandera de la tarjeta. Accede al endpoint '/v1/payment_methods' para consultar todos los medios de pago disponibles y obtener una lista con los detalles de cada uno de ellos."
             }
           }
         }
