@@ -470,14 +470,14 @@
                                   },
                                   "status_details": {
                                     "type":"array",
+                                    "example": "approved",
                                     "description": {
                                       "es": "Información detallada del estado de la operación.",
                                       "pt": "Informação detalhada do status da operação.",
                                       "en": "Detailed information about the status of the operation."
                                     },
-                                    "enum": [
-                                      {
-                                        "title": "approved",
+                                    "properties": {
+                                      "approved": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction processing was made successfully",
@@ -485,8 +485,7 @@
                                           "pt": "O processamento da transação foi bem-sucedido."
                                         }
                                       },
-                                      {
-                                        "title": "partially_refunded",
+                                      "partially_refunded": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction was partially refunded by the destination bank.",
@@ -494,8 +493,7 @@
                                           "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
                                         }
                                       },
-                                      {
-                                        "title": "pending_authorized",
+                                      "pending_authorized": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction is in process, pending authorization.",
@@ -503,8 +501,7 @@
                                           "pt": "A transação está em andamento, aguardando autorização."
                                         }
                                       },
-                                      {
-                                        "title": "pending_bank",
+                                      "pending_bank": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction is in process, pending by bank.",
@@ -512,8 +509,7 @@
                                           "pt": "A transação está em andamento, aguardando autorização do banco."
                                         }
                                       },
-                                      {
-                                        "title": "refunded",
+                                      "refunded": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction was totally refunded by the destination bank.",
@@ -521,8 +517,7 @@
                                           "pt": "A transação foi totalmente reembolsada pelo banco de destino."
                                         }
                                       },
-                                      {
-                                        "title": "by_bank",
+                                      "by_bank": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction was rejected by the destination bank.",
@@ -530,8 +525,7 @@
                                           "pt": "A transação foi rejeitada pelo banco de destino."
                                         }
                                       },
-                                      {
-                                        "title": "by_provider",
+                                      "by_provider": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction was rejected by the provider.",
@@ -539,8 +533,7 @@
                                           "pt": "A transação foi rejeitada pelo provedor. "
                                         }
                                       },
-                                      {
-                                        "title": "high_risk",
+                                      "high_risk": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction is rejected due to risk of fraud.",
@@ -548,8 +541,7 @@
                                           "pt": "A transação é rejeitada devido ao risco de fraude."
                                         }
                                       },
-                                      {
-                                        "title": "insufficient_funds",
+                                      "insufficient_funds": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction is rejected due to insufficient funds in the origin account.",
@@ -557,8 +549,7 @@
                                           "pt": "A transação é rejeitada devido a fundos insuficientes na conta de origem."
                                         }
                                       },
-                                      {
-                                        "title": "other_reason",
+                                      "other_reason": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction is rejected by default due to internal problems during processing.",
@@ -566,8 +557,7 @@
                                           "pt": "A transação é rejeitada por padrão devido a problemas internos durante o processamento."
                                         }
                                       },
-                                      {
-                                        "title": "review_manual",
+                                      "review_manual": {
                                         "type":"string",
                                         "description": {
                                           "en": "The transaction is rejected and sent to fraud prevention for analysis.",
@@ -575,8 +565,7 @@
                                           "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
                                         }
                                       }
-                                    ],
-                                    "example": "approved"
+                                    }
                                   }
                                 }
                               }
