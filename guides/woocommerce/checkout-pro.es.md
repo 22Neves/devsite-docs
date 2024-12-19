@@ -59,8 +59,6 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
 ------------
 8. En el campo **Plazos máximos**, selecciona el número máximo de cuotas que deseas ofrecer a tus clientes a través de Mercado Pago. Puedes optar por ofrecer entre 1 y 24 cuotas.
 
-![Installments](/images/woocomerce/cho-pro-installment-es.png)
-
 Para guardar los cambios en la configuración, haz clic en el botón **Finalizar configuración**.
 
 ### Configuraciones avanzadas
@@ -75,8 +73,6 @@ Puedes personalizar las opciones en la sección de configuraciones avanzadas del
 - **Rechazo automático de pagos sin aprobación instantánea**: activa esta opción para rechazar automáticamente los pagos que no sean aprobados instantáneamente. Para activarlo, desliza el botón. Ten en cuenta que ya hemos garantizado la seguridad en tus transacciones de alto riesgo con 3DS (3-Domain Secure), ofreciendo beneficios como una mayor tasa de aprobación y menor riesgo de fraude.
 - **Descuento en los checkouts de Mercado Pago**: ingresa un valor porcentual de descuento para los clientes que paguen con este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
 - **Comisiones en los checkouts de Mercado Pago**: ingresa un valor porcentual adicional que desees cobrar como comisión a los clientes que elijan este método de pago. Para activarlo, ingresa un porcentaje de descuento y marca la opción "Activar y mostrar esta información en el checkout de Mercado Pago".
-
-![Advanced settings](/images/woocomerce/cho-pro-advanced-settings-es.gif)
 
 Para guardar los cambios en la configuración, haz clic en el botón **Finalizar configuración**.
 
