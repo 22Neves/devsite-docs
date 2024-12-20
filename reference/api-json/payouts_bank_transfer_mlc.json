@@ -487,7 +487,8 @@
                                     "example": "01AAAM001A1AY43FBR8WCM9CES"
                                   },
                                   "status_details": {
-                                    "type":"array",
+                                    "type":"string",
+                                    "example": "approved",
                                     "description": {
                                       "es": "Información detallada del estado de la operación.",
                                       "pt": "Informação detalhada do status da operação.",
@@ -582,8 +583,7 @@
                                           "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
                                         }
                                       }
-                                    ],
-                                    "example": "approved"
+                                    ]
                                   },
                                   "owner": {
                                     "type": "object",
