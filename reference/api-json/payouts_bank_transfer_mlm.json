@@ -478,7 +478,7 @@
                                     },
                                     "items": {
                                       "type": "object",
-                                      "properties": {
+                                      "properties": { 
                                         "approved": {
                                           "type": "string",
                                           "description": {
