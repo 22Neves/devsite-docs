@@ -2,30 +2,16 @@
   "url": "https://api.mercadopago.com",
   "paths": {
     "/v1/transaction-intents/process": {
-      "post": { 
+      "post": {
         "tags": [
-          "money-out" 
+          "money-out"
         ],
         "description": {
-          "en": "Generate money out operations from a Mercado Pago account to other accounts (internal or external), as long as the withdrawal account has funds. In case of success, the request will return a response with status 200",
-          "pt": "Gera operações de saída de dinheiro desde uma conta do Mercado Pago a outras contas (internas ou externas), desde que a conta de retirada tenha fundos. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es": "Genera operaciones de salida de dinero desde una cuenta de Mercado Pago a otras cuentas (internas o externas), siempre que la cuenta de retiro tenga fondos. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en": "Generate money out operations from a Mercado Pago account to other accounts (internal or external), as long as the withdrawal account has funds",
+          "pt": "Gera operações de saída de dinheiro desde uma conta do Mercado Pago a outras contas (internas ou externas), desde que a conta de retirada tenha fundos",
+          "es": "Genera operaciones de salida de dinero desde una cuenta de Mercado Pago a otras cuentas (internas o externas), siempre que la cuenta de retiro tenga fondos"
         },
         "parameters": [
-          {
-            "in": "header",
-            "name": "Authorization",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "example": "Bearer TEST-123456-78910-abcdefg-12345678910"
-            },
-            "description": {
-              "en": "Access Token obtained through the developer panel. Must be sent in all requests.",
-              "pt": "Access Token obtido através do painel de desenvolvedores. Obrigatório ser enviado em todas requisições.",
-              "es": "Access Token obtenido a través del panel de desarrollador. Obligatorio ser enviado en todas las solicitudes."
-            }
-          },
           {
             "in": "header",
             "name": "X-Idempotency-Key",
@@ -85,6 +71,16 @@
                     },
                     "example": "MP0001"
                   },
+                  "point_of_interaction": {
+                    "required": true,
+                    "type": "object",
+                    "description": {
+                      "en": "Fix value. It must always be {\"type\":\"PSP_TRANSFER\"}",
+                      "pt": "Valor fixo. Deve sempre ser preenchido como {\"type\":\"PSP_TRANSFER\"}",
+                      "es": "Valor fijo. Siempre debe ser {\"type\":\"PSP_TRANSFER\"}"
+                    },
+                    "example": "{\"type\":\"PSP_TRANSFER\"}"
+                  },
                   "seller_configuration": {
                     "required": false,
                     "type": "object",
@@ -105,7 +101,7 @@
                               "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres.",
                               "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado. Este campo tiene un límite de 500 caracteres. "
                             },
-                            "example": "http://example.mx/notification"
+                            "example": "http://example.cl/notification"
                           }
                         }
                       }
@@ -175,6 +171,16 @@
                                 },
                                 "example": "99999004"
                               },
+                              "type": {
+                                "type": "string",
+                                "required": true,
+                                "description": {
+                                  "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
+                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias) , \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
+                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
+                                },
+                                "example": "checking_account"
+                              },
                               "number": {
                                 "type": "string",
                                 "required": true,
@@ -184,36 +190,6 @@
                                   "es": "Número único que representa cada cuenta bancaria. En este caso, debes enviar el número único de la cuenta de destino."
                                 },
                                 "example": "10266732"
-                              },
-                              "holder": {
-                                "type": "string",
-                                "required": true,
-                                "description": {
-                                  "en": "First and last name of the destination account holder",
-                                  "pt": "Nome e sobrenome do titular da conta de destino",
-                                  "es": "Nombre y apellido del titular de la cuenta objetivo."
-                                },
-                                "example": "Victor Hugo"
-                              },
-                              "type": {
-                                "type": "string",
-                                "required": true,
-                                "description": {
-                                  "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
-                                  "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias), \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
-                                  "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
-                                },
-                                "example": "checking_account"
-                              },
-                              "description": {
-                                "type": "string",
-                                "required": false,
-                                "description": {
-                                  "en": "Short text describing the operation.",
-                                  "pt": "Texto curto de descrição da operação.",
-                                  "es": "Texto breve que describe la operación."
-                                },
-                                "example": "Victor Hugo"
                               }
                             }
                           }
@@ -286,6 +262,7 @@
                     },
                     "point_of_interaction": {
                       "type": "object",
+                      "example": "{\"type\":\"PSP_TRANSFER\"}",
                       "properties": {
                         "type": {
                           "type": "string",
@@ -294,7 +271,7 @@
                             "pt": "Ponto de interação. É um valor fixo, sempre {\"type\":\"PSP_TRANSFER\"}.",
                             "es": "Punto de interacción. Es un valor fijo, siempre {\"type\":\"PSP_TRANSFER\"}."
                           },
-                          "example": "PSP_TRANSFER"
+                          "example": "{\"type\":\"PSP_TRANSFER\"}"
                         }
                       }
                     },
@@ -316,7 +293,7 @@
                                 "pt": "URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. ",
                                 "es": "URL en la que se recibirán las notificaciones de los eventos relacionados a la transacción, como sus cambios de estado."
                               },
-                              "example": "http://example.mx/notification"
+                              "example": "http://example.cl/notification"
                             }
                           }
                         }
@@ -324,7 +301,7 @@
                     },
                     "status": {
                       "type": "string",
-                      "example": "processed",
+                      "example": "approved",
                       "description": {
                         "es": "Estado actual de la transacción",
                         "pt": "Status atual da transação",
@@ -470,96 +447,130 @@
                                   },
                                   "status_details": {
                                     "type":"array",
-                                    "example": "approved",
                                     "description": {
                                       "es": "Información detallada del estado de la operación.",
                                       "pt": "Informação detalhada do status da operação.",
                                       "en": "Detailed information about the status of the operation."
                                     },
-                                    "items": {
-                                      "type": "object",
-                                      "properties": { 
-                                        "approved": {
-                                          "type": "string",
-                                          "description": {
-                                            "en": "The transaction processing was made successfully",
-                                            "es": "El procesamiento de la transacción se realizó de manera exitosa.",
-                                            "pt": "O processamento da transação foi bem-sucedido."
-                                          }
-                                        },
-                                        "partially_refunded": {
-                                          "type": "string",
-                                          "description": {
-                                            "en": "The transaction was partially refunded by the destination bank.",
-                                            "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
-                                            "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
-                                          }
-                                        },
-                                        "pending_authorized": {
-                                          "description": {
-                                            "en": "The transaction is in process, pending authorization.",
-                                            "es": "La transacción está en proceso, pendiente de autorización.",
-                                            "pt": "A transação está em andamento, aguardando autorização."
-                                          }
-                                        },
-                                        "pending_bank": {
-                                          "description": {
-                                            "en": "The transaction is in process, pending by bank.",
-                                            "es": "La transacción está en proceso, pendiente de respuesta del banco.",
-                                            "pt": "A transação está em andamento, aguardando autorização do banco."
-                                          }
-                                        },
-                                        "refunded": {
-                                          "description": {
-                                            "en": "The transaction was totally refunded by the destination bank.",
-                                            "es": "La transacción fue reembolsada totalmente por el banco de destino.",
-                                            "pt": "A transação foi totalmente reembolsada pelo banco de destino."
-                                          }
-                                        },
-                                        "by_bank": {
-                                          "description": {
-                                            "en": "The transaction was rejected by the destination bank.",
-                                            "es": "El banco de destino rechazó la transferencia.",
-                                            "pt": "A transação foi rejeitada pelo banco de destino."
-                                          }
-                                        },
-                                        "by_provider": {
-                                          "description": {
-                                            "en": "The transaction was rejected by the provider.",
-                                            "es": "La transacción fue rechazada por el proveedor. ",
-                                            "pt": "A transação foi rejeitada pelo provedor. "
-                                          }
-                                        },
-                                        "high_risk": {
-                                          "description": {
-                                            "en": "The transaction is rejected due to risk of fraud.",
-                                            "es": "La transacción es rechazada por riesgo de fraude.",
-                                            "pt": "A transação é rejeitada devido ao risco de fraude."
-                                          }
-                                        },
-                                        "insufficient_funds": {
-                                          "description": {
-                                            "en": "The transaction is rejected due to insufficient funds in the origin account.",
-                                            "es": "La transacción es rechazada por fondos insuficientes en la cuenta de origen.",
-                                            "pt": "A transação é rejeitada devido a fundos insuficientes na conta de origem."
-                                          }
-                                        },
-                                        "other_reason": {
-                                          "description": {
-                                            "en": "The transaction is rejected by default due to internal problems during processing.",
-                                            "es": "La transacción es rechazada por defecto debido a problemas internos durante su procesamiento.",
-                                            "pt": "A transação é rejeitada por padrão devido a problemas internos durante o processamento."
-                                          }
-                                        },
-                                        "review_manual": {
-                                          "description": {
-                                            "en": "The transaction is rejected and sent to fraud prevention for analysis.",
-                                            "es": "La transacción es rechazada y encaminada a prevención al fraude para análisis.",
-                                            "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
-                                          }
+                                    "enum": [
+                                      {
+                                        "title": "approved",
+                                        "description": {
+                                          "en": "The transaction processing was made successfully",
+                                          "es": "El procesamiento de la transacción se realizó de manera exitosa.",
+                                          "pt": "O processamento da transação foi bem-sucedido."
+                                        }
+                                      },
+                                      {
+                                        "title": "partially_refunded",
+                                        "description": {
+                                          "en": "The transaction was partially refunded by the destination bank.",
+                                          "es": "La transacción fue reembolsada parcialmente por el banco de destino.",
+                                          "pt": "A transação foi parcialmente reembolsada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "pending_authorized",
+                                        "description": {
+                                          "en": "The transaction is in process, pending authorization.",
+                                          "es": "La transacción está en proceso, pendiente de autorización.",
+                                          "pt": "A transação está em andamento, aguardando autorização."
+                                        }
+                                      },
+                                      {
+                                        "title": "pending_bank",
+                                        "description": {
+                                          "en": "The transaction is in process, pending by bank.",
+                                          "es": "La transacción está en proceso, pendiente de respuesta del banco.",
+                                          "pt": "A transação está em andamento, aguardando autorização do banco."
+                                        }
+                                      },
+                                      {
+                                        "title": "refunded",
+                                        "description": {
+                                          "en": "The transaction was totally refunded by the destination bank.",
+                                          "es": "La transacción fue reembolsada totalmente por el banco de destino.",
+                                          "pt": "A transação foi totalmente reembolsada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "by_bank",
+                                        "description": {
+                                          "en": "The transaction was rejected by the destination bank.",
+                                          "es": "El banco de destino rechazó la transferencia.",
+                                          "pt": "A transação foi rejeitada pelo banco de destino."
+                                        }
+                                      },
+                                      {
+                                        "title": "by_provider",
+                                        "description": {
+                                          "en": "The transaction was rejected by the provider.",
+                                          "es": "La transacción fue rechazada por el proveedor. ",
+                                          "pt": "A transação foi rejeitada pelo provedor. "
+                                        }
+                                      },
+                                      {
+                                        "title": "high_risk",
+                                        "description": {
+                                          "en": "The transaction is rejected due to risk of fraud.",
+                                          "es": "La transacción es rechazada por riesgo de fraude.",
+                                          "pt": "A transação é rejeitada devido ao risco de fraude."
+                                        }
+                                      },
+                                      {
+                                        "title": "insufficient_funds",
+                                        "description": {
+                                          "en": "The transaction is rejected due to insufficient funds in the origin account.",
+                                          "es": "La transacción es rechazada por fondos insuficientes en la cuenta de origen.",
+                                          "pt": "A transação é rejeitada devido a fundos insuficientes na conta de origem."
+                                        }
+                                      },
+                                      {
+                                        "title": "other_reason",
+                                        "description": {
+                                          "en": "The transaction is rejected by default due to internal problems during processing.",
+                                          "es": "La transacción es rechazada por defecto debido a problemas internos durante su procesamiento.",
+                                          "pt": "A transação é rejeitada por padrão devido a problemas internos durante o processamento."
+                                        }
+                                      },
+                                      {
+                                        "title": "review_manual",
+                                        "description": {
+                                          "en": "The transaction is rejected and sent to fraud prevention for analysis.",
+                                          "es": "La transacción es rechazada y encaminada a prevención al fraude para análisis.",
+                                          "pt": "A transação é rejeitada e enviada para análise de prevenção de fraudes."
                                         }
                                       }
-                                    }
+                                    ],
+                                    "example": "approved"
+                                  },
+                                  "bank_id": {
+                                    "type": "number",
+                                    "description": {
+                                      "en": "Identification number of the bank to which the destination account belongs.",
+                                      "es": "Número identificador del banco al que pertenece la cuenta de destino.",
+                                      "pt": "Número identificador do banco ao qual pertence a conta de destino."
+                                    },
+                                    "example": "0000014"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "required": true,
+                                    "description": {
+                                      "en": "Destination account type. The possible values are \"checking_account\" (bank accounts), \"mercadopago\" (Mercado Pago accounts) e \"savings_account\" (savings account).",
+                                      "pt": "Tipo de conta de destino. Os valores possíveis são \"checking_account\" (contas bancárias) , \"mercadopago\" (contas do Mercado Pago) e \"savings_account\" (poupança).",
+                                      "es": "Tipo de cuenta de destino. Los valores posibles son \"checking_account\" (cuentas bancarias), \"mercadopago\" (cuentas Mercado Pago) e \"savings_account\" (ahorro)."
+                                    },
+                                    "example": "checking_account"
+                                  },
+                                  "number":{
+                                    "type": "number",
+                                    "description": {
+                                      "en": "Unique number that represents the destination bank account.",
+                                      "es": "Número único que representa la cuenta de destino.",
+                                      "pt": "Número único que representa a conta de destino."
+                                    },
+                                    "example": "123456"
                                   }
                                 }
                               }
@@ -845,4 +856,3 @@
     }
   }
 } 
-
