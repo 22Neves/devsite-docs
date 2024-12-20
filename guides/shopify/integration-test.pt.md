@@ -26,12 +26,8 @@ Veja abaixo como testar a integração:
 2. Clique em **Contas de teste** no menu à esquerda.
 3. Dentro da seção "Contas de teste", clique em **Criar conta de teste** e crie duas contas diferentes: uma para vendedor e outra para comprador. Não é possível utilizar a mesma conta de teste para vendedor e comprador. Consulte a [documentação de Contas de teste](/developers/pt/docs/shopify/additional-content/your-integrations/test/accounts) para acessar o passo a passo de criação de contas teste.
 
-![Criar conta](/images/shopify/test-create-account.gif)
-
 4. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do vendedor criada no passo anterior.
 5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor.](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard)
-
-![Login](/images/shopify/test-login.gif)
 
 > WARNING
 >
@@ -41,7 +37,7 @@ Veja abaixo como testar a integração:
 
 6. Acesse a aplicação criada no passo 5 e clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials.png)
+![Credenciais de produção](/images/shopify/test-prod-credentials-api-rebranding.png)
 
 ----[mlb, mlm, mco]----
 7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
