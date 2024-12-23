@@ -1,52 +1,54 @@
 # Turismo
 
+Estos son los datos específicos para la industria **turismo** que puedes agregar a tu integración para mejorar la aprobación de los pagos.
+
 ## Campos a enviar
-Agrega toda la información adicional que quieras.
+Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre los ítems
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Código. |
-| `title` | String | Nombre. |
-| `description` | String | Descripción. |
-| `category_id` | String | Categoría. |
-| `quantity` | Integer | Cantidad. |
-| `unit_price` | Float | Precio unitario. |
-| `category_descriptor` | Object | Descripción de la categoría. |
-| `passenger` | Object | Información adicional del pasajero. |
-| `first_name`| String | Nombre del pasajero. |
-| `last_name` | String | Apellido del pasajero. |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `description` | String | Descripción del ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
+| `category_descriptor` | Object | Objeto que consigna información específica relacionada a la industria. |
+| `passenger` | Object | Información del pasajero. Se encuentra dentro del objeto `category_descriptor`. |
+| `first_name`| String | Nombre del pasajero. Se encuentra dentro del objeto `passenger`.|
+| `last_name` | String | Apellido del pasajero. Se encuentra dentro del objeto `passenger`.|
 | `identification` | Object | Información de identificación del pasajero. |
 | `type` | String | Tipo de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
 | `number` | String | Número de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
-| `route` | Object | Información de la ruta. |
-| `departure` | String | Salida. |
-| `destination` | String | Llegada. |
-| `departure_date_time` | Date | Fecha de salida. |
-| `arrival_date_time` | Date | Fecha de llegada. |
-| `company` | String | Compañía. |
+| `route` | Object | Información de la ruta. Se encuentra dentro del objeto `category_descriptor`.|
+| `departure` | String | Lugar de partida de la ruta. |
+| `destination` | String | Lugar de destino de la ruta. |
+| `departure_date_time` | Date | Fecha de salida de la ruta. |
+| `arrival_date_time` | Date | Fecha de llegada de la ruta. |
+| `company` | String | Compañía a cargo de ejecutar la ruta. |
 
 ### Sobre el comprador
 
 | Objeto `payer` | Tipo | Descripción |
 | --- | --- | --- |
-| `first_name` | String | Nombre. |
-| `last_name` | String | Apellido. |
-| `identification` | Object | Datos de identificación. |
-| `identification_type` | String | Tipo de identificación. |
-| `identification_number` | String | Número de identificación. |
-| `phone` | Object | Teléfono. |
-| `area_code` | Integer | Código de área. |
-| `number` | Integer | Número de teléfono. |
-| `address` | Object | Datos de dirección. |
-| `zip_code` | String | Código postal. |
-| `street_name` | String | Nombre de calle. |
-| `street_number` | Integer | Número de calle. |
+| `first_name` | String | Nombre del comprador. |
+| `last_name` | String | Apellido del comprador. |
+| `identification` | Object | Datos de identificación del comprador. |
+| `type` | String | Tipo de identificación. Se encuentra dentro del objeto `identification`. |
+| `number` | String | Número de identificación. Se encuentra dentro del objeto `identification`. |
+| `phone` | Object | Teléfono del comprador. |
+| `area_code` | Integer | Código de área del comprador. Se encuentra dentro del objeto `phone`. |
+| `number` | Integer | Número de teléfono del comprador. Se encuentra dentro del objeto `phone`. |
+| `address` | Object | Datos del domicilio del comprador. |
+| `zip_code` | String | Código postal del comprador. Se encuentra dentro del objeto `address`. |
+| `street_name` | String | Nombre de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
+| `street_number` | Integer | Número de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
+| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `True` si lo es o `False` si no lo es. |
+| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `True` si lo es o `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 

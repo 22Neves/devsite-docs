@@ -1,40 +1,42 @@
 # Transporte urbano
 
+Estos son los datos específicos para la industria **transporte urbano** que puedes agregar a tu integración para mejorar la aprobación de los pagos.
+
 ## Campos a enviar
-Agrega toda la información adicional que quieras.
+Add any additional information that you consider necessary.
 
 ### Sobre los ítems
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Código. |
-| `title` | String | Nombre. |
-| `description` | String | Descripción. |
-| `category_id` | String | Categoría. |
-| `quantity` | Integer | Cantidad. |
-| `unit_price` | Float | Precio unitario. |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `description` | String | Item description. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
 
 ### Sobre el comprador
 
-| Object `payer` | Tipo | Descripción |
+| Object `payer` | Type | Description |
 | --- | --- | --- |
-| `first_name` | String | Nombre. |
-| `last_name` | String | Apellido. |
-| `identification` | Object | Datos de identificación. |
-| `identification_type` | String | Tipo de identificación. |
-| `identification_number` | String | Número de identificación. |
-| `phone` | Object | Teléfono. |
-| `area_code` | Integer | Código de área. |
-| `number` | Integer | Número de teléfono. |
-| `address` | Object | Datos de dirección. |
-| `zip_code` | String | Código postal. |
-| `street_name` | String | Nombre de calle. |
-| `street_number` | Integer | Número de calle. |
-| `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
-| `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
-| `last_purchase` | Date | Fecha de la última compra en el sitio. |
+| `first_name` | String | Buyer's first name. |
+| `last_name` | String | Buyer's last name. |
+| `identification` | Object | Buyer's identification data. |
+| `type` | String | Type of identification. It is found within the `identification` object. |
+| `number` | String | Identification number. It is found within the `identification` object. |
+| `phone` | Object | Buyer's phone number. |
+| `area_code` | Integer | Buyer's area code. It is found within the `phone` object. |
+| `number` | Integer | Buyer's phone number. It is found within the `phone` object. |
+| `address` | Object | Buyer's address data. |
+| `zip_code` | String | Buyer's postal code. It is found within the `address` object. |
+| `street_name` | String | Street name of the buyer's address. It is found within the `address` object. |
+| `street_number` | Integer | Street number of the buyer's address. It is found within the `address` object. |
+| `authentication_type` | Enum | Type of authentication. It can be "Gmail", "Facebook", "Native Web", or "Other". |
+| `registration_date` | Date | Buyer's registration date on the site. |
+| `is_prime_user` | Boolean | Indicates if the user is premium. Put `True` if they are or `False` if they are not. |
+| `is_first_purchase_online` | Boolean | Indicates if this is the customer's first purchase. Put `True` if it is or `False` if it is not. |
+| `last_purchase` | Date | Date of the last purchase on the site. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

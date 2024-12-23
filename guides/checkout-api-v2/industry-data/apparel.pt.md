@@ -1,9 +1,22 @@
 # Apparel
 
-Estes são os dados específicos para a indústria de vestuário que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **apparel** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
-Adicione qualquer informação adicional que considerar necessária.
+Adicione qualquer informação extra que considerar necessária.
+
+### Sobre itens
+
+| Array `items` | Tipo | Descrição|
+| --- | --- | --- |
+| `id` | String | Código de identificação do item. |
+| `title` | String | Nome do item. |
+| `type` | String | Tipo de item. |
+| `description` | String | Descrição do item. |
+| `picture_url` | String | URL da imagem que representa o item. |
+| `category_id` | String | Categoria do item. |
+| `quantity` | Integer | Quantidade de unidades para o item. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. |
 
 ### Sobre o comprador
 
@@ -27,28 +40,13 @@ Adicione qualquer informação adicional que considerar necessária.
 | `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Coloque `True` se for ou `False` se não for. |
 | `last_purchase` | Date | Data da última compra no site. |
 
-### Sobre itens
-
-| Array `items` | Tipo | Descrição|
-| --- | --- | --- |
-| `id` | String | Código de identificação do item. |
-| `title` | String | Nome do item. |
-| `type` | String | Tipo de item. |
-| `description` | String | Descrição do item. |
-| `picture_url` | String | URL da imagem que representa o item. |
-| `category_id` | String | Categoria do item. |
-| `quantity` | Integer | Quantidade de unidades para o item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. |
-
-
-
 ### Sobre remessa
 
 | Object `shipment` | Tipo | Descrição |
 | --- | --- | --- |
 | `receiver_address` | Object | Dados do endereço da entrega. |
 | `zip_code` | String | Código postal para a entrega. |
-| `state_name` | String | Província para onde o pedido é enviado. |
+| `state_name` | String | Estado para onde o pedido é enviado. |
 | `city_name` | String | Cidade para onde o pedido é enviado. |
 | `street_number` | Integer | Número da rua da entrega. |
 | `express_shipment` | Boolean | Indica se a entrega é expressa. `True` se for, `False` se não for. |

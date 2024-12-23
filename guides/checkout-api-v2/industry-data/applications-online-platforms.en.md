@@ -1,38 +1,40 @@
 # Applications and online platforms
 
-## Fields to send 
-Add all the additional information you want.
+These are the specific data for the **applications and online platforms** industry that you can add to your integration to improve payment approval.
 
-### About items
+## Fields to send 
+Add any additional information that you consider necessary.
+
+### About the items
 
 | Array `items` | Type | Description |
 | --- | --- | --- |
-| `id` | String | Code. |
-| `title` | String | Name. |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
 | `category_id` | String | Category. |
-| `quantity` | Integer | Quantity. |
-| `unit_price` | Float | Unit price. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
 
 ### About the buyer
 
 | Object `payer` | Type | Description |
 | --- | --- | --- |
-| `first_name` | String | Name. |
-| `last_name` | String | Surname. |
-| `identification` | Object | Identification data. |
-| `identification_type` | String | Identification type. |
-| `identification_number` | String | Identification number. |
-| `phone` | Object | Phone. |
-| `area_code` | Integer | Area code. |
-| `number` | Integer | Phone number. |
-| `address` | Object | Adress data. |
-| `zip_code` | String | Postal code. |
-| `street_name` | String | Street name. |
-| `street_number` | Integer | Street number. |
-| `authentication_type` | Enum | Type of authentication. They can be "Gmail," "Facebook," "Native Web," or "Other". |
+| `first_name` | String | Buyer's first name. |
+| `last_name` | String | Buyer's last name. |
+| `identification` | Object | Buyer's identification data. |
+| `type` | String | Type of identification. It is found within the `identification` object. |
+| `number` | String | Identification number. It is found within the `identification` object. |
+| `phone` | Object | Buyer's phone number. |
+| `area_code` | Integer | Buyer's area code. It is found within the `phone` object. |
+| `number` | Integer | Buyer's phone number. It is found within the `phone` object. |
+| `address` | Object | Buyer's address data. |
+| `zip_code` | String | Buyer's postal code. It is found within the `address` object. |
+| `street_name` | String | Street name of the buyer's address. It is found within the `address` object. |
+| `street_number` | Integer | Street number of the buyer's address. It is found within the `address` object. |
+| `authentication_type` | Enum | Type of authentication. It can be "Gmail", "Facebook", "Native Web", or "Other". |
 | `registration_date` | Date | Buyer's registration date on the site. |
-| `is_prime_user` | Boolean | `True` if it is, `False` if it is not. |
-| `is_first_purchase_online` | Boolean | `True` if it is, `False` if it is not. |
+| `is_prime_user` | Boolean | Indicates if the user is premium. Put `True` if they are or `False` if they are not. |
+| `is_first_purchase_online` | Boolean | Indicates if this is the customer's first purchase. Put `True` if it is or `False` if it is not. |
 | `last_purchase` | Date | Date of the last purchase on the site. |
 
 ```curl

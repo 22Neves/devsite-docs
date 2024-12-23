@@ -22,5 +22,6 @@ Dependendo do ramo de atividades ou setor de sua loja, existe uma série de dado
 * [Venda direta](/developers/pt/docs/checkout-api/additional-content/industry-data/direct-sale)
 * [Automóveis e náutica](/developers/pt/docs/checkout-api/additional-content/industry-data/automobilies-and-nautical)
 * [Transporte urbano](/developers/pt/docs/checkout-api/additional-content/industry-data/urban-transport)
+* [Gambling](/developers/pt/docs/checkout-api/additional-content/industry-data/gambling)
 
 

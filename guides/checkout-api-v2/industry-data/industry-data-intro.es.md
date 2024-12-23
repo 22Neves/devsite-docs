@@ -22,5 +22,7 @@ Dependiendo del ramo de actividades o industria de tu tienda, existen una serie 
 * [Venta directa](/developers/es/docs/checkout-api/additional-content/industry-data/direct-sale)
 * [Automóviles y náuticas](/developers/es/docs/checkout-api/additional-content/industry-data/automobilies-and-nautical)
 * [Transporte urbano](/developers/es/docs/checkout-api/additional-content/industry-data/urban-transport)
+* [Gambling](/developers/es/docs/checkout-api/additional-content/industry-data/gambling)
+
 
 

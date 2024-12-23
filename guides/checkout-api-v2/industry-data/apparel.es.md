@@ -1,9 +1,22 @@
 # Apparel
 
-Estos son los datos específicos para la industria apparel que puedes agregar a tu integración para mejorar la aprobación de los pagos.
+Estos son los datos específicos para la industria **apparel** que puedes agregar a tu integración para mejorar la aprobación de los pagos.
 
 ## Campos a enviar
 Agrega toda la información adicional que consideres necesaria.
+
+### Sobre los ítems
+
+| Array `items` | Tipo | Descripción |
+| --- | --- | --- |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `type` | String | Tipo de ítem. |
+| `description` | String | Descripción del ítem. |
+| `picture_url` | String | URL de imagen que representa al ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
 
 ### Sobre el comprador
 
@@ -26,19 +39,6 @@ Agrega toda la información adicional que consideres necesaria.
 | `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `True` si lo es o `False` si no lo es. |
 | `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `True` si lo es o `False` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
-
-### Sobre los ítems
-
-| Array `items` | Tipo | Descripción |
-| --- | --- | --- |
-| `id` | String | Código de identificación del ítem. |
-| `title` | String | Nombre del ítem. |
-| `type` | String | Tipo de ítem. |
-| `description` | String | Descripción del ítem. |
-| `picture_url` | String | URL de imagen que representa al ítem. |
-| `category_id` | String | Categoría del ítem. |
-| `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
 
 ### Sobre envíos
 

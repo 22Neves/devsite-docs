@@ -1,17 +1,19 @@
 # Hotelería
 
+Estos son los datos específicos para la industria **hotelería** que puedes agregar a tu integración para mejorar la aprobación de los pagos.
+
 ## Campos a enviar
-Agrega toda la información adicional que quieras.
+Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre los ítems
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Código. |
-| `title` | String | Nombre. |
-| `category_id` | String | Categoría. |
-| `quantity` | Integer | Cantidad. |
-| `unit_price` | Float | Precio unitario. |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
 | `event_date` | Date | Fecha del evento. |
 | `category_descriptor` | Object | Descripción de la categoría. |
 | `passenger` | Object | Información adicional del pasajero. |

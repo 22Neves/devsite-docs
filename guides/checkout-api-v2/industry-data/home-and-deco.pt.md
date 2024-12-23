@@ -1,52 +1,54 @@
-## Casa e decoração
+# Casa e decoração
 
-### Campos para enviar
-Adicione todas as informações adicionais que você deseja.
+Estes são os dados específicos para a indústria de **casa e decoração** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
 
-#### Sobre itens
+## Campos para enviar
+Adicione qualquer informação extra que considerar necessária.
+
+### Sobre itens
 
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
-| `id` | String | Código. |
-| `title` | String | Nome. |
-| `description` | String | Descrição. |
-| `category_id` | String | Categoria. |
-| `quantity` | Integer | Quantidade. |
-| `unit_price` | Float | Preço unitário. |
+| `id` | String | Código de identificação do item. |
+| `title` | String | Nome do item. |
+| `description` | String | Descrição do item. |
+| `category_id` | String | Categoria do item. |
+| `quantity` | Integer | Quantidade de unidades para o item. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. |
 | `warranty` | Boolean | `True` se o produto tiver garantia, `False` se não tiver. |
 
-#### Sobre o comprador
+### Sobre o comprador
 
 | Object `payer` | Tipo | Descrição |
 | --- | --- | --- |
-| `first_name` | String | Nome |
-| `last_name` | String | Sobrenome. |
-| `identification` | Object | Dados de identificação. |
-| `identification_type` | String | Tipo de identificação. |
-| `identification_number` | String | Número de identificação. |
-| `phone` | Object | telefone. |
-| `area_code` | Integer | Código de área. |
-| `number` | Integer | Número de telefone. |
-| `address` | Object | Dados do endereço. |
-| `zip_code` | String | Código postal. |
-| `street_name` | String | Nome da rua. |
-| `street_number` | Integer | Número da rua. |
-| `authentication_type` | Enum | Tipo de autenticação. Podem ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
+| `first_name` | String | Nome do comprador. |
+| `last_name` | String | Sobrenome do comprador. |
+| `identification` | Object | Dados de identificação do comprador. |
+| `type` | String | Tipo de identificação. Está dentro do objeto `identification`. |
+| `number` | String | Número de identificação. Está dentro do objeto `identification`. |
+| `phone` | Object | Telefone do comprador. |
+| `area_code` | Integer | Código de área do comprador. Está dentro do objeto `phone`. |
+| `number` | Integer | Número de telefone do comprador. Está dentro do objeto `phone`. |
+| `address` | Object | Dados do endereço do comprador. |
+| `zip_code` | String | Código postal do comprador. Está dentro do objeto `address`. |
+| `street_name` | String | Nome da rua do endereço do comprador. Está dentro do objeto `address`. |
+| `street_number` | Integer | Número da rua do endereço do comprador. Está dentro do objeto `address`. |
+| `authentication_type` | Enum | Tipo de autenticação. Pode ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | `True` se é, `False` se não é. |
-| `is_first_purchase_online` | Boolean | `True` se é, `False` se não é. |
+| `is_prime_user` | Boolean | Indica se o usuário é premium. Coloque `True` se for ou `False` se não for. |
+| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Coloque `True` se for ou `False` se não for. |
 | `last_purchase` | Date | Data da última compra no site. |
 
-#### Sobre envios
+### Sobre remessa
 
 | Object `shipment` | Tipo | Descrição |
 | --- | --- | --- |
-| `receiver_address` | Object | Dados do endereço do comprador. |
-| `zip_code` | String | Código postal. |
-| `state_name` | String | Província. |
-| `city_name` | String | Cidade. |
-| `street_number` | Integer | Número da rua. |
-| `express_shipment` | Boolean | `True` se é, `False` se não é. |
+| `receiver_address` | Object | Dados do endereço da entrega. |
+| `zip_code` | String | Código postal para a entrega. |
+| `state_name` | String | Estado para onde o pedido é enviado. |
+| `city_name` | String | Cidade para onde o pedido é enviado. |
+| `street_number` | Integer | Número da rua da entrega. |
+| `express_shipment` | Boolean | Indica se a entrega é expressa. `True` se for, `False` se não for. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
