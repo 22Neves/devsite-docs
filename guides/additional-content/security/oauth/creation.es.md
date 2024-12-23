@@ -129,7 +129,7 @@ curl -X POST \
   "client_secret": "client_secret",
   "code": "TG-XXXXXXXX-241983636",
   "grant_type": "authorization_code",
-  "redirect_uri": "APP_USR-4934588586838432-XXXXXXXX-241983636",
+  "redirect_uri": "https://www.redirect-url.com",
   "refresh_token": "TG-XXXXXXXX-241983636",
   "test_token": "false"
 }'
