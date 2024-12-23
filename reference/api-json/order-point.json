@@ -2881,9 +2881,9 @@
                   {
                     "title": "qr",
                     "description": {
-                      "en": "This value is only allowed in Brazil (BRA) and Mexico (MEX) only. The terminal will only accept payments with a QR code.",
-                      "es": "Este valor es permitido sólo en Brasil (BRA) y México (MEX). La terminal aceptará exclusivamente pagos con un código QR.",
-                      "pt": "Este valor é permitido apenas no Brasil (BRA) e Mexico (MEX). O terminal aceitará exclusivamente pagamentos com um código QR."
+                      "en": "This value is only allowed in Brazil (BRA) and Argentina (ARG) only. The terminal will only accept payments with a QR code.",
+                      "es": "Este valor es permitido sólo en Brasil (BRA) y Argentina (ARG). La terminal aceptará exclusivamente pagos con un código QR.",
+                      "pt": "Este valor é permitido apenas no Brasil (BRA) e Argentina (ARG). O terminal aceitará exclusivamente pagamentos com um código QR."
                     }
                   },
                   {
@@ -3035,9 +3035,9 @@
                   {
                     "title": "qr",
                     "description": {
-                      "en": "This value is only allowed in Brazil (BRA) and Mexico (MEX) only. The terminal will only accept payments with a QR code.",
-                      "es": "Este valor es permitido sólo en Brasil (BRA) y México (MEX). La terminal aceptará exclusivamente pagos con un código QR.",
-                      "pt": "Este valor é permitido apenas no Brasil (BRA) e Mexico (MEX). O terminal aceitará exclusivamente pagamentos com um código QR."
+                      "en": "This value is only allowed in Brazil (BRA) and Argentina (ARG) only. The terminal will only accept payments with a QR code.",
+                      "es": "Este valor es permitido sólo en Brasil (BRA) y Argentina (ARG). La terminal aceptará exclusivamente pagos con un código QR.",
+                      "pt": "Este valor é permitido apenas no Brasil (BRA) e Argentina (ARG). O terminal aceitará exclusivamente pagamentos com um código QR."
                     }
                   },
                   {
