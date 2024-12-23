@@ -459,15 +459,6 @@
                                     },
                                     "example": "100,00"
                                   },
-                                  "origin_id": {
-                                    "type":"string",
-                                    "description": {
-                                      "es": "Identificador que permite rastrear la transacción dentro del sistema bancario.",
-                                      "pt": "Identificador que permite rastrear a transação dentro do sistema bancário.",
-                                      "en": "Identifier that allows the transaction to be tracked within the banking system."
-                                    },
-                                    "example": "01AAAM001A1AY43FBR8WCM9CES"
-                                  },
                                   "status_details": { 
                                     "type":"array",
                                     "example": "approved",
@@ -569,6 +560,15 @@
                                         }
                                       }
                                     }  
+                                  },
+                                  "origin_id": {
+                                    "type":"string",
+                                    "description": {
+                                      "es": "Identificador que permite rastrear la transacción dentro del sistema bancario.",
+                                      "pt": "Identificador que permite rastrear a transação dentro do sistema bancário.",
+                                      "en": "Identifier that allows the transaction to be tracked within the banking system."
+                                    },
+                                    "example": "01AAAM001A1AY43FBR8WCM9CES"
                                   }
                                 }
                               }
