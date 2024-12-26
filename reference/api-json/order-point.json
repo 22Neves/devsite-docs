@@ -784,7 +784,7 @@
                     },
                     "status_detail":{
                       "type":"string",
-                      "example":"created",
+                      "example":"refunded",
                       "description":{
                         "en":"Current status of the order or the transaction.",
                         "pt":"Status atual da order ou da transação.",
@@ -3175,7 +3175,7 @@
       },
       "status":{
         "type":"string",
-        "example":"created",
+        "example":"refunded",
         "description":{
           "en":"Current status of the order or the transaction.",
           "pt":"Status atual da order ou da transação.",
