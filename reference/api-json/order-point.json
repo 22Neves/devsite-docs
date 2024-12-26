@@ -85,9 +85,9 @@
                             "type": "string",
                             "required": true,
                             "description": {
-                              "en": "Payment total amount. For Chile (CHL), it must be an integer.",
-                              "pt": "Valor total da order de pagamento. Para o Chile (CHL) deve ser um número inteiro.",
-                              "es": "Monto total de la order de pago. Para Chile (CHL) debe ser un número entero."
+                              "en": "Payment total amount. For Chile (CHL), it must be an integer, without decimals. For the rest of the countries, the field must contain 2 decimal numbers, even when it is an integer (for example, \"10.00\"). ",
+                              "pt": "Valor total da order de pagamento. Para o Chile (CHL) deve ser um número inteiro, sem decimais. Para os demais países, o campo deve conter 2 números decimais, mesmo quando for um número inteiro (por exemplo, \"10.00\").",
+                              "es": "Monto total de la order de pago. Para Chile (CHL) debe ser un número entero, sin decimales. Para el resto de los países, el campo debe llevar obligatoriamente 2 números decimales, incluso cuando es un número entero (por ejemplo, \"10.00\")."
                             },
                             "example": "24.90"
                           }
@@ -2810,6 +2810,7 @@
               },
               "print_on_terminal":{
                 "type":"string",
+                "example": "no_ticket",
                 "description":{
                   "en":"Indicates whether the terminal should print the receipt of the transaction. Its default value will be \"seller_ticket\".",
                   "pt":"Indica se o terminal deve imprimir o comprovante da transação. Seu valor padrão será \"seller_ticket\".",
@@ -2909,7 +2910,7 @@
                 "type":"string",
                 "description": {
                   "en": "This parameter only corresponds to transactions in Brasil (BRA) and is allowed only when \"default_type = credit_card\". It must be a string value between the following options:",
-                  "es": "Este parametro corresponde a transacciones en Brasil (BRA)y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor de string de entre las siguientes opciones:",
+                  "es": "Este parametro corresponde a transacciones en Brasil (BRA) y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor de string de entre las siguientes opciones:",
                   "pt": "Este parâmetro corresponde apenas a transações na Brasil (BRA) e só é permitido quando \"default_type = credit_card\". Deve ser um valor de string das seguintes opções: "
                 },
                 "enum": [
@@ -2964,6 +2965,7 @@
               },
               "print_on_terminal":{
                 "type":"string",
+                "example": "no_ticket",
                 "description":{
                   "en":"Indicates whether the terminal should print the receipt of the transaction. Its default value will be \"seller_ticket\".",
                   "pt":"Indica se o terminal deve imprimir o comprovante da transação. Seu valor padrão será \"seller_ticket\".",
@@ -3063,7 +3065,7 @@
                 "type":"string",
                 "description": {
                   "en": "This parameter only corresponds to transactions in Brazil (BRA) and is allowed only when \"default_type = credit_card\". It must be a string value between the following options:",
-                  "es": "Este parametro corresponde a transacciones en Brasil (BRA)y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor de string de entre las siguientes opciones:",
+                  "es": "Este parametro corresponde a transacciones en Brasil (BRA) y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor de string de entre las siguientes opciones:",
                   "pt": "Este parâmetro corresponde apenas a transações na Brasil (BRA) e só é permitido quando \"default_type = credit_card\". Deve ser um valor de string das seguintes opções: "
                 },
                 "enum": [
