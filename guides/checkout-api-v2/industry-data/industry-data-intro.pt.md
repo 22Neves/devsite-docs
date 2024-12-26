@@ -20,7 +20,7 @@ Dependendo do ramo de atividades ou setor de sua loja, existe uma série de dado
 * [Hospitalidade](/developers/pt/docs/checkout-api/additional-content/industry-data/hospitality)
 * [Utilities](/developers/pt/docs/checkout-api/additional-content/industry-data/utilities)
 * [Venda direta](/developers/pt/docs/checkout-api/additional-content/industry-data/direct-sale)
-* [Automóveis e náutica](/developers/pt/docs/checkout-api/additional-content/industry-data/automobilies-and-nautical)
+* [Automóveis e náutica](/developers/pt/docs/checkout-api/additional-content/industry-data/automobiles-and-nautical)
 * [Transporte urbano](/developers/pt/docs/checkout-api/additional-content/industry-data/urban-transport)
 * [Gambling](/developers/pt/docs/checkout-api/additional-content/industry-data/gambling)
 

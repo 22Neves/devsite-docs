@@ -20,7 +20,7 @@ Dependiendo del ramo de actividades o industria de tu tienda, existen una serie 
 * [Hotelería](/developers/es/docs/checkout-api/additional-content/industry-data/hospitality)
 * [Utilities](/developers/es/docs/checkout-api/additional-content/industry-data/utilities)
 * [Venta directa](/developers/es/docs/checkout-api/additional-content/industry-data/direct-sale)
-* [Automóviles y náuticas](/developers/es/docs/checkout-api/additional-content/industry-data/automobilies-and-nautical)
+* [Automóviles y náuticas](/developers/es/docs/checkout-api/additional-content/industry-data/automobiles-and-nautical)
 * [Transporte urbano](/developers/es/docs/checkout-api/additional-content/industry-data/urban-transport)
 * [Gambling](/developers/es/docs/checkout-api/additional-content/industry-data/gambling)
 
