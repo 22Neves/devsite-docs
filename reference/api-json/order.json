@@ -2813,7 +2813,7 @@
                         "title": "online",
                         "description": {
                             "en": "Value associated with the creation of Orders for online payments.",
-                            "es": "Valor asociado a la creación de órdenes para pagos online.",
+                            "es": "Valor asociado a la creación de Orders para pagos online.",
                             "pt": "Valor associado à criação de Orders para pagamentos online."
                         }
                     }
