@@ -4738,7 +4738,7 @@
                                             "description": {
                                                 "en": "Order was created but some transaction failed. Check the \"errors\" field for more information.",
                                                 "pt": "A Order foi criada mas alguma transação falhou. Verifique o campo \"erros\" para mais informações.",
-                                                "es": "La Order fue creada pero alguna transacción ha fallado. Consulte el campo \"errores\" para obtener más información."
+                                                "es": "La Order fue creada pero alguna transacción ha fallado. Consulta el campo \"errores\" para obtener más información."
                                             }
                                         }
                                     ]
