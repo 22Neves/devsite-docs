@@ -40,7 +40,6 @@ Para **asignar los medios de pago del contrato a un canal**, sigue estos pasos:
 1. En la sesión de contrato patrón, agrega el contrato que creaste.
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
 
 <!-- -->
