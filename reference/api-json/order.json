@@ -1482,7 +1482,7 @@
                                                     "title": "exceeded_number_of_transactions",
                                                     "description": {
                                                         "en": "An error occurred in the request. The Order accepts a maximum of two transactions. Remove the excess transactions.",
-                                                        "es": "Ocurrió un error en la solicitud. La Order acepta un máximo de dos transacciones. Elimine las transacciones excedentes.",
+                                                        "es": "Ocurrió un error en la solicitud. La Order acepta un máximo de dos transacciones. Elimina las transacciones excedentes.",
                                                         "pt": "Ocorreu um erro na requisição. A Order aceita, no máximo, duas transações. Remova as transações excedentes."
                                                     }
                                                 }
