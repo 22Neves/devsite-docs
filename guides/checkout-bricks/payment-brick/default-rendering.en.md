@@ -6,7 +6,7 @@ Before rendering the Payment Brick, first execute the [initialization steps](/de
 >
 > Note
 >
-> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/payment.md).
 
 ## Configure the Brick
 
