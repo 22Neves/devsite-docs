@@ -8,7 +8,7 @@ Ela está em constante crescimento, com novos aplicativos sendo integrados. A se
 
 Para acessá-la, basta entrar na seção **Mais opções** e, em seguida, selecionar a aba "Apps", no canto superior direito.
 
-![miniapps-access](/mini-apps/miniapps-access-pt.gif)
+![miniapps-access](/mini-apps/miniapps-access-pt.png)
 
 ## Estrutura
 
@@ -23,16 +23,16 @@ Para conhecer mais sobre um aplicativo, clicando em **Saber mais**, a pessoa usu
 
 Este costuma ser o primeiro contato, por isso, há bastante espaço para uma comunicação que explore os benefícios. Mais à frente, daremos recomendações de como explorar todas essas oportunidades.
 
-![miniapps-detail](/mini-apps/miniapps-detail-pt.gif)
+![miniapps-detail](/mini-apps/miniapps-detail-pt.png)
 
 ## Instalação
 
 Com um toque no botão **Instalar**, o download é iniciado. Essa ação pode ser tomada tanto na página de detalhe quanto na tela inicial da seção ”Apps”.
 
-![miniapps-installation](/mini-apps/miniapps-installation-pt.gif)
+![miniapps-installation](/mini-apps/miniapps-installation-pt.png)
 
 ## Desinstalação
 
 Desinstalar é igualmente fácil: basta **pressionar o ícone por alguns segundos** e selecionar a opcão **Desinstalar**.
 
-![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.gif)
+![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.png)
