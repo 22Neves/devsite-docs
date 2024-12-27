@@ -19,7 +19,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração**.
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
-5. Na tela de configuração dos checkouts, navegue até a área ----[mlb]---- "Checkout Transparente" ------------ ----[mla, mlm]---- "Checkout API" ------------ e habilite a opção de pagamento desejada, podendo ser:
+5. Na tela de configuração dos checkouts, navegue até a área "Checkout Transparente" e habilite a opção de pagamento desejada, podendo ser:
   * **Cartões de crédito e/ou débito**:
     * **Crédito**.  Selecione as bandeiras que deseja habilitar em sua loja e indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. Para configurar um parcelamento sem acréscimos, veja a seção de [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
     * **Débito**. Selecione as bandeiras que deseja habilitar em sua loja.
@@ -33,7 +33,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Acciones > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuración**.
 4. Desça até o final da página e clique em **Más configuraciones en el sitio de Mercado Pago**.
-5. Na tela em questão, navegue até a área ----[mlb]---- "Checkout Transparente" ------------ ----[mla, mlm]---- "Checkout API" ------------ e habilite a opção de pagamento desejada, podendo ser:
+5. Na tela em questão, navegue até a área "Checkout API" e habilite a opção de pagamento desejada, podendo ser:
   * **Tarjeta de crédito y/o débito**:
     * **Crédito**.  Selecione as bandeiras que deseja habilitar em sua loja e indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. Para configurar um parcelamento sem acréscimos, veja a seção de [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
     * **Débito**. Selecione as bandeiras que deseja habilitar em sua loja.
@@ -46,7 +46,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Acciones > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuración**.
 4. Desça até o final da página e clique em **Más configuraciones en el sitio de Mercado Pago**.
-5. Na tela em questão, navegue até a área ----[mlb]---- "Checkout Transparente" ------------ ----[mla, mlm]---- "Checkout API" ------------ e habilite a opção de pagamento desejada, podendo ser:
+5. Na tela em questão, navegue até a área "Checkout API" e habilite a opção de pagamento desejada, podendo ser:
   * **Tarjeta de crédito y/o débito**:
     * **Crédito**.  Selecione as bandeiras que deseja habilitar em sua loja e indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. Para configurar um parcelamento sem acréscimos, veja a seção de [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
     * **Débito**. Selecione as bandeiras que deseja habilitar em sua loja.

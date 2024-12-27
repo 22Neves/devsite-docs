@@ -16,31 +16,27 @@ Puedes personalizar estas configuraciones según tus necesidades, **a través de
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
 3. En la lista de métodos de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración** para definir las configuraciones a continuación.
 
-----[mla]----
-### Financiación
-
-* **Valor mínimo de la mensualidad**: Esta configuración es opcional y te permite establecer un límite mínimo para el valor de la financiación.
+----[mlb]----
+![discounts mlb](/images/nuvemshop/discounts-mlb.png)
 
 ------------
-----[mlm]----
-### Financiamiento
-
-* **Valor mínimo de la mensualidad**: Esta configuración es opcional y te permite establecer un límite mínimo para el valor del financiamiento.
+----[mlm, mla, mpe, mco, mlu, mlc]----
+![discounts all](/images/nuvemshop/discounts-all.png)
 
 ------------
+
 ### Descuentos
 
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-* **Checkout API**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout API. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
+* **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout API. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
    * Tarjeta de crédito
    * Tarjeta de débito
    * Redes de pago en efectivo
 ------------
 ----[mlb]----
-* **Checkout Transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
+* **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
    * Boleto bancário
    * Tarjeta de crédito
-   * Pix
 ------------
 * **Checkout Externo (Checkout Pro)**: Puedes definir un descuento global en porcentaje para los clientes que elijan el Checkout externo. Ingresa el valor en porcentaje a deducir del total de la compra.
 
@@ -57,6 +53,19 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 5. En la pantalla correspondiente, localiza el medio de pago "Checkout Pro" y haz clic en **Configurar**.
 6. En esta sección, puedes definir el **número máximo de ----[mla]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout Pro.
 
+----[mlb]----
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+
+------------
+----[mlm]----
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+
+------------
+----[mla]----
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+
+------------
+
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 ### Checkout API
 
@@ -72,6 +81,19 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
 5. En la pantalla correspondiente, localiza el medio de pago ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ y haz clic en **Configurar**.
 6. En esta sección, puedes definir el número máximo de **número máximo de ----[mla]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
+
+----[mlb]----
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+
+------------
+----[mlm]----
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+
+------------
+----[mla]----
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+
+------------
 
 ## Configuración desde la cuenta Mercado Pago
 

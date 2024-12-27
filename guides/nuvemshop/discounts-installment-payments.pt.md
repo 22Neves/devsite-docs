@@ -10,24 +10,27 @@ Você pode personalizar essas configurações de acordo com suas necessidades, *
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração** para definir as configurações abaixo.
 
-### Parcelas
+----[mlb]----
+![discounts mlb](/images/nuvemshop/discounts-mlb.png)
 
-* **Valor mínimo da parcela**: Essa configuração é opcional e permite que você estabeleça um limite mínimo para o valor das parcelas.
+------------
+----[mlm, mla, mpe, mco, mlu, mlc]----
+![discounts all](/images/nuvemshop/discounts-all.png)
+
+------------
 
 ### Descontos
 
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-* **Checkout API**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+* **Checkout transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Cartão de crédito
    * Cartão de débito
-   * Redes de pagamento efectivo
+   * Redes de pago en efectivo
 ------------
 ----[mlb]----
-* **Checkout Transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+* **Checkout transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Boleto bancário
    * Cartão de crédito
-   * Pix
-
 ------------
 * **Checkout Externo (Checkout Pro)**: Você pode definir um desconto global em porcentagem para clientes que escolherem o Checkout externo. Insira o valor em porcentagem a ser deduzido do total da compra.
 
@@ -44,6 +47,19 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 5. Na tela em questão, localize o meio de pagamento "Checkout Pro"  e clique em **Configurar**.
 6. Nesta seção, você pode definir o **número máximo de parcelas** nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Pro.
 
+----[mlb]----
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+
+------------
+----[mlm]----
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+
+------------
+----[mla]----
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+
+------------
+
 ----[mlm, mla, mpe, mco, mlu, mlc]----
 ### Checkout API
 
@@ -58,6 +74,19 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
 5. Na tela em questão, localize o meio de pagamento ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ e clique em **Configurar**.
 6. Nesta seção, você pode definir o **número máximo de parcelas** nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
+
+----[mlb]----
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+
+------------
+----[mlm]----
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+
+------------
+----[mla]----
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+
+------------
 
 ## Configuração através da conta Mercado Pago
 

@@ -64,4 +64,17 @@ If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the 
 ------------
 6. Finally, click on **Save changes**.
 
+----[mlb]---- 
+![credits](/images/nuvemshop/credits-mlb.png)
+
+------------
+----[mla]---- 
+![credits](/images/nuvemshop/credits-mla.png)
+
+------------
+----[mlm]---- 
+![credits](/images/nuvemshop/credits-mlm.png)
+
+------------
+
 Ready! The financing method is enabled in your store.
