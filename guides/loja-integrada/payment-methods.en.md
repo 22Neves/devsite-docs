@@ -25,8 +25,6 @@ Checkout Pro is **the integration that allows you to charge in the Mercado Pago 
 2. In the item “Checkout Pro” change the option to “Activated”.
 3. Finally, click on “Save changes”.
 
-![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
-
 Complete the information from your site that you want it to appear when your client make a payment:
 
 - **Invoice Purchaser’s Name**. Write the name that will appear in your client’s invoice so that they can recognize you (maximum 11 characters).
@@ -42,5 +40,3 @@ Offer **Bank Ticket as a payment option**:
 3. Then, set a minimum value for these payments. If you wish to receive all of them, leave the field with the value 0.
 4. If you wish that your payments with Bank Ticket have a discount, check the option “Use discount in your Bank Tickets?” and complete the percentage that you want to offer as a discount in “Discount applied”.
 5. Finally, click “Save changes”.
-
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)

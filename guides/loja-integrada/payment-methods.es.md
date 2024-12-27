@@ -25,8 +25,6 @@ Checkout Pro es la **integración que te permite cobrar en el entorno de Mercado
 2. En el ítem “Checkout Pro” cambia a la opción “Activado”.
 3. Finalmente, haz clic en “Guardar cambios”.
 
-![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
-
 Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 
 - **Nombre de la Factura del Comprador**. Escribe el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte (máximo de 11 caracteres).
@@ -42,5 +40,3 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 3. Luego, configura un valor mínimo para estos pagos. En caso de querer recibir todos, deja el campo con valor 0.
 4. Y si quieres que tus pagos con boleto tengan un descuento, marca la opción “Usar descuento en tus boletos?” y completa el porcentaje que quieras ofrecer como descuento en “Descuento aplicado”.
 5. Finalmente, haz clic en “Guardar cambios”.
-
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)

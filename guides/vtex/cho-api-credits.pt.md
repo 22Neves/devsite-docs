@@ -56,8 +56,6 @@ Para configurar o Meses sin Tarjeta no checkout da loja, acesse o painel de admi
 
 ------------
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
-
 > NOTE
 >
 > Nota
