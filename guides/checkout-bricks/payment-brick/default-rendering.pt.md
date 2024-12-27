@@ -6,7 +6,7 @@ Antes de realizar a renderização do Payment Brick, primeiro execute os [passos
 >
 > Nota
 >
-> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/payment.md).
 
 ## Configurar o Brick
 
