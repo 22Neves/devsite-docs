@@ -2,13 +2,6 @@
 
 Dependendo do ramo de atividades ou setor de sua loja, existe uma série de dados que podem ser enviados na hora de gerar um pagamento que vão ajudar a melhorar sua aprovação. Você pode vê-los detalhados por setor seguindo os links abaixo.
 
-> WARNING 
-> 
-> Atenção
->
-> Esta informação só funciona para integrações com Payment API. Para informações sobre integrações padrão, clique [aqui.](/developers/pt/reference/payments/_payments/post)
-
-
 * [Apparel](/developers/pt/docs/checkout-api/additional-content/industry-data/apparel)
 * [Eletro](/developers/pt/docs/checkout-api/additional-content/industry-data/electro)
 * [Tickets e entretenimento](/developers/pt/docs/checkout-api/additional-content/industry-data/tickets-and-entretainment)

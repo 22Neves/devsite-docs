@@ -15,7 +15,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
 | `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
-| `event_date` | Date | Fecha. |
+| `event_date` | Date | Fecha del evento. |
 
 ### Sobre el comprador
 

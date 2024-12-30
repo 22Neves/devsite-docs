@@ -2,13 +2,6 @@
 
 Depending on the branch of activities or industry of your store, there is a series of data that can be sent when creating a payment that will help improve your approval. You can see them detailed by industry following the links below.
 
-> WARNING 
-> 
-> Attention
-> 
-> This information applies only for Payment API integrations. To see information about the standard integration with payments api, click [here](/developers/en/reference/payments/_payments/post).
-
-
 * [Apparel](/developers/en/docs/checkout-api/additional-content/industry-data/apparel)
 * [Electro](/developers/en/docs/checkout-api/additional-content/industry-data/electro)
 * [Tickets and entertainment](/developers/en/docs/checkout-api/additional-content/industry-data/tickets-and-entretainment)
