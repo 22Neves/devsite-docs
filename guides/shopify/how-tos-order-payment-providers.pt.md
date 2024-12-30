@@ -27,5 +27,3 @@ Saiba como utilizar o app **Mercado Pago Ordena Checkouts** para alterar a ordem
 4. Para confirmar as alterações, clique em **Salvar ordem de exibição**.
 
 Pronto! A nova ordem de exibição dos provadores de pagamentos está configurada.
-
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)

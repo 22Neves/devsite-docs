@@ -29,5 +29,3 @@ Learn how to use the **Mercado Pago Ordena Checkouts** app to change the display
 4. To confirm the changes, click on **Save display order**.
 
 Done! The new display order for the payment providers is configured.
-
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)
