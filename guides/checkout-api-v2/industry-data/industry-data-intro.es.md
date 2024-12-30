@@ -1,6 +1,6 @@
 # Datos adicionales sobre industrias
 
-Dependiendo del ramo de actividades o industria de tu tienda, existen una serie de datos que pueden ser enviados al crear un pago que ayudarán a mejorar tu aprobación. Puedes verlos detallados por industria a continuación.
+Dependiendo del ramo de actividades o industria de tu tienda, existen una serie de datos que pueden ser enviados al crear un pago que ayudarán a mejorar tu aprobación. Puedes verlos detallados por industria siguiendo los enlaces a continuación.
 
 > WARNING 
 > 

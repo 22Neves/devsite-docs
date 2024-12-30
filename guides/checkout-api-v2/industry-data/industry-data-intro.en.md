@@ -1,6 +1,6 @@
 # Additional industry data
 
-Depending on the branch of activities or industry of your store, there is a series of data that can be sent when creating a payment that will help improve your approval. You can see them detailed by industry below.
+Depending on the branch of activities or industry of your store, there is a series of data that can be sent when creating a payment that will help improve your approval. You can see them detailed by industry following the links below.
 
 > WARNING 
 > 
