@@ -36,7 +36,7 @@ Ve a continuación cómo probar la integración:
 
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
 
-![Credenciais de produção](/images/shopify/test-prod-credentials-api-es-rebranding.png)
+![Credenciais de produção](/images/shopify/test-prod-credentials-es.png)
 
 ----[mlb, mlm]----
 7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).

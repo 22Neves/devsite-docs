@@ -9,4 +9,4 @@ To link an order from the Shopify control panel with an order from the Mercado P
 5. Find the **Payment ID** field and copy its value.
 6. Finally, go to your [Mercado Pago panel](http://mercadopago.com) and use the copied value in the Mercado Pago activity search engine.
 
-![order-link-choapi](shopify/order-link-en.png)
+![order-link-choapi](/images/shopify/order-link-en.png)

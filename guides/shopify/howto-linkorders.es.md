@@ -9,4 +9,4 @@ Para vincular un pedido del panel de control de Shopify con un pedido del panel 
 5. Busca el campo **Payment ID** y copia su valor.
 6. Por último, dirígete a tu panel de [Mercado Pago](http://mercadopago.com) y utiliza el valor copiado en el buscador de actividades de Mercado Pago. 
 
-![order-link-choapi](shopify/order-link-es.png)
+![order-link-choapi](/images/shopify/order-link-es.png)
