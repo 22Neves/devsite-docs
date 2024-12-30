@@ -647,9 +647,9 @@
             "name": "order_id",
             "in": "path",
             "description": {
-              "en": "Order ID, returned in the response to the request made for its creation.",
+              "en": "Order ID returned in the response to the request made for its creation.",
               "pt": "ID da order, retornado na resposta à requisição para sua criação.",
-              "es": "ID de la orden, devuelto en la respuesta a la petición para su creación."
+              "es": "ID de la order, devuelto en la respuesta a la petición para su creación."
             },
             "required": true,
             "schema": {
@@ -1383,7 +1383,7 @@
             "description":{
               "en": "ID of the order that is being cancelled. This value is returned in the response to the Create order request.",
               "pt": "ID da order a ser cancelada. Esse valor é retornado na resposta à requisição Criar order.",
-              "es": "ID de la orden a cancelar. Este valor es devuelto en la respuesta a la petición Crear order."
+              "es": "ID de la order a cancelar. Este valor es devuelto en la respuesta a la petición Crear order."
             },
             "required":true,
             "schema":{
@@ -1772,7 +1772,7 @@
                           "description": {
                             "en": "There is a conflict trying to cancel the order due to its current status. Please note that orders can only be cancelled via API when \"status=created\". If you are trying to cancel an order with status \"status=at_terminal\", you will need to do from the terminal.",
                             "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=at_terminal\", deberás hacerlo desde la terminal.",
-                            "pt": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=at_terminal\", deverá fazê-lo a partir do terminal."
+                            "pt": "Há um conflito ao tentar cancelar a order devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar uma order com o estado \"status=at_terminal\", deverá fazê-lo a partir do terminal."
                           }
                         }
                       ]
