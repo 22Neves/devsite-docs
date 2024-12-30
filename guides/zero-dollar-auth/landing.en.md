@@ -1,8 +1,8 @@
 ---
-content_section_with_media:
-- title: Card Validation (Zero Dollar Auth)
-- message: Zero Dollar Auth is a feature developed to improve the validation of credit or debit cards, with the goal of optimizing the customer experience. With it, you can ensure that no actual charges are made to the customer's card, eliminating the need for cancellations or refunds after transaction authorization.
-- media_image: /zero-dollar-auth/credit-card.png
+content_section_with_media: 
+ - title:  Card Validation (Zero Dollar Auth)
+ - message: Zero Dollar Auth is a feature developed to improve the validation of credit or debit cards, with the goal of optimizing the customer experience. With it, you can ensure that no actual charges are made to the customer's card, eliminating the need for cancellations or refunds after transaction authorization.
+ - media_image: /zero-dollar-auth/credit-card.png
 ---
 
 > WARNING

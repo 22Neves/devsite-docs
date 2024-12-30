@@ -112,7 +112,7 @@ class MyApp extends StatelessWidget {
 >
 > h2
 >
-> Como retornar à sua app
+> Como retornar para sua app
 
 **Deep Links**, também conhecidos como links diretos, são uma forma poderosa de permitir a navegação direta para telas ou seções específicas de uma aplicação móvel.
 
