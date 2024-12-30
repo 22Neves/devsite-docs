@@ -13,7 +13,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `title` | String | Nombre del ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
 | `event_date` | Date | Fecha del evento. |
 | `category_descriptor` | Object | Descripción de la categoría. |
 | `passenger` | Object | Información adicional del pasajero. |
@@ -41,8 +41,8 @@ Agrega toda la información adicional que consideres necesaria.
 | `street_number` | Integer | Número de calle. |
 | `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | `True` si lo es, `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | `True` si lo es, `False` si no lo es. |
+| `is_prime_user` | Boolean | `true` si lo es, `false` si no lo es. |
+| `is_first_purchase_online` | Boolean | `true` si lo es, `false` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl

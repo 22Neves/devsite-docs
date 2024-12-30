@@ -14,8 +14,8 @@ Agrega toda la información adicional que consideres necesaria.
 | `description` | String | Descripción del ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
-| `warranty` | Boolean | `True` si el producto tiene garantía, `False` si no la tiene. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
+| `warranty` | Boolean | `true` si el producto tiene garantía, `false` si no la tiene. |
 
 ### Sobre el comprador
 
@@ -35,8 +35,8 @@ Agrega toda la información adicional que consideres necesaria.
 | `street_number` | Integer | Número de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `True` si lo es o `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `True` si lo es o `False` si no lo es. |
+| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `true` si lo es o `false` si no lo es. |
+| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `true` si lo es o `false` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ### Sobre envíos
@@ -48,7 +48,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `state_name` | String | Provincia hacia donde se envía el pedido. |
 | `city_name` | String | Ciudad hacia donde se envía el pedido. |
 | `street_number` | Integer | Número de calle del envío. |
-| `express_shipment` | Boolean | Indica si el envío es rápido. `True` si lo es, `False` si no lo es. |
+| `express_shipment` | Boolean | Indica si el envío es rápido. `true` si lo es, `false` si no lo es. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

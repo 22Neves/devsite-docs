@@ -15,7 +15,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `description` | String | Descrição. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades para o item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. Observe que as integrações para o Chile não suportam decimais. |
 
 ### Sobre o comprador
 
@@ -35,7 +35,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `street_number` | Integer | Número da rua do endereço do comprador. Está dentro do objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticação. Pode ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Coloque `True` se for ou `False` se não for. |
+| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Coloque `true` se for ou `false` se não for. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ### Sobre envios
@@ -49,7 +49,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `street_number` | Integer | Número da rua da entrega. |
 | `floor` | String | Informações do andar para a entrega. |
 | `apartment` | String | Informações do apartamento para a entrega. |
-| `local_pickup` | Boolean | `True` se retira na agência ou na loja, `False` se não retira. |
+| `local_pickup` | Boolean | `true` se retira na agência ou na loja, `false` se não retira. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

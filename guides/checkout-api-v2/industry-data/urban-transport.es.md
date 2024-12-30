@@ -9,34 +9,34 @@ Add any additional information that you consider necessary.
 
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
-| `id` | String | Item identification code. |
-| `title` | String | Item name. |
-| `description` | String | Item description. |
-| `category_id` | String | Item category. |
-| `quantity` | Integer | Quantity of units for the item. |
-| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `description` | String | Descripción del ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
 
 ### Sobre el comprador
 
 | Object `payer` | Type | Description |
 | --- | --- | --- |
-| `first_name` | String | Buyer's first name. |
-| `last_name` | String | Buyer's last name. |
-| `identification` | Object | Buyer's identification data. |
-| `type` | String | Type of identification. It is found within the `identification` object. |
-| `number` | String | Identification number. It is found within the `identification` object. |
-| `phone` | Object | Buyer's phone number. |
-| `area_code` | Integer | Buyer's area code. It is found within the `phone` object. |
-| `number` | Integer | Buyer's phone number. It is found within the `phone` object. |
-| `address` | Object | Buyer's address data. |
-| `zip_code` | String | Buyer's postal code. It is found within the `address` object. |
-| `street_name` | String | Street name of the buyer's address. It is found within the `address` object. |
-| `street_number` | Integer | Street number of the buyer's address. It is found within the `address` object. |
-| `authentication_type` | Enum | Type of authentication. It can be "Gmail", "Facebook", "Native Web", or "Other". |
-| `registration_date` | Date | Buyer's registration date on the site. |
-| `is_prime_user` | Boolean | Indicates if the user is premium. Put `True` if they are or `False` if they are not. |
-| `is_first_purchase_online` | Boolean | Indicates if this is the customer's first purchase. Put `True` if it is or `False` if it is not. |
-| `last_purchase` | Date | Date of the last purchase on the site. |
+| `first_name` | String | Nombre del comprador. |
+| `last_name` | String | Apellido del comprador. |
+| `identification` | Object | Datos de identificación del comprador. |
+| `type` | String | Tipo de identificación. Se encuentra dentro del objeto `identification`. |
+| `number` | String | Número de identificación. Se encuentra dentro del objeto `identification`. |
+| `phone` | Object | Teléfono del comprador. |
+| `area_code` | Integer | Código de área del comprador. Se encuentra dentro del objeto `phone`. |
+| `number` | Integer | Número de teléfono del comprador. Se encuentra dentro del objeto `phone`. |
+| `address` | Object | Datos del domicilio del comprador. |
+| `zip_code` | String | Código postal del comprador. Se encuentra dentro del objeto `address`. |
+| `street_name` | String | Nombre de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
+| `street_number` | Integer | Número de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
+| `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
+| `registration_date` | Date | Fecha de registro del comprador en el sitio. |
+| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `true` si lo es o `false` si no lo es. |
+| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `true` si lo es o `false` si no lo es. |
+| `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

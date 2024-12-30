@@ -15,7 +15,7 @@ Add any additional information that you consider necessary.
 | `picture_url` | String | Image URL representing the item. |
 | `category_id` | String | Item category. |
 | `quantity` | Integer | Quantity of units for the item. |
-| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. Note that integrations for Chile do not support decimals. |
 
 ### About the buyer
 
@@ -35,8 +35,8 @@ Add any additional information that you consider necessary.
 | `street_number` | Integer | Street number of the buyer's address. It is found within the `address` object. |
 | `authentication_type` | Enum | Type of authentication. It can be "Gmail", "Facebook", "Native Web", or "Other". |
 | `registration_date` | Date | Buyer's registration date on the site. |
-| `is_prime_user` | Boolean | Indicates if the user is premium. Put `True` if they are or `False` if they are not. |
-| `is_first_purchase_online` | Boolean | Indicates if this is the customer's first purchase. Put `True` if it is or `False` if it is not. |
+| `is_prime_user` | Boolean | Indicates if the user is premium. Put `true` if they are or `false` if they are not. |
+| `is_first_purchase_online` | Boolean | Indicates if this is the customer's first purchase. Put `true` if they are or `false` if they are not. |
 | `last_purchase` | Date | Date of the last purchase on the site. |
 
 ### About shipments
@@ -48,7 +48,7 @@ Add any additional information that you consider necessary.
 | `state_name` | String | Province to which the order is shipped. |
 | `city_name` | String | City to which the order is shipped. |
 | `street_number` | Integer | Street number of the shipment. |
-| `express_shipment` | Boolean | Indicates if the shipment is express. `True` if it is, `False` if it is not. |
+| `express_shipment` | Boolean | Indicates if the shipment is express. `true` if it is, `false` if it is not. |
 
 
 ```curl

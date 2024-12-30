@@ -13,7 +13,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `title` | String | Nombre del ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
 
 ### Sobre el comprador
 
@@ -33,8 +33,8 @@ Agrega toda la información adicional que consideres necesaria.
 | `street_number` | Integer | Número de calle del domicilio del comprador. Se encuentra dentro del objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticación. Pueden ser "Gmail", "Facebook", "Web Nativa" u "Otro". |
 | `registration_date` | Date | Fecha de registro del comprador en el sitio. |
-| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `True` si lo es o `False` si no lo es. |
-| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `True` si lo es o `False` si no lo es. |
+| `is_prime_user` | Boolean | Indica si el usuario es premium. Coloca `true` si lo es o `false` si no lo es. |
+| `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `true` si lo es o `false` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
