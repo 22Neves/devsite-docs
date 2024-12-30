@@ -1,6 +1,6 @@
 # Dados adicionais de indústria
 
-Dependendo do ramo de atividades ou setor de sua loja, existe uma série de dados que podem ser enviados na hora de gerar um pagamento que vão ajudar a melhorar sua aprovação. Você pode vê-los detalhados por setor abaixo.
+Dependendo do ramo de atividades ou setor de sua loja, existe uma série de dados que podem ser enviados na hora de gerar um pagamento que vão ajudar a melhorar sua aprovação. Você pode vê-los detalhados por setor seguindo os links abaixo.
 
 > WARNING 
 > 
