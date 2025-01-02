@@ -28,7 +28,7 @@ Você pode personalizar essas configurações de acordo com suas necessidades, *
    * Redes de pago en efectivo
 ------------
 ----[mlb]----
-* **Checkout transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+* **Checkout Transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Boleto bancário
    * Cartão de crédito
 ------------
