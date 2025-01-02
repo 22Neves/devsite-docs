@@ -41,7 +41,7 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 >
 > Nota
 >
-> También podrás utilizar la modalidad de financiación de Mercado Pago a través de la habilitación de la "Línea de Crédito" como medio de pago en el **Checkout Pro**. Consulta la sección de habilitación del [Checkout Pro](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro) para más información.
+> También podrás utilizar la modalidad de financiación de Mercado Pago a través de la habilitación de Cuotas sin Tarjeta como medio de pago en el **Checkout Pro**. Consulta la sección de habilitación del [Checkout Pro](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro) para más información.
 
 Para **configurar o Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los pasos a continuación.
 
