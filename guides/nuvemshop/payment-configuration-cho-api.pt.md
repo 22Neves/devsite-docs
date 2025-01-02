@@ -21,7 +21,7 @@ Para integrar o Checkout API, siga os passos abaixo.
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
 5. Na tela de configuração dos checkouts, navegue até a área "Checkout Transparente" e habilite a opção de pagamento desejada, podendo ser:
   * **Cartões de crédito e/ou débito**:
-    * **Crédito**.  Selecione as bandeiras que deseja habilitar em sua loja e indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. Para configurar um parcelamento sem acréscimos, veja a seção de [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
+    * **Crédito**. Selecione as bandeiras que deseja habilitar em sua loja e indique também o **número máximo de parcelas a serem permitidas para parcelamento de compras**. Para configurar um parcelamento sem acréscimos, veja a seção de [Descontos, parcelamentos e acréscimos](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
     * **Débito**. Selecione as bandeiras que deseja habilitar em sua loja.
   * **Pix**. Indique também um prazo de vencimento para pagamento com código Pix. Além disso, a opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, assista o [vídeo](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
   * **Boleto**. Indique também o número de dias para vencimento do boleto (incluindo sábado e domingo).
