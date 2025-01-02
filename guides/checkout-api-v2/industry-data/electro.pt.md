@@ -3,6 +3,7 @@
 Estes são os dados específicos para a indústria de **eletro** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
+
 Adicione qualquer informação extra que considerar necessária.
 
 ### Sobre itens
@@ -14,7 +15,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `title` | String | Nome do item. |
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
-| `quantity` | Integer | Quantidade de unidades para o item. |
+| `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
 | `warranty` | Boolean | `true` se o produto tiver garantia, `false` se não tiver. |
 ------------
@@ -26,7 +27,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `title` | String | Nome do item. |
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
-| `quantity` | Integer | Quantidade de unidades para o item. |
+| `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
 | `warranty` | Boolean | `true` se o produto tiver garantia, `false` se não tiver. |
 ------------
@@ -49,21 +50,21 @@ Adicione qualquer informação extra que considerar necessária.
 | `street_number` | Integer | Número da rua do endereço do comprador. Está dentro do objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticação. Pode ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | Indica se o usuário é premium. Coloque `true` se for ou `false` se não for. |
-| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Coloque `true` se for ou `false` se não for. |
+| `is_prime_user` | Boolean | Indica se o usuário é *premium*. Caso seja, use `true` e, caso não seja, use `false`. |
+| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Caso seja, use `true` e, caso não seja, use `false`. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ### Sobre envios
 
 | Object `shipment` | Tipo | Descrição |
 | --- | --- | --- |
-| `local_pickup` | Boolean | `true` se retira na agência ou na loja, `false` se não retira. |
+| `local_pickup` | Boolean | Se retira na agência, use `true` e, caso não retira, use `false`. |
 | `receiver_address` | Object | Dados do endereço da entrega. |
 | `zip_code` | String | Código postal para a entrega. |
 | `state_name` | String | Estado para onde o pedido é enviado. |
 | `city_name` | String | Cidade para onde o pedido é enviado. |
 | `street_number` | Integer | Número da rua da entrega. |
-| `express_shipment` | Boolean | Indica se a entrega é expressa. `true` se for, `false` se não for. |
+| `express_shipment` | Boolean | Indica se a entrega é expressa. Caso seja, use `true` e, caso não seja, use `false`. |
 
 
 ```

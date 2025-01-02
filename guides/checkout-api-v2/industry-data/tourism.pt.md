@@ -3,6 +3,7 @@
 Estes são os dados específicos para a indústria de **turismo** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
+
 Adicione todas as informações adicionais que você deseja.
 
 ### Sobre itens
@@ -14,7 +15,7 @@ Adicione todas as informações adicionais que você deseja.
 | `title` | String | Nome do item. |
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
-| `quantity` | Integer | Quantidade de unidades para o item. |
+| `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
 | `category_descriptor` | Object | Objeto que contém informações específicas relacionadas à indústria. |
 | `passenger` | Object | Informação do passageiro. Está dentro do objeto `category_descriptor`. |
@@ -38,7 +39,7 @@ Adicione todas as informações adicionais que você deseja.
 | `title` | String | Nome do item. |
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
-| `quantity` | Integer | Quantidade de unidades para o item. |
+| `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
 | `category_descriptor` | Object | Objeto que contém informações específicas relacionadas à indústria. |
 | `passenger` | Object | Informação do passageiro. Está dentro do objeto `category_descriptor`. |
@@ -73,8 +74,8 @@ Adicione todas as informações adicionais que você deseja.
 | `street_number` | Integer | Número da rua do endereço do comprador. Está dentro do objeto `address`. |
 | `authentication_type` | Enum | Tipo de autenticação. Pode ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
 | `registration_date` | Date | Data de registro do comprador no site. |
-| `is_prime_user` | Boolean | Indica se o usuário é premium. Coloque `true` se for ou `false` se não for. |
-| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Coloque `true` se for ou `false` se não for. |
+| `is_prime_user` | Boolean | Indica se o usuário é *premium*. Caso seja, use `true` e, caso não seja, use `false`. |
+| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Caso seja, use `true` e, caso não seja, use `false`. |
 | `last_purchase` | Date | Data da última compra no site. |
 
 ```curl

@@ -3,6 +3,7 @@
 Estos son los datos específicos para la industria **electro** que puedes agregar a tu integración para mejorar la aprobación de los pagos.
 
 ## Campos a enviar
+
 Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre los ítems

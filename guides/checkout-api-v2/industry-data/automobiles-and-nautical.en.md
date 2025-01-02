@@ -3,6 +3,7 @@
 These are the specific data for the **automobiles and nautical** industry that you can add to your integration to improve payment approval.
 
 ## Fields to send 
+
 Add any additional information that you consider necessary.
 
 ### About items
