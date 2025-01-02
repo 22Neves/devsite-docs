@@ -7,6 +7,7 @@ Add any additional information that you consider necessary.
 
 ### About items
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Type | Description |
 | --- | --- | --- |
 | `id` | String | Item identification code. |
@@ -14,7 +15,7 @@ Add any additional information that you consider necessary.
 | `description` | String | Item description. |
 | `category_id` | String | Item category. |
 | `quantity` | Integer | Quantity of units for the item. |
-| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. Note that integrations for Chile do not support decimals. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
 | `category_descriptor` | Object | Object that contains specific information related to the industry. |
 | `passenger` | Object | Passenger information. It is found within the `category_descriptor` object. |
 | `first_name` | String | Passenger's first name. It is found within the `passenger` object. |
@@ -28,6 +29,31 @@ Add any additional information that you consider necessary.
 | `departure_date_time` | Date | Departure date and time of the route. |
 | `arrival_date_time` | Date | Arrival date and time of the route. |
 | `company` | String | Company responsible for executing the route. |
+------------
+
+----[mlc]----
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `description` | String | Item description. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
+| `category_descriptor` | Object | Object that contains specific information related to the industry. |
+| `passenger` | Object | Passenger information. It is found within the `category_descriptor` object. |
+| `first_name` | String | Passenger's first name. It is found within the `passenger` object. |
+| `last_name` | String | Passenger's last name. It is found within the `passenger` object. |
+| `identification` | Object | Passenger identification information. |
+| `type` | String | Type of passenger identification. It is found within the `identification` object. |
+| `number` | String | Passenger identification number. It is found within the `identification` object. |
+| `route` | Object | Route information. It is found within the `category_descriptor` object. |
+| `departure` | String | Departure location of the route. |
+| `destination` | String | Destination location of the route. |
+| `departure_date_time` | Date | Departure date and time of the route. |
+| `arrival_date_time` | Date | Arrival date and time of the route. |
+| `company` | String | Company responsible for executing the route. |
+------------
 
 ### About the buyer
 

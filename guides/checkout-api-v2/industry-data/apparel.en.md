@@ -5,8 +5,9 @@ These are the specific data for the **apparel** industry that you can add to you
 ## Fields to send
 Add any additional information that you consider necessary.
 
-### About the Items
+### About the items
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Type | Description |
 | --- | --- | --- |
 | `id` | String | Item identification code. |
@@ -16,7 +17,21 @@ Add any additional information that you consider necessary.
 | `picture_url` | String | Image URL representing the item. |
 | `category_id` | String | Item category. |
 | `quantity` | Integer | Quantity of units for the item. |
-| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. Note that integrations for Chile do not support decimals. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
+------------
+
+----[mlc]----
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `type` | String | Item type. |
+| `description` | String | Item description. |
+| `picture_url` | String | Image URL representing the item. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
+------------
 
 ### About the buyer
 

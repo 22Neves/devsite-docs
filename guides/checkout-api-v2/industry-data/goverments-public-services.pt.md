@@ -7,6 +7,7 @@ Adicione qualquer informação extra que considerar necessária.
 
 ### Sobre itens
 
+----[mla, mlm, mlu, mco, mlc, mpe]----
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
 | `id` | String | Código de identificação do item. |
@@ -14,8 +15,21 @@ Adicione qualquer informação extra que considerar necessária.
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades para o item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. Observe que as integrações para o Chile não suportam casas decimais. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
 | `event_date` | Date |Data do evento. |
+------------
+
+----[mlc]----
+| Array `items` | Tipo | Descrição |
+| --- | --- | --- |
+| `id` | String | Código de identificação do item. |
+| `title` | String | Nome do item. |
+| `description` | String | Descrição do item. |
+| `category_id` | String | Categoria do item. |
+| `quantity` | Integer | Quantidade de unidades para o item. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
+| `event_date` | Date |Data do evento. |
+------------
 
 ### Sobre o comprador
 

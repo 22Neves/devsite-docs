@@ -7,6 +7,7 @@ Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre los ítems
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
 | `id` | String | Código de identificación del ítem. |
@@ -14,7 +15,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `description` | String | Descripción del ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
 | `category_descriptor` | Object | Objeto que consigna información específica relacionada a la industria. |
 | `passenger` | Object | Información del pasajero. Se encuentra dentro del objeto `category_descriptor`. |
 | `first_name`| String | Nombre del pasajero. Se encuentra dentro del objeto `passenger`.|
@@ -28,6 +29,31 @@ Agrega toda la información adicional que consideres necesaria.
 | `departure_date_time` | Date | Fecha de salida de la ruta. |
 | `arrival_date_time` | Date | Fecha de llegada de la ruta. |
 | `company` | String | Compañía a cargo de ejecutar la ruta. |
+------------
+
+----[mlc]----
+| Array `items` | Tipo | Descripción |
+| --- | --- | --- |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `description` | String | Descripción del ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Debe ser un número entero. |
+| `category_descriptor` | Object | Objeto que consigna información específica relacionada a la industria. |
+| `passenger` | Object | Información del pasajero. Se encuentra dentro del objeto `category_descriptor`. |
+| `first_name`| String | Nombre del pasajero. Se encuentra dentro del objeto `passenger`.|
+| `last_name` | String | Apellido del pasajero. Se encuentra dentro del objeto `passenger`.|
+| `identification` | Object | Información de identificación del pasajero. |
+| `type` | String | Tipo de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
+| `number` | String | Número de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
+| `route` | Object | Información de la ruta. Se encuentra dentro del objeto `category_descriptor`.|
+| `departure` | String | Lugar de partida de la ruta. |
+| `destination` | String | Lugar de destino de la ruta. |
+| `departure_date_time` | Date | Fecha de salida de la ruta. |
+| `arrival_date_time` | Date | Fecha de llegada de la ruta. |
+| `company` | String | Compañía a cargo de ejecutar la ruta. |
+------------
 
 ### Sobre el comprador
 

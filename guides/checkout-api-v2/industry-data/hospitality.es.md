@@ -7,13 +7,14 @@ Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre los ítems
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
 | `id` | String | Código de identificación del ítem. |
 | `title` | String | Nombre del ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
 | `event_date` | Date | Fecha del evento. |
 | `category_descriptor` | Object | Descripción de la categoría. |
 | `passenger` | Object | Información adicional del pasajero. |
@@ -22,6 +23,25 @@ Agrega toda la información adicional que consideres necesaria.
 | `identification` | Object | Información de identificación del pasajero. |
 | `type` | String | Tipo de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
 | `number` | String | Número de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
+------------
+
+----[mlc]----
+| Array `items` | Tipo | Descripción |
+| --- | --- | --- |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Debe ser un número entero. |
+| `event_date` | Date | Fecha del evento. |
+| `category_descriptor` | Object | Descripción de la categoría. |
+| `passenger` | Object | Información adicional del pasajero. |
+| `first_name`| String | Nombre del pasajero. |
+| `last_name` | String | Apellido del pasajero. |
+| `identification` | Object | Información de identificación del pasajero. |
+| `type` | String | Tipo de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
+| `number` | String | Número de identificación del pasajero. Se encuentra dentro del objeto `identification`. |
+------------
 
 ### Sobre el comprador
 

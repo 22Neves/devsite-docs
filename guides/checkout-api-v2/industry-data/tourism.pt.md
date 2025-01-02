@@ -7,6 +7,7 @@ Adicione todas as informações adicionais que você deseja.
 
 ### Sobre itens
 
+----[mla, mlm, mlu, mco, mlc, mpe]----
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
 | `id` | String | Código de identificação do item. |
@@ -14,7 +15,7 @@ Adicione todas as informações adicionais que você deseja.
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades para o item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. Observe que as integrações para o Chile não suportam casas decimais. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
 | `category_descriptor` | Object | Objeto que contém informações específicas relacionadas à indústria. |
 | `passenger` | Object | Informação do passageiro. Está dentro do objeto `category_descriptor`. |
 | `first_name` | String | Nome do passageiro. Está dentro do objeto `passenger`. |
@@ -28,6 +29,31 @@ Adicione todas as informações adicionais que você deseja.
 | `departure_date_time` | Date | Data e hora de saída da rota. |
 | `arrival_date_time` | Date | Data e hora de chegada da rota. |
 | `company` | String | Companhia responsável pela execução da rota. |
+------------
+
+----[mlc]----
+| Array `items` | Tipo | Descrição |
+| --- | --- | --- |
+| `id` | String | Código de identificação do item. |
+| `title` | String | Nome do item. |
+| `description` | String | Descrição do item. |
+| `category_id` | String | Categoria do item. |
+| `quantity` | Integer | Quantidade de unidades para o item. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
+| `category_descriptor` | Object | Objeto que contém informações específicas relacionadas à indústria. |
+| `passenger` | Object | Informação do passageiro. Está dentro do objeto `category_descriptor`. |
+| `first_name` | String | Nome do passageiro. Está dentro do objeto `passenger`. |
+| `last_name` | String | Sobrenome do passageiro. Está dentro do objeto `passenger`. |
+| `identification` | Object | Informações de identificação do passageiro. |
+| `type` | String | Tipo de identificação do passageiro. Está dentro do objeto `identification`. |
+| `number` | String | Número de identificação do passageiro. Está dentro do objeto `identification`. |
+| `route` | Object | Informações da rota. Está dentro do objeto `category_descriptor`. |
+| `departure` | String | Local de partida da rota. |
+| `destination` | String | Local de destino da rota. |
+| `departure_date_time` | Date | Data e hora de saída da rota. |
+| `arrival_date_time` | Date | Data e hora de chegada da rota. |
+| `company` | String | Companhia responsável pela execução da rota. |
+------------
 
 ### Sobre o comprador
 

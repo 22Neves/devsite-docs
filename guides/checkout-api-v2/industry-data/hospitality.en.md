@@ -7,13 +7,14 @@ Add any additional information that you consider necessary.
 
 ### About the items
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Type | Description |
 | --- | --- | --- |
 | `id` | String | Item identification code. |
 | `title` | String | Item name. |
 | `category_id` | String | Category. |
 | `quantity` | Integer | Quantity of the items. |
-| `unit_price` | Float | Price of the unit. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
 | `event_date` | Date | Event date. |
 | `category_descriptor` | Object | Description of the category. |
 | `passenger` | Object | Additional passenger information. |
@@ -22,6 +23,25 @@ Add any additional information that you consider necessary.
 | `identification` | Object | Passenger identification information. |
 | `type` | String | Type of passenger identification. It is found within the `identification` object. |
 | `number` | String | Passenger's identification number. It is found within the `identification` object. |
+------------
+
+----[mlc]----
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `category_id` | String | Category. |
+| `quantity` | Integer | Quantity of the items. |
+| `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
+| `event_date` | Date | Event date. |
+| `category_descriptor` | Object | Description of the category. |
+| `passenger` | Object | Additional passenger information. |
+| `first_name`| String | Passenger's first name. |
+| `last_name` | String | Passenger's last name. |
+| `identification` | Object | Passenger identification information. |
+| `type` | String | Type of passenger identification. It is found within the `identification` object. |
+| `number` | String | Passenger's identification number. It is found within the `identification` object. |
+------------
 
 ### About the buyer
 

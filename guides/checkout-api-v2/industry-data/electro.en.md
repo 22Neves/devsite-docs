@@ -8,6 +8,7 @@ Add any additional information that you consider necessary.
 
 ### About items
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Type | Description |
 | --- | --- | --- |
 | `id` | String | Item identification code. |
@@ -15,8 +16,21 @@ Add any additional information that you consider necessary.
 | `description` | String | Item description. |
 | `category_id` | String | Item category. |
 | `quantity` | Integer | Quantity of units for the item. |
-| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. Note that integrations for Chile do not support decimals. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
 | `warranty` | Boolean | `true` if the product has a guarantee, `false` if it does not. |
+------------
+
+----[mlc]----
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `description` | String | Item description. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
+| `warranty` | Boolean | `true` if the product has a guarantee, `false` if it does not. |
+------------
 
 ### About the buyer
 

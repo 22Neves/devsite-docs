@@ -7,6 +7,7 @@ Agrega toda la información adicional que consideres necesaria.
 
 ### Sobre los ítems
 
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Tipo | Descripción |
 | --- | --- | --- |
 | `id` | String | Código de identificación del ítem. |
@@ -14,7 +15,19 @@ Agrega toda la información adicional que consideres necesaria.
 | `description` | String | Descripción del ítem. |
 | `category_id` | String | Categoría del ítem. |
 | `quantity` | Integer | Cantidad de unidades para el ítem. |
-| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. Ten en cuenta que las integraciones para Chile no soportan decimales. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Puede ser entero o con decimales. |
+------------
+
+----[mlc]----
+| Array `items` | Tipo | Descripción |
+| --- | --- | --- |
+| `id` | String | Código de identificación del ítem. |
+| `title` | String | Nombre del ítem. |
+| `description` | String | Descripción del ítem. |
+| `category_id` | String | Categoría del ítem. |
+| `quantity` | Integer | Cantidad de unidades para el ítem. |
+| `unit_price` | Float | Precio unitario asignado al ítem. Debe ser un número entero. |
+------------
 
 ### Sobre el comprador
 
