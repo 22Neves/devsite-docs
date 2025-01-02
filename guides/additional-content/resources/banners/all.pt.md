@@ -271,8 +271,7 @@ width="735" height="40"/>
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_735X40.jpg?v=1" alt="Mercado Pago - Meios de pagamento" width="735" height="40"/>
-
+![All](/images/banners/all-payment-methods-01.jpg)
 
 ## 575 x 40 px
 
@@ -286,8 +285,7 @@ width="575" height="40"/>
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_575X40.jpg?v=1" alt="Mercado Pago - Meios de pagamento" width="575" height="40"/>
-
+![All](/images/banners/all-payment-methods-02.jpg)
 
 ## 468 x 60 px
 
@@ -301,8 +299,7 @@ width="468" height="60"/>
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_468X60.jpg?v=1" alt="Mercado Pago - Meios de pagamento" width="468" height="60"/>
-
+![All](/images/banners/all-payment-methods-03.jpg)
 
 ## 125 x 125 px
 
@@ -316,8 +313,7 @@ width="125" height="125"/>
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_125X125.jpg?v=1" alt="Mercado Pago - Meios de pagamento" width="125" height="125"/>
-
+![All](/images/banners/all-payment-methods-04.jpg)
 
 ## 120 x 240 px
 
@@ -331,8 +327,7 @@ width="120" height="240"/>
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X240.jpg?v=1" alt="Mercado Pago - Meios de pagamento" width="120" height="240"/>
-
+![All](/images/banners/all-payment-methods-05.jpg)
 
 ## 120 x 600px
 
@@ -346,8 +341,8 @@ width="120" height="600"/>
 
 ### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_120X600.jpg?v=1" alt="Mercado Pago - Meios de pagamento"
-width="120" height="600"/>
+![All](/images/banners/all-payment-methods-06.jpg)
+
 ------------
 
 ----[mlc]----

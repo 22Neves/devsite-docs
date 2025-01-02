@@ -3,7 +3,6 @@
 A integração de Money Out é realizada executando uma única chamada à API [v1/transaction-intents](https://api.mercadopago.com/v1/transaction-intents). Isso significa que a transação é criada e processada em uma única solicitação e, se a execução for bem-sucedida, o dinheiro estará disponível para ser retirado na conta de destino, sem a necessidade de etapas adicionais. 
 
 ----[mlb]----
-
 Com o Money Out, é possível  enviar dinheiro de duas formas distintas: Pix ou transferência entre contas, sejam elas contas do Mercado Pago ou bancárias. Siga as instruções abaixo para saber como realizar a integração em cada caso.
 
 > WARNING
@@ -21,7 +20,6 @@ Para integrar o Money Out e permitir retiradas de dinheiro via Pix, é necessár
 > Nota
 >
 > Tenha em mente que cada chamada permite o envio de dinheiro para apenas uma conta de destino (`transaction.to`). A chave Pix do integrador deve ter sido previamente cadastrada, e a chave Pix da conta destino precisa estar ativa.
-
 
 ```curl
 curl -X POST \
@@ -85,7 +83,6 @@ curl -X POST \
 | `transaction.to.accounts.owner.identification.type` | *Body*. Tipo de identificação do titular da conta de destino. | Obrigatório | “CPF”<br>“CNPJ” |
 | `transaction.to.accounts[n].owner.identification.number` | *Body*. Número de identificação do titular da conta de destino. | Obrigatório | 1234567890 |
 | `transaction.total_amount `| *Body*. Montante total da transação. Deve ser o mesmo valor indicado para `from.accounts.amount` e `to.accounts.amount` | Obrigatório | 100,00 |
-
 
 Se a execução for bem-sucedida, você receberá automaticamente uma resposta com o `status code 202`, indicando que a transação foi aceita, como no exemplo a seguir:
 
@@ -172,7 +169,6 @@ curl --request GET \
 ```
 
 Em seguida, se o banco ao qual a conta de destino pertence estiver disponível para realizar a transação, envie um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/bank-transfer-mlb/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
-
 
 > NOTE
 >
@@ -335,9 +331,8 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 | `transaction.total_amount` | Valor total da transação. |
 | `transaction.statement_descriptor` | Mensagem adicional para a transação. |
 
------------- 
-
-----[mlc]---- 
+------------
+----[mlc, mla, mlm]---- 
 > WARNING
 >
 > Importante
@@ -346,13 +341,105 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 
 Para integrar Money Out e permitir retiradas de dinheiro para contas bancárias, é necessário enviar um **POST**, com seu **Access Token** no *header* `Authorization` e sua **chave de idempotencia** no *header* `X-Idempotency-Key`, para o endpoint [/v1/transaction-intents/process](/developers/pt/reference/money-out/bank-transfer-mlc/post). Os parâmetros correspondentes devem ser enviados conforme as especificações detalhadas na tabela a seguir.
 
-
 > NOTE
 >
 > Nota
 >
 > Tenha em mente que cada chamada permite o envio de dinheiro para apenas uma conta de destino (`transaction.to`).
-
+------------
+----[mla]---- 
+```curl
+curl --request POST \
+  --url https://api.mercadopago.com/v1/transaction-intents/process \
+  --header 'Authorization: Bearer TEST-4613*********761-11121*********92cd39015*********7bbc3cb-1*********' \
+  --header 'content-type: application/json' \
+  --header 'x-enforce-signature: false' \
+  --data '{
+  "external_reference": "external_ref_1234",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.com.ar/notification"
+    }
+  },
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25
+        }
+      ]
+    },
+    "to": {
+      "total_amount": 25,
+      "accounts": [
+        {
+          "amount": 25,
+          "bank_id": "015",
+          "number": "0150533701000132688355",
+          "holder": "Victor Hugo",
+          "owner": {
+              "identification": {
+                  "number": "20209642647",
+                  "type": "CUIT"
+              }
+          },
+          "type": "savings_account",
+          "description": "envio de 25"
+        }
+      ]
+    },
+    "total_amount": 25
+  }
+}'
+```
+------------
+----[mlm]---- 
+```curl
+curl --request POST \
+  --url https://api.mercadopago.com/v1/transaction-intents/process \
+  --header 'Authorization: Bearer TEST-6133*********794-11121*********edd13abd8*********82868e9-1*********' \
+  --header 'content-type: application/json' \
+  --header 'x-enforce-signature: false' \
+  --data '{
+  "external_reference": "12345",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
+  },
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25
+        }
+      ]
+    },
+    "to": {
+      "total_amount": 25,
+      "accounts": [
+        {
+          "amount": 25,
+          "bank_id": "646",
+          "number": "646180110400000007",
+          "holder": "JUAN JOSE MARIA",
+          "type": "savings_account",
+          "description": "envio de 25"
+        }
+      ]
+    },
+    "total_amount": 25
+  }
+}'
+```
+------------
+----[mlc]---- 
 ```curl
 curl -X POST \
     'https://api.mercadopago.com/v1/transaction-intents/process'\
@@ -397,7 +484,8 @@ curl -X POST \
   }
 }'
 ```
-
+------------
+----[mlc, mla]---- 
 | Campo | Descrição | Obrigatório/Opcional | Exemplo |
 |---|---|---|---|
 | `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
@@ -414,7 +502,25 @@ curl -X POST \
 | `transaction.to.accounts[n].owner.identification.number` | *Body*. Número de identificação do titular da conta de destino. | Obrigatório | 1234567890 |
 | `transaction.total_amount `| Body. Montante total da transação. Deve ser o mesmo valor indicado para `from.accounts.amount` e `to.accounts.amount` | Obrigatório | 100,00 |
 
-Se a execução for bem-sucedida, você receberá como resposta um `status code 202`, indicando que a transação foi aceita, como no exemplo a seguir. 
+------------
+----[mlm]----
+| Campo | Descrição | Obrigatório/Opcional | Exemplo |
+|---|---|---|---|
+| `x-signature` | *Header*. Assinatura da solicitação com o corpo criptografado em base 64 usando as chaves pública e privada do integrador. Acesse a seção [Criptografia Ponta a Ponta](/developers/pt/docs/money-out/end-to-end-encryption) se precisar de mais informações. | Obrigatório **apenas no ambiente de produção**. | - |
+| `x-enforce-signature` | *Header*. Booleano que indica se o integrador enviará ou não a assinatura. | **Opcional** em ambiente de testes, e **obrigatório** em ambiente produtivo, que é quando é obrigatório o envio da assinatura. | - |
+| `external_reference` | *Body*. String com uma referência para identificar a transação. Essa referência é gerada pelo integrador e pode ser qualquer valor que permita rastrear as transações, desde que não possua caracteres especiais (“”, [ ], (), @) e não exceda 64 caracteres. São permitidos números (1234), letras (abcde), hífens (-) e underlines (_), e não pode ser duplicada. | Opcional | MP0001 |
+| `point_of_interaction.type` | *Body*. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}` | Obrigatório | `{"type":"PSP_TRANSFER"}` |
+| `seller_configuration.notification_info.notification_url` | *Body*. URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. Este campo tem um limite de 500 caracteres. | Opcional | http://exemplo.cl/notification |
+| `transaction.from.accounts.amount` | *Body*. Valor da transação, que será retirado da conta de origem `from`. O valor mínimo é 0, e o valor máximo é 10000000000. | Obrigatório | 100,00 |
+| `transaction.to.accounts.amount` | *Body*. Valor a ser enviado para a conta de destino indicado no `to`. Deve ser o mesmo valor indicado para `from.accounts.amount`. | Obrigatório | 100,00 |
+| `transaction.to.accounts.bank_id` | *Body*. Número identificador do banco ao qual pertence a conta de destino. | Obrigatório | 99999004 |
+| `transaction.to.accounts.type` | *Body*. Tipo de conta de destino. Os valores possíveis são `current`, para contas bancárias, e `mercadopago`, para contas do Mercado Pago. | Obrigatório | `current` / `mercadopago` |
+| `transaction.to.accounts.number` | *Body*. Número único que representa cada conta bancária. Neste caso, o número único da conta de destino. | Obrigatório | `10266732` |
+| `transaction.total_amount `| Body. Montante total da transação. Deve ser o mesmo valor indicado para `from.accounts.amount` e `to.accounts.amount` | Obrigatório | 100,00 |
+
+------------
+
+Se a execução for bem-sucedida, você receberá como resposta um `status code 200`, indicando que a transação foi aceita, como no exemplo a seguir. 
 
 > WARNING
 >
@@ -422,6 +528,103 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 > 
 > Esta resposta pode demorar alguns segundos. Se seu `status` for `pending`, deve-se executar a requisição para [Obter informações sobre uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_obter_informações_sobre_uma_transação) para verificar sua atualização.
 
+----[mla]---- 
+```curl
+{
+  "created_date": "2024-11-13T15:04:25.699+00:00",
+  "external_reference": "external_ref_1234",
+  "id": "22dvqmseu9m",
+  "last_updated_date": "2024-11-13T15:04:31.256+00:00",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.ar/notification"
+    }
+  },
+  "status": "processed",
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25,
+          "status_details": []
+        }
+      ]
+    },
+    "paid_amount": 25,
+    "payer": {
+      "id": 1992483656
+    },
+    "refunded_amount": 0,
+    "to": {
+      "accounts": [
+        {
+          "amount": 25,
+          "description": "envio de 25",
+          "origin_id": "01JCK0VSV3TBSAADAGJQKG4GTY",
+          "status_details": [
+            "approved"
+          ]
+        }
+      ]
+    },
+    "total_amount": 25,
+    "statement_descriptor": "",
+    "binary_mode": false
+  }
+}
+```
+------------
+----[mlm]---- 
+```curl
+{
+  "created_date": "2024-11-13T14:18:07.052+00:00",
+  "external_reference": "12345",
+  "id": "22dvqmseu6a",
+  "last_updated_date": "2024-11-13T14:18:07.663+00:00",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
+  },
+  "status": "processed",
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25,
+          "status_details": []
+        }
+      ]
+    },
+    "paid_amount": 0,
+    "payer": {
+      "id": 1992483662
+    },
+    "refunded_amount": 0,
+    "to": {
+      "accounts": [
+        {
+          "amount": 25,
+          "description": "envio de 25",
+          "origin_id": "01JCJY70ACGJ2AP8433JGG0ZRY",
+          "status_details": []
+        }
+      ]
+    },
+    "total_amount": 25,
+    "statement_descriptor": "",
+    "binary_mode": false
+  }
+}
+```
+------------
+----[mlc]---- 
 ```json
 {
   "created_date": "2021-01-01T00:00:00.000Z",
@@ -476,6 +679,8 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 }
 ```
 
+------------
+----[mlc, mla]---- 
 | Atributo | Descrição |
 |---|---|
 | `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
@@ -501,6 +706,30 @@ Se a execução for bem-sucedida, você receberá como resposta um `status code 
 | `transaction.statement_descriptor` | Mensagem adicional para a transação. |
 
 ------------
+----[mlm]----
+| Atributo | Descrição |
+|---|---|
+| `created_date` | Data de criação da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
+| `external_reference` | Referência externa da transação, gerada pelo integrador na hora da criação. |
+| `id` | Identificador único da transação, gerado automaticamente. |
+| `last_updated_date` | Última atualização do status da transação. Será retornada no formato YYYY-MM-DDTHH:MM:SS.SSSZ. |
+| `point_of_interaction.type` | Ponto de interação. Valor fixo. Sempre deve ser `{"type":"PSP_TRANSFER"}`. |
+| `seller_configuration.notification_info.notification_url` | URL onde receberá as notificações de eventos relacionados à transação, como mudanças de status. |
+| `status` | Status da transação. Para verificar os possíveis status, consulte a seção [Possíveis status de uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_possíveis_status_de_uma_transação). |
+| `transaction.from.accounts.amount` | Valor debitado da conta Mercado Pago de origem. |
+| `transaction.paid_amount` | Valor total cobrado ao titular da conta de origem. Será igual a `from.accounts.amount`, a menos que tenha havido reembolso total ou parcial, indicado em `refunded_amount` |
+| `transaction.payer.id` | Identificador do integrador titular da conta de origem. |
+| `transaction.refunded_amount` | No caso de reembolso, indicará o valor total reembolsado ao titular da conta de origem. Se não houve reembolso, seu valor será 0. |
+| `transaction.to.accounts.amount` | Valor transferido para a conta de destino. O valor será igual a `from.accounts.amount`, a menos que tenha havido reembolso total ou parcial indicado no campo `transaction.refunded_amount`. |
+| `transaction.to.accounts.origin_id` | Identificador que permite rastrear a transação dentro do sistema bancário. |
+| `transaction.to.accounts.amount.status_detail` | Informação detalhada do status da operação. Para verificar os possíveis `status_detail`, consulte a seção [Possíveis status de uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_possíveis_status_de_uma_transação). |
+| `transaction.to.accounts.bank_id` | Número identificador do banco ao qual pertence a conta de destino. |
+| `transaction.to.accounts.type` | Tipo de conta de destino. |
+| `transaction.to.accounts.number` | Número único que representa a conta de destino. |
+| `transaction.total_amount` | Valor total da transação. |
+| `transaction.statement_descriptor` | Mensagem adicional para a transação. |
+
+------------
 
 ## Configurar notificações
 
@@ -509,7 +738,6 @@ Para manter-se atualizado sobre o status das transações, é necessário config
 Você pode **configurar as notificações Webhooks ao fazer a chamada para criar uma transação**, através do campo `notification_url`. Basta preenchê-lo com a URL na qual você deseja receber as atualizações.
 
 Veja abaixo exemplos que ilustram as mensagens retornadas quando ocorre um evento. 
-
 
 #### - Mensagem ao criar uma transação
 
@@ -547,7 +775,6 @@ Veja abaixo exemplos que ilustram as mensagens retornadas quando ocorre um event
 
 O atributo `data.id` corresponde ao ID da transação sobre a qual você está sendo notificado, o parâmetro `id` será o identificador da notificação e o `status` informará sobre a criação da transação ou sua atualização.
 
-
 ### Ações necessárias após receber uma notificação
 
 Ao receber uma notificação na sua plataforma, é necessário, primeiramente, validar as informações do recurso notificado. Para realizar isso, execute a requisição [Obter informações sobre uma transação](/developers/pt/docs/money-out/integration-configuration#bookmark_obter_informações_sobre_uma_transação) utilizando o ID da transação que foi notificada. 
@@ -565,7 +792,6 @@ Na tabela abaixo listamos os principais eventos, prazos e tempo de espera para o
 | Quarta tentativa | 48 horas | 5 segundos |
 | Quinta tentativa | 96 horas | 5 segundos |
 
-
 ## Obter informações sobre uma transação
 
 Após criar uma transação, é possível obter informações detalhadas sobre ela. Isso permite verificar se ela foi criada corretamente, consultar seu status ou confirmar as informações recebidas em suas notificações.
@@ -579,6 +805,104 @@ curl --location --request GET 'https://api.mercadopago.com/v1/transaction-intent
 
 Se os dados enviados na chamada estiverem corretos, você receberá uma resposta como a seguinte:
 
+----[mla]---- 
+```json
+{
+  "created_date": "2024-11-13T15:04:25.699+00:00",
+  "external_reference": "external_ref_1234",
+  "id": "22dvqmseu9m",
+  "last_updated_date": "2024-11-13T15:04:31.256+00:00",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.ar/notification"
+    }
+  },
+  "status": "processed",
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25,
+          "status_details": []
+        }
+      ]
+    },
+    "paid_amount": 25,
+    "payer": {
+      "id": 1992483656
+    },
+    "refunded_amount": 0,
+    "to": {
+      "accounts": [
+        {
+          "amount": 25,
+          "description": "envio de 25",
+          "origin_id": "01JCK0VSV3TBSAADAGJQKG4GTY",
+          "status_details": [
+            "approved"
+          ]
+        }
+      ]
+    },
+    "total_amount": 25,
+    "statement_descriptor": "",
+    "binary_mode": false
+  }
+}
+```
+
+------------
+----[mlm]---- 
+```json
+{
+  "created_date": "2024-11-13T14:18:07.052+00:00",
+  "external_reference": "12345",
+  "id": "22dvqmseu6a",
+  "last_updated_date": "2024-11-13T14:18:07.663+00:00",
+  "point_of_interaction": {
+    "type": "PSP_TRANSFER"
+  },
+  "seller_configuration": {
+    "notification_info": {
+      "notification_url": "http://example.mx/notification"
+    }
+  },
+  "status": "processed",
+  "transaction": {
+    "from": {
+      "accounts": [
+        {
+          "amount": 25,
+          "status_details": []
+        }
+      ]
+    },
+    "paid_amount": 0,
+    "payer": {
+      "id": 1992483662
+    },
+    "refunded_amount": 0,
+    "to": {
+      "accounts": [
+        {
+          "amount": 25,
+          "description": "envio de 25",
+          "origin_id": "01JCJY70ACGJ2AP8433JGG0ZRY",
+          "status_details": []
+        }
+      ]
+    },
+    "total_amount": 25,
+    "statement_descriptor": "",
+    "binary_mode": false
+  }
+}
+```
+------------
+----[mlc]---- 
 ```json
 {
   "created_date": "2021-01-01T00:00:00.000Z",
@@ -590,7 +914,7 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
   },
   "seller_configuration": {
     "notification_info": {
-      "notification_url": "http://example.com.br/notification"
+      "notification_url": "http://example.cl/notification"
     }
   },
   "status": "approved",
@@ -618,7 +942,7 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
           "owner": {
             "identification": {
               "number": "1234567890",
-              "type": "CPF"
+              "type": "RUT"
             }
           },
           "bank_id": "0000014",
@@ -632,9 +956,9 @@ Se os dados enviados na chamada estiverem corretos, você receberá uma resposta
   }
 }
 ```
+------------
 
 Para obter detalhes sobre cada atributo retornado, consulte a resposta à [Configurar retiradas de dinheiro](/developers/pt/docs/money-out/integration-configuration#bookmark_integration_configuration).
-
 
 ### Possíveis status de uma transação 
 
