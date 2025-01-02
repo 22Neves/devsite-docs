@@ -42,18 +42,19 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 ![installation chopro 7](/images/shopify/installation-chopro-7-pt.png)
 
 11. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
-12. Clique em **Guardar credenciais**.
+12. Clique em **Salvar credenciais**.
 
-![installation chopro 8](/images/shopify/installation-chopro-8-pt.png)
+![installation cards 5](/images/shopify/installation-cards-5-pt.png)
 
 > NOTE
 >
 > Nota
 >
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
+> <br><br>
+> Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
-13. Para finalizar a instalação, clique em **Ativar**.
-
+12. Por fim, clique em **Verificar ativação**, retorne à seção **Configurações** da Shopify e clique em **Ativar** para finalizar a instalação.
 ![installation chopro 9](/images/shopify/installation-chopro-9-pt.png)
 
 > Nesta etapa, você pode selecionar as imagens dos métodos de pagamento que deseja exibir em sua loja para fins ilustrativos.
