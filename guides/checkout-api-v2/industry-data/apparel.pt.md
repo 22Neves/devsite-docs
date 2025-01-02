@@ -7,7 +7,6 @@ Adicione qualquer informação extra que considerar necessária.
 
 ### Sobre itens
 
-
 | Array `items` | Tipo | Descrição|
 | --- | --- | --- |
 | `id` | String | Código de identificação do item. |
