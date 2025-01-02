@@ -7,6 +7,7 @@ Adicione qualquer informação extra que considerar necessária.
 
 ### Sobre itens
 
+
 | Array `items` | Tipo | Descrição|
 | --- | --- | --- |
 | `id` | String | Código de identificação do item. |
@@ -16,12 +17,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `picture_url` | String | URL da imagem que representa o item. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades para o item. |
-----[mla, mlm, mlu, mco, mlb, mpe]----
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
------------
-----[mlc]----
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. Observe que as integrações para o Chile não suportam casas decimais. |
------------
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais.----[mlc]---- Observe que as integrações para o Chile não suportam casas decimais.----------- |
 
 ### Sobre o comprador
 
