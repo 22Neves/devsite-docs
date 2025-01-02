@@ -63,4 +63,3 @@ Para configurar o Meses sin Tarjeta no checkout da loja, acesse o painel de admi
 > Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.
-

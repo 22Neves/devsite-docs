@@ -10,9 +10,7 @@ Essa exclusão de tipos e meios de pagamento configurada na VTEX funcionará ape
 
 Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de pagamento recebe na VTEX, para que possa usá-la caso queira excluir algum na sua integração com o Checkout Pro.
 
-
 ----[mla]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
@@ -29,7 +27,6 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 
 ------------
 ----[mlb]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
@@ -41,9 +38,7 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 |Pix|`pix`|`bank_transfer`|Pix e MercadoPagoPro|
 
 ------------
-
 ----[mlc]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
@@ -55,7 +50,6 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 
 ------------
 ----[mco]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
@@ -69,7 +63,6 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 
 ------------
 ----[mlm]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
@@ -83,7 +76,6 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 
 ------------
 ----[mpe]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
@@ -96,7 +88,6 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 
 ------------
 ----[mlu]----
-
 |Nome|Métodos de Pagamento|Tipos de Pagamentos|Condições na VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|

@@ -40,4 +40,3 @@ Finalizadas essas etapas, o parcelamento no checkout estará configurado e pront
 > Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.
-

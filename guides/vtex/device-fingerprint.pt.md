@@ -4,7 +4,6 @@ O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes, e o 
 
 Sempre que possível, recomendamos que você envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados dos seus clientes e não os compartilhamos com ninguém. 
 
-
 Você deve configurar o Device Fingerprint nas lojas VTEX para tornar suas transações mais seguras. Para faze-lo, siga os passos abaixo.
 
 1. Acesse o painel de administração da sua loja e selecione **Checkout > Configurações da Loja**.
@@ -22,7 +21,6 @@ document.body.appendChild(script);
 
 5. Clique em **Salvar**.
 
-
 ![Configuração de fingerprint](/images/vtex/devicefingerprint-imagenv2-pt.gif)
 
 Agora você tem o Device Fingerprint configurado para melhorar a avaliação de risco de fraude. 
@@ -31,6 +29,4 @@ Agora você tem o Device Fingerprint configurado para melhorar a avaliação de 
 >
 > Nota
 >
->  Se você quiser saber mais informações sobre como utilizar o Device Fingerprint para otimizar a aprovação dos seus pagamentos, consulte o documento [Como melhorar a aprovação de pagamentos](/developers/pt/docs/vtex/how-tos/payment-approval) ou verifique a [documentação de suporte da VTEX](https://help.vtex.com/tutorial/configuring-mercado-pagos-device-fingerprint--m2knP9z69HGHHBIiFq0Ga).
-
-
+> Se você quiser saber mais informações sobre como utilizar o Device Fingerprint para otimizar a aprovação dos seus pagamentos, consulte o documento [Como melhorar a aprovação de pagamentos](/developers/pt/docs/vtex/how-tos/payment-approval) ou verifique a [documentação de suporte da VTEX](https://help.vtex.com/tutorial/configuring-mercado-pagos-device-fingerprint--m2knP9z69HGHHBIiFq0Ga).

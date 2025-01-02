@@ -17,4 +17,3 @@ To configure Checkout Pro, access the administration panel of your VTEX platform
 > Note 
 > 
 > Changes to the payment conditions may take up to 10 minutes to be applied. 
-

@@ -22,7 +22,6 @@ To configure these payment methods, access the administration panel of your VTEX
 
 ![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-en.gif) 
 
-
 ## Installments and Interest 
 
 Currently, Mercado Pago only offers the option of interest-free installments within the VTEX platform. 
@@ -35,7 +34,6 @@ Similarly, you have the option to configure installment payments and interest di
 ![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 Once these steps are completed, installment payments in the checkout will be configured and ready to process sales.
-
 
 > NOTE 
 > 

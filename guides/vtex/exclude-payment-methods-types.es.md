@@ -10,10 +10,7 @@ Esta exclusión de tipos y medios de pago que configuras en VTEX funcionará par
 
 En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pago recibe en VTEX, para que puedas utilizarla en caso de querer excluir alguno en tu integración con Checkout Pro.
 
-
-
 ----[mla]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
@@ -30,7 +27,6 @@ En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pa
 
 ------------
 ----[mlb]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
@@ -43,7 +39,6 @@ En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pa
 
 ------------
 ----[mlc]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
@@ -55,7 +50,6 @@ En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pa
 
 ------------
 ----[mco]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
@@ -69,7 +63,6 @@ En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pa
 
 ------------
 ----[mlm]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
@@ -82,9 +75,7 @@ En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pa
 |Citibanamex|`banamex`|`atm`|MercadoPagoPro y MercadoPagoOff|
 
 ------------
-
 ----[mpe]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
@@ -97,7 +88,6 @@ En la siguiente tabla encontrarás la nomenclatura que cada tipo y método de pa
 
 ------------
 ----[mlu]----
-
 |Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|

@@ -13,6 +13,7 @@ To configure the Linha de Crédito in the store's checkout, access the administr
     3. In the **Status** field, activate the payment condition using the slider button. 
 
 4. Click **Save** to activate the configuration
+
 ------------ 
 ----[mla]---- 
 # Hasta 12 cuotas sin tarjeta con Mercado Pago
@@ -28,7 +29,8 @@ To configure the Cuotas sin Tarjeta without a card in the store's checkout, acce
     2. In **Process with affiliation**, select **MercadoPagoV2**. 
     3. In the **Status** field, activate the payment condition using the slider button. 
 
-4. Click **Save** to activate the configuration 
+4. Click **Save** to activate the configuration.
+
 ------------ 
 ----[mlm]---- 
 # Hasta 12 cuotas sin tarjeta con Mercado Pago
@@ -43,7 +45,8 @@ To configure Meses sin Tarjeta in the store's checkout, access the administratio
     1. Enter the **Rule name**, which will allow you to identify this payment method. 
     2. In **Process with affiliation**, select **MercadoPagoV2**. 
     3. In the **Status** field, activate the payment condition using the slider button. 
-4. Click **Save** to activate the configuration 
+4. Click **Save** to activate the configuration.
+
 ------------ 
 
 ![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
@@ -53,4 +56,3 @@ To configure Meses sin Tarjeta in the store's checkout, access the administratio
 > Note 
 > 
 > Changes in payment conditions may take up to 10 minutes to be applied.
-

@@ -18,4 +18,3 @@ Para configurar o Checkout Pro, acesse o painel de administração da sua plataf
 > Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.
-

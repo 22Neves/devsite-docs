@@ -11,7 +11,6 @@ Con Checkout Pro, el comprador será dirigido desde la tienda al sitio web de Me
 Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes previamente configurados en tu cuenta de Mercado Pago:
 
 ----[mlb]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -21,9 +20,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Medios offline | Puedes ofrecer pagos por medios offline, como Pix o boleto bancário |
 
 ------------
-
 ----[mlm]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -31,11 +28,8 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
 | Medios offline | Puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Bancomer o Banamex |
 
-
 ------------
-
 ----[mla]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -44,9 +38,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Medios offline | Puedes ofrecer pagos por medios offline, como Rapipago, Pago Fácil, Provincia Net o red Link. |
 
 ------------
-
 ----[mpe]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -54,9 +46,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Medios offline | Puedes ofrecer pagos por medios offline, como Pago Efectivo. |
 
 ------------
-
 ----[mco]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -64,9 +54,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Medios offline | Puedes ofrecer pagos por medios offline, como PSE o Efecty. |
 
 ------------
-
 ----[mlu]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -74,9 +62,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Medios offline | Puedes ofrecer pagos por medios offline, como Abitab o Redpagos. |
 
 ------------
-
 ----[mlc]----
-
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
@@ -84,4 +70,3 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Medios offline | Puedes ofrecer pagos por medios offline, como Wip. |
 
 ------------
-

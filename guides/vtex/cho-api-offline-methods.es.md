@@ -1,7 +1,6 @@
 # Medios de pago offline
 
 ----[mlb]----
-
 Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por medios offline, como Boleto Bancário o Pix.
 
 > WARNING
@@ -11,9 +10,7 @@ Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por med
 > Para ofrecer Pix como método de pago, debes asegurarte, primero, de tener configurada tu Clave Pix.  Si aún no las creaste, mira el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. 
 
 ------------
-
 ----[mco]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como PSE o Efecty.
 
 > WARNING
@@ -27,32 +24,28 @@ Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offli
 ------------
 
 ----[mla]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Fácil, Rapipago, Red Link o Provincia Net.
 
 ------------
-
 ----[mlm]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Banamex o Bancomer.
+
 ------------
-
-
 ----[mlu]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Abitab o Redpagos.
+
 ------------
 
 ----[mlc]----
 
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Wip.
-------------
 
+------------
 ----[mpe]----
 
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Efectivo y YAPE.
-------------
 
+------------
 
 Para configurar estos medios de pago, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
 

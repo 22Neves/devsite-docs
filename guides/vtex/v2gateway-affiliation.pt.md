@@ -45,9 +45,8 @@ Para criar uma **afiliação de gateway com o MercadoPagoV2**, siga os passos ab
 
 Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
-
 > NOTE
 >
 > Nota
 >
-> Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](/developers/pt/guides/vtex/additional-content/possible-errors) e nosso documento sobre [logs da VTEX.](/developers/pt/guides/vtex/how-tos/logs)
+> Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](/developers/pt/guides/vtex/additional-content/possible-errors) e nosso documento sobre [logs da VTEX.](/developers/pt/guides/vtex/how-tos/logs).

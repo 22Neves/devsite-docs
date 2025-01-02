@@ -93,4 +93,4 @@ See below the available payment methods for the store when integrating Checkout 
 | Offline methods | You can offer payments with Wip. |
 | VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
 
- ------------
+------------
