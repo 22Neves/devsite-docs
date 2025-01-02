@@ -9,7 +9,7 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 >
 > Note
 >
-> You can also use Mercado Pago's financing option by enabling the "Linha de Crédito" as a payment method in **Checkout Pro**. See the enabling section of [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro) for more information.
+> You can also use Mercado Pago's financing option by enabling the Linha de Crédito as a payment method in **Checkout Pro**. See the enabling section of [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro) for more information.
 
 If you want to **show Linha de Crédito in your store's checkout**, follow the steps below.
 
