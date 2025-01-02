@@ -25,7 +25,7 @@ Você pode personalizar essas configurações de acordo com suas necessidades, *
 * **Checkout API**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Cartão de crédito
    * Cartão de débito
-   * Redes de pago en efectivo
+   * Redes de pagamento em efectivo
 ------------
 ----[mlb]----
 * **Checkout Transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout Transparente. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
