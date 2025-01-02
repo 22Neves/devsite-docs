@@ -14,7 +14,7 @@ Adicione todas as informações adicionais que você deseja.
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades para o item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. Observe que as integrações para o Chile não suportam decimais. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. Observe que as integrações para o Chile não suportam casas decimais. |
 | `category_descriptor` | Object | Objeto que contém informações específicas relacionadas à indústria. |
 | `passenger` | Object | Informação do passageiro. Está dentro do objeto `category_descriptor`. |
 | `first_name` | String | Nome do passageiro. Está dentro do objeto `passenger`. |

@@ -14,7 +14,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `warranty` | Boolean | `true` se é, `false` se não é. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades para o item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser inteiro ou com casas decimais. Observe que as integrações para o Chile não suportam decimais. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. Observe que as integrações para o Chile não suportam casas decimais. |
 
 ### Sobre o comprador
 
