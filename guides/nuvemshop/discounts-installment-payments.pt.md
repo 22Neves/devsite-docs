@@ -22,7 +22,7 @@ Você pode personalizar essas configurações de acordo com suas necessidades, *
 ### Descontos
 
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-* **Checkout transparente**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+* **Checkout API**: Essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com Checkout API. Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Cartão de crédito
    * Cartão de débito
    * Redes de pago en efectivo
