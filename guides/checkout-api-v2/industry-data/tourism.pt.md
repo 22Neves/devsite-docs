@@ -1,6 +1,6 @@
 # Turismo
 
-Estes são os dados específicos para a indústria de **turismo** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **turismo** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
 Adicione todas as informações adicionais que você deseja.

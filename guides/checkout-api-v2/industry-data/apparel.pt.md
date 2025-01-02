@@ -1,6 +1,6 @@
 # Apparel
 
-Estes são os dados específicos para a indústria de **apparel** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **apparel** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
 Adicione qualquer informação extra que considerar necessária.

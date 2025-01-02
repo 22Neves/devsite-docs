@@ -1,6 +1,6 @@
 # Tickets e entretenimento
 
-Estes são os dados específicos para a indústria de **tickets e entretenimento** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **tickets e entretenimento** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
 

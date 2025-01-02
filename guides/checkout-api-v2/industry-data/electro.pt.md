@@ -1,6 +1,6 @@
 # Eletro
 
-Estes são os dados específicos para a indústria de **eletro** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **eletro** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
 Adicione qualquer informação extra que considerar necessária.

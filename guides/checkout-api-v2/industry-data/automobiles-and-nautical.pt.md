@@ -1,6 +1,6 @@
 # Automóveis e náutica
 
-Estes são os dados específicos para a indústria de **automóveis e náutica** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **automóveis e náutica** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 
 ## Campos para enviar

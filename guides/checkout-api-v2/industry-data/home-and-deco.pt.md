@@ -1,6 +1,6 @@
 # Casa e decoração
 
-Estes são os dados específicos para a indústria de **casa e decoração** que você pode adicionar à sua integração para melhorar a aprovação dos pagamentos.
+Estes são os dados específicos para a indústria de **casa e decoração** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
 
 ## Campos para enviar
 Adicione qualquer informação extra que considerar necessária.
