@@ -3,19 +3,10 @@
 To integrate with Mercado Pago, follow the procedures below.
 
 ----[mlm, mla, mlb]----
-> WARNING
->
-> Attention
->
-> If you are using the old version of the Mercado Pago plugin, read the [documentation](/developers/en/docs/nuvemshop/how-tos/migration) to find out how to migrate to the current version.
-
-
 1. Access the [App page.](https://www.tiendanube.com/tienda-aplicaciones-nube/mercado-pago).
 2. Click **Install app**.
 3. Now, it's time to grant the necessary permissions to the application. Click **Accept and start using**.
 4. You will be redirected to the Mercado Pago page, where you should log in with your credentials. If you are already logged into your account, please note that **the integration will be automatically completed using the open Mercado Pago account session in the browser being used during installation**.
-5. Carefully read the information about the requested permissions. Check the checkbox to agree to them and proceed by clicking **Continue**.
-6. Review the permissions once again, and if you are confident, click **Authorize this application** to grant the connection.
 
 ------------
 ----[mlc, mlu, mpe, mco]----
@@ -35,8 +26,7 @@ To **link your Mercado Pago account to Tiendanube**, follow these steps:
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
 
 ------------
-
-Once the initial settings are done, configure your store's payment experiences according to the selected checkout type.
+Once the initial settings are done, configure your store's payment experiences according to the selected checkout type. See the section on [Payment configuration](/developers/en/docs/nuvemshop/payment-configuration) for more information on how to enable payment methods in your store.
 
 > WARNING
 >
@@ -48,12 +38,21 @@ Once the initial settings are done, configure your store's payment experiences a
 
 If, for any reason, you need to change your current Mercado Pago account for another one, follow the steps below.
 
-----[mlm, mla, mlb]----
-1. If you are still connected to your Mercado Pago account in a browser, disconnect it by accessing the "Options menu" and then clicking on **Exit**.
-2. In your store's Administrative Panel at Tiendanube, go to **My apps - See all apps**.
-3. Search for the Mercado Pago plugin, locate it in the list of payment methods and click on **Uninstall**.
-4. Again, locate the Mercado Pago plugin in the list of applications and click on **Install**.
-5. Finally, you will be redirected to Mercado Pago so that you can enter your account details. To authorize the connection, click **Allow**.
+----[mlb, mla, mlm]----
+1. In the Administrative Panel of your store on Tiendanube, go to **My apps**.
+2. Find the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
+3. In the list of payment methods, locate the Mercado Pago plugin and click on **Edit configuration**.
+4. Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
+5. On the checkout settings screen, **click on the icon of your profile**, located in the upper right corner of the screen.
+6. Click on **Change acount** and then on **Change account** again.
+
+> WARNING
+>
+> Important
+>
+> By changing the account, you will modify the Mercado Pago account that will receive the payments.
+
+Done! Login with the new account you want to use. You can change it at any time.
 
 ------------
 ----[mpe, mco, mlu, mlc]----
