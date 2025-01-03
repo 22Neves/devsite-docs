@@ -36,23 +36,28 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 >
 > As credenciais são responsáveis por identificar a conta coletora dos pagamentos que você receberá em sua loja. Caso não insira suas credenciais no painel administrativo da loja, você será automaticamente redirecionado para configurar essa etapa. **Lembre-se, a ativação dos meios de pagamento só será possível após a inserção bem-sucedida das suas credenciais**.
 
+![installation cards 5](/images/shopify/installation-cards-5-pt.png)
+
 9. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/guides/additional-content/your-integrations/dashboard) e saiba como criá-la. 
-10. Clique em **Credenciais de produção** no menu à esquerda. Copie a `public_key` e o `access_token`.
+10. Clique em **Credenciais de produção** no menu à esquerda. As credenciais podem estar ocultas por motivos de segurança. Para visualizá-las, localize o ícone de olho e clique nele. Copie cada credencial (a `public_key` e o `access_token`) com cuidado.
 
 ![installation chopro 7](/images/shopify/installation-chopro-7-pt.png)
 
-11. Insira suas credenciais produtivas `access_token` e a `public_key` nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
-12. Clique em **Guardar credenciais**.
+11. Retorne as configurações de sua loja na Shopify e insira suas credenciais produtivas (`access_token` e a `public_key`) nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
 
-![installation chopro 8](/images/shopify/installation-chopro-8-pt.png)
+![installation cards 5](/images/shopify/installation-cards-5-pt.png)
+
+12. Clique em **Salvar credenciais**.
 
 > NOTE
 >
 > Nota
 >
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: ao alterar a senha, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
+> <br><br>
+> Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
-13. Para finalizar a instalação, clique em **Ativar**.
+13. Por fim, clique na opção **Verificar ativação**, vá para a seção de **Configurações** e clique em **Ativar** para finalizar a instalação.
 
 ![installation chopro 9](/images/shopify/installation-chopro-9-pt.png)
 
