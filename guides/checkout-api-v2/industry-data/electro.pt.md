@@ -32,7 +32,6 @@ Adicione qualquer informação extra que considerar necessária.
 | `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
-
 ### Sobre o comprador
 
 | Object `payer` | Tipo | Descrição |
