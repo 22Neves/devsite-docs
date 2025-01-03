@@ -63,7 +63,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `state_name` | String | Provincia hacia donde se envía el pedido. |
 | `city_name` | String | Ciudad hacia donde se envía el pedido. |
 | `street_number` | Integer | Número de calle del envío. |
-| `floor` | String | Información del piso para la entrega. |
+| `floor` | String | Información del piso del departamento para la entrega. |
 | `apartment` | String | Información del departamento para la entrega. |
 | `local_pickup` | Boolean | `1` si se retira en sucursal, `0` si no lo hace. |
 

@@ -63,7 +63,7 @@ Add any additional information that you consider necessary.
 | `state_name` | String | Province to which the order is shipped. |
 | `city_name` | String | City to which the order is shipped. |
 | `street_number` | Integer | Street number of the shipment. |
-| `floor` | String | Floor information for delivery. |
+| `floor` | String | Apartament floor information for delivery. |
 | `apartment` | String | Apartament information for delivery. |
 | `local_pickup` | Boolean | `1` if withdrawn at branch, `0` if not. |
 

@@ -60,7 +60,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `state_name` | String | Estado para onde o pedido é enviado. |
 | `city_name` | String | Cidade para onde o pedido é enviado. |
 | `street_number` | Integer | Número da rua da entrega. |
-| `floor` | String | Informações do andar para a entrega. |
+| `floor` | String | Informações do andar do apartamento para a entrega. |
 | `apartment` | String | Informações do apartamento para a entrega. |
 | `local_pickup` | Boolean | Se retira na agência, use `true` e, caso não retira, use `false`. |
 
