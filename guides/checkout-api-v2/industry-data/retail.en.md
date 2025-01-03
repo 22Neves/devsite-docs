@@ -65,7 +65,6 @@ Add any additional information that you consider necessary.
 | `street_number` | Integer | Street number of the shipment. |
 | `express_shipment` | Boolean | Indicates if the shipment is express. `true` if it is, `false` if it is not. |
 
-
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \

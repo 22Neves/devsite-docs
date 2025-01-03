@@ -16,9 +16,9 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
-| `event_date` | Date |Data do evento. |
-| `category_descriptor` | Object | Descrição de la categoría. |
-| `passenger` | Object |Informações adicionais sobre passageiros. |
+| `event_date` | Date | Data do evento. |
+| `category_descriptor` | Object | Descrição da categoria. |
+| `passenger` | Object | Informações adicionais sobre passageiros. |
 | `first_name`| String | Nome do passageiro. |
 | `last_name` | String | Sobrenome do passageiro. |
 | `identification` | Object | Informações de identificação do passageiro. |
@@ -34,9 +34,9 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
-| `event_date` | Date |Data do evento. |
-| `category_descriptor` | Object | Descrição de la categoría. |
-| `passenger` | Object |Informações adicionais sobre passageiros. |
+| `event_date` | Date | Data do evento. |
+| `category_descriptor` | Object | Descrição da categoria. |
+| `passenger` | Object | Informações adicionais sobre passageiros. |
 | `first_name`| String | Nome do passageiro. |
 | `last_name` | String | Sobrenome do passageiro. |
 | `identification` | Object | Informações de identificação do passageiro. |

@@ -17,7 +17,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
-| `warranty` | Boolean | `true` se o produto tiver garantia, `false` se não tiver. |
+| `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
 ----[mlc]----
@@ -29,7 +29,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
-| `warranty` | Boolean | `true` se o produto tiver garantia, `false` se não tiver. |
+| `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
 ### Sobre o comprador
@@ -66,8 +66,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `street_number` | Integer | Número da rua da entrega. |
 | `express_shipment` | Boolean | Indica se a entrega é expressa. Caso seja, use `true` e, caso não seja, use `false`. |
 
-
-```
+```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
 --header 'X-Idempotency-Key: {{uuid}}' \

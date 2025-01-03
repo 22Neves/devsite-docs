@@ -115,5 +115,4 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
         }
     }
 }'
-
 ```

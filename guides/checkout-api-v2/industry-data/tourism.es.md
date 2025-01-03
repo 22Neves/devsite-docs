@@ -78,7 +78,6 @@ Agrega toda la información adicional que consideres necesaria.
 | `is_first_purchase_online` | Boolean | Indica si es la primera compra del cliente. Coloca `true` si lo es o `false` si no lo es. |
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
-
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \

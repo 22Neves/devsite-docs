@@ -17,7 +17,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
-| `event_date` | Date |Data do evento. |
+| `event_date` | Date | Data do evento. |
 ------------
 
 ----[mlc]----
@@ -29,7 +29,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
-| `event_date` | Date |Data do evento. |
+| `event_date` | Date | Data do evento. |
 ------------
 
 ### Sobre o comprador
@@ -115,5 +115,4 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
         }
     }
 }'
-
 ```

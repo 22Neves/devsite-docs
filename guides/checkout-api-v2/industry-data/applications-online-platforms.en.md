@@ -13,7 +13,7 @@ Add any additional information that you consider necessary.
 | --- | --- | --- |
 | `id` | String | Item identification code. |
 | `title` | String | Item name. |
-| `category_id` | String | Category. |
+| `category_id` | String | Category of the item. |
 | `quantity` | Integer | Quantity of units for the item. |
 | `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
 ------------
@@ -23,7 +23,7 @@ Add any additional information that you consider necessary.
 | --- | --- | --- |
 | `id` | String | Item identification code. |
 | `title` | String | Item name. |
-| `category_id` | String | Category. |
+| `category_id` | String | Category of the item. |
 | `quantity` | Integer | Quantity of units for the item. |
 | `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
 -----------

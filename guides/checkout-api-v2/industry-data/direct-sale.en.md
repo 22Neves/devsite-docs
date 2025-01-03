@@ -65,7 +65,7 @@ Add any additional information that you consider necessary.
 | `street_number` | Integer | Street number of the shipment. |
 | `floor` | String | Apartament floor information for delivery. |
 | `apartment` | String | Apartament information for delivery. |
-| `local_pickup` | Boolean | `1` if withdrawn at branch, `0` if not. |
+| `local_pickup` | Boolean | If the shipment is withdrawn at branch, use `1`. If not, use `0`. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

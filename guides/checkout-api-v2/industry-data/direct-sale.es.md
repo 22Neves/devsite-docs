@@ -65,7 +65,7 @@ Agrega toda la información adicional que consideres necesaria.
 | `street_number` | Integer | Número de calle del envío. |
 | `floor` | String | Información del piso del departamento para la entrega. |
 | `apartment` | String | Información del departamento para la entrega. |
-| `local_pickup` | Boolean | `1` si se retira en sucursal, `0` si no lo hace. |
+| `local_pickup` | Boolean | Si se retira en la sucursal, coloca `1`. De lo contrario, coloca `0`. |
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

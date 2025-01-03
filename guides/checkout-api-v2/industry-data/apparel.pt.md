@@ -34,8 +34,6 @@ Adicione qualquer informação extra que considerar necessária.
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
 -----------
 
-
-
 ### Sobre o comprador
 
 | Object `payer` | Tipo | Descrição |
@@ -68,7 +66,6 @@ Adicione qualquer informação extra que considerar necessária.
 | `city_name` | String | Cidade para onde o pedido é enviado. |
 | `street_number` | Integer | Número da rua da entrega. |
 | `express_shipment` | Boolean | Indica se a entrega é expressa. Caso seja, use `true` e, caso não seja, use `false`. |
-
 
 ```curl 
 curl --location 'https://api.mercadopago.com/v1/payments' \

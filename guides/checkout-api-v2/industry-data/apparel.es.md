@@ -34,8 +34,6 @@ Agrega toda la información adicional que consideres necesaria.
 | `unit_price` | Float | Precio unitario asignado al ítem. Debe ser un número entero. |
 ------------
 
-
-
 ### Sobre el comprador
 
 | Object `payer` | Tipo | Descripción |

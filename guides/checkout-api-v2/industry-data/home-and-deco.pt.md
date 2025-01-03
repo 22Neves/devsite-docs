@@ -17,7 +17,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
-| `warranty` | Boolean | `true` se o produto tiver garantia, `false` se não tiver. |
+| `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
 ----[mlc]----
@@ -29,7 +29,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
 | `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
-| `warranty` | Boolean | `true` se o produto tiver garantia, `false` se não tiver. |
+| `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
 ### Sobre o comprador

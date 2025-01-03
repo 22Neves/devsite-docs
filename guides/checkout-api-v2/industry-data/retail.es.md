@@ -65,7 +65,6 @@ Agrega toda la información adicional que consideres necesaria.
 | `street_number` | Integer | Número de calle del envío. |
 | `express_shipment` | Boolean | Indica si el envío es rápido. `true` si lo es, `false` si no lo es. |
 
-
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \

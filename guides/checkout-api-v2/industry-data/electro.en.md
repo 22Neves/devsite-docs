@@ -17,7 +17,7 @@ Add any additional information that you consider necessary.
 | `category_id` | String | Item category. |
 | `quantity` | Integer | Quantity of units for the item. |
 | `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
-| `warranty` | Boolean | `true` if the product has a guarantee, `false` if it does not. |
+| `warranty` | Boolean | If the product has a guarantee, use `true`. I it does not, use `false`. |
 ------------
 
 ----[mlc]----
@@ -29,7 +29,7 @@ Add any additional information that you consider necessary.
 | `category_id` | String | Item category. |
 | `quantity` | Integer | Quantity of units for the item. |
 | `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
-| `warranty` | Boolean | `true` if the product has a guarantee, `false` if it does not. |
+| `warranty` | Boolean | If the product has a guarantee, use `true`. I it does not, use `false`. |
 ------------
 
 ### About the buyer
@@ -66,7 +66,7 @@ Add any additional information that you consider necessary.
 | `street_number` | Integer | Street number of the shipment. |
 | `express_shipment` | Boolean | Indicates if the shipment is express. `true` if it is, `false` if it is not. |
 
-```
+```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'Content-Type: application/json' \
 --header 'X-Idempotency-Key: {{uuid}}' \
