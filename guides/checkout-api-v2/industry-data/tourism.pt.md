@@ -8,7 +8,7 @@ Adicione todas as informações adicionais que você deseja.
 
 ### Sobre itens
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
 | `id` | String | Código de identificação do item. |

@@ -8,7 +8,7 @@ Adicione qualquer informação extra que considerar necessária.
 
 ### Sobre itens
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla, mlm, mlu, mco, mlb, mpe]----
 | Array `items` | Tipo | Descrição |
 | --- | --- | --- |
 | `id` | String | Código de identificação do item. |
@@ -16,7 +16,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimales. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
 | `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
