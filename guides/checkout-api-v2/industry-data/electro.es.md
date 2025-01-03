@@ -58,7 +58,7 @@ Agrega toda la información adicional que consideres necesaria.
 
 | Object `shipment` | Tipo | Descripción |
 | --- | --- | --- |
-| `local_pickup` | Boolean | `true` si retira en sucursal, `false` si no lo hace. |
+| `local_pickup` | Boolean | Si el envío se retira en sucursal, coloca `true`, y si no se retira, coloca `false`.|
 | `receiver_address` | Object | Datos de dirección del envío. |
 | `zip_code` | String | Código postal para el envío. |
 | `state_name` | String | Provincia hacia donde se envía el pedido. |

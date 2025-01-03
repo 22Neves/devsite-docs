@@ -58,7 +58,7 @@ Add any additional information that you consider necessary.
 
 | Object `shipment` | Type | Description |
 | --- | --- | --- |
-| `local_pickup` | Boolean | `true` if pickup is in branch, `false` if it is not. |
+| `local_pickup` | Boolean | If the shipment is picked up at the branch, use `true`, and if not, use `false`.|
 | `receiver_address` | Object | Shipping address data. |
 | `zip_code` | String | Postal code for the shipment. |
 | `state_name` | String | Province to which the order is shipped. |
