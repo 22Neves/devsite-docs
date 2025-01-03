@@ -20,14 +20,15 @@ Con Checkout API, ofrece pagos con Pix directamente en tu tienda. Pix es un medi
 2. Haga clic en **3. Activar y configurar los medios de pago**.
 3. En la opción "Pix", haga clic en **Configurar**.
 
-![Activar y configurar](/images/woocomerce/cho-pro-active-configure-pt.png)
+![Activar y configurar](/images/woocomerce/pix-active-configure-es.png)
 
 4. La opción "Activar checkout" le permite habilitar o deshabilitar el Checkout en su tienda. Para activarlo, haga clic en el botón deslizante.
 5. En el campo **Título en el checkout de la tienda**, ingrese el nombre por el cual este método de pago será identificado en la tienda. Por ejemplo, puede llamarlo **Pix**.
 6. En la opción "Vencimiento para pagamentos com Pix", defina el límite de minutos que sus clientes tendrán para pagar con Pix.
-7. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible con el valor de la moneda que usted utiliza en Mercado Pago. Para activarlo, haga clic en el botón deslizante.
 
-![Active and title](/images/woocomerce/active-and-title-pix-pt-br.png)
+![Active and title](/images/woocomerce/pix-active-and-title-es.png)
+
+7. La opción **Convertir moneda** permite que el valor de la moneda configurada en WooCommerce sea compatible con el valor de la moneda que usted utiliza en Mercado Pago. Para activarlo, haga clic en el botón deslizante.
 
 Para guardar los cambios en la configuración, haga clic en el botón **Finalizar configuración**.
 
