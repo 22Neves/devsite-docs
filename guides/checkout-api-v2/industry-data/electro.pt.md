@@ -16,7 +16,7 @@ Adicione qualquer informação extra que considerar necessária.
 | `description` | String | Descrição do item. |
 | `category_id` | String | Categoria do item. |
 | `quantity` | Integer | Quantidade de unidades do item. |
-| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimales. |
 | `warranty` | Boolean | Caso o produto tenha garantia, use `true` e, caso não tenha, use `false`. |
 ------------
 
