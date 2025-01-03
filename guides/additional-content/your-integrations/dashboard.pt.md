@@ -34,7 +34,7 @@ Caso você não esteja usando uma plataforma de comércio eletrônico, selecione
 6. Marque a caixa de seleção **Não sou um robô**.
 7. Clique em **Criar aplicação**.
 
-![Criar aplicação](/images/dashboard/dashboard-pt-animated.gif)
+![Criar aplicação](/images/dashboard/dashboard-pt-animated.png)
 
 A cada aplicação criada, um novo _card_ contendo o nome, o número e o _status_ de qualidade da aplicação é automaticamente criado no [Painel do desenvolvedor](/developers/panel/app).
 
