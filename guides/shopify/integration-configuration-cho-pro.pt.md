@@ -43,6 +43,12 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 
 ![installation chopro 7](/images/shopify/installation-chopro-7-pt.png)
 
+> NOTE
+>
+> Nota
+>
+> Alternativamente, você também pode clicar no link "[consultá-las e copiá-las](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)" no admin da Shopify para copiar suas credenciais.
+
 11. Retorne às configurações da sua loja Shopify e insira suas credenciais produtivas (`access_token` e a `public_key`) nos campos correspondentes, **tomando cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
 
 ![installation cards 5](/images/shopify/installation-cards-5-pt.png)
