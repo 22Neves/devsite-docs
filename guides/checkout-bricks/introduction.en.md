@@ -12,22 +12,22 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 
 ----[mlb]----
 
-![responsiveness-mlb](checkout-bricks/responsiveness-mlb-en.gif)
+![responsiveness-mlb](checkout-bricks/responsiveness-mlb-en.png)
 
 ------------
 ----[mla]---- 
 
-![responsiveness-mla](checkout-bricks/responsiveness-mla-en.gif)
+![responsiveness-mla](checkout-bricks/responsiveness-mla-en.png)
 
 ------------
 ----[mlm]---- 
 
-![responsiveness-mlm](checkout-bricks/responsiveness-mlm-en.gif)
+![responsiveness-mlm](checkout-bricks/responsiveness-mlm-en.png)
 
 ------------
 ----[mpe, mco, mlu, mlc]---- 
 
-![responsiveness-all](checkout-bricks/responsiveness-all-en.gif)
+![responsiveness-all](checkout-bricks/responsiveness-all-en.png)
 
 ------------
 

@@ -20,6 +20,13 @@ live_demo_code_action:
 
 El layout de Wallet Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![wallet-brick-theme](checkout-bricks/wallet-brick-theme-es.png)
+----[mla]----
+![wallet-brick-theme](checkout-bricks/wallet-brick-theme-es-mla.png)
+
+------------
+----[mlm, mlb, mlu, mlc, mco, mpe]----
+![wallet-brick-theme](checkout-bricks/wallet-brick-theme-es-all.png)
+
+------------
 
 > Si desea cambiar el texto y el aspecto predeterminado del Brick, consulte las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) y [Cambiar de aspecto,](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance) respectivamente.

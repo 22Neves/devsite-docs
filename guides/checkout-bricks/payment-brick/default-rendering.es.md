@@ -624,28 +624,28 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 ----[mlb]----
 
-![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.png)
 
 ------------
 ----[mla]----
 
-![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.png)
 
 ------------
 ----[mlm]----
 
-![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.gif)
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.png)
 
 ------------
-----[mco]----
+----[mlc]----
 
-![payment-brick-layout-mco](checkout-bricks/payment-brick-layout-mco-es.gif)
+![payment-brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-es.png)
 
 ------------
 
-----[mpe, mlu, mlc]----
+----[mpe, mlu, mco]----
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.png)
 
 ------------
 

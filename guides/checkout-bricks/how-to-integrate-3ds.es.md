@@ -96,7 +96,7 @@ renderStatusScreenBrick(bricksBuilder);
 
 El Status Screen Brick mostrará una transición que indica la redirección y, luego, se mostrará el _Challenge_ del banco en cuestión.
 
-![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-es.gif)
+![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-es.png)
 
 El usuario debe responder al _Challenge_ para que la transición se valide correctamente. Cabe señalar que la experiencia _Challenge_ es responsabilidad exclusiva del banco a cargo.
 
@@ -108,7 +108,20 @@ El usuario debe responder al _Challenge_ para que la transición se valide corre
 
 3. Después de resolver el _Challenge_, se mostrará el resultado final del pago de acuerdo con la respuesta emitida por el banco al final del _Challenge_.
 
-![status-screen-Brick](checkout-bricks/status-screen-brick-es.jpg)
+----[mlb]----
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mlb-es.jpg)
+
+------------
+----[mpe]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-es.jpg)
+
+------------
+----[mlm, mla, mco, mlu, mlc]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-es.jpg)
+
+------------
 
 ## Prueba de integración
 
