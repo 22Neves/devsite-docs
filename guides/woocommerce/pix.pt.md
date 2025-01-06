@@ -24,9 +24,10 @@ Com o Checkout API, ofereça pagamentos com Pix diretamente em sua loja. O Pix �
 4. A opção "Ativar checkout" permite habilitar ou desabilitar o Checkout em sua loja. Para ativar, clique no botão deslizante.
 5. No campo **Título no checkout da loja**, insira o nome pelo qual esta forma de pagamento será identificada na loja. Por exemplo, você pode chamá-la de **Pix**.
 6. Na opção "Vencimento para pagamentos com Pix", defina o limite de minutos que seus clientes terão para pagar com Pix. 
-7. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Para ativá-la, clique no botão deslizante.
 
 ![Active and title](/images/woocomerce/active-and-title-pix-pt-br.png)
+
+7. A opção **Converter moeda** permite que o valor da moeda configurada no WooCommerce seja compatível com o valor da moeda que você utiliza no Mercado Pago. Para ativá-la, clique no botão deslizante.
 
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
 
