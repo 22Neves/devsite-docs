@@ -14,7 +14,7 @@ width="785" height="40"/>
 
 ### Vista previa:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/785X40.jpg" alt="Mercado Pago - Medios de pago" width="785" height="40"/>
+![All](/images/banners/cco-online-payment-methods-01.jpg)
 
 ## 575 x 40 px
 
@@ -28,7 +28,7 @@ width="575" height="40"/>
 
 ### Vista previa:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/575X40.jpg" alt="Mercado Pago - Medios de pago" width="575" height="40"/>
+![All](/images/banners/cco-online-payment-methods-02.jpg)
 
 ## 468 x 60 px
 
@@ -42,7 +42,7 @@ width="468" height="60"/>
 
 ### Vista previa:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/468X60.jpg" alt="Mercado Pago - Medios de pago" width="468" height="60"/>
+![All](/images/banners/cco-online-payment-methods-03.jpg)
 
 ## 125 x 125 px
 
@@ -53,10 +53,6 @@ width="468" height="60"/>
 title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
 width="125" height="125"/>
 ```
-
-### Vista previa:
-
-<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/125X125.jpg" alt="Mercado Pago - Medios de pago" width="125" height="125"/>
 
 
 ## 120 x 240 px
@@ -71,7 +67,7 @@ width="120" height="240"/>
 
 ### Vista previa
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X240.jpg" alt="Mercado Pago - Medios de pago" width="120" height="240"/>
+![All](/images/banners/cco-online-payment-methods-05.jpg)
 
 ## 120 x 600 px
 
@@ -85,7 +81,7 @@ width="120" height="600"/>
 
 ### Vista previa:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/ar/medios/online/120X600.jpg" alt="Mercado Pago - Medios de pago" width="120" height="600"/>
+![All](/images/banners/cco-online-payment-methods-06.jpg)
 
 
 > LEFT_BUTTON_RECOMMENDED_ES
