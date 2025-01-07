@@ -31,7 +31,7 @@ Complete the information from your site that you want it to appear when your cli
 - **Minimum value**. Set the minimum purchase value you desire. By default, it is R$ 5,00.
 - Click on “Save changes”.
 
-## Bank Ticket Setting
+### Bank Ticket Setting
 
 Offer **Bank Ticket as a payment option**:
 
@@ -40,3 +40,28 @@ Offer **Bank Ticket as a payment option**:
 3. Then, set a minimum value for these payments. If you wish to receive all of them, leave the field with the value 0.
 4. If you wish that your payments with Bank Ticket have a discount, check the option “Use discount in your Bank Tickets?” and complete the percentage that you want to offer as a discount in “Discount applied”.
 5. Finally, click “Save changes”.
+
+![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+
+## Installments settings
+
+**Offer the option to pay with interest-free monthly installments** on your site with Mercado Pago.
+
+1. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu and click on “Mercado Pago” and navigate to “Installment settings”.
+2. Complete the following fields:
+  - Only for Transparent Checkout payments, **check the option to use the Mercado Pago external installment service**.
+  - **Complete the minimum and maximum value of installments** that you want to receive.
+  - Lastly, according to your account settings, **choose the number of interest-free monthly installments for your payments**.
+3. Finally, click “Save changes”.
+
+![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
+
+Once this is done, follow the steps below to complete the configuration of your Mercado Pago account.
+
+1. Log in to your [Mercado Pago account](https://www.mercadopago.com.br/business) and go to “Your business”.
+2. Access the option “Settings”, navigate to “Offering interest free installments” and click “Activate”.
+3. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
+
+![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
+
+> For more information, visit the [official Loja Integrada site](https://lojaintegrada.com.br/).

@@ -9,7 +9,7 @@ Com a Linha de Crédito Mercado Pago, o pagamento é creditado integralmente na 
 >
 > Nota
 >
-> Você também poderá utilizar a modalidade de financiamento do Mercado Pago atráves da habilitação da "Linha de Crédito" como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do[Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
+> Você também poderá utilizar a modalidade de financiamento do Mercado Pago através da habilitação da Linha de Crédito como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do [Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
 
 Para **exibir a Linha de Crédito no checkout da sua loja**, siga os passos abaixo.
 
@@ -25,7 +25,7 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 >
 > Nota
 >
-> Você também poderá utilizar a modalidade de financiamento do Mercado Pago atráves da habilitação da "Linha de Crédito" como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do[Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
+> Você também poderá utilizar a modalidade de financiamento do Mercado Pago através da habilitação do Meses sin Tarjeta como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do [Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
 
 Para **exibir o Meses sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
@@ -41,7 +41,7 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 >
 > Nota
 >
-> Você também poderá utilizar a modalidade de financiamento do Mercado Pago atráves da habilitação da "Linha de Crédito" como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do[Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
+> Você também poderá utilizar a modalidade de financiamento do Mercado Pago através da habilitação do Cuotas sin Tarjeta como meio de pagamento no **Checkout Pro**. Veja a seção de habilitação do [Checkout Pro](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro) para mais informações.
 
 Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
