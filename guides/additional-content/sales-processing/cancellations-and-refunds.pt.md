@@ -1,5 +1,11 @@
 # Reembolsos e cancelamentos
 
+> WARNING
+>
+> Importante
+>
+> Esta documentação é **destinada a integradores**. Se você é comprador e deseja cancelar ou solicitar o reembolso de um pagamento, acesse sua conta do Mercado Pago, selecione a compra em questão, clique em "Preciso de ajuda" e escolha a opção de reembolso ou cancelamento.
+
 **Reembolsos** são transações realizadas quando determinada cobrança é revertida e os valores pagos retornam para o comprador. Isso significa que o cliente receberá de volta em sua conta ou na fatura do cartão de crédito, o valor pago na aquisição de determinado produto ou serviço.
 
 **Cancelamentos** acontecem quando uma compra é realizada mas o pagamento ainda não foi aprovado por algum motivo. Neste caso, considerando que a transação não foi processada e o estabelecimento não recebeu qualquer valor, a compra é cancelada e não ocorre cobrança.
@@ -8,11 +14,6 @@ Apesar de serem transações similares, é importante ter em mente que o cancela
 
 Nesta documentação, você encontra as instruções e os links das APIs necessárias para realizar uma reembolso integral, parcial, e cancelar uma compra em sua loja.
 
-> WARNING
->
-> Importante
->
-> Ao executar as APIs citadas nesta documentação, você deverá enviar o atributo **X-Idempotency-Key**. Seu preenchimento é obrigatório para garantir a execução e re-execução de requisições sem que haja efeitos colaterais como por exemplo, pagamentos em duplicidade em casos de reembolso. Atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas para evitar erros.
 
 ## Cancelamentos
 
