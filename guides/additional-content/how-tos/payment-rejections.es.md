@@ -1,5 +1,11 @@
 # ¿Por qué se rechaza un pago?
 
+> WARNING
+>
+> Importante
+>
+> Esta documentación está destinada a integradores. Si sos comprador y tu pago fue rechazado al usar Mercado Pago, consultá [este artículo](https://www.mercadopago.com.br/ajuda/por-que-meu-pagamento-com-mercado-credito-pode-ser-recusado_26271#:~:text=O%20que%20fazer%20se%20meu,se%C3%A7%C3%A3o%20Perfil%20do%20Mercado%20Pago.) en nuestro Centro de Ayuda para obtener orientación sobre cómo proceder.
+
 La denegación de pagos es una realidad en el mundo de las ventas online y puede ocurrir por varias razones. Un **pago puede ser rechazado por**:
  * un error con el medio de pago;
  * llenado incorrecto de información por parte del cliente;
