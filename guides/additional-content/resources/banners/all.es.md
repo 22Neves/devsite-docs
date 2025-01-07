@@ -103,9 +103,9 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="728" height="90"/>
 ```
 
-### Vista previa:
+### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_728X90_new.jpg" alt="Mercado Pago - Medios de pago" width="728" height="90"/>
+![All](/images/banners/mlm-all-payment-methods-01.jpg)
 
 ## 575 x 40 px
 
@@ -117,9 +117,9 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="575" height="40"/>
 ```
 
-### Vista previa:
+### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_575X40_new.jpg" alt="Mercado Pago - Medios de pago" width="575" height="40"/>
+![All](/images/banners/mlm-all-payment-methods-02.jpg)
 
 
 ## 468 x 60 px
@@ -132,9 +132,9 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="468" height="60"/>
 ```
 
-### Vista previa:
+### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_468X60_new.jpg" alt="Mercado Pago - Medios de pago" width="468" height="60"/>
+![All](/images/banners/mlm-all-payment-methods-03.jpg)
 
 
 ## 120 x 240 px
@@ -147,9 +147,9 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="120" height="240"/>
 ```
 
-### Vista previa:
+### Vista prévia:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_120X240_new.jpg" alt="Mercado Pago - Medios de pago" width="120" height="240"/>
+![All](/images/banners/mlm-all-payment-methods-04.jpg)
 
 
 ## 120 x 600 px
@@ -164,7 +164,9 @@ width="120" height="600"/>
 
 ### Vista previa:
 
-<img src="https://imgmp.mlstatic.com/org-img/banners/mx/medios/MLM_120X600_new.jpg" alt="Mercado Pago - Medios de pago" width="120" height="600"/>
+### Vista prévia:
+
+![All](/images/banners/mlm-all-payment-methods-05.jpg)
 
 ------------
 ----[mco]----
@@ -179,10 +181,6 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="120" height="240"/>
 ```
 
-### Vista previa:
-
-<img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/120x240_Todos-los-medios-de-pago.jpg"  alt="Mercado Pago - Medios de pago" width="120" height="240"/>
-
 
 ## 120 x 600px
 
@@ -194,10 +192,6 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="120" height="600"/>
 ```
 
-### Vista previa:
-
-<img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/120x600_Todos-los-medios-de-pago.jpg" alt="Mercado Pago - Medios de pago" width="120" height="600"/>
-
 ## 125 x 125 px
 
 ### Código:
@@ -207,10 +201,6 @@ width="120" height="600"/>
 title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
 width="125" height="125"/>
 ```
-
-### Vista previa:
-
-<img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/125x125_Todos-los-medios-de-pago.jpg"  alt="Mercado Pago - Medios de pago" width="125" height="125"/>
 
 ## 468 x 60 px
 
@@ -222,11 +212,6 @@ title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago"
 width="468" height="60"/>
 ```
 
-### Vista previa:
-
-<img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/468x60_Todos-los-medios-de-pago.jpg"  alt="Mercado Pago - Medios de pago" width="468" height="60"/>
-
-
 ## 575 x 40 px
 
 ### Código:
@@ -236,10 +221,6 @@ width="468" height="60"/>
 title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
 width="575" height="40"/>
 ```
-
-### Vista previa:
-
-<img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/575x40_Todos-los-medios-de-pago.jpg"  alt="Mercado Pago - Medios de pago" width="575" height="40"/>
 
 
 ## 785 x 40 px
@@ -251,10 +232,6 @@ width="575" height="40"/>
 title="Mercado Pago - Medios de pago" alt="Mercado Pago - Medios de pago" 
 width="785" height="40"/>
 ```
-
-### Vista previa:
-
-<img src="https://secure.mlstatic.com/developers/site/cloud/banners/co/785x40_Todos-los-medios-de-pago.jpg"  alt="Mercado Pago - Medios de pago" width="785" height="40"/>
 
 ------------
 ----[mlb]----
@@ -357,10 +334,6 @@ alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento
 width="735" height="40"/>
 ```
 
-### Vista previa:
-
-<img src="https://www.mercadopago.cl/banner/785x40_banner.jpg" alt="Mercado Pago - Meios de pagamento" width="735" height="40"/>
-
 
 ## 575 x 40 px
 
@@ -372,10 +345,6 @@ alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento
 width="575" height="40"/>
 ```
 
-### Vista previa:
-
-<img src="https://www.mercadopago.cl/banner/575x40_banner.jpg" alt="Mercado Pago - Meios de pagamento" width="575" height="40"/>
-
 ## 468 x 60 px
 
 ### Código:
@@ -386,10 +355,6 @@ alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento
 width="468" height="60"/>
 ```
 
-### Vista previa:
-
-<img src="https://www.mercadopago.cl/banner/468x60_banner.jpg" alt="Mercado Pago - Meios de pagamento" width="468" height="60"/>
-
 ## 125 x 125 px
 
 ### Código:
@@ -399,10 +364,6 @@ width="468" height="60"/>
 alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="125" height="125"/>
 ```
-
-### Vista previa:
-
-<img src="https://www.mercadopago.cl/banner/125x125_banner.jpg" alt="Mercado Pago - Meios de pagamento" width="125" height="125"/>
 
 
 ## 120 x 240 px
@@ -415,10 +376,6 @@ alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento
 width="120" height="240"/>
 ```
 
-### Vista previa:
-
-<img src="https://www.mercadopago.cl/banner/120x240_banner.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="240"/>
-
 ## 120 x 600 px
 
 ### Código:
@@ -428,10 +385,6 @@ width="120" height="240"/>
 alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento" 
 width="120" height="600"/>
 ```
-
-### Vista previa:
-
-<img src="https://www.mercadopago.cl/banner/120x600_banner.jpg" alt="Mercado Pago - Meios de pagamento" width="120" height="600"/>
 
 
 ------------
