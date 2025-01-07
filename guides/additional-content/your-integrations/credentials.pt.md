@@ -77,11 +77,11 @@ Para obter suas credenciais de teste, **desde que estas estejam disponíveis par
 >
 > Essas credenciais **não estão disponíveis para todos os produtos do Mercado Pago**, portanto, só estarão ativas nas aplicações em que você selecionou um produto que as exija.
 
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.png)
 
 Se ao criar um aplicativo você selecionou um produto do Mercado Pago **que não requer credenciais de teste**, a seguinte tela será exibida:
 
-![Credenciais de teste não disponívels](/images/credentials/blocked-test-credentials-es-v3.png)
+![Credenciais de teste não disponívels](/images/credentials/blocked-test-credentials-pt.png)
 
 Se você estiver integrando um produto que não utiliza credenciais de teste, você não poderá usá-las. Em vez disso, utilize as [contas de teste](/developers/pt/docs/your-integrations/test/accounts) para testar sua integração corretamente. 
 
@@ -98,7 +98,7 @@ Ao receber assistência na integração ou configuração dos seus canais de pag
 3. Uma vez selecionadas as credenciais, vá para a seção *Compartilhar as credenciais com um desenvolvedor* e clique no botão **Compartilhar credenciais**.
 4. Insira o endereço de e-mail de quem deseja conceder o acesso. Lembre-se de que é obrigatório que o endereço de e-mail esteja associado a uma conta do Mercado Pago.
 
-![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-panel-pt.gif)
+![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-panel-pt.png)
 
 **Através do Mercado Pago:**
 
@@ -108,7 +108,7 @@ Ao receber assistência na integração ou configuração dos seus canais de pag
 4. Uma vez selecionadas as credenciais, vá para a seção *Compartilhar as credenciais com um desenvolvedor* e clique no botão **Compartilhar credenciais**.
 5. Selecione o aplicativo do qual deseja compartilhar suas credenciais e insira o endereço de e-mail de quem deseja conceder acesso. Lembre-se de que o endereço de e-mail deve obrigatoriamente estar associado a uma conta do Mercado Pago.
 
-![Compartilhar credenciais no Mercado Pago](/images/credentials/share-credentials-mp-pt.gif)
+![Compartilhar credenciais no Mercado Pago](/images/credentials/share-credentials-mp-pt.png)
 
 > WARNING
 >
@@ -128,4 +128,4 @@ Se por motivos de segurança ou qualquer outra razão relevante você precisar r
 >
 > Tenha em mente que se as credenciais que você renovar estiverem sendo usadas em alguma de suas integrações, elas serão afetadas e você deverá substituí-las pelas novas credenciais que obtiver após a renovação.
 
-![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
+![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.png)
