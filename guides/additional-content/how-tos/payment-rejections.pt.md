@@ -1,5 +1,11 @@
 # Por que um pagamento é recusado?
 
+> WARNING
+>
+> Importante
+>
+> Esta documentação é destinada a integradores. Se você é um comprador e teve seu pagamento recusado ao usar o Mercado Pago, consulte [este artigo](https://www.mercadopago.com.br/ajuda/por-que-meu-pagamento-com-mercado-credito-pode-ser-recusado_26271#:~:text=O%20que%20fazer%20se%20meu,se%C3%A7%C3%A3o%20Perfil%20do%20Mercado%20Pago.) em nossa Central de Ajuda para orientações sobre como proceder.
+
 A recusa de pagamentos é uma realidade no mundo das vendas online e pode acontecer por diversas razões. **Um pagamento pode ser recusado por**:
  * um erro com o meio de pagamento;
  * preenchimento incorreto das informações por parte do cliente;
