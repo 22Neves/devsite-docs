@@ -21,8 +21,8 @@ See below the available payment methods for the store when integrating Checkout 
 | Installments via Pix up to 12x | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
 | Pix | 24/7 bank transfer available. The option to pay with Pix will only be displayed if there is a Pix Key registered in Mercado Pago. If you haven't created one yet, click [here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step. | 
 | Offline methods | You can offer offline payment methods, such as boleto bancário. | 
-| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](). |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Portugu%C3%AAs%20-%20Guia%20de%20instala%C3%A7%C3%A3o%20VTEX%20Sales%20App%20e%20Mercado%20Pago%20inStore.pdf). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Portugu%C3%AAs%20-%20Guia%20de%20instala%C3%A7%C3%A3o%20VTEX%20Subscriptions.pdf). |
 
 ------------ 
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]---- 
@@ -48,8 +48,8 @@ See below the available payment methods for the store when integrating Checkout 
 | Cards | Allows integration with credit and debit cards. | 
 | Up to 12 installments without a card on Mercado Pago | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
 | Offline methods | You can offer offline payment methods, such as Oxxo, Paycash, Bancomer, and Banamex | 
-| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](). |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Sales%20App%20e%20Mercado%20Pago%20inStore%20.pdf). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------ 
 ----[mla]---- 
@@ -58,8 +58,8 @@ See below the available payment methods for the store when integrating Checkout 
 | Cards | Allows integration with credit and debit cards. | 
 | Up to 12 installments without a card on Mercado Pago | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
 | Offline methods | You can offer offline payment methods, such as Rapipago, Pago Fácil, Provincia Net or red Link. | 
-| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](). |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Sales%20App%20e%20Mercado%20Pago%20inStore%20.pdf). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------ 
 ----[mpe]---- 
@@ -67,7 +67,7 @@ See below the available payment methods for the store when integrating Checkout 
 | --- | --- | 
 | Cards | Allows integration with credit and debit cards. | 
 | Offline methods | You can offer payments with Pago Efectivo and YAPE. |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------ 
 ----[mco]---- 
@@ -75,7 +75,7 @@ See below the available payment methods for the store when integrating Checkout 
 | --- | --- | 
 | Cards | Allows integration with credit and debit cards. | 
 | Offline methods | You can offer payments with PSE or Efecty. |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------ 
 ----[mlu]---- 
@@ -83,7 +83,7 @@ See below the available payment methods for the store when integrating Checkout 
 | --- | --- | 
 | Cards | Allows integration with credit and debit cards. | 
 | Offline methods | You can offer payments with Abitab or Redpagos. |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------ 
 ----[mlc]----
@@ -91,6 +91,6 @@ See below the available payment methods for the store when integrating Checkout 
 | --- | --- | 
 | Cards | Allows integration with credit and debit cards. | 
 | Offline methods | You can offer payments with Wip. |
-| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](). |
+| VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------
