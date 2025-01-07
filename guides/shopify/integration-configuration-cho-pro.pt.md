@@ -36,7 +36,7 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os segui
 >
 > As credenciais identificam a conta que vai receber os pagamentos feitos na sua loja. Isso significa que você só vai conseguir ativar os meios de pagamento após inserir as suas credenciais.
 
-![installation cards 5](/images/shopify/installation-cards-5-pt.png)
+![installation cards 5](/images/shopify/installation-chopro-6-2-pt.png)
 
 9. Em uma aba paralela do seu navegador, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione sua aplicação para coletar suas credenciais. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/guides/additional-content/your-integrations/dashboard) e saiba como criá-la. 
 10. Clique em **Credenciais de produção**. As credenciais podem estar ocultas por motivos de segurança. Para visualizá-las, localize o ícone de olho e clique nele. Copie as credenciais (a `public_key` e o `access_token`). 
