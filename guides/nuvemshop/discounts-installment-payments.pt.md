@@ -76,15 +76,15 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 6. Nesta seção, você pode definir o **número máximo de parcelas** nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
 
 ----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-api-mlb.png)
 
 ------------
 ----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-api-mlm.png)
 
 ------------
 ----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-api-mla.png)
 
 ------------
 

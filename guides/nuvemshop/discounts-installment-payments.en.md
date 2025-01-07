@@ -77,15 +77,15 @@ You can also set up the installment experiences for each checkout in your store 
 6. In this section, you can define the maximum number of installments that your customers can use when making a payment with ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
 
 ----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-api-mlb.png)
 
 ------------
 ----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-api-mlm.png)
 
 ------------
 ----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-api-mla.png)
 
 ------------
 
