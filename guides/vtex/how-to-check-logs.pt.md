@@ -21,4 +21,4 @@ Eventualmente, a equipe de suporte poderá solicitar que você verifique e/ou en
 >
 > Nota
 >
-> Você pode obter informações mais detalhadas sobre como buscar erros ou problemas em uma transação, acessando [este documento](https://help.vtex.com/es/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) disponível no site da VTEX.  Para obter mais informações, acesse o link [Resultados da criação de uma cobrança](/developers/pt/docs/checkout-api/response-handling/collection-results).
+> Você pode obter informações mais detalhadas sobre como buscar erros ou problemas em uma transação acessando a [documentação](https://help.vtex.com/pt/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) disponível no site da VTEX. Para obter mais informações, acesse a documentação de [Resultados da criação de uma cobrança](/developers/pt/docs/checkout-api/response-handling/collection-results).
