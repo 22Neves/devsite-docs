@@ -1,7 +1,6 @@
 # Checkout Pro
 
-When installing ----[mlb]----[Mercado Pago Checkout Pro](/developers/en/docs/checkout-pro/landing)------------ ----[mla, mlm, mpe, mco, mlu, mlc]----
-[Checkout Pro](/developers/en/docs/checkout-pro/landing) (**Mercado Pago Checkout Pro**),------------ you may experience **an increase in the approval rate of your online store sales**. This is because buyers will be able to pay using a Mercado Pago account, and the entire checkout process will be conducted in our environment, facilitating the payment process. At the end of the transaction, these buyers are redirected to the store environment.
+When installing ----[mlb]----[Mercado Pago Checkout Pro](/developers/en/docs/checkout-pro/landing)------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- [Checkout Pro](/developers/en/docs/checkout-pro/landing) (**Mercado Pago Checkout Pro**),------------ you may experience **an increase in the approval rate of your online store sales**. This is because buyers will be able to pay using a Mercado Pago account, and the entire checkout process will be conducted in our environment, facilitating the payment process. At the end of the transaction, these buyers are redirected to the store environment.
 
 To install **Mercado Pago Checkout Pro** on your Shopify store, follow these steps:
 
