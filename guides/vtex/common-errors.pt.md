@@ -17,4 +17,4 @@ Ao configurar a integração do Mercado Pago em lojas VTEX, você pode encontrar
 >
 > Antes de iniciar sua operação em produção, você deve ativar suas [credenciais](/developers/pt/docs/vtex/additional-content/your-integrations/credentials).
 
-Caso você encontre um erro que não está listado, recomendamos consultar o [site oficial da VTEX](https://help.vtex.com/) para ver os erros mais comuns dentro da plataforma, e o [site de status da VTEX](https://status.vtex.com/), para conhecer os incidentes reportados em tempo real.
+Se você encontrar um erro que não está listado, sugerimos visitar o [site oficial da VTEX](https://help.vtex.com/) para conferir os erros mais comuns dentro da plataforma. Você também pode acessar o [site de status da VTEX](https://status.vtex.com/) para acompanhar os incidentes reportados em tempo real.
