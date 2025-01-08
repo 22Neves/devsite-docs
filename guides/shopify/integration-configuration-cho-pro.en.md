@@ -38,7 +38,7 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 
 ![installation cards 5](/images/shopify/installation-chopro-6-2-es.png)
 
-9. In a new tab of your browser, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application to copy your credentials. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to create one.
+9. In a new tab of your browser, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application to copy your credentials. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to do it.
 10. Click on **Production credentials**. The credentials may be hidden for security reasons. To view them, locate the eye icon and click on it. Copy the credentials (Public Key and Access Token).
 
 ![installation chopro 7](/images/shopify/installation-chopro-7-es.png)

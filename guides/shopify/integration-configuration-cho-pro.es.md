@@ -4,7 +4,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Mercado 
 
 Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los siguientes pasos:
 
-1. Ve al panel administrativo de tu tienda [Shopify](https://accounts.shopify.com/store-login).
+1. Ve al panel de administración de la tienda [Shopify](https://accounts.shopify.com/store-login).
 2. Haz clic en **Configuración**.
 
 ![installation chopro 1](/images/shopify/installation-chopro-1-es.png)
@@ -18,7 +18,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ![installation chopro 3](/images/shopify/installation-chopro-3-es.png)
 
-6. Después de seleccionarlo, haz clic en **Instalar**.
+6. Después de seleccionarla, haz clic en **Instalar**.
 
 ![installation chopro 4](/images/shopify/installation-chopro-4-es.png)
 
@@ -26,7 +26,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ![installation chopro 5](/images/shopify/installation-chopro-5-es.png)
 
-8. Haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago a tu tienda a través de tus credenciales.
+8. Haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago a la tienda a través de tus credenciales.
 
 ![installation chopro 6](/images/shopify/installation-chopro-6-es.png)
 
@@ -38,8 +38,8 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ![installation cards 5](/images/shopify/installation-chopro-6-2-es.png)
 
-9. En una nueva pestaña de tu navegador, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación para copiar tus credenciales. Si aún no has creado una aplicación, accede a la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) y aprende cómo crearla.
-10. Haz clic en **Credenciales de producción**. Las credenciales pueden estar ocultas por motivos de seguridad. Para verlas, localiza el ícono de ojo y haz clic en él. Copia las credenciales (Public Key e Access Token). 
+9. En una nueva pestaña de tu navegador, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación para copiar tus credenciales. Si aún no has creado una aplicación, accede a la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) y aprende cómo hacerlo.
+10. Haz clic en **Credenciales de producción**. Las credenciales pueden estar ocultas por motivos de seguridad. Para verlas, localiza el ícono de ojo y haz clic en él. Copia las credenciales (Public Key y Access Token). 
 
 ![installation chopro 7](/images/shopify/installation-chopro-7-es.png)
 
@@ -47,9 +47,9 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 >
 > Nota
 >
-> Alternativamente, también puedes hacer clic en el enlace "[consultá-las e copiá-las](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)" en el admin de Shopify para copiar tus credenciales.
+> Alternativamente, también puedes hacer clic en el enlace "[consultarlas y copiarlas](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)" en el admin de Shopify para copiar tus credenciales.
 
-11. Regresa a la configuración de tu tienda Shopify e ingresa tus credenciales de producción (Public Key e Access Token) en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
+11. Regresa a la configuración de tu tienda Shopify e ingresa tus credenciales de producción (Public Key y Access Token) en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
 
 ![installation cards 5](/images/shopify/installation-cards-5-es.png)
 
@@ -61,7 +61,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 >
 > Una vez ingresadas, las credenciales no se solicitarán más en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
 > <br><br>
-> Sin embargo, si cambias la contraseña de tu cuenta de Shopify, necesitarás **renovar tus credenciales**. Para ello, sigue las instrucciones en la documentación de [Boas práticas de segurança para suas credenciais](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, completa nuevamente los campos de Public Key e Access Token, como se indica en esta documentación.
+> Sin embargo, si cambias la contraseña de tu cuenta de Shopify, necesitarás **renovar tus credenciales**. Para ello, sigue las instrucciones en la documentación de [Buenas prácticas de credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, completa nuevamente los campos de Public Key y Access Token, como se indica en esta documentación.
 
 13. Por último, haz clic en **Verificar activación**.
 
