@@ -43,7 +43,7 @@ Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offli
 ------------
 ----[mpe]----
 
-Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Efectivo y YAPE.
+Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Efectivo y Yape.
 
 ------------
 

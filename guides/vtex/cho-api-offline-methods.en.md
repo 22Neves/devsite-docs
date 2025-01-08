@@ -39,7 +39,7 @@ When configuring Checkout API in VTEX stores, you can offer payments with offlin
 
 ------------ 
 ----[mpe]---- 
-When configuring Checkout API in VTEX stores, you can offer payments with offline payment methods such as Pago Efectivo and YAPE.
+When configuring Checkout API in VTEX stores, you can offer payments with offline payment methods such as Pago Efectivo and Yape.
 
 ------------ 
 
