@@ -64,7 +64,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 | --- | --- |
 | Cartões | Permite integração com cartão de crédito e débito. |
 | Meios offline | Você pode oferecer pagamentos com Pago Efectivo e Yape. |
-| VTEX Subscriptions | Configure planos de assinatura para gerar pedidos de compra de forma automática e cobre com base na frequência e nos valores definidos. Seus clientes fazem a assinatura dos seus produtos e/ou serviços para pagar no débito automático por quanto tempo quiserem. Veja mais informações no [Guia de instalação VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Portugu%C3%AAs%20-%20Guia%20de%20instala%C3%A7%C3%A3o%20VTEX%20Subscriptions.pdf). |
+| VTEX Subscriptions | Configure planos de assinatura para gerar pedidos de compra de forma automática e cobre com base na frequência e nos valores definidos. Seus clientes podem assinar seus produtos e/ou serviços e optar pelo pagamento via débito automático por quanto tempo quiserem. Para mais informações, acesse o [Guia de instalação VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Portugu%C3%AAs%20-%20Guia%20de%20instala%C3%A7%C3%A3o%20VTEX%20Subscriptions.pdf). |
 
 ------------
 ----[mco]----
