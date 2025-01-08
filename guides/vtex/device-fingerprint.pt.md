@@ -29,4 +29,4 @@ Agora você tem o Device Fingerprint configurado para melhorar a avaliação de 
 >
 > Nota
 >
-> Se você quiser saber mais informações sobre como utilizar o Device Fingerprint para otimizar a aprovação dos seus pagamentos, consulte o documento [Como melhorar a aprovação de pagamentos](/developers/pt/docs/vtex/how-tos/payment-approval) ou verifique a [documentação de suporte da VTEX](https://help.vtex.com/tutorial/configuring-mercado-pagos-device-fingerprint--m2knP9z69HGHHBIiFq0Ga).
+> Se você quiser saber mais informações sobre como utilizar o Device Fingerprint para otimizar a aprovação dos seus pagamentos, consulte a documentação [Como melhorar a aprovação de pagamentos](/developers/pt/docs/vtex/how-tos/payment-approval) ou verifique a [documentação de suporte da VTEX](https://help.vtex.com/tutorial/configuring-mercado-pagos-device-fingerprint--m2knP9z69HGHHBIiFq0Ga).
