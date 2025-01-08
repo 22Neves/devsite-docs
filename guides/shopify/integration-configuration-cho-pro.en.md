@@ -59,9 +59,7 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 >
 > Note
 >
-> Once entered, the credentials will no longer be requested in future installations of Mercado Pago apps for Shopify.
-> <br><br>
-> However, if you change the password of your Shopify account, you will need to **renew your credentials**. To do this, follow the instructions in the documentation on [Keep your credentials safe](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Then, fill in the Public Key and Access Token fields again, as indicated in this documentation.
+> Once entered, the credentials will not be requested for future installations of the Mercado Pago apps on Shopify. However, if you change the password for your Shopify account, it will be necessary to **renew them**. To do this, follow the instructions in the documentation on [Keep your credentials safe](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Then, fill in the Public Key and Access Token fields again, as indicated in this documentation.
 
 13. Finally, click on **Verify activation**.
 

@@ -59,9 +59,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 >
 > Nota
 >
-> Una vez ingresadas, las credenciales no se solicitarán más en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
-> <br><br>
-> Sin embargo, si cambias la contraseña de tu cuenta de Shopify, necesitarás **renovar tus credenciales**. Para ello, sigue las instrucciones en la documentación de [Buenas prácticas de credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, completa nuevamente los campos de Public Key y Access Token, como se indica en esta documentación.
+> Una vez configuradas, las credenciales no serán solicitadas en futuras instalaciones de las aplicaciones de Mercado Pago en Shopify. Sin embargo, si cambias la contraseña de tu cuenta de Shopify, será necesario **renovarlas**. Para ello, sigue las instrucciones en la documentación de [Buenas prácticas de credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, completa nuevamente los campos de Public Key y Access Token, como se indica en esta documentación.
 
 13. Por último, haz clic en **Verificar activación**.
 
