@@ -74,7 +74,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Medios offline | Puedes ofrecer pagos por medios offline, como PSE o Efecty. |
-| VTEX Subscriptions | Configura planes de suscripción para generar pedidos de compra de forma automática y cobra según la frecuencia y los valores definidos. Tus clientes pueden suscribirse a tus productos y/o servicios para pagar por débito automático durante el tiempo que deseen. Consulta más información en el [Guía de instalación de VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
+| VTEX Subscriptions | Configura planes de suscripción para generar pedidos de compra de forma automática y cobra según la frecuencia y los valores definidos. Tus clientes pueden suscribirse a tus productos y/o servicios para pagar por débito automático durante el tiempo que deseen. Consulta más información en la [Guía de instalación de VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/pdfs/Espa%C3%B1ol%20-%20Gu%C3%ADa%20de%20instalaci%C3%B3n%20VTEX%20Subscriptions.pdf). |
 
 ------------
 ----[mlu]----
