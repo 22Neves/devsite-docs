@@ -186,7 +186,7 @@
                           },
                           "url": {
                             "type": "string",
-                            "example": "http://api.mercadopago.com/v1/chargebacks/documentation/other/2ec3bb6c-9b8b-47a0-8bc4-6f9b2ac60061?access_token=APP_USR-X-X-X-X",
+                            "example": "http://api.mercadopago.com/v1/chargebacks/documentation/other/2ec3bb6c-9b8b-47a0-8bc4-6f9b2ac60061",
                             "description": {
                               "en": "URL to see the documentation file.",
                               "pt": "URL para ver o arquivo da documentação.",
