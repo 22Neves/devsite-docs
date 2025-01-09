@@ -101,17 +101,8 @@ Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de
 
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Checkout**.
-
-![configure installments 1](/images/nuvemshop/configure-installments-1-es.png)
-
 3. En "----[mla]----Cuotas----------------[mlm]----Meses------------ sin intereses", haz clic en **Configurar ----[mla]----cuotas----------------[mlm]----meses------------**.
-
-![configure installments 2](/images/nuvemshop/configure-installments-2-es.png)
-
 4. Activa la opción **Ofrecer MSI con tarjeta de crédito** y luego elige hasta cuantos meses quieres ofrecer.
-
-![configure installments 3](/images/nuvemshop/configure-installments-3-es.png)
-
 5. Después de configurar las opciones ----[mla]----cuotas----------------[mlm]----meses------------ sin intereses, ve a tu tienda en Tiendanube.
 6. En el Panel Administrativo de tu tienda, accede a Mis aplicaciones.
 7. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.

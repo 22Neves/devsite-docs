@@ -757,13 +757,9 @@ preference_data = {
 
 ## Accept payments with 2 credit cards
 
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
 You can activate the option to offer payments with two credit cards from the Mercado Pago account.
 
 To activate this payment option, go to "[Business Options](https://www.mercadopago.com.ar/settings/my-business)" and select the option "Receive payments with 2 credit cards".
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
 ------------
 
