@@ -315,16 +315,11 @@ preference_data = {
 ]]]
 
 ----[mla, mlb]----
-
 ## Acepta pagos con 2 tarjetas de crédito
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
 Puedes activar la opción de ofrecer pagos con dos tarjetas de crédito desde la cuenta de Mercado Pago.
 
 Para activar esta opción de pago, ve a tus "[opciones de negocio](https://www.mercadopago.com.ar/settings/my-business)" y elige la opción "Recibir pagos con 2 tarjetas de crédito".
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
 ------------
 
@@ -666,8 +661,6 @@ Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras
 Al final del proceso de pago, tienes la opción de redireccionar al comprador a tu sitio web nuevamente. Para hacer esto, agrega el atributo `back_urls` y define, de acuerdo con el estado del pago, la página deseada para redireccionar a tu comprador cuando haga clic en el botón regresar al sitio.
 
 Si quieres que la redirección sea automática para los pagos aprobados, sin mostrar un botón de retorno, también debes agregar el atributo `auto_return` con el valor de `approved`.
-
-![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
 | Atributo | Descripción |
 | ------------ | -------- |
