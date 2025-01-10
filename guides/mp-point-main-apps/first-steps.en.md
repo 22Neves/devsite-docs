@@ -36,7 +36,7 @@ dependencies {
    >
    > Important
    >
-   > It is crucial that the metadata name is exactly `com.test.android.sdk.CLIENT_ID`. Any variation in the name may result in the SDK not recognizing the field.
+   > It is crucial that the metadata name is exactly `com.mercadolibre.android.sdk.CLIENT_ID`. Any variation in the name may result in the SDK not recognizing the field.
    > <br><br>
    > Additionally, make sure that the **Client ID** value ends with the letter "L" to indicate that it is a Long type number. This is necessary for the SDK to process the value correctly.
 
