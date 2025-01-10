@@ -753,8 +753,6 @@ preference_data = {
 ```
 ]]]
 
-------------
-
 ----[mla, mlb]----
 
 ## Aceite pagamentos com 2 cartões de crédito
@@ -835,7 +833,6 @@ Por exemplo:
 ]]]
 
 ------------
-
 ----[mla, mlb, mco]----
 
 ## Altere a data de vencimento de pagamentos em dinheiro
@@ -860,6 +857,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 > O prazo de creditação está entre 1 dia e 2 dias úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos que você defina a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento.
 > <br><br>
 > Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta Mercado Pago do pagador.
+
 ------------
 
 ## Ative o modo binário
@@ -1101,8 +1099,6 @@ Para configurar tal cenário, adicione o item `shipments` com o valor que quiser
 No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu _site_ novamente. Para isso, adicione o atributo `back_urls` e defina, segundo o status do pagamento, a página desejada para redirecionar o seu comprador quando ele clicar no botão de retorno ao site.
 
 Se deseja que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. 
-
-![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
 | Atributo |	Descrição |
 | ------------ 	|	-------- | 

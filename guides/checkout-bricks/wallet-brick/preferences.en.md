@@ -590,7 +590,6 @@ Through payment preference, you can configure a default payment method to be ren
 | `purpose` | By indicating the value `wallet_purchase` in this method, Wallet Brick will only accept payments from registered users in Mercado Pago, with card and account balance. |
 
 ------------
-
 ----[mlb]---- 
 ## Define the desired payment methods
 
