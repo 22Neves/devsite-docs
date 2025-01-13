@@ -1,0 +1,956 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/terminals/v1/actions": {
+      "post": {
+        "tags": ["mp-point"],
+        "description": {
+          "en": "This endpoint allows you to create a new terminal action for the Mercado Pago point. In case of success, the request will return a response with status 201.",
+          "es": "Este endpoint permite la creación de una nueva acción de terminal para el Point de Mercado Pago. En caso de éxito, la petición devolverá un código de estado 201.",
+          "pt": "Este endpoint permite que você crie uma nova ação de terminal para o ponto Mercado Pago. Em caso de sucesso, a solicitação retornará uma resposta com status 201."
+        },
+        "parameters": [
+          {
+            "in": "header",
+            "name": "X-Idempotency-Key",
+            "required": "true",
+            "schema": {
+              "type": "string",
+              "example": "0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description": {
+              "en": "This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "Action type, associated with the Mercado Pago solution for wich it is created. Right now, the only supported value is \"print\"",
+                      "es": "Tipo de acción, asociada a la solución de Mercado Pago para la que se crea. En estos momentos, solo se soporta el valor \"print\"",
+                      "pt": "Tipo de ação, associado à solução Mercado Pago para a qual foi criado. No momento, o único valor suportado é \"print\""
+                    },
+                    "enum": [
+                      {
+                        "title": "print",
+                        "description": {
+                          "en": "Value associated with the creation of print actions for the Point of Sale",
+                          "es": "Valor asociado con la creación de acciones de impresión para el Punto de Venta",
+                          "pt": "Valor associado à criação de ações de impressão para o Ponto de Venda"
+                        }
+                      }
+                    ],
+                    "example": "print"
+                  },
+                  "external_reference": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "It is the external reference of the action, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                      "pt": "É a referência externa da ação, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                      "es": "Es una referencia externa de la acción, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                    },
+                    "example": "ext_ref_1234"
+                  },
+                  "config": {
+                    "type": "object",
+                    "description": {
+                      "en": "Action type configuration",
+                      "es": "Configuración del tipo de acción",
+                      "pt": "Configuração do tipo de ação."
+                    },
+                    "required": true,
+                    "properties": {
+                      "point": {
+                        "type": "object",
+                        "description": {
+                          "en": "Point action configuration.",
+                          "pt": "Configuração da ação Point.",
+                          "es": "Configuración de la acción Point."
+                        },
+                        "properties": {
+                          "terminal_id": {
+                            "type": "string",
+                            "description": {
+                              "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
+                              "es": "Identificador de la terminal Point que obtendrá la ação. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El serial de la terminal puede ser hallado en la etiqueta trasera del mismo.",
+                              "pt": "Identificador do terminal que obterá a order. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira."
+                            },
+                            "example": "NEWLAND_N950__N950NCB123456789",
+                            "required": true
+                          },
+                          "subtype": {
+                            "type": "string",
+                            "description": {
+                              "en": "Identifier of the action subtype that will be created for the Point. If the action is \"print\" you must choose between two values: \"invoice\" for xml that represents electronic invoices, and \"custom\" for a customized printing.",
+                              "es": "Identificador del subtipo de acción que se creará para el Punto. Si la acción es \"imprimir\" se debe elegir entre dos valores: \"invoice\" para xml que represente facturas electrónicas, y \"custom\" para una impresión personalizada.",
+                              "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre dois valores: \"invoice\" para xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
+                            },
+                            "example": "invoice",
+                            "required": true,
+                            "enum": [
+                              {
+                                "title": "invoice",
+                                "description": {
+                                  "en": "Identifier of the subtype related to invoices, it supports an xml that must be compliant with the invoice issuer.",
+                                  "pt": "Identificador do subtipo relacionado às notas fiscais, suporta um xml que deve estar em conformidade com o emissor da nota fiscal.",
+                                  "es": "Identificador del subtipo relacionado con facturas, soporta un xml que debe ser conforme con el emisor de la factura."
+                                }
+                              },
+                              {
+                                "title": "custom",
+                                "description": {
+                                  "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to realize a printing on the Point.",
+                                  "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las etiquetas admitidas para poder realizar una impresión en el Point.",
+                                  "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão no Point."
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "content": {
+                    "type": "string",
+                    "required": true,
+                    "description": {
+                      "en": "String that contains the information to be printed in the point, if the subtype is \"invoice\" it must a valid xml, and if the subtype is \"custom\" it must contains the string formatted with the supported tags.",
+                      "pt": "String que contém as informações a serem impressas no ponto, se o subtipo for \"invoice\" deve ser um xml válido, e se o subtipo for \"custom\" deve conter a string formatada com as tags suportadas.",
+                      "es": "Cadena de texto que contiene la información a imprimir en el punto, si el subtipo es \"invoice\" debe ser un xml válido, y si el subtipo es \"custom\" debe contener la cadena de texto formateada con las etiquetas soportadas."
+                    },
+                    "example": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL ADIDAS WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA Cerro Navia test 12345  {/s}{br}{s}RECIBE: Pepito Perez{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": {
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "8952c6cf-bbb4-482c-a9f2-ea5fecd3ecd2",
+                      "description": {
+                        "en": "Identifier of the action created in the request, automatically generated by Mercado Pago.",
+                        "pt": "Identificador da ação criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                        "es": "Identificador de la acción creada en la solicitud, generado automáticamente por Mercado Pago."
+                      }
+                    },
+                    "type": {
+                      "type": "string",
+                      "example": "print",
+                      "description": {
+                        "en": "Action type",
+                        "pt": "Tipo de ação",
+                        "es": "Tipo de acción"
+                      },
+                      "enum": [
+                        {
+                          "title": "print",
+                          "description": {
+                            "en": "Print action created for Point",
+                            "pt": "Ação de impressão criada para Point",
+                            "es": "Acción de impresión creada para Point"
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference": {
+                      "type": "string",
+                      "example": "ext_ref_1234",
+                      "description": {
+                        "en": "It is the external reference of the action, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                        "pt": "É a referência externa da ação, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                        "es": "Es una referencia externa de la acción, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "created",
+                      "description": {
+                        "en": "Current status of the order.",
+                        "pt": "Status atual da order.",
+                        "es": "Estado actual de la order."
+                      },
+                      "enum": [
+                        {
+                          "title": "created",
+                          "description": {
+                            "en": "The order has been succesfully created.",
+                            "es": "La order ha sido creada de manera exitosa.",
+                            "pt": "A order foi criada com sucesso."
+                          }
+                        }
+                      ]
+                    },
+                    "config": {
+                      "$ref": "#/components/schemas/config_response"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the request again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la petición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "required_properties",
+                          "description": {
+                            "en": "There are some required properties missing. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Ciertas propiedades requeridas están ausentes. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Certas propriedades obrigatórias estão ausentes. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "unsupported_properties",
+                          "description": {
+                            "en": "An unsupported property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una propiedad que no es soportada. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviada uma propriedade que não é suportada. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_type",
+                          "description": {
+                            "en": "The wrong property type was submitted. For example, an 'integer' value for a 'string' property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un tipo de propiedad incorrecto. Por ejemplo, un valor 'integer' para una propiedad 'string'. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um tipo de propriedade incorreto foi enviado. Por exemplo, um valor 'integer' para uma propriedade 'string'. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_value",
+                          "description": {
+                            "en": "An incorrect value for some property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un valor inválido para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um valor inválido foi enviado para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "json_syntax_error",
+                          "description": {
+                            "en": "An incorrect JSON was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un JSON inválido. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um JSON inválido foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_data_xml",
+                          "description": {
+                            "en": "The data sent in the xml is not compliant with the format provided by the invoices issuer. Check the message returned in the error details to find out what the problem was and try again.",
+                            "pt": "Os dados enviados no xml não estão em conformidade com o formato fornecido pelo emissor das faturas. Verifique a mensagem retornada nos detalhes do erro para descobrir qual foi o problema e tente novamente.",
+                            "es": "Los datos enviados en el xml no cumplen con el formato proporcionado por el emisor de las facturas. Verifique el mensaje que aparece en los detalles del error para averiguar cuál fue el problema e inténtelo nuevamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la petición enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "forbidden_checking_terminal_owner",
+                          "description": {
+                            "en": "The Point terminal does not belong to the user who submitted the request. Check if the value sent for \"terminal_id\" is correct or if the terminal is linked to your account.",
+                            "es": "La terminal Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"terminal_id\" es correcto o si la terminal está vinculado a tu cuenta.",
+                            "pt": "O terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o terminal está vinculado à sua conta."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used with a different request within the last 24 hours. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado con una solicitud distinta en un tiempo menor a 24 horas. Por favor, vuelve a intentar realizar la petición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado em uma solicitação diferente em um período menor que 24 horas. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        },
+                        {
+                          "title": "already_queued_order_for_terminal",
+                          "description": {
+                            "en": "The terminal already has an order waiting. It is necessary to finalize or cancel it to send new orders.",
+                            "es": "La terminal ya tiene una order en espera. Es necesario finalizarla o cancelarla para enviar nuevas orders.",
+                            "pt": "O terminal já tem uma order em espera. É necessário finalizar ou cancelar para enviar novas orders."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Generic error. Please try submitting the request again.",
+                            "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create terminal action",
+          "es": "Crear acción de terminal",
+          "pt": "Criar ação terminal"
+        }
+      }
+    },
+    "/terminals/v1/actions/{action_id}": {
+      "get": {
+        "tags": [
+          "mp-point"
+        ],
+        "description": {
+          "en": "Consult all action information using the ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
+          "pt": "Consulte todas as informações da ação utilizando o ID obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com status 200",
+          "es": "Consulta toda la información de una acción mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200"
+        },
+        "parameters": [
+          {
+            "name": "action_id",
+            "in": "path",
+            "description": {
+              "en": "Action ID returned in the response to the request made for its creation.",
+              "pt": "ID da ação, retornado na resposta à solicitação feita para sua criação.",
+              "es": "ID de la acción, devuelto en la respuesta a la solicitud realizada para su creación."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "8952c6cf-bbb4-482c-a9f2-ea5fecd3ecd2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "8952c6cf-bbb4-482c-a9f2-ea5fecd3ecd2",
+                      "description": {
+                        "en": "Identifier of the action created in the request, automatically generated by Mercado Pago.",
+                        "pt": "Identificador da ação criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                        "es": "Identificador de la acción creada en la solicitud, generado automáticamente por Mercado Pago."
+                      }
+                    },
+                    "type": {
+                      "type": "string",
+                      "example": "print",
+                      "description": {
+                        "en": "Action type",
+                        "pt": "Tipo de ação",
+                        "es": "Tipo de acción"
+                      },
+                      "enum": [
+                        {
+                          "title": "print",
+                          "description": {
+                            "en": "Print action created for Point",
+                            "pt": "Ação de impressão criada para Point",
+                            "es": "Acción de impresión creada para Point"
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference": {
+                      "type": "string",
+                      "example": "ext_ref_1234",
+                      "description": {
+                        "en": "It is the external reference of the action, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                        "pt": "É a referência externa da ação, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                        "es": "Es una referencia externa de la acción, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                      }
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "created",
+                      "description": {
+                        "en": "Current status of the action.",
+                        "pt": "Status atual da ação.",
+                        "es": "Estado actual de la acción."
+                      },
+                      "enum": [
+                        {
+                          "title": "created",
+                          "description": {
+                            "en": "The action has been succesfully created.",
+                            "es": "La acción ha sido creada de manera exitosa.",
+                            "pt": "A ação foi criada com sucesso."
+                          }
+                        },
+                        {
+                          "title": "on_terminal",
+                          "description": {
+                            "en": "The action was obtained by the terminal and is ready for process.",
+                            "es": "La acción fue obtenida por la terminal y está lista para ser procesada.",
+                            "pt": "A ação foi obtida no terminal e está pronta para ser processada."
+                          }
+                        },
+                        {
+                          "title": "canceled",
+                          "description": {
+                            "en": "The action has been cancelled, either through the API or the terminal.",
+                            "es": "La acción fue cancelada desde el API o desde la terminal.",
+                            "pt": "A ação foi cancelada na API ou no terminal."
+                          }
+                        },
+                        {
+                          "title": "processed",
+                          "description": {
+                            "en": "The action has been successfully processed.",
+                            "es": "La acción ha sido procesada exitosamente.",
+                            "pt": "A ação foi processada com sucesso."
+                          }
+                        },
+                        {
+                          "title": "failed",
+                          "description": {
+                            "en": "An error occurred in the processing of the action. It may be due to sending incorrect data, or another issue related with the action type, or the machine",
+                            "es": "Se produjo un error en el procesamiento de la acción. Puede deberse al envío de datos incorrectos o a otro problema relacionado con el tipo de acción, o el dispositivo.",
+                            "pt": "Ocorreu um erro no processamento da ação. Pode ser devido ao envio de dados incorretos, ou outro problema relacionado ao tipo de ação, ou à maquininha."
+                          }
+                        }
+                      ]
+                    },
+                    "config": {
+                      "$ref": "#/components/schemas/config_response"
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la peticion enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get action by ID",
+          "pt": "Obter ação por ID",
+          "es": "Obtener acción por ID"
+        }
+      }
+    },
+    "/terminals/v1/actions/{action_id}/cancel": {
+      "post": {
+        "tags": [
+          "mp-point"
+        ],
+        "description": {
+          "en":"Cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt":"Cancela uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Cancela una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+        },
+        "parameters": [
+          {
+            "name":"order_id",
+            "in":"path",
+            "description":{
+              "en": "ID of the action that is being cancelled. This value is returned in the response to the Create action request.",
+              "pt": "ID da ação a ser cancelada. Esse valor é retornado na resposta à requisição Criar açáo.",
+              "es": "ID de la acción a cancelar. Este valor es devuelto en la respuesta a la petición Crear acción."
+            },
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example": "8952c6cf-bbb4-482c-a9f2-ea5fecd3ecd2"
+            }
+          },
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": {
+              "en": "Success - No Content",
+              "es": "Éxito - Sin contenido",
+              "pt": "Sucesso - Sem Conteúdo"
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la petición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la petición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la peticion enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la petición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        },
+                        {
+                          "title": "cannot_cancel_order",
+                          "description": {
+                            "en": "There is a conflict trying to cancel the order due to its current status. Please note that orders can only be cancelled via API when \"status=created\". If you are trying to cancel an order with status \"status=at_terminal\", you will need to do from the terminal.",
+                            "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=at_terminal\", deberás hacerlo desde la terminal.",
+                            "pt": "Há um conflito ao tentar cancelar a order devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar uma order com o estado \"status=at_terminal\", deverá fazê-lo a partir do terminal."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Cancel action by ID",
+          "pt": "Cancelar action por ID",
+          "es": "Cancelar action por ID"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "config_response": {
+        "type": "object",
+        "description": {
+          "en": "Action type configuration",
+          "pt": "Configuração do tipo de ação.",
+          "es": "Configuración del tipo de acción"
+        },
+        "properties": {
+          "point": {
+            "type": "object",
+            "description": {
+              "en": "Point action configuration.",
+              "pt": "Configuração da ação Point.",
+              "es": "Configuración de la acción Point."
+            },
+            "properties": {
+              "terminal_id": {
+                "type": "string",
+                "description": {
+                  "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
+                  "pt": "Identificador do terminal que obterá a order. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira.",
+                  "es": "Identificador de la terminal Point que obtendrá la ação. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El serial de la terminal puede ser hallado en la etiqueta trasera del mismo."
+                },
+                "example": "NEWLAND_N950__N950NCB123456789"
+              },
+              "subtype": {
+                "type": "string",
+                "description": {
+                  "en": "Identifier of the action subtype that will be created for the Point. If the action is \"print\" you must choose between two values: \"invoice\" for xml that represents electronic invoices, and \"custom\" for a customized printing.",
+                  "es": "Identificador del subtipo de acción que se creará para el Punto. Si la acción es \"imprimir\" se debe elegir entre dos valores: \"invoice\" para xml que represente facturas electrónicas, y \"custom\" para una impresión personalizada.",
+                  "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre dois valores: \"invoice\" para xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
+                },
+                "example": "invoice",
+                "required": true,
+                "enum": [
+                  {
+                    "title": "invoice",
+                    "description": {
+                      "en": "Identifier of the subtype related to invoices, it supports an xml that must be compliant with the invoice issuer.",
+                      "pt": "Identificador do subtipo relacionado às notas fiscais, suporta um xml que deve estar em conformidade com o emissor da nota fiscal.",
+                      "es": "Identificador del subtipo relacionado con facturas, soporta un xml que debe ser conforme con el emisor de la factura."
+                    }
+                  },
+                  {
+                    "title": "custom",
+                    "description": {
+                      "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to realize a printing on the Point.",
+                      "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las etiquetas admitidas para poder realizar una impresión en el Point.",
+                      "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão no Point."
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
