@@ -31,7 +31,7 @@ Você pode personalizar essas configurações de acordo com suas necessidades, s
    * Redes de pagamento em efectivo
 ------------
 ----[mlb]----
-* **Checkout Transparente**: essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com [Checkout Transparente](/developers/pt/docs/nuvemshop/payment-configuration/checkout-api). Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
+* **Checkout transparente**: essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com [Checkout Transparente](/developers/pt/docs/nuvemshop/payment-configuration/checkout-api). Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Boleto bancário
    * Cartão de crédito
 ------------
