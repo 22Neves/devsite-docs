@@ -1,6 +1,6 @@
 ---
 content_section_with_media: 
- - title: Mini Apps Playbook
+ - title: Mini Apps
  - message: Esta es una guía con las principales reglas y requisitos para desarrolladores que integren Mini Apps en Point Smart. Fue creada por diferentes equipos de Mercado Pago, con el fin de garantizar que las principales informaciones y procesos estén documentados de forma clara, simple y precisa.
  - media_image: /mini-apps/landing.png
 ---
@@ -18,7 +18,7 @@ bullet_section_with_media:
  - title: 
  - type: normal
  - message: El playbook está dividido en diferentes secciones, que van desde conceptos generales de la sección “Apps” hasta guías técnicas. Sin embargo, estamos constantemente evolucionando para incluir nuevos contenidos.
- - image:/mini-apps/landing-1.png
+ - image: /mini-apps/landing-1.png
 ---
 
 --- mini_landing_separator ---
