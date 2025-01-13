@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Tiendanube
  - message: Is an ecommerce platform that allows you to receive payments with Mercado Pago. Tiendanube adapts to each type of business in different ways, allowing the layout of stores to be unique.
- - media_image: /nuvemshop/nuvemshop-landing.png 
+ - media_image: /nuvemshop/landing-1.png 
 ---
  
 ----[mlb]---- 
@@ -16,7 +16,7 @@ bullet_section_with_media:
  - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be carried out in our environment, facilitating payment with credit card, debit card and other means of payment (Pix, bank slip, lottery payment without slip, balance in the Mercado Pago account and Mercado Credit).
  - benefit_title: Checkout API
  - benefit_message: Payment is made without leaving your virtual store credit card, bank slip (or Mercado Pago account balance) and Pix.
- - image: /nuvemshop/nuvemshop-landing2.png 
+ - image: /nuvemshop/landing-2.png 
 ---
 ------------
 ----[mla, mlm, mlu, mco, mlc, mpe]----
@@ -30,7 +30,7 @@ bullet_section_with_media:
  - benefit_message: Buyers will be able to pay using a Mercado Pago account and the entire purchase process will be carried out in our environment, facilitating payment with credit card, debit card and other means of payment (cash payment networks and Mercado Credit).
  - benefit_title: Checkout API
  - benefit_message: Payment is made without leaving your virtual store using your credit card and cash payment networks.
- - image: /nuvemshop/nuvemshop-landing2.png 
+ - image: /nuvemshop/landing-2.png 
 ---
 ------------
 

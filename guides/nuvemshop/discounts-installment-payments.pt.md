@@ -111,9 +111,6 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de mes
 
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Vá até a seção **Seu negócio > Custos** e selecione a opção **Checkout**.
-
-![configure installments 1](/images/nuvemshop/configure-installments-1-pt.png) 
-
 3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
 4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
 5. Ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
