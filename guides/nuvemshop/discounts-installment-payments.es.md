@@ -22,11 +22,11 @@ Puedes personalizar estas configuraciones según tus necesidades, **a través de
 ![discounts mlb](/images/nuvemshop/discounts-mlb.png)
 
 ------------
-----[mlm, mla, mpe, mco, mlu, mlc]----
+----[mlm, mla]----
 ![discounts all](/images/nuvemshop/discounts-all.png)
 
 ------------
-----[mlm, mla, mpe, mco, mlu, mlc]----
+----[mlm, mla]----
 * **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con [Checkout API](/developers/es/docs/nuvemshop/payment-configuration/checkout-api). Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
    * Tarjeta de crédito
    * Tarjeta de débito
@@ -39,18 +39,33 @@ Puedes personalizar estas configuraciones según tus necesidades, **a través de
 ------------
 * **Checkout externo (Checkout Pro/Mercado Pago)**: Puedes definir un descuento global en porcentaje para los clientes que elijan el [Checkout Pro/Mercado Pago](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro). Ingresa el valor en porcentaje a deducir del total de la compra.
 
-## Configuración a través del plugin Mercado Pago en Tiendanube
+----[mla, mlb]----
+## Financiación e intereses
 
-También puedes configurar las experiencias de ----[mlm]----financiamiento------------ ----[mla]----financiación------------ de cada checkout en tu tienda a través del propio Panel administrativo del plugin Mercado Pago. Para ello:
+------------
+----[mlm]----
+## Financiamiento e intereses
 
-### Checkout Pro
+------------
+
+### Configuración a través del plugin Mercado Pago en Tiendanube
+
+También puedes configurar las experiencias de ----[mlm]----financiamiento------------ ----[mla, mlb]----financiación------------ de cada checkout en tu tienda a través del propio Panel administrativo del plugin Mercado Pago. Para ello:
+
+#### Checkout Pro
 
 1. En el Panel Administrativo de tu tienda en Tiendanube, accede a **Mis aplicaciones**.
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
 3. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
 5. En la pantalla correspondiente, localiza el medio de pago "Checkout Pro" y haz clic en **Configurar**.
-6. En esta sección, puedes definir el **número máximo de ----[mla]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout Pro.
+6. En esta sección, puedes definir el **número máximo de ----[mla, mlb]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout Pro.
+
+> WARNING
+>
+> Atención
+>
+> Siempre que se cambien las configuraciones de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ----[mlb]----
 ![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
@@ -65,12 +80,12 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 
 ------------
 
-----[mlm, mla, mpe, mco, mlu, mlc]----
-### Checkout API
+----[mlm, mla]----
+#### Checkout API
 
 ------------
 ----[mlb]----
-### Checkout Transparente
+#### Checkout Transparente
 
 ------------
 
@@ -78,8 +93,14 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
 3. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
-5. En la pantalla correspondiente, localiza el medio de pago ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ y haz clic en **Configurar**.
-6. En esta sección, puedes definir el número máximo de **número máximo de ----[mla]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
+5. En la pantalla correspondiente, localiza el medio de pago ----[mlm, mla]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ y haz clic en **Configurar**.
+6. En esta sección, puedes definir el número máximo de **número máximo de ----[mla, mlb]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout ----[mlm, mla]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
+
+> WARNING
+>
+> Atención
+>
+> Siempre que se cambien las configuraciones de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ----[mlb]----
 ![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
@@ -94,16 +115,16 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 
 ------------
 
-## Configuración desde la cuenta Mercado Pago
+### Configuración desde la cuenta Mercado Pago
 
-Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de ----[mla]----cuotas----------------[mlm]----meses------------ sin interés que deseas ofrecer a tus clientes. En esta opción, tus clientes pueden comprar en ----[mla]----cuotas----------------[mlm]----meses------------ sin interés, y tú asumes la tasa de financiamiento.
+Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin interés que deseas ofrecer a tus clientes. En esta opción, tus clientes pueden comprar en ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin interés, y tú asumes la tasa de financiamiento.
 
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Checkout**.
 
 ![configure installments 1](/images/nuvemshop/configure-installments-1-es.png)
 
-3. En "----[mla]----Cuotas----------------[mlm]----Meses------------ sin intereses", haz clic en **Configurar ----[mla]----cuotas----------------[mlm]----meses------------**.
+3. En "----[mla, mlb]----Cuotas----------------[mlm]----Meses------------ sin intereses", haz clic en **Configurar ----[mla, mlb]----cuotas----------------[mlm]----meses------------**.
 
 ![configure installments 2](/images/nuvemshop/configure-installments-2-es.png)
 
@@ -111,16 +132,16 @@ Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de
 
 ![configure installments 3](/images/nuvemshop/configure-installments-3-es.png)
 
-5. Después de configurar las opciones ----[mla]----cuotas----------------[mlm]----meses------------ sin intereses, ve a tu tienda en Tiendanube.
+5. Después de configurar las opciones ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses, ve a tu tienda en Tiendanube.
 6. En el Panel Administrativo de tu tienda, accede a Mis aplicaciones.
 7. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
 8. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 9. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
 10. En la pantalla correspondiente, localiza el medio de pago deseado y haz clic en **Configurar**.
-11. Por último, haz clic en **Sincronizar** para que ----[mlm]----el financiamiento------------ ----[mla]----la financiación------------ configurado se sincronice con tu tienda.
+11. Por último, haz clic en **Sincronizar** para que ----[mlm]----el financiamiento------------ ----[mla, mlb]----la financiación------------ configurado se sincronice con tu tienda.
 
 > WARNING
 >
 > Atención
 >
-> Siempre que se cambien las configuraciones de ----[mla]----cuotas----------------[mlm]----meses------------ sin intereses, será necesario **sincronizar** los cambios con tu tienda.
+> Siempre que se cambien las configuraciones de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses, será necesario **sincronizar** los cambios con tu tienda.

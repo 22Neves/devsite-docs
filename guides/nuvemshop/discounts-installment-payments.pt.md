@@ -16,11 +16,11 @@ Você pode personalizar essas configurações de acordo com suas necessidades, *
 ![discounts mlb](/images/nuvemshop/discounts-mlb.png)
 
 ------------
-----[mlm, mla, mpe, mco, mlu, mlc]----
+----[mlm, mla]----
 ![discounts all](/images/nuvemshop/discounts-all.png)
 
 ------------
-----[mlm, mla, mpe, mco, mlu, mlc]----
+----[mlm, mla]----
 * **Checkout API**: essas configurações opcionais permitem que você configure descontos específicos para diferentes métodos de pagamento com [Checkout API](/developers/pt/docs/nuvemshop/payment-configuration/checkout-api). Defina o desconto em porcentagem aplicado aos clientes que escolherem pagar com:
    * Cartão de crédito
    * Cartão de débito
@@ -33,11 +33,13 @@ Você pode personalizar essas configurações de acordo com suas necessidades, *
 ------------
 * **Checkout externo (Checkout Pro/Mercado Pago)**: você pode definir um desconto global em porcentagem para clientes que escolherem o [Checkout Pro/Mercado Pago](/developers/pt/docs/nuvemshop/payment-configuration/checkout-pro). Insira o valor em porcentagem a ser deduzido do total da compra.
 
-## Configuração através do plugin Mercado Pago na Nuvemshop
+## Parcelamentos e acréscimos
+
+### Configuração através do plugin Mercado Pago na Nuvemshop
 
 Você também pode configurar as experiências de parcelamento de cada checkout em sua loja através do próprio Painel administrativo do plugin Mercado Pago. Para isso:
 
-### Checkout Pro
+#### Checkout Pro
 
 1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos**.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
@@ -46,6 +48,12 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 5. Na tela em questão, localize o meio de pagamento "Checkout Pro"  e clique em **Configurar**.
 6. Nesta seção, você pode definir o **número máximo de parcelas** nos quais seus clientes poderão efetuar o pagamento utilizando o Checkout Pro.
 
+> WARNING
+>
+> Atenção
+>
+> Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
+
 ----[mlb]----
 ![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
 
@@ -59,20 +67,26 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 
 ------------
 
-----[mlm, mla, mpe, mco, mlu, mlc]----
-### Checkout API
+----[mlm, mla]----
+#### Checkout API
 
 ------------
 ----[mlb]----
-### Checkout Transparente
+#### Checkout Transparente
 
 ------------
 1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos**.
 2. Localize o plugin do Mercado Pago na lista das aplicações e clique em **Ações > Configurar**.
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração**.
 4. Desça até o final da página e clique em **Mais configurações no site do Mercado Pago**.
-5. Na tela em questão, localize o meio de pagamento ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ e clique em **Configurar**.
-6. Nesta seção, você pode definir o **número máximo de parcelas** nos quais seus clientes poderão efetuar o pagamento utilizando o ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
+5. Na tela em questão, localize o meio de pagamento ----[mlm, mlm]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ e clique em **Configurar**.
+6. Nesta seção, você pode definir o **número máximo de parcelas** nos quais seus clientes poderão efetuar o pagamento utilizando o ----[mlm, mla]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
+
+> WARNING
+>
+> Atenção
+>
+> Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
 
 ----[mlb]----
 ![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
@@ -87,7 +101,7 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 
 ------------
 
-## Configuração através da conta Mercado Pago
+### Configuração através da conta Mercado Pago
 
 Na sua conta do Mercado Pago, você pode consultar e configurar o número de meses sem acréscimos que deseja oferecer para seus clientes. Nesta opção, seus clientes podem comprar em parcelas sem acréscimos, e você assume a taxa de financiamento.
 

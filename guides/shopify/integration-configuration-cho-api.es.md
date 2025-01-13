@@ -228,7 +228,7 @@ Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a
 > Con Mercado Pago Tarjetas, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
 
 ------------
-
+----[mlm]----
 ## Configura meses sin intereses
 
 Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configura la opción de ofrecer a tus clientes pagos en meses sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
@@ -269,3 +269,48 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 > Atención
 >
 > Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
+
+------------
+----[mla, mco, mlc, mlb]----
+## Configura cuotas sin intereses
+
+Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configura la opción de ofrecer a tus clientes pagos en cuotas sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
+
+1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Checkout**.
+
+![configure installments 1](/images/shopify/configure-installments-1-es.png)
+
+3. En "Meses sin intereses", haz clic en **Configurar cuotas**.
+
+![configure installments 2](/images/shopify/configure-installments-2-es.png)
+
+4. Activa la opción **Ofrecer MSI con tarjeta de crédito** y luego elige hasta cuantas cuotas quieres ofrecer.
+
+![configure installments 3](/images/shopify/configure-installments-3-es.png)
+
+5. Después de configurar las opciones cuotas sin intereses, ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
+6. En el panel administrativo, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
+
+![configure installments 4](/images/shopify/configure-installments-4-es.png)
+
+7. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
+8. En "Mercado Pago Tarjetas", haz clic en **Gestionar**.
+
+![configure installments 5](/images/shopify/configure-installments-5-es.png)
+
+9. Luego, haz clic en **Más acciones > Gestionar**.
+
+![configure installments 6](/images/shopify/configure-installments-6-es.png)
+
+10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de cuotas sin intereses se sincronicen con tu tienda.
+
+![configure installments 7](/images/shopify/configure-installments-7-es.png)
+
+> WARNING
+>
+> Atención
+>
+> Siempre que se cambien las configuraciones de cuotas sin intereses, será necesario **sincronizar** los cambios con tu tienda.
+
+------------
