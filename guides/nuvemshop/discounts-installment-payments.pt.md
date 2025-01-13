@@ -1,8 +1,12 @@
 # Descontos, parcelamentos e acréscimos
 
-Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos aos seus clientes, como créditos, descontos e condições especiais, de forma personalizada e opcional. 
+Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos aos seus clientes, como descontos, creditos e parcelamentos com condições especiais, de forma personalizada e opcional. 
 
-Você pode personalizar essas configurações de acordo com suas necessidades, **através do Painel Administrativo da sua loja, diretamente pelo site do Mercado Pago ou pela sua conta Mercado Pago vinculada**.
+Você pode personalizar essas configurações de acordo com suas necessidades, sendo:
+
+* [Descontos através do Painel Administrativo da sua loja]()
+* [Parcelamentos com acréscimos diretamente no plugin Mercado Pago na Nuvemshop]()
+* [Parcelamentos sem acréscimos diretamente na sua conta Mercado Pago vinculada]()
 
 ## Descontos
 

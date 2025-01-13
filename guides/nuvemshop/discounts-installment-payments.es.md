@@ -1,14 +1,27 @@
-----[mla]----
+----[mla, mlb]----
 # Descuentos, financiación e intereses
+
+Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus clientes, como descuentos, créditos y pagos a cuotas con condiciones especiales, de manera personalizada y opcional.
+
+Puedes personalizar estas configuraciones según tus necesidades, como:
+
+* [Descuentos a través del Panel Administrativo de tu tienda]()
+* [Pagos a cuotas con intereses directamente desde el plugin de Mercado Pago en Tiendanube]()
+* [Pagos a cuotas sin intereses directamente desde tu cuenta vinculada a Mercado Pago]()
 
 ------------
 ----[mlm]----
 # Descuentos, financiamiento e intereses
 
-------------
-Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus clientes, como créditos, descuentos y condiciones especiales, de manera personalizada y opcional. 
+Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus clientes, como descuentos, créditos y pagos a meses con condiciones especiales, de manera personalizada y opcional.
 
-Puedes personalizar estas configuraciones según tus necesidades, **a través del Panel de Administración de tu tienda, directamente en el sitio web de Mercado Pago o desde tu cuenta vinculada de Mercado Pago**.
+Puedes personalizar estas configuraciones según tus necesidades, como:
+
+* [Descuentos a través del Panel Administrativo de tu tienda]()
+* [Pagos a meses con intereses directamente desde el plugin de Mercado Pago en Tiendanube]()
+* [Pagos a meses sin intereses directamente desde tu cuenta vinculada a Mercado Pago]()
+
+------------
 
 ## Descuentos
 

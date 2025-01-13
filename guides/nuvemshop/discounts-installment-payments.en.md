@@ -1,8 +1,12 @@
 # Discounts, installments, and interest
 
-With Mercado Pago, you have the flexibility to offer exclusive benefits to your customers, such as credits, discounts, and special conditions, in a personalized and optional manner.
+With Mercado Pago, you have the flexibility to offer exclusive benefits to your customers, such as discounts, credits, and installment payments with special conditions, in a personalized and optional way.
 
-You can customize these settings according to your needs, **through your store's Administrative Panel, directly on the Mercado Pago website, or from your linked Mercado Pago account**.
+You can customize these settings according to your needs, including:
+
+* [Discounts through your store's Admin Panel]()
+* [Installment payments with interest directly from the Mercado Pago plugin on Tiendadnube]()
+* [Installment payments without interest directly from your linked Mercado Pago account]()
 
 ## Discounts
 
