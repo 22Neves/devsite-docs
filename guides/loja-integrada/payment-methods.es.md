@@ -41,8 +41,6 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 4. Y si quieres que tus pagos con boleto tengan un descuento, marca la opción “Usar descuento en tus boletos?” y completa el porcentaje que quieras ofrecer como descuento en “Descuento aplicado”.
 5. Finalmente, haz clic en “Guardar cambios”.
 
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
-
 ## Configura cuotas
 
 **Ofrece la opción de pagar con cuotas** sin interés en tu sitio con Mercado Pago.
@@ -59,7 +57,5 @@ Una vez hecho esto, sigue los pasos a continuación para completar la configurac
 1. Ingresa a tu [cuenta de Mercado Pago](https://www.mercadopago.com.br/business) y ve a "Tu negocio".
 2. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 3. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
-
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > Para más información, visita el [sitio oficial de Loja Integrada](https://lojaintegrada.com.br/).
