@@ -10,7 +10,7 @@ You can customize these settings according to your needs, including:
 
 ## Discounts
 
-### Configuration via via the Tiendanube Admin Panel
+### Configuration via the Tiendanube Admin Panel
 
 1. In your Nuvemshop store's Admin Panel, go to **My apps**.
 2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
