@@ -5,9 +5,9 @@ Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus 
 
 Puedes personalizar estas configuraciones según tus necesidades, como:
 
-* [Descuentos a través del Panel Administrativo de tu tienda]()
-* [Pagos a cuotas con intereses directamente desde el plugin de Mercado Pago en Tiendanube]()
-* [Pagos a cuotas sin intereses directamente desde tu cuenta vinculada a Mercado Pago]()
+* [Descuentos a través del Panel Administrativo de tu tienda](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20el%20panel%20de%20Administraci%C3%B3n%20de%20Tiendanube)
+* [Pagos a cuotas con intereses directamente desde el plugin de Mercado Pago en Tiendanube](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20a%20trav%C3%A9s%20del%20plugin%20Mercado%20Pago%20en%20Tiendanube)
+* [Pagos a cuotas sin intereses directamente desde tu cuenta vinculada a Mercado Pago](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20la%20cuenta%20Mercado%20Pago)
 
 ------------
 ----[mlm]----
@@ -17,15 +17,15 @@ Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus 
 
 Puedes personalizar estas configuraciones según tus necesidades, como:
 
-* [Descuentos a través del Panel Administrativo de tu tienda]()
-* [Pagos a meses con intereses directamente desde el plugin de Mercado Pago en Tiendanube]()
-* [Pagos a meses sin intereses directamente desde tu cuenta vinculada a Mercado Pago]()
+* [Descuentos a través del Panel Administrativo de tu tienda](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20el%20panel%20de%20Administraci%C3%B3n%20de%20Tiendanube)
+* [Pagos a meses con intereses directamente desde el plugin de Mercado Pago en Tiendanube](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20a%20trav%C3%A9s%20del%20plugin%20Mercado%20Pago%20en%20Tiendanube)
+* [Pagos a meses sin intereses directamente desde tu cuenta vinculada a Mercado Pago](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20la%20cuenta%20Mercado%20Pago)
 
 ------------
 
 ## Descuentos
 
-### Configuración desde el panel de Administración de Tiendanube
+### Configuración desde el Panel Administrativo de Tiendanube
 
 1. En el Panel Administrativo de tu tienda en Tiendanube, accede a **Mis aplicaciones**.
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
