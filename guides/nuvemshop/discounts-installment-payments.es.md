@@ -10,7 +10,9 @@ Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus 
 
 Puedes personalizar estas configuraciones según tus necesidades, **a través del Panel de Administración de tu tienda, directamente en el sitio web de Mercado Pago o desde tu cuenta vinculada de Mercado Pago**.
 
-## Configuración desde el panel de Administración de Tiendanube
+## Descuentos
+
+### Configuración desde el panel de Administración de Tiendanube
 
 1. En el Panel Administrativo de tu tienda en Tiendanube, accede a **Mis aplicaciones**.
 2. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
@@ -24,21 +26,18 @@ Puedes personalizar estas configuraciones según tus necesidades, **a través de
 ![discounts all](/images/nuvemshop/discounts-all.png)
 
 ------------
-
-### Descuentos
-
 ----[mlm, mla, mpe, mco, mlu, mlc]----
-* **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout API. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
+* **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con [Checkout API](/developers/es/docs/nuvemshop/payment-configuration/checkout-api). Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
    * Tarjeta de crédito
    * Tarjeta de débito
    * Redes de pago en efectivo
 ------------
 ----[mlb]----
-* **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con Checkout Transparente. Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
+* **Checkout transparente**: Estas configuraciones opcionales te permiten establecer descuentos específicos para diferentes métodos de pago con [Checkout Transparente](/developers/es/docs/nuvemshop/payment-configuration/checkout-api). Configura el descuento en porcentaje aplicado a los clientes que elijan pagar con:
    * Boleto bancário
    * Tarjeta de crédito
 ------------
-* **Checkout Externo (Checkout Pro)**: Puedes definir un descuento global en porcentaje para los clientes que elijan el Checkout externo. Ingresa el valor en porcentaje a deducir del total de la compra.
+* **Checkout externo (Checkout Pro/Mercado Pago)**: Puedes definir un descuento global en porcentaje para los clientes que elijan el [Checkout Pro/Mercado Pago](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro). Ingresa el valor en porcentaje a deducir del total de la compra.
 
 ## Configuración a través del plugin Mercado Pago en Tiendanube
 
@@ -80,7 +79,7 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 3. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
 4. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
 5. En la pantalla correspondiente, localiza el medio de pago ----[mlm, mla, mpe, mco, mlu, mlc]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ y haz clic en **Configurar**.
-6. En esta sección, puedes definir el número máximo de **número máximo de ----[mla]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API ------------ ----[mlb]---- Checkout Transparente ------------.
+6. En esta sección, puedes definir el número máximo de **número máximo de ----[mla]----cuotas----------------[mlm]----meses------------** en las que tus clientes podrán realizar el pago utilizando el Checkout ----[mlm, mla, mpe, mco, mlu, mlc]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
 
 ----[mlb]----
 ![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
