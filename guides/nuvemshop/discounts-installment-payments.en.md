@@ -4,7 +4,7 @@ With Mercado Pago, you have the flexibility to offer exclusive benefits to your 
 
 You can customize these settings according to your needs, including:
 
-* [Discounts through your store's Admin Panel]()
+* [Discounts through your store's Admin Panel](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuration%20via%20the%20Tiendanube%20Admin%20Panel)
 * [Installment payments with interest directly from the Mercado Pago plugin on Tiendadnube](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuration%20via%20the%20Mercado%20Pago%20plugin%20in%20Tiendanube)
 * [Installment payments without interest directly from your linked Mercado Pago account](/developers/en/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuration%20via%20the%20Mercado%20Pago%20account)
 
