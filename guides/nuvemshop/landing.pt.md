@@ -16,7 +16,7 @@ bullet_section_with_media:
  - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, saldo na conta Mercado Pago e Linha de Crédito).
  - benefit_title: Checkout Transparente
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com Pix, cartão de crédito e boleto.
- - image: /nuvemshop/nuvemshop-payment2.png  
+ - image: /nuvemshop/nuvemshop-landing2.png  
 ---
 ------------
 ----[mla]----
@@ -30,7 +30,7 @@ bullet_section_with_media:
  - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo e Cuotas sin Tarjeta)
  - benefit_title: Checkout API
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
- - image: /nuvemshop/nuvemshop-payment2.png  
+ - image: /nuvemshop/nuvemshop-landing2.png  
 ---
 ------------
 ----[mlm]----
@@ -44,7 +44,7 @@ bullet_section_with_media:
  - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo e Meses sin Tarjeta)
  - benefit_title: Checkout API
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
- - image: /nuvemshop/nuvemshop-payment2.png  
+ - image: /nuvemshop/nuvemshop-landing2.png  
 ---
 ------------
 ----[mlu, mco, mlc, mpe]----
@@ -58,7 +58,7 @@ bullet_section_with_media:
  - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo)
  - benefit_title: Checkout API
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
- - image: /nuvemshop/nuvemshop-payment2.png  
+ - image: /nuvemshop/nuvemshop-landing2.png
 ---
 ------------
 --- mini_landing_separator ---

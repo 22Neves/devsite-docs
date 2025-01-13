@@ -69,6 +69,6 @@ Para integrar Checkout API, siga los pasos a continuación.
 ----[mlm]---- 
 ![nuvemshop - checkout api - mlm](/images/nuvemshop/integration-checkout-api-mlm.png)
 
-¡Listo! El Checkout API está listo para recibir pagos de tu tienda.
+¡Listo! El Checkout API está listo para recibir pagos de tu tienda. 
 
 ------------
