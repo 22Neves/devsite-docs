@@ -16,14 +16,6 @@ You can customize these settings according to your needs, including:
 2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings** to set the configurations below.
 
-----[mlb]----
-![discounts mlb](/images/nuvemshop/discounts-mlb.png)
-
-------------
-----[mlm, mla]----
-![discounts all](/images/nuvemshop/discounts-all.png)
-
-------------
 ----[mlm, mla]----
 * **Checkout transparente**: These optional settings allow you to establish specific discounts for different payment methods with [Checkout API](/developers/en/docs/nuvemshop/payment-configuration/checkout-api). Configure the discount in percentage applied to customers who choose to pay with:
    * Boleto bancário
@@ -36,7 +28,7 @@ You can customize these settings according to your needs, including:
    * Credit card
 
 ------------
-* **External checkout (Checkout Pro)**: You can define a global percentage discount for customers who choose the [Checkout Pro/Mercado Pago](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro). Enter the percentage value to deduct from the total purchase amount.
+* **External checkout (Checkout Pro)**: You can define a global percentage discount for customers who choose the [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro). Enter the percentage value to deduct from the total purchase amount.
 
 ## Installments, and interest
 
@@ -53,19 +45,6 @@ You can also set up the installment experiences for each checkout in your store 
 5. On the relevant screen, find the payment method "Checkout Pro" and click on **Configure**.
 6. In this section, you can define the **maximum number of installments** that your customers can use when making a payment with Checkout Pro.
 
-----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
-
-------------
-----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
-
-------------
-----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
-
-------------
-
 ----[mlm, mla]----
 #### Checkout API
 
@@ -81,39 +60,35 @@ You can also set up the installment experiences for each checkout in your store 
 5. Find the payment method ----[mlm, mla]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ and click on **Configure**.
 6. In this section, you can define the maximum number of installments that your customers can use when making a payment with ----[mlm, mla]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
 
-----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
-
-------------
-----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
-
-------------
-----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
-
-------------
-
 ### Configuration via the Mercado Pago account
 
-Within your Mercado Pago account, you can check and configure the number of interest-free months you want to offer to your customers. In this option, your customers can make installment purchases without interest, and you assume the financing fee.
-
-1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Go to the **Your business > Costs** section and select the **Checkout** option.
-3. In "Interest-free months", click on **Set up months**.
-4. Enable the option **Offer interest-free installments with a credit card** and then choose the number of months you want to offer.
-5. After configuring the interest-free installment options, go to your store on Tiendanube.
-6. In your store's Administrative Panel at Tiendanube, access **My apps**.
-7. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
-8. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings**.
-9. Scroll down to the bottom of the page and click on **More settings on the Mercado Pago site**.
-10. Find the desired payment method and click on **Configure**.
-11. Finally, click on Synchronize so that the configured installment plan is synced with your store.
+In your Mercado Pago account, you can check and configure the number of interest-free installments you want to offer your customers. With this option, your customers can pay for their purchases in installments without interest, and you will cover the financing fee.
 
 > WARNING
 >
 > Attention
 >
-> Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
+> The number of interest-free installments you choose will apply to card payments, both through [Checkout Pro](/developers/en/docs/nuvemshop/payment-configuration/checkout-pro) and the [----[mlm, mla]----Checkout API.------------ ----[mlb]----Checkout Transparente.------------](/developers/en/docs/nuvemshop/payment-configuration/checkout-api)
+
+----[mlb, mla]----
+To configure interest-free installments in your store, follow these steps:
+
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. From the menu in your Mercado Pago account, select Your **Business > Fees and Installments**.
+3. At the top of the screen, select **Checkout**.
+4. Choose "Installments" and then **Offer**.
+5. **Activate the button** next to "Offer seller installments."
+6. Choose the maximum number of installments you want to offer your customers, and done!
+
+------------
+----[mlm]----
+To configure interest-free installments in your store, follow these steps:
+
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. From the menu in your Mercado Pago account, select **Your Business > Fees and MSI**.
+3. At the top of the screen, select **Checkout**.
+4. Go to the "Offer MSI" tab, and next to "MSI with credit card," select **Offer**.**
+5. **Activate the button** next to "Offer MSI with credit card."
+6. Choose the maximum number of MSI you want to offer your customers, and done!
 
 ------------
