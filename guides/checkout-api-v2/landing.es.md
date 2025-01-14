@@ -41,9 +41,8 @@ bullet_section_with_media:
  - benefit_message: Guarda los datos de las tarjetas utilizadas por los clientes para futuros pagos y aumenta tus posibilidades de venta.
  - benefit_title: Múltiples medios de pago
  - benefit_message: Puedes ofrecer todos los medios de pago disponibles o únicamente aquellos que consideres necesarios.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
+ - image: /api/api-integration-introduction-v1.png
 ---
-
 ---
 bullet_section_with_media: 
  - type: reverse
