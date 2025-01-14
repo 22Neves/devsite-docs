@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Split payments
  - message: The Split payments solution is designed to provide Payment Service Provider (PSP) services to sellers in marketplace models. Marketplaces are e-commerce platforms that connect sellers and buyers, offering a unified environment for online sales, expanding reach, and conversion.
- - media_image: /split-payment/split-de-pago-011.png
+ - media_image: /split-payment/split-de-pago-01.png
  
 ---
 
