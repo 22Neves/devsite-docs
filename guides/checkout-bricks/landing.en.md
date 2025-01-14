@@ -4,7 +4,6 @@ content_section_with_media:
  - message: Checkout Bricks is a set of UI modules that come front-end ready and optimized for better usability and conversion. Each Brick can be used independently or together, forming the experience of a complete checkout.
  - media_image: /subscriptions/mini-landing-3-pt.png
 ---
-
 ---
 bullet_section_with_media: 
  - title: 
