@@ -4,7 +4,7 @@ Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos
 
 Você pode personalizar essas configurações de acordo com suas necessidades, sendo:
 
-* [Descontos através do Painel Administrativo da sua loja](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20do%20painel%20administrativo%20da%20Nuvemshop)
+* [Descontos através do Painel Administrativo da sua loja](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20do%20Painel%20Administrativo%20da%20Nuvemshop)
 * [Parcelamentos com acréscimos diretamente no plugin Mercado Pago na Nuvemshop](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20do%20plugin%20Mercado%20Pago%20na%20Nuvemshop)
 * [Parcelamentos sem acréscimos diretamente na sua conta Mercado Pago vinculada](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20da%20conta%20Mercado%20Pago)
 
