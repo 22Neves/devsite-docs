@@ -87,8 +87,8 @@ To configure interest-free installments in your store, follow these steps:
 1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. From the menu in your Mercado Pago account, select **Your Business > Fees and MSI**.
 3. At the top of the screen, select **Checkout**.
-4. Go to the "Offer MSI" tab, and next to "MSI with credit card," select **Offer**.**
-5. **Activate the button** next to "Offer MSI with credit card."
+4. Go to the "Offer MSI" tab, and next to "MSI with credit card", select **Offer**.
+5. **Activate the button** next to "Offer MSI with credit card".
 6. Choose the maximum number of MSI you want to offer your customers, and done!
 
 ------------
