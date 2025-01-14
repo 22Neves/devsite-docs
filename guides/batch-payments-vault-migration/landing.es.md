@@ -1,3 +1,9 @@
+> WARNING
+>
+> Contacto comercial requerido
+>
+> Sólo puedes integrar este producto si tu contacto comercial te compartió toda la información necesaria para hacerlo.
+
 ---
 content_section_with_media:
  - title: Batch Payments
