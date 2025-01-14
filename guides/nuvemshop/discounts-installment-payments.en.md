@@ -16,14 +16,6 @@ You can customize these settings according to your needs, including:
 2. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
 3. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings** to set the configurations below.
 
-----[mlb]----
-![discounts mlb](/images/nuvemshop/discounts-mlb.png)
-
-------------
-----[mlm, mla]----
-![discounts all](/images/nuvemshop/discounts-all.png)
-
-------------
 ----[mlm, mla]----
 * **Checkout transparente**: These optional settings allow you to establish specific discounts for different payment methods with [Checkout API](/developers/en/docs/nuvemshop/payment-configuration/checkout-api). Configure the discount in percentage applied to customers who choose to pay with:
    * Boleto bancário
@@ -53,19 +45,6 @@ You can also set up the installment experiences for each checkout in your store 
 5. On the relevant screen, find the payment method "Checkout Pro" and click on **Configure**.
 6. In this section, you can define the **maximum number of installments** that your customers can use when making a payment with Checkout Pro.
 
-----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
-
-------------
-----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
-
-------------
-----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
-
-------------
-
 ----[mlm, mla]----
 #### Checkout API
 
@@ -80,19 +59,6 @@ You can also set up the installment experiences for each checkout in your store 
 4. Scroll to the bottom of the page and click on **More settings on the Mercado Pago website**.
 5. Find the payment method ----[mlm, mla]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ and click on **Configure**.
 6. In this section, you can define the maximum number of installments that your customers can use when making a payment with ----[mlm, mla]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
-
-----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
-
-------------
-----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
-
-------------
-----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
-
-------------
 
 ### Configuration via the Mercado Pago account
 
