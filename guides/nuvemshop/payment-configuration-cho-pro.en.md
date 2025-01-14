@@ -1,6 +1,6 @@
 # Checkout Pro
  
-When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing) (**Checkout Mercado Pago**), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
+When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there may be an **increase in the approval rate of online store sales**. This happens because buyers will be able to pay using a Mercado Pago account and the entire purchase process will be done in our environment, which facilitates payment. At the end of the transaction, these buyers are redirected to the store environment.
  
 To integrate Checkout Pro, follow the steps below.
  
@@ -10,7 +10,7 @@ To integrate Checkout Pro, follow the steps below.
 4. Scroll down to the bottom of the page and click on **More settings on the Mercado Pago site**.
 5. On the checkout settings screen, enable the **Mercado Pago** option.
 6. To configure your store's payment experiences, click on **Configure**.
-7. In Mercado Pago Checkout, choose the payment methods you want to offer in the Mercado Pago payment environment, which can be:
+7. Choose the payment methods you want to offer in the Mercado Pago payment environment, which can be:
 
 ----[mlb]----
  * **Credit card**. Select the brands you want to enable in your store and also indicate the **maximum number of installments to be allowed for purchases in installments**. 

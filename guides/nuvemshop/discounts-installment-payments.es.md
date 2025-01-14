@@ -50,7 +50,7 @@ Puedes personalizar estas configuraciones según tus necesidades, como:
    * Boleto bancário
    * Tarjeta de crédito
 ------------
-* **Checkout externo (Checkout Pro/Mercado Pago)**: Puedes definir un descuento global en porcentaje para los clientes que elijan el [Checkout Pro/Mercado Pago](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro). Ingresa el valor en porcentaje a deducir del total de la compra.
+* **Checkout externo (Checkout Pro)**: Puedes definir un descuento global en porcentaje para los clientes que elijan el [Checkout Pro](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro). Ingresa el valor en porcentaje a deducir del total de la compra.
 
 ----[mla, mlb]----
 ## Financiación e intereses
@@ -130,22 +130,33 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 
 ### Configuración desde la cuenta Mercado Pago
 
-Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin interés que deseas ofrecer a tus clientes. En esta opción, tus clientes pueden comprar en ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin interés, y tú asumes la tasa de financiamiento.
-
-1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Checkout**.
-3. En "----[mla, mlb]----Cuotas----------------[mlm]----Meses------------ sin intereses", haz clic en **Configurar ----[mla, mlb]----cuotas----------------[mlm]----meses------------**.
-4. Activa la opción **Ofrecer MSI con tarjeta de crédito** y luego elige hasta cuantos meses quieres ofrecer.
-5. Después de configurar las opciones ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses, ve a tu tienda en Tiendanube.
-6. En el Panel Administrativo de tu tienda, accede a Mis aplicaciones.
-7. Localiza el plugin de Mercado Pago en la lista de aplicaciones y haz clic en **Acciones > Configurar**.
-8. En la lista de medios de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración**.
-9. Desciende hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
-10. En la pantalla correspondiente, localiza el medio de pago deseado y haz clic en **Configurar**.
-11. Por último, haz clic en **Sincronizar** para que ----[mlm]----el financiamiento------------ ----[mla, mlb]----la financiación------------ configurado se sincronice con tu tienda.
+Dentro de tu cuenta de Mercado Pago, puedes consultar y configurar el número de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin interés que deseas ofrecer a tus clientes. En esta opción, tus clientes pueden comprar en ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin interés, y tú asumes la tasa de ----[mlm]----financiamiento------------ ----[mla, mlb]----financiación------------.
 
 > WARNING
 >
-> Atención
+> Attención
 >
-> Siempre que se cambien las configuraciones de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses, será necesario **sincronizar** los cambios con tu tienda.
+> Ten en cuenta que la cantidad de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses que elijas aplicará tanto para pagos con tarjeta desde el [Checkout Pro](/developers/es/docs/nuvemshop/payment-configuration/checkout-pro) como desde el [----[mlm, mla]----Checkout API.------------ ----[mlb]----Checkout Transparente.------------](/developers/es/docs/nuvemshop/payment-configuration/checkout-api)
+
+----[mlm]----
+Para configurar meses sin intereses en tu tienda, sigue estos pasos:
+
+1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. En el menú de tu cuenta de Mercado Pago, selecciona **Tu negocio > Comisiones y MSI**. 
+3. En la parte superior de la pantalla, selecciona **Checkout**.
+4. Ingresa a la pestaña “Por ofrecer MSI” y, al lado de “MSI con tarjeta de crédito”, selecciona **Ofrecer**.
+5. **Activa el botón** que está al lado de “Ofrecer MSI con tarjeta de crédito”.
+6. Elige el máximo de MSI que quieras ofrecer a tus clientes y ¡listo!
+
+------------
+----[mla, mlb]----
+Para configurar cuotas sin interés en tu tienda, seguí estos pasos:
+
+1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
+2. En el menú de tu cuenta de Mercado Pago, seleccioná **Tu negocio > Costos y cuotas**. 
+3. En la parte superior de la pantalla, seleccioná **Checkout**.
+4. Ingresá a la pestaña “Por ofrecer cuotas” y, al lado de “Cuotas sin interés”, seleccioná **Ofrecer**.
+5. **Activá el botón** que está al lado de “Ofrecer cuotas sin interés”.
+6. Elegí el máximo de cuotas que quieras ofrecer a tus clientes y ¡listo! 
+
+------------
