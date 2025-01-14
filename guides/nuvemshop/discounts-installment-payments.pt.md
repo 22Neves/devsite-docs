@@ -118,8 +118,22 @@ Na sua conta do Mercado Pago, você pode consultar e configurar o número de par
 Para configurar parcelas sem juros na sua loja, siga estes passos:
 
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-1. No menu da sua conta Mercado Pago, selecione **Seu negócio > Taxas e parcelas**.
-2. No topo da tela, selecione **Checkout**.
-3. Selecione "Parcelamento" e, em seguida, **Oferecer**.
-4. **Ative o botão** ao lado de "Oferecer parcelado vendedor".
-5. Escolha o máximo de parcelas que quer oferecer aos seus clientes e pronto!
+2. No menu da sua conta Mercado Pago, selecione **Seu negócio > Taxas e parcelas**.
+
+![discounts-mercadopago-1-pt](/images/nuvemshop/discounts-mercadopago-1-pt.png)
+
+3. No topo da tela, selecione **Checkout**.
+
+![discounts-mercadopago-2-pt](/images/nuvemshop/discounts-mercadopago-2-pt.png)
+
+4. Selecione "Parcelamento" e, em seguida, **Oferecer**.
+
+![discounts-mercadopago-3-pt](/images/nuvemshop/discounts-mercadopago-3-pt.png)
+
+5. **Ative o botão** ao lado de "Oferecer parcelado vendedor".
+
+![discounts-mercadopago-4-pt](/images/nuvemshop/discounts-mercadopago-4-pt.png)
+
+6. Escolha o máximo de parcelas que quer oferecer aos seus clientes e pronto!
+
+![discounts-mercadopago-5-pt](/images/nuvemshop/discounts-mercadopago-5-pt.png)
