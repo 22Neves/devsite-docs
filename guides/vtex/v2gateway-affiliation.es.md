@@ -12,7 +12,7 @@ Además, MercadoPagoV2 te ofrece la posibilidad de activar **3DS (3-D Secure)**,
 >
 > La afiliación de gateway MercadoPagoV1 será discontinuada. Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás [migrar a MercadoPagoV2](/developers/es/docs/vtex/how-tos/migrate-v1-v2) para continuar operando con Mercado Pago y aprovechar las ventajas que este nuevo conector ofrece. 
 
-Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a continuación:
+Para crear una **afiliación de gateway MercadoPagoV2**, sigue las instrucciones a continuación:
 
 1. En el panel de administración de tu plataforma VTEX, accede a **Pagos > Proveedores**.
 2. En la parte superior de la pantalla, haz clic en el botón **Nuevo proveedor** para crear una nueva afiliación.
