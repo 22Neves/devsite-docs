@@ -13,7 +13,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -47,7 +47,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -81,7 +81,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -115,7 +115,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -149,7 +149,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -183,7 +183,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -217,7 +217,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
