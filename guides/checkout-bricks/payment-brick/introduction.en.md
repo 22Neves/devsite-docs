@@ -217,7 +217,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image: /checkout-bricks/live-demo-payment.png
+ - image: /checkout-bricks/live-demo-payment-brick.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
