@@ -144,7 +144,7 @@ Para configurar meses sin intereses en tu tienda, sigue estos pasos:
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. En el menú de tu cuenta de Mercado Pago, selecciona **Tu negocio > Comisiones y MSI**.
 
-![discounts-mercadopago-1-mlm](/images/nuvemshop/discounts-mercadopago-1-mlm.png)
+![discounts-mercadopago-1-mlm](/images/nuvemshop/discounts-mercadopago-mlm.png)
 
 3. En la parte superior de la pantalla, selecciona **Checkout**.
 
