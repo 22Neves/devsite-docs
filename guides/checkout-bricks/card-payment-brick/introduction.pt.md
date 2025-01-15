@@ -11,7 +11,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/card-payment-brick
- - image: /checkout-bricks/live-demo-card-rebranding.png
+ - image: /checkout-bricks/live-demo-card.png
  - linkName: Demo
  - buttonDescription: Construir seu Card Payment Brick
 ---

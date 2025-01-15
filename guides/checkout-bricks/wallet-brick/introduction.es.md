@@ -11,7 +11,7 @@ live_demo_code_action:
  - title: Prueba nuestro Brick
  - description: Construye y comprueba la experiencia visual en tiempo real. Cuando esté todo listo, descarga o copia el código generado para agregarlo a tu sitio web o compartirlo con un desarrollador.
  - link: /developers/es/live-demo/wallet-brick
- - image: /checkout-bricks/live-demo-wallet-rebranding.png
+ - image: /checkout-bricks/live-demo-wallet.png
  - linkName: Demo
  - buttonDescription: Construir tu Wallet Brick
 ---
