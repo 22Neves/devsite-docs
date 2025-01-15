@@ -13,13 +13,7 @@
 ![miniapps-sandbox1](/mini-apps/miniapps-sandbox1-es.png)
 
 2. Ingresa la URL en el campo de texto y haz clic en el botón **DOWNLOAD MINIAPP ZIP**. Si no tienes tu mini app cargada en un servidor, solo debes moverla al directorio ”Downloads” usando el ADB.
-
-![miniapps-sandbox2](/mini-apps/miniapps-sandbox2-es.png)
-
 3. Después del download del contenido de la mini app, haz clic en el botón **Volver a intentar instalar de nuevo**.
-
-![miniapps-sandbox3](/mini-apps/miniapps-sandbox3-es.png)
-
 4. Haz clic en el botón **Instalar** de nuevo.
 
 ![miniapps-sandbox4](/mini-apps/miniapps-sandbox1-es.png)
