@@ -13,7 +13,7 @@ live_demo_code_action:
  - title: Prueba nuestro Brick
  - description: Construye y comprueba la experiencia visual en tiempo real. Cuando esté todo listo, descarga o copia el código generado para agregarlo a tu sitio web o compartirlo con un desarrollador.
  - link: /developers/es/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-rebranding.png
  - linkName: Demo
  - buttonDescription: Construir tu Payment Brick
 ---
