@@ -32,11 +32,11 @@ Puedes personalizar estas configuraciones según tus necesidades, como:
 3. En la lista de métodos de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración** para definir las configuraciones a continuación.
 
 ----[mlb]----
-![discounts mlb](/images/nuvemshop/discounts-mlb.png)
+![discounts mlb](/images/nuvemshop/discounts-admin-mlb.png)
 
 ------------
 ----[mlm, mla]----
-![discounts all](/images/nuvemshop/discounts-all.png)
+![discounts all](/images/nuvemshop/discounts-admin-all.png)
 
 ------------
 ----[mlm, mla]----
@@ -116,15 +116,15 @@ También puedes configurar las experiencias de ----[mlm]----financiamiento------
 > Siempre que se cambien las configuraciones de ----[mla, mlb]----cuotas----------------[mlm]----meses------------ sin intereses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+![discounts checkout-api mlb](/images/nuvemshop/discounts-checkout-api-mlb.png)
 
 ------------
 ----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+![discounts checkout-api mlm](/images/nuvemshop/discounts-checkout-api-mlm.png)
 
 ------------
 ----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+![discounts checkout-api mla](/images/nuvemshop/discounts-checkout-api-mla.png)
 
 ------------
 

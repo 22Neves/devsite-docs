@@ -17,11 +17,11 @@ Você pode personalizar essas configurações de acordo com suas necessidades, s
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração** para definir as configurações abaixo.
 
 ----[mlb]----
-![discounts mlb](/images/nuvemshop/discounts-mlb.png)
+![discounts mlb](/images/nuvemshop/discounts-admin-mlb.png)
 
 ------------
 ----[mlm, mla]----
-![discounts all](/images/nuvemshop/discounts-all.png)
+![discounts all](/images/nuvemshop/discounts-admin-all.png)
 
 ------------
 ----[mlm, mla]----
@@ -93,15 +93,15 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 > Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
 
 ----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+![discounts checkout-api mlb](/images/nuvemshop/discounts-checkout-api-mlb.png)
 
 ------------
 ----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+![discounts checkout-api mlm](/images/nuvemshop/discounts-checkout-api-mlm.png)
 
 ------------
 ----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+![discounts checkout-api mla](/images/nuvemshop/discounts-checkout-api-mla.png)
 
 ------------
 
