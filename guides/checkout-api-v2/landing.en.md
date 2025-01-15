@@ -43,14 +43,14 @@ bullet_section_with_media:
  - benefit_message: Save cards used by customers for future payments and increase sales chances.
  - benefit_title: Different payment methods
  - benefit_message: It is possible to offer all available payment methods or just the ones that you think are necessary.
- - image: /api/api-integration-introduction-v1.png
+ - image: /api/landing.png
 ---
 ---
 bullet_section_with_media:
  - type: reverse
  - title: Eligible for PCI SAQ A process
  - message: We guarantee the confidentiality, availability and integrity of all our processes following the best market practices so that you can use all our products with maximum security.
- - image: /api/api-integration-introduction-v2-en.png
+ - image: /api/landing-en.png
 ---
 
 

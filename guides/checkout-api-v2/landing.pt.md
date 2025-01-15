@@ -42,14 +42,14 @@ bullet_section_with_media:
  - benefit_title: Diversos meios de pagamento
  - benefit_message: É possível oferecer todos os meios de pagamento disponíveis ou apenas os que achar necessário.
  - benefit_title: Segurança em cada transação
- - image: /api/api-integration-introduction-v1.png
+ - image: /api/landing.png
 ---
 ---
 bullet_section_with_media: 
  - type: reverse
  - title: Elegível a processo de PCI SAQ A
  - message: Garantimos a confidencialidade, disponibilidade e integridade de todos os nossos processos seguindo as melhores práticas do mercado para que você possa utilizar todos os nossos produtos com o máximo de segurança.
- - image: /api/api-integration-introduction-v2-pt.png
+ - image: /api/landing-pt.png
 ---
 
 

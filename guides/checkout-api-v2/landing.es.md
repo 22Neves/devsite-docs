@@ -41,14 +41,14 @@ bullet_section_with_media:
  - benefit_message: Guarda los datos de las tarjetas utilizadas por los clientes para futuros pagos y aumenta tus posibilidades de venta.
  - benefit_title: Múltiples medios de pago
  - benefit_message: Puedes ofrecer todos los medios de pago disponibles o únicamente aquellos que consideres necesarios.
- - image: /api/api-integration-introduction-v1.png
+ - image: /api/landing.png
 ---
 ---
 bullet_section_with_media: 
  - type: reverse
  - title: Elegibilidad en el proceso de PCI SAQ A.
  - message: Aseguramos la confidencialidad, disponibilidad e integridad de todos nuestros procesos siguiendo las mejores prácticas del mercado para que puedas utilizar todos nuestros productos de forma segura.
- - image: /api/api-integration-introduction-v2-es.png
+ - image: /api/landing-es.png
 ---
 
 --- mini_landing_separator ---
