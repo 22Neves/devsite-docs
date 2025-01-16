@@ -2697,7 +2697,7 @@
                     "pt": "Criar pagamento",
                     "es": "Crear pago"
                 },
-                "userCases": [
+                "userCases": [ 
                     {
                         "name": {
                             "en": "Create payment with visa",
