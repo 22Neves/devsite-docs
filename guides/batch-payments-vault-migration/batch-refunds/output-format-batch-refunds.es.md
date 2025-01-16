@@ -14,5 +14,5 @@ sequential_order;external_reference;amount;refund_status;refund_detail;payment_i
 | `sequential_order` | Orden del archivo en relación al archivo de entrada. |
 | `external_reference` | Identificador utilizado para la conciliación del pago en el sistema del vendedor. |
 | `refund_status` | Estado del reembolso. |
-| `refund_detail` | Detalle del reembolso. Algunos de los valores son:<ul><li>* Los datos no están separados con el formato correcto.</li><li>* Esta columna no pudo ser procesada.</li><li>* Los datos en esta columna son obligatorios.</li><li>* El monto ingresado es inválido.</li><li>* No fue posible procesar el reembolso.</li><li>* La `external_reference` ingresada es inválida.</li><li>|
+| `refund_detail` | Detalle del reembolso. Algunos de los valores son:<br/>1. Los datos no están separados con el formato correcto.<br/>2. Esta columna no pudo ser procesada.3. Los datos en esta columna son obligatorios.<br/>4. El monto ingresado es inválido.<br/>5. No fue posible procesar el reembolso.<br/>6. La `external_reference` ingresada es inválida. |
 | `payment_id` | Identificador único del pago. |
