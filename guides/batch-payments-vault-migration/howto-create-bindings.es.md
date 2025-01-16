@@ -1,4 +1,4 @@
-# Como crear las vinculaciones
+# Cómo crear las vinculaciones
 
 Existen dos maneras de establecer las vinculaciones: una para aquellos que cuentan con un equipo de desarrollo dedicado y otra para aquellos que no cuentan con ese soporte.
 
