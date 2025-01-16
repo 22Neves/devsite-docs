@@ -19,7 +19,7 @@ payment_id;external_reference;amount
 |---|---|
 | payment_id | ID identificador del pago. |
 | external_reference | ID para la conciliación del reembolso en el sistema del vendedor. |
-| amount | Monto a ser cobrado. Este campo es validado de acuerdo con la moneda local especificada por el vendedor.<ul><li>Ejemplo:</li><li>Para vendedores de Argentina, el campo debe ser separado por “,” (coma) en los decimales.</li><li>Para vendedores de México, el campo debe ser separado por “.” (punto) en los decimales.</li></ul> |
+| amount | Monto a ser cobrado. Este campo es validado de acuerdo con la moneda local especificada por el vendedor. Ejemplo:<br/>Para vendedores de Argentina, el campo debe ser separado por “,” (coma) en los decimales.<br/>Para vendedores de México, el campo debe ser separado por “.” (punto) en los decimales. |
 
 ## Posibles errores de carga o procesamiento
 

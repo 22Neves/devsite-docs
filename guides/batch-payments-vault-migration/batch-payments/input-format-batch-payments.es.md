@@ -32,7 +32,7 @@ external_reference;card_id;payer_id;amount;reason;echo_data;soft_descriptor
 | amount | - | Valor a ser cobrado. Este campo es validado de acuerdo con la moneda local especificada por el vendedor. <ul><li>Ejemplo:</li><li>Para vendedores de Argentina, el campo debe ser separado por “,” (coma) en los decimales.</li><li>Para vendedores de México, el campo debe ser separado por “.” (punto) en los decimales.</li></ul> |
 | `reason` | - | Opcional. Detalle o explicación sobre el cobro. |
 | `echo_data` | - | Opcional. Información adicional que no será utilizada, pero que puede ser enviada por el vendedor. |
-| `soft_descriptor` | Acepta solo caracteres alfanuméricos. | Opcional. Descripción que se mostrará en la factura del banco emisor de la tarjeta del cliente. Si se completa, el campo acepta solo caracteres alfanuméricos. De lo contrario, el pago no será procesado y el informe indicará la rechazada con el mensaje: “El soft_descriptor ingresado es inválido”. El campo tiene un límite de 50 caracteres. |
+| `soft_descriptor` | Acepta sólo caracteres alfanuméricos. | Opcional. Descripción que se mostrará en la factura del banco emisor de la tarjeta del cliente. Si se completa, el campo acepta solo caracteres alfanuméricos. De lo contrario, el pago no será procesado y el informe indicará la rechazada con el mensaje: “El soft_descriptor ingresado es inválido”. El campo tiene un límite de 50 caracteres. |
 
 ## Posibles errores de carga o procesamiento
 
