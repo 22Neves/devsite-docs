@@ -18,6 +18,5 @@ sequential_order,external_reference,amount,reason,echoData,payment_status,paymen
 | `reason` | Detalle o explicación sobre el cobro. |
 | `echo_data` | Información adicional que no se utiliza, pero que puede ser enviada por el vendedor. |
 | `payment_status` | Estado actual del pago. |
-| `payment_detail` | Detalles del pago para casos no cobrados. Algunos de los valores son:<ul><li>1. Los datos no están separados con el formato correcto.</li><li>2. Esta columna no pudo ser procesada.</li><li>3. Los datos en esta columna son obligatorios.</li><li>4. Los datos de la tarjeta no pudieron ser procesados.</li><li>5. El `customer_id` o `card_id` era inválido.</li><li>6. El monto ingresado es inválido.</li><li>7. La tarjeta está vencida.</li><li>8. No fue posible procesar el pago.</li><li>9. El soft descriptor ingresado es inválido.</li><li>10. La external_reference ingresada es inválida.</li></ul> |
-
+| `payment_detail` | Detalles del pago para casos no cobrados. Algunos de los valores son:<br/>Los datos no están separados con el formato correcto.<br/>Esta columna no pudo ser procesada.<br/>Los datos en esta columna son obligatorios.<br/>Los datos de la tarjeta no pudieron ser procesados.<br/>El `customer_id` o `card_id` era inválido.<br/>El monto ingresado es inválido.<br/>La tarjeta está vencida.<br/>No fue posible procesar el pago.<br/>El soft descriptor ingresado es inválido.<br/>La external_reference ingresada es inválida. |
 
