@@ -1,20 +1,20 @@
 ---
 content_section_with_media:
- - title: Planes de suscripción
- - message: Los planes de suscripción son una forma fácil y sin integración de recibir pagos recurrentes. Crea un plan de suscripción, cobra de forma automática y obtén el dinero en el momento.
+ - title: Planos de Assinatura
+ - message: Os planos de assinatura são uma maneira fácil e sem integração de receber pagamentos recorrentes. Crie um plano de assinatura, cobre automaticamente e receba o dinheiro na hora.
  - media_image: /images/subscriptions/mini-landing-pt.png
  - highlight_countries: mla, mlb, mlc, mco, mlm, mpe, mlu
- - country_title: Disponibilidad por país
+ - country_title: Disponibilidade por País
 ---
 ---
 horizontal_cards_section:
- - title: Ventajas
+ - title: Vantagens
  - type: reversed
- - message: Gestiona pagos recurrentes desde la app o web de Mercado Pago.
- - benefit_title: Seguridad para tu dinero
- - benefit_message: Los cobros de las suscripciones son gestionados a través de Mercado Pago.
- - benefit_title: No requiere integración
- - benefit_message: Crea los planes de suscripción por celular o computadora en Mercado Pago. 
- - benefit_title: Comunicación clara
- - benefit_message: Notificamos a los clientes los cambios en la suscripción y los pagos pendientes.
+ - message: Gerencie pagamentos recorrentes pelo app ou site do Mercado Pago.
+ - benefit_title: Segurança para seu dinheiro
+ - benefit_message: As cobranças das assinaturas são gerenciadas através do Mercado Pago.
+ - benefit_title: Não requer integração
+ - benefit_message: Crie planos de assinatura pelo celular ou computador no Mercado Pago. 
+ - benefit_title: Comunicação clara
+ - benefit_message: Notificamos aos clientes sobre as mudanças na assinatura e os pagamentos pendentes.
 ---
