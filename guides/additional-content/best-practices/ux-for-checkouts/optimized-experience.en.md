@@ -114,8 +114,22 @@ Add a fixed **summary component** or a direct access to the shopping cart that s
 
 Although most users review their purchase at the end, they feel more secure if they can control what they are doing throughout the process.
 
+----[mlc]----
 ![en da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-en.png)
+
+------------
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![en da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-en.gif)
+
+------------
 
 Also, before finalizing the purchase, allow your users to **review** the entire process and the final price. For this, add a confirmation or review page, prior to making the payment, that includes a summary of all the decisions made, all the information uploaded and the detail of the total to pay. It is important to give the possibility to edit any of the data from there, without the need to go back to the previous steps.
 
+----[mlc]----
 ![en da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-en.png)
+
+------------
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![en da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-en.gif)
+
+------------
