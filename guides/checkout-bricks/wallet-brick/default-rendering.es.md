@@ -6,7 +6,7 @@ Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos
 >
 > Nota
 >
-> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/wallet.md).
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
 ## Configurar el Brick
 
