@@ -444,7 +444,7 @@
             "in": "path",
             "description": {
               "en": "Action ID returned in the response to the request made for its creation.",
-              "pt": "ID da ação, retornado na resposta à solicitação feita para sua criação.",
+              "pt": "ID da ação, retornado na resposta à solicitação feita para a sua criação.",
               "es": "ID de la acción, devuelto en la respuesta a la solicitud realizada para su creación."
             },
             "required": true,
@@ -457,9 +457,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Éxito",
-              "pt": "Sucesso",
-              "en": "Success"
+              "es": "Éxito.",
+              "pt": "Sucesso.",
+              "en": "Success."
             },
             "content": {
               "application/json": {
@@ -479,17 +479,17 @@
                       "type": "string",
                       "example": "print",
                       "description": {
-                        "en": "Action type",
-                        "pt": "Tipo de ação",
-                        "es": "Tipo de acción"
+                        "en": "Action type.",
+                        "pt": "Tipo de ação.",
+                        "es": "Tipo de acción."
                       },
                       "enum": [
                         {
                           "title": "print",
                           "description": {
-                            "en": "Print action created for Point",
-                            "pt": "Ação de impressão criada para Point",
-                            "es": "Acción de impresión creada para Point"
+                            "en": "Print action created for Point.",
+                            "pt": "Ação de impressão criada para Point.",
+                            "es": "Acción de impresión creada para Point."
                           }
                         }
                       ]
@@ -498,9 +498,9 @@
                       "type": "string",
                       "example": "ext_ref_1234",
                       "description": {
-                        "en": "It is the external reference of the action, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
-                        "pt": "É a referência externa da ação, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
-                        "es": "Es una referencia externa de la acción, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                        "en": "The external reference of the action is assigned at the time of creation. The maximum allowed limit is 64 characters, and acceptable characters include uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                        "pt": "A referência externa da ação é atribuída no momento da sua criação. O limite máximo permitido é de 64 caracteres, sendo que são aceitas letras maiúsculas e minúsculas, números, além dos símbolos hífen (-) e sublinhado (_).",
+                        "es": "La referencia externa de la acción se asigna en el momento de la creación. El límite máximo permitido es de 64 caracteres, y se aceptan letras mayúsculas y minúsculas, números, así como los símbolos guion (-) y guion bajo (_)."
                       }
                     },
                     "status": {
@@ -547,9 +547,9 @@
                         {
                           "title": "failed",
                           "description": {
-                            "en": "An error occurred in the processing of the action. It may be due to sending incorrect data, or another issue related with the action type, or the machine",
+                            "en": "An error occurred during the processing of the action. This may have been caused by incorrect data submission, an issue related to the type of action, or a problem with the machine.",
                             "es": "Se produjo un error en el procesamiento de la acción. Puede deberse al envío de datos incorrectos o a otro problema relacionado con el tipo de acción, o el dispositivo.",
-                            "pt": "Ocorreu um erro no processamento da ação. Pode ser devido ao envio de dados incorretos, ou outro problema relacionado ao tipo de ação, ou à maquininha."
+                            "pt": "Se produjo un error durante el procesamiento de la acción. Esto puede haber sido causado por el envío de datos incorrectos, un problema relacionado con el tipo de acción o un inconveniente con la máquina."
                           }
                         }
                       ]
@@ -588,9 +588,9 @@
                         {
                           "title": "unauthorized",
                           "description": {
-                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
-                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la peticion enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "en": "The value sent as the Access Token is incorrect. Please check and try sending the request again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifica y vuelve a enviar la solicitud con el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Por favor, verifique e tente enviar a solicitação novamente com o valor correto."
                           }
                         }
                       ]
@@ -682,7 +682,7 @@
             "in":"path",
             "description":{
               "en": "ID of the action that is being cancelled. This value is returned in the response to the Create action request.",
-              "pt": "ID da ação a ser cancelada. Esse valor é retornado na resposta à requisição Criar açáo.",
+              "pt": "ID da ação a ser cancelada. Esse valor é retornado na resposta à requisição Criar ação.",
               "es": "ID de la acción a cancelar. Este valor es devuelto en la respuesta a la petición Crear acción."
             },
             "required":true,
@@ -709,9 +709,9 @@
         "responses": {
           "204": {
             "description": {
-              "en": "Success - No Content",
-              "es": "Éxito - Sin contenido",
-              "pt": "Sucesso - Sem Conteúdo"
+              "en": "Success - No Content.",
+              "es": "Éxito - Sin contenido.",
+              "pt": "Sucesso - Sem Conteúdo."
             }
           },
           "400": {
@@ -768,9 +768,9 @@
                         {
                           "title": "unauthorized",
                           "description": {
-                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
-                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la peticion enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "en": "The value provided as the Access Token is incorrect. Please check and resubmit the request with the correct value.",
+                            "es": "El valor proporcionado como Access Token es incorrecto. Por favor, verifica y vuelve a enviar la solicitud con el valor correcto.",
+                            "pt": "O valor fornecido como Access Token está incorreto. Por favor, verifique e envie a solicitação novamente com o valor correto."
                           }
                         }
                       ]
@@ -897,9 +897,9 @@
       "config_response": {
         "type": "object",
         "description": {
-          "en": "Action type configuration",
+          "en": "Action type configuration.",
           "pt": "Configuração do tipo de ação.",
-          "es": "Configuración del tipo de acción"
+          "es": "Configuración del tipo de acción."
         },
         "properties": {
           "point": {
@@ -922,9 +922,9 @@
               "subtype": {
                 "type": "string",
                 "description": {
-                  "en": "Identifier of the action subtype that will be created for the Point. If the action is \"print\" you must choose between two values: \"invoice\" for xml that represents electronic invoices, and \"custom\" for a customized printing.",
-                  "es": "Identificador del subtipo de acción que se creará para el Punto. Si la acción es \"imprimir\" se debe elegir entre dos valores: \"invoice\" para xml que represente facturas electrónicas, y \"custom\" para una impresión personalizada.",
-                  "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre dois valores: \"invoice\" para xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
+                  "en": "Identifier of the action subtype that will be created for the Point. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, and \"custom\" for a customized printing.",
+                  "es": "Identificador del subtipo de acción que se creará para Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, y \"custom\" para una impresión personalizada.",
+                  "pt": "Identificador do subtipo de ação que será criado para Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
                 },
                 "example": "invoice",
                 "required": true,
@@ -932,9 +932,9 @@
                   {
                     "title": "invoice",
                     "description": {
-                      "en": "Identifier of the subtype related to invoices, it supports an xml that must be compliant with the invoice issuer.",
-                      "pt": "Identificador do subtipo relacionado às notas fiscais, suporta um xml que deve estar em conformidade com o emissor da nota fiscal.",
-                      "es": "Identificador del subtipo relacionado con facturas, soporta un xml que debe ser conforme con el emisor de la factura."
+                      "en": "Identifier of the subtype related to invoices, it supports an .xml that must be compliant with the invoice issuer.",
+                      "pt": "Identificador do subtipo relacionado às notas fiscais, suporta um .xml que deve estar em conformidade com o emissor da nota fiscal.",
+                      "es": "Identificador del subtipo relacionado con facturas, soporta un .xml que debe ser conforme con el emisor de la factura."
                     }
                   },
                   {
@@ -942,7 +942,7 @@
                     "description": {
                       "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to realize a printing on the Point.",
                       "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las etiquetas admitidas para poder realizar una impresión en el Point.",
-                      "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão no Point."
+                      "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão na Point."
                     }
                   }
                 ]
