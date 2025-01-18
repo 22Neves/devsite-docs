@@ -24,7 +24,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.png)
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-es.gif)
 
 > WARNING
 >
@@ -59,7 +59,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.png)
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
 
 > WARNING
 >
@@ -94,7 +94,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.png)
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.gif)
 
 > WARNING
 >
@@ -129,7 +129,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 > WARNING
 >
@@ -164,7 +164,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 > WARNING
 >
@@ -199,7 +199,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
 
 > WARNING
 >

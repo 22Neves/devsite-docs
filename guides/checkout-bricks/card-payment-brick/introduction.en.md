@@ -20,24 +20,12 @@ live_demo_code_action:
 
 The Card Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details. The layout offers the elements detailed below.
 
-----[mla]----
-![cardform](checkout-bricks/card-form-mla-en.png)
-
-------------
-----[mlb]----
-![cardform](checkout-bricks/card-form-mlb-en.png)
-
-------------
 ----[mlc]----
 ![cardform](checkout-bricks/card-form-mlc-en.png)
 
 ------------
-----[mlm]----
-![cardform](checkout-bricks/card-form-mlm-en.png)
-
-------------
-----[mpe, mlu, mco]----
-![cardform](checkout-bricks/card-form-all-en.png)
+----[mlb, mla, mlm, mpe, mlu, mco]----
+![cardform](checkout-bricks/card-form-en.png)
 
 ------------
 
