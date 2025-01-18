@@ -18,11 +18,25 @@ Você poderá obter as suas credenciais de produção de duas maneiras:
 
 1. Accesando [**Suas integrações > "Sua aplicação" > Produção > Credenciais de produção**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) a partir do [Painel do desenvolvedor](/developers/pt/docs/checkout-bricks/additional-content/your-integrations/dashboard). 
 
+----[mlc]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
+
+------------
 
 2. Através da sua conta do Mercado Pago, acesse [**Seu negócio > Configurações > Credenciais**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
+----[mlc]----
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
+
+------------
 
 Ao acessar suas credenciais de produção, serão exibidos os seguintes pares de credenciais: **Public Key e Access Token**, além de **Client ID e Client Secret**.
 
@@ -77,7 +91,14 @@ Para obter suas credenciais de teste, **desde que estas estejam disponíveis par
 >
 > Essas credenciais **não estão disponíveis para todos os produtos do Mercado Pago**, portanto, só estarão ativas nas aplicações em que você selecionou um produto que as exija.
 
+----[mlc]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.png)
+
+------------
 
 Se ao criar um aplicativo você selecionou um produto do Mercado Pago **que não requer credenciais de teste**, a seguinte tela será exibida:
 
@@ -98,7 +119,14 @@ Ao receber assistência na integração ou configuração dos seus canais de pag
 3. Uma vez selecionadas as credenciais, vá para a seção *Compartilhar as credenciais com um desenvolvedor* e clique no botão **Compartilhar credenciais**.
 4. Insira o endereço de e-mail de quem deseja conceder o acesso. Lembre-se de que é obrigatório que o endereço de e-mail esteja associado a uma conta do Mercado Pago.
 
+----[mlc]----
 ![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-panel-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-panel-pt.gif)
+
+------------
 
 **Através do Mercado Pago:**
 
@@ -108,7 +136,14 @@ Ao receber assistência na integração ou configuração dos seus canais de pag
 4. Uma vez selecionadas as credenciais, vá para a seção *Compartilhar as credenciais com um desenvolvedor* e clique no botão **Compartilhar credenciais**.
 5. Selecione o aplicativo do qual deseja compartilhar suas credenciais e insira o endereço de e-mail de quem deseja conceder acesso. Lembre-se de que o endereço de e-mail deve obrigatoriamente estar associado a uma conta do Mercado Pago.
 
+----[mlc]----
 ![Compartilhar credenciais no Mercado Pago](/images/credentials/share-credentials-mp-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![Compartilhar credenciais no Mercado Pago](/images/credentials/share-credentials-mp-pt.gif)
+
+------------
 
 > WARNING
 >
@@ -128,4 +163,11 @@ Se por motivos de segurança ou qualquer outra razão relevante você precisar r
 >
 > Tenha em mente que se as credenciais que você renovar estiverem sendo usadas em alguma de suas integrações, elas serão afetadas e você deverá substituí-las pelas novas credenciais que obtiver após a renovação.
 
+----[mlc]----
 ![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
+
+------------
