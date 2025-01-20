@@ -69,4 +69,5 @@ Pronto, seu plano de assinatura foi cancelado permanentemente.
 Você pode gerar um relatório dos assinantes e baixá-lo. Para fazer isso, siga estes passos:
 1. Vá até [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que está localizado no seu painel do Mercado Pago, dentro do menu lateral esquerdo.
 2. Clique na aba **Assinantes** que fica na parte superior do painel.
-3. Clique no botão **Baixar Relatório** que fica na parte central direita do painel de assinantes.
+3. Utilize os diferentes filtros para limitar as informações que você deseja obter em seu relatório. Você pode filtrar os assinantes por aqueles que foram **pausados**, **cancelados**, com **problemas na cobrança** ou que **foram cobrados com sucesso**. Você também pode filtrar por diferentes **planos de assinatura** e por um **período personalizado de datas**.
+4. Clique no botão **Baixar Relatório** que fica na parte central direita do painel de assinantes.
