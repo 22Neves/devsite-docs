@@ -31,7 +31,7 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 - [Cancelar order por ID](/developers/es/reference/order/in-person-payments/point/cancel-order/post): Permite cancelar una order creada para Mercado Pago Point utilizando el ID de referencia obtenido en la respuesta a su creación.
 - [Reembolsar una order](/developers/es/reference/order/in-person-payments/point/refund-order/post): Permite crear una devolución total de una transacción de pago asociada a una order para Mercado Pago Point.
 
-## Configurar impresiones
+## Configuración de impresiones
 
 La API de Impresiones ofrece una solución práctica para conectar sus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tenga configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
 
@@ -39,7 +39,7 @@ Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e i
 
 ### Impressão de faturas e boletos eletrônicos
 
-El sistema admite los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
+Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
 
 | Tipo de documento                     | Descripción                                                                                     |
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -66,7 +66,7 @@ Para configurar la integración de las impresiones, utilice la API para gestiona
    - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post)  
 Aguarde hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el “botón verde” para buscar el intento manualmente.
 
-### _Custom tags_
+### Custom tags
 
 Las *custom tags* permiten personalizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulte las diferentes tags disponibles, sus funciones y ejemplos de uso:
 
