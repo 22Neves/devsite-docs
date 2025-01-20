@@ -4,21 +4,21 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Mercado 
 
 Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los siguientes pasos:
 
-1. Dirígete a tu tienda [Shopify](https://accounts.shopify.com/store-login).
-2. En el panel de administración de la tienda, haz clic en **Configuración** en la esquina inferior izquierda de la página.
+1. Ve al panel de administración de la tienda [Shopify](https://accounts.shopify.com/store-login).
+2. Haz clic en **Configuración**.
 
 ![installation chopro 1](/images/shopify/installation-chopro-1-es.png)
 
-3. Una vez allí, selecciona la opción **Pagos** en el menú del lado izquierdo de la página.
+3. En el menú, haz click en **Pagos**.
 4. En "Formas de pago admitidas", haz clic en **Agregar formas de pago**.
 
 ![installation chopro 2](/images/shopify/installation-chopro-2-es.png)
 
-5. Selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Mercado Pago Checkout Pro".
+5. En la pestaña **Buscar por proveedor**, busca la aplicación "Mercado Pago Checkout Pro" y selecciónala.
 
 ![installation chopro 3](/images/shopify/installation-chopro-3-es.png)
 
-6. Una vez localizada, selecciónala y haz clic en **Instalar**.
+6. Después de seleccionarla, haz clic en **Instalar**.
 
 ![installation chopro 4](/images/shopify/installation-chopro-4-es.png)
 
@@ -26,7 +26,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ![installation chopro 5](/images/shopify/installation-chopro-5-es.png)
 
-8. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago con tu tienda utilizando tus credenciales.
+8. Haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago a la tienda a través de tus credenciales.
 
 ![installation chopro 6](/images/shopify/installation-chopro-6-es.png)
 
@@ -34,27 +34,40 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 >
 > Importante
 >
-> Las credenciales son responsables de identificar la cuenta receptora de los pagos que recibirás en tu tienda. Si no ingresas tus credenciales en el panel de administración de la tienda, se te redirigirá automáticamente para configurar este paso. **Recuerda que la activación de los métodos de pago solo será posible después de ingresar con éxito tus credenciales**.
+> Las credenciales identifican la cuenta que recibirá los pagos realizados en tu tienda. Esto significa que no podrás activar los métodos de pago hasta que ingreses tus credenciales.
 
-9. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una, consulta la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) para aprender cómo hacerlo.
-10. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
+![installation cards 5](/images/shopify/installation-chopro-6-2-es.png)
+
+9. En una nueva pestaña de tu navegador, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación para copiar tus credenciales. Si aún no has creado una aplicación, accede a la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) y aprende cómo hacerlo.
+10. Haz clic en **Credenciales de producción**. Las credenciales pueden estar ocultas por motivos de seguridad. Para verlas, localiza el ícono de ojo y haz clic en él. Copia las credenciales (Public Key y Access Token). 
 
 ![installation chopro 7](/images/shopify/installation-chopro-7-es.png)
-
-11. Introduce tus credenciales de producción `access_token` y `public_key` en los campos correspondientes, asegurándote de **no invertir los campos al copiar y pegar las credenciales**.
-
-![Agregar forma de pago](/images/shopify/add-credentials-es.png)
 
 > NOTE
 >
 > Nota
 >
-> Renueva tus credenciales según sea necesario, consultando la [documentación](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials) correspondiente como guía. Después de la renovación, es esencial actualizarlas en el panel de Shopify. Recuerda: al cambiar la contraseña, **es necesario renovar tus credenciales**. Para ello, elimina las credenciales antiguas del panel, copia las nuevas e ingrésalas en el panel administrativo de la tienda.
+> Alternativamente, también puedes hacer clic en el enlace "[consultarlas y copiarlas](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)" en el admin de Shopify para copiar tus credenciales.
+
+11. Regresa a la configuración de tu tienda Shopify e ingresa tus credenciales de producción (Public Key y Access Token) en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
+
+![installation cards 5](/images/shopify/installation-cards-5-es.png)
 
 12. Haz clic en **Guardar credenciales**.
-13. Para completar la instalación, selecciona **Activar**.
 
-![installation chopro 8](/images/shopify/installation-chopro-8-es.png)
+> NOTE
+>
+> Nota
+>
+> Una vez configuradas, las credenciales no serán solicitadas en futuras instalaciones de las aplicaciones de Mercado Pago en Shopify. Sin embargo, si cambias la contraseña de tu cuenta de Shopify, será necesario **renovarlas**. Para ello, sigue las instrucciones en la documentación de [Buenas prácticas de credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, completa nuevamente los campos de Public Key y Access Token, como se indica en esta documentación.
+
+13. Por último, haz clic en **Verificar activación**.
+
+![installation chopro 9](/images/shopify/installation-chopro-9-es.png)
+
+14. Ve a la sección de **Configuraciones** y haz clic en **Activar** para finalizar la instalación.
+
+![installation chopro 9](/images/shopify/installation-chopro-9-2-es.png)
 
 > En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. 
 
