@@ -61,6 +61,6 @@ Desinstalar é igualmente fácil: basta **pressionar o ícone por alguns segundo
 
 ------------
 ----[mlb, mla, mlm, mpe, mlu, mco]----
-![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.gif)
+![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.gif) 
 
 ------------
