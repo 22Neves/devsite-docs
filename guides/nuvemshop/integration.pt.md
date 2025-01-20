@@ -25,8 +25,6 @@ Para **vincular sua conta do Mercado Pago à Nuvemshop,** siga os passos abaixo:
 3. Clique em "Configurar" e depois em "Ativar".
 4. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em "Permitir" para autorizar a conexão.
 
-![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
-
 ------------
 Feitas as configurações iniciais, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout selecionado. Veja a seção de [Configuração de pagamentos](/developers/pt/docs/nuvemshop/payment-configuration) para mais informações sobre a habilitação dos meios de pagamento em sua loja.
 

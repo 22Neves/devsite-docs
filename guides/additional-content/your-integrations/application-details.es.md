@@ -71,4 +71,11 @@ En esta sección, cuentas con una guía paso a paso para poder probar tu integra
 
 Además, cuentas con enlaces directos a la documentación correspondiente, así como con una barra de estado que te permitirá visualizar tus avances de manera sencilla.
 
-![pantalla de validación de prueba de integración](/images/dashboard/testing-validation-es.gif)
+----[mlc]----
+![pantalla de validación de prueba de integración](/images/dashboard/testing-es.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![pantalla de validación de prueba de integración](/images/dashboard/testing-es.gif)
+
+------------

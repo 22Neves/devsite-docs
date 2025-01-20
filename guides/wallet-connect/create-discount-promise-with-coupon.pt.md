@@ -7,7 +7,7 @@ A criação da promessa de desconto com cupom pré-adicionado é feita em dois p
 * Validar o cupom antes da realização do pagamento
 * Adicionar o cupom antes de prosseguir para pagamento
 
-## Validar cupom antes da realização do pagamento.
+## Validar cupom antes da realização do pagamento
 
 Para **validar um cupom antes de prosseguir com o pagamento**, é importante enviar os dados da campanha na solicitação subsequente. Esta solicitação garante que o cliente possa aproveitar o benefício do desconto antes de finalizar a compra.
 

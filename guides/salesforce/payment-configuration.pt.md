@@ -30,11 +30,6 @@ Veja como ativar cada meio de pagamento em sua loja Salesforce:
 
 Por padrão, o cartucho do Mercado Pago mostrará os tipos de pagamento em uma determinada ordem.
 
-----[mlb]----
-![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
-
-------------
-
 Caso queira alterar essa ordem, siga estas etapas.
 
 1. Em sua loja do Salesforce Commerce Cloud, vá para o menu **Ferramentas do comerciante** e clique na opção **Métodos de pagamento** encontrada no grupo de opções Pedidos. Você também pode encontrar a opção usando o mecanismo de pesquisa do menu.

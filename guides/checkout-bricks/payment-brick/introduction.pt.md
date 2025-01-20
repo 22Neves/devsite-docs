@@ -13,7 +13,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -48,7 +48,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -83,7 +83,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -118,7 +118,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -153,7 +153,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -188,7 +188,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -223,7 +223,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa e confira a experiência visual do Payment Brick em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado.
  - link: /developers/pt/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Construir seu Payment Brick
 ---
@@ -234,7 +234,7 @@ Por sua vez, nosso processador cumpre todas as garantias de segurança para ofer
 
 O layout do Payment Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-pt.gif)
+![payment-Brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-pt.png)
 
 > WARNING
 >

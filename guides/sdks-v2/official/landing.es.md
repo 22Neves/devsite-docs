@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: SDKs
  - message: Con las bibliotecas de SDKs de Mercado Pago, puedes reducir el tiempo de integración client-side y server-side.
- - media_image: /sdk/library-media-1.png
+ - media_image: /sdk/library-media1.png
 ---
 --- mini_landing_separator ---
 

@@ -11,7 +11,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/wallet-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/wallet-brick.png
+ - image: /checkout-bricks/live-demo-wallet-brick.png
  - linkName: Demo
  - buttonDescription: Construir seu Wallet Brick
 ---
@@ -19,7 +19,6 @@ live_demo_code_action:
 ## Layout 
 
 O layout do Wallet Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design.
-
 
 ![wallet-brick-theme](checkout-bricks/wallet-brick-theme-pt.png)
 

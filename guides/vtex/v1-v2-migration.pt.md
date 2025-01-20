@@ -39,8 +39,6 @@ Se você já possui uma afiliação com o gateway MercadoPagoV1, agora deverá c
 
 6. Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-pt.gif) 
-
 ## 2. Configurar meios de pagamento
 
 Se você já configurou seus meios de pagamento com a afiliação MercadoPagoV1, deverá **migrar para o MercadoPagoV2 para cada um dos meios que você disponibilizou**. O conector V2 permitirá que você ofereça os mesmos meios de pagamento e também adicione novas opções, como ----[mco]---- PSE ou------------ ----[mla, mlm, mlb]----financiamento sem cartão ou------------ pagamentos com dinheiro na conta do Mercado Pago.
@@ -51,7 +49,5 @@ Para fazé-lo, siga os passos abaixo.
 2. Selecione **Condições de Pagamento** no painel superior e escolha o meio de pagamento que deseja configurar. 
 3. Em **Processo de afiliação**, substitua MercadoPagoV1 por **MercadoPagoV2**. 
 4. Repita o processo com os demais meios de pagamento que você disponibilizou em sua plataforma.
-
-![Configure v2 in payment methods](/images/vtex/migration-payment-conditions.gif) 
 
 Ao concluir o processo, você terá configurado sua nova afiliação do gateway MercadoPagoV2 e poderá continuar operando com o Mercado Pago, aproveitando as novas vantagens que esse conector oferece.
