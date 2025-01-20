@@ -30,3 +30,59 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 - [Obtener order por ID](/developers/es/reference/order/in-person/point/get-order/get): Permite consultar toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación.
 - [Cancelar order por ID](/developers/es/reference/order/in-person-payments/point/cancel-order/post): Permite cancelar una order creada para Mercado Pago Point utilizando el ID de referencia obtenido en la respuesta a su creación.
 - [Reembolsar una order](/developers/es/reference/order/in-person-payments/point/refund-order/post): Permite crear una devolución total de una transacción de pago asociada a una order para Mercado Pago Point.
+
+## Configurar impresiones
+
+La API de Impresiones ofrece una solución práctica para conectar sus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tenga configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
+
+Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de su negocio.
+
+### Impressão de faturas e boletos eletrônicos
+
+El sistema admite los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
+
+| Tipo de documento                     | Descripción                                                                                     |
+|---------------------------------------|-------------------------------------------------------------------------------------------------|
+| Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
+| Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, teniendo validez contable y tributaria. |
+
+> WARNING
+> 
+> IMPORTANTE
+>
+> El DTE enviado debe ser compatible con los formatos definidos por el [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
+
+## Configuración de la integración
+
+> WARNING
+>
+> IMPORTANTE
+>
+> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+
+Para configurar la integración de las impresiones, utilice la API para gestionar el encolado de cada uno de los intentos, considerando las especificaciones de cada endpoint. Los endpoints disponibles son:
+   - [Crear acción del terminal](/developers/es/reference/mercado_pago_point/impressions/post)
+   - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions/get)
+   - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post)  
+Aguarde hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el “botón verde” para buscar el intento manualmente.
+
+### _Custom tags_
+
+Las *custom tags* permiten personalizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulte las diferentes tags disponibles, sus funciones y ejemplos de uso:
+
+> WARNING
+>
+> Importante
+>
+> Los _custom tags_ tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo los propios tags.
+
+| Tag        | Función                                     | Ejemplo                          |
+|------------|---------------------------------------------|----------------------------------|
+| `{b}`      | Negrita                                    | `{b}Texto en negrita{/b}`      |
+| `{w}`      | Letra grande                               | `{w}Texto en letra grande{/w}`  |
+| `{s}`      | Letra pequeña                              | `{s}Texto en letra pequeña{/s}` |
+| `{br}`     | Salto de línea                             | `{br}`                          |
+| `{left}`   | Alinear a la izquierda                     | `{left}Texto alineado a la izquierda{/left}` |
+| `{center}` | Centrar texto                              | `{center}Texto centrado{/center}` |
+| `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
+| `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
