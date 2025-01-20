@@ -1,4 +1,5 @@
 # Developer dashboard
+
 In the [Developer dashboard](/developers/panel/app), you can find the listing of your applications.
 
 Applications are different integrations contained within one or more stores. You can create an application for each solution you implement in order to keep everything organized and have better management control.

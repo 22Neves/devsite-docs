@@ -46,6 +46,4 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
 - **Desconto nos checkouts do Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts do Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 
-![Advanced settings](/images/woocomerce/advanced-settings-cards-pt.gif)
-
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.

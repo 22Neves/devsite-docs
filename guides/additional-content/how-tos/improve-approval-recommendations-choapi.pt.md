@@ -208,7 +208,7 @@ Se atente a todos os atributos disponíveis ao criar um pagamento usando o méto
  * Dados do produto,
  * Dados do envio.
 
-Existem também **campos extras** que podem ser enviados de acordo com **o ramo de atividade**. Você pode encontrar mais detalhes sobre cada setor e os dados do comprador e do shipping que recomendamos incluir em cada um deles [aqui](/developers/pt/docs/checkout-api/additional-content/industry-data).
+Existem também **campos extras** que podem ser enviados de acordo com **o ramo de atividade**. Você pode encontrar mais detalhes sobre cada setor e os dados do comprador e do _shipping_ que recomendamos incluir em cada um deles na documentação [Dados adicionais de indústria](/developers/pt/docs/checkout-api/additional-content/industry-data/intro).
 
 ## Melhorar a experiência do usuário
 

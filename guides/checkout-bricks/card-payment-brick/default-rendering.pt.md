@@ -232,4 +232,11 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
+----[mlc]----
+![cardform](checkout-bricks/card-form-mlc-pt.png)
+
+------------
+----[mlb, mla, mlm, mpe, mlu, mco]----
 ![cardform](checkout-bricks/card-form-pt.png)
+
+------------

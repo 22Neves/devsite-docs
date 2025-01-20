@@ -6,7 +6,7 @@ Before rendering the Wallet Brick, first execute the [initialization steps](/dev
 >
 > Note
 >
-> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/wallet.md).
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
 ## Configure the Brick
 

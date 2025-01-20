@@ -7,7 +7,7 @@ La creación de la promesa de descuento con cupón pre-añadido se realiza en do
 * Validar el cupón antes de realizar el pago
 * Añadir el cupón antes de proceder al pago
 
-## Validar cupón antes de realizar el pago.
+## Validar cupón antes de realizar el pago
 
 Para **validar un cupón antes de proceder con el pago**, es importante enviar los datos de la campaña en la solicitud, que asegura que el cliente pueda aprovechar el beneficio del descuento antes de finalizar la compra.
 

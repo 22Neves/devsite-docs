@@ -1,5 +1,11 @@
 # Refunds and cancellations
 
+> WARNING
+>
+> Important
+>
+> This documentation is **intended for integrators**. If you are a buyer and need to cancel or request a refund for a payment, access your Mercado Pago account, select the purchase in question, click on "Need help," and choose the refund or cancellation option.
+
 **Refunds** are transactions made when a certain charge is reversed and the amounts paid are returned to the buyer. This means that the customer will receive back the amount paid for the purchase of a certain product or service on their account or credit card statement.
 
 **Cancellations** happen when a purchase is made but the payment has not yet been approved for some reason. In this case, considering that the transaction was not processed and the establishment did not receive any amount, the purchase is canceled and there is no charge.
@@ -8,11 +14,6 @@ Although they are similar transactions, it is important to keep in mind that the
 
 In this documentation, you will find the necessary information to perform a full and partial refund, and cancel a purchase in your store.
 
-> WARNING
->
-> Important
->
-> When running the APIs referenced in this documentation, you may encounter the attribute **X-Idempotency-Key**. Sending it is mandatory to ensure the execution and re-execution of requests without side effects such as duplicate payments in refund cases. Update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests to avoid possible errors.
 
 ## Cancellations
 

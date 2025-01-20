@@ -57,8 +57,6 @@ The Shopify store will display fields requesting the buyer's personal identifica
 
 4. On the next screen, use the site's search bar to search for the word "Company". The search will return several fields that you can modify.
 
-![Values id](/images/shopify/values-id-es.gif)
-
 5. Replace the following entries with the indication of the type of personal identification your store will request according to the country where it operates----[mlb]----(for example, CPF for Brazil)------------:
 
 - **Company label**
@@ -66,3 +64,5 @@ The Shopify store will display fields requesting the buyer's personal identifica
 - **Address company blank**
 
 6. Click on **Save**.
+
+

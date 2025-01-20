@@ -21,7 +21,6 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 
 Una vez que las notificaciones sean configuradas, consulta las [acciones necesarias después de recibir una notificación](/developers/es/docs/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) para validar que las mismas fueron debidamente recibidas.
 
-
 ## Configuración a través de Tus integraciones
 
 Puedes configurar notificaciones para cada una de tus aplicaciones directamente desde [Tus integraciones](/developers/panel/app) de manera eficiente y segura. En este apartado, explicaremos cómo:
@@ -34,7 +33,6 @@ Puedes configurar notificaciones para cada una de tus aplicaciones directamente 
 > Importante
 >
 > Este método de configuración no está disponible para integraciones con ----[mla, mlb, mlu, mlc]----Código QR ni------------ Suscripciones. Para configurar notificaciones con alguna de estas dos integraciones, utiliza el método [Configuración durante la creación de un pago](/developers/es/docs/your-integrations/notifications/webhooks#configuracinalcrearpagos).
-
 
 ### 1. Indicar URLs de notificación y configurar eventos
 
