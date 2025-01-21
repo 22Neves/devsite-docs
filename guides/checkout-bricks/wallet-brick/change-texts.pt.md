@@ -4,9 +4,18 @@
 >
 > Alterar textos
 
-O Wallet Brick oferece dois níveis de leitura: o **call to action (botão)** e a **proposta de valor (Value Prop)**. Em ambos os casos, o texto pode ser customizado de acordo com as opções disponibilizadas pelo Mercado Pago. 
+----[mlc]----
+O Wallet Brick é **composto pelo botão e a proposta de valor** (`valueProp`), que pode ser customizada de acordo com as opções disponibilizadas pelo Mercado Pago. 
+
+Há dois temas disponíveis: o **default** (também usado quando nenhuma configuração for especificada) e o **dark**. A escolha do tema impacta a cor de fundo do botão, da proposta de valor e a cor das imagens de dentro do botão.
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
+O Wallet Brick oferece dois níveis de leitura: o **call to action (botão)** e a **proposta de valor** (`valueProp`). Em ambos os casos, o texto pode ser customizado de acordo com as opções disponibilizadas pelo Mercado Pago. 
 
 O _call to action_ é separado em duas partes: a ação, determinada pela propriedade `Action`, e o complemento da ação, determinado pela propriedade `Action Complement`.
+
+------------
 
 > WARNING
 >
@@ -25,11 +34,22 @@ Confira abaixo os textos disponíveis para alteração, como eles se organizam n
 
 ![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-pt.png)
 
+----[mlb, mlm, mlb]----
 | Chave | Opções disponíveis | Padrão |
 |--- |--- | --- |
 | action | pay, buy | pay |
 | actionComplement |brand, amount | brand |
 | valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits, payment_methods_logos | security_safety |
+
+------------
+----[mpe, mco, mlu, mlc]----
+| Chave | Opções disponíveis | Padrão |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| actionComplement |brand, amount | brand |
+| valueProp | practicality, security_details, security_safety, smart_option, payment_methods_logos | security_safety |
+
+------------
 
 Veja quais são os textos relacionados a cada opção:
 
@@ -57,7 +77,6 @@ Veja quais são os textos relacionados a cada opção:
 |actionComplement |brand | com Mercado Pago |
 |actionComplement |amount | Valor da compra obtido através da preferência, no formato da moeda do pagamento. |
 |valueProp |practicality | Use cartões salvos ou seu saldo em conta |
-|valueProp |convenience_all | Parcelamento com ou sem cartão |
 |valueProp |security_details | Proteção para seus dados |
 |valueProp |security_safety | Pague com segurança |
 |valueProp |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. |
@@ -98,6 +117,31 @@ Ao testar sua integração verifique se a `action`, o `actionComplement` e a `va
 
 ------------
 
+----[mlc]----
+[[[
+```javascript
+const settings = {
+    ...,
+    customization: {
+        theme: 'default',
+        customStyle: {
+            valueProp: 'practicality',
+        }
+    }
+}
+```
+```react-jsx
+const customization = {
+    theme: 'default',
+    customStyle: {
+        valueProp: 'practicality',
+    }
+};
+```
+]]]
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```javascript
 const settings = {
@@ -124,3 +168,5 @@ const customization = {
 };
 ```
 ]]]
+
+------------

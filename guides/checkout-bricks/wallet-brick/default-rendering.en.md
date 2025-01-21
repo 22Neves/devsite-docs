@@ -23,6 +23,56 @@ Before rendering the Wallet Brick, first execute the [initialization steps](/dev
 
 Create Brick's startup configuration.
 
+----[mlc]----
+[[[
+```Javascript
+const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create("wallet", "walletBrick_container", {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            theme: "default",
+            customStyle: {
+                valueProp: "practicality",
+                valuePropColor: "white",
+            },
+        },
+    });
+};
+
+renderWalletBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
+
+const onSubmit = async (formData) => {
+ // callback called when clicking on Wallet Brick
+ // this is possible because Brick is a button
+};
+
+const onError = async (error) => {
+ // callback called for all Brick error cases
+ console.log(error);
+};
+
+const onReady = async () => {
+ // Callback called when Brick is ready.
+ // Here, you can hide loadings on your website, for example.  
+};
+```
+]]]
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -68,6 +118,8 @@ const onReady = async () => {
 };
 ```
 ]]]
+
+------------
 
 > WARNING
 > 
