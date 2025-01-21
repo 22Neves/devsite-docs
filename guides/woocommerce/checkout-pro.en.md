@@ -59,8 +59,6 @@ When installing [Checkout Pro](/developers/en/docs/checkout-pro/landing), there 
 ------------
 8. In the **Maximum installments** field, select the maximum number of installments you want to offer to your customers through Mercado Pago. You can choose to offer between 1 and 24 installments.
 
-![Installments](/images/woocomerce/cho-pro-installment-es.png)
-
 To save the changes in the configuration, click on the **Save changes** button.
 
 ### Advanced settings
@@ -75,8 +73,6 @@ You can customize the options in the advanced settings section of the payment me
 - **Automatic rejection of payments without instant approval**: Activate this option to automatically reject payments that are not approved instantly. To activate it, slide the button. Keep in mind that we've already ensured security in your high-risk transactions with 3DS (3-Domain Secure), offering benefits such as higher approval rates and lower fraud risk.
 - **Discount on Mercado Pago payments**: Enter a percentage discount for customers paying with this payment method. To activate it, enter a discount percentage and check the "Activate and show this information on the Mercado Pago checkout" option.
 - **Commission on Mercado Pago payments**: Enter an additional percentage value you want to charge as a commission to customers choosing this payment method. To activate it, enter a discount percentage and check the "Activate and show this information on the Mercado Pago checkout" option.
-
-![Advanced settings](/images/woocomerce/cho-pro-advanced-settings-es.gif)
 
 To save the changes in the configuration, click on the **Save changes** button.
 

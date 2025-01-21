@@ -20,14 +20,10 @@
   - Y por último, según la configuración de tu cuenta, **elige el número de cuotas sin interés para tus pagos**.
 3. Finalmente, haz clic en “Guardar cambios”.
 
-![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
-
 ### Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
 1. Ingresa a tu [cuenta de Mercado Pago](https://www.mercadopago.com.br/business) y ve a "Tu negocio".
 2. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 3. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
-
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > Para más información, visita el [sitio oficial de Loja Integrada](https://lojaintegrada.com.br/).

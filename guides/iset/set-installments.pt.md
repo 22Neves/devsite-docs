@@ -28,8 +28,6 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 
 5. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>
 
 <!-- -->

@@ -22,7 +22,7 @@ bullet_section_with_media:
  - benefit_message: Todo o processo de compra acontece dentro do ambiente da loja online, otimizando as etapas de pagamento do comprador.
  - benefit_title: Diversos meios de pagamento
  - benefit_message: Receba pagamentos com os principais meios de pagamento aceitos no país (boleto bancário, cartão de crédito e Pix).
- - image: /yampi/landing.png
+ - image: /yampi/landing2.png
 ---
  
 --- mini_landing_separator ---

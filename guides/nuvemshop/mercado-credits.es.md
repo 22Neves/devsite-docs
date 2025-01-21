@@ -56,7 +56,7 @@ Para **configurar o Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los 
 5. En la pantalla de configuración de los checkouts, activa la opción **Cuotas sin Tarjeta de Mercado Pago**.
 6. Por último, haz clic en **Guardar cambios**.
 
-![credits](/images/nuvemshop/credits-mla.png)
+![credits](/images/nuvemshop/integration-credits-mla.png)
 
 ¡Listo! La modalidad de financiación está habilitada en tu tienda.
 
@@ -65,7 +65,7 @@ Para **configurar o Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los 
 5. En la pantalla de configuración de los checkouts, activa la opción **Meses sin Tarjeta de Mercado Pago**.
 6. Por último, haz clic en **Guardar cambios**.
 
-![credits](/images/nuvemshop/credits-mlm.png)
+![credits](/images/nuvemshop/integration-credits-mlm.png)
 
 ¡Listo! La modalidad de financiamiento está habilitada en tu tienda.
 
@@ -74,7 +74,7 @@ Para **configurar o Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los 
 5. En la pantalla de configuración de los checkouts, activa la opción **Linha de Crédito**.
 6. Por último, haz clic en **Guardar cambios**.
 
-![credits](/images/nuvemshop/credits-mlb.png)
+![credits](/images/nuvemshop/integration-credits-mlb.png)
 
 ¡Listo! La modalidad de financiamiento está habilitada en tu tienda.
 

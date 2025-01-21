@@ -20,14 +20,10 @@
   - Lastly, according to your account settings, **choose the number of interest-free monthly installments for your payments**.
 3. Finally, click “Save changes”.
 
-![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
-
 ### Set interest free installments in your Mercado Pago account
 
 1. Log in to your [Mercado Pago account](https://www.mercadopago.com.br/business) and go to “Your business”.
 2. Access the option “Settings”, navigate to “Offering interest free installments” and click “Activate”.
 3. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
-
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > For more information, visit the [official Loja Integrada site](https://lojaintegrada.com.br/).

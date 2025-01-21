@@ -61,7 +61,6 @@ To configure these payment methods, access the administration panel of your VTEX
 > The Efecty payment method is not available in the **MercadoPagoV2** connector. To process payments with this method, make sure to set the payment condition as **MercadoPagoOff**.
 
 ------------
-![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
 
 > NOTE 
 > 

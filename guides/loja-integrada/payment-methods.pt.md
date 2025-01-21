@@ -25,8 +25,6 @@ O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado 
 2. No item “Checkout Pro” alterar de “Desativado” para “Ativado”.
 3. Clique em “Salvar alterações”.
 
-![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
-
 Informe como você quer que sua loja apareça para seu cliente quando for realizar a compra:
 
 - **Nome na Fatura do Comprador**. Preencha o nome que deve aparecer na fatura do cartão do comprador (máximo de 11 caracteres).
@@ -42,8 +40,6 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 3. Informe um valor mínimo para que a plataforma apresente a opção de boleto ao comprador. Caso todos os pedidos possam ser pagos com boleto deixe o campo zerado.
 4. Caso deseje que o pagamento com boleto tenha desconto marque a opção “Usar desconto no boleto?” e informe a porcentagem de desconto no campo “Desconto aplicado”.
 5. Clique em “salvar alterações”.
-
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
 
 ## Configurar parcelamento
 
@@ -61,7 +57,5 @@ Feito isso, siga os passos abaixo para concluir a configuração em sua conta Me
 1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business) e clique em "Seu negócio".
 2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
 3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
-
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > Para mais informações, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).

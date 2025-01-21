@@ -70,5 +70,3 @@ For more details, refer to the documentation on [integration quality](/developer
 In this section, you have a step-by-step guide to test your integration, which will allow you to validate that you are meeting the necessary requirements based on the integrated product. 
 
 In addition, you have direct links to the corresponding documentation, as well as a status bar that will allow you to view your progress easily.
-
-![Validation screen for integration test](/images/dashboard/testing-validation-es.gif)

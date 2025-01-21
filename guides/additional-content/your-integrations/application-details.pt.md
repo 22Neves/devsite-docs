@@ -65,11 +65,17 @@ Como resultado dessa medição, você obterá uma pontuação que indica quão s
 
 Para saber mais detalhes, acesse a documentação sobre [qualidade de integração](/developers/pt/guides/additional-content/homologator/homologator).
 
-
 ## Teste de integração
 
 Nesta seção, você tem um passo a passo para testar sua integração, permitindo que você valide se ela está atendendo aos requisitos necessários com base no produto integrado. 
 
 Além disso, você tem links diretos para a documentação correspondente, bem como uma barra de status que lhe permitirá visualizar facilmente o seu progresso.
 
-![tela de validação de teste de integração](/images/dashboard/testing-validation-pt.gif)
+----[mlc]----
+![tela de validação de teste de integração](/images/dashboard/testing-pt.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![tela de validação de teste de integração](/images/dashboard/testing-pt.gif)
+
+------------

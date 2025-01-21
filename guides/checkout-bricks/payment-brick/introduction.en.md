@@ -13,7 +13,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -47,7 +47,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -81,7 +81,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -92,7 +92,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-mco](checkout-bricks/payment-brick-layout-mco-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 > WARNING
 >
@@ -115,7 +115,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -126,7 +126,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 > WARNING
 >
@@ -149,7 +149,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -183,7 +183,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -194,7 +194,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
+![payment-Brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-en.png)
 
 > WARNING
 >
@@ -217,7 +217,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build and check out the Payment Brick visual experience in real time. When you are ready, download or copy the generated code.
  - link: /developers/en/live-demo/payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/payment-brick.png
+ - image: /checkout-bricks/live-demo-payment-bricks.png
  - linkName: Demo
  - buttonDescription: Build your Payment Brick
 ---
@@ -228,7 +228,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-en.gif)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.gif)
 
 > WARNING
 >

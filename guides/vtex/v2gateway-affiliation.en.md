@@ -18,7 +18,8 @@ To create a **MercadoPagoV2 gateway affiliation**, follow the steps below:
 2. At the top of the screen, click the **New Supplier** button to create a new affiliation. 
 3. Look for the **MercadoPagoV2** connector and select it. This will take you to a new screen. 
 4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have disabled the **"Activate test mode"** button.  
-5. Then, fill in the corresponding fields: 
+5. Then, fill in the corresponding fields:
+
 | Field | Description |
 |---|---|
 | Application Key  | Refers to your [production credentials](/developers/en/docs/vtex/additional-content/your-integrations/credentials) of Mercado Pago. Complete with your **Public Key**.  |
@@ -41,8 +42,6 @@ To create a **MercadoPagoV2 gateway affiliation**, follow the steps below:
 | Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Set a range of time in which the payment methods will no longer be available for the purchase. You can select a time range from the drop-down options, or choose **"não cancelar”/"no cancelar"**. |
 
 6. Click on **Save**, and you are done! Your MercadoPagoV2 gateway affiliation is set.
-
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
 
 After filling out all the fields, click on **Save** and you're done! Your affiliation with MercadoPagoV2 is now activated. 
 

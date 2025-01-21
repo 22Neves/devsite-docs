@@ -76,8 +76,6 @@ Para salvar as alterações nas configurações de Checkout Pro, clique no botã
 - **Desconto em checkouts do Mercado Pago**: insira um valor percentual de desconto para os clientes que pagarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 - **Comissão nos checkouts do Mercado Pago**: insira um valor percentual adicional que quiser cobrar como comissão aos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção "Ativar e mostrar esta informação no checkout do Mercado Pago".
 
-![Advanced settings](/images/woocomerce/cho-pro-advanced-settings-pt.gif)
-
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.
 
 No checkout, quando os compradores escolhem pagar com Mercado Pago, é apresentado um informativo que ressalta as vantagens exclusivas de pagar com uma conta Mercado Pago, como:

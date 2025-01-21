@@ -19,6 +19,7 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue las instrucciones
 3. Busca por el conector **MercadoPagoV2** y selecciónalo. Esto te llevará a una nueva pantalla.
 4. En esta pantalla, elige cuál quieres que sea el **Nombre de la afiliación** dentro de la tienda. Además, asegúrate de tener desactivada la opción **Activar modo de prueba**.
 5. Luego, completa los campos correspondientes:
+
 | Campo | Descripción |
 |---|---|
 | Application Key  | Son tus [credenciales](/developers/es/docs/vtex/additional-content/your-integrations/credentials) de producción de Mercado Pago. Completa con tu **Public Key**. |
@@ -40,7 +41,12 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue las instrucciones
 | Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | Puedes configurar un retraso en la captura del pago que hace VTEX seleccionando de entre las opciones deplegables. Si no quieres configurarlo, selecciona "Desactivado". |
 | Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". |
 
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
+6. Haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
+
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif)
+
+------------
 
 Una vez que hayas completado todos los campos, haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 

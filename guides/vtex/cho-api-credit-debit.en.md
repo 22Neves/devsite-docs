@@ -20,9 +20,12 @@ To configure these payment methods, access the administration panel of your VTEX
 
 4. Click **Save** to activate the configuration for this card, and if desired, repeat the process to configure other brands. 
 
+----[mlb, mla, mlm, mco, mpe, mlu]----
 ![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-en.gif) 
 
-## Installments and Interest 
+------------
+
+## Installments and interest 
 
 Currently, Mercado Pago only offers the option of interest-free installments within the VTEX platform. 
 
@@ -30,8 +33,6 @@ Similarly, you have the option to configure installment payments and interest di
 
 1. Click on the **Set Installments and Interest** button and log in to your Mercado Pago seller account. 
 2. Select the **QR Code and online payments** option, enable installment payments, and select the number of installments you want to offer at checkout. The options range from 1 to 12 installments. 
-
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 Once these steps are completed, installment payments in the checkout will be configured and ready to process sales.
 

@@ -365,6 +365,11 @@ If you wish to use the `additionalData` field, please check out to this speciali
 ![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-en.png)
 
 ------------
+----[mlm]----
+
+![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mlm-en.png)
+
+------------
 
 ## Text customization
 

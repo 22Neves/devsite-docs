@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: SDK JS - ES Module
  - message: A versão 2 do SDK client-side tem funções baseadas em Promises e traz uma interface com o desenvolvedor renovada e apresenta melhor tratamento de erros.
- - media_image: /sdk/mpjsv1.png
+ - media_image: /sdk/mpjsv-1.png
 ---
 
 --- mini_landing_separator ---

@@ -49,8 +49,6 @@ To configure Meses sin Tarjeta in the store's checkout, access the administratio
 
 ------------ 
 
-![Configure payment conditions](/images/vtex/paymentconditions-imagenv2-en.gif)
-
 > NOTE 
 > 
 > Note 

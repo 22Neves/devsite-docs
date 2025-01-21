@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Server-side
  - message: By using our backend SDKs, you gain easy access to the server-side functionalities of our solutions. This allows you to create and check the status of different transactions, integrate payments via card and other methods, as well as perform refunds or chargebacks.
- - media_image: /sdk/library-media-3.png
+ - media_image: /sdk/library-media3.png
 ---
 
 ---
