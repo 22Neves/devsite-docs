@@ -10,6 +10,19 @@ To set up Brick integrations and have a responsive, optimized, and configurable 
 
 Use our official libraries to access Mercado Pago's features safely from your frontend.
 
+----[mlc]----
+[[[
+```html
+//  The JS code can be included in a < script > tag or a separate JS file.
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+```bash
+npm install @mercadopago/sdk-react @0.0.23
+```
+]]]
+
+------------
+----[mla, mlm, mlb, mpe, mco, mlu]----
 [[[
 ```html
 //  The JS code can be included in a < script > tag or a separate JS file.
@@ -19,6 +32,8 @@ Use our official libraries to access Mercado Pago's features safely from your fr
 npm install @mercadopago/sdk-react
 ```
 ]]]
+
+------------
 
 ## Initialize Mercado Pago library
 
