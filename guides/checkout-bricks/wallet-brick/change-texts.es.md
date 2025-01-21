@@ -23,7 +23,14 @@ El _call to action_ se divide en dos partes: la acción, determinada por la prop
 
 Consulta a continuación los textos disponibles para cambiar, cómo se organizan en la pantalla y un ejemplo de código.
 
-![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es.png)
+----[mla]----
+![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es-mla.png)
+
+------------
+----[mlb, mlm, mpe, mco, mlu, mlc]----
+![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es-all.png)
+
+------------
 
 | Clave | Opciones disponibles | Predeterminado |
 |--- |--- | --- |

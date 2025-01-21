@@ -12,8 +12,6 @@ Follow the steps below to activate payment logs.
 
 2. In **Settings**, click on the **Sales** menu on the side. In the submenu that opens, select **Payment Methods**.
 
-![Methods](/images/adobe-commerce/logs-payment-method-es.gif)
-
 3. In **Other payment methods**, locate the Mercado Pago plugin and click on the **Configure** button to open the settings.
 
 ![Configure](/images/adobe-commerce/logs-configure-es.png)

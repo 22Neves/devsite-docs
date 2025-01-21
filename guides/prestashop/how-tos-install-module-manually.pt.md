@@ -10,5 +10,3 @@ Para instalar o módulo de forma manual, siga os passos abaixo:
 6. Por fim, **ative o plugin** para prosseguir para a integração da sua conta e as etapas de configuração.
 
 Pronto! O módulo do Mercado Pago foi instalado e está pronto para ser configurado.
- 
-![Ativar módulo manualmente](/images/prestashop/instalacao_manual_pt.gif)

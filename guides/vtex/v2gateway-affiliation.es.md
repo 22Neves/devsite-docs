@@ -40,10 +40,6 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a conti
 | Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | Puedes configurar un retraso en la captura del pago que hace VTEX seleccionando de entre las opciones deplegables. Si no quieres configurarlo, selecciona "Desactivado". |
 | Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". |
 
-
-
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
-
 Una vez que hayas completado todos los campos, haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 
 

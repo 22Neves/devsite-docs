@@ -34,6 +34,4 @@ You can customize the options in the advanced settings section of the payment me
  1. **Discounts at Mercado Pago checkouts**: this option allows you to offer a discount to customers who pay with the payment method that is being configured. To activate it, enter a discount percentage and check the **Activate and display this information at Mercado Pago checkout** option.
  2. **Commission at Mercado Pago checkouts**: this option allows you to enter an additional percentage value that will be charged as a commission to customers who choose this payment method. To activate it, enter a commission percentage and check the **Activate and display this information at Mercado Pago checkout** option.
 
-![Advanced settings](/images/woocomerce/api-advanced-settings-yape-es.png)
-
 To save the changes in the settings, click the **Complete configuration** button.

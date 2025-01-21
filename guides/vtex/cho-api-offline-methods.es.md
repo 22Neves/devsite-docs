@@ -73,7 +73,6 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 > El método de pago Efecty no está disponible en el conector **MercadoPagoV2**. Para poder procesar pagos con este método, asegúrate de configurar la condición de pago como **MercadoPagoOff**.
 
 ------------
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
 
 > NOTE
 >

@@ -56,8 +56,6 @@ Para configurar Meses sin Tarjeta en el checkout de la tienda, dirígete al pane
 
 ------------
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
-
 > NOTE
 >
 > Nota

@@ -37,8 +37,6 @@ To activate Linha de Crédito as a payment method in your store, follow these in
 2. In the Salesforce admin panel, go to "Merchant Tools" and then "Ordering."
 3. Click on "Payment Methods" and look for the "Linha de Crédito" option. Activate it by selecting "Yes" in the "Enabled" column.
 
-![Ativar](/images/salesforce/gif-sales-credito.gif) 
-
 For more information, contact your commercial advisor for personalized assistance.
 
 > NOTE
@@ -57,8 +55,6 @@ To activate Cuotas sin Tarjeta as a payment method in your store, follow these i
 2. In the Salesforce admin panel, go to "Merchant Tools" and then "Ordering."
 3. Click on "Payment Methods" and look for the "Cuotas sin Tarjeta" option. Activate it by selecting "Yes" in the "Enabled" column.
 
-![Ativar](/images/salesforce/gif-sales-credito.gif) 
-
 For more information, contact your commercial advisor for personalized assistance.
 
 > NOTE
@@ -76,8 +72,6 @@ To activate Meses sin Tarjeta as a payment method in your store, follow these in
 1. Update the Mercado Pago application from the Salesforce Marketplace. For instructions on how to do this, refer to our [documentation](/developers/en/docs/salesforce-commerce-cloud/installation).
 2. In the Salesforce admin panel, go to "Merchant Tools" and then "Ordering."
 3. Click on "Payment Methods" and look for the "Meses sin Tarjeta" option. Activate it by selecting "Yes" in the "Enabled" column.
-
-![Ativar](/images/salesforce/gif-sales-credito.gif) 
 
 For more information, contact your commercial advisor for personalized assistance.
 

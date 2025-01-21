@@ -25,8 +25,6 @@ Checkout Pro is **the integration that allows you to charge in the Mercado Pago 
 2. In the item “Checkout Pro” change the option to “Activated”.
 3. Finally, click on “Save changes”.
 
-![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
-
 Complete the information from your site that you want it to appear when your client make a payment:
 
 - **Invoice Purchaser’s Name**. Write the name that will appear in your client’s invoice so that they can recognize you (maximum 11 characters).
@@ -43,8 +41,6 @@ Offer **Bank Ticket as a payment option**:
 4. If you wish that your payments with Bank Ticket have a discount, check the option “Use discount in your Bank Tickets?” and complete the percentage that you want to offer as a discount in “Discount applied”.
 5. Finally, click “Save changes”.
 
-![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
-
 ## Installments settings
 
 **Offer the option to pay with interest-free monthly installments** on your site with Mercado Pago.
@@ -56,14 +52,10 @@ Offer **Bank Ticket as a payment option**:
   - Lastly, according to your account settings, **choose the number of interest-free monthly installments for your payments**.
 3. Finally, click “Save changes”.
 
-![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
-
 Once this is done, follow the steps below to complete the configuration of your Mercado Pago account.
 
 1. Log in to your [Mercado Pago account](https://www.mercadopago.com.br/business) and go to “Your business”.
 2. Access the option “Settings”, navigate to “Offering interest free installments” and click “Activate”.
 3. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
-
-![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > For more information, visit the [official Loja Integrada site](https://lojaintegrada.com.br/).

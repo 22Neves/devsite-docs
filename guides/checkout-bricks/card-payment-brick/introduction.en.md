@@ -11,7 +11,7 @@ live_demo_code_action:
  - title: Try our Brick
  - description: Build visual experiences in real time. When you are ready, download or copy the generated code to add to your website or share with a developer.
  - link: /developers/en/live-demo/card-payment-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/card-payment-brick.png
+ - image: /checkout-bricks/live-demo-card-brick.png
  - linkName: Demo
  - buttonDescription: Build your Card Payment Brick
 ---
@@ -20,7 +20,14 @@ live_demo_code_action:
 
 The Card Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details. The layout offers the elements detailed below.
 
+----[mlc]----
+![cardform](checkout-bricks/card-form-mlc-en.png)
+
+------------
+----[mlb, mla, mlm, mpe, mlu, mco]----
 ![cardform](checkout-bricks/card-form-en.png)
+
+------------
 
 | Element  | Characteristics  | Comments  |
 | --- | --- | --- |

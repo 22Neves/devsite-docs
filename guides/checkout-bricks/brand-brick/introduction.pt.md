@@ -7,7 +7,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/brand-brick
- - image: https://http2.mlstatic.com/frontend-assets/dx-devsite/images/brand-brick3.png
+ - image: /checkout-bricks/live-demo-brand-brick.png
  - linkName: Demo
  - buttonDescription: Construir seu Brand Brick
 ---
@@ -26,4 +26,11 @@ Nele são permitidas diversas [customizações visuais](/developers/pt/docs/chec
 >
 > Ao integrar o Brick, certifique-se que não haja elementos que possam interferir com o pop-up.
 
-![brand-brick-en](checkout-bricks/brick-brand-pt.gif)
+----[mlc]----
+![brand-brick-pt](checkout-bricks/brick-brand-pt.png)
+
+------------
+----[mlb, mla, mlm, mpe, mlu, mco]----
+![brand-brick-pt](checkout-bricks/brick-brand-pt.gif)
+
+------------

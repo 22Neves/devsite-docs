@@ -78,8 +78,6 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 
 ------------
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
-
 > NOTE
 >
 > Nota

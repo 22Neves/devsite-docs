@@ -34,6 +34,4 @@ Para salvar as alterações nas configurações, clique no botão **Concluir con
  1. **Desconto nos checkouts do Mercado Pago**: esta opção permite oferecer um desconto para os clientes que utilizarem a forma de pagamento que está sendo configurada. Para ativá-lo, insira um percentual de desconto e marque a opção **Ativar e mostrar esta informação no checkout do Mercado Pago**.
  2. **Comissão nos checkouts do Mercado Pago**: esta opção permite inserir um valor percentual adicional que será cobrado como comissão dos clientes que optarem por esta forma de pagamento. Para ativá-lo, insira um percentual de desconto e marque a opção **Ativar e mostrar esta informação no checkout do Mercado Pago**.
 
-![Configuración avanzada](/images/woocomerce/api-advanced-settings-yape-pt.png)
-
 Para salvar as alterações nas configurações, clique no botão **Concluir configuração**.

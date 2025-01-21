@@ -25,12 +25,8 @@ Ve a continuación cómo probar la integración:
 2. Haz clic en **Cuentas de prueba** en el menú de la izquierda.
 3. Dentro de la sección "Cuentas de prueba", haz clic en **Crear cuenta de prueba** y crea dos cuentas diferentes: una para vendedor y otra para comprador. No es posible utilizar la misma cuenta de prueba para vendedor y comprador. Consulta la documentación de [Cuentas de prueba](/developers/es/docs/shopify/additional-content/your-integrations/test/accounts)  para acceder al paso a paso de creación de cuentas de prueba.
 
-![Crear cuenta](/images/shopify/test-create-account-es.gif)
-
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito con sesión iniciada como vendedor, accede al [Panel del desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel del desarrollador](/developers/es/docs/shopify/additional-content/your-integrations/dashboard).
-
-![Login](/images/shopify/test-login-es.gif)
 
 > WARNING
 >

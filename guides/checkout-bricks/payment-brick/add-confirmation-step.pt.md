@@ -364,6 +364,11 @@ Consulte esse [tópico](/developers/pt/docs/checkout-bricks/payment-brick/advanc
 ![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-pt.png)
 
 ------------
+----[mlm]----
+
+![review-confirm-payment-mlm](checkout-bricks/review-confirm-payment-mlm-pt.png)
+
+------------
 
 ## Customização dos textos 
 
