@@ -37,7 +37,7 @@ La API de Impresiones ofrece una solución práctica para conectar sus sistemas 
 
 Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de su negocio.
 
-### Impressão de faturas e boletos eletrônicos
+### Impresión de facturas y recibos electrónicos
 
 Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
 
@@ -52,7 +52,7 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 >
 > El DTE enviado debe ser compatible con los formatos definidos por el [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
 
-## Configuración de la integración
+### Configuración de la integración
 
 > WARNING
 >
