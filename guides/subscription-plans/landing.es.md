@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: Planes de suscripción
  - message: Los planes de suscripción son una forma fácil y sin integración de recibir pagos recurrentes. Crea un plan de suscripción, cobra de forma automática y obtén el dinero en el momento.
- - media_image: /images/subscriptions/mini-landing-pt.png
+ - media_image: /subscriptions/mini-landing-pt.png
  - highlight_countries: mla, mlb, mlc, mco, mlm, mpe, mlu
  - country_title: Disponibilidad por país
 ---
