@@ -35,6 +35,7 @@ Para pausar un suscriptor, sigue estos pasos:
 3. Haz clic en el botón **Sí, pausar suscriptor** para confirmarlo.
 
 ### Cancelar suscriptor
+
 Puedes cancelar un suscriptor y dejar de recibir sus pagos. Al realizar la cancelación, Mercado Pago le enviará una notificación vía e-mail por.
 
 Para cancelar un suscriptor, sigue estos pasos:
@@ -48,6 +49,14 @@ Para cancelar un suscriptor, sigue estos pasos:
 > 
 > Una vez que canceles un suscriptor, no podrás volver a activar a ese cliente.
 
+## Gestionar un plan de suscripción
+
+Puedes acceder a tus planes de suscripciones y verlos, modificarlos o cancelarlos. Para gestionar tus planes de suscripción, sigue estos pasos:
+1. Accede a [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que se encuentra en tu panel de Mercado Pago, dentro del menú lateral izquierdo. 
+2. Haz clic en la pestaña **Planes**, que se encuentra en la parte superior del panel.
+3. Haz clic en el los tres puntos que se encuentran a la derecha del plan de suscripción que deseas gestionar. Se desplegará un menú. 
+4. Haz clic en **Ver detalles** para conocer las características de tu plan de suscripción. Si deseas modificarlo, haz clic en **Modificar**. Si deseas eliminarlo, haz clic en **Cancelar**.
+
 ## Cancelar un plan de suscripción
 
 Para cancelar un plan de suscripción, sigue estos pasos:
@@ -60,7 +69,7 @@ Para cancelar un plan de suscripción, sigue estos pasos:
 > 
 > Importante
 > 
-> Los suscriptores adheridos al plan cancelado seguirán activos. Para dejar de cobrarles, deberás cancelarlos desde el sector **Suscriptores**. Mira la sección [Cancelar suscriptores](/developers/es/docs/manage-subscription-plan) para conocer cómo hacerlo. Ten en cuenta que la cancelación de un plan es irreversible y no podrás modificarlo ni volver a activarlo. Si estás de acuerdo con la cancelación del plan, haz clic en el casillero de “Ok, entendido” y luego haz clic en **Sí, cancelar el plan**.
+> Los suscriptores adheridos al plan cancelado seguirán activos. Para dejar de cobrarles, deberás cancelarlos desde el sector **Suscriptores**. Mira la sección [Gestionar suscriptores de planes de suscripción](/developers/es/docs/subscription-plans/manage-subscription-plan#gestionarsuscriptoresdeplanesdesuscripcin) para conocer cómo hacerlo. Ten en cuenta que la cancelación de un plan es irreversible y no podrás modificarlo ni volver a activarlo. Si estás de acuerdo con la cancelación del plan, haz clic en el casillero de “Ok, entendido” y luego haz clic en **Sí, cancelar el plan**.
 
 Listo, tu plan de suscripción fue cancelado permanentemente.
 

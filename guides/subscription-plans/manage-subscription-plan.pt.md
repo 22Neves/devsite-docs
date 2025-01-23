@@ -48,6 +48,14 @@ Para cancelar um assinante, siga estes passos:
 >
 > Uma vez que você cancele um assinante, não será possível reativar esse cliente.
 
+## Gerenciar um plano de assinatura
+
+Você pode acessar seus planos de assinatura e visualizá-los, modificá-los ou cancelá-los. Para gerenciar seus planos de assinatura, siga estes passos:
+1. Acesse [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que está localizado no seu painel do Mercado Pago, dentro do menu lateral esquerdo.
+2. Clique na aba **Planos**, que está na parte superior do painel.
+3. Clique nos três pontos localizados à direita do plano de assinatura que deseja gerenciar. Um menu será exibido.
+4. Clique em **Ver Detalhes** para conhecer as características do seu plano de assinatura. Se desejar modificá-lo, clique em **Modificar**. Se desejar excluí-lo, clique em **Cancelar**.
+
 ## Cancelar um plano de assinatura
 
 Para cancelar um plano de assinatura, siga estes passos:
@@ -60,7 +68,7 @@ Para cancelar um plano de assinatura, siga estes passos:
 >
 > Importante
 >
-> Os assinantes associados ao plano cancelado continuarão ativos. Para parar de cobrar deles, você deve cancelá-los na seção **Assinantes**. Veja a seção [Cancelar Assinantes](/developers/es/docs/manage-subscription-plan) para saber como fazer isso. Lembre-se de que o cancelamento de um plano é irreversível e você não poderá modificá-lo ou reativá-lo. Se você concordar com o cancelamento do plano, clique na caixa "Ok, entendido" e, em seguida, clique em **Sim, cancelar o plano**.
+> Os assinantes associados ao plano cancelado continuarão ativos. Para parar de cobrar deles, você deve cancelá-los na seção **Assinantes**. Veja a seção [Gerenciar assinantes de planos de assinatura](/developers/pt/docs/subscription-plans/manage-subscription-plan#gerenciarcobranasporplanosdesssinatura) para saber como fazer isso. Lembre-se de que o cancelamento de um plano é irreversível e você não poderá modificá-lo ou reativá-lo. Se você concordar com o cancelamento do plano, clique na caixa "Ok, entendido" e, em seguida, clique em **Sim, cancelar o plano**.
 
 Pronto, seu plano de assinatura foi cancelado permanentemente.
 
