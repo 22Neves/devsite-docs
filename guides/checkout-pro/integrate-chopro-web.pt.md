@@ -127,7 +127,7 @@ npm install @mercadopago/sdk-react @0.0.23
 
 ------------
 
-Em seguida, observe o botão de pagamento renderizado em sua página.
+Em seguida, observe o botão de pagamento renderizado em sua página. Caso queira fazer **alterações nos textos ou uma alteração visual**, acesse as seções de [Alterar textos](/developers/pt/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) e [Alterar visual](/developers/pt/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance).
 
 ![wallet-render](cow/cow-render-wallet-pt.png)
 
