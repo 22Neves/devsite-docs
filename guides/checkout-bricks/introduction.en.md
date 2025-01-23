@@ -12,7 +12,7 @@ The Brick has responsive capabilities in terms of the size within the screen. Th
 
 ----[mlc]----
 
-![responsiveness-mlb](checkout-bricks/responsiveness-mlc-en.png)
+![responsiveness-mlc](checkout-bricks/responsiveness-all-en.png)
 
 ------------
 ----[mlb]----
