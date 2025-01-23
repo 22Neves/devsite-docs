@@ -56,12 +56,15 @@
                                                     "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
                                                     "es": "Contiene información sobre la order de pago. En caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
                                                 },
-                                                "properties": {
-                                                    "amount": {
-                                                        "$ref": "#/components/schemas/amount"
-                                                    },
-                                                    "payment_method": {
-                                                        "$ref": "#/components/schemas/payment_method"
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "amount": {
+                                                            "$ref": "#/components/schemas/amount"
+                                                        },
+                                                        "payment_method": {
+                                                            "$ref": "#/components/schemas/payment_method"
+                                                        }
                                                     }
                                                 }
                                             }
@@ -164,30 +167,30 @@
                                             "$ref": "#/components/schemas/payer"
                                         },
                                         "transactions": {
-                                            "type":"object",
-                                            "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                            "type": "object",
+                                            "description": {
+                                                "en": "Contains information about the transactions associated with the order.",
+                                                "pt": "Contém informações sobre as transações associadas a uma order.",
+                                                "es": "Contiene información sobre las transacciones asociadas a una order."
                                             },
-                                            "properties":{
-                                                "payments":{
-                                                    "type":"array",
-                                                    "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                            "properties": {
+                                                "payments": {
+                                                    "type": "array",
+                                                    "description": {
+                                                        "en": "Contains information about the payment associated with the order.",
+                                                        "pt": "Contém informações sobre o pagamento associado à order.",
+                                                        "es": "Contiene información sobre el pago asociado a una order."
                                                     },
                                                     "items": {
                                                         "type": "object",
-                                                        "properties":{
-                                                            "id":{
-                                                                "type":"string",
-                                                                "example":"PAY01J67CQQH5904WDBVZEM4JMEP3",
-                                                                "description":{
-                                                                    "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string",
+                                                                "example": "PAY01J67CQQH5904WDBVZEM4JMEP3",
+                                                                "description": {
+                                                                    "en": "Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt": "Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es": "Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
                                                             "amount": {
@@ -202,10 +205,10 @@
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
                                                             },
-                                                            "status":{
+                                                            "status": {
                                                                 "$ref": "#/components/schemas/create_order_transaction_status"
                                                             },
-                                                            "status_detail":{
+                                                            "status_detail": {
                                                                 "$ref": "#/components/schemas/create_order_transaction_status_detail"
                                                             },
                                                             "payment_method": {
@@ -363,7 +366,7 @@
                         "$ref": "#/components/responses/unauthorized"
                     },
                     "402": {
-                         "$ref": "#/components/responses/processing_error"
+                        "$ref": "#/components/responses/processing_error"
                     },
                     "409": {
                         "$ref": "#/components/responses/idempotency_key_already_used"
@@ -410,7 +413,263 @@
                     "en": "Create order",
                     "pt": "Criar order",
                     "es": "Crear order"
-                }
+                },
+                "userCases": [
+                    {
+                        "name": {
+                            "en": "Create payment with card",
+                            "pt": "Criar pagamento card",
+                            "es": "Crear pago con card "
+                        }
+                    },
+                    {
+                        "name": {
+                            "en": "Create payment with Pix",
+                            "pt": "Criar pagamento Pix",
+                            "es": "Crear pago con Pix"
+                        },
+                        "siteId": [
+                            "MLB",
+                            "MLA"
+                        ],
+                        "requestBody": {
+                            "content": {
+                                "application/json": {
+                                    "schema": {
+                                        "properties": {
+                                            "type": {
+                                                "example": "online"
+                                            },
+                                            "external_reference": {
+                                                "example": "ext_ref_1234"
+                                            },
+                                            "total_amount": {
+                                                "example": "200.00"
+                                            },
+                                            "payer": {
+                                                "properties": {
+                                                    "email": {
+                                                        "example": "{{PAYER_EMAIL}}"
+                                                    },
+                                                    "identification": {
+                                                        "example": "disabled"
+                                                    },
+                                                    "first_name": {
+                                                        "example": "Test"
+                                                    },
+                                                    "last_name": {
+                                                        "example": "disabled"
+                                                    },
+                                                    "phone": {
+                                                        "example": "disabled"
+                                                    },
+                                                    "address": {
+                                                        "example": "disabled"
+                                                    }
+                                                }
+                                            },
+                                            "transactions": {
+                                                "properties": {
+                                                    "payments": {
+                                                        "items": {
+                                                            "properties": {
+                                                                "amount": {
+                                                                    "example": "200.00"
+                                                                },
+                                                                "payment_method": {
+                                                                    "properties": {
+                                                                        "id": {
+                                                                            "example": "pix"
+                                                                        },
+                                                                        "type": {
+                                                                            "example": "bank_transfer"
+                                                                        },
+                                                                        "token": {
+                                                                            "example": "disabled"
+                                                                        },
+                                                                        "installments": {
+                                                                            "example": "disabled"
+                                                                        },
+                                                                        "statement_descriptor": {
+                                                                            "example": "disabled"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "capture_mode": {
+                                                "example": "disabled"
+                                            },
+                                            "processing_mode": {
+                                                "example": "disabled"
+                                            },
+                                            "description": {
+                                                "example": "disabled"
+                                            },
+                                            "marketplace": {
+                                                "example": "disabled"
+                                            },
+                                            "integration_data": {
+                                                "example": "disabled"
+                                            },
+                                            "expiration_time": {
+                                                "example": "disabled"
+                                            },
+                                            "items": {
+                                                "example": "disabled"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "responses": {
+                            "200": {
+                                "content": {
+                                    "application/json": {
+                                        "schema": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "ORD01JFB671S2AKYYFVZN87J1GJVY"
+                                                },
+                                                "type": {
+                                                    "example": "online"
+                                                },
+                                                "processing_mode": {
+                                                    "example": "automatic"
+                                                },
+                                                "external_reference": {
+                                                    "example": "ext_ref_1234"
+                                                },
+                                                "total_amount": {
+                                                    "example": "200.00"
+                                                },
+                                                "country_code": {
+                                                    "example": "BRA"
+                                                },
+                                                "status": {
+                                                    "example": "action_required"
+                                                },
+                                                "status_detail": {
+                                                    "example": "waiting_transfer"
+                                                },
+                                                "capture_mode": {
+                                                    "example": "automatic"
+                                                },
+                                                "created_date": {
+                                                    "example": "2024-12-17T20:51:07.17Z"
+                                                },
+                                                "last_updated_date": {
+                                                    "example": "2024-12-17T20:51:08.168Z"
+                                                },
+                                                "integration_data": {
+                                                    "properties": {
+                                                        "application_id": {
+                                                            "example": "130106526144588"
+                                                        },
+                                                        "integrator_id": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "platform_id": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "sponsor": {
+                                                            "example": "disabled"
+                                                        }
+                                                    }
+                                                },
+                                                "payer": {
+                                                    "properties": {
+                                                        "email": {
+                                                            "example": "test_user_9835778@testuser.com"
+                                                        },
+                                                        "identification": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "first_name": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "last_name": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "phone": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "address": {
+                                                            "example": "disabled"
+                                                        }
+                                                    }
+                                                },
+                                                "transactions": {
+                                                    "properties": {
+                                                        "payments": {
+                                                            "items": {
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "example": "PAY01JFB671S2AKYYFVZN8B60XSER"
+                                                                    },
+                                                                    "amount": {
+                                                                        "example": "200.00"
+                                                                    },
+                                                                    "reference_id": {
+                                                                        "example": "0001wmubs3"
+                                                                    },
+                                                                    "status": {
+                                                                        "example": "action_required"
+                                                                    },
+                                                                    "status_detail": {
+                                                                        "example": "waiting_transfer"
+                                                                    },
+                                                                    "payment_method": {
+                                                                        "properties": {
+                                                                            "id": {
+                                                                                "example": "pix"
+                                                                            },
+                                                                            "type": {
+                                                                                "example": "bank_transfer"
+                                                                            },
+                                                                            "token": {
+                                                                                "example": "disabled"
+                                                                            },
+                                                                            "installments": {
+                                                                                "example": "disabled"
+                                                                            },
+                                                                            "statement_descriptor": {
+                                                                                "example": "disabled"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "description": {
+                                                    "example": "disabled"
+                                                },
+                                                "marketplace": {
+                                                    "example": "disabled"
+                                                },
+                                                "expiration_time": {
+                                                    "example": "disabled"
+                                                },
+                                                "client_token": {
+                                                    "example": "disabled"
+                                                },
+                                                "items": {
+                                                    "example": "disabled"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         "/v1/orders/{id}": {
@@ -497,31 +756,31 @@
                                         "capture_mode": {
                                             "$ref": "#/components/schemas/capture_mode"
                                         },
-                                        "transactions":{
-                                            "type":"object",
-                                            "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                        "transactions": {
+                                            "type": "object",
+                                            "description": {
+                                                "en": "Contains information about the transactions associated with the order.",
+                                                "pt": "Contém informações sobre as transações associadas a uma order.",
+                                                "es": "Contiene información sobre las transacciones asociadas a una order."
                                             },
-                                            "properties":{
-                                                "payments":{
-                                                    "type":"array",
-                                                    "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                            "properties": {
+                                                "payments": {
+                                                    "type": "array",
+                                                    "description": {
+                                                        "en": "Contains information about the payment associated with the order.",
+                                                        "pt": "Contém informações sobre o pagamento associado à order.",
+                                                        "es": "Contiene información sobre el pago asociado a una order."
                                                     },
                                                     "items": {
                                                         "type": "object",
                                                         "properties": {
-                                                            "id":{
-                                                                "type":"string",
-                                                                "example":"PAY01J67CQQH5904WDBVZEM4JMEP3",
-                                                                "description":{
-                                                                    "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                            "id": {
+                                                                "type": "string",
+                                                                "example": "PAY01J67CQQH5904WDBVZEM4JMEP3",
+                                                                "description": {
+                                                                    "en": "Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt": "Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es": "Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
                                                             "amount": {
@@ -536,13 +795,13 @@
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
                                                             },
-                                                            "status":{
-                                                                "type":"string",
-                                                                "example":"processed",
-                                                                "description":{
-                                                                    "en":"Payment status.",
-                                                                    "pt":"Status do pagamento.",
-                                                                    "es":"Estado del pago."
+                                                            "status": {
+                                                                "type": "string",
+                                                                "example": "processed",
+                                                                "description": {
+                                                                    "en": "Payment status.",
+                                                                    "pt": "Status do pagamento.",
+                                                                    "es": "Estado del pago."
                                                                 },
                                                                 "enum": [
                                                                     {
@@ -611,13 +870,13 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "status_detail":{
-                                                                "type":"string",
-                                                                "example":"accredited",
-                                                                "description":{
-                                                                    "en":"Details about payment status.",
-                                                                    "pt":"Detalhes sobre o status do pagamento.",
-                                                                    "es":"Detalles sobre el estado del pago."
+                                                            "status_detail": {
+                                                                "type": "string",
+                                                                "example": "accredited",
+                                                                "description": {
+                                                                    "en": "Details about payment status.",
+                                                                    "pt": "Detalhes sobre o status do pagamento.",
+                                                                    "es": "Detalles sobre el estado del pago."
                                                                 },
                                                                 "enum": [
                                                                     {
@@ -1007,31 +1266,31 @@
                                         "payer": {
                                             "$ref": "#/components/schemas/payer"
                                         },
-                                        "transactions":{
-                                            "type":"object",
-                                            "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                        "transactions": {
+                                            "type": "object",
+                                            "description": {
+                                                "en": "Contains information about the transactions associated with the order.",
+                                                "pt": "Contém informações sobre as transações associadas a uma order.",
+                                                "es": "Contiene información sobre las transacciones asociadas a una order."
                                             },
-                                            "properties":{
-                                                "payments":{
-                                                    "type":"array",
-                                                    "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                            "properties": {
+                                                "payments": {
+                                                    "type": "array",
+                                                    "description": {
+                                                        "en": "Contains information about the payment associated with the order.",
+                                                        "pt": "Contém informações sobre o pagamento associado à order.",
+                                                        "es": "Contiene información sobre el pago asociado a una order."
                                                     },
                                                     "items": {
                                                         "type": "object",
-                                                        "properties":{
-                                                            "id":{
-                                                                "type":"string",
-                                                                "example":"PAY01J67CQQH5904WDBVZEM4JMEP3",
-                                                                "description":{
-                                                                    "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string",
+                                                                "example": "PAY01J67CQQH5904WDBVZEM4JMEP3",
+                                                                "description": {
+                                                                    "en": "Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt": "Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es": "Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
                                                             "amount": {
@@ -1046,13 +1305,13 @@
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
                                                             },
-                                                            "status":{
-                                                                "type":"string",
-                                                                "example":"canceled",
-                                                                "description":{
-                                                                    "en":"Payment status.",
-                                                                    "pt":"Status do pagamento.",
-                                                                    "es":"Estado del pago."
+                                                            "status": {
+                                                                "type": "string",
+                                                                "example": "canceled",
+                                                                "description": {
+                                                                    "en": "Payment status.",
+                                                                    "pt": "Status do pagamento.",
+                                                                    "es": "Estado del pago."
                                                                 },
                                                                 "enum": [
                                                                     {
@@ -1065,13 +1324,13 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "status_detail":{
-                                                                "type":"string",
-                                                                "example":"canceled_transaction",
-                                                                "description":{
-                                                                    "en":"Details about payment status.",
-                                                                    "pt":"Detalhes sobre o status do pagamento.",
-                                                                    "es":"Detalles sobre el estado del pago."
+                                                            "status_detail": {
+                                                                "type": "string",
+                                                                "example": "canceled_transaction",
+                                                                "description": {
+                                                                    "en": "Details about payment status.",
+                                                                    "pt": "Detalhes sobre o status do pagamento.",
+                                                                    "es": "Detalles sobre el estado del pago."
                                                                 },
                                                                 "enum": [
                                                                     {
@@ -1272,7 +1531,7 @@
                                         },
                                         "items": {
                                             "type": "object",
-                                            "properties":{
+                                            "properties": {
                                                 "amount": {
                                                     "$ref": "#/components/schemas/amount"
                                                 },
@@ -1299,23 +1558,23 @@
                                 "schema": {
                                     "type": "object",
                                     "properties": {
-                                        "payments":{
-                                            "type":"array",
-                                            "description":{
-                                                "en":"Contains information about the payment associated with the order.",
-                                                "pt":"Contém informações sobre o pagamento associado à order.",
-                                                "es":"Contiene información sobre el pago asociado a una order."
+                                        "payments": {
+                                            "type": "array",
+                                            "description": {
+                                                "en": "Contains information about the payment associated with the order.",
+                                                "pt": "Contém informações sobre o pagamento associado à order.",
+                                                "es": "Contiene información sobre el pago asociado a una order."
                                             },
                                             "items": {
                                                 "type": "object",
-                                                "properties":{
-                                                    "id":{
-                                                        "type":"string",
-                                                        "example":"PAY01J49MMW3SSBK5PSV3DFR32959",
-                                                        "description":{
-                                                            "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                                            "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                            "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "string",
+                                                        "example": "PAY01J49MMW3SSBK5PSV3DFR32959",
+                                                        "description": {
+                                                            "en": "Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                                            "pt": "Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                            "es": "Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                                                         }
                                                     },
                                                     "amount": {
@@ -1327,13 +1586,13 @@
                                                             "es": "Monto del pago."
                                                         }
                                                     },
-                                                    "status":{
-                                                        "type":"string",
-                                                        "example":"created",
-                                                        "description":{
-                                                            "en":"Payment status.",
-                                                            "pt":"Status do pagamento.",
-                                                            "es":"Estado del pago."
+                                                    "status": {
+                                                        "type": "string",
+                                                        "example": "created",
+                                                        "description": {
+                                                            "en": "Payment status.",
+                                                            "pt": "Status do pagamento.",
+                                                            "es": "Estado del pago."
                                                         },
                                                         "enum": [
                                                             {
@@ -1346,13 +1605,13 @@
                                                             }
                                                         ]
                                                     },
-                                                    "status_detail":{
-                                                        "type":"string",
-                                                        "example":"created",
-                                                        "description":{
-                                                            "en":"Details about payment status.",
-                                                            "pt":"Detalhes sobre o status do pagamento.",
-                                                            "es":"Detalles sobre el estado del pago."
+                                                    "status_detail": {
+                                                        "type": "string",
+                                                        "example": "created",
+                                                        "description": {
+                                                            "en": "Details about payment status.",
+                                                            "pt": "Detalhes sobre o status do pagamento.",
+                                                            "es": "Detalles sobre el estado del pago."
                                                         },
                                                         "enum": [
                                                             {
@@ -1940,31 +2199,31 @@
                                         "payer": {
                                             "$ref": "#/components/schemas/payer"
                                         },
-                                        "transactions":{
-                                            "type":"object",
-                                            "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                        "transactions": {
+                                            "type": "object",
+                                            "description": {
+                                                "en": "Contains information about the transactions associated with the order.",
+                                                "pt": "Contém informações sobre as transações associadas a uma order.",
+                                                "es": "Contiene información sobre las transacciones asociadas a una order."
                                             },
-                                            "properties":{
-                                                "payments":{
-                                                    "type":"array",
-                                                    "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                            "properties": {
+                                                "payments": {
+                                                    "type": "array",
+                                                    "description": {
+                                                        "en": "Contains information about the payment associated with the order.",
+                                                        "pt": "Contém informações sobre o pagamento associado à order.",
+                                                        "es": "Contiene información sobre el pago asociado a una order."
                                                     },
                                                     "items": {
                                                         "type": "object",
-                                                        "properties":{
-                                                            "id":{
-                                                                "type":"string",
-                                                                "example":"PAY01J67CQQH5904WDBVZEM4JMEP3",
-                                                                "description":{
-                                                                    "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string",
+                                                                "example": "PAY01J67CQQH5904WDBVZEM4JMEP3",
+                                                                "description": {
+                                                                    "en": "Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt": "Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es": "Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
                                                             "amount": {
@@ -1979,10 +2238,10 @@
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
                                                             },
-                                                            "status":{
+                                                            "status": {
                                                                 "$ref": "#/components/schemas/process_order_transaction_status"
                                                             },
-                                                            "status_detail":{
+                                                            "status_detail": {
                                                                 "$ref": "#/components/schemas/process_order_transaction_status_detail"
                                                             },
                                                             "payment_method": {
@@ -2066,7 +2325,7 @@
                     },
                     "402": {
                         "$ref": "#/components/responses/processing_error"
-                   },
+                    },
                     "404": {
                         "$ref": "#/components/responses/not_found"
                     },
@@ -2271,34 +2530,34 @@
                                                 }
                                             ]
                                         },
-                                        "transactions":{
-                                            "type":"object",
-                                            "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                        "transactions": {
+                                            "type": "object",
+                                            "description": {
+                                                "en": "Contains information about the transactions associated with the order.",
+                                                "pt": "Contém informações sobre as transações associadas a uma order.",
+                                                "es": "Contiene información sobre las transacciones asociadas a una order."
                                             },
-                                            "properties":{
-                                                "refunds":{
-                                                    "type":"array",
-                                                    "description":{
-                                                        "en":"Contains information about the refund associated with the order.",
-                                                        "pt":"Contém informações sobre o reembolso associado à order.",
-                                                        "es":"Contiene información sobre el reembolso asociado a una order."
+                                            "properties": {
+                                                "refunds": {
+                                                    "type": "array",
+                                                    "description": {
+                                                        "en": "Contains information about the refund associated with the order.",
+                                                        "pt": "Contém informações sobre o reembolso associado à order.",
+                                                        "es": "Contiene información sobre el reembolso asociado a una order."
                                                     },
                                                     "items": {
                                                         "type": "object",
-                                                        "properties":{
-                                                            "id":{
-                                                                "type":"string",
-                                                                "example":"REF01J49MMW3SSBK5PSV3DFR32959",
-                                                                "description":{
-                                                                    "en":"Identifier of the refunded order transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação reembolsada da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción reembolsada de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string",
+                                                                "example": "REF01J49MMW3SSBK5PSV3DFR32959",
+                                                                "description": {
+                                                                    "en": "Identifier of the refunded order transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt": "Identificador da transação reembolsada da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es": "Identificador de la transacción reembolsada de la order creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
-                                                            "transaction_id":{
+                                                            "transaction_id": {
                                                                 "$ref": "#/components/schemas/transaction_id"
                                                             },
                                                             "reference_id": {
@@ -2313,13 +2572,13 @@
                                                                     "es": "Monto del pago."
                                                                 }
                                                             },
-                                                            "status":{
-                                                                "type":"string",
-                                                                "example":"processed",
-                                                                "description":{
-                                                                    "en":"Payment status.",
-                                                                    "pt":"Status do pagamento.",
-                                                                    "es":"Estado del pago."
+                                                            "status": {
+                                                                "type": "string",
+                                                                "example": "processed",
+                                                                "description": {
+                                                                    "en": "Payment status.",
+                                                                    "pt": "Status do pagamento.",
+                                                                    "es": "Estado del pago."
                                                                 },
                                                                 "enum": [
                                                                     {
@@ -2496,9 +2755,9 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en":"This endpoint allows to totally capture a previously authorized order. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
-                    "pt":"Este endpoint permite capturar totalmente uma order previamente autorizada. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es":"Este endpoint permite capturar en su totalidad una order previamente autorizada. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en": "This endpoint allows to totally capture a previously authorized order. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
+                    "pt": "Este endpoint permite capturar totalmente uma order previamente autorizada. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es": "Este endpoint permite capturar en su totalidad una order previamente autorizada. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
@@ -2557,31 +2816,31 @@
                                         "status_detail": {
                                             "$ref": "#/components/schemas/capture_order_status_detail"
                                         },
-                                        "transactions":{
-                                            "type":"object",
-                                            "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                        "transactions": {
+                                            "type": "object",
+                                            "description": {
+                                                "en": "Contains information about the transactions associated with the order.",
+                                                "pt": "Contém informações sobre as transações associadas a uma order.",
+                                                "es": "Contiene información sobre las transacciones asociadas a una order."
                                             },
-                                            "properties":{
-                                                "payments":{
-                                                    "type":"array",
-                                                    "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                            "properties": {
+                                                "payments": {
+                                                    "type": "array",
+                                                    "description": {
+                                                        "en": "Contains information about the payment associated with the order.",
+                                                        "pt": "Contém informações sobre o pagamento associado à order.",
+                                                        "es": "Contiene información sobre el pago asociado a una order."
                                                     },
                                                     "items": {
                                                         "type": "object",
-                                                        "properties":{
-                                                            "id":{
-                                                                "type":"string",
-                                                                "example":"PAY01J49MMW3SSBK5PSV3DFR32959",
-                                                                "description":{
-                                                                    "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string",
+                                                                "example": "PAY01J49MMW3SSBK5PSV3DFR32959",
+                                                                "description": {
+                                                                    "en": "Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt": "Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es": "Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
                                                             "amount": {
@@ -2654,7 +2913,7 @@
                     },
                     "402": {
                         "$ref": "#/components/responses/processing_error"
-                   },
+                    },
                     "404": {
                         "$ref": "#/components/responses/not_found"
                     },
@@ -3161,16 +3420,25 @@
                 "properties": {
                     "integrator_id": {
                         "type": "string",
-                        "example":"dev_123",
+                        "example": "dev_123",
                         "description": {
                             "en": "Identifier of the integrator in Mercado Pago. It is the unique identifier of the integrator in Mercado Pago's systems.",
                             "es": "Identificador del integrador en Mercado Pago. Es el identificador único del integrador en los sistemas de Mercado Pago.",
                             "pt": "Identificador do integrador no Mercado Pago. É o identificador único do integrador nos sistemas do Mercado Pago."
                         }
                     },
+                    "application_id": {
+                        "type": "string",
+                        "example": "1234",
+                        "description": {
+                            "pt": "Identificador da aplicação do Mercado Pago que criou a order.",
+                            "en": "Identifier of the Mercado Pago application that created the order.",
+                            "es": "Identificador de la aplicación de Mercado Pago que creó la order."
+                        }
+                    },
                     "platform_id": {
                         "type": "string",
-                        "example":"1234567890",
+                        "example": "1234567890",
                         "description": {
                             "en": "Identifier of the platform in Mercado Pago. It is the unique identifier of the platform in Mercado Pago's systems.",
                             "es": "Identificador de la plataforma en Mercado Pago. Es el identificador único de la plataforma en los sistemas de Mercado Pago.",
@@ -3217,7 +3485,7 @@
                     },
                     "integrator_id": {
                         "type": "string",
-                        "example":"dev_123",
+                        "example": "dev_123",
                         "description": {
                             "en": "Identifier of the integrator in Mercado Pago. It is the unique identifier of the integrator in Mercado Pago's systems.",
                             "es": "Identificador del integrador en Mercado Pago. Es el identificador único del integrador en los sistemas de Mercado Pago.",
@@ -3226,7 +3494,7 @@
                     },
                     "platform_id": {
                         "type": "string",
-                        "example":"1234567890",
+                        "example": "1234567890",
                         "description": {
                             "en": "Identifier of the platform in Mercado Pago. It is the unique identifier of the platform in Mercado Pago's systems.",
                             "es": "Identificador de la plataforma en Mercado Pago. Es el identificador único de la plataforma en los sistemas de Mercado Pago.",
@@ -4591,7 +4859,7 @@
                                         {
                                             "title": "cannot_capture_order",
                                             "description": {
-                                               "en": "Error. Order cannot be captured. The status of the order does not allow its capture. Only Orders with status 'action_required' and status_detail 'waiting_capture' can be captured.",
+                                                "en": "Error. Order cannot be captured. The status of the order does not allow its capture. Only Orders with status 'action_required' and status_detail 'waiting_capture' can be captured.",
                                                 "es": "Error. Order no puede ser capturada. El estado de la order no permite su captura. Solo pueden ser capturadas Orders con status 'action_required' y status_detail 'waiting_capture'.",
                                                 "pt": "Erro. Order não pode ser capturada. O status da order não permite a sua captura. Apenas Orders com status 'action_required' e status_detail 'waiting_capture' podem ser capturadas."
                                             }
@@ -4619,7 +4887,7 @@
                                     "enum": [
                                         {
                                             "title": "cannot_refund_order",
-                                           "description": {
+                                            "description": {
                                                 "en": "Error. Order cannot be refunded. The status of the order does not allow its refund. Only Orders with status 'processed' can be refunded.",
                                                 "pt": "Erro. Order não pode ser reembolsada. O status da order não permite o reembolso. Apenas Orders com status 'processed' podem ser reembolsadas.",
                                                 "es": "Error. Order no puede ser reembolsada. El estado de la order no permite su reembolso. Solo pueden ser reembolsadas Orders con status 'processed'."
