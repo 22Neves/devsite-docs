@@ -16,8 +16,6 @@ Para **crear un contrato en tu tienda**, sigue estos pasos:
 1. Completa el nombre para el contrato que estás creando 
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
-
-![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
 <p>&nbsp;</p>
 
 ## Define los medios de pago para el contrato
@@ -31,8 +29,6 @@ Para **definir los medios de pago para el contrato**, sigue estos pasos:
  - **Definido a continuación**. Elige qué métodos de pago quieres que sean parte del contrato.
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
-
-![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
 
 ## Asigna medios de pago del contrato a un canal
@@ -44,8 +40,6 @@ Para **asignar los medios de pago del contrato a un canal**, sigue estos pasos:
 1. En la sesión de contrato patrón, agrega el contrato que creaste.
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
-
-![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
 <!-- -->

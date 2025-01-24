@@ -37,8 +37,6 @@ Para ativar a Linha de Crédito como método de pagamento em sua loja, siga esta
 2. No painel administrativo do Salesforce, acesse "Merchant Tools" e depois "Ordering".
 3. Clique em "Payment Methods" e procure a opção "Linha de Crédito". Ative selecionando "Yes" na coluna "Enabled".
 
-![Ativar](/images/salesforce/gif-sales-credito.gif) 
-
 Para mais informações, entre em contato com seu consultor comercial para receber atendimento personalizado.
 
 > NOTE
@@ -57,8 +55,6 @@ Para ativar o Cuotas sin Tarjetas como método de pagamento em sua loja, siga es
 2. No painel administrativo do Salesforce, acesse "Merchant Tools" e depois "Ordering".
 3. Clique em "Payment Methods" e procure a opção "Cuotas sin Tarjeta". Ative selecionando "Yes" na coluna "Enabled".
 
-![Ativar](/images/salesforce/gif-sales-credito.gif) 
-
 Para mais informações, entre em contato com seu consultor comercial para receber atendimento personalizado.
 
 > NOTE
@@ -76,8 +72,6 @@ Para ativar o Meses sin Tarjeta como método de pagamento em sua loja, siga esta
 1. Atualize o aplicativo do Mercado Pago na Marketplace do Salesforce. Para saber como fazer isso, consulte nossa [documentação](/developers/pt/docs/salesforce-commerce-cloud/installation).
 2. No painel administrativo do Salesforce, acesse "Merchant Tools" e depois "Ordering".
 3. Clique em "Payment Methods" e procure a opção "Meses sin Tarjeta". Ative selecionando "Yes" na coluna "Enabled".
-
-![Ativar Mercado Credito](/images/salesforce/gif-sales-credito.gif) 
 
 Para mais informações, entre em contato com seu consultor comercial para receber atendimento personalizado.
 

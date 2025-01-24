@@ -20,8 +20,6 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 
 4. Clique em **Salvar** para ativar a configuração desse cartão e, se desejar, repita o processo para configurar outras marcas.
 
-![Configurar condições de pagamento com cartão de crédito](/images/vtex/paymentconditions-cc-imagenv2-pt.gif)
-
 ## Parcelamento e acréscimos
 
 Atualmente, o Mercado Pago oferece apenas a opção de parcelamento sem acréscimos dentro da plataforma VTEX.
@@ -30,8 +28,6 @@ Da mesma forma, você tem a opção de configurar o parcelamento e os acréscimo
 
 1. Clique no botão **Definir parcelas e acréscimos** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no checkout. As opções vão de 1 a 12 vezes.
-
-![Installment and interest](/images/vtex/contaptac.gif)
 
 Finalizadas essas etapas, o parcelamento no checkout estará configurado e pronto para processar vendas.
 

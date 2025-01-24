@@ -2,15 +2,14 @@
 content_section_with_media: 
  - title: Checkout Bricks
  - message: Checkout Bricks is a set of UI modules that come front-end ready and optimized for better usability and conversion. Each Brick can be used independently or together, forming the experience of a complete checkout.
- - media_image: /subscriptions/mini-landing-3-pt.png
+ - media_image: /checkout-bricks/landing-bricks.png
 ---
-
 ---
 bullet_section_with_media: 
  - title: 
  - type: normal
  - message: It offers a transparent payment experience with the possibility of customization according to each store, it is secure since the payment information is processed through Mercado Pago and it has a simpler integration process, minimizing production and development times.
- - image: /checkout-bricks/cho-bricks-landing-v4.png
+ - image: /checkout-bricks/bricks-landing.png
 ---
 
 --- mini_landing_separator ---

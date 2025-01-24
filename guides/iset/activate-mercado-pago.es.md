@@ -12,8 +12,6 @@ Para **activar tu cuenta de Mercado Pago en iSET**, sigue estos pasos:
 1. En el campo Status, selecciona la opción “Activo”.
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
 <p>&nbsp;</p>
 
 ¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda.

@@ -33,11 +33,6 @@ A continuación, te explicamos cómo activar cada medio de pago en tu tienda Sal
 
 Por defecto, el cartucho de Mercado Pago mostrará los medios de pago en un orden determinado. 
 
-----[mlb]----
-![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
-
-------------
-
 Si deseas modificar este orden, sigue estos pasos.
 
 1. Dentro de tu tienda Salesforce Commerce Cloud, ve al menú **Merchant Tools** y haz clic en la opción **Payment Methods** que se encuentra dentro del grupo de opciones Ordering. También puedes encontrar la opción utilizando el buscador del menú.

@@ -18,22 +18,17 @@ You can obtain your production credentials in two ways:
 
 1. By accessing [**Your integrations > "Your application" > Production > Production credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-----[mlb]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
-
-------------
-----[mla, mlu, mlc, mlm, mco, mpe]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
-
-------------
-
-2. Through your Mercado Pago account, by accessing [**Your business > Settings > Management and administration > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) through the [Developer dashboard](/developers/en/docs/checkout-bricks/additional-content/your-integrations/dashboard).
+2. Through your Mercado Pago account, by accessing [**Your business > Settings > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) through the [Developer dashboard](/developers/en/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
 ----[mlb]----
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
 
 ------------
-----[mla, mlu, mlc, mlm, mco, mpe]----
+----[mlc]----
+![Cómo acceder a las credenciales a través de Mercado Pago](/images/credentials/credentials-prod-mp-es.png)
+
+------------
+----[mla, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Mercado Pago](/images/credentials/credentials-prod-mp-es.gif)
 
 ------------
@@ -94,7 +89,11 @@ You can obtain your test credentials, **as long as they are available for your i
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
 
 ------------
-----[mla, mlu, mlc, mlm, mco, mpe]----
+----[mlc]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-es.png)
+
+------------
+----[mla, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 
 ------------
@@ -129,7 +128,11 @@ When you receive assistance in integrating or setting up your payment channels, 
 ![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-pt.gif)
 
 ------------
-----[mla, mlu, mlc, mlm, mco, mpe]----
+----[mlc]----
+![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-es.png)
+
+------------
+----[mla, mlu, mlm, mco, mpe]----
 ![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-es.gif)
 
 ------------
@@ -144,6 +147,10 @@ When you receive assistance in integrating or setting up your payment channels, 
 
 ----[mlb]----
 ![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-pt.gif)
+
+------------
+----[mlc]----
+![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-es.png)
 
 ------------
 ----[mla, mlu, mlc, mlm, mco, mpe]----
@@ -173,7 +180,11 @@ If for security reasons or any other relevant reason you need to renew your cred
 ![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
 
 ------------
-----[mla, mlu, mlc, mlm, mco, mpe]----
+----[mcb]----
+![Como renovar suas credenciais](/images/credentials/renew-credentials-es.png)
+
+------------
+----[mla, mlu, mlm, mco, mpe]----
 ![Cómo renovar tus credenciales](/images/credentials/renew-credentials-es.gif)
 
 ------------

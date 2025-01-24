@@ -25,8 +25,6 @@ Para integrar o Checkout API, siga os passos abaixo.
 4. Caso deseje que o pagamento com boleto bancário tenha desconto, informe a porcentagem de desconto no campo “Desconto para pagamentos com boleto”.
 5. Clique em "Salvar alterações".
 
-![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
-
 > NOTE
 >
 > Nota

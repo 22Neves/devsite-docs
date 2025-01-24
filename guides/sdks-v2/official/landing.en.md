@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: SDKs
  - message: With Mercado Pago's SDK libraries, you can reduce the integration time on both client-side and server-side.
- - media_image: /sdk/library-media-1.png
+ - media_image: /sdk/library-media1.png
 ---
 --- mini_landing_separator ---
 

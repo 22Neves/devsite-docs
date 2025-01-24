@@ -754,16 +754,12 @@ preference_data = {
 ]]]
 
 ----[mla, mlb]----
-
 ## Acepta pagos con 2 tarjetas de crédito
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
 Puedes activar la opción de ofrecer pagos con dos tarjetas de crédito desde la cuenta de Mercado Pago.
 
 Para activar esta opción de pago, ve a tus "[opciones de negocio](https://www.mercadopago.com.ar/settings/my-business)" y elige la opción "Recibir pagos con 2 tarjetas de crédito".
 
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 ------------
 
 ## Acepta pagos únicamente de usuarios registrados

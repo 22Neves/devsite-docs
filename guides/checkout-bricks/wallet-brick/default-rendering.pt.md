@@ -6,7 +6,7 @@ Antes de realizar a renderização do Wallet Brick, primeiro execute os [passos 
 >
 > Nota
 >
-> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/wallet.md).
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
 ## Configurar o Brick
 
@@ -450,7 +450,6 @@ curl -X POST \
 ]]]
 
 ------------
-
 
 > WARNING
 >
