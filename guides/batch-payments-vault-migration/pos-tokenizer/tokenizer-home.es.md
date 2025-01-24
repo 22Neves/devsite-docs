@@ -9,8 +9,8 @@ Existen dos opciones para crear vinculaciones de pago:
 ## El vendedor ingresa los datos de la tarjeta manualmente
 
 1. Después de elegir la opción **Tengo los datos para registrarlos ahora**, ingresa los datos de la tarjeta y del usuario.
-2. Después de haberlos ingresados, el token se genera automáticamente.
-3.  En la siguiente pantalla, es posible ver, copiar y eliminar todos los tokens generados.
+2. Después de haberlos ingresado, el token se genera automáticamente.
+3. En la siguiente pantalla, es posible ver, copiar y eliminar todos los tokens generados.
 
 ## El pagador ingresa los datos de la tarjeta directamente
 

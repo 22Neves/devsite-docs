@@ -8,7 +8,7 @@
 > 
 > Importante
 > 
-> El flujo de colaboradores creará una cuenta de Mercado Libre con el e-mail ingresado. Es por esto que **el e-mail no debe estar registrado en Mercado Pago** para no crear ningun conflicto.
+> El flujo de colaboradores creará una cuenta de Mercado Libre con el e-mail ingresado. Es por esto que **el e-mail no debe estar registrado en Mercado Pago** para no crear ningún conflicto.
 
 4. Elige el rol del colaborador.
 5. Revisa el rol del colaborador y haz clic en el botón **Confirmar**.

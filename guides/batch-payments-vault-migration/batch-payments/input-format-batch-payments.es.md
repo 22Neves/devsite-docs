@@ -24,15 +24,15 @@ external_reference;card_id;payer_id;amount;reason;echo_data;soft_descriptor
 24324234332;3154;1234-1234;299;Ejemplo payment;dato random;CompanyName
 ```
 
-| Campo | Formato | Descripción |
-|---|---|---|
-| `external_reference` | Acepta solo caracteres alfanuméricos, barras (“/”) y guiones (“-”, “_”). | Identificador utilizado para la conciliación del pago en el sistema del vendedor. |
-| `card_id` | - | Identificador obtenido durante la vinculación, que representa la tarjeta. |
-| `payer_id` | - | Identificador obtenido durante la vinculación, que representa al cliente (payer). |
-| amount | - | Valor a ser cobrado. Este campo es validado de acuerdo con la moneda local especificada por el vendedor. <ul><li>Ejemplo:</li><li>Para vendedores de Argentina, el campo debe ser separado por “,” (coma) en los decimales.</li><li>Para vendedores de México, el campo debe ser separado por “.” (punto) en los decimales.</li></ul> |
-| `reason` | - | Opcional. Detalle o explicación sobre el cobro. |
-| `echo_data` | - | Opcional. Información adicional que no será utilizada, pero que puede ser enviada por el vendedor. |
-| `soft_descriptor` | Acepta sólo caracteres alfanuméricos. | Opcional. Descripción que se mostrará en la factura del banco emisor de la tarjeta del cliente. Si se completa, el campo acepta solo caracteres alfanuméricos. De lo contrario, el pago no será procesado y el informe indicará la rechazada con el mensaje: “El soft_descriptor ingresado es inválido”. El campo tiene un límite de 50 caracteres. |
+| Campo             | Descripción                                                                                         | Formato                                                | Ejemplo            | Tipo       |
+|-------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|--------------------|------------|
+| `external_reference` | Id para conciliación del pago en el sistema del seller                                             | Solo acepta caracteres alfanuméricos, barras ("/") y guiones ("-" e "_") | ref_4324234332    | Obligatorio |
+| `card_id`           | Dato obtenido en la vinculación - Id que representa la tarjeta                                    | Solo acepta valores alfanuméricos                       | 123123             | Obligatorio |
+| `payer_id`          | Dato obtenido en la vinculación - Id que representa el customer (payer)                          | Conformado por 2 partes separadas por un guión del medio "-". La primera parte acepta solo valores numéricos y la segunda parte cualquier valor alfanumérico | 123-ab12          | Obligatorio |
+| `amount`            | Monto a cobrar (*)                                                                                 | Valores numéricos positivos com separadores de decimales segundo site: <br> - MLA, MLU: "19,10" <br> - MLM y MPE: "299,10" <br> - MCO y MLC sin separadores de decimales | <br>-MLA, MLU: "199,10"<br>-MLM y MPE: "299.10" <br>-MCO y MLC:"399" | Obligatorio |
+| `reason`            | Detalle o explicación del cobro                                                                    | Valores alfanuméricos                                   |                    | Opcional   |
+| `echo_data`         | Información adicional que no vamos a usar pero puede mandar al seller                            | Valores alfanuméricos                                   |                    | Opcional   |
+| `soft_descriptor`    | Detalle que se muestra en la factura del banco emisor de la tarjeta del cliente             | Solo acepta caracteres alfanuméricos                   |                    | Opcional   |
 
 ## Posibles errores de carga o procesamiento
 
@@ -46,7 +46,7 @@ external_reference;card_id;payer_id;amount;reason;echo_data;soft_descriptor
 * **Nombre de archivo ya utilizado:** El nombre del archivo ha sido utilizado en un procesamiento anterior.
 * **Archivo ya procesado:** Existe una validación para evitar el procesamiento de archivos idénticos.
 * **Incumplimiento en el formato o tipo de datos válidos en el CSV:** El archivo no cumple con los requisitos de formato o contiene tipos de datos inválidos.
-* **Caracteres especiales no permitidos:** No se permiten caracteres especiales (como ñ, &%·!”?¿, entre otros).
-* **Caracteres especiales no permitidos:** No se permiten caracteres especiales (como ñ, &%·!”?¿, entre otros).
-* **Cliente o tarjeta inválidos:** El cliente o la tarjeta no pertenecen a una de las partes (Vendedor o Payer).
+* **Caracteres especiales no permitidos:** No se permiten caracteres especiales (ñ,&%·!”?¿).
+* **Cliente o tarjeta inválidos:** El cliente o la tarjeta no pertenecen a una de las partes (Vendedor o Comprador).
 
+En caso de falla de alguna de estas validaciones, el sistema enviará un email para informarle que no ha sido posible procesar el archivo.

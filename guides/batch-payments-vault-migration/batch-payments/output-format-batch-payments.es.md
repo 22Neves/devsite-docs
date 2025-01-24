@@ -10,12 +10,13 @@ sequential_order,external_reference,amount,reason,echoData,payment_status,paymen
 4; 62966843; 189.09; Cobro ejemplo 3; 62483295; Error; No fue posible procesar el pago; 
 ```
 
-| Campo | Descripción |
-|---|---|
-| `sequential_order` | Orden del archivo en relación al archivo de entrada. |
-| `external_reference` | Identificador utilizado para la conciliación del pago en el sistema del vendedor. |
-| `amount` | Monto cobrado. |
-| `reason` | Detalle o explicación sobre el cobro. |
-| `echo_data` | Información adicional que no se utiliza, pero que puede ser enviada por el vendedor. |
-| `payment_status` | Estado actual del pago. |
-| `payment_detail` | Detalles del pago para casos no cobrados. Algunos de los valores son:<br/>1. Los datos no están separados con el formato correcto.<br/>2. Esta columna no pudo ser procesada.<br/>3. Los datos en esta columna son obligatorios.<br/>4. Los datos de la tarjeta no pudieron ser procesados.<br/>5. El `customer_id` o `card_id` era inválido.<br/>6. El monto ingresado es inválido.<br/>7. La tarjeta está vencida.<br/>8. No fue posible procesar el pago.<br/>9. El soft descriptor ingresado es inválido.<br/>10. La external_reference ingresada es inválida. |
+| Campo             | Descripción                                                                                         | Formato                                              | Ejemplo        | Tipo        |
+|-------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------|----------------|-------------|
+| `sequential_order`   | Orden de file con respecto al archivo de entrada.                                                | Valores numéricos                                     | 123456         | Obligatorio |
+| `external_reference` | Id para conciliación del pago en el sistema del seller                                          | Caracteres alfanuméricos, barras ("/") e guiones ("-" e "_") | ref_123456     | Obligatorio |
+| `amount`            | Monto cobrado.                                                                                    | Valores numéricos con decimales según site: <br> - MLA, MLU: "199,10" <br> - MLM y MPE: "299,10" <br> - MCO y MLC sin separadores de decimales |                | Obligatorio |
+| `reason`            | Detalle o explicación del cobro                                                                    | Valores alfanuméricos                                 |                | Obligatorio |
+| `echo_data`         | Información adicional que no vamos a usar pero puede mandar al seller                             | Valores alfanuméricos                                 |                | Obligatorio |
+| `payment_status`     | Estado del pago                                                                                    | Valores alfabéticos, posibles valores: <br> - Paid <br> - Unpaid <br> - Invalid |                | Obligatorio |
+| `payment_detail`     | Detalle del pago para casos no cobrados. <br> Algunos de los valores son: <br> - Los datos no están separados con el formato correcto <br> - Esta columna no pudo ser procesada <br> - Los datos en esta columna son obligatorios <br> - Los datos de la tarjeta no pudieron ser procesados <br> - El customer_id o card_id era inválido. <br> - El monto ingresado es inválido <br> - La tarjeta está vencida <br> - No he posible procesar el pago <br> - El soft descriptor ingresado es inválido <br> - El external reference ingresado es inválido <br> - Detalles de status según documentación de API pública | Valores alfanuméricos                               |                | Opcional    |
+| `payment_id`        | Id identificador del pago                                                                          | Valores numéricos                                     | 23465778       | Obligatorio |

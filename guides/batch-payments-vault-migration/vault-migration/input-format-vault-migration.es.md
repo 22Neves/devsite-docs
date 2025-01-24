@@ -12,21 +12,15 @@ Filler,external_reference,customer_email,Filler,Filler,card_number,expiration_mo
 
 Todos los campos son obligatorios. A continuación, se encuentran las descripciones detalladas de cada campo y sus particularidades:
 
-| Campo | Descripción | Requerido u opcional |
-|---|---|---|
-| `filler` | Estos campos deben ser completados con un espacio en blanco, ya que son necesarios para nuestro procesamiento interno. | Requerido. |
-| `external_reference` | Referencia del pagador en el sistema del vendedor | Requerido . |
-| `customer_email` | Correo electrónico del usuario pagador asociado a la vinculación. | Requerido. |
-| `card_number` | Número de tarjeta (PAN). | Requerido. |
-| `expiration_month` | Mes de vencimiento de la tarjeta | Requerido . |
-| `expiration_year` | Año de vencimiento de la tarjeta | Requerido. |
-| `cardholder_name` | Nombre que aparece en la tarjeta | Requerido. |
-
-> WARNING
->
-> Importante
->
-> En caso de no disponer de la información de algún campo (por ejemplo: fecha de vencimiento o nombre del titular de la tarjeta), completa con datos ficticios.
+| Campo                  | Descripción                                                                          | Formato                     | Ejemplo                 | Tipo      |
+|------------------------|-------------------------------------------------------------------------------------|-----------------------------|-------------------------|-----------|
+| `filler`                 | Deben completarse como una cadena vacía ("") y no como null o nil; son necesarios para nuestro procesamiento interno. |                             | ""                      | Requerido |
+| `external_reference`     | Es la referencia del payer en el sistema del seller.                               | Caracteres alfanuméricos   | ORD-123456              | Requerido |
+| `customer_email`         | Representa el email del usuario pagador en la vinculación.                         | Caracteres alfanuméricos   | cliente@email.com       | Requerido |
+| `card_number`            | Es el PAN de la tarjeta.                                                           | Caracteres numéricos (entre 13 y 19) | 1234567812345678 | Requerido |
+| `expiration_month`       | Es el mes de vencimiento de la tarjeta.                                       | Caracteres numéricos (2)   | 01                      | Requerido |
+| `expiration_year`        | Es el año de vencimiento de la tarjeta.                                       | Caracteres numéricos (2)   | 25                      | Requerido |
+| `cardholder_name`        | Este es el nombre que aparece en la tarjeta.                                   | Caracteres alfanuméricos   | ATILIO GARCIA           | Requerido |
 
 ## Validaciones del archivo de entrada
 

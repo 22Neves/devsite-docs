@@ -24,7 +24,7 @@ Para realizar cobros a través del flujo batch, es necesario:
 > 
 > Se debe usar la misma cuenta y la misma aplicación con la que se generaron las vinculaciones.
 
-A continuación, junto con el SFTP, devolveremos los siguientes datos de conexión:
+A continuación, junto con el SFTP, devolveremos los siguientes datos de conexión. La misma se establecerá mediante la clave privada asociada a la clave pública compartida:
 
 | Datos de conexión | Descripción |
 |---|---|
@@ -35,4 +35,4 @@ A continuación, junto con el SFTP, devolveremos los siguientes datos de conexi�
 > 
 > Nota
 > 
-> La carga de archivos está disponible 24 horas al día, 7 días a la semana. El período de procesamiento varía de 1 a 5 días hábiles.
+> La carga de archivos está disponible 24 horas al día, 7 días a la semana. Una vez cargados, el período de procesamiento de los archivos varía de 1 a 5 días hábiles. Una vez generado el archivo, el mismo permanecerá disponible únicamente por 7 días.

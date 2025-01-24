@@ -15,11 +15,11 @@ payment_id;external_reference;amount
 1234;ext_ref_2;200
 ```
 
-| Campo | Descripción |
-|---|---|
-| payment_id | ID identificador del pago. |
-| external_reference | ID para la conciliación del reembolso en el sistema del vendedor. |
-| amount | Monto a ser cobrado. Este campo es validado de acuerdo con la moneda local especificada por el vendedor. Ejemplo:<br/>1. Para vendedores de Argentina, el campo debe ser separado por “,” (coma) en los decimales.<br/>2. Para vendedores de México, el campo debe ser separado por “.” (punto) en los decimales. |
+| Campo | Descripción | Formato | Ejemplo | Tipo |
+|---|---|---|---|---|
+| `payment_id` | ID identificador del pago. | Sólo acepta valores numéricos | 123341 | Obligatorio |
+| `external_reference` | ID para la conciliación del reembolso en el sistema del vendedor. | Sólo acepta caracteres alfanuméricos, barras ("/") y guiones ("-","_"). | ref_4324234332 | Obligatorio |
+| `amount` | Monto a reembolsar | Valores numéricos positivos con separadores de decimales según site:<br/>- MLA, MLU: ","<br/>-MLM y MPE: "."<br/>- MCO y MLC: sin separadores de decimales. | - MLA y MLU: "199,10"<br/>- MLM y MPE: "299.10"<br/>- MCO y MLC: "399" | Obligatorio |
 
 ## Posibles errores de carga o procesamiento
 

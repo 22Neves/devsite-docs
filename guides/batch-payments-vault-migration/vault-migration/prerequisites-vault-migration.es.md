@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para utilizar tanto el producto de Migración de Bóvedas como el producto de Batch Payments, será necesario cumplir con los siguientes requisitos:
+Para utilizar tanto el producto de Migración de Bóvedas, será necesario cumplir con los siguientes requisitos:
 
 | Requisito | Descripción |
 |---|---|
@@ -9,7 +9,7 @@ Para utilizar tanto el producto de Migración de Bóvedas como el producto de Ba
 
 ## Migración de bóvedas
 
-Si es necesario realizar el proceso de migración de una bóveda, se requerirán:
+Si necesitas realizar el proceso de migración de una bóveda, contarás con el apoyo de un equipo de soporte de Mercado Pago. Para este proceso, el representante de soporte te compartirá las siguientes documentaciones:
 
 ### Con procesador de pagos actual
 
