@@ -33,7 +33,7 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 
 ## Configuración de impresiones
 
-La API de Impresiones ofrece una solución práctica para conectar sus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tenga configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
+La API de Impresiones ofrece una solución práctica para conectar tus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tengas configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
 
 Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de su negocio.
 
@@ -48,7 +48,7 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 
 > WARNING
 > 
-> IMPORTANTE
+> Importante
 >
 > El DTE enviado debe ser compatible con los formatos definidos por el [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
 
@@ -56,7 +56,7 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 
 > WARNING
 >
-> IMPORTANTE
+> Importante
 >
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
@@ -66,15 +66,15 @@ Para configurar la integración de las impresiones, utilice la API para gestiona
    - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post)  
 Aguarde hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el “botón verde” para buscar el intento manualmente.
 
-### Custom tags
+### Tags personalizadas
 
-Las *custom tags* permiten personalizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulte las diferentes tags disponibles, sus funciones y ejemplos de uso:
+Las tags personalizadas permiten personalizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulte las diferentes tags disponibles, tus funciones y ejemplos de uso:
 
 > WARNING
 >
 > Importante
 >
-> Los _custom tags_ tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo los propios tags.
+> Los tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo los propios tags.
 
 | Tag        | Función                                     | Ejemplo                          |
 |------------|---------------------------------------------|----------------------------------|
