@@ -160,17 +160,17 @@
                       "type": "string",
                       "example": "print",
                       "description": {
-                        "en": "Action type",
-                        "pt": "Tipo de ação",
-                        "es": "Tipo de acción"
+                        "en": "Action type.",
+                        "pt": "Tipo de ação.",
+                        "es": "Tipo de acción."
                       },
                       "enum": [
                         {
                           "title": "print",
                           "description": {
-                            "en": "Print action created for Point",
-                            "pt": "Ação de impressão criada para Point",
-                            "es": "Acción de impresión creada para Point"
+                            "en": "Print action created for Point.",
+                            "pt": "Ação de impressão criada para Point.",
+                            "es": "Acción de impresión creada para Point."
                           }
                         }
                       ]
