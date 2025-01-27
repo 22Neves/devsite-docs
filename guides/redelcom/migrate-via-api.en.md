@@ -63,9 +63,9 @@ To configure the integration of the prints, use the API to manage the queuing of
 > The terminal must be configured in POS (Point of Sale) mode. 
 
 The available endpoints are:
-   - [Create Terminal Action](/developers/en/reference/mercado_pago_point/impressions/post)
-   - [Get Action by ID](/developers/en/reference/mercado_pago_point/impressions/get)
-   - [Cancel Action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post) 
+   - [Create Terminal Action](/developers/en/reference/order/in-person-payments/impressions/post)
+   - [Get Action by ID](/developers/en/reference/order/in-person-payments/impressions/get)
+   - [Cancel Action by ID](/developers/en/reference/order/in-person-payments/impressions_cancel/post) 
     
 Wait until the attempt reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the attempt manually.
 

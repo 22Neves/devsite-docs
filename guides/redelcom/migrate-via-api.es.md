@@ -63,9 +63,9 @@ Para configurar la integración de las impresiones, utilice la API para gestiona
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
 Los endpoints disponibles son:
-   - [Crear acción del terminal](/developers/es/reference/mercado_pago_point/impressions/post)
-   - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions/get)
-   - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post)  
+   - [Crear acción del terminal](/developers/es/reference/order/in-person-payments/impressions/post)
+   - [Obtener acción por ID](/developers/es/reference/order/in-person-payments/impressions/get)
+   - [Cancelar acción por ID](/developers/es/reference/order/in-person-payments/impressions_cancel/post)  
 
 Aguarde hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el “botón verde” para buscar el intento manualmente.
 
