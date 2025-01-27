@@ -5,9 +5,9 @@
       "post": {
         "tags": ["mp-point"],
         "description": {
-          "en": "This endpoint allows you to create a new terminal action for the Mercado Pago point. In case of success, the request will return a response with status 201.",
-          "es": "Este endpoint permite la creación de una nueva acción de terminal para el Point de Mercado Pago. En caso de éxito, la petición devolverá un código de estado 201.",
-          "pt": "Este endpoint permite que você crie uma nova ação de terminal para o ponto Mercado Pago. Em caso de sucesso, a solicitação retornará uma resposta com status 201."
+          "en": "This endpoint allows you to create a new terminal action for the Mercado Pago point. In case of success, the request will return a response with status 201",
+          "es": "Este endpoint permite la creación de una nueva acción de terminal para Mercado Pago Point. En caso de éxito, la petición devolverá un código de estado 201",
+          "pt": "Este endpoint permite que você crie uma nova ação de terminal para Mercado Pago Point. Em caso de sucesso, a solicitação retornará uma resposta com status 201"
         },
         "parameters": [
           {
@@ -35,17 +35,17 @@
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "Action type, associated with the Mercado Pago solution for wich it is created. Right now, the only supported value is \"print\"",
-                      "es": "Tipo de acción, asociada a la solución de Mercado Pago para la que se crea. En estos momentos, solo se soporta el valor \"print\"",
-                      "pt": "Tipo de ação, associado à solução Mercado Pago para a qual foi criado. No momento, o único valor suportado é \"print\""
+                      "en": "Action type, associated with the Mercado Pago solution for wich it is created. Right now, the only supported value is \"print\".",
+                      "es": "Tipo de acción, asociada a la solución de Mercado Pago para la que se crea. En estos momentos, solo se soporta el valor \"print\".",
+                      "pt": "Tipo de ação, associado à solução Mercado Pago para a qual foi criado. No momento, o único valor suportado é \"print\"."
                     },
                     "enum": [
                       {
                         "title": "print",
                         "description": {
-                          "en": "Value associated with the creation of print actions for the Point of Sale",
-                          "es": "Valor asociado con la creación de acciones de impresión para el Punto de Venta",
-                          "pt": "Valor associado à criação de ações de impressão para o Ponto de Venda"
+                          "en": "Value associated with the creation of print actions for the Point of Sale.",
+                          "es": "Valor asociado con la creación de acciones de impresión para el Punto de Venta.",
+                          "pt": "Valor associado à criação de ações de impressão para o Ponto de Venda."
                         }
                       }
                     ],
@@ -64,8 +64,8 @@
                   "config": {
                     "type": "object",
                     "description": {
-                      "en": "Action type configuration",
-                      "es": "Configuración del tipo de acción",
+                      "en": "Action type configuration.",
+                      "es": "Configuración del tipo de acción.",
                       "pt": "Configuração do tipo de ação."
                     },
                     "required": true,
@@ -91,9 +91,9 @@
                           "subtype": {
                             "type": "string",
                             "description": {
-                              "en": "Identifier of the action subtype that will be created for the Point. If the action is \"print\" you must choose between two values: \"invoice\" for xml that represents electronic invoices, and \"custom\" for a customized printing.",
-                              "es": "Identificador del subtipo de acción que se creará para el Punto. Si la acción es \"imprimir\" se debe elegir entre dos valores: \"invoice\" para xml que represente facturas electrónicas, y \"custom\" para una impresión personalizada.",
-                              "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre dois valores: \"invoice\" para xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
+                              "en": "Identifier of the action subtype that will be created for the Point. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, and \"custom\" for a customized printing.",
+                              "es": "Identificador del subtipo de acción que se creará para el Punto. Si la acción es \"imprimir\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, y \"custom\" para una impresión personalizada.",
+                              "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
                             },
                             "example": "invoice",
                             "required": true,
@@ -101,9 +101,9 @@
                               {
                                 "title": "invoice",
                                 "description": {
-                                  "en": "Identifier of the subtype related to invoices, it supports an xml that must be compliant with the invoice issuer.",
-                                  "pt": "Identificador do subtipo relacionado às notas fiscais, suporta um xml que deve estar em conformidade com o emissor da nota fiscal.",
-                                  "es": "Identificador del subtipo relacionado con facturas, soporta un xml que debe ser conforme con el emisor de la factura."
+                                  "en": "Identifier of the subtype related to invoices, it supports an .xml that must be compliant with the invoice issuer.",
+                                  "pt": "Identificador do subtipo relacionado às notas fiscais, suporta um .xml que deve estar em conformidade com o emissor da nota fiscal.",
+                                  "es": "Identificador del subtipo relacionado con facturas, soporta un .xml que debe ser conforme con el emisor de la factura."
                                 }
                               },
                               {
@@ -111,7 +111,7 @@
                                 "description": {
                                   "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to realize a printing on the Point.",
                                   "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las etiquetas admitidas para poder realizar una impresión en el Point.",
-                                  "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão no Point."
+                                  "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão na Point."
                                 }
                               }
                             ]
@@ -124,9 +124,9 @@
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "String that contains the information to be printed in the point, if the subtype is \"invoice\" it must a valid xml, and if the subtype is \"custom\" it must contains the string formatted with the supported tags.",
-                      "pt": "String que contém as informações a serem impressas no ponto, se o subtipo for \"invoice\" deve ser um xml válido, e se o subtipo for \"custom\" deve conter a string formatada com as tags suportadas.",
-                      "es": "Cadena de texto que contiene la información a imprimir en el punto, si el subtipo es \"invoice\" debe ser un xml válido, y si el subtipo es \"custom\" debe contener la cadena de texto formateada con las etiquetas soportadas."
+                      "en": "String that contains the information to be printed in the Point. If the subtype is \"invoice\", it must a valid .xml, and if the subtype is \"custom\" it must contains the string formatted with the supported tags.",
+                      "pt": "String que contém as informações a serem impressas na Point. Se o subtipo for \"invoice\", deve ser um .xml válido, e se o subtipo for \"custom\" deve conter a string formatada com as tags suportadas.",
+                      "es": "String que contiene la información a imprimir en Point. Si el subtipo es \"invoice\", debe ser un .xml válido, y si el subtipo es \"custom\" debe contener la cadena de texto formateada con las etiquetas soportadas."
                     },
                     "example": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL ADIDAS WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA Cerro Navia test 12345  {/s}{br}{s}RECIBE: Pepito Perez{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
                   }
@@ -138,9 +138,9 @@
         "responses": {
           "201": {
             "description": {
-              "es": "Éxito",
-              "pt": "Sucesso",
-              "en": "Success"
+              "es": "Éxito.",
+              "pt": "Sucesso.",
+              "en": "Success."
             },
             "content": {
               "application/json": {
@@ -180,8 +180,8 @@
                       "example": "ext_ref_1234",
                       "description": {
                         "en": "It is the external reference of the action, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
-                        "pt": "É a referência externa da ação, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
-                        "es": "Es una referencia externa de la acción, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                        "pt": "É a referência externa da ação, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres. Os caracteres permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                        "es": "Es una referencia externa de la acción, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres. Los caracteres permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
                       }
                     },
                     "status": {
@@ -276,9 +276,9 @@
                         {
                           "title": "invalid_data_xml",
                           "description": {
-                            "en": "The data sent in the xml is not compliant with the format provided by the invoices issuer. Check the message returned in the error details to find out what the problem was and try again.",
-                            "pt": "Os dados enviados no xml não estão em conformidade com o formato fornecido pelo emissor das faturas. Verifique a mensagem retornada nos detalhes do erro para descobrir qual foi o problema e tente novamente.",
-                            "es": "Los datos enviados en el xml no cumplen con el formato proporcionado por el emisor de las facturas. Verifique el mensaje que aparece en los detalles del error para averiguar cuál fue el problema e inténtelo nuevamente."
+                            "en": "The data sent in the .xml is not compliant with the format provided by the invoices issuer. Check the message returned in the error details to find out what the problem was and try again.",
+                            "pt": "Os dados enviados no .xml não estão em conformidade com o formato fornecido pelo emissor das faturas. Verifique a mensagem retornada nos detalhes do erro para descobrir qual foi o problema e tente novamente.",
+                            "es": "Los datos enviados en el .xml no cumplen con el formato proporcionado por el emisor de las facturas. Verifique el mensaje que aparece en los detalles del error para averiguar cuál fue el problema e inténtelo nuevamente."
                           }
                         }
                       ]
@@ -307,7 +307,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la petición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente enviar a requisição novamente com o valor correto."
                           }
                         }
                       ]
@@ -424,7 +424,7 @@
         "title": {
           "en": "Create terminal action",
           "es": "Crear acción de terminal",
-          "pt": "Criar ação terminal"
+          "pt": "Criar ação do terminal"
         }
       }
     },
@@ -549,7 +549,7 @@
                           "description": {
                             "en": "An error occurred during the processing of the action. This may have been caused by incorrect data submission, an issue related to the type of action, or a problem with the machine.",
                             "es": "Se produjo un error en el procesamiento de la acción. Puede deberse al envío de datos incorrectos o a otro problema relacionado con el tipo de acción, o el dispositivo.",
-                            "pt": "Se produjo un error durante el procesamiento de la acción. Esto puede haber sido causado por el envío de datos incorrectos, un problema relacionado con el tipo de acción o un inconveniente con la máquina."
+                            "pt": "Ocorreu um erro durante o processamento da ação. Isso pode ter sido causado pelo envio de dados incorretos, um problema relacionado com o tipo de ação ou um inconveniente com a máquina."
                           }
                         }
                       ]
@@ -561,9 +561,9 @@
                       "type":"string",
                       "example":"2024-09-10T14:26:42.109320977Z",
                       "description":{
-                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
-                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
-                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                        "en": "Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt": "Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es": "Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
                       }
                     }
                   }
@@ -672,18 +672,18 @@
           "mp-point"
         ],
         "description": {
-          "en":"Cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
-          "pt":"Cancela uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Cancela una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en": "Cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt": "Cancela uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Cancela una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
             "name":"order_id",
             "in":"path",
             "description":{
-              "en": "ID of the action that is being cancelled. This value is returned in the response to the Create action request.",
-              "pt": "ID da ação a ser cancelada. Esse valor é retornado na resposta à requisição Criar ação.",
-              "es": "ID de la acción a cancelar. Este valor es devuelto en la respuesta a la petición Crear acción."
+              "en": "ID of the action that is being cancelled. This value is returned in the response to the Create terminal action.",
+              "pt": "ID da ação a ser cancelada. Esse valor é retornado na resposta à requisição Criar ação de terminal.",
+              "es": "ID de la acción a cancelar. Este valor es devuelto en la respuesta a la petición Crear acción de terminal."
             },
             "required":true,
             "schema":{
@@ -700,9 +700,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
+              "en": "This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
             }
           }
         ],
