@@ -41,18 +41,20 @@ Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e i
 
 Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
 
-| Tipo de documento                     | Descripción                                                                                     |
-|---------------------------------------|-------------------------------------------------------------------------------------------------|
-| Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
-| Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, teniendo validez contable y tributaria. |
-
 > WARNING
 > 
 > Importante
 >
 > El DTE enviado debe ser compatible con los formatos definidos por el [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
 
+| Tipo de documento                     | Descripción                                                                                     |
+|---------------------------------------|-------------------------------------------------------------------------------------------------|
+| Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
+| Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, teniendo validez contable y tributaria. |
+
 ### Configuración de la integración
+
+Para configurar la integración de las impresiones, utilice la API para gestionar el encolado de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
 
 > WARNING
 >
@@ -60,20 +62,17 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 >
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
-Para configurar la integración de las impresiones, utilice la API para gestionar el encolado de cada uno de los intentos, considerando las especificaciones de cada endpoint. Los endpoints disponibles son:
+Los endpoints disponibles son:
    - [Crear acción del terminal](/developers/es/reference/mercado_pago_point/impressions/post)
    - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions/get)
    - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post)  
+
 Aguarde hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el “botón verde” para buscar el intento manualmente.
 
 ### Tags personalizadas
 
 Las tags personalizadas permiten personalizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulte las diferentes tags disponibles, tus funciones y ejemplos de uso:
 
-> WARNING
->
-> Importante
->
 > Los tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo los propios tags.
 
 | Tag        | Función                                     | Ejemplo                          |

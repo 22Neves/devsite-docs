@@ -41,39 +41,38 @@ This resource allows for the printing of receipts and electronic invoices (DTE) 
 
 The following types of Electronic Tax Documents (DTE) in XML format are accepted:
 
-| Document Type                          | Description                                                                                     |
-|----------------------------------------|-------------------------------------------------------------------------------------------------|
-| Affected Invoice (33) and Exempt (34) | Refers to the tax document that has legal validity before the Internal Revenue Service (SII). |
-| Affected Receipt (39) and Exempt (41) | Refers to the document that the customer receives when making a purchase, having accounting and tax validity. |
-
 > WARNING
 > 
 > Important
 >
 > The sent DTE must be compatible with the formats defined by the [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
 
-### Integration configuration
+| Document Type                          | Description                                                                                     |
+|----------------------------------------|-------------------------------------------------------------------------------------------------|
+| Affected Invoice (33) and Exempt (34) | Refers to the tax document that has legal validity before the Internal Revenue Service (SII). |
+| Affected Receipt (39) and Exempt (41) | Refers to the document that the customer receives when making a purchase, having accounting and tax validity. |
+
+### Integration configuration 
+
+To configure the integration of the prints, use the API to manage the queuing of each attempt, considering the specifications of each endpoint. 
 
 > WARNING
 >
 > Important
 >
-> The terminal must be configured in POS (Point of Sale) mode.  
+> The terminal must be configured in POS (Point of Sale) mode. 
 
-To configure the integration of the prints, use the API to manage the queuing of each attempt, considering the specifications of each endpoint. The available endpoints are:
+The available endpoints are:
    - [Create Terminal Action](/developers/en/reference/mercado_pago_point/impressions/post)
    - [Get Action by ID](/developers/en/reference/mercado_pago_point/impressions/get)
-   - [Cancel Action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post)  
+   - [Cancel Action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post) 
+    
 Wait until the attempt reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the attempt manually.
 
 ### Custom tags
 
 Custom tags allow for the personalization of the presentation of printed documents. They offer flexibility and control over the text format, enabling the creation of efficient and visually appealing prints. Below, consult the different available tags, their functions, and usage examples:
 
-> WARNING
->
-> Important
->
 > Custom tags have a minimum limit of 100 characters and a maximum limit of 4096 characters, including the tags themselves.
 
 | Tag        | Function                                   | Example                           |
