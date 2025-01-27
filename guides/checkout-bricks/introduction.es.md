@@ -12,7 +12,7 @@ El Brick posee capacidades responsivas en términos del tamaño del espacio en l
 
 ----[mlc]---- 
 
-![responsiveness-mlb](checkout-bricks/responsiveness-mlc-es.png)
+![responsiveness-mlc](checkout-bricks/responsiveness-all-es.png)
 
 ------------
 ----[mlb]---- 
