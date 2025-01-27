@@ -85,12 +85,12 @@ You can obtain your test credentials, **as long as they are available for your i
 >
 > These credentials **are not available for all Mercado Pago products**, so they will only be active in applications where you have selected a product that requires them.
 
-----[mlb]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
-
-------------
 ----[mlc]----
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-es.png)
+
+------------
+----[mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
 
 ------------
 ----[mla, mlu, mlm, mco, mpe]----

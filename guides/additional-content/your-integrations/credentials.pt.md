@@ -96,7 +96,7 @@ Para obter suas credenciais de teste, **desde que estas estejam disponíveis par
 
 ------------
 ----[mla, mlm, mlu, mco, mlb, mpe]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.png)
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
 
 ------------
 
