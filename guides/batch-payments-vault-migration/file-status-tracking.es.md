@@ -6,3 +6,16 @@ Además, recibirás comunicaciones en el correo electrónico registrado durante 
 
 También se enviará un correo electrónico informando sobre la conclusión del procesamiento.
 
+![](/images/batch-payments/process-status.png)
+
+Además, recibirás comunicaciones en el correo electrónico registrado durante el proceso de onboarding, incluyendo un correo confirmando la recepción correcta del archivo y el inicio del procesamiento.
+
+![](/images/batch-payments/data-received.png)
+
+También se enviará un correo electrónico informando sobre la conclusión del procesamiento:
+
+![](/images/batch-payments/processing-completed.png)
+
+A continuación, un ejemplo de un correo electrónico que contiene un aviso de error.
+
+![](/images/batch-payments/processing-interrupted.png)

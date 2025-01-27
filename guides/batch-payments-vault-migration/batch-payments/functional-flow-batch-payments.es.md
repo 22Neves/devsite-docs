@@ -2,4 +2,4 @@
 
 ## Flujo funcional 
 
-!imagen
+![](/images/batch-payments/batch-flow.png)
