@@ -110,8 +110,8 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
         "payer": {
             "first_name": "Nombre",
             "last_name": "Apellido",
-            "is_prime_user": "1",
-            "is_first_purchase_online": "1",
+            "is_prime_user": true,
+            "is_first_purchase_online": true,
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
                 "area_code": "11",

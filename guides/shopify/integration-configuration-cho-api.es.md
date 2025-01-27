@@ -274,22 +274,10 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. Ve a la sección **Tu negocio > Costos** y selecciona la opción **Checkout**.
-
-![configure installments 1](/images/shopify/configure-installments-1-es.png)
-
 3. En "Meses sin intereses", haz clic en **Configurar cuotas**.
-
-![configure installments 2](/images/shopify/configure-installments-2-es.png)
-
 4. Activa la opción **Ofrecer MSI con tarjeta de crédito** y luego elige hasta cuantas cuotas quieres ofrecer.
-
-![configure installments 3](/images/shopify/configure-installments-3-es.png)
-
 5. Después de configurar las opciones cuotas sin intereses, ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 6. En el panel administrativo, haz clic en **Configuraciones** en la esquina inferior izquierda de la página.
-
-![configure installments 4](/images/shopify/configure-installments-4-es.png)
-
 7. Una vez allí, selecciona la opción **Pagos** en el menú al lado izquierdo de la página.
 8. En "Mercado Pago Tarjetas", haz clic en **Gestionar**.
 
