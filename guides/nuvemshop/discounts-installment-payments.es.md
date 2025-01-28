@@ -5,7 +5,7 @@ Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus 
 
 Puedes personalizar estas configuraciones según tus necesidades, como:
 
-* [Descuentos a través del Panel Administrativo de tu tienda](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20el%20panel%20de%20Administraci%C3%B3n%20de%20Tiendanube)
+* [Descuentos a través del Panel Administrativo de tu tienda](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20el%20Panel%20Administrativo%20de%20Tiendanube)
 * [Pagos a cuotas con intereses directamente desde el plugin de Mercado Pago en Tiendanube](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20a%20trav%C3%A9s%20del%20plugin%20Mercado%20Pago%20en%20Tiendanube)
 * [Pagos a cuotas sin intereses directamente desde tu cuenta vinculada a Mercado Pago](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20la%20cuenta%20Mercado%20Pago)
 
@@ -17,7 +17,7 @@ Con Mercado Pago, tienes la flexibilidad de ofrecer beneficios exclusivos a tus 
 
 Puedes personalizar estas configuraciones según tus necesidades, como:
 
-* [Descuentos a través del Panel Administrativo de tu tienda](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20el%20panel%20de%20Administraci%C3%B3n%20de%20Tiendanube)
+* [Descuentos a través del Panel Administrativo de tu tienda](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20el%20Panel%20Administrativo%20de%20Tiendanube)
 * [Pagos a meses con intereses directamente desde el plugin de Mercado Pago en Tiendanube](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20a%20trav%C3%A9s%20del%20plugin%20Mercado%20Pago%20en%20Tiendanube)
 * [Pagos a meses sin intereses directamente desde tu cuenta vinculada a Mercado Pago](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configuraci%C3%B3n%20desde%20la%20cuenta%20Mercado%20Pago)
 
@@ -32,11 +32,11 @@ Puedes personalizar estas configuraciones según tus necesidades, como:
 3. En la lista de métodos de pago, localiza el plugin de Mercado Pago y haz clic en **Editar configuración** para definir las configuraciones a continuación.
 
 ----[mlb]----
-![discounts mlb](/images/nuvemshop/discounts-mlb.png)
+![discounts mlb](/images/nuvemshop/discounts-admin-mlb.png)
 
 ------------
 ----[mlm, mla]----
-![discounts all](/images/nuvemshop/discounts-all.png)
+![discounts all](/images/nuvemshop/discounts-admin-all.png)
 
 ------------
 ----[mlm, mla]----
@@ -143,10 +143,24 @@ Para configurar meses sin intereses en tu tienda, sigue estos pasos:
 
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. En el menú de tu cuenta de Mercado Pago, selecciona **Tu negocio > Comisiones y MSI**.
+
+![discounts-mercadopago-1-mlm](/images/nuvemshop/discounts-mercadopago-mlm.png)
+
 3. En la parte superior de la pantalla, selecciona **Checkout**.
+
+![discounts-mercadopago-2-mlm](/images/nuvemshop/discounts-mercadopago-2-mlm.png)
+
 4. Ingresa a la pestaña “Por ofrecer MSI” y, al lado de “MSI con tarjeta de crédito”, selecciona **Ofrecer**.
+
+![discounts-mercadopago-3-mlm](/images/nuvemshop/discounts-mercadopago-3-mlm.png)
+
 5. **Activa el botón** que está al lado de “Ofrecer MSI con tarjeta de crédito”.
+
+![discounts-mercadopago-4-mlm](/images/nuvemshop/discounts-mercadopago-4-mlm.png)
+
 6. Elige el máximo de MSI que quieras ofrecer a tus clientes y ¡listo!
+
+![discounts-mercadopago-5-mlm](/images/nuvemshop/discounts-mercadopago-5-mlm.png)
 
 ------------
 ----[mla, mlb]----
@@ -154,9 +168,23 @@ Para configurar cuotas sin interés en tu tienda, seguí estos pasos:
 
 1. Inicia sesión en tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. En el menú de tu cuenta de Mercado Pago, seleccioná **Tu negocio > Costos y cuotas**.
+
+![discounts-mercadopago-1-mla](/images/nuvemshop/discounts-mercadopago-1-mla.png)
+
 3. En la parte superior de la pantalla, seleccioná **Checkout**.
+
+![discounts-mercadopago-2-mla](/images/nuvemshop/discounts-mercadopago-2-mla.png)
+
 4. Ingresá a la pestaña “Por ofrecer cuotas” y, al lado de “Cuotas sin interés”, seleccioná **Ofrecer**.
+
+![discounts-mercadopago-3-mla](/images/nuvemshop/discounts-mercadopago-3-mla.png)
+
 5. **Activá el botón** que está al lado de “Ofrecer cuotas sin interés”.
+
+![discounts-mercadopago-4-mla](/images/nuvemshop/discounts-mercadopago-4-mla.png)
+
 6. Elegí el máximo de cuotas que quieras ofrecer a tus clientes y ¡listo!
+
+![discounts-mercadopago-5-mla](/images/nuvemshop/discounts-mercadopago-5-mla.png)
 
 ------------
