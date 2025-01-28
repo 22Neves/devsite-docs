@@ -4,7 +4,7 @@ Com o Mercado Pago, você tem a flexibilidade de oferecer benefícios exclusivos
 
 Você pode personalizar essas configurações de acordo com suas necessidades, sendo:
 
-* [Descontos através do Painel Administrativo da sua loja](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20do%20painel%20administrativo%20da%20Nuvemshop)
+* [Descontos através do Painel Administrativo da sua loja](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20do%20Painel%20Administrativo%20da%20Nuvemshop)
 * [Parcelamentos com acréscimos diretamente no plugin Mercado Pago na Nuvemshop](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20do%20plugin%20Mercado%20Pago%20na%20Nuvemshop)
 * [Parcelamentos sem acréscimos diretamente na sua conta Mercado Pago vinculada](/developers/pt/docs/nuvemshop/payments-configuration/discounts-and-installment-payments#:~:text=Configura%C3%A7%C3%A3o%20atrav%C3%A9s%20da%20conta%20Mercado%20Pago)
 
@@ -17,11 +17,11 @@ Você pode personalizar essas configurações de acordo com suas necessidades, s
 3. Na lista de meios de pagamentos, localize o plugin do Mercado Pago e clique em **Editar configuração** para definir as configurações abaixo.
 
 ----[mlb]----
-![discounts mlb](/images/nuvemshop/discounts-mlb.png)
+![discounts mlb](/images/nuvemshop/discounts-admin-mlb.png)
 
 ------------
 ----[mlm, mla]----
-![discounts all](/images/nuvemshop/discounts-all.png)
+![discounts all](/images/nuvemshop/discounts-admin-all.png)
 
 ------------
 ----[mlm, mla]----
@@ -93,15 +93,15 @@ Você também pode configurar as experiências de parcelamento de cada checkout 
 > Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
 
 ----[mlb]----
-![discounts checkout-pro mlb](/images/nuvemshop/discounts-checkout-pro-mlb.png)
+![discounts checkout-api mlb](/images/nuvemshop/discounts-checkout-api-mlb.png)
 
 ------------
 ----[mlm]----
-![discounts checkout-pro mlm](/images/nuvemshop/discounts-checkout-pro-mlm.png)
+![discounts checkout-api mlm](/images/nuvemshop/discounts-checkout-api-mlm.png)
 
 ------------
 ----[mla]----
-![discounts checkout-pro mla](/images/nuvemshop/discounts-checkout-pro-mla.png)
+![discounts checkout-api mla](/images/nuvemshop/discounts-checkout-api-mla.png)
 
 ------------
 
@@ -119,7 +119,21 @@ Para configurar parcelas sem juros na sua loja, siga estes passos:
 
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 2. No menu da sua conta Mercado Pago, selecione **Seu negócio > Taxas e parcelas**.
+
+![discounts-mercadopago-1-pt](/images/nuvemshop/discounts-mercadopago-1-pt.png)
+
 3. No topo da tela, selecione **Checkout**.
+
+![discounts-mercadopago-2-pt](/images/nuvemshop/discounts-mercadopago-2-pt.png)
+
 4. Selecione "Parcelamento" e, em seguida, **Oferecer**.
+
+![discounts-mercadopago-3-pt](/images/nuvemshop/discounts-mercadopago-3-pt.png)
+
 5. **Ative o botão** ao lado de "Oferecer parcelado vendedor".
+
+![discounts-mercadopago-4-pt](/images/nuvemshop/discounts-mercadopago-4-pt.png)
+
 6. Escolha o máximo de parcelas que quer oferecer aos seus clientes e pronto!
+
+![discounts-mercadopago-5-pt](/images/nuvemshop/discounts-mercadopago-5-pt.png)
