@@ -12,7 +12,7 @@ Também permitirá ativar o **3DS (3-D Secure)**, um protocolo criado para prote
 >
 > A afiliação de gateway MercadoPagoV1 será descontinuada. Se você já possui uma afiliação de gateway MercadoPagoV1, você precisará [migrar para o MercadoPagoV2](/developers/pt/docs/vtex/how-tos/migrate-v1-v2) para continuar operando com o Mercado Pago e aproveitar as novas vantagens que esse conector oferece. 
 
-Para criar uma **afiliação de gateway com o MercadoPagoV2**, siga os passos abaixo:
+Para criar uma **afiliação de gateway com o MercadoPagoV2**, siga as instruções abaixo:
 
 1. No painel de administração de sua loja VTEX, acesse **Pagamentos > Provedores**.
 2. Na parte superior da tela, clique no botão **Novo provedor** para criar uma nova afiliação.
@@ -41,11 +41,17 @@ Para criar uma **afiliação de gateway com o MercadoPagoV2**, siga os passos ab
 | Plazo de captura de pagamento aprobado | Você pode configurar um atraso na captura do pagamento que a VTEX realiza selecionando nas opções do menu suspenso. Se não quiser configurá-lo, selecione **"Desativado"**. |
 | Tempo para cancelar carrito abandonado | Configure o intervalo de tempo que deve ser aguardado até que os meios de pagamento habilitados não estejam disponíveis para efetuar a compra. Você pode selecionar um intervalo de tempo nas opções suspensas ou escolher **“não cancelar”**. |
 
-Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
+6. Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-pt.gif)
+
+------------
+
+Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
 > NOTE
 >
 > Nota
 >
-> Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](/developers/pt/guides/vtex/additional-content/possible-errors) e nosso documento sobre [logs da VTEX.](/developers/pt/guides/vtex/how-tos/logs)
+> Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](/developers/pt/guides/vtex/additional-content/possible-errors) e nosso documento sobre [logs da VTEX.](/developers/pt/guides/vtex/how-tos/logs).

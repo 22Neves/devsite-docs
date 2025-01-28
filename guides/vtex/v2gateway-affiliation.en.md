@@ -12,14 +12,14 @@ In addition, MercadoPagoV2 offers you the possibility to activate **3DS (3-D Sec
 > 
 > The MercadoPagoV1 gateway affiliation will be discontinued. If you already have a MercadoPagoV1 gateway affiliation, you'll need to [migrate to MercadoPagoV2](/developers/en/docs/vtex/integration/v1-v2-migration) so you can keep operating with Mercado Pago and benefit from the advantages that this new conector offers.
 
-
 To create a **MercadoPagoV2 gateway affiliation**, follow the steps below: 
 
 1. In your VTEX store admin panel, go to **Payments > Suppliers**. 
 2. At the top of the screen, click the **New Supplier** button to create a new affiliation. 
 3. Look for the **MercadoPagoV2** connector and select it. This will take you to a new screen. 
 4. On said screen, choose the **Affiliation Name** within the store. Also, make sure you have disabled the **"Activate test mode"** button.  
-5. Then, fill in the corresponding fields: 
+5. Then, fill in the corresponding fields:
+
 | Field | Description |
 |---|---|
 | Application Key  | Refers to your [production credentials](/developers/en/docs/vtex/additional-content/your-integrations/credentials) of Mercado Pago. Complete with your **Public Key**.  |
@@ -50,4 +50,3 @@ After filling out all the fields, click on **Save** and you're done! Your affili
 > Note
 > 
 > If you encounter difficulties during your integration, please check our [list of errors](/developers/en/guides/vtex/additional-content/possible-errors) and our document on [VTEX logs](/developers/en/guides/vtex/how-tos/logs). 
-

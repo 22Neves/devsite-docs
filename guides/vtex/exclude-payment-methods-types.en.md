@@ -10,9 +10,7 @@ This exclusion of payment types and methods configured in VTEX will only work fo
 
 In the table below, you will find the nomenclature that each payment type and method receives in VTEX, so you can use it if you want to exclude any in your integration with Checkout Pro. 
 
-
 ----[mla]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
@@ -29,7 +27,6 @@ In the table below, you will find the nomenclature that each payment type and me
 
 ------------
 ----[mlb]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
@@ -42,7 +39,6 @@ In the table below, you will find the nomenclature that each payment type and me
 
 ------------
 ----[mlc]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
@@ -54,7 +50,6 @@ In the table below, you will find the nomenclature that each payment type and me
 
 ------------
 ----[mco]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
@@ -68,7 +63,6 @@ In the table below, you will find the nomenclature that each payment type and me
 
 ------------
 ----[mlm]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
@@ -82,7 +76,6 @@ In the table below, you will find the nomenclature that each payment type and me
 
 ------------
 ----[mpe]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
@@ -95,7 +88,6 @@ In the table below, you will find the nomenclature that each payment type and me
 
 ------------
 ----[mlu]----
-
 |Name|Payment methods|Payment types|Conditions in VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
