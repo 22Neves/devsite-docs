@@ -35,7 +35,7 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 
 La API de Impresiones ofrece una solución práctica para conectar tus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tengas configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
 
-Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de su negocio.
+Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
 
 ### Impresión de facturas y recibos electrónicos
 
@@ -50,11 +50,11 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 | Tipo de documento                     | Descripción                                                                                     |
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
 | Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
-| Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, teniendo validez contable y tributaria. |
+| Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, que tiene validez contable y tributaria. |
 
 ### Configuración de la integración
 
-Para configurar la integración de las impresiones, utilice la API para gestionar el encolado de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
+Para configurar la integración de las impresiones, utiliza la API para gestionar la fila de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
 
 > WARNING
 >
@@ -63,17 +63,17 @@ Para configurar la integración de las impresiones, utilice la API para gestiona
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
 Los endpoints disponibles son:
-   - [Crear acción del terminal](/developers/es/reference/order/in-person-payments/impressions/post)
+   - [Crear acción de la terminal](/developers/es/reference/order/in-person-payments/impressions/post)
    - [Obtener acción por ID](/developers/es/reference/order/in-person-payments/impressions/get)
    - [Cancelar acción por ID](/developers/es/reference/order/in-person-payments/impressions_cancel/post)  
 
-Aguarde hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el “botón verde” para buscar el intento manualmente.
+Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el “botón verde” para buscar el intento manualmente.
 
 ### Tags personalizadas
 
-Las tags personalizadas permiten personalizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulte las diferentes tags disponibles, tus funciones y ejemplos de uso:
+Las tags personalizadas permiten particularizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
 
-> Los tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo los propios tags.
+> Las tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias tags.
 
 | Tag        | Función                                     | Ejemplo                          |
 |------------|---------------------------------------------|----------------------------------|
