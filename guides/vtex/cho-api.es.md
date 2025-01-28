@@ -19,7 +19,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 | Financiación vía Pix en hasta 12 veces | Con esta línea de crédito administrada por Mercado Pago, el cliente tiene la opción de financiar su compra sin necesidad de una tarjeta, mientras el vendedor recibe el valor total en su cuenta. |
 | Pix | Transferencia bancaria disponible 24h al día. La opción de pagos con Pix solo será será exibida si tienes una Clave Pix registrada en tu cuenta de Mercado Pago. Si todavía no la has creado, haz clic [aquí](https://www.youtube.com/watch?v=60tApKYVnkA) y sigue el paso a paso. |
 | Medios offline | Puedes ofrecer pagos con medios offline, como boleto bancário |
-| Mercado Pago inStore | Integra tus canales de venta en línea con tus tiendas físicas para mejorar la experiencia de tus clientes. Consulta más información en la [Guía de instalación de VTEX Sales App y Mercado Pago inStore](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore.pdf). |
+| Mercado Pago inStore | Integra tus canales de venta en línea con tus tiendas físicas para mejorar la experiencia de tus clientes. Consulta más información en la [Guía de instalación de VTEX Sales App y Mercado Pago inStore](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore_v2.pdf). |
 | VTEX Subscriptions | Configura planes de suscripción para generar pedidos de compra de forma automática y cobra según la frecuencia y los valores definidos. Tus clientes pueden suscribirse a tus productos y/o servicios para pagar por débito automático durante el tiempo que deseen. Consulta más información en la [Guía de instalación de VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------
@@ -45,7 +45,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Hasta 12 meses sin tarjeta con Mercado Pago | Con esta línea de crédito administrada por Mercado Pago, el cliente tiene la opción de financiar su compra sin necesidad de una tarjeta, mientras el vendedor recibe el valor total en su cuenta. |
 | Medios offline | Puedes ofrecer pagos con medios offline, como Oxxo, Paycash, Bancomer e Banamex. |
-| Mercado Pago inStore | Integra tus canales de venta en línea con tus tiendas físicas para mejorar la experiencia de tus clientes. Encuentra más información en la [Guía de instalación de VTEX Sales App y Mercado Pago inStore](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore.pdf). |
+| Mercado Pago inStore | Integra tus canales de venta en línea con tus tiendas físicas para mejorar la experiencia de tus clientes. Encuentra más información en la [Guía de instalación de VTEX Sales App y Mercado Pago inStore](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore_v2.pdf). |
 | VTEX Subscriptions | Configura planes de suscripción para generar pedidos de compra de forma automática y cobra según la frecuencia y los valores definidos. Tus clientes pueden suscribirse a tus productos y/o servicios para pagar por débito automático durante el tiempo que deseen. Encuentra más información en la [Guía de instalación de VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------
@@ -55,7 +55,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Hasta 12 cuotas sin tarjeta con Mercado Pago | Con esta línea de crédito administrada por Mercado Pago, el cliente tiene la opción de financiar su compra sin necesidad de una tarjeta, mientras el vendedor recibe el valor total en su cuenta. |
 | Medios offline | Puedes ofrecer pagos con medios offline, como Rapipago, Pago Fácil, Provincia Net o red Link. |
-| Mercado Pago inStore | Integra tus canales de venta en línea con tus tiendas físicas para mejorar la experiencia de tus clientes. Encuentra más información en la [Guía de instalación de VTEX Sales App y Mercado Pago inStore](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore.pdf). |
+| Mercado Pago inStore | Integra tus canales de venta en línea con tus tiendas físicas para mejorar la experiencia de tus clientes. Encuentra más información en la [Guía de instalación de VTEX Sales App y Mercado Pago inStore](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore_v2.pdf). |
 | VTEX Subscriptions | Configura planes de suscripción para generar pedidos de compra de forma automática y cobra según la frecuencia y los valores definidos. Tus clientes pueden suscribirse a tus productos y/o servicios para pagar por débito automático durante el tiempo que deseen. Encuentra más información en la [Guía de instalación de VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------

@@ -21,7 +21,7 @@ See below the available payment methods for the store when integrating Checkout 
 | Installments via Pix up to 12x | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
 | Pix | 24/7 bank transfer available. The option to pay with Pix will only be displayed if there is a Pix Key registered in Mercado Pago. If you haven't created one yet, click [here](https://www.youtube.com/watch?v=60tApKYVnkA) and see the step by step. | 
 | Offline methods | You can offer offline payment methods, such as boleto bancário. | 
-| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore.pdf). |
+| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore_v2.pdf). |
 | VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------ 
@@ -48,7 +48,7 @@ See below the available payment methods for the store when integrating Checkout 
 | Cards | Allows integration with credit and debit cards. | 
 | Up to 12 installments without a card on Mercado Pago | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
 | Offline methods | You can offer offline payment methods, such as Oxxo, Paycash, Bancomer, and Banamex | 
-| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore.pdf). |
+| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore_v2.pdf). |
 | VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------ 
@@ -58,7 +58,7 @@ See below the available payment methods for the store when integrating Checkout 
 | Cards | Allows integration with credit and debit cards. | 
 | Up to 12 installments without a card on Mercado Pago | With this credit line managed by Mercado Pago, the customer has the option to finance their purchase without the need for a card, while the seller receives the full transaction amount in their account. | 
 | Offline methods | You can offer offline payment methods, such as Rapipago, Pago Fácil, Provincia Net or red Link. | 
-| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore.pdf). |
+| Mercado Pago inStore | Integrate your online sales channels with your physical stores to enhance your customers' experience. For more information, check the [VTEX Sales App and Mercado Pago inStore installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_sales_app_e_mercado_pago_instore_v2.pdf). |
 | VTEX Subscriptions | Configure subscription plans to automatically generate purchase orders and charge based on the defined frequency and amounts. Your customers can subscribe to your products and/or services to pay via automatic debit for as long as they want. For more information, check the [VTEX Subscriptions installation guide](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------ 
