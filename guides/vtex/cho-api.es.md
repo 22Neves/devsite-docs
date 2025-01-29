@@ -64,7 +64,7 @@ A continuación, te ofrecemos una lista de todos los medios de pago disponibles 
 | Medio de pago | Descripción |
 |---|---|
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
-| Medios offline | Puedes ofrecer pagos con medio de Pago Efectivo y YAPE. |
+| Medios offline | Puedes ofrecer pagos con medio de Pago Efectivo y Yape. |
 | VTEX Subscriptions | Configura planes de suscripción para generar pedidos de compra de forma automática y cobra según la frecuencia y los valores definidos. Tus clientes pueden suscribirse a tus productos y/o servicios para pagar con débito automático durante el tiempo que deseen. Encuentra más información en la [Guía de instalación de VTEX Subscriptions](https://http2.mlstatic.com/frontend-assets/dx-devsite/guia_de_instalacion_vtex_subscriptions.pdf). |
 
 ------------
