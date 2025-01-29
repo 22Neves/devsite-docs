@@ -52,6 +52,26 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 | Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
 | Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, que tiene validez contable y tributaria. |
 
+<<<<<<< HEAD
+=======
+### Configuración de la integración
+
+Para configurar la integración de las impresiones, utiliza la API para gestionar la fila de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
+
+> WARNING
+>
+> Importante
+>
+> La terminal debe estar configurado en modo PDV (Punto de Venta).  
+
+Los endpoints disponibles son:
+   - [Crear acción de la terminal](/developers/es/reference/order/in-person-payments/impressions/post)
+   - [Obtener acción por ID](/developers/es/reference/order/in-person-payments/impressions/get)
+   - [Cancelar acción por ID](/developers/es/reference/order/in-person-payments/impressions_cancel/post)  
+
+Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el “botón verde” para buscar el intento manualmente.
+
+>>>>>>> 4c96d0e92ad36d36cd83fc9d4d30802cac14ea15
 ### Tags personalizadas
 
 Las tags personalizadas permiten particularizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
