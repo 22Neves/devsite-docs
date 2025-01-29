@@ -33,7 +33,7 @@ A API de Order fornece diversos endpoints que permitem executar as mesmas funcio
 
 ## Configuração de impressões
 
-A API de Impressões oferece uma solução prática para conectar seus sistemas e realizar a gestão de impressão de faturas e comprovantes, assim como impressões personalizadas, nas terminais Point que você tiver configuradas. Com essa API, é possível garantir uma experiência de cobrança unificada e eficiente.
+A API de Impressões oferece uma solução prática para conectar seus sistemas e realizar a gestão de impressão de faturas e comprovantes, assim como impressões personalizadas, nos terminais Point que você tiver configurados. Com essa API, é possível garantir uma experiência de cobrança unificada e eficiente.
 
 Este recurso permite a impressão de recibos e faturas eletrônicas (DTE) e impressões personalizadas diretamente de um ponto de venda (PDV) através da API, utilizando a impressora integrada dos dispositivos Smart. Isso simplifica o processo de cobrança e responde rapidamente às necessidades do seu negócio.
 
@@ -52,23 +52,6 @@ São aceitos os seguintes tipos de Documentos Tributários Eletrônicos (DTE) em
 | Fatura Afetada (33) e Isenta (34)    | Refere-se ao documento tributário que tem validade legal perante o Serviço de Impostos Internos (SII). |
 | Recibo Afetado (39) e Isento (41)     | Refere-se ao documento que o cliente recebe ao realizar uma compra, tendo validade contábil e tributária. |
 
-### Configuração da integração
-
-Para configurar a integração das impressões, utilize a API para gerenciar o enfileiramento de cada uma das tentativas, considerando as especificações de cada endpoint. 
-
-> WARNING
->
-> Importante
->
-> O terminal deve estar configurado no modo PDV (Ponto de Venda).  
-
-Os endpoints diponíveis são:
-   - [Criar ação do terminal](/developers/pt/reference/order/in-person-payments/impressions/post)
-   - [Obter ação por ID](/developers/pt/reference/order/in-person-payments/impressions/get)
-   - [Cancelar ação por ID](/developers/pt/reference/order/in-person-payments/impressions_cancel/post)  
-
-Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione o “botão verde” para buscar a tentativa manualmente.
-
 ### Tags personalizadas
 
 As tags personalizadas permitem personalizar a apresentação dos documentos impressos. Elas oferecem flexibilidade e controle sobre o formato do texto, possibilitando a criação de impressões eficientes e visualmente atraentes. A seguir, consulte as diferentes tags disponíveis, suas funções e exemplos de uso:
@@ -85,3 +68,20 @@ As tags personalizadas permitem personalizar a apresentação dos documentos imp
 | `{center}` | Centralizar texto                           | `{center}Texto centralizado{/center}` |
 | `{qr}`     | Imprimir um QR que representa o texto enviado | `{qr}Texto{/qr}`               |
 | `{pdf417}` | Imprimir o código de barras de um TED      | `{pdf417}Texto{/pdf417}`        |
+
+### Configuração da integração
+
+Para configurar a integração das impressões, utilize a API para gerenciar o enfileiramento de cada uma das tentativas, considerando as especificações de cada endpoint. 
+
+> WARNING
+>
+> Importante
+>
+> O terminal deve estar configurado no modo PDV (Ponto de Venda).  
+
+Os endpoints diponíveis são:
+   - [Criar ação do terminal](/developers/pt/reference/order/in-person-payments/impressions/post): Este endpoint permite que você crie uma nova ação de terminal para Mercado Pago Point.
+   - [Obter ação por ID](/developers/pt/reference/order/in-person-payments/impressions/get): Este endpoint permite que você consulte todas as informações da ação utilizando o ID obtido na resposta à sua criação.
+   - [Cancelar ação por ID](/developers/pt/reference/order/in-person-payments/impressions_cancel/post): Este endpoint permite cancelar uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada.
+
+Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione o “botão verde” para buscar a tentativa manualmente.

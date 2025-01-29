@@ -52,23 +52,6 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 | Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
 | Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, que tiene validez contable y tributaria. |
 
-### Configuración de la integración
-
-Para configurar la integración de las impresiones, utiliza la API para gestionar la fila de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
-
-> WARNING
->
-> Importante
->
-> El terminal debe estar configurado en modo PDV (Punto de Venta).  
-
-Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/es/reference/order/in-person-payments/impressions/post)
-   - [Obtener acción por ID](/developers/es/reference/order/in-person-payments/impressions/get)
-   - [Cancelar acción por ID](/developers/es/reference/order/in-person-payments/impressions_cancel/post)  
-
-Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el “botón verde” para buscar el intento manualmente.
-
 ### Tags personalizadas
 
 Las tags personalizadas permiten particularizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
@@ -85,3 +68,20 @@ Las tags personalizadas permiten particularizar la presentación de los document
 | `{center}` | Centrar texto                              | `{center}Texto centrado{/center}` |
 | `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
 | `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
+
+### Configuración de la integración
+
+Para configurar la integración de las impresiones, utiliza la API para gestionar la fila de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
+
+> WARNING
+>
+> Importante
+>
+> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+
+Los endpoints disponibles son:
+   - [Crear acción de la terminal](/developers/es/reference/order/in-person-payments/impressions/post): Permite la creación de una nueva acción de terminal para Mercado Pago Point.
+   - [Obtener acción por ID](/developers/es/reference/order/in-person-payments/impressions/get): Permite consultar toda la información de una acción mediante el ID obtenido en la respuesta a su creación.
+   - [Cancelar acción por ID](/developers/es/reference/order/in-person-payments/impressions_cancel/post): Permite cancelar una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". 
+
+Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el “botón verde” para buscar el intento manualmente.

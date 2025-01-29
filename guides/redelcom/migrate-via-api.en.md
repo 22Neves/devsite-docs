@@ -52,23 +52,6 @@ The following types of Documentos Tributarios Electrónicos (DTE) in XML format 
 | Affected Invoice (33) and Exempt (34) | Refers to the tax document that has legal validity before the Servicio de Impuestos Interno (SII). |
 | Affected Receipt (39) and Exempt (41) | Refers to the document that the customer receives when making a purchase, having accounting and tax validity. |
 
-### Integration configuration 
-
-To configure the integration of the prints, use the API to manage the queuing of each intent, considering the specifications of each endpoint. 
-
-> WARNING
->
-> Important
->
-> The terminal must be configured in PDV (Point of Sale) mode. 
-
-The available endpoints are:
-   - [Create terminal action](/developers/en/reference/order/in-person-payments/impressions/post)
-   - [Get action by ID](/developers/en/reference/order/in-person-payments/impressions/get)
-   - [Cancel action by ID](/developers/en/reference/order/in-person-payments/impressions_cancel/post) 
-    
-Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the intent manually.
-
 ### Custom tags
 
 Custom tags allow for the personalization of the presentation of printed documents. They offer flexibility and control over the text format, enabling the creation of efficient and visually appealing prints. Below, consult the different available tags, their functions, and usage examples:
@@ -85,3 +68,20 @@ Custom tags allow for the personalization of the presentation of printed documen
 | `{center}` | Center text                               | `{center}Centered text{/center}` |
 | `{qr}`     | Print a QR code that represents the sent text | `{qr}Text{/qr}`                 |
 | `{pdf417}` | Print the barcode of a TED                | `{pdf417}Text{/pdf417}`          |
+
+### Integration configuration 
+
+To configure the integration of the prints, use the API to manage the queuing of each intent, considering the specifications of each endpoint. 
+
+> WARNING
+>
+> Important
+>
+> The terminal must be configured in PDV (Point of Sale) mode. 
+
+The available endpoints are:
+   - [Create terminal action](/developers/en/reference/order/in-person-payments/impressions/post): This allows you to create a new terminal action for the Mercado Pago point.
+   - [Get action by ID](/developers/en/reference/order/in-person-payments/impressions/get): This allows you to consult all action information using the ID obtained in the response to its creation.
+   - [Cancel action by ID](/developers/en/reference/order/in-person-payments/impressions_cancel/post): This allows yoy to cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status "created" can be canceled.
+    
+Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the intent manually.
