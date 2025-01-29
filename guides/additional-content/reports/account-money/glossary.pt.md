@@ -56,7 +56,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. |
 | Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. |
 | Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas.Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. |
-| Tipo de dado | Esta coluna oferece informações detalhadas sobre o tipo de dado associado a cada campo, sendo a longitude máxima e o formato correspondente. Exemplo: `STRING(200)` (para cadeias de texto con o máximo de 200 caracteres), `NUMERIC(19,2)` (para números com 19 dígitos, incluindo 2 decimais) e `STRING(JSON)` (para dados estruturados em formato JSON). |
+| Tipo de dado | Esta coluna oferece informações detalhadas sobre o tipo de dado associado a cada campo, sendo a longitude máxima e o formato correspondente. Os valores permitidos são: <br> - `STRING(200)`: para cadeias de texto con o máximo de 200 caracteres. <br> - `NUMERIC(19,2)`: para números com 19 dígitos, incluindo 2 decimais. <br> - `STRING(JSON)`: para dados estruturados em formato JSON. <br> - `DateTime`: para datas. |
 
 > NOTE
 >
