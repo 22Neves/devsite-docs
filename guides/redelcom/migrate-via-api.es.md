@@ -60,7 +60,7 @@ Para configurar la integración de las impresiones, utiliza la API para gestiona
 >
 > Importante
 >
-> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+> La terminal debe estar configurado en modo PDV (Punto de Venta).  
 
 Los endpoints disponibles son:
    - [Crear acción de la terminal](/developers/es/reference/order/in-person-payments/impressions/post)
