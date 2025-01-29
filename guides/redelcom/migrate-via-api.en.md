@@ -29,17 +29,17 @@ The Order API provides various endpoints that allow you to perform the same func
 - [Create order](/developers/en/reference/order/in-person-payments/point/create/post): This endpoint allows you to create an order that contains payment transactions for Mercado Pago Point. You can associate it with the desired terminal using its ID.
 - [Get order by ID](/developers/en/reference/order/in-person/point/get-order/get): This allows you to retrieve all the information about an order using the ID obtained in the response to its creation.
 - [Cancel order by ID](/developers/en/reference/order/in-person-payments/point/cancel-order/post): This allows you to cancel an order created for Mercado Pago Point using the reference ID obtained in the response to its creation.
-- [Refund order](/developers/en/reference/order/in-person-payments/point/refund-order/post): This endpoint allows to create a refund for a payment transactions associated with an order for Mercado Pago Point.
+- [Refund order](/developers/en/reference/order/in-person-payments/point/refund-order/post): This endpoint allows to create a refund for payment transactions associated with an order for Mercado Pago Point.
 
 ## Print configuration
 
 The Printing API provides a practical solution for connecting your systems and managing the printing of invoices and receipts, as well as custom prints, on the Point terminals you have configured. With this API, it is possible to guarantee a unified and efficient payment experience.
 
-This resource allows for the printing of receipts and electronic invoices (DTE) and custom prints directly from a point of sale (POS) through the API, using the integrated printer of Smart devices. This simplifies the payment process and quickly responds to the needs of your business.
+This resource allows printing receipts, Documentos Tributarios Electrónicos (DTE) and custom prints directly from a point of sale (POS) through the API, using the integrated printer of Smart devices. This simplifies the payment process and quickly responds to the needs of your business.
 
 ### Printing of invoices and electronic receipts
 
-The following types of Electronic Tax Documents (DTE) in XML format are accepted:
+The following types of Documentos Tributarios Electrónicos (DTE) in XML format are accepted:
 
 > WARNING
 > 
@@ -49,25 +49,25 @@ The following types of Electronic Tax Documents (DTE) in XML format are accepted
 
 | Document type                          | Description                                                                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------|
-| Affected Invoice (33) and Exempt (34) | Refers to the tax document that has legal validity before the Internal Revenue Service (SII). |
+| Affected Invoice (33) and Exempt (34) | Refers to the tax document that has legal validity before the Servicio de Impuestos Interno (SII). |
 | Affected Receipt (39) and Exempt (41) | Refers to the document that the customer receives when making a purchase, having accounting and tax validity. |
 
 ### Integration configuration 
 
-To configure the integration of the prints, use the API to manage the queuing of each attempt, considering the specifications of each endpoint. 
+To configure the integration of the prints, use the API to manage the queuing of each intent, considering the specifications of each endpoint. 
 
 > WARNING
 >
 > Important
 >
-> The terminal must be configured in POS (Point of Sale) mode. 
+> The terminal must be configured in PDV (Point of Sale) mode. 
 
 The available endpoints are:
    - [Create terminal action](/developers/en/reference/order/in-person-payments/impressions/post)
    - [Get action by ID](/developers/en/reference/order/in-person-payments/impressions/get)
    - [Cancel action by ID](/developers/en/reference/order/in-person-payments/impressions_cancel/post) 
     
-Wait until the attempt reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the attempt manually.
+Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the intent manually.
 
 ### Custom tags
 
