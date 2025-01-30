@@ -2,14 +2,14 @@
 
 Ao configurar a ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ ----[mlb]----Checkout Transparente------------ em lojas VTEX, você pode oferecer pagamentos com cartão de débito e/ou crédito. 
 
-Para configurar esses meios de pagamento, acesse o painel de administração da plataforma VTEX, e vá para **Pagamentos > Configuração > Condições de pagamento**. Logo, siga os passos abaixo: 
+Para configurar esses meios de pagamento, acesse o painel de administração da plataforma VTEX, e vá para **Pagamentos > Configuração > Condições de pagamento**. Logo, siga as instruções abaixo: 
 
-1.  Clique no botão "+ (Adicionar novo plano de pagamento para...)". 
+1.  Clique no botão **+ (Adicionar novo plano de pagamento para...)**. 
 2. Dentro das categorias **Cartão de débito** ou **Cartão de crédito**, você encontrará as diferentes marcas de cartão que pode oferecer. Clique nelas e configure cada uma individualmente para habilitá-las. Você pode obter mais informações sobre essa configuração na seção de [tutoriais da VTEX](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 3. Após selecionar a marca do cartão que deseja oferecer, preencha os campos exibidos na próxima tela: 
     1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
-    2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
-    3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
+    2. Em "Processo com a afiliação", selecione **MercadoPagoV2**. 
+    3. No campo "Status", **ative** a condição de pagamento usando o botão deslizante. 
     4. Para ativar o pagamento parcelado, selecione a opção **Parcelas** e insira manualmente a quantidade de parcelas aceitas, que deve corresponder às habilitadas na sua conta do Mercado Pago. Além disso, atribua manualmente a porcentagem de acréscimos. **Importante**: atualmente, essa configuração só permite pagamentos em parcelas sem acréscimos.
 
 > NOTE
@@ -19,6 +19,11 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
 > Você também pode configurar **condições especiais** de pagamento. Para mais informações, leia a [documentação](https://help.vtex.com/pt/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin).
 
 4. Clique em **Salvar** para ativar a configuração desse cartão e, se desejar, repita o processo para configurar outras marcas.
+
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-pt.gif)
+
+------------
 
 ## Parcelamento e acréscimos
 
@@ -36,4 +41,3 @@ Finalizadas essas etapas, o parcelamento no checkout estará configurado e pront
 > Nota
 >
 > As mudanças nas condições de pagamento podem levar até 10 minutos para serem aplicadas.
-

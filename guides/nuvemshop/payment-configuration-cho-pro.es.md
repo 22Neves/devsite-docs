@@ -1,6 +1,6 @@
 # Checkout Pro
  
-Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Checkout Mercado Pago**), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
+Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
  
 Para integrar Checkout Pro, sigue los pasos a continuación.
  
@@ -10,7 +10,7 @@ Para integrar Checkout Pro, sigue los pasos a continuación.
 4. Desliza hasta el final de la página y haz clic en **Más configuraciones en el sitio de Mercado Pago**.
 5. En la pantalla de configuración de los checkouts, activa la opción **Mercado Pago**.
 6. Para configurar las experiencias de pago de tu tienda, haz clic en **Configurar**.
-7. En el Checkout Mercado Pago, elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, que pueden ser:
+7. Elige las formas de pago que quieres ofrecer en el entorno de pago de Mercado Pago, que pueden ser:
 ----[mla]---- 
  * **Tarjeta de crédito**. Selecciona las tarjetas que deseas habilitar en tu tienda y elige también el **número máximo de cuotas permitidas para las compras a plazos**. Para configurar un pago a cuotas sin interés, consulta la sección de [Descuentos, financiación e intereses](/developers/es/docs/nuvemshop/payments-configuration/discounts-and-installment-payments).
  * **Tarjeta de débito**. Selecciona las tarjetas que deseas habilitar en tu tienda. 

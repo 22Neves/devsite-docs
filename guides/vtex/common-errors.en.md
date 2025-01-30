@@ -2,7 +2,6 @@
 
 When configuring Mercado Pago integration in VTEX stores, you may encounter some common errors. Below, we list some specifically related to Mercado Pago, their explanations, and possible solutions. 
 
-
 |Message|Description|
 |---|---|
 |`unauthorized_use_of_live_credentials`|This means that the Mercado Pago account credentials are not activated. You must go to the [credentials page](/developers/en/docs/vtex/additional-content/your-integrations/credentials) and activate them.|

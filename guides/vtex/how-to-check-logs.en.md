@@ -1,11 +1,10 @@
-#  How to check logs 
+# How to check logs 
 
 Logs help to have a better understanding of the support systems, as they allow reviewing the information returned in the integration of Mercado Pago with VTEX. This facilitates the comprehension of what happened in a transaction. 
 
 In addition, in case of modification or activation of new payment methods, they allow validating if everything is working as expected. 
 
 Eventually, the support team may request that you check and/or send logs to track necessary information. To access these logs, go to the administration panel of your VTEX store and click on **Payments > Transactions**. Then, look for the log that contains the *response status* and click on **+ Information**. 
-
 
 |Field|Data|Description|
 |---|---|---|
