@@ -19,7 +19,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Costo de envío (`SHIPPING_FEE_AMOUNT`) | Costo de envío. |
 | Impuestos cobrados por retenciones IIBB (`TAXES_AMOUNT`) | Impuestos cobrados ----[mla]---- por retenciones de Ingresos Brutos, IVA, Ganancias; e impuestos sobre los Créditos y Débitos, entre otros. [Ver más detalle sobre retenciones y percepciones](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/). ------------  ----[mlm, mlb]---- por retenciones de Ingresos Brutos. ------------ ----[mco]---- por retenciones de IVA, ICA y Fuente según aplique el caso. ------------ ----[mlu]---- por retenciones de IVA. ------------  |
 | Cupón de descuento (`COUPON_AMOUNT`) | Esta transacción te muestra el valor total del cupón de descuento que se ofrece a tus compradores. |
-| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que se realizó la operación. |
+| ----[mla, mlu, mlb, mlc, mco, mpe]----Cuotas------------ ----[mlm]----Meses------------ (`INSTALLMENTS`) | Cantidad de cuotas en las que se realizó la operación. |
 | Medio de pago (`PAYMENT METHOD`) | [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods) según el país con el que operes con Mercado Pago. |
 | Detalle de impuestos (`TAX_DETAIL`) |  Descripción del impuesto retenido por operación en el impuesto cobrado por retenciones IIBB `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy<br><br> ------------ ----[mco]---- Puede tomar el valor de: <br>fuente<br>iva<br>ica<br>Impuesto 4x1000 (GMF)<br>------------ <br><br><br>También se puede visualizar `devolución_percepción_gral` cuando la operación es la devolución de este impuesto. |
 | Impuesto descontado del valor bruto (`TAX_AMOUNT_TELCO`) | Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto. |
@@ -49,7 +49,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Cuenta de destino del retiro (`PAYOUT_BANK_ACCOUNT_NUMBER`) | Aquí se muestra el número completo de la cuenta a la que se envió dinero desde Mercado Pago. |
 | Código de producto SKU (`PRODUCT_SKU`) | Código con el que como vendedor podrás identificar tus productos. |
 | Detalle de la venta (`SALE_DETAIL`) | Esta columna ofrece información detallada sobre los artículos vendidos en cada entrega, facilitando la conciliación y el control de tus ventas. |
-| Tipo de dato | En esta columna se visualiza el tipo de dato asociado a cada campo, como la longitud máxima permitida y el formato correspondiente. Los valores permitidos son: <br> - `STRING(200)`: para cadenas de texto con un máximo de 200 caractere. <br> - `NUMERIC(19,2)`: para números con 19 dígitos, incluyendo 2 decimales. <br> - `STRING(JSON)`: para datos estructurados en formato JSON. <br> - `DateTime`: para fechas. |
+| Tipo de dato | En esta columna se visualiza el tipo de dato asociado a cada campo, como la longitud máxima permitida y el formato correspondiente. Los valores permitidos son: <br><br> - `STRING(200)`: para cadenas de texto con un máximo de 200 caractere. <br> - `NUMERIC(19,2)`: para números con 19 dígitos, incluyendo 2 decimales. <br> - `STRING(JSON)`: para datos estructurados en formato JSON. <br> - `DateTime`: para fechas. |
 
 > NOTE
 >

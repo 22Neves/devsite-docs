@@ -49,7 +49,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Transaction destination account (`PAYOUT_BANK_ACCOUNT_NUMBER`) | Here you will find the account number to where Mercado Pago money was transferred. | 
 | Product SKU Code (`PRODUCT_SKU`) | SKU code with which you will be able to identify your sold products. |
 | Sale detail (`SALE_DETAIL`) | This column offers detailed information on the items sold in each delivery, making it easier to reconcile and control your sales. |
-| Data type | This column provides detailed information about the data type associated with each field, including the maximum length and the corresponding format. The llowed values are:: - `STRING(200)`: for text strings with a maximum of 200 characters. <br> - `NUMERIC(19,2)`: for numbers with 19 digits, including 2 decimal places. <br> - `STRING(JSON)`: for structured data in JSON format. <br> - `DateTime`: for dates. |
+| Data type | This column provides detailed information about the data type associated with each field, including the maximum length and the corresponding format. The llowed values are: <br><br> - `STRING(200)`: for text strings with a maximum of 200 characters. <br> - `NUMERIC(19,2)`: for numbers with 19 digits, including 2 decimal places. <br> - `STRING(JSON)`: for structured data in JSON format. <br> - `DateTime`: for dates. |
 
 > NOTE
 >
