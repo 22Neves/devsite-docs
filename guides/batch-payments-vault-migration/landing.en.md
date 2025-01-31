@@ -9,7 +9,7 @@ content_section_with_media:
  - title: Batch Payments
  - message: Mercado Pago's Batch Payments are a practical and secure solution for making mass payments. With this tool, companies can manage recurring payments without the need for complex integrations with APIs, simplifying the process of financial transactions. The functionality allows generating and managing payment recurrence by importing .csv files sent to an SFTP server, making financial management more efficient and streamlined. Mercado Pago processes these payments through multi-acquiring and returns a file that presents the status of each payment made, providing clear and detailed control of financial operations.
  - media_image: /batch-payments/landing1.png
- - highlight_countries: mla
+ - highlight_countries: mla, mlu, mlm, mlc, mco, mpe
  - country_title: Availability by Country
 ---
 ---
