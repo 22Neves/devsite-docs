@@ -8,9 +8,9 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
-                    "pt": "Este endpoint permite criar uma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
-                    "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
+                    "en": "This endpoint allows to create Orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
+                    "pt": "Este endpoint permite criar uma Order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+                    "es": "Este endpoint permite crear una Order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
                 },
                 "parameters": [
                     {
@@ -44,17 +44,17 @@
                                         "type": "object",
                                         "required": true,
                                         "description": {
-                                            "en": "Contains information about the transactions associated with the order. It can contain up to 2 transactions. For example, if you want to create an order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
-                                            "pt": "Contém informações sobre as transações associadas à order. Pode conter até 2 transações. Por exemplo, se deseja criar uma order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
-                                            "es": "Contiene información sobre las transacciones asociadas a la order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array."
+                                            "en": "Contains information about the transactions associated with the Order. It can contain up to 2 transactions. For example, if you want to create an Order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
+                                            "pt": "Contém informações sobre as transações associadas à Order. Pode conter até 2 transações. Por exemplo, se deseja criar uma Order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
+                                            "es": "Contiene información sobre las transacciones asociadas a la Order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array."
                                         },
                                         "properties": {
                                             "payments": {
                                                 "type": "array",
                                                 "description": {
-                                                    "en": "Contains information about the payment order. If you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
-                                                    "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
-                                                    "es": "Contiene información sobre la order de pago. En caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
+                                                    "en": "Contains information about the payment Order. If you want to create an Order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
+                                                    "pt": "Contém informações sobre a Order do pagamento. Caso deseje criar uma Order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
+                                                    "es": "Contiene información sobre la Order de pago. En caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
                                                 },
                                                 "properties": {
                                                     "amount": {
@@ -85,8 +85,8 @@
                                         "example": "Point Mini",
                                         "description": {
                                             "en": "Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
-                                            "pt": "Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                                            "es": "Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                                            "pt": "Descrição do produto ou serviço comprado, a razão da Order de pagamento, ou a descrição de um produto no marketplace.",
+                                            "es": "Descripción del producto o servicio comprado, el motivo de la Order de pago, o la descripción de un producto en el marketplace."
                                         }
                                     },
                                     "marketplace": {
@@ -122,9 +122,9 @@
                                             "type": "string",
                                             "example": "ORD01J49MMW3SSBK5PSV3DFR32959",
                                             "description": {
-                                                "en": "Identifier of the order created in the request, automatically generated by Mercado Pago.",
-                                                "pt": "Identificador da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                "es": "Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                "en": "Identifier of the Order created in the request, automatically generated by Mercado Pago.",
+                                                "pt": "Identificador da Order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                "es": "Identificador de la Order creada en la solicitud, generado automáticamente por Mercado Pago."
                                             }
                                         },
                                         "processing_mode": {
@@ -160,23 +160,20 @@
                                         "capture_mode": {
                                             "$ref": "#/components/schemas/capture_mode"
                                         },
-                                        "payer": {
-                                            "$ref": "#/components/schemas/payer"
-                                        },
                                         "transactions": {
                                             "type":"object",
                                             "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                                "en":"Contains information about the transactions associated with the Order.",
+                                                "pt":"Contém informações sobre as transações associadas a uma Order.",
+                                                "es":"Contiene información sobre las transacciones asociadas a una Order."
                                             },
                                             "properties":{
                                                 "payments":{
                                                     "type":"array",
                                                     "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                                        "en":"Contains information about the payment associated with the Order.",
+                                                        "pt":"Contém informações sobre o pagamento associado à Order.",
+                                                        "es":"Contiene información sobre el pago asociado a una Order."
                                                     },
                                                     "items": {
                                                         "type": "object",
@@ -209,7 +206,131 @@
                                                                 "$ref": "#/components/schemas/create_order_transaction_status_detail"
                                                             },
                                                             "payment_method": {
-                                                                "$ref": "#/components/schemas/payment_method"
+                                                                "type": "object",
+                                                                "description": {
+                                                                    "en": "Information about the payment method. Access the endpoint '/v1/payment_methods' to check all available payment methods and get a list with the details of each one and their properties.",
+                                                                    "pt": "Informação sobre o meio de pagamento. Utilize o endpoint '/v1/payment_methods' para acessar a lista completa de meios de pagamento disponíveis. Esse recurso fornece detalhes sobre cada meio, incluindo suas propriedades.",
+                                                                    "es": "Información sobre el medio de pago. Accede al endpoint '/v1/payment_methods' para consultar todos los medios de pago disponibles y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
+                                                                },
+                                                                "properties":{
+                                                                    "id": {
+                                                                        "type": "string",
+                                                                        "example": "visa",
+                                                                        "description": {
+                                                                            "en": "Identifier of the payment method selected to make the payment. If it's a card payment, it will show the brand.",
+                                                                            "pt": "Identificador do meio de pagamento selecionado para efetuar o pagamento. Caso seja um pagamento com cartão, indicará a bandeira.",
+                                                                            "es": "Identificador del medio de pago seleccionado para realizar el pago. En caso de ser un pago con tarjeta, indicará la bandera."
+                                                                        }
+                                                                    },
+                                                                    "type": {
+                                                                        "type": "string",
+                                                                        "example": "credit_card",
+                                                                        "description": {
+                                                                            "en": "Type of payment method selected to make the payment.",
+                                                                            "pt": "Tipo de meio de pagamento selecionado para efetuar o pagamento.",
+                                                                            "es": "Tipo de medio de pago seleccionado para realizar el pago."
+                                                                        }
+                                                                    },
+                                                                    "token": {
+                                                                        "type": "string",
+                                                                        "example": "12345",
+                                                                        "description": {
+                                                                            "en": "It is a mandatory field for card payments, as it is the token that identifies the card and contains its data securely. It has a minimum length of 32 characters, and a maximum length of 33. If you don't know how to generate it, go to the card payment configuration in the Checkout API documentation.",
+                                                                            "pt": "É um campo obrigatório para pagamentos com cartão, pois é o token que identifica o cartão e contém seus dados de forma segura. Possui comprimento mínimo de 32 caracteres e máximo de 33. Caso não saiba como gerá-lo, acesse a configuração de pagamento com cartão na documentação do Checkout Transparente.",
+                                                                            "es": "Es un campo obligatorio para los pagos con tarjeta, pues se trata del token que la identifica y contiene sus datos de forma segura. Tiene una longitud mínima de 32 caracteres, y una longitud máxima de 33. Si desconoces cómo generarlo, dirígete a la configuración de pagos con tarjeta en la documentación de Checkout API."
+                                                                        }
+                                                                    },
+                                                                    "installments": {
+                                                                        "type": "integer",
+                                                                        "example": 1,
+                                                                        "description": {
+                                                                            "pt": "Número de parcelas selecionado.",
+                                                                            "en": "Number of installments selected.",
+                                                                            "es": "Cantidad de cuotas seleccionada."
+                                                                        }
+                                                                    },
+                                                                    "statement_descriptor": {
+                                                                        "type": "string",
+                                                                        "example": "approved",
+                                                                        "description": {
+                                                                            "en": "Description that the payment will appear with in the card statement.",
+                                                                            "pt": "Descrição com a qual o pagamento aparecerá na fatura do cartão.",
+                                                                            "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
+                                                                        }
+                                                                    },
+                                                                    "external_resource_url": {
+                                                                        "type": "string",
+                                                                        "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+                                                                        "description": {
+                                                                            "en": "URL to external resource. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "pt": "URL para recurso externo. É retornada para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "es": "URL para recurso externo. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
+                                                                        }
+                                                                    },
+                                                                    "barcode_content": {
+                                                                        "type": "string",
+                                                                        "example": "3335008800000000006004835002100020000242462010",
+                                                                        "description": {
+                                                                            "en": "Barcode content. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash.",
+                                                                            "pt": "Conteúdo do código de barras. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash.",
+                                                                            "es": "Contenido del código de barras. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash."
+                                                                        }
+                                                                    },
+                                                                    "reference": {
+                                                                      "type": "string",
+                                                                      "example": "6005407530",
+                                                                      "description": {
+                                                                        "en": "Reference number. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
+                                                                        "pt": "Número de referência. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
+                                                                        "es": "Número de referencia. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe."
+                                                                      }
+                                                                    },
+                                                                    "verification_code": {
+                                                                        "type": "string",
+                                                                        "example": "6005407530",
+                                                                        "description": {
+                                                                            "en": "Verification code. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
+                                                                            "pt": "Código de verificação. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
+                                                                            "es": "Código de verificación. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer."
+                                                                        }
+                                                                    },
+                                                                    "financial_institution": {
+                                                                        "type": "string",
+                                                                        "example": "bolbradesco",
+                                                                        "description": {
+                                                                            "en": "Financial institution. It is returned for offline payment methods, such as bolbradesco, banamex, bancomer.",
+                                                                            "pt": "Instituição financeira. É retornado para meios de pagamento offline, como bolbradesco, banamex, bancomer.",
+                                                                            "es": "Institución financiera. Se devuelve para métodos de pago offline, como bolbradesco, banamex, bancomer."
+                                                                        }
+                                                                    },
+                                                                    "digitable_line": {
+                                                                        "type": "string",
+                                                                        "example": "23793380296060054351030006333303799140000020000",
+                                                                        "description": {
+                                                                            "en": "Digitable line. It is returned for offline payment method bolbradesco.",
+                                                                            "pt": "Linha digitável. É retornado para o meio de pagamento offline bolbradesco.",
+                                                                            "es": "Línea digitable. Se devuelve para el método de pago offline bolbradesco."
+                                                                        }
+                                                                    },
+                                                                    "qr_code": {
+                                                                        "type": "string",
+                                                                        "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0",
+                                                                        "description": {
+                                                                            "en": "QR code. It is returned for offline payment method pix.",
+                                                                            "pt": "Código QR. É retornado para o meio de pagamento offline pix.",
+                                                                            "es": "Código QR. Se devuelve para el método de pago offline pix."
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "qr_code_base64": {
+                                                                    "type": "string",
+                                                                    "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
+                                                                    "description": {
+                                                                        "en": "QR code in base64. It is returned for offline payment method pix.",
+                                                                        "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
+                                                                        "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -220,9 +341,9 @@
                                             "type": "string",
                                             "example": "Point Mini",
                                             "description": {
-                                                "en": "Description of the purchased product or service, the reason for the payment order, or the description of a product in the marketplace.",
-                                                "pt": "Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                                                "es": "Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                                                "en": "Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
+                                                "pt": "Descrição do produto ou serviço comprado, a razão da Order de pagamento, ou a descrição de um produto no marketplace.",
+                                                "es": "Descripción del producto o servicio comprado, el motivo de la Order de pago, o la descripción de un producto en el marketplace."
                                             }
                                         },
                                         "marketplace": {
@@ -420,18 +541,18 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "Consult all order information using the ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
-                    "pt": "Este endpoint permite consultar todas as informações de uma order utilizando o ID obtido na resposta de sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en": "Consult all Order information using the ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
+                    "pt": "Este endpoint permite consultar todas as informações de uma Order utilizando o ID obtido na resposta de sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es": "Consulta toda la información sobre una Order utilizando el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
                         "name": "id",
                         "in": "path",
                         "description": {
-                            "en": "Order ID returned in the response to the request made for its creation.",
+                            "en": "Order ID, returned in the response to the request made for its creation.",
                             "pt": "ID da order, retornado na resposta à requisição para sua criação.",
-                            "es": "ID de la order, devuelto en la respuesta a la requisición para su creación."
+                            "es": "ID de la orden, devuelto en la respuesta a la requisición para su creación."
                         },
                         "required": true,
                         "schema": {
@@ -456,9 +577,9 @@
                                             "type": "string",
                                             "example": "ORD01J49MMW3SSBK5PSV3DFR32959",
                                             "description": {
-                                                "en": "Identifier of the order created in the request, automatically generated by Mercado Pago.",
-                                                "pt": "Identificador da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                "es": "Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                "en": "Identifier of the Order created in the request, automatically generated by Mercado Pago.",
+                                                "pt": "Identificador da Order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                "es": "Identificador de la Order creada en la solicitud, generado automáticamente por Mercado Pago."
                                             }
                                         },
                                         "processing_mode": {
@@ -500,17 +621,17 @@
                                         "transactions":{
                                             "type":"object",
                                             "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                                "en":"Contains information about the transactions associated with the Order.",
+                                                "pt":"Contém informações sobre as transações associadas a uma Order.",
+                                                "es":"Contiene información sobre las transacciones asociadas a una Order."
                                             },
                                             "properties":{
                                                 "payments":{
                                                     "type":"array",
                                                     "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                                        "en":"Contains information about the payment associated with the Order.",
+                                                        "pt":"Contém informações sobre o pagamento associado à Order.",
+                                                        "es":"Contiene información sobre el pago asociado a una Order."
                                                     },
                                                     "items": {
                                                         "type": "object",
@@ -548,8 +669,8 @@
                                                                     {
                                                                         "title": "created",
                                                                         "description": {
-                                                                            "en": "The order has been created successfully.",
-                                                                            "es": "La order fue creada exitosamente.",
+                                                                            "en": "The Order has been created successfully.",
+                                                                            "es": "La Order fue creada exitosamente.",
                                                                             "pt": "Order criada com sucesso."
                                                                         }
                                                                     },
@@ -604,9 +725,9 @@
                                                                     {
                                                                         "title": "refunded",
                                                                         "description": {
-                                                                            "en": "The order has been refunded.",
-                                                                            "es": "La order fue devuelta.",
-                                                                            "pt": "A order foi reembolsada."
+                                                                            "en": "The Order has been refunded.",
+                                                                            "es": "La Order fue devuelta.",
+                                                                            "pt": "A Order foi reembolsada."
                                                                         }
                                                                     }
                                                                 ]
@@ -794,9 +915,9 @@
                                             "type": "string",
                                             "example": "Point Mini",
                                             "description": {
-                                                "en": "Description of the purchased product or service, the reason for the payment order, or the description of a product in the marketplace.",
-                                                "pt": "Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                                                "es": "Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                                                "en": "Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
+                                                "pt": "Descrição do produto ou serviço comprado, a razão da Order de pagamento, ou a descrição de um produto no marketplace.",
+                                                "es": "Descripción del producto o servicio comprado, el motivo de la Order de pago, o la descripción de un producto en el marketplace."
                                             }
                                         },
                                         "marketplace": {
@@ -882,9 +1003,9 @@
                     }
                 },
                 "title": {
-                    "en": "Get order by ID",
-                    "pt": "Obter order por ID",
-                    "es": "Obtener order por ID"
+                    "en": "Get Order by ID",
+                    "pt": "Obter Order por ID",
+                    "es": "Obtener Order por ID"
                 }
             }
         },
@@ -895,18 +1016,18 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" or \"created\" can be canceled. In case of success, the request will return a response with status 200",
-                    "pt": "Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" ou \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es": "Cancela una order y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\" o \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en": "Cancel an Order and its transactions using the reference ID obtained in the response to its creation. Only an Order in status \"action_required\" or \"created\" can be canceled. In case of success, the request will return a response with status 200",
+                    "pt": "Este endpoint permite cancelar uma Order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma Order com status \"action_required\" ou \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es": "Cancela una Order y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una Order en status \"action_required\" o \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
                         "name": "order_id",
                         "in": "path",
                         "description": {
-                            "en": "ID of the order that is being canceled. This value is returned in the response to the Create order request.",
-                            "pt": "ID da order a ser cancelada. Esse valor é retornado na resposta à requisição Criar order.",
-                            "es": "ID de la order a cancelar. Este valor es devuelto en la respuesta a la requisición Crear order."
+                            "en": "ID of the Order that is being canceled. This value is returned in the response to the Create Order request.",
+                            "pt": "ID da Order a ser cancelada. Esse valor é retornado na resposta à requisição Criar Order.",
+                            "es": "ID de la Order a cancelar. Este valor es devuelto en la respuesta a la requisición Crear Order."
                         },
                         "required": true,
                         "schema": {
@@ -931,9 +1052,9 @@
                                             "type": "string",
                                             "example": "ORD01J49MMW3SSBK5PSV3DFR32959",
                                             "description": {
-                                                "en": "Identifier of the order created in the request, automatically generated by Mercado Pago.",
-                                                "pt": "Identificador da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                "es": "Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                "en": "Identifier of the Order created in the request, automatically generated by Mercado Pago.",
+                                                "pt": "Identificador da Order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                "es": "Identificador de la Order creada en la solicitud, generado automáticamente por Mercado Pago."
                                             }
                                         },
                                         "processing_mode": {
@@ -967,16 +1088,16 @@
                                             "type": "string",
                                             "example": "canceled",
                                             "description": {
-                                                "en": "Current status of the order.",
-                                                "pt": "Status atual da order.",
-                                                "es": "Estado actual de la order."
+                                                "en": "Current status of the Order.",
+                                                "pt": "Status atual da Order.",
+                                                "es": "Estado actual de la Order."
                                             },
                                             "enum": [
                                                 {
                                                     "title": "canceled",
                                                     "description": {
-                                                        "en": "The order has been canceled successfully.",
-                                                        "es": "La order fue cancelada exitosamente.",
+                                                        "en": "The Order has been canceled successfully.",
+                                                        "es": "La Order fue cancelada exitosamente.",
                                                         "pt": "Order cancelada com sucesso."
                                                     }
                                                 }
@@ -994,8 +1115,8 @@
                                                 {
                                                     "title": "canceled_transaction",
                                                     "description": {
-                                                        "en": "The order has been canceled successfully.",
-                                                        "es": "La order fue cancelada exitosamente.",
+                                                        "en": "The Order has been canceled successfully.",
+                                                        "es": "La Order fue cancelada exitosamente.",
                                                         "pt": "Order cancelada com sucesso."
                                                     }
                                                 }
@@ -1004,23 +1125,20 @@
                                         "capture_mode": {
                                             "$ref": "#/components/schemas/capture_mode"
                                         },
-                                        "payer": {
-                                            "$ref": "#/components/schemas/payer"
-                                        },
                                         "transactions":{
                                             "type":"object",
                                             "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                                "en":"Contains information about the transactions associated with the Order.",
+                                                "pt":"Contém informações sobre as transações associadas a uma Order.",
+                                                "es":"Contiene información sobre las transacciones asociadas a una Order."
                                             },
                                             "properties":{
                                                 "payments":{
                                                     "type":"array",
                                                     "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                                        "en":"Contains information about the payment associated with the Order.",
+                                                        "pt":"Contém informações sobre o pagamento associado à Order.",
+                                                        "es":"Contiene información sobre el pago asociado a una Order."
                                                     },
                                                     "items": {
                                                         "type": "object",
@@ -1096,9 +1214,9 @@
                                             "type": "string",
                                             "example": "Point Mini",
                                             "description": {
-                                                "en": "Description of the purchased product or service, the reason for the payment order, or the description of a product in the marketplace.",
-                                                "pt": "Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                                                "es": "Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                                                "en": "Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
+                                                "pt": "Descrição do produto ou serviço comprado, a razão da Order de pagamento, ou a descrição de um produto no marketplace.",
+                                                "es": "Descripción del producto o servicio comprado, el motivo de la Order de pago, o la descripción de un producto en el marketplace."
                                             }
                                         },
                                         "marketplace": {
@@ -1211,9 +1329,9 @@
                     }
                 },
                 "title": {
-                    "en": "Cancel order by ID",
-                    "pt": "Cancelar order por ID",
-                    "es": "Cancelar order por ID"
+                    "en": "Cancel Order by ID",
+                    "pt": "Cancelar Order por ID",
+                    "es": "Cancelar Order por ID"
                 }
             }
         },
@@ -1223,9 +1341,9 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in manual mode (processing the transaction in stages that can be configured and executed incrementally), with the 'processing_mode' field filled with 'manual' value. In case of success, the request will return a response with status 201",
-                    "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo manual (processando a transação em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
-                    "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación solo puede realizarse en el modo manual (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
+                    "en": "This endpoint allows payment transactions to be added to the Order. This operation can only be carried out in manual mode (processing the transaction in stages that can be configured and executed incrementally), with the 'processing_mode' field filled with 'manual' value. In case of success, the request will return a response with status 201",
+                    "pt": "Esse endpoint permite adicionar transações de pagamento à Order. Essa operação só pode ser realizada no modo manual (processando a transação em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+                    "es": "Este endpoint permite añadir transacciones de pago a la Order. Esta operación solo puede realizarse en el modo manual (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
                 },
                 "parameters": [
                     {
@@ -1246,9 +1364,9 @@
                         "name": "id",
                         "in": "path",
                         "description": {
-                            "en": "Order ID returned in the response to the request made for its creation.",
-                            "pt": "Identificador da order, retornado na resposta à requisição para sua criação.",
-                            "es": "Identificador de la order, devuelto en la respuesta a la requisición para su creación."
+                            "en": "Order ID, returned in the response to the request made for its creation.",
+                            "pt": "Identificador da Order, retornado na resposta à requisição para sua criação.",
+                            "es": "Identificador de la Order, devuelto en la respuesta a la requisición para su creación."
                         },
                         "required": true,
                         "schema": {
@@ -1266,9 +1384,9 @@
                                     "payments": {
                                         "type": "array",
                                         "description": {
-                                            "en": "Contains information about the payment order. If you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
-                                            "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
-                                            "es": "Contiene información sobre la order de pago. En caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
+                                            "en": "Contains information about the payment Order. If you want to create an Order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
+                                            "pt": "Contém informações sobre a Order do pagamento. Caso deseje criar uma Order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
+                                            "es": "Contiene información sobre la Order de pago. En caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
                                         },
                                         "items": {
                                             "type": "object",
@@ -1302,9 +1420,9 @@
                                         "payments":{
                                             "type":"array",
                                             "description":{
-                                                "en":"Contains information about the payment associated with the order.",
-                                                "pt":"Contém informações sobre o pagamento associado à order.",
-                                                "es":"Contiene información sobre el pago asociado a una order."
+                                                "en":"Contains information about the payment associated with the Order.",
+                                                "pt":"Contém informações sobre o pagamento associado à Order.",
+                                                "es":"Contiene información sobre el pago asociado a una Order."
                                             },
                                             "items": {
                                                 "type": "object",
@@ -1339,8 +1457,8 @@
                                                             {
                                                                 "title": "created",
                                                                 "description": {
-                                                                    "en": "The order has been created successfully.",
-                                                                    "es": "La order fue creada exitosamente.",
+                                                                    "en": "The Order has been created successfully.",
+                                                                    "es": "La Order fue creada exitosamente.",
                                                                     "pt": "Order criada com sucesso."
                                                                 }
                                                             }
@@ -1481,9 +1599,9 @@
                                                 {
                                                     "title": "exceeded_number_of_transactions",
                                                     "description": {
-                                                        "en": "An error occurred in the request. The order accepts a maximum of two transactions. Remove the excess transactions.",
-                                                        "es": "Ocurrió un error en la solicitud. La order acepta un máximo de dos transacciones. Elimina las transacciones excedentes.",
-                                                        "pt": "Ocorreu um erro na requisição. A order aceita, no máximo, duas transações. Remova as transações excedentes."
+                                                        "en": "An error occurred in the request. The Order accepts a maximum of two transactions. Remove the excess transactions.",
+                                                        "es": "Ocurrió un error en la solicitud. La Order acepta un máximo de dos transacciones. Elimine las transacciones excedentes.",
+                                                        "pt": "Ocorreu um erro na requisição. A Order aceita, no máximo, duas transações. Remova as transações excedentes."
                                                     }
                                                 }
                                             ]
@@ -1553,18 +1671,18 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "This endpoint allows you to delete a payment transaction from the order. In case of success, the request will return a response with status 204",
-                    "pt": "Este endpoint permite deletar uma transação de pagamento da order. Em caso de sucesso, a requisição retornará uma resposta com o status 204",
-                    "es": "Este endpoint permite eliminar una transacción de pago de la order. En caso de éxito, la solicitud devolverá una respuesta con el estado 204"
+                    "en": "This endpoint allows you to delete a payment transaction from the Order. In case of success, the request will return a response with status 204",
+                    "pt": "Este endpoint permite deletar uma transação de pagamento da Order. Em caso de sucesso, a requisição retornará uma resposta com o status 204",
+                    "es": "Este endpoint permite eliminar una transacción de pago de la Order. En caso de éxito, la solicitud devolverá una respuesta con el estado 204"
                 },
                 "parameters": [
                     {
                         "name": "order_id",
                         "in": "path",
                         "description": {
-                            "en": "Order ID returned in the response to the request made for its creation.",
+                            "en": "Order ID, returned in the response to the request made for its creation.",
                             "pt": "ID da order, retornado na resposta à requisição para a sua criação.",
-                            "es": "ID de la order, devuelto en la respuesta a la requisición para su creación."
+                            "es": "ID de la orden, devuelto en la respuesta a la requisición para su creación."
                         },
                         "required": true,
                         "schema": {
@@ -1576,9 +1694,9 @@
                         "name": "transaction_id",
                         "in": "path",
                         "description": {
-                            "en": "Identifier of the payment transaction that will be deleted from the order. This ID is automatically generated by Mercado Pago when the request is created or when the transaction is added later to the order.",
-                            "pt": "Identificador da transação de pagamento que será deletada da order. Este ID é gerado automaticamente pelo Mercado Pago na criação da requisição ou quando a transação for adicionada porteriormente à order.",
-                            "es": "Identificador de la transacción de pago que será eliminada de la order. Este ID es generado automáticamente por Mercado Pago al crear la solicitud o cuando la transacción se añade posteriormente a la order"
+                            "en": "Identifier of the payment transaction that will be deleted from the Order. This ID is automatically generated by Mercado Pago when the request is created or when the transaction is added later to the Order.",
+                            "pt": "Identificador da transação de pagamento que será deletada da Order. Este ID é gerado automaticamente pelo Mercado Pago na criação da requisição ou quando a transação for adicionada porteriormente à Order.",
+                            "es": "Identificador de la transacción de pago que será eliminada de la Order. Este ID es generado automáticamente por Mercado Pago al crear la solicitud o cuando la transacción se añade posteriormente a la Order"
                         },
                         "required": true,
                         "schema": {
@@ -1689,7 +1807,7 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "This endpoint allows updating the information of a payment transaction in the order.",
+                    "en": "This endpoint allows updating the information of a payment transaction in the Order.",
                     "pt": "Este endpoint permite atualizar as informações de uma transação de pagamento da order",
                     "es": "Este endpoint permite actualizar la información de una transacción de pago de la order"
                 },
@@ -1698,9 +1816,9 @@
                         "name": "order_id",
                         "in": "path",
                         "description": {
-                            "en": "ID of the order that is being updated. This value is returned in the response to the Create order request.",
-                            "pt": "ID da order a ser atualizada. Esse valor é retornado na resposta à requisição Criar order.",
-                            "es": "ID de la order a actualizar. Este valor es devuelto en la respuesta a la requisición Crear order."
+                            "en": "ID of the Order that is being updated. This value is returned in the response to the Create Order request.",
+                            "pt": "ID da Order a ser atualizada. Esse valor é retornado na resposta à requisição Criar Order.",
+                            "es": "ID de la Order a actualizar. Este valor es devuelto en la respuesta a la requisición Crear Order."
                         },
                         "required": true,
                         "schema": {
@@ -1712,9 +1830,9 @@
                         "name": "transaction_id",
                         "in": "path",
                         "description": {
-                            "en": "Identifier of the payment transaction that will be updated in the order. This ID is automatically generated by Mercado Pago when the request is created or when the transaction is added later to the order.",
-                            "pt": "Identificador da transação de pagamento que será atualizada na order. Este ID é gerado automaticamente pelo Mercado Pago na criação da requisição ou quando a transação for adicionada porteriormente à order.",
-                            "es": "Identificador de la transacción de pago que será actualizadas en la order. Este ID es generado automáticamente por Mercado Pago al crear la solicitud o cuando la transacción se añade posteriormente a la order."
+                            "en": "Identifier of the payment transaction that will be updated in the Order. This ID is automatically generated by Mercado Pago when the request is created or when the transaction is added later to the Order.",
+                            "pt": "Identificador da transação de pagamento que será atualizada na Order. Este ID é gerado automaticamente pelo Mercado Pago na criação da requisição ou quando a transação for adicionada porteriormente à Order.",
+                            "es": "Identificador de la transacción de pago que será actualizadas en la Order. Este ID es generado automáticamente por Mercado Pago al crear la solicitud o cuando la transacción se añade posteriormente a la Order."
                         },
                         "required": true,
                         "schema": {
@@ -1846,18 +1964,18 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
-                    "pt": "Este endpoint permite executar o processamento de uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es": "Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en": "Performs the processing of an Order and its transactions using the reference ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
+                    "pt": "Este endpoint permite executar o processamento de uma Order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es": "Realiza el procesamiento de una Order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
                         "name": "order_id",
                         "in": "path",
                         "description": {
-                            "en": "ID of the order that is being processed. This value is returned in the response to the Create order request.",
-                            "pt": "ID da order que deve ser processada. Esse valor é retornado na resposta à requisição Criar order.",
-                            "es": "ID de la order a procesar. Este valor es devuelto en la respuesta a la requisición Crear order."
+                            "en": "ID of the Order that is being processed. This value is returned in the response to the Create Order request.",
+                            "pt": "ID da Order que deve ser processada. Esse valor é retornado na resposta à requisição Criar Order.",
+                            "es": "ID de la Order a procesar. Este valor es devuelto en la respuesta a la requisición Crear Order."
                         },
                         "required": true,
                         "schema": {
@@ -1896,9 +2014,9 @@
                                             "type": "string",
                                             "example": "ORD01J49MMW3SSBK5PSV3DFR32959",
                                             "description": {
-                                                "en": "Identifier of the order created in the request, automatically generated by Mercado Pago.",
-                                                "pt": "Identificador da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                "es": "Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                "en": "Identifier of the Order created in the request, automatically generated by Mercado Pago.",
+                                                "pt": "Identificador da Order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                "es": "Identificador de la Order creada en la solicitud, generado automáticamente por Mercado Pago."
                                             }
                                         },
                                         "processing_mode": {
@@ -1937,23 +2055,20 @@
                                         "capture_mode": {
                                             "$ref": "#/components/schemas/capture_mode"
                                         },
-                                        "payer": {
-                                            "$ref": "#/components/schemas/payer"
-                                        },
                                         "transactions":{
                                             "type":"object",
                                             "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                                "en":"Contains information about the transactions associated with the Order.",
+                                                "pt":"Contém informações sobre as transações associadas a uma Order.",
+                                                "es":"Contiene información sobre las transacciones asociadas a una Order."
                                             },
                                             "properties":{
                                                 "payments":{
                                                     "type":"array",
                                                     "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                                        "en":"Contains information about the payment associated with the Order.",
+                                                        "pt":"Contém informações sobre o pagamento associado à Order.",
+                                                        "es":"Contiene información sobre el pago asociado a una Order."
                                                     },
                                                     "items": {
                                                         "type": "object",
@@ -1998,8 +2113,8 @@
                                             "example": "Point Mini",
                                             "description": {
                                                 "en": "Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
-                                                "pt": "Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                                                "es": "Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                                                "pt": "Descrição do produto ou serviço comprado, a razão da Order de pagamento, ou a descrição de um produto no marketplace.",
+                                                "es": "Descripción del producto o servicio comprado, el motivo de la Order de pago, o la descripción de un producto en el marketplace."
                                             }
                                         },
                                         "marketplace": {
@@ -2112,9 +2227,9 @@
                     }
                 },
                 "title": {
-                    "en": "Process order by ID",
-                    "pt": "Processar order por ID",
-                    "es": "Procesar order por ID"
+                    "en": "Process Order by ID",
+                    "pt": "Processar Order por ID",
+                    "es": "Procesar Order por ID"
                 }
             }
         },
@@ -2125,18 +2240,18 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en": "This endpoint performs a full or partial refund of the transactions associated with an order. To perform a full refund, you must not send the amount to be refunded in the request body. To perform a partial refund you must indicate the amount to be refunded, along with the transaction ID you wish to return. In case of success, the request will return a response with status 201",
-                    "pt": "Este endpoint executa a devolução total ou parcial das transações associadas a uma order. Para fazer o reembolso total, você não deve enviar o valor a ser reembolsado no body da solicitação. Para efetuar um reembolso parcial deverá indicar o valor a ser reembolsado, juntamente com o identificador da transação que deseja devolver. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
-                    "es": "Este endpoint permite realizar la devolución total o parcial de los valores asociados a una order. Para realizar un reembolso total, no debes enviar el monto a reembolsar en el body de la requisición. Para realizar un reembolso parcial sí debes indicar el valor a ser reembolsado, junto con el identificador de la transacción que deseas devolver. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
+                    "en": "This endpoint performs a full or partial refund of the transactions associated with an Order. To perform a full refund, you must not send the amount to be refunded in the request body. To perform a partial refund you must indicate the amount to be refunded, along with the transaction ID you wish to return. In case of success, the request will return a response with status 201",
+                    "pt": "Este endpoint executa a devolução total ou parcial das transações associadas a uma Order. Para fazer o reembolso total, você não deve enviar o valor a ser reembolsado no body da solicitação. Para efetuar um reembolso parcial deverá indicar o valor a ser reembolsado, juntamente com o identificador da transação que deseja devolver. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+                    "es": "Este endpoint permite realizar la devolución total o parcial de los valores asociados a una Order. Para realizar un reembolso total, no debes enviar el monto a reembolsar en el body de la requisición. Para realizar un reembolso parcial sí debes indicar el valor a ser reembolsado, junto con el identificador de la transacción que deseas devolver. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
                 },
                 "parameters": [
                     {
                         "name": "order_id",
                         "in": "path",
                         "description": {
-                            "en": "ID of the order that is being refunded. This value is returned in the response to the Create order request.",
-                            "pt": "ID da order que deve ser reembolsada. Esse valor é retornado na resposta à requisição Criar order.",
-                            "es": "ID de la order a reembolsar. Este valor es devuelto en la respuesta a la requisición Crear order."
+                            "en": "ID of the Order that is being refunded. This value is returned in the response to the Create Order request.",
+                            "pt": "ID da Order que deve ser reembolsada. Esse valor é retornado na resposta à requisição Criar Order.",
+                            "es": "ID de la Order a reembolsar. Este valor es devuelto en la respuesta a la requisición Crear Order."
                         },
                         "required": true,
                         "schema": {
@@ -2169,9 +2284,9 @@
                                         "type": "array",
                                         "required": true,
                                         "description": {
-                                            "en": "Contains information about the transactions associated with the order. It can contain up to 2 transactions. For example, if you want to create an order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
-                                            "pt": "Contém informações sobre as transações associadas à order. Pode conter até 2 transações. Por exemplo, se deseja criar uma order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
-                                            "es": "Contiene información sobre las transacciones asociadas a la order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array."
+                                            "en": "Contains information about the transactions associated with the Order. It can contain up to 2 transactions. For example, if you want to create an Order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
+                                            "pt": "Contém informações sobre as transações associadas à Order. Pode conter até 2 transações. Por exemplo, se deseja criar uma Order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
+                                            "es": "Contiene información sobre las transacciones asociadas a la Order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array."
                                         },
                                         "items": {
                                             "type": "object",
@@ -2212,18 +2327,18 @@
                                             "type": "string",
                                             "example": "ORD01J49MMW3SSBK5PSV3DFR32959",
                                             "description": {
-                                                "en": "Identifier of the order being processed in the request.",
-                                                "pt": "Identificador da order processada na requisição.",
-                                                "es": "Identificador de la order procesada en la solicitud."
+                                                "en": "Identifier of the Order being processed in the request.",
+                                                "pt": "Identificador da Order processada na requisição.",
+                                                "es": "Identificador de la Order procesada en la solicitud."
                                             }
                                         },
                                         "status": {
                                             "type": "string",
                                             "example": "processed",
                                             "description": {
-                                                "en": "Current status of the order.",
-                                                "pt": "Status atual da order.",
-                                                "es": "Estado actual de la order."
+                                                "en": "Current status of the Order.",
+                                                "pt": "Status atual da Order.",
+                                                "es": "Estado actual de la Order."
                                             },
                                             "enum": [
                                                 {
@@ -2237,9 +2352,9 @@
                                                 {
                                                     "title": "refunded",
                                                     "description": {
-                                                        "en": "The order has been refunded.",
-                                                        "es": "La order fue devuelta.",
-                                                        "pt": "A order foi reembolsada."
+                                                        "en": "The Order has been refunded.",
+                                                        "es": "La Order fue devuelta.",
+                                                        "pt": "A Order foi reembolsada."
                                                     }
                                                 }
                                             ]
@@ -2256,17 +2371,17 @@
                                                 {
                                                     "title": "refunded",
                                                     "description": {
-                                                        "en": "The order has been refunded.",
-                                                        "es": "La order fue devuelta.",
-                                                        "pt": "A order foi reembolsada."
+                                                        "en": "The Order has been refunded.",
+                                                        "es": "La Order fue devuelta.",
+                                                        "pt": "A Order foi reembolsada."
                                                     }
                                                 },
                                                 {
                                                     "title": "partially_refunded",
                                                     "description": {
-                                                        "en": "The order has been partially refunded.",
-                                                        "es": "La order fue devuelta parcialmente.",
-                                                        "pt": "A order foi reembolsada parcialmente."
+                                                        "en": "The Order has been partially refunded.",
+                                                        "es": "La Order fue devuelta parcialmente.",
+                                                        "pt": "A Order foi reembolsada parcialmente."
                                                     }
                                                 }
                                             ]
@@ -2274,17 +2389,17 @@
                                         "transactions":{
                                             "type":"object",
                                             "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                                "en":"Contains information about the transactions associated with the Order.",
+                                                "pt":"Contém informações sobre as transações associadas a uma Order.",
+                                                "es":"Contiene información sobre las transacciones asociadas a una Order."
                                             },
                                             "properties":{
                                                 "refunds":{
                                                     "type":"array",
                                                     "description":{
-                                                        "en":"Contains information about the refund associated with the order.",
-                                                        "pt":"Contém informações sobre o reembolso associado à order.",
-                                                        "es":"Contiene información sobre el reembolso asociado a una order."
+                                                        "en":"Contains information about the refund associated with the Order.",
+                                                        "pt":"Contém informações sobre o reembolso associado à Order.",
+                                                        "es":"Contiene información sobre el reembolso asociado a una Order."
                                                     },
                                                     "items": {
                                                         "type": "object",
@@ -2293,9 +2408,9 @@
                                                                 "type":"string",
                                                                 "example":"REF01J49MMW3SSBK5PSV3DFR32959",
                                                                 "description":{
-                                                                    "en":"Identifier of the refunded order transaction created in the request, automatically generated by Mercado Pago.",
-                                                                    "pt":"Identificador da transação reembolsada da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                                                    "es":"Identificador de la transacción reembolsada de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                                                                    "en":"Identifier of the refunded Order transaction created in the request, automatically generated by Mercado Pago.",
+                                                                    "pt":"Identificador da transação reembolsada da Order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                                                    "es":"Identificador de la transacción reembolsada de la Order creada en la solicitud, generado automáticamente por Mercado Pago."
                                                                 }
                                                             },
                                                             "transaction_id":{
@@ -2496,18 +2611,18 @@
                     "checkout-api-manual"
                 ],
                 "description": {
-                    "en":"This endpoint allows to totally capture a previously authorized order. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
-                    "pt":"Este endpoint permite capturar totalmente uma order previamente autorizada. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-                    "es":"Este endpoint permite capturar en su totalidad una order previamente autorizada. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+                    "en":"This endpoint allows to totally capture a previously authorized Order. Every associated payment will be captured in total. In case of success, the request will return a response with status 200",
+                    "pt":"Este endpoint permite capturar totalmente uma Order previamente autorizada. Cada payment associado será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+                    "es":"Este endpoint permite capturar en su totalidad una Order previamente autorizada. Cada payment asociado se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
                 },
                 "parameters": [
                     {
                         "name": "order_id",
                         "in": "path",
                         "description": {
-                            "en": "Order ID whose values ​​will be captured. This value is returned in the response to the Create order request.",
-                            "pt": "ID da order cujos valores serão capturados. Esse valor é retornado na resposta à requisição Criar order.",
-                            "es": "ID de la order cuyos valores se capturarán. Este valor se devuelve en la respuesta a la solicitud de Crear order."
+                            "en": "Order ID whose values ​​will be captured. This value is returned in the response to the Create Order request.",
+                            "pt": "ID da Order cujos valores serão capturados. Esse valor é retornado na resposta à requisição Criar Order.",
+                            "es": "ID de la Order cuyos valores se capturarán. Este valor se devuelve en la respuesta a la solicitud de Crear pedido."
                         },
                         "required": true,
                         "schema": {
@@ -2546,9 +2661,9 @@
                                             "type": "string",
                                             "example": "ORD01J49MMW3SSBK5PSV3DFR32959",
                                             "description": {
-                                                "en": "Identifier of the order being processed in the request.",
-                                                "pt": "Identificador da order processada na requisição.",
-                                                "es": "Identificador de la order procesada en la solicitud."
+                                                "en": "Identifier of the Order being processed in the request.",
+                                                "pt": "Identificador da Order processada na requisição.",
+                                                "es": "Identificador de la Order procesada en la solicitud."
                                             }
                                         },
                                         "status": {
@@ -2560,17 +2675,17 @@
                                         "transactions":{
                                             "type":"object",
                                             "description":{
-                                                "en":"Contains information about the transactions associated with the order.",
-                                                "pt":"Contém informações sobre as transações associadas a uma order.",
-                                                "es":"Contiene información sobre las transacciones asociadas a una order."
+                                                "en":"Contains information about the transactions associated with the Order.",
+                                                "pt":"Contém informações sobre as transações associadas a uma Order.",
+                                                "es":"Contiene información sobre las transacciones asociadas a una Order."
                                             },
                                             "properties":{
                                                 "payments":{
                                                     "type":"array",
                                                     "description":{
-                                                        "en":"Contains information about the payment associated with the order.",
-                                                        "pt":"Contém informações sobre o pagamento associado à order.",
-                                                        "es":"Contiene información sobre el pago asociado a una order."
+                                                        "en":"Contains information about the payment associated with the Order.",
+                                                        "pt":"Contém informações sobre o pagamento associado à Order.",
+                                                        "es":"Contiene información sobre el pago asociado a una Order."
                                                     },
                                                     "items": {
                                                         "type": "object",
@@ -2727,9 +2842,9 @@
                     }
                 },
                 "title": {
-                    "en": "Capture order fully",
-                    "pt": "Capturar order totalmente",
-                    "es": "Capturar order completamente"
+                    "en": "Capture Order fully",
+                    "pt": "Capturar Order totalmente",
+                    "es": "Capturar Order completamente"
                 }
             }
         }
@@ -2776,16 +2891,16 @@
                         "title": "manual",
                         "description": {
                             "en": "Order's processing will be made manually. It is the processing mode used for the \"manual\" option, as it sets the processing to be made afterwards, by using the \"Process Order by ID\" endpoint.",
-                            "es": "El procesamiento de la order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"manual\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar Order por ID\".",
-                            "pt": "O processamento da order será realizado manualmente. É o modo de processamento utilizado para a opção \"manual\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar Order por ID\"."
+                            "es": "El procesamiento de la Order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"manual\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar Order por ID\".",
+                            "pt": "O processamento da Order será realizado manualmente. É o modo de processamento utilizado para a opção \"manual\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar Order por ID\"."
                         }
                     },
                     {
                         "title": "automatic",
                         "description": {
                             "en": "Order's processing will be made instantly. It is the capture mode used for the \"automatic\" option.",
-                            "es": "El procesamiento de la order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"automático\".",
-                            "pt": "O processamento da order será feito imediatamente. É o modo de processamento utilizado para a opção \"automático\"."
+                            "es": "El procesamiento de la Order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"automático\".",
+                            "pt": "O processamento da Order será feito imediatamente. É o modo de processamento utilizado para a opção \"automático\"."
                         }
                     }
                 ]
@@ -2795,9 +2910,9 @@
                 "required": true,
                 "example": "ext_ref_1234",
                 "description": {
-                    "en": "It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin. This field must have a maximum of 64 characters and can only be numbers, letters, hyphens (-) and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
-                    "es": "Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción. Este campo debe tener como máximo 64 caracteres y estos solo pueden ser números, letras, guiones medios (-) y guiones bajos (_). Caracteres especiales como ([ ], (), '', @) no son permitidos.",
-                    "pt": "Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação. Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos."
+                    "en": "It is an external reference of the Order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin. This field must have a maximum of 64 characters and can only be numbers, letters, hyphens (-) and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
+                    "es": "Es una referencia externa de la Order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción. Este campo debe tener como máximo 64 caracteres y estos solo pueden ser números, letras, guiones medios (-) y guiones bajos (_). Caracteres especiales como ([ ], (), '', @) no son permitidos.",
+                    "pt": "Referência externa da Order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação. Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos."
                 }
             },
             "type": {
@@ -2813,7 +2928,7 @@
                         "title": "online",
                         "description": {
                             "en": "Value associated with the creation of Orders for online payments.",
-                            "es": "Valor asociado a la creación de Orders para pagos online.",
+                            "es": "Valor asociado a la creación de órdenes para pagos online.",
                             "pt": "Valor associado à criação de Orders para pagamentos online."
                         }
                     }
@@ -2824,9 +2939,9 @@
                 "type": "string",
                 "example": "12345",
                 "description": {
-                    "pt": "Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
-                    "en": "Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
-                    "es": "Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                    "pt": "Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a Order. É a pessoa que receberá o pagamento.",
+                    "en": "Identifier of the user to which the Mercado Pago application that created the Order belongs. It is the person that will receive the payment.",
+                    "es": "Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la Order. Es la persona que recibirá el pago."
                 }
             },
             "created_date": {
@@ -2851,9 +2966,9 @@
                 "type": "string",
                 "example": "BRA",
                 "description": {
-                    "pt": "Identificador do site (país) ao qual pertence a aplicação do Mercado Pago que criou a order.",
-                    "en": "Identifier of the site (country) to which the Mercado Pago application that created the order belongs.",
-                    "es": "Identificador del site (país) al que pertenece la aplicación de Mercado Pago que creó la order."
+                    "pt": "Identificador do site (país) ao qual pertence a aplicação do Mercado Pago que criou a Order.",
+                    "en": "Identifier of the site (country) to which the Mercado Pago application that created the Order belongs.",
+                    "es": "Identificador del site (país) al que pertenece la aplicación de Mercado Pago que creó la Order."
                 }
             },
             "reference_id": {
@@ -2890,7 +3005,129 @@
                             "en": "Identifier of the payment method selected to make the payment. If it's a card payment, it will show the brand.",
                             "pt": "Identificador do meio de pagamento selecionado para efetuar o pagamento. Caso seja um pagamento com cartão, indicará a bandeira.",
                             "es": "Identificador del medio de pago seleccionado para realizar el pago. En caso de ser un pago con tarjeta, indicará la bandera."
-                        }
+                        },
+                        "enum":  [
+                            {
+                                "title": "visa",
+                                "description": {
+                                    "en": "Visa credit card.",
+                                    "es": "Tarjeta de crédito Visa.",
+                                    "pt": "Cartão de crédito Visa."
+                                }
+                            },
+                            {
+                                "title": "master",
+                                "description": {
+                                    "en": "Mastercard credit card.",
+                                    "es": "Tarjeta de crédito Mastercard.",
+                                    "pt": "Cartão de crédito Mastercard."
+                                }
+                            },
+                            {
+                                "title": "debelo",
+                                "description": {
+                                    "en": "Debelo debit card.",
+                                    "es": "Tarjeta de débito Debelo.",
+                                    "pt": "Cartão de débito Debelo."
+                                }
+                            },
+                            {
+                                "title": "debmaster",
+                                "description": {
+                                    "en": "Debmaster debit card.",
+                                    "es": "Tarjeta de débito Debmaster.",
+                                    "pt": "Cartão de débito Debmaster."
+                                }
+                            },
+                            {
+                                "title": "debvisa",
+                                "description": {
+                                    "en": "Debvisa debit card.",
+                                    "es": "Tarjeta de débito Debvisa.",
+                                    "pt": "Cartão de débito Debvisa."
+                                }
+                            },
+                            {
+                                "title": "account_money",
+                                "description": {
+                                    "en": "Money from the user's Mercado Pago account.",
+                                    "es": "Dinero de la cuenta de Mercado Pago del usuario.",
+                                    "pt": "Dinheiro da conta do Mercado Pago do usuário."
+                                }
+                            },
+                            {
+                                "title": "rapipago",
+                                "description": {
+                                    "en": "Rapipago payment.",
+                                    "es": "Pago en efectivo en Rapipago.",
+                                    "pt": "Pagamento em dinheiro no Rapipago."
+                                }
+                            },
+                            {
+                                "title": "pagofacil",
+                                "description": {
+                                    "en": "Pagofacil payment.",
+                                    "es": "Pago en efectivo en Pagofacil.",
+                                    "pt": "Pagamento em dinheiro no Pagofacil."
+                                }
+                            },
+                            {
+                                "title": "bolbradesco",
+                                "description": {
+                                    "en": "Boleto Bradesco payment.",
+                                    "es": "Pago con boleto Bradesco.",
+                                    "pt": "Pagamento com boleto Bradesco."
+                                }
+                            },
+                            {
+                                "title": "oxxo",
+                                "description": {
+                                    "en": "Oxxo payment.",
+                                    "es": "Pago en efectivo en Oxxo.",
+                                    "pt": "Pagamento em dinheiro no Oxxo."
+                                }
+                            },
+                            {
+                                "title": "paycash",
+                                "description": {
+                                    "en": "Paycash payment.",
+                                    "es": "Pago en efectivo en Paycash.",
+                                    "pt": "Pagamento em dinheiro no Paycash."
+                                }
+                            },
+                            {
+                                "title": "bancomer",
+                                "description": {
+                                    "en": "Bancomer payment.",
+                                    "es": "Pago en efectivo en Bancomer.",
+                                    "pt": "Pagamento em dinheiro no Bancomer."
+                                }
+                            },
+                            {
+                                "title": "banamex",
+                                "description": {
+                                    "en": "Banamex payment.",
+                                    "es": "Pago en efectivo en Banamex.",
+                                    "pt": "Pagamento em dinheiro no Banamex."
+                                }
+                            },
+                            {
+                                "title": "clabe",
+                                "description": {
+                                    "en": "Clabe payment.",
+                                    "es": "Pago con Clabe.",
+                                    "pt": "Pagamento com Clabe."
+                                }
+                            },
+                            {
+                                "title": "pix",
+                                "description": {
+                                    "en": "Pix payment.",
+                                    "es": "Pago con Pix.",
+                                    "pt": "Pagamento com Pix."
+                                }
+                            }
+                        ]
                     },
                     "type": {
                         "type": "string",
@@ -2899,7 +3136,57 @@
                             "en": "Type of payment method selected to make the payment.",
                             "pt": "Tipo de meio de pagamento selecionado para efetuar o pagamento.",
                             "es": "Tipo de medio de pago seleccionado para realizar el pago."
-                        }
+                        },
+                        "enum": [
+                            {
+                                "title": "credit_card",
+                                "description": {
+                                    "en": "Credit card.",
+                                    "es": "Tarjeta de crédito.",
+                                    "pt": "Cartão de crédito."
+                                }
+                            },
+                            {
+                                "title": "debit_card",
+                                "description": {
+                                    "en": "Debit card.",
+                                    "es": "Tarjeta de débito.",
+                                    "pt": "Cartão de débito."
+                                }
+                            },
+                            {
+                                "title": "account_money",
+                                "description": {
+                                    "en": "Money from the user's Mercado Pago account.",
+                                    "es": "Dinero de la cuenta de Mercado Pago del usuario.",
+                                    "pt": "Dinheiro da conta do Mercado Pago do usuário."
+                                }
+                            },
+                            {
+                                "title": "ticket",
+                                "description": {
+                                    "en": "Cash payment.",
+                                    "es": "Pago en efectivo.",
+                                    "pt": "Pagamento em dinheiro."
+                                }
+                            },
+                            {
+                                "title": "atm",
+                                "description": {
+                                    "en": "ATM payment.",
+                                    "es": "Pago en cajero automático.",
+                                    "pt": "Pagamento em caixa eletrônico."
+                                }
+                            },
+                            {
+                                "title": "bank_transfer",
+                                "description": {
+                                    "en": "Bank transfer.",
+                                    "es": "Transferencia bancaria.",
+                                    "pt": "Transferência bancária."
+                                }
+                            }
+                        ]
                     },
                     "token": {
                         "type": "string",
@@ -3146,17 +3433,17 @@
                 "type": "string",
                 "example": "MERCADOLIVRE",
                 "description": {
-                    "en": "Name of the marketplace where the order was made.",
-                    "pt": "Nome do marketplace onde a order foi realizada.",
-                    "es": "Nombre del marketplace donde se realizó la order."
+                    "en": "Name of the marketplace where the Order was made.",
+                    "pt": "Nome do marketplace onde a Order foi realizada.",
+                    "es": "Nombre del marketplace donde se realizó la Order."
                 }
             },
             "integration_data_request": {
                 "type": "object",
                 "description": {
-                    "en": "Additional information that can be used to integrate with other systems, such as the identifier of the order in the integrator's system.",
-                    "pt": "Informações adicionais que podem ser utilizadas para integração com outros sistemas, como o identificador da order no sistema do integrador.",
-                    "es": "Información adicional que puede utilizarse para integrar con otros sistemas, como el identificador de la order en el sistema del integrador."
+                    "en": "Additional information that can be used to integrate with other systems, such as the identifier of the Order in the integrator's system.",
+                    "pt": "Informações adicionais que podem ser utilizadas para integração com outros sistemas, como o identificador da Order no sistema do integrador.",
+                    "es": "Información adicional que puede utilizarse para integrar con otros sistemas, como el identificador de la Order en el sistema del integrador."
                 },
                 "properties": {
                     "integrator_id": {
@@ -3201,18 +3488,18 @@
             "integration_data_response": {
                 "type": "object",
                 "description": {
-                    "en": "Additional information that can be used to integrate with other systems, such as the identifier of the order in the integrator's system.",
-                    "pt": "Informações adicionais que podem ser utilizadas para integração com outros sistemas, como o identificador da order no sistema do integrador.",
-                    "es": "Información adicional que puede utilizarse para integrar con otros sistemas, como el identificador de la order en el sistema del integrador."
+                    "en": "Additional information that can be used to integrate with other systems, such as the identifier of the Order in the integrator's system.",
+                    "pt": "Informações adicionais que podem ser utilizadas para integração com outros sistemas, como o identificador da Order no sistema do integrador.",
+                    "es": "Información adicional que puede utilizarse para integrar con otros sistemas, como el identificador de la Order en el sistema del integrador."
                 },
                 "properties": {
                     "application_id": {
                         "type": "string",
                         "example": "1234",
                         "description": {
-                            "pt": "Identificador da aplicação do Mercado Pago que criou a order.",
-                            "en": "Identifier of the Mercado Pago application that created the order.",
-                            "es": "Identificador de la aplicación de Mercado Pago que creó la order."
+                            "pt": "Identificador da aplicação do Mercado Pago que criou a Order.",
+                            "en": "Identifier of the Mercado Pago application that created the Order.",
+                            "es": "Identificador de la aplicación de Mercado Pago que creó la Order."
                         }
                     },
                     "integrator_id": {
@@ -3277,16 +3564,16 @@
                 "type": "string",
                 "example": "processed",
                 "description": {
-                    "en": "Current status of the order.",
-                    "pt": "Status atual da order.",
-                    "es": "Estado actual de la order."
+                    "en": "Current status of the Order.",
+                    "pt": "Status atual da Order.",
+                    "es": "Estado actual de la Order."
                 },
                 "enum": [
                     {
                         "title": "created",
                         "description": {
-                            "en": "The order has been created successfully.",
-                            "es": "La order fue creada exitosamente.",
+                            "en": "The Order has been created successfully.",
+                            "es": "La Order fue creada exitosamente.",
                             "pt": "Order criada com sucesso."
                         }
                     },
@@ -3309,9 +3596,9 @@
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A Order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     }
                 ]
@@ -3328,8 +3615,8 @@
                     {
                         "title": "created",
                         "description": {
-                            "en": "The order has been created successfully.",
-                            "es": "La order fue creada exitosamente.",
+                            "en": "The Order has been created successfully.",
+                            "es": "La Order fue creada exitosamente.",
                             "pt": "Order criada com sucesso."
                         }
                     },
@@ -3360,9 +3647,9 @@
                     {
                         "title": "waiting_payment",
                         "description": {
-                            "en": "The order is waiting for payment.",
-                            "es": "La order está esperando el pago.",
-                            "pt": "A order está aguardando o pagamento."
+                            "en": "The Order is waiting for payment.",
+                            "es": "La Order está esperando el pago.",
+                            "pt": "A Order está aguardando o pagamento."
                         }
                     },
                     {
@@ -3376,9 +3663,9 @@
                     {
                         "title": "waiting_transfer",
                         "description": {
-                            "en": "The order is waiting for the transfer of funds.",
-                            "es": "La order está esperando la transferencia de fondos.",
-                            "pt": "A order está aguardando a transferência de fundos."
+                            "en": "The Order is waiting for the transfer of funds.",
+                            "es": "La Order está esperando la transferencia de fondos.",
+                            "pt": "A Order está aguardando a transferência de fundos."
                         }
                     }
                 ]
@@ -3580,16 +3867,16 @@
                 "type": "string",
                 "example": "processed",
                 "description": {
-                    "en": "Current status of the order.",
-                    "pt": "Status atual da order.",
-                    "es": "Estado actual de la order."
+                    "en": "Current status of the Order.",
+                    "pt": "Status atual da Order.",
+                    "es": "Estado actual de la Order."
                 },
                 "enum": [
                     {
                         "title": "created",
                         "description": {
-                            "en": "The order has been created successfully.",
-                            "es": "La order fue creada exitosamente.",
+                            "en": "The Order has been created successfully.",
+                            "es": "La Order fue creada exitosamente.",
                             "pt": "Order criada com sucesso."
                         }
                     },
@@ -3612,33 +3899,33 @@
                     {
                         "title": "failed",
                         "description": {
-                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "en": "An error occurred in the processing of the Order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la Order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
                             "pt": "Ocorreu um erro no processamento da order, possivelmente devido ao envio incorreto dos dados, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                         }
                     },
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A Order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     },
                     {
                         "title": "refunded",
                         "description": {
-                            "en": "The order has been refunded.",
-                            "es": "La order fue devuelta.",
-                            "pt": "A order foi devolvida."
+                            "en": "The Order has been refunded.",
+                            "es": "La Order fue devuelta.",
+                            "pt": "A Order foi devolvida."
                         }
                     },
                     {
                         "title": "canceled",
                         "description": {
-                            "en": "The order has been canceled.",
-                            "es": "La order fue cancelada.",
-                            "pt": "A order foi cancelada."
+                            "en": "The Order has been canceled.",
+                            "es": "La Order fue cancelada.",
+                            "pt": "A Order foi cancelada."
                         }
                     }
                 ]
@@ -3791,9 +4078,9 @@
                     {
                         "title": "canceled",
                         "description": {
-                            "en": "The order has been canceled.",
-                            "es": "La order fue cancelada.",
-                            "pt": "A order foi cancelada."
+                            "en": "The Order has been canceled.",
+                            "es": "La Order fue cancelada.",
+                            "pt": "A Order foi cancelada."
                         }
                     }
                 ]
@@ -3810,8 +4097,8 @@
                     {
                         "title": "created",
                         "description": {
-                            "en": "The order has been created successfully.",
-                            "es": "La order fue creada exitosamente.",
+                            "en": "The Order has been created successfully.",
+                            "es": "La Order fue creada exitosamente.",
                             "pt": "Order criada com sucesso."
                         }
                     },
@@ -3842,16 +4129,16 @@
                     {
                         "title": "failed",
                         "description": {
-                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "en": "An error occurred in the processing of the Order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la Order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
                             "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                         }
                     },
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
                             "pt": "A Order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     },
@@ -4025,8 +4312,8 @@
                     {
                         "title": "failed",
                         "description": {
-                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "en": "An error occurred in the processing of the Order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la Order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
                             "pt": "Ocorreu um erro no processamento da order, possivelmente devido ao envio incorreto dos dados, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                         }
                     }
@@ -4036,9 +4323,9 @@
                 "type": "string",
                 "example": "processed",
                 "description": {
-                    "en": "Current status of the order.",
-                    "pt": "Status atual da order.",
-                    "es": "Estado actual de la order."
+                    "en": "Current status of the Order.",
+                    "pt": "Status atual da Order.",
+                    "es": "Estado actual de la Order."
                 },
                 "enum": [
                     {
@@ -4060,9 +4347,9 @@
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A Order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     }
                 ]
@@ -4138,9 +4425,9 @@
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A Order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     }
                 ]
@@ -4284,9 +4571,9 @@
                 "type": "string",
                 "example": "processed",
                 "description": {
-                    "en": "Current status of the order.",
-                    "pt": "Status atual da order.",
-                    "es": "Estado actual de la order."
+                    "en": "Current status of the Order.",
+                    "pt": "Status atual da Order.",
+                    "es": "Estado actual de la Order."
                 },
                 "enum": [
                     {
@@ -4300,9 +4587,9 @@
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A Order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     }
                 ]
@@ -4354,9 +4641,9 @@
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A Order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                         }
                     }
                 ]
@@ -4404,17 +4691,17 @@
                 "type": "string",
                 "description": {
                     "en": "Order capture mode.",
-                    "pt": "Modo de captura da order.",
-                    "es": "Modo de captura de la order."
+                    "pt": "Modo de captura da Order.",
+                    "es": "Modo de captura de la Order."
                 },
                 "example": "manual",
                 "enum": [
                     {
                         "title": "manual",
                         "description": {
-                            "en": "Order's capture will be made manually. It allows the reservation of the transaction value in the payer's card, so the capture can be made afterwards, by using the \"Capture order by ID\" endpoint.",
-                            "es": "La captura de la order se hará de manera manual. O sea, permite reservar valores en la tarjeta del pagador para que la captura sea hecha posteriormente, utilizando el endpoint \"Capturar order por ID\".",
-                            "pt": "A captura da order será feita manualmente. Ou seja, permite reservar valores do cartão do pagador para realizar a captura posteriormente, utilizando o endpoint \"Capturar order por ID\"."
+                            "en": "Order's capture will be made manually. It allows the reservation of the transaction value in the payer's card, so the capture can be made afterwards, by using the \"Capture Order by ID\" endpoint.",
+                            "es": "La captura de la Order se hará de manera manual. O sea, permite reservar valores en la tarjeta del pagador para que la captura sea hecha posteriormente, utilizando el endpoint \"Capturar Order por ID\".",
+                            "pt": "A captura da Order será feita manualmente. Ou seja, permite reservar valores do cartão do pagador para realizar a captura posteriormente, utilizando o endpoint \"Capturar Order por ID\"."
                         }
                     },
                     {
@@ -4475,7 +4762,7 @@
                                         {
                                             "title": "order_not_found",
                                             "description": {
-                                                "en": "Order not found. Please check if you provided the correct order ID.",
+                                                "en": "Order not found. Please check if you provided the correct Order ID.",
                                                 "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
                                                 "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                                             }
@@ -4547,9 +4834,9 @@
             },
             "cannot_cancel_order": {
                 "description": {
-                    "en": "The order cannot be canceled. Please check the order status and try again.",
-                    "es": "La order no puede ser cancelada. Comprueba el estado de la order e intenta nuevamente.",
-                    "pt": "A order não pode ser cancelada. Verifique o status da order e tente novamente."
+                    "en": "The Order cannot be canceled. Please check the Order status and try again.",
+                    "es": "La Order no puede ser cancelada. Comprueba el estado de la Order e intenta nuevamente.",
+                    "pt": "A Order não pode ser cancelada. Verifique o status da Order e tente novamente."
                 },
                 "content": {
                     "application/json": {
@@ -4562,9 +4849,9 @@
                                         {
                                             "title": "cannot_cancel_order",
                                             "description": {
-                                                "en": "The status of the order does not allow its cancelation. Only Orders with status 'action_required' or 'created' can be canceled.",
-                                                "es": "El estado en el que se encuentra la order no permite su cancelación. Solo pueden ser canceladas Orders con status 'action_required' o 'created'.",
-                                                "pt": "O status da order não permite o seu cancelamento. Apenas Orders com status 'action_required' ou 'created' podem ser canceladas."
+                                                "en": "The status of the Order does not allow its cancelation. Only Orders with status 'action_required' or 'created' can be canceled.",
+                                                "es": "El estado en el que se encuentra la Order no permite su cancelación. Solo pueden ser canceladas Orders con status 'action_required' o 'created'.",
+                                                "pt": "O status da Order não permite o seu cancelamento. Apenas Orders com status 'action_required' ou 'created' podem ser canceladas."
                                             }
                                         }
                                     ]
@@ -4576,9 +4863,9 @@
             },
             "cannot_capture_order": {
                 "description": {
-                    "en": "The order cannot be captured. Please check the order status and try again.",
-                    "es": "La order no puede ser capturada. Comprueba el estado de la order e intenta nuevamente.",
-                    "pt": "A order não pode ser capturada. Verifique o status da order e tente novamente."
+                    "en": "The Order cannot be captured. Please check the Order status and try again.",
+                    "es": "La Order no puede ser capturada. Comprueba el estado de la Order e intenta nuevamente.",
+                    "pt": "A Order não pode ser capturada. Verifique o status da Order e tente novamente."
                 },
                 "content": {
                     "application/json": {
@@ -4591,9 +4878,9 @@
                                         {
                                             "title": "cannot_capture_order",
                                             "description": {
-                                               "en": "Error. Order cannot be captured. The status of the order does not allow its capture. Only Orders with status 'action_required' and status_detail 'waiting_capture' can be captured.",
-                                                "es": "Error. Order no puede ser capturada. El estado de la order no permite su captura. Solo pueden ser capturadas Orders con status 'action_required' y status_detail 'waiting_capture'.",
-                                                "pt": "Erro. Order não pode ser capturada. O status da order não permite a sua captura. Apenas Orders com status 'action_required' e status_detail 'waiting_capture' podem ser capturadas."
+                                               "en": "Error. Order cannot be captured. The status of the Order does not allow its capture. Only Orders with status 'action_required' and status_detail 'waiting_capture' can be captured.",
+                                                "es": "Error. Order no puede ser capturada. El estado de la Order no permite su captura. Solo pueden ser capturadas Orders con status 'action_required' y status_detail 'waiting_capture'.",
+                                                "pt": "Erro. Order não pode ser capturada. O status da Order não permite a sua captura. Apenas Orders com status 'action_required' e status_detail 'waiting_capture' podem ser capturadas."
                                             }
                                         }
                                     ]
@@ -4605,9 +4892,9 @@
             },
             "cannot_refund_order": {
                 "description": {
-                    "en": "The order cannot be refunded. Please check the order status and try again.",
-                    "es": "La order no puede ser reembolsada. Comprueba el estado de la order e intenta nuevamente.",
-                    "pt": "A order não pode ser reembolsada. Verifique o status da order e tente novamente."
+                    "en": "The Order cannot be refunded. Please check the Order status and try again.",
+                    "es": "La Order no puede ser reembolsada. Comprueba el estado de la Order e intenta nuevamente.",
+                    "pt": "A Order não pode ser reembolsada. Verifique o status da Order e tente novamente."
                 },
                 "content": {
                     "application/json": {
@@ -4620,9 +4907,9 @@
                                         {
                                             "title": "cannot_refund_order",
                                            "description": {
-                                                "en": "Error. Order cannot be refunded. The status of the order does not allow its refund. Only Orders with status 'processed' can be refunded.",
-                                                "pt": "Erro. Order não pode ser reembolsada. O status da order não permite o reembolso. Apenas Orders com status 'processed' podem ser reembolsadas.",
-                                                "es": "Error. Order no puede ser reembolsada. El estado de la order no permite su reembolso. Solo pueden ser reembolsadas Orders con status 'processed'."
+                                                "en": "Error. Order cannot be refunded. The status of the Order does not allow its refund. Only Orders with status 'processed' can be refunded.",
+                                                "pt": "Erro. Order não pode ser reembolsada. O status da Order não permite o reembolso. Apenas Orders com status 'processed' podem ser reembolsadas.",
+                                                "es": "Error. Order no puede ser reembolsada. El estado de la Order no permite su reembolso. Solo pueden ser reembolsadas Orders con status 'processed'."
                                             }
                                         }
                                     ]
@@ -4649,9 +4936,9 @@
                                         {
                                             "title": "order_already_canceled",
                                             "description": {
-                                                "en": "The order has already been canceled.",
-                                                "es": "La order ya fue cancelada.",
-                                                "pt": "A order já foi cancelada."
+                                                "en": "The Order has already been canceled.",
+                                                "es": "La Order ya fue cancelada.",
+                                                "pt": "A Order já foi cancelada."
                                             }
                                         }
                                     ]
@@ -4678,9 +4965,9 @@
                                         {
                                             "title": "order_already_refunded",
                                             "description": {
-                                                "en": "The order has already been refunded.",
-                                                "es": "La order ya fue reembolsada.",
-                                                "pt": "A order já foi reembolsada."
+                                                "en": "The Order has already been refunded.",
+                                                "es": "La Order ya fue reembolsada.",
+                                                "pt": "A Order já foi reembolsada."
                                             }
                                         }
                                     ]
@@ -4707,9 +4994,9 @@
                                         {
                                             "title": "operation_not_supported",
                                             "description": {
-                                                "en": "The operation is not supported for this order. Please check the order type and status and try again.",
-                                                "es": "La operación no es soportada para esta order. Comprueba el type y status de la order e intenta nuevamente.",
-                                                "pt": "A operação não é suportada para esta order. Verifique o type e status da order e tente novamente."
+                                                "en": "The operation is not supported for this Order. Please check the Order type and status and try again.",
+                                                "es": "La operación no es soportada para esta Order. Comprueba el type y status de la Order e intenta nuevamente.",
+                                                "pt": "A operação não é suportada para esta Order. Verifique o type e status da Order e tente novamente."
                                             }
                                         }
                                     ]
@@ -4737,8 +5024,8 @@
                                             "title": "402",
                                             "description": {
                                                 "en": "Order was created but some transaction failed. Check the \"errors\" field for more information.",
-                                                "pt": "A order foi criada mas alguma transação falhou. Verifique o campo \"erros\" para mais informações.",
-                                                "es": "La order fue creada pero alguna transacción ha fallado. Consulta el campo \"errores\" para obtener más información."
+                                                "pt": "A Order foi criada mas alguma transação falhou. Verifique o campo \"erros\" para mais informações.",
+                                                "es": "La Order fue creada pero alguna transacción ha fallado. Consulte el campo \"errores\" para obtener más información."
                                             }
                                         }
                                     ]
