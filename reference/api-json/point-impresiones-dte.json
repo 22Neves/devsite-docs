@@ -5,9 +5,9 @@
       "post": {
         "tags": ["mp-point"],
         "description": {
-          "en": "This endpoint allows you to create a new terminal action for the Mercado Pago point. In case of success, the request will return a response with status 201",
-          "es": "Este endpoint permite la creación de una nueva acción de terminal para Mercado Pago Point. En caso de éxito, la requisición devolverá un código de estado 201",
-          "pt": "Este endpoint permite que você crie uma nova ação de terminal para Mercado Pago Point. Em caso de sucesso, a solicitação retornará uma resposta com status 201"
+          "en": "This endpoint allows you to create a new print action for the Mercado Pago point. In case of success, the request will return a response with status 201",
+          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point. En caso de éxito, la requisición devolverá un código de estado 201",
+          "pt": "Este endpoint permite que você crie uma nova ação de impressão para Mercado Pago Point. Em caso de sucesso, a solicitação retornará uma resposta com status 201"
         },
         "parameters": [
           {
@@ -83,7 +83,7 @@
                             "description": {
                               "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
                               "es": "Identificador de la terminal Point que obtendrá la acción. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El nímero de serie de la terminal puede ser hallado en la etiqueta trasera del mismo.",
-                              "pt": "Identificador do terminal que obterá a order. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira."
+                              "pt": "Identificador do terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira."
                             },
                             "example": "NEWLAND_N950__N950NCB123456789",
                             "required": true
@@ -188,17 +188,17 @@
                       "type": "string",
                       "example": "created",
                       "description": {
-                        "en": "Current status of the order.",
-                        "pt": "Status atual da order.",
-                        "es": "Estado actual de la order."
+                        "en": "Current status of the action.",
+                        "pt": "Status atual da ação.",
+                        "es": "Estado actual de la accíon."
                       },
                       "enum": [
                         {
                           "title": "created",
                           "description": {
-                            "en": "The order has been succesfully created.",
-                            "es": "La order ha sido creada de manera exitosa.",
-                            "pt": "A order foi criada com sucesso."
+                            "en": "The action has been succesfully created.",
+                            "es": "La accíon ha sido creada de manera exitosa.",
+                            "pt": "A ação foi criada com sucesso."
                           }
                         }
                       ]
@@ -561,9 +561,9 @@
                       "type":"string",
                       "example":"2024-09-10T14:26:42.109320977Z",
                       "description":{
-                        "en": "Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
-                        "pt": "Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
-                        "es": "Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                        "en": "Creation date of the action, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt": "Data de criação da ação, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es": "Fecha de creación de la accíon, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
                       }
                     }
                   }
@@ -672,13 +672,13 @@
           "mp-point"
         ],
         "description": {
-          "en": "Cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
-          "pt": "Cancela uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es": "Cancela una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en": "Cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt": "Cancela uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Cancela una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
-            "name":"order_id",
+            "name":"action_id",
             "in":"path",
             "description":{
               "en": "ID of the action that is being cancelled. This value is returned in the response to the Create terminal action.",
@@ -739,9 +739,9 @@
                         {
                           "title": "invalid_path_param",
                           "description": {
-                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
-                            "es": "El order_id proporcionado en el path de la petición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
-                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                            "en": "The action_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El action_id proporcionado en el path de la petición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O action_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
                           }
                         }
                       ]
@@ -914,7 +914,7 @@
                 "type": "string",
                 "description": {
                   "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
-                  "pt": "Identificador do terminal que obterá a order. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira.",
+                  "pt": "Identificador do terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira.",
                   "es": "Identificador de la terminal Point que obtendrá la acción. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El número de serie de la terminal puede ser hallado en la etiqueta trasera del mismo."
                 },
                 "example": "NEWLAND_N950__N950NCB123456789"
