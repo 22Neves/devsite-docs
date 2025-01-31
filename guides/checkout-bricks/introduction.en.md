@@ -74,4 +74,23 @@ The Checkout Bricks can be instantiated/rendered in three different languages:
 * English 
 * Spanish
 
-Check [Select language](/developers/en/docs/checkout-bricks/additional-content/select-language) for instructions on how to select the language of the Brick. 
+Check [Select language](/developers/en/docs/checkout-bricks/additional-content/select-language) for instructions on how to select the language of the Brick.
+
+----[mla, mlb, mlm]----
+> WARNING
+>
+> Attention
+>
+> It's only possible to modify the language of the Bricks that operate directly within your store. such as the [Payment](/developers/en/docs/checkout-bricks/payment-brick/introduction) and [Card Payment](/developers/en/docs/checkout-bricks/card-payment-brick/introduction). <br>
+> In the case of the [Wallet Brick](/developers/en/docs/checkout-bricks/wallet-brick/introduction) and the [Payment Brick of Mercado Pago Wallet and Installments without a card,](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) the user is redirected to the Mercado Pago payment environment, and since the interface is independent, it cannot be translated according to the specific settings defined for the store.
+
+------------
+----[mlc, mlu, mco, mpe]----
+> WARNING
+>
+> Attention
+>
+> It is only possible to modify the language of the Bricks that process payments directly on the site, such as the [Payment](/developers/en/docs/checkout-bricks/payment-brick/introduction) and [Card Payment](/developers/en/docs/checkout-bricks/card-payment-brick/introduction). <br>
+> In the case of the [Wallet Brick](developers/en/docs/checkout-bricks/wallet-brick/introduction) and the [Payment Brick of Mercado Pago Wallet,](/developers/en/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) the user is redirected to the Mercado Pago payment environment, and since the interface is independent, it cannot be translated according to the specific settings defined for the store.
+
+------------
