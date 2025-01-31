@@ -258,13 +258,13 @@
                                                                             "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
                                                                         }
                                                                     },
-                                                                    "external_resource_url": {
+                                                                    "ticket_url": {
                                                                         "type": "string",
                                                                         "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
                                                                         "description": {
-                                                                            "en": "URL to external resource. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                            "pt": "URL para recurso externo. É retornada para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                            "es": "URL para recurso externo. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
+                                                                            "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "pt": "URL do boleto. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "es": "URL del ticket. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
                                                                         }
                                                                     },
                                                                     "barcode_content": {
@@ -320,15 +320,15 @@
                                                                             "pt": "Código QR. É retornado para o meio de pagamento offline pix.",
                                                                             "es": "Código QR. Se devuelve para el método de pago offline pix."
                                                                         }
-                                                                    }
-                                                                },
-                                                                "qr_code_base64": {
-                                                                    "type": "string",
-                                                                    "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
-                                                                    "description": {
-                                                                        "en": "QR code in base64. It is returned for offline payment method pix.",
-                                                                        "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
-                                                                        "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
+                                                                    },
+                                                                    "qr_code_base64": {
+                                                                        "type": "string",
+                                                                        "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
+                                                                        "description": {
+                                                                            "en": "QR code in base64. It is returned for offline payment method pix.",
+                                                                            "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
+                                                                            "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
+                                                                        }
                                                                     }
                                                                 }
                                                             }
@@ -904,7 +904,304 @@
                                                                 ]
                                                             },
                                                             "payment_method": {
-                                                                "$ref": "#/components/schemas/payment_method"
+                                                                "type": "object",
+                                                                "required": true,
+                                                                "description": {
+                                                                    "en": "Information about the payment method. Access the endpoint '/v1/payment_methods' to check all available payment methods and get a list with the details of each one and their properties.",
+                                                                    "pt": "Informação sobre o meio de pagamento. Utilize o endpoint '/v1/payment_methods' para acessar a lista completa de meios de pagamento disponíveis. Esse recurso fornece detalhes sobre cada meio, incluindo suas propriedades.",
+                                                                    "es": "Información sobre el medio de pago. Accede al endpoint '/v1/payment_methods' para consultar todos los medios de pago disponibles y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
+                                                                },
+                                                                "properties": {
+                                                                    "id": {
+                                                                        "type": "string",
+                                                                        "example": "visa",
+                                                                        "description": {
+                                                                            "en": "Identifier of the payment method selected to make the payment. If it's a card payment, it will show the brand.",
+                                                                            "pt": "Identificador do meio de pagamento selecionado para efetuar o pagamento. Caso seja um pagamento com cartão, indicará a bandeira.",
+                                                                            "es": "Identificador del medio de pago seleccionado para realizar el pago. En caso de ser un pago con tarjeta, indicará la bandera."
+                                                                        },
+                                                                        "enum":  [
+                                                                            {
+                                                                                "title": "visa",
+                                                                                "description": {
+                                                                                    "en": "Visa credit card.",
+                                                                                    "es": "Tarjeta de crédito Visa.",
+                                                                                    "pt": "Cartão de crédito Visa."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "master",
+                                                                                "description": {
+                                                                                    "en": "Mastercard credit card.",
+                                                                                    "es": "Tarjeta de crédito Mastercard.",
+                                                                                    "pt": "Cartão de crédito Mastercard."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "debelo",
+                                                                                "description": {
+                                                                                    "en": "Debelo debit card.",
+                                                                                    "es": "Tarjeta de débito Debelo.",
+                                                                                    "pt": "Cartão de débito Debelo."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "debmaster",
+                                                                                "description": {
+                                                                                    "en": "Debmaster debit card.",
+                                                                                    "es": "Tarjeta de débito Debmaster.",
+                                                                                    "pt": "Cartão de débito Debmaster."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "debvisa",
+                                                                                "description": {
+                                                                                    "en": "Debvisa debit card.",
+                                                                                    "es": "Tarjeta de débito Debvisa.",
+                                                                                    "pt": "Cartão de débito Debvisa."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "account_money",
+                                                                                "description": {
+                                                                                    "en": "Money from the user's Mercado Pago account.",
+                                                                                    "es": "Dinero de la cuenta de Mercado Pago del usuario.",
+                                                                                    "pt": "Dinheiro da conta do Mercado Pago do usuário."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "rapipago",
+                                                                                "description": {
+                                                                                    "en": "Rapipago payment.",
+                                                                                    "es": "Pago en efectivo en Rapipago.",
+                                                                                    "pt": "Pagamento em dinheiro no Rapipago."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "pagofacil",
+                                                                                "description": {
+                                                                                    "en": "Pagofacil payment.",
+                                                                                    "es": "Pago en efectivo en Pagofacil.",
+                                                                                    "pt": "Pagamento em dinheiro no Pagofacil."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "bolbradesco",
+                                                                                "description": {
+                                                                                    "en": "Boleto Bradesco payment.",
+                                                                                    "es": "Pago con boleto Bradesco.",
+                                                                                    "pt": "Pagamento com boleto Bradesco."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "oxxo",
+                                                                                "description": {
+                                                                                    "en": "Oxxo payment.",
+                                                                                    "es": "Pago en efectivo en Oxxo.",
+                                                                                    "pt": "Pagamento em dinheiro no Oxxo."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "paycash",
+                                                                                "description": {
+                                                                                    "en": "Paycash payment.",
+                                                                                    "es": "Pago en efectivo en Paycash.",
+                                                                                    "pt": "Pagamento em dinheiro no Paycash."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "bancomer",
+                                                                                "description": {
+                                                                                    "en": "Bancomer payment.",
+                                                                                    "es": "Pago en efectivo en Bancomer.",
+                                                                                    "pt": "Pagamento em dinheiro no Bancomer."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "banamex",
+                                                                                "description": {
+                                                                                    "en": "Banamex payment.",
+                                                                                    "es": "Pago en efectivo en Banamex.",
+                                                                                    "pt": "Pagamento em dinheiro no Banamex."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "clabe",
+                                                                                "description": {
+                                                                                    "en": "Clabe payment.",
+                                                                                    "es": "Pago con Clabe.",
+                                                                                    "pt": "Pagamento com Clabe."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "pix",
+                                                                                "description": {
+                                                                                    "en": "Pix payment.",
+                                                                                    "es": "Pago con Pix.",
+                                                                                    "pt": "Pagamento com Pix."
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "type": {
+                                                                        "type": "string",
+                                                                        "example": "credit_card",
+                                                                        "description": {
+                                                                            "en": "Type of payment method selected to make the payment.",
+                                                                            "pt": "Tipo de meio de pagamento selecionado para efetuar o pagamento.",
+                                                                            "es": "Tipo de medio de pago seleccionado para realizar el pago."
+                                                                        },
+                                                                        "enum": [
+                                                                            {
+                                                                                "title": "credit_card",
+                                                                                "description": {
+                                                                                    "en": "Credit card.",
+                                                                                    "es": "Tarjeta de crédito.",
+                                                                                    "pt": "Cartão de crédito."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "debit_card",
+                                                                                "description": {
+                                                                                    "en": "Debit card.",
+                                                                                    "es": "Tarjeta de débito.",
+                                                                                    "pt": "Cartão de débito."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "account_money",
+                                                                                "description": {
+                                                                                    "en": "Money from the user's Mercado Pago account.",
+                                                                                    "es": "Dinero de la cuenta de Mercado Pago del usuario.",
+                                                                                    "pt": "Dinheiro da conta do Mercado Pago do usuário."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "ticket",
+                                                                                "description": {
+                                                                                    "en": "Cash payment.",
+                                                                                    "es": "Pago en efectivo.",
+                                                                                    "pt": "Pagamento em dinheiro."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "atm",
+                                                                                "description": {
+                                                                                    "en": "ATM payment.",
+                                                                                    "es": "Pago en cajero automático.",
+                                                                                    "pt": "Pagamento em caixa eletrônico."
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "title": "bank_transfer",
+                                                                                "description": {
+                                                                                    "en": "Bank transfer.",
+                                                                                    "es": "Transferencia bancaria.",
+                                                                                    "pt": "Transferência bancária."
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "token": {
+                                                                        "type": "string",
+                                                                        "example": "12345",
+                                                                        "description": {
+                                                                            "en": "It is a mandatory field for card payments, as it is the token that identifies the card and contains its data securely. It has a minimum length of 32 characters, and a maximum length of 33. If you don't know how to generate it, go to the card payment configuration in the Checkout API documentation.",
+                                                                            "pt": "É um campo obrigatório para pagamentos com cartão, pois é o token que identifica o cartão e contém seus dados de forma segura. Possui comprimento mínimo de 32 caracteres e máximo de 33. Caso não saiba como gerá-lo, acesse a configuração de pagamento com cartão na documentação do Checkout Transparente.",
+                                                                            "es": "Es un campo obligatorio para los pagos con tarjeta, pues se trata del token que la identifica y contiene sus datos de forma segura. Tiene una longitud mínima de 32 caracteres, y una longitud máxima de 33. Si desconoces cómo generarlo, dirígete a la configuración de pagos con tarjeta en la documentación de Checkout API."
+                                                                        }
+                                                                    },
+                                                                    "installments": {
+                                                                        "type": "integer",
+                                                                        "example": 1,
+                                                                        "description": {
+                                                                            "pt": "Número de parcelas selecionado.",
+                                                                            "en": "Number of installments selected.",
+                                                                            "es": "Cantidad de cuotas seleccionada."
+                                                                        }
+                                                                    },
+                                                                    "statement_descriptor": {
+                                                                        "type": "string",
+                                                                        "example": "approved",
+                                                                        "description": {
+                                                                            "en": "Description that the payment will appear with in the card statement.",
+                                                                            "pt": "Descrição com a qual o pagamento aparecerá na fatura do cartão.",
+                                                                            "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
+                                                                        }
+                                                                    },
+                                                                    "ticket_url": {
+                                                                        "type": "string",
+                                                                        "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+                                                                        "description": {
+                                                                            "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "pt": "URL do boleto. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "es": "URL del ticket. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
+                                                                        }
+                                                                    },
+                                                                    "barcode_content": {
+                                                                        "type": "string",
+                                                                        "example": "3335008800000000006004835002100020000242462010",
+                                                                        "description": {
+                                                                            "en": "Barcode content. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash.",
+                                                                            "pt": "Conteúdo do código de barras. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash.",
+                                                                            "es": "Contenido del código de barras. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash."
+                                                                        }
+                                                                    },
+                                                                    "reference": {
+                                                                        "type": "string",
+                                                                        "example": "6005407530",
+                                                                        "description": {
+                                                                            "en": "Reference number. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
+                                                                            "pt": "Número de referência. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
+                                                                            "es": "Número de referencia. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe."
+                                                                        }
+                                                                    },
+                                                                    "verification_code": {
+                                                                        "type": "string",
+                                                                        "example": "6005407530",
+                                                                        "description": {
+                                                                            "en": "Verification code. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
+                                                                            "pt": "Código de verificação. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
+                                                                            "es": "Código de verificación. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer."
+                                                                        }
+                                                                    },
+                                                                    "financial_institution": {
+                                                                        "type": "string",
+                                                                        "example": "bolbradesco",
+                                                                        "description": {
+                                                                            "en": "Financial institution. It is returned for offline payment methods, such as bolbradesco, banamex, bancomer.",
+                                                                            "pt": "Instituição financeira. É retornado para meios de pagamento offline, como bolbradesco, banamex, bancomer.",
+                                                                            "es": "Institución financiera. Se devuelve para métodos de pago offline, como bolbradesco, banamex, bancomer."
+                                                                        }
+                                                                    },
+                                                                    "digitable_line": {
+                                                                        "type": "string",
+                                                                        "example": "23793380296060054351030006333303799140000020000",
+                                                                        "description": {
+                                                                            "en": "Digitable line. It is returned for offline payment method bolbradesco.",
+                                                                            "pt": "Linha digitável. É retornado para o meio de pagamento offline bolbradesco.",
+                                                                            "es": "Línea digitable. Se devuelve para el método de pago offline bolbradesco."
+                                                                        }
+                                                                    },
+                                                                    "qr_code": {
+                                                                        "type": "string",
+                                                                        "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0",
+                                                                        "description": {
+                                                                            "en": "QR code. It is returned for offline payment method pix.",
+                                                                            "pt": "Código QR. É retornado para o meio de pagamento offline pix.",
+                                                                            "es": "Código QR. Se devuelve para el método de pago offline pix."
+                                                                        }
+                                                                    },
+                                                                    "qr_code_base64": {
+                                                                        "type": "string",
+                                                                        "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
+                                                                        "description": {
+                                                                            "en": "QR code in base64. It is returned for offline payment method pix.",
+                                                                            "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
+                                                                            "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
+                                                                        }
+                                                                    }
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -4717,7 +5014,7 @@
         },
         "responses": {
             "unauthorized": {
-                "description": {
+                    "description": {
                     "en": "Error. Access Token not authorized.",
                     "pt": "Erro. Access Token não autorizado.",
                     "es": "Error. Access Token no autorizado."
