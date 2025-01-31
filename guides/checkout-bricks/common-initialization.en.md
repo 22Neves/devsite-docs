@@ -17,7 +17,7 @@ Use our official libraries to access Mercado Pago's features safely from your fr
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```bash
-npm install @mercadopago/sdk-react @0.0.23
+npm install @mercadopago/sdk-react
 ```
 ]]]
 
@@ -29,7 +29,7 @@ npm install @mercadopago/sdk-react @0.0.23
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```bash
-npm install @mercadopago/sdk-react
+npm install @mercadopago/sdk-react @0.0.23
 ```
 ]]]
 

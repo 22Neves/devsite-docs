@@ -41,7 +41,7 @@ Just passing these two properties, Brick will automatically give the user the op
 > Only no expired cards will be shown to the buyer, expired cards will not be made available.
 
 ----[mlc]----
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-en.mlc.png)
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-en.all.png)
 
 ------------
 ----[mlb]----

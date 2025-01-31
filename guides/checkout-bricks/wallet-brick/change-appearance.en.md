@@ -7,10 +7,10 @@
 ----[mlc]----
 Wallet Brick allows for some visual customizations listed in the table below, all of which are optional and of the `string` type.
 
-If the provided property is empty, the screen will display the appearance defined by the default layout. On the other hand, sending an alternative value will replace the default value.
+If the provided property is empty, the screen will display the appearance defined by the [default layout](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_render_the_brick). On the other hand, sending an alternative value will replace the default value.
 
 | Key | Available options | Default |
-|--- |--- | --- | --- |
+|--- |--- | --- |
 | theme | default ou black | default |
 | customStyle.valuePropColor | For the **default** theme, `valuePropColor` can be **blue or white**, while for the **dark** theme, valuePropColor`` can be **dark**. | For the **default** theme, the **default is blu**e, while for the **dark** theme, the **default is black**. |
 | customStyle.buttonHeight | Minimum: 48px. <br> Maximum: free choice. | 48px |

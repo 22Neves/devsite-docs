@@ -41,7 +41,7 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 > Solo se mostrarán al comprador las tarjetas no caducadas, las tarjetas caducadas no estarán disponibles.
 
 ----[mlc]----
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-es-mlc.png)
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-es-all.png)
 
 ------------
 ----[mlb]----

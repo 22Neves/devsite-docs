@@ -7,10 +7,10 @@
 ----[mlc]----
 Wallet Brick permite algunas personalizaciones visuales listadas en la tabla abajo, todas opcionales y del tipo `string`.
 
-Si la propiedad enviada está vacía, la pantalla mostrará el diseño definido por el *layout* predeterminado. Por otro lado, al enviar un valor alternativo, este reemplazará el valor predeterminado.
+Si la propiedad enviada está vacía, la pantalla mostrará el diseño definido por el [*layout* predeterminado](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_el_brick). Por otro lado, al enviar un valor alternativo, este reemplazará el valor predeterminado.
 
 | Clave | Opciones disponibles | Predeterminado |
-|--- |--- | --- | --- |
+|--- |--- | --- |
 | theme | default ou black | default |
 | customStyle.valuePropColor | Para el tema **default**, `valuePropColor` puede ser **blue ou white**, mientras que para el tema **dark**, `valuePropColor` puede ser **black**. | Para el tema **default**, el **predeterminado es blue**, mientras que para el tema **dark**, el **predeterminado es black**. |
 | customStyle.buttonHeight | Mínimo: 48px. <br> Máximo: libre elección. | 48px |

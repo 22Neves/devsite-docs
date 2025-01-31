@@ -41,7 +41,7 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 > Somente os cartões dentro do prazo de validade serão mostrados para o comprador, cartões vencidos não serão disponibilizados.
 
 ----[mlc]----
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-pt-mlc.png)
+![payment-Brick-cc](checkout-bricks/payment-brick-cc-pt-all.png)
 
 ------------
 ----[mlb]----
