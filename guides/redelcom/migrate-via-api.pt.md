@@ -80,8 +80,8 @@ Para configurar a integração das impressões, utilize a API para gerenciar o e
 > O terminal deve estar configurado no modo PDV (Ponto de Venda).  
 
 Os endpoints diponíveis são:
-   - [Criar ação do terminal](/developers/pt/reference/order/in-person-payments/impressions/post): Este endpoint permite que você crie uma nova ação de terminal para Mercado Pago Point.
-   - [Obter ação por ID](/developers/pt/reference/order/in-person-payments/impressions/get): Este endpoint permite que você consulte todas as informações da ação utilizando o ID obtido na resposta à sua criação.
-   - [Cancelar ação por ID](/developers/pt/reference/order/in-person-payments/impressions_cancel/post): Este endpoint permite cancelar uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada.
+   - [Criar ação do terminal](/developers/en/reference/mercado_pago_point/impressions/post): Este endpoint permite que você crie uma nova ação de terminal para Mercado Pago Point.
+   - [Obter ação por ID](/developers/en/reference/mercado_pago_point/impressions/get): Este endpoint permite que você consulte todas as informações da ação utilizando o ID obtido na resposta à sua criação.
+   - [Cancelar ação por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Este endpoint permite cancelar uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada.
 
 Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione o “botão verde” para buscar a tentativa manualmente.

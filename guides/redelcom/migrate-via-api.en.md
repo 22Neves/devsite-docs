@@ -80,8 +80,8 @@ To configure the integration of the prints, use the API to manage the queuing of
 > The terminal must be configured in PDV (Point of Sale) mode. 
 
 The available endpoints are:
-   - [Create terminal action](/developers/en/reference/order/in-person-payments/impressions/post): This allows you to create a new terminal action for the Mercado Pago point.
-   - [Get action by ID](/developers/en/reference/order/in-person-payments/impressions/get): This allows you to consult all action information using the ID obtained in the response to its creation.
-   - [Cancel action by ID](/developers/en/reference/order/in-person-payments/impressions_cancel/post): This allows yoy to cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status "created" can be canceled.
+   - [Create terminal action](/developers/en/reference/mercado_pago_point/impressions/post): This allows you to create a new terminal action for the Mercado Pago point.
+   - [Get action by ID](/developers/en/reference/mercado_pago_point/impressions/get): This allows you to consult all action information using the ID obtained in the response to its creation.
+   - [Cancel action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): This allows yoy to cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status "created" can be canceled.
     
 Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the intent manually.
