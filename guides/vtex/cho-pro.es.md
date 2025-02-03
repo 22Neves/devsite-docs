@@ -26,7 +26,7 @@ Configurando Checkout Pro, puedes ofrecer pagos con los mismos medios que tienes
 | Tarjetas | Ofrece pagos con tarjetas de crédito y débito. |
 | Hasta 12 veces sin tarjeta con Mercado Pago | Permite al cliente la opción de financiar su compra sin contar con una tarjeta, mientras que el vendedor percibe el monto de dinero completo en su cuenta gracias a esta línea de crédito administrada por Mercado Pago. |
 | Saldo en cuenta de Mercado Pago | Ofrece pagos con el dinero disponible en la cuenta de Mercado Pago del comprador. |
-| Medios offline | Puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Bancomer o Banamex |
+| Medios offline | Puedes ofrecer pagos con medios offline, como Oxxo, Paycash, Bancomer o Banamex |
 
 ------------
 ----[mla]----
