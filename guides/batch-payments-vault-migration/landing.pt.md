@@ -9,7 +9,7 @@ content_section_with_media:
  - title: Batch Payments
  - message: Os Batch Payments do Mercado Pago são uma solução prática e segura para a realização de pagamentos em massa. Com esta ferramenta, as empresas podem gerenciar pagamentos recorrentes sem a necessidade de integrações complexas com APIs, simplificando o processo de transações financeiras. A funcionalidade permite gerar e gerenciar a recorrência dos pagamentos ao importar arquivos .csv enviados a um servidor SFTP, tornando a gestão financeira mais eficiente e simplificada. O Mercado Pago processa esses pagamentos através da multiadquirência e devolve um arquivo que apresenta o status de cada pagamento realizado, proporcionando um controle claro e detalhado das operações financeiras.
  - media_image: /batch-payments/landing1.png
- - highlight_countries: mla
+ - highlight_countries: mla, mlu, mlm, mlc, mco, mpe
  - country_title: Disponibilidade por país
 ---
 ---
