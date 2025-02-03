@@ -487,7 +487,7 @@ With all the information collected in the backend, send a POST with the necessar
 >
 > To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
 > <br><br>
-> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
+> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests. **Important:** The allowed values in the header have limitations, and the format "prefix" + "_" is not permitted. Invalid example: `payment_1298ey98sdsdh12hsd-12esvv`. Valid example: `payment192839qw8sd7db-2xx2s-23wds`.
 
 [[[
 ```php
