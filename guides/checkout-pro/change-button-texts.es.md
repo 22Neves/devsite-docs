@@ -19,7 +19,7 @@ En caso de que no se haya especificado la propuesta de valor, por defecto será 
 |--- | --- |
 |practicality | Usá tarjetas guardadas o dinero en cuenta |
 |security_details | Todos tus datos protegidos |
-|security_safety (por defecto) | Pagá de forma segura |
+|security_safety (por defecto) | Paga de forma segura |
 |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
 |payment_methods_logos* | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. |
 
