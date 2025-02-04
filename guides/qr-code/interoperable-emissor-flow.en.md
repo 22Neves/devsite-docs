@@ -1,4 +1,4 @@
-# Issuer flow
+# Interoperable QR code: issuer flow
 
 > WARNING
 >

@@ -36,7 +36,7 @@ curl -X POST \
 }'
 ```
 
-Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](), e o `qr_data` fornecido pela equipe de Suporte.
+Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais), e o `qr_data` fornecido pela equipe de Suporte.
 
 ```curl
 curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?data={qr_data}' \
@@ -81,7 +81,7 @@ curl -X DELETE \
   'https://api.mercadopago.com/mpmobile/beta/instore/qr/{point_of_sale_id}?access_token={access_token_seller}'
 ```
 
-Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](), e o `qr_data` fornecido pela equipe de Suporte.
+Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais), e o `qr_data` fornecido pela equipe de Suporte.
 
 ```curl
 curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?data={qr_data}' \
@@ -109,7 +109,7 @@ Para isso, você deverá gerar o código QR utilizando os seguintes `qr_data`.
 
 ```
 
-Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais]().
+Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais).
 
 ```curl
 curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?data=00020101021143530016com.mercadolibre0129https://mpago.la/pos/16719292501300091234567895204970053030325802AR5909FULL NAME6010CITY LEGAL6304B244' \
@@ -136,7 +136,7 @@ Para isso, você deverá gerar o código QR utilizando os seguintes `qr_data`.
 
 ```
 
-Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais]().
+Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais).
 
 ```curl
 curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?data=00020101021143530016com.mercadolibre0129https://mpago.la/pos/16853808501300091234567895204970053030325802AR5909FULL NAME6010CITY LEGAL63049102' \
@@ -161,7 +161,7 @@ Este cenário permitirá gerar um erro genérico na resolução de um QR. Para i
 
 ```
 
-Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais]().
+Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais).
 
 ```curl
 curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?data=00020101021143520016com.mercadolibre0128https://mpago.la/pos/1525865501300091234567895204970053030325802AR5909FULL NAME6010CITY LEGAL630481BA' \
@@ -186,7 +186,7 @@ Este cenário permitirá testar a resolução de um código QR de valor aberto; 
 
 ```
 
-Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais]().
+Para resolver este QR, utilize o endpoint abaixo, desta vez com o Access Token da carteira (`access_token_wallet`) criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais).
 
 ```curl
 curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?data=00020101021143530016com.mercadolibre0129https%3A%2F%2Fmpago.la%2Fpos%2F2602959950150011273265943055204970053030325802AR5917Prueba%20Perfumeria6004CABA63047720' \
@@ -252,7 +252,7 @@ Se a leitura foi correta, a resposta deverá ser semelhante ao exemplo abaixo.
 
 Tenha em mente as seguintes considerações para operar em ambientes produtivos.
 
-* Utilize sempre o Access Token da carteira criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais]().
+* Utilize sempre o Access Token da carteira criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais).
 * Certifique-se de oferecer sempre uma experiência de usuário adequada: forneça mensagens claras para otimizar a compreensão de cada cenário de pagamento, falha ou erro que ocorrer ao escanear os códigos QR utilizando a carteira.
 * Lembre-se de incluir corretamente os padrões de códigos QR do Mercado Pago a partir de seu domínio. Na maioria dos casos, isso deve ser feito com um **domínio invertido**, como **com.mercadolibre**. Mas também é possível encontrar QRs não EMVCO, como **https://mpago.la/pos/<id>** ou **https://mpago.la/s/qr/<id1>/<id2>**.
 * Identifique as operações com códigos rastreáveis que permitam à COELSA reconhecer aquelas pertencentes ao Mercado Pago. Para isso, envie o `order.id` da IEP do Mercado Pago como `qr_trx_id` à API da COELSA.

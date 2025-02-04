@@ -76,7 +76,7 @@ curl --location 'https://api.mercadopago.com/oauth/token' \
 |---|---|
 | `client_id` | Copy and paste the value assigned to the Client ID in the **Credentials** section within "Your Integrations." |
 | `client_secret` | Copy and paste the value assigned to the Client Secret in the **Credentials** section within "Your Integrations." |
-| `grant_type` | The OAuth protocol allows obtaining an Access Token through different [access flows (grant types)](/developers/en/docs/qr-code/additional-content/security/oauth/introduction#accessflowsgranttypes). In this case, you must fill the field with the value `client_credentials`, which allows you to obtain it to access your own resources. More information about this flow can be found in [Obtain Access Token](/developers/en/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials).  |
+| `grant_type` | The OAuth protocol allows obtaining an Access Token through different [access flows (grant types)](/developers/en/docs/qr-code/additional-content/security/oauth/introduction#accessflowsgranttypes). In this case, you must fill the field with the value `client_credentials`, which allows you to obtain it to access your own resources. More information about this flow can be found in [Get Access Token](/developers/en/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials).  |
 
 In the response to your request, you will receive, among other parameters, your **Access Token**, which you should use in the calls to Mercado Pago APIs once you have the registration of the wallet granted by our Support team.
 

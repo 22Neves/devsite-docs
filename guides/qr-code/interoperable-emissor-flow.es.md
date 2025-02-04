@@ -1,4 +1,4 @@
-# Flujo emisor
+# QR interoperable: flujo emisor
 
 > WARNING
 >

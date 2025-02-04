@@ -33,7 +33,7 @@ Esto generará automáticamente una tarjeta en [Tus integraciones](/developers/p
 
 Para continuar con la configuración del QR interoperable, es necesario que la billetera digital solicite el alta y su incorporación a Mercado Pago. 
 
-Para ello, debes enviar una solicitud a nuestro equipo de [Soporte](/developers/es/support/center/tickets#from=/mp_wcs_v2/needmorehelp&to=receive_technical_support_for_integrations)proporcionando la siguiente información.
+Para ello, debes enviar una solicitud a nuestro equipo de [Soporte](/developers/es/support/center/tickets#from=/mp_wcs_v2/needmorehelp&to=receive_technical_support_for_integrations) proporcionando la siguiente información.
 
 | Dato | Descripción |
 |---|---|
