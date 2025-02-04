@@ -27,7 +27,6 @@ A análise da conversão de anúncios possibilita avaliar a relevância e retorn
 > Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito e débito, ou com dinheiro no Mercado Pago.
 ------------
 
-
 ## Facebook Ads
 
 Ao criar uma preferência, você pode associá-la a um pixel (identificator) para acompanhamento das conversões dos seus anúncios através do Facebook Ads.

@@ -131,7 +131,7 @@ npm install @mercadopago/sdk-react @0.0.23
 
 You will then be able to observe the payment button rendered on your page. If you want to make changes to the text or a visual change, please visit the sections on [Change texts](/developers/en/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) and [Change appearance](/developers/en/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance).
 
-![wallet-render](cow/cow-render-wallet-en.png)
+![wallet-render](cow/wallet-render-en.png)
 
 In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want the experience with Checkout Pro to be done in an **external tab**, check the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

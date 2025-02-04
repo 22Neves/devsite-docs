@@ -9,13 +9,51 @@ Wallet Brick is **composed of the button and the value proposition** (`valueProp
 
 There are two themes available: the **default** (also used when no configuration is specified) and **dark**. Choosing a theme affects the background color of the button, the value proposition, and the color of the images inside the button.
 
+![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-en.png)
+
+If the value proposition has not been specified, it will default to `security_safety`. Next, review all the possible texts for the content of the value proposition:
+
+| Option | Text |
+|--- | --- |
+|practicality | Use saved cards or your account balance |
+|security_details | Protection for your data |
+|security_safety (default) | Pay securely |
+|smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
+|payment_methods_logos* | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
+
+> NOTE
+>
+> Important
+>
+> *It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**With account money**".
+
+[[[
+```javascript
+const settings = {
+    ...,
+    customization: {
+        theme: 'default',
+        customStyle: {
+            valueProp: 'practicality',
+        }
+    }
+}
+```
+```react-jsx
+const customization = {
+    theme: 'default',
+    customStyle: {
+        valueProp: 'practicality',
+    }
+};
+```
+]]]
+
 ------------
 ----[mlb, mla, mlm, mpe, mco, mlu]----
 Wallet Brick offers two reading levels: the **call to action (button)** and the **value proposition** (`valueProp`). In both cases, the text can be customized according to the options provided by Mercado Pago.
 
 The "call to action" is divided into two parts: the action, determined by the `Action` property, and the complement of the action, determined by the `Action Complement` property.
-
-------------
 
 > WARNING
 >
@@ -42,7 +80,7 @@ Check below the available texts for modification, how they are organized in the 
 | valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits, payment_methods_logos | security_safety |
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu]----
 | Key | Available options | Default |
 |--- |--- | --- |
 | action | pay, buy | pay |
@@ -69,7 +107,7 @@ See the texts related to each option:
 |valueProp |payment_methods_logos** | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu]----
 | Key | Option | Text |
 |--- |--- | --- |
 |action |pay | Pay |
@@ -108,7 +146,7 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 > **It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**".
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu]----
 > NOTE
 >
 > Important
@@ -117,31 +155,6 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 
 ------------
 
-----[mlc]----
-[[[
-```javascript
-const settings = {
-    ...,
-    customization: {
-        theme: 'default',
-        customStyle: {
-            valueProp: 'practicality',
-        }
-    }
-}
-```
-```react-jsx
-const customization = {
-    theme: 'default',
-    customStyle: {
-        valueProp: 'practicality',
-    }
-};
-```
-]]]
-
-------------
-----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```javascript
 const settings = {

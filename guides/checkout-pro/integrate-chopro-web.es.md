@@ -129,7 +129,7 @@ npm install @mercadopago/sdk-react @0.0.23
 
 A continuación, encontrarás el botón de pago que se muestra en tu página. Si desea hacer **cambios en los textos o un cambio visual**, acceda a las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) y [Cambiar de aspecto](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance).
 
-![wallet-render](cow/cow-render-wallet-es.png)
+![wallet-render](cow/wallet-render-es.png)
 
 En el ejemplo anterior, se renderizará un botón de pago que será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
