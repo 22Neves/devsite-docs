@@ -127,7 +127,7 @@ npm install @mercadopago/sdk-react @0.0.23
 
 ------------
 
-A continuación, encontrarás el botón de pago que se muestra en tu página. Si desea hacer **cambios en los textos o un cambio visual**, acceda a las secciones de [Cambiar textos](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-texts) y [Cambiar de aspecto](/developers/es/docs/checkout-bricks/wallet-brick/visual-customizations/change-appearance).
+A continuación, encontrarás el botón de pago que se muestra en tu página. Si desea hacer **cambios en los textos o un cambio visual**, acceda a las secciones de [Cambiar textos de los botones](/developers/es/docs/checkout-pro/checkout-customization/user-interface/change-button-texts) y [Cambiar la apariencia del botón](/developers/es/docs/checkout-pro/checkout-customization/user-interface/change-button-appearance).
 
 ![wallet-render](cow/wallet-render-es.png)
 

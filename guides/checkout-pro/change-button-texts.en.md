@@ -9,7 +9,7 @@ The payment button is **composed of the button and the value proposition** (`val
 
 There are two themes available: the **default** (also used when no configuration is specified) and **dark**. Choosing a theme affects the background color of the button, the value proposition, and the color of the images inside the button.
 
-![wallet-brick-actioncomplement](checkout-bricks/wallet-actioncomplement-en.png)
+![wallet-actioncomplement](cow/wallet-actioncomplement-en.png)
 
 If the value proposition has not been specified, it will default to `security_safety`. Next, review all the possible texts for the content of the value proposition:
 

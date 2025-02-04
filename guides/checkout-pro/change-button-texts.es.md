@@ -9,7 +9,7 @@ El botón de pago está **compuesto por el botón y la propuesta de valor** (`va
 
 Hay dos temas disponibles: el **default** (también utilizado cuando no se especifica ninguna configuración) y el **dark**. La elección del tema impacta el color de fondo del botón, de la propuesta de valor y el color de las imágenes dentro del botón.
 
-![wallet-brick-actioncomplement](checkout-bricks/wallet-actioncomplement-es-all.png)
+![wallet-actioncomplement](cow/wallet-actioncomplement-es-all.png)
 
 Caso a proposta de valor não tenha sido especificada, por padrão será security_safety. A seguir, confira todos os textos possíveis para o conteúdo da proposta de valor:
 
@@ -27,7 +27,7 @@ En caso de que no se haya especificado la propuesta de valor, por defecto será 
 >
 > Importante
 >
-> *Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible**".
+> *Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-pro/integrate-preferences#bookmark_create_preference) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible**".
 
 [[[
 ```javascript
@@ -74,6 +74,7 @@ Consulte a continuación los textos disponibles para modificar y un código de e
 
 Consulte los textos relacionados con cada opción:
 
+------------
 ----[mla, mlb, mpe, mco, mlu]----
 | Clave | Opción | Texto |
 | --- |--- | --- | 
@@ -98,7 +99,7 @@ Consulte los textos relacionados con cada opción:
 | valueProp | none | - |
 
 ------------
-
+----[mlb, mla, mlm, mpe, mco, mlu]----
 Ejemplo de personalización de textos de botones:
 
 [[[
