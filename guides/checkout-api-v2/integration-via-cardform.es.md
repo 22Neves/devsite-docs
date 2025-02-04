@@ -486,7 +486,7 @@ Con toda la información recopilada en el _backend_ , envía un **POST** con los
 >
 > Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/checkout-api/how-tos/improve-payment-approval)
 > <br><br>
-> Además, deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados.
+> Además, deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados. **Importante**: Los valores admitidos en el encabezado tienen limitaciones y no se permite el formato "prefijo" + "_". Ejemplo inválido: `payment_1298ey98sdsdh12hsd-12esvv`. Ejemplo válido: `payment192839qw8sd7db-2xx2s-23wds.`
 
 [[[
 ```php
