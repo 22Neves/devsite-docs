@@ -54,7 +54,7 @@ São aceitos os seguintes tipos de Documentos Tributários Eletrônicos (DTE) em
 
 ### Tags personalizadas
 
-As tags personalizadas permitem personalizar a apresentação dos documentos impressos. Elas oferecem flexibilidade e controle sobre o formato do texto, possibilitando a criação de impressões eficientes e visualmente atraentes. A seguir, consulte as diferentes tags disponíveis, suas funções e exemplos de uso:
+As tags personalizadas permitem ajustar a apresentação dos documentos impressos. Elas oferecem flexibilidade e controle sobre o formato do texto, possibilitando a criação de impressões eficientes e visualmente atraentes. A seguir, consulte as diferentes tags disponíveis, suas funções e exemplos de uso:
 
 > As tags personalizadas têm um limite mínimo de 100 caracteres e um máximo de 4096 caracteres, incluindo as próprias tags.
 
@@ -71,7 +71,7 @@ As tags personalizadas permitem personalizar a apresentação dos documentos imp
 
 ### Configuração da integração
 
-Para configurar a integração das impressões, utilize a API para gerenciar o enfileiramento de cada uma das tentativas, considerando as especificações de cada endpoint. 
+Para configurar a integração, utilize a API para gerenciar o enfileiramento das impressões, considerando as especificações de cada endpoint.
 
 > WARNING
 >
@@ -84,4 +84,4 @@ Os endpoints diponíveis são:
    - [Obter ação por ID](/developers/en/reference/mercado_pago_point/impressions/get): Este endpoint permite que você consulte todas as informações da ação utilizando o ID obtido na resposta à sua criação.
    - [Cancelar ação por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Este endpoint permite cancelar uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada.
 
-Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione o “botão verde” para buscar a tentativa manualmente.
+Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione no botão **Atualizar** para buscar a tentativa manualmente.
