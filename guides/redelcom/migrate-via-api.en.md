@@ -69,9 +69,9 @@ Custom tags allow for adjusting the presentation of printed documents. They offe
 | `{qr}`     | Print a QR code that represents the sent text | `{qr}Text{/qr}`                 |
 | `{pdf417}` | Print the barcode of a TED                | `{pdf417}Text{/pdf417}`          |
 
-### Integration configuration 
+### Print configuration
 
-To configure the integration, use the API to manage the queuing of prints, considering the specifications of each endpoint. 
+Use the API to manage the print queue, considering the specifications of each endpoint.
 
 > WARNING
 >
