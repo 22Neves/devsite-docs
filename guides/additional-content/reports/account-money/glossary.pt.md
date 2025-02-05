@@ -111,6 +111,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
 
 ------------
+
 ----[mco, mlu]----
 
 | Nome da coluna do relatório | O que significa | Tipo de dado |
@@ -138,7 +139,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
 | Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | ----[mco]---- Impostos cobrados por retenção de IVA, ICA e fonte. ------------ ----[mlu]---- Impostos cobrados por retenção de IVA. ------------ | Numeric |
 | Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| `TAX_AMOUNT_TELCO`  | ----[mco]---- Descrição do imposto retido por operação no `TAXES_AMOUNT`. O valor pode ser:<br><br> fuente<br>iva<br>ica<br><br> ------------ ----[mlu]---- ----[mlu]---- É o valor do imposto sobre as empresas de telecomunicações que é deduzido do valor bruto. ------------ | Numeric | 
+| `TAX_AMOUNT_TELCO`  | ----[mco]---- Descrição do imposto retido por operação no `TAXES_AMOUNT`. O valor pode ser:<br><br> fuente<br>iva<br>ica<br><br> ------------ ----[mlu]---- É o valor do imposto sobre as empresas de telecomunicações que é deduzido do valor bruto. ------------ | Numeric | 
 | Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |
 | ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
 | Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
