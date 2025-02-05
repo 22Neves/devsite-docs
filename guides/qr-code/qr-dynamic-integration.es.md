@@ -15,7 +15,7 @@ Existen dos maneras de seguir estos pasos: **crear una orden**, y **crear una or
 
 ## Crea una orden
 
-Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición un string con estándar [EMVCo](https://www.emvco.com/emv-technologies/qrcodes).
+Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición un string con estándar [EMVCo](https://www.emvco.com/emv-technologies/qr-codes/).
 
 Para generar una orden, accede a nuestra [Referencia de API](/developers/es/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post) y ejecuta el curl que encontrarás allí. En la respuesta recibirás el dato necesario para crear el código QR.
 

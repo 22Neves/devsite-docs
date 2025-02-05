@@ -15,7 +15,7 @@ Essas etapas podem ser seguidas de duas maneiras: **criar um pedido** e **criar 
 
 ## Criar um pedido
 
-Antes de mais nada, gere a publicação do pedido. Assim que os dados forem enviados ao Mercado Pago, uma string com o padrão [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) será disponibilizada.
+Antes de mais nada, gere a publicação do pedido. Assim que os dados forem enviados ao Mercado Pago, uma string com o padrão [EMVCo](https://www.emvco.com/emv-technologies/qr-codes/) será disponibilizada.
 
 Para gerar um pedido, acesse nossa [Referência de API](/developers/pt/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post)  e execute a curl encontrada na mesma. Na resposta, você receberá os dados necessários para criar o código QR.
 

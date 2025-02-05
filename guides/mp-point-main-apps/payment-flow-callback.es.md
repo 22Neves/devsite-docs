@@ -16,8 +16,6 @@ val paymentFlowRequestData = PaymentFlowRequestData(
 
    paymentMethod = PaymentMethod.CREDIT_CARD.name,
 
-   installments = 6, // campo opcional si lanza el pago con cuotas 
-
    printOnTerminal = false // campo opcional si lanza el pago sin impresión en la terminal
 
 )
