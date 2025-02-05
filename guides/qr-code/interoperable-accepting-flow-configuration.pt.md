@@ -9,11 +9,11 @@ Para criar sua conta empresarial, acesse nossa [página de registro](https://www
 
 Em seguida, acesse o [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/pt), clique em [Suas integrações](https://www.mercadopago.com.ar/developers/panel/app) no canto superior direito da tela e faça login com a conta empresarial correspondente à carteira.
 
-[IMAGEN]
+![Mercado Pago Developers](/images/qr/developers-your-integrations-pt.png)
 
 Na tela seguinte, clique no botão **Criar aplicação**.
 
-[IMAGEN]
+![criar aplicação](/images/dashboard/dashboard-pt1.png)
   
 Isso te redirecionará para a tela **Configurações básicas**, onde você deverá completar as informações solicitadas conforme indicado a seguir:
 
@@ -21,7 +21,7 @@ Isso te redirecionará para a tela **Configurações básicas**, onde você deve
 * Como **solução de pagamento a integrar,** escolha a opção **Pagamentos presenciais**.  
 * Na pergunta referente ao **produto a integrar,** selecione a opção **Código QR**. Não é necessário selecionar o **modelo de integração**.  
 
-  ![IMAGEM]  
+![aplicação para Código QR](/images/qr/application-qr-es.png)
 
 Por fim, marque a caixa de seleção para autorizar o uso de seus dados pessoais de acordo com a [Declaração de Privacidade](https://www.mercadopago.com.ar/privacidade) e certifique-se de que sua conta utiliza as ferramentas do Mercado Pago de acordo com os [Termos e Condições](https://www.mercadopago.com.ar/developers/es/docs/resources/legal/terms-and-conditions), assim como a caixa de seleção **Não sou um robô** e clique em **Criar aplicação**.
 
@@ -39,8 +39,6 @@ Para isso, você deve enviar uma solicitação à nossa equipe de [Suporte](/dev
 | **application_id**  | É o identificador da aplicação criada para a carteira digital. Você pode encontrá-lo como **Número da aplicação** dentro de [Detalhes da aplicação](https://www.mercadopago.com.ar/developers/panel/app). |
 | **user_business_id**| Identificador do usuário criador da aplicação para a carteira digital. Você pode encontrá-lo como **User ID** dentro de [Detalhes da aplicação](https://www.mercadopago.com.ar/developers/panel/app). |
 
-
-
 Com essas informações, nossa equipe de Suporte gerenciará a incorporação da carteira e confirmará posteriormente o seu cadastro.
 
 ## 3. Obter credenciais
@@ -53,7 +51,7 @@ Para obtê-lo, siga os passos abaixo:
 2. No menu exibido à esquerda da tela, selecione a opção **Credenciais de produção**.
 3. Localize as credenciais [Client ID e Client Secret](/developers/pt/docs/qr-code/additional-content/your-integrations/credentials#:~:text=est%C3%A1%20sendo%20integrada.-,Client%20ID%20e%20Client%20Secret,-O%20Client%20ID), que você deverá utilizar para gerar o Access Token através do fluxo OAuth, conforme mostrado na imagem a seguir.  
   
- ![IMAGEM]
+ ![client ID e client secret](/images/qr/interoperable-credentials-pt.png)
 
 
 > WARNING
@@ -116,6 +114,6 @@ Para fazer isso, siga os passos abaixo:
 3. Na aba **Modo de produção**, forneça a URL que será utilizada para receber as notificações.
 4. Em **Eventos**, escolha a opção **Pagamentos (interoperabilidade de cartões de crédito)**.
 
-[IMAGEM]
+ ![configuración de Webhooks](/images/dashboard/webhooks-pt.png)
 
 5. Clique em **Salvar** e confirme na tela seguinte.
