@@ -994,6 +994,15 @@
                                   "es": "Monto del pago."
                                 }
                               },
+                              "tip_amount": {
+                                "type": "string",
+                                "example": "14.90",
+                                "description": {
+                                  "pt": "Parâmetro exclusivo para transações no Mexico (MEX) e no Chile (CHL). Valor da gorjeta, inserido a partir do terminal ao efetuar o pagamento.",
+                                  "en": "Exclusive parameter for transactions in Mexico (MEX) and Chile (CHL). Tip amount, sent from the terminal when making the payment.",
+                                  "es": "Parámetro exclusivo para transacciones en México (MEX) y Chile (CHL). Monto de la propina que fue ingresado desde la terminal al momento del pago."
+                                }
+                              },
                               "status":{
                                 "$ref": "#/components/schemas/status"
                               },
@@ -1862,6 +1871,32 @@
             "schema": {
               "type": "integer",
               "example": 1
+            }
+          },
+          {
+            "name": "store_id",
+            "in": "query",
+            "description": {
+              "en": "It's the store identifier, that you should send only if you want to filter the available devices by store.",
+              "es": "Es el identificador de la sucursal, que deberás enviar sólo si quieres filtrar los dispositivos disponibles por sucursal.",
+              "pt": "É o identificador da loja. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por loja."
+            },
+            "schema": {
+              "type": "string",
+              "example": "1235456678"
+            }
+          },
+          {
+            "name": "pos_id",
+            "in": "query",
+            "description": {
+              "en": "It's the device Point of Sale identifier, that you should send only if you want to filter the available devices by Point of Sale.",
+              "es": "Es el identificador de la caja, que deberás enviar sólo si quieres filtrar los dispositivos por caja.",
+              "pt": "É o identificador da caixa. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por caixa."
+            },
+            "schema": {
+              "type": "integer",
+              "example": 1235456678
             }
           }
         ],
