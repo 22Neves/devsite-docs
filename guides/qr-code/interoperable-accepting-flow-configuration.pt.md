@@ -76,7 +76,7 @@ curl --location 'https://api.mercadopago.com/oauth/token' \
 
 | Campo          | Descrição                                                                                           |
 |----------------|-----------------------------------------------------------------------------------------------------|
-| `client_id`**`  | Copie e cole o valor atribuído ao **Client ID** na seção **Credenciais** dentro de “Suas integrações".    |
+| `client_id`  | Copie e cole o valor atribuído ao **Client ID** na seção **Credenciais** dentro de “Suas integrações".    |
 | `client_secret` | Copie e cole o valor atribuído ao **Client Secret** na seção **Credenciais** dentro de "Suas integrações". |
 | `grant_type` | O protocolo OAuth permite obter um Access Token através de diferentes [fluxos de acesso (grant types)](/developers/pt/docs/qr-code/additional-content/security/oauth/introduction#flujosdeaccesogranttypes). Neste caso, você deve preencher o campo com o valor ‘client_credentials’, que permite obtê-lo para acessar seus próprios recursos. Consulte mais informações sobre esse fluxo em [Obter Access Token](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials). |
 
