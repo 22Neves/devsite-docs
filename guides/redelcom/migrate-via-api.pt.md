@@ -69,9 +69,9 @@ As tags personalizadas permitem ajustar a apresentação dos documentos impresso
 | `{qr}`     | Imprimir um QR que representa o texto enviado | `{qr}Texto{/qr}`               |
 | `{pdf417}` | Imprimir o código de barras de um TED      | `{pdf417}Texto{/pdf417}`        |
 
-### Configuração da integração
+### Configuração da impressão
 
-Para configurar a integração, utilize a API para gerenciar o enfileiramento das impressões, considerando as especificações de cada endpoint.
+Utilize a API para gerenciar o enfileiramento de impressões, considerando as especificações de cada endpoint.
 
 > WARNING
 >
