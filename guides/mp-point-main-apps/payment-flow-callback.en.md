@@ -4,6 +4,7 @@ The callback method is a simple way to initialize the payment flow with Main App
 
 Start your integration using our SDKs to initialize the payment flow through the `PaymentFlow` class as follows:
 
+----[mlc]---- 
 [[[
 ```kotlin
 val paymentFlow = MPManager.paymentFlow
@@ -16,7 +17,7 @@ val paymentFlowRequestData = PaymentFlowRequestData(
 
    paymentMethod = PaymentMethod.CREDIT_CARD.name,
 
-   printOnTerminal = false // campo opcional si lanza el pago sin impresión en la terminal
+   printOnTerminal = false // optional field if it processes the payment without printing at the terminal
 
 )
 
@@ -28,11 +29,91 @@ paymentFlow.launchPaymentFlow(
 
    response.doIfSuccess { result ->
 
-       // manejo de éxito utilizando un mensaje
+       // success handling using a message
 
    }.doIfError { error ->
 
-       // manejo del error
+       // error handling
+   }
+
+}
+```
+```java
+final PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
+
+final String amount = "2.0";
+
+final String description = "Payment description";
+
+final PaymentFlowData paymentFlowData = new PaymentFlowData(
+
+   amount,
+
+   description,
+
+   PaymentMethod.CREDIT_CARD.name(),
+
+   6, // optional field if launching the payment in installments. 
+
+   false // optional field if launching the payment without printing in terminal
+
+);
+
+
+
+final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<PaymentResponse> response) -> {
+
+ if (response.getStatus() == ResponseStatus.SUCCESS) {
+
+   // Success handling using a message
+
+ } else {
+
+   // Error handling 
+
+ }
+
+ return Unit.INSTANCE;
+
+};
+
+paymentFlow.launchPaymentFlow(paymentFlowData, callback);
+```
+]]]
+
+------------
+----[mla, mlb, mlm]---- 
+[[[
+```kotlin
+val paymentFlow = MPManager.paymentFlow
+
+val paymentFlowRequestData = PaymentFlowRequestData(
+
+   amount = 10.0,
+
+   description = "test description",
+
+   paymentMethod = PaymentMethod.CREDIT_CARD.name,
+
+   installments = 6, // optional field if it processes the payment in installments
+
+   printOnTerminal = false // optional field if it processes the payment without printing at the terminal
+
+)
+
+paymentFlow.launchPaymentFlow(
+
+   paymentFlowRequestData = paymentFlowRequestData
+
+) { response ->
+
+   response.doIfSuccess { result ->
+
+       // success handling using a message
+
+   }.doIfError { error ->
+
+       // error handling
 
    }
 
@@ -80,6 +161,8 @@ final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<
 paymentFlow.launchPaymentFlow(paymentFlowData, callback);
 ```
 ]]]
+
+------------
 
 | Field | Description |
 |---|---|

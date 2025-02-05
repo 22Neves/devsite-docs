@@ -4,6 +4,7 @@ O método callback é uma maneira simples de inicializar o fluxo de pagamento co
 
 Comece sua integração utilizando nossos SDKs para inicializar o fluxo de pagamento através da classe `PaymentFlow` da seguinte forma:
 
+----[mlc]---- 
 [[[
 ```kotlin
 val paymentFlow = MPManager.paymentFlow
@@ -16,7 +17,7 @@ val paymentFlowRequestData = PaymentFlowRequestData(
 
    paymentMethod = PaymentMethod.CREDIT_CARD.name,
 
-   printOnTerminal = false // campo opcional si lanza el pago sin impresión en la terminal
+   printOnTerminal = false // Campo opcional se lança o pagamento sem impressão na terminal
 
 )
 
@@ -28,11 +29,11 @@ paymentFlow.launchPaymentFlow(
 
    response.doIfSuccess { result ->
 
-       // manejo de éxito utilizando un mensaje
+       // manutenção bem-sucedida utilizando uma mensagem
 
    }.doIfError { error ->
 
-       // manejo del error
+       // manutenção de erro
 
    }
 
@@ -53,9 +54,9 @@ final PaymentFlowData paymentFlowData = new PaymentFlowData(
 
    PaymentMethod.CREDIT_CARD.name(),
 
-   6, // campo opcional se lançar o pagamento em parcelas. 
+   6, // optional field if launching the payment in installments. 
 
-   false // campo opcional se lançar o pagamento sem impressão no terminal.
+   false // optional field if launching the payment without printing in terminal
 
 );
 
@@ -65,11 +66,11 @@ final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<
 
  if (response.getStatus() == ResponseStatus.SUCCESS) {
 
-   // manipulação de sucesso utilizando uma mensagem
+   // Success handling using a message
 
  } else {
 
-   // manipulação de erro
+   // Error handling 
 
  }
 
@@ -80,6 +81,89 @@ final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<
 paymentFlow.launchPaymentFlow(paymentFlowData, callback);
 ```
 ]]]
+
+------------
+----[mla, mlb, mlm]---- 
+[[[
+```kotlin
+val paymentFlow = MPManager.paymentFlow
+
+val paymentFlowRequestData = PaymentFlowRequestData(
+
+   amount = 10.0,
+
+   description = "test description",
+
+   paymentMethod = PaymentMethod.CREDIT_CARD.name,
+
+   installments = 6, // campo opcional se lança o pagamento parcelado
+
+   printOnTerminal = false // campo opcional se lança o pagamento sem impressão na terminal
+
+)
+
+paymentFlow.launchPaymentFlow(
+
+   paymentFlowRequestData = paymentFlowRequestData
+
+) { response ->
+
+   response.doIfSuccess { result ->
+
+       // manutenção bem-sucedida utilizando uma mensagem
+
+   }.doIfError { error ->
+
+       // manutenção de erro
+
+   }
+
+}
+```
+```java
+final PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
+
+final String amount = "2.0";
+
+final String description = "Payment description";
+
+final PaymentFlowData paymentFlowData = new PaymentFlowData(
+
+   amount,
+
+   description,
+
+   PaymentMethod.CREDIT_CARD.name(),
+
+   6, // optional field if launching the payment in installments. 
+
+   false // optional field if launching the payment without printing in terminal
+
+);
+
+
+
+final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<PaymentResponse> response) -> {
+
+ if (response.getStatus() == ResponseStatus.SUCCESS) {
+
+   // Success handling using a message
+
+ } else {
+
+   // Error handling 
+
+ }
+
+ return Unit.INSTANCE;
+
+};
+
+paymentFlow.launchPaymentFlow(paymentFlowData, callback);
+```
+]]]
+
+------------
 
 | Campo | Descrição |
 |---|---|
