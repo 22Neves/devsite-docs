@@ -52,29 +52,9 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 | Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
 | Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, que tiene validez contable y tributaria. |
 
-<<<<<<< HEAD
-=======
-### Configuración de la integración
-
-Para configurar la integración de las impresiones, utiliza la API para gestionar la fila de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
-
-> WARNING
->
-> Importante
->
-> La terminal debe estar configurado en modo PDV (Punto de Venta).  
-
-Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/es/reference/order/in-person-payments/impressions/post)
-   - [Obtener acción por ID](/developers/es/reference/order/in-person-payments/impressions/get)
-   - [Cancelar acción por ID](/developers/es/reference/order/in-person-payments/impressions_cancel/post)  
-
-Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el “botón verde” para buscar el intento manualmente.
-
->>>>>>> 4c96d0e92ad36d36cd83fc9d4d30802cac14ea15
 ### Tags personalizadas
 
-Las tags personalizadas permiten particularizar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
+Las tags personalizadas permiten ajustar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
 
 > Las tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias tags.
 
@@ -91,7 +71,7 @@ Las tags personalizadas permiten particularizar la presentación de los document
 
 ### Configuración de la integración
 
-Para configurar la integración de las impresiones, utiliza la API para gestionar la fila de cada uno de los intentos, considerando las especificaciones de cada endpoint. 
+Para configurar la integración, utiliza la API para gestionar el encolamiento de impresiones, considerando las especificaciones de cada endpoint. 
 
 > WARNING
 >
@@ -104,4 +84,4 @@ Los endpoints disponibles son:
    - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción mediante el ID obtenido en la respuesta a su creación.
    - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". 
 
-Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el “botón verde” para buscar el intento manualmente.
+Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.
