@@ -72,6 +72,7 @@ Check below the available texts for modification, how they are organized in the 
 
 ![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-en.png)
 
+------------
 ----[mlb, mlm, mlb]----
 | Key | Available options | Default |
 |--- |--- | --- |
@@ -88,10 +89,9 @@ Check below the available texts for modification, how they are organized in the 
 | valueProp | practicality, security_details, security_safety, smart_option, payment_methods_logos | security_safety |
 
 ------------
-
+----[mlb, mla, mlm]----
 See the texts related to each option:
 
-----[mlb, mla, mlm]----
 | Key | Option | Text |
 |--- |--- | --- |
 |action |pay | Pay |
@@ -106,8 +106,12 @@ See the texts related to each option:
 |valueProp |convenience_credits* | Up to 12 Installments without Card |
 |valueProp |payment_methods_logos** | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
 
+When testing your integration, make sure that the `action`, `actionComplement`, and `valueProp` make sense within their context.
+
 ------------
 ----[mpe, mco, mlu]----
+See the texts related to each option:
+
 | Key | Option | Text |
 |--- |--- | --- |
 |action |pay | Pay |
@@ -120,10 +124,9 @@ See the texts related to each option:
 |valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
 |valueProp |payment_methods_logos* | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
 
-------------
-
 When testing your integration, make sure that the `action`, `actionComplement`, and `valueProp` make sense within their context.
 
+------------
 ----[mlm]----
 > NOTE
 >
@@ -154,7 +157,7 @@ When testing your integration, make sure that the `action`, `actionComplement`, 
 > *It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the Value Prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**With account money**".
 
 ------------
-
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```javascript
 const settings = {

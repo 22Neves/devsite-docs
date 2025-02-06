@@ -11,8 +11,6 @@ Hay dos temas disponibles: el **default** (también utilizado cuando no se espec
 
 ![wallet-actioncomplement](cow/wallet-actioncomplement-es-all.png)
 
-Caso a proposta de valor não tenha sido especificada, por padrão será security_safety. A seguir, confira todos os textos possíveis para o conteúdo da proposta de valor:
-
 En caso de que no se haya especificado la propuesta de valor, por defecto será `security_safety`. A continuación, revisa todos los textos posibles para el contenido de la propuesta de valor:
 
 | Opción | Texto |
