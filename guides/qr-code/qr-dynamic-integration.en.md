@@ -15,7 +15,7 @@ There are two ways to follow these steps: **creating an order**, or **creating a
 
 ## Create an order
 
-First of all, generate the order publication. Once the data is sent to Mercado Pago, a string with the standard [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) will be available.
+First of all, generate the order publication. Once the data is sent to Mercado Pago, a string with the standard [EMVCo](https://www.emvco.com/emv-technologies/qr-codes/) will be available.
 
 To create an order, access our [API Reference](/developers/en/reference/qr-dynamic/_instore_orders_qr_seller_collectors_user_id_pos_external_pos_id_qrs/post) and execute the curl you will find there. The response will include the data required to create the QR code.
 

@@ -76,7 +76,7 @@ bullet_section_with_media:
  - benefit_message: Ao ativar o Cuotas sin Tarjeta no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
 
  ------------
- - image: /woocomerce/landing-woo-advantages.png
+ - image: /woocomerce/new-landing-woo-advantages.png
 ---
 
 --- mini_landing_separator ---

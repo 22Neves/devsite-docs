@@ -54,7 +54,7 @@ The following types of Documentos Tributarios Electrónicos (DTE) in XML format 
 
 ### Custom tags
 
-Custom tags allow for the personalization of the presentation of printed documents. They offer flexibility and control over the text format, enabling the creation of efficient and visually appealing prints. Below, consult the different available tags, their functions, and usage examples:
+Custom tags allow for adjusting the presentation of printed documents. They offer flexibility and control over the text format, enabling the creation of efficient and visually appealing prints. Below, consult the different available tags, their functions, and usage examples:
 
 > Custom tags have a minimum limit of 100 characters and a maximum limit of 4096 characters, including the tags themselves.
 
@@ -69,9 +69,9 @@ Custom tags allow for the personalization of the presentation of printed documen
 | `{qr}`     | Print a QR code that represents the sent text | `{qr}Text{/qr}`                 |
 | `{pdf417}` | Print the barcode of a TED                | `{pdf417}Text{/pdf417}`          |
 
-### Integration configuration 
+### Print configuration
 
-To configure the integration of the prints, use the API to manage the queuing of each intent, considering the specifications of each endpoint. 
+Use the API to manage the print queue, considering the specifications of each endpoint.
 
 > WARNING
 >
@@ -84,4 +84,4 @@ The available endpoints are:
    - [Get action by ID](/developers/en/reference/mercado_pago_point/impressions/get): This allows you to consult all action information using the ID obtained in the response to its creation.
    - [Cancel action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): This allows yoy to cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status "created" can be canceled.
     
-Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the "green button" to fetch the intent manually.
+Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the **Update** button to fetch the intent manually.
