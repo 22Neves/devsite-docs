@@ -1224,6 +1224,14 @@
                             "es": "Pago rechazado por regulaciones.",
                             "pt": "Pagamento recusado devido a regulamentações."
                           }
+                        },
+                        {
+                          "title": "rejected_by_biz_rule",
+                          "description": {
+                            "en": "Payment rejected by business rules.",
+                            "es": "Pago rechazado por reglas de negocio.",
+                            "pt": "Pagamento recusado devido a regras de negócio."
+                          }
                         }
                       ]
                     },
@@ -3386,11 +3394,11 @@
                           }
                         },
                         {
-                          "title": "collector_unavailable",
+                          "title": "rejected_by_biz_rule",
                           "description": {
-                            "en": "In case of a rejected payment, the collector is restricted and can not operate.",
-                            "es": "En caso de pago rechazado, el collector tiene una restricción y no puede operar.",
-                            "pt": "Em caso de pagamento rejeitado, o collector tem restrição e não pode operar."
+                            "en": "Payment rejected by business rules.",
+                            "es": "Pago rechazado por reglas de negocio.",
+                            "pt": "Pagamento recusado devido a regras de negócio."
                           }
                         },
                         {
@@ -6316,6 +6324,14 @@
                                     "en": "Payment rejected by regulations.",
                                     "es": "Pago rechazado por regulaciones.",
                                     "pt": "Pagamento recusado devido a regulamentações."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_biz_rule",
+                                  "description": {
+                                    "en": "Payment rejected by business rules.",
+                                    "es": "Pago rechazado por reglas de negocio.",
+                                    "pt": "Pagamento recusado devido a regras de negócio."
                                   }
                                 },
                                 {
