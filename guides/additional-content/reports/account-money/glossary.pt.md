@@ -136,7 +136,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
 | Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
 | Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados por retenção de IVA. ------------ | Numeric |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados por retenção de IVA. | Numeric |
 | Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
 | `TAX_AMOUNT_TELCO`  | É o valor do imposto sobre as empresas de telecomunicações que é deduzido do valor bruto. | Numeric | 
 | Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |

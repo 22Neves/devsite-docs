@@ -28,8 +28,8 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Costo por ofrecer cuotas sin interés (`FINANCING_FEE_AMOUNT`) | Costo por ofrecer cuotas sin interés. | Numeric |
 | Costo de envío (`SHIPPING_FEE_AMOUNT`) | Costo de envío. | Numeric |
 | Impuestos cobrados por retenciones IIBB (`TAXES_AMOUNT`) | Impuestos cobrados por retenciones de Ingresos Brutos, IVA, Ganancias; e impuestos sobre los créditos y débitos, entre otros. [Ver más detalle sobre retenciones y percepciones](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) | Numeric |
-| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | -
-| Detalle de impuestos (`TAX_DETAIL`) | ----[mla, mlu, mlm, mlc, mco, mpe]---- Descripción del impuesto retenido por operación en los impuestos cobrados por retenciones IIBB `TAXES_AMOUNT`. Puede tomar los siguientes valores según la jurisdicción: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy | String |
+| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | Numeric |
+| Detalle de impuestos (`TAX_DETAIL`) | Descripción del impuesto retenido por operación en los impuestos cobrados por retenciones IIBB `TAXES_AMOUNT`. Puede tomar los siguientes valores según la jurisdicción: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy | String |
 | ID de caja (`POS_ID`) | ID de caja si el pago se realiza a través de un comercio físico. | String |
 | Nombre de caja (`POS_NAME`) | Nombre de caja para el pago realizado a través de un comercio físico. | String |
 | ID de caja definido por el usuario (`EXTERNAL_POS_ID`) | ID de caja definido por el usuario para el pago realizado a través de un comercio físico. | String |
@@ -137,7 +137,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Costo por ofrecer cuotas sin interés (`FINANCING_FEE_AMOUNT`) | Costo por ofrecer cuotas sin interés. | Numeric |
 | Costo de envío (`SHIPPING_FEE_AMOUNT`) | Costo de envío. | Numeric |
 | Impuestos cobrados por retenciones IIBB (`TAXES_AMOUNT`) | Impuestos cobrados. | Numeric |
-| Meses (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | -
+| Meses (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | Numeric |
 | Detalle de impuestos (`TAX_DETAIL`) | Descripción del impuesto retenido por operación en los impuestos cobrados por retenciones IIBB `TAXES_AMOUNT`. | String |
 | ID de caja (`POS_ID`) | ID de caja si el pago se realiza a través de un comercio físico. | String |
 | Nombre de caja (`POS_NAME`) | Nombre de caja para el pago realizado a través de un comercio físico. | String |
@@ -172,7 +172,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Código de la cuenta del vendedor (`USER_ID`) | Código de la cuenta del vendedor. (Cust ID). | Numeric |
 | Medio de pago (`PAYMENT_METHOD`) | Consulta los [medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods) según el país con el que operes en Mercado Pago. | String |
 | Tipo de medio de pago (`PAYMENT_METHOD_TYPE`) | Tipo de medio de pago. Puede ser:<br><br>_credit_card_: tarjeta de crédito.<br>_debit_card_: tarjeta de débito.<br>_bank_transfer_: transferencia.<br>_atm_: cajero<br>_ticket_: efectivo<br>_available_money_: es el dinero que otros usuarios de Mercado Pago pueden usar para comprar y pagar.<br> | String |
-| País de origen de la cuenta de Mercado Pago (`SITE`) | MCO: Colombia ------------ | String |
+| País de origen de la cuenta de Mercado Pago (`SITE`) | MCO: Colombia | String |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br>Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric |
 | Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
@@ -189,7 +189,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Costo por ofrecer cuotas sin interés (`FINANCING_FEE_AMOUNT`) | Costo por ofrecer cuotas sin interés. | Numeric |
 | Costo de envío (`SHIPPING_FEE_AMOUNT`) | Costo de envío. | Numeric |
 | Impuestos cobrados por retenciones IIBB (`TAXES_AMOUNT`) | Impuestos cobrados por retenciones de IVA, ICA y Fuente según aplique el caso. | Numeric |
-| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | -
+| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | Numeric |
 | `TAX_AMOUNT_TELCO` | Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. Puede tomar el valor de:<br><br> fuente<br>iva<br>ica<br> | Numeric |
 | Detalle de impuestos (`TAX_DETAIL`) |  Descripción del impuesto retenido por operación en los impuestos cobrados por retenciones IIBB `TAXES_AMOUNT`. | String |
 | ID de caja (`POS_ID`) | ID de caja si el pago se realiza a través de un comercio físico. | String |
@@ -242,7 +242,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Costo por ofrecer cuotas sin interés (`FINANCING_FEE_AMOUNT`) | Costo por ofrecer cuotas sin interés. | Numeric |
 | Costo de envío (`SHIPPING_FEE_AMOUNT`) | Costo de envío. | Numeric |
 | Impuestos cobrados por retenciones IIBB (`TAXES_AMOUNT`) | Impuestos cobrados por retenciones de IVA.  | Numeric |
-| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | -
+| Cuotas (`INSTALLMENTS`) | Cantidad de cuotas en las que fue realizada la operación. | Numeric |
 | `TAX_AMOUNT_TELCO` |  Es el valor del impuesto a las empresas de telecomunicaciones que se descuenta del valor bruto.  | Numeric |
 | Detalle de impuestos (`TAX_DETAIL`) |  Descripción del impuesto retenido por operación en los impuestos cobrados por retenciones IIBB `TAXES_AMOUNT`. | String |
 | ID de caja (`POS_ID`) | ID de caja si el pago se realiza a través de un comercio físico. | String |
@@ -278,7 +278,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Código de la cuenta del vendedor (`USER_ID`) | Código de la cuenta del vendedor. (Cust ID). | Numeric |
 | Medio de pago (`PAYMENT_METHOD`) | Consulta los [medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods) según el país con el que operes en Mercado Pago. | String |
 | Tipo de medio de pago (`PAYMENT_METHOD_TYPE`) | Tipo de medio de pago. Puede ser:<br><br>_credit_card_: tarjeta de crédito.<br>_debit_card_: tarjeta de débito.<br>_bank_transfer_: transferencia.<br>_atm_: cajero<br>_ticket_: efectivo<br>_available_money_: es el dinero que otros usuarios de Mercado Pago pueden usar para comprar y pagar.<br> | String |
-| País de origen de la cuenta de Mercado Pago (`SITE`) | MPE: Perú ------------ | String |
+| País de origen de la cuenta de Mercado Pago (`SITE`) | MPE: Perú  | String |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> *REFUND*: pago reembolsado en su totalidad. <br> Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric |
 | Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
