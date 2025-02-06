@@ -6,7 +6,7 @@ A partir de las nuevas reglas operacionales para la tokenización de operaciones
 
 ## Procesar el primer pago
 
-Para el **primer pago**, envíe el _header_ `X-Expand-Response-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+Para el **primer pago**, envíe el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
@@ -26,11 +26,17 @@ En la respuesta se podrá observar el retorno del `network_transaction_id` en el
 
 | Parámetro  | Tipo  | Descripción  | Ejemplo |
 | --- | --- | --- | --- |
-| type | string | Está asociado al identificador de la bandera | 584152665425694 |
+| type | string | Está asociado al identificador de la bandera. | 584152665425694 |
 
 ## Procesar pagos subsecuentes
 
-Para los **pagos subsecuentes**, envíe la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro `forward_data`, o utilizando el _cURL_ a continuación.
+Para los **pagos subsecuentes**, envíe nuevamente el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+
+```json
+--header 'X-Expand-Responde-Nodes: gateway.reference'\
+```
+
+En la respuesta, observe el retorno del `network_transaction_id` en el parámetro `expanded` y, a partir de eso, envíe la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro forward_data, o utilizando el _cURL_ a continuación.
 
 > WARNING
 >

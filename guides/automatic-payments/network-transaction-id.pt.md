@@ -30,13 +30,19 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 
 ### Processar pagamentos subsequentes 
 
-Para os **pagamentos subsequentes**, envie a informação do `network_transaction_id` retornado no último pagamento realizado ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`, ou utilizando o _cURL_ abaixo.
+Para os **pagamentos subsequentes**, envie novamente o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
+
+```json
+--header 'X-Expand-Responde-Nodes: gateway.reference'\
+```
+
+Na resposta, observe o retorno do `network_transaction_id` no parâmetro `expanded` e, a partir disso, envie a informação do `network_transaction_id` retornado no último pagamento realizado ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`, ou utilizando o _cURL_ abaixo.
 
 > WARNING
 >
 > Atenção
 > 
-> Caso o `network_transaction_id` não retorne no último pagamento realizado, deverá ser enviado valor recebido no primeiro pagamento.
+> Caso o `network_transaction_id` não seja retornado no último pagamento realizado, deverá ser enviado o valor recebido no primeiro pagamento.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
