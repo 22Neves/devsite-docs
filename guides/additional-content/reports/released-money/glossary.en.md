@@ -15,8 +15,8 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Gross operation amount (`GROSS_AMOUNT`) | Gross operation amount. | Numeric |
 | Extra data (`METADATA`) | Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ----[mlb]---- When "Fee discount" is shown it means the reduction in the selling fee for participating in a commercial campaign. ------------ |  String |
 | `MP_FEE_AMOUNT` | Commission Payment of Mercado Pago and/or Mercado Libre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Includes VAT. ------------ | Numeric |
-| Fee for offering installments (`FINANCING_FEE_AMOUNT`) | Cost for offering interest-free installments. |
-| Shipping cost (`SHIPPING_FEE_AMOUNT`) | Shipping cost. | Numeric | Numeric |
+| Fee for offering installments (`FINANCING_FEE_AMOUNT`) | Cost for offering interest-free installments. | Numeric |
+| Shipping cost (`SHIPPING_FEE_AMOUNT`) | Shipping cost. | Numeric |
 | Taxes for IIBB withholding (`TAXES_AMOUNT`) | ----[mla]---- Tax collected for withholdings of Gross Income, VAT, Profits; and taxes on Credits and Debits, among others. [Learn more about withholdings and perceptions.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber)------------  ----[mlm, mlc, mlu, mlb, mco, mpe]---- Taxes charged for gross income withholdings. ------------ | Numeric |
 | Discount coupon (`COUPON_AMOUNT`) | This operation shows the total amount of the discount coupon offered to your buyers. | Numeric |
 | Installments (`INSTALLMENTS`) | Number of installments in which the operation was carried out. | Numeric |

@@ -14,9 +14,9 @@
           "checkout-pro"
         ],
         "description": {
-          "en": "Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow.",
-          "pt": "Gerar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento.",
-          "es": "Genera una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago."
+          "en": "Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow",
+          "pt": "Gerar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento",
+          "es": "Genera una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago"
         },
         "requestBody": {
           "content": {
@@ -1836,9 +1836,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "Find all the information related to generated preferences using specific filters or a specific date range. It's important to note that only data from the last 90 days will be brought in",
-          "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica. Importante indicar que somente serão trazidos os dados dos últimos 90 dias",
-          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado. Es importante indicar que solo se traerán los datos de los últimos 90 días"
+          "en": "Find all the information related to generated preferences using specific filters or a specific date range. Only data from the last 90 days (3 months) will be brought, and if you want to search for older data, use the GET for \"Get preference\"",
+          "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica. Somente serão trazidos os dados dos últimos 90 dias (3 meses) e, caso queira buscar dados mais antigos, utilize o GET de \"Obter preferência\"",
+          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado. Solo se traerán los datos de los últimos 90 días (3 meses) y, si desea buscar datos más antiguos, utilice el GET de \"Obtener preferencia\""
         },
         "parameters": [
           {
@@ -2341,9 +2341,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "Check all the payment information for a product or service with the ID of the preference of your choice.",
-          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada.",
-          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras."
+          "en": "Check all the payment information for a product or service with the ID of the preference of your choice",
+          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada",
+          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras"
         },
         "parameters": [
           {
