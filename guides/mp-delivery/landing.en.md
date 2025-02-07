@@ -1,9 +1,15 @@
 ---
 content_section_with_media: 
- - title: Introduction
+ - title: Mercado Pago Delivery
  - message: Mercado Pago Delivery is an on-demand meal delivery solution where the customer accesses a list of registered restaurants, selects their order, and pays directly from the Mercado Pago application.
  - media_image: /mpdelivery/mp-delivery-enlanding.png
 ---
+
+> WARNING
+>
+> Business contact required
+>
+> You can only integrate this product if your business contact has shared all the necessary information with you to do so.
 
 --- mini_landing_separator ---
 >>>>Availability by country <<<<
