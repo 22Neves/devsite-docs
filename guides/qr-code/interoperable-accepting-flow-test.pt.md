@@ -245,7 +245,7 @@ Se a leitura foi correta, a resposta deverá ser semelhante ao exemplo abaixo.
 >
 > Importante
 >
-> Uma vez concluídos os testes, lembre-se de enviar à nossa equipe de Suporte o `coelsa_id` dos pagamentos aprovados dentro desses cenários, junto com uma captura de tela do pagamento, para começar a operar.
+> Uma vez concluídos os testes, lembre-se de enviar à nossa equipe de Suporte o `coelsa_id` dos pagamentos aprovados dentro desses cenários, junto com uma captura de tela do pagamento, para validação.
 
 
 ## Considerações para ambientes produtivos
@@ -254,6 +254,6 @@ Tenha em mente as seguintes considerações para operar em ambientes produtivos.
 
 * Utilize sempre o Access Token da carteira criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais). Certifique-se de renová-lo antes de completar 6 horas.
 * Certifique-se de oferecer sempre uma experiência de usuário adequada: forneça mensagens claras para otimizar a compreensão de cada cenário de pagamento, falha ou erro que ocorrer ao escanear os códigos QR utilizando a carteira.
-* Lembre-se de incluir corretamente os padrões de códigos QR do Mercado Pago a partir de seu domínio. Na maioria dos casos, isso deve ser feito com um **domínio invertido**, como **com.mercadolibre**. Mas também é possível encontrar QRs não EMVCO, como **https://mpago.la/pos/<id>** ou **https://mpago.la/s/qr/<id1>/<id2>**.
+* Lembre-se de incluir corretamente os padrões de códigos QR do Mercado Pago a partir de seu domínio. Na maioria dos casos, isso deve ser feito com um **domínio invertido**, como **com.mercadolibre**. Mas também é possível encontrar QRs não EMVCO, como **https://mpago.la/pos/<id>** ou **https://mpago.la/s/qr/<id1><id2>**.
 * Identifique as operações com códigos rastreáveis que permitam à COELSA reconhecer aquelas pertencentes ao Mercado Pago. Para isso, envie o `order.id` da IEP do Mercado Pago como `qr_trx_id` à API da COELSA.
 

@@ -243,12 +243,12 @@ If the reading was correct, the response should look like the example below.
 >
 > Important
 >
-> Once the tests are concluded, remember to send our Support team the `coelsa_id` of the approved payments within these scenarios along with a screenshot of the payment, so that you can begin to operate.
+> Once the tests are concluded, remember to send our Support team the `coelsa_id` of the approved payments within these scenarios along with a screenshot of the payment, so it can be validated.
 
 ## Considerations for production environments
 
 Keep in mind the following considerations to operate in production environments.
  * Always use the wallet's Access Token created through the [OAuth Client Credentials](/developers/en/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials) flow, as indicated in the [Obtain Credentials](/developers/en/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obtain_credentials) stage. Make sure to renew it before the allowed 6 hours.
  * Ensure that you always provide an adequate user experience: provide clear messages to optimize the understanding of each payment scenario, failure, or error that occurs when scanning QR codes using the wallet.
- * Remember to correctly include the patterns of Mercado Pago QR codes based on its domain. In most cases, this will be an **inverted domain**, **com.mercadolibre**. However, it is also possible to find non-EMVCO QRs, such as **https://mpago.la/pos/<id>** or **https://mpago.la/s/qr/<id1>/<id2>**.
+ * Remember to correctly include the patterns of Mercado Pago QR codes based on its domain. In most cases, this will be an **inverted domain**, **com.mercadolibre**. However, it is also possible to find non-EMVCO QRs, such as **https://mpago.la/pos/<id>** or **https://mpago.la/s/qr/<id1><id2>**.
  * Identify the operations with traceable codes that allow COELSA to recognize those belonging to Mercado Pago. For this, send the `order.id` of the Mercado Pago IEP as `qr_trx_id` to the COELSA API.
