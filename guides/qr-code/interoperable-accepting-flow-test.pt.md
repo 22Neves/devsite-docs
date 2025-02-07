@@ -9,7 +9,7 @@ Para realizá-los, tenha em mente as seguintes informações, que deverão ser u
 | `access_token_seller` | Access Token de teste que a equipe de Suporte fornecerá para simular as ações realizadas por um ponto de venda, e que deve ser utilizado exclusivamente nos cenários de teste. |
 | `point_of_sale_id`  | Identificador de um ponto de venda de testes, que a equipe de Suporte fornecerá para ser utilizado exclusivamente nos cenários de teste. |
 | `qr_data` | Código QR de testes. Dependendo do cenário a ser testado, essa informação pode ser fornecida pela equipe de Suporte ou estar disponível nesta documentação. |
-| **Dominio invertido** | Permite identificar os códigos QR do Mercado Pago. Embora o mais comum seja o domínio EMVCO, também é possível que você encontre domínios com padrões anteriores. <br> **Domínio EMVCO:** com.mercadolibre <br> **Domínios não EMVCO:** https://mpago.la/pos/<id>  - https://mpago.la/s/qr/<id1>/<id2> |
+| **Dominio invertido** | Permite identificar os códigos QR do Mercado Pago. Embora o mais comum seja o domínio EMVCO, também é possível que você encontre domínios com padrões anteriores. <br> **Domínio EMVCO:** com.mercadolibre <br> **Domínios não EMVCO:** https://mpago.la/pos/<id>  - https://mpago.la/s/qr/<id1><id2> |
 
 
 A seguir, você pode ver quais são os cenários de teste e as considerações necessárias para o ambiente produtivo uma vez que a carteira esteja autorizada.
@@ -17,7 +17,7 @@ A seguir, você pode ver quais são os cenários de teste e as considerações n
 
 ## Cenário 1: O vendedor usa ferramentas de cobrança e a informação está disponível no QR
 
-Neste cenário, você criará um pedido com um código QR associado que contém as informações necessárias para realizar um pagamento.
+Neste cenário, você criará um pedido que contém as informações necessárias para efetuar um pagamento a partir do código QR fornecido pela equipe de Suporte, e a seguir simulará sua leitura.
 
 Crie o pedido enviando um **POST** para o endpoint de testes indicado a seguir e substituindo as variáveis `{point_of_sale_id}` e `{access_token_seller}` com as informações fornecidas pelo Suporte, conforme necessário.
 
@@ -72,7 +72,7 @@ Se a criação do pedido foi correta, a resposta deverá ser semelhante ao exemp
 
 ## Cenário 2: O vendedor usa ferramentas de cobrança e a informação ainda não está disponível no QR
 
-Para reproduzir este cenário, você não deve criar um pedido, mas sim garantir que aquele que foi previamente criado no cenário 1 já não esteja disponível.
+Neste cenário, você simulará a leitura de um código QR que ainda não possui pedido ou valor a pagar. Para reproduzi-lo, você não deve criar um pedido, mas sim garantir que aquele que foi previamente criado no cenário 1 já não esteja disponível.
 
 Se ainda estiver disponível, envie um **DELETE** para eliminar o valor do código anterior no endpoint de testes indicado abaixo, substituindo as variáveis `{point_of_sale_id}` e `{access_token_seller}` com as informações fornecidas pelo Suporte, conforme necessário.
 
@@ -143,7 +143,7 @@ curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?da
 --header 'Authorization: Bearer {access_token_wallet}'
 ```
 
-Se os dados foram enviados corretamente, a resolução deve ser semelhante à mostrada abaixo, onde o status do pedido é `unsupported_merchant`, o que indica que a carteira está desabilitada.
+Se os dados foram enviados corretamente, a resolução deve ser semelhante à mostrada abaixo, onde o status do pedido é `unsupported_merchant`, o que indica que o vendedor não está habilitado para a interoperabilidade devido a algum tipo de restrição.
 
 ```json
 {
@@ -252,7 +252,7 @@ Se a leitura foi correta, a resposta deverá ser semelhante ao exemplo abaixo.
 
 Tenha em mente as seguintes considerações para operar em ambientes produtivos.
 
-* Utilize sempre o Access Token da carteira criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais).
+* Utilize sempre o Access Token da carteira criado por meio do [fluxo de OAuth Client Credentials](/developers/pt/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials), conforme indicado na etapa [Obter credenciais](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obter_credenciais). Certifique-se de renová-lo antes de completar 6 horas.
 * Certifique-se de oferecer sempre uma experiência de usuário adequada: forneça mensagens claras para otimizar a compreensão de cada cenário de pagamento, falha ou erro que ocorrer ao escanear os códigos QR utilizando a carteira.
 * Lembre-se de incluir corretamente os padrões de códigos QR do Mercado Pago a partir de seu domínio. Na maioria dos casos, isso deve ser feito com um **domínio invertido**, como **com.mercadolibre**. Mas também é possível encontrar QRs não EMVCO, como **https://mpago.la/pos/<id>** ou **https://mpago.la/s/qr/<id1>/<id2>**.
 * Identifique as operações com códigos rastreáveis que permitam à COELSA reconhecer aquelas pertencentes ao Mercado Pago. Para isso, envie o `order.id` da IEP do Mercado Pago como `qr_trx_id` à API da COELSA.

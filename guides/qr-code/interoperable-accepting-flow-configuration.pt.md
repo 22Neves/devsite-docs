@@ -7,7 +7,7 @@ Para iniciar o processo de configuração, é necessário ter uma conta empresar
 
 Para criar sua conta empresarial, acesse nossa [página de registro](https://www.mercadopago.com.ar/hub/registration/landing) e preencha os dados solicitados com as informações relativas à carteira digital que você representa.
 
-Em seguida, acesse o [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/pt), clique em [Suas integrações](https://www.mercadopago.com.ar/developers/panel/app) no canto superior direito da tela e faça login com a conta empresarial correspondente à carteira.
+Em seguida, acesse o [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/pt), faça login com a conta empresarial correspondente à carteira, e clique em [Suas integrações](https://www.mercadopago.com.ar/developers/panel/app) no canto superior direito da tela.
 
 ![Mercado Pago Developers](/images/qr/developers-your-integrations-pt.png)
 

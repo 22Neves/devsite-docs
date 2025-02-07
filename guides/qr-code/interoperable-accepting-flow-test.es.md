@@ -9,13 +9,13 @@ Para realizarlas, ten en cuenta la siguiente información, que deberá ser utili
 | `access_token_seller` | Access Token de prueba que te proporcionará el equipo de Soporte para simular las acciones realizadas por un punto de venta, y que deberás utilizar exclusivamente en los escenarios de prueba.  |
 | `point_of_sale_id` | Identificador de un punto de venta de pruebas, que te proporcionará el equipo de Soporte para utilizar exclusivamente en los escenarios de prueba. |
 | `qr_data` | Código QR de pruebas. Dependiendo del escenario a probar, esta información podrá ser brindada por el equipo de Soporte, o bien encontrarse disponible en esta documentación. |
-| Dominio invertido | Te permite identificar a los códigos QR de Mercado Pago. Si bien el más común es el dominio EMVCO, también es posible que encuentres dominios con estándares anteriores. <br>**Dominio EMVCO**: com.mercadolibre<br>**Dominios no EMVCO**: https://mpago.la/pos/<id>  - https://mpago.la/s/qr/<id1>/<id2>  |
+| Dominio invertido | Te permite identificar a los códigos QR de Mercado Pago. Si bien el más común es el dominio EMVCO, también es posible que encuentres dominios con estándares anteriores. <br>**Dominio EMVCO**: com.mercadolibre<br>**Dominios no EMVCO**: https://mpago.la/pos/<id>  - https://mpago.la/s/qr/<id1><id2>  |
 
 A continuación, puedes ver cuáles son los escenarios de prueba y las consideraciones necesarias para el entorno productivo una vez que la billetera esté autorizada.
 
 ## Escenario 1: El vendedor usa herramientas de cobro y la información está disponible en el QR
 
-En este escenario, crearás con una orden con un código QR asociado que contiene la información necesaria para realizar un pago.
+En este escenario, crearás con una orden que contiene la información necesaria para realizar un pago a partir del código QR brindado por el equipo de Soporte, y posteriormente simularás su lectura.
 
 Crea la orden enviando un **POST** al endpoint de pruebas indicado a continuación y reemplazando las variables `{point_of_sale_id}` y `{access_token_seller}` con la información otorgada por Soporte, según corresponda.
 
@@ -70,7 +70,7 @@ Si la creación de la orden fue correcta, la respuesta debería verse como el ej
 
 ## Escenario 2: El vendedor usa herramientas de cobro y la información no está disponible todavía en el QR
 
-Para reproducir este escenario, deberás asegurarte que la orden previamente creada en el escenario 1 ya no esté disponible. 
+En este escenario, simularás el escaneo de un código QR que aún no tiene una orden o monto por pagar. Para reproducirlo, deberás asegurarte que la orden previamente creada en el escenario 1 ya no esté disponible. 
 
 Si aún está disponible, envía un **DELETE** al endpoint de pruebas indicado a continuación y reemplazando las variables `{point_of_sale_id}` y `{access_token_seller}` con la información otorgada por Soporte, según corresponda.
 
@@ -114,7 +114,7 @@ curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?da
 --header 'Authorization: Bearer {access_token_wallet}'
 ```
 
-Si los datos fueron enviados correctamente, la resolución debería ser similar a la que se muestra a continuación, donde el `status` de la orden es `unsupported_qr_code`, lo que indica que no hay todavía información disponible.
+Si los datos fueron enviados correctamente, la resolución debería ser similar a la que se muestra a continuación, donde el `status` de la orden es `unsupported_qr_code`, lo que indica que el código QR leído es inválido.
  
 ```json
 {
@@ -141,7 +141,7 @@ curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?da
 --header 'Authorization: Bearer {access_token_wallet}'
 ```
 
-Si los datos fueron enviados correctamente, la resolución debería ser similar a la que se muestra a continuación, donde el `status` de la orden es `unsupported_merchant`, lo que indica que no hay todavía información disponible.
+Si los datos fueron enviados correctamente, la resolución debería ser similar a la que se muestra a continuación, donde el `status` de la orden es `unsupported_merchant`, lo que indica que el vendedor al que pertenece el código QR tiene algún tipo de restricción para operar.
  
 ```json
 {

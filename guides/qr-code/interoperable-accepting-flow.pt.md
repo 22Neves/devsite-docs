@@ -8,7 +8,7 @@
 
 O Mercado Pago oferece às carteiras digitais externas a possibilidade de configurar a interoperabilidade de seus códigos QR por meio do fluxo aceitador. Isso significa que os códigos QR do Mercado Pago podem ser escaneados e pagos com cartão de crédito ou dinheiro na conta em qualquer carteira digital, sendo todo o processamento gerenciado pelo Mercado Pago.
 
-Se você representa uma carteira digital externa e deseja configurar Códigos QR interoperáveis de fluxo aceitador, deverá:  
+Se você representa uma carteira digital externa e deseja interpretar e pagar Códigos QR interoperáveis de fluxo aceitador, deverá:  
 * [Configurar ambiente](/developers/pt/docs/qr-code/interoperable/acceptor-flow/configuration) 
 * [Verificar cenários de teste](/developers/pt/docs/qr-code/interoperable/acceptor-flow/tests)
 

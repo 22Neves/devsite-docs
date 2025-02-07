@@ -8,7 +8,7 @@ To start the configuration process, it is necessary to have a business account i
 
 To create your business account, visit our [registration page](https://www.mercadopago.com.ar/hub/registration/landing) and fill out the requested information with the details of the digital wallet you represent.
 
-Then, go to [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/en), access [Your Integrations](/developers/panel/app) in the upper right corner of the screen, and log in with the business account corresponding to the wallet.
+Then, go to [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/en), log in with the business account corresponding to the wallet, and access [Your Integrations](/developers/panel/app) in the upper right corner of the screen.
 
 ![Home Mercado Pago Developers](/images/qr/developers-your-integrations-es.png)
 

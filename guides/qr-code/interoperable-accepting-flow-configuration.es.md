@@ -8,7 +8,7 @@ Para iniciar el proceso de configuración, es necesario tener una cuenta empresa
 
 Para crear tu cuenta empresa, ingresa a nuestra [página de registro](https://www.mercadopago.com.ar/hub/registration/landing) y completa los datos solicitados con la información de la billetera digital que representas.
 
-Luego, ingresa a [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/es), accede a [Tus integraciones](/developers/panel/app) en la esquina superior derecha de la pantalla, e inicia sesión con la cuenta empresa correspondiente a la billetera. 
+Luego, ingresa a [Mercado Pago Developers](https://www.mercadopago.com.ar/developers/es), inicia sesión con la cuenta empresa correspondiente a la billetera, y accede a [Tus integraciones](/developers/panel/app) en la esquina superior derecha de la pantalla. 
 
 ![Home Mercado Pago Developers](/images/qr/developers-your-integrations-es.png)
 

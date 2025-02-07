@@ -9,13 +9,13 @@ To carry out the tests, keep in mind the following information, which should be 
 | `access_token_seller` | Test Access Token that will be provided by the Support team to simulate the actions performed by a point of sale, and that you must use exclusively in the test scenarios. |
 | `point_of_sale_id` | Identifier of a test point of sale, which will be provided by the Support team to be used exclusively in the test scenarios. |
 | `qr_data` | Test QR Code. Depending on the scenario to be tested, this information may be provided by the Support team or may be available in this documentation. |
-| Inverted Domain | Allows you to identify Mercado Pago QR Codes. While the most common is the EMVCO domain, it is also possible to find domains with earlier standards. <br> **EMVCO Domain**: com.mercadolibre <br> **Non-EMVCO Domains**: https://mpago.la/pos/<id> - https://mpago.la/s/qr/<id1>/<id2> |
+| Inverted Domain | Allows you to identify Mercado Pago QR Codes. While the most common is the EMVCO domain, it is also possible to find domains with earlier standards. <br> **EMVCO Domain**: com.mercadolibre <br> **Non-EMVCO Domains**: https://mpago.la/pos/<id> - https://mpago.la/s/qr/<id1><id2> |
 
 Next, you can see what the test scenarios are and the considerations necessary for the production environment once the wallet is authorized.
 
 ## Scenario 1: the seller uses payment tools and the information is available in the QR
 
-In this scenario, you will create an order with an associated QR code that contains the necessary information to make a payment.
+In this scenario, you will create an order that contains the necessary information to make a payment from the QR code provided by the Support team, and then you will simulate its reading.
 
 Create the order by sending a **POST** request to the test endpoint below, replacing the variables `{point_of_sale_id}` and `{access_token_seller}` with the information provided by Support, as applicable.
 
@@ -70,7 +70,7 @@ If the order creation was successful, the response should look like the example 
 
 ## Scenario 2: the seller uses payment tools and the information is not yet available in the QR
 
-To reproduce this scenario, you must ensure that the order previously created in Scenario 1 is no longer available.
+In this scenario, you will simulate scanning a QR code that does not yet have an order or amount to pay. To reproduce it,, you must ensure that the order previously created in Scenario 1 is no longer available.
 
 If it is still available, send a **DELETE** request to the indicated test endpoint below and replacing the variables `{point_of_sale_id}` and `{access_token_seller}` with the information provided by Support, as applicable.
 
@@ -114,7 +114,7 @@ curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?da
 --header 'Authorization: Bearer {access_token_wallet}'
 ```
 
-If the data was sent correctly, the resolution should be similar to the one shown below, where the `status` of the order is `unsupported_qr_code`, indicating that there is currently no information available.
+If the data was sent correctly, the resolution should be similar to the one shown below, where the `status` of the order is `unsupported_qr_code`, indicating that the QR code is invalid.
  
 ```json
 {
@@ -141,7 +141,7 @@ curl --location 'https://api.mercadopago.com/instore/v2/beta/external/resolve?da
 --header 'Authorization: Bearer {access_token_wallet}'
 ```
 
-If the data was sent correctly, the resolution should be similar to the one shown below, where the `status` of the order is `unsupported_merchant`, indicating that there is currently no information available.
+If the data was sent correctly, the resolution should be similar to the one shown below, where the `status` of the order is `unsupported_merchant`, indicating that the seller creating the QR code is under some kind of restriction for interoperability.
 
 ```json
 {
@@ -248,7 +248,7 @@ If the reading was correct, the response should look like the example below.
 ## Considerations for production environments
 
 Keep in mind the following considerations to operate in production environments.
- * Always use the wallet's Access Token created through the [OAuth Client Credentials](/developers/en/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials) flow, as indicated in the [Obtain Credentials](/developers/en/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obtain_credentials) stage.
+ * Always use the wallet's Access Token created through the [OAuth Client Credentials](/developers/en/docs/qr-code/additional-content/security/oauth/creation#bookmark_client_credentials) flow, as indicated in the [Obtain Credentials](/developers/en/docs/qr-code/interoperable/acceptor-flow/configuration#bookmark_3._obtain_credentials) stage. Make sure to renew it before the allowed 6 hours.
  * Ensure that you always provide an adequate user experience: provide clear messages to optimize the understanding of each payment scenario, failure, or error that occurs when scanning QR codes using the wallet.
  * Remember to correctly include the patterns of Mercado Pago QR codes based on its domain. In most cases, this will be an **inverted domain**, **com.mercadolibre**. However, it is also possible to find non-EMVCO QRs, such as **https://mpago.la/pos/<id>** or **https://mpago.la/s/qr/<id1>/<id2>**.
  * Identify the operations with traceable codes that allow COELSA to recognize those belonging to Mercado Pago. For this, send the `order.id` of the Mercado Pago IEP as `qr_trx_id` to the COELSA API.
