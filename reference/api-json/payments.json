@@ -297,6 +297,7 @@
                             "properties": {
                               "zip_code": {
                                 "type": "string",
+                                "example": "12312-123",
                                 "description": {
                                   "en": "Buyer's zip code.",
                                   "pt": "Código postal do comprador.",
@@ -305,6 +306,7 @@
                               },
                               "street_name": {
                                 "type": "string",
+                                "example": "Av das Nacoes Unidas",
                                 "description": {
                                   "en": "Street where the buyer lives.",
                                   "pt": "Rua onde mora o comprador.",
@@ -313,10 +315,11 @@
                               },
                               "street_number": {
                                 "type": "number",
+                                "example": "3003",
                                 "description": {
-                                  "en": "Number of the property where the buyer lives.",
-                                  "pt": "Número do imóvel onde mora o comprador.",
-                                  "es": "Número de la propiedad donde vive el comprador."
+                                  "en": "Number of the property where the buyer lives. If you do not have a number, send \"N/A\"",
+                                  "pt": "Número do imóvel onde mora o comprador. Caso não possua um número, enviar \"S/N\".",
+                                  "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envíe \"S/N\"."
                                 }
                               }
                             }
@@ -416,48 +419,48 @@
                             "properties": {
                               "zip_code": {
                                 "type": "string",
+                                "example": "12312-123",
                                 "description": {
-                                  "en": "Zip code.",
-                                  "pt": "Código postal",
-                                  "es": "Código postal"
-                                },
-                                "example": "12312-123"
+                                  "en": "Buyer's zip code.",
+                                  "pt": "Código postal do comprador.",
+                                  "es": "Código postal del comprador."
+                                }
                               },
                               "state_name": {
                                 "type": "string",
+                                "example": "Rio de Janeiro",
                                 "description": {
-                                  "en": "State.",
-                                  "pt": "Província",
-                                  "es": "Provincia"
-                                },
-                                "example": "Rio de Janeiro"
+                                  "en": "Name of the State where the buyer's address is located.",
+                                  "pt": "Nome do Estado em que se encontra o endereço do comprador.",
+                                  "es": "Nombre de la Provincia donde se encuentra la dirección del comprador."
+                                }
                               },
                               "city_name": {
                                 "type": "string",
+                                "example": "Buzios",
                                 "description": {
-                                  "en": "City Name.",
-                                  "pt": "Cidade",
-                                  "es": "Ciudad"
-                                },
-                                "example": "Buzios"
+                                  "en": "Name of the city where the buyer's address is located.",
+                                  "pt": "Nome da cidade em que se encontra o endereço do comprador.",
+                                  "es": "Nombre de la ciudad donde se encuentra la dirección del comprador."
+                                }
                               },
                               "street_name": {
                                 "type": "string",
+                                "example": "Av das Nacoes Unidas",
                                 "description": {
-                                  "en": "Street name.",
-                                  "pt": "Rua",
-                                  "es": "Calle"
-                                },
-                                "example": "Av das Nacoes Unidas"
+                                  "en": "Street where the buyer lives.",
+                                  "pt": "Rua onde mora o comprador.",
+                                  "es": "Calle donde vive el comprador."
+                                }
                               },
                               "street_number": {
                                 "type": "number",
+                                "example": "3003",
                                 "description": {
-                                  "en": "Number.",
-                                  "pt": "Número",
-                                  "es": "Número"
-                                },
-                                "example": 3003
+                                  "en": "Number of the property where the buyer lives. If you do not have a number, send \"N/A\"",
+                                  "pt": "Número do imóvel onde mora o comprador. Caso não possua um número, enviar \"S/N\".",
+                                  "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envíe \"S/N\"."
+                                }
                               },
                               "floor": {
                                 "type": "string",
@@ -1512,45 +1515,45 @@
                                   "type": "string",
                                   "example": "Av das Nacoes Unidas",
                                   "description": {
-                                    "en": "Street name.",
-                                    "pt": "Rua",
-                                    "es": "Calle"
+                                    "en": "Street where the buyer lives.",
+                                    "pt": "Rua onde mora o comprador.",
+                                    "es": "Calle donde vive el comprador."
                                   }
                                 },
                                 "street_number": {
                                   "type": "number",
-                                  "example": 3003,
+                                  "example": "3003",
                                   "description": {
-                                    "en": "Number.",
-                                    "pt": "Número",
-                                    "es": "Número"
+                                    "en": "Number of the property where the buyer lives. If you do not have a number, send \"N/A\"",
+                                    "pt": "Número do imóvel onde mora o comprador. Caso não possua um número, enviar \"S/N\".",
+                                    "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envíe \"S/N\"."
                                   }
                                 },
                                 "zip_code": {
                                   "type": "string",
-                                  "example": 6233200,
+                                  "example": "12312-123",
                                   "description": {
-                                    "en": "Zip code.",
-                                    "pt": "Código postal",
-                                    "es": "Código postal"
+                                    "en": "Buyer's zip code.",
+                                    "pt": "Código postal do comprador.",
+                                    "es": "Código postal del comprador."
                                   }
                                 },
                                 "city_name": {
                                   "type": "string",
                                   "example": "Buzios",
                                   "description": {
-                                    "en": "City Name.",
-                                    "pt": "Cidade",
-                                    "es": "Ciudad"
+                                    "en": "Name of the city where the buyer's address is located.",
+                                    "pt": "Nome da cidade em que se encontra o endereço do comprador.",
+                                    "es": "Nombre de la ciudad donde se encuentra la dirección del comprador."
                                   }
                                 },
                                 "state_name": {
                                   "type": "string",
                                   "example": "Rio de Janeiro",
                                   "description": {
-                                    "en": "State.",
-                                    "pt": "Província",
-                                    "es": "Provincia"
+                                    "en": "Name of the State where the buyer's address is located.",
+                                    "pt": "Nome do Estado em que se encontra o endereço do comprador.",
+                                    "es": "Nombre de la Provincia donde se encuentra la dirección del comprador."
                                   }
                                 }
                               },
@@ -4911,47 +4914,47 @@
                               "properties": {
                                 "street_name": {
                                   "type": "string",
-                                  "example": "Av. Paulista",
+                                  "example": "Av das Nacoes Unidas",
                                   "description": {
-                                    "en": "Street name.",
-                                    "pt": "Nome da rua.",
-                                    "es": "Nombre de la calle."
+                                    "en": "Street where the buyer lives.",
+                                    "pt": "Rua onde mora o comprador.",
+                                    "es": "Calle donde vive el comprador."
                                   }
                                 },
                                 "street_number": {
                                   "type": "number",
-                                  "example": 3003,
+                                  "example": "3003",
                                   "description": {
-                                    "en": "Number.",
-                                    "pt": "Número.",
-                                    "es": "Número."
+                                    "en": "Number of the property where the buyer lives. If you do not have a number, send \"N/A\"",
+                                    "pt": "Número do imóvel onde mora o comprador. Caso não possua um número, enviar \"S/N\".",
+                                    "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envíe \"S/N\"."
                                   }
                                 },
                                 "zip_code": {
                                   "type": "string",
-                                  "example": 6233200,
+                                  "example": "12312-123",
                                   "description": {
-                                    "en": "Zip code.",
-                                    "pt": "Código postal.",
-                                    "es": "Código postal."
+                                    "en": "Buyer's zip code.",
+                                    "pt": "Código postal do comprador.",
+                                    "es": "Código postal del comprador."
                                   }
                                 },
                                 "city_name": {
                                   "type": "string",
                                   "example": "Buzios",
                                   "description": {
-                                    "en": "City name.",
-                                    "pt": "Cidade.",
-                                    "es": "Ciudad."
+                                    "en": "Name of the city where the buyer's address is located.",
+                                    "pt": "Nome da cidade em que se encontra o endereço do comprador.",
+                                    "es": "Nombre de la ciudad donde se encuentra la dirección del comprador."
                                   }
                                 },
                                 "state_name": {
                                   "type": "string",
                                   "example": "Rio de Janeiro",
                                   "description": {
-                                    "en": "State.",
-                                    "pt": "Província.",
-                                    "es": "Provincia."
+                                    "en": "Name of the State where the buyer's address is located.",
+                                    "pt": "Nome do Estado em que se encontra o endereço do comprador.",
+                                    "es": "Nombre de la Provincia donde se encuentra la dirección del comprador."
                                   }
                                 }
                               },
