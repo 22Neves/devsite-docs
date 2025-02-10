@@ -11,7 +11,7 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 | Tipo de configuração | Descrição |
 |---|---|
 | [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta----[mla, mlb, mlu, mlc]---- (exceto para notificações de integrações com Código QR)------------. |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. ----[mla]----Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery----------------[mlb, mlm]----Não é permitido configurar para integrações com Mercado Pago Point------------.|
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. ----[mla, mlb, mlm]----Não é permitido configurar para integrações com Mercado Pago Point------------.|
 
 > WARNING
 >
@@ -70,7 +70,6 @@ Para isso, siga as etapas descritas abaixo.
 | Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
 | Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
-| Criação, atualização ou cancelamento de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |
 | Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point | 
 
 ------------
@@ -473,15 +472,8 @@ Para garantir que as notificações estejam configuradas corretamente, é necess
 ## Configuração durante a criação de pagamentos
 
 Durante o processo de criação de pagamentos, preferências ou ordens comerciais, é possível configurar a URL de notificação de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
-----[mla]----
-> WARNING
->
-> Importante
-> 
-> Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
 
-------------
-----[mlb, mlm]----
+----[mlb, mlm, mla]----
 
 > WARNING
 >
@@ -797,15 +789,7 @@ Após realizar as configurações necessárias, a notificação Webhooks será e
 | **action** | Evento notificado, indicando se é uma atualização de recurso ou a criação de um novo | `payment.created` |
 | **data.id**  | ID do pagamento, do `merchant_order` ou da reclamação | `999999999` |
 
-
-----[mla]----
-> WARNING
->
-> Importante
->
-> Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
-------------
-----[mlb, mlm]----
+----[mlb, mlm, mla]----
 > WARNING
 >
 > Importante
@@ -864,7 +848,6 @@ Após responder à notificação e confirmar seu recebimento, é possível obter
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obter plano de assinatura](/developers/pt/reference/subscriptions/_preapproval_plan_search/get)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obter dados de fatura](/developers/pt/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obter intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
-| delivery | `https://api.mercadopago.com/proximity-integration/v1/orders/{shipment_id}` | [Obter pedido](/developers/pt/reference/mp_delivery/_proximity-integrationorders_shipment_id/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obter detalhes da reclamação](/developers/pt/reference/claims/get-claim-details/get) |
 | topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get) |
 | topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get) |
