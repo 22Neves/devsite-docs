@@ -1,6 +1,6 @@
 # Network Transaction ID - TID
 
-Under the new operational rules for tokenizing recurring payment transactions from the Visa brand, it will be necessary to send the transaction identifier (TID) in messaging transactions to be used within multi-acquiring* and to avoid possible fines.
+Starting from the new operational rules for the tokenization of recurring payment transactions for the Visa and Master brands, it will be necessary to send the transaction identifier from the brand (TID) with messaging transactions to be used within multi-acquiring* and avoid potential fines.
 
 > *Automatically, **multi-acquiring** involves more approval rules and databases to check payment information, ensuring the optimization of approvals according to the card brand and the payment retry itself.
 
