@@ -44,7 +44,7 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 ![payment-brick-cc](checkout-bricks/payment-brick-cc-es-all.png)
 
 ------------
-----[mlb, mlm mla, mpe, mco, mlu]---- 
+----[mlb, mlm, mla, mpe, mco, mlu]---- 
 ![payment-brick-cc](checkout-bricks/payment-brick-cc-es.gif)
 
 ------------

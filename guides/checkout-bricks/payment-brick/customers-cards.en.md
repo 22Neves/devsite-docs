@@ -44,7 +44,7 @@ Just passing these two properties, Brick will automatically give the user the op
 ![payment-brick-cc](checkout-bricks/payment-brick-cc-en-all.png)
 
 ------------
-----[mlb, mlm mla, mpe, mco, mlu]---- 
+----[mlb, mlm, mla, mpe, mco, mlu]---- 
 ![payment-brick-cc](checkout-bricks/payment-brick-cc-en.gif)
 
 ------------
