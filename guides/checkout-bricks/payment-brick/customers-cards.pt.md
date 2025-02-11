@@ -41,26 +41,18 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 > Somente os cartões dentro do prazo de validade serão mostrados para o comprador, cartões vencidos não serão disponibilizados.
 
 ----[mlc]----
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-pt-all.png)
+![payment-brick-cc](checkout-bricks/payment-brick-cc-pt-all.png)
 
 ------------
-----[mlb]----
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-pt-mlb.gif)
+----[mlb, mlm mla, mpe, mco, mlu]---- 
+![payment-brick-cc](checkout-bricks/payment-brick-cc-pt.gif)
 
 ------------
-----[mlm]----
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-pt-mlm.gif)
 
-------------
-----[mla, mpe, mco, mlu]---- 
-![payment-Brick-cc](checkout-bricks/payment-brick-cc-pt-all.gif)
-
-------------
 ----[mlb]----
 Para saber como criar, modificar e obter o `customerId` e os `cardsIds`, consulte a seção [Gestão de cartões e clientes](/developers/pt/docs/checkout-api/customer-management) da documentação do Checkout Transparente.
 
 ------------
-
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
 Para saber como criar, modificar e obter o `customerId` e os `cardsIds`, consulte a seção [Gestão de cartões e clientes](/developers/pt/docs/checkout-api/customer-management) da documentação do Checkout API.
 
