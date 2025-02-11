@@ -45,7 +45,7 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 
 ------------
 ----[mlb, mlm, mla, mpe, mco, mlu]---- 
-![payment-brick-cc](checkout-bricks/payment-brick-saved-cards-es.gif)
+![ayment-brick-saved-cards](checkout-bricks/payment-brick-saved-cards-es.gif)
 
 ------------
 
