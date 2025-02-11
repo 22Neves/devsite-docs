@@ -40,13 +40,15 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 >
 > Somente os cartões dentro do prazo de validade serão mostrados para o comprador, cartões vencidos não serão disponibilizados.
 
-----[mla, mlm, mpe, mco, mlu, mlb]---- 
+----[mlc]----
 
-![payment-brick-saved-cards](checkout-bricks/payment-brick-saved-cards-pt.gif)
+![payment-brick-c](checkout-bricks/payment-brick-cc-pt-all.png)
 
 ------------
-----[mlc]----
-![payment-brick-cc](checkout-bricks/payment-brick-cc-pt-all.png)
+
+----[mlb, mla, mlm, mpe, mlu, mco]----
+
+![payment-brick-saved-cards](checkout-bricks/payment-brick-saved-cards-pt.gif) 
 
 ------------
 
