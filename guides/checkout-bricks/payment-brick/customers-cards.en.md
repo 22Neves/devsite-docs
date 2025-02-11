@@ -45,7 +45,7 @@ Just passing these two properties, Brick will automatically give the user the op
 
 ------------
 ----[mlb, mlm, mla, mpe, mco, mlu]---- 
-![payment-brick-cc](checkout-bricks/payment-brick-cc-en.gif)
+![payment-brick-cc](checkout-bricks/payment-brick-saved-cards-en.gif)
 
 ------------
 
