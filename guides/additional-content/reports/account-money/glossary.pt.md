@@ -4,373 +4,373 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 
 ----[mla]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) | MLA: Argentina| String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. <br> | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. Incluir IVA. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String |
-| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) |  Impostos cobrados por retenção de Receita Bruta na fonte, IVA, Lucros; e impostos sobre Créditos e Débitos, entre outros. [Saiba mais sobre retenções e impostos.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. Você pode considerar os seguintes valores conforme a jurisdição: <br><br> cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy <br> | String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um [código QR interoperável](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago). | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um [código QR interoperável](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago). | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String | 
-| Nome do pagador (`PAYER_NAME`) | Nome de quem faz o pagamento. | String |
-| Tipo de ID do pagador (`PAYER_ID_TYPE`) | Tipo de identificação de quem faz um pagamento ou doação. | String |
-| ID do pagador (`PAYER_ID_NUMBER`) | Número de identificação de quem faz um pagamento ou doação. |String |
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) | MLA: Argentina| String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. <br> | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. Incluir IVA. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String (JSON) |
+| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) |  Impostos cobrados por retenção de Receita Bruta na fonte, IVA, Lucros; e impostos sobre Créditos e Débitos, entre outros. [Saiba mais sobre retenções e impostos.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. Você pode considerar os seguintes valores conforme a jurisdição: <br><br> cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy <br> | String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um [código QR interoperável](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago). | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um [código QR interoperável](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago). | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String (JSON) | 
+| Nome do pagador (`PAYER_NAME`) | Nome de quem faz o pagamento. | String (200) |
+| Tipo de ID do pagador (`PAYER_ID_TYPE`) | Tipo de identificação de quem faz um pagamento ou doação. | String (200) |
+| ID do pagador (`PAYER_ID_NUMBER`) | Número de identificação de quem faz um pagamento ou doação. |String (200) |
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 ----[mlb]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br>*PIX*:transferência.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) | MLB: Brasil | String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago.<br> Trava de recebível (TRAVA_DE_RECEBIVEL): trava de recebível. <br> | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. Quando "Fee discount" aparecer, entende-se como a redução na tarifa de venda pela participação em uma campanha comercial. | String |
-| Tarifa do Mercado Livre (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`.| String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp <br> -   Pix Saque (CASHOUT): Esta etiqueta indica que a transação corresponde a um Pix Saque <br> -   Pix Troco (EXTRACASHOUT): Esta etiqueta indica que a transação corresponde a um Pix Troco <br> -   Pix (PIX): Esta etiqueta indica que a transação corresponde a um pagamento via Pix. | String | 
-| Número da parcela (`INSTALLMENT_NUMBER`*) | Indica o número da parcela que será paga, do total de parcelas contratadas. Essa informação aparece quando o cliente solicita o parcelamento da compra.<br><br> Por exemplo: 2 / 5 indica o pagamento da segunda parcela, de um total das 5 parcelas contratadas.<br> Quando o pagamento é liberado em uma única parcela essa coluna não estará preenchida. | Numeric |
-| Valor liquido da parcela (`INSTALLMENT_NET_AMOUNT`*) | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. | Numeric | 
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br>*PIX*:transferência.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) | MLB: Brasil | String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago.<br> Trava de recebível (TRAVA_DE_RECEBIVEL): trava de recebível. <br> | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. Quando "Fee discount" aparecer, entende-se como a redução na tarifa de venda pela participação em uma campanha comercial. | String (JSON)  |
+| Tarifa do Mercado Livre (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`.| String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp <br> -   Pix Saque (CASHOUT): Esta etiqueta indica que a transação corresponde a um Pix Saque <br> -   Pix Troco (EXTRACASHOUT): Esta etiqueta indica que a transação corresponde a um Pix Troco <br> -   Pix (PIX): Esta etiqueta indica que a transação corresponde a um pagamento via Pix. | String (JSON) | 
+| Número da parcela (`INSTALLMENT_NUMBER`*) | Indica o número da parcela que será paga, do total de parcelas contratadas. Essa informação aparece quando o cliente solicita o parcelamento da compra.<br><br> Por exemplo: 2 / 5 indica o pagamento da segunda parcela, de um total das 5 parcelas contratadas.<br> Quando o pagamento é liberado em uma única parcela essa coluna não estará preenchida. | Numeric (19,2) |
+| Valor liquido da parcela (`INSTALLMENT_NET_AMOUNT`*) | Mostra o valor líquido da parcela que será paga.<br> Essa informação aparece quando o cliente escolhe pagar o valor total da compra em parcelas mensais. | Numeric (19,2) | 
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 ----[mlu]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) | MLU: Uruguay | String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. Incluir IVA. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String |
-| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados por retenção de IVA. | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| `TAX_AMOUNT_TELCO`  | É o valor do imposto sobre as empresas de telecomunicações que é deduzido do valor bruto. | Numeric | 
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY): esta etiqueta indica que o pagamento foi feito via WhatsApp. | String | 
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) | MLU: Uruguay | String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. Incluir IVA. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String (JSON)  |
+| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados por retenção de IVA. | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| `TAX_AMOUNT_TELCO`  | É o valor do imposto sobre as empresas de telecomunicações que é deduzido do valor bruto. | Numeric (19,2) | 
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY): esta etiqueta indica que o pagamento foi feito via WhatsApp. | String (JSON) | 
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 ----[mco]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) | MCO: Colombia | String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. Incluir IVA. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String |
-| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados por retenção de IVA, ICA e fonte. | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| `TAX_AMOUNT_TELCO`  | Descrição do imposto retido por operação no `TAXES_AMOUNT`. O valor pode ser:<br><br> fuente<br>iva<br>ica<br><br>  | Numeric | 
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY): esta etiqueta indica que o pagamento foi feito via WhatsApp. | String | 
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) | MCO: Colombia | String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br>Contestação (CHARGEBACK)  o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento.<br>Transferência (WITHDRAWAL): retirada para a conta bancária.<br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada.<br>Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. Incluir IVA. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String (JSON)  |
+| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados por retenção de IVA, ICA e fonte. | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| `TAX_AMOUNT_TELCO`  | Descrição do imposto retido por operação no `TAXES_AMOUNT`. O valor pode ser:<br><br> fuente<br>iva<br>ica<br><br>  | Numeric (19,2) | 
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY): esta etiqueta indica que o pagamento foi feito via WhatsApp. | String (JSON) | 
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 ----[mlm]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) |  MLM: México | String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial. <br> Contestação (CHARGEBACK): o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br> Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento. <br> Transferência (WITHDRAWAL): retirada para a conta bancária. <br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada .<br> Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.Incluir IVA. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String |
-| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String | 
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) |  MLM: México | String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial. <br> Contestação (CHARGEBACK): o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br> Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento. <br> Transferência (WITHDRAWAL): retirada para a conta bancária. <br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada .<br> Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.Incluir IVA. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String (JSON)  |
+| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String (JSON) | 
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 ----[mlc]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) | MLC: Chile  | String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br> Contestação (CHARGEBACK): o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br> Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento. <br> Transferência (WITHDRAWAL): retirada para a conta bancária. <br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada .<br> Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.Incluir IVA. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String |
-| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String | 
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) | MLC: Chile  | String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> Devolução de dinheiro (REFUND): pagamento totalmente devolvido ou devolução parcial.<br> Contestação (CHARGEBACK): o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br> Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento. <br> Transferência (WITHDRAWAL): retirada para a conta bancária. <br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada .<br> Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.Incluir IVA. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados extras, como por exemplo, o ID dos reembolsos parciais ou dados fornecidos pelo vendedor no caso de integrações externas. | String (JSON)  |
+| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String (JSON) | 
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 ----[mpe]----
 
-| Nome da coluna do relatório | O que significa | Tipo de dado |
+| Nome da coluna do relatório | O que significa | Tipo de dado (longitude máxima) |
 |---|---|---|
-| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String |
-| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric |
-| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric |
-| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String |
-| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String |
-| País de origem da conta do Mercado Pago (`SITE`) | MPE: Perú | String |
-| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> *REFUND*: pagamento totalmente devolvido. <br> Contestação (CHARGEBACK): o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br> Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento. <br> Transferência (WITHDRAWAL): retirada para a conta bancária. <br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada .<br> Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String |
-| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric |
-| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric |
-| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime |
-| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.Incluir IVA. | Numeric |
-| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric |
-| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String |
-| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime |
-| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric |
-| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric |
-| Dados adicionais (`METADATA`) | Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. | String |
-| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric |
-| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric |
-| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric |
-| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric |
-| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric |
-| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String |
-| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String |
-| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String |
-| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String |
-| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String |
-| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String |
-| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String |
-| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric |
-| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric |
-| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String |
-| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String |
-| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String |
-| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String |
-| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String |
-| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime |
-| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric |
-| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String | 
-| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String |
-| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String |
-| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String |
-| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String |
+| Código de referência (`EXTERNAL_REFERENCE`) |  ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br><br> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br>  | String (200) |
+| ID da operação no Mercado Pago (`SOURCE_ID`) | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). Este campo pode conter valores alfanuméricos. | Numeric (19,2) |
+| Código da conta do vendedor (`USER_ID`) | Código da conta do vendedor. (Cust ID). | Numeric (19,2) |
+| Meio de pagamento (`PAYMENT_METHOD`) | Confira os [meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. | String (200) |
+| Tipo de meio de pagamento (`PAYMENT_METHOD_TYPE`) | Tipo de meio de pagamento. Pode ser:<br><br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br> | String (200) |
+| País de origem da conta do Mercado Pago (`SITE`) | MPE: Perú | String (200) |
+| Tipo de operação (`TRANSACTION_TYPE`) | Tipo de operação. Pode ser:<br><br> Pagamento aprovado (SETTLEMENT): pagamento aprovado.<br> *REFUND*: pagamento totalmente devolvido. <br> Contestação (CHARGEBACK): o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br> Contestação (DISPUTE): o comprador iniciou uma reclamação por esse pagamento. <br> Transferência (WITHDRAWAL): retirada para a conta bancária. <br> Cancelamento da transferência (WITHDRAWAL_CANCEL): retirada para a conta bancária que foi cancelada .<br> Saque (PAYOUT) saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. | String (200) |
+| Valor da compra (`TRANSACTION_AMOUNT`) | Valor bruto da transação. | Numeric (19,2) |
+| Moeda (`TRANSACTION_CURRENCY`) | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Valor recebido por compras com split de pagamento (`SELLER_AMOUNT`) | Valor recebido por compras com split. | Numeric (19,2) |
+| Data de origem (`TRANSACTION_DATE`) | Data de criação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Tarifas + IVA (`FEE_AMOUNT`) | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor.Incluir IVA. | Numeric (19,2) |
+| Valor líquido da operação que impactou no dinheiro (`SETTLEMENT_NET_AMOUNT`) | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da valor da compra (`TRANSACTION_AMOUNT`). | Numeric (19,2) |
+| Moeda da liquidação (`SETTLEMENT_CURRENCY`) | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String (200) |
+| Data de aprovação (`SETTLEMENT_DATE`) | Data de aprovação da transação. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Valor líquido da operação (`REAL_AMOUNT`) | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. | Numeric (19,2) |
+| Cupom de desconto (`COUPON_AMOUNT`) | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. | Numeric (19,2) |
+| Dados adicionais (`METADATA`) | Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. | String (JSON)  |
+| Tarifa do Mercado Livre + IVA (`MKP_FEE_AMOUNT`) | Tarifa do Mercado Livre. Incluir IVA. | Numeric (19,2) |
+| Tarifa por oferecer parcelas sem acréscimo (`FINANCING_FEE_AMOUNT`) | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. | Numeric (19,2) |
+| Frete (`SHIPPING_FEE_AMOUNT`) | Custo de envio. | Numeric (19,2) |
+| Impostos cobrados por retenções de IIBB (`TAXES_AMOUNT`) | Impostos cobrados. | Numeric (19,2) |
+| Parcelas (`INSTALLMENTS`) | Número de parcelas em que a transação foi realizada. | Numeric (19,2) |
+| Detalhes dos impostos (`TAX_DETAIL`) | Descrição do imposto retido por transação `TAXES_AMOUNT`. | String (200) |
+| ID do caixa (`POS_ID`) | ID do caixa, se o pagamento é feito através de um comércio físico. | String (200) |
+| Nome do caixa (`POS_NAME`) | Nome do caixa para o pagamento realizado em um comércio físico. | String (200) |
+| ID do caixa, definido pelo usuário (`EXTERNAL_POS_ID`) | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. | String (200) |
+| ID da loja (`STORE_ID`) | ID da loja se o pagamento é feito em um comércio físico. | String (200) |
+| Nome da loja  (`STORE_NAME`) | Nome da loja para o pagamento feito em um comércio físico. | String (200) |
+| ID da loja, definido pelo usuário (`EXTERNAL_STORE_ID`) | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. | String (200) |
+| ID do pedido (`ORDER_ID`) | Ordem de compra. | Numeric (19,2) |
+| ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric (19,2) |
+| Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String (200) |
+| ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric (19,2) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Detalhamento dos impostos no formato JSON. | String (JSON) |
+| Número de série da maquininha (S/N) (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String (200) |
+| Carteira digital (`POI_WALLET_NAME`) | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Banco de origem (`POI_BANK_NAME`) | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago. | String (200) |
+| Descrição (`DESCRIPTION`) | Ajuda a identificar transações ou operações registradas em um período de tempo.<br> Quando se tratar de pagamento parcelado, a linha será identificada como "INSTALLMENT". | String (200) |
+| Data de liberação do dinheiro (`MONEY_RELEASE_DATE`) | Data de previsão da liberação do pagamento de cada parcela ou da parcela única. | DateTime (yyyy-MM-dd'T'HH:mm:ssZ) |
+| Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric (19,2) |
+| Etiquetas da transação (`OPERATION_TAGS`) | São etiquetas para categorizar e/ou segmentar diferentes aspectos da transação, como por exemplo, os canais usados para fazer um pagamento. Eles são identificados como: <br><br>  - Pagamento via WhatsApp (WHATSAPP_PAY) Esta etiqueta indica que o pagamento foi feito via WhatsApp. | String (JSON) | 
+| Canal de venda (`BUSINESS_UNIT`) | Corresponde ao canal pelo qual uma venda foi gerada. Os canais são Mercado Pago, Mercado Livre, Mercado Shops e Delivery. | String (200) |
+| Plataforma de pagamento (`SUB_UNIT`) | Permite identificar o meio de pagamento usado para cobrar por uma venda com o Mercado Pago. | String (200) |
+| Código do produto SKU (`PRODUCT_SKU`) | Código SKU, com o qual você poderá identificar seus produtos vendidos. | String (200) |
+| Detalhe da venda (`SALE_DETAIL`) | Esta coluna apresenta informações detalhadas sobre os produtos vendidos, facilitando a reconciliação e o controle das suas vendas. Cada entrada nesta coluna mostra o primeiro elemento da venda, seguido do agrupamento dos demais produtos. É importante observar que, devido ao espaço, apenas os primeiros 100 caracteres do nome do produto serão mostrados. | String (200) |
 
 ------------
 
