@@ -195,7 +195,7 @@ To configure this validation, you need to extract the key contained in the heade
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
- * Parameters with the `_url` suffix come from query params. Example: [data.id_url] will be replaced by the corresponding event ID value (`data.id`). This query param can be found in the received notification.
+ * Parameters with the `_url` suffix come from query params. Example: `[data.id_url]` will be replaced by the corresponding event ID value (`data.id`) and, in this case, if the `data.id_url` is alphanumeric, it must be sent in lowercase. This query param can be found in the received notification.
  * `[ts_header]` will represent the `ts` value extracted from the `x-signature` header.
  * `[x-request-id_header]` should be replaced with the value received in the `x-request-id` header.
 

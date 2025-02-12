@@ -196,7 +196,7 @@ Para confirmar la validación, es necesario extraer la clave contenida en el *he
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
- * Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al ID del evento (`data.id`). Este query param puede ser hallado en la notificación recibida.
+ * Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al ID del evento (`data.id`) y, en este caso, si el `data.id_url` es alfanumérico, deberá enviarse obligatoriamente en minúsculas. Este query param puede ser hallado en la notificación recibida.
  * `[ts_header]` será el valor `ts` extraído del _header_ `x-signature`.
  * `[x-request-id_header]` deberá ser sustituido por el valor recibido en el _header_ `x-request-id`.
 
