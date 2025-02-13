@@ -1,6 +1,6 @@
 # Network Transaction ID - TID
 
-A partir de las nuevas reglas operacionales para la tokenización de operaciones de pagos recurrentes de las marcas _Visa_ y _Master_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería para que se utilice dentro de la multiadquirencia* y evitar posibles multas.
+A partir de las nuevas reglas operacionales para la tokenización de operaciones de pagos recurrentes de las marcas _Visa_ y _Master_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería para que se utilice dentro de la multiadquirencia y evitar posibles multas.
 
 > *De forma automática, la **multiadquirencia** involucra más reglas de aprobación y bases de datos para verificar la información de pago, garantizando la optimización de las aprobaciones de acuerdo con la marca de la tarjeta y el propio reintento del pago.
 
