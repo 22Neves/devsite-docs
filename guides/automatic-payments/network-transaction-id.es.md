@@ -36,7 +36,7 @@ Para los **pagos subsecuentes**, envíe nuevamente el _header_ `X-Expand-Respond
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
 ```
 
-En la respuesta, observe el retorno del `network_transaction_id` en el parámetro `expanded` y, a partir de eso, envíe la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro forward_data, o utilizando el _cURL_ a continuación.
+En la respuesta, observa el retorno del `network_transaction_id` en el parámetro `expanded` y, a partir de eso, envía la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro forward_data, o utilizando el _cURL_ a continuación.
 
 > WARNING
 >
