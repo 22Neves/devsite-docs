@@ -4927,7 +4927,7 @@
                                   "description": {
                                     "en": "Number of the property where the buyer lives. If you do not have a number, send \"N/A\"",
                                     "pt": "Número do imóvel onde mora o comprador. Caso não possua um número, enviar \"S/N\".",
-                                    "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envíe \"S/N\"."
+                                    "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envía \"S/N\"."
                                   }
                                 },
                                 "zip_code": {
