@@ -30,7 +30,7 @@ En la respuesta se podrá observar el retorno del `network_transaction_id` en el
 
 ## Procesar pagos subsecuentes
 
-Para los **pagos subsecuentes**, envíe nuevamente el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+Para los **pagos subsecuentes**, envía nuevamente el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
