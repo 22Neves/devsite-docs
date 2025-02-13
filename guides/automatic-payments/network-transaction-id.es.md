@@ -6,7 +6,7 @@ A partir de las nuevas reglas operacionales para la tokenización de operaciones
 
 ## Procesar el primer pago
 
-Para el **primer pago**, envíe el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+Para el **primer pago**, envía el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
