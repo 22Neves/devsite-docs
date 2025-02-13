@@ -1838,7 +1838,7 @@
         "description": {
           "en": "Find all the information related to generated preferences using specific filters or a specific date range. Only data from the last 90 days (3 months) will be brought. If you want to search for older data, use the GET for \"Get preference\"",
           "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica. Somente serão trazidos os dados dos últimos 90 dias (3 meses). Caso queira buscar dados mais antigos, utilize o GET de \"Obter preferência\"",
-          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado. Solo se traerán los datos de los últimos 90 días (3 meses) y, si desea buscar datos más antiguos, utilice el GET de \"Obtener preferencia\""
+          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado. Solo se traerán los datos de los últimos 90 días (3 meses). Si deseas buscar datos más antiguos, utiliza el GET de \"Obtener preferencia\""
         },
         "parameters": [
           {
