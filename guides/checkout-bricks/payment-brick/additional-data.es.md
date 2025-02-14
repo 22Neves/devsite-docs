@@ -15,51 +15,41 @@ Mira a continuación un ejemplo de uso:
 [[[
 ```Javascript
 const settings = {
- ...,
- callbacks: {
-   onSubmit: ({ selectedPaymentMethod, formData }, additionalData) => {
-     // callback llamado al usuario para hacer clic en el botón de envío de datos
-     // el parámetro additionalData es opcional, puede eliminarlo si lo desea
-     console.log(additionalData);
-     // ejemplo de envío de los datos recopilados por Brick a su servidor
-     return new Promise((resolve, reject) => {
-       let url = undefined;
-       if (selectedPaymentMethod === 'credit_card' || selectedPaymentMethod === 'debit_card') {
-         url = 'process_payment_card';
-       } else if (selectedPaymentMethod === 'bank_transfer') {
-         url = 'process_payment_pix';
-       } else if (selectedPaymentMethod === 'ticket') {
-         url = 'process_payment_ticket';
-       }
+  ...,
+  callbacks: {
+    onSubmit: ({ selectedPaymentMethod, formData }, additionalData) => {
+      // callback llamado al usuario para hacer clic en el botón de envío de datos
+      // el parámetro additionalData es opcional, puede eliminarlo si lo desea
+      console.log(additionalData);
+      // ejemplo de envío de los datos recopilados por Brick a su servidor
+      return new Promise((resolve, reject) => {
+        const url = "<YOUR-BACKEND-URL-HERE>";
 
+        if (selectedPaymentMethod === "wallet_purchase") {
+          // wallet_purchase (Cuenta Mercado Pago) no necesita ser enviado desde el backend
+          resolve();
+        }
 
-       if (url) {
-         fetch(url, {
-           method: "POST",
-           headers: {
-             "Content-Type": "application/json",
-           },
-           body: JSON.stringify(formData),
-         })
-           .then((response) => response.json())
-           .then((response) => {
-             // recibir el resultado del pago
-             resolve();
-           })
-           .catch((error) => {
-             // manejar la respuesta de error al intentar crear el pago
-             reject();
-           })
-       } else if (selectedPaymentMethod === 'wallet_purchase') {
-         // wallet_purchase (Conta Mercado Pago) no necesita ser enviada desde el backend
-         resolve();
-       } else {
-         reject();
-       }
-     });
-   },
- },
-}
+        fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((response) => response.json())
+          .then((response) => {
+            // recibir el resultado del pago
+            resolve();
+          })
+          .catch((error) => {
+            // manejar la respuesta de error al intentar crear el pago
+            reject();
+          });
+      });
+    },
+  },
+};
 ```
 ```react-jsx
 <Payment
