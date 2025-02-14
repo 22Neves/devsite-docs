@@ -19,7 +19,7 @@ const settings = {
   callbacks: {
     onSubmit: ({ selectedPaymentMethod, formData }, additionalData) => {
       // callback llamado al usuario para hacer clic en el botón de envío de datos
-      // el parámetro additionalData es opcional, puede eliminarlo si lo desea
+      // el parámetro additionalData es opcional y puedes eliminarlo si lo desea
       console.log(additionalData);
       // ejemplo de envío de los datos recopilados por Brick a su servidor
       return new Promise((resolve, reject) => {
