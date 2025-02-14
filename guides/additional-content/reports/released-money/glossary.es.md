@@ -49,7 +49,6 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | Cuenta de destino del retiro (`PAYOUT_BANK_ACCOUNT_NUMBER`) | Aquí se muestra el número completo de la cuenta a la que se envió dinero desde Mercado Pago. |
 | Código de producto SKU (`PRODUCT_SKU`) | Código con el que como vendedor podrás identificar tus productos. |
 | Detalle de la venta (`SALE_DETAIL`) | Esta columna ofrece información detallada sobre los artículos vendidos en cada entrega, facilitando la conciliación y el control de tus ventas. |
-| Tipo de dato | En esta columna se visualiza el tipo de dato asociado a cada campo, como la longitud máxima permitida y el formato correspondiente. Los valores permitidos son: <br> - `STRING(200)`: para cadenas de texto con un máximo de 200 caractere. <br> - `NUMERIC(19,2)`: para números con 19 dígitos, incluyendo 2 decimales. <br> - `STRING(JSON)`: para datos estructurados en formato JSON. <br> - `DateTime`: para fechas. |
 
 > NOTE
 >
