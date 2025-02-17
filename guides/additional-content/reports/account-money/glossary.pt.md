@@ -374,7 +374,6 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 
 ------------
 
-
 > NOTE
 >
 > Nota

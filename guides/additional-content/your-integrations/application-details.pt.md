@@ -63,7 +63,7 @@ Existem 2 formas de medir a qualidade da sua integração:
 
 Como resultado dessa medição, você obterá uma pontuação que indica quão segura e alinhada com as boas práticas de integração do Mercado Pago está a configuração da sua aplicação, juntamente com as recomendações necessárias para fazer ajustes, caso sejam necessários.
 
-Para saber mais detalhes, acesse a documentação sobre [qualidade de integração](/developers/pt/guides/additional-content/homologator/homologator).
+Para saber mais detalhes, acesse a documentação sobre [qualidade de integração](/developers/pt/docs/integration-quality).
 
 ## Teste de integração
 

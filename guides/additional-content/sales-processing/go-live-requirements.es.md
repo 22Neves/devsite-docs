@@ -32,7 +32,7 @@ La opción de pago por Pix solo se mostrará si existe una Clave Pix registrada 
 
 ### Medición de calidad
 
-Antes de salir a producción, y para poder ofrecer tanto al vendedor como al comprador la mejor experiencia, deberás evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) con nuestra herramienta de medición. Se trata de un proceso de certificación que te permitirá verificar si estás cumpliendo con los **estándares de calidad y seguridad de Mercado Pago** antes de comenzar a recibir pagos reales.
+Antes de salir a producción, y para poder ofrecer tanto al vendedor como al comprador la mejor experiencia, deberás evaluar la [calidad de tu integración](/developers/es/docs/integration-quality) con nuestra herramienta de medición. Se trata de un proceso de certificación que te permitirá verificar si estás cumpliendo con los **estándares de calidad y seguridad de Mercado Pago** antes de comenzar a recibir pagos reales.
 
 La medición podrá ser realizada de 2 formas: 
  * **Manual**, donde se requerirá que ingreses el `payment ID` de un pago realizado con credenciales productivas para poder hacer la medición cuando lo desees.
