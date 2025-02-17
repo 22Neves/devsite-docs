@@ -35,6 +35,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard | string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string | ['onboarding_credits',  'wallet_purchase'] |
 | ticket |  string | ['bolbradesco'] |
 | bankTransfer |  string | ['pix'] |
@@ -46,6 +47,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard |  string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard |  string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string |['onboarding_credits',  'wallet_purchase'] |
 | ticket |  string | ['pagofacil', 'rapipago'] |
 
@@ -56,6 +58,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard |  string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard |  string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  strinh | ['onboarding_credits',  'wallet_purchase'] |
 | ticket |  string | ['paycash', 'oxxo'] |
 | atm |  string | ['banamex',  'bancomer'] |
@@ -67,6 +70,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard |  string[] | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard |  string[] | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string[] | ['wallet_purchase'] |
 | ticket |  string[] | ['efecty'] |
 | bankTransfer |  string[] | ['pse'] |
@@ -78,6 +82,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard |  string[] | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard |  string[] |  Para obter os valores de cartões de débito disponíveis, consulte a API[Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string[] | ['wallet_purchase'] |
 | ticket |  string[] | ['redpagos', 'abitab'] |
 
@@ -88,6 +93,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard |  string[] | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard |  string[] |  Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string[] | ['wallet_purchase'] |
 | atm |  string[] | ['pagoefectivo_atm'] |
 
@@ -98,6 +104,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 |--- |--- | --- |
 | creditCard |  string |  Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard |  string |  Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string | ['wallet_purchase'] |
 
 ------------
