@@ -10,6 +10,8 @@ Comece sua configuração acessando sua conta do Mercado Pago. Uma vez lá, vá 
 
 Se você nunca criou um plano de assinatura antes, precisará clicar no botão **Cobrar com um Plano de Assinatura** para começar. Caso contrário, se você já acessou esta seção anteriormente, já estará na seção **Planos de Assinatura**.
 
+![Criar assinatura](/images/subscription-plans/Tus-suscripciones-comenzar-PT.png)
+
 Uma vez lá, clique no botão **Criar Novo Plano** e preencha os dados necessários:
 
 * **Nome do seu plano:** preencha este campo com o nome que você deseja atribuir ao plano de assinatura que está criando. Por exemplo: “Aulas de Dança.” Lembre-se de que este nome é público e as pessoas que se inscreverem poderão vê-lo.

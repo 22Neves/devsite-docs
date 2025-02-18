@@ -7,13 +7,22 @@ Next, learn everything you can do with your subscription plans:
 ## Manage charges for subscription plans
 
 To manage the charges of your subscription plans, go to [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), which is located in your Mercado Pago dashboard, in the left side menu.
-Once there, click on the **Charges** tab at the top of the panel. In this section, you can track the status of the charges and obtain metrics for your subscriptions.
+
+Once there, click on the **Charges** tab at the top of the panel. 
+
+In this section, you can track the status of the charges and obtain metrics for your subscriptions.
+
+![Subscriptions-Charges](/images/subscription-plans/Tus-suscripciones-cobros-EN.png)
 
 ## Manage subscribers of subscription plans
 
 To manage the charges of your subscription plans, go to [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), which is located in your Mercado Pago dashboard, in the left side menu.
+
 Once there, click on the **Subscribers** tab at the top of the panel. In this section, you can view all your subscribers, filter them by plans, sort them by custom time periods, manage them individually, and download reports.
+
 To see the details of a subscriber, click on **View Details** on the right side of each one. Also, by clicking on the three dots on the right, you can quickly access the options **Modify Amount**, **Pause Subscriber**, and **Cancel Subscriber**.
+
+![Subscriptions-Subscriptors](/images/subscription-plans/Tus-suscripciones-suscriptores-EN.png)
 
 ### Modify amount
 
@@ -55,6 +64,8 @@ You can access your subscription plans and view them, modify them, or cancel the
 2. Click on the **Plans** tab at the top of the panel.
 3. Click on the three dots located on the right side of the subscription plan you wish to manage. A menu will be displayed.
 4. Click on **View Details** to learn about the features of your subscription plan. If you wish to modify it, click on **Modify**. If you wish to delete it, click on **Cancel**.
+
+![Subscriptions-Plans](/images/subscription-plans/Tus-suscripciones-planes-EN.png)
 
 ## Cancel a subscription plan
 

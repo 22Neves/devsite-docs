@@ -10,6 +10,8 @@ Comienza tu configuración ingresando a tu cuenta de Mercado Pago. Una vez allí
 
 Si nunca creaste un plan de suscripción antes, deberás hacer clic en el botón **Cobrar con un plan de suscripción** para comenzar. De lo contrario, si accediste  a esta sección con anterioridad, ya te encontrarás dentro de la sección **Planes de suscripción**.
 
+![Crear suscripción](/images/subscription-plans/Tus-suscripciones-comenzar-ES.png)
+
 Una vez allí, haz clic en el botón **Crear nuevo plan** y completa los datos requeridos:
 
 * **Nombre de tu plan:** completa este campo con el nombre que le quieras destinar al plan de suscripción que estás creando. Por ejemplo: “Clases de baile”. Ten en cuenta que este nombre es público y las personas que se suscriban podrán verlo.

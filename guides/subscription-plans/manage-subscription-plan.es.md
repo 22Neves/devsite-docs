@@ -7,13 +7,22 @@ A continuación, conoce todo lo que puedes hacer con tus planes de suscripción:
 ## Gestionar cobros por planes de suscripción
 
 Para gestionar los cobros de tus planes de suscripción, dirígete a [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que se encuentra en tu panel de Mercado Pago, dentro del menú lateral izquierdo.
-Una vez allí, haz clic en la pestaña **Cobros** que se encuentra en la parte superior del panel. En esta sección podrás seguir el estado de los cobros y obtener métricas de tus suscripciones.
+
+Una vez allí, haz clic en la pestaña **Cobros** que se encuentra en la parte superior del panel. 
+
+En esta sección podrás seguir el estado de los cobros y obtener métricas de tus suscripciones.
+
+![Suscripciones-Cobros](/images/subscription-plans/Tus-suscripciones-cobros-ES.png)
 
 ## Gestionar suscriptores de planes de suscripción
 
 Para gestionar los cobros de tus planes de suscripción, dirígete a [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que se encuentra en tu panel de Mercado Pago, dentro del menú lateral izquierdo.
+
 Una vez allí, haz clic en la pestaña **Suscriptores** que se encuentra en la parte superior del panel. En esta sección podrás ver todos tus suscriptores, filtrarlos por planes, ordenarlos por período de tiempo personalizado, administrarlos individualmente y descargar reportes.
+
 Para ver los detalles de un suscriptor, haz clic en **Ver detalles** al costado derecho de cada uno. Además, al hacer clic en los tres puntos de la derecha, podrás acceder rápidamente a las opciones **Modificar monto**, **Pausar suscriptor** y **Cancelar suscriptor**.
+
+![Suscripciones-Suscriptores](/images/subscription-plans/Tus-suscripciones-suscriptores-ES.png)
 
 ### Modificar monto
 
@@ -56,6 +65,8 @@ Puedes acceder a tus planes de suscripciones y verlos, modificarlos o cancelarlo
 2. Haz clic en la pestaña **Planes**, que se encuentra en la parte superior del panel.
 3. Haz clic en el los tres puntos que se encuentran a la derecha del plan de suscripción que deseas gestionar. Se desplegará un menú. 
 4. Haz clic en **Ver detalles** para conocer las características de tu plan de suscripción. Si deseas modificarlo, haz clic en **Modificar**. Si deseas eliminarlo, haz clic en **Cancelar**.
+
+![Suscripciones-Planes](/images/subscription-plans/Tus-suscripciones-planes-ES.png)
 
 ## Cancelar un plan de suscripción
 

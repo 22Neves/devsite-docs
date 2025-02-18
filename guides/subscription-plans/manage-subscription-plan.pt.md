@@ -7,13 +7,22 @@ A seguir, conheça tudo o que você pode fazer com seus planos de assinatura:
 ## Gerenciar cobranças por planos de sssinatura
 
 Para gerenciar as cobranças dos seus planos de assinatura, vá até [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que está localizado no seu painel do Mercado Pago, dentro do menu lateral esquerdo.
-Uma vez lá, clique na aba **Cobranças** que fica na parte superior do painel. Nesta seção, você poderá acompanhar o status das cobranças e obter métricas das suas assinaturas.
+
+Uma vez lá, clique na aba **Cobranças** que fica na parte superior do painel. 
+
+Nesta seção, você poderá acompanhar o status das cobranças e obter métricas das suas assinaturas.
+
+![Assinaturas-Cobranças](/images/subscription-plans/Tus-suscripciones-cobros-PT.png)
 
 ## Gerenciar assinantes de planos de assinatura
 
 Para gerenciar as cobranças dos seus planos de assinatura, vá até [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que está localizado no seu painel do Mercado Pago, dentro do menu lateral esquerdo.
+
 Uma vez lá, clique na aba **Assinantes** que fica na parte superior do painel. Nesta seção, você poderá ver todos os seus assinantes, filtrá-los por planos, ordená-los por período de tempo personalizado, gerenciá-los individualmente e baixar relatórios.
+
 Para ver os detalhes de um assinante, clique em **Ver Detalhes** ao lado direito de cada um. Além disso, ao clicar nos três pontos à direita, você poderá acessar rapidamente as opções **Modificar Valor**, **Pausar Assinante** e **Cancelar Assinante**.
+
+![Assinaturas-assinantes](/images/subscription-plans/Tus-suscripciones-suscriptores-PT.png)
 
 ### Modificar valor
 
@@ -35,6 +44,7 @@ Para pausar um assinante, siga estes passos:
 3. Clique no botão **Sim, pausar assinante** para confirmar.
 
 ### Cancelar assinante
+
 Você pode cancelar um assinante e parar de receber seus pagamentos. Ao realizar a cancelação, o Mercado Pago enviará uma notificação por e-mail.
 
 Para cancelar um assinante, siga estes passos:
@@ -55,6 +65,8 @@ Você pode acessar seus planos de assinatura e visualizá-los, modificá-los ou 
 2. Clique na aba **Planos**, que está na parte superior do painel.
 3. Clique nos três pontos localizados à direita do plano de assinatura que deseja gerenciar. Um menu será exibido.
 4. Clique em **Ver Detalhes** para conhecer as características do seu plano de assinatura. Se desejar modificá-lo, clique em **Modificar**. Se desejar excluí-lo, clique em **Cancelar**.
+
+![Assinaturas-Planos](/images/subscription-plans/Tus-suscripciones-planes-PT.png)
 
 ## Cancelar um plano de assinatura
 
