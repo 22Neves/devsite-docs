@@ -17,7 +17,6 @@ Algunos términos frecuentes cuyo uso de mayúsculas puede generar dudas, son:
 - IPN
 - OAuth
 - iSET
-- MP Delivery
 
 <br>
 

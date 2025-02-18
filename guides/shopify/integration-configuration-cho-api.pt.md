@@ -77,7 +77,7 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 >
 > Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
 > <br><br>
-> Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
+> Lembre-se de que, ao alterar a senha da Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
 12. Por fim, clique na opção **Verificar ativação** do Mercado Pago Cartões, vá para a seção de "Configurações" da Shopify e clique em **Ativar** para finalizar a instalação.
 
@@ -232,21 +232,14 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção correspondente para permitir que seus clientes parcelem suas compras sem acréscimos, utilizando qualquer cartão de crédito. Para isso, siga os passos abaixo.
 
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Vá até a seção **Seu negócio > Custos** e selecione a opção **Checkout**.
 
-![configure installments 1](/images/shopify/configure-installments-1-pt.png)
+2. Vá até a seção **Seu negócio > Custos** e selecione a opção **Checkout**.
 
 3. Em "Parcelas sem acréscimo", clique em **Configurar parcelamento**.
 
-![configure installments 2](/images/shopify/configure-installments-2-pt.png)
-
 4. Em seguida, clique em **Configurar parcelamento sem acréscimo**.
 
-![configure installments 3](/images/shopify/configure-installments-3-pt.png)
-
 5. Ative a opção **Oferecer parcelamento sem acréscimo** e escolha quantas parcelas deseja oferecer na sua loja.
-
-![configure installments 4](/images/shopify/configure-installments-4-pt.png)
 
 6. Feitas as configurações de parcelamento, vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
 7. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.

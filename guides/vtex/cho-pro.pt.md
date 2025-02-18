@@ -11,7 +11,6 @@ Com o Checkout Pro, o comprador será direcionado para o site do Mercado Pago, n
 Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios que você já configurou anteriormente em sua conta do Mercado Pago:
 
 ----[mlb]----
-
 | Meio de pagamento | Descrição |
 |---|---|
 | Cartões | Permite integração com cartão de crédito e débito. |
@@ -21,9 +20,7 @@ Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios
 | Meios offline | Você pode oferecer pagamentos por meios offline, como Pix ou boleto bancário |
 
 ------------
-
 ----[mlm]----
-
 | Meio de pagamento | Descrição |
 |---|---|
 | Cartões | Permite integração com cartão de crédito e débito. |
@@ -31,11 +28,8 @@ Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios
 | Saldo em conta Mercado Pago | Permite pagamentos com o dinheiro disponível na conta do Mercado Pago do comprador. |
 | Meios offline | Você pode oferecer pagamentos por meios offline,  como Oxxo, Paycash, Bancomer e Banamex. |
 
-
 ------------
-
 ----[mla]----
-
 | Meio de pagamento | Descrição |
 |---|---|
 | Cartões | Permite integração com cartão de crédito e débito. |
@@ -44,9 +38,7 @@ Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios
 | Meios Offline | Você pode oferecer pagamentos por meios offline, como Rapipago, Pago Fácil, Provincia Net ou Red Link. |
 
 ------------
-
 ----[mpe]----
-
 | Meio de pagamento | Descrição |
 | --- | --- |
 | Cartões | Permite integração com cartão de crédito e débito. |
@@ -54,9 +46,7 @@ Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios
 | Meios offline | Você pode oferecer pagamentos com Pago Efectivo. |
 
 ------------
-
 ----[mco]----
-
 | Meio de pagamento | Descrição |
 | --- | --- |
 | Cartões | Permite integração com cartão de crédito e débito. |
@@ -64,9 +54,7 @@ Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios
 | Meios offline | Você pode oferecer pagamentos com PSE ou Efecty. |
 
 ------------
-
 ----[mlu]----
-
 | Meio de pagamento | Descrição |
 | --- | --- |
 | Cartões | Permite integração com cartão de crédito e débito. |
@@ -74,9 +62,7 @@ Ao configurar o Checkout Pro, você pode oferecer pagamentos com os mesmos meios
 | Meios offline | Você pode oferecer pagamentos com Abitab ou Redpagos. |
 
 ------------
-
 ----[mlc]----
-
 | Meio de pagamento | Descrição |
 | --- | --- |
 | Cartões | Permite integração com cartão de crédito e débito. |

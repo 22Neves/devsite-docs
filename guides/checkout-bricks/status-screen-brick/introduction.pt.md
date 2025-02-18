@@ -9,7 +9,7 @@ live_demo_code_action:
  - title: Experimente nosso Brick
  - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
  - link: /developers/pt/live-demo/status-screen-brick
- - image:https://http2.mlstatic.com/frontend-assets/dx-devsite/images/status-screen-brick.png
+ - image: /checkout-bricks/live-demo-status-brick.png
  - linkName: Demo
  - buttonDescription: Construir seu Status Screen Brick
 ---
@@ -18,4 +18,12 @@ live_demo_code_action:
 
 O layout do Status Screen Brick foi construído com base nas melhores práticas de UX para que seja possível entregar ao comprador a melhor experiência sem que você precise se preocupar com detalhes de design.
 
+----[mlc]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-pt.jpg)
+
+------------
+----[mlb, mlm, mla, mco, mlu, mpe]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-pt.gif)
+
+------------

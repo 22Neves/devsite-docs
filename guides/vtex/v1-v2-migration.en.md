@@ -39,8 +39,6 @@ If you already have a MercadoPagoV1 gateway affiliation, you will now need to cr
 
 6. Click on **Save**, and you are done! Your MercadoPagoV2 gateway affiliation is set.
 
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
-
 ## 2. Configure Payment Methods
 
 If you have already set up your payment methods with the MercadoPagoV1 affiliation, you will need to **migrate to MercadoPagoV2 for each of the available payment methods**. 
@@ -53,7 +51,5 @@ To change the configuration of your payment methods, follow the steps below:
 2. On the upper panel, select  the **Payment plans** option, and choose the payment method you wish to configure.
 3. On **Affiliation process**, change from MercadoPagoV1 to **MercadoPagoV2**.
 4. Repeat the process with all the payment methods you have already made available on your platform.
-
-![Configure v2 in payment methods](/images/vtex/migration-payment-conditions.gif) 
 
 Upon completing the process, you will have your new MercadoPagoV2 gateway affiliation configured and you will be able to continue operating with Mercado Pago, benefiting from the new advantages that this connector offers.

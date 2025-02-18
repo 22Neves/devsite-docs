@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Server-side
  - message: Al utilizar nuestros SDKs, accedes fácilmente a las funcionalidades server-side de nuestras soluciones. Te permitirán crear diferentes transacciones, consultar sus estados, integrar pagos con tarjetas u otros medios, y realizar reembolsos o contracargos.
- - media_image: /sdk/library-media-3.png
+ - media_image: /sdk/library-media3.png
 ---
 
 ---

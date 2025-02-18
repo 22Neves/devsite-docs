@@ -29,5 +29,3 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 4. Para confirmar los cambios, haz clic en **Guardar orden de visualización**.
 
 ¡Listo! La nueva orden de visualización de los proveedores de pagos está configurada.
-
-![mercado-pago-ordena](/images/shopify/mercado-pago-ordena-pt.gif)

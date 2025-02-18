@@ -18,8 +18,6 @@ La activación de estos tópicos dependerá de la solución de Mercado Pago que 
 | Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>Código QR  |
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh` / `chargebacks`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
 ----[mla, mlm, mlb]----| Finalización, cancelación o errores al procesar intenciones de pago de dispositivos Mercado Pago Point. | Integraciones Point | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
-----[mla]----| Creación, actualización o cancelación de pedidos. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
-
 
 Una vez configuradas, las notificaciones permiten programar el backend de las tiendas para, por ejemplo, actualizar el estado de pedidos cuando un pago es creado, enviar un e-mail de confirmación cuando un pedido es actualizado en Mercado Pago, actualizar el registro de un cliente cuando realice una vinculación de un plan de suscripción, entre otras acciones recurrentes de los eventos detallados en la tabla anterior.
 

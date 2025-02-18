@@ -30,3 +30,58 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 - [Obtener order por ID](/developers/es/reference/order/in-person/point/get-order/get): Permite consultar toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación.
 - [Cancelar order por ID](/developers/es/reference/order/in-person-payments/point/cancel-order/post): Permite cancelar una order creada para Mercado Pago Point utilizando el ID de referencia obtenido en la respuesta a su creación.
 - [Reembolsar una order](/developers/es/reference/order/in-person-payments/point/refund-order/post): Permite crear una devolución total de una transacción de pago asociada a una order para Mercado Pago Point.
+
+## Configuración de impresiones
+
+La API de Impresiones ofrece una solución práctica para conectar tus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tengas configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
+
+Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
+
+### Impresión de facturas y recibos electrónicos
+
+Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
+
+> WARNING
+> 
+> Importante
+>
+> El DTE enviado debe ser compatible con los formatos definidos por el [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
+
+| Tipo de documento                     | Descripción                                                                                     |
+|---------------------------------------|-------------------------------------------------------------------------------------------------|
+| Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
+| Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, que tiene validez contable y tributaria. |
+
+### Tags personalizadas
+
+Las tags personalizadas permiten ajustar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
+
+> Las tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias tags.
+
+| Tag        | Función                                     | Ejemplo                          |
+|------------|---------------------------------------------|----------------------------------|
+| `{b}`      | Negrita                                    | `{b}Texto en negrita{/b}`      |
+| `{w}`      | Letra grande                               | `{w}Texto en letra grande{/w}`  |
+| `{s}`      | Letra pequeña                              | `{s}Texto en letra pequeña{/s}` |
+| `{br}`     | Salto de línea                             | `{br}`                          |
+| `{left}`   | Alinear a la izquierda                     | `{left}Texto alineado a la izquierda{/left}` |
+| `{center}` | Centrar texto                              | `{center}Texto centrado{/center}` |
+| `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
+| `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
+
+### Configuración de la impresión
+
+Utilice la API para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint.
+
+> WARNING
+>
+> Importante
+>
+> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+
+Los endpoints disponibles son:
+   - [Crear acción de la terminal](/developers/en/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de terminal para Mercado Pago Point.
+   - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción mediante el ID obtenido en la respuesta a su creación.
+   - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". 
+
+Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.

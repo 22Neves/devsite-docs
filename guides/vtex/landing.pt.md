@@ -75,7 +75,7 @@ available_payments: credit, debit, mercadopago, cuotas_sin_tarjeta_mlm, efectivo
 ----[mlu]---- 
 
 ---
-available_payments: credit, debit, ATM
+available_payments: credit, debit, atm
 
 ----
 ------------
@@ -83,7 +83,7 @@ available_payments: credit, debit, ATM
 ----[mco]---- 
 
 ---
-available_payments: credit, debit, mercadopago, pse, ATM
+available_payments: credit, debit, mercadopago, pse, atm
 
 ----
 ------------
@@ -91,7 +91,7 @@ available_payments: credit, debit, mercadopago, pse, ATM
 ----[mlc]---- 
 
 ---
-available_payments: credit, debit, mercadopago, ATM
+available_payments: credit, debit, mercadopago, atm
 
 ----
 ------------
@@ -99,7 +99,7 @@ available_payments: credit, debit, mercadopago, ATM
 ----[mpe]---- 
 
 ---
-available_payments:  credit, debit, mercadopago, atm
+available_payments:  credit, debit, mercadopago, yape, atm
 
 ----
 ------------

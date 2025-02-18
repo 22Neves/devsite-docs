@@ -364,6 +364,11 @@ Consulte este [tema](/developers/es/docs/checkout-bricks/payment-brick/advanced-
 ![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mla-es.png)
 
 ------------
+----[mlm]----
+
+![review-confirm-payment-mla](checkout-bricks/review-confirm-payment-mlm-es.png)
+
+------------
 
 ## Personalización de textos
 

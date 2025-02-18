@@ -814,9 +814,9 @@
           "qr-code"
         ],
         "description": {
-          "en": "Find all the information of the orders generated through specific filters and within a specific date range",
-          "pt": "Encontre todas as informações dos pedidos gerados através de filtros específicos e por um intervalo de datas específico",
-          "es": "Encuentra toda la información de las órdenes generadas a través de filtros específicos y por un rango de fechas determinado"
+          "en": "Find all the information of the orders generated through specific filters and within a specific date range. Only data from the last 90 days (3 months) will be brought, and if you want to search for older data, use the GET for \"Get order\"",
+          "pt": "Encontre todas as informações dos pedidos gerados através de filtros específicos e por um intervalo de datas específico. Somente serão trazidos os dados dos últimos 90 dias (3 meses) e, caso queira buscar dados mais antigos, utilize o GET de \"Obter pedido\"",
+          "es": "Encuentra toda la información de las órdenes generadas a través de filtros específicos y por un rango de fechas determinado. Solo se traerán los datos de los últimos 90 días (3 meses) y, si desea buscar datos más antiguos, utilice el GET de \"Obtener orden\""
         },
         "parameters": [
           {

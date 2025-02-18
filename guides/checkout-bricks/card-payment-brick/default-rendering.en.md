@@ -6,7 +6,7 @@ Before rendering the Card Payment Brick, first execute the [initialization steps
 >
 > Note
 >
-> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/card-payment.md).
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/card-payment.md).
 
 ## Configure the Brick
 
@@ -235,4 +235,11 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 The result of rendering the Brick should look like the image below.
 
+----[mlc]----
+![cardform](checkout-bricks/card-form-mlc-en.png)
+
+------------
+----[mlb, mla, mlm, mpe, mlu, mco]----
 ![cardform](checkout-bricks/card-form-en.png)
+
+------------

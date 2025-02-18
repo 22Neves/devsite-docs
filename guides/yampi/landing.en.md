@@ -22,7 +22,7 @@ bullet_section_with_media:
  - benefit_message: The entire purchase process takes place within the online store environment, optimizing the buyer's payment steps.
  - benefit_title: Various payment methods
  - benefit_message: Receive payments with the main payment methods accepted in the country (boleto bancário, credit card and Pix).
- - image: /yampi/landing-en.png
+ - image: /yampi/landing2.png
 ---
  
 --- mini_landing_separator ---

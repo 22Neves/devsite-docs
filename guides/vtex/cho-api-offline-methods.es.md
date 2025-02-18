@@ -1,7 +1,6 @@
 # Medios de pago offline
 
 ----[mlb]----
-
 Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por medios offline, como Boleto Bancário o Pix.
 
 > WARNING
@@ -11,9 +10,7 @@ Configurando Checkout Transparente en tiendas VTEX, puedes ofrecer pagos por med
 > Para ofrecer Pix como método de pago, debes asegurarte, primero, de tener configurada tu Clave Pix.  Si aún no las creaste, mira el [video](https://www.youtube.com/watch?v=60tApKYVnkA) y consulta el paso a paso. 
 
 ------------
-
 ----[mco]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como PSE o Efecty.
 
 > WARNING
@@ -27,41 +24,37 @@ Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offli
 ------------
 
 ----[mla]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Fácil, Rapipago, Red Link o Provincia Net.
 
 ------------
-
 ----[mlm]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Oxxo, Paycash, Banamex o Bancomer.
+
 ------------
-
-
 ----[mlu]----
-
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Abitab o Redpagos.
+
 ------------
 
 ----[mlc]----
 
 Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Wip.
-------------
 
+------------
 ----[mpe]----
 
-Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Efectivo.
+Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offline, como Pago Efectivo y Yape.
+
 ------------
 
+Para configurar estos medios de pago, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos > Configuración > Planes de pago**. Luego, sigue las instrucciones a continuación:
 
-Para configurar estos medios de pago, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
-
-1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”.
-2. Dentro de la categoría **Otro**, busca por el medio de pago offline que estás queriendo ofrecer. Puedes elegir más de uno, pero deberás realizar las configuraciones siguientes de manera individual.
+1. Haz clic en el botón **+ (Agregar nuevo plan de pago para ...)**.
+2. Dentro de la categoría "Otro", busca por el **medio de pago offline** que quieres ofrecer. Puedes elegir más de uno, pero deberás realizar las configuraciones siguientes de manera individual.
 3. Completa los campos que te mostrará la pantalla siguiente:
     1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
-    2. En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
-    3. En el campo **Status**, activa la condición de pago utilizando el botón slider. 
+    2. En "Proceso con la afiliación", selecciona **MercadoPagoV2**. 
+    3. En el campo "Status", **activa** la condición de pago utilizando el botón slider. 
 
 4. Haz clic en **Guardar** para activar la configuración.
 
@@ -73,7 +66,6 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 > El método de pago Efecty no está disponible en el conector **MercadoPagoV2**. Para poder procesar pagos con este método, asegúrate de configurar la condición de pago como **MercadoPagoOff**.
 
 ------------
-![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-es.gif)
 
 > NOTE
 >

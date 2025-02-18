@@ -170,39 +170,6 @@ If you integrated with QR Code and wish to receive notifications, please note th
 
 ------------
 
-----[mla]----
-## Delivery
-
-Below, you can see an example of a notification for the `Delivery` topic, along with descriptions of each notified field.
-
-```json
-{
-    _id: "f9f08571-1f65-4c46-9e0a-c0f43faas1557e",
-    topic: "delivery",
-    resource: "/shipments/12345",
-    user_id: 1793791954,
-    application_id: "924152943338358",
-    sent: "2021-11-01T02:02:02.002Z",
-    attempts: 1,
-    received: "2021-11-01T02:02:02.002Z",
-    actions: []
-}
-```
-
-| Field | Description |
-|---|---|
-| `_id `| Notification ID received. |
-| `topic`  | Topic for which the notification is being received. |
-| `resource` | Notified event. Indicates whether it's the creation of a resource or an update. |
-| `user_id` | User identifier for whom the notification is sent. |
-| `sent` | Notification sending date. |
-| `attempts` | Number of times a notification has been sent. |
-| `received` | Notification reception date. |
-
-Furthermore, please note that upon receiving a notification from this topic, you must confirm its receipt by returning an `HTTP STATUS 200 (OK)` within 500 ms. Otherwise, the system will continue to send new notification attempts every 12 hours.
-
-------------
-
 ## Payment links
 
 It is not possible to configure notifications for Payment links generated through the Mercado Pago Panel.

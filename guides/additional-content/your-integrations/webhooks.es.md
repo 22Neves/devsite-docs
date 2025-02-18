@@ -11,7 +11,7 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 | Tipo de configuración | Descripción |
 |---|---|
 | [Configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones) | Permite configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas en caso de ser necesario, y validar el origen de la notificación utilizando una firma secreta----[mla, mlb, mlu, mlc]---- (excepto en notificaciones para integraciones con Código QR)------------. |
-| [Configuración durante la creación de pagos](/developers/es/docs/your-integrations/notifications/webhooks#configuracinalcrearpagos) | Permite la configuración específica de notificaciones para cada pago, preferencia u orden ----[mla]----No está permitida para integraciones con Mercado Pago Point ni Mercado Pago Delivery----------------[mlb, mlm]----No está permitida para integraciones con Mercado Pago Point------------. |
+| [Configuración durante la creación de pagos](/developers/es/docs/your-integrations/notifications/webhooks#configuracinalcrearpagos) | Permite la configuración específica de notificaciones para cada pago, preferencia u orden ----[mlb, mlm, mla]----No está permitida para integraciones con Mercado Pago Point------------. |
 
 > WARNING
 >
@@ -20,7 +20,6 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 > Las URLs configuradas durante la creación de un pago tendrán prioridad por sobre aquellas configuradas a través de Tus integraciones.
 
 Una vez que las notificaciones sean configuradas, consulta las [acciones necesarias después de recibir una notificación](/developers/es/docs/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) para validar que las mismas fueron debidamente recibidas.
-
 
 ## Configuración a través de Tus integraciones
 
@@ -34,7 +33,6 @@ Puedes configurar notificaciones para cada una de tus aplicaciones directamente 
 > Importante
 >
 > Este método de configuración no está disponible para integraciones con ----[mla, mlb, mlu, mlc]----Código QR ni------------ Suscripciones. Para configurar notificaciones con alguna de estas dos integraciones, utiliza el método [Configuración durante la creación de un pago](/developers/es/docs/your-integrations/notifications/webhooks#configuracinalcrearpagos).
-
 
 ### 1. Indicar URLs de notificación y configurar eventos
 
@@ -71,7 +69,6 @@ Para hacerlo, sigue el paso a paso a continuación:
 | Recuperación y actualización información de tarjetas dentro de Mercado Pago. | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh`  | Checkout Pro<br>Checkout API<br>Checkout Bricks |
-| Creación, actualización o cancelación de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |
 | Finalización, cancelación o errores al procesar intenciones de pago de dispositivos Mercado Pago Point. | Integraciones Point | `point_integration_wh` | Mercado Pago Point | 
 
 ------------
@@ -199,7 +196,7 @@ Para confirmar la validación, es necesario extraer la clave contenida en el *he
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
- * Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al ID del evento (`data.id`). Este query param puede ser hallado en la notificación recibida.
+ * Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: `[data.id_url]` se sustituirá por el valor correspondiente al ID del evento (`data.id`) y, en este caso, si el `data.id_url` es alfanumérico, deberá enviarse obligatoriamente en minúsculas. Este query param puede ser hallado en la notificación recibida.
  * `[ts_header]` será el valor `ts` extraído del _header_ `x-signature`.
  * `[x-request-id_header]` deberá ser sustituido por el valor recibido en el _header_ `x-request-id`.
 
@@ -477,16 +474,7 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 
 Durante el proceso de creación de pagos, preferencias u órdenes presenciales, es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url` e implementando un receptor de notificaciones. 
 
-----[mla]----
-> WARNING
->
-> Importante
-> 
-> No es posible configurar notificaciones para los tópicos `point_integration_wh` y `delivery` utilizando este método. Para activar estos tópicos, utiliza la [configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
-
-------------
-
-----[mlb, mlm]----
+----[mlb, mlm, mla]----
 
 > WARNING
 >
@@ -495,7 +483,6 @@ Durante el proceso de creación de pagos, preferencias u órdenes presenciales, 
 > No es posible configurar notificaciones para el tópico `point_integration_wh` utilizando este método. Para activarlo, utiliza la [configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
 
 ------------
-
 A continuación, explicamos cómo configurar notificaciones al crear un pago utilizando nuestros SDKs.
 
 1. En el campo `notification_url`, indica la URL desde la que se recibirán las notificaciones, como se muestra a continuación. Para recibir exclusivamente Webhooks y no IPN, agrega el parámetro `source_news=webhooks` a la `notification_url`. Por ejemplo: `https://www.yourserver.com/notifications?source_news=webhooks`.
@@ -802,30 +789,22 @@ Luego de realizar la configuración  necesaria, la notificación Webhook será e
 | **action** | Evento notificado, que indica si es una actualización de un recurso o la creación de uno nuevo | `payment.created` |
 | **data.id**  | ID del pago, de la orden comercial o del reclamo. | `999999999` |
 
-----[mla]----
-> WARNING
->
-> Importante
->
-> Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones](/developers/es/docs/your-integrations/notifications/additional-info).
-------------
-
-----[mlb, mlm]----
+----[mlb, mlm, mla]----
 > WARNING
 >
 > Importante
 >
 > Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `point_integration_wh`, `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones](/developers/es/docs/your-integrations/notifications/additional-info).
-------------
 
+------------
 ----[mlu, mlc, mco, mpe]----
 > WARNING
 >
 > Importante
 >
 > Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones](/developers/es/docs/your-integrations/notifications/additional-info).
-------------
 
+------------
 
 ## Acciones necesarias después de recibir la notificación
 
@@ -869,7 +848,6 @@ Luego de responder la notificación, confirmando su recibimiento, puedes obtener
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obtener plan de suscripción](/developers/es/reference/subscriptions/_preapproval_plan_search/get)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obtener información de facturas](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obtener intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
-| delivery | `https://api.mercadopago.com/proximity-integration/v1/orders/{shipment_id}` | [Obtener pedido](/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obtener detalles del reclamo](/developers/es/reference/claims/get-claim-details/get) |
 | topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 | topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get) |

@@ -14,9 +14,9 @@
           "checkout-pro"
         ],
         "description": {
-          "en": "Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow.",
-          "pt": "Gerar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento.",
-          "es": "Genera una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago."
+          "en": "Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow",
+          "pt": "Gerar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento",
+          "es": "Genera una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago"
         },
         "requestBody": {
           "content": {
@@ -168,6 +168,124 @@
                             "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                           },
                           "required": true
+                        },
+                        "fiscal_data": {
+                          "description": {
+                            "en": "Presents the tax data of the item.",
+                            "es": "Presenta los datos fiscales del artículo.",
+                            "pt": "Apresenta os dados fiscais do item."
+                          },
+                          "enum": [
+                            {
+                              "title": "sat",
+                              "example": "123",
+                              "type": "string",
+                              "description": {
+                                "en": "Provides the SAT (Authenticator and Transmitter System for Electronic Tax Receipts) category of the item.",
+                                "es": "Informa la categoría SAT (Sistema Autenticador y Transmisor de Comprobante Fiscal Electrónico) del artículo.",
+                                "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                              }
+                            },
+                            {
+                              "title": "sat_measurement_id",
+                              "example": "H87",
+                              "type": "string",
+                              "description": {
+                                "en": "Indicates whether the item is dangerous or not.",
+                                "es": "Indica si el artículo es peligroso o no.",
+                                "pt": "Indica se o item é perigoso ou não."
+                              }
+                            },
+                            {
+                              "title": "measurement_unit",
+                              "example": "Pieza",
+                              "type": "string",
+                              "description": {
+                                "en": "If the item is considered dangerous, specifies the type of the dangerous material.",
+                                "es": "En caso de que sea un artículo considerado peligroso, informa cuál es el tipo de material peligroso.",
+                                "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                              }
+                            },
+                            {
+                              "title": "package_id",
+                              "example": "4G",
+                              "type": "string",
+                              "description": {
+                                "en": "Identification of the package key.",
+                                "es": "Identificación de la clave del paquete.",
+                                "pt": "Identificação da chave do pacote."
+                              }
+                            },
+                            {
+                              "title": "dangerous_material_idOP",
+                              "example": "1",
+                              "type": "string",
+                              "description": {
+                                "en": "Identification of the hazardous material key.",
+                                "es": "Identificación de la clave del material peligroso.",
+                                "pt": "Identificação da chave do material perigoso."
+                              }
+                            }
+                          ]
+                        },
+                        "dimensions": {
+                          "description": {
+                            "en": "Presents the dimensions of the item to be shipped.",
+                            "es": "Presenta las dimensiones del artículo a ser enviado.",
+                            "pt": "Apresenta as dimensões do item a ser enviado."
+                          },
+                          "enum": [
+                            {
+                              "title": "unit",
+                              "example": "s",
+                              "type": "string",
+                              "description": {
+                                "en": "Unit of measure for the item.",
+                                "es": "Unidad de medida del artículo.",
+                                "pt": "Unidade de medida do item."
+                              }
+                            },
+                            {
+                              "title": "height",
+                              "example": "1.1",
+                              "type": "float",
+                              "description": {
+                                "en": "Height of the item.",
+                                "es": "Altura del artículo.",
+                                "pt": "Altura do item."
+                              }
+                            },
+                            {
+                              "title": "width",
+                              "example": "16.4",
+                              "type": "float",
+                              "description": {
+                                "en": "Ancho del artículo.",
+                                "es": "Item width.",
+                                "pt": "Largura do item."
+                              }
+                            },
+                            {
+                              "title": "length",
+                              "example": "24.6",
+                              "type": "float",
+                              "description": {
+                                "en": "Item length.",
+                                "es": "Longitud del artículo.",
+                                "pt": "Comprimento do item."
+                              }
+                            },
+                            {
+                              "title": "weight",
+                              "example": "620",
+                              "type": "float",
+                              "description": {
+                                "en": "Item weight.",
+                                "es": "Peso del artículo.",
+                                "pt": "Peso do item."
+                              }
+                            }
+                          ]
                         }
                       }
                     }
@@ -941,6 +1059,124 @@
                               "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido. Para o Chile (MLC) deve ser um número inteiro.",
                               "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                             }
+                          },
+                          "fiscal_data": {
+                            "description": {
+                              "en": "Presents the tax data of the item.",
+                              "es": "Presenta los datos fiscales del artículo.",
+                              "pt": "Apresenta os dados fiscais do item."
+                            },
+                            "enum": [
+                              {
+                                "title": "sat",
+                                "example": "123",
+                                "type": "string",
+                                "description": {
+                                  "en": "Provides the SAT (Authenticator and Transmitter System for Electronic Tax Receipts) category of the item.",
+                                  "es": "Informa la categoría SAT (Sistema Autenticador y Transmisor de Comprobante Fiscal Electrónico) del artículo.",
+                                  "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                                }
+                              },
+                              {
+                                "title": "sat_measurement_id",
+                                "example": "H87",
+                                "type": "string",
+                                "description": {
+                                  "en": "Indicates whether the item is dangerous or not.",
+                                  "es": "Indica si el artículo es peligroso o no.",
+                                  "pt": "Indica se o item é perigoso ou não."
+                                }
+                              },
+                              {
+                                "title": "measurement_unit",
+                                "example": "Pieza",
+                                "type": "string",
+                                "description": {
+                                  "en": "If the item is considered dangerous, specifies the type of the dangerous material.",
+                                  "es": "En caso de que sea un artículo considerado peligroso, informa cuál es el tipo de material peligroso.",
+                                  "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                                }
+                              },
+                              {
+                                "title": "package_id",
+                                "example": "4G",
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification of the package key.",
+                                  "es": "Identificación de la clave del paquete.",
+                                  "pt": "Identificação da chave do pacote."
+                                }
+                              },
+                              {
+                                "title": "dangerous_material_idOP",
+                                "example": "1",
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification of the hazardous material key.",
+                                  "es": "Identificación de la clave del material peligroso.",
+                                  "pt": "Identificação da chave do material perigoso."
+                                }
+                              }
+                            ]
+                          },
+                          "dimensions": {
+                            "description": {
+                              "en": "Presents the dimensions of the item to be shipped.",
+                              "es": "Presenta las dimensiones del artículo a ser enviado.",
+                              "pt": "Apresenta as dimensões do item a ser enviado."
+                            },
+                            "enum": [
+                              {
+                                "title": "unit",
+                                "example": "s",
+                                "type": "string",
+                                "description": {
+                                  "en": "Unit of measure for the item.",
+                                  "es": "Unidad de medida del artículo.",
+                                  "pt": "Unidade de medida do item."
+                                }
+                              },
+                              {
+                                "title": "height",
+                                "example": "1.1",
+                                "type": "float",
+                                "description": {
+                                  "en": "Height of the item.",
+                                  "es": "Altura del artículo.",
+                                  "pt": "Altura do item."
+                                }
+                              },
+                              {
+                                "title": "width",
+                                "example": "16.4",
+                                "type": "float",
+                                "description": {
+                                  "en": "Ancho del artículo.",
+                                  "es": "Item width.",
+                                  "pt": "Largura do item."
+                                }
+                              },
+                              {
+                                "title": "length",
+                                "example": "24.6",
+                                "type": "float",
+                                "description": {
+                                  "en": "Item length.",
+                                  "es": "Longitud del artículo.",
+                                  "pt": "Comprimento do item."
+                                }
+                              },
+                              {
+                                "title": "weight",
+                                "example": "620",
+                                "type": "float",
+                                "description": {
+                                  "en": "Item weight.",
+                                  "es": "Peso del artículo.",
+                                  "pt": "Peso do item."
+                                }
+                              }
+                            ]
                           }
                         }
                       }
@@ -1600,9 +1836,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "Find all the information related to generated preferences using specific filters or a specific date range.",
-          "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica.",
-          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado."
+          "en": "Find all the information related to generated preferences using specific filters or a specific date range. Only data from the last 90 days (3 months) will be brought. If you want to search for older data, use the GET for \"Get preference\"",
+          "pt": "Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica. Somente serão trazidos os dados dos últimos 90 dias (3 meses). Caso queira buscar dados mais antigos, utilize o GET de \"Obter preferência\"",
+          "es": "Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado. Solo se traerán los datos de los últimos 90 días (3 meses). Si deseas buscar datos más antiguos, utiliza el GET de \"Obtener preferencia\""
         },
         "parameters": [
           {
@@ -2105,9 +2341,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "Check all the payment information for a product or service with the ID of the preference of your choice.",
-          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada.",
-          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras."
+          "en": "Check all the payment information for a product or service with the ID of the preference of your choice",
+          "pt": "Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada",
+          "es": "Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras"
         },
         "parameters": [
           {
@@ -2400,6 +2636,124 @@
                               "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido. Para o Chile (MLC) deve ser um número inteiro.",
                               "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                             }
+                          },
+                          "fiscal_data": {
+                            "description": {
+                              "en": "Presents the tax data of the item.",
+                              "es": "Presenta los datos fiscales del artículo.",
+                              "pt": "Apresenta os dados fiscais do item."
+                            },
+                            "enum": [
+                              {
+                                "title": "sat",
+                                "example": "123",
+                                "type": "string",
+                                "description": {
+                                  "en": "Provides the SAT (Authenticator and Transmitter System for Electronic Tax Receipts) category of the item.",
+                                  "es": "Informa la categoría SAT (Sistema Autenticador y Transmisor de Comprobante Fiscal Electrónico) del artículo.",
+                                  "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                                }
+                              },
+                              {
+                                "title": "sat_measurement_id",
+                                "example": "H87",
+                                "type": "string",
+                                "description": {
+                                  "en": "Indicates whether the item is dangerous or not.",
+                                  "es": "Indica si el artículo es peligroso o no.",
+                                  "pt": "Indica se o item é perigoso ou não."
+                                }
+                              },
+                              {
+                                "title": "measurement_unit",
+                                "example": "Pieza",
+                                "type": "string",
+                                "description": {
+                                  "en": "If the item is considered dangerous, specifies the type of the dangerous material.",
+                                  "es": "En caso de que sea un artículo considerado peligroso, informa cuál es el tipo de material peligroso.",
+                                  "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                                }
+                              },
+                              {
+                                "title": "package_id",
+                                "example": "4G",
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification of the package key.",
+                                  "es": "Identificación de la clave del paquete.",
+                                  "pt": "Identificação da chave do pacote."
+                                }
+                              },
+                              {
+                                "title": "dangerous_material_idOP",
+                                "example": "1",
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification of the hazardous material key.",
+                                  "es": "Identificación de la clave del material peligroso.",
+                                  "pt": "Identificação da chave do material perigoso."
+                                }
+                              }
+                            ]
+                          },
+                          "dimensions": {
+                            "description": {
+                              "en": "Presents the dimensions of the item to be shipped.",
+                              "es": "Presenta las dimensiones del artículo a ser enviado.",
+                              "pt": "Apresenta as dimensões do item a ser enviado."
+                            },
+                            "enum": [
+                              {
+                                "title": "unit",
+                                "example": "s",
+                                "type": "string",
+                                "description": {
+                                  "en": "Unit of measure for the item.",
+                                  "es": "Unidad de medida del artículo.",
+                                  "pt": "Unidade de medida do item."
+                                }
+                              },
+                              {
+                                "title": "height",
+                                "example": "1.1",
+                                "type": "float",
+                                "description": {
+                                  "en": "Height of the item.",
+                                  "es": "Altura del artículo.",
+                                  "pt": "Altura do item."
+                                }
+                              },
+                              {
+                                "title": "width",
+                                "example": "16.4",
+                                "type": "float",
+                                "description": {
+                                  "en": "Ancho del artículo.",
+                                  "es": "Item width.",
+                                  "pt": "Largura do item."
+                                }
+                              },
+                              {
+                                "title": "length",
+                                "example": "24.6",
+                                "type": "float",
+                                "description": {
+                                  "en": "Item length.",
+                                  "es": "Longitud del artículo.",
+                                  "pt": "Comprimento do item."
+                                }
+                              },
+                              {
+                                "title": "weight",
+                                "example": "620",
+                                "type": "float",
+                                "description": {
+                                  "en": "Item weight.",
+                                  "es": "Peso del artículo.",
+                                  "pt": "Peso do item."
+                                }
+                              }
+                            ]
                           }
                         }
                       }
@@ -3072,6 +3426,124 @@
                             "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido. Para o Chile (MLC) deve ser um número inteiro.",
                             "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                             }
+                        },
+                        "fiscal_data": {
+                          "description": {
+                            "en": "Presents the tax data of the item.",
+                            "es": "Presenta los datos fiscales del artículo.",
+                            "pt": "Apresenta os dados fiscais do item."
+                          },
+                          "enum": [
+                            {
+                              "title": "sat",
+                              "example": "123",
+                              "type": "string",
+                              "description": {
+                                "en": "Provides the SAT (Authenticator and Transmitter System for Electronic Tax Receipts) category of the item.",
+                                "es": "Informa la categoría SAT (Sistema Autenticador y Transmisor de Comprobante Fiscal Electrónico) del artículo.",
+                                "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                              }
+                            },
+                            {
+                              "title": "sat_measurement_id",
+                              "example": "H87",
+                              "type": "string",
+                              "description": {
+                                "en": "Indicates whether the item is dangerous or not.",
+                                "es": "Indica si el artículo es peligroso o no.",
+                                "pt": "Indica se o item é perigoso ou não."
+                              }
+                            },
+                            {
+                              "title": "measurement_unit",
+                              "example": "Pieza",
+                              "type": "string",
+                              "description": {
+                                "en": "If the item is considered dangerous, specifies the type of the dangerous material.",
+                                "es": "En caso de que sea un artículo considerado peligroso, informa cuál es el tipo de material peligroso.",
+                                "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                              }
+                            },
+                            {
+                              "title": "package_id",
+                              "example": "4G",
+                              "type": "string",
+                              "description": {
+                                "en": "Identification of the package key.",
+                                "es": "Identificación de la clave del paquete.",
+                                "pt": "Identificação da chave do pacote."
+                              }
+                            },
+                            {
+                              "title": "dangerous_material_idOP",
+                              "example": "1",
+                              "type": "string",
+                              "description": {
+                                "en": "Identification of the hazardous material key.",
+                                "es": "Identificación de la clave del material peligroso.",
+                                "pt": "Identificação da chave do material perigoso."
+                              }
+                            }
+                          ]
+                        },
+                        "dimensions": {
+                          "description": {
+                            "en": "Presents the dimensions of the item to be shipped.",
+                            "es": "Presenta las dimensiones del artículo a ser enviado.",
+                            "pt": "Apresenta as dimensões do item a ser enviado."
+                          },
+                          "enum": [
+                            {
+                              "title": "unit",
+                              "example": "s",
+                              "type": "string",
+                              "description": {
+                                "en": "Unit of measure for the item.",
+                                "es": "Unidad de medida del artículo.",
+                                "pt": "Unidade de medida do item."
+                              }
+                            },
+                            {
+                              "title": "height",
+                              "example": "1.1",
+                              "type": "float",
+                              "description": {
+                                "en": "Height of the item.",
+                                "es": "Altura del artículo.",
+                                "pt": "Altura do item."
+                              }
+                            },
+                            {
+                              "title": "width",
+                              "example": "16.4",
+                              "type": "float",
+                              "description": {
+                                "en": "Ancho del artículo.",
+                                "es": "Item width.",
+                                "pt": "Largura do item."
+                              }
+                            },
+                            {
+                              "title": "length",
+                              "example": "24.6",
+                              "type": "float",
+                              "description": {
+                                "en": "Item length.",
+                                "es": "Longitud del artículo.",
+                                "pt": "Comprimento do item."
+                              }
+                            },
+                            {
+                              "title": "weight",
+                              "example": "620",
+                              "type": "float",
+                              "description": {
+                                "en": "Item weight.",
+                                "es": "Peso del artículo.",
+                                "pt": "Peso do item."
+                              }
+                            }
+                          ]
                         }
                       }
                     }
@@ -3876,6 +4348,124 @@
                               "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido. Para o Chile (MLC) deve ser um número inteiro.",
                               "es": "Precio unitario del ítem. Esta propiedad se usa junto con propiedad quantity para determinar el costo de la orden. Para Chile (MLC) debe ser un número entero."
                             }
+                          },
+                          "fiscal_data": {
+                            "description": {
+                              "en": "Presents the tax data of the item.",
+                              "es": "Presenta los datos fiscales del artículo.",
+                              "pt": "Apresenta os dados fiscais do item."
+                            },
+                            "enum": [
+                              {
+                                "title": "sat",
+                                "example": "123",
+                                "type": "string",
+                                "description": {
+                                  "en": "Provides the SAT (Authenticator and Transmitter System for Electronic Tax Receipts) category of the item.",
+                                  "es": "Informa la categoría SAT (Sistema Autenticador y Transmisor de Comprobante Fiscal Electrónico) del artículo.",
+                                  "pt": "Informa a categoria SAT (Sistema Autenticador e Transmissor de Cupom Fiscal Eletrônico) do item."
+                                }
+                              },
+                              {
+                                "title": "sat_measurement_id",
+                                "example": "H87",
+                                "type": "string",
+                                "description": {
+                                  "en": "Indicates whether the item is dangerous or not.",
+                                  "es": "Indica si el artículo es peligroso o no.",
+                                  "pt": "Indica se o item é perigoso ou não."
+                                }
+                              },
+                              {
+                                "title": "measurement_unit",
+                                "example": "Pieza",
+                                "type": "string",
+                                "description": {
+                                  "en": "If the item is considered dangerous, specifies the type of the dangerous material.",
+                                  "es": "En caso de que sea un artículo considerado peligroso, informa cuál es el tipo de material peligroso.",
+                                  "pt": "Caso seja um item considerado perigoso, informa qual é o tipo de material perigoso."
+                                }
+                              },
+                              {
+                                "title": "package_id",
+                                "example": "4G",
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification of the package key.",
+                                  "es": "Identificación de la clave del paquete.",
+                                  "pt": "Identificação da chave do pacote."
+                                }
+                              },
+                              {
+                                "title": "dangerous_material_idOP",
+                                "example": "1",
+                                "type": "string",
+                                "description": {
+                                  "en": "Identification of the hazardous material key.",
+                                  "es": "Identificación de la clave del material peligroso.",
+                                  "pt": "Identificação da chave do material perigoso."
+                                }
+                              }
+                            ]
+                          },
+                          "dimensions": {
+                            "description": {
+                              "en": "Presents the dimensions of the item to be shipped.",
+                              "es": "Presenta las dimensiones del artículo a ser enviado.",
+                              "pt": "Apresenta as dimensões do item a ser enviado."
+                            },
+                            "enum": [
+                              {
+                                "title": "unit",
+                                "example": "s",
+                                "type": "string",
+                                "description": {
+                                  "en": "Unit of measure for the item.",
+                                  "es": "Unidad de medida del artículo.",
+                                  "pt": "Unidade de medida do item."
+                                }
+                              },
+                              {
+                                "title": "height",
+                                "example": "1.1",
+                                "type": "float",
+                                "description": {
+                                  "en": "Height of the item.",
+                                  "es": "Altura del artículo.",
+                                  "pt": "Altura do item."
+                                }
+                              },
+                              {
+                                "title": "width",
+                                "example": "16.4",
+                                "type": "float",
+                                "description": {
+                                  "en": "Ancho del artículo.",
+                                  "es": "Item width.",
+                                  "pt": "Largura do item."
+                                }
+                              },
+                              {
+                                "title": "length",
+                                "example": "24.6",
+                                "type": "float",
+                                "description": {
+                                  "en": "Item length.",
+                                  "es": "Longitud del artículo.",
+                                  "pt": "Comprimento do item."
+                                }
+                              },
+                              {
+                                "title": "weight",
+                                "example": "620",
+                                "type": "float",
+                                "description": {
+                                  "en": "Item weight.",
+                                  "es": "Peso del artículo.",
+                                  "pt": "Peso do item."
+                                }
+                              }
+                            ]
                           }
                         }
                       },

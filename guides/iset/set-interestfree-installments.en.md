@@ -9,8 +9,6 @@
 1. Go to the option “Settings”, navigate to “Offer interest-free installments” and click “Activate”.
 1. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 
 And that’s it! You are now offering interest-free installments, with the financing cost you have set.

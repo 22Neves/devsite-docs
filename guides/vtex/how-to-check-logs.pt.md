@@ -6,7 +6,6 @@ Além disso, em caso de modificação ou ativação de novos métodos de pagamen
 
 Eventualmente, a equipe de suporte poderá solicitar que você verifique e/ou envie logs para rastrear informações necessárias. Para acessar esses logs, entre no painel de administração da sua loja VTEX e clique em **Pagamentos > Transações**. Em seguida, procure pelo log que contém o *status de resposta* e clique em **+ Informação**. Os dados mais relevantes são os seguintes:
 
-
 |Campo|Dado|Descrição|
 |---|---|---|
 |`ID`|10302316|Número da transação de Mercado Pago.|
@@ -22,4 +21,4 @@ Eventualmente, a equipe de suporte poderá solicitar que você verifique e/ou en
 >
 > Nota
 >
-> Você pode obter informações mais detalhadas sobre como buscar erros ou problemas em uma transação, acessando [este documento](https://help.vtex.com/es/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) disponível no site da VTEX.  Para obter mais informações, acesse o link [Resultados da criação de uma cobrança](/developers/pt/docs/checkout-api/response-handling/collection-results). 
+> Você pode obter informações mais detalhadas sobre como buscar erros ou problemas em uma transação acessando a [documentação](https://help.vtex.com/pt/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) disponível no site da VTEX. Para obter mais informações, acesse a documentação de [Resultados da criação de uma cobrança](/developers/pt/docs/checkout-api/response-handling/collection-results).

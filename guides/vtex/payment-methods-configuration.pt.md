@@ -20,4 +20,3 @@ Ao utilizar o MercadoPagoV2 como conector, você pode escolher quais meios de pa
 > Importante
 >
 > Verifique se você instalou o **Mercado Pago Payment APP** para poder configurar os meios de pagamento em sua loja VTEX. Caso ainda não tenha feito isso, você pode instalá-lo na seção "Meus Apps".
-

@@ -19,9 +19,12 @@ script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
 
-5. Click on **Save**
+5. Click on **Save**.
 
-![Fingerprint configuration](/images/vtex/devicefingerprint-imagenv2-en.gif)
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![Configuração de fingerprint](/images/vtex/devicefingerprint-imagenv2-en.gif)
+
+------------
 
 Now you have Device Fingerprint configured to enhance fraud risk assessment. 
 

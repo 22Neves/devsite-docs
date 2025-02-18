@@ -57,8 +57,6 @@ A loja Shopify exibirá os campos de solicitação de identificação pessoal do
 
 3. Na próxima tela, use a barra de busca do site para pesquisar a palavra "Company". A busca devolverá vários campos que você pode modificar.
 
-![Values id](/images/shopify/values-id-pt.gif)
-
 5. Substitua as seguintes entradas com a indicação do tipo de identificação pessoal que a sua loja solicitará de acordo com o país onde ela opera----[mlb]----(por exemplo, CPF para Brasil)------------:
 
 - **Company label**

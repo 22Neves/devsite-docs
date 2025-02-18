@@ -4,7 +4,7 @@ Mercado Pago tiene sus propias herramientas de prevención de fraude, y el Devic
 
 Siempre que sea posible, te recomendamos que envíes información sobre el comportamiento del cliente para detectar movimientos inusuales y evitar transacciones fraudulentas. No te preocupes, cuidamos los datos de tus clientes y no los compartimos con nadie.
 
-Deberás configurar Device Fingerprint en tiendas VTEX para que tus transacciones sean más seguras. Para hacerlo, sigue los pasos a continuación:
+Deberás configurar Device Fingerprint en tiendas VTEX para que tus transacciones sean más seguras. Para hacerlo, sigue las instrucciones a continuación:
 
 1. Ve al panel de administración de tu tienda y selecciona **Checkout > Configuración de la Tienda**.
 2. Haz clic en el ícono **editar**, referente a la configuración de tu site.
@@ -21,7 +21,10 @@ document.body.appendChild(script);
 
 5. Haz clic en **Guardar**.
 
-![Configuración de fingerprint](/images/vtex/devicefingerprint-imagenv2-es.gif)
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![Configuração de fingerprint](/images/vtex/devicefingerprint-imagenv2-es.gif)
+
+------------
 
 Ya tienes Device Fingerprint configurado para mejorar la evaluación del riesgo de fraude.
 

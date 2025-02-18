@@ -30,11 +30,6 @@ Here's how to activate each payment method in your Salesforce Commerce Cloud sto
 
 By default, the Mercado Pago cartridge will show the means of payment in a certain order.
 
-----[mlb]----
-![payment_methods_v2](/images/salesforce/payment_methods_v2.png)
-
-------------
-
 If you want to change this order, follow these steps.
 
 1. Within your Salesforce Commerce Cloud store, go to the **Merchant Tools** menu and click the **Payment Methods** option found within the Ordering group of options. You can also find the option using the menu search engine.

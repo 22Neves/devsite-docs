@@ -12,13 +12,14 @@ Además, MercadoPagoV2 te ofrece la posibilidad de activar **3DS (3-D Secure)**,
 >
 > La afiliación de gateway MercadoPagoV1 será discontinuada. Si ya cuentas con una afiliación de gateway MercadoPagoV1, deberás [migrar a MercadoPagoV2](/developers/es/docs/vtex/how-tos/migrate-v1-v2) para continuar operando con Mercado Pago y aprovechar las ventajas que este nuevo conector ofrece. 
 
-Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a continuación:
+Para crear una **afiliación de gateway MercadoPagoV2**, sigue las instrucciones a continuación:
 
 1. En el panel de administración de tu plataforma VTEX, accede a **Pagos > Proveedores**.
 2. En la parte superior de la pantalla, haz clic en el botón **Nuevo proveedor** para crear una nueva afiliación.
 3. Busca por el conector **MercadoPagoV2** y selecciónalo. Esto te llevará a una nueva pantalla.
 4. En esta pantalla, elige cuál quieres que sea el **Nombre de la afiliación** dentro de la tienda. Además, asegúrate de tener desactivada la opción **Activar modo de prueba**.
 5. Luego, completa los campos correspondientes:
+
 | Campo | Descripción |
 |---|---|
 | Application Key  | Son tus [credenciales](/developers/es/docs/vtex/additional-content/your-integrations/credentials) de producción de Mercado Pago. Completa con tu **Public Key**. |
@@ -40,15 +41,17 @@ Para crear una **afiliación de gateway MercadoPagoV2**, sigue los pasos a conti
 | Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado | Puedes configurar un retraso en la captura del pago que hace VTEX seleccionando de entre las opciones deplegables. Si no quieres configurarlo, selecciona "Desactivado". |
 | Tempo para cancelar carrito abandonado - Fecha para cancelar compras de un carrito abandonado | Configura el rango de tiempo que se deberá esperar para que los medios de pago habilitados no estén disponibles para realizar la compra. Puedes seleccionar un rango de tiempo de entre las opciones desplegables, o bien elegir "no cancelar". |
 
+6. Haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
 
+----[mlb, mla, mlm, mco, mpe, mlu]----
+![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif)
 
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-es.gif) 
+------------
 
 Una vez que hayas completado todos los campos, haz clic en **Guardar**, ¡y listo! Tu afiliación con MercadoPagoV2 ya está activa.
-
 
 > NOTE
 >
 > Nota
 >
-> Si tienes dificultades durante la integración, consulta nuestra [lista de errores](/developers/es/guides/vtex/additional-content/possible-errors) y nuestro documento sobre [logs de VTEX.](/developers/es/guides/vtex/how-tos/logs)
+> Si tienes dificultades durante la integración, consulta nuestra [lista de errores](/developers/es/guides/vtex/additional-content/possible-errors) y nuestro documento sobre [logs de VTEX.](/developers/es/guides/vtex/how-tos/logs).

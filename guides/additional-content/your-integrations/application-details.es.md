@@ -63,7 +63,7 @@ Existen 2 formas de medir la calidad de tu integración:
 
 Como resultado de esta medición, obtendrás un puntaje que indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación, junto con las recomendaciones necesarias para hacer ajustes en caso de que sea necesario. 
 
-Para saber más detalles, accede a la documentación sobre [calidad de integración](/developers/es/guides/additional-content/homologator/homologator).
+Para saber más detalles, accede a la documentación sobre [calidad de integración](/developers/es/docs/integration-quality).
 
 ## Prueba de integración
 
@@ -71,4 +71,11 @@ En esta sección, cuentas con una guía paso a paso para poder probar tu integra
 
 Además, cuentas con enlaces directos a la documentación correspondiente, así como con una barra de estado que te permitirá visualizar tus avances de manera sencilla.
 
-![pantalla de validación de prueba de integración](/images/dashboard/testing-validation-es.gif)
+----[mlc]----
+![pantalla de validación de prueba de integración](/images/dashboard/testing-es.png)
+
+------------
+----[mla, mlm, mlu, mco, mlb, mpe]----
+![pantalla de validación de prueba de integración](/images/dashboard/testing-es.gif)
+
+------------

@@ -6,7 +6,7 @@ Antes de realizar la renderización del Card Payment Brick, primero ejecute los 
 >
 > Nota
 >
-> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/card-payment.md).
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/card-payment.md).
 
 ## Configurar el Brick
 
@@ -235,4 +235,11 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
+----[mlc]----
+![cardform](checkout-bricks/card-form-mlc-es.png)
+
+------------
+----[mlb, mla, mlm, mpe, mlu, mco]----
 ![cardform](checkout-bricks/card-form-es.png)
+
+------------

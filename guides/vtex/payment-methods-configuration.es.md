@@ -14,7 +14,6 @@ Al utilizar MercadoPagoV2 como conector, podrás elegir qué métodos de pago of
 
 * [Checkout Pro](/developers/es/docs/vtex/payments-configuration/checkout-pro) el comprador será dirigido desde la tienda al sitio web de Mercado Pago, donde se procesará y completará la transacción con cualquiera de los medios de pago que estén configurados previamente. Al finalizar esta transacción, el cliente será redirigido a la tienda VTEX.
 
-
 > WARNING
 >
 > Importante
