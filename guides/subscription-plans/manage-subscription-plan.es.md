@@ -22,7 +22,7 @@ Una vez allí, haz clic en la pestaña **Suscriptores** que se encuentra en la p
 
 Para ver los detalles de un suscriptor, haz clic en **Ver detalles** al costado derecho de cada uno. Además, al hacer clic en los tres puntos de la derecha, podrás acceder rápidamente a las opciones **Modificar monto**, **Pausar suscriptor** y **Cancelar suscriptor**.
 
-![Suscripciones-Suscriptores](/images/subscription-plans/Tus-suscripciones-suscriptores-ES.png)
+![Suscripciones-Suscriptores](/subscription-plans/Tus-suscripciones-suscriptores-ES.png)
 
 ### Modificar monto
 
