@@ -1,0 +1,13 @@
+{
+    "name": "use-case1",
+    "description": "use-case1",
+    "items": [
+        {
+            "name": "item1",
+            "description": "item1",
+            "quantity": 1,
+            "unit_price": 100,
+            "currency_id": "ext_reference::reference/use-cases/payments1"
+        }
+    ]
+}
