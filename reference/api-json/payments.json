@@ -7916,7 +7916,7 @@
             "description": {
               "en": "Medium-density barcode.",
               "es": "Código de barras de densidad media.",
-              "pt": "ext_reference::/reference/use-cases/payments1.json"
+              "pt": "ext_reference::reference/use-cases/payments1.json"
             }
           }
         ]
