@@ -3652,13 +3652,13 @@
                                     "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
                                 }
                             },
-                            "federal_unit": {
+                            "state": {
                                 "type": "string",
                                 "example":"SP",
                                 "description": {
-                                    "en": "Payer's address federal unit. Required for \"payment_method.id\" bolbradesco",
-                                    "pt": "Unidade federativa do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
-                                    "es": "Unidad federativa de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                    "en": "Payer`s address state. Required for \"payment_method.id\" bolbradesco",
+                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
+                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
                                 }
                             },
                             "city": {
@@ -3723,13 +3723,13 @@
                                 "es": "Descripción del ítem comprado. El límite de caracteres es 100."
                             }
                         },
-                        "id": {
+                        "external_code": {
                             "type": "string",
                             "example": "1234",
                             "description": {
-                                "en": "Item ID.",
-                                "pt": "Identificador do item.",
-                                "es": "Identificador del ítem."
+                                "en": "Item External code.",
+                                "pt": "Código externo do item.",
+                                "es": "Código externo del ítem."
                             }
                         },
                         "picture_url": {
