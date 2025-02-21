@@ -12,7 +12,7 @@ Uma vez lá, clique na aba **Cobranças** que fica na parte superior do painel.
 
 Nesta seção, você poderá acompanhar o status das cobranças e obter métricas das suas assinaturas.
 
-![Assinaturas-Cobranças](/images/subscription-plans/Tus-suscripciones-cobros-PT.png)
+![Assinaturas-Cobranças](/images/subscription-plans/Tus-suscripciones-cobros-PT.jpg)
 
 ## Gerenciar assinantes de planos de assinatura
 
@@ -22,7 +22,7 @@ Uma vez lá, clique na aba **Assinantes** que fica na parte superior do painel. 
 
 Para ver os detalhes de um assinante, clique em **Ver Detalhes** ao lado direito de cada um. Além disso, ao clicar nos três pontos à direita, você poderá acessar rapidamente as opções **Modificar Valor**, **Pausar Assinante** e **Cancelar Assinante**.
 
-![Assinaturas-assinantes](/images/subscription-plans/Tus-suscripciones-suscriptores-PT.png)
+![Assinaturas-assinantes](/images/subscription-plans/Tus-suscripciones-suscriptores-PT.jpg)
 
 ### Modificar valor
 
@@ -66,7 +66,7 @@ Você pode acessar seus planos de assinatura e visualizá-los, modificá-los ou 
 3. Clique nos três pontos localizados à direita do plano de assinatura que deseja gerenciar. Um menu será exibido.
 4. Clique em **Ver Detalhes** para conhecer as características do seu plano de assinatura. Se desejar modificá-lo, clique em **Modificar**. Se desejar excluí-lo, clique em **Cancelar**.
 
-![Assinaturas-Planos](/images/subscription-plans/Tus-suscripciones-planes-PT.png)
+![Assinaturas-Planos](/images/subscription-plans/Tus-suscripciones-planes-PT.jpg)
 
 ## Cancelar um plano de assinatura
 

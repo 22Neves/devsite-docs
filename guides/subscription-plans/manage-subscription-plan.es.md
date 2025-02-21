@@ -12,7 +12,7 @@ Una vez allí, haz clic en la pestaña **Cobros** que se encuentra en la parte s
 
 En esta sección podrás seguir el estado de los cobros y obtener métricas de tus suscripciones.
 
-![Suscripciones-Cobros](/images/subscription-plans/Tus-suscripciones-cobros-ES.png)
+![Suscripciones-Cobros](/images/subscription-plans/Tus-suscripciones-cobros-ES.jpg)
 
 ## Gestionar suscriptores de planes de suscripción
 
@@ -22,7 +22,7 @@ Una vez allí, haz clic en la pestaña **Suscriptores** que se encuentra en la p
 
 Para ver los detalles de un suscriptor, haz clic en **Ver detalles** al costado derecho de cada uno. Además, al hacer clic en los tres puntos de la derecha, podrás acceder rápidamente a las opciones **Modificar monto**, **Pausar suscriptor** y **Cancelar suscriptor**.
 
-![Suscripciones-Suscriptores](/images/subscription-plans/Tus-suscripciones-suscriptores-ES.png)
+![Suscripciones-Suscriptores](/images/subscription-plans/Tus-suscripciones-suscriptores-ES.jpg)
 
 ### Modificar monto
 
@@ -66,7 +66,7 @@ Puedes acceder a tus planes de suscripciones y verlos, modificarlos o cancelarlo
 3. Haz clic en el los tres puntos que se encuentran a la derecha del plan de suscripción que deseas gestionar. Se desplegará un menú. 
 4. Haz clic en **Ver detalles** para conocer las características de tu plan de suscripción. Si deseas modificarlo, haz clic en **Modificar**. Si deseas eliminarlo, haz clic en **Cancelar**.
 
-![Suscripciones-Planes](/images/subscription-plans/Tus-suscripciones-planes-ES.png)
+![Suscripciones-Planes](/images/subscription-plans/Tus-suscripciones-planes-ES.jpg)
 
 ## Cancelar un plan de suscripción
 

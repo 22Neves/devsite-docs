@@ -10,7 +10,7 @@ Start your setup by logging into your Mercado Pago account. Once there, go to th
 
 If you have never created a subscription plan before, you will need to click the **Charge with a Subscription Plan** button to get started. Otherwise, if you have accessed this section previously, you will already be in the **Subscription Plans** section.
 
-![Create subscription](/images/subscription-plans/Tus-suscripciones-comenzar-EN.png)
+![Create subscription](/images/subscription-plans/Tus-suscripciones-comenzar-EN.jpg)
 
 Once there, click the **Create New Plan** button and fill in the required information:
 
