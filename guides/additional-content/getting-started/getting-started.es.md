@@ -76,7 +76,7 @@ Soluciones para quienes venden desde casa, en la calle, en el coche o en la tien
 |:---|:---|:---|
 | [Código QR](/developers/es/docs/qr-code/landing) | Elige un modelo de integración para generar códigos QR y brindar una experiencia completa de pago presencial. | Intermedio |
 | [Mercado Pago Point](/developers/es/docs/mp-point/landing) | Integra Mercado Pago Point utilizando nuestra API o conecta el lector de tarjeta a cualquier sistema iOS o Android para aceptar pagos en caja. | Intermedio |
-| [Mercado Pago Delivery](/developers/es/docs/mp-delivery/introduction) | Una solución de entrega de comidas a demanda, en la que el cliente accede a un listado de restaurantes registrados, realiza su pedido y paga directamente a través de la app de Mercado Pago. | Intermedio |
+
 ------------
 
 ----[mpe, mco, mlu, mlc]----
@@ -166,9 +166,9 @@ Para obtener detalles sobre los **medios de pago aceptados en cada país**, cons
 | [Link de Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/link-de-pago) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/suscripciones) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Suscripciones](/developers/es/docs/subscriptions/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [Mercado Pago Delivery](/developers/es/docs/mp-delivery/introduction) | ✔ | - | - | - | - | - | - |
 | [Código QR](/developers/es/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
 | [Mercado Pago Point](/developers/es/docs/mp-point/landing) | ✔ | ✔ | - | - | ✔ | - | - |
+
 ------------
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
@@ -180,7 +180,6 @@ Para obtener detalles sobre los **medios de pago aceptados en cada país**, cons
 | [Link de Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/link-de-pago) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/suscripciones) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Suscripciones](/developers/es/docs/subscriptions/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [Mercado Pago Delivery](/developers/es/docs/mp-delivery/introduction) | ✔ | - | - | - | - | - | - |
 | [Código QR](/developers/es/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
 | [Mercado Pago Point](/developers/es/docs/mp-point/landing) | ✔ | ✔ | - | - | ✔ | - | - |
 ------------

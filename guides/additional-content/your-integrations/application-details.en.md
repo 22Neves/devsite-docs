@@ -63,7 +63,7 @@ There are two ways to measure the quality of your integration:
 
 As a result of this measurement, you will receive a score indicating how secure and aligned your application's configuration is with Mercado Pago's best integration practices, along with necessary recommendations for adjustments if needed.
 
-For more details, refer to the documentation on [integration quality](/developers/en/guides/additional-content/homologator/homologator).
+For more details, refer to the documentation on [integration quality](/developers/en/docs/integration-quality).
 
 ## Integration test
 

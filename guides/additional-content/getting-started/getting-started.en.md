@@ -75,7 +75,7 @@ Solutions for those who sell from home, on the street, in the car, or in the sto
 |:---|:---|:---|
 | [QR Code](/developers/en/docs/qr-code/landing) | Choose an integration model to generate QR codes and provide a complete in-person payment experience. | Intermediate |
 | [Mercado Pago Point](/developers/en/docs/mp-point/landing) | Integrate the Mercado Pago Point and connect the card reader to any iOS or Android system to accept payments at the counter. | Intermediate |
-| [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | A on-demand food delivery solution in which the customer accesses a list of registered restaurants, places an order, and pays directly through the Mercado Pago app. | Intermediate |
+
 ------------
 
 ----[mpe, mco, mlu, mlc]----
@@ -172,9 +172,8 @@ For details on the **accepted payment methods in each country**, consult the com
 | [Payment Link](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/link-de-pago) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Subscription plans](https://www.mercadopago[FAKER][URL][DOMAIN]/herramientas-para-vender/suscripciones) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Subscriptions](/developers/en/docs/subscriptions/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | ✔ | - | - | - | - | - | - |
 | [QR Code](/developers/en/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
-| [Mercado Pago Delivery](/developers/en/docs/mp-delivery/introduction) | ✔ | ✔ | - | - | ✔ | - | - |
+
 ------------
 
 ---

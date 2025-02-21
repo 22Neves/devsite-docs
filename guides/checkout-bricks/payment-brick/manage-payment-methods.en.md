@@ -33,8 +33,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type | Possible values |
 |--- |--- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['onboarding_credits',  'wallet_purchase'] |
 | ticket | string | ['bolbradesco'] |
 | bankTransfer | string | ['pix'] |
@@ -44,8 +45,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type | Possible values |
 |--- |--- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['onboarding_credits',  'wallet_purchase'] |
 | ticket | string | ['pagofacil', 'rapipago'] |
 
@@ -54,8 +56,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type | Possible values |
 | --- | --- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['onboarding_credits',  'wallet_purchase'] |
 | ticket | string | ['paycash', 'oxxo'] |
 | atm | string | ['banamex',  'bancomer'] |
@@ -65,8 +68,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type | Possible values |
 | --- | --- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['wallet_purchase'] |
 | ticket | string | ['efecty'] |
 | bankTransfer |  string | ['pse'] |
@@ -76,8 +80,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type | Possible values |
 | --- | --- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['wallet_purchase'] |
 | ticket | string | ['redpagos', 'abitab'] |
 
@@ -86,8 +91,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type |Possible values |
 | --- | --- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['wallet_purchase'] |
 | atm | string | ['pagoefectivo_atm'] |
 
@@ -96,8 +102,9 @@ The table below shows the available payment methods:
 
 | paymentMethods | Type | Possible values |
 | --- | --- | --- |
-| creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
-| debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| creditCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| debitCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
+| prepaidCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['wallet_purchase'] |
 
 ------------
