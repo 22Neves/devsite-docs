@@ -3620,54 +3620,54 @@
                                 "type": "string",
                                 "example": "12345678",
                                 "description": {
-                                    "en": "Payer's address zip code.",
-                                    "pt": "CEP do endereço do pagador.",
-                                    "es": "Código postal de la dirección del pagador."
+                                    "en": "Payer's address zip code. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "CEP do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'",
+                                    "es": "Código postal de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "street_name": {
                                 "type": "string",
                                 "example": "Rua Teste",
                                 "description": {
-                                    "en": "Payer's address street name.",
-                                    "pt": "Nome da rua do endereço do pagador.",
-                                    "es": "Nombre de la calle de la dirección del pagador."
+                                    "en": "Payer's address street name. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Nome da rua do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'",
+                                    "es": "Nombre de la calle de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "street_number": {
                                 "type": "string",
                                 "example": "123",
                                 "description": {
-                                    "en": "Payer address street number.",
-                                    "pt": "Número da rua do endereço do pagador.",
-                                    "es": "Número de la calle de la dirección del pagador."
+                                    "en": "Payer address street number. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Número da rua do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'",
+                                    "es": "Número de la calle de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "neighborhood": {
                                 "type": "string",
                                 "example": "Pres. Altino",
                                 "description": {
-                                    "en": "Payer's address neighborhood. Required for \"payment_method.id\" bolbradesco",
-                                    "pt": "Bairro do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
-                                    "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                    "en": "Payer's address neighborhood. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Bairro do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
+                                    "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "state": {
                                 "type": "string",
                                 "example":"SP",
                                 "description": {
-                                    "en": "Payer`s address state. Required for \"payment_method.id\" bolbradesco",
-                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
-                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                    "en": "Payer`s address state. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
+                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "city": {
                                 "type": "string",
                                 "example":"Osasco",
                                 "description": {
-                                    "en": "Payer's address city. Required for \"payment_method.id\" bolbradesco",
-                                    "pt": "Cidade do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
-                                    "es": "Ciudad de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                    "en": "Payer's address city. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Cidade do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
+                                    "es": "Ciudad de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             }
                         }
@@ -3691,7 +3691,7 @@
                             "description": {
                                 "en": "Item name. The character limit is 150.",
                                 "pt": "Nome do item. O limite de caracteres é 150.",
-                                "es": "Nombre del ítem. El límite de caracteres es 150"
+                                "es": "Nombre del ítem. El límite de caracteres es 150."
                             }
                         },
                         "unit_price": {
