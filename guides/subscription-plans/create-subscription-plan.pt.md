@@ -6,7 +6,7 @@ Siga os passos abaixo para criar um plano de assinatura e começar a cobrar de f
 
 ## Criar um Plano de Assinatura
 
-Comece sua configuração acessando sua conta do Mercado Pago. Uma vez lá, vá até o menu lateral esquerdo e clique na opção [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu). Você também pode acessar clicando [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu).
+Comece sua configuração acessando sua conta do Mercado Pago. Uma vez lá, vá até o menu lateral esquerdo e clique na opção **Planos de Assinatura**. Você também pode acessar clicando [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu).
 
 Se você nunca criou um plano de assinatura antes, precisará clicar no botão **Cobrar com um Plano de Assinatura** para começar. Caso contrário, se você já acessou esta seção anteriormente, já estará na seção **Planos de Assinatura**.
 
