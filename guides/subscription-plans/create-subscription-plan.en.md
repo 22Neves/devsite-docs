@@ -40,5 +40,7 @@ Once you have filled in all the fields, click **Create and Share** to finalize.
 ## Share a subscription plan
 
 Once the subscription plan is created, you can easily share its link. To do this, click **Copy Link** to paste it wherever you prefer or select one of the offered options to send it directly via WhatsApp, Facebook, X, or email.
+
 You can also embed a button on your website. To do this, click on the option **Or embed a button on your website**. An HTML code will be displayed ready to copy and paste into your website.
+
 You will be able to access the link to share your subscription plan at any time from [Subscription Plans](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu) within your Mercado Pago account. To the right of each plan, you will find the **Share** button.

@@ -40,5 +40,7 @@ Depois de preencher todos os campos, clique em **Criar e Compartilhar** para fin
 ## Compartilhar um plano de assinatura
 
 Uma vez criado o plano de assinatura, você poderá compartilhar facilmente o link do seu plano. Para isso, clique em **Copiar Link** para colá-lo onde preferir ou selecione uma das opções oferecidas para enviá-lo diretamente por WhatsApp, Facebook, X ou e-mail.
+
 Você também pode colar um botão em seu site. Para isso, clique na opção **Ou cole um botão em seu site**. Um código HTML será exibido pronto para copiar e colar em sua página.
+
 Você poderá acessar o link para compartilhar seu plano de assinatura a qualquer momento a partir de [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), dentro da sua conta do Mercado Pago. À direita de cada plano, você encontrará o botão **Compartilhar**.
