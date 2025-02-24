@@ -4,7 +4,7 @@ Uma assinatura é uma ferramenta online que permite receber pagamentos de forma 
 
 Siga os passos abaixo para criar um plano de assinatura e começar a cobrar de forma recorrente, fácil e sem integração.
 
-## Criar um Plano de Assinatura
+## Criar um plano de assinatura
 
 Comece sua configuração acessando sua conta do Mercado Pago. Uma vez lá, vá até o menu lateral esquerdo e clique na opção **Planos de Assinatura**. Você também pode acessar clicando [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu).
 

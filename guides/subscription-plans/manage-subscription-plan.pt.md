@@ -4,7 +4,7 @@ Você poderá acessar seus planos de assinatura e modificá-los, excluí-los ou 
 
 A seguir, conheça tudo o que você pode fazer com seus planos de assinatura:
 
-## Gerenciar cobranças por planos de sssinatura
+## Gerenciar cobranças por planos de assinatura
 
 Para gerenciar as cobranças dos seus planos de assinatura, vá até [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que está localizado no seu painel do Mercado Pago, dentro do menu lateral esquerdo.
 

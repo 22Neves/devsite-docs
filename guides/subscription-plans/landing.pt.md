@@ -4,7 +4,7 @@ content_section_with_media:
  - message: Os planos de assinatura são uma maneira fácil e sem integração de receber pagamentos recorrentes. Crie um plano de assinatura, cobre automaticamente e receba o dinheiro na hora.
  - media_image: /subscriptions/mini-landing-pt.png
  - highlight_countries: mla, mlb, mlc, mco, mlm, mpe, mlu
- - country_title: Disponibilidade por País
+ - country_title: Disponibilidade por país
 ---
 ---
 horizontal_cards_section:

@@ -2,7 +2,7 @@
 
 Podrás acceder a tus planes de suscripción y modificarlos, eliminarlos o crear nuevos, a través de **Planes de suscripción** dentro de tu cuenta de Mercado Pago.
 
-A continuación, conoce todo lo que puedes hacer con tus planes de suscripción:
+A continuación, conoce todo lo que puedes hacer con tus planes de suscripción.
 
 ## Gestionar cobros por planes de suscripción
 
@@ -45,7 +45,7 @@ Para pausar un suscriptor, sigue estos pasos:
 
 ### Cancelar suscriptor
 
-Puedes cancelar un suscriptor y dejar de recibir sus pagos. Al realizar la cancelación, Mercado Pago le enviará una notificación vía e-mail por.
+Puedes cancelar un suscriptor y dejar de recibir sus pagos. Al realizar la cancelación, Mercado Pago le enviará una notificación vía e-mail.
 
 Para cancelar un suscriptor, sigue estos pasos:
 1. Haz clic en **Ver detalles** del suscriptor.
@@ -73,7 +73,7 @@ Puedes acceder a tus planes de suscripciones y verlos, modificarlos o cancelarlo
 Para cancelar un plan de suscripción, sigue estos pasos:
 1. Accede a [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que se encuentra en tu panel de Mercado Pago, dentro del menú lateral izquierdo. 
 2. Haz clic en la pestaña **Planes**, que se encuentra en la parte superior del panel.
-3. Haz clic en el los tres puntos que se encuentran a la derecha del plan de suscripción que deseas cancelar o eliminar. Se desplegará un menú. 
+3. Haz clic en los tres puntos que se encuentran a la derecha del plan de suscripción que deseas cancelar o eliminar. Se desplegará un menú. 
 4. Haz clic en **Cancelar**.
 
 > WARNING
