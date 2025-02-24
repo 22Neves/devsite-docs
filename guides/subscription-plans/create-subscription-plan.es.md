@@ -14,8 +14,8 @@ Si nunca creaste un plan de suscripción antes, deberás hacer clic en el botón
 
 Una vez allí, haz clic en el botón **Crear nuevo plan** y completa los datos requeridos:
 
-* **Nombre de tu plan:** completa este campo con el nombre que le quieras destinar al plan de suscripción que estás creando. Por ejemplo: “Clases de baile”. Ten en cuenta que este nombre es público y las personas que se suscriban podrán verlo.
-* **Precio:** define el monto de dinero que abonarán las personas que se suscriban. Además, encontrarás el casillero **Prefiero que el cliente lo defina**, que permite que las personas que se suscriban definan el monto que quieren abonar por la suscripción y, en consecuencia, no permite definir un monto fijo por plan de suscripción. Si prefieres este modelo, haz clic en el casillero para seleccionarlo.
+* **Nombre de tu plan:** completa este campo con el nombre que le quieras asignar al plan de suscripción que estás creando. Por ejemplo: “Clases de baile”. Ten en cuenta que este nombre es público y las personas que se suscriban podrán verlo.
+* **Precio:** define el monto de dinero que abonarán las personas que se suscriban. Además, encontrarás el casillero **Prefiero que el cliente lo defina**, que permite que las personas que se suscriban decidan cuánto quieren abonar por la suscripción y, en consecuencia, no permite definir un monto fijo por plan de suscripción. Si prefieres este modelo, haz clic en el casillero para seleccionarlo.
 * **Frecuencia de cobro:** selecciona con qué frecuencia quieres que tu plan de suscripción sea cobrado a tus clientes. La misma puede ser semanal, mensual, anual, quincenal, bimestral, trimestral, cuatrimestral o semestral.
 
 > WARNING
@@ -28,8 +28,8 @@ Una vez allí, haz clic en el botón **Crear nuevo plan** y completa los datos r
 
 Puedes personalizar aún más tu plan haciendo clic en **Más opciones**. Conoce cómo completar cada campo:
 
-* **Prueba gratis:** permite ofrecer un periodo gratuito a los suscriptores antes del primer cobro. Puedes seleccionar **Sin prueba gratis** para no ofrecerlo, o bien puedes ofrecer un período de prueba gratis de **7 días**, **14 días** o **Personalizado**, en donde deberás colocar la cantidad de días que desees.
-* **Duración de la suscripción:** puedes definir si tu plan de suscripción estará activo por tiempo ilimitado o si se acabará automáticamente después de una cierta cantidad de recurrencias de cobros. Selecciona **Ilimitada** si quieres que esté activa indefinidamente. Si quieres que acabe automáticamente, selecciona **Limitada** y define cuántas recurrencias de cobros quieres que sean hechos.
+* **Prueba gratis:** permite ofrecer un período gratuito a los suscriptores antes del primer cobro. Puedes seleccionar **Sin prueba gratis** para no brindarlo, o bien puedes ofrecer un período de prueba gratis de **7 días**, **14 días** o **Personalizado**, en donde deberás colocar la cantidad de días que desees.
+* **Duración de la suscripción:** puedes definir si tu plan de suscripción estará activo por tiempo ilimitado o si se acabará automáticamente después de una cierta cantidad de recurrencias de cobros. Selecciona **Ilimitada** si quieres que esté activa indefinidamente. Si quieres que acabe automáticamente, selecciona **Limitada** y define cuántas recurrencias de cobros quieres que sean hechas.
 * **Fecha de facturación:** elige el día del mes en que se cobrará la suscripción. _Esta opción sólo está disponible para planes con frecuencia de cobro mensual_.
 * **Cobrar valor proporcional en la fecha de adhesión:** Si está activada esta opción, los clientes pagarán al adherirse un monto proporcional por los días restantes hasta el primer cobro mensual. Si está desactivada, no se cobrará el monto adicional.
 * **Código de referencia:** Permite sumar un código de referencia para ayudarte a tí a identificar el plan, en caso de que tengas varios planes similares activos.
