@@ -89,5 +89,5 @@ Listo, tu plan de suscripción fue cancelado permanentemente.
 Puedes generar un reporte de los suscriptores y descargarlo. Para eso, sigue estos pasos:
 1. Dirígete a [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que se encuentra en tu panel de Mercado Pago, dentro del menú lateral izquierdo.
 2. Haz clic en la pestaña **Suscriptores** que se encuentra en la parte superior del panel. 
-3. Utiliza los distintos filtros para limitar la información que deseas obtener en tu reporte. Puedes filtrar los suscriptores por aquellos que fueron **pausados**, **cancelados**, con **problemas en el cobro** o que **fueron cobrados con éxito**. También puedes filtrar por los diferentes** planes de suscripción** y también por un **período personalizado de fechas**.
+3. Utiliza los distintos filtros para limitar la información que deseas obtener en tu reporte. Puedes filtrar los suscriptores por aquellos que fueron **pausados**, **cancelados**, con **problemas en el cobro** o que **fueron cobrados con éxito**. También puedes filtrar por los diferentes **planes de suscripción** y también por un **período personalizado de fechas**.
 4. Haz clic en el botón **Descargar reporte** que se encuentra en la parte central a la derecha del panel de suscriptores.
