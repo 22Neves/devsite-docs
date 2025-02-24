@@ -14,8 +14,8 @@ If you have never created a subscription plan before, you will need to click the
 
 Once there, click the **Create New Plan** button and fill in the required information:
 
-* **Name of your plan:** fill this field with the name you want to assign to the subscription plan you are creating. For example: “Dance Classes.” Keep in mind that this name is public, and the people who subscribe will be able to see it.
-* **Price:** define the amount of money that people who subscribe will pay. Additionally, you will find the box **I prefer the customer to define it**, which allows subscribers to define the amount they want to pay for the subscription and, consequently, does not allow a fixed amount to be set for the subscription plan. If you prefer this model, click the box to select it.
+* **Name of your plan:** fill this field with the name you want to assign to the subscription plan you are creating. For example: “Dance Classes”. Keep in mind that this name is public, and the people who subscribe will be able to see it.
+* **Price:** define the amount of money that will be paid for the subscription. Additionally, you will find the box **I prefer the customer to define it**, which allows subscribers to define the amount they want to pay for the subscription and, consequently, does not allow a fixed amount to be set for the subscription plan. If you prefer this model, click the box to select it.
 * **Billing Frequency:** select how often you want your subscription plan to be charged to your customers. This can be weekly, monthly, annually, biweekly, bimonthly, quarterly, four-monthly, or semiannually.
 
 > WARNING
