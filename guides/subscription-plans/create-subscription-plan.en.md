@@ -8,7 +8,7 @@ Follow the steps below to create a subscription plan and start charging easily a
 
 Start your setup by logging into your Mercado Pago account. Once there, go to the left side menu and click on the **Subscription Plans** option. You can also access it by [clicking here](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu).
 
-If you have never created a subscription plan before, you will need to click the **Charge with a Subscription Plan** button to get started. Otherwise, if you have accessed this section previously, you will already be in the **Subscription Plans** section.
+If you have never created a subscription plan before, you will need to click the **Charge with a Subscription Plan** button to get started. Otherwise, if you have accessed this section previously, you will already be in **Subscription Plans**.
 
 ![Create subscription](/images/subscription-plans/Tus-suscripciones-comenzar-EN.jpg)
 
