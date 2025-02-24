@@ -40,6 +40,7 @@ Una vez que hayas completado todos los campos, haz clic en **Crear y compartir**
 ## Compartir un plan de suscripción
 
 Una vez creado el plan de suscripción, podrás compartir el link de tu plan fácilmente. Para eso, haz clic en **Copiar link** para pegarlo donde prefieras o selecciona una de las opciones ofrecidas para enviarlo directamente por WhatsApp, Facebook, X o e-mail. 
+
 También puedes pegar un botón en tu sitio web. Para eso, haz click en la opción **O pega un botón en tu sitio web**. Se desplegará un código HTML listo para copiar y pegar en tu página web.
 
 Podrás acceder al link para compartir tu plan de suscripción en cualquier momento desde [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), dentro de tu cuenta de Mercado Pago. A la derecha de cada plan, encontrarás el botón **Compartir**.
