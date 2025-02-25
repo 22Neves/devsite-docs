@@ -6,7 +6,7 @@ Antes de realizar a renderização do Status Screen Brick, primeiro execute os [
 >
 > Nota
 >
-> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/status-screen.md).
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/status-screen.md).
 
 ## Configurar o Brick
 

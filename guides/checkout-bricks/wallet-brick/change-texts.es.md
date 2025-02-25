@@ -4,7 +4,56 @@
 >
 > Cambiar textos
 
-Wallet Brick ofrece dos niveles de lectura: el **call to action (botón)** y la **propuesta de valor (Value Prop)**. En ambos casos, el texto se puede personalizar de acuerdo a las opciones brindadas por Mercado Pago.
+----[mlc]----
+Wallet Brick está **compuesto por el botón y la propuesta de valor** (`valueProp`), que puede ser personalizada de acuerdo con las opciones disponibles en Mercado Pago.
+
+Hay dos temas disponibles: el **default** (también utilizado cuando no se especifica ninguna configuración) y el **dark**. La elección del tema impacta el color de fondo del botón, de la propuesta de valor y el color de las imágenes dentro del botón.
+
+![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es-all.png)
+
+Caso a proposta de valor não tenha sido especificada, por padrão será security_safety. A seguir, confira todos os textos possíveis para o conteúdo da proposta de valor:
+
+En caso de que no se haya especificado la propuesta de valor, por defecto será `security_safety`. A continuación, revisa todos los textos posibles para el contenido de la propuesta de valor:
+
+| Opción | Texto |
+|--- | --- |
+|practicality | Usa tarjetas guardadas o dinero en cuenta |
+|security_details | Todos tus datos protegidos |
+|security_safety (por defecto) | Paga de forma segura |
+|smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
+|payment_methods_logos* | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. |
+
+> NOTE
+>
+> Importante
+>
+> *Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible**".
+
+[[[
+```javascript
+const settings = {
+    ...,
+    customization: {
+        theme: 'default',
+        customStyle: {
+            valueProp: 'practicality',
+        }
+    }
+}
+```
+```react-jsx
+const customization = {
+    theme: 'default',
+    customStyle: {
+        valueProp: 'practicality',
+    }
+};
+```
+]]]
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
+Wallet Brick ofrece dos niveles de lectura: el **call to action (botón)** y la **propuesta de valor** (`valueProp`). En ambos casos, el texto se puede personalizar de acuerdo a las opciones brindadas por Mercado Pago.
 
 El _call to action_ se divide en dos partes: la acción, determinada por la propiedad `Action`, y el complemento de la acción, determinado por la propiedad `Action Complement`.
 
@@ -16,31 +65,35 @@ El _call to action_ se divide en dos partes: la acción, determinada por la prop
 
 | - | Descripción |
 | --- | --- |
-| Momento de personalización  | Al renderizar el Brick  |
+| Momento de personalización  | Al renderizar el Brick.  |
 | Propiedad  | customization.texts.{action, actionComplement, valueProp}  |
 | Tipo  | String  |
 | Observaciones  | Al enviar un texto vacío, la pantalla presentará el texto definido por el layout predeterminado que se muestra después de la [renderización del Brick](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). Por otro lado, al enviar un texto alternativos, reemplazará el texto predeterminado. Para comprobar cuáles son los textos por defecto, consulta la tabla a continuación. |
 
 Consulta a continuación los textos disponibles para cambiar, cómo se organizan en la pantalla y un ejemplo de código.
 
-----[mla]----
-![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es-mla.png)
+![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es.png)
 
 ------------
-----[mlb, mlm, mpe, mco, mlu, mlc]----
-![wallet-brick-actioncomplement](checkout-bricks/wallet-brick-actioncomplement-es-all.png)
-
-------------
-
+----[mlb, mlm, mlb]----
 | Clave | Opciones disponibles | Predeterminado |
 |--- |--- | --- |
 | action | pay, buy | pay |
 | actionComplement |brand, amount | brand |
 | valueProp | practicality, convenience_all, security_details, security_safety, smart_option, convenience_credits, payment_methods_logos | security_safety |
 
+------------
+----[mpe, mco, mlu]----
+| Clave | Opciones disponibles | Predeterminado |
+|--- |--- | --- |
+| action | pay, buy | pay |
+| actionComplement |brand, amount | brand |
+| valueProp | practicality, security_details, security_safety, smart_option, payment_methods_logos | security_safety |
+
+------------
+----[mlm]----
 Consulta los textos relacionados con cada opción:
 
-----[mlm]----
 | Clave | Opción | Texto |
 |--- |--- | --- |
 |action |pay | Pagar|
@@ -53,10 +106,14 @@ Consulta los textos relacionados con cada opción:
 |valueProp |security_safety | Pagá de forma segura |
 |valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
 |valueProp |convenience_credits* | Hasta 12 Meses sin Tarjeta  |
-|valueProp |payment_methods_logos** | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_.. |
+|valueProp |payment_methods_logos** | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. |
+
+Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `valueProp` tengan sentido en tu contexto.
 
 ------------
 ----[mlb, mla]----
+Consulta los textos relacionados con cada opción:
+
 | Clave | Opción | Texto |
 |--- |--- | --- |
 |action |pay | Pagar|
@@ -71,8 +128,12 @@ Consulta los textos relacionados con cada opción:
 |valueProp |convenience_credits* | Hasta 12 Cuotas sin Tarjeta  |
 |valueProp |payment_methods_logos** | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. |
 
+Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `valueProp` tengan sentido en tu contexto.
+
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu]----
+Consulta los textos relacionados con cada opción:
+
 | Clave | Opción | Texto |
 |--- |--- | --- |
 |action |pay | Pagar|
@@ -80,16 +141,14 @@ Consulta los textos relacionados con cada opción:
 |actionComplement |brand | con Mercado Pago |
 |actionComplement |amount | Monto de la compra obtenido a través de la preferencia, en el formato de la moneda del pago.  |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
-|valueProp |convenience_all | Cuotas con o sin tarjeta |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Pagá de forma segura |
 |valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
 |valueProp |payment_methods_logos* | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. |
 
-------------
-
 Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `valueProp` tengan sentido en tu contexto.
 
+------------
 ----[mlm]----
 > NOTE
 >
@@ -112,7 +171,7 @@ Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `
 > **Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible o en cuotas sin tarjeta**".
 
 ------------
-----[mpe, mco, mlu, mlc]----
+----[mpe, mco, mlu]----
 > NOTE
 >
 > Importante
@@ -120,7 +179,7 @@ Al probar tu integración, asegúrate de que la `action`, `actionComplement` y `
 > *Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _Value Prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con dinero disponible**".
 
 ------------
-
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```javascript
 const settings = {
@@ -147,3 +206,5 @@ const customization = {
 };
 ```
 ]]]
+
+------------
