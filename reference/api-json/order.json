@@ -3638,9 +3638,9 @@
                                 "type": "string",
                                 "example": "123",
                                 "description": {
-                                    "en": "Payer address street number. Required for \"payment_method.id\" 'bolbradesco'.",
-                                    "pt": "Número da rua do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'",
-                                    "es": "Número de la calle de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
+                                    "en": "Payer address number. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Número do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'",
+                                    "es": "Número de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "neighborhood": {
@@ -3648,26 +3648,26 @@
                                 "example": "Pres. Altino",
                                 "description": {
                                     "en": "Payer's address neighborhood. Required for \"payment_method.id\" 'bolbradesco'.",
-                                    "pt": "Bairro do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
-                                    "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
+                                    "pt": "Bairro em que se encontra o endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
+                                    "es": "Barrio en el que se encuentra la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "state": {
                                 "type": "string",
                                 "example":"SP",
                                 "description": {
-                                    "en": "Payer`s address state. Required for \"payment_method.id\" 'bolbradesco'.",
-                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
-                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
+                                    "en": "State where the payer's address is located. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Estado em que se encontra endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
+                                    "es": "Estado en el que se encuentra la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             },
                             "city": {
                                 "type": "string",
                                 "example":"Osasco",
                                 "description": {
-                                    "en": "Payer's address city. Required for \"payment_method.id\" 'bolbradesco'.",
-                                    "pt": "Cidade do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
-                                    "es": "Ciudad de la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
+                                    "en": "City where the payer's address is located. Required for \"payment_method.id\" 'bolbradesco'.",
+                                    "pt": "Cidade em que se encontra do endereço do pagador. Obrigatório para \"payment_method.id\" 'bolbradesco'.",
+                                    "es": "Ciudad en la que se encuentra la dirección del pagador. Requerido para \"payment_method.id\" 'bolbradesco'."
                                 }
                             }
                         }
