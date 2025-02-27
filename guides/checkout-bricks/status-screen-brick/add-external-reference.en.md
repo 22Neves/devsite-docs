@@ -37,7 +37,7 @@ const customization = {
 ]]]
 
 ----[mlc]----
-![status-screen-brick-external-reference](checkout-bricks/status-screen-brick-external-reference-all-en.png)
+![status-screen-brick-external-reference](checkout-bricks/status-screen-external-reference-all-en.png)
 
 ------------
 ----[mlb, mlm, mla, mco, mlu, mpe]----
