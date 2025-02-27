@@ -3,7 +3,7 @@
 product_landing_hero:
  - title: Integra Checkout Pro fácilmente
  - message: Incorpora esta solución de cobro que permite a tus clientes pagar en Mercado Pago sin necesidad de iniciar sesión.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/18/1739881142784-esherocheckoutpro.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/26/1740592108112-imgchopro4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -64,13 +64,13 @@ product_landing_what_differentiates:
  - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/24/1740402132575-eschobricks.png
  - column_product: Checkout Bricks
- - column_button_text: Cómo integrar
+ - column_button_text: Ver resumo
  - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/24/1740402177212-eschoapi.png
  - column_product: Checkout Transparente
- - column_button_text: Cómo integrar
+ - column_button_text: Ver resumo
  - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
- - line_text: Facilidad de integración
+ - line_text: Esfuerzo de integración
  - line_type: dots
  - line_values: 4|3|1
  - line_text: Nivel de personalización
@@ -82,7 +82,7 @@ product_landing_what_differentiates:
  - line_text: Experiencia de cobro
  - line_type: text
  - line_values: En Mercado Pago|En tu sitio|En tu sitio
- - line_text: Métodos de pago
+ - line_text: Medios de pago
  - line_type: text
  - line_values: Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto
  - line_text: Disponibilidad por país
@@ -99,9 +99,9 @@ product_landing_how_integrate:
  - image_text_link: /live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de vendedor
- - requirement_table_list: Para integrar Checkout Pro, necesitas una cuenta de vendedor en Mercado Pago. Si no tienes una, puedes crearla gratis. 
+ - requirement_table_list: Para integrar Checkout Pro, necesitas una cuenta de vendedor en Mercado Pago. Si no tienes una, puedes [crearla gratis](/docs/checkout-pro/landing).
  - requirement_table_title: Credenciales
- - requirement_table_list: Son claves únicas para que puedas configurar tus integraciones. Necesitas 2 de prueba para probar la integración y 2 de producción para recibir pagos reales. Saber más
+ - requirement_table_list: Son claves únicas para que puedas configurar tus integraciones. Necesitas 2 de prueba para probar la integración y 2 de producción para recibir pagos reales. [Saber más](/docs/checkout-pro/landing)
  - requirement_table_title: Certificado SSL
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencia de información.
  - list_title: Proceso de integración
