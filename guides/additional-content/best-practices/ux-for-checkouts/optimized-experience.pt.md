@@ -28,7 +28,7 @@ Os **bullets** são uma lista com diferentes elementos. Use bullets para criar l
 
 Os **highlights** são textos sublinhados ou destacados. Use highlights para destacar palavras-chave ou frases importantes que agreguem valor, fazendo com que seja mais fácil de escanear a página. 
 
-![pt bullets y highlights](/images/best-practices-guide/bullets-highlights-pt.png)
+![pt bullets y highlights](/images/best-practices-guide/bullet-highlight-pt.png)
 
 ## Facilite o preenchimento de dados
 
