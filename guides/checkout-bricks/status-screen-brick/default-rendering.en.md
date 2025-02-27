@@ -6,7 +6,7 @@ Before rendering the Status Screen Brick, first execute the [initialization step
 >
 > Note
 >
-> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/status-screen.md).
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/status-screen.md).
 
 ## Configure the Brick
 

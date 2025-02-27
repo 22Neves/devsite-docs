@@ -44,17 +44,17 @@
                                         "type": "object",
                                         "required": true,
                                         "description": {
-                                            "en": "Contains information about the transactions associated with the Order. It can contain up to 2 transactions. For example, if you want to create an Order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
-                                            "pt": "Contém informações sobre as transações associadas à Order. Pode conter até 2 transações. Por exemplo, se deseja criar uma Order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
-                                            "es": "Contiene información sobre las transacciones asociadas a la Order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array."
+                                            "en": "Contains information about the transactions associated with the Order. It can contain only one transaction.",
+                                            "pt": "Contém informações sobre as transações associadas à Order. Pode conter apenas uma transação.",
+                                            "es": "Contiene información sobre las transacciones asociadas a la Order. Puede contener solo una transacción."
                                         },
                                         "properties": {
                                             "payments": {
                                                 "type": "array",
                                                 "description": {
-                                                    "en": "Contains information about the payment Order. If you want to create an Order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
-                                                    "pt": "Contém informações sobre a Order do pagamento. Caso deseje criar uma Order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
-                                                    "es": "Contiene información sobre la Order de pago. En caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
+                                                    "en": "Contains information about the payment Order.",
+                                                    "pt": "Contém informações sobre a Order do pagamento.",
+                                                    "es": "Contiene información sobre la Order de pago."
                                                 },
                                                 "properties": {
                                                     "amount": {
@@ -263,7 +263,7 @@
                                                                         "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
                                                                         "description": {
                                                                             "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                            "pt": "URL do boleto. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "pt": "URL do ticket. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
                                                                             "es": "URL del ticket. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
                                                                         }
                                                                     },
@@ -932,33 +932,33 @@
                                                                             {
                                                                                 "title": "master",
                                                                                 "description": {
-                                                                                    "en": "Mastercard credit card.",
-                                                                                    "es": "Tarjeta de crédito Mastercard.",
-                                                                                    "pt": "Cartão de crédito Mastercard."
+                                                                                    "en": "Master credit card.",
+                                                                                    "es": "Tarjeta de crédito Master.",
+                                                                                    "pt": "Cartão de crédito Master."
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "title": "debelo",
                                                                                 "description": {
-                                                                                    "en": "Debelo debit card.",
-                                                                                    "es": "Tarjeta de débito Debelo.",
-                                                                                    "pt": "Cartão de débito Debelo."
+                                                                                    "en": "Elo debit card.",
+                                                                                    "es": "Tarjeta de débito Elo.",
+                                                                                    "pt": "Cartão de débito Elo."
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "title": "debmaster",
                                                                                 "description": {
-                                                                                    "en": "Debmaster debit card.",
-                                                                                    "es": "Tarjeta de débito Debmaster.",
-                                                                                    "pt": "Cartão de débito Debmaster."
+                                                                                    "en": "Master debit card.",
+                                                                                    "es": "Tarjeta de débito Master.",
+                                                                                    "pt": "Cartão de débito Master."
                                                                                 }
                                                                             },
                                                                             {
                                                                                 "title": "debvisa",
                                                                                 "description": {
-                                                                                    "en": "Debvisa debit card.",
-                                                                                    "es": "Tarjeta de débito Debvisa.",
-                                                                                    "pt": "Cartão de débito Debvisa."
+                                                                                    "en": "Visa debit card.",
+                                                                                    "es": "Tarjeta de débito Visa.",
+                                                                                    "pt": "Cartão de débito Visa."
                                                                                 }
                                                                             },
                                                                             {
@@ -988,9 +988,9 @@
                                                                             {
                                                                                 "title": "bolbradesco",
                                                                                 "description": {
-                                                                                    "en": "Boleto Bradesco payment.",
-                                                                                    "es": "Pago con boleto Bradesco.",
-                                                                                    "pt": "Pagamento com boleto Bradesco."
+                                                                                    "en": "Ticket Bradesco payment.",
+                                                                                    "es": "Pago con ticket Bradesco.",
+                                                                                    "pt": "Pagamento com ticket Bradesco."
                                                                                 }
                                                                             },
                                                                             {
@@ -1134,7 +1134,7 @@
                                                                         "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
                                                                         "description": {
                                                                             "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                            "pt": "URL do boleto. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                            "pt": "URL do ticket. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
                                                                             "es": "URL del ticket. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
                                                                         }
                                                                     },
@@ -1681,9 +1681,9 @@
                                     "payments": {
                                         "type": "array",
                                         "description": {
-                                            "en": "Contains information about the payment Order. If you want to create an Order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
-                                            "pt": "Contém informações sobre a Order do pagamento. Caso deseje criar uma Order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
-                                            "es": "Contiene información sobre la Order de pago. En caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
+                                            "en": "Contains information about the payment Order.",
+                                            "pt": "Contém informações sobre a Order do pagamento.",
+                                            "es": "Contiene información sobre la Order de pago."
                                         },
                                         "items": {
                                             "type": "object",
@@ -1896,9 +1896,9 @@
                                                 {
                                                     "title": "exceeded_number_of_transactions",
                                                     "description": {
-                                                        "en": "An error occurred in the request. The Order accepts a maximum of two transactions. Remove the excess transactions.",
-                                                        "es": "Ocurrió un error en la solicitud. La Order acepta un máximo de dos transacciones. Elimine las transacciones excedentes.",
-                                                        "pt": "Ocorreu um erro na requisição. A Order aceita, no máximo, duas transações. Remova as transações excedentes."
+                                                        "en": "An error occurred in the request. The Order accepts a maximum of one transaction. Remove the excess transactions.",
+                                                        "es": "Ocurrió un error en la solicitud. La Order acepta un máximo de una transacción. Elimine las transacciones excedentes.",
+                                                        "pt": "Ocorreu um erro na requisição. A Order aceita, no máximo, uma transação. Remova as transações excedentes."
                                                     }
                                                 }
                                             ]
@@ -2581,9 +2581,9 @@
                                         "type": "array",
                                         "required": true,
                                         "description": {
-                                            "en": "Contains information about the transactions associated with the Order. It can contain up to 2 transactions. For example, if you want to create an Order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
-                                            "pt": "Contém informações sobre as transações associadas à Order. Pode conter até 2 transações. Por exemplo, se deseja criar uma Order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
-                                            "es": "Contiene información sobre las transacciones asociadas a la Order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una Order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array."
+                                            "en": "Contains information about the transactions associated with the Order. It can contain only one transaction.",
+                                            "pt": "Contém informações sobre as transações associadas à Order. Pode conter apenas uma transação.",
+                                            "es": "Contiene información sobre las transacciones asociadas a la Order. Puede contener solo una transacción."
                                         },
                                         "items": {
                                             "type": "object",
@@ -3315,33 +3315,33 @@
                             {
                                 "title": "master",
                                 "description": {
-                                    "en": "Mastercard credit card.",
-                                    "es": "Tarjeta de crédito Mastercard.",
-                                    "pt": "Cartão de crédito Mastercard."
+                                    "en": "Master credit card.",
+                                    "es": "Tarjeta de crédito Master.",
+                                    "pt": "Cartão de crédito Master."
                                 }
                             },
                             {
                                 "title": "debelo",
                                 "description": {
-                                    "en": "Debelo debit card.",
-                                    "es": "Tarjeta de débito Debelo.",
-                                    "pt": "Cartão de débito Debelo."
+                                    "en": "Elo debit card.",
+                                    "es": "Tarjeta de débito Elo.",
+                                    "pt": "Cartão de débito Elo."
                                 }
                             },
                             {
                                 "title": "debmaster",
                                 "description": {
-                                    "en": "Debmaster debit card.",
-                                    "es": "Tarjeta de débito Debmaster.",
-                                    "pt": "Cartão de débito Debmaster."
+                                    "en": "Master debit card.",
+                                    "es": "Tarjeta de débito Master.",
+                                    "pt": "Cartão de débito Master."
                                 }
                             },
                             {
                                 "title": "debvisa",
                                 "description": {
-                                    "en": "Debvisa debit card.",
-                                    "es": "Tarjeta de débito Debvisa.",
-                                    "pt": "Cartão de débito Debvisa."
+                                    "en": "Visa debit card.",
+                                    "es": "Tarjeta de débito Visa.",
+                                    "pt": "Cartão de débito Visa."
                                 }
                             },
                             {
@@ -3371,9 +3371,9 @@
                             {
                                 "title": "bolbradesco",
                                 "description": {
-                                    "en": "Boleto Bradesco payment.",
-                                    "es": "Pago con boleto Bradesco.",
-                                    "pt": "Pagamento com boleto Bradesco."
+                                    "en": "Ticket Bradesco payment.",
+                                    "es": "Pago con ticket Bradesco.",
+                                    "pt": "Pagamento com ticket Bradesco."
                                 }
                             },
                             {
@@ -3642,6 +3642,33 @@
                                     "pt": "Número da rua do endereço do pagador.",
                                     "es": "Número de la calle de la dirección del pagador."
                                 }
+                            },
+                            "neighborhood": {
+                                "type": "string",
+                                "example": "Pres. Altino",
+                                "description": {
+                                    "en": "Payer's address neighborhood. Required for \"payment_method.id\" bolbradesco",
+                                    "pt": "Bairro do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
+                                    "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                }
+                            },
+                            "state": {
+                                "type": "string",
+                                "example":"SP",
+                                "description": {
+                                    "en": "Payer`s address state. Required for \"payment_method.id\" bolbradesco",
+                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
+                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                }
+                            },
+                            "city": {
+                                "type": "string",
+                                "example":"Osasco",
+                                "description": {
+                                    "en": "Payer's address city. Required for \"payment_method.id\" bolbradesco",
+                                    "pt": "Cidade do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
+                                    "es": "Ciudad de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                }
                             }
                         }
                     }
@@ -3696,13 +3723,13 @@
                                 "es": "Descripción del ítem comprado. El límite de caracteres es 100."
                             }
                         },
-                        "id": {
+                        "external_code": {
                             "type": "string",
                             "example": "1234",
                             "description": {
-                                "en": "Item ID.",
-                                "pt": "Identificador do item.",
-                                "es": "Identificador del ítem."
+                                "en": "Item External code.",
+                                "pt": "Código externo do item.",
+                                "es": "Código externo del ítem."
                             }
                         },
                         "picture_url": {

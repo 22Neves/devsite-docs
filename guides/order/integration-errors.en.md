@@ -19,7 +19,7 @@ Check this list with all the possible errors that the API can return, and how to
 | Request Error | 400 | `invalid_order_mode_for_operation` | The reported mode is not valid for this operation. Verify if you are using the correct mode according to the desired operation. |
 | Request Error | 400 | `invalid_order_type` | The type of the order is invalid. Check if the type used is valid for the operation. |
 | Request Error | 400 | `invalid_transaction_id` | The transaction ID is invalid. Ensure that the ID is correct. |
-| Request Error | 400 | `exceeded_number_of_transactions` | An error occurred in the request. The order accepts a maximum of two transactions. Remove the excess transactions.|
+| Request Error | 400 | `exceeded_number_of_transactions` | An error occurred in the request. The Order accepts a maximum of one transaction. Remove the excess transactions.|
 | Request Error | 400 | `invalid_email_for_sandbox` | Email format is invalid for sandbox environment, must contains "@testuser.com". |
 | Processing error | 402 | `failed` | There was an error processing one of the transactions. Check the returned message for more information. |
 | Request Error | 404 | `order_not_found` | The order was not found. Check if the provided ID is correct. |

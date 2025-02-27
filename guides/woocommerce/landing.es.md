@@ -77,7 +77,7 @@ bullet_section_with_media:
  - benefit_message: Al activar Linha de Crédito en el checkout, llega a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
 
  ------------
- - image: /woocomerce/landing-woo-advantages.png
+ - image: /woocomerce/new-landing-woo-advantages.png
 ---
 
 --- mini_landing_separator ---

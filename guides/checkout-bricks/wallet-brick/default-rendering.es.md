@@ -2,16 +2,77 @@
 
 Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. A partir de esto, a continuación se presentan las informaciones necesarias para que configures y renderices el Wallet Brick.
 
+----[mlc]----
 > NOTE
 >
 > Nota
 >
 > Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
+> NOTE
+>
+> Nota
+>
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/legacy/wallet.md).
+
+------------
+
 ## Configurar el Brick
 
 Crea la configuración de inicio de Brick
 
+----[mlc]----
+[[[
+```Javascript
+const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create("wallet", "walletBrick_container", {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            theme: "default",
+            customStyle: {
+                valueProp: "practicality",
+                valuePropColor: "white",
+            },
+        },
+    });
+};
+
+renderWalletBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
+
+const onSubmit = async (formData) => {
+ // callback llamado al hacer clic en Wallet Brick
+ // esto es posible porque Brick es un botón 
+};
+
+const onError = async (error) => {
+ // callback llamado para todos los casos de error de Brick
+ console.log(error);
+};
+
+const onReady = async () => {
+ // Callback llamado cuando Brick esté listo.
+ // Aquí puedes ocultar loadings en tu sitio, por ejemplo.  
+};
+```
+]]]
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -58,6 +119,8 @@ const onReady = async () => {
 ```
 ]]]
 
+------------
+
 > WARNING
 > 
 > Atención
@@ -96,12 +159,12 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 El resultado de renderizar el Brick debe ser como se muestra en la imagen a continuación, presentando un texto y un aspecto predeterminado.
 
-----[mla]----
-![wallet-brick-render](checkout-bricks/wallet-brick-render-es-mla.png)
+----[mlc]----
+![wallet-brick-render](checkout-bricks/wallet-brick-render-es-all.png)
 
 ------------
-----[mlb, mlm, mlu, mlc, mco, mpe]----
-![wallet-brick-render](checkout-bricks/wallet-brick-render-es-all.png)
+----[mlb, mlm, mla, mlu, mco, mpe]----
+![wallet-brick-render](checkout-bricks/wallet-brick-render-es.png)
 
 ------------
 

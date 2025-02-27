@@ -19,7 +19,7 @@ Veja a lista de possíveis erros retornados pela API e como corrigi-los.
 | Erro de requisição | 400 | `invalid_order_mode_for_operation` | O modo informado não é valido para esta operação. Verifique se está utilizando o modo correto conforme a operação desejada. |
 | Erro de requisição | 400 | `invalid_order_type` | Tipo da order é invalido. Verifique se o tipo utilizado é valido para a operação. |
 | Erro de requisição | 400 | `invalid_transaction_id` | O ID da transação é invalido. Certifique-se de que o ID está correto. |
-| Erro de requisição | 400 | `exceeded_number_of_transactions` | Ocorreu um erro na requisição. A order aceita, no máximo, duas transações. Remova as transações excedentes. |
+| Erro de requisição | 400 | `exceeded_number_of_transactions` | Ocorreu um erro na requisição. A order aceita, no máximo, uma transação. Remova as transações excedentes. |
 | Erro de requisição | 400 | `invalid_email_for_sandbox` | O formato de e-mail é inválido para o ambiente de *sandbox*, deve conter "@testuser.com". |
 | Erro de processamento | 402 | `failed` | Ocorreu um erro no processamento de alguma das transações. Verifique a mensagem para mais informações. |
 | Erro de requisição | 404 | `order_not_found` | A order não foi encontrada. Verifique se o ID informado está correto. |

@@ -74,7 +74,7 @@ Soluções para quem vende de casa, na rua, no carro ou na loja.
 |:---|:---|:---|
 | [Código QR](/developers/pt/docs/qr-code/landing)| Escolha um modelo de integração para gerar códigos QR e fornecer uma experiência completa de pagamento presencial. | Intermediário |
 | [Mercado Pago Point](/developers/pt/docs/mp-point/landing) | Integre o Mercado Pago Point e conecte a maquininha de cartão a qualquer sistema iOS ou Android para aceitar pagamentos nas frentes de caixa. | Intermediário |
-| [Mercado Pago Delivery](/developers/pt/docs/mp-delivery/introduction) | Uma solução de entrega de refeições sob demanda, na qual o cliente acessa uma lista de restaurantes cadastrados, faz seu pedido e paga diretamente pelo app do Mercado Pago. | Intermediário |
+
 ------------
 
 ----[mpe, mco, mlu, mlc]----
@@ -171,9 +171,8 @@ Para obter detalhes sobre os **meios de pagamento aceitos em cada país**, consu
 | [Link de Pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/link-de-pagamento) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Planos de assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/assinaturas) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [Assinaturas](/developers/pt/docs/subscriptions/landing) | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [Mercado Pago Delivery](/developers/pt/docs/mp-delivery/introduction) | ✔ | - | - | - | - | - | - |
 | [Código QR](/developers/pt/docs/qr-code/landing) | ✔ | ✔ | ✔ | - | - | - | ✔ |
-| [Mercado Pago Point](/developers/pt/docs/mp-point/landing) | ✔ | ✔ | - | - | ✔ | - | - |
+
 ------------
 
 <br>

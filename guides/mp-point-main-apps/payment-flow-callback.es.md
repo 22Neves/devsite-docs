@@ -4,6 +4,86 @@ El método callback es un modo sencillo para inicializar el flujo de pago con Ma
 
 Comienza tu integración utilizando nuestros SDKs para inicializar el flujo de pago a través de la clase `PaymentFlow` de la siguiente manera:
 
+----[mlc]---- 
+[[[
+```kotlin
+val paymentFlow = MPManager.paymentFlow
+
+val paymentFlowRequestData = PaymentFlowRequestData(
+
+   amount = 10.0,
+
+   description = "test description",
+
+   paymentMethod = PaymentMethod.CREDIT_CARD.name,
+
+   printOnTerminal = false // campo opcional si lanza el pago sin impresión en la terminal
+
+)
+
+paymentFlow.launchPaymentFlow(
+
+   paymentFlowRequestData = paymentFlowRequestData
+
+) { response ->
+
+   response.doIfSuccess { result ->
+
+       // manejo de éxito utilizando un mensaje
+
+   }.doIfError { error ->
+
+       // manejo del error
+
+   }
+
+}
+```
+```java
+final PaymentFlow paymentFlow = MPManager.INSTANCE.getPaymentFlow();
+
+final String amount = "2.0";
+
+final String description = "Payment description";
+
+final PaymentFlowData paymentFlowData = new PaymentFlowData(
+
+   amount,
+
+   description,
+
+   PaymentMethod.CREDIT_CARD.name(),
+
+   6, // optional field if launching the payment in installments. 
+
+   false // optional field if launching the payment without printing in terminal
+
+);
+
+
+
+final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<PaymentResponse> response) -> {
+
+ if (response.getStatus() == ResponseStatus.SUCCESS) {
+
+   // Success handling using a message
+
+ } else {
+
+   // Error handling 
+
+ }
+
+ return Unit.INSTANCE;
+
+};
+
+paymentFlow.launchPaymentFlow(paymentFlowData, callback);
+```
+]]]
+
+------------
+----[mla, mlb, mlm]---- 
 [[[
 ```kotlin
 val paymentFlow = MPManager.paymentFlow
@@ -55,9 +135,9 @@ final PaymentFlowData paymentFlowData = new PaymentFlowData(
 
    PaymentMethod.CREDIT_CARD.name(),
 
-   6, // campo opcional si lanza el pago con cuotas 
+   6, // optional field if launching the payment in installments. 
 
-   false // campo opcional si lanza el pago sin impresión en la terminal
+   false // optional field if launching the payment without printing in terminal
 
 );
 
@@ -67,11 +147,11 @@ final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<
 
  if (response.getStatus() == ResponseStatus.SUCCESS) {
 
-   // manejo de éxito utilizando un mensaje
+   // Success handling using a message
 
  } else {
 
-   // manejo del error
+   // Error handling 
 
  }
 
@@ -82,6 +162,8 @@ final Function1<MPResponse<PaymentResponse>, Unit> callback = (final MPResponse<
 paymentFlow.launchPaymentFlow(paymentFlowData, callback);
 ```
 ]]]
+
+------------
 
 | Campo | Descripción |
 |---|---|

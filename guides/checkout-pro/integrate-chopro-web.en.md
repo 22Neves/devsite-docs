@@ -6,7 +6,14 @@
 
 First, make sure you have **created the [preference in your backend](/developers/en/docs/checkout-pro/integrate-preferences)**.
 
+----[mlc]----
+Then, install the frontend (`Javascript`) SDK from Mercado Pago, which is used to securely access Mercado Pago's features and add the payment button to your project.
+
+------------
+----[mla, mlm, mlb, mco, mpe, mlu]----
 Then, you will need to install the Mercado Pago frontend SDK in your project to add the payment button.
+
+------------
 
 The installation is basically done in **two steps**:
 
@@ -19,7 +26,8 @@ The installation is basically done in **two steps**:
 >
 > Add the Mercado Pago SDK to the project with your configured credentials
 
-To include the Mercado Pago.js SDK, add the code below to the project's HTML or install the library for ReactJs.
+----[mlc]----
+To include the Javascript SDK from Mercado Pago, add the following code to your project's HTML or install the library for ReactJS.
 
 [[[
 ```html
@@ -30,6 +38,22 @@ To include the Mercado Pago.js SDK, add the code below to the project's HTML or 
 npm install @mercadopago/sdk-react
 ```
 ]]]
+
+------------
+----[mla, mlm, mlb, mco, mpe, mlu]----
+To include the Mercado Pago.js SDK, add the code below to the project's HTML or install the library for ReactJs.
+
+[[[
+```html
+// SDK MercadoPago.js
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+```node
+npm install @mercadopago/sdk-react @0.0.23
+```
+]]]
+
+------------
 
 Then, initialize the integration by setting your [public key](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) using the following JavaScript code.
 
@@ -66,6 +90,25 @@ For JavaScript/HTML integrations, via CDN, you will still need to create an iden
 
 At the end of the previous step, **initialize your checkout using the ID of the previously created preference with the identifier of the element where the button should be displayed**, if you are using the `Javascript/HTML` integration, or by instantiating the component, in the case from the `React` library, as shown in the examples below.
 
+----[mlc]----
+[[[
+```Javascript
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+   customization: {
+      theme: 'default',
+   }
+});
+```
+```react-jsx
+npm install @mercadopago/sdk-react
+```
+]]]
+
+------------
+----[mla, mlb, mlm, mco, mpe, mlu]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -80,13 +123,15 @@ customization: {
 });
 ```
 ```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
+npm install @mercadopago/sdk-react @0.0.23
 ```
 ]]]
 
-You will then be able to observe the payment button rendered on your page.
+------------
 
-![wallet-render](cow/cow-render-wallet-en.png)
+You will then be able to observe the payment button rendered on your page. If you want to make changes to the text or a visual change, please visit the sections on [Change button texts](/developers/en/docs/checkout-pro/checkout-customization/user-interface/change-button-texts) and [Change button appearance](/developers/en/docs/checkout-pro/checkout-customization/user-interface/change-button-appearance).
+
+![wallet-render](cow/wallet-render-en.png)
 
 In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want the experience with Checkout Pro to be done in an **external tab**, check the section [Opening Schema](/developers/en/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

@@ -18,8 +18,6 @@ The ads conversion analysis makes it possible to evaluate the relevance and retu
 >
 > Only payments approved instantly with credit and debit cards, cash in Mercado Pago or Linha de Crédito will be associated.
 ------------
-
-
 ----[mlm, mlc, mco, mpe, mlu]----
 > NOTE
 >
@@ -27,7 +25,6 @@ The ads conversion analysis makes it possible to evaluate the relevance and retu
 >
 > Only payments approved instantly with credit and debit cards, or with cash on Mercado Pago will be associated.
 ------------
-
 
 ## Facebook Ads
 

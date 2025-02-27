@@ -6,7 +6,7 @@ Antes de realizar la renderización del Brand Brick, primero ejecute los [pasos 
 >
 > Nota
 >
-> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/brand.md).
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/brand.md).
 
 ## Configurar el Brick
 

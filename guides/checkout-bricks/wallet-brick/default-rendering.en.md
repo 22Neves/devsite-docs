@@ -2,16 +2,77 @@
 
 Before rendering the Wallet Brick, first execute the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. From there, see below the necessary information to configure and render the Wallet Brick.
 
+----[mlc]----
 > NOTE
 >
 > Note
 >
 > To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
+> NOTE
+>
+> Note
+>
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/legacy/wallet.md).
+
+------------
+
 ## Configure the Brick
 
 Create Brick's startup configuration.
 
+----[mlc]----
+[[[
+```Javascript
+const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create("wallet", "walletBrick_container", {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            theme: "default",
+            customStyle: {
+                valueProp: "practicality",
+                valuePropColor: "white",
+            },
+        },
+    });
+};
+
+renderWalletBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
+
+const onSubmit = async (formData) => {
+ // callback called when clicking on Wallet Brick
+ // this is possible because Brick is a button
+};
+
+const onError = async (error) => {
+ // callback called for all Brick error cases
+ console.log(error);
+};
+
+const onReady = async () => {
+ // Callback called when Brick is ready.
+ // Here, you can hide loadings on your website, for example.  
+};
+```
+]]]
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -57,6 +118,8 @@ const onReady = async () => {
 };
 ```
 ]]]
+
+------------
 
 > WARNING
 > 

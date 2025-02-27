@@ -1,6 +1,6 @@
 # Network Transaction ID - TID
 
-A partir das novas regras operacionais para tokenização de operações de pagamentos recorrentes da bandeira _Visa_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria para que seja utilizado dentro da multiadquirência* e evitar possíveis multas.
+A partir das novas regras operacionais para tokenização de operações de pagamentos recorrentes das bandeiras _Visa_ e _Master_, será necessário enviar o identificador de transação da bandeira (TID) às transações de mensageria para que seja utilizado dentro da multiadquirência* e evitar possíveis multas.
 
 > *De forma automática, a **multiadquirência** envolve mais regras de aprovação e bancos de dados para checar as informações de pagamento, garantindo a otimização das aprovações de acordo com a bandeira do cartão e a própria retentativa do pagamento.
 
@@ -30,13 +30,19 @@ Na resposta se poderá observar o retorno do `network_transaction_id` no parâme
 
 ### Processar pagamentos subsequentes 
 
-Para os **pagamentos subsequentes**, envie a informação do `network_transaction_id` retornado no último pagamento realizado ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`, ou utilizando o _cURL_ abaixo.
+Para os **pagamentos subsequentes**, envie novamente o _header_ `X-Expand-Responde-Nodes` ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) conforme abaixo.
+
+```json
+--header 'X-Expand-Responde-Nodes: gateway.reference'\
+```
+
+Na resposta, observe o retorno do `network_transaction_id` no parâmetro `expanded` e, a partir disso, envie a informação do `network_transaction_id` retornado no último pagamento realizado ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post), através do parâmetro `forward_data`, ou utilizando o _cURL_ abaixo.
 
 > WARNING
 >
 > Atenção
 > 
-> Caso o `network_transaction_id` não retorne no último pagamento realizado, deverá ser enviado valor recebido no primeiro pagamento.
+> Caso o `network_transaction_id` não seja retornado no último pagamento realizado, deverá ser enviado o valor recebido no primeiro pagamento.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \

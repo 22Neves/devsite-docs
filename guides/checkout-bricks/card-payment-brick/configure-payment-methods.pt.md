@@ -13,7 +13,7 @@ Na tabela abaixo você encontra os detalhes da customização e o código necess
 | Momento da customização  | Ao renderizar Brick.  |
 | Propriedade  | customization.paymentMethods.types.excluded |
 | Tipo  | string [] |
-| Observações  | Os valores aceitos dentro do array são: `credit_card`, `debit_card`.  |
+| Observações  | Os valores aceitos dentro do array são: `credit_card`, `prepaid_card` e `debit_card`.  |
 
 [[[
 ```Javascript

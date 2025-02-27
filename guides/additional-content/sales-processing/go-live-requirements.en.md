@@ -38,7 +38,7 @@ The Pix payment option will only be displayed if there is a Pix Key registered i
 
 ### Quality measurement
 
-Before going to production, and in order to offer the best experience to both the seller and the buyer, you must assess the [quality of your integration](/developers/en/guides/additional-content/homologator/homologator) with our measurement tool. This is a certification process that allows you to verify if you are meeting the **quality and security standards of Mercado Pago** before starting to receive real payments. 
+Before going to production, and in order to offer the best experience to both the seller and the buyer, you must assess the [quality of your integration](/developers/en/docs/integration-quality) with our measurement tool. This is a certification process that allows you to verify if you are meeting the **quality and security standards of Mercado Pago** before starting to receive real payments. 
 
 The measurement can be carried out in two ways:
 * **Manual**, where you will need to enter the `payment ID` of a payment made with production credentials to perform the measurement whenever you wish.

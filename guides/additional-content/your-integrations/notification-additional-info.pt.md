@@ -174,39 +174,6 @@ Se você integrou com código QR e deseja receber notificações, considere o se
 
 ------------
 
-----[mla]----
-## Delivery
-
-A seguir, mostramos um exemplo de notificação para o tópico `Delivery`, juntamente com as descrições de cada campo notificado.
-
-```json
-{
-    _id: "f9f08571-1f65-4c46-9e0a-c0f43faas1557e",
-    topic: "delivery",
-    resource: "/shipments/12345",
-    user_id: 1793791954,
-    application_id: "924152943338358",
-    sent: "2021-11-01T02:02:02.002Z",
-    attempts: 1,
-    received: "2021-11-01T02:02:02.002Z",
-    actions: []
-}
-```
-
-| Campo | Descrição |
-|---|---|
-| `_id `| Identificador da notificação recebida. |
-| `topic`  | Tópico sobre o qual está sendo recebida a notificação. |
-| `resource` | Evento notificado. Indica se é a criação de um recurso ou uma atualização. |
-| `user_id` | Identificador do usuário para o qual a notificação está sendo enviada. |
-| `sent` | Data de envio da notificação. |
-| `attempts` | Quantidade de vezes que a notificação foi enviada. |
-| `received` | Data de recebimento da notificação. |
-
-Ao receber uma notificação deste tópico, confirme o recebimento retornando um `HTTP STATUS 200 (OK)` dentro de até 500 ms. Caso contrário, o sistema continuará tentando enviar novas notificações a cada 12 horas.
-
-------------
-
 ## Link de pagamento
 
 Não é possível configurar notificações para Links de pagamento gerados através do Painel do Mercado Pago.
