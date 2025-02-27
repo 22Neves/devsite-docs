@@ -11,7 +11,7 @@ Existem duas formas de capturar um pagamento autorizado:
 >
 > Importante
 >
-> O prazo para capturar o pagamento autorizado é de ----[mla, mlm, mlc]----7 dias------------ ----[mlb]---- 5 dias ------------ ----[mpe]---- 22 dias------------ a partir da sua criação.
+> O prazo para capturar o pagamento autorizado é de ----[mla, mlm, mlc, mco]----7 dias------------ ----[mlb]---- 5 dias ------------ ----[mpe]---- 22 dias------------ a partir da sua criação.
 
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
@@ -323,7 +323,7 @@ A resposta trará o seguinte resultado:
 ]]]
 
 ------------
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlc, mco, mlm, mpe]----
 ## Capturar valor parcial
 
 Para capturar um valor inferior ao reservado, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.

@@ -4,6 +4,15 @@ A reserve of values happens when a purchase is made and its amount is reserved f
 
 To carry out a reserve authorization, send a **POST** with all the necessary attributes and add the attribute `capture=false` to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, use one of the SDKs below.
 
+----[mco]----
+> WARNING
+>
+> Attention
+>
+> Only the banks **Bancolombia** and **BBVA** are compatible with this functionality.
+
+------------
+
 [[[
 ```php
 <?php
@@ -220,27 +229,27 @@ In addition, it is also possible to return as `rejected` or `pending`. In case i
 
 Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
-
-----[mla, mlm]----
+----[mla, mlm, mco, mlc]----
 > WARNING
 >
 > Important
 >
 > The reserve will be valid for 7 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
-------------
 
+------------
 ----[mpe]----
 > WARNING
 >
 > Important
 >
 > The reserve will be valid for 22 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
-------------
 
+------------
 ----[mlb]----
 > WARNING
 >
 > Important
 >
 > The reservation will be valid for 5 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
+
 ------------
