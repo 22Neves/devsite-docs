@@ -18,8 +18,6 @@ El análisis de conversión de anuncios permite evaluar la relevancia y el retor
 >
 > Solo se asociarán pagos aprobados al instante con tarjetas de crédito y débito, efectivo en Mercado Pago o Linha de Crédito.
 ------------
-
-
 ----[mlm, mlc, mco, mpe, mlu]----
 > NOTE
 >
@@ -27,7 +25,6 @@ El análisis de conversión de anuncios permite evaluar la relevancia y el retor
 >
 > Solo se asociarán pagos aprobados al instante con tarjetas de crédito y débito, o con efectivo en Mercado Pago.
 ------------
-
 
 ## Facebook Ads
 

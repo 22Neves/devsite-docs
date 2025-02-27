@@ -6,7 +6,14 @@
 
 Primeiro, certifique-se de ter **criado a [preferência no seu backend](/developers/pt/docs/checkout-pro/integrate-preferences)**.
 
-Em seguida, instale o SDK de frontend do Mercado Pago no seu projeto para adicionar o botão de pagamento.
+----[mlc]----
+Em seguida, instale o SDK de **frontend** (`Javascript`) do Mercado Pago, usado para acessar as funcionalidades do Mercado Pago com segurança e adicionar o botão de pagamento no seu projeto.
+
+------------
+----[mla, mlm, mlb, mco, mpe, mlu]----
+Em seguida, instale o SDK de **frontend** do Mercado Pago no seu projeto para adicionar o botão de pagamento.
+
+------------
 
 A instalação é feita em **duas etapas**:
 
@@ -19,7 +26,8 @@ A instalação é feita em **duas etapas**:
 >
 > Adicionar o SDK do Mercado Pago ao projeto
 
-Para incluir o SDK do Mercado Pago.js, adicione o seguinte código ao HTML do seu projeto ou instale a biblioteca para ReactJs.
+----[mlc]----
+Para incluir o SDK Javascript do Mercado Pago, adicione o seguinte código ao HTML do seu projeto ou instale a biblioteca para ReactJS.
 
 [[[
 ```html
@@ -30,6 +38,22 @@ Para incluir o SDK do Mercado Pago.js, adicione o seguinte código ao HTML do se
 npm install @mercadopago/sdk-react
 ```
 ]]]
+
+------------
+----[mla, mlm, mlb, mco, mpe, mlu]----
+Para incluir o SDK do Mercado Pago.js, adicione o seguinte código ao HTML do seu projeto ou instale a biblioteca para ReactJs.
+
+[[[
+```html
+// SDK MercadoPago.js
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+```node
+npm install @mercadopago/sdk-react @0.0.23
+```
+]]]
+
+------------
 
 Em seguida, inicie a integração configurando sua [chave pública](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) usando o seguinte código JavaScript.
 
@@ -64,6 +88,25 @@ Para integrações JavaScript/HTML, via CDN, você vai precisar ainda criar um c
 
 Ao finalizar a etapa anterior, **inicialize seu checkout utilizando o ID da preferência previamente criada com o identificador do elemento onde o botão deverá ser exibido**, caso esteja utilizando a integração `Javascript/HTML`, ou instanciando o componente, no caso da biblioteca `React`, conforme os exemplos abaixo.
 
+----[mlc]----
+[[[
+```Javascript
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+   customization: {
+      theme: 'default',
+   }
+});
+```
+```react-jsx
+npm install @mercadopago/sdk-react
+```
+]]]
+
+------------
+----[mla, mlb, mlm, mco, mpe, mlu]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -78,13 +121,15 @@ customization: {
 });
 ```
 ```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
+npm install @mercadopago/sdk-react @0.0.23
 ```
 ]]]
 
-Em seguida, observe o botão de pagamento renderizado em sua página.
+------------
 
-![wallet-render](cow/cow-render-wallet-pt.png)
+Em seguida, observe o botão de pagamento renderizado em sua página. Caso queira fazer **alterações nos textos ou uma alteração visual**, acesse as seções de [Alterar textos do botão](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/change-button-texts) e [Alterar visual do botão](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/change-button-appearance).
+
+![wallet-render](cow/wallet-render-pt.png)
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira que a experiência com Checkout Pro seja feita em uma **aba externa**, veja a seção [Esquema de abertura](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 
