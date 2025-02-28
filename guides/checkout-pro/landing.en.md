@@ -1,4 +1,3 @@
-
 ---
 product_landing_hero:
  - title: Integra Checkout Pro fácilmente
@@ -20,7 +19,7 @@ product_landing_what_it_offers:
  - title: Qué ofrece
  - message: Combina distintos métodos de pago y funciones para garantizar seguridad y conversión de las operaciones.
  - media_image: https://developer.salesforce.com/files/ti/blogs/img/Blog-ContextualDrivers-336x360-CodeyAstro5.png
- - media_video: https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1
+ - media_video: https://www.youtube.com/watch?v=anrwYq84RsU&ab_channel=MercadoPagoDevelopers
  - benefit_title: Seguridad ante fraudes
  - benefit_bullet: Buyer Portection Program.
  - benefit_bullet: Seguridad en transacciones de alto riesgo usando 3DS (3-Domain Secure).
@@ -45,7 +44,8 @@ product_landing_how_works:
  - message: La persona compra el producto en tu sitio y es redirigida a un entorno seguro de Mercado Pago para pagar.
  - sub_title: Conoce los pasos del proceso de cobro
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
- - image_text: Simula el procesamiento de pago >
+ - image_text: Simula el procesamiento de pago
+ - image_text_link: /live-demo/checkout-pro
  - list_title: El comprador elige pagar con Mercado Pago y es redirigido al flujo de pagos de Mercado Pago.
  - list_title: Elige si inicia sesión en su cuenta de Mercado Pago o continúa como usuario invitado sin loguearse.
  - list_title: Selecciona el método de pago de su preferencia, pudiendo incluso dividir el pago entre más de un método.
@@ -95,7 +95,7 @@ product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
- - image_text: Explora ejemplos de código >
+ - image_text: Explora ejemplos de código
  - image_text_link: /live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de vendedor
