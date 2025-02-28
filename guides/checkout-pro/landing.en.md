@@ -19,7 +19,7 @@ product_landing_what_it_offers:
  - title: Qué ofrece
  - message: Combina distintos métodos de pago y funciones para garantizar seguridad y conversión de las operaciones.
  - media_image: https://developer.salesforce.com/files/ti/blogs/img/Blog-ContextualDrivers-336x360-CodeyAstro5.png
- - media_video: https://youtu.be/anrwYq84RsU?si=cHC7tBkwTIntbNdj
+ - media_video: https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1
  - benefit_title: Seguridad ante fraudes
  - benefit_bullet: Buyer Portection Program.
  - benefit_bullet: Seguridad en transacciones de alto riesgo usando 3DS (3-Domain Secure).
