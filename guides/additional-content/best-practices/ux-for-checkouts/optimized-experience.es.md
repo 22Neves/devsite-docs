@@ -20,7 +20,7 @@ Mantén los datos agrupados temáticamente y brinda contexto al usuario acerca d
 
 Es una **barra de progreso** que le indica al usuario en qué instancia de tu checkout se encuentra. Puedes segmentarla en partes iguales, indicando cada paso del checkout. De esta forma, tu usuario tendrá visibilidad del paso en el que se encuentra y cuánto falta para finalizar el proceso de pago.
 
-![es progress indicator](/images/best-practices-guide/progress-indicator-es.png)
+![es progress indicator](/images/best-practices-guide/progress-es.png)
 
 ### Bullets y highlights
 
@@ -28,7 +28,7 @@ Los **bullets** son una lista punteada de diferentes elementos. Utiliza bullets 
 
 Los **highlights** son textos subrayados o destacados. Usa highlights para destacar palabras claves u oraciones importantes que sumen valor y permitir que la pantalla sea más fácil de escanear.
 
-![es bullets y highlights](/images/best-practices-guide/bullets-highlight-es.png)
+![es bullets y highlights](/images/best-practices-guide/bullet-highlight-es.png)
 
 ## Facilita el llenado de datos
 
@@ -42,7 +42,7 @@ Para facilitar el llenado de datos y no cansar al usuario, te damos algunas reco
 * Elimina todo pedido de información que no sea indispensable para el proceso de compra. 
 * Pide cada dato una sola vez para evitar ser redundante.
 
-![es aspectos generales optimiza tus formularios](/images/best-practices-guide/facilitate-completion-data-es.png)
+![es aspectos generales optimiza tus formularios](/images/best-practices-guide/facilitate-data-es.png)
 
 ## Brinda contexto
 
@@ -63,7 +63,7 @@ Los **helpers** son textos explicativos que se colocan debajo de los inputs. Per
 
 Los **tooltips** son notificaciones emergentes que ofrecen un nivel adicional de información. Utilízalos para agregar definiciones, información adicional extendida o accionables a través de links.
 
-![es helpers y tooltips](/images/best-practices-guide/helperstooltips-es.png)
+![es helpers y tooltips](/images/best-practices-guide/helper-tooltip-es.png)
 
 ### Mensajes de éxito y error
 
@@ -71,7 +71,7 @@ Los **mensajes de éxito o error** sirven para validar la información ingresada
 
 Coloca mensajes de éxito solo si es necesario una confirmación o si el dato ingresado agrega valor, como por ejemplo en envíos gratuitos o descuentos. En caso de **error**, es importante que se aclare el mismo y se oriente al usuario hacia una solución para que no vuelva a fallar y se frustre. Si el input tiene un helper, éste debe ser reemplazado por el mensaje de error.
 
-![es mensajes de éxito y error](/images/best-practices-guide/success-error-messages-es.png)
+![es mensajes de éxito y error](/images/best-practices-guide/messages-es.png)
 
 ## Aclara los accionables
 
@@ -84,7 +84,7 @@ Te acercamos algunos consejos:
 * Utiliza botones para las acciones principales y escríbelas en el tiempo verbal infinitivo.
 * Agrega links para acciones secundarias que añadan contexto procurando que sea un texto autoexplicativo que haga referencia hacia dónde redirige el mismo.
 
-![es agrega accionables claros](/images/best-practices-guide/add-action-items-es.png)
+![es agrega accionables claros](/images/best-practices-guide/action-items-es.png)
 
 ## Destaca las opciones
 
@@ -98,7 +98,7 @@ Por eso, **ofrece opciones** que incluyan diferentes variables posibles y ordén
 
 Además, puedes agregar las propuestas de valor más destacadas en cada opción para ayudar a que el usuario tenga más información para tomar una decisión.
 
-![es ofrece opciones](/images/best-practices-guide/highlight-the-options-es.png)
+![es ofrece opciones](/images/best-practices-guide/highlight-options-es.png)
 
 ## Saltea pasos innecesarios
 
@@ -106,7 +106,7 @@ Evita pedir datos repetidos o que no sean necesarios para finalizar la compra. P
 
 También puedes utilizar **checkboxes**, o casillas de verificación, que infieran información de pasos previos o desplieguen un formulario en caso de que el usuario quiera cargar información diferente.
 
-![es saltea pasos innecesarios](/images/best-practices-guide/skip-unnecessary-steps-es.png)
+![es saltea pasos innecesarios](/images/best-practices-guide/unnecessary-steps-es.png)
 
 ## Da visibilidad del proceso
 
@@ -115,7 +115,7 @@ Agrega un **componente de resumen** fijo o un acceso directo al carrito de compr
 Si bien la mayoría de los usuarios revisan su compra al final, se sienten más seguros si pueden ir controlando lo que van haciendo durante todo el proceso.
 
 ----[mlc]----
-![es da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-es.png)
+![es da visibilidad del proceso 1](/images/best-practices-guide/visibility-to-process1-es.png)
 
 ------------
 ----[mlb, mla, mlm, mco, mpe, mlu]----

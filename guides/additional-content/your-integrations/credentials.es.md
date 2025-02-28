@@ -120,7 +120,7 @@ Cuando recibas ayuda en la integración o configuración de tus canales de pago,
 4. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. Recuerda que es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
 ----[mlc]----
-![Compartir credenciales en Tus Integraciones](/images/credentials/share-credentials-panel-es.png)
+![Compartir credenciales en Tus Integraciones](/images/credentials/share-credentials-devpanel-es.png)
 
 ------------
 ----[mla, mlm, mlu, mco, mlb, mpe]----
