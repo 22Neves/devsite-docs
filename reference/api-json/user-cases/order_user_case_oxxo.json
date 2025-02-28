@@ -1,0 +1,167 @@
+{
+    "name": {
+        "en": "Create payment with OXXO",
+        "pt": "Criar pagamento OXXO",
+        "es": "Crear pago con OXXO"
+    },
+    "siteId": [
+        "MLB"
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "schema": {
+                    "properties": {
+                        "type": {
+                            "example": "online"
+                        },
+                        "external_reference": {
+                            "example": "ext_ref_1234"
+                        },
+                        "processing_mode": {
+                            "example": "automatic"
+                        },
+                        "marketplace": {
+                            "example": "NONE"
+                        },
+                        "total_amount": {
+                            "example": "1000.00"
+                        },
+                        "payer": {
+                            "properties": {
+                                "email": {
+                                    "example": "{email}"
+                                }
+                            }
+                        },
+                        "transactions": {
+                            "properties": {
+                                "payments": {
+                                    "items": {
+                                        "properties": {
+                                            "amount": {
+                                                "example": "1000.00"
+                                            },
+                                            "payment_method": {
+                                                "properties": {
+                                                    "id": {
+                                                        "example": "oxxo"
+                                                    },
+                                                    "type": {
+                                                        "example": "ticket"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "properties": {
+                            "id": {
+                                "example": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE"
+                            },
+                            "type": {
+                                "example": "online"
+                            },
+                            "processing_mode": {
+                                "example": "automatic"
+                            },
+                            "external_reference": {
+                                "example": "ext_ref_1234"
+                            },
+                            "marketplace": {
+                                "example": "NONE"
+                            },
+                            "total_amount": {
+                                "example": "200.00"
+                            },
+                            "country_code": {
+                                "example": "MEX"
+                            },
+                            "status": {
+                                "example": "action_required"
+                            },
+                            "status_detail": {
+                                "example": "waiting_payment"
+                            },
+                            "capture_mode": {
+                                "example": "automatic"
+                            },
+                            "created_date": {
+                                "example": "2024-09-02T22:04:01.880469Z"
+                            },
+                            "last_updated_date": {
+                                "example": "2024-09-02T22:04:04.429289Z"
+                            },
+                            "integration_data": {
+                                "properties": {
+                                    "application_id": {
+                                        "example": "4599991948843755"
+                                    }
+                                }
+                            },
+                            "transactions": {
+                                "properties": {
+                                    "payments": {
+                                        "items": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24"
+                                                },
+                                                "amount": {
+                                                    "example": "200.00"
+                                                },
+                                                "reference_id": {
+                                                    "example": "22dvqmsbq8c"
+                                                },
+                                                "status": {
+                                                    "example": "action_required"
+                                                },
+                                                "status_detail": {
+                                                    "example": "waiting_payment"
+                                                },
+                                                "payment_method": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "example": "oxxo"
+                                                        },
+                                                        "type": {
+                                                            "example": "ticket"
+                                                        },
+                                                        "ticket_url": {
+                                                            "example": "https://www.mercadopago.com.mx/sandbox/payments/00000000000/ticket?caller_id=77777777777&hash=34cb0d7c-81d9-478c-92a5-767d0kakjja"
+                                                        },
+                                                        "barcode_content": {
+                                                            "example": "3335008800000000006004835002100020000242462010"
+                                                        },
+                                                        "reference": {
+                                                            "example": "1234567890"
+                                                        },
+                                                        "verification_code": {
+                                                            "example": "1234567890"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

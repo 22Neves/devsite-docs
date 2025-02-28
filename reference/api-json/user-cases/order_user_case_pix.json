@@ -1,0 +1,246 @@
+{
+    "name": {
+        "en": "Create payment with Pix",
+        "pt": "Criar pagamento Pix",
+        "es": "Crear pago con Pix"
+    },
+    "siteId": [
+        "MLB"
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "schema": {
+                    "properties": {
+                        "type": {
+                            "example": "online"
+                        },
+                        "external_reference": {
+                            "example": "ext_ref_1234"
+                        },
+                        "total_amount": {
+                            "example": "200.00"
+                        },
+                        "payer": {
+                            "properties": {
+                                "email": {
+                                    "example": "{{PAYER_EMAIL}}"
+                                },
+                                "identification": {
+                                    "example": "disabled"
+                                },
+                                "first_name": {
+                                    "example": "Test"
+                                },
+                                "last_name": {
+                                    "example": "disabled"
+                                },
+                                "phone": {
+                                    "example": "disabled"
+                                },
+                                "address": {
+                                    "example": "disabled"
+                                }
+                            }
+                        },
+                        "transactions": {
+                            "properties": {
+                                "payments": {
+                                    "items": {
+                                        "properties": {
+                                            "amount": {
+                                                "example": "200.00"
+                                            },
+                                            "payment_method": {
+                                                "properties": {
+                                                    "id": {
+                                                        "example": "pix"
+                                                    },
+                                                    "type": {
+                                                        "example": "bank_transfer"
+                                                    },
+                                                    "token": {
+                                                        "example": "disabled"
+                                                    },
+                                                    "installments": {
+                                                        "example": "disabled"
+                                                    },
+                                                    "statement_descriptor": {
+                                                        "example": "disabled"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "capture_mode": {
+                            "example": "disabled"
+                        },
+                        "processing_mode": {
+                            "example": "disabled"
+                        },
+                        "description": {
+                            "example": "disabled"
+                        },
+                        "marketplace": {
+                            "example": "disabled"
+                        },
+                        "integration_data": {
+                            "example": "disabled"
+                        },
+                        "expiration_time": {
+                            "example": "disabled"
+                        },
+                        "items": {
+                            "example": "disabled"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "properties": {
+                            "id": {
+                                "example": "ORD01JFB671S2AKYYFVZN87J1GJVY"
+                            },
+                            "type": {
+                                "example": "online"
+                            },
+                            "processing_mode": {
+                                "example": "automatic"
+                            },
+                            "external_reference": {
+                                "example": "ext_ref_1234"
+                            },
+                            "total_amount": {
+                                "example": "200.00"
+                            },
+                            "country_code": {
+                                "example": "BRA"
+                            },
+                            "status": {
+                                "example": "action_required"
+                            },
+                            "status_detail": {
+                                "example": "waiting_transfer"
+                            },
+                            "capture_mode": {
+                                "example": "automatic"
+                            },
+                            "created_date": {
+                                "example": "2024-12-17T20:51:07.17Z"
+                            },
+                            "last_updated_date": {
+                                "example": "2024-12-17T20:51:08.168Z"
+                            },
+                            "integration_data": {
+                                "properties": {
+                                    "application_id": {
+                                        "example": "130106526144588"
+                                    },
+                                    "integrator_id": {
+                                        "example": "disabled"
+                                    },
+                                    "platform_id": {
+                                        "example": "disabled"
+                                    },
+                                    "sponsor": {
+                                        "example": "disabled"
+                                    }
+                                }
+                            },
+                            "payer": {
+                                "properties": {
+                                    "email": {
+                                        "example": "test_user_9835778@testuser.com"
+                                    },
+                                    "identification": {
+                                        "example": "disabled"
+                                    },
+                                    "first_name": {
+                                        "example": "disabled"
+                                    },
+                                    "last_name": {
+                                        "example": "disabled"
+                                    },
+                                    "phone": {
+                                        "example": "disabled"
+                                    },
+                                    "address": {
+                                        "example": "disabled"
+                                    }
+                                }
+                            },
+                            "transactions": {
+                                "properties": {
+                                    "payments": {
+                                        "items": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "PAY01JFB671S2AKYYFVZN8B60XSER"
+                                                },
+                                                "amount": {
+                                                    "example": "200.00"
+                                                },
+                                                "reference_id": {
+                                                    "example": "0001wmubs3"
+                                                },
+                                                "status": {
+                                                    "example": "action_required"
+                                                },
+                                                "status_detail": {
+                                                    "example": "waiting_transfer"
+                                                },
+                                                "payment_method": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "example": "pix"
+                                                        },
+                                                        "type": {
+                                                            "example": "bank_transfer"
+                                                        },
+                                                        "token": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "installments": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "statement_descriptor": {
+                                                            "example": "disabled"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "description": {
+                                "example": "disabled"
+                            },
+                            "marketplace": {
+                                "example": "disabled"
+                            },
+                            "expiration_time": {
+                                "example": "disabled"
+                            },
+                            "client_token": {
+                                "example": "disabled"
+                            },
+                            "items": {
+                                "example": "disabled"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
