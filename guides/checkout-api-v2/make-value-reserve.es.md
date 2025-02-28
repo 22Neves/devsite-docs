@@ -9,7 +9,7 @@ Para realizar una autorización de reserva, envíe un **POST** con todos los atr
 >
 > Atención
 >
-> Solo los bancos **Bancolombia** y **BBVA** son compatibles con esta funcionalidad.
+> La funcionalidad de **reservar y capturar valores** solo está disponible para tarjetas de las marcas *Visa* y *Mastercard*, además de ser compatible solo con los bancos *Bancolombia* y *BBVA*.
 
 ------------
 
@@ -225,7 +225,7 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 
 Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
-Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar la captura lo antes posible. Para ello, accede a [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)
 
 ----[mla, mlm, mco, mlc]----
 > WARNING

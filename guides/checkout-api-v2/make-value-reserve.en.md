@@ -9,7 +9,7 @@ To carry out a reserve authorization, send a **POST** with all the necessary att
 >
 > Attention
 >
-> Only the banks **Bancolombia** and **BBVA** are compatible with this functionality.
+> The functionality to **reserve and capture** funds is only available for cards from the *Visa* and *Mastercard* brands, and is also compatible only with the banks *Bancolombia* and *BBVA*.
 
 ------------
 
@@ -227,7 +227,7 @@ The response indicates that the payment is authorized and pending capture.
 
 In addition, it is also possible to return as `rejected` or `pending`. In case it returns as `pending`, you should pay attention to the notifications to know what the final status of the payment is.
 
-Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
+Please note that authorized values cannot be used by your client until they are captured, so we recommend capturing them as soon as possible. To do this, access [Capture authorized payment](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment)
 
 ----[mla, mlm, mco, mlc]----
 > WARNING

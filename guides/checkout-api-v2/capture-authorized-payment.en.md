@@ -1,6 +1,15 @@
 # Capture authorized payment
 
-The completion of a payment takes place after the authorized payment has been captured, which means that the amount reserved for the purchase can be debited from the card.
+The completion of a payment takes place after the authorized payment has been captured, which means that the [amount reserved](/developers/en/docs/checkout-api/payment-management/make-value-reserve) for the purchase can be debited from the card.
+
+----[mco]----
+> WARNING
+>
+> Attention
+>
+> The functionality to **reserve and capture** funds is only available for cards from the *Visa* and *Mastercard* brands, and is also compatible only with the banks *Bancolombia* and *BBVA*.
+
+------------
 
 There are two ways to capture an authorized payment:
 

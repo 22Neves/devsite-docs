@@ -1,6 +1,15 @@
 # Capturar pagamento autorizado
 
-A finalização de um pagamento acontece após a captura do pagamento autorizado, o que significa que o valor reservado para a compra pode ser debitado do cartão. 
+A finalização de um pagamento acontece após a captura do pagamento autorizado, o que significa que o [valor reservado](/developers/pt/docs/checkout-api/payment-management/make-value-reserve) para a compra pode ser debitado do cartão. 
+
+----[mco]----
+> WARNING
+>
+> Atenção
+>
+> A funcionalidade de **reservar e capturar valores** só está disponível para cartões das bandeiras *Visa* e *Mastercard*, além de só ser compatível com os bancos *Bancolombia* e *BBVA*.
+
+------------
 
 Existem duas formas de capturar um pagamento autorizado:
 
