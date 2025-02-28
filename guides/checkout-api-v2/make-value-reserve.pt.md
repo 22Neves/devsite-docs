@@ -4,6 +4,15 @@ Uma reserva de valores acontece quando uma compra é realizada e seu montante é
 
 Para realizar uma autorização de reserva de valores, envie um **POST** com com todos os atributos necessários e adicione o atributo `capture=false` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
 
+----[mco]----
+> WARNING
+>
+> Atenção
+>
+> A funcionalidade de **reservar e capturar valores** só está disponível para cartões das bandeiras *Visa* e *Mastercard*, além de só ser compatível com os bancos *Bancolombia* e *BBVA*.
+
+------------
+
 [[[
 ```php
 <?php
@@ -198,9 +207,7 @@ curl -X POST \
 ```
 ]]]
 
-
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.
-
 
 [[[
 ```json
@@ -218,28 +225,29 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 
 Além disso, também é possível retornar como `rejeitado` ou `pendente`. Caso retorne como 'pendente', você deverá ficar atento às notificações para saber qual o status final do pagamento.
 
-Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
+Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados, então recomendamos realizar a captura o quanto antes. Para isso, acesse [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
 
-----[mla, mlm]----
+----[mla, mlm, mco, mlc]----
 > WARNING
 >
 > Importante
 >
 > A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
-------------
 
+------------
 ----[mpe]----
 > WARNING
 >
 > Importante
 >
 > A reserva terá validade de 22 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
-------------
 
+------------
 ----[mlb]----
 > WARNING
 >
 > Importante
 >
 > A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
+
 ------------
