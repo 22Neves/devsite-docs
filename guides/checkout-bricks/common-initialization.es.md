@@ -29,7 +29,7 @@ npm install @mercadopago/sdk-react
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```bash
-npm install @mercadopago/sdk-react @0.0.23
+npm install @mercadopago/sdk-react@0.0.24
 ```
 ]]]
 

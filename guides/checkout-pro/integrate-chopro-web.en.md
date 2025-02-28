@@ -49,7 +49,7 @@ To include the Mercado Pago.js SDK, add the code below to the project's HTML or 
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```node
-npm install @mercadopago/sdk-react @0.0.23
+npm install @mercadopago/sdk-react@0.0.24
 ```
 ]]]
 
