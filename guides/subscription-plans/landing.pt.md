@@ -14,7 +14,7 @@ horizontal_cards_section:
  - benefit_title: Segurança para seu dinheiro
  - benefit_message: As cobranças das assinaturas são gerenciadas através do Mercado Pago.
  - benefit_title: Não requer integração
- - benefit_message: Crie planos de assinatura pelo celular ou computador no Mercado Pago. 
+ - benefit_message: Crie planos de assinatura pelo celular ou computador no site ou app do Mercado Pago. 
  - benefit_title: Comunicação clara
  - benefit_message: Notificamos aos clientes sobre as mudanças na assinatura e os pagamentos pendentes.
 ---
