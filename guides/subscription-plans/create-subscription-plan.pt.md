@@ -33,7 +33,7 @@ Você pode personalizar ainda mais seu plano clicando em **Mais Opções**. Saib
 * **Data de Cobrança:** escolha o dia do mês em que a assinatura será cobrada. _Esta opção está disponível apenas para planos com frequência de cobrança mensal_.
 * **Cobrar valor proporcional na data de adesão:** Se esta opção estiver ativada, os clientes pagarão um valor proporcional ao se inscreverem pelos dias restantes até a primeira cobrança mensal. Se desativada, o valor adicional não será cobrado.
 * **Código de Referência:** Permite adicionar um código de referência para ajudá-lo a identificar o plano, caso você tenha vários planos semelhantes ativos.
-* **Para onde você gostaria de redirecionar seu cliente?:** Você pode adicionar uma URL para a qual o cliente será redirecionado uma vez que a assinatura for concluída, como por exemplo seu site.
+* **Para onde você gostaria de redirecionar seu cliente?:** adicione uma URL para a qual o cliente será redirecionado uma vez que a assinatura for concluída, como o seu site, por exemplo.
 
 Depois de preencher todos os campos, clique em **Criar e Compartilhar** para finalizar.
 
