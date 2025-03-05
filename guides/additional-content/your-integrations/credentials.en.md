@@ -129,7 +129,7 @@ When you receive assistance in integrating or setting up your payment channels, 
 
 ------------
 ----[mlc]----
-![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-es.png)
+![Share credentials in Your Integrations](/images/credentials/share-credentials-devpanel-es.png)
 
 ------------
 ----[mla, mlu, mlm, mco, mpe]----
@@ -153,7 +153,7 @@ When you receive assistance in integrating or setting up your payment channels, 
 ![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-es.png)
 
 ------------
-----[mla, mlu, mlc, mlm, mco, mpe]----
+----[mla, mlu, mlm, mco, mpe]----
 ![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-es.gif)
 
 ------------
@@ -180,7 +180,7 @@ If for security reasons or any other relevant reason you need to renew your cred
 ![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
 
 ------------
-----[mcb]----
+----[mlc]----
 ![Como renovar suas credenciais](/images/credentials/renew-credentials-es.png)
 
 ------------

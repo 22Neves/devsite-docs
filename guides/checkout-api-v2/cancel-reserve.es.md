@@ -117,7 +117,7 @@ curl -X PUT \
 ```
 ]]]
 
-La respuesta devolverá el siguiente resultado
+La respuesta devolverá el siguiente resultado:
 
 [[[
 ```json

@@ -4,6 +4,15 @@ Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto 
 
 Para realizar una autorización de reserva, envíe un **POST** con todos los atributos necesarios y agregue el atributo `capture=false` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecute la solicitud o, si lo prefiere, use uno de los SDK a continuación.
 
+----[mco]----
+> WARNING
+>
+> Atención
+>
+> La funcionalidad de **reservar y capturar valores** solo está disponible para tarjetas de las marcas *Visa* y *Mastercard*, además de ser compatible solo con los bancos *Bancolombia* y *BBVA*.
+
+------------
+
 [[[
 ```php
 <?php
@@ -214,28 +223,26 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 ```
 ]]]
 
-
 Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
-Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar la captura lo antes posible. Para ello, accede a [Capturar pago autorizado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment)
 
-
-----[mla, mlm]----
+----[mla, mlm, mco, mlc]----
 > WARNING
 >
 > Importante
 >
 > La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
-------------
 
+------------
 ----[mpe]----
 > WARNING
 >
 > Importante
 >
 > La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
-------------
 
+------------
 ----[mlb]----
 > WARNING
 >
@@ -244,4 +251,3 @@ Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta qu
 > La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 
 ------------
-
