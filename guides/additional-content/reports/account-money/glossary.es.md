@@ -14,12 +14,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MLA: Argentina  | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br>Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones + IVA (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |Numeric <br> (17) |
@@ -40,7 +40,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un [código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago). | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un [código QR interoperable](https://vendedores.mercadolibre.com.ar/nota/cobra-a-otras-billeteras-con-tu-qr-de-mercado-pago). | String <br> (200) |
@@ -69,12 +69,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MLB: Brasil | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br>Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br>_TRAVA_DE_RECEBIVEL_: bloqueo por cobrar. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |Numeric <br> (17) |
@@ -95,7 +95,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
@@ -123,12 +123,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MLM: México | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br>  Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br>Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones + IVA (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |Numeric <br> (17) |
@@ -149,7 +149,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
@@ -175,12 +175,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MCO: Colombia | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br>Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones + IVA (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |Numeric <br> (17) |
@@ -202,7 +202,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
@@ -228,12 +228,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MLU: Uruguay | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br>Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones + IVA (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |Numeric <br> (17) |
@@ -255,7 +255,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
@@ -281,12 +281,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MPE: Perú  | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> *REFUND*: pago reembolsado en su totalidad. <br> Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones + IVA (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. | Numeric <br> (17) |
@@ -307,7 +307,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
@@ -333,12 +333,12 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | País de origen de la cuenta de Mercado Pago (`SITE`) | MLC: Chile | String <br> (200) |
 | Tipo de operación (`TRANSACTION_TYPE`) | Tipo de operación. Puede ser:<br><br>Pago aprobado (SETTLEMENT): pago aprobado.<br> Devolución de dinero (REFUND): pago devuelto total o parcialmente. <br> Contracargo (CHARGEBACK): el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>Reclamo (DISPUTE): el comprador inició un reclamo por ese pago.<br>Retiro de cuenta bancaria (WITHDRAWAL): retiro a la cuenta bancaria.<br>Retiro a la cuenta bancaria cancelado (WITHDRAWAL_CANCEL): retiro a la cuenta bancaria que fue cancelado.<br>Retiro de efectivo (PAYOUT): extracción en efectivo de dinero disponible en Mercado Pago. <br> | String <br> (200) |
 | Valor de la compra (`TRANSACTION_AMOUNT`) | Monto bruto de la operación. | Numeric <br> (17) |
-| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda (`TRANSACTION_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Monto recibido por compras por split (`SELLER_AMOUNT`) | Monto recibido por compras por split. | Numeric <br> (17) |
 | Fecha de origen (`TRANSACTION_DATE`) | Fecha de creación de la operación. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Comisiones + IVA (`FEE_AMOUNT`) | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. | Numeric <br> (17) |
 | Monto neto de la operación que impactó en tu dinero (`SETTLEMENT_NET_AMOUNT`) | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del Valor de la compra (`TRANSACTION_AMOUNT`). | Numeric <br> (17) |
-| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> | String <br> (10) |
+| Moneda de la liquidación (`SETTLEMENT_CURRENCY`) | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br> USD (Dollar) | String <br> (10) |
 | Fecha de aprobación (`SETTLEMENT_DATE`) | Fecha de aprobación de la transacción. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Monto neto de la operación (`REAL_AMOUNT`) | Monto neto de la operación, si es un pago aprobado _settlement_, se le descuentan los montos por contracargos, reclamos o devoluciones. |Numeric <br> (17) |
 | Cupón de descuento (`COUPON_AMOUNT`) | Monto del cupón de descuento. **Solo se descuenta del monto bruto o valor de la compra** (`TRANSACTION_AMOUNT`) **si está provisto por el vendedor**. |Numeric <br> (17) |
@@ -359,7 +359,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Número de serie del lector (S/N) (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (50) |
 | Billetera virtual (`POI_WALLET_NAME`) | Nombre de la billetera virtual desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |
 | Banco de origen (`POI_BANK_NAME`) | Nombre de la entidad bancaria desde la que se origina un pago digital. Permite identificar el origen de una operación cuando cobras con un código QR de Mercado Pago. | String <br> (200) |

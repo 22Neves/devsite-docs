@@ -14,12 +14,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) | MLA: Argentina | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br>  Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees + VAT  (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. Includes VAT. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -69,12 +69,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) | MLB: Brasil | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br> Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. <br>Receivable block (*TRAVA_DE_RECEBIVEL*): receivable block. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -95,7 +95,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping Identification. | Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping Method. | String <br> (10) |
 | Package ID (`PACK_ID`) | Package ID in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (JSON) |
 | POS machine series number (S/N) (`POI_ID`) | POS machine ID if the payment is made at a physical store. | String <br> (50) |
 | Digital Wallet (`POI_WALLET_NAME`) | Name of the digital wallet from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
 | Bank of origin (`POI_BANK_NAME`) | Name of the bank institution from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
@@ -123,12 +123,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) | MCO: Colombia | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br> Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees + VAT (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. Includes VAT. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -150,7 +150,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping Identification. | Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping Method. | String <br> (10) |
 | Package ID (`PACK_ID`) | Package ID in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (JSON) |
 | POS machine series number (S/N) (`POI_ID`) | POS machine ID if the payment is made at a physical store. | String <br> (50) |
 | Digital Wallet (`POI_WALLET_NAME`) | Name of the digital wallet from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
 | Bank of origin (`POI_BANK_NAME`) | Name of the bank institution from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
@@ -176,12 +176,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) | MLU: Uruguay  | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br> Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees + VAT (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. Includes VAT. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -203,7 +203,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping Identification. | Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping Method. | String <br> (10) |
 | Package ID (`PACK_ID`) | Package ID in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (JSON) |
 | POS machine series number (S/N) (`POI_ID`) | POS machine ID if the payment is made at a physical store. | String <br> (50) |
 | Digital Wallet (`POI_WALLET_NAME`) | Name of the digital wallet from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
 | Bank of origin (`POI_BANK_NAME`) | Name of the bank institution from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
@@ -229,12 +229,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) |  MLC: Chile  | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br> Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees + VAT (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. Includes VAT. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -255,7 +255,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping Identification. | Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping Method. | String <br> (10) |
 | Package ID (`PACK_ID`) | Package ID in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (JSON) |
 | POS machine series number (S/N) (`POI_ID`) | POS machine ID if the payment is made at a physical store. | String <br> (50) |
 | Digital Wallet (`POI_WALLET_NAME`) | Name of the digital wallet from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
 | Bank of origin (`POI_BANK_NAME`) | Name of the bank institution from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
@@ -281,12 +281,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) | MPE: Perú | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br> Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees + VAT (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. Includes VAT. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -307,7 +307,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping Identification. | Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping Method. | String <br> (10) |
 | Package ID (`PACK_ID`) | Package ID in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (JSON) |
 | POS machine series number (S/N) (`POI_ID`) | POS machine ID if the payment is made at a physical store. | String <br> (50) |
 | Digital Wallet (`POI_WALLET_NAME`) | Name of the digital wallet from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
 | Bank of origin (`POI_BANK_NAME`) | Name of the bank institution from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
@@ -333,12 +333,12 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Country of origin of the Mercado Pago account (`SITE`) | MLM: México  | String <br> (200) |
 | Transaction type (`TRANSACTION_TYPE`) | Transaction type. It can be:<br><br> Approved payment (*SETTLEMENT*): payment approved.<br> Money refund (*REFUND*): partial or total refund. <br>Chargeback (*CHARGEBACK*): the buyer has a chargeback (did not recognize the payment) in their credit card.<br>Complaint (*DISPUTE*): the buyer initiated a complaint for this payment. <br>Bank account transfer (*WITHDRAWAL*): transfer to a bank account.<br>Cancelled bank account transfer (*WITHDRAWAL_CANCEL*): cancel of a transfer to a bank account.<br>Cash withdrawal (*PAYOUT*): cash withdrawal from the money available in Mercado Pago. | String <br> (200) |
 | Purchase amount (`TRANSACTION_AMOUNT`) | Transaction net amount. | Numeric <br> (17) |
-| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Currency (`TRANSACTION_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Amount received for split purchases (`SELLER_AMOUNT`) | Amount received for split purchases. | Numeric <br> (17) |
 | Date of origin (`TRANSACTION_DATE`) | Transaction creation date. | Numeric <br> (17) |
 | Fees + VAT (`FEE_AMOUNT`) | Sum of the processing, shipping, installments and coupon fees if it was at seller's expense. Includes VAT. | Numeric <br> (17) |
 | Net amount of the transaction that impacted your balance (`SETTLEMENT_NET_AMOUNT`) | Net amount of the transaction that impacted the balance. All fees involved were deducted from the purchase amount `TRANSACTION_AMOUNT`. |  Numeric <br> (17) |
-| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasilero) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> | String <br> (10) |
+| Settlement currency (`SETTLEMENT_CURRENCY`) | Can assume some of these values as appropriate: <br><br> MXN (Peso Mexicano) <br> CLP (Peso Chileno) <br> ARS (Peso Argentino) <br> BRL (Real Brasileiro) <br> COP (Peso Colombiano) <br> PEN (Sol Peruano) <br> UYU (Peso Uruguayo) <br> VES (Bolivar Venezolano) <br> USD (Dollar) | String <br> (10) |
 | Approval date (`SETTLEMENT_DATE`) | Transaction approval date. | DateTime <br> (yyyy-MM-dd'T'HH:mm:ssZ) |
 | Transaction net amount (`REAL_AMOUNT`) | Net amount of the transaction, if it is a approved payment (settlement), the amounts regarding chargebacks, complaints or returns are discounted. | Numeric <br> (17) |
 | Discount coupon (`COUPON_AMOUNT`) | Amount of the discount coupon. **It is only deducted from gross amount or purchase amount** (`TRANSACTION_AMOUNT`) **if provided by the seller.** | Numeric <br> (17) |
@@ -359,7 +359,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping Identification. | Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping Method. | String <br> (10) |
 | Package ID (`PACK_ID`) | Package ID in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in the JSON format. | String <br> (JSON) |
 | POS machine series number (S/N) (`POI_ID`) | POS machine ID if the payment is made at a physical store. | String <br> (50) |
 | Digital Wallet (`POI_WALLET_NAME`) | Name of the digital wallet from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |
 | Bank of origin (`POI_BANK_NAME`) | Name of the bank institution from which a digital payment is originated. It allows to identify the origin of a transaction when the payment is made with a Mercado Pago QR Code. | String <br> (200) |

@@ -34,7 +34,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | Shipping ID (`SHIPPING_ID`) | Shipping ID. |  Numeric <br> (19) |
 | Shipping method (`SHIPMENT_MODE`) | Shipping method. | String <br> (10) |
 | Package ID (`PACK_ID`) | ID of the package in the cart. | Numeric <br> (19) |
-| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in JSON format. | String <br> (255) |
+| Detailed taxes (`TAXES_DISAGGREGATED`) | Detailed taxes in JSON format. | String <br> (JSON) |
 | Charge to offer discount (`EFFECTIVE_COUPON_AMOUNT`) | This transaction shows the amount you cover within the discount coupon offered to your buyers. To make it easier to differentiate it from `COUPON_AMOUNT`, we added the "–" sign when the transaction belongs to a sale and "+" when the transaction belongs to a return. | Numeric <br> (17) |
 | POS machine serial number (`POI_ID`) | POS machine ID if payment is made at a physical store. | String <br> (100) |
 | Buyer card (`CARD_INITIAL_NUMBER`) | The first digits of the credit or debit card with which the purchase was made. | Numeric <br> (6) |

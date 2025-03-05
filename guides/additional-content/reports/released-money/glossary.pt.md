@@ -36,7 +36,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10) |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON) |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100) |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |
@@ -87,7 +87,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10) |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON) |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100) |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |
@@ -133,7 +133,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10) |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON) |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100) |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |
@@ -179,7 +179,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10) |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255) |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON) |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100) |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |
@@ -225,7 +225,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10)  |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255)  |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON)  |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100)  |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |
@@ -271,7 +271,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10)  |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255)  |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON)  |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100)  |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |
@@ -317,7 +317,7 @@ Veja a descrição de cada campo presente no relatório na tabela abaixo.
 | ID do envio (`SHIPPING_ID`) | Identificador de envio. | Numeric <br> (19) |
 | Forma de envio (`SHIPMENT_MODE`) | Modalidade de envio. | String <br> (10)  |
 | ID do pacote (`PACK_ID`) | Identificador do pacote no carrinho. | Numeric <br> (19) |
-| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (255)  |
+| Impostos desagregados (`TAXES_DISAGGREGATED`) | Impostos detalhados no formato JSON. | String <br> (JSON)  |
 | Custo de oferecer desconto (`EFFECTIVE_COUPON_AMOUNT`) | Esta transação mostra o valor que você arca do cupom de desconto oferecido aos seus compradores. Para que seja mais fácil diferenciá-la do `COUPON_AMOUNT`, adicionamos os signos: "-" quando a transação for de uma venda e "+" quando for de uma devolução. | Numeric <br> (17) |
 | Número de série da maquininha (`POI_ID`) | ID da maquininha se o pagamento é feito em uma loja física. | String <br> (100)  |
 | Cartão do seu comprador (`CARD_INITIAL_NUMBER`) | Corresponde aos primeiros dígitos do cartão de crédito ou débito utilizado para fazer a compra. | Numeric <br> (6) |

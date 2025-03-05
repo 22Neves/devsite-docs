@@ -34,7 +34,7 @@ Consulta la descripción de cada campo presente en el reporte en la tabla siguie
 | ID de envío (`SHIPPING_ID`) | Identificador de envío. | Numeric <br> (19) |
 | Modo de envío (`SHIPMENT_MODE`) | Modalidad de envío. | String <br> (10) |
 | ID del paquete (`PACK_ID`) | Identificador del paquete en el carrito. | Numeric <br> (19) |
-| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (255) |
+| Desglose de impuestos (`TAXES_DISAGGREGATED`) | Impuestos desagregados en formato JSON. | String <br> (JSON) |
 | Costo por ofrecer descuento (`EFFECTIVE_COUPON_AMOUNT`) | Esta transacción te muestra el valor que asumes dentro del cupón de descuento ofrecido a tus compradores. Para que sea más fácil diferenciarlo del `COUPON_AMOUNT`, agregamos los signos "—", cuando el movimiento corresponda a una venta, y "+" para cuando el movimiento corresponde a una devolución. | Numeric <br> (17) |
 | Número de serie del lector (`POI_ID`) | ID del lector si el pago se realiza a través de un comercio físico. | String <br> (100) |
 | Tarjeta de tu comprador (`CARD_INITIAL_NUMBER`) | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. | Numeric <br> (6) |
