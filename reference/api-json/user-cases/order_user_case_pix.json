@@ -46,28 +46,26 @@
                         "transactions": {
                             "properties": {
                                 "payments": {
-                                    "items": {
-                                        "properties": {
-                                            "amount": {
-                                                "example": "200.00"
-                                            },
-                                            "payment_method": {
-                                                "properties": {
-                                                    "id": {
-                                                        "example": "pix"
-                                                    },
-                                                    "type": {
-                                                        "example": "bank_transfer"
-                                                    },
-                                                    "token": {
-                                                        "example": "disabled"
-                                                    },
-                                                    "installments": {
-                                                        "example": "disabled"
-                                                    },
-                                                    "statement_descriptor": {
-                                                        "example": "disabled"
-                                                    }
+                                    "properties": {
+                                        "amount": {
+                                            "example": "200.00"
+                                        },
+                                        "payment_method": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "pix"
+                                                },
+                                                "type": {
+                                                    "example": "bank_transfer"
+                                                },
+                                                "token": {
+                                                    "example": "disabled"
+                                                },
+                                                "installments": {
+                                                    "example": "disabled"
+                                                },
+                                                "statement_descriptor": {
+                                                    "example": "disabled"
                                                 }
                                             }
                                         }

@@ -37,19 +37,17 @@
                         "transactions": {
                             "properties": {
                                 "payments": {
-                                    "items": {
-                                        "properties": {
-                                            "amount": {
-                                                "example": "1000.00"
-                                            },
-                                            "payment_method": {
-                                                "properties": {
-                                                    "id": {
-                                                        "example": "oxxo"
-                                                    },
-                                                    "type": {
-                                                        "example": "ticket"
-                                                    }
+                                    "properties": {
+                                        "amount": {
+                                            "example": "1000.00"
+                                        },
+                                        "payment_method": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "oxxo"
+                                                },
+                                                "type": {
+                                                    "example": "ticket"
                                                 }
                                             }
                                         }
