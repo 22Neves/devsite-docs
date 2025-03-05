@@ -45,7 +45,7 @@ Para pausar um assinante, siga estes passos:
 
 ### Cancelar assinante
 
-Você pode cancelar um assinante e parar de receber seus pagamentos. Ao realizar a cancelação, o Mercado Pago enviará uma notificação por e-mail.
+Você pode cancelar um assinante e parar de receber seus pagamentos. Ao realizar o cancelamento, o Mercado Pago enviará uma notificação por e-mail.
 
 Para cancelar um assinante, siga os passos abaixo.
 
