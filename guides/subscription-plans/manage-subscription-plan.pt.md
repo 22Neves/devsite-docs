@@ -60,7 +60,8 @@ Para cancelar um assinante, siga estes passos:
 
 ## Gerenciar um plano de assinatura
 
-Você pode acessar seus planos de assinatura e visualizá-los, modificá-los ou cancelá-los. Para gerenciar seus planos de assinatura, siga estes passos:
+Você pode acessar seus planos de assinatura e visualizá-los, modificá-los ou cancelá-los. Para gerenciar seus planos de assinatura, siga os passos abaixo.
+
 1. Acesse [Planos de Assinatura](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans#from-section=menu), que está localizado no seu painel do Mercado Pago, dentro do menu lateral esquerdo.
 2. Clique na aba **Planos**, que está na parte superior do painel.
 3. Clique nos três pontos localizados à direita do plano de assinatura que deseja gerenciar. Um menu será exibido.
