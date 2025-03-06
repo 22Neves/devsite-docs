@@ -3538,7 +3538,7 @@
                     "email": {
                         "type": "string",
                         "required": true,
-                        "example": "test@test.com",
+                        "example": "test@testuser.com",
                         "description": {
                             "pt": "E-mail do pagador",
                             "en": "Payer email",
