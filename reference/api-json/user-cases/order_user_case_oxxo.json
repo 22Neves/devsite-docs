@@ -5,7 +5,7 @@
         "es": "Crear pago con OXXO"
     },
     "siteId": [
-        "MLB"
+        "allSites"
     ],
     "requestBody": {
         "content": {
@@ -31,6 +31,21 @@
                             "properties": {
                                 "email": {
                                     "example": "{email}"
+                                },
+                                "first_name": {
+                                    "example": "disabled"
+                                },
+                                "last_name": {
+                                    "example": "disabled"
+                                },
+                                "identification": {
+                                    "example": "disabled"
+                                },
+                                "phone": {
+                                    "example": "disabled"
+                                },
+                                "address": {
+                                    "example": "disabled"
                                 }
                             }
                         },
@@ -48,12 +63,36 @@
                                                 },
                                                 "type": {
                                                     "example": "ticket"
+                                                },
+                                                "token": {
+                                                    "example": "disabled"
+                                                },
+                                                "installments": {
+                                                    "example": "disabled"
+                                                },
+                                                "statement_descriptor": {
+                                                    "example": "disabled"
                                                 }
                                             }
                                         }
                                     }
                                 }
                             }
+                        },
+                        "capture_mode": {
+                            "example": "disabled"
+                        },
+                        "description": {
+                            "example": "disabled"
+                        },
+                        "integration_data": {
+                            "example": "disabled"
+                        },
+                        "expiration_time": {
+                            "example": "disabled"
+                        },
+                        "items": {
+                            "example": "disabled"
                         }
                     }
                 }
@@ -87,6 +126,9 @@
                             "country_code": {
                                 "example": "MEX"
                             },
+                            "user_id": {
+                                "example": "disabled"
+                            },
                             "status": {
                                 "example": "action_required"
                             },
@@ -97,15 +139,24 @@
                                 "example": "automatic"
                             },
                             "created_date": {
-                                "example": "2024-09-02T22:04:01.880469Z"
+                                "example": "disabled"
                             },
                             "last_updated_date": {
-                                "example": "2024-09-02T22:04:04.429289Z"
+                                "example": "disabled"
                             },
                             "integration_data": {
                                 "properties": {
                                     "application_id": {
                                         "example": "4599991948843755"
+                                    },
+                                    "integrator_id": {
+                                        "example": "disabled"
+                                    },
+                                    "platform_id": {
+                                        "example": "disabled"
+                                    },
+                                    "sponsor": {
+                                        "example": "disabled"
                                     }
                                 }
                             },
@@ -148,6 +199,27 @@
                                                         },
                                                         "verification_code": {
                                                             "example": "1234567890"
+                                                        },
+                                                        "qr_code": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "qr_code_base64": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "token": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "installments": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "statement_descriptor": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "financial_institution": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "digitable_line": {
+                                                            "example": "disabled"
                                                         }
                                                     }
                                                 }
@@ -155,6 +227,18 @@
                                         }
                                     }
                                 }
+                            },
+                            "description": {
+                                "example": "disabled"
+                            },
+                            "expiration_time": {
+                                "example": "disabled"
+                            },
+                            "client_token": {
+                                "example": "disabled"
+                            },
+                            "items": {
+                                "example": "disabled"
                             }
                         }
                     }

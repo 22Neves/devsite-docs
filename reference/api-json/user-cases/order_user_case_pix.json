@@ -5,7 +5,7 @@
         "es": "Crear pago con Pix"
     },
     "siteId": [
-        "MLB"
+        "allSites"
     ],
     "requestBody": {
         "content": {
@@ -15,40 +15,18 @@
                         "type": {
                             "example": "online"
                         },
+                        "total_amount": {
+                            "example": "1000.00"
+                        },
                         "external_reference": {
                             "example": "ext_ref_1234"
-                        },
-                        "total_amount": {
-                            "example": "200.00"
-                        },
-                        "payer": {
-                            "properties": {
-                                "email": {
-                                    "example": "{{PAYER_EMAIL}}"
-                                },
-                                "identification": {
-                                    "example": "disabled"
-                                },
-                                "first_name": {
-                                    "example": "Test"
-                                },
-                                "last_name": {
-                                    "example": "disabled"
-                                },
-                                "phone": {
-                                    "example": "disabled"
-                                },
-                                "address": {
-                                    "example": "disabled"
-                                }
-                            }
                         },
                         "transactions": {
                             "properties": {
                                 "payments": {
                                     "properties": {
                                         "amount": {
-                                            "example": "200.00"
+                                            "example": "1000.00"
                                         },
                                         "payment_method": {
                                             "properties": {
@@ -70,6 +48,28 @@
                                             }
                                         }
                                     }
+                                }
+                            }
+                        },
+                        "payer": {
+                            "properties": {
+                                "email": {
+                                    "example": "{email}"
+                                },
+                                "first_name": {
+                                    "example": "disabled"
+                                },
+                                "last_name": {
+                                    "example": "disabled"
+                                },
+                                "identification": {
+                                    "example": "disabled"
+                                },
+                                "phone": {
+                                    "example": "disabled"
+                                },
+                                "address": {
+                                    "example": "disabled"
                                 }
                             }
                         },
@@ -106,19 +106,16 @@
                     "schema": {
                         "properties": {
                             "id": {
-                                "example": "ORD01JFB671S2AKYYFVZN87J1GJVY"
+                                "example": "ORD01HRYFWNYRE1MR1E60MW3X0T2P"
                             },
                             "type": {
                                 "example": "online"
                             },
-                            "processing_mode": {
-                                "example": "automatic"
+                            "total_amount": {
+                                "example": "1000.00"
                             },
                             "external_reference": {
                                 "example": "ext_ref_1234"
-                            },
-                            "total_amount": {
-                                "example": "200.00"
                             },
                             "country_code": {
                                 "example": "BRA"
@@ -132,69 +129,25 @@
                             "capture_mode": {
                                 "example": "automatic"
                             },
-                            "created_date": {
-                                "example": "2024-12-17T20:51:07.17Z"
-                            },
-                            "last_updated_date": {
-                                "example": "2024-12-17T20:51:08.168Z"
-                            },
-                            "integration_data": {
-                                "properties": {
-                                    "application_id": {
-                                        "example": "130106526144588"
-                                    },
-                                    "integrator_id": {
-                                        "example": "disabled"
-                                    },
-                                    "platform_id": {
-                                        "example": "disabled"
-                                    },
-                                    "sponsor": {
-                                        "example": "disabled"
-                                    }
-                                }
-                            },
-                            "payer": {
-                                "properties": {
-                                    "email": {
-                                        "example": "test_user_9835778@testuser.com"
-                                    },
-                                    "identification": {
-                                        "example": "disabled"
-                                    },
-                                    "first_name": {
-                                        "example": "disabled"
-                                    },
-                                    "last_name": {
-                                        "example": "disabled"
-                                    },
-                                    "phone": {
-                                        "example": "disabled"
-                                    },
-                                    "address": {
-                                        "example": "disabled"
-                                    }
-                                }
-                            },
                             "transactions": {
                                 "properties": {
                                     "payments": {
                                         "items": {
                                             "properties": {
                                                 "id": {
-                                                    "example": "PAY01JFB671S2AKYYFVZN8B60XSER"
-                                                },
-                                                "amount": {
-                                                    "example": "200.00"
+                                                    "example": "PAY01HRYFXQ53Q3JPEC48MYWMR0TE"
                                                 },
                                                 "reference_id": {
-                                                    "example": "0001wmubs3"
+                                                    "example": "123456789"
                                                 },
                                                 "status": {
                                                     "example": "action_required"
                                                 },
                                                 "status_detail": {
                                                     "example": "waiting_transfer"
+                                                },
+                                                "amount": {
+                                                    "example": "1000.00"
                                                 },
                                                 "payment_method": {
                                                     "properties": {
@@ -204,6 +157,15 @@
                                                         "type": {
                                                             "example": "bank_transfer"
                                                         },
+                                                        "ticket_url": {
+                                                            "example": "https://www.mercadopago.com.br/sandbox/payments/00000000000/ticket?caller_id=77777777777&hash=34cb0d7c-81d9-478c-92a5-767d0kakjja"
+                                                        },
+                                                        "qr_code": {
+                                                            "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0"
+                                                        },
+                                                        "qr_code_base64": {
+                                                            "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i"
+                                                        },
                                                         "token": {
                                                             "example": "disabled"
                                                         },
@@ -211,6 +173,21 @@
                                                             "example": "disabled"
                                                         },
                                                         "statement_descriptor": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "barcode_content": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "reference": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "verification_code": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "financial_institution": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "digitable_line": {
                                                             "example": "disabled"
                                                         }
                                                     }
@@ -220,10 +197,22 @@
                                     }
                                 }
                             },
-                            "description": {
-                                "example": "disabled"
+                            "processing_mode": {
+                                "example": "automatic"
                             },
                             "marketplace": {
+                                "example": "NONE"
+                            },
+                            "created_date": {
+                                "example": "disabled"
+                            },
+                            "last_updated_date": {
+                                "example": "disabled"
+                            },
+                            "integration_data": {
+                                "example": "disabled"
+                            },
+                            "description": {
                                 "example": "disabled"
                             },
                             "expiration_time": {
