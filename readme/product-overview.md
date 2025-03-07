@@ -2,13 +2,12 @@
 
 Este documento descreve os componentes utilizados para criar a página de [Overview de Produtos](https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/landing) no devsite. Cada componente possui uma sintaxe específica dentro do markdown, que é processada e renderizada no frontend.
 
-## Estrutura dos Componentes
-
-A tabela abaixo descreve as sessões disponíveis e seus respectivos campos.
-
-### `product_landing_hero`
-
-![hero](https://github.com/user-attachments/assets/a29b54cf-7104-42db-85df-90b197d7d43e)
+## `product_landing_hero`
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a29b54cf-7104-42db-85df-90b197d7d43e" width="900">
+</p>
+<br>
 
 | Campo            | Tipo   | Obrigatório | Descrição |
 |-----------------|--------|------------|-----------|
@@ -38,13 +37,17 @@ product_landing_hero:
  - info: ¿Buscas opciones más fáciles? Explora nuestras [soluciones sin desarrollo](/docs#online-payments).
 ---
 ```
-
+<br>
 > :warning: Altamente recomendável que a `image` seja em formato PNG e de alta qualidade. No exemplo foi exportado com a qualidade 4x no Figma
+<br>
 
+## `product_landing_what_it_offers`
 
-### `product_landing_what_it_offers`
-
-![que-ofrece](https://github.com/user-attachments/assets/f088619d-a8e9-48b0-a4d6-939f2dd5c99d)
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f088619d-a8e9-48b0-a4d6-939f2dd5c99d" width="900">
+</p>
+<br>
 
 | Campo           | Tipo   | Obrigatório | Descrição |
 |---------------|--------|------------|-----------|
@@ -82,9 +85,13 @@ product_landing_what_it_offers:
 ---
 ```
 
-### `product_landing_how_works`
+## `product_landing_how_works`
 
-![como-funciona](https://github.com/user-attachments/assets/35bfee00-7fcf-4a0b-ad91-79a5c5d26955)
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/35bfee00-7fcf-4a0b-ad91-79a5c5d26955" width="900">
+</p>
+<br>
 
 | Campo          | Tipo   | Obrigatório | Descrição |
 |--------------|--------|------------|-----------|
@@ -119,9 +126,13 @@ product_landing_how_works:
 ```
 
 
-### `product_landing_what_differentiates`
+## `product_landing_what_differentiates`
 
-![que-lo-diferencia](https://github.com/user-attachments/assets/8744eab0-3866-40f0-9733-68c6530af92c)
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8744eab0-3866-40f0-9733-68c6530af92c" width="900">
+</p>
+<br>
 
 | Campo        | Tipo   | Obrigatório | Descrição |
 |-------------|--------|------------|-----------|
@@ -177,9 +188,13 @@ product_landing_what_differentiates:
 ---
 ```
 
-### `product_landing_how_integrate`
+## `product_landing_how_integrate`
 
-![como-integrar](https://github.com/user-attachments/assets/245e9f09-685e-4eab-9b92-f1d858405016)
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/245e9f09-685e-4eab-9b92-f1d858405016" width="900">
+</p>
+<br>
 
 | Campo                 | Tipo   | Obrigatório | Descrição |
 |----------------------|--------|------------|-----------|
