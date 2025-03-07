@@ -8,6 +8,8 @@ A tabela abaixo descreve as sessões disponíveis e seus respectivos campos.
 
 ### `product_landing_hero`
 
+![hero](https://github.com/user-attachments/assets/a29b54cf-7104-42db-85df-90b197d7d43e)
+
 | Campo            | Tipo   | Obrigatório | Descrição |
 |-----------------|--------|------------|-----------|
 | `title`        | string | Sim        | Título principal da seção |
@@ -41,6 +43,8 @@ product_landing_hero:
 
 
 ### `product_landing_what_it_offers`
+
+![que-ofrece](https://github.com/user-attachments/assets/f088619d-a8e9-48b0-a4d6-939f2dd5c99d)
 
 | Campo           | Tipo   | Obrigatório | Descrição |
 |---------------|--------|------------|-----------|
@@ -80,6 +84,8 @@ product_landing_what_it_offers:
 
 ### `product_landing_how_works`
 
+![como-funciona](https://github.com/user-attachments/assets/35bfee00-7fcf-4a0b-ad91-79a5c5d26955)
+
 | Campo          | Tipo   | Obrigatório | Descrição |
 |--------------|--------|------------|-----------|
 | `title`     | string | Sim        | Título da seção |
@@ -114,6 +120,8 @@ product_landing_how_works:
 
 
 ### `product_landing_what_differentiates`
+
+![que-lo-diferencia](https://github.com/user-attachments/assets/8744eab0-3866-40f0-9733-68c6530af92c)
 
 | Campo        | Tipo   | Obrigatório | Descrição |
 |-------------|--------|------------|-----------|
@@ -171,6 +179,8 @@ product_landing_what_differentiates:
 
 ### `product_landing_how_integrate`
 
+![como-integrar](https://github.com/user-attachments/assets/245e9f09-685e-4eab-9b92-f1d858405016)
+
 | Campo                 | Tipo   | Obrigatório | Descrição |
 |----------------------|--------|------------|-----------|
 | `title`             | string | Sim        | Título da seção |
@@ -217,3 +227,4 @@ product_landing_how_integrate:
 ```
 
 Este markdown será processado e exibido como uma página de Overview de Produtos na documentação técnica.
+
