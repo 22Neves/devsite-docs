@@ -3647,18 +3647,18 @@
                                 "type": "string",
                                 "example": "Pres. Altino",
                                 "description": {
-                                    "en": "Payer's address neighborhood. Required for \"payment_method.id\" bolbradesco",
-                                    "pt": "Bairro do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
-                                    "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                    "en": "Payer's address neighborhood. Required for \"payment_method.id\" bolbradesco.",
+                                    "pt": "Bairro do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco.",
+                                    "es": "Barrio de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco."
                                 }
                             },
                             "state": {
                                 "type": "string",
                                 "example":"SP",
                                 "description": {
-                                    "en": "Payer`s address state. Required for \"payment_method.id\" bolbradesco",
-                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
-                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
+                                    "en": "Payer`s address state. Required for \"payment_method.id\" bolbradesco.",
+                                    "pt": "Estado do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco.",
+                                    "es": "Estado de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco."
                                 }
                             },
                             "city": {
