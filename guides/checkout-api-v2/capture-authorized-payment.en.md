@@ -1,6 +1,15 @@
 # Capture authorized payment
 
-The completion of a payment takes place after the authorized payment has been captured, which means that the amount reserved for the purchase can be debited from the card.
+The completion of a payment takes place after the authorized payment has been captured, which means that the [amount reserved](/developers/en/docs/checkout-api/payment-management/make-value-reserve) for the purchase can be debited from the card.
+
+----[mco]----
+> WARNING
+>
+> Attention
+>
+> The functionality to **reserve and capture** funds is only available for cards from the *Visa* and *Mastercard* brands, and is also compatible only with the banks *Bancolombia* and *BBVA*.
+
+------------
 
 There are two ways to capture an authorized payment:
 
@@ -11,7 +20,7 @@ There are two ways to capture an authorized payment:
 >
 > Important
 >
-> The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ ----[mpe]---- 22 days------------ from its creation.
+> The time limit to capture the authorized payment is ----[mla, mlm, mlc, mco]----7 days------------ ----[mlb]---- 5 days------------ ----[mpe]---- 22 days------------ from its creation.
 
 Below we describe in detail each of the options and how to execute them.
 
@@ -323,7 +332,7 @@ The answer will yield the following result
 ]]]
 
 ------------
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlc, mco, mlm, mpe]----
 ## Capture partial value
 
 To capture an amount lower than the one reserved, send the value to be captured to the `transaction_amount` parameter and execute the request through the codes available below.

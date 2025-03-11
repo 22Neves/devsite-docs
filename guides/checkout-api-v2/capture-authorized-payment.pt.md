@@ -1,6 +1,15 @@
 # Capturar pagamento autorizado
 
-A finalização de um pagamento acontece após a captura do pagamento autorizado, o que significa que o valor reservado para a compra pode ser debitado do cartão. 
+A finalização de um pagamento acontece após a captura do pagamento autorizado, o que significa que o [valor reservado](/developers/pt/docs/checkout-api/payment-management/make-value-reserve) para a compra pode ser debitado do cartão. 
+
+----[mco]----
+> WARNING
+>
+> Atenção
+>
+> A funcionalidade de **reservar e capturar valores** só está disponível para cartões das bandeiras *Visa* e *Mastercard*, além de só ser compatível com os bancos *Bancolombia* e *BBVA*.
+
+------------
 
 Existem duas formas de capturar um pagamento autorizado:
 
@@ -11,7 +20,7 @@ Existem duas formas de capturar um pagamento autorizado:
 >
 > Importante
 >
-> O prazo para capturar o pagamento autorizado é de ----[mla, mlm, mlc]----7 dias------------ ----[mlb]---- 5 dias ------------ ----[mpe]---- 22 dias------------ a partir da sua criação.
+> O prazo para capturar o pagamento autorizado é de ----[mla, mlm, mlc, mco]----7 dias------------ ----[mlb]---- 5 dias ------------ ----[mpe]---- 22 dias------------ a partir da sua criação.
 
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
@@ -323,7 +332,7 @@ A resposta trará o seguinte resultado:
 ]]]
 
 ------------
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlc, mco, mlm, mpe]----
 ## Capturar valor parcial
 
 Para capturar um valor inferior ao reservado, envie o valor que deve ser capturado ao parâmetro `transaction_amount` e execute a requição através dos códigos disponíveis abaixo.

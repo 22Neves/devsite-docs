@@ -20,7 +20,7 @@ Keep the data grouped thematically and provide context to the user about the ste
 
 It is a **progress bar** that tells the user which stage of your checkout they are in. You can segment it into equal parts, indicating each step of the checkout. In this way, your user will have visibility of the step they are in and how much remains to finish the payment process.
 
-![en progress indicator](/images/best-practices-guide/progress-indicator-en.png)
+![en progress indicator](/images/best-practices-guide/progress-en.png)
 
 ### Bullets and highlights
 
@@ -28,7 +28,7 @@ It is a **progress bar** that tells the user which stage of your checkout they a
 
 **Highlights** are underlined or highlighted text. Use highlights to call attention to important keywords or sentences that add value and make the screen easier to scan.
 
-![en bullets y highlights](/images/best-practices-guide/bullets-highlight-en.png)
+![en bullets y highlights](/images/best-practices-guide/highlights-bullets-en.png)
 
 ## Facilitate data filling
 
@@ -42,7 +42,7 @@ In order to make filling out the form easier and not tire the user:
 * Remove any request of information that is not essential for the purchase process.
 * Request each detail only once to avoid being redundant.
 
-![en aspectos generales optimiza tus formularios](/images/best-practices-guide/facilitate-completion-data-en.png)
+![en aspectos generales optimiza tus formularios](/images/best-practices-guide/facilitate-data-en.png)
 
 ## Provide context
 
@@ -63,7 +63,7 @@ Both the labels and the placeholders must be short, direct and clear to prevent 
 
 The **tooltips** are notifications that offer an extra layer of information when the helper is not enough. Use them to add definitions, complementary information or actionables through links. 
 
-![en helpers y tooltips](/images/best-practices-guide/helperstooltips-en.png)
+![en helpers y tooltips](/images/best-practices-guide/helper-tooltip-en.png)
 
 ### Success and error messages
 
@@ -71,7 +71,7 @@ The **tooltips** are notifications that offer an extra layer of information when
 
 Use success messages only if the confirmation is necessary or if the entered detail adds value to the user (e.g: free shipping or discount). In case of an **error**, it is important to clarify what the problem was and provide a solution so that the user does not make the mistake again and gets frustrated. If the input has a helper, it should be replaced by the error message. 
 
-![en mensajes de éxito y error](/images/best-practices-guide/success-error-messages-en.png)
+![en mensajes de éxito y error](/images/best-practices-guide/messages-en.png)
 
 ## Add clear actionables
 
@@ -84,7 +84,7 @@ Here are some tips:
 * Use buttons for the main actions and write them in the infinitive verb tense so that there is no ambiguity.
 * Add links for secondary actions that add context and make sure it is a self explanatory text that makes reference to where the users are being redirected to. 
 
-![en agrega accionables claros](/images/best-practices-guide/add-action-items-en.png)
+![en agrega accionables claros](/images/best-practices-guide/action-items-en.png)
 
 ## Highlight the options
 
@@ -98,7 +98,7 @@ Therefore, **offer options** that include different possible variables and write
 
 In addition, you can add the most outstanding value propositions in each option to help the user have more information to make a decision.
 
-![en ofrece opciones](/images/best-practices-guide/highlight-the-options-en.png)
+![en ofrece opciones](/images/best-practices-guide/highlight-options-en.png)
 
 ## Skip the unnecessary steps
 
@@ -106,7 +106,7 @@ Avoid asking for repeated data or data that is not necessary to complete the pur
 
 For example, you can use the personal and shipping information to get the billing details. This way you will avoid adding an extra form that slows down the payment process.
 
-![en saltea pasos innecesarios](/images/best-practices-guide/skip-unnecessary-steps-en.png)
+![en saltea pasos innecesarios](/images/best-practices-guide/unnecessary-steps-en.png)
 
 ## Give visibility during the process 
 
@@ -115,7 +115,7 @@ Add a fixed **summary component** or a direct access to the shopping cart that s
 Although most users review their purchase at the end, they feel more secure if they can control what they are doing throughout the process.
 
 ----[mlc]----
-![en da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-en.png)
+![en da visibilidad del proceso 1](/images/best-practices-guide/visibility-to-process1-en.png)
 
 ------------
 ----[mlb, mla, mlm, mco, mpe, mlu]----
@@ -126,7 +126,7 @@ Although most users review their purchase at the end, they feel more secure if t
 Also, before finalizing the purchase, allow your users to **review** the entire process and the final price. For this, add a confirmation or review page, prior to making the payment, that includes a summary of all the decisions made, all the information uploaded and the detail of the total to pay. It is important to give the possibility to edit any of the data from there, without the need to go back to the previous steps.
 
 ----[mlc]----
-![en da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-en.png)
+![en da visibilidad del proceso 2](/images/best-practices-guide/visibility-to-process2-en.png)
 
 ------------
 ----[mlb, mla, mlm, mco, mpe, mlu]----
