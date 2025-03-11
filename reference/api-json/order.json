@@ -3801,6 +3801,14 @@
                             "pt": "Identificador da plataforma no Mercado Pago. É o identificador único da plataforma nos sistemas do Mercado Pago."
                         }
                     },
+                    "corporation_id": {
+                        "type": "string",
+                        "description": {
+                            "en": "Identifier of the corporation in Mercado Pago. It is the unique identifier of the corporation in Mercado Pago's systems.",
+                            "es": "Identificador de la corporación en Mercado Pago. Es el identificador único de la corporación en los sistemas de Mercado Pago.",
+                            "pt": "Identificador da corporação no Mercado Pago. É o identificador único da corporação nos sistemas do Mercado Pago."
+                        }
+                    },
                     "sponsor": {
                         "type": "object",
                         "description": {
@@ -3855,6 +3863,14 @@
                             "en": "Identifier of the platform in Mercado Pago. It is the unique identifier of the platform in Mercado Pago's systems.",
                             "es": "Identificador de la plataforma en Mercado Pago. Es el identificador único de la plataforma en los sistemas de Mercado Pago.",
                             "pt": "Identificador da plataforma no Mercado Pago. É o identificador único da plataforma nos sistemas do Mercado Pago."
+                        }
+                    },
+                    "corporation_id": {
+                        "type": "string",
+                        "description": {
+                            "en": "Identifier of the corporation in Mercado Pago. It is the unique identifier of the corporation in Mercado Pago's systems.",
+                            "es": "Identificador de la corporación en Mercado Pago. Es el identificador único de la corporación en los sistemas de Mercado Pago.",
+                            "pt": "Identificador da corporação no Mercado Pago. É o identificador único da corporação nos sistemas do Mercado Pago."
                         }
                     },
                     "sponsor": {
