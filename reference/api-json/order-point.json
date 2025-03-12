@@ -148,6 +148,46 @@
                         }
                       }
                     }
+                  },
+                  "taxes":{
+                    "type":"array",
+                    "description":{
+                      "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                      "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                      "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "payer_condition": {
+                            "type":"string",
+                            "example": "payment_taxable_iva",
+                            "description":{
+                                "en":"This field will signal the terminal whether the order is generated with VAT or not.",
+                                "pt":"Este campo informará ao terminal se a order foi gerada com IVA ou não.",
+                                "es":"Este campo le indicará a la terminal si la order se genera con IVA o no."
+                            },
+                            "enum": [
+                              {
+                                "title": "payment_taxable_iva",
+                                "description": {
+                                    "en": "Default value. It indicates that the payment will be generated with VAT.",
+                                    "es": "Valor por defecto. Indica que el pago se generará con IVA.",
+                                    "pt": "Valor padrão. Indica que o pagamento será gerado com IVA."
+                                }
+                              },
+                              {
+                                "title": "payment_exempt_iva",
+                                "description": {
+                                    "en": "This value indicates that the payment will be exempt from VAT.",
+                                    "es": "Este valor indica que el pago estará exento de IVA.",
+                                    "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                }
+                              }
+                            ]
+                        }
+                      }
+                    }  
                   }
                 }
               }
@@ -233,8 +273,8 @@
                       },
                       "properties":{
                         "application_id":{
-                          "type":"number",
-                          "example":1234567890,
+                          "type":"string",
+                          "example":"1234567890",
                           "description":{
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
@@ -393,6 +433,46 @@
                           }
                         }
                       }
+                    },
+                    "taxes":{
+                      "type":"array",
+                      "description":{
+                        "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                        "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                        "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payer_condition": {
+                              "type":"string",
+                              "example": "payment_taxable_iva",
+                              "description":{
+                                  "en":"This field will signal whether the order is generated with VAT or not.",
+                                  "pt":"Este campo informará se a order foi gerada com IVA ou não.",
+                                  "es":"Este campo indicará si la order fue generada con IVA o no."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment_taxable_iva",
+                                  "description": {
+                                      "en": "Default value. It indicates that the payment was generated with VAT.",
+                                      "es": "Valor por defecto. Indica que el pago se generó con IVA.",
+                                      "pt": "Valor padrão. Indica que o pagamento foi gerado com IVA."
+                                  }
+                                },
+                                {
+                                  "title": "payment_exempt_iva",
+                                  "description": {
+                                      "en": "This value indicates that the payment will be exempt from VAT.",
+                                      "es": "Este valor indica que el pago estará exento de IVA.",
+                                      "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                  }
+                                }
+                              ]
+                          }
+                        }
+                      }  
                     }
                   }
                 }
@@ -679,6 +759,15 @@
                         "es":"Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
                       }
                     },
+                    "user_id":{
+                      "type":"string",
+                      "example":"5238400195",
+                      "description":{
+                        "en":"ID of the Mercado Pago account that created the order.",
+                        "pt":"ID do usuário do Mercado Pago que criou a order.",
+                        "es":"Identificador del usuario de Mercado Pago que creó la order."
+                      }
+                    },
                     "type":{
                       "type":"string",
                       "description":{
@@ -737,8 +826,8 @@
                       },
                       "properties":{
                         "application_id":{
-                          "type":"number",
-                          "example":1234567890,
+                          "type":"string",
+                          "example":"1234567890",
                           "description":{
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
@@ -994,6 +1083,15 @@
                                   "es": "Monto del pago."
                                 }
                               },
+                              "refunded_amount": {
+                                "type": "string",
+                                "example": "24.90",
+                                "description": {
+                                  "pt": "Valor do reembolso, caso seja realizado.",
+                                  "en": "Refund amount, if one has been made.",
+                                  "es": "Valor del reembolso, en caso de haber realizado uno."
+                                }
+                              },
                               "tip_amount": {
                                 "type": "string",
                                 "example": "14.90",
@@ -1245,6 +1343,46 @@
                           }
                         }
                       }
+                    },
+                    "taxes":{
+                      "type":"array",
+                      "description":{
+                        "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                        "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                        "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payer_condition": {
+                              "type":"string",
+                              "example": "payment_taxable_iva",
+                              "description":{
+                                  "en":"This field will signal whether the order is generated with VAT or not.",
+                                  "pt":"Este campo informará se a order foi gerada com IVA ou não.",
+                                  "es":"Este campo indicará si la order fue generada con IVA o no."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment_taxable_iva",
+                                  "description": {
+                                      "en": "Default value. It indicates that the payment was generated with VAT.",
+                                      "es": "Valor por defecto. Indica que el pago se generó con IVA.",
+                                      "pt": "Valor padrão. Indica que o pagamento foi gerado com IVA."
+                                  }
+                                },
+                                {
+                                  "title": "payment_exempt_iva",
+                                  "description": {
+                                      "en": "This value indicates that the payment will be exempt from VAT.",
+                                      "es": "Este valor indica que el pago estará exento de IVA.",
+                                      "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                  }
+                                }
+                              ]
+                          }
+                        }
+                      }  
                     }
                   }
                 }
@@ -1436,6 +1574,15 @@
                         "es":"Identificador de la order cancelada en la solicitud."
                       }
                     },
+                    "user_id":{
+                      "type":"string",
+                      "example":"5238400195",
+                      "description":{
+                        "en":"ID of the Mercado Pago account that created the order.",
+                        "pt":"ID do usuário do Mercado Pago que criou a order.",
+                        "es":"Identificador del usuario de Mercado Pago que creó la order."
+                      }
+                    },
                     "type":{
                       "type":"string",
                       "description":{
@@ -1494,8 +1641,8 @@
                       },
                       "properties":{
                         "application_id":{
-                          "type":"number",
-                          "example":1234567890,
+                          "type":"string",
+                          "example":"1234567890",
                           "description":{
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
@@ -1653,6 +1800,46 @@
                           }
                         }
                       }
+                    },
+                    "taxes":{
+                      "type":"array",
+                      "description":{
+                        "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                        "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                        "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payer_condition": {
+                              "type":"string",
+                              "example": "payment_taxable_iva",
+                              "description":{
+                                  "en":"This field will signal whether the order is generated with VAT or not.",
+                                  "pt":"Este campo informará se a order foi gerada com IVA ou não.",
+                                  "es":"Este campo indicará si la order fue generada con IVA o no."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment_taxable_iva",
+                                  "description": {
+                                      "en": "Default value. It indicates that the payment was generated with VAT.",
+                                      "es": "Valor por defecto. Indica que el pago se generó con IVA.",
+                                      "pt": "Valor padrão. Indica que o pagamento foi gerado com IVA."
+                                  }
+                                },
+                                {
+                                  "title": "payment_exempt_iva",
+                                  "description": {
+                                      "en": "This value indicates that the payment will be exempt from VAT.",
+                                      "es": "Este valor indica que el pago estará exento de IVA.",
+                                      "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                  }
+                                }
+                              ]
+                          }
+                        }
+                      }  
                     }
                   }
                 }
@@ -3263,6 +3450,14 @@
               "en": "The order has been succesfully refunded.",
               "es": "La order ha sido reembolsada de manera exitosa.",
               "pt": "A order foi reembolsada com sucesso."
+            }
+          },
+          {
+            "title": "action_required",
+            "description": {
+              "en": "The associated transaction needs to be confirmed. Check the terminal to verify the final status.",
+              "es": "La transaccion asociada necesita ser confirmada. Revisa la terminal para verificar el estado final.",
+              "pt": "A transação associada precisa ser confirmada. Verifique o terminal para verificar o status final."
             }
           }
         ]
