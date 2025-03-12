@@ -101,7 +101,7 @@ product_landing_how_integrate:
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - image_text: Explora ejemplos de código
- - image_text_link: /developers/live-demo/checkout-pro
+ - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de vendedor
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).

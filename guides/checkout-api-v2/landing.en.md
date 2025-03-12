@@ -89,7 +89,7 @@ product_landing_how_integrate:
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - image_text: Explora ejemplos de código
- - image_text_link: /developers/live-demo/checkout-pro
+ - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta Mercado Pago
  - requirement_table_list: Es necesario tener una cuenta en Mercado Pago o Mercado Libre. Puedes [crearla gratuitamente](https://www.mercadopago.com.br/hub/registration/landing).
