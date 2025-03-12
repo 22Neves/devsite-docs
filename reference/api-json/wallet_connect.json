@@ -2119,8 +2119,8 @@
         },
         "title": {
           "en": "Get payment",
-          "pt": "Capturar pagamento",
-          "es": "Capturar pago"
+          "pt": "Obter pagamento",
+          "es": "Obtener pago"
         }
       },
       "get": {
@@ -2497,9 +2497,9 @@
           }
         },
         "title": {
-          "en": "Get payment",
-          "pt": "Obter pagamento",
-          "es": "Obtener pago"
+          "en": "Capture payment",
+          "pt": "Capturar pagamento",
+          "es": "Capturar pago"
         }
       }
     },
