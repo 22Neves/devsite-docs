@@ -11,7 +11,7 @@ product_landing_hero:
  - benefit_title: Sin redirección a Mercado Pago
  - benefit_icon: edit
  - benefit_title: Personalización total
- - info: ¿Buscas opciones sin desarrollo? Consulta [otras soluciones](/docs#online-payments).
+ - info: ¿Buscas opciones sin desarrollo? Consulta [otras soluciones](/developers/pt/docs#online-payments).
 ---
 
 ---
@@ -36,7 +36,7 @@ product_landing_how_works:
  - sub_title: Proceso de cobro
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
  - image_text: Simula cómo funciona
- - image_text_link: https://www.mercadopago.com.br/developers/pt/live-demo/checkout-pro
+ - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout API.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -51,15 +51,15 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout API
  - column_button_text: Cómo integrar
- - column_button_link: /docs/checkout-api/landing
+ - column_button_link: /developers/pt/docs/checkout-api/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
- - column_button_link: /docs/checkout-bricks/landing
+ - column_button_link: /developers/pt/docs/checkout-bricks/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
  - column_button_text: Ir al resumen
- - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
+ - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
  - line_text: Esfuerzo de integración
  - line_type: dots
  - line_values: 5|3|2
@@ -89,19 +89,19 @@ product_landing_how_integrate:
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - image_text: Explora ejemplos de código
- - image_text_link: /live-demo/checkout-pro
+ - image_text_link: /developers/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta Mercado Pago
  - requirement_table_list: Es necesario tener una cuenta en Mercado Pago o Mercado Libre. Puedes [crearla gratuitamente](https://www.mercadopago.com.br/hub/registration/landing).
  - requirement_table_title: Clave Pix
  - requirement_table_list: Si deseas ofrecer pagos a través de Pix, registra las claves Pix.
  - list_title: Proceso de integración
- - list_item: Crear una aplicación desde [Tus integraciones](https://www.mercadopago.com.br/developers/panel/app)
+ - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Construir el ambiente de desarrollo
  - list_item: Integrar los medios de pago deseados
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /docs/checkout-pro/integrate-checkout-pro/web
+ - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
 ---
