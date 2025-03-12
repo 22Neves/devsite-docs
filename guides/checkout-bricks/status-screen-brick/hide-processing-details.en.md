@@ -36,11 +36,11 @@ const customization = {
 ```
 ]]]
 
-----[mlc]----
+----[mlc, mlm, mpe, mco, mlu]----
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-all-en.jpg)
 
 ------------
-----[mlb, mlm, mla, mpe, mco, mlu]----
+----[mlb, mla]----
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-en.jpg)
 
 ------------
