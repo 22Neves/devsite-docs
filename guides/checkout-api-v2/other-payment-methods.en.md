@@ -659,7 +659,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 | `payment_method_id` | string | Payment method. For boleto bancário, it is always `bolbradesco`. |
 | `address.zip_code` | string | Zip code. Example: 88000000 |
 | `address.street_name` | string | Buyer's street name. Example: Rua da Abobrinha. |
-| `address.street_number` | string | Buyer's address number. Example: 1291 |
+| `address.street_number` | string | Buyer's address number. Example: 1291 <br> If you do not have a number, send "**S/N**". |
 | `address.neighborhood` | string | Neighborhood where the buyer's address is located. Example: Copacabana. |
 | `address.city` | string | City where the buyer lives. Example: Rio de Janeiro. |
 | `address.federal_unit` | string | State abbreviation where the buyer lives. Only two characters are accepted. For example: RJ. |

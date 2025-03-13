@@ -27,7 +27,7 @@ Antes de configurar las notificaciones de Webhooks para Wallet Connect, consider
 
 ## Tipos de eventos
 
-Hay tres tipos diferentes de eventos que le permiten recibir notificaciones. Estos eventos se refieren a la actualización y/o cancelación de un contrato.
+Hay tres tipos diferentes de eventos que le permiten recibir notificaciones. Estos eventos se refieren a la actualización y/o cancelación de una vinculación.
 
 ### Confirmación de la vinculación por parte del usuario.
 
@@ -37,31 +37,25 @@ Para esto, envíe un **GET** al endpoint [/v2/wallet_connect/agreements/{agreeme
 
 A continuación se muestra un ejemplo de código con la información enviada en el momento del request.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
--d '{
+{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "status.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
     "id": "22abcd1235ed497f945f755fcaba3c6c",
-    "type": "wallet_connect",
-    "entity": "agreement",
-    "action": "status.updated",
-    "date": "2021-09-30T23:24:44Z",
-    "model_version": 1,
-    "version": 0,
-    "data": {
-        "id": "22abcd1235ed497f945f755fcaba3c6c",
-        "status": "confirmed_by_user"
-    }
-}'
-
+    "status": "confirmed_by_user"
+  }
+}
 ```
-]]]
 
 ### Cancelación de una vinculación entre integrador y Mercado Pago
 
-En este caso, el usuario tiene la posibilidad de darse de baja de una vinculación, lo que provoca la cancelación del contrato existente. Cuando esto sucede, el `payer_token` se invalida y no se realizan más cargos al usuario. 
+En este caso, el usuario tiene la posibilidad de darse de baja de una vinculación, lo que provoca la cancelación de la vinculación existente. Cuando esto sucede, el `payer_token` se invalida y no se realizan más cargos al usuario. 
 
 > NOTE
 >
@@ -71,12 +65,8 @@ En este caso, el usuario tiene la posibilidad de darse de baja de una vinculaci�
 
 Observa a continuación un ejemplo de código con la información enviada en el momento del request.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
- -d '{
+{
   "id": "22abcd1235ed497f945f755fcaba3c6c",
   "type": "wallet_connect",
   "entity": "agreement",
@@ -88,11 +78,8 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
     "id": "22abcd1235ed497f945f755fcaba3c6c",
     "status": "cancelled"
   }
-}'
-
-
+}
 ```
-]]]
 
 ### Actualización del medio de pago de una vinculación
 
@@ -102,27 +89,20 @@ En función de los estados de pago, es posible detectar pagos rechazados y notif
 
 Observa a continuación un ejemplo de código con la información enviada en el momento del request.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
--d '{
-    "id": "22abcd1235ed497f945f755fcaba3c6c",
-    "type": "wallet_connect",
-    "entity": "agreement",
-    "action": "payment_method.updated",
-    "date": "2021-09-30T23:24:44Z",
-    "model_version": 1,
-    "version": 0,
-    "data": {
-        "id": "22abcd1235ed497f945f755fcaba3c6c"
-    }
-}'
-
-
+{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "payment_method.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
+    "id": "22abcd1235ed497f945f755fcaba3c6c"
+  }
+}
 ```
-]]]
 
 En la siguiente tabla mostramos con más detalle los posibles valores que se envían en el cuerpo del request de cancelación y actualización del medio de pago de una vinculación.
 
