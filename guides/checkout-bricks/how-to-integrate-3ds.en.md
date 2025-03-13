@@ -115,14 +115,20 @@ The user must respond to the _Challenge_ for the transition to be properly valid
 
 3. After solving the _Challenge_, the final result of the payment will be displayed according to the answer issued by the bank at the end of the _Challenge_.
 
-----[mlc]----
+----[mlc, mlm, mlu, mco]----
+
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-en.jpg)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
-![status-screen-Brick](checkout-bricks/status-screen-brick-en.jpg)
+----[mpe]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-en.jpg)
 
 ------------
+----[mlb, mla]----
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-en.gif)
+
+------------ 
 
 ## Integration test
 

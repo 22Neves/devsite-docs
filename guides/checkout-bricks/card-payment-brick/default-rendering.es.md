@@ -239,7 +239,15 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 ![cardform](checkout-bricks/card-form-mlc-es.png)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
+----[mlm]----
+![cardform](checkout-bricks/card-form-mlm-es.png)
+
+------------
+----[mco, mpe, mlu]----
+![cardform](checkout-bricks/card-form-all-es.png)
+
+------------
+----[mlb, mla]----
 ![cardform](checkout-bricks/card-form-es.png)
 
 ------------

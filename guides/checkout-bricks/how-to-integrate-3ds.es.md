@@ -115,14 +115,20 @@ El usuario debe responder al _Challenge_ para que la transición se valide corre
 
 3. Después de resolver el _Challenge_, se mostrará el resultado final del pago de acuerdo con la respuesta emitida por el banco al final del _Challenge_.
 
-----[mlc]----
+----[mlc, mlm, mlu, mco]----
+
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-es.jpg)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
-![status-screen-Brick](checkout-bricks/status-screen-brick-es.jpg)
+----[mpe]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-es.jpg)
 
 ------------
+----[mlb, mla]----
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
+
+------------ 
 
 ## Prueba de integración
 

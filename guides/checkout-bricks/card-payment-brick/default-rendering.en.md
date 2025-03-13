@@ -239,7 +239,15 @@ The result of rendering the Brick should look like the image below.
 ![cardform](checkout-bricks/card-form-mlc-en.png)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
+----[mlm]----
+![cardform](checkout-bricks/card-form-mlm-en.png)
+
+------------
+----[mco, mpe, mlu]----
+![cardform](checkout-bricks/card-form-all-en.png)
+
+------------
+----[mlb, mla]----
 ![cardform](checkout-bricks/card-form-en.png)
 
 ------------

@@ -18,11 +18,17 @@ live_demo_code_action:
 
 El layout de Status Screen Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-----[mlc]----
+----[mlc, mlm, mlu, mco]----
+
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-es.jpg)
 
 ------------
-----[mlb, mlm, mla, mco, mlu, mpe]----
-![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
+----[mpe]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-es.jpg)
 
 ------------
+----[mlb, mla]----
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
+
+------------ 
