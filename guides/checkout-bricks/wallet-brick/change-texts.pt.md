@@ -60,7 +60,7 @@ Caso a proposta de valor não tenha sido especificada, por padrão será securit
 |security_details | Proteção para seus dados |
 |security_safety (padrão) | Pague com segurança |
 |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. |
-|convenience_credits | Até 12x com Linha de Crédito Mercado Pago <br><br> Para utilizar a _value prop_ de `convenience_credits` é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) e que a preferência tenha o purpose de [onboarding_credits.](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences). |
+|convenience_credits | Até 12x com Linha de Crédito Mercado Pago <br><br> Para utilizar a _value prop_ de `convenience_credits` é preciso que o Brick seja [inicializado com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) e que a preferência tenha o purpose de [onboarding_credits](/developers/pt/docs/checkout-bricks/wallet-brick/advanced-features/preferences). |
 |payment_methods_logos | Serão exibidos os logos dos meios de pagamento disponíveis. Para configurar os meios de pagamento, utilize a _preference_. <br><br> É recomendada a [inicialização com uma preferência](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering) no uso da _value prop_ `payment_methods_logos`. Caso a preference tenha apenas um meio de pagamento válido, ela deixará de exibir imagens e exibirá o texto: "**Com saldo em conta ou parcelado sem cartão**". |
 
 > WARNING

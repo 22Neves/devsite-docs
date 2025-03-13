@@ -64,7 +64,7 @@ En caso de que no se haya especificado la propuesta de valor, por defecto será 
 |security_details | Todos tus datos protegidos |
 |security_safety (por defecto) | Paga de forma segura |
 |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
-|convenience_credits | Hasta 12 Meses sin Tarjeta <br><br> Para utilizar la _value prop_ de `convenience_credits`, es necesario que el Brick se [inicialice con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) y que la preferencia tenga el propósito de [onboarding_credits.](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences).  |
+|convenience_credits | Hasta 12 Meses sin Tarjeta <br><br> Para utilizar la _value prop_ de `convenience_credits`, es necesario que el Brick se [inicialice con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) y que la preferencia tenga el propósito de [onboarding_credits](/developers/es/docs/checkout-bricks/wallet-brick/advanced-features/preferences).  |
 |payment_methods_logos* | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. <br><br> Se recomienda la [inicialización con una preferencia](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering) en el uso de la _value prop_ `payment_methods_logos`. En caso de que la preferencia tenga solo un método de pago válido, dejará de mostrar imágenes y mostrará el texto: "**Con saldo disponible o a meses sin tarjeta**". |
 
 > WARNING

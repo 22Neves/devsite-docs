@@ -60,7 +60,7 @@ If the value proposition has not been specified, it will default to `security_sa
 |security_details | Protection for your data |
 |security_safety (default) | Pay securely |
 |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
-|convenience_credits| Up to 12 Installments without Card <br><br> To use the `convenience_credits` value prop, it is necessary for the Brick to be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering), and the preference should have the purpose of [onboarding_credits.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences).|
+|convenience_credits| Up to 12 Installments without Card <br><br> To use the `convenience_credits` value prop, it is necessary for the Brick to be [initialized with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering), and the preference should have the purpose of [onboarding_credits](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences).|
 |payment_methods_logos | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. <br><br> It is recommended to [initialize with a preference](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering) using the value prop `payment_methods_logos`. If the preference has only one valid payment method, it will stop displaying images and will show the text: "**Account money or installments with no card**"  |
 
 > WARNING
