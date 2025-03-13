@@ -17,8 +17,8 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "This endpoint allows you to create a payment and include all the necessary information. Make sure to add the payment details and the customer's information. In case of success, the request will return a response with status 201",
-          "pt": "Este endpoint permite a criação de um pagamento, possibilitando a inclusão de todas as informações necessárias. Certifique-se de adicionar os detalhes do pagamento e as informações do cliente. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "en": "This endpoint allows you to create {{document_identification}} a payment and include all the necessary information. Make sure to add the payment details and the customer's information. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite a criação {{currency_acronym}} de um pagamento, possibilitando a inclusão de todas as informações necessárias. Certifique-se de adicionar os detalhes do pagamento e as informações do cliente. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
           "es": "Este endpoint permite crear un pago e incluir toda la información necesaria. Asegúrese de añadir los detalles del pago y la información del cliente. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
