@@ -1,0 +1,20 @@
+{
+  "document_identification": {
+    "mla": "DNI",
+    "mlb": "CPF",
+    "mlm": "CURP",
+    "mlc": "RUT",
+    "mco": "NIT",
+    "mpe": "RUC",
+    "mlu": "CI"
+  },
+  "currency_acronym": {
+    "mla": "ARS",
+    "mlb": "BRL",
+    "mlm": "MXN",
+    "mlc": "CLP",
+    "mco": "COP",
+    "mpe": "PEN",
+    "mlu": "UYU"
+  }
+}
