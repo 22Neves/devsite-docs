@@ -42,12 +42,12 @@ Just passing these two properties, Brick will automatically give the user the op
 
 ----[mlc, mpe, mlu, mco]----
 
-![payment-brick-c](checkout-bricks/payment-brick-cc-en-all.png)
+![payment-brick-c](checkout-bricks/payment-brick-cc-en-all.jpg)
 
 ------------
 ----[mlm]----
 
-![payment-brick-c](checkout-bricks/payment-brick-cc-en-mlm.png)
+![payment-brick-c](checkout-bricks/payment-brick-cc-en-mlm.jpg)
 
 ------------
 ----[mlb, mla]----

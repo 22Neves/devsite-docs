@@ -42,12 +42,12 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 
 ----[mlc, mpe, mlu, mco]----
 
-![payment-brick-c](checkout-bricks/payment-brick-cc-pt-all.png)
+![payment-brick-c](checkout-bricks/payment-brick-cc-pt-all.jpg)
 
 ------------
 ----[mlm]----
 
-![payment-brick-c](checkout-bricks/payment-brick-cc-pt-mlm.png)
+![payment-brick-c](checkout-bricks/payment-brick-cc-pt-mlm.jpg)
 
 ------------
 ----[mlb, mla]----

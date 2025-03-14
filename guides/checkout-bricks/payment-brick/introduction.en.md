@@ -92,7 +92,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.jpg)
 
 > WARNING
 >
@@ -126,7 +126,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.jpg)
 
 > WARNING
 >
@@ -160,7 +160,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.jpg)
 
 > WARNING
 >
@@ -194,7 +194,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-en.png)
+![payment-Brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-en.jpg)
 
 > WARNING
 >
@@ -228,7 +228,7 @@ In turn, our processor complies with all security guarantees to give users maxim
 
 The Payment Brick layout is based on the best UX practices, so that it is possible to offer the best shopping experience without having to worry about design details.
 
-![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.png)
+![payment-Brick-layout-all](checkout-bricks/payment-brick-layout-all-en.jpg)
 
 > WARNING
 >
