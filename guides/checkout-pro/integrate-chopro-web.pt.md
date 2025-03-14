@@ -101,7 +101,12 @@ mp.bricks().create("wallet", "wallet_container", {
 });
 ```
 ```react-jsx
-npm install @mercadopago/sdk-react
+import { Wallet } from '@mercadopago/sdk-react';
+
+const App = () => {
+  return <Wallet initialization={{ preferenceId: 'YOUR_PREFERENCE_ID' }} />;
+};
+export default App;
 ```
 ]]]
 
@@ -121,7 +126,12 @@ customization: {
 });
 ```
 ```react-jsx
-npm install @mercadopago/sdk-react @0.0.23
+import { Wallet } from '@mercadopago/sdk-react';
+
+const App = () => {
+  return <Wallet initialization={{ preferenceId: 'YOUR_PREFERENCE_ID' }} />;
+};
+export default App;
 ```
 ]]]
 
