@@ -296,7 +296,7 @@ future_product_avaible:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, cash, moneda, dinero, money, efevtivo, ticket
+available_payments: credit, debit, mercadopago, boleto, pix, cash,
 
 ---
 
@@ -305,7 +305,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, cash, moneda, diner
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, rapipago, pagofacil
+available_payments: credit, debit, mercadopago, rapipago, pagofacil, moneda
 
 ---
 ------------
@@ -313,7 +313,7 @@ available_payments: credit, debit, mercadopago, rapipago, pagofacil
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm, ticket
 
 ---
 ------------
@@ -321,7 +321,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlu]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo
+available_payments: credit, debit, mercadopago, efectivo, dinero
 
 ---
 ------------
@@ -329,7 +329,7 @@ available_payments: credit, debit, mercadopago, efectivo
 ----[mco]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, pse
+available_payments: credit, debit, mercadopago, efectivo, pse, money
 
 ---
 ------------
