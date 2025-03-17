@@ -14,7 +14,7 @@ OAuth (Open Authorization) é um protocolo de autorização que permite que apli
 
 Open Web Application Security Project (OWASP) é uma comunidade aberta e segura que oferece ferramentas e padrões para o desenvolvimento e manutenção de aplicações web. Seu objetivo é promover a pesquisa e o desenvolvimento da segurança nas aplicações. Por meio de suas iniciativas, o OWASP contribui para elevar o padrão de segurança na indústria de software e criar uma comunidade online mais segura.
 
-[Saiba mais]
+[Saiba mais](/developers/pt/docs/security/owasp)
 
 ## PCI DSS
 PCI DSS (Payment Card Industry Data Security Standard) é uma norma internacional de segurança que deve ser cumprida por todas as entidades que armazenam, processam ou transmitem dados de cartões. É um dos padrões de segurança mais exigentes da indústria de pagamentos que o Mercado Pago cumpre, permitindo-lhe operar com cartões de crédito e débito.
