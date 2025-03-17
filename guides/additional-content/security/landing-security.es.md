@@ -2,23 +2,23 @@
 
 En Mercado Pago contamos con una serie de medidas de seguridad que sirven para proteger los pagos de los clientes y usuarios, asegurar confidencialidas e integridad en todos los procesos y brindar mayor seguridad en las integraciones que ofrecen nuestras soluciones de pago.
 
-A continuación, te contamos cuáles son los protocolos que utiliza Mercado Pago. Haz clic en **Ver más** para conocer en detalle de que se trata cada uno.
+A continuación, te presentamos los protocolos que utiliza Mercado Pago.
 
 ## OAuth
 
 OAuth (Open Authorization) es un protocolo de autorización que permite a las aplicaciones obtener acceso limitado a cuentas de usuario en un servicio HTTP, como por ejemplo redes sociales, sin que el usuario tenga que compartir sus credenciales. En lugar de ello, OAuth define un método para que los usuarios otorguen acceso a aplicaciones de terceros a sus datos sin necesidad de revelar su información de inicio de sesión.
 
-[Ver más](/developers/es/docs/security/oauth/introduction)
+Para más información, accede a la documentación [documentación](/developers/es/docs/security/oauth/introduction).
 
 ## OWASP
 
 Open Web Application Security Project (OWASP) es una comunidad abierta y segura que brinda herramientas y estándares para el desarrollo y mantenimiento de aplicaciones web. Busca fomentar la investigación y desarrollo de seguridad en aplicaciones. A través de sus iniciativas, OWASP contribuye a elevar el estándar de seguridad en la industria del software y a formar una comunidad más segura en línea.
 
-[Ver más](/developers/es/docs/security/owasp)
+Para más información, accede a la [documentación](/developers/es/docs/security/owasp).
 
 ## PCI DSS
 
 PCI DSS (Payment Card Industry Data Security Standard) es una normativa internacional de seguridad que deben cumplir todas las entidades que almacenan, procesan o transmiten datos de tarjeta. Se trata de uno de los estándares de seguridad más exigentes de la industria de pago que Mercado Pago cumple, permitiéndole así operar con tarjetas de crédito y débito.
 
-[Ver más](/developers/es/docs/security/pci)
+Para más información, accede a la [documentación](/developers/es/docs/security/pci).
 
