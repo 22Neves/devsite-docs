@@ -296,7 +296,7 @@ future_product_avaible:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix
+available_payments: credit, debit, mercadopago, boleto, pix, cash, moneda, dinero, money, efevtivo, ticket
 
 ---
 
