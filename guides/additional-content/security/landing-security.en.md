@@ -12,7 +12,7 @@ For more information, access the [documentation](/developers/en/docs/security/oa
 
 ## OWASP
 
-Open Web Application Security Project (OWASP) is an open and secure community that provides tools and standards for the development and maintenance of web applications. It aims to promote the research and development of security in applications. Through its initiatives, OWASP contributes to raising the security standard in the software industry and creating a safer online community.
+OWASP (Open Web Application Security Project) is an open and secure community that provides tools and standards for the development and maintenance of web applications. It aims to promote the research and development of security in applications. Through its initiatives, OWASP contributes to raising the security standard in the software industry and creating a safer online community.
 
 For more information, access the [documentation](/developers/es/docs/security/owasp).
 
