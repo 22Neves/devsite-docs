@@ -84,7 +84,7 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
    https://www.redirect-url.com?code=CODE&state=RANDOM_ID 
    ```
  
-5. Envie as suas [credenciais](/developers/pt/docs/your-integrations/credentials) (`client_id` e `client_secret`), o **código de autorização** (`code`) retornado e, caso tenha [configurado o PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), o `code_verifier` ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
+5. Envie as suas [credenciais](/developers/pt/docs/your-integrations/credentials) (`client_id` e `client_secret`), o **código de autorização** (`code`) retornado e, caso tenha [configurado o PKCE](/developers/pt/docs/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), o `code_verifier` ao endpoint [/oauth/token](/developers/pt/reference/oauth/_oauth_token/post) para receber como resposta o Access Token.
 
 [[[
 ```php

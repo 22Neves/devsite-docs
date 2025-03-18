@@ -6,7 +6,7 @@ Certified members of the Mercado Pago's partner program, the [&lt;dev>program](h
 >
 > Importante
 >
-> If you are integrating with a platform or POS (Point of Sale), remember to configure OAuth so that you can correctly identify payments from your sellers. See [OAuth](/developers/en/docs/security/oauth/introduction) for more information.
+> If you are integrating with a platform or POS (Point of Sale), remember to configure OAuth so that you can correctly identify payments from your sellers. See [OAuth](/developers/en/docs/oauth/introduction) for more information.
 
 ## Available plugins
 

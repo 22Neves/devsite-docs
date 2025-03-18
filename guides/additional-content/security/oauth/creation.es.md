@@ -4,8 +4,8 @@ Aprende a utilizar los flujos, también conocidos como _grant types_, para obten
 
 Los flujos de acceso disponibles para la generación del Access Token son:
 
-- [Authorization code](/developers/es/docs/security/oauth/creation#bookmark_authorization_code): se van a usar credenciales para acceder a un recurso a nombre de un tercero.
-- [Client credentials](/developers/es/docs/security/oauth/creation#bookmark_client_credentials): se van a usar credenciales para acceder a un recurso en nombre propio.
+- [Authorization code](/developers/es/docs/oauth/creation#bookmark_authorization_code): se van a usar credenciales para acceder a un recurso a nombre de un tercero.
+- [Client credentials](/developers/es/docs/oauth/creation#bookmark_client_credentials): se van a usar credenciales para acceder a un recurso en nombre propio.
 
 > WARNING
 >
@@ -85,7 +85,7 @@ Sigue los pasos a continuación para obtenerlo.
    https://www.redirect-url.com?code=CODE&state=RANDOM_ID 
    ```
   
-5. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`), el **código de autorización** que fue devuelto en la propiedad `code` y, si has [configurado el PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), el valor `code_verifier` al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
+5. Envía tus [credenciales](/developers/es/docs/your-integrations/credentials) (`client_id` y `client_secret`), el **código de autorización** que fue devuelto en la propiedad `code` y, si has [configurado el PKCE](/developers/pt/docs/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20), el valor `code_verifier` al endpoint [/oauth/token](/developers/es/reference/oauth/_oauth_token/post) para recibir el Access Token como respuesta.
 
 [[[
 ```php

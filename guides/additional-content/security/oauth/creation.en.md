@@ -4,8 +4,8 @@ Learn how to use the flows, also known as _grant types_, to obtain an Access Tok
 
 The access flows available for generating the Access Token are:
 
-- [Authorization code](/developers/en/docs/security/oauth/creation#bookmark_authorization_code): when credentials are to be used to access a resource on behalf of others.
-- [Client credentials](/developers/en/docs/security/oauth/creation#bookmark_client_credentials): when credentials are to be used to access a resource on one's own behalf.
+- [Authorization code](/developers/en/docs/oauth/creation#bookmark_authorization_code): when credentials are to be used to access a resource on behalf of others.
+- [Client credentials](/developers/en/docs/oauth/creation#bookmark_client_credentials): when credentials are to be used to access a resource on one's own behalf.
 
 > WARNING
 >
@@ -84,7 +84,7 @@ Access Token is the code used in different requests of public origin to access a
    https://www.redirect-url.com?code=CODE&state=RANDOM_ID 
    ```
  
-5. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`), the **authorization code** (`code`) returned and, if you have [configured the PKCE](/developers/en/docs/security/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20), the `code_verifier` to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the Access Token in response.
+5. Send your [credentials](/developers/en/docs/your-integrations/credentials) (`client_id` and `client_secret`), the **authorization code** (`code`) returned and, if you have [configured the PKCE](/developers/en/docs/oauth/creation#:~:text=Access%20Token.-,Configure%20PKCE,-The%20PKCE%20), the `code_verifier` to the [/oauth/token](/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the Access Token in response.
 
 [[[
 ```php

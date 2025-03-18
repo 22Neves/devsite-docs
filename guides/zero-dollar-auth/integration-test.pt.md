@@ -31,7 +31,7 @@ Para obter o token do cartão, use os dados de teste que compartilhamos com voc�
 >
 > Importante
 >
-> Para poder realizar transações com os dados do cartão abertos, diretamente na chamada da API, é necessário que o vendedor seja [PCI Compliant](/developers/pt/docs/security/pci). Caso contrário, esses dados não podem ser transacionados no back-end da sua aplicação.
+> Para poder realizar transações com os dados do cartão abertos, diretamente na chamada da API, é necessário que o vendedor seja [PCI Compliant](/developers/pt/docs/pci). Caso contrário, esses dados não podem ser transacionados no back-end da sua aplicação.
 
 ## Validar integração
 
