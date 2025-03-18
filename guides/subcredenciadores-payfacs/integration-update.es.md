@@ -331,7 +331,7 @@ Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 | `document_number` | Texto | Identificación del CPF o CNPJ del subcomercio. | Requerido | 222222222222222 |
 | `city` | Texto | Ciudad en donde el subcomercio está ubicado. | Requerido | SÃO PAULO |
 | `address_street` | Texto | Calle en donde el subcomercio está localizado. | Requerido | RUA A |
-| `legal_name` | Texto | Nombre del subcomercio. | Requerido | LOJINHA DO ZÉ |
+| `legal_name` | Texto | Razón social del subcomerciante. | Requerido | LOJINHA DO ZÉ |
 | `region_code_iso` | Texto | Estado en donde el subcomercio está ubicado. | Requerido | BR-MG |
 | `region_code` | Texto | Código postal del subcomercio. | Requerido | BR |
 | `document_type` | Texto | Número del CPF o CNPJ del subcomercio. | Requerido | CNPJ |

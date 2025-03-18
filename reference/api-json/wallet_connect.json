@@ -991,6 +991,15 @@
                         },
                         "example": "Payment_seller_123"
                       },
+                      "statement_descriptor": {
+                        "type": "string",
+                        "description": {
+                          "en": "Description that appears on the cardholder's bank statement along with the amount and date of the charge. This parameter accepts a maximum of 50 alphanumeric characters.",
+                          "pt": "Descrição resumida que aparece no extrato bancário do titular do cartão, juntamente com o valor e a data da cobrança feita. Este parâmetro aceita, no máximo, 50 caracteres alfanuméricos.",
+                          "es": "Descripcion breve que aparece en el extracto bancario del titular de la tarjeta junto con el monto y la fecha del cargo realizado. Este parámetro acepta, como máximo, 50 caracteres alfanuméricos."
+                        },
+                        "example": "descriptor"
+                      },
                       "forward_data": {
                         "required": false,
                         "type": "object",

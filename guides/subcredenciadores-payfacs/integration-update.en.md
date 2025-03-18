@@ -331,7 +331,7 @@ Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 | `document_number` | Text | CPF or CNPJ identification of the submerchant. | Required | 222222222222222 |
 | `city` | Text | City where the submerchant is located. | Required | SÃO PAULO |
 | `address_street` | Text | Street where the submerchant is located. | Required | RUA A |
-| `legal_name` | Text | Name of the submerchant. | Required | LOJINHA DO ZÉ |
+| `legal_name` | Text | Legal name of the submerchant. | Required | LOJINHA DO ZÉ |
 | `region_code_iso` | Text | State where the submerchant is located. | Required | BR-MG |
 | `region_code` | Text | Postal code of the submerchant. | Required | BR |
 | `document_type` | Text | CPF or CNPJ number of the submerchant. | Required | CNPJ |
