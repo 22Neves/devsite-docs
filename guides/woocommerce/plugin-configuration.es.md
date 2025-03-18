@@ -22,39 +22,23 @@ A continuación, explicaremos cómo configurar cada elemento del plugin.
 
 ## Integrar la tienda con Mercado Pago
 
-1. Haz clic en **1. Ingressa tus credenciales para integrar tu tienda con Mercado Pago**.
+Conecte su cuenta de Mercado Pago a su tienda para recibir los pagos de las ventas. Siga los pasos a continuación para completar la integración.
 
-![Plugin MP](/images/woocomerce/insert-credentials-es.png)
+1. Haz clic en **1. Vincule su tienda a una cuenta de Mercado Pago** para ser redirigido a Mercado Pago y seleccionar la cuenta donde desea recibir los pagos de sus ventas.
 
-2. Ahora, debes vincular tu cuenta de Mercado Pago a tu tienda utilizando tus credenciales. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una aplicación, consulta la [documentación del Panel del desarrollador](/developers/es/docs/woocommerce/additional-content/your-integrations/dashboard) para obtener más información.
+![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
-> WARNING
->
-> Importante
->
-> Las credenciales son responsables de identificar la cuenta receptora de pagos que recibirás en tu tienda. Si no introduces tus credenciales en el panel de administración de la tienda, se te redirigirá automáticamente para configurar este paso. **Recuerda que la activación de los medios de pago solo será posible después de la inserción exitosa de tus credenciales**.
+2. Se abrirá una nueva ventana para que elija la cuenta de recepción de los pagos, ya sea la suya o la de otra persona.
 
-3. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
+![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 
-![Credenciales de producción](/images/woocomerce/test-prod-credentials-api-es.png)
+3. Espere hasta que la vinculación se haya completado.
 
-4. Introduce tus credenciales de producción `access_token` y `public_key` en el campo **Credenciales de producción**, cuidando de **no invertir los campos al copiar y pegar las credenciales**.
+![Plugin MP](/images/woocomerce/automation-cred-3-es.png)
 
-5. En tu aplicación, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
+4. ¡Listo! La vinculación se ha completado con éxito. Ahora, puede avanzar para personalizar su tienda.
 
-![Credenciales de prueba](/images/woocomerce/test-test-credentials-api-es.png)
-
-6. También introduce las credenciales de prueba `access_token` y `public_key` en el campo **Credenciales de prueba**, cuidando de **no invertir los campos al copiar y pegar las credenciales**.
-
-![Panel](/images/woocomerce/test-woo-es.png)
-
-7. Haz clic en **Guardar y continuar**.
-
-> NOTE
->
-> Nota
->
-> Renueva tus credenciales según sea necesario, consultando la [documentación](/developers/es/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) correspondiente como guía. Después de la renovación, es esencial actualizarlas en el panel de WooCommerce. Recuerda: al cambiar la contraseña de tu cuenta de Mercado Pago, **debes renovar tus credenciales**. Para ello, elimina las credenciales antiguas del panel, copia las nuevas e insértalas en el panel de administración de la tienda.
+![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 
 ## Personalizar negócio
 
