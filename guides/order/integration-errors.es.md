@@ -19,7 +19,7 @@ Consulta la lista de posibles errores devueltos por la API y cómo corregirlos.
 | Error de solicitud | 400 | `invalid_order_mode_for_operation` | El modo informado no es válido para esta operación. Verifica si estás utilizando el modo correcto según la operación deseada. |
 | Error de solicitud | 400 | `invalid_order_type` | El tipo de la order es inválido. Verifica si el tipo utilizado es válido para la operación. |
 | Error de solicitud | 400 | `invalid_transaction_id` | El ID de la transacción es inválido. Asegúrate de que el ID es correcto. |
-| Error de solicitud | 400 | `exceeded_number_of_transactions` | Ocurrió un error en la solicitud. La order acepta un máximo de dos transacciones. Elimine las transacciones excedentes. |
+| Error de solicitud | 400 | `exceeded_number_of_transactions` | Ocurrió un error en la solicitud. La Order acepta un máximo de una transaccion. Elimine las transacciones excedentes. |
 | Error de solicitud | 400 | `invalid_email_for_sandbox` | El formato de correo electrónico no es válido para el entorno de *sandbox*, debe contener "@testuser.com". |
 | Error de procesamiento | 402 | `failed` | Hubo un error en el procesamiento de alguna de las transacciones. Verifica el mensaje devuelto para más información. |
 | Error de solicitud | 404 | `order_not_found` | La order no fue encontrada. Verifica si el ID informado es correcto. |

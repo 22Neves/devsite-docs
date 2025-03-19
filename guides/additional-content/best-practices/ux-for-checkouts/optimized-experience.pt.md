@@ -20,7 +20,7 @@ Mantenha os dados agrupados por tema e forneça contexto ao usuário sobre as et
 
 Trata-se de uma **barra de progresso** que indica ao usuário em qual etapa ele está. É possível segmentá-la em partes iguais, indicando cada etapa do checkout. Dessa maneira, seu usuário poderá acompanhar em qual passo está e quanto falta para concluir o processo de pagamento.
 
-![pt progress indicator](/images/best-practices-guide/progress-indicator-pt.png)
+![pt progress indicator](/images/best-practices-guide/progress-pt.png)
 
 ### Bullets e highlights
 
@@ -28,7 +28,7 @@ Os **bullets** são uma lista com diferentes elementos. Use bullets para criar l
 
 Os **highlights** são textos sublinhados ou destacados. Use highlights para destacar palavras-chave ou frases importantes que agreguem valor, fazendo com que seja mais fácil de escanear a página. 
 
-![pt bullets y highlights](/images/best-practices-guide/bullets-highlight-pt.png)
+![pt bullets y highlights](/images/best-practices-guide/highlights-bullets-pt.png) 
 
 ## Facilite o preenchimento de dados
 

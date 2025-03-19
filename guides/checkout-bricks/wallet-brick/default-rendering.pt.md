@@ -2,16 +2,77 @@
 
 Antes de realizar a renderização do Wallet Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Bricks. A partir disso, veja abaixo as informações necessárias para você configurar e renderizar o Wallet Brick.
 
+----[mlc]----
 > NOTE
 >
 > Nota
 >
 > Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
+> NOTE
+>
+> Nota
+>
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/legacy/wallet.md).
+
+------------
+
 ## Configurar o Brick
 
 Crie a configuração de inicialização do Brick.
 
+----[mlc]----
+[[[
+```Javascript
+const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create("wallet", "walletBrick_container", {
+        initialization: {
+            preferenceId: "<PREFERENCE_ID>",
+        },
+        customization: {
+            theme: "default",
+            customStyle: {
+                valueProp: "practicality",
+                valuePropColor: "white",
+            },
+        },
+    });
+};
+
+renderWalletBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+  preferenceId: '<PREFERENCE_ID>',
+}
+
+const customization = {
+  texts: {
+   valueProp: 'smart_option',
+  },
+}
+
+const onSubmit = async (formData) => {
+ // callback chamado ao clicar no Wallet Brick
+ // isso é possível porque o Brick é um botão 
+};
+
+const onError = async (error) => {
+ // callback chamado para todos os casos de erro do Brick
+ console.log(error);
+};
+
+const onReady = async () => {
+ // Callback chamado quando o Brick estiver pronto.
+ // Aqui você pode ocultar loadings do seu site, por exemplo.  
+};
+```
+]]]
+
+------------
+----[mlb, mla, mlm, mpe, mco, mlu]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -57,6 +118,8 @@ const onReady = async () => {
 };
 ```
 ]]]
+
+------------
 
 > WARNING
 > 

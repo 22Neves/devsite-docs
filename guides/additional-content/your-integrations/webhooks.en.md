@@ -11,7 +11,7 @@ To configure your Webhooks notifications, choose one of the options below:
 | Configuration type | Description |
 |---|---|
 | [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for each one of your applications, identifying different accounts if necessary, and validating the notification origin using the secret signature ----[mla, mlb, mlu, mlc]----(except notifications for QR Code integrations)------------. |
-| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment, preference or order ----[mla]----This configuration is not allowed for Mercado Pago Point or Mercado Pago Delivery integrations----------------[mlb, mlm]----This configuration is not allowed for Mercado Pago Point------------. |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment, preference or order ----[mlb, mla, mlm]----This configuration is not allowed for Mercado Pago Point------------. |
 
 > WARNING
 >
@@ -70,7 +70,6 @@ To do this, follow these steps:
 | Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
 | Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
-| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |
 | Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |
 
 ------------
@@ -196,7 +195,7 @@ To configure this validation, you need to extract the key contained in the heade
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
- * Parameters with the `_url` suffix come from query params. Example: [data.id_url] will be replaced by the corresponding event ID value (`data.id`). This query param can be found in the received notification.
+ * Parameters with the `_url` suffix come from query params. Example: `[data.id_url]` will be replaced by the corresponding event ID value (`data.id`) and, in this case, if the `data.id_url` is alphanumeric, it must be sent in lowercase. This query param can be found in the received notification.
  * `[ts_header]` will represent the `ts` value extracted from the `x-signature` header.
  * `[x-request-id_header]` should be replaced with the value received in the `x-request-id` header.
 
@@ -473,15 +472,7 @@ Simulating receiving notifications is necessary to verify if they are configured
 
 During the creation process of a payment, preference or order, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.
 
-----[mla]----
-> WARNING
->
-> Important
-> 
-> It's not possible to configure notifications for the point_integration_wh and delivery topics using this method. To activate these topics, use the [Your integrations settings](/developers/en/docs/your-integrations/notifications/webhooks#yourintegrationssettings).
-------------
-
-----[mlb, mlm]----
+----[mlb, mlm, mla]----
 > WARNING
 >
 > Important
@@ -489,7 +480,6 @@ During the creation process of a payment, preference or order, it's possible to 
 > It's not possible to configure notifications for the point_integration_wh topic using this method. To activate it, use the [Your integrations settings](/developers/en/docs/your-integrations/notifications/webhooks#yourintegrationssettings).
 
 ------------
-
 
 Next, we explain how to do this with the help of the SDKs.
 
@@ -796,22 +786,13 @@ After making the necessary configurations, the Webhooks notification will be del
 | **action** | Notified event, indicating if it's a resource update or a new creation | `payment.created` |
 | **data.id**  | ID of the payment, `merchant_order`, or claim | `999999999` |
 
-----[mla]----
-> WARNING
->
-> Important
->
-> To obtain the notification format for topics other than `payment`, such as `point_integration_wh`, `delivery`, `topic_claims_integration_wh`, and `topic_card_id_wh`, consult [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info).
-------------
-
-----[mlb, mlm]----
+----[mlb, mlm, mla]----
 > WARNING
 >
 > Important
 >
 > To obtain the notification format for topics other than `payment`, such as `point_integration_wh`, `topic_claims_integration_wh` and `topic_card_id_wh`, consult [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info).
 ------------
-
 ----[mlu, mlc, mco, mpe]----
 > WARNING
 >
@@ -862,7 +843,6 @@ After responding to the notification and confirming its receipt, you can obtain 
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Search subscription plans](/developers/en/reference/subscriptions/_preapproval_plan_search/get)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Get invoices data](/developers/en/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Search payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
-| delivery | `https://api.mercadopago.com/proximity-integration/v1/orders/{shipment_id}` | [Get order](/developers/en/reference/mp_delivery/_proximity-integrationorders_shipment_id/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Get claim details](/developers/en/reference/claims/get-claim-details/get) |
 | topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
 | topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Get chargeback](/developers/en/reference/chargebacks/_chargebacks_id/get) |

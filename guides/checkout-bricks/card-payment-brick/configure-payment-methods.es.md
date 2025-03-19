@@ -13,7 +13,7 @@ En la siguiente tabla encontrarás los detalles de la personalización y el cód
 | Momento de personalización | Al renderizar Brick. |
 | Propiedad | personalización.métodos.pago.tipos.excluidos |
 | Tipo | string [] |
-| Notas | Los valores aceptados dentro del array son: `credit_card`, `debit_card`. |
+| Notas | Los valores aceptados dentro del array son: `credit_card`, `prepaid_card` y `debit_card`. |
 
 [[[
 ```Javascript

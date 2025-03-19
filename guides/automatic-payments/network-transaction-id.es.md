@@ -1,12 +1,12 @@
 # Network Transaction ID - TID
 
-A partir de las nuevas reglas operacionales para la tokenización de operaciones de pagos recurrentes de la marca _Visa_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería para que se utilice dentro de la multiadquirencia* y evitar posibles multas.
+A partir de las nuevas reglas operacionales para la tokenización de operaciones de pagos recurrentes de las marcas _Visa_ y _Master_, será necesario enviar el identificador de transacción de la tarjeta (TID) a las transacciones de mensajería para que se utilice dentro de la multiadquirencia y evitar posibles multas.
 
 > *De forma automática, la **multiadquirencia** involucra más reglas de aprobación y bases de datos para verificar la información de pago, garantizando la optimización de las aprobaciones de acuerdo con la marca de la tarjeta y el propio reintento del pago.
 
 ## Procesar el primer pago
 
-Para el **primer pago**, envíe el _header_ `X-Expand-Response-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+Para el **primer pago**, envía el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
 
 ```json
 --header 'X-Expand-Responde-Nodes: gateway.reference'\
@@ -26,11 +26,17 @@ En la respuesta se podrá observar el retorno del `network_transaction_id` en el
 
 | Parámetro  | Tipo  | Descripción  | Ejemplo |
 | --- | --- | --- | --- |
-| type | string | Está asociado al identificador de la bandera | 584152665425694 |
+| type | string | Está asociado al identificador de la bandera. | 584152665425694 |
 
 ## Procesar pagos subsecuentes
 
-Para los **pagos subsecuentes**, envíe la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro `forward_data`, o utilizando el _cURL_ a continuación.
+Para los **pagos subsecuentes**, envía nuevamente el _header_ `X-Expand-Responde-Nodes` al endpoint [v1/payments](/developers/es/reference/payments/_payments/post) como se muestra a continuación.
+
+```json
+--header 'X-Expand-Responde-Nodes: gateway.reference'\
+```
+
+En la respuesta, observa el retorno del `network_transaction_id` en el parámetro `expanded` y, a partir de eso, envía la información del `network_transaction_id` devuelto en el último pago realizado al endpoint [v1/payments](/developers/es/reference/payments/_payments/post), a través del parámetro forward_data, o utilizando el _cURL_ a continuación.
 
 > WARNING
 >

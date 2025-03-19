@@ -13,7 +13,7 @@ In the table below you will find the details of the customization and the code n
 | Customization moment | When rendering Brick. |
 | Property | customization.paymentMethods.types.excluded |
 | Type | string [] |
-| Notes | The values ​​accepted within the array are: `credit_card`, `debit_card`. |
+| Notes | The values ​​accepted within the array are: `credit_card`, `prepaid_card` and `debit_card`. |
 
 [[[
 ```Javascript

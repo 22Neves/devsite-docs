@@ -18,7 +18,6 @@ The activation of these topics will depend on the Mercado Pago solution you have
 | Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>QR Code  |
 | Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` / `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 ----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
-----[mla]----| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 
 Once configured, notifications allow you to program your store's backend to, for example, update the status of orders when a payment is created, send a confirmation email when an order is updated in Mercado Pago, update a customer's record when a subscription plan is linked, among other actions resulting from the events detailed in the table above.
 

@@ -120,7 +120,7 @@ Ao receber assistência na integração ou configuração dos seus canais de pag
 4. Insira o endereço de e-mail de quem deseja conceder o acesso. Lembre-se de que é obrigatório que o endereço de e-mail esteja associado a uma conta do Mercado Pago.
 
 ----[mlc]----
-![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-panel-pt.png)
+![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-devpanel-pt.png)
 
 ------------
 ----[mla, mlm, mlu, mco, mlb, mpe]----

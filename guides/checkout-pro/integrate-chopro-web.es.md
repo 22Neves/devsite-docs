@@ -6,7 +6,14 @@
 
 Primero, asegúrate de haber **creado la [preferencia en tu backend](/developers/es/docs/checkout-pro/integrate-preferences)**.
 
-Luego, deberás instalar el SDK de frontend de Mercado Pago en tu proyecto para agregar el botón de pago.
+----[mlc]----
+A continuación, instala el SDK de **frontend** (`Javascript`) de Mercado Pago, que se utiliza para acceder de forma segura a las funcionalidades de Mercado Pago y añadir el botón de pago a tu proyecto.
+
+------------
+----[mla, mlm, mlb, mco, mpe, mlu]----
+Luego, deberás instalar el SDK de **frontend** de Mercado Pago en tu proyecto para agregar el botón de pago.
+
+------------
 
 La instalación se realiza, básicamente, en **dos pasos**: 
 
@@ -19,7 +26,8 @@ La instalación se realiza, básicamente, en **dos pasos**:
 >
 > Agregar el SDK de Mercado Pago al proyecto
 
-Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instala la biblioteca para ReactJs.
+----[mlc]----
+Para incluir el SDK de Javascript de Mercado Pago, agrega el siguiente código al HTML de tu proyecto o instala la biblioteca para ReactJS.
 
 [[[
 ```html
@@ -30,6 +38,22 @@ Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del 
 npm install @mercadopago/sdk-react
 ```
 ]]]
+
+------------
+----[mla, mlm, mlb, mco, mpe, mlu]----
+Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instala la biblioteca para ReactJs.
+
+[[[
+```html
+// SDK MercadoPago.js
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+```node
+npm install @mercadopago/sdk-react@0.0.24
+```
+]]]
+
+------------
 
 Luego, inicializa la integración configurando tu [clave pública](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) usando el siguiente código JavaScript.
 
@@ -64,6 +88,30 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberás crear un c
 
 Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
 
+----[mlc]----
+[[[
+```Javascript
+mp.bricks().create("wallet", "wallet_container", {
+   initialization: {
+       preferenceId: "<PREFERENCE_ID>",
+   },
+   customization: {
+      theme: 'default',
+   }
+});
+```
+```react-jsx
+import { Wallet } from '@mercadopago/sdk-react';
+
+const App = () => {
+  return <Wallet initialization={{ preferenceId: 'YOUR_PREFERENCE_ID' }} />;
+};
+export default App;
+```
+]]]
+
+------------
+----[mla, mlb, mlm, mco, mpe, mlu]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -78,13 +126,20 @@ customization: {
 });
 ```
 ```react-jsx
-<Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} />
+import { Wallet } from '@mercadopago/sdk-react';
+
+const App = () => {
+  return <Wallet initialization={{ preferenceId: 'YOUR_PREFERENCE_ID' }} />;
+};
+export default App;
 ```
 ]]]
 
-A continuación, encontrarás el botón de pago que se muestra en tu página.
+------------
 
-![wallet-render](cow/cow-render-wallet-es.png)
+A continuación, encontrarás el botón de pago que se muestra en tu página. Si desea hacer **cambios en los textos o un cambio visual**, acceda a las secciones de [Cambiar textos de los botones](/developers/es/docs/checkout-pro/checkout-customization/user-interface/change-button-texts) y [Cambiar la apariencia del botón](/developers/es/docs/checkout-pro/checkout-customization/user-interface/change-button-appearance).
+
+![wallet-render](cow/wallet-render-es.png)
 
 En el ejemplo anterior, se renderizará un botón de pago que será responsable por abrir el Checkout Pro. Si deseas que la experiencia con Checkout Pro se realice en una **pestaña externa**, consulta la sección [Esquema de apertura](/developers/es/docs/checkout-pro/checkout-customization/user-interface/opening-schema)
 

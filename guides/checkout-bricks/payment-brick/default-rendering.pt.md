@@ -30,6 +30,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
        ticket: "all",
        bankTransfer: "all",
        creditCard: "all",
+       prepaidCard: "all",
        debitCard: "all",
        mercadoPago: "all",
      },
@@ -86,6 +87,7 @@ const customization = {
    ticket: "all",
    bankTransfer: "all",
    creditCard: "all",
+   prepaidCard: "all",
    debitCard: "all",
    mercadoPago: "all",
  },
@@ -145,6 +147,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
        atm: "all",
        ticket: "all",
        creditCard: "all",
+       prepaidCard: "all",
        debitCard: "all",
        mercadoPago: "all",
      },
@@ -201,6 +204,7 @@ const customization = {
    atm: "all",
    ticket: "all",
    creditCard: "all",
+   prepaidCard: "all",
    debitCard: "all",
    mercadoPago: "all",
  },
@@ -260,6 +264,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
    customization: {
      paymentMethods: {
        creditCard: "all",
+       prepaidCard: "all",
        debitCard: "all",
        mercadoPago: "all",
      },
@@ -320,6 +325,7 @@ const initialization = {
 const customization = {
  paymentMethods: {
    creditCard: "all",
+   prepaidCard: "all",
    debitCard: "all",
    mercadoPago: "all",
  },
@@ -379,6 +385,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
        ticket: "all",
        bankTransfer: "all",
        creditCard: "all",
+       prepaidCard: "all",
        debitCard: "all",
        mercadoPago: "all",
      },
@@ -435,6 +442,7 @@ const customization = {
    ticket: "all",
    bankTransfer: "all",
    creditCard: "all",
+   prepaidCard: "all",
    debitCard: "all",
    mercadoPago: "all",
  },
@@ -492,6 +500,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
      paymentMethods: {
        ticket: "all",
        creditCard: "all",
+       prepaidCard: "all",
        debitCard: "all",
        mercadoPago: "all",
      },
@@ -547,6 +556,7 @@ const customization = {
  paymentMethods: {
    ticket: "all",
    creditCard: "all",
+   prepaidCard: "all",
    debitCard: "all",
    mercadoPago: "all",
  },
