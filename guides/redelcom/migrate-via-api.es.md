@@ -80,8 +80,8 @@ Utilice la API para gestionar la cola de impresiones, teniendo en cuenta las esp
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
 Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/en/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de terminal para Mercado Pago Point.
-   - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción mediante el ID obtenido en la respuesta a su creación.
-   - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". 
+   - [Crear acción de la terminal](/developers/en/reference/mercado_pago_point/impressions_dte/post): Permite la creación de una nueva acción de terminal para Mercado Pago Point.
+   - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions_dte/get): Permite consultar toda la información de una acción mediante el ID obtenido en la respuesta a su creación.
+   - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_dte_cancel/post): Permite cancelar una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". 
 
 Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.
