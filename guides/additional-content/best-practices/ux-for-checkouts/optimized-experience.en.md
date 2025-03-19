@@ -125,11 +125,11 @@ Although most users review their purchase at the end, they feel more secure if t
 
 Also, before finalizing the purchase, allow your users to **review** the entire process and the final price. For this, add a confirmation or review page, prior to making the payment, that includes a summary of all the decisions made, all the information uploaded and the detail of the total to pay. It is important to give the possibility to edit any of the data from there, without the need to go back to the previous steps.
 
-----[mlc]----
+----[mlc, mlu, mlm, mco, mpe]----
 ![en da visibilidad del proceso 2](/images/best-practices-guide/visibility-to-process2-en.png)
 
 ------------
-----[mlb, mla, mlm, mco, mpe, mlu]----
+----[mlb, mla]----
 ![en da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-en.gif)
 
 ------------
