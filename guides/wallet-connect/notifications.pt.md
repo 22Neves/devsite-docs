@@ -37,29 +37,21 @@ Para isso, envie um **GET** ao endpoint [/v2/wallet_connect/agreements/{agreemen
 
 Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
--d '{
+{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "status.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
     "id": "22abcd1235ed497f945f755fcaba3c6c",
-    "type": "wallet_connect",
-    "entity": "agreement",
-    "action": "status.updated",
-    "date": "2021-09-30T23:24:44Z",
-    "model_version": 1,
-    "version": 0,
-    "data": {
-        "id": "22abcd1235ed497f945f755fcaba3c6c",
-        "status": "confirmed_by_user"
-    }
-}'
-
-
-
+    "status": "confirmed_by_user"
+  }
+}
 ```
-]]]
 
 ### Cancelamento de vinculação entre integrador e Mercado Pago
 
@@ -73,12 +65,8 @@ Neste evento, o usuário tem a possibilidade de se descadastrar de uma vinculaç
 
 Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
- -d '{
+{
   "id": "22abcd1235ed497f945f755fcaba3c6c",
   "type": "wallet_connect",
   "entity": "agreement",
@@ -90,10 +78,8 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
     "id": "22abcd1235ed497f945f755fcaba3c6c",
     "status": "cancelled"
   }
-}'
-
+}
 ```
-]]]
 
 ### Atualização do meio de pagamento de uma vinculação
 
@@ -103,27 +89,20 @@ Com base nos status de pagamento, é possível detectar pagamentos rejeitados e 
 
 Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
--d '{
-    "id": "22abcd1235ed497f945f755fcaba3c6c",
-    "type": "wallet_connect",
-    "entity": "agreement",
-    "action": "payment_method.updated",
-    "date": "2021-09-30T23:24:44Z",
-    "model_version": 1,
-    "version": 0,
-    "data": {
-        "id": "22abcd1235ed497f945f755fcaba3c6c"
-    }
-}'
-
-
+{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "payment_method.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
+    "id": "22abcd1235ed497f945f755fcaba3c6c"
+  }
+}
 ```
-]]]
 
 Na tabela abaixo mostramos com mais detalhes os possíveis valores que são enviados no corpo da requisição do cancelamento e atualização do meio de pagamento de uma vinculação.
 

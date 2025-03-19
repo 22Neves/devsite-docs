@@ -37,27 +37,21 @@ For this, send a **GET** request to the endpoint [/v2/wallet_connect/agreements/
 
 See below an example of the code with the information sent at the time of the request.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
--d '{
+{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "status.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
     "id": "22abcd1235ed497f945f755fcaba3c6c",
-    "type": "wallet_connect",
-    "entity": "agreement",
-    "action": "status.updated",
-    "date": "2021-09-30T23:24:44Z",
-    "model_version": 1,
-    "version": 0,
-    "data": {
-        "id": "22abcd1235ed497f945f755fcaba3c6c",
-        "status": "confirmed_by_user"
-    }
-}'
-
+    "status": "confirmed_by_user"
+  }
+}
 ```
-]]]
 
 ### Cancellation of agreement between integrator and Mercado Pago
 
@@ -71,12 +65,8 @@ In this case, the user has the possibility to unsubscribe from an agreement, whi
 
 Check below a code example with the information sent at the time of the request.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
- -d '{
+{
   "id": "22abcd1235ed497f945f755fcaba3c6c",
   "type": "wallet_connect",
   "entity": "agreement",
@@ -88,11 +78,8 @@ curl -X POST 'https://api.integrator.com/wallet_connect/events' \
     "id": "22abcd1235ed497f945f755fcaba3c6c",
     "status": "cancelled"
   }
-}'
-
-
+}
 ```
-]]]
 
 ### Agreement payment method update
 
@@ -102,26 +89,20 @@ Based on payment statuses, it is possible to detect rejected payments and notify
 
 Check below a code example with the information sent at the time of the request.
 
-[[[
 ```curl
-
-curl -X POST 'https://api.integrator.com/wallet_connect/events' \
--H 'Content-Type: application/json' \
--d '{
-    "id": "22abcd1235ed497f945f755fcaba3c6c",
-    "type": "wallet_connect",
-    "entity": "agreement",
-    "action": "payment_method.updated",
-    "date": "2021-09-30T23:24:44Z",
-    "model_version": 1,
-    "version": 0,
-    "data": {
-        "id": "22abcd1235ed497f945f755fcaba3c6c"
-    }
-}'
-
+{
+  "id": "22abcd1235ed497f945f755fcaba3c6c",
+  "type": "wallet_connect",
+  "entity": "agreement",
+  "action": "payment_method.updated",
+  "date": "2021-09-30T23:24:44Z",
+  "model_version": 1,
+  "version": 0,
+  "data": {
+    "id": "22abcd1235ed497f945f755fcaba3c6c"
+  }
+}
 ```
-]]]
 
 In the table below you can check more details about the possible values ​​that are sent in the body of the request for cancellation and update of the payment method of an agreement.
 
