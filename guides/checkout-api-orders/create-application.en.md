@@ -7,7 +7,7 @@ With them, you can access the necessary credentials to interact with our APIs or
 To create an **application**, follow the steps below.
 
 1. In the upper right corner of Mercado Pago Developers, click on **Login** and enter the required information with the data for your Mercado Pago account.
-2. Once you are logged in, you will have access to **Your Integrations**. There, click on **Create application**.
+2. Once you are logged in, go to **Your Integrations**. There, click on **Create application**.
 
 > WARNING
 >
