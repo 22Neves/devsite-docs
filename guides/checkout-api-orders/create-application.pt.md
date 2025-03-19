@@ -15,26 +15,23 @@ Para criar uma **aplicação**, siga os passos abaixo.
 >
 > Para proteger sua conta e garantir a conformidade das operações, durante a criação de uma aplicação será necessário que realize uma verificação de identidade, em caso de que ainda não tenha feito, ou uma reautenticação, se já tiver concluído previamente o precesso de verificação.
 
-3. Insira um **nome** para identificar sua aplicação. Você tem um limite de 50 caracteres alfanuméricos.
+![create-application-1](/images/api-orders/create-application-1-pt.png)
+
+3. Insira um **nome** para identificar sua aplicação. O limite é de até 50 caracteres alfanuméricos.
 4. Diante da pergunta sobre o tipo de solução de pagamento a ser integrada, selecione **Pagamentos online**, que é o tipo de solução correspondente a lojas virtuais.
-5. Em **tipo de solução de pagamento a ser integrada**, selecione **Pagamentos online**. Esta opção corresponde às lojas virtuais.
-6. Como está sendo criada uma aplicação para a ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, em “**Você está usando uma plataforma de e-commerce?**”, indique que **não** está utilizando uma plataforma de e-commerce, uma vez que esta solução é para ser integrada em sites de desenvolvimento próprio.
-7. Em seguida, escolha ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------ como o produto que você está integrando.
-Aceite a [Declaração de Privacidade]() e os [Termos e Condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em **Criar aplicação**.
+5. Como está sendo criada uma aplicação para a ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, em “**Você está usando uma plataforma de e-commerce?**”, indique que **não** está utilizando uma plataforma de e-commerce, uma vez que esta solução é para ser integrada em sites de desenvolvimento próprio.
+6. Em seguida, escolha ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------ como o produto que você está integrando.
+7. Em "Modelo de integração", selecione o modelo de integração de acordo com o seu modelo de negócio.
+8. Aceite a ----[mlb]---- [Declaração de Privacidade](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Declaração de Privacidade](https://www.mercadopago.com/privacidad) ------------ e os [Termos e Condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em **Criar aplicação**.
 
-Em [Suas integrações](/developers/panel/app), é possível consultar a lista de todas as suas aplicações criadas e acessar os [Detalhes da aplicação]() de cada uma delas.
+![create-application-2](/images/api-orders/create-application-2-pt.png)
 
-----[mlc, mlm, mlu, mco, mpe]----
-![Criar aplicação](/images/dashboard/dashboard-pt-animated.png)
-
-------------
-----[mla, mlb]----
-![Criar aplicação](/images/dashboard/dashboard-pt-animated.gif)
-
-------------
+Em [Suas integrações](/developers/panel/app), é possível consultar a lista de todas as suas aplicações criadas e acessar os [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details) de cada uma delas.
 
 > WARNING
 >
 > Importante
 >
-> Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação]().
+> Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details).
+
+

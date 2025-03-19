@@ -21,7 +21,6 @@ npm install @mercadopago/sdk-js
 ```
 ]]]
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -30,9 +29,16 @@ npm install @mercadopago/sdk-js
 
 To initialize the Mercado Pago library, you will need to use your *credentials*, unique keys that identify an integration in your account. They are directly linked to the application you created for that integration and will allow you to develop your project with the best security measures from Mercado Pago.
 
-At this stage, you should use your *test Public Key*, which you can access by going to the [Application details]() in [Your integrations](/developers/panel/app), under the title **Tests > Test credentials** in the menu located on the left side of the screen.
+At this stage, you should use your *test Public Key*, which you can access by going to the [Application details](/developers/en/docs/your-integrations/application-details) in [Your integrations](/developers/panel/app), under the title **Tests > Test credentials** in the menu located on the left side of the screen.
 
-IMAGEM
+----[mlb]----
+![mercado-pago-library](/images/api-orders/development-environment-publickey-pt.png) 
+
+------------ 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+![mercado-pago-library](/images/api-orders/development-environment-publickey-es.png) 
+
+------------
 
 > If you are developing for someone else, you will be able to access the credentials of the applications you do not manage. Refer to Share Credentials for more information.
 

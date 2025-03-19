@@ -15,25 +15,21 @@ Para crear una **aplicación**, sigue los pasos a continuación.
 >
 > Para proteger tu cuenta, durante la creación de una aplicación será necesario que realices una verificación de identidad, en caso de que aún no la hayas realizado, o una reautenticación, si ya has completado previamente el proceso de verificación.
 
-3. Ingresa un **nombre** para identificar tu aplicación. Tienes un límite de 50 caracteres.
+![create-application-1](/images/api-orders/create-application-1-es.png)
+
+3. Ingresa un **nombre** para identificar tu aplicación. El límite es de hasta 50 caracteres alfanuméricos.
 4. Ante la pregunta por el tipo de solución de pago a integrar, selecciona **Pagos online**, que es el tipo de solución correspondiente a tiendas virtuales.
 5. Como estás creando una aplicación para ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, en "**¿Está utilizando una plataforma de e-commerce?**", indique que **no** está utilizando una plataforma de e-commerce, ya que esta solución es para integrarse en sitios de desarrollo propio.
 6. Luego, elige ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------  como el producto que estás integrando.
-7. Acepta la [Declaración de Privacidad]() y los [Términos y condiciones](/developers/es/docs/resources/legal/terms-and-conditions) y haz clic en **Crear aplicación**.
+7. En "Modelo de integración", selecciona el modelo de integración según tu modelo de negocio.
+8. Acepta la ----[mlb]---- [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Declaración de Privacidad](https://www.mercadopago.com/privacidad) ------------ y los [Términos y condiciones](/developers/es/docs/resources/legal/terms-and-conditions) y haz clic en **Crear aplicación**.
 
-En [Tus integraciones](/developers/panel/app) podrás consultar el listado de todas tus aplicaciones creadas y acceder a los [Detalles de la aplicación]() de cada una de ellas. 
+![create-application-2](/images/api-orders/create-application-2-es.png)
 
-----[mlc, mlm, mlu, mco, mpe]----
-![Criar aplicação](/images/dashboard/dashboard-es-animated.png)
-
-------------
-----[mla, mlb]----
-![Criar aplicação](/images/dashboard/dashboard-es-animated.gif)
-
-------------
+En [Tus integraciones](/developers/panel/app) podrás consultar el listado de todas tus aplicaciones creadas y acceder a los [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details) de cada una de ellas. 
 
 > WARNING
 >
 > Importante
 >
-> Si lo deseas, puedes editar o eliminar una aplicación. En este último caso, debes tener en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración con Mercado Pago asociada a esa aplicación. Para más información, consulta los [Detalles de la aplicación]().
+> Si lo deseas, puedes editar o eliminar una aplicación. En este último caso, debes tener en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración con Mercado Pago asociada a esa aplicación. Para más información, consulta los [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details).

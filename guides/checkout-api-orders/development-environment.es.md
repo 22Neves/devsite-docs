@@ -29,9 +29,9 @@ npm install @mercadopago/sdk-js
 
 Para inicializar la biblioteca de Mercado Pago, deberás utilizar tus *credenciales*, claves únicas con las que identificamos una integración en tu cuenta. Están directamente vinculadas a la aplicación que creaste para esa integración, y te permitirán desarrollar tu proyecto contando con las mejores medidas de seguridad de Mercado Pago. 
 
-En esta etapa, deberás utilizar tu *Public Key de pruebas*, a la que podrás acceder ingresando a los [Detalles de tu aplicación]() en [Tus integraciones](/developers/panel/app), bajo el título **Pruebas > Credenciales de prueba** en el menú ubicado a la izquierda de la pantalla.
+En esta etapa, deberás utilizar tu *Public Key de pruebas*, a la que podrás acceder ingresando a los [Detalles de tu aplicación](/developers/es/docs/your-integrations/application-details) en [Tus integraciones](/developers/panel/app), bajo el título **Pruebas > Credenciales de prueba** en el menú ubicado a la izquierda de la pantalla.
 
-IMAGEM
+![mercado-pago-library](/images/api-orders/development-environment-publickey-es.png) 
 
 > Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta Compartir credenciales para más información.
 

@@ -15,18 +15,35 @@ To create an **application**, follow the steps below.
 >
 > To protect your account and ensure compliance with operations, during the creation of an application, you will need to do an identity verification if you haven’t done so already, or a re-authentication if you have previously completed the verification process.
 
-3. Enter a **name** to identify your application. The limit is 50 characters.
+----[mlb]----
+![create-application-1](/images/api-orders/create-application-1-pt.png)
+
+------------ 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+![create-application-1](/images/api-orders/create-application-1-es.png)
+
+------------ 
+
+3. Enter a **name** to identify your application. The limit is up to 50 alphanumeric characters.
 4. When asked about the **type of payment solution to integrate**, select **Online payments**, which is the type of solution corresponding to virtual stores.
 5. Since you are creating an application for the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, in "**Are you using an e-commerce platform?**", indicate that you are **not** using an e-commerce platform, as this solution is for integration into self-developed sites.
 6. Then, choose ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------  as the product you are integrating.
-7. Accept the [Privacy Statement]() and the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) and click on **Create application**.
+7. In "Integration model", select the integration model that aligns with your business model.
+8. Accept the ----[mlb]---- [Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) and click on **Create application**.
 
-In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [Application details]() for each of them.
+----[mlb]----
+![create-application-2](/images/api-orders/create-application-2-pt.png)
 
+------------ 
+----[mla, mlm, mlu, mco, mlc, mpe]----
+![create-application-2](/images/api-orders/create-application-2-es.png)
 
+------------ 
+
+In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [Application details](/developers/en/docs/your-integrations/application-details) for each of them.
 
 > WARNING
 >
 > Important
 >
-> If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details]().
+> If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/your-integrations/application-details).
