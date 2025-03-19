@@ -60,40 +60,9 @@ You can also set up the installment experiences for each checkout in your store 
 5. Find the payment method ----[mlm, mla]---- "Checkout API" ------------ ----[mlb]---- "Checkout Transparente" ------------ and click on **Configure**.
 6. In this section, you can define the maximum number of installments that your customers can use when making a payment with ----[mlm, mla]---- Checkout API. ------------ ----[mlb]---- Checkout Transparente. ------------
 
-<<<<<<< HEAD
-----[mlb]----
-![discounts checkout-api mlb](/images/nuvemshop/discounts-checkout-api-mlb.png)
-
-------------
-----[mlm]----
-![discounts checkout-api mlm](/images/nuvemshop/discounts-checkout-api-mlm.png)
-
-------------
-----[mla]----
-![discounts checkout-api mla](/images/nuvemshop/discounts-checkout-api-mla.png)
-
-------------
-
-## Mercado Pago account
-
-Within your Mercado Pago account, you can check and configure the number of interest-free months you want to offer to your customers. In this option, your customers can make installment purchases without interest, and you assume the financing fee.
-
-1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-2. Go to the **Your business > Costs** section and select the **Checkout** option.
-3. In "Interest-free months", click on **Set up months**.
-4. Enable the option **Offer interest-free installments with a credit card** and then choose the number of months you want to offer.
-5. After configuring the interest-free installment options, go to your store on Tiendanube.
-6. In your store's Administrative Panel at Tiendanube, access **My apps**.
-7. Locate the Mercado Pago plugin in the list of applications and click on **Actions > Configure**.
-8. In the list of payment methods, find the Mercado Pago plugin and click on **Edit settings**.
-9. Scroll down to the bottom of the page and click on **More settings on the Mercado Pago site**.
-10. Find the desired payment method and click on **Configure**.
-11. Finally, click on Synchronize so that the configured installment plan is synced with your store.
-=======
 ### Configuration via the Mercado Pago account
 
 In your Mercado Pago account, you can check and configure the number of interest-free installments you want to offer your customers. With this option, your customers can pay for their purchases in installments without interest, and you will cover the financing fee.
->>>>>>> 8534907ff03ce2a74f8de9336536088a06eff1b1
 
 > WARNING
 >
