@@ -7,17 +7,17 @@ Segue lista de componentes da nova arquitetura de documentações
 
 Implementação dos componentes novos linkados nesse [Figma](https://www.figma.com/design/Z1MQhRUyq0xH0APuFEWS1b/Componentes-e-templates?node-id=4357-2253&m=dev)
 
-### Tooltip
+## Tooltip
 
 Lorem :toolTipComponent[ipsum]{content="Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor."} dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt :toolTipComponent[imperdiet]{content="Phasellus sodales risus nisi, in sollicitudin nulla faucibus et"}. interdum. Nullam aliquam nibh id posuere dapibus.
 
-#### Exemplo
+### Exemplo
 
 ```yaml
-Esse aqui é um texto livre em markdown, mas que no meio dele possui um :toolTipComponent[Tooltip para que el usuario vea]{content="Esse é o conteúdo do tooltip"}. Isso não gera nenhum problema no restante do texto
+Esse é um :toolTipComponent[tooltip]{content="Conteúdo do tooltip"} de exemplo.
 ```
 
-### Tab
+## Tab
 
 ::::TabsComponent
 
@@ -35,7 +35,7 @@ Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu
 
 ::::
 
-#### Exemplo
+### Exemplo
 
 ```yaml
 ::::TabsComponent
@@ -55,11 +55,11 @@ Conteúdo da Tab 3
 ::::
 ```
 
-### Tag
+## Tag
 
 Aenean velit lorem, tristique eu lacinia non, :TagComponent{textTag="API" size="small" hierarchy="loud" color="accent"} vitae lacus. Nam placerat sed elit eget tincidunt. Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor :TagComponent{textTag="SDK" size="small" hierarchy="loud" color="green"} pellentesque. Vivamus luctus at nulla sed dignissim.
 
-#### Exemplo
+### Exemplo
 
 ```yaml
 :TagComponent{tagText="API" size="small" hierarchy="loud" color="accent"}
@@ -106,7 +106,9 @@ Aenean velit lorem, tristique eu lacinia non, :TagComponent{textTag="API" size="
         G
       end
 </pre>
+<br>
 
+### Exemplo
 
 ```yaml
 <pre class="mermaid">
@@ -132,9 +134,8 @@ Aenean velit lorem, tristique eu lacinia non, :TagComponent{textTag="API" size="
 ## Iteração de componentes existentes
 
 Implementação dos componentes já existentes linkados nesse [Figma](https://www.figma.com/design/Z1MQhRUyq0xH0APuFEWS1b/Componentes-e-templates?node-id=4267-1792&m=dev).
-# Message
+
 ## Message
-### Message
 
 > WARNING
 >
@@ -160,7 +161,7 @@ asdasd
 
 > content
 
-#### Exemplo
+### Exemplo
 
 ```
 > WARNING
