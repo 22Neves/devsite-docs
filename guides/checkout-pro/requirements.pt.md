@@ -57,7 +57,7 @@ Conteúdo da Tab 3
 
 ### Tag
 
-Aenean velit lorem, tristique eu lacinia non, :TagComponent{tagText="API" size="small" hierarchy="loud" color="accent"} vitae lacus. Nam placerat sed elit eget tincidunt. Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor :TagComponent{tagText="SDK" size="small" hierarchy="loud" color="green"}pellentesque. Vivamus luctus at nulla sed dignissim.
+Aenean velit lorem, tristique eu lacinia non, :TagComponent{textTag="API" size="small" hierarchy="loud" color="accent"} vitae lacus. Nam placerat sed elit eget tincidunt. Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor :TagComponent{textTag="SDK" size="small" hierarchy="loud" color="green"} pellentesque. Vivamus luctus at nulla sed dignissim.
 
 #### Exemplo
 
@@ -136,7 +136,7 @@ Implementação dos componentes já existentes linkados nesse [Figma](https://ww
 ## Message
 ### Message
 
-> WARNING (message type)
+> WARNING
 >
 > title
 >
@@ -144,13 +144,13 @@ Implementação dos componentes já existentes linkados nesse [Figma](https://ww
 
 asdasd
 
-> WARNING (message type)
+> WARNING
 >
 > content
 
 asdasd
 
-> NEUTRAL_MESSAGE (message type)
+> NEUTRAL_MESSAGE
 >
 > title
 >
@@ -163,7 +163,7 @@ asdasd
 #### Exemplo
 
 ```
-> WARNING (message type)
+> WARNING
 >
 > title
 >
