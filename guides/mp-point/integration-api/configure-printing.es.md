@@ -23,7 +23,7 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 
 ## Configuración de la impresión por imagenes
 
-Utiliza los endpoints presentados abaixo para gestionar el encolamiento de impresiones por imagen. Tenha em mente que as imagens devem ser fornecidas nos formatos PNG ou JPEG, codificadas em Base64 e com tamanho máximo de 1MB. Imagens maiores serão redimensionadas automaticamente para caber na largura da bobina de papel.
+Utiliza los endpoints presentados abaixo para gestionar el encolamiento de impresiones por imagen. Tenga en cuenta que las imágenes deben proporcionarse en formatos PNG o JPEG, codificadas en Base64 y con un tamaño máximo de 1MB. Las imágenes más grandes se redimensionarán automáticamente para ajustarse al ancho del rollo de papel. 
 
 > WARNING
 >
