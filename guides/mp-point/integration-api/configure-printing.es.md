@@ -21,7 +21,7 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 | `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
 | `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
 
-## Configuración de la impresión por imagenes
+## Configuración de la impresión
 
 Utiliza los endpoints presentados abaixo para gestionar el encolamiento de impresiones por imagen. Tenga en cuenta que las imágenes deben proporcionarse en formatos PNG o JPEG, codificadas en Base64 y con un tamaño máximo de 1MB. Las imágenes más grandes se redimensionarán automáticamente para ajustarse al ancho del rollo de papel. 
 
@@ -32,8 +32,8 @@ Utiliza los endpoints presentados abaixo para gestionar el encolamiento de impre
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
 Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/en/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201.
-   - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200.
-   - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Permite una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
+   - [Crear acción de la terminal](/developers/es/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201.
+   - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200.
+   - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post): Permite una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
 
 Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.

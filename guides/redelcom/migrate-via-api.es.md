@@ -35,11 +35,11 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 
 La API de Impresiones ofrece una solución práctica para conectar tus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tengas configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
 
-Este recurso permite la impresión de recibos y facturas electrónicas (DTE), impresiones personalizadas y imagenes xdirectamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
+Este recurso permite la impresión de recibos y facturas electrónicas (DTE), imagenes y impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
 
 ### Impresión de facturas y recibos electrónicos
 
-Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
+Para la impresión de DTEs, se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
 
 > WARNING
 > 
@@ -80,8 +80,8 @@ Utilice la API para gestionar la cola de impresiones, teniendo en cuenta las esp
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
 Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/en/reference/mercado_pago_point/impressions_dte/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201.
-   - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions_dte/get): Permite consultar toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200.
-   - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_dte_cancel/post): Permite una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
+   - [Crear acción de la terminal](/developers/es/reference/mercado_pago_point/impressions_dte/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201.
+   - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions_dte/get): Permite consultar toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200.
+   - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_dte_cancel/post): Permite una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
 
 Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.
