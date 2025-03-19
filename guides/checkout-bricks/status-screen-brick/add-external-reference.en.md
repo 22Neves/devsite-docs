@@ -37,14 +37,14 @@ const customization = {
 ]]]
 
 ----[mlc, mlm, mco, mlu]----
-![status-screen-external-reference](checkout-bricks/status-screen-reference-all-en.png)
+![status-screen-external-reference](checkout-bricks/status-screen-add-reference-all-en.png)
 
 ------------
 ----[mpe]----
-![status-screen-external-reference](checkout-bricks/status-screen-external-mpe-en.png)
+![status-screen-external-reference](checkout-bricks/status-screen-add-reference-mpe-en.png)
 
 ------------
 ----[mlb, mla]----
-![status-screen-brick-external-reference](checkout-bricks/status-screen-brick-external-reference-en.jpg)
-
+![status-screen-brick-external-reference](checkout-bricks/status-screen-add-reference-en.jpg)
+ 
 ------------
