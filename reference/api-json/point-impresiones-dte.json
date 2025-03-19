@@ -7,9 +7,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows you to create a new print action for the Mercado Pago point. In case of success, the request will return a response with status 201",
-          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point. En caso de éxito, la requisición devolverá un código de estado 201",
-          "pt": "Este endpoint permite que você crie uma nova ação de impressão para Mercado Pago Point. Em caso de sucesso, a solicitação retornará uma resposta com status 201"
+          "en": "This endpoint allows the creation of a new print action for Mercado Pago Point. Base64 format is supported for images. If successful, the response will return a 201 status code.",
+          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201",
+          "pt": "Este endpoint permite a criação de uma nova ação de impressão para o Ponto Mercado Pago. O formato Base64 é compatível com imagens. Em caso de sucesso, a resposta retornará um código de status 201"
         },
         "parameters": [
           {
@@ -93,9 +93,9 @@
                           "subtype": {
                             "type": "string",
                             "description": {
-                              "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing.",
-                              "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada.",
-                              "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada."
+                              "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between three values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing, or \"image\" for an image printout.",
+                              "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre tres valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
+                              "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre três valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
                             },
                             "example": "custom",
                             "required": true,
@@ -134,8 +134,8 @@
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "String that contains the information to be printed in the Point terminal. If the subtype is \"invoice\", it must be a valid .xml, and if the subtype is \"custom\" it must contain the string formatted with the supported tags.",
-                      "pt": "String que contém as informações a serem impressas na Point. Se o subtipo for \"invoice\", deve ser um .xml válido, e se o subtipo for \"custom\" deve conter a string formatada com as tags suportadas.",
+                      "en": "String that contains the information to be printed in the Point terminal. If the subtype is \"invoice\", it must be a valid .xml, and if the subtype is \"custom\" it must contain the string formatted with the supported tags, and if it is \"image\" the image content in base 64.",
+                      "pt": "String que contém as informações a serem impressas na Point. Se o subtipo for \"invoice\", deve ser um .xml válido, e se o subtipo for \"custom\" deve conter a string formatada com as tags suportadas, , e se for \"image\"o conteúdo da imagem em base64",
                       "es": "String que contiene la información a imprimir en la terminal Point. Si el subtipo es \"invoice\", debe ser un .xml válido, si es \"custom\" debe contener un string formateado con las etiquetas soportadas, y si es \"image\" el contenido de la imagen en base 64"
                     },
                     "example": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL ADIDAS WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA Cerro Navia test 12345  {/s}{br}{s}RECIBE: Pepito Perez{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
@@ -312,14 +312,6 @@
                           "description": {
                             "en": "",
                             "es": "El encodeado de la imagen en base64 no es correcto",
-                            "pt": ""
-                          }
-                        },
-                        {
-                          "title": "invalid_token: bad_request",
-                          "description": {
-                            "en": "",
-                            "es": "El token de autenticación no es válido.",
                             "pt": ""
                           }
                         }
@@ -964,9 +956,9 @@
               "subtype": {
                 "type": "string",
                 "description": {
-                  "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing.",
-                  "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada.",
-                  "pt": "Identificador do subtipo de ação que será criado para o terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, ou \"custom\" para uma impressão personalizada."
+                  "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing, or \"image\" for an image printout.",
+                  "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
+                  "pt": "Identificador do subtipo de ação que será criado para o terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, ou \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
                 },
                 "example": "invoice",
                 "required": true,
@@ -990,9 +982,9 @@
                   {
                     "title": "image",
                     "description": {
-                      "en": "Identifier of the subtype related to image printings.",
+                      "en": "Subtype identifier related to image impressions. Must contain the image encoded in base64 format.",
                       "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen encodeada en formato base64",
-                      "pt": ""
+                      "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                     }
                   }
                 ]
