@@ -96,11 +96,11 @@ renderStatusScreenBrick(bricksBuilder);
 
 El Status Screen Brick mostrará una transición que indica la redirección y, luego, se mostrará el _Challenge_ del banco en cuestión.
 
-----[mlc]----
+----[mlc, mlu, mlm, mco, mpe]----
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-es.png)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
+----[mlb, mla]----
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-es.gif)
 
 ------------
