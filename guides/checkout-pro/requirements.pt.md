@@ -150,8 +150,97 @@ asdasd
 
 
 
+<pre class="mermaid">
+    graph TD
+      A[Matheus] -->|Apresenta| B(Go shopping)
+      B --> C{Let me think}
+      B --> G[/Another/]
+      C ==>|One| D[Laptop]
+      C -->|Two| E[iPhone]
+      C -->|Three| F[fa:fa-car Car]
+      subgraph section
+        C
+        D
+        E
+        F
+        G
+      end
+</pre>
+
+<pre class="mermaid">
+  sequenceDiagram
+      participant Navegador del comprador
+      participant Front-end del integrador
+      participant MercadoPago.js
+      participant Back-end del integrador
+      participant API Mercado Pago
+      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobro<br>El Comprador accede a la pantalla de cobro.
+      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado Pago<br> El front-end del integrador descarga e<br>inicializa la SDK JS de Mercado Pago 
+      Front-end del integrador->>Navegador del comprador: 3. Formulario de pago<br>El front-end del integrador muestra el<br>formulário de pago
+      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pago<br>El comprador completa el formulário y<br>finaliza el pago.
+      Front-end del integrador->>MercadoPago.js: 5. Creación del token<br>El front-end del integrador utiliza la SDK JS<br>para crear el token que contendrá los datos<br>de tarjeta de forma segura.
+      Front-end del integrador->>Back-end del integrador: 6. Envío del token<br>El front-end del integrador envía el token de<br>tarjeta y los datos de pago a su back-end.
+      Back-end del integrador->>API Mercado Pago: 7. Creación del pago<br>Desde el back-end, se llama a los servicios<br>de Mercado Pago para crear el pago.
+      API Mercado Pago->>Navegador del comprador: 8. Resultado del pago<br>El front-end del integrador le muestra al<br>comprador el resultado de la operación.
+      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pago<br>Mercado Pago puede enviar notificaciones<br>vía Webhook con actualizaciones del estado<br>del pago.
+      Back-end del integrador->>Navegador del comprador: 10. Notificación al comprador<br>Si corresponde, se le avisa al comprador<br>sobre la actualización del pago.
+</pre>
+
+<pre class="mermaid">
+    graph TD
+      A[Christmas] -->|Get money| B(Go shopping)
+      B --> C{Let me think}
+      B --> G[/Another/]
+      C ==>|One| D[Laptop]
+      C -->|Two| E[iPhone]
+      C -->|Three| F[fa:fa-car Car]
+      subgraph section
+        C
+        D
+        E
+        F
+        G
+      end
+</pre>
+
+::::TabsComponent
+
+:::TabComponent{title="Tab 1"}
+# Como medir a qualidade da integração
+
+Para garantir a melhor experiência tanto para o vendedor quanto para o comprador, o Mercado Pago avalia sua integração considerando os padrões necessários de segurança e qualidade.
+
+Abaixo, você encontrará todas as informações necessárias sobre como essa medição é realizada, permitindo que você aproveite ao máximo nossa ferramenta e mantenha um processo contínuo de melhoria da qualidade.
+
+## O que é a medição de qualidade?
+
+A medição de qualidade é um processo de certificação de sua integração que busca garantir que seu desenvolvimento atenda aos requisitos necessários de qualidade e segurança para proporcionar tanto ao vendedor quanto ao comprador a melhor experiência no Mercado Pago.
+:::
+
+:::TabComponent{title="Tab 2"}
+Conteúdo da Tab 2
 | Requisito  | Descrição  | Condição  |
 | --- | --- | --- |
 | Conta de vendedor de Mercado Pago  | Para integrar o Checkout Pro, é preciso uma conta vendedor no Mercado Pago. Caso não tenha, ----[mlb]----[clique aqui](https://www.mercadopago.com.br/hub/registration/landing) ------------ ----[mla]----[clique aqui](https://www.mercadopago.com.ar/hub/registration/landing) ------------ ----[mlm]----[clique aqui](https://www.mercadopago.com.mx/hub/registration/landing) ------------ ----[mpe]----[clique aqui](https://www.mercadopago.com.pe/hub/registration/landing) ------------ ----[mco]----[clique aqui](https://www.mercadopago.com.co/hub/registration/landing) ------------  ----[mlu]----[clique aqui](https://www.mercadopago.com.uy/hub/registration/landing) ------------ ----[mlc]----[clique aqui](https://www.mercadopago.cl/hub/registration/landing) ------------   para criá-la gratuitamente.  | Obrigatório  |
 | Credenciais  | As credenciais são chaves únicas que fornecemos para que você possa configurar as suas integrações.  Você precisará de um par de credenciais de teste para testar a integração e um par de credenciais de produção para receber pagamentos reais. Veja [Credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) para mais informações.  | Obrigatório  |
 | Certificado SSL  | Certificado que permite a navegação segura e proteção dos dados de usuários durante as transferências de informações.  | Obrigatório  |
+:::
+
+:::TabComponent{title="Tab 3"}
+## Que aspectos a medição de qualidade avalia?
+
+Durante o processo de medição serão analisados ​​uma série de campos associados a aspectos fundamentais que uma integração do Mercado Pago deve ter, independentemente do produto integrado. Veja abaixo quais os atributos avaliados e a importância de cada um deles:
+
+| Aspecto | Descrição |
+|---|---|
+| Experiência da pessoa que compra | Para crescer e manter o índice de usuários em sua integração, é importante oferecer uma boa experiência de pagamento. As sugestões fornecidas pelo Mercado Pago, resultantes da medição de qualidade irão guiá-lo para alcançar os melhores resultados. |
+| Conciliação financeira | A consistência em conferir informações financeiras visa manter a integridade dos dados em seu sistema. Por isso, é importante incluir as medidas necessárias e as boas práticas recomendadas pelo resultado de sua avaliação. |
+| Aprovação de pagamentos | Para garantir uma boa taxa de aprovação de pagamento, é importante validar todos os campos indicados como melhorias necessárias e seguir as boas práticas recomendadas pelo Mercado Pago. Isso fornecerá dados mais completos às nossas ferramentas de fraude,  permitindo uma avaliação mais precisa e detalhada. |
+| Escalabilidade | Ao avaliar a qualidade é importante utilizar as versões mais atualizadas das nossas APIs e bibliotecas oficiais. Isso assegura que você alcançará os melhores resultados possíveis. |
+| Segurança | O Mercado Pago buscará garantir a confidencialidade dos dados envolvidos no processo de compra. As melhorias indicadas ou as boas práticas sugeridas no resultado da sua medição permitirão obter os dados necessários de forma segura. |
+
+## Como medir a qualidade da sua integração?
+
+Dependendo da solução integrada, a avaliação da sua integração pode ser feita de duas maneiras distintas: manual ou automática.
+:::
+::::
