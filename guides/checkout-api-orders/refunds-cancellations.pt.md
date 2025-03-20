@@ -1,4 +1,4 @@
-# Reembolsos e Cancelamentos
+# Reembolsos e cancelamentos
 
 Os reembolsos e as cancelamentos são gestões que você pode realizar uma vez que um pagamento tenha sido efetuado. Por se tratar de ações que implicam uma devolução de dinheiro, podem parecer similares, mas é importante levar em consideração o que as diferencia para poder realizar corretamente cada um dos processos.
 

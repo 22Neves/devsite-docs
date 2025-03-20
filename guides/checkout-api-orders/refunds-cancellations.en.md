@@ -1,4 +1,4 @@
-# Refunds and Cancellations
+# Refunds and cancellations
 
 Refunds and cancellations are processes you can initiate once a payment has been made. Since these actions involve a return of money, they may seem similar, but it is important to understand what differentiates them in order to correctly carry out each of the processes.
 
