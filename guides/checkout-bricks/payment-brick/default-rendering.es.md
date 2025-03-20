@@ -644,18 +644,18 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 ------------
 ----[mlm]----
 
-![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.gif)
+![payment-Brick-layout-mlm](checkout-bricks/payment-brick-layout-mlm-es.jpg)
 
 ------------
 ----[mlc]----
 
-![payment-brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-es.png)
+![payment-brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-es.jpg)
 
 ------------
 
 ----[mpe, mlu, mco]----
 
-![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.gif)
+![payment-brick-layout-all](checkout-bricks/payment-brick-layout-all-es.jpg)
 
 ------------
 

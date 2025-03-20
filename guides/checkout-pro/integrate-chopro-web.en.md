@@ -6,11 +6,11 @@
 
 First, make sure you have **created the [preference in your backend](/developers/en/docs/checkout-pro/integrate-preferences)**.
 
-----[mlc]----
+----[mlc, mlm, mco, mpe, mlu]----
 Then, install the frontend (`Javascript`) SDK from Mercado Pago, which is used to securely access Mercado Pago's features and add the payment button to your project.
 
 ------------
-----[mla, mlm, mlb, mco, mpe, mlu]----
+----[mla, mlb]----
 Then, you will need to install the Mercado Pago frontend SDK in your project to add the payment button.
 
 ------------
@@ -26,7 +26,7 @@ The installation is basically done in **two steps**:
 >
 > Add the Mercado Pago SDK to the project with your configured credentials
 
-----[mlc]----
+----[mlc, mlm, mco, mpe, mlu]----
 To include the Javascript SDK from Mercado Pago, add the following code to your project's HTML or install the library for ReactJS.
 
 [[[
@@ -40,7 +40,7 @@ npm install @mercadopago/sdk-react
 ]]]
 
 ------------
-----[mla, mlm, mlb, mco, mpe, mlu]----
+----[mla, mlb]----
 To include the Mercado Pago.js SDK, add the code below to the project's HTML or install the library for ReactJs.
 
 [[[
@@ -90,7 +90,7 @@ For JavaScript/HTML integrations, via CDN, you will still need to create an iden
 
 At the end of the previous step, **initialize your checkout using the ID of the previously created preference with the identifier of the element where the button should be displayed**, if you are using the `Javascript/HTML` integration, or by instantiating the component, in the case from the `React` library, as shown in the examples below.
 
-----[mlc]----
+----[mlc, mlm, mco, mpe, mlu]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -113,7 +113,7 @@ export default App;
 ]]]
 
 ------------
-----[mla, mlb, mlm, mco, mpe, mlu]----
+----[mla, mlb]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {

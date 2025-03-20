@@ -4,7 +4,7 @@
 >
 > Change button appearance
 
-----[mlc]----
+----[mlc, mlm, mpe, mco, mlu]----
 Wallet Brick allows for some visual customizations listed in the table below, all of which are optional and of the `string` type.
 
 If the provided property is empty, the screen will display the appearance defined by the [default layout](/developers/en/docs/checkout-pro/integrate-checkout-pro/web). On the other hand, sending an alternative value will replace the default value.
@@ -75,7 +75,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla, mlm, mpe, mco, mlu]----
+----[mlb, mla]----
 It is possible to customize the look of the payment button by defining visual properties with alternative values to the default ones. By default, the payment button renders as in the following image.
 
 ![cow-visual-wallet-default](cow/cow-visual-wallet-default.en.png)

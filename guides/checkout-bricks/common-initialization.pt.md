@@ -10,7 +10,7 @@ Para configurar a integração dos Bricks e ter um checkout responsivo, otimizad
 
 Utilize as nossas bibliotecas oficiais para acessar as funcionalidades do Mercado Pago com segurança desde seu frontend.
 
-----[mlc]----
+----[mlc, mlm, mco, mlu, mpe]----
 [[[
 ```html
 // O código JS pode ser incluído em uma tag < script > ou um arquivo JS separado.
@@ -22,7 +22,7 @@ npm install @mercadopago/sdk-react
 ]]]
 
 ------------
-----[mla, mlm, mlb, mpe, mco, mlu]----
+----[mla, mlb]----
 [[[
 ```html
 // O código JS pode ser incluído em uma tag < script > ou um arquivo JS separado.
