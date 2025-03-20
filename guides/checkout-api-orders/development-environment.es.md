@@ -11,13 +11,14 @@ Para comenzar a integrar las soluciones de cobro de Mercado Pago, es necesario p
 Utiliza nuestras bibliotecas oficiales para interactuar con Mercado Pago desde tu _frontend_ y capturar los datos de los pagos realizados de forma segura.
 
 [[[
-```html 
+```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
 ```node
 npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -42,12 +43,14 @@ Una vez hayas localizado la *Public Key*, cópiala e inclúyela en el _frontend_
 <script>
   const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+
 ```
 ```javascript
 import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 

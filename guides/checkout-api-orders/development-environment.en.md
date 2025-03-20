@@ -11,13 +11,14 @@ To start your integration with Mercado Pago's payment solutions, it is necessary
 Use our official libraries to access Mercado Pago's functionalities from your frontend and securely capture the payment data.
 
 [[[
-```html 
+```html
 <body>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </body>
 ```
 ```node
 npm install @mercadopago/sdk-js
+
 ```
 ]]]
 
@@ -49,12 +50,14 @@ Once you have located the *Public Key*, copy it and include it in the frontend. 
 <script>
   const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
+
 ```
 ```javascript
 import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
+
 ```
 ]]]
 
