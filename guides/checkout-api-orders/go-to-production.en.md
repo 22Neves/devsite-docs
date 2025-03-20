@@ -8,7 +8,7 @@ See below the necessary requirements to make this change effectively and safely,
 
 The credentials used during the development phase were test credentials. To start receiving real payments, you will need to **activate the production credentials for your Mercado Pago account and replace them**.
 
-To do this, access [Your integrations](/developers/panel/app), select the desired application, and in the side menu, go to **Production > Production credentials**. There you will find your production Public Key and Access Token, which you should use instead of the test ones.
+To do this, access [Your integrations](/developers/panel/app), select the desired application, and in the side menu, go to **Production > Production credentials**. There you will find your production *Public Key* and *Access Token*, which you should use instead of the test ones.
 
 For more information, check our [Credentials documentation]().
 

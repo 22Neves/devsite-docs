@@ -8,7 +8,7 @@ Veja abaixo as recomendações necessárias para realizar essa mudança de manei
 
 As credenciais utilizadas durante a fase de desenvolvimento eram credenciais de teste. Para começar a receber pagamentos reais, você deverá **ativar as credenciais de produção da sua conta do Mercado Pago e substituí-las**.
 
-Para isso, acesse [Suas integrações](/developers/panel/app), selecione a aplicação desejada e, no menu lateral, acesse **Produção > Credenciais de Produção**. Lá você encontrará sua Public Key e o Access Token produtivos, que deverão ser utilizados no lugar dos de teste.
+Para isso, acesse [Suas integrações](/developers/panel/app), selecione a aplicação desejada e, no menu lateral, acesse **Produção > Credenciais de Produção**. Lá você encontrará sua *Public Key* e o *Access Token* produtivos, que deverão ser utilizados no lugar dos de teste.
 
 Para obter mais informações, consulte nossa [documentação sobre Credenciais]().
 
