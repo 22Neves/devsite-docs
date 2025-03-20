@@ -10,6 +10,15 @@ As credenciais utilizadas durante a fase de desenvolvimento eram credenciais de 
 
 Para isso, acesse [Suas integrações](/developers/panel/app), selecione a aplicação desejada e, no menu lateral, acesse **Produção > Credenciais de Produção**. Lá você encontrará sua *Public Key* e o *Access Token* produtivos, que deverão ser utilizados no lugar dos de teste.
 
+----[mlc, mlu, mlm, mco, mpe]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.png)
+
+------------
+----[mla, mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
+
+------------
+
 Para obter mais informações, consulte nossa [documentação sobre Credenciais]().
 
 ## Implementar certificado SSL

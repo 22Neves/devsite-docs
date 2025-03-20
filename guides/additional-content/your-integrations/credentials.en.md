@@ -18,6 +18,19 @@ You can obtain your production credentials in two ways:
 
 1. By accessing [**Your integrations > "Your application" > Production > Production credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
+----[mlc, mlu, mlm, mco, mpe]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.png)
+
+------------
+----[mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
+
+------------
+----[mla]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
+
+------------
+
 2. Through your Mercado Pago account, by accessing [**Your business > Settings > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) through the [Developer dashboard](/developers/en/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
 ----[mlb]----

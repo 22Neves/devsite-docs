@@ -10,6 +10,19 @@ The credentials used during the development phase were test credentials. To star
 
 To do this, access [Your integrations](/developers/panel/app), select the desired application, and in the side menu, go to **Production > Production credentials**. There you will find your production *Public Key* and *Access Token*, which you should use instead of the test ones.
 
+----[mlc, mlu, mlm, mco, mpe]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.png)
+
+------------
+----[mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
+
+------------
+----[mla]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
+
+------------
+
 For more information, check our [Credentials documentation]().
 
 ## Implement SSL certificate
