@@ -120,7 +120,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Parcelamento sem cartão
+ - card_title: Linha de Crédito
  - card_description: Brinda a los clientes la opción de pagar en veces sin contar con una tarjeta: Mercado Pago absorbe la financiación y el vendedor recibe la totalidad del dinero en su cuenta.
  - card_button:
  - card_buttonDescription:
@@ -157,7 +157,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Cuonta Mercado Pago
+ - card_title: Cuenta Mercado Pago
  - card_description: Ofrece a los pagadores la posibilidad de utilizar cualquiera de los medios de pago guardados en su cuenta de Mercado Pago.
  - card_button:
  - card_buttonDescription:
@@ -167,7 +167,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Financiación sin tarjeta
+ - card_title: Cuotas sin tarjeta
  - card_description: Brinda a los clientes la opción de pagar en cuotas sin contar con una tarjeta: Mercado Pago absorbe la financiación y el vendedor recibe la totalidad del dinero en su cuenta.
  - card_button:
  - card_buttonDescription:
@@ -212,7 +212,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Conta Mercado Pago
+ - card_title: Cuenta Mercado Pago
  - card_description: Ofrece a los pagadores la posibilidad de utilizar cualquiera de los medios de pago guardados en su cuenta 
  - card_button:
  - card_buttonDescription:
@@ -222,7 +222,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Compra ahora, paga después
+ - card_title: Meses sin Tarjeta
  - card_description: Brinda a los clientes la opción de pagar en veces sin contar con una tarjeta: Mercado Pago absorbe la financiación y el vendedor recibe la totalidad del dinero en su cuenta.
  - card_button:
  - card_buttonDescription:

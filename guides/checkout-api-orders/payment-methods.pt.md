@@ -120,7 +120,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Parcelamento sem cartão
+ - card_title: Linha de Crédito
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
  - card_buttonDescription:
@@ -147,7 +147,7 @@ future_product_avaible:
  - card_avaible: true
  - card_icon: Pay
  - card_title: Outros meios de pagamento
- - card_description: RReceba em sua conta os pagamentos que o cliente realizar em dinheiro através do Rapipago ou Pago Fácil.
+ - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do Rapipago ou Pago Fácil.
  - card_button: /developers/pt/docs/checkout-api-orders/xxx
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
@@ -166,7 +166,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Financiación sin tarjeta
+ - card_title: Cuotas sin tarjeta
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
  - card_buttonDescription:
@@ -221,7 +221,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Compra ahora, paga después
+ - card_title: Meses sin Tarjeta
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
  - card_buttonDescription:

@@ -167,7 +167,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Financiación sin tarjeta
+ - card_title: Cuotas sin tarjeta
  - card_description: Provide customers with the option to pay in installments without needing a card: Mercado Pago absorbs the financing and the seller receives the full amount in their account.
  - card_button:
  - card_buttonDescription:
@@ -222,7 +222,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: false
  - card_icon: Pay
- - card_title: Compra ahora, paga después
+ - card_title: Meses sin Tarjeta
  - card_description: Provide customers with the option to pay in installments without needing a card: Mercado Pago absorbs the financing and the seller receives the full amount in their account.
  - card_button:
  - card_buttonDescription:

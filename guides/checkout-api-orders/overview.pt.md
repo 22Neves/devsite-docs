@@ -1,115 +1,318 @@
+----[mlb]----
+
 ---
 product_landing_hero:
- - title: Integra Checkout Pro fácilmente
- - message: Incorpora esta solución de cobro que permite a tus clientes pagar en Mercado Pago sin necesidad de iniciar sesión.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/26/1740592108112-imgchopro4x.png
+ - title: Integre Checkout Transparente e personalize toda a experiência
+ - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
  - benefit_icon: recurring-payments
- - benefit_title: Para pagos online
+ - benefit_title: Para pagamentos online
  - benefit_icon: categories
- - benefit_title: Simple de integrar
+ - benefit_title: Integração avançada
  - benefit_icon: link
- - benefit_title: Redirección a Mercado Pago
+ - benefit_title: Sem redirecionamento
  - benefit_icon: edit
- - benefit_title: Baja personalización
- - info: ¿Buscas opciones más fáciles? Explora nuestras [soluciones sin desarrollo](/docs#online-payments).
+ - benefit_title: Personalização total
+ - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
 ---
 
 ---
 product_landing_what_it_offers:
- - title: Qué ofrece
- - message: Combina distintos métodos de pago y funciones para garantizar seguridad y conversión de las operaciones.
- - media_image: https://developer.salesforce.com/files/ti/blogs/img/Blog-ContextualDrivers-336x360-CodeyAstro5.png
- - media_video: https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1
- - benefit_title: Seguridad ante fraudes
- - benefit_bullet: Buyer Portection Program.
- - benefit_bullet: Seguridad en transacciones de alto riesgo usando 3DS (3-Domain Secure).
- - benefit_title: Aprobación de pagos
- - benefit_bullet: Validación de tarjetas con Zero Dollar Authorization.
- - benefit_bullet: Reconocimiento facial como método de verificación con FaceAuth.
- - benefit_title: Conversión
- - benefit_bullet: Configuración de la opción CVV.
- - benefit_bullet: Métodos de pago diversos y customizables.
- - benefit_bullet: Capacidad de recuperar pagos que fueron inicialmente rechazados.
- - benefit_bullet: Posibilidad de impulsar las ventas a través de cupones y campañas promocionales.
- - benefit_title: Personalización
- - benefit_bullet: Métodos y condiciones de pago a plazos.
- - benefit_bullet: Apariencia y estilo del botón de pago.
- - benefit_bullet: URL de retorno después de la redirección de pago.
- - benefit_bullet: División del porcentaje de interés entre pagador y vendedor.
+ - title: O que oferece
+ - message: Combine diferentes funcionalidades para garantir a segurança e a conversão das operações.
+ - benefit_title: Personalização e segurança
+ - benefit_bullet: Desenvolva um checkout personalizado de acordo com as suas preferências.
+ - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
+ - benefit_title: Flexibilidade para integrar
+ - benefit_bullet: Adapte às suas necessidades de negócio.
+ - benefit_bullet: Escolha como as transações serão processadas: [manual]() ou [automaticamente]().
+ - benefit_title: Otimização dos pagamentos
+ - benefit_bullet: Ofereça um processo de compra com menos etapas.
+ - benefit_bullet: Finalização de compra de forma prática e segura.
 ---
 
 ---
 product_landing_how_works:
- - title: Cómo funciona
- - message: La persona compra el producto en tu sitio y es redirigida a un entorno seguro de Mercado Pago para pagar.
- - sub_title: Conoce los pasos del proceso de cobro
+ - title: Como funciona
+ - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
+ - sub_title: Processo de pagamento
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
- - image_text: Simula el procesamiento de pago
- - image_text_link: /live-demo/checkout-pro
- - list_title: El comprador elige pagar con Mercado Pago y es redirigido al flujo de pagos de Mercado Pago.
- - list_title: Elige si inicia sesión en su cuenta de Mercado Pago o continúa como usuario invitado sin loguearse.
- - list_title: Selecciona el método de pago de su preferencia, pudiendo incluso dividir el pago entre más de un método.
- - list_title: Después de completar la compra, es redirigido automáticamente a la tienda online.
+ - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
+ - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
+ - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
+ - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Cómo integrar
+ - button_link: /developers/pt/docs/checkout-api-orders/create-aplication
 ---
 
 ---
 product_landing_what_differentiates:
- - title: Qué lo diferencia
- - message: Compara las características de nuestros checkouts y elige el que mejor se adapte a tu negocio.
- - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/24/1740402110505-eschopro.png
- - column_product: Checkout Pro
- - column_button_text: Cómo integrar
- - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/24/1740402132575-eschobricks.png
- - column_product: Checkout Bricks
- - column_button_text: Ver resumo
- - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/24/1740402177212-eschoapi.png
+ - title: Quais os diferenciais
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
+ - highlight_text: Você está aqui
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout Transparente
- - column_button_text: Ver resumo
- - column_button_link: /docs/checkout-pro/integrate-checkout-pro/web
- - line_text: Esfuerzo de integración
+ - column_button_text: Como integrar
+ - column_button_link: /developers/pt/docs/checkout-api-orders/overview
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
+ - column_product: Checkout Bricks
+ - column_button_text: Ir ao resumo
+ - column_button_link: /developers/pt/docs/checkout-bricks/landing
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
+ - column_product: Checkout Pro
+ - column_button_text: Ir ao resumo
+ - column_button_link: /developers/pt/docs/checkout-pro/landing
+ - line_text: Esforço de integração
  - line_type: dots
- - line_values: 4|3|1
- - line_text: Nivel de personalización
+ - line_values: 5|3|2
+ - line_text: Nível de personalização
  - line_type: dots
- - line_values: 2|3|5
- - line_text: Diseño listo para configurar
+ - line_values: 5|3|2
+ - line_text: Design pronto para configurar
  - line_type: check
- - line_values: true|true|false
- - line_text: Experiencia de cobro
+ - line_values: false|true|true
+ - line_text: Experiência de pagamento
  - line_type: text
- - line_values: En Mercado Pago|En tu sitio|En tu sitio
- - line_text: Medios de pago
+ - line_values: No seu site|No seu site|No Mercado Pago
+ - line_text: Meios de pagamento
  - line_type: text
- - line_values: Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto
- - line_text: Disponibilidad por país
+ - line_values: Cartão de crédito, Pix, boleto e cartão de débito virtual Caixa|Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito | Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito
+ - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
+ - line_values: mla, mlm, mlb|all|all
 ---
 
 ---
 product_landing_how_integrate:
- - title: Cómo integrar
- - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
+ - title: Como integrar
+ - sub_title: Conheça as etapas necessárias para integrar esta solução.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
- - image_text: Explora ejemplos de código
- - image_text_link: /live-demo/checkout-pro
- - requirement_title: Requisitos prévios
- - requirement_table_title: Cuenta de vendedor
- - requirement_table_list: Para integrar Checkout Pro, necesitas una cuenta de vendedor en Mercado Pago. Si no tienes una, puedes [crearla gratis](/docs/checkout-pro/landing).
- - requirement_table_title: Credenciales
- - requirement_table_list: Son claves únicas para que puedas configurar tus integraciones. Necesitas 2 de prueba para probar la integración y 2 de producción para recibir pagos reales. [Saber más](/docs/checkout-pro/landing)
- - requirement_table_title: Certificado SSL
- - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencia de información.
- - list_title: Proceso de integración
- - list_item: Crear la aplicación desde el panel
- - list_item: Construir tu integración
- - list_item: Probar su funcionamiento
+ - requirement_title: Pré-requisitos
+ - requirement_table_title: Conta de usuário Mercado Pago
+ - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_title: Chave Pix
+ - requirement_table_list: Caso queira oferecer pagamentos via Pix, é necessário ter as [chaves Pix cadastradas](https://www.youtube.com/watch?v=60tApKYVnkA).
+ - list_title: Processo de integração
+ - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
+ - list_item: Construir o ambiente de desenvolvimento
+ - list_item: Integrar os meios de pagamento desejados
+ - list_item: Configurar as notificações de pagamento
+ - list_item: Testar sua integração
  - list_item: Salir a producción
- - list_item: Medir la calidad
- - button_description: Quiero comenzar a integrar
- - button_link: #
+ - button_description: Quero começar a integrar
+ - button_link: /developers/pt/docs/checkout-api-orders/overview
 ---
+
+------------
+----[mla]----
+
+---
+product_landing_hero:
+ - title: Integre Checkout API e personalize toda a experiência
+ - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - benefit_icon: recurring-payments
+ - benefit_title: Para pagamentos online
+ - benefit_icon: categories
+ - benefit_title: Integração avançada
+ - benefit_icon: link
+ - benefit_title: Sem redirecionamento
+ - benefit_icon: edit
+ - benefit_title: Personalização total
+ - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
+---
+
+---
+product_landing_what_it_offers:
+ - title: O que oferece
+ - message: Combine diferentes funcionalidades para garantir a segurança e a conversão das operações.
+ - benefit_title: Personalização e segurança
+ - benefit_bullet: Desenvolva um checkout personalizado de acordo com as suas preferências.
+ - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
+ - benefit_title: Flexibilidade para integrar
+ - benefit_bullet: Adapte às suas necessidades de negócio.
+ - benefit_bullet: Escolha como as transações serão processadas: [manual]() ou [automaticamente]().
+ - benefit_title: Otimização dos pagamentos
+ - benefit_bullet: Ofereça um processo de compra com menos etapas.
+ - benefit_bullet: Finalização de compra de forma prática e segura.
+---
+
+---
+product_landing_how_works:
+ - title: Como funciona
+ - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
+ - sub_title: Processo de pagamento
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
+ - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
+ - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
+ - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
+ - button_description: Cómo integrar
+ - button_link: /developers/pt/docs/checkout-api-orders/create-aplication
+---
+
+---
+product_landing_what_differentiates:
+ - title: Quais os diferenciais
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
+ - highlight_text: Você está aqui
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_product: Checkout API
+ - column_button_text: Como integrar
+ - column_button_link: /developers/pt/docs/checkout-api-orders/overview
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
+ - column_product: Checkout Bricks
+ - column_button_text: Ir ao resumo
+ - column_button_link: /developers/pt/docs/checkout-bricks/landing
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
+ - column_product: Checkout Pro
+ - column_button_text: Ir ao resumo
+ - column_button_link: /developers/pt/docs/checkout-pro/landing
+ - line_text: Esforço de integração
+ - line_type: dots
+ - line_values: 5|3|2
+ - line_text: Nível de personalização
+ - line_type: dots
+ - line_values: 5|3|2
+ - line_text: Design pronto para configurar
+ - line_type: check
+ - line_values: false|true|true
+ - line_text: Experiência de pagamento
+ - line_type: text
+ - line_values: No seu site|No seu site|No Mercado Pago
+ - line_text: Meios de pagamento
+ - line_type: text
+ - line_values: Cartão de crédito ou débito, Rapipago e Pago Fácil |Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta | Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta
+ - line_text: Disponibilidade por país
+ - line_type: sites
+ - line_values: mla, mlm, mlb|all|all
+---
+
+---
+product_landing_how_integrate:
+ - title: Como integrar
+ - sub_title: Conheça as etapas necessárias para integrar esta solução.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - requirement_title: Pré-requisitos
+ - requirement_table_title: Conta de usuário Mercado Pago
+ - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_title: Chave Pix
+ - requirement_table_list: Caso queira oferecer pagamentos via Pix, é necessário ter as [chaves Pix cadastradas](https://www.youtube.com/watch?v=60tApKYVnkA).
+ - list_title: Processo de integração
+ - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
+ - list_item: Construir o ambiente de desenvolvimento
+ - list_item: Integrar os meios de pagamento desejados
+ - list_item: Configurar as notificações de pagamento
+ - list_item: Testar sua integração
+ - list_item: Salir a producción
+ - button_description: Quero começar a integrar
+ - button_link: /developers/pt/docs/checkout-api-orders/overview
+---
+
+------------
+----[mlm]----
+
+---
+product_landing_hero:
+ - title: Integre Checkout API e personalize toda a experiência
+ - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - benefit_icon: recurring-payments
+ - benefit_title: Para pagamentos online
+ - benefit_icon: categories
+ - benefit_title: Integração avançada
+ - benefit_icon: link
+ - benefit_title: Sem redirecionamento
+ - benefit_icon: edit
+ - benefit_title: Personalização total
+ - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
+---
+
+---
+product_landing_what_it_offers:
+ - title: O que oferece
+ - message: Combine diferentes funcionalidades para garantir a segurança e a conversão das operações.
+ - benefit_title: Personalização e segurança
+ - benefit_bullet: Desenvolva um checkout personalizado de acordo com as suas preferências.
+ - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
+ - benefit_title: Flexibilidade para integrar
+ - benefit_bullet: Adapte às suas necessidades de negócio.
+ - benefit_bullet: Escolha como as transações serão processadas: [manual]() ou [automaticamente]().
+ - benefit_title: Otimização dos pagamentos
+ - benefit_bullet: Ofereça um processo de compra com menos etapas.
+ - benefit_bullet: Finalização de compra de forma prática e segura.
+---
+
+---
+product_landing_how_works:
+ - title: Como funciona
+ - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
+ - sub_title: Processo de pagamento
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
+ - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
+ - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
+ - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
+ - button_description: Cómo integrar
+ - button_link: /developers/pt/docs/checkout-api-orders/create-aplication
+---
+
+---
+product_landing_what_differentiates:
+ - title: Quais os diferenciais
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
+ - highlight_text: Você está aqui
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_product: Checkout API
+ - column_button_text: Como integrar
+ - column_button_link: /developers/pt/docs/checkout-api-orders/overview
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
+ - column_product: Checkout Bricks
+ - column_button_text: Ir ao resumo
+ - column_button_link: /developers/pt/docs/checkout-bricks/landing
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
+ - column_product: Checkout Pro
+ - column_button_text: Ir ao resumo
+ - column_button_link: /developers/pt/docs/checkout-pro/landing
+ - line_text: Esforço de integração
+ - line_type: dots
+ - line_values: 5|3|2
+ - line_text: Nível de personalização
+ - line_type: dots
+ - line_values: 5|3|2
+ - line_text: Design pronto para configurar
+ - line_type: check
+ - line_values: false|true|true
+ - line_text: Experiência de pagamento
+ - line_type: text
+ - line_values: No seu site|No seu site|No Mercado Pago
+ - line_text: Meios de pagamento
+ - line_type: text
+ - line_values: Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander e BBVA Bancomer | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta
+ - line_text: Disponibilidade por país
+ - line_type: sites
+ - line_values: mla, mlm, mlb|all|all
+---
+
+---
+product_landing_how_integrate:
+ - title: Como integrar
+ - sub_title: Conheça as etapas necessárias para integrar esta solução.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - requirement_title: Pré-requisitos
+ - requirement_table_title: Conta de usuário Mercado Pago
+ - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_title: Chave Pix
+ - requirement_table_list: Caso queira oferecer pagamentos via Pix, é necessário ter as [chaves Pix cadastradas](https://www.youtube.com/watch?v=60tApKYVnkA).
+ - list_title: Processo de integração
+ - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
+ - list_item: Construir o ambiente de desenvolvimento
+ - list_item: Integrar os meios de pagamento desejados
+ - list_item: Configurar as notificações de pagamento
+ - list_item: Testar sua integração
+ - list_item: Salir a producción
+ - button_description: Quero começar a integrar
+ - button_link: /developers/pt/docs/checkout-api-orders/overview
+---
+
+------------
