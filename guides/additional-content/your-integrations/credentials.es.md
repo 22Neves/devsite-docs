@@ -95,7 +95,7 @@ Podrás obtener tus credenciales de prueba, **siempre y cuando estén disponible
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.png)
 
 ------------
-----[mla, mlb]----
+----[mla, mlb]---- 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 
 ------------
