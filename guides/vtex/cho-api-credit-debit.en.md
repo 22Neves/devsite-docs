@@ -4,7 +4,7 @@ When setting up ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ -
 
 To configure these payment methods, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment Plans**. Then, follow the steps below: 
 
-1. Click on the **+ (Add new payment plan for...)** button. 
+1. Click on the **+ (Add new payment term for...)** button. 
 2. Within the **Debit Card** or **Credit Card** categories, you will find the different card brands that you can offer. Click on them and configure each one individually to enable them. You can get more information about this configuration in the [VTEX tutorials section](https://help.vtex.com/en/tutorial/payment-conditions--tutorials_455#interest-free-installments). 
 3. After selecting the card brand you want to offer, fill in the fields displayed on the next screen: 
     1. Enter the **Rule name**, which will allow you to identify this payment method. 
@@ -19,11 +19,6 @@ To configure these payment methods, access the administration panel of your VTEX
 > You can also configure **special payment conditions**. Click [here](https://help.vtex.com/en/tutorial/special-conditions--tutorials_456?&utm_source=admin) for more information. 
 
 4. Click **Save** to activate the configuration for this card, and if desired, repeat the process to configure other brands. 
-
-----[mlb, mla, mlm, mco, mpe, mlu]----
-![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-en.gif) 
-
-------------
 
 ## Installments and interest 
 

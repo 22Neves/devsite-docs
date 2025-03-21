@@ -2,7 +2,7 @@
 
 Para configurar o Checkout Pro, acesse o painel de administração da sua plataforma VTEX, e vá para **Pagamentos > Configuração > Planos de pagamento**. E então, siga as instruções abaixo: 
 
-1. Clique no botão **+ (Adicionar novo plano de pagamento para...)**. 
+1. Clique no botão **+ (Adicionar nova condição de pagamento para...)**. 
 2. Dentro da categoria "Outro", procure por **MercadoPagoPro**.
 3. Preencha os campos exibidos na próxima tela: 
     1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 

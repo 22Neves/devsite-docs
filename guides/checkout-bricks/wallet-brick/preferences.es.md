@@ -1097,8 +1097,6 @@ Al final del proceso de pago, tienes la opción de redireccionar al comprador a 
 
 Si quieres que la redirección sea automática para los pagos aprobados, sin mostrar un botón de retorno, también debes agregar el atributo `auto_return` con el valor de `approved`.
 
-![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
-
 | Atributo | Descripción |
 | ------------ | -------- |
 | `auto_return` | Redirige automáticamente a los compradores al sitio cuando el pago finaliza como aprobado. El valor predeterminado es `approved`. |

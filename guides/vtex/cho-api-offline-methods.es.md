@@ -49,7 +49,7 @@ Configurando Checkout API en tiendas VTEX, puedes ofrecer pagos por medios offli
 
 Para configurar estos medios de pago, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos > Configuración > Planes de pago**. Luego, sigue las instrucciones a continuación:
 
-1. Haz clic en el botón **+ (Agregar nuevo plan de pago para ...)**.
+1. Haz clic en el botón **+ (Añadir nueva condición de pago para...)**.
 2. Dentro de la categoría "Otro", busca por el **medio de pago offline** que quieres ofrecer. Puedes elegir más de uno, pero deberás realizar las configuraciones siguientes de manera individual.
 3. Completa los campos que te mostrará la pantalla siguiente:
     1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
