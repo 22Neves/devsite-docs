@@ -33,13 +33,16 @@ Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu
 
 <br>
 
-:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="Interdum"}
+:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="1"}
 Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspendisse vel feugiat sapien. Fusce euismod dui orci, vel euismod enim finibus vitae. Nullam efficitur non arcu et laoreet. Praesent maximus, odio nec ullamcorper maximus, nibh justo posuere felis, non convallis justo mauris eget urna. Phasellus rutrum diam at semper convallis. Sed non augue condimentum neque euismod dictum vel quis quam. Sed ac porta massa. Donec et auctor nulla. Morbi vitae ullamcorper arcu. 
 :::
-:::AccordionComponent{title="Proin in semper ante. Donec ultrices ligula rutrum maximus consectetur." pill="Proin"}
+:::AccordionComponent{title="Proin in semper ante. Donec ultrices ligula rutrum maximus consectetur." pill="2"}
 Suspendisse ac dolor a diam viverra volutpat eu a ipsum. Etiam vitae dui libero. Suspendisse molestie tellus sit amet purus blandit maximus. Donec rutrum tellus felis, ac placerat diam efficitur a. Phasellus lorem elit, egestas et nisi eget, dictum cursus velit. Maecenas dui neque, suscipit ac bibendum at, ultricies id purus. Nunc non elit non eros aliquet molestie. Curabitur lobortis egestas dolor, id auctor justo commodo sed. 
 :::
-:::AccordionComponent{title="Vivamus vel efficitur ante." pill="Donec"}
+:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="3"}
+Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspendisse vel feugiat sapien. Fusce euismod dui orci, vel euismod enim finibus vitae. Nullam efficitur non arcu et laoreet. Praesent maximus, odio nec ullamcorper maximus, nibh justo posuere felis, non convallis justo mauris eget urna. Phasellus rutrum diam at semper convallis. Sed non augue condimentum neque euismod dictum vel quis quam. Sed ac porta massa. Donec et auctor nulla. Morbi vitae ullamcorper arcu. 
+:::
+:::AccordionComponent{title="Vivamus vel efficitur ante." pill="Opcional"}
 Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim. Vivamus rhoncus, ipsum a egestas vulputate, nunc libero semper elit, et elementum neque orci eget ipsum. Vivamus aliquam ex felis, quis varius ex cursus vulputate. Sed facilisis tempus molestie. Integer sed blandit purus, sed elementum metus. 
 :::
 
@@ -48,7 +51,7 @@ Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim. Vivamus rhoncus
 
 ## Tag
 
-Aenean velit :TagComponent{textTag="NON" size="small" hierarchy="loud" color="orange"} lorem, tristique eu lacinia non, :TagComponent{textTag="VITAE" size="small" hierarchy="loud" color="accent"} vitae lacus. Nam placerat sed. Sed viverra nunc :TagComponent{textTag="SIT" size="small" hierarchy="loud" color="red"} congue pellentesque. In a diam sit amet velit tempor :TagComponent{textTag="AMET" size="small" hierarchy="loud" color="green"} pellentesque. Vivamus luctus at :TagComponent{textTag="NULLA" size="small" hierarchy="loud" color="gray"} sed dignissim.
+Aenean velit :TagComponent{textTag="NON" size="small" hierarchy="loud" color="orange"} lorem, tristique eu lacinia non, [Api Order :TagComponent{textTag="API"}](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli) vitae lacus. Nam placerat sed. Sed viverra nunc :TagComponent{textTag="SIT" size="small" hierarchy="loud" color="red"} congue pellentesque. In a diam sit amet velit [Tempor](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli) :TagComponent{textTag="AMET" size="small" hierarchy="loud" color="green"} pellentesque. Vivamus luctus at :TagComponent{textTag="NULLA" size="small" hierarchy="loud" color="gray"} sed dignissim.
 
 ## Diagramas
 
