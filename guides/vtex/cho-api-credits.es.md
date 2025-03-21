@@ -7,8 +7,8 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 
 Para configurar la Linha de Crédito en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue las instrucciones a continuación:
 
-1. Haz clic en el botón **+ (Agregar nuevo plan de pago para ...)**. 
-2. Dentro de la categoría "Otro", busca por **Linha de Crédito** y selecciona esa opción.
+1. Haz clic en el botón **+ (Añadir nueva condición de pago para...)**. 
+2. Dentro de la categoría "Otro", busca por **Buy Now Pay Later Mercado Pago** y selecciona esa opción.
 3. Completa los campos que te mostrará la pantalla siguiente: 
     1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
     2. En "Proceso con la afiliación", selecciona **MercadoPagoV2**. 
