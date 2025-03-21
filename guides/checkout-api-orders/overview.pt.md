@@ -98,9 +98,9 @@ product_landing_how_integrate:
  - list_item: Integrar os meios de pagamento desejados
  - list_item: Configurar as notificações de pagamento
  - list_item: Testar sua integração
- - list_item: Salir a producción
+ - list_item: Sair à produção
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/pt/docs/checkout-api/overview
 ---
 
 ------------
@@ -148,7 +148,7 @@ product_landing_how_works:
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
  - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Cómo integrar
- - button_link: /developers/pt/docs/checkout-api-orders/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -159,7 +159,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout API
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api-orders/overview
+ - column_button_link: /developers/pt/docs/checkout-api/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -206,7 +206,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Salir a producción
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/pt/docs/checkout-api/overview
 ---
 
 ------------
@@ -254,7 +254,7 @@ product_landing_how_works:
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
  - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Cómo integrar
- - button_link: /developers/pt/docs/checkout-api-orders/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -265,7 +265,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout API
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api-orders/overview
+ - column_button_link: /developers/pt/docs/checkout-api/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -312,7 +312,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Salir a producción
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/pt/docs/checkout-api/overview
 ---
 
 ------------

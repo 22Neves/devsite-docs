@@ -22,7 +22,7 @@ product_landing_what_it_offers:
  - message: Combina distintas funcionalidades para garantizar la seguridad y conversión de las operaciones.
  - benefit_title: API unificada
  - benefit_bullet: Ofrece múltiples experiencias de pago sin trabajar con varias APIs separadas.
- - benefit_bullet: Elige cómo procesar tus transacciones: automática o manualmente.
+ - benefit_bullet: Elige cómo procesar tus transacciones: [automática]() o [manualmente]().
  - benefit_title: Personalización y seguridad
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
@@ -158,7 +158,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-order/overview
+ - column_button_link: /developers/es/docs/checkout-api/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -208,7 +208,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/pt/docs/checkout-api/overview
 ---
 
 ------------
@@ -265,7 +265,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-order/overview
+ - column_button_link: /developers/es/docs/checkout-api/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -315,7 +315,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/pt/docs/checkout-api/overview
 ---
 
 ------------
