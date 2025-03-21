@@ -114,11 +114,11 @@ You can obtain your test credentials, **as long as they are available for your i
 When creating an application, if you selected a Mercado Pago product **that does not require test credentials**, you will see the following screen:
 
 ----[mla, mlu, mlc, mlm, mco, mpe]----
-![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v2.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-es.png)
 
 ------------
 ----[mlb]----
-![Blocked test account screen](/images/credentials/blocked-test-credentials-es-v3.png)
+![Blocked test account screen](/images/credentials/blocked-test-credentials-pt.png)
 
 ------------
 

@@ -21,11 +21,6 @@ document.body.appendChild(script);
 
 5. Haz clic en **Guardar**.
 
-----[mlb, mla, mlm, mco, mpe, mlu]----
-![Configuração de fingerprint](/images/vtex/devicefingerprint-imagenv2-es.gif)
-
-------------
-
 Ya tienes Device Fingerprint configurado para mejorar la evaluación del riesgo de fraude.
 
 > NOTE

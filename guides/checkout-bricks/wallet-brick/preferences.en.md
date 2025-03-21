@@ -1101,8 +1101,6 @@ At the end of the checkout process, you have the option to redirect the buyer to
 
 You can also add the `auto_return` attribute with the `approved` value if you want the redirect for approved payments to be automatic without rendering a return button.
 
-![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
-
 | Attribute | Description |
 | ------------ | -------- |
 | `auto_return` | Buyers are automatically redirected to the site when payment is approved. The default value is `approved`. |
