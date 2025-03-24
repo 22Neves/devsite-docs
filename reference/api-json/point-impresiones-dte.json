@@ -7,9 +7,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows the creation of a new print action for Mercado Pago Point. Base64 format is supported for images. If successful, the response will return a 201 status code.",
-          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201",
-          "pt": "Este endpoint permite a criação de uma nova ação de impressão para o Ponto Mercado Pago. O formato Base64 é compatível com imagens. Em caso de sucesso, a resposta retornará um código de status 201"
+          "en": "This endpoint allows the creation of a new print action for Mercado Pago Point, whether for DTEs, custom prints, or images. For images, the Base64 format is supported. In case of success, the response will return a status code of 201",
+          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de DTEs, impresiones personalizadas o imágenes. Para imágenes, se soporta el formato Base64. En caso de éxito, la respuesta devolverá un código de estado 201",
+          "pt": "Este endpoint permite a criação de uma nova ação de impressão para o Mercado Pago Point, seja de DTEs, impressões personalizadas ou imagens. Para imagens, é suportado o formato Base64. Em caso de sucesso, a resposta retornará um código de status 201"
         },
         "parameters": [
           {
