@@ -24,10 +24,18 @@ The Card Payment Brick layout is based on the best UX practices, so that it is p
 ![cardform](checkout-bricks/card-form-mlc-en.png)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
-![cardform](checkout-bricks/card-form-en.png)
+----[mlm]----
+![cardform](checkout-bricks/card-form-mlm-en.png)
 
 ------------
+----[mla, mlb]----
+![cardform](checkout-bricks/card-form-en.png)
+
+------------ 
+----[mco, mpe, mlu]----
+![cardform](checkout-bricks/card-form-all-en.png)
+
+------------ 
 
 | Element  | Characteristics  | Comments  |
 | --- | --- | --- |

@@ -768,6 +768,6 @@ A continuación, te mostramos ejemplos de mensajes que puedes ofrecerle, de acue
 
 ![imagen de transacción rechazada](/images/api/pse-callback-rejected.png)
 
-## Expiración
+## Expiración 
 
 El pago creado con **PSE** expira automáticamente dentro de los 15 minutos de generado y su status pasa a ser `rechazado`. Si el comprador no accede a la web y realiza el pago dentro de ese tiempo, será necesario generar uno nuevo.

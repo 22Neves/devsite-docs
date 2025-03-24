@@ -17,7 +17,7 @@ Ao configurar o Checkout API em lojas VTEX, você pode oferecer pagamentos com m
 >
 > Importante
 >
-> Para oferecer o PSE como método de pagamento, certifique-se primeiro de instalar o **aplicativo PSE desenvolvido pela VTEX**. Se ainda não o fez, acesse **Configuração de Conta >Aplicativos > Loja de Aplicativos**, e procure por **Banks for PSE**. 
+> Para oferecer o PSE como método de pagamento, certifique-se primeiro de instalar o **aplicativo PSE desenvolvido pela VTEX**. Se ainda não o fez, acesse **Configuração de Conta > Aplicativos > Loja de Aplicativos**, e procure por **Banks for PSE**. 
 > <br>
 > Se o aplicativo não estiver disponível na loja, solicite sua instalação à equipe da VTEX por meio de um ticket no [Suporte VTEX](https://help.vtex.com/pt/support).
 
@@ -45,7 +45,7 @@ Ao configurar o Checkout API em lojas VTEX, você pode disponibilizar opções d
 
 Para configurar esses meios de pagamento, acesse o painel de administração da plataforma VTEX, e vá para **Pagamentos > Configuração > Planos de pagamento**. Então, siga as instruções abaixo: 
 
-1. Clique no botão **+ (Adicionar novo plano de pagamento para...)**. 
+1. Clique no botão **+ (Adicionar nova condição de pagamento para...)**. 
 2. Dentro da categoria "Outro", procure por o **meio de pagamento offline** que você deseja oferecer. Você pode escolher mais de um, mas precisará fazer as seguintes configurações individualmente.
 3. Preencha os campos exibidos na próxima tela: 
     1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 

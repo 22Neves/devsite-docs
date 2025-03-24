@@ -71,11 +71,11 @@ Nesta seção, você tem um passo a passo para testar sua integração, permitin
 
 Além disso, você tem links diretos para a documentação correspondente, bem como uma barra de status que lhe permitirá visualizar facilmente o seu progresso.
 
-----[mlc]----
+----[mlc, mlu, mlm, mco, mpe]----
 ![tela de validação de teste de integração](/images/dashboard/testing-pt.png)
 
 ------------
-----[mla, mlm, mlu, mco, mlb, mpe]----
+----[mla, mlb]----
 ![tela de validação de teste de integração](/images/dashboard/testing-pt.gif)
 
 ------------
