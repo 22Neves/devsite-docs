@@ -19,7 +19,7 @@ Para crear una **aplicación**, sigue los pasos a continuación.
 
 3. Ingresa un **nombre** para identificar tu aplicación. El límite es de hasta 50 caracteres alfanuméricos.
 4. Ante la pregunta por el tipo de solución de pago a integrar, selecciona **Pagos online**, que es el tipo de solución correspondiente a tiendas virtuales.
-5. Como estás creando una aplicación para ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, en "**¿Está utilizando una plataforma de e-commerce?**", indique que **no** está utilizando una [plataforma de e-commerce](/developers/es/docs#platform-list), ya que esta solución es para integrarse en sitios de desarrollo propio.
+5. Como estás creando una aplicación para ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API, ------------ en "**¿Está utilizando una plataforma de e-commerce?**", indique que **no** está utilizando una [plataforma de e-commerce](/developers/es/docs#platform-list), ya que esta solución es para integrarse en sitios de desarrollo propio.
 6. Luego, elige ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------  como el producto que estás integrando.
 7. En "Modelo de integración", selecciona el modelo de integración según tu modelo de negocio.
 8. Acepta la ----[mlb]---- [Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Declaración de Privacidad](https://www.mercadopago.com/privacidad) ------------ y los [Términos y condiciones](/developers/es/docs/resources/legal/terms-and-conditions) y haz clic en **Crear aplicación**.

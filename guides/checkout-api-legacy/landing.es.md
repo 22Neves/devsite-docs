@@ -110,4 +110,5 @@ available_payments: mercadopago, atm, credit, debit, yape
 
 ----
 ------------
+
 > Para obtener detalles sobre los medios de pago aceptados en cada país, consulte la lista completa con [disponibilidad de medios de pago.](/developers/es/docs/sales-processing/payment-methods)

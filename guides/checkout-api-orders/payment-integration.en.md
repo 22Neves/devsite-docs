@@ -1,6 +1,6 @@
 #  Configure payment methods
 
-With ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, you can choose which payment methods you want to make available in online stores.
+With ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API,------------ you can choose which payment methods you want to make available in online stores.
 
 The integration process is based on the individual configuration of each of these payment methods within the previously established common environment, which facilitates the integration experience while allowing for a greater level of customization.
 
