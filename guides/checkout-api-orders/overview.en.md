@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: /api-orders/overview-es.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -112,7 +112,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -144,7 +144,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: /api-orders/overview-es.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -220,7 +220,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -252,7 +252,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: /api-orders/overview-es.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.

@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integre Checkout Transparente e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: /api-orders/overview-pt.gif
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
@@ -110,7 +110,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integre Checkout API e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -142,7 +142,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: /api-orders/overview-pt.gif
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
@@ -216,7 +216,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integre Checkout API e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -248,7 +248,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: /api-orders/overview-pt.gif
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
