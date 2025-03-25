@@ -161,3 +161,32 @@ Duis pharetra, felis non blandit vestibulum, felis leo lobortis lorem, vel dapib
 
 <br>
 <br>
+
+## Checklist
+
+:::CheckboxComponent{label="Maecenas pulvinar congue accumsan."}
+Aenean in urna ac dui gravida volutpat eget vitae nisi. Nullam eu sagittis metus, in laoreet nisi. Vivamus suscipit urna mauris, ac sollicitudin tellus aliquet eget. Proin vel aliquet nibh, eu aliquam lorem. Aliquam consectetur odio lorem, non congue dui porttitor id.
+:::
+
+:::CheckboxComponent{label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida."}
+Proin metus nibh, fringilla sed augue commodo, sodales faucibus nulla. Fusce sed tortor et dui tincidunt ultricies. Donec bibendum dolor vel accumsan consectetur. Maecenas sed nunc euismod, volutpat elit at, facilisis mauris. Ut condimentum dapibus ante ut malesuada.
+:::
+
+:::CheckboxComponent{label="Fusce blandit tincidunt risus, eget faucibus tortor consequat vel. Etiam rhoncus laoreet blandit." defaultChecked=false}
+Proin fermentum enim eu euismod interdum. Nunc efficitur justo velit, ac cursus tortor tincidunt quis. In rhoncus nulla neque, nec iaculis nulla malesuada id. Proin vel commodo erat, in consectetur neque. Proin nibh velit, finibus quis iaculis sed, eleifend nec ex. Donec diam est, molestie fringilla diam a, faucibus malesuada neque.
+:::
+
+:::CheckboxComponent{label="Nullam dignissim mattis sem, at accumsan turpis lacinia ut. Aliquam ultrices sollicitudin dui, at rutrum velit facilisis vel."}
+Quisque ultrices venenatis felis, ac suscipit velit viverra vel. Curabitur semper vestibulum nunc ac rhoncus. Aenean molestie velit nulla, eget placerat odio venenatis eget. Suspendisse luctus purus quis tellus scelerisque dictum. Quisque nec odio ut neque blandit malesuada vel et augue. Praesent porta semper rhoncus. Quisque efficitur imperdiet est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vehicula eros odio, vel tempor dolor tempor vitae. Duis faucibus tortor sem, eget volutpat tortor varius non.
+:::
+
+# Hyperlink
+
+Nam non enim sed purus condimentum varius. Orci [external link](https://www.google.com.br) natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec libero ac nisi rutrum consequat et quis justo. In lacinia imperdiet imperdiet. Nullam a dignissim ante. Aenean cursus [internal doc link](/developers/pt/docs/checkout-pro/integrate-preferences) turpis, vitae sodales risus dignissim quis. Suspendisse potenti.
+
+#  Ícone de cópia de URL
+
+# H1 Lorem ipsum dolor sit amet
+## H2 Curabitur non scelerisque erat
+### H3 Donec quis felis at quam efficitur sagittis
+#### H4 Curabitur mollis dui non convallis volutpat
