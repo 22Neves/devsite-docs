@@ -1,4 +1,6 @@
+
 ----[mla]----
+
 Outros meios de pagamento
 
 Com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ do Mercado Pago, também é possível oferecer pagamentos com **Rapipago** e/ou **Pago Fácil**.

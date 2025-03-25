@@ -1,4 +1,6 @@
+
 ----[mla]----
+
 Otros medios de pago
 
 Con Checkout API de Mercado Pago, también es posible ofrecer pagos con **Rapipago** y/o **Pago Fácil**. 
