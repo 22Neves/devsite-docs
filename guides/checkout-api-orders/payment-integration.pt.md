@@ -6,7 +6,7 @@ O processo de integração se baseia na configuração individual desses meios d
 
 ![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-pt.png) 
 
-Se desejar, é possível obter uma lista detalhada com todos os meios de pagamento disponíveis para integração enviando um **GET** com seu *Access Token* ao endpoint [/v1/payment_methods](/developers/pt/reference/payment_methods/_payment_methods/get) e executando a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
+Se desejar, é possível obter uma lista detalhada com todos os meios de pagamento disponíveis para integração enviando um **GET** com seu :toolTipComponent[_Acess Token_]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no backend. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste** ou **Produção > Credenciais de produção**."} ao endpoint [/v1/payment_methods :TagComponent{textTag="API"}](/developers/pt/reference/payment_methods/_payment_methods/get) e executando a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
 
 [[[
 ```php
@@ -82,7 +82,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cartão
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -92,7 +92,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Pix
  - card_description: Receba pagamentos eletrônicos instantâneos, oferecendo aos seus clientes a possibilidade de pagar a partir de um código QR ou um código de pagamento.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/pix
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -102,7 +102,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Boleto bancário
  - card_description: Receba em sua conta os pagamentos que o cliente realizar através de um boleto bancário.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/boleto
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -138,7 +138,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cartão
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -148,7 +148,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Outros meios de pagamento
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do Rapipago ou Pago Fácil.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -183,7 +183,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cartão
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -193,7 +193,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Outros meios de pagamento
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do OXXO, Paycash, Citibanamex, Santander ou BBVA Bancomer.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -201,9 +201,9 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Pay
- - card_title: Transferencia SPEI
+ - card_title: Transferências SPEI
  - card_description: Receba pagamentos eletrônicos instantâneos oferecendo aos seus clientes a possibilidade de pagar de qualquer banco ou instituição financeira utilizando a sua CLABE.
- - card_button: /developers/pt/docs/checkout-api-orders/xxx
+ - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false

@@ -2,7 +2,7 @@
 
 **Applications** are registered entities within Mercado Pago that act as a unique identifier for managing the authentication and authorization of your integrations. In other words, they serve as the link between your development and Mercado Pago, and they constitute the first stage in carrying out the integration.
 
-With them, you can access the necessary credentials to interact with our APIs or specific services, as well as manage and organize your integration.
+With them, you can access the necessary :toolTipComponent[credentials]{content="Unique access keys used to identify an integration in your account, linked to your application. For more information, access the [Credentials documentation](/developers/en/docs/checkout-api/resources/credentials)."} to interact with our APIs or specific services, as well as manage and organize your integration.
 
 To create an **application**, follow the steps below.
 
@@ -26,7 +26,7 @@ To create an **application**, follow the steps below.
 
 3. Enter a **name** to identify your application. The limit is up to 50 alphanumeric characters.
 4. When asked about the **type of payment solution to integrate**, select **Online payments**, which is the type of solution corresponding to virtual stores.
-5. Since you are creating an application for the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, in "**Are you using an e-commerce platform?**", indicate that you are **not** using an e-commerce platform, as this solution is for integration into self-developed sites.
+5. Since you are creating an application for the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, in "**Are you using an e-commerce platform?**", indicate that you are **not** using an [e-commerce platform](/developers/en/docs#platform-list), as this solution is for integration into self-developed sites.
 6. Then, choose ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------  as the product you are integrating.
 7. In "Integration model", select the integration model that aligns with your business model.
 8. Accept the ----[mlb]---- [Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) and click on **Create application**.
@@ -42,8 +42,6 @@ To create an **application**, follow the steps below.
 
 In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [Application details](/developers/en/docs/your-integrations/application-details) for each of them.
 
-> WARNING
->
-> Important
+> NOTE
 >
 > If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/your-integrations/application-details).

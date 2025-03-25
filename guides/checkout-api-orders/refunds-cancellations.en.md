@@ -6,7 +6,7 @@ A **cancellation** is made when a payment has not yet been approved, and the lim
 
 See below for more information on refunds and cancellations.
 
-> WARNING
+> RED_MESSAGE
 >
 > Attention
 >
@@ -16,7 +16,7 @@ See below for more information on refunds and cancellations.
 
 Transactions that occur when a specific charge is reversed, and the amounts paid are returned to the buyer. This means the customer will receive the payment amounts back.
 
-There are two ways to [process a refund](/developers/en/reference/order/online-payments/refund/post):
+There are two ways to [process a refund :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/refund/post):
 
 - **Total**: when the total amount of the sale is returned to the buyer. In this case, the amount to be refunded should not be specified in the `body` of the request, which should be sent empty.
 - **Partial**: when only part of the amount paid is returned to the buyer. In this case, the amount to be refunded should be specified in the `body` of the request along with the transaction ID.
@@ -28,7 +28,7 @@ Before processing a refund, it is important to consider the factors below.
 - **Account balance**: you must have sufficient balance available in your account to process the refund; otherwise, the transaction will not be completed.
 - **Processing the order in manual mode**: it will be possible to refund only a specific transaction, either partially or in full, but for the order to be fully refunded, it is necessary that **all transactions manually included** are completely reversed.
 
-To process full or partial refunds for a payment and to check the refunds made in your store, visit our API Reference and access the [API to Refund an order](/developers/en/reference/order/online-payments/refund/post).
+To process full or partial refunds for a payment and to check the refunds made in your store, visit our API Reference and access the endpoint [Refund an order :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/refund/post).
 
 ## Cancellations
 
@@ -36,7 +36,7 @@ Transactions that occur when a purchase is made, but for some reason, the paymen
 
 Before canceling a purchase, it is important to pay attention to the following factors:
 
-- **Payment status**: cancellations can only be made if the payment status is `action_required`. These statuses are displayed in the response of the call to the [Get order API](/developers/en/reference/order/online-payments/get-order/get) in the `status` and `status_detail` fields, respectively.
-- **Expiration period**: a payment expires after 30 days without confirmation, and the cancellation is automatic. The final status of this transaction will appear as `cancelled` or `expired`. This information will be shown in the response of the call to the [Cancel order API](/developers/en/reference/order/online-payments/cancel-order/post), in the `status` and `status_detail` fields, respectively.
+- **Payment status**: cancellations can only be made if the payment status is `action_required`. These statuses are displayed in the response of the call to the [Get order :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/get-order/get) in the `status` and `status_detail` fields, respectively.
+- **Expiration period**: a payment expires after 30 days without confirmation, and the cancellation is automatic. The final status of this transaction will appear as `cancelled` or `expired`. This information will be shown in the response of the call to the [Cancel order :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/cancel-order/post), in the `status` and `status_detail` fields, respectively.
 
-Visit our API Reference to access the [Cancel order by ID API](/developers/en/reference/order/online-payments/cancel-order/post).
+Visit our API Reference to access the [Cancel order by ID :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/cancel-order/post).

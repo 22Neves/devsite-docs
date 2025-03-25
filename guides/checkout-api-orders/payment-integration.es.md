@@ -6,7 +6,7 @@ El proceso de integración, luego de la inclusión e inicialización de la bibli
 
 ![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-es.png) 
 
-Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu *Access Token* al endpoint [/v1/payment_methods](/developers/es/reference/payment_methods/_payment_methods/get) o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
+Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu [_Acess Token_]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**."} al endpoint [/v1/payment_methods :TagComponent{textTag="API"}](/developers/es/reference/payment_methods/_payment_methods/get) o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
@@ -82,7 +82,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Tarjeta
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -92,7 +92,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Pix
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes un código QR o un código de pago.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/pix
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -102,7 +102,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Boleto bancário
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza a través de boleto bancário.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/boleto
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -139,7 +139,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Tarjeta
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -149,7 +149,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Otros medios de pago
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de Rapipago o Pago Fácil.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/other-payment-methods
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -184,7 +184,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Tarjeta
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -194,7 +194,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Otros medios de pago
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de OXXO, Paycash, Citibanamex, Santander o BBVA Bancomer.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/other-payment-methods
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -204,7 +204,7 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Transferencia SPEI
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes la posibilidad de pagar desde cualquier banco o institución financiera utilizando su CLABE.
- - card_button: /developers/es/docs/checkout-api-orders/xxx
+ - card_button: /developers/es/docs/checkout-api/payment-integration/spei
  - card_buttonDescription: Saber más
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false

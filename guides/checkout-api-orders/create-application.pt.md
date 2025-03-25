@@ -2,7 +2,7 @@
 
 As **aplicações** são entidades registradas dentro do Mercado Pago que atuam como um identificador único para gerenciar a autenticação e a autorização de suas integrações. Ou seja, são o vínculo entre seu desenvolvimento e o Mercado Pago e constituem como a primeira etapa para realizar a integração.
 
-Com elas, é possível acessar as credenciais necessárias para interagir com nossas APIs ou serviços específicos, além de gerenciar e organizar sua integração.
+Com elas, é possível acessar as :toolTipComponent[credenciais]{content="Chaves de acesso únicas que usamos para identificar uma integração na sua conta, estando vinculadas à sua aplicação. Para mais informações, acesse a [documentação de Credenciais](/developers/pt/docs/checkout-api/resources/credentials)."} necessárias para interagir com nossas APIs ou serviços específicos, além de gerenciar e organizar sua integração.
 
 Para criar uma **aplicação**, siga os passos abaixo.
 
@@ -19,7 +19,7 @@ Para criar uma **aplicação**, siga os passos abaixo.
 
 3. Insira um **nome** para identificar sua aplicação. O limite é de até 50 caracteres alfanuméricos.
 4. Diante da pergunta sobre o tipo de solução de pagamento a ser integrada, selecione **Pagamentos online**, que é o tipo de solução correspondente a lojas virtuais.
-5. Como está sendo criada uma aplicação para a ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, em “**Você está usando uma plataforma de e-commerce?**”, indique que **não** está utilizando uma plataforma de e-commerce, uma vez que esta solução é para ser integrada em sites de desenvolvimento próprio.
+5. Como está sendo criada uma aplicação para a ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, em “**Você está usando uma plataforma de e-commerce?**”, indique que **não** está utilizando uma [plataforma de e-commerce](/developers/pt/docs#platform-list), uma vez que esta solução é para ser integrada em sites de desenvolvimento próprio.
 6. Em seguida, escolha ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------ como o produto que você está integrando.
 7. Em "Modelo de integração", selecione o modelo de integração de acordo com o seu modelo de negócio.
 8. Aceite a ----[mlb]---- [Declaração de Privacidade](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Declaração de Privacidade](https://www.mercadopago.com/privacidad) ------------ e os [Termos e Condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em **Criar aplicação**.
@@ -28,8 +28,6 @@ Para criar uma **aplicação**, siga os passos abaixo.
 
 Em [Suas integrações](/developers/panel/app), é possível consultar a lista de todas as suas aplicações criadas e acessar os [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details) de cada uma delas.
 
-> WARNING
->
-> Importante
+> NOTE
 >
 > Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details).

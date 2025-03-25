@@ -6,7 +6,7 @@ Una **cancelación** se realiza realiza cuando un pago todavía no fue aprobado,
 
 Accede a continuación a más información sobre reembolsos y cancelaciones.
 
-> WARNING
+> RED_MESSAGE
 >
 > Atención
 >
@@ -16,7 +16,7 @@ Accede a continuación a más información sobre reembolsos y cancelaciones.
 
 Son transacciones que se realizan cuando un cargo determinado es revertido y los montos pagados regresan al comprador. Esto significa que el cliente recibirá de vuelta el valor del pago.
 
-Es posible [realizar un reembolso](/developers/es/reference/order/online-payments/refund/post) de dos maneras: 
+Es posible [realizar un reembolso :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/refund/post) de dos maneras: 
 
 - **Total**: cuando el importe total de la venta es devuelto al comprador. En este caso, no se debe indicar el monto a ser reembolsado en el `body` de la solicitud, que debe enviarse vacío.
 - **Parcial**: cuando solo se devuelve una parte del importe pagado al comprador. En este caso, se debe especificar la cantidad a ser reembolsada en el `body` de la solicitud junto con el ID de la transacción.
@@ -28,7 +28,7 @@ Medio de pago: para pagos con tarjeta de crédito, el monto se devolverá direct
 - **Dinero en cuenta**: es necesario tener suficiente saldo disponible en tu cuenta para efectuar la devolución del monto; de lo contrario, la transacción no se realizará.
 - **Procesamiento del pedido en modo manual**: se podrá reembolsar solo una transacción específica, ya sea parcial o totalmente, pero para que el pedido sea reembolsado en su totalidad es necesario que **todas sus transacciones incluidas manualmente** sean revertidas por completo.
 
-Para realizar reembolsos totales o parciales de un pago y consultar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede a la [API para Reembolsar una order](/developers/es/reference/order/online-payments/refund/post).
+Para realizar reembolsos totales o parciales de un pago y consultar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede al emdpoint de [Reembolsar una order :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/refund/post).
 
 ## Cancelaciones
 
@@ -36,7 +36,7 @@ Las cancelaciones son transacciones que ocurren cuando se realiza una compra, pe
 
 Antes de realizar la cancelación de una compra, es importante prestar atención a los siguientes factores:
 
-- **Status del pago**: las cancelaciones solo se podrán realizar si el estado de pago es `action_required`. Este estado se muestra en la respuesta de la llamada a la API [Obtener order](/developers/es/reference/order/online-payments/get-order/get), en los campos `status` y `status_detail`, respectivamente.
-- **Plazo de vencimiento**: un pago expira después de 30 días sin confirmación y la cancelación es automática. El estado final de esta transacción aparecerá como `cancelled` o `expired`. Esta información se mostrará en la respuesta de la llamada a la [API de Cancelar order](/developers/es/reference/order/online-payments/cancel-order/post), en los campos `status` y `status_detail`, respectivamente.
+- **Status del pago**: las cancelaciones solo se podrán realizar si el estado de pago es `action_required`. Este estado se muestra en la respuesta de la llamada al endpoint de [Obtener order :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/get-order/get), en los campos `status` y `status_detail`, respectivamente.
+- **Plazo de vencimiento**: un pago expira después de 30 días sin confirmación y la cancelación es automática. El estado final de esta transacción aparecerá como `cancelled` o `expired`. Esta información se mostrará en la respuesta de la llamada al endpoint de [Cancelar order :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/cancel-order/post), en los campos `status` y `status_detail`, respectivamente.
 
-Visita nuestra Referencia API para acceder a la API de [Cancelar order por ID](/developers/es/reference/order/online-payments/cancel-order/post).
+Visita nuestra Referencia API para acceder al endpoint [Cancelar order por ID :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/cancel-order/post).

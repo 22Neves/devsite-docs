@@ -28,9 +28,9 @@ npm install @mercadopago/sdk-js
 >
 > Initialize Mercado Pago Library
 
-To initialize the Mercado Pago library, you will need to use your *credentials*, unique keys that identify an integration in your account. They are directly linked to the application you created for that integration and will allow you to develop your project with the best security measures from Mercado Pago.
+To initialize the Mercado Pago library, you will need to use your :toolTipComponent[credentials]{content="Unique access keys used to identify an integration in your account, linked to your application. For more information, access the [Credentials documentation](/developers/en/docs/checkout-api/resources/credentials)."}, unique keys that identify an integration in your account. They are directly linked to the [application]{content="Entity registered in Mercado Pago that acts as an identifier for managing your integrations. For more information, access the [Application details documentation](/developers/en/docs/your-integrations/application-details)."} you created for that integration and will allow you to develop your project with the best security measures from Mercado Pago.
 
-At this stage, you should use your *test Public Key*, which you can access by going to the [Application details](/developers/en/docs/your-integrations/application-details) in [Your integrations](/developers/panel/app), under the title **Tests > Test credentials** in the menu located on the left side of the screen.
+At this stage, you should use your [test Public Key]{content="Testing public key, used in the frontend to access information and encrypt data, whether in the development stage or the testing stage. You can access it through **Your integrations > Application details > Testing > Testing credentials**."}, which you can access by going to the [Application details](/developers/en/docs/your-integrations/application-details) in [Your integrations](/developers/panel/app), under the title **Tests > Test credentials** in the menu located on the left side of the screen.
 
 ----[mlb]----
 ![mercado-pago-library](/images/api-orders/development-environment-publickey-pt.png) 
@@ -41,9 +41,11 @@ At this stage, you should use your *test Public Key*, which you can access by go
 
 ------------
 
+> NEUTRAL_MESSAGE
+>
 > If you are developing for someone else, you will be able to access the credentials of the applications you do not manage. Refer to Share Credentials for more information.
 
-Once you have located the *Public Key*, copy it and include it in the frontend. include your in the frontend. By doing this, you will be able to access the necessary data for each payment method, as well as encrypt payer and card data.
+Once you have located the [Public Key]{content="Testing public key, used in the frontend to access information and encrypt data, whether in the development stage or the testing stage. You can access it through **Your integrations > Application details > Testing > Testing credentials**."}, copy it and include it in the frontend. include your in the frontend. By doing this, you will be able to access the necessary data for each payment method, as well as encrypt payer and card data.
 
 [[[
 ```html 
