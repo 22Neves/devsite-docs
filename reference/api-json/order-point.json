@@ -21,9 +21,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, you must use an exclusive value in the header of each unique value for each call. If you use a value already assigned to another request, you will receive information corresponding to that created resource in response, not this new request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, deve usar um valor exclusivo para cada chamada. Caso utilize um valor já atribuído a outra requisição, você receberá em resposta informações correspondentes a esse recurso criado, e não a esta nova requisição. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, debes utilizar un valor exclusivo para cada llamado. Si utilizas un valor ya asignado a otra requisición, recibirás como respuesta información correspondiente a ese recurso creado, y no a esta nueva solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
             }
           }
         ],
@@ -233,6 +233,15 @@
                           }
                         }
                       ]
+                    },
+                    "user_id":{
+                      "type":"string",
+                      "example":"5238400195",
+                      "description":{
+                        "en":"ID of the Mercado Pago account that created the order.",
+                        "pt":"ID do usuário do Mercado Pago que criou a order.",
+                        "es":"Identificador del usuario de Mercado Pago que creó la order."
+                      }
                     },
                     "external_reference":{
                       "type":"string",
@@ -1101,6 +1110,15 @@
                                   "es": "Parámetro exclusivo para transacciones en México (MEX) y Chile (CHL). Monto de la propina que fue ingresado desde la terminal al momento del pago."
                                 }
                               },
+                              "paid_amount": {
+                                "type": "string",
+                                "example": "38",
+                                "description": {
+                                  "pt": "Valor total pago. Por exemplo, no Mexico (MEX) e no Chile (CHL), se o pagamento foi gerado com gorjetas, você verá a soma do valor do produto mais o valor da gorjeta.",
+                                  "en": "It is the total paid amount. For example, for Mexico (MEX) and Chile (CHL), if the payment was generated with tips, you'll see the sum of the amount paid for the product plus the tip value.",
+                                  "es": "Valor total pagado. Por ejemplo, en México (MEX) y en Chile (CHL), si el pago se generó con propina, verás la suma del valor del producto y el valor de la propina."
+                                }
+                              },
                               "status":{
                                 "$ref": "#/components/schemas/status"
                               },
@@ -1286,7 +1304,7 @@
                             "properties": { 
                               "id":{
                                 "type":"string",
-                                "example":"ref_01J67CQQH5904WDBVZEM1234D",
+                                "example":"REF01J67CQQH5904WDBVZEM1234D",
                                 "description":{
                                   "en":"Identifier of the refund transaction, automatically generated by Mercado Pago.",
                                   "pt":"Identificador da transação de reembolso, gerado automaticamente pelo Mercado Pago.",
@@ -1315,9 +1333,9 @@
                                 "type": "string",
                                 "example": "24",
                                 "description": {
-                                  "pt": "Valor do reembolso.",
-                                  "en": "Refund amount.",
-                                  "es": "Monto del reembolso."
+                                  "pt": "Valor do reembolso. No México (MEX) e no Chile (CHL), esse valor incluirá o valor da gorjeta, caso tenha sido paga.",
+                                  "en": "Refund amount. In Mexico (MEX) and Chile (CHL), this amount will include the value of the tip, if one was paid.",
+                                  "es": "Monto del reembolso. En México (MEX) y Chile (CHL), este monto incluirá el valor de la propina, en caso de que haya sido pagada."
                                 }
                               },
                               "status":{
@@ -1547,9 +1565,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, you must use an exclusive value in the header of each unique value for each call. If you use a value already assigned to another request, you will receive information corresponding to that created resource in response, not this new request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, deve usar um valor exclusivo para cada chamada. Caso utilize um valor já atribuído a outra requisição, você receberá em resposta informações correspondentes a esse recurso criado, e não a esta nova requisição. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, debes utilizar un valor exclusivo para cada llamado. Si utilizas un valor ya asignado a otra requisición, recibirás como respuesta información correspondiente a ese recurso creado, y no a esta nueva solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
             }
           }
         ],
@@ -2693,9 +2711,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, you must use an exclusive value in the header of each unique value for each call. If you use a value already assigned to another request, you will receive information corresponding to that created resource in response, not this new request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, deve usar um valor exclusivo para cada chamada. Caso utilize um valor já atribuído a outra requisição, você receberá em resposta informações correspondentes a esse recurso criado, e não a esta nova requisição. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, debes utilizar un valor exclusivo para cada llamado. Si utilizas un valor ya asignado a otra requisición, recibirás como respuesta información correspondiente a ese recurso creado, y no a esta nueva solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
             }
           }
         ],
@@ -2768,7 +2786,7 @@
                             "properties": { 
                               "id":{
                                 "type":"string",
-                                "example":"ref_01J67CQQH5904WDBVZEM1234D",
+                                "example":"REF01J67CQQH5904WDBVZEM1234D",
                                 "description":{
                                   "en":"Identifier of the refund transaction, automatically generated by Mercado Pago.",
                                   "pt":"Identificador da transação de reembolso, gerado automaticamente pelo Mercado Pago.",
@@ -2797,9 +2815,9 @@
                                 "type": "string",
                                 "example": "24",
                                 "description": {
-                                  "pt": "Valor do reembolso.",
-                                  "en": "Refund amount.",
-                                  "es": "Monto del reembolso."
+                                  "pt": "Valor do reembolso. No México (MEX) e no Chile (CHL), esse valor incluirá o valor da gorjeta, caso tenha sido paga.",
+                                  "en": "Refund amount. In Mexico (MEX) and Chile (CHL), this amount will include the value of the tip, if one was paid.",
+                                  "es": "Monto del reembolso. En México (MEX) y Chile (CHL), este monto incluirá el valor de la propina, en caso de que haya sido pagada."
                                 }
                               },
                               "status":{
@@ -3112,9 +3130,17 @@
                   {
                     "title": "voucher_card",
                     "description": {
-                      "en": "This value is only allowed in Brazil (BRA). The terminal will only accept payments with voucher cards, and will offer the possibility to pay with Sodexo or Alelo in its screen.",
-                      "es": "Este valor es permitido sólo en Brasil (BRA). La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo.",
-                      "pt": "Este valor é permitido apenas no Brasil (BRA). O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo."
+                      "en": "This value is only allowed in Brazil (BRA) and Chile (CHL). The terminal will only accept payments with voucher cards, and will offer on its screen the possibility to pay, in Brazil, with Sodexo or Alelo, or in Chile, with Pluxee or Edenred.",
+                      "es": "Este valor es permitido sólo en Brasil (BRA) y en Chile (CHL). La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo, en el caso de Brasil, o con Pluxee o Edenred, en el caso de Chile.",
+                      "pt": "Este valor é permitido apenas no Brasil (BRA) e no Chile (CHL). O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo no Brasil, ou Pluxee ou Edenred no caso do Chile."
+                    }
+                  },
+                  {
+                    "title": "cash",
+                    "description": {
+                      "en": "Este valor só é permitido no Chile (CHL). O terminal só aceitará pagamentos em dinheiro.",
+                      "es": "Este valor es permitido sólo en Chile (CHL). La terminal aceptará exclusivamente pagos con efectivo.",
+                      "pt": "This value is only allowed in Chile (CHL). The terminal will only accept cash payments."
                     }
                   }
                 ]
@@ -3267,9 +3293,17 @@
                   {
                     "title": "voucher_card",
                     "description": {
-                      "en": "This value is only allowed in Brazil (BRA). The terminal will only accept payments with voucher cards, and will offer the possibility to pay with Sodexo or Alelo in its screen.",
-                      "es": "Este valor es permitido sólo en Brasil (BRA). La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo.",
-                      "pt": "Este valor é permitido apenas no Brasil (BRA). O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo."
+                      "en": "This value is only allowed in Brazil (BRA) and Chile (CHL). The terminal will only accept payments with voucher cards, and will offer on its screen the possibility to pay, in Brazil, with Sodexo or Alelo, or in Chile, with Pluxee or Edenred.",
+                      "es": "Este valor es permitido sólo en Brasil (BRA) y en Chile (CHL). La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo, en el caso de Brasil, o con Pluxee o Edenred, en el caso de Chile.",
+                      "pt": "Este valor é permitido apenas no Brasil (BRA) e no Chile (CHL). O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo no Brasil, ou Pluxee ou Edenred no caso do Chile."
+                    }
+                  },
+                  {
+                    "title": "cash",
+                    "description": {
+                      "en": "Este valor só é permitido no Chile (CHL). O terminal só aceitará pagamentos em dinheiro.",
+                      "es": "Este valor es permitido sólo en Chile (CHL). La terminal aceptará exclusivamente pagos con efectivo.",
+                      "pt": "This value is only allowed in Chile (CHL). The terminal will only accept cash payments."
                     }
                   }
                 ]
