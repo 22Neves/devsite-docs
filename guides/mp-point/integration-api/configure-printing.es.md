@@ -19,7 +19,7 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 | `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
 | `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
 
-## Configuración de la impresión
+## Formatos para impresión de imágenes
 
 Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint.
 
@@ -31,7 +31,16 @@ Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son 
 >
 > El terminal debe estar configurado en modo PDV (Punto de Venta).  
 
-Los endpoints disponibles son:
+## Configuración de la impresión
+
+Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrese de que el terminal esté configurado en modo PDV (Punto de Venta). 
+
+> WARNING
+>
+> Importante
+>
+> Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite se redimensionarán automáticamente para ajustarse al ancho del rollo de papel.
+
    - [Crear acción de la terminal](/developers/es/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de imagenes o impresiones personalizadas. Para imágenes, se soporta el formato Base64. En caso de éxito, la respuesta devolverá un código de estado 201.
    - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200.
    - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post): Permite una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
