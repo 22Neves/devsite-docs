@@ -2,7 +2,7 @@
 
 **Applications** are registered entities within Mercado Pago that act as a unique identifier for managing the authentication and authorization of your integrations. In other words, they serve as the link between your development and Mercado Pago, and they constitute the first stage in carrying out the integration.
 
-With them, you can access the necessary :toolTipComponent[credentials]{content="Unique access keys used to identify an integration in your account, linked to your application. For more information, access the [Credentials documentation](/developers/en/docs/checkout-api/resources/credentials)."} to interact with our APIs or specific services, as well as manage and organize your integration.
+With them, you can access the necessary :toolTipComponent[credentials]{content="Unique access keys used to identify an integration in your account, linked to your application. For more information, access the [Credentials documentation](/developers/en/docs/checkout-api/more-resources/credentials)."} to interact with our APIs or specific services, as well as manage and organize your integration.
 
 To create an **application**, follow the steps below.
 
@@ -40,8 +40,8 @@ To create an **application**, follow the steps below.
 
 ------------ 
 
-In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [Application details](/developers/en/docs/your-integrations/application-details) for each of them.
+In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [application details](/developers/en/docs/checkout-api/more-resources/application-details) for each of them.
 
 > NOTE
 >
-> If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/your-integrations/application-details).
+> If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/checkout-api/more-resources/application-details).

@@ -2,7 +2,7 @@
 
 Las **aplicaciones** son entidades registradas dentro de Mercado Pago que actúan como un identificador único para gestionar la autenticación y autorización de tus integraciones. Es decir,  son el vínculo entre tu desarrollo y Mercado Pago, y constituyen la primera etapa para realizar la integración. 
 
-Con ellas, es posible acceder a las :toolTipComponent[credenciales]{content="Claves de acceso únicas con las que identificamos una integración en tu cuenta, vinculadas a tu aplicación. Para más información, accede a la [documentación de Credenciales](/developers/es/docs/checkout-api/resources/credentials)."} necesarias para interactuar con nuestras APIs o servicios específicos, así como gestionar y organizar tu integración. 
+Con ellas, es posible acceder a las :toolTipComponent[credenciales]{content="Claves de acceso únicas con las que identificamos una integración en tu cuenta, vinculadas a tu aplicación. Para más información, accede a la [documentación de Credenciales](/developers/es/docs/checkout-api/more-resources/credentials)."} necesarias para interactuar con nuestras APIs o servicios específicos, así como gestionar y organizar tu integración. 
 
 Para crear una **aplicación**, sigue los pasos a continuación.
 
@@ -26,8 +26,8 @@ Para crear una **aplicación**, sigue los pasos a continuación.
 
 ![create-application-2](/images/api-orders/create-application-2-es.png)
 
-En [Tus integraciones](/developers/panel/app) podrás consultar el listado de todas tus aplicaciones creadas y acceder a los [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details) de cada una de ellas. 
+En [Tus integraciones](/developers/panel/app) podrás consultar el listado de todas tus aplicaciones creadas y acceder a los [detalles de la aplicación](/developers/es/docs/checkout-api/more-resources/application-details) de cada una de ellas. 
 
 > NOTE
 >
-> Si lo deseas, puedes editar o eliminar una aplicación. En este último caso, debes tener en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración con Mercado Pago asociada a esa aplicación. Para más información, consulta los [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details).
+> Si lo deseas, puedes editar o eliminar una aplicación. En este último caso, debes tener en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración con Mercado Pago asociada a esa aplicación. Para más información, consulta los [Detalles de la aplicación](/developers/es/docs/checkout-api/more-resources/application-details).

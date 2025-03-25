@@ -41,6 +41,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
+ - button_link: /developers/en/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -101,7 +102,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/en/docs/checkout-api/create-aplication
 ---
 
 ------------
@@ -148,6 +149,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
+ - button_link: /developers/en/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -208,7 +210,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/en/docs/checkout-api/create-aplication
 ---
 
 ------------
@@ -255,6 +257,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
+ - button_link: /developers/en/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -315,7 +318,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/pt/docs/checkout-api-orders/overview
+ - button_link: /developers/en/docs/checkout-api/create-aplication
 ---
 
 ------------
