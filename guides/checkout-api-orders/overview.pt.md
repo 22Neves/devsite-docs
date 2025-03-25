@@ -25,7 +25,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual]() ou [automaticamente]().
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -131,7 +131,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual]() ou [automaticamente]().
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -237,7 +237,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual]() ou [automaticamente]().
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.

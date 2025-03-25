@@ -26,7 +26,7 @@ Uma order de pagamentos online pode ser criada para ser processada de dois modos
 
 O **modo automático** é o modo padrão da aplicação. Por meio dele, a transação é concluída em uma única etapa e as modificações são limitadas.
 
-## Modo manual
+### Modo manual
 
 O **modo manual** é o modo personalizável da aplicação, que permite dividir o processamento do pagamento em etapas que podem ser configuradas e executadas de maneira incremental.
 
