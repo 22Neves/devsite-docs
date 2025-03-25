@@ -1,5 +1,27 @@
 # Integration model
 
+----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ agora processa pagamentos com **Orders**. Se trata de uma API projetada para simplificar seu desenvolvimento com o Mercado Pago: com uma única integração, você poderá acessar diversas soluções de pagamento.
+
+Additionally, the API makes the integration code more intuitive and provides more detailed error messages, making the development process easier.
+
+## Differences in processing
+
+Previously, payments via the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------  were processed exclusively through the **Payments API**. Now, it is also possible to process them through Orders, which offers an efficient and straightforward integration alternative.
+
+Below are the main differences between the two options.
+
+| Feature  |  Payments API	  | Orders API	 |
+| --- | --- |--- |
+| Payment processing	  | [Automatic]() (create and process your transaction) | [Automatic]() and [manual]() (choosing when to process your transaction). |
+| Transactions	 | One transaction per request.		 | Multiple transactions per request. |
+| Operations  | [Online payments](/developers/en/docs#online-payments).	 | [Online payments](/developers/en/docs#online-payments) and [In-person payments](/developers/en/docs#inperson-payments) (Mercado Pago Point).|
+| Notifications	  | Advanced setup via `notification_url`.	 | Simpler setup available in the [Notifications](/developers/en/docs/checkout-api/notifications) section under [Your integrations](/developers/panel/app). |
+| Error validation	 | Returns one error at a time.  | Returns a list of all errors in the request. |
+
+## Processing modes for Orders
+
+An online payment order can be created to be processed in two modes: **Automatic mode** and **Manual mode**.
+
 ::::TabsComponent
 
 :::TabComponent{title="Automatic mode"}

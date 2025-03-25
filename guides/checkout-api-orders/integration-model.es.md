@@ -1,5 +1,27 @@
 # Modelo de integración
 
+----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ ahora procesa pagos con **Orders**. Se trata de una API diseñada para simplificar su desarrollo con Mercado Pago: con una única integración, podrá acceder a diversas soluciones de pago.
+
+Además, la API hace que el código de integración sea más intuitivo y proporciona mensajes de error más detallados, facilitando el proceso de desarrollo.
+
+## Diferencias en el procesamiento
+
+Anteriormente, los pagos a través de ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ eran procesados exclusivamente por la **API de Pagos**. Ahora, también es posible procesarlos mediante Orders, que ofrece una alternativa eficiente y sencilla para la integración.
+
+Ve a continuación las principales diferencias entre las dos opciones.
+
+| Funcionalidad  |  API de Pagamentos  | API de Orders |
+| --- | --- |--- |
+| Procesamiento del pago	  | [Automático](/developers/es/docs/checkout-api/integration-model#:~:text=Modo-,autom%C3%A1tico,-Modo%20manual) (cree y procese su transacción) | [Automático](/developers/es/docs/checkout-api/integration-model#:~:text=Modo-,autom%C3%A1tico,-Modo%20manual) y [manual](/developers/es/docs/checkout-api/integration-model#:~:text=Modo-,manual,-El%20modo%20autom%C3%A1tico) (eligiendo cuándo procesar su transacción). |
+| Transacciones | Una transacción por solicitud.	 | Múltiples transacciones por solicitud. |
+| Operaciones  | [Pagos online](/developers/es/docs#online-payments).	 | [Pagos online](/developers/es/docs#online-payments) y [Pagos presenciales](/developers/es/docs#inperson-payments) (Point de Mercado Pago).|
+| Notificaciones  | Configuración avanzada por `notification_url`.	 | CConfiguración más simple a partir de la sección de [Notificaciones](/developers/es/docs/checkout-api/notifications) en [Tus integraciones](/developers/panel/app). |
+| Validación de errores | Retorna un error a la vez. | Retorna una lista con todos los errores en la solicitud. |
+
+## Modos de procesamiento de Orders
+
+Una order de pagos online puede ser creada para ser procesada de dos modos: **Modo automático** y **Modo manual**.
+
 ::::TabsComponent
 
 :::TabComponent{title="Modo automático"}
