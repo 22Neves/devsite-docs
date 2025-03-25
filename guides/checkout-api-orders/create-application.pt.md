@@ -9,9 +9,7 @@ Para criar uma **aplicação**, siga os passos abaixo.
 1. No canto superior direito de Mercado Pago Developers, clique em **Entrar** e faça login em sua conta do Mercado Pago.
 2. Com a sessão iniciada, acesse “Suas integrações”. Clique em **Criar aplicação**.
 
-> WARNING
->
-> Atenção
+> SUCCESS_
 >
 > Para proteger sua conta e garantir a conformidade das operações, durante a criação de uma aplicação será necessário que realize uma verificação de identidade, em caso de que ainda não tenha feito, ou uma reautenticação, se já tiver concluído previamente o precesso de verificação.
 

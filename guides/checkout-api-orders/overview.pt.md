@@ -148,7 +148,7 @@ product_landing_how_works:
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
  - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Cómo integrar
- - button_link: /developers/pt/docs/checkout-api/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/create-application
 ---
 
 ---
@@ -206,7 +206,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Salir a producción
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/create-application
 ---
 
 ------------
@@ -312,7 +312,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Salir a producción
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/create-application
 ---
 
 ------------

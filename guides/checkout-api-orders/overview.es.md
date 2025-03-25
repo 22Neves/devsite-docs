@@ -102,7 +102,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/es/docs/checkout-api/create-aplication
+ - button_link: /developers/es/docs/checkout-api/create-application
 ---
 
 ------------
@@ -210,7 +210,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/es/docs/checkout-api/create-aplication
+ - button_link: /developers/es/docs/checkout-api/create-application
 ---
 
 ------------
@@ -318,7 +318,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/es/docs/checkout-api/create-aplication
+ - button_link: /developers/es/docs/checkout-api/create-application
 ---
 
 ------------
