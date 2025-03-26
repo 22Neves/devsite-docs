@@ -203,21 +203,13 @@ Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utiliz
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
 
-## Adicionar formulário de pagamento
+:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"}
 
 A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.
 
 Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamente no projeto.
 
-----[mlc]----
-> WARNING
->
-> Atenção
->
-> O valor `unit_price` deve ser um número inteiro.
-
-------------
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlb]----
 [[[
 ```html
 
@@ -306,9 +298,8 @@ Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamen
 ```
 ]]]
 
-------------
-
-## Inicializar campos de cartão
+:::
+:::AccordionComponent{title="Inicializar campos de cartão" pill="client-side"}
 
 Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
 
@@ -328,9 +319,8 @@ Ao finalizar a inicialização dos campos, as divs conterão os iframes com os i
     }).mount('form-checkout__securityCode');
 ```
 ]]]
-
-----[mla, mlu, mpe, mco, mlb, mlc]----
-## Obter tipos de documento
+:::
+:::AccordionComponent{title="Obter tipos de documento" pill="client-side"}
 
 Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
 
@@ -372,10 +362,8 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
     }
 ```
 ]]]
-
-------------
-
-## Obter métodos de pagamento do cartão
+:::
+:::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"}
 
 Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
 
@@ -453,7 +441,8 @@ Nesta etapa ocorre a validação dos dados dos compradores no momento em que rea
 ```
 ]]]
 
-## Obter banco emissor
+:::
+:::AccordionComponent{title="Obter banco emissor" pill="client-side"}
 
 Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
 
@@ -484,7 +473,8 @@ O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, uti
 ```
 ]]]
 
-## Obter quantidade de parcelas
+:::
+:::AccordionComponent{title="Obter quantidade de parcelas" pill="client-side"}
 
 Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
 
@@ -508,10 +498,10 @@ Um dos campos obrigatórios que compõem o formulário de pagamento é a **quant
 ```
 ]]]
 
-## Criar token do cartão
+:::
+:::AccordionComponent{title="Criar token do cartão" pill="client-side"}
 
 O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o token do cartão, utilize a função abaixo.
-
 
 > NOTE
 >
@@ -545,243 +535,7 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 ```
 ]]]
 
-## Enviar pagamento
-
-Para finalizar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos conforme etapas anteriores.
-
-Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando os SDKs abaixo.
-
-
-> NOTE
->
-> Importante
->
-> Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval).
-
-[[[
-```php
-===
-Encontre o status do pagamento no campo _status_.
-===
-<?php
-    require_once 'vendor/autoload.php';
-
-    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = (float)$_POST['transactionAmount'];
-    $payment->token = $_POST['token'];
-    $payment->description = $_POST['description'];
-    $payment->installments = (int)$_POST['installments'];
-    $payment->payment_method_id = $_POST['paymentMethodId'];
-    $payment->issuer_id = (int)$_POST['issuer'];
-
-    $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['email'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['identificationType'],------------
-        "number" => $_POST['identificationNumber']
-    );
-    $payment->payer = $payer;
-
-    $payment->save();
-
-    $response = array(
-        'status' => $payment->status,
-        'status_detail' => $payment->status_detail,
-        'id' => $payment->id
-    );
-    echo json_encode($response);
-
-?>
-```
-```node
-===
-Encontre o status do pagamento no campo _status_.
-===
-
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
-
-var payment_data = {
-  transaction_amount: Number(req.body.transactionAmount),
-  token: req.body.token,
-  description: req.body.description,
-  installments: Number(req.body.installments),
-  payment_method_id: req.body.paymentMethodId,
-  issuer_id: req.body.issuer,
-  payer: {
-    email: req.body.email,
-    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.identificationType,------------
-      number: req.body.identificationNumber
-    }
-  }
-};
-
-mercadopago.payment.save(payment_data)
-  .then(function(response) {
-    res.status(response.status).json({
-      status: response.body.status,
-      status_detail: response.body.status_detail,
-      id: response.body.id
-    });
-  })
-  .catch(function(error) {
-    console.error(error)
-  });
-```
-```java
-===
-Encontre o status do pagamento no campo _status_.
-===
-
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
-
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-       .setToken(request.getParameter("token"))
-       .setDescription(request.getParameter("description"))
-       .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"));
-
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
-
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-     .setIdentification(identification);
-     
-payment.setPayer(payer);
-
-payment.save();
-
-System.out.println(payment.getStatus());
-
-```
-```ruby
-===
-Encontre o status do pagamento no campo _status_.
-===
-require 'mercadopago'
-sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
-
-payment_data = {
-  transaction_amount: params[:transactionAmount].to_f,
-  token: params[:token],
-  description: params[:description],
-  installments: params[:installments].to_i,
-  payment_method_id: params[:paymentMethodId],
-  payer: {
-    email: params[:email],
-    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: params[:identificationType],------------
-      number: params[:identificationNumber]
-    }
-  }
-}
-
-payment_response = sdk.payment.create(payment_data)
-payment = payment_response[:response]
-
-puts payment
-
-```
-```csharp
-===
-Encontre o status do pagamento no campo _status_.
-===
-using System;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Config;
-using MercadoPago.Resource.Payment;
-
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
-
-var paymentRequest = new PaymentCreateRequest
-{
-    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
-    Token = Request["token"],
-    Description = Request["description"],
-    Installments = int.Parse(Request["installments"]),
-    PaymentMethodId = Request["paymentMethodId"],
-    Payer = new PaymentPayerRequest
-    {
-        Email = Request["email"],
-        Identification = new IdentificationRequest
-        {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["identificationType"],------------
-            Number = Request["identificationNumber"],
-        },
-    },
-};
-
-var client = new PaymentClient();
-Payment payment = await client.CreateAsync(paymentRequest);
-
-Console.WriteLine(payment.Status);
-
-```
-```python
-===
-Encontre o status do pagamento no campo _status_.
-===
-import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
-
-payment_data = {
-    "transaction_amount": float(request.POST.get("transaction_amount")),
-    "token": request.POST.get("token"),
-    "description": request.POST.get("description"),
-    "installments": int(request.POST.get("installments")),
-    "payment_method_id": request.POST.get("payment_method_id"),
-    "payer": {
-        "email": request.POST.get("email"),
-        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-            "type": request.POST.get("type"), ------------
-            "number": request.POST.get("number")
-        }
-    }
-}
-
-payment_response = sdk.payment().create(payment_data)
-payment = payment_response["response"]
-
-print(payment)
-```
-```curl
-===
-Encontre o status do pagamento no campo _status_.
-===
-
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payments' \
-    -d '{
-          "transaction_amount": 100,
-          "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "Blue shirt",
-          "installments": 1,
-          "payment_method_id": "visa",
-          "issuer_id": 310,
-          "payer": {
-            "email": "test@test.com"
-          }
-    }'
-
-```
-]]]
-
-> WARNING
->
-> Importante
->
-> Ao criar um pagamento é possível receber 3 status diferentes: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.
+:::
 
 :::
 
