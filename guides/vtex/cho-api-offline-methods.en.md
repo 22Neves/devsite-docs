@@ -45,7 +45,7 @@ When configuring Checkout API in VTEX stores, you can offer payments with offlin
 
 To configure these payment methods, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
-1. Click on the **+ (Add new payment plan for...)** button. 
+1. Click on the **+ (Add new payment term for...)** button. 
 2. Within the "Other" category, search for the **offline payment method** you want to offer.
 3. Fill in the fields displayed on the next screen: 
     1. Enter the **Rule name**, which will allow you to identify this payment method. 

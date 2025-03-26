@@ -43,11 +43,6 @@ Para criar uma **afiliação de gateway com o MercadoPagoV2**, siga as instruç�
 
 6. Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
-----[mlb, mla, mlm, mco, mpe, mlu]----
-![Configure MercadoPagoV2](/images/vtex/vtex-v2-new-admin-pt.gif)
-
-------------
-
 Depois de preencher todos os campos, clique em **Salvar** e pronto! Sua afiliação com o MercadoPagoV2 já está ativada.
 
 > NOTE

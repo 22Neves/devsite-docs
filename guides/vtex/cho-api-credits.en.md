@@ -5,8 +5,8 @@ Linha de Crédito is the financing method offered by Mercado Pago, which provide
 
 To configure the Linha de Crédito in the store's checkout, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
-1. Click on the **+ (Add new payment plan for...)** button. 
-2. Within the "Other" category, search for **Linha de Crédito** and select it. 
+1. Click on the **+ (Add new payment term for...)** button. 
+2. Within the "Other" category, search for **Buy Now Pay Later Mercado Pago** and select it. 
 3. Fill in the fields displayed on the next screen: 
     1. Enter the **Rule name**, which will allow you to identify this payment method. 
     2. In "Process with affiliation", select **MercadoPagoV2**. 
