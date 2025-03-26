@@ -1,6 +1,6 @@
 # Create application
 
-[TXTSNIPPET][/guides/snippets/test-integration/aplications/create-aplication]
+[TXTSNIPPET][/guides/snippets/test-integration/applications/create-application]
 4. When asked about the **type of payment solution to integrate**, select **Online payments**, which is the type of solution corresponding to virtual stores.
 5. Since you are creating an application for the ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API,------------ in "**Are you using an e-commerce platform?**", indicate that you are **not** using an [e-commerce platform](/developers/en/docs#platform-list), as this solution is for integration into self-developed sites.
 6. Then, choose ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- **CheckoutAPI** ------------  as the product you are integrating.
