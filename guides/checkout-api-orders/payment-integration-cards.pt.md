@@ -298,6 +298,8 @@ Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamen
 ```
 ]]]
 
+------------
+
 :::
 :::AccordionComponent{title="Inicializar campos de cartão" pill="client-side"}
 
@@ -319,6 +321,7 @@ Ao finalizar a inicialização dos campos, as divs conterão os iframes com os i
     }).mount('form-checkout__securityCode');
 ```
 ]]]
+
 :::
 :::AccordionComponent{title="Obter tipos de documento" pill="client-side"}
 
@@ -362,6 +365,7 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
     }
 ```
 ]]]
+
 :::
 :::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"}
 
@@ -536,7 +540,6 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 ]]]
 
 :::
-
 :::
 
 ::::
