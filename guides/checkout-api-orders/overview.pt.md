@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integre Checkout Transparente e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007359270-teste.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009408853-image3.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
- - media_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007288421-overviewpt.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007288421-overviewpt.gif
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
@@ -50,7 +50,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007359270-teste.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009408853-image3.png
  - column_product: Checkout Transparente
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api-orders/overview
@@ -110,7 +110,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integre Checkout API e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007359270-teste.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009336069-image1.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -156,7 +156,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007359270-teste.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009336069-image1.png
  - column_product: Checkout API
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api/overview
@@ -216,7 +216,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integre Checkout API e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007359270-teste.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009447681-image4.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -262,7 +262,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007359270-teste.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009447681-image4.png
  - column_product: Checkout API
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api/overview

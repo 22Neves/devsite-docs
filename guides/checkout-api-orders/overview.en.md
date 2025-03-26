@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009299546-image2.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -22,7 +22,7 @@ product_landing_what_it_offers:
  - message: Combina distintas funcionalidades para garantizar la seguridad y conversión de las operaciones.
  - benefit_title: API unificada
  - benefit_bullet: Ofrece múltiples experiencias de pago sin trabajar con varias APIs separadas.
- - benefit_bullet: Elige cómo procesar tus transacciones: automática o manualmente.
+ - benefit_bullet: Elige cómo procesar tus transacciones: [automática]() o [manualmente]().
  - benefit_title: Personalización y seguridad
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
@@ -36,12 +36,12 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: /api-orders/overview-es.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/en/docs/checkout-api/create-aplication
+ - button_link: /developers/es/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -49,7 +49,7 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009299546-image2.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-api-order/overview
@@ -102,7 +102,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/en/docs/checkout-api/create-application
+ - button_link: /developers/es/docs/checkout-api/create-application
 ---
 
 ------------
@@ -112,7 +112,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009200916-image.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -144,12 +144,12 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: /api-orders/overview-es.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/en/docs/checkout-api/create-aplication
+ - button_link: /developers/es/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -157,10 +157,10 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009200916-image.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-order/overview
+ - column_button_link: /developers/es/docs/checkout-api/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -210,7 +210,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/en/docs/checkout-api/create-application
+ - button_link: /developers/es/docs/checkout-api/create-application
 ---
 
 ------------
@@ -220,7 +220,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009262076-image5.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -252,12 +252,12 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: /api-orders/overview-es.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/en/docs/checkout-api/create-aplication
+ - button_link: /developers/es/docs/checkout-api/create-aplication
 ---
 
 ---
@@ -265,10 +265,10 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009262076-image5.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-order/overview
+ - column_button_link: /developers/es/docs/checkout-api/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -318,7 +318,7 @@ product_landing_how_integrate:
  - list_item: Probar tu integración
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
- - button_link: /developers/en/docs/checkout-api/create-application
+ - button_link: /developers/es/docs/checkout-api/create-application
 ---
 
 ------------
