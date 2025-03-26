@@ -1,7 +1,7 @@
 ---
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-desenhada
- - message: Com esta solução, seus clientes compram no seu site e pagam em um ambiente do Mercado Pago com seus meios de pagamento guardados.
+ - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
  - benefit_icon: categories
  - benefit_title: Integração ágil
@@ -10,55 +10,55 @@ product_landing_hero:
  - benefit_icon: edit
  - benefit_title: Personalização limitada
  - benefit_icon: sort
- - benefit_title: Com redirecionamento para o Mercado Pago
+ - benefit_title: Com redirecionamento
  - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
 ---
 
 ---
 product_landing_what_it_offers:
  - title: O que oferece
- - message: Combina diferentes funcionalidades para garantir a segurança e conversão das operações.
+ - message: Combine diferentes funcionalidades para garantir a segurança e conversão das operações.
  - benefit_title: Personalização
- - benefit_bullet: Financiamento em parcelas.
- - benefit_bullet: URL de retorno após a aprovação do pagamento.
- - benefit_bullet: Aparência e estilo do botão de pagamento.
- - benefit_bullet: Meios de pagamento customizáveis com a opção de dividir o valor em 2 partes.
+ - benefit_bullet: Parcelamento
+ - benefit_bullet: URL de retorno após a aprovação do pagamento
+ - benefit_bullet: Aparência e estilo do botão de pagamento
+ - benefit_bullet: Meios de pagamento customizáveis com a opção de dividir o valor em 2 partes
  - benefit_title: Conversão
- - benefit_bullet: Cobrança ágil com os meios de pagamento guardados no Mercado Pago.
- - benefit_bullet: Opção de pagar sem conta do Mercado Pago, como usuário convidado.
- - benefit_bullet: Meios de pagamento online e offline, como cartões e dinheiro em conta.
- - benefit_bullet: Recuperação de pagamentos rejeitados.
- - benefit_bullet: Cupons e campanhas promocionais.
+ - benefit_bullet: Cobrança ágil com os meios de pagamento salvos no Mercado Pago
+ - benefit_bullet: Opção de pagar sem conta do Mercado Pago, como usuário convidado
+ - benefit_bullet: Meios de pagamento online e offline, como Pix e boleto
+ - benefit_bullet: Recuperação de pagamentos rejeitados
+ - benefit_bullet: Cupons e campanhas promocionais
  - benefit_title: Aprovação de pagamentos
- - benefit_bullet: Tecnologia 3DS 2.0 para autenticação de operações.
- - benefit_bullet: Ferramentas de prevenção de fraudes e verificação de identidade do cliente.
- - benefit_bullet: Validação de transações utilizando dados específicos de cada indústria.
+ - benefit_bullet: Tecnologia 3DS 2.0 para autenticação de operações
+ - benefit_bullet: Ferramentas de prevenção de fraudes e verificação de identidade do cliente
+ - benefit_bullet: Validação de transações utilizando dados específicos de cada indústria
  - benefit_title: Segurança contra fraudes
- - benefit_bullet: Protocolos OWASP e PCI DSS.
- - benefit_bullet: Verificação de identidade dos compradores.
- - benefit_bullet: Reconhecimento facial com FaceAuth para acessar a conta do Mercado Pago.
+ - benefit_bullet: Protocolos OWASP e PCI DSS
+ - benefit_bullet: Verificação de identidade dos compradores
+ - benefit_bullet: Reconhecimento facial com FaceAuth para acessar a conta do Mercado Pago
 ---
 
 ---
 product_landing_how_works:
  - title: Como funciona
- - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna ao seu site ou ao destino configurado.
- - sub_title: Processo de cobrança
+ - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
+ - sub_title: Processo de pagamento
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
- - list_title: O comprador fecha o carrinho de compras no seu site e seleciona pagar com Mercado Pago.
- - list_title: É redirecionado ao formulário de pagamento, onde decide se avança com sua conta do Mercado Pago ou como usuário convidado.
- - list_title: Pode escolher seu meio de pagamento preferido, seja um guardado em sua conta ou um novo inserido.
- - list_title: Uma vez que completou a compra, é redirecionado ao seu site ou ao destino configurado.
+ - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
+ - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
+ - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
+ - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
  - button_description: Como integrar
  - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
 ---
 
 ---
 product_landing_what_differentiates:
- - title: O que o diferencia
- - message: Compare nossos checkouts e escolha o que melhor se adapta ao seu negócio. Consulte as [tarifas](https://www.mercadopago.com.br/ajuda/33399).
+ - title: Quais os diferenciais
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
@@ -66,11 +66,11 @@ product_landing_what_differentiates:
  - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: Checkout API
- - column_button_text: Ir ao resumo
+ - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-api/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
- - column_button_text: Ir ao resumo
+ - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-bricks/landing
  - line_text: Esforço de integração
  - line_type: dots
@@ -81,7 +81,7 @@ product_landing_what_differentiates:
  - line_text: Design pronto para configurar
  - line_type: check
  - line_values: true|false|true
- - line_text: Experiência de cobrança
+ - line_text: Experiência de pagamento
  - line_type: text
  - line_values: No Mercado Pago|No seu site|No seu site
  - line_text: Pagamentos recorrentes
@@ -98,22 +98,22 @@ product_landing_what_differentiates:
 ---
 product_landing_how_integrate:
  - title: Como integrar
- - sub_title: Conheça as etapas que você deverá seguir para integrar esta solução.
+ - sub_title: Conheça as etapas necessárias para integrar esta solução.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - image_text: Explore exemplos de código
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Conta de vendedor
- - requirement_table_list: Para integrar o Checkout Pro, você precisa acessar o Mercado Pago e [criar uma conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
  - list_title: Processo de integração
- - list_item: Criar um aplicativo em [Suas integrações](/developers/panel/app)
+ - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
  - list_item: Construir o ambiente de desenvolvimento
- - list_item: Criar e configurar a intenção de pagamento.
- - list_item: Estabelecer as notificações de pagamento
+ - list_item: Criar e configurar a preferência de pagamento.
+ - list_item: Coonfigurar as notificações de pagamento
  - list_item: Testar a integração
- - list_item: Ir para produção
+ - list_item: Sair à produção
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
 ---
