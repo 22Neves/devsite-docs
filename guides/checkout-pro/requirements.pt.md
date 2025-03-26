@@ -51,7 +51,7 @@ Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim. Vivamus rhoncus
 
 ## Tag
 
-Aenean velit :TagComponent{textTag="NON" size="small" hierarchy="loud" color="orange"} lorem, tristique eu lacinia non, [Api Order :TagComponent{textTag="API"}](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli) vitae lacus. Nam placerat sed. Sed viverra nunc :TagComponent{textTag="SIT" size="small" hierarchy="loud" color="red"} congue pellentesque. In a diam sit amet velit [Tempor](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli) :TagComponent{textTag="AMET" size="small" hierarchy="loud" color="green"} pellentesque. Vivamus luctus at :TagComponent{textTag="NULLA" size="small" hierarchy="loud" color="gray"} sed dignissim.
+Aenean velit lorem, tristique eu lacinia non, :TagComponent{tag="API" text="Api Order" href="/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli"} vitae lacus. Nam placerat sed. Sed viverra nunc congue pellentesque. In a diam sit amet :TagComponent{tag="AMET" text="velit"} pellentesque. Vivamus luctus at sed dignissim.
 
 ## Diagramas
 
@@ -106,7 +106,7 @@ Implementação dos componentes já existentes linkados nesse [Figma](https://ww
 >
 > Integer auctor viverra ultrices.
 >
-> Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer auctor viverra ultrices. Curabitur ante magna, aliquet ut placerat eu, iaculis ac metus.
+> Interdum et malesuada fames ac ante ipsum primis in LINK >>>[external link](https://www.google.com.br)<<<. Integer auctor viverra ultrices. Curabitur ante magna, aliquet ut placerat eu, iaculis ac metus.
 
 > WARNING
 >
@@ -132,6 +132,7 @@ Implementação dos componentes já existentes linkados nesse [Figma](https://ww
 >
 > Vivamus vel efficitur ante. Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim.
 
+> Donec mollis laoreet libero, quis aliquet ante auctor non. Sed aliquet et velit bibendum consectetur. Phasellus felis sapien
 
 ## Imagens/Diagramação
 
@@ -180,9 +181,15 @@ Proin fermentum enim eu euismod interdum. Nunc efficitur justo velit, ac cursus 
 Quisque ultrices venenatis felis, ac suscipit velit viverra vel. Curabitur semper vestibulum nunc ac rhoncus. Aenean molestie velit nulla, eget placerat odio venenatis eget. Suspendisse luctus purus quis tellus scelerisque dictum. Quisque nec odio ut neque blandit malesuada vel et augue. Praesent porta semper rhoncus. Quisque efficitur imperdiet est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vehicula eros odio, vel tempor dolor tempor vitae. Duis faucibus tortor sem, eget volutpat tortor varius non.
 :::
 
+<br>
+<br>
+
 # Hyperlink
 
 Nam non enim sed purus condimentum varius. Orci [external link](https://www.google.com.br) natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec libero ac nisi rutrum consequat et quis justo. In lacinia imperdiet imperdiet. Nullam a dignissim ante. Aenean cursus [internal doc link](/developers/pt/docs/checkout-pro/integrate-preferences) turpis, vitae sodales risus dignissim quis. Suspendisse potenti.
+
+<br>
+<br>
 
 #  Ícone de cópia de URL
 
