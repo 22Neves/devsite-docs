@@ -107,8 +107,6 @@ It is also possible to receive a pending status. In these cases, you should pay 
 
 > WARNING
 >
-> Important
->
 > Authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
 ## Capture an authorized payment
@@ -118,8 +116,6 @@ The completion of a payment takes place after the authorized payment has been ca
 Currently, it is only possible to capture the total amount of the reserved payment.
 
 > RED_MESSAGE
->
-> Attention
 >
 > The time limit to capture the authorized payment is **5 days from its creation**. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 

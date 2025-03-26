@@ -8,8 +8,6 @@ See below for more information on refunds and cancellations.
 
 > RED_MESSAGE
 >
-> Attention
->
 > This documentation is **intended for integrators**. If you are a buyer and need to cancel or request a refund for a payment, access your Mercado Pago account, select the purchase in question, click on "Need help," and choose the refund or cancellation option.
 
 ## Refunds
@@ -26,7 +24,7 @@ Before processing a refund, it is important to consider the factors below.
 - **Refund timeframe**: it is possible to refund a payment within 180 days from its approval date.
 - **Payment method**: for credit card payments, the amount will be refunded directly on the statement. For other payment methods, such as Pix, for example, the amount will be refunded to the payer's account.
 - **Account balance**: you must have sufficient balance available in your account to process the refund; otherwise, the transaction will not be completed.
-- **Processing the order in manual mode**: it will be possible to refund only a specific transaction, either partially or in full, but for the order to be fully refunded, it is necessary that **all transactions manually included** are completely reversed.
+- **Processing the order**: it will be possible to refund only a specific transaction, either partially or in full, but for the order to be fully refunded, it is necessary that **all transactions manually included** are completely reversed.
 
 To process full or partial refunds for a payment and to check the refunds made in your store, visit our API Reference and access the endpoint [Refund an order :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/refund/post).
 

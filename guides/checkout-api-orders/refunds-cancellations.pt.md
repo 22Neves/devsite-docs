@@ -8,8 +8,6 @@ Veja abaixo mais informações sobre reembolsos e cancelamentos.
 
 > RED_MESSAGE
 >
-> Atenção
->
 > Esta documentação é **destinada a integradores**. Se você é comprador e deseja cancelar ou solicitar o reembolso de um pagamento, acesse sua conta do Mercado Pago, selecione a compra em questão, clique em "Preciso de ajuda" e escolha a opção de reembolso ou cancelamento.
 
 ## Reembolsos
@@ -26,7 +24,7 @@ Antes de realizar um reembolso, é importante considerar os fatores abaixo.
 - **Prazo de reembolso**: é possível reembolsar um pagamento dentro de 180 dias a partir da sua data de aprovação.
 - **Meio de pagamento**: para pagamentos com cartão de crédito, o valor será devolvido diretamente na fatura. Para outros meios de pagamento o valor será devolvido na conta do pagador.
 - **Dinheiro em conta**: é preciso ter saldo suficiente disponível em sua conta para efetuar a devolução do valor, caso contrário, a transação não será realizada
-- **Processamento da order em modo manual**: será possível reembolsar apenas uma transação específica, seja parcialmente ou não, mas para que a order seja reembolsada totalmente é necessário que **todas as suas transações incluídas manualmente** sejam estornadas por completo.
+- **Processamento da order**: será possível reembolsar apenas uma transação específica, seja parcialmente ou não, mas para que a order seja reembolsada totalmente é necessário que **todas as suas transações incluídas manualmente** sejam estornadas por completo.
 
 Para realizar reembolsos integrais ou parciais de um pagamento e consultar os reembolsos feitos em sua loja, visite nossa Referência API e acesse o endpoint de [Reembolsar uma order :TagComponent{textTag="API"}](/developers/pt/reference/order/online-payments/refund/post).
 

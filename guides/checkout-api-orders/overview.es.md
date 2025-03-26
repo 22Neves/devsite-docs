@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: /api-orders/overview-es.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -144,7 +144,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: /api-orders/overview-es.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -252,7 +252,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: /api-orders/overview-es.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.

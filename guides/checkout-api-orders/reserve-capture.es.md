@@ -107,8 +107,6 @@ También es posible que el status retorne como pending. En estos casos, deberás
 
 > WARNING
 >
-> Importante
->
 > El cliente no podrá utilizar los valores autorizados hasta que se capturen, por lo que recomendamos realizar esta captura lo antes posible.
 
 ## Captura de pago autorizado
@@ -118,8 +116,6 @@ La finalización de un pago autorizado sucede después de la captura del monto, 
 Actualmente, sólo es posible realizar una captura del monto total del pago reservado
 
 > RED_MESSAGE
->
-> Atención
 >
 > El tiempo límite para realizar la captura del pago autorizado es de **5 días desde su creación**. Si no la capturas hasta ese momento, será cancelado. Además, debes guardar el ID del pago para poder finalizar el proceso.
 
