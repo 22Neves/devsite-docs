@@ -9,7 +9,7 @@ Implementação dos componentes novos linkados nesse [Figma](https://www.figma.c
 
 ## Tooltip
 
-Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet **negrito** pellentesque. In a diam __italico__ amet velit tempor."} dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt :toolTipComponent[imperdiet]{content="Phasellus sodales risus nisi, in sollicitudin nulla faucibus et"}. interdum. Nullam aliquam nibh id posuere dapibus.
+Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet *negrito* pellentesque. In a diam _italico_ amet velit tempor."} dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt :toolTipComponent[imperdiet]{content="Phasellus sodales risus nisi, in sollicitudin nulla faucibus et"}. interdum. Nullam aliquam nibh id posuere dapibus.
 
 ## Tab
 
