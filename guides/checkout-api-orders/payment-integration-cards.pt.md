@@ -245,6 +245,122 @@ Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */process_order* que receba os dados coletados pelo Brick após a ação de *submit*.
 
 :::
+:::AccordionComponent{title="Enviar pagamento" pill="server-side"}
+O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+
+Para isso, envie um **POST** com seu :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/pt/reference/order/online-payments/create/post) e execute a requisição.      
+
+```curl
+curl --location 'https://api.mercadopago.com/v1/orders' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+{
+  "type": "online",
+  "external_reference": "ext_ref_1234",
+  "processing_mode": "automatic",
+  "total_amount": "200.00",
+  "expiration_time": "P3D",
+  "description": "some description",
+  "payer": {
+    "email": "{email}",
+    "first_name": "John",
+    "last_name": "Doe",
+    "identification": {
+      "type": "CPF",
+      "number": "99999999999"
+    },
+    "address": [
+      {
+        "street_name": "Av. das Nações Unidas",
+        "street_number": "3003",
+        "zip_code": "06233903",
+  "neighborhood": "Bonfim",
+  "state": "SP",
+  "city": "Osasco"
+      }
+    ]
+  },
+  "transactions": {
+    "payments": [
+      {
+        "amount": "200.00",
+        "payment_method": {
+          "id": "bolbradesco",
+          "type": "ticket"
+        }
+      }
+    ]
+  }
+}
+```
+
+Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
+
+| Atributo | Tipo | Descrição | Obrigatório/Opcional |
+|---|---|---|---|
+| `Authorization` | _Header_ | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} em ambientes de desenvolvimento e o :toolTipComponent[_Access Token_ produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção**."} para pagamentos reais. | Obrigatório |
+| `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma *string* aleatória. | Obrigatório |
+| `processing_mode` | _Body. String_ | Modo de processamento da order. Os valores possíveis são: <br> - `automatic`: para criar e processar a ordem em modo automático.<br> - `manual`: para criar a order e processá-la posteriormente. <br> Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model). | Obrigatório |
+| `total_amount` | _Body. String_ | Valor total da transação. | Obrigatório |
+| `transaction.payments.payment_method.id` | _Body. String_ | Identificador do meio de pagamento. **Neste caso, é a bandeira de cada cartão**. Você pode consultar a lista completa de identificadores disponíveis enviando uma requisição ao endpoint [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). | Obrigatório |
+| `transaction.payments.payment_method.type` | _Body. String_ | Tipo de método de pagamento. Para pagamentos com cartão de crédito, deve ser `credit_card`, e para pagamentos com cartão de débito, deve ser `debit_card`. | Obrigatório |
+
+> SUCCESS_MESSAGE
+>
+> Para conhecer em detalhe todos os parâmetros enviados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post).  Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors).
+
+Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
+
+```json
+{
+  "id": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE",
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "marketplace": "NONE",
+  "total_amount": "200.00",
+  "country_code": "BRA",
+  "user_id": "1245621468",
+  "created_date": "2024-09-02T22:04:01.880469Z",
+  "last_updated_date": "2024-09-02T22:04:04.429289Z",
+  "type": "online",
+  "status": "action_required",
+  "status_detail": "waiting_payment",
+  "capture_mode": "automatic",
+  "integration_data": {
+    "application_id": "4599991948843755"
+  },
+  "transactions": {
+    "payments": [
+      {
+        "id": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24",
+        "reference_id": "22dvqmsbq8c",
+        "amount": "200.00",
+        "status": "action_required",
+        "status_detail": "waiting_payment",
+        "payment_method": {
+          "id": "bolbradesco",
+          "type": "ticket",
+          "ticket_url": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+          "barcode_content": "3335008800000000006004835002100020000242462010",
+          "reference": "1234567890",
+          "verification_code": "1234567890",
+          "financial_institution": "bolbradesco",
+          "digitable_line": "23793380296060054351030006333303799140000020000"
+        }
+      }
+    ]
+  }
+}
+```
+
+> WARNING
+>
+> Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à [Processar order :TagComponent{textTag="API"}](/developers/pt/reference/order/online/process-order/post). Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
+
+Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) y [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
+
+:::
 
 ::::
 ::::TabComponent{title="Métodos Core"}
@@ -641,11 +757,6 @@ O _token_ do cartão é criado a partir das próprias informações do cartão, 
 ]]]
 
 :::
-
-::::
-
-:::::
-
 :::AccordionComponent{title="Enviar pagamento" pill="server-side"}
 O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
@@ -762,3 +873,6 @@ Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) y [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
 
 :::
+
+::::
+:::::
