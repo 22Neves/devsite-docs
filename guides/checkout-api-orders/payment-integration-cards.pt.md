@@ -251,7 +251,6 @@ Para avançar para a etapa de envio do pagamento, será necessário que seu *bac
 
 
 ::::
-
 ::::TabComponent{title="Métodos Core"}
 Na integração via Métodos Core, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
 
@@ -411,7 +410,6 @@ Ao finalizar a inicialização dos campos, as <divs> conterão os iframes com os
 ]]]
 
 :::
-----[mla, mlu, mpe, mco, mlb, mlc]----
 :::AccordionComponent{title="Obter tipos de documento" pill="client-side"}
 
 Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
@@ -456,7 +454,6 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
 ]]]
 
 :::
-------------
 :::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"}
 
 Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
