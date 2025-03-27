@@ -32,7 +32,7 @@ product_landing_what_it_offers:
  - benefit_title: Aprobación de pagos
  - benefit_bullet: Tecnología 3DS 2.0 para autenticación de operaciones.
  - benefit_bullet: Herramientas de prevención de fraudes y comprobación de identidad de cliente.
- - benefit_bullet: Validación de transacciones utilizando datos específicos de cada industria. 
+ - benefit_bullet: Validación de transacciones utilizando datos [específicos](/developers/pt/checkout-pro/requirements) de cada industria. 
  - benefit_title: Seguridad ante fraudes
  - benefit_bullet: Protocolos OWASP y PCI DSS.
  - benefit_bullet: Verificación de identidad de los compradores.
