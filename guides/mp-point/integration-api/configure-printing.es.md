@@ -4,7 +4,7 @@ La API de Impresiones ofrece una solución práctica para integrar tus sistemas 
 
 ## Tags personalizadas
 
-Las tags personalizadas permiten ajustar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
+Las tags personalizadas permiten ajustar la presentación de los documentos impresos. Este recurso ofrece flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
 
 > Las tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias tags.
 
@@ -17,25 +17,13 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 | `{left}`   | Alinear a la izquierda                     | `{left}Texto alineado a la izquierda{/left}` |
 | `{center}` | Centrar texto                              | `{center}Texto centrado{/center}` |
 | `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
-| `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
-
-## Formatos para impresión de imágenes
-
-Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint.
-
-Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite se redimensionarán automáticamente para ajustarse al ancho del rollo de papel.
-
-> WARNING
->
-> Importante
->
-> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+| `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |  
 
 ## Configuración de la impresión
 
 Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrese de que el terminal esté configurado en modo PDV (Punto de Venta). 
 
-> WARNING
+> RED_MESSAGE
 >
 > Importante
 >

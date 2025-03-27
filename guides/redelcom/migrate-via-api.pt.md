@@ -33,9 +33,7 @@ A API de Order fornece diversos endpoints que permitem executar as mesmas funcio
 
 ## Configuração de impressões
 
-A API de Impressões oferece uma solução prática para conectar seus sistemas e realizar a gestão de impressão de faturas e comprovantes, assim como impressões personalizadas, nos terminais Point que você tiver configurados. Com essa API, é possível garantir uma experiência de cobrança unificada e eficiente.
-
-Este recurso permite a impressão de recibos e faturas eletrônicas (DTE) e impressões personalizadas diretamente de um ponto de venda (PDV) através da API, utilizando a impressora integrada dos dispositivos Smart. Isso simplifica o processo de cobrança e responde rapidamente às necessidades do seu negócio.
+A API de Impressões oferece uma solução prática para integrar seus sistemas e gerenciar impressões nas terminais Point configuradas. Este recurso permite a impressão de recibos, documentos fiscais eletrônicos (DTE), imagens e impressões personalizadas diretamente de um ponto de venda (PDV), utilizando a impressora integrada dos dispositivos Smart. Isso simplifica o processo de cobrança e responde rapidamente às necessidades do seu negócio.
 
 ### Impressão de faturas e recibos eletrônicos
 
@@ -71,17 +69,17 @@ As tags personalizadas permitem ajustar a apresentação dos documentos impresso
 
 ### Configuração da impressão
 
-Utilize a API para gerenciar o enfileiramento de impressões, considerando as especificações de cada endpoint.
+Utilize os endpoints abaixo para gerenciar a fila de impressões, levando em conta as especificações de cada endpoint. Certifique-se de que o terminal esteja configurado no modo PDV (Ponto de Venda). 
 
-> WARNING
+> RED_MESSAGE
 >
 > Importante
 >
-> O terminal deve estar configurado no modo PDV (Ponto de Venda).  
+> Para a impressão de imagens, tenha em mente que os formatos aceitos são PNG ou JPEG, com codificação Base64 e um tamanho máximo de 1MB. As imagens que excederem este limite serão redimensionadas automaticamente para se ajustarem à largura do rolo de papel.  
 
-Os endpoints diponíveis são:
-   - [Criar ação do terminal](/developers/en/reference/mercado_pago_point/impressions/post): Este endpoint permite que você crie uma nova ação de terminal para Mercado Pago Point.
-   - [Obter ação por ID](/developers/en/reference/mercado_pago_point/impressions/get): Este endpoint permite que você consulte todas as informações da ação utilizando o ID obtido na resposta à sua criação.
-   - [Cancelar ação por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Este endpoint permite cancelar uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada.
+Os endpoints disponíveis são:
+   - [Criar ação da terminal](/developers/pt/reference/mercado_pago_point/impressions_dte/post): Permite a criação de uma nova ação de impressão para Mercado Pago Point, seja de DTEs, impressões personalizadas ou imagens. Para imagens, é suportado o formato Base64. Em caso de sucesso, a resposta devolverá um código de status 201.
+   - [Obter ação por ID](/developers/pt/reference/mercado_pago_point/impressions_dte/get): Permite consultar todas as informações de uma ação criada para uma terminal Point através do ID obtido na resposta à sua criação. Em caso de sucesso, a solicitação devolverá uma resposta com status 200.
+   - [Cancelar ação por ID](/developers/pt/reference/mercado_pago_point/impressions_dte_cancel/post): Permite cancelar uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada. Em caso de sucesso, a solicitação devolverá uma resposta com status 200.
 
 Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione no botão **Atualizar** para buscar a tentativa manualmente.

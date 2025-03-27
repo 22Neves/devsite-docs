@@ -33,9 +33,7 @@ The Order API provides various endpoints that allow you to perform the same func
 
 ## Print configuration
 
-The Printing API provides a practical solution for connecting your systems and managing the printing of invoices and receipts, as well as custom prints, on the Point terminals you have configured. With this API, it is possible to guarantee a unified and efficient payment experience.
-
-This resource allows printing receipts, Documentos Tributarios Electrónicos (DTE) and custom prints directly from a point of sale (POS) through the API, using the integrated printer of Smart devices. This simplifies the payment process and quickly responds to the needs of your business.
+The Printings API offers a practical solution to integrate your systems and manage printings on configured Point terminals. This resource allows the printing of receipts, electronic tax documents (DTE), images, and customized printings directly from a point of sale (POS), using the integrated printer of Smart devices. This simplifies the billing process and quickly responds to the needs of your business.
 
 ### Printing of invoices and electronic receipts
 
@@ -71,17 +69,17 @@ Custom tags allow for adjusting the presentation of printed documents. They offe
 
 ### Print configuration
 
-Use the API to manage the print queue, considering the specifications of each endpoint.
+Use the endpoints below to manage the print queue, taking into account the specifications of each endpoint. Ensure that the terminal is configured in POS (Point of Sale) mode.
 
-> WARNING
+> RED_MESSAGE
 >
 > Important
 >
-> The terminal must be configured in PDV (Point of Sale) mode. 
+> For image printing, keep in mind that the accepted formats are PNG or JPEG, with Base64 encoding and a maximum size of 1MB. Images that exceed this limit will be automatically resized to fit the width of the paper roll.  
 
 The available endpoints are:
-   - [Create terminal action](/developers/en/reference/mercado_pago_point/impressions/post): This allows you to create a new terminal action for the Mercado Pago point.
-   - [Get action by ID](/developers/en/reference/mercado_pago_point/impressions/get): This allows you to consult all action information using the ID obtained in the response to its creation.
-   - [Cancel action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): This allows yoy to cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status "created" can be canceled.
+   - [Create terminal action](/developers/en/reference/mercado_pago_point/impressions_dte/post): Allows the creation of a new printing action for Mercado Pago Point, whether DTEs, customized printings, or images. For images, the Base64 format is supported. In case of success, the response will return a status code 201.
+   - [Get action by ID](/developers/en/reference/mercado_pago_point/impressions_dte/get): Allows you to consult all the information of an action created for a Point terminal using the ID obtained in the response to its creation. In case of success, the request will return a response with status 200.
+   - [Cancel action by ID](/developers/en/reference/mercado_pago_point/impressions_dte_cancel/post): Allows you to cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in "created" status can be canceled. In case of success, the request will return a response with status 200.
     
 Wait until the printing intent reaches the terminal and the print is processed. If the print does not arrive automatically, press the **Update** button to fetch the intent manually.

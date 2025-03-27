@@ -33,7 +33,7 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 
 ## Configuración de impresiones
 
-La API de Impresiones ofrece una solución práctica para integrar tus sistemas y gestionar impresiones en las terminales Point configuradas. Este recurso permite la impresión de recibos y facturas electrónicas (DTE), imágenes e impresiones personalizadas directamente desde un punto de venta (PDV), utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
+La API de Impresiones ofrece una solución práctica para integrar tus sistemas y gestionar impresiones en las terminales Point configuradas. Este recurso permite la impresión de recibos, facturas electrónicas (DTE), imágenes e impresiones personalizadas directamente desde un punto de venta (PDV), utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
 
 ### Impresión de facturas y recibos electrónicos
 
@@ -69,15 +69,13 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 
 ### Configuración de la impresión
 
-Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint.
+Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrese de que el terminal esté configurado en modo PDV (Punto de Venta). 
 
-Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite se redimensionarán automáticamente para ajustarse al ancho del rollo de papel.
-
-> WARNING
+> RED_MESSAGE
 >
 > Importante
 >
-> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+> Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite se redimensionarán automáticamente para ajustarse al ancho del rollo de papel.  
 
 Los endpoints disponibles son:
    - [Crear acción de la terminal](/developers/es/reference/mercado_pago_point/impressions_dte/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de DTEs, impresiones personalizadas o imágenes. Para imágenes, se soporta el formato Base64. En caso de éxito, la respuesta devolverá un código de estado 201.
