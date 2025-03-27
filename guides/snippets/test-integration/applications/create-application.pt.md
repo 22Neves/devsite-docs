@@ -11,6 +11,6 @@ Para criar uma **aplicação**, siga os passos abaixo.
 >
 > Para proteger sua conta e garantir a conformidade das operações, durante a criação de uma aplicação será necessário que realize uma verificação de identidade, em caso de que ainda não tenha feito, ou uma reautenticação, se já tiver concluído previamente o precesso de verificação.
 
-![create-application-1](/images/cow/create-application-1-pt.png)
+![create-application-1](/images/snippets/create-application-1-pt.png)
 
 3. Insira um **nome** para identificar sua aplicação. O limite é de até 50 caracteres alfanuméricos.
