@@ -12,11 +12,11 @@ To create an **application**, follow the steps below.
 > To protect your account and ensure compliance with operations, during the creation of an application, you will need to do an identity verification if you haven’t done so already, or a re-authentication if you have previously completed the verification process.
 
 ----[mlb]----
-![create-application-1](/images/cow/create-application-1-pt.png)
+![create-application-1](/images/snippets/create-application-1-pt.png)
 
 ------------ 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
-![create-application-1](/images/cow/create-application-1-es.png)
+![create-application-1](/images/snippets/create-application-1-es.png)
 
 ------------ 
 
