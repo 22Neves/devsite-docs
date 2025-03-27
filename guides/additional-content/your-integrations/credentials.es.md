@@ -19,11 +19,11 @@ Puedes obtener tus credenciales de producción de dos maneras:
 1. Ingresando a [**Tus integraciones > "Tu aplicación" > Producción > Credenciales de producción**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) a través del [Panel del desarrollador](/developers/es/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
 ----[mlc, mlu, mlm, mco, mpe]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.png)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.png)
 
 ------------
 ----[mla, mlb]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.gif)
 
 ------------
 
