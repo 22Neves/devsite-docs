@@ -23,7 +23,7 @@ As tags personalizadas permitem ajustar a apresentação dos documentos impresso
 
 Utilize os endpoints abaixo para gerenciar a fila de impressões, levando em conta as especificações de cada endpoint. Certifique-se de que o terminal esteja configurado no modo PDV (Ponto de Venda). 
 
-> RED_MESSAGE
+> WARNING
 >
 > Importante
 >

@@ -23,7 +23,7 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 
 Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrese de que el terminal esté configurado en modo PDV (Punto de Venta). 
 
-> RED_MESSAGE
+> WARNING
 >
 > Importante
 >

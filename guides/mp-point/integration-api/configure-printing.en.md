@@ -23,7 +23,7 @@ Custom tags allow you to adjust the presentation of printed documents. This reso
 
 Use the endpoints below to manage the print queue, taking into account the specifications of each endpoint. Ensure that the terminal is configured in POS (Point of Sale) mode.
 
-> RED_MESSAGE
+> WARNING
 >
 > Important
 >
