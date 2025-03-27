@@ -1,5 +1,5 @@
 
-----[mla]----
+----[mla, mlb]----
 
 Outros meios de pagamento
 
@@ -11,7 +11,7 @@ Se você deseja continuar com a sua integração após ter [configurado seu ambi
 
 ------------
 
-----[mlm]----
+----[mlm, mlb]----
 Outros meios de pagamento
 
 Com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ do Mercado Pago, também é possível oferecer pagamentos com **OXXO**, **Paycash**, **Citibanamex** e **BBVA Bancomer**.

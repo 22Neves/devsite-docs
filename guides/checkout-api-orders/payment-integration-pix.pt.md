@@ -1,6 +1,6 @@
 # Pix
 
-Com o Checkout Transparente do Mercado Pago, também é possível oferecer pagamentos instantâneos com Pix via **código QR** ou um **link de pagamento**.
+Com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------ do Mercado Pago, também é possível oferecer pagamentos instantâneos com Pix via **código QR** ou um **link de pagamento**.
 
 **Pix** é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. 
 
@@ -19,8 +19,6 @@ Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api/developm
 Para receber pagamentos, é necessário adicionar no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura.
 
 Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Pix entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=O%20envio%20do%20pagamento%20deve%20ser%20realizado%20mediante%20a%20cria%C3%A7%C3%A3o%20de%20uma%20order%20que%20contenha%20a%20transa%C3%A7%C3%A3o%20de%20pagamento%20associada.).
-
-Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do Pix como opção a ser oferecida.
 
 Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do Pix como opção a ser oferecida.
 
@@ -149,7 +147,7 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 
 | Atributo                                          | Tipo            | Descrição                                                                                                                                                                                                                        | Obrigatório/Opcional |
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| `Authorization`                                     | _Header_        | Faz referência a sua chave privada, o Access Token. Utilize o Access Token de teste em ambientes de desenvolvimento e o Access Token produtivo para pagamentos reais.                                                            | Obrigatório          |
+| `Authorization`                                     | _Header_        | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} em ambientes de desenvolvimento e o :toolTipComponent[_Access Token_ produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção**."} para pagamentos reais.                                                            | Obrigatório          |
 | `X-Idempotency-Key`                                 | _Header_          | Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma *string* aleatória.            | Obrigatório          |
 | `total_amount`                                      | _Body. String_    | Valor total da transação.                                                                                                                                                                                                       | Opcional             |
 | `payment_expiration_time`                                  | _Body. String_    | Permite definir a **data de vencimento** utilizando o formato de duração ISO 8601. Por padrão, a data de vencimento de pagamentos via Pix é de 24 horas, mas é possível alterá-la através deste parâmetro.                 | Opcional             |
@@ -211,7 +209,7 @@ Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
 
 > WARNING
 > 
-> Caso tenha criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, a chamada ao endpoint :TagComponent{tag="API" text="/developers/pt/reference/order/online/process-order/post"}.
+> Caso tenha criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, a chamada ao endpoint :TagComponent{tag="API" text="Processar order" href="/developers/pt/reference/order/online/process-order/post"}.
 
 :::
 :::AccordionComponent{title="Visualizar pagamento" pill="client-side"}
@@ -224,7 +222,7 @@ Selecione a opção que mais se adéqua ao seu modelo de negócio e siga as etap
 
 Ao optar por **adicionar um link ou botão para pagamento com Pix**, o comprador será direcionado a uma nova janela contendo todas as informações para realização do pagamento, como **código QR** ou **Pix Copia e Cola** e as suas respectivas instruções de pagamento.
 
-Para oferecer esta opção, utilize o atributo `ticket_url`, [retornado na resposta da requisição](), como apresentado abaixo:
+Para oferecer esta opção, utilize o atributo `ticket_url`, [retornado na resposta da requisição](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=Dentre%20os%20par%C3%A2metros%20retornados%2C%20temos%20os%20indicados%20na%20tabela%20abaixo.), como apresentado abaixo:
 
 ```html
 <a href="https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar com Pix</a>
@@ -254,14 +252,6 @@ Ao concluir essas etapas, será apresentado para o comprador no momento do pagam
 :::
 :::AccordionComponent{title="Cancelar pagamento" pill="server-side"}
 
-Caso deseje, você pode cancelar um pagamento criado para Pix, desde que esteja pendente ou em processo. Ou seja, com `status=action_required`.
-
-Além disso, recomendamos cancelar os pagamentos que não foram realizados dentro da data de vencimento estabelecida, para evitar problemas de cobrança e conciliação.
-
-> WARNING
->
-> Se passarem 30 dias após a data de vencimento estabelecida para um pagamento e este não tiver sido realizado, o Mercado Pago o considerará expirado. Nesses casos, não é possível fazer um cancelamento manual, e o status do pagamento passará a ser cancelado ou expirado.
-
-Para obter mais informações, consulte a seção R[eembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/refunds-cancellations).
+[TXTSNIPPET][/guides/snippets/test-integration/api-orders/cancel-payment]
 
 :::
