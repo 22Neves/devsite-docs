@@ -6,7 +6,7 @@ By integrating card payments with ----[mlb]---- Checkout Transparente-----------
 
 The reserve of amounts happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing, which is to say, its capture.
 
-To carry out an authorization of a reserved amount, send a **POST** request with your test Access Token and all the necessary attributes  to the endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/create/post). You'll need to set the `capture_mode` field to `manual` to later capture the funds you set aside.
+To carry out an authorization of a reserved amount, send a **POST** request with your :toolTipComponent[test Access Token]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} and all the necessary attributes  to the endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/create/post). You'll need to set the `capture_mode` field to `manual` to later capture the funds you set aside.
 
 ```curl
 curl -X POST \
@@ -119,7 +119,7 @@ Currently, it is only possible to capture the total amount of the reserved payme
 >
 > The time limit to capture the authorized payment is **5 days from its creation**. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 
-To capture the total amount of a reservation, you need to send a request to the endpoint [/v1/orders/{order_id}/capture :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/capture/post), using your *test Access Token* and replacing {order_id}`` with the ID of the order you want to capture in full.
+To capture the total amount of a reservation, you need to send a request to the endpoint [/v1/orders/{order_id}/capture :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/capture/post), using your :toolTipComponent[test Access Token]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} and replacing {order_id}`` with the ID of the order you want to capture in full.
 
 ### Cancel reserve
 
