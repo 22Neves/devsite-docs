@@ -40,12 +40,7 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 >
 > Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model).
 
-> CLIENT_SIDE
->
-> h2
->
-> Adicionar formulário de pagamento
-
+:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"}
 Para poder receber pagamentos, é necessário que você adicione no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
 
 Essa inclusão deve ser feita por meio do _Card Payment Brick_, que oferece um formulário otimizado com temas variados e inclui os campos necessários para pagamentos com cartões.
@@ -249,6 +244,7 @@ Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 
 Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */process_order* que receba os dados coletados pelo Brick após a ação de *submit*.
 
+:::
 
 ::::
 ::::TabComponent{title="Métodos Core"}
@@ -650,12 +646,7 @@ O _token_ do cartão é criado a partir das próprias informações do cartão, 
 
 :::::
 
-> SERVER_SIDE
->
-> h2
->
-> Enviar pagamento
-
+:::AccordionComponent{title="Enviar pagamento" pill="server-side"}
 O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
 Para isso, envie um **POST** com seu :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/pt/reference/order/online-payments/create/post) e execute a requisição.      
@@ -769,3 +760,5 @@ Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 > Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à [Processar order :TagComponent{textTag="API"}](/developers/pt/reference/order/online/process-order/post). Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
 
 Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) y [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
+
+:::

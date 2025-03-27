@@ -659,11 +659,7 @@ El _token_ de la tarjeta se crea a partir de la información de la misma, lo que
 
 ::::
 
-> SERVER_SIDE
->
-> h2
->
-> Enviar pago
+:::AccordionComponent{title="Enviar pago" pill="server-side"}
 
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
@@ -765,3 +761,5 @@ En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 > En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a [Procesar order :TagComponent{textTag="API"}](/developers/es/reference/order/online/process-order/post). Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
 
 Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
+
+:::
