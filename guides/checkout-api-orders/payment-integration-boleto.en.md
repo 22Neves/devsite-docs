@@ -89,22 +89,13 @@ If you do not have a payment form, add the form below to your project, including
 :::
 :::AccordionComponent{title="Get document types" pill="client-side"}
 
-Para facilitar o preenchimento correto do formulário de pagamento, é preciso obter os tipos de documento que podem ser aceitos.
-
-A função abaixo permite completar automaticamente as opções disponíveis. Para isso, basta incluir no formulário o elemento `select` com o `id=form-checkout__identificationType`, utilizado no exemplo da etapa anterior.
-
-Se você já possui um desenvolvimento que contempla a obtenção de tipos de documento, como indicado a seguir, avance para a etapa de [Enviar pagamento](XXX).
-
-Caso ainda não tenha essa função, adicione o código a seguir ao seu projeto.
-
 To facilitate the correct entry of data in the payment form, it is necessary to obtain the possible document types to be accepted.
 
-The function below will allow you to automatically populate the available options, thanks to the inclusion of the select element with the `id: form-checkout__identificationType` found in the form used as an example in the previous step.
+The function below will allow you to automatically populate the available options, thanks to the inclusion of the `select` element with the `id: form-checkout__identificationType` found in the form used as an example in the previous step.
 
-If you already have a development that includes the retrieval of document types, as indicated below, proceed to the next step.
+If you already have a development that includes the retrieval of document types, as indicated below, proceed to [Send payment]().
 
 If you do not have this function, add the following to your project.
-
 
 ```javascript
     (async function getIdentificationTypes() {
@@ -141,11 +132,11 @@ If you do not have this function, add the following to your project.
 ```
 
 :::
-:::AccordionComponent{title="Enviar pagamento" pill="server-side"}
+:::AccordionComponent{title="Send payment pill="server-side"}
 
-O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+The payment submission must be made by creating an order that contains associated payment transactions. 
 
-Para isso, envie um **POST** com seu :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/order/online-payments/create/post"} e execute a requisição.      
+To do this, send a **POST** with your test Access Token and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the reques.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
@@ -192,7 +183,7 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
 }
 ```
 
-Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
+See the table below for descriptions of the parameters that are mandatory in the request and those that, although optional, have some important particularity that should be highlighted.
 
 | Atributo                                          | Tipo            | Descrição                                                                                                                                                                                                                        | Obrigatório/Opcional |
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
