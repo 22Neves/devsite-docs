@@ -19,17 +19,5 @@ Siga os passos abaixo para criar um usuário de teste vendedor.
 5. Por se tratar de um usuário vendedor, **não é necessário** que indique nenhum valor para o **dinheiro disponível**.
 6. Aceite a [Declaração de Privacidade](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidade) e os [Termos e condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em **Criar conta de teste**.
 
-![formulário de criação do usuário teste](/images/snippets/new-test-users-pt.png) 
+![formulário de criação do usuário teste](/images/dashboard/new-test-users-pt.png) 
 
-## 2. Criar aplicação de teste e obter credenciais
-
-Para terminar de estabelecer o seu ambiente de testes, deverá criar uma aplicação de testes com o seu usuário de testes vendedor e, assim, aceder às suas credenciais e vinculá-las à sua integração. Siga as indicações abaixo para realizar este processo corretamente.
-
-1. Abra uma janela anônima, acesse Mercado Pago Developers e clique no botão **Entrar** localizado no canto superior direito.
-2. Faça login como o usuário de teste vendedor criado na etapa anterior. Para isso, utilize o usuário e a senha atribuídos ao mesmo. Você pode consultar estes dados na seção **Contas de Teste**.
-
-![access test user information](/images/snippets/testuser-login-pt.png)
-
-3. Ainda na janela anônima, dentro de [Suas Integrações](/developers/panel/app), clique em **Criar aplicação** e siga os passos para criar uma :toolTipComponent[aplicação]{content="Entidade registrada no Mercado Pago que atua como um identificador para gerenciar suas integrações. Accesse à etapa Criar aplicação se precisar saber como fazer isso."} para poder ter sua aplicação de testes vinculada ao seu usuário vendedor.
-4. Uma vez criada a aplicação, selecione-a para ingresar a  **Detalhes da aplicação**. Lá, dirija-se à seção **Credenciais de produção** no menu lateral esquerdo. Você encontrará a :toolTipComponent[**Public Key e o Access Token do usuário de teste**]{content="Chaves pública e privada da aplicação de testes criada com seu usuário de testes. "}.
-5. Substitua as credenciais utilizadas até agora na etapa de desenvolvimento pelas do usuário de teste vendedor nas solicitações necessárias para testar pagamentos.
