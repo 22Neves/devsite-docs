@@ -252,6 +252,6 @@ Al completar estos pasos, se mostrará al comprador el código QR renderizado ju
 :::
 :::AccordionComponent{title="Cancelar pago" pill="server-side"}
 
-[TXTSNIPPET][/guides/snippets/test-integration/api-orders/cancel-payment]
+[TXTSNIPPET][/guides/snippets/api-orders/cancel-payment]
 
 :::

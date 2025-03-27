@@ -270,6 +270,6 @@ Entre los par√°metros devueltos, tenemos los indicados en la tabla a continuaci√
 :::
 :::AccordionComponent{title="Cancelar pagamento" pill="server-side"}
 
-[TXTSNIPPET][/guides/snippets/test-integration/api-orders/cancel-payment]
+[TXTSNIPPET][/guides/snippets/api-orders/cancel-payment]
 
 :::

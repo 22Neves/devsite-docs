@@ -270,6 +270,6 @@ Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
 :::
 :::AccordionComponent{title="Cancelar pagamento" pill="server-side"}
 
-[TXTSNIPPET][/guides/snippets/test-integration/api-orders/cancel-payment]
+[TXTSNIPPET][/guides/snippets/api-orders/cancel-payment]
 
 :::

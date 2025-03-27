@@ -252,6 +252,6 @@ Ao concluir essas etapas, será apresentado para o comprador no momento do pagam
 :::
 :::AccordionComponent{title="Cancelar pagamento" pill="server-side"}
 
-[TXTSNIPPET][/guides/snippets/test-integration/api-orders/cancel-payment]
+[TXTSNIPPET][/guides/snippets/api-orders/cancel-payment]
 
 :::

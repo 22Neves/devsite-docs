@@ -10,19 +10,19 @@ If you already [set up your environment](/developers/en/docs/checkout-api/develo
 >
 > Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether manual or automatic, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration Mmdel](/developers/en/docs/checkout-api/integration-model).
 
-:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"}
+:::AccordionComponent{title="Add payment form" pill="client-side"}
 
-Para poder receber pagamentos, é necessário que você adicione no _frontend_ um formulário que permita capturar os dados do pagador de maneira segura.
+To be able to receive payments, you need to add a form in the frontend that securely captures the payer's information.
 
-Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir **boleto** entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a próxima etapa.
+If you already have a development that includes your own payment form, make sure to include **boleto** among the payment options you want to offer, as indicated below, and continue to the next step.
 
 > RED_MESSAGE
 >
-> Para configurar pagamentos com boleto bancário, é obrigatório que os campos `zip_code`, `street_name`, `street_number`, `neighborhood`, `city` e `state` estejam presentes no formulário de pagamento e sejam preenchidos pelo comprador. Se você tiver uma configuração que não os inclua, será necessário atualizá-la para garantir que seus pagamentos sejam processados.
+> When setting up payments with boleto bancário, it is mandatory that the `zip_code`, `street_name`, `street_number`, `neighborhood`,` city` and `state` fields are present in the payment form, and that the buyer fill them out correctly. If you have already made a configuration without these fields in it, you must update it to make sure your payments get processed correctly.
 
-Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do boleto bancário como opção a ser oferecida.
+If you do not have a payment form, add the form below to your project, including the identifier for boleto bancário among the payment methods to be offered.
 
-| Meio de pagamento | `payment_method_id`|
+| Payment method | `payment_method_id`|
 |:---:|:---:|
 | Boleto bancário | `bolbradesco` |
 
@@ -87,7 +87,7 @@ Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao s
 ```
 
 :::
-:::AccordionComponent{title="Obter tipos de documento" pill="client-side"}
+:::AccordionComponent{title="Get document types" pill="client-side"}
 
 Para facilitar o preenchimento correto do formulário de pagamento, é preciso obter os tipos de documento que podem ser aceitos.
 
@@ -96,6 +96,15 @@ A função abaixo permite completar automaticamente as opções disponíveis. Pa
 Se você já possui um desenvolvimento que contempla a obtenção de tipos de documento, como indicado a seguir, avance para a etapa de [Enviar pagamento](XXX).
 
 Caso ainda não tenha essa função, adicione o código a seguir ao seu projeto.
+
+To facilitate the correct entry of data in the payment form, it is necessary to obtain the possible document types to be accepted.
+
+The function below will allow you to automatically populate the available options, thanks to the inclusion of the select element with the `id: form-checkout__identificationType` found in the form used as an example in the previous step.
+
+If you already have a development that includes the retrieval of document types, as indicated below, proceed to the next step.
+
+If you do not have this function, add the following to your project.
+
 
 ```javascript
     (async function getIdentificationTypes() {
@@ -270,6 +279,6 @@ Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
 :::
 :::AccordionComponent{title="Cancelar pagamento" pill="server-side"}
 
-[TXTSNIPPET][/guides/snippets/test-integration/api-orders/cancel-payment]
+[TXTSNIPPET][/guides/snippets/api-orders/cancel-payment]
 
 :::
