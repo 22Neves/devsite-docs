@@ -2,9 +2,9 @@
 
 A integração de pagamentos com **cartão de crédito e/ou débito** no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ pode ser realizada de duas maneiras. A **integração recomendada** é através do _Card Payment Brick_, onde o Brick se encarrega de buscar as informações necessárias para efetuar o pagamento. Mas, se você quiser ser o responsável por definir como essas informações serão buscadas, você pode realizar sua integração através de Core Methods.
 
-::::TabsComponent
+:::::TabsComponent
 
-:::TabComponent{title="Card Payment Brick"}
+::::TabComponent{title="Card Payment Brick"}
 
 Na integração por meio do _Card Payment Brick_, a biblioteca `MercadoPago.js`, incluída no seu projeto durante a [configuração do ambiente de desenvolvimento](/developers/pt/docs/checkout-api/development-environment), é responsável por obter as informações necessárias para a geração de um pagamento. Ou seja, ela realiza uma busca pelos tipos de documentos disponíveis para o país correspondente e, conforme os dados do cartão são inseridos, também busca as informações relativas ao emissor e às parcelas disponíveis.
 
@@ -250,9 +250,9 @@ Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */process_order* que receba os dados coletados pelo Brick após a ação de *submit*.
 
 
-:::
+::::
 
-:::TabComponent{title="Métodos Core"}
+::::TabComponent{title="Métodos Core"}
 Na integração via Métodos Core, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
@@ -649,9 +649,9 @@ O _token_ do cartão é criado a partir das próprias informações do cartão, 
 
 :::
 
-:::
-
 ::::
+
+:::::
 
 > SERVER_SIDE
 >
