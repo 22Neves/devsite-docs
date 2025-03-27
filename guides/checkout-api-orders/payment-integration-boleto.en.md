@@ -136,7 +136,7 @@ If you do not have this function, add the following to your project.
 
 The payment submission must be made by creating an order that contains associated payment transactions. 
 
-To do this, send a **POST** with your test Access Token and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the reques.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{link="/developer/pt" linkText="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the reques.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
@@ -185,7 +185,7 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
 
 See the table below for descriptions of the parameters that are mandatory in the request and those that, although optional, have some important particularity that should be highlighted.
 
-| Atributo                                          | Tipo            | Descrição                                                                                                                                                                                                                        | Obrigatório/Opcional |
+| Atribute                                          | Type            | Description                                                                                                                                                                                                                        | Required/Optional |
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | `Authorization`                                     | _Header_        | Faz referência a sua chave privada, o Access Token. Utilize o Access Token de teste em ambientes de desenvolvimento e o Access Token produtivo para pagamentos reais.                                                            | Obrigatório          |
 | `X-Idempotency-Key`                                 | _Header_          | Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma *string* aleatória.            | Obrigatório          |
@@ -206,9 +206,9 @@ See the table below for descriptions of the parameters that are mandatory in the
 
 > SUCCESS_MESSAGE
 >
-> Para conhecer em detalhe todos os parâmetros enviados e retornados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post). Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors) para mais informações.
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/order/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
 
-Após enviar a requisição do pagamento, a resposta trará as seguintes informações: 
+After sending the payment request, the response will include the following information:
 
 ```json
 {
@@ -252,9 +252,9 @@ Após enviar a requisição do pagamento, a resposta trará as seguintes informa
 }
 ```
 
-Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
+Among the returned parameters, we have those indicated in the table below.
 
-| Atributo                                          | Tipo          | Descrição                                                                                                                                                                                                                 |
+| Atribute                                          | Typo          | Description                                                                                                                                                                                                                 |
 |---------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `transaction.payments.status`                        | _String_        | Retorna o *status* da transação. Neste caso, retornará `action_required` para indicar a necessidade de uma ação para concluir o processamento, ou seja, até que se realize o pagamento do boleto.                          |
 | `transaction.payments.status_detail`                 | _String_        | Neste caso, o `status_detail` obtido é aguardando (`waiting_payment`) que o usuário finalize o processo de pagamento do boleto em seu banco.                                                                                |
@@ -265,10 +265,10 @@ Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
 
 > WARNING
 > 
-> Caso tenha criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, a chamada ao endpoint :TagComponent{tag="API" text="/developers/pt/reference/order/online/process-order/post"}.
+> If you have created the order in manual mode, remember that processing the payment requires an additional step, which is calling the [Process order :TagComponent{textTag="API"}](/developers/en/reference/order/online/process-order/post).
 
 :::
-:::AccordionComponent{title="Cancelar pagamento" pill="server-side"}
+:::AccordionComponent{title="Cancel payment" pill="server-side"}
 
 [TXTSNIPPET][/guides/snippets/api-orders/cancel-payment]
 

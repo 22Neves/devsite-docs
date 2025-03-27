@@ -242,7 +242,7 @@ Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 
 ------------ 
 
-Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */process_order* que receba os dados coletados pelo Brick após a ação de *submit*.
+Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */process_order* que receba os dados coletados pelo Brick após a ação de _submit_.
 
 :::
 :::AccordionComponent{title="Enviar pagamento" pill="server-side"}

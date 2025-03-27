@@ -1,9 +1,9 @@
-Si lo deseas, puedes cancelar un pago creado para boleto bancário, siempre y cuando se encuentre pendiente o en proceso; es decir, con `status=action_required`.
+If you wish, you can cancel a payment created for boleto bancário, as long as it is pending or in process; that is, with `status=action_required`.
 
-Adicionalmente, recomendamos cancelar los pagos que no fueron realizados dentro de la fecha de vencimiento establecida, para evitar problemas de facturación y conciliación. 
+Additionally, we recommend canceling payments that were not made by the established due date to avoid billing and reconciliation issues.
 
 > WARNING
 >
-> Si transcurren 30 días luego de la fecha de vencimiento establecida para un pago, y este no fue realizado, Mercado Pago lo considerará expirado. En estos casos, no es posible realizar una cancelación manual, y el estado del pago pasará a ser cancelado o expirado.
+> If 30 days pass after the established due date for a payment and it has not been made, Mercado Pago will consider it expired. In these cases, it is not possible to perform a manual cancellation, and the payment status will change to canceled or expired.
 
-Para obtener más información, consulta la sección [Reembolsos y cancelaciones](/developers/en/docs/checkout-api/payment-management/refunds-cancellations).
+For more information, please consult the [Refunds and cancellations]((/developers/en/docs/checkout-api/payment-management/refunds-cancellations)) section.
