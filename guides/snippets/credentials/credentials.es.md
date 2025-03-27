@@ -33,7 +33,6 @@ También pueden ser requeridas en algunas integraciones más antiguas con plataf
 |---|---|
 | Client ID | Identificador único que representa tu integración. |
 | Client Secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
-
 :::
 
 :::TabComponent{title="Credenciales de prueba"}
@@ -41,10 +40,17 @@ También pueden ser requeridas en algunas integraciones más antiguas con plataf
 
 Las credenciales de prueba son un conjunto de claves que se utilizan tanto en la etapa de desarrollo, para garantizar configuraciones seguras, como en la etapa de pruebas, para probar la integración.
 
+----[mla, mlc, mlu, mlm, mco, mpe]----
 > NOTE
 > 
-> Las credenciales de prueba están disponibles sólo para las integraciones de ----[mla, mlc, mlu, mlm, mco, mpe]----
-[Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing)---------------[mlb]----[Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing)------------ y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
+> Las credenciales de prueba sólo están disponibles para las integraciones de [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
+---------------
+
+----[mlb]----
+> NOTE
+> 
+> Las credenciales de prueba sólo están disponibles para las integraciones de [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
+---------------
 
 Al acceder a las credenciales de prueba, se mostrará el par de credenciales **Public Key y Access Token**.
 
