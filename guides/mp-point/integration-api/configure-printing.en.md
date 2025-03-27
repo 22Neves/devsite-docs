@@ -1,4 +1,4 @@
-# Configure impressions
+# Configure printings
 
 The Printings API offers a practical solution to integrate your systems and manage printings on configured Point terminals. This resource allows the printing of images and customized printings directly from a point of sale (POS), using the integrated printer of Smart devices. This simplifies the billing process and quickly responds to the needs of your business.
 
