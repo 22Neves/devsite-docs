@@ -210,7 +210,7 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 
 Após enviar a requisição do pagamento, a resposta trará as seguintes informações: 
 
-```curl
+```json
 {
   "id": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE",
   "processing_mode": "automatic",

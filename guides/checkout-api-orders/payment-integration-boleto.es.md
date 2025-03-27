@@ -183,7 +183,7 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
 }
 ```
 
-Consulte en la tabla a continuación las descripciones de los parámetros que son obligatorios en la solicitud y aquellos que, aunque son opcionales, tienen alguna particularidad importante que debe destacarse.
+Consulta en la tabla a continuación las descripciones de los parámetros que son obligatorios en la solicitud y aquellos que, aunque son opcionales, tienen alguna particularidad importante que debe destacarse.
 
 | Atributo                                          | Tipo            | Descripción                                                                                                                                                                                                                        | Requerido/Opcional |
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
@@ -210,7 +210,7 @@ Consulte en la tabla a continuación las descripciones de los parámetros que so
 
 Después de enviar la solicitud de pago, la respuesta traerá la siguiente información:
 
-```curl
+```json
 {
   "id": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE",
   "processing_mode": "automatic",

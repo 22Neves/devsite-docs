@@ -164,7 +164,7 @@ Consulte en la tabla a continuación las descripciones de los parámetros que so
 
 Después de enviar la solicitud de pago, la respuesta traerá la siguiente información:
 
-```curl
+```json
 {
   "id": "ORD01HRYFWNYRE1MR1E60MW3X0T2P",
   "type": "online",

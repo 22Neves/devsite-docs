@@ -1,13 +1,12 @@
 # Cartões
 
-XXX
+A integração de pagamentos com **cartão de crédito e/ou débito** no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ pode ser realizada de duas maneiras. A **integração recomendada** é através do _Card Payment Brick_, onde o Brick se encarrega de buscar as informações necessárias para efetuar o pagamento. Mas, se você quiser ser o responsável por definir como essas informações serão buscadas, você pode realizar sua integração através de Core Methods.
 
 ::::TabsComponent
 
 :::TabComponent{title="Card Payment Brick"}
-A integração de pagamentos com **cartão de crédito e/ou débito** no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ é realizada por meio do _Card Payment Brick_.
 
-Nesse modo de integração, a biblioteca `MercadoPago.js`, incluída no seu projeto durante a [configuração do ambiente de desenvolvimento](/developers/pt/docs/checkout-api/development-environment), é responsável por obter as informações necessárias para a geração de um pagamento. Ou seja, ela realiza uma busca pelos tipos de documentos disponíveis para o país correspondente e, conforme os dados do cartão são inseridos, também busca as informações relativas ao emissor e às parcelas disponíveis.
+Na integração por meio do _Card Payment Brick_, a biblioteca `MercadoPago.js`, incluída no seu projeto durante a [configuração do ambiente de desenvolvimento](/developers/pt/docs/checkout-api/development-environment), é responsável por obter as informações necessárias para a geração de um pagamento. Ou seja, ela realiza uma busca pelos tipos de documentos disponíveis para o país correspondente e, conforme os dados do cartão são inseridos, também busca as informações relativas ao emissor e às parcelas disponíveis.
 
 Toda a informação envolvida no processamento da transação é armazenada no *backend*, em conformidade com os padrões de [segurança PCI](/developers/pt/docs/security/pci).
 
@@ -15,21 +14,22 @@ Com isso, a implementação do fluxo é transparente para quem realiza a integra
 
 <pre class="mermaid">
   sequenceDiagram
-      participant Navegador del comprador
-      participant Front-end del integrador
-      participant MercadoPago.js
-      participant Back-end del integrador
-      participant API Mercado Pago
-      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobro<br>El Comprador accede a la pantalla de cobro.
-      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado Pago<br> El front-end del integrador descarga e<br>inicializa la SDK JS de Mercado Pago 
-      Front-end del integrador->>Navegador del comprador: 3. Formulario de pago<br>El front-end del integrador muestra el<br>formulário de pago
-      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pago<br>El comprador completa el formulário y<br>finaliza el pago.
-      Front-end del integrador->>MercadoPago.js: 5. Creación del token<br>El front-end del integrador utiliza la SDK JS<br>para crear el token que contendrá los datos<br>de tarjeta de forma segura.
-      Front-end del integrador->>Back-end del integrador: 6. Envío del token<br>El front-end del integrador envía el token de<br>tarjeta y los datos de pago a su back-end.
-      Back-end del integrador->>API Mercado Pago: 7. Creación del pago<br>Desde el back-end, se llama a los servicios<br>de Mercado Pago para crear el pago.
-      API Mercado Pago->>Navegador del comprador: 8. Resultado del pago<br>El front-end del integrador le muestra al<br>comprador el resultado de la operación.
-      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pago<br>Mercado Pago puede enviar notificaciones<br>vía Webhook con actualizaciones del estado<br>del pago.
-      Back-end del integrador->>Navegador del comprador: 10. Notificación al comprador<br>Si corresponde, se le avisa al comprador<br>sobre la actualización del pago.
+    participant Navegador as Navegador do comprador
+    participant Frontend as Front-end do integrador
+    participant MPjs as MercadoPago.js
+    participant Backend as Back-end do integrador
+    participant API as API Mercado Pago
+
+    Navegador->>Frontend: 1. Tela de pagamento<br>O comprador acessa a tela de pagamento.
+    Frontend->>MPjs: 2. Inicialização SDK JS Mercado Pago<br>O front-end do integrador baixa e<br>inicializa o SDK JS do Mercado Pago.
+    Frontend->>Navegador: 3. Formulário de pagamento<br>O front-end do integrador exibe o<br>formulário de pagamento.
+    Navegador->>Frontend: 4. Confirmação de pagamento<br>O comprador preenche o formulário e<br>finaliza o pagamento.
+    Frontend->>MPjs: 5. Criação do token<br>O front-end do integrador usa o SDK JS<br>para criar o token que conterá os dados<br>do cartão de forma segura.
+    Frontend->>Backend: 6. Envio do token<br>O front-end do integrador envia o token do<br>cartão e os dados de pagamento para seu back-end.
+    Backend->>API: 7. Criação do pagamento<br>Do back-end, são chamados os serviços<br>do Mercado Pago para criar o pagamento.
+    API->>Navegador: 8. Resultado do pagamento<br>O front-end do integrador exibe ao<br>comprador o resultado da operação.
+    API->>Backend: 9. Atualizações de status do pagamento<br>O Mercado Pago pode enviar notificações<br>via Webhook com atualizações do status<br>do pagamento.
+    Backend->>Navegador: 10. Notificação ao comprador<br>Se aplicável, o comprador é notificado<br>sobre a atualização do pagamento.
 </pre>
 
 Além disso, o componente oferece a possibilidade de orientar o usuário com alertas sobre campos incompletos ou possíveis erros ao preencher os dados, otimizando o processo de compra.
@@ -38,7 +38,7 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 
 > NOTE
 >
-> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção[ Modelo de integração](/developers/pt/docs/checkout-api/integration-model).
+> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model).
 
 > CLIENT_SIDE
 >
@@ -48,9 +48,17 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 
 Para poder receber pagamentos, é necessário que você adicione no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
 
-Essa inclusão deve ser feita por meio do Card Payment Brick, que oferece um formulário otimizado com temas variados e inclui os campos necessários para pagamentos com cartões.
+Essa inclusão deve ser feita por meio do _Card Payment Brick_, que oferece um formulário otimizado com temas variados e inclui os campos necessários para pagamentos com cartões.
 
-[LIVE DEMO]
+---
+live_demo_code_action:
+ - title: Experimente nosso Brick
+ - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
+ - link: /developers/pt/live-demo/card-payment-brick
+ - image: /checkout-bricks/live-demo-card-brick.png
+ - linkName: Demo
+ - buttonDescription: Construir seu Card Payment Brick
+---
 
 Para adicionar o _Card Payment Brick_, primeiro realize sua **configuração e inicialização** a partir do *frontend*, como mostram os exemplos a seguir.
 
@@ -64,22 +72,22 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
     callbacks: {
       onReady: () => {
         /*
-         Callback llamado cuando el Brick esté listo.
-         Aquí pueden ocultarse loadings del site, por ejemplo.
+         Callback chamado quando o Brick estiver pronto.
+         Aqui podem ser ocultos loadings do site, por exemplo.
        */
       },
       onSubmit: (formData, additionalData) => {
-        // callback llamado al hacer clic en el botón de envío de datos
+        // callback chamado ao clicar no botão de envio de dados
         return new Promise((resolve, reject) => {
           const submitData = {
             type: "online",
-            total_amount: String(formData.transaction_amount), // debe ser un string con formato 00.00
-            external_reference: "ext_ref_1234", // identificador del origen de la transacción.
+            total_amount: String(formData.transaction_amount), // deve ser uma string com formato 00.00
+            external_reference: "ext_ref_1234", // identificador da origem da transação.
             processing_mode: "automatic",
             transactions: {
               payments: [
                 {
-                  amount: String(formData.transaction_amount), // debe ser un string con formato 00.00 
+                  amount: String(formData.transaction_amount), // deve ser uma string com formato 00.00 
                   payment_method: {
                     id: formData.payment_method_id,
                     type: additionalData.paymentTypeId,
@@ -104,17 +112,17 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
           })
             .then((response) => response.json())
             .then((response) => {
-              // recibir el resultado del pago
+              // receber o resultado do pagamento
               resolve();
             })
             .catch((error) => {
-              // Manejo de la respuesta de error al intentar crear el pago 
+              // Tratamento da resposta de erro ao tentar criar o pagamento 
               reject();
             });
         });
       },
       onError: (error) => {
-        // callback llamado para todos los casos de error del Brick 
+        // callback chamado para todos os casos de erro do Brick 
         console.error(error);
       },
     },
@@ -133,20 +141,20 @@ const initialization = {
 };
 
 const onSubmit = async (formData) => {
-  // callback llamado al hacer clic en el botón de envío de datos 
+  // callback chamado ao clicar no botão de envio de dados 
   return new Promise((resolve, reject) => {
     const submitData = {
         type: "online",
-        total_amount: String(formData.transaction_amount), // debe ser un string con formato 00.00
-        external_reference: "ext_ref_1234", // identificador del origen de la transacción. 
+        total_amount: String(formData.transaction_amount), // deve ser uma string com formato 00.00
+        external_reference: "ext_ref_1234", // identificador da origem da transação. 
         processing_mode: "automatic",
         transactions: {
           payments: [
             {
-              amount: String(formData.transaction_amount), // debe ser un string con formato 00.00
+              amount: String(formData.transaction_amount), // deve ser uma string com formato 00.00
               payment_method: {
                 id: formData.payment_method_id,
-                type: "credit_card", // debe ser “credit_card” o “debit_card” ,
+                type: "credit_card", // deve ser “credit_card” ou “debit_card” ,
                 token: formData.token,
                 installments: formData.installments,
               },
@@ -168,46 +176,126 @@ const onSubmit = async (formData) => {
     })
       .then((response) => response.json())
       .then((response) => {
-        // recibir el resultado del pago
+        // receber o resultado do pagamento
         resolve();
       })
       .catch((error) => {
-        // Manejo de la respuesta de error al intentar crear el pago 
+        // Tratamento da resposta de erro ao tentar criar o pagamento 
         reject();
       });
   });
 };
 
 const onError = async (error) => {
-  // callback llamado para todos los casos de error del Brick
+  // callback chamado para todos os casos de erro do Brick
   console.log(error);
 };
 
 const onReady = async () => {
   /*
-        Callback llamado cuando el Brick esté listo.
-         Aquí pueden ocultarse loadings del site, por ejemplo.
+        Callback chamado quando o Brick estiver pronto.
+        Aqui podem ser ocultos loadings do site, por exemplo.
       */
 };
 ```
 ]]]
 
+O *callback* `onSubmit` do Brick obterá os dados mínimos necessários para a criação de um pagamento. Uma das informações retornadas é o `CardToken`, que representa de forma segura os dados do cartão. Esse _token_ pode ser usado somente uma vez e expira dentro de 7 dias.
+
+Além das informações mínimas, recomendamos incluir detalhes adicionais ou que possam facilitar o reconhecimento da compra por parte do comprador, aumentando assim a taxa de aprovação dos pagamentos. Consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post) para conhecer em detalhe todos os parâmetros a serem enviados ao criar um pagamento, incluindo aqueles que podem melhorar sua taxa de aprovação, e verifique quais você deseja incluir nesta etapa. 
+
+Em seguida, adicione os campos relevantes ao objeto enviado, que são retornados na resposta do *callback*.
+
+> WARNING
+>
+> Sempre que o usuário sair da tela onde algum Brick é exibido, é necessário destruir a instância atual com o comando `window.cardPaymentBrickController.unmount()`. Ao entrar novamente, uma nova instância deve ser gerada.
+
+Por fim, realize a **renderização** do Brick utilizando um dos exemplos abaixo
+
+[[[
+```html
+<div id="cardPaymentBrick_container"></div> // O id deve corresponder ao valor enviado no método create() na etapa anterior
+```
+``` react-jsx
+import { CardPayment } from '@mercadopago/sdk-react';
+
+<CardPayment
+   initialization={initialization}
+   onSubmit={onSubmit}
+   onReady={onReady}
+   onError={onError}
+/>
+```
+]]]
+
+Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
+
+----[mlc]----
+![cardform](checkout-bricks/card-form-mlc-pt.png)
+
+------------
+----[mlm]----
+![cardform](checkout-bricks/card-form-mlm-pt.png)
+
+------------
+----[mla, mlb]----
+![cardform](checkout-bricks/card-form-pt.png)
+
+------------ 
+----[mco, mpe, mlu]----
+![cardform](checkout-bricks/card-form-all-pt.png)
+
+------------ 
+
+Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */process_order* que receba os dados coletados pelo Brick após a ação de *submit*.
+
+
 :::
 
 :::TabComponent{title="Métodos Core"}
-Neste método de integração, o responsável pela integração fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, diferentemente da integração via Cardform, onde a busca pelas informações é feita automaticamente.
-
-Na integração via Métodos Core, o integrador decide quando buscar as informações sobre o tipo de documento, além das informações do cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout.
+Na integração via Métodos Core, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
 
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
+<pre class="mermaid">
+  sequenceDiagram
+      participant Cliente as Navegador do cliente
+      participant Frontend as Frontend do vendedor
+      participant MPjs as MercadoPago.js
+      participant Backend as Back-end do vendedor
+      participant API as API Mercado Pago
+
+      Cliente->>Frontend: 1.1 Acessa o site para pagar
+      Frontend->>MPjs: 1.2 new MercadoPago(PUBLIC_KEY)
+      Frontend->>MPjs: 1.3 getIdentificationTypes()
+      MPjs-->>Frontend: 1.4 identificationTypes
+      Frontend->>Cliente: 1.5 Mostra formulário de pagamento
+
+      Cliente->>Frontend: 2.1 Insere os 6 primeiros números do cartão
+      Frontend->>MPjs: 2.2 getPaymentMethods(OPTIONS)
+      MPjs-->>Frontend: 2.3 paymentMethods
+      Frontend->>MPjs: 2.4 getIssuers(OPTIONS)
+      MPjs-->>Frontend: 2.5 issuers
+      Frontend->>Cliente: 2.6 Mostrar emissores disponíveis
+      Frontend->>MPjs: 2.6 getInstallments(OPTIONS)
+      MPjs-->>Frontend: 2.7 installments
+      Frontend->>Cliente: 2.8 Mostrar meio de pagamento e parcelas disponíveis
+
+      Cliente->>Frontend: 3.1 Envio do formulário completo
+      Frontend->>MPjs: 3.2 createCardToken(OPTIONS)
+      MPjs-->>Frontend: 3.3 cardToken
+      Frontend->>Backend: 3.4 POST/payment
+      Backend->>API: 3.5 POST /v1/payments
+      API-->>Backend: 3.6 Estado do pagamento
+      Backend-->>Frontend: 3.7 Estado do pagamento
+      Frontend->>Cliente: 3.8 Mostrar resultado
+</pre>
 
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"}
 
 A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.
 
-Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamente no projeto.
+Para obter esses dados e processar os pagamentos, insira o `HTML` abaixo diretamente no projeto.
 
 ----[mla, mlb]----
 [[[
@@ -305,7 +393,7 @@ Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamen
 
 Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
 
-Ao finalizar a inicialização dos campos, as divs conterão os iframes com os inputs onde serão inseridos os dados PCI.
+Ao finalizar a inicialização dos campos, as <divs> conterão os iframes com os inputs onde serão inseridos os dados PCI.
 
 [[[
 ```javascript
@@ -323,6 +411,7 @@ Ao finalizar a inicialização dos campos, as divs conterão os iframes com os i
 ]]]
 
 :::
+----[mla, mlu, mpe, mco, mlb, mlc]----
 :::AccordionComponent{title="Obter tipos de documento" pill="client-side"}
 
 Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
@@ -367,6 +456,7 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
 ]]]
 
 :::
+------------
 :::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"}
 
 Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
@@ -502,16 +592,34 @@ Um dos campos obrigatórios que compõem o formulário de pagamento é a **quant
 ```
 ]]]
 
+----[mlb]----
+> NOTE
+>
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454)
+------------
+
+----[mla]----
+> NOTE
+>
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/cuotas-sin-interes_3299)
+------------
+
+----[mlm]----
+> NOTE
+>
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255)
+------------
+
 :::
 :::AccordionComponent{title="Criar token do cartão" pill="client-side"}
 
-O token do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o token é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o token do cartão, utilize a função abaixo.
+O _token_ do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o _token_ é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o _token_ do cartão, utilize a função abaixo.
 
 > NOTE
 >
 > Importante
 >
-> O método `createCardToken` retorna um token com a representação segura dos dados do cartão. Tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores. Além disso, tenha em conta que o **token tem uma validade de 7 dias** e só pode ser usado **uma única vez**.
+> O método `createCardToken` retorna um _token_ com a representação segura dos dados do cartão. Tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores. Além disso, tenha em conta que o **token tem uma validade de 7 dias** e só pode ser usado **uma única vez**.
 
 [[[
 ```javascript
@@ -540,10 +648,127 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 ]]]
 
 :::
+
 :::
 
 ::::
 
-## Enviar pagamento
+> SERVER_SIDE
+>
+> h2
+>
+> Enviar pagamento
 
 O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+
+Para isso, envie um **POST** com seu :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/pt/reference/order/online-payments/create/post) e execute a requisição.      
+
+```curl
+curl --location 'https://api.mercadopago.com/v1/orders' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+--header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
+{
+  "type": "online",
+  "external_reference": "ext_ref_1234",
+  "processing_mode": "automatic",
+  "total_amount": "200.00",
+  "expiration_time": "P3D",
+  "description": "some description",
+  "payer": {
+    "email": "{email}",
+    "first_name": "John",
+    "last_name": "Doe",
+    "identification": {
+      "type": "CPF",
+      "number": "99999999999"
+    },
+    "address": [
+      {
+        "street_name": "Av. das Nações Unidas",
+        "street_number": "3003",
+        "zip_code": "06233903",
+  "neighborhood": "Bonfim",
+  "state": "SP",
+  "city": "Osasco"
+      }
+    ]
+  },
+  "transactions": {
+    "payments": [
+      {
+        "amount": "200.00",
+        "payment_method": {
+          "id": "bolbradesco",
+          "type": "ticket"
+        }
+      }
+    ]
+  }
+}
+```
+
+Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
+
+| Atributo | Tipo | Descrição | Obrigatório/Opcional |
+|---|---|---|---|
+| `Authorization` | _Header_ | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[_Access Token_ de teste]{link="/developer/pt" linkText="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} em ambientes de desenvolvimento e o :toolTipComponent[_Access Token_ produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção**."} para pagamentos reais. | Obrigatório |
+| `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma *string* aleatória. | Obrigatório |
+| `processing_mode` | _Body. String_ | Modo de processamento da order. Os valores possíveis são: <br> - `automatic`: para criar e processar a ordem em modo automático.<br> - `manual`: para criar a order e processá-la posteriormente. <br> Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model). | Obrigatório |
+| `total_amount` | _Body. String_ | Valor total da transação. | Obrigatório |
+| `transaction.payments.payment_method.id` | _Body. String_ | Identificador do meio de pagamento. **Neste caso, é a bandeira de cada cartão**. Você pode consultar a lista completa de identificadores disponíveis enviando uma requisição ao endpoint [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). | Obrigatório |
+| `transaction.payments.payment_method.type` | _Body. String_ | Tipo de método de pagamento. Para pagamentos com cartão de crédito, deve ser `credit_card`, e para pagamentos com cartão de débito, deve ser `debit_card`. | Obrigatório |
+
+> SUCCESS_MESSAGE
+>
+> Para conhecer em detalhe todos os parâmetros enviados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post).  Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors).
+
+Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
+
+```json
+{
+  "id": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE",
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "marketplace": "NONE",
+  "total_amount": "200.00",
+  "country_code": "BRA",
+  "user_id": "1245621468",
+  "created_date": "2024-09-02T22:04:01.880469Z",
+  "last_updated_date": "2024-09-02T22:04:04.429289Z",
+  "type": "online",
+  "status": "action_required",
+  "status_detail": "waiting_payment",
+  "capture_mode": "automatic",
+  "integration_data": {
+    "application_id": "4599991948843755"
+  },
+  "transactions": {
+    "payments": [
+      {
+        "id": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24",
+        "reference_id": "22dvqmsbq8c",
+        "amount": "200.00",
+        "status": "action_required",
+        "status_detail": "waiting_payment",
+        "payment_method": {
+          "id": "bolbradesco",
+          "type": "ticket",
+          "ticket_url": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+          "barcode_content": "3335008800000000006004835002100020000242462010",
+          "reference": "1234567890",
+          "verification_code": "1234567890",
+          "financial_institution": "bolbradesco",
+          "digitable_line": "23793380296060054351030006333303799140000020000"
+        }
+      }
+    ]
+  }
+}
+```
+
+> WARNING
+>
+> Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à [Processar order :TagComponent{textTag="API"}](/developers/pt/reference/order/online/process-order/post). Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
+
+Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) y [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
