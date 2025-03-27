@@ -22,6 +22,8 @@ Veja abaixo as principais diferenças entre as duas opções.
 
 Uma order de pagamentos online pode ser criada para ser processada de dois modos: **Modo automático** e **Modo manual**. 
 
+A definição do modo de processamento será realizada no momento da criação da order, por meio do parâmetro `processing_mode`. Seu valor deve ser `automatic`, para processamentos automáticos, ou `manual`, para processar o pedido manualmente.
+
 ::::TabsComponent
 
 :::TabComponent{title="Modo automático"}

@@ -22,6 +22,8 @@ Below are the main differences between the two options.
 
 An online payment order can be created to be processed in two modes: **Automatic mode** and **Manual mode**.
 
+The definition of the processing mode will be done at the time of creating the order, using the parameter `processing_mode`. Its value should be `automatic` for automatic processing or manual for manually processing the order.
+
 ::::TabsComponent
 
 :::TabComponent{title="Automatic mode"}

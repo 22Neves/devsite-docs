@@ -543,3 +543,7 @@ O token do cartão é criado a partir das próprias informações do cartão, au
 :::
 
 ::::
+
+## Enviar pagamento
+
+O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
