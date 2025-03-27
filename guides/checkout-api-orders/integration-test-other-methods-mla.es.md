@@ -1,0 +1,1 @@
+# Realizar una compra de prueba con otros medios de pago
