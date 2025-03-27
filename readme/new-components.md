@@ -44,7 +44,7 @@ Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspe
 :::
 :::AccordionComponent{title="Vivamus vel efficitur ante." pill="Opcional"}
 Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim. Vivamus rhoncus, ipsum a egestas vulputate, nunc libero semper elit, et elementum neque orci eget ipsum. Vivamus aliquam ex felis, quis varius ex cursus vulputate. Sed facilisis tempus molestie. Integer sed blandit purus, sed elementum metus. 
-:::
+::: 
 
 
 <br>
