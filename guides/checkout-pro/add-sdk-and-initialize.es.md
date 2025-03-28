@@ -149,7 +149,14 @@ Al ejecutar tu aplicación en React, el SDK de Mercado Pago renderizará el bot�
 [IMG BOTÃO]()
 ::::
 
-Una vez que hayas finalizado la configuración de tu frontend, deberás configurar las [Notificaciones](/developers/es/docs/checkout-pro/payment-notifications) para que tu integración reciba información en tiempo real sobre los eventos que ocurren con Mercado Pago.
+:::::
+
+<br>
+
+Una vez que hayas finalizado la configuración de tu frontend, deberás configurar las [Notificaciones](#) para que tu integración reciba información en tiempo real sobre los eventos que ocurren con Mercado Pago.
+
+<br>
+<br>
 
 :::AccordionComponent{title="Personalización" pill="1"}
 Si deseas, puedes hacer algunos cambios en los textos o un cambio visual en el botón de pago de Mercado Pago. Para eso, accede a las siguientes documentaciones.
