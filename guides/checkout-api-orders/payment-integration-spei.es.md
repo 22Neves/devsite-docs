@@ -12,7 +12,7 @@ Si ya [configuraste tu ambiente](/developers/es/docs/checkout-api/development-en
 
 Para poder recibir pagos, es necesario que añadas en el _frontend_ un formulario que permita capturar los datos del pagador de manera segura. 
 
-Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir **Transferencias SPEI** entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Enviar pago](). 
+Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir **Transferencias SPEI** entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Enviar pago](/developers/es/docs/checkout-api/payment-integration/spei-transfers#:~:text=server%2Dside-,Enviar,-pago). 
 
 Si no cuentas con un formulario de pago, añade el siguiente a tu proyecto, incluyendo el identificador de Pix como medio de pago a ofrecer.
 
@@ -61,8 +61,7 @@ Si no cuentas con un formulario de pago, añade el siguiente a tu proyecto, incl
 
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}
- y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
@@ -109,7 +108,7 @@ Consulte en la tabla a continuación las descripciones de los parámetros que so
 >
 > Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
 
-La respuesta devolverá el parámetro `ticket_url`, que contiene la URL con las instrucciones para que el comprador efectúe el pago. Deberás redirigirlo siguiendo las indicaciones de la etapa [Disponibilizar pago](). Además, mostrará el status action_required hasta que el pago sea realizado. 
+La respuesta devolverá el parámetro `ticket_url`, que contiene la URL con las instrucciones para que el comprador efectúe el pago. Deberás redirigirlo siguiendo las indicaciones de la etapa [Disponibilizar pago](/developers/es/docs/checkout-api/payment-integration/spei-transfers#:~:text=client%2Dside-,Disponibilizar,-el%20pago). Además, mostrará el status action_required hasta que el pago sea realizado. 
 
 ```json
 {

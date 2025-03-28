@@ -112,7 +112,7 @@ If you do not have this function, add the following to your project.
 
 The payment submission must be made by creating an order that contains associated payment transactions. 
 
-To do this, send a **POST** with your :toolTipComponent[test Access Token]{link="/developer/pt" linkText="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
 
 ```curl
 curl -X POST \

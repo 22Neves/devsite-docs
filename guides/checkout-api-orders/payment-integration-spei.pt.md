@@ -12,7 +12,7 @@ Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api/developm
 
 Para receber pagamentos, é necessário adicionar no _frontend_ um formulário que permita capturar os dados do pagador de maneira segura.
 
-Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Transferências SPEI entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento](xxx).
+Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Transferências SPEI entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/spei-transfers#:~:text=server%2Dside-,Enviar,-pagamento).
 
 Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do Pix como opção a ser oferecida.
 
@@ -109,7 +109,7 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 >
 > Para conhecer em detalhe todos os parâmetros enviados e retornados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post). Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors) para mais informações.
 
-A resposta retornará o parâmetro `ticket_url`, que contém a URL com as instruções para que o comprador efetue o pagamento. Você deve redirecioná-lo para essa página, seguindo as orientações da etapa de [Disponibilizar pagamento](). Além disso, mostrará o status action_required até que o pagamento seja realizado.
+A resposta retornará o parâmetro `ticket_url`, que contém a URL com as instruções para que o comprador efetue o pagamento. Você deve redirecioná-lo para essa página, seguindo as orientações da etapa de [Disponibilizar pagamento](/developers/pt/docs/checkout-api/payment-integration/spei-transfers#:~:text=client%2Dside-,Disponibilizar,-pagamento). Além disso, mostrará o status action_required até que o pagamento seja realizado.
 
 ```json
 {

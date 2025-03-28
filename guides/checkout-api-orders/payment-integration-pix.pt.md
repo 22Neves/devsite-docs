@@ -18,7 +18,7 @@ Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api/developm
 
 Para receber pagamentos, é necessário adicionar no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura.
 
-Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Pix entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=O%20envio%20do%20pagamento%20deve%20ser%20realizado%20mediante%20a%20cria%C3%A7%C3%A3o%20de%20uma%20order%20que%20contenha%20a%20transa%C3%A7%C3%A3o%20de%20pagamento%20associada.).
+Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Pix entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Obter tipos de documento](https://beta.mercadopago.com.br/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=client%2Dside-,Obter,-tipos%20de%20documento).
 
 Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do Pix como opção a ser oferecida.
 
@@ -69,7 +69,7 @@ Para facilitar o preenchimento correto do formulário de pagamento, é preciso o
 
 A função abaixo permite completar automaticamente as opções disponíveis. Para isso, basta incluir no formulário o elemento `select` com o `id=form-checkout__identificationType`, utilizado no exemplo da etapa anterior.
 
-Se você já possui um desenvolvimento que contempla a obtenção de tipos de documento, como indicado a seguir, avance para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=O%20envio%20do%20pagamento%20deve%20ser%20realizado%20mediante%20a%20cria%C3%A7%C3%A3o%20de%20uma%20order%20que%20contenha%20a%20transa%C3%A7%C3%A3o%20de%20pagamento%20associada.).
+Se você já possui um desenvolvimento que contempla a obtenção de tipos de documento, como indicado a seguir, avance para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=server%2Dside-,Enviar,-pagamento).
 
 Caso ainda não tenha essa função, adicione o código a seguir ao seu projeto.
 
@@ -204,9 +204,9 @@ Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
 |---------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `transaction.payments.status`                        | _String_       | Retorna o status da transação. Neste caso, retornará `action_required` para indicar a necessidade de uma ação para concluir o processamento, ou seja, até que se realize o pagamento.                                                               |
 | `transaction.payments.status_detail`                 | _String_        | Nos casos de transferência bancária, como é o caso de pagamentos com Pix, o `status_detail` obtido é aguardando (`waiting_payment`) que o usuário finalize o processo de pagamento no seu banco.                                                  |
-| `transaction.payments.payment_method.ticket_url`    | _String_    | URL para o Pix renderizado, com código QR, Pix Copia e Cola e instruções de pagamento. Veja mais informações em [Disponibilizar pagamento](xxx).                                                                                                   |
-| `transaction.payments.payment_method.qr_code`        | _String_        | Apresenta um código alfanumérico a ser utilizado na configuração para apresentar a opção que permitirá copiar e colar o código de pagamento para pagamento do Pix. Veja mais informações em [Disponibilizar pagamento](xxx).                               |
-| `transaction.payments.payment_method.qr_code_base64` | _String_        | Representação em `Base64` da imagem do código QR a ser digitalizado para finalização do pagamento. Apresenta o valor que deverá utilizado na requisição para exibir o código QR do Pix. Veja mais informações em [Disponibilizar pagamento](xxx).               |
+| `transaction.payments.payment_method.ticket_url`    | _String_    | URL para o Pix renderizado, com código QR, Pix Copia e Cola e instruções de pagamento. Veja mais informações em [Disponibilizar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=client%2Dside-,Disponibilizar,-pagamento).                                                                                                   |
+| `transaction.payments.payment_method.qr_code`        | _String_        | Apresenta um código alfanumérico a ser utilizado na configuração para apresentar a opção que permitirá copiar e colar o código de pagamento para pagamento do Pix. Veja mais informações em [Disponibilizar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=client%2Dside-,Disponibilizar,-pagamento).                               |
+| `transaction.payments.payment_method.qr_code_base64` | _String_        | Representação em `Base64` da imagem do código QR a ser digitalizado para finalização do pagamento. Apresenta o valor que deverá utilizado na requisição para exibir o código QR do Pix. Veja mais informações em [Disponibilizar pagamento](/developers/pt/docs/checkout-api/payment-integration/pix#:~:text=client%2Dside-,Disponibilizar,-pagamento).               |
 
 > WARNING
 > 

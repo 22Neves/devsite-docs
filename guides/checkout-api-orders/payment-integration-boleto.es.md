@@ -14,7 +14,7 @@ Si ya [configuraste tu ambiente](/developers/es/docs/checkout-api/development-en
 
 Para poder recibir pagos, es necesario que añadas en el _frontend_ un formulario que permita capturar los datos del pagador de manera segura. 
 
-Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir **boleto** entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Enviar pago](). 
+Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir **boleto** entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Obtener tipos de documento](/developers/es/docs/checkout-api/payment-integration/boleto#:~:text=client%2Dside-,Obtener,-tipos%20de%20documento). 
 
 > RED_MESSAGE
 >
@@ -93,7 +93,7 @@ Para facilitar la inserción de datos en el formulario de pago de manera correct
 
 La función a continuación te permitirá completar automáticamente las opciones disponibles.  Para eso, basta incluir el elemento `select` con el `id: form-checkout__identificationType` que se encuentra en el formulario utilizado como ejemplo en la etapa anterior.
 
-Si ya cuentas con un desarrollo que contempla la obtención de tipos de documento, como es indicado a continuación, avanza a la etapa de [Enviar pago](XXX).
+Si ya cuentas con un desarrollo que contempla la obtención de tipos de documento, como es indicado a continuación, avanza a la etapa de [Enviar pago](/developers/es/docs/checkout-api/payment-integration/boleto#:~:text=server%2Dside-,Enviar,-pago).
 
 Si no cuentas con esta función, añade la siguiente a tu proyecto.
 
@@ -136,8 +136,7 @@ Si no cuentas con esta función, añade la siguiente a tu proyecto.
 
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}
- y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \

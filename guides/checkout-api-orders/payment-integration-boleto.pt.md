@@ -14,7 +14,7 @@ Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api/developm
 
 Para poder receber pagamentos, é necessário que você adicione no _frontend_ um formulário que permita capturar os dados do pagador de maneira segura.
 
-Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir **boleto** entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento]()
+Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir **boleto** entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Obter tipos de documento](/developers/pt/docs/checkout-api/payment-integration/boleto#:~:text=client%2Dside-,Obter,-tipos%20de%20documento)
 
 > RED_MESSAGE
 >
@@ -93,7 +93,7 @@ Para facilitar o preenchimento correto do formulário de pagamento, é preciso o
 
 A função abaixo permite completar automaticamente as opções disponíveis. Para isso, basta incluir no formulário o elemento `select` com o `id=form-checkout__identificationType`, utilizado no exemplo da etapa anterior.
 
-Se você já possui um desenvolvimento que contempla a obtenção de tipos de documento, como indicado a seguir, avance para a etapa de [Enviar pagamento](XXX).
+Se você já possui um desenvolvimento que contempla a obtenção de tipos de documento, como indicado a seguir, avance para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/boleto#:~:text=server%2Dside-,Enviar,-pagamento).
 
 Caso ainda não tenha essa função, adicione o código a seguir ao seu projeto.
 

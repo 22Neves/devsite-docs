@@ -14,7 +14,7 @@ Se você deseja continuar com a sua integração após ter [configurado seu ambi
 
 Para receber pagamentos, é necessário adicionar no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura.
 
-Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir OXXO, Paycash, Citibanamex ou BBVA Bancomer entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento]().
+Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir OXXO, Paycash, Citibanamex ou BBVA Bancomer entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Enviar pagamento](/developers/pt/docs/checkout-api/payment-integration/other-payment-methods#:~:text=server%2Dside-,Enviar,-pagamento).
 
 Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do Pix como opção a ser oferecida.
 

@@ -241,11 +241,9 @@ To move on to the payment submission stage, your backend must be able to receive
 :::
 :::AccordionComponent{title="Submit payment" pill="server-side"}
 
-The payment submission must be made by creating an order that contains associated payment transactions.
+The payment submission must be made by creating an order that contains associated payment transactions.    
 
-Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/pt/reference/order/online-payments/create/post) e execute a requisição.    
-
-To do this, send a **POST** with your test Access Token and the required parameters listed below to the endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/create/post) and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
 
 
 ```curl
@@ -744,11 +742,9 @@ The card token is created from the card information itself, increasing security 
 :::
 :::AccordionComponent{title="Submit payment" pill="server-side"}
 
-The payment submission must be made by creating an order that contains associated payment transactions.
+The payment submission must be made by creating an order that contains associated payment transactions.   
 
-Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/pt/reference/order/online-payments/create/post) e execute a requisição.    
-
-To do this, send a **POST** with your test Access Token and the required parameters listed below to the endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/create/post) and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
 
 
 ```curl

@@ -14,7 +14,7 @@ Si deseas continuar con tu integración luego de haber [configurado tu ambiente]
 
 Para poder recibir pagos, es necesario que añadas en el _frontend_ un formulario que permita capturar los datos del pagador de manera segura. 
 
-Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir Rapipago y Pago Fácil entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Obtener tipos de documentos](). 
+Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir Rapipago y Pago Fácil entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Obtener tipos de documentos](/developers/es/docs/checkout-api/payment-integration/other-payment-methods#:~:text=client%2Dside-,Obtener,-tipos%20de%20documento). 
 
 Si no cuentas con un formulario de pago, añade el siguiente a tu proyecto, incluyendo el identificador de Pix como medio de pago a ofrecer.
 
@@ -66,7 +66,7 @@ Para facilitar la inserción de datos en el formulario de pago de manera correct
 
 La función a continuación te permitirá completar automáticamente las opciones disponibles.  Para eso, basta incluir el elemento `select` con el `id: form-checkout__identificationType` que se encuentra en el formulario utilizado como ejemplo en la etapa anterior.
 
-Si ya cuentas con un desarrollo que contempla la obtención de tipos de documento, como es indicado a continuación, avanza a la etapa de [Enviar pago](XXX).
+Si ya cuentas con un desarrollo que contempla la obtención de tipos de documento, como es indicado a continuación, avanza a la etapa de [Enviar pago](/developers/es/docs/checkout-api/payment-integration/other-payment-methods#:~:text=server%2Dside-,Enviar,-pago).
 
 Si no cuentas con esta función, añade la siguiente a tu proyecto.
 

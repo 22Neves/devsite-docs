@@ -1,4 +1,4 @@
-Otros medios de pago
+# Otros medios de pago
 
 Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex** y **BBVA Bancomer**.
 
@@ -14,7 +14,7 @@ Si deseas continuar con tu integración luego de haber [configurado tu ambiente]
 
 Para poder recibir pagos, es necesario que añadas en el _frontend_ un formulario que permita capturar los datos del pagador de manera segura. 
 
-Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir estos medios de pago entre las opciones que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Enviar pago](). 
+Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir estos medios de pago entre las opciones que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Enviar pago](/developers/es/docs/checkout-api/payment-integration/other-payment-methods#:~:text=server%2Dside-,Enviar,-pago). 
 
 Si no cuentas con un formulario de pago, añade el siguiente a tu proyecto, incluyendo el identificador de Pix como medio de pago a ofrecer.
 

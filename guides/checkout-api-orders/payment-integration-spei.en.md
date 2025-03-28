@@ -12,13 +12,9 @@ If you already [set up your environment](/developers/en/docs/checkout-api/develo
 
 To be able to receive payments, you need to add a form in the frontend that securely captures the payer's information.
 
-If you already have a development that includes your own payment form, make sure to include **SPEI Transfer** among the payment options you want to offer, as indicated below, and continue to the next step.
+If you already have a development that includes your own payment form, make sure to include SPEI Transfer among the payment options you want to offer, as indicated below, and continue to the [Submit payment step]().
 
-> RED_MESSAGE
->
-> When setting up payments with boleto bancário, it is mandatory that the `zip_code`, `street_name`, `street_number`, `neighborhood`,` city` and `state` fields are present in the payment form, and that the buyer fill them out correctly. If you have already made a configuration without these fields in it, you must update it to make sure your payments get processed correctly.
-
-If you do not have a payment form, add the form below to your project, including the identifier for boleto bancário among the payment methods to be offered.
+If you do not have a payment form, add the one below to your project, including the identifier for SPEI Transfer among the payment methods to be offered.
 
 | Payment method | `payment_method_id`|
 |:---:|:---:|
@@ -65,7 +61,7 @@ If you do not have a payment form, add the form below to your project, including
 
 The payment submission must be made by creating an order that contains associated payment transactions. 
 
-To do this, send a **POST** with your :toolTipComponent[test Access Token]{link="/developer/pt" linkText="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through **Your integrations > Application details > Testing > Testing credentials**."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
