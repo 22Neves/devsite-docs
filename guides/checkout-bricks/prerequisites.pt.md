@@ -1,18 +1,311 @@
-# Pré-requisitos
+# Componentes Nova Arquitetura de Docs
 
-Para realizar a integração dos Bricks, é preciso atender aos requisitos listados abaixo.
+Segue lista de componentes da nova arquitetura de documentações
+
+
+## Componentes Novos
+
+Implementação dos componentes novos linkados nesse [Figma](https://www.figma.com/design/Z1MQhRUyq0xH0APuFEWS1b/Componentes-e-templates?node-id=4357-2253&m=dev)
+
+## Tooltip
+
+Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet *negrito* pellentesque. In a diam _italico_ amet velit tempor."} dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt :toolTipComponent[imperdiet]{content="Phasellus sodales risus nisi, in sollicitudin nulla faucibus et"}. interdum. Nullam aliquam nibh id posuere dapibus.
+
+## Tab
+
+:::::TabsComponent
+
+::::TabComponent{title="Lorem"}
+Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu odio ullamcorper sollicitudin. Integer orci nibh, molestie ac commodo vel, varius sit amet dui. Quisque ultrices orci vel lorem ullamcorper tempus. Aenean porta pretium nisl, hendrerit molestie diam gravida vel. Aenean congue urna [neque](/developer/pt), a placerat sem commodo non. Suspendisse luctus, erat mollis ultrices consequat, lorem lacus lacinia dolor, tristique rutrum quam ante quis turpis. Aenean a nibh vel arcu tincidunt ultrices ut eget sem.
+<br>
+<br>
+:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="1"}
+Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspendisse vel feugiat sapien.
+:::
+:::AccordionComponent{title="Proin in semper ante. Donec ultrices ligula rutrum maximus consectetur." pill="2"}
+Suspendisse ac dolor a diam viverra volutpat eu a ipsum. Etiam vitae dui libero. Suspendisse molestie tellus sit amet purus blandit maximus. Donec rutrum tellus felis, ac placerat diam efficitur a. Phasellus lorem elit, egestas et nisi eget, dictum cursus velit. Maecenas dui neque, suscipit ac bibendum at, ultricies id purus. Nunc non elit non eros aliquet molestie. Curabitur lobortis egestas dolor, id auctor justo commodo sed. 
+:::
+<br>
+<br>
+Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Vivamus luctus at nulla sed dignissim. Cras at consectetur ex, sit amet pellentesque erat. Phasellus molestie, sem ut commodo ullamcorper, diam velit interdum ante,
+::::
+
+::::TabComponent{title="Aenean"}
+Aenean velit lorem, tristique eu lacinia non, malesuada vitae lacus. Nam placerat sed elit eget tincidunt. Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor pellentesque. Vivamus luctus at nulla sed dignissim. Cras at consectetur ex, sit amet pellentesque erat. Phasellus molestie, sem ut commodo ullamcorper, diam velit interdum ante, non vestibulum tellus nisi quis sapien. Proin congue consectetur maximus.
+::::
+
+::::TabComponent{title="Vestibulum"}
+Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu odio ullamcorper sollicitudin. Integer orci nibh, molestie ac commodo vel, varius sit amet dui. Quisque ultrices orci vel lorem ullamcorper tempus. Aenean porta pretium nisl, hendrerit molestie diam gravida vel. Aenean congue urna neque, a placerat sem commodo non. Suspendisse luctus, erat mollis ultrices consequat, lorem lacus lacinia dolor, tristique rutrum quam ante quis turpis. Aenean a nibh vel arcu tincidunt ultrices ut eget sem.
+::::
+
+:::::
+
+## Accordion
+
+<br>
+
+:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="1"}
+Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspendisse vel feugiat sapien. Fusce euismod dui orci, vel euismod enim finibus vitae. Nullam efficitur non arcu et laoreet. Praesent maximus, odio nec ullamcorper maximus, nibh justo posuere felis, non convallis justo mauris eget urna. Phasellus rutrum diam at semper convallis. Sed non augue condimentum neque euismod dictum vel quis quam. Sed ac porta massa. Donec et auctor nulla. Morbi vitae ullamcorper arcu. 
+:::
+:::AccordionComponent{title="Proin in semper ante. Donec ultrices ligula rutrum maximus consectetur." pill="2"}
+Suspendisse ac dolor a diam viverra volutpat eu a ipsum. Etiam vitae dui libero. Suspendisse molestie tellus sit amet purus blandit maximus. Donec rutrum tellus felis, ac placerat diam efficitur a. Phasellus lorem elit, egestas et nisi eget, dictum cursus velit. Maecenas dui neque, suscipit ac bibendum at, ultricies id purus. Nunc non elit non eros aliquet molestie. Curabitur lobortis egestas dolor, id auctor justo commodo sed. 
+:::
+:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="3"}
+Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspendisse vel feugiat sapien. Fusce euismod dui orci, vel euismod enim finibus vitae. Nullam efficitur non arcu et laoreet. Praesent maximus, odio nec ullamcorper maximus, nibh justo posuere felis, non convallis justo mauris eget urna. Phasellus rutrum diam at semper convallis. Sed non augue condimentum neque euismod dictum vel quis quam. Sed ac porta massa. Donec et auctor nulla. Morbi vitae ullamcorper arcu. 
+:::
+:::AccordionComponent{title="Vivamus vel efficitur ante." pill="Opcional"}
+Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim. Vivamus rhoncus, ipsum a egestas vulputate, nunc libero semper elit, et elementum neque orci eget ipsum. Vivamus aliquam ex felis, quis varius ex cursus vulputate. Sed facilisis tempus molestie. Integer sed blandit purus, sed elementum metus. 
+:::
+
+
+<br>
+
+## Tag
+
+Aenean velit lorem, tristique eu lacinia non, :TagComponent{tag="API" text="Api Order" href="/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli"} vitae lacus. Nam placerat sed. Sed viverra nunc congue pellentesque. In a diam sit amet :TagComponent{tag="AMET" text="velit"} pellentesque. Vivamus luctus at sed dignissim.
+
+## Diagramas
+
+### Sequence
+
+<pre class="mermaid">
+  sequenceDiagram
+      participant Navegador del comprador
+      participant Front-end del integrador
+      participant MercadoPago.js
+      participant Back-end del integrador
+      participant API Mercado Pago
+      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobro<br>El Comprador accede a la pantalla de cobro.
+      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado Pago<br> El front-end del integrador descarga e<br>inicializa la SDK JS de Mercado Pago 
+      Front-end del integrador->>Navegador del comprador: 3. Formulario de pago<br>El front-end del integrador muestra el<br>formulário de pago
+      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pago<br>El comprador completa el formulário y<br>finaliza el pago.
+      Front-end del integrador->>MercadoPago.js: 5. Creación del token<br>El front-end del integrador utiliza la SDK JS<br>para crear el token que contendrá los datos<br>de tarjeta de forma segura.
+      Front-end del integrador->>Back-end del integrador: 6. Envío del token<br>El front-end del integrador envía el token de<br>tarjeta y los datos de pago a su back-end.
+      Back-end del integrador->>API Mercado Pago: 7. Creación del pago<br>Desde el back-end, se llama a los servicios<br>de Mercado Pago para crear el pago.
+      API Mercado Pago->>Navegador del comprador: 8. Resultado del pago<br>El front-end del integrador le muestra al<br>comprador el resultado de la operación.
+      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pago<br>Mercado Pago puede enviar notificaciones<br>vía Webhook con actualizaciones del estado<br>del pago.
+      Back-end del integrador->>Navegador del comprador: 10. Notificación al comprador<br>Si corresponde, se le avisa al comprador<br>sobre la actualización del pago.
+</pre>
+
+### Graph
+<br>
+<pre class="mermaid">
+    graph TD
+      A[Christmas] -->|Get money| B(Go shopping)
+      B --> C{Let me think}
+      B --> G[/Another/]
+      C ==>|One| D[Laptop]
+      C -->|Two| E[iPhone]
+      C -->|Three| F[fa:fa-car Car]
+      subgraph section
+        C
+        D
+        E
+        F
+        G
+      end
+</pre>
+<br>
+
+## Iteração de componentes existentes
+
+Implementação dos componentes já existentes linkados nesse [Figma](https://www.figma.com/design/Z1MQhRUyq0xH0APuFEWS1b/Componentes-e-templates?node-id=4267-1792&m=dev).
+
+## Message
+
+> RED_MESSAGE
+>
+> Integer auctor viverra ultrices.
+>
+> Interdum et malesuada fames ac ante ipsum primis in LINK >>>[external link](https://www.google.com.br)<<<. Integer auctor viverra ultrices. Curabitur ante magna, aliquet ut placerat eu, iaculis ac metus.
 
 > WARNING
-> 
-> Atenção
 >
-> Os Bricks não possuem suporte oficial quando utilizados em fluxos _WebView_ nas plataformas Android e iOS.
+> Sed aliquet et velit bibendum consectetur. 
+>
+> Donec mollis laoreet libero, quis aliquet ante auctor non. Sed aliquet et velit bibendum consectetur. Phasellus felis sapien, pharetra eu aliquet vel, egestas quis tortor. Suspendisse ac dolor a diam viverra volutpat eu a ipsum.
 
-| Requisitos | Descrição |
-|---|---|
-| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Suas integrações](/developers/pt/docs/checkout-bricks/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação. |
-| Conta de vendedor Mercado Pago ou Mercado Livre | Para integrar os Bricks é preciso uma conta de vendedor no Mercado Pago ou Mercado Livre. Caso não tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criá-la gratuitamente. | 
-| Credenciais | Senhas únicas com as quais identificamos uma integração na sua conta. Para realizar as integrações, serão necessárias a _Public key_ e o _Access Token_. [Clique aqui](/developers/pt/docs/checkout-bricks/additional-content/your-integrations/credentials) para mais informações. |
-| Instale o SDK do Mercado Pago | Instale os SDKs oficiais para simplificar sua integração com nossas [APIs](/developers/pt/reference/payments/_payments/post). Para mais informações, [clique aqui](/developers/pt/docs/sdks-library/landing). |
+> SUCCESS_MESSAGE
+>
+> Suspendisse ac dolor a diam viverra volutpat eu a ipsum.
+>
+> Vivamus vel efficitur ante. Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim.
 
-Se todos os pré-requisitos foram atendidos, você poderá realizar a integração dos Bricks.
+> NOTE
+>
+> Integer auctor viverra ultrices.
+>
+> Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer auctor viverra ultrices. Curabitur ante magna, aliquet ut placerat eu, iaculis ac metus.
+
+> NEUTRAL_MESSAGE
+>
+> Suspendisse ac dolor a diam viverra volutpat eu a ipsum.
+>
+> Vivamus vel efficitur ante. Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim.
+
+> Donec mollis laoreet libero, quis aliquet ante auctor non. Sed aliquet et velit bibendum consectetur. Phasellus felis sapien
+
+## Imagens/Diagramação
+
+<br>
+
+:::AlignedImageComponent{imageAlt="cow" shadow="true" imageUrl="https://http2.mlstatic.com/storage/dx-devsite/docs-assets/images/cow/wallet-render-pt.png?v=4.39.7-rc-1"}
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, massa et varius facilisis, quam diam sodales ipsum, maximus varius lorem ligula vitae purus. Maecenas ullamcorper erat sit amet enim bibendum, eget consectetur arcu placerat.
+</p>
+<p>
+Duis pharetra, felis non blandit vestibulum, felis leo lobortis lorem, vel dapibus ipsum neque a orci. Donec ultrices ante at efficitur tincidunt. Phasellus ultrices magna non risus ornare tristique.
+</p>
+:::
+
+<br>
+
+## Ver mais
+
+<br>
+
+:::LinksListComponent{title="Nam semper in ante"}
+- [Curabitur sagittis felis](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli)
+- [Nulla quis magna ex](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/java-kotlin)
+- [Nunc posuere interdum](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/reactnative-cli)
+- [Mauris velit lectusx](/developers/es/docs/checkout-pro/integrate-checkout-pro/mobile/android/java-kotlin)
+:::
+
+<br>
+<br>
+
+## Checklist
+
+:::CheckboxComponent{label="Maecenas pulvinar congue accumsan."}
+Aenean in urna ac dui gravida volutpat eget vitae nisi. Nullam eu sagittis metus, in laoreet nisi. Vivamus suscipit urna mauris, ac sollicitudin tellus aliquet eget. Proin vel aliquet nibh, eu aliquam lorem. Aliquam consectetur odio lorem, non congue dui porttitor id.
+:::
+
+:::CheckboxComponent{label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida."}
+Proin metus nibh, fringilla sed augue commodo, sodales faucibus nulla. Fusce sed tortor et dui tincidunt ultricies. Donec bibendum dolor vel accumsan consectetur. Maecenas sed nunc euismod, volutpat elit at, facilisis mauris. Ut condimentum dapibus ante ut malesuada.
+:::
+
+:::CheckboxComponent{label="Fusce blandit tincidunt risus, eget faucibus tortor consequat vel. Etiam rhoncus laoreet blandit." defaultChecked=false}
+Proin fermentum enim eu euismod interdum. Nunc efficitur justo velit, ac cursus tortor tincidunt quis. In rhoncus nulla neque, nec iaculis nulla malesuada id. Proin vel commodo erat, in consectetur neque. Proin nibh velit, finibus quis iaculis sed, eleifend nec ex. Donec diam est, molestie fringilla diam a, faucibus malesuada neque.
+:::
+
+:::CheckboxComponent{label="Nullam dignissim mattis sem, at accumsan turpis lacinia ut. Aliquam ultrices sollicitudin dui, at rutrum velit facilisis vel."}
+Quisque ultrices venenatis felis, ac suscipit velit viverra vel. Curabitur semper vestibulum nunc ac rhoncus. Aenean molestie velit nulla, eget placerat odio venenatis eget. Suspendisse luctus purus quis tellus scelerisque dictum. Quisque nec odio ut neque blandit malesuada vel et augue. Praesent porta semper rhoncus. Quisque efficitur imperdiet est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vehicula eros odio, vel tempor dolor tempor vitae. Duis faucibus tortor sem, eget volutpat tortor varius non.
+:::
+
+<br>
+<br>
+
+# Hyperlink
+
+Nam non enim sed purus condimentum varius. Orci [external link](https://www.google.com.br) natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur nec libero ac nisi rutrum consequat et quis justo. In lacinia imperdiet imperdiet. Nullam a dignissim ante. Aenean cursus [internal doc link](/developers/pt/docs/checkout-pro/integrate-preferences) turpis, vitae sodales risus dignissim quis. Suspendisse potenti.
+
+<br>
+<br>
+
+#  Ícone de cópia de URL
+
+# H1 Lorem ipsum dolor sit amet
+## H2 Curabitur non scelerisque erat
+### H3 Donec quis felis at quam efficitur sagittis
+#### H4 Curabitur mollis dui non convallis volutpat
+
+<br>
+<br>
+
+# Números e letras
+
+:::ListComponent
+Item 1
+Item 2
+Item 3
+(opcional) Item 4
+:::
+
+# Cards de Bricks
+
+---
+future_product_avaible: 
+ - title: Bricks
+ - description: Conoce todos los módulos de Checkout Bricks y su disponibilidad.
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofrece diferentes medios de pago a sus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/payment-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincula la cuenta de Mercado Pago y permite pagos logueados. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/wallet-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofrece pagos con tarjeta de crédito y débito. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/card-payment-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informa a tus clientes los resultados del proceso de compra, luego de realizado el pago. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/status-screen-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Comunica diferentes mensajes relacionados con las formas de pago disponibles a través de Mercado Pago en tu tienda.
+ - card_button: /developers/es/docs/checkout-bricks/brand-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/brand-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:  
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Recopila los datos de tus clientes e infiere aquellos que se necesitarán en el proceso de compra.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:  
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Recopila los datos de envío de tus clientes y muestra las opciones de entrega disponibles y sus ventajas.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:  
+---
+
