@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009299546-image2.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182308182-overviewmlbes.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -49,7 +49,7 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009299546-image2.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182308182-overviewmlbes.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-api-order/overview
@@ -112,7 +112,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009200916-image.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182358101-overviewmlaes.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -157,7 +157,7 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009200916-image.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182358101-overviewmlaes.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-api/overview
