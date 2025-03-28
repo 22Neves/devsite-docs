@@ -10,7 +10,7 @@ To make a successful test purchase, fill in the required data at checkout follow
 
 ### Buyer Email
 
-In the **email** field, enter the email address **test@testuser.com**, which is the only one allowed for testing. This way, your system will understand that it is a purchase made with a test buyer user.
+In the **email** field, enter the email address **"test@testuser.com"**, which is the only one allowed for testing. This way, your system will understand that it is a purchase made with a test buyer user.
 
 ### Card Details
 
@@ -18,7 +18,7 @@ In the **email** field, enter the email address **test@testuser.com**, which is 
 
 ## 3. Verify Test Purchase
 
-To verify that the test purchase was carried out according to the expected results based on the data entered, send a **GET** request to the [/v1/orders/{id} :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/get-order/get) endpoint, replacing `id` with the order identification, received in the response to its creation.
+To verify that the test purchase was carried out according to the expected results based on the data entered, send a **GET** request to the :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/pt/reference/order/online-payments/get-order/get"} endpoint, replacing `id` with the order identification, received in the response to its creation.
 
 The response to this call should bring the detailed information of the test transaction, along with the status chosen for the payment in the previous step within the `status` field.
 

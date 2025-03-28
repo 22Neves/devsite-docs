@@ -11,5 +11,3 @@ Para iniciar este proceso, es necesario que **configures tu ambiente de pruebas*
 ## 2. Crear aplicación de prueba y obtener credenciales
 
 Para terminar de establecer tu ambiente de pruebas, deberás crear una aplicación de pruebas con tu usuario de pruebas vendedor, y así acceder a sus credenciales y vincularlas a tu integración. Sigue las indicaciones a continuación para realizar este proceso correctamente.
-
-[TXTSNIPPET][/guides/snippets/test-cross/create-test-app]

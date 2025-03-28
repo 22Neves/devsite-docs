@@ -10,7 +10,7 @@ Para realizar una compra de prueba exitosa, completa los datos requeridos en el 
 
 ### E-mail del comprador
 
-En el campo **e-mail**, ingresa el correo electrónico **test@testuser.com**, que es el único permitido para pruebas. De esta manera, tu sistema entenderá que se trata de una compra realizada con un usuario comprador de prueba.
+En el campo **e-mail**, ingresa el correo electrónico **"test@testuser.com"**, que es el único permitido para pruebas. De esta manera, tu sistema entenderá que se trata de una compra realizada con un usuario comprador de prueba.
 
 ### Datos de la tarjeta
 
@@ -18,7 +18,7 @@ En el campo **e-mail**, ingresa el correo electrónico **test@testuser.com**, qu
 
 ## 3. Verificar compra de prueba
 
-Para verificar que la compra de prueba se realizó de acuerdo a los resultados esperados en función de los datos ingresados, envía un **GET** al endpoint [/v1/orders/{id} :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/get-order/get), reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
+Para verificar que la compra de prueba se realizó de acuerdo a los resultados esperados en función de los datos ingresados, envía un **GET** al endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/es/reference/order/online-payments/get-order/get"}, reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
 
 La respuesta a este llamado deberá traer la información detallada de la transacción de prueba, junto con el estado elegido para el pago en la etapa anterior dentro del campo `status`.
 

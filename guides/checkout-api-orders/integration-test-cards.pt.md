@@ -18,7 +18,7 @@ No campo **e-mail**, insira o e-mail **test@testuser.com**, que é o único perm
 
 ## 3. Verificar compra de teste
 
-Para verificar se a compra de teste foi realizada de acordo com os resultados esperados com base nos dados inseridos, envie um **GET** para o endpoint [/v1/orders/{id} :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/get-order/get), substituindo `id` pela identificação da order, recebida na resposta à sua criação.
+Para verificar se a compra de teste foi realizada de acordo com os resultados esperados com base nos dados inseridos, envie um **GET** para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/order/online-payments/get-order/get"}, substituindo `id` pela identificação da order, recebida na resposta à sua criação.
 
 A resposta a esta chamada deverá trazer as informações detalhadas da transação de teste, juntamente com o status escolhido para o pagamento na etapa anterior dentro do campo `status`.
 
