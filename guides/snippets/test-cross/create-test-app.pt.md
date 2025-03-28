@@ -1,9 +1,10 @@
 
-1. Abre una ventana de incógnito, accede a [Mercado Pago Developers](/developers/es/docs), y haz clic en el botón **Ingresar** ubicado en la esquina superior derecha. 
-2. Inicia sesión como el usuario de prueba vendedor creado en la etapa anterior. Para eso, utiliza el usuario y la contraseña asignados al mismo. Puedes consultar estos datos en la sección **Cuentas de Prueba**.
+1. Abra uma janela anônima, acesse[Mercado Pago Developers](/developers/pt/docs) e clique no botão **Entrar** localizado no canto superior direito.
+2. Faça login como o usuário de teste vendedor criado na etapa anterior. Para isso, utilize o usuário e a senha atribuídos ao mesmo. Você pode consultar estes dados na seção **Contas de Teste**.
 
-![información del usuario de pruebas](/images/snippets/testuser-login-es.png)
+![informações do usuário de teste](/images/snippets/testuser-login-pt.png)
  
-3. Aún en la ventana de incógnito, dentro de [Tus integraciones](/developers/panel/app), haz clic en **Crear aplicación** y sigue los pasos para crear una :toolTipComponent[aplicación]{content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Dirígete al paso Crear aplicación si necesitas saber cómo hacerlo."} para poder tener tu aplicación de pruebas vinculada a tu usuario vendedor.
-4. Una vez creada la aplicación, selecciónala para ingresar a  **Detalles de la aplicación**. Allí, dirígete a la sección **Credenciales de producción** en el menú lateral izquierdo. Encontrarás la :toolTipComponent[**Public Key y Access Token del usuario de pruebas**]{content=Claves pública y privada de la aplicación de pruebas creada con tu usuario de pruebas."}.
-5. Reemplaza las credenciales utilizadas hasta ahora en la etapa de desarrollo por las del usuario de prueba vendedor en las solicitudes necesarias para probar pagos.
+3. Ainda na janela anônima, dentro de [Suas Integrações](/developers/panel/app), clique em **Criar aplicação** e siga os passos para criar uma :toolTipComponent[aplicação]{content="Entidade registrada no Mercado Pago que atua como um identificador para gerenciar suas integrações. Accesse a documentação Criar aplicativo se precisar saber como fazer isso."} e ter sua aplicação de testes vinculada ao seu usuário vendedor.
+4. Uma vez criada a aplicação, selecione-a para ingresar a  **Detalhes da aplicação**. Lá, dirija-se à seção **Credenciais de produção** no menu lateral esquerdo. Você encontrará a :toolTipComponent[**Public Key e o Access Token do usuário de teste**]{content="Chaves pública e privada da aplicação de testes criada com seu usuário de testes. "}.
+5. Substitua as credenciais utilizadas até agora na etapa de desenvolvimento pelas do usuário de teste vendedor nas solicitações necessárias para testar pagamentos.
+
