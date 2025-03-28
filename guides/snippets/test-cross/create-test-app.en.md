@@ -1,6 +1,3 @@
-## 2. Create a test application and obtain credentials
-
-To finish establishing your test environment, you must create a test application with your seller test user, and thus access its credentials and link them to your integration. 
 
 Follow the instructions below to perform this process correctly.
 

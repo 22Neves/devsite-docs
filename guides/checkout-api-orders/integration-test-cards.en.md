@@ -1,6 +1,6 @@
 # Perform a test purchase with cards
 
-To test your integration with **credit and/or debit cards**, after configuring your [test environment](/developers/es/docs/checkout-api/integration-test), you should perform a test purchase with these payment methods, simulating the actions of a buyer user.
+To test your integration with **credit and/or debit cards**, after configuring your [test environment](/developers/en/docs/checkout-api/integration-test), you should perform a test purchase with these payment methods, simulating the actions of a buyer user.
 
 To do this, access the store that has your checkout integrated, select a product or service, and start the purchase process.
 
@@ -18,7 +18,7 @@ In the **email** field, enter the email address **test@testuser.com**, which is 
 
 ## 3. Verify Test Purchase
 
-To verify that the test purchase was carried out according to the expected results based on the data entered, send a **GET** request to the :TagComponent{tag="API" text="/developers/en/reference/order/online-payments/get-order/get"} endpoint, replacing `id` with the order identification, received in the response to its creation.
+To verify that the test purchase was carried out according to the expected results based on the data entered, send a **GET** request to the [/v1/orders/{id} :TagComponent{textTag="API"}](/developers/en/reference/order/online-payments/get-order/get) endpoint, replacing `id` with the order identification, received in the response to its creation.
 
 The response to this call should bring the detailed information of the test transaction, along with the status chosen for the payment in the previous step within the `status` field.
 

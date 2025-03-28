@@ -1,8 +1,3 @@
-The testing process allows you to verify if the configurations made during your integration are working correctly, and if payments will be processed without errors, preventing potential failures when making the checkout available to end buyers.
-
-To start this process, it is necessary to **configure your testing environment** by creating a seller test user. This will allow you to configure a test application, obtain its credentials, and apply them in your integration before making a test payment. Below are the steps to follow.
-
-## 1. Create a seller test account
 
 [Test accounts](/developers/en/docs/order/additional-content/your-integrations/test/accounts) are users who have the same functionalities as a real Mercado Pago user, but allow you to test the operation of your development without compromising real data.
 

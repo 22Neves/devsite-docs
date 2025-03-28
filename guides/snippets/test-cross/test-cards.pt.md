@@ -68,103 +68,102 @@ Em seguida, escolha qual cenário de pagamento testar e preencha os campos do **
 
 ----[mla]----
 
-| Status de pagamento | Descrição | Documento de identidade |
+| Status de pagamento | Nome e sobrenome do titular | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | (DNI) 12345678 |
-| `OTHE` | Recusado por erro geral | (DNI) 12345678 |
-| `CONT` | Pagamento pendente | - |
-| `CALL` | Recusado com validação para autorizar | - |
-| `FUND` | Recusado por quantia insuficiente | - |
-| `SECU` | Recusado por código de segurança inválido | - |
-| `EXPI` | Recusado por problema com a data de vencimento | - |
-| `FORM` | Recusado por erro no formulário | - |
-| `CARD` | Rejeitado por falta de card_number | - |
-| `INST` | Rejeitado por parcelas inválidas | - |
-| `DUPL` | Rejeitado por pagamento duplicado | - |
-| `LOCK` | Rejeitado por cartão desabilitado | - |
-| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
-| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
-| `BLAC` | Rejeitado por estar na lista negra | - |
-| `UNSU` | Não suportado | - |
-| `TEST` | Usado para aplicar regra de valores | - |
+| Pagamento aprovado | `APRO` | (DNI) 12345678 |
+| Recusado por erro geral | `OTHE` | (DNI) 12345678 |
+| Pagamento pendente | `CONT` | - |
+| Recusado com validação para autorizar | `CALL` | - |
+| Recusado por quantia insuficiente | `FUND` | - |
+| Recusado por código de segurança inválido | `SECU` | - |
+| Recusado por problema com a data de vencimento | `EXPI` | - |
+| Recusado por erro no formulário | `FORM` | - |
+| Rejeitado por falta de card_number | `CARD` | - |
+| Rejeitado por parcelas inválidas | `INST` | - |
+| Rejeitado por pagamento duplicado | `DUPL` | - |
+| Rejeitado por cartão desabilitado | `LOCK` | - |
+| Rejeitado por tipo de cartão não permitido | `CTNA` | - |
+| Rejeitado devido a tentativas excedidas de pin do cartão | `ATTE` | - |
+| Rejeitado por estar na lista negra | `BLAC` | - |
+| Não suportado | `UNSU` | - |
+| Usado para aplicar regra de valores | `TEST` | - |
 
 ------------
 ----[mlb]----
 
  
-| Status de pagamento | Descrição | Documento de identidade |
+| Status de pagamento | Nome e sobrenome do titular | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | (CPF) 12345678909 |
-| `OTHE` | Recusado por erro geral | (CPF) 12345678909 |
-| `CONT` | Pagamento pendente | - |
-| `CALL` | Recusado com validação para autorizar | - |
-| `FUND` | Recusado por quantia insuficiente | - |
-| `SECU` | Recusado por código de segurança inválido | - |
-| `EXPI` | Recusado por problema com a data de vencimento | - |
-| `FORM` | Recusado por erro no formulário | - |
-| `CARD` | Rejeitado por falta de card_number | - |
-| `INST` | Rejeitado por parcelas inválidas | - |
-| `DUPL` | Rejeitado por pagamento duplicado | - |
-| `LOCK` | Rejeitado por cartão desabilitado | - |
-| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
-| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
-| `BLAC` | Rejeitado por estar na lista negra | - |
-| `UNSU` | Não suportado | - |
-| `TEST` | Usado para aplicar regra de valores | - |
-
+| Pagamento aprovado | `APRO` | (CPF) 12345678909 |
+| Recusado por erro geral | `OTHE` | (CPF) 12345678909 |
+| Pagamento pendente | `CONT` | - |
+| Recusado com validação para autorizar | `CALL` | - |
+| Recusado por quantia insuficiente | `FUND` | - |
+| Recusado por código de segurança inválido | `SECU` | - |
+| Recusado por problema com a data de vencimento | `EXPI` | - |
+| Recusado por erro no formulário | `FORM` | - |
+| Rejeitado por falta de card_number | `CARD` | - |
+| Rejeitado por parcelas inválidas | `INST` | - |
+| Rejeitado por pagamento duplicado | `DUPL` | - |
+| Rejeitado por cartão desabilitado | `LOCK` | - |
+| Rejeitado por tipo de cartão não permitido | `CTNA` | - |
+| Rejeitado devido a tentativas excedidas de pin do cartão | `ATTE` | - |
+| Rejeitado por estar na lista negra | `BLAC` | - |
+| Não suportado | `UNSU` | - |
+| Usado para aplicar regra de valores | `TEST` | - |
 ------------
 ----[mlc]----
 
  
-| Status de pagamento | Descrição | Documento de identidade |
+| Status de pagamento | Nome e sobrenome do titular | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | (otro) 123456789 |
-| `OTHE` | Recusado por erro geral | (otro) 123456789 |
-| `CONT` | Pagamento pendente | - |
-| `CALL` | Recusado com validação para autorizar | - |
-| `FUND` | Recusado por quantia insuficiente | - |
-| `SECU` | Recusado por código de segurança inválido | - |
-| `EXPI` | Recusado por problema com a data de vencimento | - |
-| `FORM` | Recusado por erro no formulário | - |
-| `CARD` | Rejeitado por falta de card_number | - |
-| `INST` | Rejeitado por parcelas inválidas | - |
-| `DUPL` | Rejeitado por pagamento duplicado | - |
-| `LOCK` | Rejeitado por cartão desabilitado | - |
-| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
-| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
-| `BLAC` | Rejeitado por estar na lista negra | - |
-| `UNSU` | Não suportado | - |
-| `TEST` | Usado para aplicar regra de valores | - |
+| Pagamento aprovado | `APRO` | (otro) 123456789 |
+| Recusado por erro geral | `OTHE` | (otro) 123456789 |
+| Pagamento pendente | `CONT` | - |
+| Recusado com validação para autorizar | `CALL` | - |
+| Recusado por quantia insuficiente | `FUND` | - |
+| Recusado por código de segurança inválido | `SECU` | - |
+| Recusado por problema com a data de vencimento | `EXPI` | - |
+| Recusado por erro no formulário | `FORM` | - |
+| Rejeitado por falta de card_number | `CARD` | - |
+| Rejeitado por parcelas inválidas | `INST` | - |
+| Rejeitado por pagamento duplicado | `DUPL` | - |
+| Rejeitado por cartão desabilitado | `LOCK` | - |
+| Rejeitado por tipo de cartão não permitido | `CTNA` | - |
+| Rejeitado devido a tentativas excedidas de pin do cartão | `ATTE` | - |
+| Rejeitado por estar na lista negra | `BLAC` | - |
+| Não suportado | `UNSU` | - |
+| Usado para aplicar regra de valores | `TEST` | - |
 
 ------------
 ----[mco]----
 
  
-| Status de pagamento | Descrição | Documento de identidade | 
+| Status de pagamento | Nome e sobrenome do titular | Documento de identidade | 
 | --- | --- | --- | 
-| `APRO` | Pagamento aprovado | 123456789 |
-| `OTHE` | Recusado por erro geral | 123456789 |
-| `CONT` | Pagamento pendente | - |
-| `CALL` | Recusado com validação para autorizar | - |
-| `FUND` | Recusado por quantia insuficiente | - |
-| `SECU` | Recusado por código de segurança inválido | - |
-| `EXPI` | Recusado por problema com a data de vencimento | - |
-| `FORM` | Recusado por erro no formulário | - |
-| `CARD` | Rejeitado por falta de card_number | - |
-| `INST` | Rejeitado por parcelas inválidas | - |
-| `DUPL` | Rejeitado por pagamento duplicado | - |
-| `LOCK` | Rejeitado por cartão desabilitado | - |
-| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
-| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
-| `BLAC` | Rejeitado por estar na lista negra | - |
-| `UNSU` | Não suportado | - |
-| `TEST` | Usado para aplicar regra de valores | - |
+| Pagamento aprovado | `APRO` | 123456789 |
+| Recusado por erro geral | `OTHE` | 123456789 |
+| Pagamento pendente | `CONT` | - |
+| Recusado com validação para autorizar | `CALL` | - |
+| Recusado por quantia insuficiente | `FUND` | - |
+| Recusado por código de segurança inválido | `SECU` | - |
+| Recusado por problema com a data de vencimento | `EXPI` | - |
+| Recusado por erro no formulário | `FORM` | - |
+| Rejeitado por falta de card_number | `CARD` | - |
+| Rejeitado por parcelas inválidas | `INST` | - |
+| Rejeitado por pagamento duplicado | `DUPL` | - |
+| Rejeitado por cartão desabilitado | `LOCK` | - |
+| Rejeitado por tipo de cartão não permitido | `CTNA` | - |
+| Rejeitado devido a tentativas excedidas de pin do cartão | `ATTE` | - |
+| Rejeitado por estar na lista negra | `BLAC` | - |
+| Não suportado | `UNSU` | - |
+| Usado para aplicar regra de valores | `TEST` | - |
 
 ------------
 ----[mlm]----
 
  
-| Status de pagamento | Descrição |
+| Nome e sobrenome do titular | Status de pagamento |
 | --- | --- |
 | `APRO` | Pagamento aprovado |
 | `OTHE` | Recusado por erro geral |
@@ -187,49 +186,49 @@ Em seguida, escolha qual cenário de pagamento testar e preencha os campos do **
 ------------
 ----[mlu]----
 
- 
-| Status de pagamento | Descrição | Documento de identidade |
+| Status de pagamento | Nome e sobrenome do titular | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | (CI) 12345678 <br> (otro) 123456789 |
-| `OTHE` | Recusado por erro geral | (CI) 12345678 <br> (otro) 123456789 |
-| `CONT` | Pagamento pendente | - |
-| `CALL` | Recusado com validação para autorizar | - |
-| `FUND` | Recusado por quantia insuficiente | - |
-| `SECU` | Recusado por código de segurança inválido | - |
-| `EXPI` | Recusado por problema com a data de vencimento | - |
-| `FORM` | Recusado por erro no formulário | - |
-| `CARD` | Rejeitado por falta de card_number | - |
-| `INST` | Rejeitado por parcelas inválidas | - |
-| `DUPL` | Rejeitado por pagamento duplicado | - |
-| `LOCK` | Rejeitado por cartão desabilitado | - |
-| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
-| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
-| `BLAC` | Rejeitado por estar na lista negra | - |
-| `UNSU` | Não suportado | - |
-| `TEST` | Usado para aplicar regra de valores | - |
+| Pagamento aprovado | `APRO` | (CI) 12345678 <br> (otro) 123456789 |
+| Recusado por erro geral | `OTHE` | (CI) 12345678 <br> (otro) 123456789 |
+| Pagamento pendente | `CONT` | - |
+| Recusado com validação para autorizar | `CALL` | - |
+| Recusado por quantia insuficiente | `FUND` | - |
+| Recusado por código de segurança inválido | `SECU` | - |
+| Recusado por problema com a data de vencimento | `EXPI` | - |
+| Recusado por erro no formulário | `FORM` | - |
+| Rejeitado por falta de card_number | `CARD` | - |
+| Rejeitado por parcelas inválidas | `INST` | - |
+| Rejeitado por pagamento duplicado | `DUPL` | - |
+| Rejeitado por cartão desabilitado | `LOCK` | - |
+| Rejeitado por tipo de cartão não permitido | `CTNA` | - |
+| Rejeitado devido a tentativas excedidas de pin do cartão | `ATTE` | - |
+| Rejeitado por estar na lista negra | `BLAC` | - |
+| Não suportado | `UNSU` | - |
+| Usado para aplicar regra de valores | `TEST` | - |
 
 ------------
 ----[mpe]----
 
- 
-| Status de pagamento | Descrição | Documento de identidade |
+| Status de pagamento | Nome e sobrenome do titular | Documento de identidade |
 | --- | --- | --- |
-| `APRO` | Pagamento aprovado | 123456789 |
-| `OTHE` | Recusado por erro geral | 123456789 |
-| `CONT` | Pagamento pendente | - |
-| `CALL` | Recusado com validação para autorizar | - |
-| `FUND` | Recusado por quantia insuficiente | - |
-| `SECU` | Recusado por código de segurança inválido | - |
-| `EXPI` | Recusado por problema com a data de vencimento | - |
-| `FORM` | Recusado por erro no formulário | - |
-| `CARD` | Rejeitado por falta de card_number | - |
-| `INST` | Rejeitado por parcelas inválidas | - |
-| `DUPL` | Rejeitado por pagamento duplicado | - |
-| `LOCK` | Rejeitado por cartão desabilitado | - |
-| `CTNA` | Rejeitado por tipo de cartão não permitido | - |
-| `ATTE` | Rejeitado devido a tentativas excedidas de pin do cartão | - |
-| `BLAC` | Rejeitado por estar na lista negra | - |
-| `UNSU` | Não suportado | - |
-| `TEST` | Usado para aplicar regra de valores | - |
+| Pagamento aprovado | `APRO` | 123456789 |
+| Recusado por erro geral | `OTHE` | 123456789 |
+| Pagamento pendente | `CONT` | - |
+| Recusado com validação para autorizar | `CALL` | - |
+| Recusado por quantia insuficiente | `FUND` | - |
+| Recusado por código de segurança inválido | `SECU` | - |
+| Recusado por problema com a data de vencimento | `EXPI` | - |
+| Recusado por erro no formulário | `FORM` | - |
+| Rejeitado por falta de card_number | `CARD` | - |
+| Rejeitado por parcelas inválidas | `INST` | - |
+| Rejeitado por pagamento duplicado | `DUPL` | - |
+| Rejeitado por cartão desabilitado | `LOCK` | - |
+| Rejeitado por tipo de cartão não permitido | `CTNA` | - |
+| Rejeitado devido a tentativas excedidas de pin do cartão | `ATTE` | - |
+| Rejeitado por estar na lista negra | `BLAC` | - |
+| Não suportado | `UNSU` | - |
+| Usado para aplicar regra de valores | `TEST` | - |
 
 ------------
+
+Assim que você tiver preenchido todos os campos corretamente, clique no botão para processar o pagamento e aguarde o resultado.

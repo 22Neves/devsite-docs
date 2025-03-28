@@ -1,6 +1,3 @@
-## 2. Crear aplicación de prueba y obtener credenciales
-
-Para terminar de establecer tu ambiente de pruebas, deberás crear una aplicación de pruebas con tu usuario de pruebas vendedor, y así acceder a sus credenciales y vincularlas a tu integración. Sigue las indicaciones a continuación para realizar este proceso correctamente.
 
 1. Abre una ventana de incógnito, accede a [Mercado Pago Developers](/developers/es/docs), y haz clic en el botón **Ingresar** ubicado en la esquina superior derecha. 
 2. Inicia sesión como el usuario de prueba vendedor creado en la etapa anterior. Para eso, utiliza el usuario y la contraseña asignados al mismo. Puedes consultar estos datos en la sección **Cuentas de Prueba**.
