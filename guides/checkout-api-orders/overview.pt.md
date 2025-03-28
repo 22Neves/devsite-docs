@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integre Checkout Transparente e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182782535-overviewmlbpt.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187306731-BR.PT.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -50,7 +50,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182782535-overviewmlbpt.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187306731-BR.PT.png
  - column_product: Checkout Transparente
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api-orders/overview
@@ -110,7 +110,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integre Checkout API e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182702356-overviewmlapt.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187346255-AR.PT.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -156,7 +156,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743182702356-overviewmlapt.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187346255-AR.PT.png
  - column_product: Checkout API
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api/overview
