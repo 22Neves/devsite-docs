@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integrate Checkout Transparente and customize the whole experience
  - message: Incorporate a flexible API into your website so that customers can shop on your website or app without being redirected to an external page.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187306731-BR.PT.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png
  - benefit_icon: recurring-payments
  - benefit_title: For online payments
  - benefit_icon: categories
@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -49,8 +49,8 @@ product_landing_how_works:
 product_landing_what_differentiates:
  - title: What sets it apart
  - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](/developers/pt/support/37740).
- - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187306731-BR.PT.png
+ - highlight_text: You’re here
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png
  - column_product: Checkout Transparente
  - column_button_text: How to integrate
  - column_button_link: /developers/en/docs/checkout-api/overview
@@ -110,7 +110,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integrate Checkout API and customize the whole experience
  - message: Incorporate a flexible API into your website so that customers can shop on your website or app without being redirected to an external page.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - benefit_icon: recurring-payments
  - benefit_title: For online payments
  - benefit_icon: categories
@@ -142,7 +142,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -155,8 +155,8 @@ product_landing_how_works:
 product_landing_what_differentiates:
  - title: What sets it apart
  - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](/developers/es/support/37740).
- - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
+ - highlight_text: You’re here
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - column_product: Checkout API
  - column_button_text: How to integrate
  - column_button_link: /developers/en/docs/checkout-api/overview
@@ -248,7 +248,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196930362-landingrebranding.png
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -261,7 +261,7 @@ product_landing_how_works:
 product_landing_what_differentiates:
  - title: What sets it apart
  - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](/developers/es/support/37740).
- - highlight_text: Estás aquí
+ - highlight_text: You’re here
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
  - column_product: Checkout API
  - column_button_text: How to integrate

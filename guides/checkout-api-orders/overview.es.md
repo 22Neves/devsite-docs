@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187216089-BR.ES.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196416015-overviewmlbes.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -49,7 +49,7 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](/developers/pt/support/37740).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187216089-BR.ES.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196416015-overviewmlbes.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-api-order/overview
@@ -112,7 +112,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integra Checkout API y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
@@ -144,7 +144,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -157,7 +157,7 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](/developers/es/support/37740).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - column_product: Checkout API
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-api/overview
@@ -250,7 +250,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743007208209-overviewes.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196930362-landingrebranding.png
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
