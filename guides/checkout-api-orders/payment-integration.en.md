@@ -6,7 +6,7 @@ The integration process is based on the individual configuration of each of thes
 
 ![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-en.png) 
 
-If you want to, you can check a detailed list of all these payment methods available for integration by sending a **GET** with your :toolTipComponent[Acess Token]{content="Private key of the application created in Mercado Pago, that must be used in the backend. You can access it through **Your integrations > Application details > Testing > Testing Credentials** or **Production > Production Credentials**."} to the endpoint [/v1/payment_methods :TagComponent{textTag="API"}](/developers/en/reference/payment_methods/_payment_methods/get) and execute the request, or if you prefer, make the request using one of our SDKs.
+If you want to, you can check a detailed list of all these payment methods available for integration by sending a **GET** with your :toolTipComponent[Acess Token]{content="Private key of the application created in Mercado Pago, that must be used in the backend. You can access it through **Your integrations > Application details > Testing > Testing Credentials** or **Production > Production Credentials**."} to the endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/en/reference/payment_methods/_payment_methods/get"} and execute the request, or if you prefer, make the request using one of our SDKs.
 
 [[[
 ```php

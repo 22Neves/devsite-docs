@@ -6,7 +6,7 @@ Al integrar pagos con tarjeta en ----[mlb]---- Checkout Transparente------------
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, lo que asegura que el valor se mantenga hasta la finalización del procesamiento, o mejor dicho, su captura.
  
-Para realizar una autorización de reserva, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos al endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/create/post). Deberás definir el campo `capture_mode` como `manual`, para luego realizar la captura de los fondos que reserves.
+Para realizar una autorización de reserva, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"}. Deberás definir el campo `capture_mode` como `manual`, para luego realizar la captura de los fondos que reserves.
 
 ```curl
 curl -X POST \
@@ -119,10 +119,10 @@ Actualmente, sólo es posible realizar una captura del monto total del pago rese
 >
 > El tiempo límite para realizar la captura del pago autorizado es de **5 días desde su creación**. Si no la capturas hasta ese momento, será cancelado. Además, debes guardar el ID del pago para poder finalizar el proceso.
 
-Para realizar la captura del monto total de una reserva, es necesario enviar una solicitud con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} al endpoint [/v1/orders/{order_id}/capture :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/capture/post), reemplazando `{order_id}` por el ID de la order que autorizó la reserva, y cuya captura total deseas realizar.
+Para realizar la captura del monto total de una reserva, es necesario enviar una solicitud con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} al endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/capture" href="/developers/pt/reference/order/online-payments/capture/post"}, reemplazando `{order_id}` por el ID de la order que autorizó la reserva, y cuya captura total deseas realizar.
 
 ### Cancelación de reserva
 
 La cancelación de una reserva se produce cuando, por algún motivo, no se aprueba el pago de una compra y se debe devolver el valor de la reserva al límite de la tarjeta del cliente, o cuando un comprador desiste de la compra.
 
-Para cancelar una reserva, debes enviar una solicitud al endpoint [/v1/orders/{order_id}/cancel :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/cancel-order/post). Asegúrate de reemplazar `{order_id}` por el ID de la order cuya reserva deseas cancelar.
+Para cancelar una reserva, debes enviar una solicitud al endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/cancel" href="/developers/es/reference/order/online-payments/cancel-order/post"}. Asegúrate de reemplazar `{order_id}` por el ID de la order cuya reserva deseas cancelar.

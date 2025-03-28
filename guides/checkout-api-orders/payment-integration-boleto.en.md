@@ -265,7 +265,7 @@ Among the returned parameters, we have those indicated in the table below.
 
 > WARNING
 > 
-> If you have created the order in manual mode, remember that processing the payment requires an additional step, which is calling the [Process order :TagComponent{textTag="API"}](/developers/en/reference/order/online/process-order/post).
+> If you have created the order in manual mode, remember that processing the payment requires an additional step, which is calling the :TagComponent{tag="API" text="Process order" href="/developers/en/reference/order/online/process-order/post"}.
 
 :::
 :::AccordionComponent{title="Cancel payment" pill="server-side"}

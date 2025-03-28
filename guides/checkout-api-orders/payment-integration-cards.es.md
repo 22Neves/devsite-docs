@@ -79,7 +79,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
           const submitData = {
             type: "online",
             total_amount: String(formData.transaction_amount), // debe ser un string con formato 00.00
-            external_reference: "ext_ref_1234", // identificador del origen de la transacción.
+            external_reference: "ext_ref_1234", // identificador del origen de la transacción
             processing_mode: "automatic",
             transactions: {
               payments: [
@@ -113,7 +113,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
               resolve();
             })
             .catch((error) => {
-              // Manejo de la respuesta de error al intentar crear el pago 
+              // manejo de la respuesta de error al intentar crear el pago 
               reject();
             });
         });
@@ -237,7 +237,7 @@ Como resultado, la renderización del Brick se verá similar a la imagen debajo.
 
 ------------ 
 
-Para avanzar a la etapa de envío del pago, será necesario que tu _backend_ pueda recibir la información del formulario creado, junto con el _token_ resultante de la criptografía de la tarjeta. Para eso, recomendamos disponibilizar un endpoint [Procesar order :TagComponent{textTag="API"}](/developers/es/reference/order/online/process-order/post) que acoja los datos recolectados por el Brick después de realizar la acción _submit_.
+Para avanzar a la etapa de envío del pago, será necesario que tu _backend_ pueda recibir la información del formulario creado, junto con el _token_ resultante de la criptografía de la tarjeta. Para eso, recomendamos disponibilizar un endpoint :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/order/online/process-order/post"} que acoja los datos recolectados por el Brick después de realizar la acción _submit_.
 
 :::
 
@@ -383,7 +383,7 @@ Para obtener estos datos y procesar los pagos, inserta el siguiente `HTML` direc
 
 Después de añadir el formulario de pago, es necesario inicializar los campos de la tarjeta (número de tarjeta, fecha de expiración y código de seguridad) que deberán completarse al iniciar el flujo de pagos.
 
-Una vez finalizada la inicialización de los campos, los <divs> contendrán los iframes con los inputs donde se insertarán los datos PCI.
+Una vez finalizada la inicialización de los campos, los &lt;div&gt; contendrán los iframes con los inputs donde se insertarán los datos PCI.
 
 [[[
 ```javascript
@@ -585,19 +585,20 @@ Uno de los campos obligatorios que componen el formulario de pago es la----[mla]
 ----[mlb]----
 > NOTE
 >
-> En caso de querer configurar cuotas sin intereses, accede a la [documentación de Soporte](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454)
-------------
+> En caso de querer configurar cuotas sin intereses, accede a la [documentación de Soporte](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454).
 
+------------
 ----[mla]----
 > NOTE
 >
-> En caso de querer configurar cuotas sin intereses, accede a la [documentación de Soporte](/developers/es/support/cuotas-sin-interes_3299)
-------------
+> En caso de querer configurar cuotas sin intereses, accede a la [documentación de Soporte](/developers/es/support/cuotas-sin-interes_3299).
 
+------------
 ----[mlm]----
 > NOTE
 >
-> En caso de querer configurar meses sin intereses, accede a la [documentación de Soporte](/developers/es/support/mensualidades-sin-intereses_2255)
+> En caso de querer configurar meses sin intereses, accede a la [documentación de Soporte](/developers/es/support/mensualidades-sin-intereses_2255).
+
 ------------
 
 :::
@@ -649,7 +650,7 @@ El envío del pago debe ser realizado mediante la creación de una order que con
 
 La definición del modo de procesamiento se realizará al momento de crear la order, mediante el parámetro `processing_mode`. Su valor deberá ser `automatic`, para procesamientos automáticos, o `manual`, para procesar la order manualmente.
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos al endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/create/post) y ejecuta la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecuta la requisición.
 
 ```curl
 curl -X POST \
@@ -742,7 +743,7 @@ En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
 > WARNING
 >
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a [Procesar order :TagComponent{textTag="API"}](/developers/es/reference/order/online/process-order/post). Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/order/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
 
 Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
 

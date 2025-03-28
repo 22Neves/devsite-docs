@@ -9,25 +9,36 @@ Implementação dos componentes novos linkados nesse [Figma](https://www.figma.c
 
 ## Tooltip
 
-Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor."} dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt :toolTipComponent[imperdiet]{content="Phasellus sodales risus nisi, in sollicitudin nulla faucibus et"}. interdum. Nullam aliquam nibh id posuere dapibus.
+Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet *negrito* pellentesque. In a diam _italico_ amet velit tempor."} dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt :toolTipComponent[imperdiet]{content="Phasellus sodales risus nisi, in sollicitudin nulla faucibus et"}. interdum. Nullam aliquam nibh id posuere dapibus.
 
 ## Tab
 
-::::TabsComponent
+:::::TabsComponent
 
-:::TabComponent{title="Lorem"}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Sed tincidunt imperdiet interdum. Nullam aliquam nibh id posuere dapibus. Cras et tincidunt eros, at lobortis arcu. Sed euismod ut diam vitae mollis. Maecenas mattis leo ut mollis egestas. Suspendisse dictum vitae justo suscipit fermentum. Praesent ultrices, est eget commodo suscipit, mauris neque posuere lorem, eu rhoncus neque libero at ex.
+::::TabComponent{title="Lorem"}
+Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu odio ullamcorper sollicitudin. Integer orci nibh, molestie ac commodo vel, varius sit amet dui. Quisque ultrices orci vel lorem ullamcorper tempus. Aenean porta pretium nisl, hendrerit molestie diam gravida vel. Aenean congue urna [neque](/developer/pt), a placerat sem commodo non. Suspendisse luctus, erat mollis ultrices consequat, lorem lacus lacinia dolor, tristique rutrum quam ante quis turpis. Aenean a nibh vel arcu tincidunt ultrices ut eget sem.
+<br>
+<br>
+:::AccordionComponent{title="Aliquam id elementum nulla, fermentum volutpat justo." pill="1"}
+Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspendisse vel feugiat sapien.
 :::
-
-:::TabComponent{title="Aenean"}
-Aenean velit lorem, tristique eu lacinia non, malesuada vitae lacus. Nam placerat sed elit eget tincidunt. Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor pellentesque. Vivamus luctus at nulla sed dignissim. Cras at consectetur ex, sit amet pellentesque erat. Phasellus molestie, sem ut commodo ullamcorper, diam velit interdum ante, non vestibulum tellus nisi quis sapien. Proin congue consectetur maximus.
+:::AccordionComponent{title="Proin in semper ante. Donec ultrices ligula rutrum maximus consectetur." pill="2"}
+Suspendisse ac dolor a diam viverra volutpat eu a ipsum. Etiam vitae dui libero. Suspendisse molestie tellus sit amet purus blandit maximus. Donec rutrum tellus felis, ac placerat diam efficitur a. Phasellus lorem elit, egestas et nisi eget, dictum cursus velit. Maecenas dui neque, suscipit ac bibendum at, ultricies id purus. Nunc non elit non eros aliquet molestie. Curabitur lobortis egestas dolor, id auctor justo commodo sed. 
 :::
-
-:::TabComponent{title="Vestibulum"}
-Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu odio ullamcorper sollicitudin. Integer orci nibh, molestie ac commodo vel, varius sit amet dui. Quisque ultrices orci vel lorem ullamcorper tempus. Aenean porta pretium nisl, hendrerit molestie diam gravida vel. Aenean congue urna neque, a placerat sem commodo non. Suspendisse luctus, erat mollis ultrices consequat, lorem lacus lacinia dolor, tristique rutrum quam ante quis turpis. Aenean a nibh vel arcu tincidunt ultrices ut eget sem.
-:::
-
+<br>
+<br>
+Nunc consequat dignissim tellus eu sagittis. Nulla cursus diam a erat facilisis sollicitudin. Vivamus luctus at nulla sed dignissim. Cras at consectetur ex, sit amet pellentesque erat. Phasellus molestie, sem ut commodo ullamcorper, diam velit interdum ante,
 ::::
+
+::::TabComponent{title="Aenean"}
+Aenean velit lorem, tristique eu lacinia non, malesuada vitae lacus. Nam placerat sed elit eget tincidunt. Sed viverra nunc sit amet congue pellentesque. In a diam sit amet velit tempor pellentesque. Vivamus luctus at nulla sed dignissim. Cras at consectetur ex, sit amet pellentesque erat. Phasellus molestie, sem ut commodo ullamcorper, diam velit interdum ante, non vestibulum tellus nisi quis sapien. Proin congue consectetur maximus.
+::::
+
+::::TabComponent{title="Vestibulum"}
+Cras dignissim elementum aliquet. Sed in convallis ante. Nunc convallis metus eu odio ullamcorper sollicitudin. Integer orci nibh, molestie ac commodo vel, varius sit amet dui. Quisque ultrices orci vel lorem ullamcorper tempus. Aenean porta pretium nisl, hendrerit molestie diam gravida vel. Aenean congue urna neque, a placerat sem commodo non. Suspendisse luctus, erat mollis ultrices consequat, lorem lacus lacinia dolor, tristique rutrum quam ante quis turpis. Aenean a nibh vel arcu tincidunt ultrices ut eget sem.
+::::
+
+:::::
 
 ## Accordion
 
@@ -44,7 +55,7 @@ Ut ullamcorper nulla et luctus malesuada. Maecenas mollis rhoncus euismod. Suspe
 :::
 :::AccordionComponent{title="Vivamus vel efficitur ante." pill="Opcional"}
 Etiam ex ante, sollicitudin eu magna ac, lacinia convallis enim. Vivamus rhoncus, ipsum a egestas vulputate, nunc libero semper elit, et elementum neque orci eget ipsum. Vivamus aliquam ex felis, quis varius ex cursus vulputate. Sed facilisis tempus molestie. Integer sed blandit purus, sed elementum metus. 
-::: 
+:::
 
 
 <br>
@@ -197,3 +208,103 @@ Nam non enim sed purus condimentum varius. Orci [external link](https://www.goog
 ## H2 Curabitur non scelerisque erat
 ### H3 Donec quis felis at quam efficitur sagittis
 #### H4 Curabitur mollis dui non convallis volutpat
+
+<br>
+<br>
+
+# Números e letras
+
+:::ListComponent
+Item 1
+Item 2
+Item 3
+(opcional) Item 4
+:::
+
+# Cards de Bricks
+
+---
+future_product_avaible: 
+ - title: Bricks
+ - description: Conoce todos los módulos de Checkout Bricks y su disponibilidad.
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofrece diferentes medios de pago a sus clientes, con la posibilidad de guardar datos de la tarjeta para futuras compras. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/payment-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincula la cuenta de Mercado Pago y permite pagos logueados. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/wallet-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofrece pagos con tarjeta de crédito y débito. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/card-payment-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informa a tus clientes los resultados del proceso de compra, luego de realizado el pago. Prueba la demostración del Brick antes de integrarlo.
+ - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/status-screen-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Comunica diferentes mensajes relacionados con las formas de pago disponibles a través de Mercado Pago en tu tienda.
+ - card_button: /developers/es/docs/checkout-bricks/brand-brick/introduction
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: true
+ - card_linkProof: /developers/es/live-demo/brand-brick
+ - card_linkProofDescription: Acceder a demostración
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Muestra un resumen de todo el proceso de compra, con la información más relevante, para que tus clientes puedan revisar antes de confirmar la compra.
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Saber más
+ - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:  
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Recopila los datos de tus clientes e infiere aquellos que se necesitarán en el proceso de compra.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:  
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Recopila los datos de envío de tus clientes y muestra las opciones de entrega disponibles y sus ventajas.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: MUY PRONTO
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:  
+---

@@ -137,7 +137,7 @@ Si no cuentas con esta función, añade la siguiente a tu proyecto.
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
 Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}
- y los parámetros requeridos enumerados a continuación al endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/create/post) y ejecutes la requisición.
+ y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
@@ -266,7 +266,7 @@ Entre los parámetros devueltos, tenemos los indicados en la tabla a continuaci�
 
 > WARNING
 > 
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado al endpoint [Procesar order :TagComponent{textTag="API"}](/developers/es/reference/order/online/process-order/post).
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado al endpoint :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/order/online/process-order/post"}.
 
 :::
 :::AccordionComponent{title="Cancelar pagamento" pill="server-side"}

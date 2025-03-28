@@ -111,7 +111,7 @@ const renderCardPaymentBrick = async (bricksBuilder) => {
               resolve();
             })
             .catch((error) => {
-              // Tratamento da resposta de erro ao tentar criar o pagamento 
+              // lidar com a resposta de erro ao tentar criar o pagamento 
               reject();
             });
         });
@@ -195,11 +195,11 @@ const onReady = async () => {
 ```
 ]]]
 
-O *callback* `onSubmit` do Brick obterá os dados mínimos necessários para a criação de um pagamento. Uma das informações retornadas é o `CardToken`, que representa de forma segura os dados do cartão. Esse _token_ pode ser usado somente uma vez e expira dentro de 7 dias.
+O _callback_ `onSubmit` do Brick obterá os dados mínimos necessários para a criação de um pagamento. Uma das informações retornadas é o `CardToken`, que representa de forma segura os dados do cartão. Esse _token_ pode ser usado somente uma vez e expira dentro de 7 dias.
 
 Além das informações mínimas, recomendamos incluir detalhes adicionais ou que possam facilitar o reconhecimento da compra por parte do comprador, aumentando assim a taxa de aprovação dos pagamentos. Consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post) para conhecer em detalhe todos os parâmetros a serem enviados ao criar um pagamento, incluindo aqueles que podem melhorar sua taxa de aprovação, e verifique quais você deseja incluir nesta etapa. 
 
-Em seguida, adicione os campos relevantes ao objeto enviado, que são retornados na resposta do *callback*.
+Em seguida, adicione os campos relevantes ao objeto enviado, que são retornados na resposta do _callback_.
 
 > WARNING
 >
@@ -497,7 +497,7 @@ Para obter esses dados e processar os pagamentos, insira o `HTML` abaixo diretam
 
 Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
 
-Ao finalizar a inicialização dos campos, as <divs> conterão os iframes com os inputs onde serão inseridos os dados PCI.
+Ao finalizar a inicialização dos campos, as &lt;div&gt; conterão os iframes com os inputs onde serão inseridos os dados PCI.
 
 [[[
 ```javascript
@@ -697,19 +697,21 @@ Um dos campos obrigatórios que compõem o formulário de pagamento é a **quant
 ----[mlb]----
 > NOTE
 >
-> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454)
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454).
+
 ------------
 
 ----[mla]----
 > NOTE
 >
-> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/cuotas-sin-interes_3299)
-------------
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/cuotas-sin-interes_3299).
 
+------------
 ----[mlm]----
 > NOTE
 >
-> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255)
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255).
+
 ------------
 
 :::
