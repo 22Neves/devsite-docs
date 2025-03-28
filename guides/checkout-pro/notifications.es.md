@@ -20,6 +20,8 @@ A continuación, presentamos un paso a paso para configurar las notificaciones d
 >
 > Las URLs configuradas durante la creación de un pago tendrán prioridad por sobre aquellas configuradas a través de Tus integraciones.
 
+:::::TabsComponent
+
 ::::TabComponent{title="Configuración a través de Tus integraciones"}
 ## Configuración a través de Tus integraciones
 Puedes configurar notificaciones para cada una de tus aplicaciones directamente desde [Tus integraciones](/developers/panel/app) de manera eficiente y segura. En este apartado, explicaremos cómo:
@@ -690,6 +692,8 @@ Luego de realizar la configuración  necesaria, la notificación Webhook será e
 | **action** | Evento notificado, que indica si es una actualización de un recurso o la creación de uno nuevo | `payment.created` |
 | **data.id**  | ID del pago, de la orden comercial o del reclamo. | `999999999` |
 ::::
+
+:::::
 
 Una vez que las notificaciones sean configuradas, consulta las Acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas.
 

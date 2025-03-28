@@ -10,8 +10,7 @@ Puedes configurar hasta tres URL de retorno diferentes, que corresponderán a lo
 >
 > Nota
 >
-> 
-En integraciones mobile, recomendamos que las URLs de retorno sean deep links. Para conocer más, ve a la documentación **[Integración mobile](#)**.
+> En integraciones mobile, recomendamos que las URLs de retorno sean deep links. Para conocer más, ve a la documentación **[Integración mobile](/developers/es/docs/checkout-pro/mobile-integration/react-native-cli)**.
 
 ## Definir URL de retorno
 
@@ -103,7 +102,7 @@ preference_data = {
 | Atributo     | Descripción                                                                                                                                                                                                                                |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `auto_return`| Los compradores son redirigidos automáticamente al site cuando se aprueba el pago. El valor predeterminado es `approved`. **El tiempo de redireccionamiento será de hasta 40 segundos y no podrá ser personalizado**. Por defecto, también se mostrará un botón de "Volver al sitio".|
-| `back_urls`  | URL de retorno al sitio. Los escenarios posibles son: `success`: URL de retorno cuando se aprueba el pago.<br>`pending`: URL de retorno cuando el pago está pendiente.<br>`failure`: URL de retorno cuando se rechaza el pago.                    |
+| `back_urls`  | URL de retorno al sitio. Los escenarios posibles son: <br>`success`: URL de retorno cuando se aprueba el pago.<br>`pending`: URL de retorno cuando el pago está pendiente.<br>`failure`: URL de retorno cuando se rechaza el pago.                    |
 
 ## Respuesta de las URLs de retorno 
 
