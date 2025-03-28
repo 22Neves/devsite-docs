@@ -148,7 +148,7 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
   "total_amount": "200.00",
-  "expiration_time": "P3D",
+  "payment_expiration_time": "P3D",
   "description": "some description",
   "payer": {
     "email": "{email}",

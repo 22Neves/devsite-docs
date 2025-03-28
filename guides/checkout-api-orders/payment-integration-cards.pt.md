@@ -243,48 +243,33 @@ O envio do pagamento deve ser realizado mediante a criação de uma order que co
 Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/order/online-payments/create/post"} e execute a requisição.      
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/orders' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
---header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
-{
-  "type": "online",
-  "external_reference": "ext_ref_1234",
-  "processing_mode": "automatic",
-  "total_amount": "200.00",
-  "expiration_time": "P3D",
-  "description": "some description",
-  "payer": {
-    "email": "{email}",
-    "first_name": "John",
-    "last_name": "Doe",
-    "identification": {
-      "type": "CPF",
-      "number": "99999999999"
+curl -X POST \
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
     },
-    "address": [
-      {
-        "street_name": "Av. das Nações Unidas",
-        "street_number": "3003",
-        "zip_code": "06233903",
-  "neighborhood": "Bonfim",
-  "state": "SP",
-  "city": "Osasco"
-      }
-    ]
-  },
-  "transactions": {
-    "payments": [
-      {
-        "amount": "200.00",
-        "payment_method": {
-          "id": "bolbradesco",
-          "type": "ticket"
-        }
-      }
-    ]
-  }
-}
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
 ```
 
 Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
@@ -759,48 +744,33 @@ O envio do pagamento deve ser realizado mediante a criação de uma order que co
 Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/order/online-payments/create/post"} e execute a requisição.      
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/orders' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
---header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
-{
-  "type": "online",
-  "external_reference": "ext_ref_1234",
-  "processing_mode": "automatic",
-  "total_amount": "200.00",
-  "expiration_time": "P3D",
-  "description": "some description",
-  "payer": {
-    "email": "{email}",
-    "first_name": "John",
-    "last_name": "Doe",
-    "identification": {
-      "type": "CPF",
-      "number": "99999999999"
+curl -X POST \
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
     },
-    "address": [
-      {
-        "street_name": "Av. das Nações Unidas",
-        "street_number": "3003",
-        "zip_code": "06233903",
-  "neighborhood": "Bonfim",
-  "state": "SP",
-  "city": "Osasco"
-      }
-    ]
-  },
-  "transactions": {
-    "payments": [
-      {
-        "amount": "200.00",
-        "payment_method": {
-          "id": "bolbradesco",
-          "type": "ticket"
-        }
-      }
-    ]
-  }
-}
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
 ```
 
 Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.

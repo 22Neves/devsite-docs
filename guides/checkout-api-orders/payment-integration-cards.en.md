@@ -249,48 +249,33 @@ To do this, send a **POST** with your test Access Token and the required paramet
 
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/orders' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
---header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
-{
-  "type": "online",
-  "external_reference": "ext_ref_1234",
-  "processing_mode": "automatic",
-  "total_amount": "200.00",
-  "expiration_time": "P3D",
-  "description": "some description",
-  "payer": {
-    "email": "{email}",
-    "first_name": "John",
-    "last_name": "Doe",
-    "identification": {
-      "type": "CPF",
-      "number": "99999999999"
+curl -X POST \
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
     },
-    "address": [
-      {
-        "street_name": "Av. das Nações Unidas",
-        "street_number": "3003",
-        "zip_code": "06233903",
-  "neighborhood": "Bonfim",
-  "state": "SP",
-  "city": "Osasco"
-      }
-    ]
-  },
-  "transactions": {
-    "payments": [
-      {
-        "amount": "200.00",
-        "payment_method": {
-          "id": "bolbradesco",
-          "type": "ticket"
-        }
-      }
-    ]
-  }
-}
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
 ```
 
 See the table below for descriptions of the parameters that are mandatory in the request and those that, although optional, have some important particularity that should be highlighted.
@@ -767,48 +752,33 @@ To do this, send a **POST** with your test Access Token and the required paramet
 
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/orders' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
---header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
-{
-  "type": "online",
-  "external_reference": "ext_ref_1234",
-  "processing_mode": "automatic",
-  "total_amount": "200.00",
-  "expiration_time": "P3D",
-  "description": "some description",
-  "payer": {
-    "email": "{email}",
-    "first_name": "John",
-    "last_name": "Doe",
-    "identification": {
-      "type": "CPF",
-      "number": "99999999999"
+curl -X POST \
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
     },
-    "address": [
-      {
-        "street_name": "Av. das Nações Unidas",
-        "street_number": "3003",
-        "zip_code": "06233903",
-  "neighborhood": "Bonfim",
-  "state": "SP",
-  "city": "Osasco"
-      }
-    ]
-  },
-  "transactions": {
-    "payments": [
-      {
-        "amount": "200.00",
-        "payment_method": {
-          "id": "bolbradesco",
-          "type": "ticket"
-        }
-      }
-    ]
-  }
-}
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
 ```
 
 See the table below for descriptions of the parameters that are mandatory in the request and those that, although optional, have some important particularity that should be highlighted.

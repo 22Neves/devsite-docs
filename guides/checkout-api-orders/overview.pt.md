@@ -25,7 +25,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -48,7 +48,7 @@ product_landing_how_works:
 ---
 product_landing_what_differentiates:
  - title: Quais os diferenciais
- - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](/developers/pt/support/37740).
  - highlight_text: Você está aqui
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187306731-BR.PT.png
  - column_product: Checkout Transparente
@@ -131,7 +131,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -154,7 +154,7 @@ product_landing_how_works:
 ---
 product_landing_what_differentiates:
  - title: Quais os diferenciais
- - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](/developers/es/support/37740).
  - highlight_text: Você está aqui
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187346255-AR.PT.png
  - column_product: Checkout API
@@ -237,7 +237,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -260,7 +260,7 @@ product_landing_how_works:
 ---
 product_landing_what_differentiates:
  - title: Quais os diferenciais
- - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
+ - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](/developers/pt/support/37740).
  - highlight_text: Você está aqui
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/26/1743009447681-image4.png
  - column_product: Checkout API
