@@ -1,6 +1,6 @@
 # Configurar medios de pago
 
-Con ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API,------------ puedes elegir qué medios de pago deseas disponibilizar en tiendas online.
+Con ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ puedes elegir qué medios de pago deseas disponibilizar en tiendas online.
 
 El proceso de integración, luego de la inclusión e inicialización de la biblioteca MercadoPago.js, se basa en la configuración individual de los medios de pago que deseas ofrecer, lo que facilita la experiencia de integración, al mismo tiempo que permite un mayor nivel de personalización. 
 

@@ -1,6 +1,6 @@
 # Pix
 
-Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos instantáneos con Pix a través de un **código QR** o un **link de pago**.
+Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos instantáneos con Pix a través de un **código QR** o un **link de pago**.
 
 **Pix** es un medio de pago electrónico inmediato ofrecido por el Banco Central de Brasil a personas físicas y jurídicas.
 

@@ -1,6 +1,6 @@
 # Pix
 
-With Mercado Pago's ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API,------------ it's also possible to offer instant payments with Pix through a **QR code** or a **payment link**.
+With Mercado Pago's ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ it's also possible to offer instant payments with Pix through a **QR code** or a **payment link**.
 
 **Pix** is an instant electronic payment method offered by the Central Bank of Brazil to individuals and businesses.
 

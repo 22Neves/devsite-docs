@@ -1,6 +1,6 @@
-# Cartões
+# Cartões 
 
-A integração de pagamentos com **cartão de crédito e/ou débito** no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ pode ser realizada de duas maneiras. A **integração recomendada** é através do _Card Payment Brick_, onde o Brick se encarrega de buscar as informações necessárias para efetuar o pagamento. Mas, se você quiser ser o responsável por definir como essas informações serão buscadas, você pode realizar sua integração através de Core Methods.
+A integração de pagamentos com **cartão de crédito e/ou débito** no ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ pode ser realizada de duas maneiras. A **integração recomendada** é através do **_Card Payment Brick_**, onde o Brick se encarrega de buscar as informações necessárias para efetuar o pagamento. Mas, se você quiser ser o responsável por definir como essas informações serão buscadas, você pode realizar sua integração através de **_Core Methods_**.
 
 :::::TabsComponent
 
@@ -225,20 +225,12 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 
-----[mlc]----
-![cardform](checkout-bricks/card-form-mlc-pt.png)
-
-------------
 ----[mlm]----
 ![cardform](checkout-bricks/card-form-mlm-pt.png)
 
 ------------
 ----[mla, mlb]----
 ![cardform](checkout-bricks/card-form-pt.png)
-
------------- 
-----[mco, mpe, mlu]----
-![cardform](checkout-bricks/card-form-all-pt.png)
 
 ------------ 
 
@@ -363,10 +355,11 @@ Uma vez criada a order e o pagamento, você pode consultar os estados possíveis
 :::
 
 ::::
-::::TabComponent{title="Métodos Core"}
-Na integração via Métodos Core, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
+::::TabComponent{title="Core Methods"}
 
-Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando Métodos Core.
+Na integração via _Core Methods_, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
+
+Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando _Core Methods_.
 
 <pre class="mermaid">
   sequenceDiagram

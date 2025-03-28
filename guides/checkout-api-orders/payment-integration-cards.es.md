@@ -1,6 +1,6 @@
 # Tarjetas
 
-La integración de pagos con **tarjeta de crédito y/o débito** en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ puede ser realizada de dos maneras. La **integración recomendada** se realiza por medio del _Card Payment Brick_, donde el Brick es el encargado de realizar la búsqueda por la información necesaria para realizar el pago. Pero, si deseas encargarte de definir cómo será buscada esta información, puedes realizar tu integración por medio de Métodos Core. 
+La integración de pagos con **tarjeta de crédito y/o débito** en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ puede ser realizada de dos maneras. La **integración recomendada** se realiza por medio del **_Card Payment Brick_**, donde el Brick es el encargado de realizar la búsqueda por la información necesaria para realizar el pago. Pero, si deseas encargarte de definir cómo será buscada esta información, puedes realizar tu integración por medio de **_Core Methods_**. 
 
 ::::TabsComponent
 
@@ -228,10 +228,6 @@ import { CardPayment } from '@mercadopago/sdk-react';
 
 Como resultado, la renderización del Brick se verá similar a la imagen debajo.
 
-----[mlc]----
-![cardform](checkout-bricks/card-form-mlc-es.png)
-
-------------
 ----[mlm]----
 ![cardform](checkout-bricks/card-form-mlm-es.png)
 
@@ -240,20 +236,16 @@ Como resultado, la renderización del Brick se verá similar a la imagen debajo.
 ![cardform](checkout-bricks/card-form-es.png)
 
 ------------ 
-----[mco, mpe, mlu]----
-![cardform](checkout-bricks/card-form-all-es.png)
-
-------------
 
 Para avanzar a la etapa de envío del pago, será necesario que tu _backend_ pueda recibir la información del formulario creado, junto con el _token_ resultante de la criptografía de la tarjeta. Para eso, recomendamos disponibilizar un endpoint [Procesar order :TagComponent{textTag="API"}](/developers/es/reference/order/online/process-order/post) que acoja los datos recolectados por el Brick después de realizar la acción _submit_.
 
 :::
 
-:::TabComponent{title="Métodos Core"}
+:::TabComponent{title="Core Methods"}
 
-En la integración vía Métodos Core, el responsable de la integración se encarga de definir cómo se buscará la información necesaria para completar el pago, incluyendo cuándo buscar información sobre el tipo de documento, además de aquella relativa a la tarjeta (emisor y cuotas). De esta forma, tiene total flexibilidad para construir la experiencia del flujo de pago, a diferencia de la integración a través del _Card Payment Brick_, donde la búsqueda de la información se realiza de forma automática.
+En la integración vía _Core Methods_, el responsable de la integración se encarga de definir cómo se buscará la información necesaria para completar el pago, incluyendo cuándo buscar información sobre el tipo de documento, además de aquella relativa a la tarjeta (emisor y cuotas). De esta forma, tiene total flexibilidad para construir la experiencia del flujo de pago, a diferencia de la integración a través del _Card Payment Brick_, donde la búsqueda de la información se realiza de forma automática.
 
-Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los Métodos Core.
+Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los _Core Methods_.
 
 <pre class="mermaid">
   sequenceDiagram
@@ -295,15 +287,7 @@ La captura de los datos de la tarjeta (número de tarjeta, código de seguridad 
 
 Para obtener estos datos y procesar los pagos, inserta el siguiente `HTML` directamente en tu proyecto.
 
-----[mlc]----
-> WARNING
->
-> Atención
->
-> El valor `unit_price` debe ser un número entero.
-
-------------
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlb]----
 [[[
 ```html
 
@@ -417,7 +401,7 @@ Una vez finalizada la inicialización de los campos, los <divs> contendrán los 
 ]]]
 
 :::
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlb]----
 :::AccordionComponent{title="Obtener tipos de documento" pill="client-side"}
 
 Después de configurar la credencial, añadir el formulario de pago y inicializar los campos de tarjeta, es necesario obtener los tipos de documentos que se utilizarán para rellenar el formulario de pago.

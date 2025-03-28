@@ -36,7 +36,7 @@ At this stage, you should use your [test Public Key]{content="Testing public key
 ![mercado-pago-library](/images/api-orders/development-environment-publickey-pt.png) 
 
 ------------ 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla, mlm]----
 ![mercado-pago-library](/images/api-orders/development-environment-publickey-es.png) 
 
 ------------

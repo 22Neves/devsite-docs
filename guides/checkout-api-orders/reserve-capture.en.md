@@ -1,6 +1,6 @@
 # Reserve, capture, and cancel amounts
 
-By integrating card payments with ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, it is possible to process the transactions by reserving funds and subsequently capturing them. See below how to manage these transactions.
+By integrating card payments with ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------, it is possible to process the transactions by reserving funds and subsequently capturing them. See below how to manage these transactions.
 
 ## Reserve amounts
 

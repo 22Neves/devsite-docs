@@ -1,12 +1,12 @@
 # Modelo de integração
 
-----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ agora processa pagamentos com **Orders**. Se trata de uma API projetada para simplificar seu desenvolvimento com o Mercado Pago: com uma única integração, você poderá acessar diversas soluções de pagamento.
+----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ agora processa pagamentos com **Orders**. Se trata de uma API projetada para simplificar seu desenvolvimento com o Mercado Pago: com uma única integração, você poderá acessar diversas soluções de pagamento.
 
 Além disso, a API torna o código de integração mais intuitivo e fornece mensagens de erro mais detalhadas, facilitando o processo de desenvolvimento.
 
 ## Diferenças no processamento
 
-Anteriormente, os pagamentos via ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ eram processados exclusivamente pela **API de Pagamentos**. Agora, também é possível processá-los por meio de Orders, que oferece uma alternativa eficiente e simples para a integração. 
+Anteriormente, os pagamentos via ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ eram processados exclusivamente pela **API de Pagamentos**. Agora, também é possível processá-los por meio de Orders, que oferece uma alternativa eficiente e simples para a integração. 
 
 Veja abaixo as principais diferenças entre as duas opções.
 

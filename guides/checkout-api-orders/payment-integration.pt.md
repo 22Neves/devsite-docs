@@ -1,6 +1,6 @@
 # Configurar meios de pagamento
 
-Com o ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API,------------ você pode escolher quais meios de pagamento deseja disponibilizar nas lojas online.
+Com o ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ você pode escolher quais meios de pagamento deseja disponibilizar nas lojas online.
 
 O processo de integração se baseia na configuração individual desses meios de pagamento dentro do ambiente comum previamente estabelecido, o que facilita a experiência de integração, e permite um maior nível de personalização.
 

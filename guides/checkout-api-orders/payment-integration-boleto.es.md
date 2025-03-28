@@ -1,6 +1,6 @@
 # Boleto
 
-Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos con **boleto bancário** 
+Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos con **boleto bancário** 
 
 Con esto medio de pago, los compradores podrán realizar un pago diferido, siempre dentro del plazo establecido para su vencimiento, y deberán aguardar a que el mismo se acredite para dar por finalizada la compra.
 

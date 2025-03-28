@@ -18,7 +18,7 @@ You can obtain your production credentials in two ways:
 
 1. By accessing [**Your integrations > "Your application" > Production > Production credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlc, mlm]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.png)
 
 ------------
@@ -37,7 +37,7 @@ You can obtain your production credentials in two ways:
 ![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
 
 ------------
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlm]----
 ![Cómo acceder a las credenciales a través de Mercado Pago](/images/credentials/credentials-prod-mp-es.png)
 
 ------------
@@ -54,7 +54,7 @@ The **Public Key** and the **Access Token** are credentials that will be used, n
 
 - [Checkout Pro](/developers/en/docs/checkout-pro/landing)
 - [Checkout Bricks](/developers/en/docs/checkout-bricks/landing)
-- ----[mlb]---- [Checkout Transparente](/developers/en/docs/checkout-api/landing)----------------[mla, mlu, mlc, mlm, mco, mpe]---- [Checkout API](/developers/en/docs/checkout-api/landing)------------
+- ----[mlb]---- [Checkout Transparente](/developers/en/docs/checkout-api/landing)----------------[mlam]---- [Checkout API](/developers/en/docs/checkout-api/landing)------------
 - [Assinaturas](/developers/en/docs/subscriptions/landing)
 ----[mla, mlb, mlm]----
 - [Mercado Pago Point](/developers/en/docs/mp-point/landing)

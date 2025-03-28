@@ -10,7 +10,7 @@ Las credenciales utilizadas durante la etapa de desarrollo eran credenciales de 
 
 Para hacerlo, ingresa a [Tus integraciones](/developers/panel/app) y, en el menú lateral, accede a **Producción > Credenciales de producción**. Allí encontrarás tu :toolTipComponent[_Public Key_]{content="Clave pública que es utilizada en el frontend para acceder a información y cifrar datos. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción**."} y :toolTipComponent[Access Token productivos]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción**."}, que deberás utilizar en lugar de los de prueba.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlm]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.png)
 
 ------------

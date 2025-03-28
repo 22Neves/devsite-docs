@@ -1,6 +1,6 @@
 Otros medios de pago
 
-Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex** y **BBVA Bancomer**.
+Con ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API------------ de Mercado Pago, también es posible ofrecer pagos con **OXXO**, **Paycash**, **Citibanamex** y **BBVA Bancomer**.
 
 Con estos medios de pago, los compradores podrán realizar un pago diferido en efectivo, siempre dentro del plazo establecido para su vencimiento, y deberán aguardar a que el mismo se acredite para dar por finalizada la compra.
 

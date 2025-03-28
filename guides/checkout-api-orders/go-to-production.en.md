@@ -10,7 +10,7 @@ The credentials used during the development phase were test credentials. To star
 
 To do this, access [Your integrations](/developers/panel/app), select the desired application, and in the side menu, go to **Production > Production credentials**. There you will find your production :toolTipComponent[Public Key]{content="Public key used in the frontend to access information and encrypt data. You can access it through **Your integrations > Application details > Production > Production credentials**."} and :toolTipComponent[Access Token]{content="Private key of the application created in Mercado Pago, that is used in the backend when receiving real payments. You can access it through **Your integrations > Application details > Production > Production credentials**."}, which you should use instead of the test ones.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlm]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.png)
 
 ------------
