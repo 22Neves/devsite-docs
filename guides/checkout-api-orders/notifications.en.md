@@ -364,7 +364,7 @@ if sha == hash {
 ```
 ]]]
 
-# Actions required after receiving the notification
+## Actions required after receiving the notification
 
 When you receive a notification on your platform, Mercado Pago expects a response to validate that the reception was correct. To do this, you must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 

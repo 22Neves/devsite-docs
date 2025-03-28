@@ -126,6 +126,7 @@ curl -X POST \
   "total_amount": "1000.00",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
+  "payment_expiration_time": "P3D"
   "transactions": {
     "payments": [
       {

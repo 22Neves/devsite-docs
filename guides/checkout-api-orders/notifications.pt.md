@@ -364,7 +364,7 @@ if sha == hash {
 ```
 ]]]
 
-# Ações necessárias após receber a notificação
+## Ações necessárias após receber a notificação
 
 Quando você recebe uma notificação em sua plataforma, o Mercado Pago espera uma resposta para validar que essa recepção foi correta. Para isso, você deve devolver um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 

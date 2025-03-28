@@ -12,7 +12,7 @@ Si ya [configuraste tu ambiente](/developers/es/docs/checkout-api/development-en
 
 > NOTE
 >
-> Recuerde: antes de configurar los medios de pago, elija el modo en que procesará sus transacciones. La definición del modo de procesamiento, ya sea manual o automático, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, acceda a la sección [Modelo de integración](/developers/es/docs/checkout-api/integration-model).
+> Recuerda: antes de configurar los medios de pago, elija el modo en que procesará sus transacciones. La definición del modo de procesamiento, ya sea manual o automático, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api/integration-model).
 
 :::AccordionComponent{title="Añadir formulario de pago" pill="client-side"}
 
@@ -112,8 +112,7 @@ Si no cuentas con esta función, añade la siguiente a tu proyecto.
 
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}
- y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl
 curl -X POST \
@@ -128,6 +127,7 @@ curl -X POST \
   "payment_expiration_time": "P3Y6M4DT12H30M5S",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
+  "payment_expiration_time": "P3D"
   "transactions": {
     "payments": [
       {
@@ -149,10 +149,9 @@ Consulte en la tabla a continuación las descripciones de los parámetros que so
 
 | Atributo                                          | Tipo            | Descripción                                                                                                                                                                                                                        | Requerido/Opcional |
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| `Authorization`                                     | _Header_        | Hace referencia a tu clave privada, o Access Token. Utiliza el :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}
- en ambientes de desarrollo, y el :toolTipComponent[Access Token productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción**."} para pagos reales.                                                            | Requerido          |
+| `Authorization`                                     | _Header_        | Hace referencia a tu clave privada, o Access Token. Utiliza el :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} en ambientes de desarrollo, y el :toolTipComponent[Access Token productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción**."} para pagos reales.                                                            | Requerido          |
 | `X-Idempotency-Key`                                 | _Header_          | Llave de idempotencia. Esta llave garantiza que cada solicitud sea procesada una única vez, evitando duplicidades. Utiliza un valor exclusivo en el encabezado de tu solicitud, como un UUID V4 o _strings_ aleatorias.            | Requerido          |
-| `total_amount`                                      | _Body. String_    | Monto total de la transacción.                                                                                                                                                                                                       | Opcional             |
+| `total_amount`                                      | _Body. String_    | Monto total de la transacción.                                                                                                                                                                                                       | Requerido             |
 | `payment_expiration_time`                                  | _Body. String_    | Permite definir la **fecha de vencimiento** utilizando el formato de duración ISO 8601. Por defecto, **la fecha de vencimiento del boleto es de 3 días hábiles**, pero es posible cambiarla a través de este parámetro. La fecha se puede configurar entre 1 y 30 días después de la creación del pago. Recomendamos establecer una duración de, al menos, 3 días (“P3D", como en el ejemplo) para evitar conflictos entre la fecha de vencimiento y la acreditación del pago, que puede tardar hasta 2 horas hábiles desde su realización. En caso de que el pago se efectúe luego de la fecha de vencimiento establecida, el valor será devuelto a la cuenta de Mercado Pago del pagador.                | Opcional             |
 | `external_reference`                                   | _Body. String_    | Referencia externa de la order que puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.                                          | Requerido          |
 | `processing_mode`                                   | _Body. String_    | Modo de procesamiento de la order. Los valores posibles son: <br><br> - `automatic`: para crear y procesar la order en modo automático. <br><br> - `manual`: para crear la order y procesarla con posterioridad. <br><br> Para más información, acceda a la sección [Modelo de integración](/developers/es/docs/checkout-api/integration-model).                                          | Requerido          |
