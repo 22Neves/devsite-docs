@@ -91,7 +91,7 @@ product_landing_how_integrate:
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de usuario Mercado Pago
- - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor]((https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor]((https://www.mercadopago.com/hub/registration/landing).
  - requirement_table_title: Clave Pix
  - requirement_table_list: Si deseas ofrecer pagos a través de Pix, es necesario tener las [claves Pix registradas](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Proceso de integración
@@ -200,8 +200,6 @@ product_landing_how_integrate:
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
- - requirement_table_title: Clave Pix
- - requirement_table_list: Si deseas ofrecer pagos a través de Pix, es necesario tener las [claves Pix registradas](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Construir el ambiente de desarrollo
@@ -307,9 +305,7 @@ product_landing_how_integrate:
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de usuario Mercado Pago
- - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
- - requirement_table_title: Clave Pix
- - requirement_table_list: Si deseas ofrecer pagos a través de Pix, es necesario tener las [claves Pix registradas](https://www.youtube.com/watch?v=60tApKYVnkA).
+ - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago.com/hub/registration/landing).
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Construir el ambiente de desarrollo
