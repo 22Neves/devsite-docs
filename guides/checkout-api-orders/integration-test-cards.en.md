@@ -10,7 +10,7 @@ To make a successful test purchase, fill in the required data at checkout follow
 
 ### Buyer Email
 
-In the **email** field, enter the email address **"test@testuser.com"**, which is the only one allowed for testing. This way, your system will understand that it is a purchase made with a test buyer user.
+In the **email** field, enter the email address **test @testuser.com**, which is the only one allowed for testing. This way, your system will understand that it is a purchase made with a test buyer user.
 
 ### Card Details
 

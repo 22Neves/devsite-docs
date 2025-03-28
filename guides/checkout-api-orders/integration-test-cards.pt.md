@@ -10,7 +10,7 @@ Para realizar uma compra de teste com sucesso, complete os dados requeridos no c
 
 ### E-mail do comprador
 
-No campo **e-mail**, insira o e-mail **test@testuser.com**, que é o único permitido para testes. Desta forma, seu sistema entenderá que se trata de uma compra realizada com um usuário comprador de teste.
+No campo **e-mail**, insira o e-mail **test @testuser.com**, que é o único permitido para testes. Desta forma, seu sistema entenderá que se trata de uma compra realizada com um usuário comprador de teste.
 
 ### Dados do cartão
 

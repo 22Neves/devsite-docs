@@ -106,8 +106,6 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 
 > WARNING
 > 
-> Importante
->
 > Se algum dos valores apresentados no modelo anterior não estiver presente na notificação recebida, você deve removê-lo.
 
 3. Em [Suas integrações](/developers/panel/app), selecione a aplicação integrada, clique em **Webhooks > Configurar notificação** e revele a chave secreta gerada.
@@ -372,6 +370,6 @@ Quando você recebe uma notificação em sua plataforma, o Mercado Pago espera u
 
 O **tempo de espera** para essa confirmação será de **22 segundos**. Se essa confirmação não for enviada, o sistema entenderá que a notificação não foi recebida e realizará uma nova tentativa de envio **a cada 15 minutos**, até que receba a resposta. Após a terceira tentativa, o prazo será prorrogado, mas os envios continuarão acontecendo.
 
-Após responder à notificação e confirmar seu recebimento, você pode obter todas as informações sobre o recurso notificado enviando um GET para o endpoint TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/order/online-payments/get-order/get"}.
+Após responder à notificação e confirmar seu recebimento, você pode obter todas as informações sobre o recurso notificado enviando um GET para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/order/online-payments/get-order/get"}.
 
 Com essa informação, você poderá realizar as atualizações necessárias em sua plataforma, como atualizar um pagamento aprovado.

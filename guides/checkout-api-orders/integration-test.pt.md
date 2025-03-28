@@ -8,8 +8,8 @@ Para iniciar este processo, é necessário **configurar seu ambiente de testes**
 
 [TXTSNIPPET][/guides/snippets/test-cross/configure-test-seller-user]
 
-## 2. Crear aplicación de prueba y obtener credenciales
+## 2. Criar aplicação de teste e obter credenciais
+Para terminar de estabelecer o seu ambiente de testes, deverá criar uma aplicação de testes com o seu usuário de testes vendedor e, assim, aceder às suas credenciais e vinculá-las à sua integração. Siga as indicações abaixo para realizar este processo corretamente.
 
-Para terminar de establecer tu ambiente de pruebas, deberás crear una aplicación de pruebas con tu usuario de pruebas vendedor, y así acceder a sus credenciales y vincularlas a tu integración. Sigue las indicaciones a continuación para realizar este proceso correctamente.
 
 [TXTSNIPPET][/guides/snippets/test-cross/create-test-app]

@@ -10,7 +10,7 @@ Para realizar una compra de prueba exitosa, completa los datos requeridos en el 
 
 ### E-mail del comprador
 
-En el campo **e-mail**, ingresa el correo electrónico **"test@testuser.com"**, que es el único permitido para pruebas. De esta manera, tu sistema entenderá que se trata de una compra realizada con un usuario comprador de prueba.
+En el campo **e-mail**, ingresa el correo electrónico **test @testuser.com**, que es el único permitido para pruebas. De esta manera, tu sistema entenderá que se trata de una compra realizada con un usuario comprador de prueba.
 
 ### Datos de la tarjeta
 

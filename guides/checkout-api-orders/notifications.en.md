@@ -8,7 +8,7 @@ Below, we present a step-by-step guide to receiving payment notifications in int
 
 1. Go to [Your integrations](/developers/panel/app) and select the application integrated with ----[mla, mlm, mco, mlc, mlu, mpe]----Checkout API------------ ----[mlb]----Checkout Transparente------------ for which you want to activate notifications.
 
-![cofigure notifications](/images/api-orders/not1-app-en.png)
+![cofigure notifications](/images/api-orders/not1-app-es.png)
 
 2. In the left menu, select **Webhooks > Configure notifications**.
 
