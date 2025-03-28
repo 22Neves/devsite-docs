@@ -245,7 +245,7 @@ Como resultado, la renderización del Brick se verá similar a la imagen debajo.
 
 ------------
 
-Para avanzar a la etapa de envío del pago, será necesario que tu _backend_ pueda recibir la información del formulario creado, junto con el token resultante de la criptografía de la tarjeta. Para eso, recomendamos disponibilizar un endpoint */process_order* que acoja los datos recolectados por el Brick después de realizar la acción _submit_.
+Para avanzar a la etapa de envío del pago, será necesario que tu _backend_ pueda recibir la información del formulario creado, junto con el _token_ resultante de la criptografía de la tarjeta. Para eso, recomendamos disponibilizar un endpoint [Procesar order :TagComponent{textTag="API"}](/developers/es/reference/order/online/process-order/post) que acoja los datos recolectados por el Brick después de realizar la acción _submit_.
 
 :::
 
@@ -619,13 +619,13 @@ Uno de los campos obligatorios que componen el formulario de pago es la----[mla]
 :::
 :::AccordionComponent{title="Crear token de la tarjeta" pill="client-side"}
 
-El _token_ de la tarjeta se crea a partir de la información de la misma, lo que aumenta la seguridad durante el flujo de pago. Además, después de que el _token_ se utiliza en una compra determinada, este es descartado y se debe crear uno nuevo para futuras compras. Para crear el token de la tarjeta, utiliza la siguiente función.
+El _token_ de la tarjeta se crea a partir de la información de la misma, lo que aumenta la seguridad durante el flujo de pago. Además, después de que el _token_ se utiliza en una compra determinada, este es descartado y se debe crear uno nuevo para futuras compras. Para crear el _token_ de la tarjeta, utiliza la siguiente función.
 
 > NOTE
 >
 > Importante
 >
-> El método `createCardToken` devuelve un _token_ con la representación segura de los datos de la tarjeta. Es necesario tomar el ID del _token_ de la respuesta y guardarlo en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores. Además, ten en cuenta que el **token tiene una validez de 7 días** y solo se **puede usar una vez**.
+> El método `createCardToken` devuelve un _token_ con la representación segura de los datos de la tarjeta. Es necesario tomar el ID del _token_ de la respuesta y guardarlo en una input oculto denominado`token` para enviar posteriormente el formulario a los servidores. Además, ten en cuenta que el **_token_ tiene una validez de 7 días** y solo se **puede usar una vez**.
 
 [[[
 ```javascript
@@ -665,7 +665,7 @@ El envío del pago debe ser realizado mediante la creación de una order que con
 
 La definición del modo de procesamiento se realizará al momento de crear la order, mediante el parámetro `processing_mode`. Su valor deberá ser `automatic`, para procesamientos automáticos, o `manual`, para procesar la order manualmente.
 
-Para eso, envía un **POST** con tu [_Access Token_ de pruebas]{link="/developer/pt" linkText="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos al endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/create/post) y ejecuta la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} y los parámetros requeridos al endpoint [/v1/orders :TagComponent{textTag="API"}](/developers/es/reference/order/online-payments/create/post) y ejecuta la requisición.
 
 ```curl
 curl -X POST \
@@ -701,7 +701,7 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 
 | Atributo | Tipo | Descripción | Requerido/Opcional |
 |---|---|---|---|
-| `Authorization` | _Header_ | Hace referencia a tu clave privada, o Access Token. Utiliza el [_Access Token_ de pruebas]{link="/developer/pt" linkText="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} en ambientes de desarrollo, y el :toolTipComponent[_Access Token_ productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción**."} para pagos reales. | Requerido |
+| `Authorization` | _Header_ | Hace referencia a tu clave privada, o Access Token. Utiliza el :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."} en ambientes de desarrollo, y el :toolTipComponent[Access Token productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción**."} para pagos reales. | Requerido |
 | `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Esta llave garantiza que cada solicitud sea procesada una única vez, evitando duplicidades. Utiliza un valor exclusivo en el encabezado de tu solicitud, como un UUID V4 o *strings* aleatorias. | Requerido |
 | `processing_mode` | _Body. String_ | Modo de procesamiento de la order. Los valores posibles son:<br>`automatic`, para crear y procesar la order en modo automático.<br>`manual`, para crear la order y procesarla con posterioridad. Para más información, accede a [Modelo de integración](/developers/es/docs/checkout-api/integration-model)| Requerido |
 | `total_amount` | _Body. String_ | Monto total de la transacción. | Requerido |

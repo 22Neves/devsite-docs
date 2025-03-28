@@ -1,4 +1,3 @@
-
 O processo de teste permite verificar se as configurações realizadas durante sua integração funcionam corretamente e se os pagamentos serão processados sem erros, evitando possíveis falhas ao disponibilizar o checkout para os compradores finais.
 
 Para iniciar este processo, é necessário **configurar seu ambiente de testes** criando um usuário de testes vendedor. Isso permitirá que você configure um aplicativo de testes, obtenha suas credenciais e as aplique em sua integração antes de realizar um pagamento de teste. A seguir, apresentamos os passos a seguir.
@@ -20,4 +19,3 @@ Siga os passos abaixo para criar um usuário de teste vendedor.
 6. Aceite a [Declaração de Privacidade](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidade) e os [Termos e condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em **Criar conta de teste**.
 
 ![formulário de criação do usuário teste](/images/dashboard/new-test-users-pt.png) 
-

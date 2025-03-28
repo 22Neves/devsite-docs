@@ -6,7 +6,7 @@ El proceso de integración, luego de la inclusión e inicialización de la bibli
 
 ![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-es.png) 
 
-Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu [_Acess Token_]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**."} al endpoint [/v1/payment_methods :TagComponent{textTag="API"}](/developers/es/reference/payment_methods/_payment_methods/get) o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
+Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu :toolTipComponent[Acess Token]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**."} al endpoint [/v1/payment_methods :TagComponent{textTag="API"}](/developers/es/reference/payment_methods/_payment_methods/get) o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
 ```php
