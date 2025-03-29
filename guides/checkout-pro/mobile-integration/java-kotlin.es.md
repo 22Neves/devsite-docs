@@ -1,20 +1,18 @@
-# Integrar con Java o Kotlin
-
-En el desarrollo de aplicaciones móviles, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
-
 > WARNING
 >
 > Importante
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia.](/developers/es/docs/checkout-pro/integrate-preferences)
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia de pago creada en tu backend. Si aún no lo has hecho, ve a [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
 
-En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en Java o Kotlin. 
+# Integrar con Java o Kotlin
 
-> CLIENT_SIDE
->
-> h2
->
-> Configuración para Android Nativo
+Durante el desarrollo de aplicaciones móviles con React Native, es necesario mostrar contenido web dentro de una aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
+
+:::::TabsComponent
+
+::::TabComponent{title="Android"} En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en Java o Kotlin. 
+
+## Configuración para Android Nativo
 
 Si usas Android Nativo para desarrollar tu aplicación lo primero que necesitas es instalar esta dependencia en el archivo **build.gradle**.
 
@@ -47,11 +45,7 @@ val url = "URL-PREFERENCE"
 ```
 ]]]
 
-> CLIENT_SIDE
->
-> h2
->
-> Cómo volver a tu App 
+## Cómo volver a tu App 
 
 Los **Deep Links**, también conocidos como enlaces profundos, son una forma poderosa de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. 
 
@@ -61,11 +55,7 @@ Para esto, debemos agregar en la creación de la preferencia de pago las propied
 
 Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
-> CLIENT_SIDE
->
-> h2
->
-> Configuración de la aplicación para la gestión del Deep Link
+## Configuración de la aplicación para la gestión del Deep Link
 
 Para configurar un deeplink nativo en android, dirígete al archivo android **/app/src/main/AndroidManifest.xml** y declara cuál es la actividad que va estar disponible como deeplink. A continuación te compartimos un ejemplo de cómo es una actividad con Deep Link.
 
@@ -90,4 +80,6 @@ Para configurar un deeplink nativo en android, dirígete al archivo android **/a
 
 En los valores `intent` deberás establecer que la actividad sea navegable por otras aplicaciones. Con los valores `scheme` y `host` podrás definir el deeplink de la app a una actividad específica.
 
-Ten en cuenta que este deeplink es el que usarás en todas las `back_url` de tu preferencia. En los ciclos de la actividad que fue expuesta (por ejemplo, onCreate, onResume) podrás colocar tu lógica de negocio después del pago.
+Ten en cuenta que este deeplink es el que usarás en todas las `back_url` de tu preferencia. En los ciclos de la actividad que fue expuesta (por ejemplo, onCreate, onResume) podrás colocar tu lógica de negocio después del pago. ::::
+
+:::::
