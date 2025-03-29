@@ -2,11 +2,11 @@
 >
 > Importante
 >
-> Antes de começar a integrar o Checkout Pro para Mobile, você precisará ter uma preferência criada em seu backend. Se ainda não o fez, vá para [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
+> Antes de começar a integrar o Checkout Pro para Mobile, você deve ter uma preferência de pagamento criada em seu backend. Se você ainda não o fez, vá para [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
 
 # Integrar com React Native CLI
 
-No desenvolvimento de aplicativos móveis com React Native, frequentemente surge a necessidade de exibir conteúdo web dentro do aplicativo. Para alcançar isso, existem várias opções, entre as quais se destacam o uso de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem abrir páginas web em um navegador nativo integrado ao aplicativo, proporcionando uma experiência de navegação mais fluida e coerente para os usuários.
+Durante o desenvolvimento de aplicações móveis com React Native, é necessário exibir conteúdo web dentro de um aplicativo. Para conseguir isso, existem várias opções, entre as quais se destacam o uso de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem abrir páginas da web em um navegador nativo integrado ao aplicativo, proporcionando uma experiência de navegação mais fluida e consistente para os usuários.
 
 A seguir, selecione o sistema operacional para o qual você deseja integrar e siga o passo a passo indicado.
 
