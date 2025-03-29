@@ -122,7 +122,7 @@ From the checkout, it is possible to configure Deep Links to return to your appl
 
 To do this, you must add the `back_urls` and `auto_return` properties to the payment preference creation as appropriate.
 
-To learn more, you can access the documentation on [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection).
+To learn more, you can access the documentation on [Back URLs](/developers/en/docs/checkout-pro/web-integration/configure-back-urls).
 
 ## Configuring the App for Deep Link Handling
 
