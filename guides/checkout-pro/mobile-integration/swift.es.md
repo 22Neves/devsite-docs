@@ -1,20 +1,18 @@
-# Integrar con Swift
-
-Safari View Controller integra todo Safari dentro de su aplicación usando un controlador de vista opaco. Es decir, no puede diseñarlo, no puede interactuar con él y no puede extraer ningún dato privado de él. Como resultado, **SFSafariViewController** puede aprovechar los datos web seguros del usuario.
-
 > WARNING
 >
 > Importante
 >
-> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia creada en tu backend. Si aún no lo has hecho, ve a [Creación de preferencia.](/developers/es/docs/checkout-pro/integrate-preferences)
+> Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia de pago creada en tu backend. Si aún no lo has hecho, ve a [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
 
-En este paso vamos a instalar y configurar las dependencias necesarias para implementar **SFSafariViewController** en tu proyecto desarrollado en Swift. 
+# Integrar con Swift
 
-> CLIENT_SIDE
->
-> h2
->
-> Instalación de SFSafariViewController
+Safari View Controller integra todo Safari dentro de su aplicación usando un controlador de vista opaco. Es decir, no puede diseñarlo, no puede interactuar con él y no puede extraer ningún dato privado de él. Como resultado, **SFSafariViewController** puede aprovechar los datos web seguros del usuario.
+
+:::::TabsComponent
+
+::::TabComponent{title="Android"} En este paso vamos a instalar y configurar las dependencias necesarias para implementar **SFSafariViewController** en tu proyecto desarrollado en Swift. 
+
+## Instalación de SFSafariViewController
 
 SFSafariViewController no forma parte del [UIKit](https://developer.apple.com/documentation/uikit) por lo que, para usarlo, **deberás importar Safari Services Framework** que contiene los servicios necesarios para integrar comportamientos de Safari en tu aplicación iOS.
 
@@ -90,11 +88,7 @@ class ViewController: UIViewController {
 ```
 ]]]
 
-> CLIENT_SIDE
->
-> h2
->
-> Cómo volver a tu App 
+## Cómo volver a tu App 
 
 Los **Deep Links**, también conocidos como enlaces profundos, son una forma poderosa de permitir la navegación directa a pantallas o secciones específicas de una aplicación móvil. 
 
@@ -104,12 +98,7 @@ Para esto, debemos agregar en la creación de la preferencia de pago las propied
 
 Para conocer más, puedes acceder a la documentación de [URLs de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
-
-> CLIENT_SIDE
->
-> h2
->
-> Configuración de la aplicación para la gestión del Deep Link
+## Configuración de la aplicación para la gestión del Deep Link
 
 Para configurar un Deep Link nativo en iOS, dirígete al archivo `<appname>/Info.plist` y agrega el código que se muestra a continuación según sea tu caso.
 
@@ -151,12 +140,7 @@ Luego, ingresa el `identifier` de tu aplicación y la `URL Schemes` del Deep Lin
 
 Esto generará automáticamente el mismo código que se indicó anteriormente en el archivo `<appname>/Info.plist`.
 
-
-> CLIENT_SIDE
->
-> h2
->
-> Recepción y gestión del Deep Link 
+## Recepción y gestión del Deep Link 
 
 En iOS, cuando un deep link intenta redirigir al usuario a la aplicación desde una Safari View Controller es necesario configurar un manejador de este evento para cerrarla y cargar la vista o escena que corresponda.
 
@@ -255,5 +239,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 ```
-]]]
+]]] ::::
 
+:::::
