@@ -1,6 +1,6 @@
 # Configurar ambiente de desenvolvimento
 
-Para começar a integrar as soluções de pagamento do Mercado Pago, é necessário preparar seu ambiente de desenvolvimento com uma série de configurações que permitirão acessar as funcionalidades do Mercado Pago a partir do *backend*.
+Para começar a integrar as soluções de pagamento do Mercado Pago, é necessário preparar seu ambiente de desenvolvimento com uma série de configurações que permitirão acessar as funcionalidades do Mercado Pago a partir do backend.
 
 A seguir, você deverá instalar e configurar o SDK oficial do Mercado Pago:
 
@@ -35,7 +35,7 @@ npm install mercadopago
 ```
 ```java
 ===
-Para instalar o SDK em seu projeto [Maven](http://maven.apache.org/install.html), você deve adicionar a seguinte dependência em seu arquivo <code>pom.xml</code> e executar <code>maven install</code> na linha de comando do seu terminal:
+Para instalar o SDK em seu projeto [Maven](http://maven.apache.org/install.html), você deve adicionar a seguinte dependência em seu arquivo `pom.xml` e executar `maven install` na linha de comando do seu terminal:
 ===
 <dependency>
    <groupId>com.mercadopago</groupId>
@@ -95,7 +95,7 @@ Primeiro, você deverá **ativar as credenciais de produção**. Para isso, voc�
 
 Uma vez que você tenha ativado suas credenciais de produção, poderá utilizar seu `access token` de **produção**.
 
-A seguir, no *backend* do seu projeto, crie um arquivo _main_ baseado na linguagem de programação que você usará. Nele, coloque o seguinte código substituindo o valor `PROD_ACCESS_TOKEN` pelo seu `access token` de produção.
+A seguir, no backend do seu projeto, crie um arquivo _main_ baseado na linguagem de programação que você usará. Nele, coloque o seguinte código substituindo o valor `PROD_ACCESS_TOKEN` pelo seu `access token` de produção.
 
 [[[
 ```php

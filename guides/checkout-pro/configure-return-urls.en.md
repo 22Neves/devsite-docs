@@ -10,7 +10,19 @@ You can configure up to three different return URLs, corresponding to pending pa
 >
 > Note
 >
-> In mobile integrations, we recommend that the return URLs be deep links. To learn more, refer to the **[Mobile Integration](/developers/en/docs/checkout-pro/mobile-integration/react-native-cli)** documentation.
+> In mobile integrations, we recommend that the return URLs be deep links. To learn more, refer to the **[Integration for mobile applications](/developers/en/docs/checkout-pro/mobile-integration)** documentation.
+
+## Define return URL
+
+In your backend code, you need to set up the URL to which you want Mercado Pago to redirect the user once they have completed the payment process.
+
+> NEUTRAL_MESSAGE
+> 
+> Note
+>
+> If you prefer, it is also possible to configure the return URLs by sending a POST request to the [Create Preference](/developers/en/reference/preferences/_checkout_preferences/post) API with the `back_urls` attribute specifying the URLs to which the buyer should be directed upon payment completion.
+
+Below, we share examples of how to include the `back_urls` attribute according to the programming language you are using, along with the details of each possible parameter.
 
 [[[
 ```php
@@ -146,7 +158,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout Pro for Web
  - card_description: Offers payments with redirection to Mercado Pago on your website or online store.
- - card_button: /developers/en/docs/checkout-pro/integrate-checkout-pro/web
+ - card_button: /developers/en/docs/checkout-pro/web-integration/add-frontend-sdk
  - card_buttonDescription: Integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -156,7 +168,7 @@ future_product_avaible:
  - card_icon: Loading
  - card_title: Checkout Pro for Mobile
  - card_description: Offers payments with redirection to Mercado Pago in your mobile application.
- - card_button: /developers/en/docs/checkout-pro/integrate-checkout-pro/mobile
+ - card_button: /developers/en/docs/checkout-pro/mobile-integration
  - card_buttonDescription: Integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false

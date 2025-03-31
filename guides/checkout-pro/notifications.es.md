@@ -714,7 +714,7 @@ Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respu
 
 El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
 
-[IMG]
+![not-necessary-actions](/images/cow/not-necessary-actions.png)
 
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
 
