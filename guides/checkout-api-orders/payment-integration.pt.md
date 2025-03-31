@@ -99,7 +99,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Boleto
  - card_title: Boleto bancário
  - card_description: Receba em sua conta os pagamentos que o cliente realizar através de um boleto bancário.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/boleto
@@ -109,7 +109,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Bank
  - card_title: Conta Mercado Pago
  - card_description: Ofereça aos compradores a possibilidade de utilizar qualquer um dos meios de pagamento armazenados em sua conta do Mercado Pago.
  - card_button:
@@ -145,7 +145,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Cash
  - card_title: Outros meios de pagamento
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do Rapipago ou Pago Fácil.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
@@ -155,7 +155,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Bank transfer
  - card_title: Conta Mercado Pago
  - card_description: Ofereça aos compradores a possibilidade de utilizar qualquer um dos meios de pagamento armazenados em sua conta do Mercado Pago.
  - card_button:
