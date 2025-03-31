@@ -32,7 +32,7 @@ Para inicializar la biblioteca de Mercado Pago, deberás utilizar tus :toolTipCo
 
 En esta etapa, deberás utilizar tu [_Public Key_ de pruebas]{content="Clave pública de pruebas, que es utilizada en el frontend para acceder a información y cifrar datos, sea en la etapa de desarrollo o en la de pruebas. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}, a la que podrás acceder ingresando a los [detalles de tu aplicación](/developers/es/docs/checkout-api/more-resources/application-details) en [Tus integraciones](/developers/panel/app), bajo el título **Pruebas > Credenciales de prueba** en el menú ubicado a la izquierda de la pantalla.
 
-![mercado-pago-library](/images/api-orders/development-environment-publickey-es.png) 
+![mercado-pago-library](/images/snippets/development-environment-publickey-es.png) 
 
 > NEUTRAL_MESSAGE
 >

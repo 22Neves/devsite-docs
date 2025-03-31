@@ -32,7 +32,7 @@ Para inicializar a biblioteca do Mercado Pago, é necessário utilizar suas :too
 
 Nesta etapa, você deverá usar sua :toolTipComponent[_Public Key_ de teste]{content="Chave pública de testes e que é utilizada no _frontend_ para acessar informações e criptografar dados, seja na fase de desenvolvimento ou na fase de testes. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."}, que pode ser acessada nos [detalhes da sua aplicação](/developers/pt/docs/checkout-api/more-resources/application-details) em [Suas integrações](/developers/panel/app), sob o título **Teste > Credenciais de Teste** no menu localizado à esquerda da tela.
 
-![mercado-pago-library](/images/api-orders/development-environment-publickey-pt.png) 
+![mercado-pago-library](/images/snippets/development-environment-publickey-pt.png) 
 
 > NEUTRAL_MESSAGE
 >

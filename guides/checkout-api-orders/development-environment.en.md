@@ -33,11 +33,11 @@ To initialize the Mercado Pago library, you will need to use your :toolTipCompon
 At this stage, you should use your [test Public Key]{content="Testing public key, used in the frontend to access information and encrypt data, whether in the development stage or the testing stage. You can access it through **Your integrations > Application details > Testing > Testing credentials**."}, which you can access by going to the [application details](/developers/en/docs/checkout-api/more-resources/application-details) in [Your integrations](/developers/panel/app), under the title **Tests > Test credentials** in the menu located on the left side of the screen.
 
 ----[mlb]----
-![mercado-pago-library](/images/api-orders/development-environment-publickey-pt.png) 
+![mercado-pago-library](/images/snippets/development-environment-publickey-pt.png) 
 
 ------------ 
 ----[mla, mlm]----
-![mercado-pago-library](/images/api-orders/development-environment-publickey-es.png) 
+![mercado-pago-library](/images/snippets/development-environment-publickey-es.png) 
 
 ------------
 
