@@ -92,7 +92,7 @@ You can renew your **production credentials** for security reasons or any other 
 
 To renew a credential pair, follow the steps below.
 
-1. Access your production credentials through [Your integrations][https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app].
+1. Access your production credentials through [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
@@ -191,7 +191,7 @@ You can renew your **production credentials** for security reasons or any other 
 
 To renew a credential pair, follow the steps below.
 
-1. Access your production credentials through [Your integrations][https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app].
+1. Access your production credentials through [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 

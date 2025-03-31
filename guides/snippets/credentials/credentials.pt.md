@@ -94,7 +94,7 @@ Você pode renovar suas **credenciais de produção** por motivos de segurança 
 
 Para renovar um par de credenciais, siga os passos abaixo.
 
-1. Acesse suas credenciais de producción através de [Suas integrações][https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app].
+1. Acesse suas credenciais de producción através de [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Selecione o par de credenciais que você deseja renovar. Estas podem ser **Public Key** e **Access Token** ou **Client ID** e **Client Secret**. Tenha em conta que ambas as credenciais do par que você escolher serão renovadas.
 3. Clique nos três pontos localizados à direita da credencial que você deseja renovar e selecione **Renovar**. Clique em **Renovar agora** para confirmar a alteração.
 
@@ -193,7 +193,7 @@ Você pode renovar suas **credenciais de produção** por motivos de segurança 
 
 Para renovar um par de credenciais, siga os passos abaixo.
 
-1. Acesse suas credenciais de producción através de [Suas integrações][https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app].
+1. Acesse suas credenciais de producción através de [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 2. Selecione o par de credenciais que você deseja renovar. Estas podem ser **Public Key** e **Access Token** ou **Client ID** e **Client Secret**. Tenha em conta que ambas as credenciais do par que você escolher serão renovadas.
 3. Clique nos três pontos localizados à direita da credencial que você deseja renovar e selecione **Renovar**. Clique em **Renovar agora** para confirmar a alteração.
 
