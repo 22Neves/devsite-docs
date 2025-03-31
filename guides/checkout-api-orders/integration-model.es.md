@@ -12,7 +12,7 @@ Ve a continuación las principales diferencias entre las dos opciones.
 
 | Funcionalidad  |  API de Pagamentos  | API de Orders |
 | --- | --- |--- |
-| Procesamiento del pago	  | [Automático](/developers/es/docs/checkout-api/integration-model#:~:text=Modo-,autom%C3%A1tico,-Modo%20manual) (cree y procese su transacción) | [Automático](/developers/es/docs/checkout-api/integration-model#:~:text=Modo-,autom%C3%A1tico,-Modo%20manual) y [manual](/developers/es/docs/checkout-api/integration-model#:~:text=Modo-,manual,-El%20modo%20autom%C3%A1tico) (eligiendo cuándo procesar la transacción). |
+| Procesamiento del pago	  | Automático (cree y procese su transacción) | [Automático y manual](/developers/es/docs/checkout-api/integration-model#bookmark_modos_de_procesamiento_de_orders) (eligiendo cuándo procesar la transacción). |
 | Transacciones | Una transacción por solicitud.	 | Múltiples transacciones por solicitud. |
 | Operaciones  | [Pagos online](/developers/es/docs#online-payments).	 | [Pagos online](/developers/es/docs#online-payments) y [Pagos presenciales](/developers/es/docs#inperson-payments) (Point de Mercado Pago).|
 | Notificaciones  | Configuración avanzada por `notification_url`.	 | Configuración más simple a partir de la sección de [Notificaciones](/developers/es/docs/checkout-api/notifications) en [Tus integraciones](/developers/panel/app). |
