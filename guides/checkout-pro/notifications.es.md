@@ -6,14 +6,14 @@ En lugar de que tu sistema realice consultas constantes para verificar actualiza
 
 Consulta el flujo general de una notificación en el diagrama a continuación. 
 
-![Diagram](/images/cow/notifications-diagrama-es.png)
+![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
 A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
 
 | Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
 |-|-|-|-|
-| Configuración a través de Tus Integraciones       | Este método permite configurar notificaciones directamente en tu Panel de Desarrollador. Puedes configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas si es necesario, y validar el origen de la notificación mediante una firma secreta. | - Identificación sencilla de cuentas distintas, asegurando una adecuada gestión en entornos diversos. <br> - Alta seguridad al validar el origen de las notificaciones mediante una firma secreta, que garantiza la integridad de la información recibida. <br> - Más versátil y eficaz para mantener un control centralizado y gestionar la comunicación con las aplicaciones de manera eficiente. | Recomendado para la mayoría de las integraciones.                                                          |
-| Configuración durante la creación de pagos o preferencias | Las notificaciones se configuran para cada transacción individualmente durante la creación del pago o preferencia.                                                                                                                  | - Ajustes específicos para cada transacción. <br> - Flexibilidad en casos de necesidad de parámetros dinámicos obligatorios. <br> - Ideal para integraciones como plataformas de pago para múltiples vendedores.                                                                                    | Conveniente en los casos en que sea necesario enviar un query parameter dinámico de forma obligatoria, además de ser adecuado para integraciones que funcionan como una plataforma de pago para múltiples vendedores. |
+| [Configuración a través de Tus Integraciones](/developers/es/docs/checkout-pro/payment-notifications#configuracinatravsdetusintegraciones)       | Este método permite configurar notificaciones directamente en tu Panel de Desarrollador. Puedes configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas si es necesario, y validar el origen de la notificación mediante una firma secreta. | - Identificación sencilla de cuentas distintas, asegurando una adecuada gestión en entornos diversos. <br> - Alta seguridad al validar el origen de las notificaciones mediante una firma secreta, que garantiza la integridad de la información recibida. <br> - Más versátil y eficaz para mantener un control centralizado y gestionar la comunicación con las aplicaciones de manera eficiente. | Recomendado para la mayoría de las integraciones.                                                          |
+| [Configuración durante la creación de pagos o preferencias](/developers/es/docs/checkout-pro/payment-notifications#configuracinalcrearpagosypreferencias) | Las notificaciones se configuran para cada transacción individualmente durante la creación del pago o preferencia.                                                                                                                  | - Ajustes específicos para cada transacción. <br> - Flexibilidad en casos de necesidad de parámetros dinámicos obligatorios. <br> - Ideal para integraciones como plataformas de pago para múltiples vendedores.                                                                                    | Conveniente en los casos en que sea necesario enviar un query parameter dinámico de forma obligatoria, además de ser adecuado para integraciones que funcionan como una plataforma de pago para múltiples vendedores. |
 
 > RED_MESSAGE
 >
@@ -58,9 +58,6 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 2. Luego, haz clic en **Simular** para probar si la URL indicada está recibiendo las notificaciones correctamente.
 3. En la pantalla de simulación, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
 4. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación (Data ID).
-
-![Simulate](/images/cow/not5-simulate-es.png) 
-
 5. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento. Recibirás una respuesta similar al ejemplo a continuación, que representa el `body` de la notificación recibida en tu servidor.
 ```
 {
