@@ -4,8 +4,6 @@ Con ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout
 
 El proceso de integración, luego de la inclusión e inicialización de la biblioteca MercadoPago.js, se basa en la configuración individual de los medios de pago que deseas ofrecer, lo que facilita la experiencia de integración, al mismo tiempo que permite un mayor nivel de personalización. 
 
-![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-es.png) 
-
 Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu :toolTipComponent[Acess Token]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**."} al endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/es/reference/payment_methods/_payment_methods/get"} o, si lo prefieres, haz la solicitud utilizando uno de nuestros SDKs.
 
 [[[
@@ -89,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: QR
  - card_title: Pix
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes un código QR o un código de pago.
  - card_button: /developers/es/docs/checkout-api/payment-integration/pix

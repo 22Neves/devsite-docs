@@ -4,8 +4,6 @@ Com o ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checko
 
 O processo de integração se baseia na configuração individual desses meios de pagamento dentro do ambiente comum previamente estabelecido, o que facilita a experiência de integração, e permite um maior nível de personalização.
 
-![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-pt.png) 
-
 Se desejar, é possível obter uma lista detalhada com todos os meios de pagamento disponíveis para integração enviando um **GET** com seu :toolTipComponent[Acess Token]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no backend. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste** ou **Produção > Credenciais de produção**."} ao endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/pt/reference/payment_methods/_payment_methods/get"} e executando a requisição ou, se preferir, faça a requisição utilizando os SDKs abaixo.
 
 [[[
@@ -89,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: QR code
  - card_title: Pix
  - card_description: Receba pagamentos eletrônicos instantâneos, oferecendo aos seus clientes a possibilidade de pagar a partir de um código QR ou um código de pagamento.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/pix
@@ -109,7 +107,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Bank
+ - card_icon: Wallet
  - card_title: Conta Mercado Pago
  - card_description: Ofereça aos compradores a possibilidade de utilizar qualquer um dos meios de pagamento armazenados em sua conta do Mercado Pago.
  - card_button:
@@ -119,7 +117,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Bank transfer
  - card_title: Linha de Crédito
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
@@ -155,7 +153,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Bank transfer
+ - card_icon: Wallet
  - card_title: Conta Mercado Pago
  - card_description: Ofereça aos compradores a possibilidade de utilizar qualquer um dos meios de pagamento armazenados em sua conta do Mercado Pago.
  - card_button:
@@ -165,7 +163,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Transfer
  - card_title: Cuotas sin tarjeta
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
@@ -191,7 +189,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Cash
  - card_title: Outros meios de pagamento
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do OXXO, Paycash, Citibanamex, Santander ou BBVA Bancomer.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
@@ -201,7 +199,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Bank transfer
  - card_title: Transferências SPEI
  - card_description: Receba pagamentos eletrônicos instantâneos oferecendo aos seus clientes a possibilidade de pagar de qualquer banco ou instituição financeira utilizando a sua CLABE.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
@@ -211,7 +209,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Conta Mercado Pago
  - card_description: Ofereça aos compradores a possibilidade de utilizar qualquer um dos meios de pagamento armazenados em sua conta do Mercado Pago.
  - card_button:
@@ -221,7 +219,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Bank
  - card_title: Meses sin Tarjeta
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:

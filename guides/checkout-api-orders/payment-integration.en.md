@@ -4,8 +4,6 @@ With ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkou
 
 The integration process is based on the individual configuration of each of these payment methods within the previously established common environment, which facilitates the integration experience while allowing for a greater level of customization.
 
-![diagram-configure-payment-methods](/images/api-orders/diagram-configure-payment-methods-en.png) 
-
 If you want to, you can check a detailed list of all these payment methods available for integration by sending a **GET** with your :toolTipComponent[Acess Token]{content="Private key of the application created in Mercado Pago, that must be used in the backend. You can access it through **Your integrations > Application details > Testing > Testing Credentials** or **Production > Production Credentials**."} to the endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/en/reference/payment_methods/_payment_methods/get"} and execute the request, or if you prefer, make the request using one of our SDKs.
 
 [[[
@@ -89,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: code
  - card_title: Pix
  - card_description: Receive instant electronic payments by offering your customers a QR code or a payment code.
  - card_button: /developers/en/docs/checkout-api/payment-integration/pix
