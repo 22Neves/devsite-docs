@@ -88,7 +88,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440711524-apiintegrationflowchartcardform2es.png
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor]((https://www.mercadopago.com/hub/registration/landing).
@@ -196,7 +196,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440711524-apiintegrationflowchartcardform2es.png
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
@@ -302,7 +302,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440686816-apiintegrationflowchartcardform2esrebranding.png
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago.com/hub/registration/landing).

@@ -86,7 +86,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440646258-apiintegrationflowchartcardform2en.png
  - requirement_title: Previous requirements
  - requirement_table_title: Mercado Pago Account
  - requirement_table_list: You need to create a user on Mercado Pago or Mercado Libre to have a [seller account](https://www.mercadopago.com/hub/registration/landing).
@@ -192,7 +192,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440646258-apiintegrationflowchartcardform2en.png
  - requirement_title: Previous requirements
  - requirement_table_title: Mercado Pago Account
  - requirement_table_list: You need to create a user on Mercado Pago or Mercado Libre to have a [seller account](https://www.mercadopago.com/hub/registration/landing).
@@ -298,7 +298,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440592689-apiintegrationflowchartcardform2enrebranding.png
  - requirement_title: Previous requirements
  - requirement_table_title: Mercado Pago Account
  - requirement_table_list: You need to create a user on Mercado Pago or Mercado Libre to have a [seller account](https://www.mercadopago.com/hub/registration/landing).
