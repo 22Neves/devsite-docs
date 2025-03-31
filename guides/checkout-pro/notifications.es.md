@@ -11,8 +11,8 @@ A continuación, presentamos un paso a paso para configurar las notificaciones d
 
 | Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
 |-|-|-|-|
-| Configuración a través de Tus Integraciones       | Este método permite configurar notificaciones directamente en tu Panel de Desarrollador. Puedes configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas si es necesario, y validar el origen de la notificación mediante una firma secreta. | - Identificación sencilla de contas distintas, asegurando uma adequada gestão em ambientes diversos. <br> - Alta segurança ao validar o origen das notificações mediante uma assinatura secreta, que garante a integridade da informação recebida. <br> - Mais versátil e eficaz para manter um controle centralizado e gerenciar a comunicação com as aplicações de maneira eficiente. | Recomendado para a maioria das integrações.                                                          |
-| Configuração durante a criação de pagamentos ou preferências | As notificações são configuradas para cada transação individualmente durante a criação do pagamento ou preferência.                                                                                                                  | - Ajustes específicos para cada transação. <br> - Flexibilidade em casos de necessidade de parâmetros dinâmicos obrigatórios. <br> - Ideal para integrações como plataformas de pagamento para múltiplos vendedores.                                                                                    | Conveniente em casos em que seja necessário enviar um query parameter dinâmico de forma obrigatória, além de ser adequado para integrações que funcionam como uma plataforma de pagamento para múltiplos vendedores. |
+| Configuración a través de Tus Integraciones       | Este método permite configurar notificaciones directamente en tu Panel de Desarrollador. Puedes configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas si es necesario, y validar el origen de la notificación mediante una firma secreta. | - Identificación sencilla de cuentas distintas, asegurando una adecuada gestión en entornos diversos. <br> - Alta seguridad al validar el origen de las notificaciones mediante una firma secreta, que garantiza la integridad de la información recibida. <br> - Más versátil y eficaz para mantener un control centralizado y gestionar la comunicación con las aplicaciones de manera eficiente. | Recomendado para la mayoría de las integraciones.                                                          |
+| Configuración durante la creación de pagos o preferencias | Las notificaciones se configuran para cada transacción individualmente durante la creación del pago o preferencia.                                                                                                                  | - Ajustes específicos para cada transacción. <br> - Flexibilidad en casos de necesidad de parámetros dinámicos obligatorios. <br> - Ideal para integraciones como plataformas de pago para múltiples vendedores.                                                                                    | Conveniente en los casos en que sea necesario enviar un query parameter dinámico de forma obligatoria, además de ser adecuado para integraciones que funcionan como una plataforma de pago para múltiples vendedores. |
 
 > RED_MESSAGE
 >
@@ -69,7 +69,7 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 ### 3. Validar origen de la notificación
 La validación del origen de una notificación es fundamental para asegurar la seguridad y la autenticidad de la información recibida. Este proceso ayuda a prevenir fraudes y garantiza que solo las notificaciones legítimas sean procesadas.
 
-Mercado Pago enviará a su servidor una notificación similar al ejemplo a continuación para una alerta del tema `payment`. En este ejemplo, se incluye la notificación completa, que contiene los `query params`, el `body` y el `header` de la notificación.
+Mercado Pago enviará a su servidor una notificación similar al ejemplo a continuación para una alerta del tópico `payment`. En este ejemplo, se incluye la notificación completa, que contiene los `query params`, el `body` y el `header` de la notificación.
 - **_Query params_**: Son parámetros de consulta que acompañan la URL. En el ejemplo, tenemos  `data.id=123456` y `type=payment`. 
 - **_Body_**: El cuerpo de la notificación contiene información detallada sobre el evento, como `action`, `api_version`, `data`, `date_created`, `id`, `live_mode`, `type` y `user_id`. 
 - **_Header_**: El encabezado contiene metadatos importantes, incluyendo la firma secreta de la notificación `x-signature`.
@@ -695,9 +695,7 @@ Luego de realizar la configuración  necesaria, la notificación Webhook será e
 
 :::::
 
-Una vez que las notificaciones sean configuradas, consulta las Acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas.
-
-Una vez que las notificaciones sean configuradas, consulta las Acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas.
+Una vez que las notificaciones sean configuradas, consulta las acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas:
 
 ## Acciones necesarias después de recibir la notificación
 
