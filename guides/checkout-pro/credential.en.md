@@ -1,1 +1,1 @@
-[TXTSNIPPET](/guides/snippets/credentials/credentials)
+[TXTSNIPPET][/guides/snippets/credentials/credentials]
