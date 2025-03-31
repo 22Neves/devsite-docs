@@ -7,13 +7,13 @@ O Checkout Pro oferece diversas opções de customização, tanto visuais quanto
 * [Alterar textos do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-texts): Escolha os diferentes textos que você pode exibir no botão de pagamento.
 * [Alterar visual do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): Personalize a aparência do botão de pagamento.
 * [Alterar estilo de cores](/developers/pt/docs/checkout-pro/additional-settings/user-interface/color-style): Escolha uma das opções de cor disponíveis para o botão de pagamento.
-* [Callbacks auxiliares](/developers/pt/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): Adicione callbacks que serão executados em momentos específicos do fluxo de pagamento.
+* [Esquema de abertura](/developers/pt/docs/checkout-pro/additional-settings/user-interface/opening-schema)
+* [_Callbacks_ auxiliares](/developers/pt/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): Adicione callbacks que serão executados em momentos específicos do fluxo de pagamento.
 
 ## Personalização Funcional do Checkout
 
 * [Conta Mercado Pago](/developers/pt/docs/checkout-pro/additional-setup/checkout-customization/mp-wallet)
 * [Conversão de anúncios](/developers/pt/docs/checkout-pro/additional-setup/checkout-customization/ads-conversion)
-* [Esquema de abertura](/developers/pt/docs/checkout-pro/additional-settings/user-interface/opening-schema)
 * [Configurar reembolsos e cancelamentos](/developers/pt/docs/checkout-pro/additional-settings/refunds-and-cancellations)
 * [Alterar data de vencimento](/developers/pt/docs/checkout-pro/additional-settings/preferences/expiration-date)
 * [Configurar descrição de fatura](/developers/pt/docs/checkout-pro/additional-settings/preferences/invoice-description)
