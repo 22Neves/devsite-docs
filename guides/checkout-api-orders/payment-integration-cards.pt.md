@@ -234,7 +234,27 @@ Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 
 ------------ 
 
-Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint :TagComponent{tag="API" text="Processar order" href="/developers/pt/reference/order/online/process-order/post"} que receba os dados coletados pelo Brick após a ação de _submit_.
+Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */Process_order* que receba os dados coletados pelo Brick após a ação de _submit_.
+
+----[mlb]----
+> NOTE
+>
+> Para configurar as parcelas exibidas no _frontend_, consulte a seção de [Configurar parcelamento](/developers/pt/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) do _Card Payment Brick_. Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454).
+
+------------
+
+----[mla]----
+> NOTE
+>
+> Para configurar as parcelas exibidas no _frontend_, consulte a seção de [Configurar parcelamento](/developers/pt/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) do _Card Payment Brick_. Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/cuotas-sin-interes_3299).
+
+------------
+----[mlm]----
+> NOTE
+>
+> Para configurar as parcelas exibidas no _frontend_, consulte a seção de [Configurar parcelamento](/developers/pt/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) do _Card Payment Brick_. Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255).
+
+------------
 
 :::
 :::AccordionComponent{title="Enviar pagamento" pill="server-side"}

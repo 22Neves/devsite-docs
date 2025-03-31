@@ -234,9 +234,26 @@ As a result, the rendering of the Brick will look similar to the image below.
 
 ------------ 
 
-Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint [Processar order :TagComponent{textTag="API"}](/developers/pt/reference/order/online/process-order/post) que receba os dados coletados pelo Brick após a ação de _submit_.
+To move on to the payment submission stage, your backend must be able to receive the information from the created form, along with the token resulting from the card encryption. For this, we recommend providing an endpoint */Process_order* that accommodates the data collected by the Brick after performing the submit action.
 
-To move on to the payment submission stage, your backend must be able to receive the information from the created form, along with the token resulting from the card encryption. For this, we recommend providing an endpoint [Process order :TagComponent{textTag="API"}](/developers/en/reference/order/online/process-order/post) that accommodates the data collected by the Brick after performing the submit action.
+----[mlb]----
+> NOTE
+>
+> To configure the installments displayed on the frontend, see the [Configure installments](/developers/en/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) section of the Card Payment Brick. If you want to configure interest-free installments, please refer to the [Support Center documentation](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454).
+
+------------
+----[mla]----
+> NOTE
+>
+> To configure the installments displayed on the frontend, see the [Configure installments](/developers/en/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) section of the Card Payment Brick. If you want to configure interest-free installments, please refer to the [Support Center documentation](/developers/es/support/cuotas-sin-interes_3299).
+
+------------
+----[mlm]----
+> NOTE
+>
+> To configure the installments displayed on the frontend, see the [Configure installments](/developers/en/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) section of the Card Payment Brick. If you want to configure interest-free installments, please refer to the [Support Center documentation](/developers/es/support/mensualidades-sin-intereses_2255).
+
+------------
 
 :::
 :::AccordionComponent{title="Submit payment" pill="server-side"}
