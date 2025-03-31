@@ -8,9 +8,10 @@
 
 Safari View Controller integra todo Safari dentro de su aplicación usando un controlador de vista opaco. Es decir, no puede diseñarlo, no puede interactuar con él y no puede extraer ningún dato privado de él. Como resultado, **SFSafariViewController** puede aprovechar los datos web seguros del usuario.
 
-:::::TabsComponent
 
-::::TabComponent{title="Android"} En este paso vamos a instalar y configurar las dependencias necesarias para implementar **SFSafariViewController** en tu proyecto desarrollado en Swift. 
+### Android
+
+En este paso vamos a instalar y configurar las dependencias necesarias para implementar **SFSafariViewController** en tu proyecto desarrollado en Swift. 
 
 ## Instalación de SFSafariViewController
 
@@ -239,6 +240,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 ```
-]]] ::::
-
-:::::
+]]]

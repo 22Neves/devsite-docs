@@ -8,9 +8,9 @@
 
 Durante o desenvolvimento de aplicações móveis com React Native, é necessário exibir conteúdo web dentro de um aplicativo. Para conseguir isso, existem várias opções, entre as quais se destacam o uso de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem abrir páginas da web em um navegador nativo integrado ao aplicativo, proporcionando uma experiência de navegação mais fluida e consistente para os usuários.
 
-:::::TabsComponent
+### Android
 
-::::TabComponent{title="Android"} Nesta etapa iremos instalar e configurar as dependências necessárias para implementar **Custom Tabs** em seu projeto desenvolvido em Java ou Kotlin.
+Nesta etapa iremos instalar e configurar as dependências necessárias para implementar **Custom Tabs** em seu projeto desenvolvido em Java ou Kotlin.
 
 ## Configuração para Android nativo
 
@@ -83,6 +83,4 @@ Para configurar um Deep Link nativo no Android, vá para o arquivo Android **/ap
 
 Nos valores `intent`, você deverá definir a atividade como navegável por outras aplicações. Com os valores `scheme` e `host`, você pode definir o Deep Link da aplicacão para uma atividade específica.
 
-Lembre-se de que este Deep Link será usado em todos os `back_urls` da sua preferência. Nos ciclos da atividade que foi exposta (por exemplo, onCreate, onResume), você poderá inserir sua lógica de negócios após o pagamento. ::::
-
-:::::
+Lembre-se de que este Deep Link será usado em todos os `back_urls` da sua preferência. Nos ciclos da atividade que foi exposta (por exemplo, onCreate, onResume), você poderá inserir sua lógica de negócios após o pagamento.

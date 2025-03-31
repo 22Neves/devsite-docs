@@ -17,7 +17,7 @@ En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utili
 
 ## Instalación de la dependencia Flutter Custom Tabs
 
-Para la instalación de la dependencia Flutter Custom Tabs, ejecutaa el siguiente comando en el directorio raíz de tu proyecto:
+Para la instalación de la dependencia Flutter Custom Tabs, ejecuta el siguiente comando en el directorio raíz de tu proyecto:
 
 ```terminal
 $ flutter pub add flutter_custom_tabs
@@ -107,7 +107,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar la visualización según la plataforma
 >
-> Es posible personalizar el *look & feel* de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en Android, deberás hacerlo con CustomTabsOption. Conoce más en la [documentación oficial.](https://pub.dev/packages/flutter_custom_tabs)
+> Es posible personalizar el _look & feel_ de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en Android, deberás hacerlo con CustomTabsOption. Conoce más en la [documentación oficial.](https://pub.dev/packages/flutter_custom_tabs)
 
 ## Cómo volver a tu App 
 
@@ -235,7 +235,7 @@ class MyApp extends StatelessWidget {
 >
 > Personalizar la visualización según la plataforma
 >
-> Es posible personalizar el *look & feel* de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en iOS, deberás hacerlo con SFSSafariViewController. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
+> Es posible personalizar el _look & feel_ de la pantalla a ser mostrada especificando opciones para cada plataforma. Para personalizar la apariencia en iOS, deberás hacerlo con SFSSafariViewController. Conoce más en la [documentación oficial](https://pub.dev/packages/flutter_custom_tabs).
 
 ## Cómo volver a tu App 
 
@@ -265,7 +265,7 @@ Flutter admite utilizar Deep Links en iOS y navegadores web. Al abrir una URL, s
 
 Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de iOS. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 
 
-> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar DeepLinks para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar Universal Link para iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links). }
+> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar DeepLinks para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar Universal Link para iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links). 
 ::::
 
 :::::
