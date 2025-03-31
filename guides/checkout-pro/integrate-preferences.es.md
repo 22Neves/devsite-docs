@@ -14,7 +14,7 @@ A continuación, encontrarás ejemplos de cómo implementar esto en tu backend u
 >
 > Nota
 >
-> Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando los atributos de la preferencia de pago. Estos te permitirán definir cuotas, excluir un medio de pago, cambiar la fecha de vencimiento de un determinado pago, entre otras opciones. Para personalizar tu preferencia de pago, accede a **[Personalización del checkout > Preferencias](/developers/es/docs/checkout-pro/checkout-customization/preferences)**.
+> Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando los atributos de la preferencia de pago. Estos te permitirán definir cuotas, excluir un medio de pago, cambiar la fecha de vencimiento de un determinado pago, entre otras opciones. Para personalizar tu preferencia de pago, accede a **[Personalización del checkout](/developers/es/docs/checkout-pro/additional-settings)**.
 
 [[[
 ```php
