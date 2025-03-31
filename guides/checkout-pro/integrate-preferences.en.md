@@ -157,4 +157,4 @@ Below, we show an example of how the `ID` attribute with the preference identifi
 "id": "787997534-6dad21a1-6145-4f0d-ac21-66bf7a5e7a58"
 ```
 
-Once you have configured the payment preference, it is time to [Configure the back URLs](/developers/en/docs/checkout-pro/web-integration/configure-back-urls) to which your customers will be redirected at the end of the payment process.
+Once you have configured the payment preference, it is time to [Configure the back URLs](/developers/en/docs/checkout-pro/configure-back-urls) to which your customers will be redirected at the end of the payment process.
