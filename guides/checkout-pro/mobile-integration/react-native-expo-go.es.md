@@ -1,12 +1,12 @@
+# Integrar con React Native Expo Go
+
+En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
+
 > WARNING
 >
 > Importante
 >
 > Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia de pago creada en tu backend. Si aún no lo has hecho, ve a [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
-
-# Integrar con React Native Expo Go
-
-En el desarrollo de aplicaciones móviles con React Native, a menudo surge la necesidad de mostrar contenido web dentro de la aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
 A continuación, selecciona el sistema operativo para el que quieres integrar y sigue el paso a paso indicado.
 

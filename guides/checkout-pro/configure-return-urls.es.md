@@ -10,13 +10,17 @@ Puedes configurar hasta tres URL de retorno diferentes, que corresponderán a lo
 >
 > Nota
 >
-> En integraciones mobile, recomendamos que las URLs de retorno sean deep links. Para conocer más, ve a la documentación **[Integración mobile](/developers/es/docs/checkout-pro/mobile-integration/react-native-cli)**.
+> En integraciones mobile, recomendamos que las URLs de retorno sean deep links. Para conocer más, ve a la documentación **[Integration for mobile applications](/developers/es/docs/checkout-pro/mobile-integration)**.
 
 ## Definir URL de retorno
 
 En tu código backend, deberás configurar la URL a la que quieres que Mercado Pago redirija al usuario una vez que haya completado el proceso de pago. 
 
-> Si lo prefieres, también es posible configurar las URLs de retorno a través del envío POST a la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post) con el atributo ‘back_urls’ informando las URLs a las que se debe dirigir al comprador al finalizar el pago.
+> NEUTRAL_MESSAGE
+> 
+> Nota
+>
+> Si lo prefieres, también es posible configurar las URLs de retorno a través del envío POST a la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post) con el atributo `back_urls` informando las URLs a las que se debe dirigir al comprador al finalizar el pago.
 
 A continuación, te compartimos ejemplos de cómo incluir el atributo `back_urls` según el lenguaje de programación que estés utilizando, además del detalle de cada uno de los posibles parámetros.
 
@@ -154,7 +158,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout Pro para Web
  - card_description: Ofrece cobros con redirección a Mercado Pago en tu sitio web o tienda online.
- - card_button:  /developers/es/docs/checkout-pro/integrate-checkout-pro/web
+ - card_button: /developers/es/docs/checkout-pro/web-integration/add-frontend-sdk
  - card_buttonDescription: Integrar
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -164,7 +168,7 @@ future_product_avaible:
  - card_icon: Loading
  - card_title: Checkout Pro para Mobile
  - card_description: Ofrece cobros con redirección Mercado Pago en tu aplicación para dispositivos móviles.
- - card_button: /developers/es/docs/checkout-pro/integrate-checkout-pro/mobile
+ - card_button: /developers/es/docs/checkout-pro/mobile-integration
  - card_buttonDescription: Integrar
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false

@@ -10,12 +10,16 @@ Você pode configurar até três URLs de retorno diferentes, que corresponderão
 >
 > Nota
 >
-> Em integrações mobile, recomendamos que as URLs de retorno sejam deep links. Para saber mais, veja a documentação **[Integração mobile](/developers/pt/docs/checkout-pro/mobile-integration/react-native-cli)**.
+> Em integrações mobile, recomendamos que as URLs de retorno sejam deep links. Para saber mais, veja a documentação **[Integração para aplicações móveis](/developers/pt/docs/checkout-pro/mobile-integration)**.
 
 ## Definir URL de retorno
 
 No seu código backend, você deverá configurar a URL para a qual deseja que o Mercado Pago redirecione o usuário uma vez que ele tenha completado o processo de pagamento.
 
+> NEUTRAL_MESSAGE
+> 
+> Nota
+>
 > Se preferir, você também pode configurar as URLs de retorno enviando um POST para a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com o atributo `back_urls`, informando as URLs para as quais o comprador deve ser direcionado ao finalizar o pagamento.
 
 A seguir, compartilhamos exemplos de como incluir o atributo `back_urls` de acordo com a linguagem de programação que você está utilizando, além do detalhamento de cada um dos possíveis parâmetros.
@@ -154,7 +158,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Checkout Pro para Web
  - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu site ou loja online.
- - card_button:  /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - card_button:  /developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk
  - card_buttonDescription: Integrar
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -164,7 +168,7 @@ future_product_avaible:
  - card_icon: Loading
  - card_title: Checkout Pro para Mobile
  - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu aplicativo para dispositivos móveis.
- - card_button: /developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile
+ - card_button: /developers/pt/docs/checkout-pro/mobile-integration
  - card_buttonDescription: Integrar
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false

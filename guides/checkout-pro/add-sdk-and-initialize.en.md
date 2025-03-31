@@ -94,7 +94,7 @@ Finally, you will need to create a container in your HTML to define the location
 
 The Mercado Pago SDK will automatically render a button within this element, which will be responsible for redirecting the buyer to a purchase form in the Mercado Pago environment, as shown in the following image.
 
-[Button](/images/cow/wallet-render-en.png)
+![Button](/images/cow/wallet-render-en.png)
 ::::
 
 ::::TabComponent{title="Install the SDK using React"}
@@ -146,7 +146,7 @@ export default App;
 
 When running your React application, the Mercado Pago SDK will render the payment button that will be responsible for redirecting the buyer to a purchase form in the Mercado Pago environment, as shown in the following image.
 
-[Button](/images/cow/wallet-render-en.png)
+![Button](/images/cow/wallet-render-en.png)
 ::::
 
 :::::
@@ -158,11 +158,11 @@ Once you have completed the configuration of your frontend, you will need to set
 <br>
 <br>
 
-:::AccordionComponent{title="Personalization" pill="1"}
+:::AccordionComponent{title="Personalization"}
 If you wish, you can make some changes to the texts or a visual change to the Mercado Pago payment button. For that, access the following documentation.
 
-- [Change button texts](/developers/en/docs/checkout-pro/checkout-customization/user-interface/change-button-texts): choose the different texts you can display on the payment button.
-- [Change the appearance of the button](/developers/en/docs/checkout-pro/checkout-customization/user-interface/change-button-appearance): customize the appearance of the payment button.
-- [Change color style](/developers/en/docs/checkout-pro/checkout-customization/user-interface/color-style): choose one of the available color options for the payment button.
-- [Auxiliary callbacks](/developers/en/docs/checkout-pro/checkout-customization/user-interface/auxiliary-callbacks): add callbacks that will be executed at specific moments of the payment flow.
+- [Change button texts](/developers/en/docs/checkout-pro/additional-settings/user-interface/change-button-texts): choose the different texts you can display on the payment button.
+- [Change the appearance of the button](/developers/en/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): customize the appearance of the payment button.
+- [Change color style](/developers/en/docs/checkout-pro/additional-settings/user-interface/color-style): choose one of the available color options for the payment button.
+- [Auxiliary callbacks](/developers/en/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): add callbacks that will be executed at specific moments of the payment flow.
 :::

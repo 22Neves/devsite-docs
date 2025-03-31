@@ -8,16 +8,18 @@
 8. Accept the ----[mlb]---- [Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- [Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) and click on **Create application**.
 
 ----[mlb]----
-![create-application-2](/images/api-orders/create-application-2-pt.png)
+![create-application-2](/images/cow/create-application-2-pt.png)
 
 ------------ 
 ----[mla, mlm, mlu, mco, mlc, mpe]----
-![create-application-2](/images/api-orders/create-application-2-es.png)
+![create-application-2](/images/cow/create-application-2-es.png)
 
 ------------ 
 
 In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [application details](/developers/en/docs/checkout-pro/more-resources/application-details) for each of them.
 
 > NOTE
+>
+> Note
 >
 > If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/checkout-pro/more-resources/application-details).
