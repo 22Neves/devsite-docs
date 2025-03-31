@@ -11,7 +11,7 @@ Check the general flow of a notification in the diagram below.
 Below, we present a step-by-step guide to configure payment creation and update notifications. Once configured, Webhook notifications will be sent every time a payment is created or its status is modified (Pending, Rejected, or Approved). In the process of integrating with Mercado Pago, you can configure notifications in two ways:
 
 | Configuration Type | Description | Advantages | When to Use |
-|-|-|-|-|
+|---|---|---|---|
 | Configuration through Your Integrations | This method allows you to configure notifications directly in your Developer Panel. You can set up notifications for each of your applications, identify different accounts if necessary, and validate the origin of the notification using a secret signature. | - Simple identification of different accounts, ensuring proper management in diverse environments. <br> - High security by validating the origin of notifications via a secret signature, which guarantees the integrity of the received information. <br> - More versatile and effective for maintaining centralized control and efficiently managing communication with applications. | Recommended for most integrations. |
 | Configuration during the creation of payments or preferences | Notifications are configured for each transaction individually during the creation of the payment or preference. | - Specific adjustments for each transaction. <br> - Flexibility in cases where dynamic mandatory parameters are needed. <br> - Ideal for integrations like payment platforms for multiple sellers. | Convenient in cases where it is necessary to send a dynamic query parameter mandatorily, and also suitable for integrations that function as a payment platform for multiple sellers. |
 
