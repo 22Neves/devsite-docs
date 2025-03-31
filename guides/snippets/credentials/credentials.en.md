@@ -45,9 +45,9 @@ Below, learn how to get the credentials.
 2. Access your application or create one if you have not already done so.
 3. You will find your credentials under the title **Testing > Test credentials** or **Production > Production credentials**, in the menu located on the left side of the screen.
 
-![Test credentials](/images/credentials/credentials-test-panel-es.gif)
+![Test credentials](/images/snippets/credentials-test-panel-es.gif)
 
-![Production credentials](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Production credentials](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ### Activate production credentials
 To obtain production credentials, you must **activate them** by completing some information about your business. Follow the steps below:
@@ -80,7 +80,7 @@ Below, we show you how to share credentials.
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
-![Share credentials](/images/credentials/share-credentials-devpanel-es.png)
+![Share credentials](/images/snippets/share-credentials-devpanel-es.png)
 
 ## Renew credentials
 
@@ -96,7 +96,7 @@ To renew a credential pair, follow the steps below.
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
-![Renew credentials](/images/credentials/renew-credentials-es.gif)
+![Renew credentials](/images/snippets/renew-credentials-es.gif)
 
 Ready, your credentials have been renewed.
 ::::
@@ -144,9 +144,9 @@ Below, learn how to get the credentials.
 2. Access your application or create one if you have not already done so.
 3. You will find your credentials under the title **Testing > Test credentials** or **Production > Production credentials**, in the menu located on the left side of the screen.
 
-![Test credentials](/images/credentials/credentials-test-panel-es.gif)
+![Test credentials](/images/snippets/credentials-test-panel-es.gif)
 
-![Production credentials](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Production credentials](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ### Activate production credentials
 To obtain production credentials, you must **activate them** by completing some information about your business. Follow the steps below:
@@ -179,7 +179,7 @@ Below, we show you how to share credentials.
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
-![Share credentials](/images/credentials/share-credentials-panel-es.gif)
+![Share credentials](/images/snippets/share-credentials-devpanel-es.gif)
 
 ## Renew credentials
 
@@ -195,7 +195,7 @@ To renew a credential pair, follow the steps below.
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
-![Renew credentials](/images/credentials/renew-credentials-es.gif)
+![Renew credentials](/images/snippets/renew-credentials-es.gif)
 
 Ready, your credentials have been renewed.
 ::::
