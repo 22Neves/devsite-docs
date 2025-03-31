@@ -1,12 +1,12 @@
+# Integrar con Java o Kotlin
+
+Durante el desarrollo de aplicaciones móviles con React Native, es necesario mostrar contenido web dentro de una aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
+
 > WARNING
 >
 > Importante
 >
 > Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia de pago creada en tu backend. Si aún no lo has hecho, ve a [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
-
-# Integrar con Java o Kotlin
-
-Durante el desarrollo de aplicaciones móviles con React Native, es necesario mostrar contenido web dentro de una aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
 ### Android 
 

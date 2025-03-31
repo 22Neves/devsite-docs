@@ -1,12 +1,12 @@
+# Integrar com Flutter
+
+Durante o desenvolvimento de aplicações móveis com React Native, é necessário exibir conteúdo web dentro de um aplicativo. Para conseguir isso, existem várias opções, entre as quais se destacam o uso de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem abrir páginas da web em um navegador nativo integrado ao aplicativo, proporcionando uma experiência de navegação mais fluida e consistente para os usuários.
+
 > WARNING
 >
 > Importante
 >
 > Antes de começar a integrar o Checkout Pro para Mobile, você deve ter uma preferência de pagamento criada em seu backend. Se você ainda não o fez, vá para [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
-
-# Integrar com Flutter
-
-Durante o desenvolvimento de aplicações móveis com React Native, é necessário exibir conteúdo web dentro de um aplicativo. Para conseguir isso, existem várias opções, entre as quais se destacam o uso de Custom Tabs (para Android) e Safari View Controller (para iOS). Essas tecnologias permitem abrir páginas da web em um navegador nativo integrado ao aplicativo, proporcionando uma experiência de navegação mais fluida e consistente para os usuários.
 
 A seguir, selecione o sistema operacional para o qual você deseja integrar e siga o passo a passo indicado.
 
