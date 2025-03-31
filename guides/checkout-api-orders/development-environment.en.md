@@ -48,18 +48,16 @@ At this stage, you should use your :toolTipComponent[test Public Key]{content="T
 Once you have located the :toolTipComponent[Public Key]{content="Testing public key, used in the frontend to access information and encrypt data, whether in the development stage or the testing stage. You can access it through **Your integrations > Application details > Testing > Testing credentials**."}, copy it and include it in the frontend. By doing this, you will be able to access the necessary data for each payment method, as well as encrypt payer and card data.
 
 [[[
-```html 
+```html
 <script>
   const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
-
 ```
 ```javascript
 import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
-
 ```
 ]]]
 

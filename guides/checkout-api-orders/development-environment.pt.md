@@ -51,8 +51,7 @@ import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
-
 ```
 ]]]
 
-Com essas configurações, seu ambiente de desenvolvimento já está pronto para continuar com as configurações específicas para sua integração. 
+Com essas configurações, seu ambiente de desenvolvimento já está pronto para continuar com as configurações específicas para sua integração.

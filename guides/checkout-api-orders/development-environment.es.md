@@ -41,19 +41,17 @@ En esta etapa, deberás utilizar tu :toolTipComponent[_Public Key_ de pruebas]{c
 Una vez hayas localizado la :toolTipComponent[_Public Key_]{content="Clave pública de pruebas, que es utilizada en el frontend para acceder a información y cifrar datos, sea en la etapa de desarrollo o en la de pruebas. Puedes acceder a ella a través de **Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba**."}, cópiala e inclúyela en el _frontend_ para poder acceder a los datos necesarios para interactuar con nuestros servicios, así como cifrar aquellos datos sensibles involucrados en los pagos que vayas a recibir.
 
 [[[
-```html 
+```html
 <script>
   const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 </script>
-
 ```
 ```javascript
 import { loadMercadoPago } from "@mercadopago/sdk-js";
 
 await loadMercadoPago();
 const mp = new window.MercadoPago("YOUR_PUBLIC_KEY");
-
 ```
 ]]]
 
-Con esto, tu ambiente de desarrollo ya está listo para avanzar con las configuraciones específicas de tu integración. 
+Con esto, tu ambiente de desarrollo ya está listo para avanzar con las configuraciones específicas de tu integración.
