@@ -1,26 +1,26 @@
 # Configurar URLs de retorno
 
-A URL de retorno é o endereço para o qual o usuário é redirecionado após completar o pagamento, seja ele bem-sucedido, falho ou pendente. Esta URL deve ser uma página web que você controla, como um servidor com domínio nomeado (DNS).
+A URL de retorno é o endereço para o qual o usuário é redirecionado após completar o pagamento, seja ele bem-sucedido, falho ou pendente. Esta URL deve ser uma página web controlável, como um servidor com domínio nomeado (DNS).
 
-Este processo é configurado através do atributo `back_urls` no backend, na preferência de pagamento associada à sua integração. Com este atributo, você poderá definir que o comprador seja redirecionado ao site web que você configurou, seja automaticamente ou através do botão "Voltar ao site", de acordo com o estado do pagamento.
+Esse processo é configurado através do atributo `back_urls` no backend, na preferência de pagamento associada à sua integração. Com este atributo, você pode definir que o comprador seja redirecionado ao site que você configurou, seja automaticamente ou através do botão "Voltar ao site", de acordo com o estado do pagamento.
 
-Você pode configurar até três URLs de retorno diferentes, que corresponderão aos cenários de pagamento pendente, sucesso ou erro.
+Você pode configurar até três URLs de retorno diferentes, correspondendo aos cenários de pagamento pendente, sucesso ou erro.
 
 > NOTE
 >
 > Nota
 >
-> Em integrações mobile, recomendamos que as URLs de retorno sejam deep links. Para saber mais, veja a documentação **[Integração para aplicações móveis](/developers/pt/docs/checkout-pro/mobile-integration)**.
+> Em integrações _mobile_, recomendamos que as URLs de retorno sejam _deep links_. Para saber mais, acesse a **[documentação Integração para aplicações móveis](/developers/pt/docs/checkout-pro/mobile-integration)**.
 
-## Definir URL de retorno
+## Definir URLs de retorno
 
-No seu código backend, você deverá configurar a URL para a qual deseja que o Mercado Pago redirecione o usuário uma vez que ele tenha completado o processo de pagamento.
+No seu código backend, configure a URL para a qual deseja que o Mercado Pago redirecione o usuário após a conclusão do processo de pagamento.
 
 > NEUTRAL_MESSAGE
 > 
 > Nota
 >
-> Se preferir, você também pode configurar as URLs de retorno enviando um POST para a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com o atributo `back_urls`, informando as URLs para as quais o comprador deve ser direcionado ao finalizar o pagamento.
+> Se preferir, você também pode configurar as URLs de retorno enviando um POST para a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com o atributo `back_urls`, especificando as URLs para as quais o comprador deve ser redirecionado após finalizar o pagamento.
 
 A seguir, compartilhamos exemplos de como incluir o atributo `back_urls` de acordo com a linguagem de programação que você está utilizando, além do detalhamento de cada um dos possíveis parâmetros.
 
@@ -109,7 +109,7 @@ preference_data = {
 
 ## Resposta das URLs de retorno
 
-As `back_urls` retornarão alguns parâmetros úteis através de uma chamada GET. A seguir, compartilhamos um exemplo de como será uma resposta e o detalhamento dos parâmetros que você poderá encontrar nela.
+As `back_urls` fornecem vários parâmetros úteis por meio de uma solicitação GET. A seguir, apresentamos um exemplo de resposta, acompanhado de uma explicação detalhada dos parâmetros incluídos nela.
 
 ```curl
 GET /test?collection_id=106400160592&collection_status=rejected&payment_id=106400160592&status=rejected&external_reference=qweqweqwe&payment_type=credit_card&merchant_order_id=29900492508&preference_id=724484980-ecb2c41d-ee0e-4cf4-9950-8ef2f07d3d82&site_id=MLC&processing_mode=aggregator&merchant_account_id=null HTTP/1.1
@@ -133,24 +133,25 @@ Upgrade-Insecure-Requests: 1
 |-----------------------|------------------------------------------------------------------------------------------------|
 | `payment_id`          | ID (identificador) do pagamento do Mercado Pago.                                               |
 | `status`              | Status do pagamento. Por exemplo: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
-| `external_reference`  | Referência que você pode sincronizar com seu sistema de pagamentos.                            |
-| `merchant_order_id`   | ID (identificador) da ordem de pagamento gerada no Mercado Pago.                               |
+| `external_reference`  | Referência para sincronização com seu sistema de pagamentos.                            |
+| `merchant_order_id`   | Identificador (ID) único da ordem de pagamento criada no Mercado Pago.                               |
 
 ### Resposta para meios de pagamento offline
 
-Os meios de pagamento offline são aqueles em que o usuário comprador escolhe um método que exige a utilização de um ponto de pagamento físico para concluir a compra. Nesse fluxo de pagamento, o Mercado Pago gerará um comprovante que o usuário precisará apresentar para realizar o pagamento no estabelecimento correspondente, e redirecionará o usuário para a URL especificada no atributo `back_urls` como `pending`.
+Os meios de pagamento offline permitem que o comprador selecione um método que exija a utilização de um ponto de pagamento físico para concluir a transação. Nesse fluxo, o Mercado Pago gera um comprovante que o comprador deve apresentar no estabelecimento para realizar o pagamento. Após essa etapa, o comprador será redirecionado para a URL definida no atributo `back_urls` como `pending`.
 
-Nesse estágio, o pagamento está em estado pendente porque o usuário ainda precisa ir a um estabelecimento físico para efetuar o pagamento.
+Nesse momento, o pagamento estará em estado pendente, já que o comprador ainda precisa efetuar o pagamento presencialmente no estabelecimento indicado.
 
-Para fornecer mais informações ao comprador, recomendamos que, para os estados de pagamento `pending`, você redirecione o comprador para o seu site e compartilhe informações claras sobre como concluir o pagamento.
+> Para pagamentos com o estado `pending`, sugerimos redirecionar o comprador para o seu site e fornecer orientações claras sobre como concluir o pagamento.
 
-Depois que o usuário for ao estabelecimento correspondente e realizar o pagamento em dinheiro com o comprovante gerado, o Mercado Pago será notificado e o pagamento mudará de estado. Recomendamos que [configure as notificações de pagamento](/developers/pt/docs/checkout-pro/payment-notifications) para que seu servidor possa processar essa notificação e atualizar o estado do pedido em sua base de dados.
+Assim que o pagamento for realizado no ponto físico com o comprovante gerado, o Mercado Pago será notificado, e o estado do pagamento será atualizado. Recomendamos que você [configure as notificações de pagamento](/developers/pt/docs/checkout-pro/payment-notifications) para que seu servidor receba essas atualizações e atualize o estado do pedido na sua base de dados.
 
 ### Escolher o tipo de integração
 
-Uma vez que você tenha concluído as configurações no seu backend e obtido o ID da sua preferência, deverá prosseguir para as configurações do frontend. Para isso, é necessário escolher o tipo de integração que melhor se adapte às suas necessidades, seja para integrar um **site** ou um **aplicativo móvel**.
+Após concluir as configurações do backend e obter o ID da preferência, você deve prosseguir para a configuração do frontend. Para isso, escolha o tipo de integração que melhor atenda às suas necessidades, seja para um **site** ou um **aplicativo móvel**.
 
 Selecione o tipo de integração que deseja realizar e siga os passos detalhados para completar a integração do Checkout Pro.
+Selecione a opção de integração desejada e siga as instruções detalhadas para completar a integração do Checkout Pro.
 
 ---
 future_product_avaible: 

@@ -15,7 +15,7 @@ Nesta seção, você verá como incluí-lo e inicializá-lo corretamente, para f
 ::::TabComponent{title="Incluir o SDK com HTML/js"}
 ## Incluir o SDK com HTML/js
 
-Para incluir o SDK MercadoPago.js na sua página HTML a partir de um **CDN (Content Delivery Network)**, primeiro você deve adicionar a tag `<script>` logo antes da tag `</body>` no seu arquivo HTML principal, conforme mostrado no exemplo abaixo.
+Para incluir o SDK MercadoPago.js na sua página HTML a partir de um **CDN (Content Delivery Network)**, adicione a tag `<script>` logo antes da tag `</body>` no seu arquivo HTML principal, conforme mostrado no exemplo abaixo.
 
 ```html
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ Para incluir o SDK MercadoPago.js na sua página HTML a partir de um **CDN (Cont
 
 Depois de incluir o SDK no seu frontend, é hora de inicializá-lo e, em seguida, iniciar o Checkout.
 
-Para continuar, você deve utilizar sua credencial `public key` de produção, que pode ser acessada nos **Detalhes da sua aplicação** em [Suas integrações](/developers/panel/app), sob o título **Produção > Credenciais de produção** no menu à esquerda da tela.
+Para continuar, utilize sua credencial `public key` de produção, que pode ser acessada nos **Detalhes da sua aplicação** em [Suas integrações](/developers/panel/app), sob o título **Produção > Credenciais de produção** no menu à esquerda da tela.
 
 > NOTE
 >
@@ -81,9 +81,9 @@ A seguir, para inicializar o SDK utilizando um CDN, você deverá executar este 
 >
 > h2
 >
-> Criar um contêiner HTML para o botão de pagamento
+> Criar um container HTML para o botão de pagamento
 
-Por último, você precisará criar um _container_ em seu HTML para definir a localização onde o botão de pagamento do MercadoPago será exibido. A criação do _container_ é feita inserindo um elemento no código HTML da página onde o componente será apresentado.
+Por último, crie um _container_ em seu HTML para definir a localização onde o botão de pagamento do MercadoPago será exibido. A criação do _container_ é feita inserindo um elemento no código HTML da página onde o componente será apresentado.
 
 ```html
 <!-- Container para o botão de pagamento -->
@@ -100,7 +100,7 @@ O SDK do Mercado Pago renderizará automaticamente um botão dentro desse elemen
 ::::TabComponent{title="Instalar o SDK utilizando React"}
 ## Instalar o SDK utilizando React
 
-Para incluir o SDK MercadoPago.js no frontend do seu projeto React, primeiro você deve configurar seu ambiente React. Para isso, certifique-se de ter **Node.js** e **npm** instalados em seu sistema. Se não os tiver, faça o download a partir do [site oficial do Node.js](http://Node.js).
+Para incluir o SDK MercadoPago.js no frontend do seu projeto React, primeiro você deve configurar seu ambiente React. Para isso, certifique-se de ter o **Node.js** e **npm** instalados em seu sistema. Se não os tiver, faça o download a partir do [site oficial do Node.js](http://Node.js).
 
 No seu terminal ou linha de comando, execute o seguinte comando para criar uma nova aplicação React:
 
@@ -153,7 +153,7 @@ Ao executar sua aplicação em React, o SDK do Mercado Pago renderizará o botã
 
 <br>
 
-Uma vez que você tenha finalizado a configuração do seu frontend, você deverá configurar as [Notificações](/developers/pt/docs/checkout-pro/payment-notifications) para que sua integração receba informações em tempo real sobre os eventos que ocorrem com o Mercado Pago.
+Uma vez que você tenha finalizado a configuração no frontend, configure as [Notificações](/developers/pt/docs/checkout-pro/payment-notifications) para que sua integração receba informações em tempo real sobre os eventos que ocorrem na sua integração.
 
 <br>
 <br>
