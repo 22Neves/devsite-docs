@@ -157,4 +157,4 @@ A continuación, te mostramos un ejemplo de cómo se ve el atributo `ID` con el 
 "id": "787997534-6dad21a1-6145-4f0d-ac21-66bf7a5e7a58"
 ```
 
-Una vez que configuraste la preferencia de pago, es momento de [Configurar las URLs](/developers/es/docs/checkout-pro/configure-urls) de retorno hacia donde tus clientes serán redirigidos al finalizar el proceso de pago.
+Una vez que configuraste la preferencia de pago, es momento de [Configurar las URLs de retorno](/developers/es/docs/checkout-pro/web-integration/configure-back-urls) hacia donde tus clientes serán redirigidos al finalizar el proceso de pago.

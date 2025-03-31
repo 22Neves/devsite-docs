@@ -47,7 +47,7 @@ Para continuar, deberás utilizar tu credencial `public key` de producción, a l
 >
 > Nota
 >
-> Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) para más información.
+> Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) para más información.
 
 También necesitarás utilizar el identificador de la preferencia de pago que obtuviste como respuesta en [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
 
@@ -94,7 +94,7 @@ Por último, necesitarás crear un contenedor en tu HTML para definir la ubicaci
 
 El SDK de Mercado Pago renderizará automáticamente un botón dentro de este elemento, que será responsable de redirigir al comprador hacia un formulario de compra en el ambiente de Mercado Pago, tal como se muestra en la siguiente imagen.
 
-[Button](/images/cow/wallet-render-es.png)
+![Button](/images/cow/wallet-render-es.png)
 ::::
 
 ::::TabComponent{title="Instalar el SDK utilizando React"}
@@ -146,7 +146,7 @@ export default App;
 
 Al ejecutar tu aplicación en React, el SDK de Mercado Pago renderizará el botón de pago que será responsable de redirigir al comprador hacia un formulario de compra en el ambiente de Mercado Pago, tal como se muestra en la siguiente imagen.
 
-[Button](/images/cow/wallet-render-es.png)
+![Button](/images/cow/wallet-render-es.png)
 ::::
 
 :::::
@@ -158,11 +158,11 @@ Una vez que hayas finalizado la configuración de tu frontend, deberás configur
 <br>
 <br>
 
-:::AccordionComponent{title="Personalización" pill="1"}
+:::AccordionComponent{title="Personalización"}
 Si deseas, puedes hacer algunos cambios en los textos o un cambio visual en el botón de pago de Mercado Pago. Para eso, accede a las siguientes documentaciones.
 
-- [Cambiar textos de los botones](/developers/es/docs/checkout-pro/checkout-customization/user-interface/change-button-texts): elige los diferentes textos que puedes mostrar en el botón de pago.
-- [Cambiar la apariencia del botón](/developers/es/docs/checkout-pro/checkout-customization/user-interface/change-button-appearance): personaliza el aspecto del botón de pago.
-- [Cambiar estilo de color](/developers/es/docs/checkout-pro/checkout-customization/user-interface/color-style): elige una de las opciones de color disponibles para el botón de pago.
-- [_Callbacks_ auxiliares](/developers/es/docs/checkout-pro/checkout-customization/user-interface/auxiliary-callbacks): agrega _callbacks_ que se ejecutarán en momentos específicos del flujo de pago.
+- [Cambiar textos de los botones](/developers/es/docs/checkout-pro/additional-settings/user-interface/change-button-texts): elige los diferentes textos que puedes mostrar en el botón de pago.
+- [Cambiar la apariencia del botón](/developers/es/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): personaliza el aspecto del botón de pago.
+- [Cambiar estilo de color](/developers/es/docs/checkout-pro/additional-settings/user-interface/color-style): elige una de las opciones de color disponibles para el botón de pago.
+- [_Callbacks_ auxiliares](/developers/es/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): agrega _callbacks_ que se ejecutarán en momentos específicos del flujo de pago.
 :::
