@@ -1,6 +1,6 @@
 # Create application
 
-[TXTSNIPPET][/guides/snippets/test-integration/applications/create-application]
+[TXTSNIPPET][/guides/snippets/applications/create-application]
 4. When asked about the **type of payment solution to integrate**, select **Online payments**, which is the type of solution corresponding to virtual stores.
 5. Since you are creating an application for **Checkout Pro**, you should indicate that you are **not** using an [e-commerce platform](/developers/en/docs#platform-list), as this solution is for integrating into self-developed sites.
 6. Then, choose **Checkout Pro** as the product you are integrating.
