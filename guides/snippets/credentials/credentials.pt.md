@@ -47,9 +47,9 @@ A seguir, saiba como obter as credenciais.
 2. Acesse seu aplicativo ou crie um se ainda não o fez.
 3. Você encontrará suas credenciais sob o título **Testes > Credenciais de teste** ou **Produção > Credenciais de produção**, no menu localizado à esquerda da tela.
 
-![Credenciais de teste](/images/credentials/credentials-test-panel-es.gif)
+![Credenciais de teste](/images/snippets/credentials-test-panel-es.gif)
 
-![Credenciais de produção](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Credenciais de produção](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ### Ativar credenciais de producción
 Para obter as credenciais de producción, você deverá **ativá-las** preenchendo alguns dados sobre o seu negócio. Siga os passos abaixo:
@@ -82,7 +82,7 @@ A seguir, mostramos como compartilhar credenciais.
 4. Uma vez que você selecionar as credenciais, direcione-se à seção *Compartilhe as credenciais com um desenvolvedor* e clique no botão **Compartilhar Credenciais**.
 5. Digite o endereço de e-mail da pessoa a quem você deseja conceder acceso. **Lembre-se**: é obrigatório que o endereço de e-mail esteja asociado a uma conta do Mercado Pago.
 
-![Compartilhar credenciales](/images/credentials/share-credentials-panel-es.gif)
+![Compartilhar credenciales](/images/snippets/share-credentials-devpanel-es.gif)
 
 ## Renovar credenciais
 
@@ -98,7 +98,7 @@ Para renovar um par de credenciais, siga os passos abaixo.
 2. Selecione o par de credenciais que você deseja renovar. Estas podem ser **Public Key** e **Access Token** ou **Client ID** e **Client Secret**. Tenha em conta que ambas as credenciais do par que você escolher serão renovadas.
 3. Clique nos três pontos localizados à direita da credencial que você deseja renovar e selecione **Renovar**. Clique em **Renovar agora** para confirmar a alteração.
 
-![Renovar credenciais](/images/credentials/renew-credentials-es.gif)
+![Renovar credenciais](/images/snippets/renew-credentials-es.gif)
 
 Pronto, suas credenciais já foram renovadas.
 ::::
@@ -146,9 +146,9 @@ A seguir, saiba como obter as credenciais.
 2. Acesse seu aplicativo ou crie um se ainda não o fez.
 3. Você encontrará suas credenciais sob o título **Testes > Credenciais de teste** ou **Produção > Credenciais de produção**, no menu localizado à esquerda da tela.
 
-![Credenciais de teste](/images/credentials/credentials-test-panel-es.gif)
+![Credenciais de teste](/images/snippets/credentials-test-panel-es.gif)
 
-![Credenciais de produção](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Credenciais de produção](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ### Ativar credenciais de producción
 Para obter as credenciais de producción, você deverá **ativá-las** preenchendo alguns dados sobre o seu negócio. Siga os passos abaixo:
@@ -181,7 +181,7 @@ A seguir, mostramos como compartilhar credenciais.
 4. Uma vez que você selecionar as credenciais, direcione-se à seção *Compartilhe as credenciais com um desenvolvedor* e clique no botão **Compartilhar Credenciais**.
 5. Digite o endereço de e-mail da pessoa a quem você deseja conceder acceso. **Lembre-se**: é obrigatório que o endereço de e-mail esteja asociado a uma conta do Mercado Pago.
 
-![Compartilhar credenciales](/images/credentials/share-credentials-devpanel-es.png)
+![Compartilhar credenciales](/images/snippets/share-credentials-devpanel-es.png)
 
 ## Renovar credenciais
 
@@ -197,7 +197,7 @@ Para renovar um par de credenciais, siga os passos abaixo.
 2. Selecione o par de credenciais que você deseja renovar. Estas podem ser **Public Key** e **Access Token** ou **Client ID** e **Client Secret**. Tenha em conta que ambas as credenciais do par que você escolher serão renovadas.
 3. Clique nos três pontos localizados à direita da credencial que você deseja renovar e selecione **Renovar**. Clique em **Renovar agora** para confirmar a alteração.
 
-![Renovar credenciais](/images/credentials/renew-credentials-es.gif)
+![Renovar credenciais](/images/snippets/renew-credentials-es.gif)
 
 Pronto, suas credenciais já foram renovadas.
 ::::

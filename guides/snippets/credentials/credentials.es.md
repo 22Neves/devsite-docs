@@ -37,7 +37,7 @@ También pueden ser requeridas en algunas integraciones más antiguas con plataf
 ## Obtener credenciales
 
 Las credenciales de Mercado Pago son creadas a partir de una aplicación de Mercado Pago. Es decir, están directamente vinculadas a la 
-:toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información,  accede a la documentación de [Detalles de aplicación](/developers/es/docs/your-integrations/application-details)."} que creaste a través de Tus integraciones.
+:toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información,  accede a la documentación"} que creaste a través de Tus integraciones.
 
 A continuación, conoce cómo obtener las credenciales.
 
@@ -45,9 +45,9 @@ A continuación, conoce cómo obtener las credenciales.
 2. Accede a tu aplicación o crea una si aún no lo has hecho.
 3. Encontrarás tus credenciales bajo el título **Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**, en el menú ubicado a la izquierda de la pantalla.
 
-![Credenciales de prueba](/images/credentials/credentials-test-panel-es.gif)
+![Credenciales de prueba](/images/snippets/credentials-test-panel-es.gif)
 
-![Credenciales de producción](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Credenciales de producción](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ### Activar credenciales de producción
 Para obtener las credenciales de producción, deberás **activarlas** completando algunos datos sobre tu negocio. Sigue los pasos a continuación:
@@ -80,7 +80,7 @@ A continuación, te mostramos cómo compartir credenciales.
 4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
 5. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. **Recuerda**: es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
-![Compartir credenciales](/images/credentials/share-credentials-panel-es.gif)
+![Compartir credenciales](/images/snippets/share-credentials-devpanel-es.gif)
 
 ## Renovar credenciales
 
@@ -96,7 +96,7 @@ Para renovar un par de credenciales, sigue los pasos a continuación.
 2. Selecciona el par de credenciales que quieres renovar. Estas pueden ser **Public Key** y **Access Token** o **Client ID** y **Client Secret**. Ten en cuenta que se renovarán ambas credenciales del par que elijas. 
 3. Haz clic en los tres puntos ubicados a la derecha de la credencial que quieras renovar y selecciona **Renovar**. Haz clic en **Renovar ahora** para confirmar el cambio.
 
-![Renovar credenciales](/images/credentials/renew-credentials-es.gif)
+![Renovar credenciales](/images/snippets/renew-credentials-es.gif)
 
 Listo, tus credenciales ya fueron renovadas. 
 ::::
@@ -144,9 +144,9 @@ A continuación, conoce cómo obtener las credenciales.
 2. Accede a tu aplicación o crea una si aún no lo has hecho.
 3. Encontrarás tus credenciales bajo el título **Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**, en el menú ubicado a la izquierda de la pantalla.
 
-![Credenciales de prueba](/images/credentials/credentials-test-panel-es.gif)
+![Credenciales de prueba](/images/snippets/credentials-test-panel-es.gif)
 
-![Credenciales de producción](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Credenciales de producción](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ### Activar credenciales de producción
 Para obtener las credenciales de producción, deberás **activarlas** completando algunos datos sobre tu negocio. Sigue los pasos a continuación:
@@ -179,7 +179,7 @@ A continuación, te mostramos cómo compartir credenciales.
 4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
 5. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. **Recuerda**: es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
-![Compartir credenciales](/images/credentials/share-credentials-devpanel-es.png)
+![Compartir credenciales](/images/snippets/share-credentials-devpanel-es.png)
 
 ## Renovar credenciales
 
@@ -195,7 +195,7 @@ Para renovar un par de credenciales, sigue los pasos a continuación.
 2. Selecciona el par de credenciales que quieres renovar. Estas pueden ser **Public Key** y **Access Token** o **Client ID** y **Client Secret**. Ten en cuenta que se renovarán ambas credenciales del par que elijas. 
 3. Haz clic en los tres puntos ubicados a la derecha de la credencial que quieras renovar y selecciona **Renovar**. Haz clic en **Renovar ahora** para confirmar el cambio.
 
-![Renovar credenciales](/images/credentials/renew-credentials-es.gif)
+![Renovar credenciales](/images/snippets/renew-credentials-es.gif)
 
 Listo, tus credenciales ya fueron renovadas. 
 ::::
