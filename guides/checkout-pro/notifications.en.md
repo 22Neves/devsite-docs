@@ -6,20 +6,22 @@ Instead of your system constantly polling for updates, Webhooks allow for **pass
 
 Check the general flow of a notification in the diagram below.
 
-![Diagram](/images/cow/notifications-diagrama-es.png)
+![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
 Below, we present a step-by-step guide to configure payment creation and update notifications. Once configured, Webhook notifications will be sent every time a payment is created or its status is modified (Pending, Rejected, or Approved). In the process of integrating with Mercado Pago, you can configure notifications in two ways:
 
 | Configuration Type | Description | Advantages | When to Use |
 |---|---|---|---|
-| Configuration through Your Integrations | This method allows you to configure notifications directly in your Developer Panel. You can set up notifications for each of your applications, identify different accounts if necessary, and validate the origin of the notification using a secret signature. | - Simple identification of different accounts, ensuring proper management in diverse environments. <br> - High security by validating the origin of notifications via a secret signature, which guarantees the integrity of the received information. <br> - More versatile and effective for maintaining centralized control and efficiently managing communication with applications. | Recommended for most integrations. |
-| Configuration during the creation of payments or preferences | Notifications are configured for each transaction individually during the creation of the payment or preference. | - Specific adjustments for each transaction. <br> - Flexibility in cases where dynamic mandatory parameters are needed. <br> - Ideal for integrations like payment platforms for multiple sellers. | Convenient in cases where it is necessary to send a dynamic query parameter mandatorily, and also suitable for integrations that function as a payment platform for multiple sellers. |
+| [Configuration through Your integrations](/developers/en/docs/checkout-pro/payment-notifications#bookmark_configuration_through_your_integrations) | This method allows you to configure notifications directly in your Developer Panel. You can set up notifications for each of your applications, identify different accounts if necessary, and validate the origin of the notification using a secret signature. | - Simple identification of different accounts, ensuring proper management in diverse environments. <br> - High security by validating the origin of notifications via a secret signature, which guarantees the integrity of the received information. <br> - More versatile and effective for maintaining centralized control and efficiently managing communication with applications. | Recommended for most integrations. |
+| [Configuration during the creation of payments or preferences](/developers/en/docs/checkout-pro/payment-notifications#bookmark_configuration_when_creating_payments_and_preferences) | Notifications are configured for each transaction individually during the creation of the payment or preference. | - Specific adjustments for each transaction. <br> - Flexibility in cases where dynamic mandatory parameters are needed. <br> - Ideal for integrations like payment platforms for multiple sellers. | Convenient in cases where it is necessary to send a dynamic query parameter mandatorily, and also suitable for integrations that function as a payment platform for multiple sellers. |
 
 > RED_MESSAGE
 >
 > Important
 >
 > The URLs configured during the creation of a payment will take precedence over those configured through Your integrations.
+
+:::::TabsComponent
 
 ::::TabComponent{title="Configuration through Your integrations"}
 ## Configuration through Your integrations
@@ -59,9 +61,6 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 2. Luego, haz clic en **Simular** para probar si la URL indicada está recibiendo las notificaciones correctamente.
 3. En la pantalla de simulación, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
 4. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación (Data ID).
-
-![Simulate](/images/cow/not5-simulate-es.png) 
-
 5. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento. Recibirás una respuesta similar al ejemplo a continuación, que representa el `body` de la notificación recibida en tu servidor.
 
 ```
@@ -718,8 +717,6 @@ Once notifications are configured, check the Necessary actions after receiving a
 When you receive a notification on your platform, Mercado Pago expects a response to validate that the reception was correct. For this, you must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 
 The timeout for this confirmation will be 22 seconds. If this response is not sent, the system will understand that the notification was not received and will make a new attempt to send it every 15 minutes until it receives the response. After the third attempt, the interval will be extended, but the sending will continue.
-
-![not-necessary-actions](/images/cow/not-necessary-actions.png)
 
 After responding to the notification, confirming its receipt, you can obtain all information about the notified `payments` topic event by making a GET request to the endpoint [v1/payments/{id}](/developers/en/reference/payments/_payments_id/get).
 
