@@ -495,8 +495,8 @@ payment_data = {
  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
  payer: {
    email: params[:email],
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: params[:docType],------------
+   identification: {
+     type: params[:docType],
      number: params[:docNumber]
    }
  }
