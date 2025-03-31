@@ -1,7 +1,6 @@
 # Crear aplicación
 
 [TXTSNIPPET][/guides/snippets/applications/create-application]
-
 4. Ante la pregunta por el tipo de solución de pago a integrar, selecciona **Pagos online**, que es el tipo de solución correspondiente a tiendas virtuales. 
 5. Como estás creando una aplicación para Checkout Pro, deberás indicar que **no** estás utilizando una [plataforma de e-commerce](/developers/es/docs#platform-list), ya que esta solución es para integrarse en sitios de desarrollo propio. 
 6. Luego, elige **CheckoutPro** como el producto que estás integrando.
