@@ -64,5 +64,5 @@ As operações permitidas são:
 ---
 product_landing_how_integrate:
  - button_description: Começar a integrar
- - button_link: /developers/pt/docs/checkout-api/integration-model
+ - button_link: /developers/pt/docs/checkout-api/create-application
 ---

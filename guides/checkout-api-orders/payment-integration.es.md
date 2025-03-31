@@ -175,6 +175,7 @@ future_product_avaible:
  - card_linkAvailable: false
  - card_linkProof: 
  - card_linkProofDescription:
+---
 ------------
 ----[mlm]----
 
@@ -206,7 +207,7 @@ future_product_avaible:
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes la posibilidad de pagar desde cualquier banco o institución financiera utilizando su CLABE.
  - card_button: /developers/es/docs/checkout-api/payment-integration/spei
  - card_buttonDescription: Saber más
- - card_pillText: DISPONÍVEL
+ - card_pillText: DISPONIBLE
  - card_linkAvailable: false
  - card_linkProof: 
  - card_linkProofDescription:

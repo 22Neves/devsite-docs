@@ -5,7 +5,7 @@ Con ellas, es posible acceder a las :toolTipComponent[credenciales]{content="Cla
 Para crear una **aplicación**, sigue los pasos a continuación.
 
 1. En la esquina superior derecha de Mercado Pago Developers, haz clic en **Ingresar** e ingresa los datos requeridos con la información correspondiente a tu cuenta de Mercado Pago.
-2. Con la sesión iniciada, accedé a **Tus integraciones**. Allí, haz clic en **Crear aplicación**.
+2. Con la sesión iniciada, accede a **Tus integraciones**. Allí, haz clic en **Crear aplicación**.
 
 > SUCCESS_MESSAGE
 >

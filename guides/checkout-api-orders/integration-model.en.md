@@ -1,12 +1,12 @@
 # Integration model
 
-----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ agora processa pagamentos com **Orders**. Se trata de uma API projetada para simplificar seu desenvolvimento com o Mercado Pago: com uma única integração, você poderá acessar diversas soluções de pagamento.
+----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ now processes payments with **Orders**. This API is designed to simplify your development with Mercado Pago: with a single integration, you can access various payment solutions.
 
-Additionally, the API makes the integration code more intuitive and provides more detailed error messages, making the development process easier.
+Additionally, the API makes the integration code more intuitive and provides more detailed error messages, streamlining the development process.
 
 ## Differences in processing
 
-Previously, payments via the ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------  were processed exclusively through the **Payments API**. Now, it is also possible to process them through Orders, which offers an efficient and straightforward integration alternative.
+Previously, payments via ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------  were processed exclusively through the **Payments API**. Now, it is also possible to process them through Orders, which offers an efficient and straightforward integration alternative.
 
 Below are the main differences between the two options.
 
@@ -34,7 +34,7 @@ The allowed operations are:
 - [**Create and process order**](/developers/en/reference/order/online-payments/create/post): responsible for creating the order and simultaneously processing the transaction.
 - [**Get order**](/developers/en/reference/order/online-payments/get-order/get): allows you to obtain information about an order, including its status in real time.
 - [**Capture order**](/developers/en/reference/order/online-payments/capture/post): enables the capture of the authorized amount of an order. This option is only valid for credit cards.
-- [**Cancel order**](/developers/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed/ finalized.
+- [**Cancel order**](/developers/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed/finalized.
 - [**Refund order**](/developers/en/reference/order/online-payments/refund/post): in automatic mode, total or partial refunds can be created for a payment. The order will be fully refunded if all transactions are refunded completely.
    - **Total refund**: the value to be refunded should not be indicated in the request’s `body`, that must be empty.
    - **Partial refund**: the amount to be refunded must be specified in the request’s `body` along with de transaction ID. All other transactions will remain as they are, and only the modified transaction will be refunded.
@@ -47,7 +47,7 @@ The **manual mode** is where it is possible to divide the processing of the tran
 The allowed operations are:
 
 - [**Create order (with or without transactions)**](/developers/en/reference/order/online-payments/create/post): responsible for creating and authorizing the order without simultaneous processing.
-- [**Add transaction**](/developers/en/reference/order/online-payments/add-transaction/post): this operation can only be performed in manual mode and is responsible for adding more than one transaction in the same _payload_.
+- [**Add transaction**](/developers/en/reference/order/online-payments/add-transaction/post): this operation can only be performed in manual mode and is responsible for adding more than one transaction in the same payload.
 - **[Modify](/developers/en/reference/order/online-payments/update-transaction/put) and/or [remove](/developers/en/reference/order/online-payments/delete-transaction/delete) transaction**: modifying and removing transactions can only be done in manual mode, and allow to change payment information that had been previously added to the order. These are operations that modifies an item within any field of the `transactions` parameter.
 - [**Capture order**](/developers/en/reference/order/online-payments/capture/post): responsible for capturing the authorized amount of an order. This option is only valid for credit cards.
 - [**Process transaction**](/developers/en/reference/order/online/process-order/post): allows executing the transactions created and/or modified in manual mode.
@@ -63,6 +63,6 @@ The allowed operations are:
 
 ---
 product_landing_how_integrate:
- - button_description: Começar a integrar
- - button_link: /developers/en/docs/checkout-api/integration-model
+ - button_description: Start integrating
+ - button_link: /developers/en/docs/checkout-api/create-application
 ---
