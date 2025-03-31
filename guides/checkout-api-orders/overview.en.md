@@ -216,7 +216,7 @@ product_landing_how_integrate:
 product_landing_hero:
  - title: Integrate Checkout API and customize the whole experience
  - message: Incorporate a flexible API into your website so that customers can shop on your website or app without being redirected to an external page.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743449632827-overviewmlmes.png
  - benefit_icon: recurring-payments
  - benefit_title: For online payments
  - benefit_icon: categories
@@ -262,7 +262,7 @@ product_landing_what_differentiates:
  - title: What sets it apart
  - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](/developers/es/support/37740).
  - highlight_text: You’re here
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743187082421-AR.ES.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743449632827-overviewmlmes.png
  - column_product: Checkout API
  - column_button_text: How to integrate
  - column_button_link: /developers/en/docs/checkout-api/overview
