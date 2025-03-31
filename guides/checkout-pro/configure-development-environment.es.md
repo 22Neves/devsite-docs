@@ -35,7 +35,7 @@ npm install mercadopago
 ```
 ```java
 ===
-Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html), debes agregar la siguiente dependencia en tu archivo `pom.xml` y ejecutar `maven install` en la línea de comandos de tu terminal:
+Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html), debes agregar la siguiente dependencia en tu archivo <code>pom.xml</code> y ejecutar <code>maven install</code> en la línea de comandos de tu terminal:
 ===
 <dependency>
    <groupId>com.mercadopago</groupId>
