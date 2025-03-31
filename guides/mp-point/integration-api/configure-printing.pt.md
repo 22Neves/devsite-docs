@@ -29,7 +29,7 @@ Utilize os endpoints abaixo para gerenciar a fila de impressões, levando em con
 >
 > Para a impressão de imagens, tenha em mente que os formatos aceitos são PNG ou JPEG, com codificação Base64 e um tamanho máximo de 1MB. As imagens que excederem este limite serão redimensionadas automaticamente para se ajustarem à largura do rolo de papel.
 
-   - [Criar ação da terminal](/developers/pt/reference/mercado_pago_point/impressions/post): Permite a criação de uma nova ação de impressão para Mercado Pago Point, seja de imagens ou impressões personalizadas. Para imagens, é suportado o formato Base64. Em caso de sucesso, a resposta devolverá um código de status 201.
+   - [Criar ação da terminal](/developers/pt/reference/mercado_pago_point/impressions/post): Permite a criação de uma nova ação de impressão para Mercado Pago Point, seja de imagens ou impressões personalizadas. Em caso de sucesso, a resposta devolverá um código de status 201.
    - [Obter ação por ID](/developers/pt/reference/mercado_pago_point/impressions/get): Permite consultar todas as informações de uma ação criada para uma terminal Point através do ID obtido na resposta à sua criação. Em caso de sucesso, a solicitação devolverá uma resposta com status 200.
    - [Cancelar ação por ID](/developers/pt/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status "created" pode ser cancelada. Em caso de sucesso, a solicitação devolverá uma resposta com status 200. 
 
