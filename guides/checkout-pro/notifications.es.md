@@ -5,7 +5,8 @@ Las notificaciones **Webhooks**, también conocidas como **devoluciones de llama
 En lugar de que tu sistema realice consultas constantes para verificar actualizaciones, los Webhooks permiten la transmisión de datos de manera **pasiva y automática** entre Mercado Pago y tu integración a través de una solicitud **HTTP POST**, optimizando la comunicación y reduciendo la carga en los servidores.
 
 Consulta el flujo general de una notificación en el diagrama a continuación. 
-[IMG] 
+
+![Diagram](/images/cow/notifications-diagrama-es.png)
 
 A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
 
@@ -34,13 +35,21 @@ Puedes configurar notificaciones para cada una de tus aplicaciones directamente 
 Para configurar notificaciones Webhooks, es necesario indicar las URLs a las que las mismas serán enviadas.
 Para hacerlo, sigue el paso a paso a continuación:
 1. Ingresa a [Tus integraciones](/developers/panel/app) y selecciona la aplicación integrada con Checkout Pro para la que deseas activar las notificaciones. 
-[IMG]
-2. En el menú de la izquierda, selecciona **Webhooks > Configurar notificaciones** y configura la URL que se utilizará para recibirlas.
-[IMG]
+
+![Application](/images/cow/not1-select-app-es.png)
+
+2. En el menú de la izquierda, selecciona **Webhooks > Configurar notificaciones**.
+
+![Webhooks](/images/cow/not2-webhooks-es.png) 
+
 3. Selecciona la pestaña **Modo productivo** y proporciona una `URL HTTPS` para recibir notificaciones con tu integración productiva. 
-[IMG]
+
+![URL](/images/cow/not3-url-es.png) 
+
 4. Selecciona lo evento **Pagos** para recibir notificaciones, que serán enviadas en formato `JSON` a través de un `HTTPS POST` a la URL especificada anteriormente.
-[IMG]
+
+![Payment](/images/cow/not4-payment-es.png) 
+
 5. Por último, haz clic en **Guardar configuración**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Ten en cuenta que esta clave generada no tiene plazo de caducidad y su renovación periódica no es obligatoria, aunque sí recomendada. Para hacerlo, basta con cliquear en el botón **Restablecer**.
 
 ### 2. Simular la recepción de la notificación
@@ -49,7 +58,9 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 2. Luego, haz clic en **Simular** para probar si la URL indicada está recibiendo las notificaciones correctamente.
 3. En la pantalla de simulación, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
 4. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación (Data ID).
-[IMG]
+
+![Simulate](/images/cow/not5-simulate-es.png) 
+
 5. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento. Recibirás una respuesta similar al ejemplo a continuación, que representa el `body` de la notificación recibida en tu servidor.
 ```
 {
@@ -121,7 +132,8 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 > Si alguno de los valores presentados en el modelo anterior no está presente en la notificación recibida, debes removerlo.
 
 3. En [Tus integraciones](/developers/panel/app), selecciona la aplicación integrada, haz clic en **Webhooks > Configurar notificación** y revela la clave secreta generada.
-[IMG]
+
+![Signature](/images/cow/not6-signature-es.png) 
 
 4. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el template con los valores como mensaje.
 
@@ -149,7 +161,6 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 5. Finalmente, compara la clave generada con la clave extraída del _header_, asegurándote de que tengan una correspondencia exacta. Además, puedes usar el _timestamp_ extraído del header para compararlo con un timestamp generado en el momento de la recepción de la notificación, con el fin de establecer una tolerancia de demora en la recepción del mensaje.
 
 A continuación, puedes ver ejemplos de código completo:
-
 
 [[[
 ```php
@@ -766,6 +777,7 @@ when 'invoice'
 when 'point_integration_wh'
   # Contiene la informaciòn relacionada a la notificaciòn.
 end
+```
 ```csharp
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 switch (type)

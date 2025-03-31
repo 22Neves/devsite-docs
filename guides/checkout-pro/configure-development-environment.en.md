@@ -14,6 +14,8 @@ The **backend SDK** is designed to handle server-side operations, allowing you t
 
 > NOTE
 >
+> Note
+>
 > If you prefer, you can download the Mercado Pago SDKs from our [official libraries](/developers/en/docs/sdks-library/server-side).
 
 Install the Mercado Pago SDK in the language that best fits your integration using a dependency manager, as shown below.
@@ -83,7 +85,7 @@ To initialize the Mercado Pago library, you will need to use your **credentials*
 >
 > If you are developing for someone else, you can access the credentials of applications you do not manage. See [Share credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_share_credentials) for more information.
 
-At this stage, you will need to use your **production** _Access Token_, which you can access by entering the **Details of your application** in [Your integrations](/developers/panel/app), under the title **Production > Production credentials** in the menu located on the left of the screen.
+At this stage, you will need to use your **production** `access token`, which you can access by entering the **Details of your application** in [Your integrations](/developers/panel/app), under the title **Production > Production credentials** in the menu located on the left of the screen.
 
 First, you will need to **activate the production credentials**. To do this, you will need to complete some information about your business by following the steps below.
 
@@ -91,9 +93,9 @@ First, you will need to **activate the production credentials**. To do this, you
 2. In the **Website (required)** field, fill in the URL of your business's website.
 3. Accept the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and conditions](/developers/en/docs/resources/legal/terms-and-conditions). Complete the reCAPTCHA and click on **Activate production credentials**.
 
-Once you have activated your production credentials, you can use your **production** Access Token.
+Once you have activated your production credentials, you can use your **production** `access token`.
 
-Next, in the *backend* of your project, create a _main_ file based on the programming language you will use. There, place the following code, replacing the value `PROD_ACCESS_TOKEN` with your production `access token`.
+Next, in the backend of your project, create a _main_ file based on the programming language you will use. There, place the following code, replacing the value `PROD_ACCESS_TOKEN` with your production `access token`.
 
 [[[
 ```php

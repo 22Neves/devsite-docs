@@ -12,6 +12,8 @@ A seguir, você encontrará exemplos de como implementar isso no seu backend uti
 
 > NOTE
 >
+> Nota
+>
 > Você pode adaptar a integração do Checkout Pro ao seu modelo de negócio configurando os atributos da preferência de pagamento. Estes permitirão definir parcelas, excluir um meio de pagamento, alterar a data de vencimento de um determinado pagamento, entre outras opções. Para personalizar sua preferência de pagamento, acesse **[Personalização do checkout > Preferências](/developers/pt/docs/checkout-pro/checkout-customization/preferences)**.
 
 [[[
