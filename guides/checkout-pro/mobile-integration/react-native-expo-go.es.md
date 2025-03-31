@@ -12,7 +12,8 @@ A continuación, selecciona el sistema operativo para el que quieres integrar y 
 
 :::::TabsComponent
 
-::::TabComponent{title="Android"} En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en React Native.
+::::TabComponent{title="Android"}
+En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en React Native.
 
 ## Uso de Expo-Web-Browser
 
@@ -119,9 +120,11 @@ En caso de correr un **prebuild** de la aplicación, deberás verificar que el d
 
 Por último, deberás configurar tu aplicación de React Native para recibir y gestionar los Deep Links. Esto se abordará usando la dependencia react-native-inappbrowser. 
 
-En el caso de Android, **el cierre del custom tab se hace de manera automática** al momento de redireccionar a un Deep Link válido. En que caso que el link no sea válido, no se ejecutará ninguna acción de redireccionamiento desde el custom tab. ::::
+En el caso de Android, **el cierre del custom tab se hace de manera automática** al momento de redireccionar a un Deep Link válido. En que caso que el link no sea válido, no se ejecutará ninguna acción de redireccionamiento desde el custom tab.
+::::
 
-::::TabComponent{title="iOS"} En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Safari View Controller** en tu proyecto desarrollado en React Native. 
+::::TabComponent{title="iOS"}
+En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Safari View Controller** en tu proyecto desarrollado en React Native. 
 
 ## Uso de Expo-Web-Browser
 
@@ -267,6 +270,7 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 	},
 });
-``` ::::
+```
+::::
 
 :::::
