@@ -82,7 +82,7 @@ A seguir, mostramos como compartilhar credenciais.
 4. Uma vez que você selecionar as credenciais, direcione-se à seção *Compartilhe as credenciais com um desenvolvedor* e clique no botão **Compartilhar Credenciais**.
 5. Digite o endereço de e-mail da pessoa a quem você deseja conceder acceso. **Lembre-se**: é obrigatório que o endereço de e-mail esteja asociado a uma conta do Mercado Pago.
 
-![Compartilhar credenciales](/images/credentials/share-credentials-devpanel-es.png)
+![Compartilhar credenciales](/images/credentials/share-credentials-panel-es.gif)
 
 ## Renovar credenciais
 

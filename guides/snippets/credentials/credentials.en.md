@@ -179,7 +179,7 @@ Below, we show you how to share credentials.
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
-![Share credentials](/images/credentials/share-credentials-devpanel-es.png)
+![Share credentials](/images/credentials/share-credentials-panel-es.gif)
 
 ## Renew credentials
 
