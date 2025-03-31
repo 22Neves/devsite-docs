@@ -1,45 +1,57 @@
-# Configurar notificaciones de pago 
+# Configure payment notifications
 
-Las notificaciones **Webhooks**, también conocidas como **devoluciones de llamada web**, son un método efectivo que permiten a los servidores de Mercado Pago enviar información en **tiempo real** cuando ocurre un evento específico relacionado con tu integración. 
+**Webhooks**, also known as **web callbacks**, are an effective method that allows Mercado Pago servers to send **real-time** information when a specific event related to your integration occurs.
 
-En lugar de que tu sistema realice consultas constantes para verificar actualizaciones, los Webhooks permiten la transmisión de datos de manera **pasiva y automática** entre Mercado Pago y tu integración a través de una solicitud **HTTP POST**, optimizando la comunicación y reduciendo la carga en los servidores.
+Instead of your system constantly polling for updates, Webhooks allow for **passive and automatic** data transmission between Mercado Pago and your integration through an **HTTP POST** request, optimizing communication and reducing server load.
 
-Consulta el flujo general de una notificación en el diagrama a continuación. 
-[IMG] 
+Check the general flow of a notification in the diagram below.
 
-A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
+![Diagram](/images/cow/notifications-diagrama-es.png)
 
-| Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
+Below, we present a step-by-step guide to configure payment creation and update notifications. Once configured, Webhook notifications will be sent every time a payment is created or its status is modified (Pending, Rejected, or Approved). In the process of integrating with Mercado Pago, you can configure notifications in two ways:
+
+| Configuration Type | Description | Advantages | When to Use |
 |-|-|-|-|
-| Configuración a través de Tus Integraciones       | Este método permite configurar notificaciones directamente en tu Panel de Desarrollador. Puedes configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas si es necesario, y validar el origen de la notificación mediante una firma secreta. | - Identificación sencilla de contas distintas, asegurando uma adequada gestão em ambientes diversos. <br> - Alta segurança ao validar o origen das notificações mediante uma assinatura secreta, que garante a integridade da informação recebida. <br> - Mais versátil e eficaz para manter um controle centralizado e gerenciar a comunicação com as aplicações de maneira eficiente. | Recomendado para a maioria das integrações.                                                          |
-| Configuração durante a criação de pagamentos ou preferências | As notificações são configuradas para cada transação individualmente durante a criação do pagamento ou preferência.                                                                                                                  | - Ajustes específicos para cada transação. <br> - Flexibilidade em casos de necessidade de parâmetros dinâmicos obrigatórios. <br> - Ideal para integrações como plataformas de pagamento para múltiplos vendedores.                                                                                    | Conveniente em casos em que seja necessário enviar um query parameter dinâmico de forma obrigatória, além de ser adequado para integrações que funcionam como uma plataforma de pagamento para múltiplos vendedores. |
+| Configuration through Your Integrations | This method allows you to configure notifications directly in your Developer Panel. You can set up notifications for each of your applications, identify different accounts if necessary, and validate the origin of the notification using a secret signature. | - Simple identification of different accounts, ensuring proper management in diverse environments. <br> - High security by validating the origin of notifications via a secret signature, which guarantees the integrity of the received information. <br> - More versatile and effective for maintaining centralized control and efficiently managing communication with applications. | Recommended for most integrations. |
+| Configuration during the creation of payments or preferences | Notifications are configured for each transaction individually during the creation of the payment or preference. | - Specific adjustments for each transaction. <br> - Flexibility in cases where dynamic mandatory parameters are needed. <br> - Ideal for integrations like payment platforms for multiple sellers. | Convenient in cases where it is necessary to send a dynamic query parameter mandatorily, and also suitable for integrations that function as a payment platform for multiple sellers. |
 
 > RED_MESSAGE
 >
-> Importante
+> Important
 >
-> Las URLs configuradas durante la creación de un pago tendrán prioridad por sobre aquellas configuradas a través de Tus integraciones.
+> The URLs configured during the creation of a payment will take precedence over those configured through Your integrations.
 
-::::TabComponent{title="Configuración a través de Tus integraciones"}
-## Configuración a través de Tus integraciones
-Puedes configurar notificaciones para cada una de tus aplicaciones directamente desde [Tus integraciones](/developers/panel/app) de manera eficiente y segura. En este apartado, explicaremos cómo:
+::::TabComponent{title="Configuration through Your integrations"}
+## Configuration through Your integrations
+You can configure notifications for each of your applications directly from [Your integrations](/developers/panel/app) efficiently and securely. In this section, we will explain how to:
 
-1. Indicar las URLs de notificación y configurar eventos
-2. Validar el origen de una notificación
-3. Simular el recibimiento de una notificación
+1. Indicate the notification URLs and configure events
+2. Validate the origin of a notification
+3. Simulate receiving a notification
 
-### 1. Indicar URLs de notificación y configurar el evento
-Para configurar notificaciones Webhooks, es necesario indicar las URLs a las que las mismas serán enviadas.
-Para hacerlo, sigue el paso a paso a continuación:
-1. Ingresa a [Tus integraciones](/developers/panel/app) y selecciona la aplicación integrada con Checkout Pro para la que deseas activar las notificaciones. 
-[IMG]
-2. En el menú de la izquierda, selecciona **Webhooks > Configurar notificaciones** y configura la URL que se utilizará para recibirlas.
-[IMG]
-3. Selecciona la pestaña **Modo productivo** y proporciona una `URL HTTPS` para recibir notificaciones con tu integración productiva. 
-[IMG]
-4. Selecciona lo evento **Pagos** para recibir notificaciones, que serán enviadas en formato `JSON` a través de un `HTTPS POST` a la URL especificada anteriormente.
-[IMG]
-5. Por último, haz clic en **Guardar configuración**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Ten en cuenta que esta clave generada no tiene plazo de caducidad y su renovación periódica no es obligatoria, aunque sí recomendada. Para hacerlo, basta con cliquear en el botón **Restablecer**.
+### 1. Indicate notification URLs and configure the event
+
+To configure Webhook notifications, it is necessary to indicate the URLs to which they will be sent.
+
+To do this, follow the step-by-step instructions below:
+
+1. Go to [Your integrations](/developers/panel/app) and select the application integrated with Checkout Pro for which you want to activate notifications.
+
+![Application](/images/cow/not1-select-app-es.png)
+
+2. In the left menu, select **Webhooks > Configure Notifications** and configure the URL that will be used to receive them.
+
+![Webhooks](/images/cow/not2-webhooks-es.png) 
+
+3. Select the **Production mode** tab and provide an `HTTPS URL` to receive notifications with your production integration.
+
+![URL](/images/cow/not3-url-es.png) 
+
+4. Select the **Payments** event to receive notifications, which will be sent in `JSON` format via an `HTTPS POST` to the URL specified earlier.
+
+![Payment](/images/cow/not4-payment-es.png)
+
+5. Finally, click on **Save configuration**. This will generate a **secret key** exclusive to the application, which will allow you to validate the authenticity of the received notifications, ensuring they were sent by Mercado Pago. Note that this generated key does not have an expiration date and its periodic renewal is not mandatory, although it is recommended. To do this, simply click the **Reset** button.
 
 ### 2. Simular la recepción de la notificación
 Para garantizar que las notificaciones sean configuradas correctamente, es necesario simular su recepción. Para hacerlo, sigue el paso a paso a continuación.
@@ -47,8 +59,11 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 2. Luego, haz clic en **Simular** para probar si la URL indicada está recibiendo las notificaciones correctamente.
 3. En la pantalla de simulación, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
 4. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación (Data ID).
-[IMG]
+
+![Simulate](/images/cow/not5-simulate-es.png) 
+
 5. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento. Recibirás una respuesta similar al ejemplo a continuación, que representa el `body` de la notificación recibida en tu servidor.
+
 ```
 {
   "action": "payment.updated",
@@ -64,13 +79,15 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 }
 ```
 
-### 3. Validar origen de la notificación
-La validación del origen de una notificación es fundamental para asegurar la seguridad y la autenticidad de la información recibida. Este proceso ayuda a prevenir fraudes y garantiza que solo las notificaciones legítimas sean procesadas.
+### 3. Validate the origin of a notification
 
-Mercado Pago enviará a su servidor una notificación similar al ejemplo a continuación para una alerta del tema `payment`. En este ejemplo, se incluye la notificación completa, que contiene los `query params`, el `body` y el `header` de la notificación.
-- **_Query params_**: Son parámetros de consulta que acompañan la URL. En el ejemplo, tenemos  `data.id=123456` y `type=payment`. 
-- **_Body_**: El cuerpo de la notificación contiene información detallada sobre el evento, como `action`, `api_version`, `data`, `date_created`, `id`, `live_mode`, `type` y `user_id`. 
-- **_Header_**: El encabezado contiene metadatos importantes, incluyendo la firma secreta de la notificación `x-signature`.
+Validating the origin of a notification is fundamental to ensuring the security and authenticity of the received information. This process helps prevent fraud and guarantees that only legitimate notifications are processed.
+
+Mercado Pago will send a notification to your server similar to the example below for an alert with the topic `payment`. In this example, the complete notification is included, containing the `query params`, the `body`, and the `header` of the notification.
+
+- **_Query params_**: These are query parameters that accompany the URL. In the example, we have `data.id=123456` and `type=payment`.
+- **_Body_**: The body of the notification contains detailed information about the event, such as `action`, `api_version`, `data`, `date_created`, `id`, `live_mode`, `type`, and `user_id`.
+- **_Header_**: The header contains important metadata, including the secret signature of the notification `x-signature`.
 
 ```
 POST /test?data.id=123456&type=payment HTTP/1.1
@@ -92,36 +109,38 @@ X-Socket-Timeout: 22000
 {"action":"payment.updated","api_version":"v1","data":{"id":"123456"},"date_created":"2021-11-01T02:02:02Z","id":"123456","live_mode":false,"type":"payment","user_id":724484980}
 ```
 
-A partir de la notificación Webhook recibida, podrás validar la autenticidad de su origen. Mercado Pago siempre incluirá la clave secreta en las notificaciones Webhooks que serán recibidas, lo que permitirá validar su autenticidad. Esta clave será enviada en el _header_ `x-signature`, que será similar al ejemplo debajo.
+From the received Webhook notification, you will be able to validate the authenticity of its origin. Mercado Pago will always include the secret key in the Webhook notifications that will be received, allowing you to validate their authenticity. This key will be sent in the `x-signature` header, which will be similar to the example below.
 
 ```
 `ts=1742505638683,v1=ced36ab6d33566bb1e16c125819b8d840d6b8ef136b0b9127c76064466f5229b`
 ```
 
-Para confirmar la validación, es necesario extraer la clave contenida en el _header_ y compararla con la clave otorgada para tu aplicación en Tus integraciones. Para eso, sigue el paso a paso a continuación. Al final, disponibilizamos nuestros SDKs con ejemplos de códigos completos para facilitar el proceso.
+To confirm validation, it is necessary to extract the key contained in the header and compare it with the key provided for your application in Your Integrations. To do this, follow the steps below. At the end, we provide our SDKs with complete code examples to facilitate the process.
 
-1. Para extraer el timestamp (`ts`) y la clave (`v1`) del header `x-signature`, divide el contenido del _header_ por el carácter “,", lo que resultará en una lista de elementos. El valor para el prefijo `ts` es el _timestamp_ (en milisegundos) de la notificación y _v1_ es la clave encriptada. Siguiendo el ejemplo presentado anteriormente, `ts=1742505638683` y `v1=ced36ab6d33566bb1e16c125819b8d840d6b8ef136b0b9127c76064466f5229b`.
-2. Utilizando el _template_ a continuación, sustituye los parámetros con los datos recibidos en tu notificación.
+1. To extract the timestamp (`ts`) and the key (`v1`) from the `x-signature` header, split the header content by the character “,”, resulting in a list of elements. The value for the `ts` prefix is the notification's timestamp (in milliseconds) and `v1` is the encrypted key. Following the example presented earlier, `ts=1742505638683` and `v1=ced36ab6d33566bb1e16c125819b8d840d6b8ef136b0b9127c76064466f5229b`.
+2. Using the template below, replace the parameters with the data received in your notification.
 
 ```
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
-- Los parámetros con el sufijo `_url` provienen de _query params_. Ejemplo: [data.id_url] se sustituirá por el valor correspondiente al ID del evento (`data.id`). Este _query param_ puede ser hallado en la notificación recibida. En el ejemplo de notificación mencionado anteriormente, el `data.id_url` es `123456`.
-- [x-request-id_header] deberá ser sustituido por el valor recibido en el _header_ `x-request-id`. En el ejemplo de notificación mencionado anteriormente, el `x-request-id` es `bb56a2f1-6aae-46ac-982e-9dcd3581d08e`.
-- [ts_header] será el valor `ts` extraído del _header_ `x-signature`. En el ejemplo de notificación mencionado anteriormente, el `ts` es `1742505638683`.
-- Al aplicar los datos al _template_, quedaría de la siguiente manera:
+
+- Parameters with the `_url` suffix come from _query params_. Example: [data.id_url] will be replaced by the value corresponding to the event ID (`data.id`). This _query param_ can be found in the received notification. In the previously mentioned notification example, `data.id_url` is `123456`.
+- [x-request-id_header] should be replaced by the value received in the `x-request-id` header. In the previously mentioned notification example, `x-request-id` is `bb56a2f1-6aae-46ac-982e-9dcd3581d08e`.
+- [ts_header] will be the `ts` value extracted from the `x-signature` header. In the previously mentioned notification example, `ts` is `1742505638683`.
+- Applying the data to the template, it would look like this:
 `id:123456;request-id:bb56a2f1-6aae-46ac-982e-9dcd3581d08e;ts:1742505638683;`
 
 > RED_MESSAGE
 >
-> Importante
+> Important
 >
-> Si alguno de los valores presentados en el modelo anterior no está presente en la notificación recibida, debes removerlo.
+> If any of the values presented in the above model are not present in the received notification, you should remove them.
 
-3. En [Tus integraciones](/developers/panel/app), selecciona la aplicación integrada, haz clic en **Webhooks > Configurar notificación** y revela la clave secreta generada.
-[IMG]
+3. In [Your integrations](/developers/panel/app), select the integrated application, click on **Webhooks > Configure Notification**, and reveal the generated secret key.
 
-4. Genera la contraclave para la validación. Para hacer esto, calcula un [HMAC](https://es.wikipedia.org/wiki/HMAC) con la función de `hash SHA256` en base hexadecimal, utilizando la **clave secreta** como clave y el template con los valores como mensaje.
+![Signature](/images/cow/not6-signature-es.png) 
+
+4. Generate the counter key for validation. To do this, calculate an [HMAC](https://en.wikipedia.org/wiki/HMAC) with the `SHA256 hash` function in hexadecimal base, using the **secret key** as the key and the template with the values as the message.
 
 [[[
 ```php
@@ -144,10 +163,9 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ```
 ]]]
 
-5. Finalmente, compara la clave generada con la clave extraída del _header_, asegurándote de que tengan una correspondencia exacta. Además, puedes usar el _timestamp_ extraído del header para compararlo con un timestamp generado en el momento de la recepción de la notificación, con el fin de establecer una tolerancia de demora en la recepción del mensaje.
+5. Finally, compare the generated key with the key extracted from the header, ensuring they match exactly. Additionally, you can use the timestamp extracted from the header to compare it with a timestamp generated at the time of notification reception, in order to establish a delay tolerance for message reception.
 
-A continuación, puedes ver ejemplos de código completo:
-
+Below, you can see complete code examples:
 
 [[[
 ```php
@@ -375,19 +393,19 @@ if sha == hash {
 ]]]
 ::::
 
-::::TabComponent{title="Configuración al crear pagos y preferencias"}
-## Configuración al crear pagos y preferencias
-Durante el proceso de creación de [preferencias](/developers/es/reference/preferences/_checkout_preferences/post) o [pagos](/developers/es/reference/payments/_payments/post), es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. 
+::::TabComponent{title="Configuration when creating payments and preferences"}
+## Configuration when creating payments and preferences
+During the process of creating [preferences](/developers/en/reference/preferences/_checkout_preferences/post) or [payments](/developers/en/reference/payments/_payments/post), it is possible to configure the notification URL more specifically for each payment using the `notification_url` field.
 
 > RED_MESSAGE
 >
-> Importante
+> Important
 >
-> La `notification_url` debe ser una URL con protocolo HTTPS. Esto garantiza que las notificaciones se transmitan de forma segura y que los datos intercambiados estén encriptados, protegiendo la integridad y confidencialidad de la información. Además, HTTPS autentica que la comunicación se realiza con el servidor legítimo, evitando posibles interceptaciones malintencionadas.
+> The `notification_url` must be an HTTPS URL. This ensures that notifications are transmitted securely and that exchanged data is encrypted, protecting the integrity and confidentiality of the information. Additionally, HTTPS authenticates that the communication is being made with the legitimate server, avoiding possible malicious interceptions.
 
-A continuación, explicamos cómo configurar notificaciones al crear un pago utilizando nuestros SDKs.
+Below, we explain how to configure notifications when creating a payment using our SDKs.
 
-1. En el campo `notification_url`, indica la URL desde la que se recibirán las notificaciones, como se muestra a continuación.
+1. In the `notification_url` field, specify the URL from which notifications will be received, as shown below.
 
 [[[
 ```php
@@ -631,7 +649,7 @@ curl -X POST \
 ```
 ]]]
 
-2. Implementa el receptor de notificaciones usando el siguiente código como ejemplo:
+2. Implement the notification receiver using the following code as an example:
 
 ```php
 <?php
@@ -656,13 +674,13 @@ curl -X POST \
 ?>
 ```
 
-Luego de realizar la configuración  necesaria, la notificación Webhook será enviada con formato `JSON`. Puedes ver a continuación un ejemplo de notificación del tópico `payment`, y las descripciones de la información enviada en la tabla debajo.
+After performing the necessary configuration, the Webhook notification will be sent in `JSON` format. Below you can see an example of a notification for the `payment` topic, and the descriptions of the information sent in the table below.
 
-> WARNING
+> RED_MESSAGE
 >
-> Importante
+> Important
 >
-> Los pagos de prueba, creados con credenciales de prueba, no enviarán notificaciones. La única vía para probar la recepción de notificaciones es mediante la [Configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
+> Test payments, created with test credentials, will not send notifications. The only way to test notification reception is through [Configuration via Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#configurationviayourintegrations).
 
 ```json
 {
@@ -679,35 +697,35 @@ Luego de realizar la configuración  necesaria, la notificación Webhook será e
 }
 ```
 
-| Atributo | Descripción | Ejemplo en el JSON |
+| Attribute | Description | Example in JSON |
 | --- | --- | --- |
-| **id** | ID de la notificación | `12345` |
-| **live_mode** | Indica si la URL ingresada es válida.| `true` |
-| **type** | Tipo de notificacion recebida e acuerdo con el tópico previamente seleccionado (payments, mp-connect, subscription, claim, automatic-payments, etc) | `payment` |
-| **date_created** | Fecha de creación del recurso notificado | `2015-03-25T10:04:58.396-04:00` |
-| **user_id**| Identificador del vendedor | `44444` |
-| **api_version** | Valor que indica la versión de la API que envía la notificación | `v1` |
-| **action** | Evento notificado, que indica si es una actualización de un recurso o la creación de uno nuevo | `payment.created` |
-| **data.id**  | ID del pago, de la orden comercial o del reclamo. | `999999999` |
+| **id** | Notification ID | `12345` |
+| **live_mode** | Indicates if the entered URL is valid. | `true` |
+| **type** | Type of notification received according to the previously selected topic (payments, mp-connect, subscription, claim, automatic-payments, etc) | `payment` |
+| **date_created** | Creation date of the notified resource | `2015-03-25T10:04:58.396-04:00` |
+| **user_id** | Seller identifier | `44444` |
+| **api_version** | Value indicating the API version that sends the notification | `v1` |
+| **action** | Notified event, indicating whether it is an update of a resource or the creation of a new one | `payment.created` |
+| **data.id** | ID of the payment, commercial order, or claim. | `999999999` |
 ::::
 
-Una vez que las notificaciones sean configuradas, consulta las Acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas.
+:::::
 
-Una vez que las notificaciones sean configuradas, consulta las Acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas.
+Once notifications are configured, check the Necessary actions after receiving a notification to inform that they were properly received.
 
-## Acciones necesarias después de recibir la notificación
+## Necessary actions after receiving the notification
 
-Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que esa recepción fue correcta. Para eso, debes devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)`.
+When you receive a notification on your platform, Mercado Pago expects a response to validate that the reception was correct. For this, you must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 
-El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
+The timeout for this confirmation will be 22 seconds. If this response is not sent, the system will understand that the notification was not received and will make a new attempt to send it every 15 minutes until it receives the response. After the third attempt, the interval will be extended, but the sending will continue.
 
 [IMG]
 
-Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
+After responding to the notification, confirming its receipt, you can obtain all information about the notified `payments` topic event by making a GET request to the endpoint [v1/payments/{id}](/developers/en/reference/payments/_payments_id/get).
 
-Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como por ejemplo, actualizar un pago aprobado.
+With this information, you will be able to make the necessary updates to your platform, such as updating an approved payment.
 
-Además, para consultar el estado del evento posterior a la notificación, puedes utilizar los diferentes métodos de nuestros SDKs para realizar la consulta con el ID que fue enviado en la notificación.
+Additionally, to check the status of the event after the notification, you can use the various methods of our SDKs to perform the query with the ID that was sent in the notification.
 
 [[[
 ```java
@@ -764,6 +782,7 @@ when 'invoice'
 when 'point_integration_wh'
   # Contiene la informaciòn relacionada a la notificaciòn.
 end
+```
 ```csharp
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 switch (type)

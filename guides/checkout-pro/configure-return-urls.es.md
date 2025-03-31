@@ -14,12 +14,11 @@ Puedes configurar hasta tres URL de retorno diferentes, que corresponderán a lo
 
 ## Definir URL de retorno
 
-En tu código *backend*, deberás configurar la URL a la que quieres que Mercado Pago redirija al usuario una vez que haya completado el proceso de pago. 
+En tu código backend, deberás configurar la URL a la que quieres que Mercado Pago redirija al usuario una vez que haya completado el proceso de pago. 
 
 > Si lo prefieres, también es posible configurar las URLs de retorno a través del envío POST a la API [Crear preferencia](/developers/es/reference/preferences/_checkout_preferences/post) con el atributo ‘back_urls’ informando las URLs a las que se debe dirigir al comprador al finalizar el pago.
 
 A continuación, te compartimos ejemplos de cómo incluir el atributo `back_urls` según el lenguaje de programación que estés utilizando, además del detalle de cada uno de los posibles parámetros.
-
 
 [[[
 ```php
@@ -100,7 +99,7 @@ preference_data = {
 ]]]
 
 | Atributo     | Descripción                                                                                                                                                                                                                                |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------|-----|
 | `auto_return`| Los compradores son redirigidos automáticamente al site cuando se aprueba el pago. El valor predeterminado es `approved`. **El tiempo de redireccionamiento será de hasta 40 segundos y no podrá ser personalizado**. Por defecto, también se mostrará un botón de "Volver al sitio".|
 | `back_urls`  | URL de retorno al sitio. Los escenarios posibles son: <br>`success`: URL de retorno cuando se aprueba el pago.<br>`pending`: URL de retorno cuando el pago está pendiente.<br>`failure`: URL de retorno cuando se rechaza el pago.                    |
 
@@ -141,14 +140,13 @@ En este punto, el pago está en estado pendiente porque el usuario todavía tien
 
 Para brindarle mayor información al comprador, recomendamos que, para los estados de pago `pending`, redirecciones al comprador a tu sitio web y le compartas información clara sobre cómo completar el pago.
 
-Una vez que el usuario va al establecimiento correspondiente y realiza el pago en efectivo con el comprobante generado, Mercado pago es notificado y el pago cambiará de estado. Recomendamos que [configures las notificaciones de pago](#) para que tu servidor pueda procesar esta notificación y actualizar el estado del pedido en tu base de datos.
+Una vez que el usuario va al establecimiento correspondiente y realiza el pago en efectivo con el comprobante generado, Mercado pago es notificado y el pago cambiará de estado. Recomendamos que [configures las notificaciones de pago](/developers/es/docs/checkout-pro/payment-notifications) para que tu servidor pueda procesar esta notificación y actualizar el estado del pedido en tu base de datos.
 
 ### Elegir el tipo de integración
 
-Una vez que hayas terminado de realizar las configuraciones en tu backend y hayas obtenido tu ID de la preferencia, deberás avanzar a las configuraciones del _frontend_. Para eso, es necesario que elijas el tipo de integración que mejor se adapte a tus necesidades, ya sea para integrar un **sitio web** o para una **aplicación móvil**. 
+Una vez que hayas terminado de realizar las configuraciones en tu backend y hayas obtenido tu ID de la preferencia, deberás avanzar a las configuraciones del frontend. Para eso, es necesario que elijas el tipo de integración que mejor se adapte a tus necesidades, ya sea para integrar un **sitio web** o para una **aplicación móvil**. 
 
 Selecciona el tipo de integración que quieres hacer y sigue los pasos detallados para completar la integración de Checkout Pro.
-
 
 ---
 future_product_avaible: 

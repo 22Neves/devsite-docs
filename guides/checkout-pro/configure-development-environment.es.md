@@ -14,6 +14,8 @@ El **SDK de backend** está diseñado para manejar las operaciones del lado del 
 
 > NOTE
 >
+> Nota
+>
 > Si lo prefieres, puedes descargar los SDKs de Mercado Pago en nuestras [bibliotecas oficiales](/developers/es/docs/sdks-library/server-side).
 
 Instala el SDK de Mercado Pago en el lenguaje que mejor se ajuste a tu integración utilizando un gestor de dependencias, tal como mostramos a continuación. 
@@ -83,7 +85,7 @@ Para inicializar la biblioteca de Mercado Pago, deberás utilizar tus **credenci
 >
 > Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_compartir_credenciales) para más información.
 
-En esta etapa, deberás utilizar tu _Access Token_ de **producción**, al que podrás acceder ingresando a los **Detalles de tu aplicación** en [Tus integraciones](/developers/panel/app), bajo el título **Producción > Credenciales de producción** en el menú ubicado a la izquierda de la pantalla.
+En esta etapa, deberás utilizar tu `access token` de **producción**, al que podrás acceder ingresando a los **Detalles de tu aplicación** en [Tus integraciones](/developers/panel/app), bajo el título **Producción > Credenciales de producción** en el menú ubicado a la izquierda de la pantalla.
 
 Primero, deberás **activar las credenciales de producción**. Para hacerlo, deberás completar algunos datos datos sobre tu negocio siguiendo los pasos a continuación.
 
@@ -91,7 +93,7 @@ Primero, deberás **activar las credenciales de producción**. Para hacerlo, deb
 2. En el campo **Sitio web (obligatorio)**, completa con la URL del sitio web de tu negocio.
 3. Acepta la ----[mlb]----[Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Declaración de Privacidad](https://www.mercadopago.com/privacidad) ------------ y los [Términos y condiciones](/developers/es/docs/resources/legal/terms-and-conditions). Completa el reCAPTCHA y haz clic en **Activar credenciales de producción**.
 
-Una vez que hayas activado tus credenciales de producción, podrás utilizar tu Access Token de **producción**.
+Una vez que hayas activado tus credenciales de producción, podrás utilizar tu `access token` de **producción**.
 
 A continuación, en el *backend* de tu proyecto, crea un archivo _main_ en base al lenguaje de programación que usaras. Allí, coloca el siguiente código reemplazando el valor `PROD_ACCESS_TOKEN` con tu `access token` de producción. 
 
