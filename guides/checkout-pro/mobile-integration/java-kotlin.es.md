@@ -10,7 +10,8 @@ Durante el desarrollo de aplicaciones móviles con React Native, es necesario mo
 
 :::::TabsComponent
 
-::::TabComponent{title="Android"} En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en Java o Kotlin. 
+::::TabComponent{title="Android"} 
+En este paso vamos a instalar y configurar las dependencias necesarias para implementar **Custom Tabs** en tu proyecto desarrollado en Java o Kotlin. 
 
 ## Configuración para Android Nativo
 
@@ -80,6 +81,7 @@ Para configurar un deeplink nativo en android, dirígete al archivo android **/a
 
 En los valores `intent` deberás establecer que la actividad sea navegable por otras aplicaciones. Con los valores `scheme` y `host` podrás definir el deeplink de la app a una actividad específica.
 
-Ten en cuenta que este deeplink es el que usarás en todas las `back_url` de tu preferencia. En los ciclos de la actividad que fue expuesta (por ejemplo, onCreate, onResume) podrás colocar tu lógica de negocio después del pago. ::::
+Ten en cuenta que este deeplink es el que usarás en todas las `back_url` de tu preferencia. En los ciclos de la actividad que fue expuesta (por ejemplo, onCreate, onResume) podrás colocar tu lógica de negocio después del pago. 
+::::
 
 :::::

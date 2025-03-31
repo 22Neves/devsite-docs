@@ -12,7 +12,8 @@ A continuación, selecciona el sistema operativo para el que quieres integrar y 
 
 :::::TabsComponent
 
-::::TabComponent{title="Android"} En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utilizando **flutter_custom_tabs**. Te mostraremos cómo realizar la instalación de las bibliotecas necesarias, cómo configurar las dependencias, y te daremos ejemplos prácticos de cómo abrir páginas web utilizando Custom Tabs.
+::::TabComponent{title="Android"} 
+En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utilizando **flutter_custom_tabs**. Te mostraremos cómo realizar la instalación de las bibliotecas necesarias, cómo configurar las dependencias, y te daremos ejemplos prácticos de cómo abrir páginas web utilizando Custom Tabs.
 
 ## Instalación de la dependencia Flutter Custom Tabs
 
@@ -136,9 +137,11 @@ Flutter admite utilizar Deep Links en Android y navegadores web. Al abrir una UR
 
 Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de Android. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 
 
-> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar Deep Links para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar App Link para Android.](https://docs.flutter.dev/cookbook/navigation/set-up-app-links). ::::
+> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar Deep Links para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar App Link para Android.](https://docs.flutter.dev/cookbook/navigation/set-up-app-links). 
+::::
 
-::::TabComponent{title="iOS"} En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utilizando **flutter_custom_tabs**. Te mostraremos cómo realizar la instalación de las bibliotecas necesarias, cómo configurar las dependencias y te daremos ejemplos prácticos de cómo abrir páginas web utilizando Custom Tabs.
+::::TabComponent{title="iOS"} 
+En este paso vamos a implementar Custom Tabs en una aplicación de Flutter utilizando **flutter_custom_tabs**. Te mostraremos cómo realizar la instalación de las bibliotecas necesarias, cómo configurar las dependencias y te daremos ejemplos prácticos de cómo abrir páginas web utilizando Custom Tabs.
 
 ## Instalación de la dependencia Flutter Custom Tabs
 
@@ -262,7 +265,8 @@ Flutter admite utilizar Deep Links en iOS y navegadores web. Al abrir una URL, s
 
 Si se ejecuta la aplicación en un navegador web, no es necesaria ninguna configuración adicional. Las rutas se gestionan del mismo modo que un enlace profundo de iOS. Por defecto, las aplicaciones web leen la ruta del enlace profundo a partir del fragmento de url utilizando el patrón `/#/path/to/app/screen`, pero esto puede cambiarse configurando la estrategia de URL para tu app. 
 
-> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar DeepLinks para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar Universal Link para iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links). ::::
+> Para conocer más, ingresa a las documentaciones oficiales sobre [cómo manejar DeepLinks para aplicaciones Flutter](https://medium.com/flutter-community/deep-links-and-flutter-applications-how-to-handle-them-properly-8c9865af9283) y [cómo configurar Universal Link para iOS](https://docs.flutter.dev/cookbook/navigation/set-up-universal-links). }
+::::
 
 :::::
 
