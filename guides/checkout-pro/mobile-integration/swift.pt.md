@@ -1,12 +1,12 @@
+# Integrar com Swift
+
+Safari View Controller integra todo o Safari em sua aplicação usando um controlador de visualização opaco. Ou seja, você não pode projetá-lo, não pode interagir com ele e não pode extrair dele nenhum dado privado. Como resultado, **SFSafariViewController** pode aproveitar as vantagens dos dados seguros da Web do usuário.
+
 > WARNING
 >
 > Importante
 >
 > Antes de começar a integrar o Checkout Pro para Mobile, você deve ter uma preferência de pagamento criada em seu backend. Se você ainda não o fez, vá para [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
-
-# Integrar com Swift
-
-Safari View Controller integra todo o Safari em sua aplicação usando um controlador de visualização opaco. Ou seja, você não pode projetá-lo, não pode interagir com ele e não pode extrair dele nenhum dado privado. Como resultado, **SFSafariViewController** pode aproveitar as vantagens dos dados seguros da Web do usuário.
 
 ### Android
 

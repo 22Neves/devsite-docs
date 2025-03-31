@@ -1,12 +1,12 @@
+# Integrar con React Native CLI
+
+Durante el desarrollo de aplicaciones móviles con React Native, es necesario mostrar contenido web dentro de una aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
+
 > WARNING
 >
 > Importante
 >
 > Antes de comenzar a integrar Checkout Pro para Mobile, deberás contar con una preferencia de pago creada en tu backend. Si aún no lo has hecho, ve a [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
-
-# Integrar con React Native CLI
-
-Durante el desarrollo de aplicaciones móviles con React Native, es necesario mostrar contenido web dentro de una aplicación. Para lograr esto, existen varias opciones, entre las cuales se destacan el uso de Custom Tabs (para Android) y Safari View Controller (para iOS). Estas tecnologías permiten abrir páginas web en un navegador nativo integrado en la aplicación, brindando una experiencia de navegación más fluida y coherente para los usuarios.
 
 A continuación, selecciona el sistema operativo para el que quieres integrar y sigue el paso a paso indicado.
 
@@ -17,7 +17,7 @@ En este paso vamos a instalar y configurar las dependencias necesarias para impl
 
 ## Uso de InAppBrowser
 
-Con React Native CLI, te sugerimos usar [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), una dependencia  altamente flexible que brinda una solución integral para integrar un navegador web dentro de tu aplicación de React Native. Al considerar el uso de React-Native-InAppBrowser-Reborn se tuvieron en cuenta los siguientes aspectos:
+Con React Native CLI, te sugerimos usar [React-Native-InAppBrowser](https://www.npmjs.com/package/react-native-inappbrowser-reborn), una dependencia  altamente flexible que brinda una solución completa para integrar un navegador web dentro de tu aplicación de React Native. Al considerar el uso de React-Native-InAppBrowser-Reborn se tuvieron en cuenta los siguientes aspectos:
 
 * Es una dependencia que permite brindar una experiencia de navegación web integrada y fluida dentro de la aplicación.
 * Cuenta con una gran variedad de funciones personalizables para adaptarse a las necesidades específicas de la aplicación.
