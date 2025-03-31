@@ -2,6 +2,10 @@
 
 With Mercado Pago's ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ it's also possible to offer instant payments with Pix through a **QR code** or a **payment link**.
 
+> WARNING
+>
+> If you want to offer payments via Pix, you must have your keys registered. If you haven't already, [click here](https://www.youtube.com/watch?v=60tApKYVnkA) for more information on how to register them.
+
 **Pix** is an instant electronic payment method offered by the Central Bank of Brazil to individuals and businesses.
 
 If you already [set up your environment](/developers/en/docs/checkout-api/development-environment) and want to offer payments with Pix, follow the steps below.
@@ -15,10 +19,6 @@ If you already [set up your environment](/developers/en/docs/checkout-api/develo
 To be able to receive payments, you need to add a form in the frontend that securely captures the payer's information.
 
 If you already have a development that includes your own payment form, make sure to include **Pix** among the payment options you want to offer, as indicated below, and continue to the next step.
-
-> RED_MESSAGE
->
-> When setting up payments with boleto bancário, it is mandatory that the `zip_code`, `street_name`, `street_number`, `neighborhood`,` city` and `state` fields are present in the payment form, and that the buyer fill them out correctly. If you have already made a configuration without these fields in it, you must update it to make sure your payments get processed correctly.
 
 If you do not have a payment form, add the form below to your project, including the identifier for boleto bancário among the payment methods to be offered.
 

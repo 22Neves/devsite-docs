@@ -2,11 +2,11 @@
 
 Com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API------------ do Mercado Pago, também é possível oferecer pagamentos instantâneos com Pix via **código QR** ou um **link de pagamento**.
 
-**Pix** é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. 
-
 > WARNING
 > 
 > Para oferecer pagamentos via Pix, é necessário ter as chaves Pix cadastradas. Caso ainda não tenha, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) para mais informações sobre como cadastrá-las. 
+
+**Pix** é um meio de pagamento eletrônico instantâneo oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas. 
 
 Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api/development-environment) e quer oferecer pagamentos via Pix, siga os passos abaixo.
 

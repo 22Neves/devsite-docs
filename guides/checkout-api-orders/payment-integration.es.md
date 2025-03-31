@@ -87,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: QR
+ - card_icon: Pay
  - card_title: Pix
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes un código QR o un código de pago.
  - card_button: /developers/es/docs/checkout-api/payment-integration/pix
@@ -97,7 +97,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Boleto
  - card_title: Boleto bancário
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza a través de boleto bancário.
  - card_button: /developers/es/docs/checkout-api/payment-integration/boleto
@@ -107,7 +107,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Cuenta Mercado Pago
  - card_description: Ofrece a los pagadores la posibilidad de utilizar cualquiera de los medios de pago guardados en su cuenta. 
  - card_button:
@@ -144,7 +144,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Cash
  - card_title: Otros medios de pago
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de Rapipago o Pago Fácil.
  - card_button: /developers/es/docs/checkout-api/payment-integration/other-payment-methods
@@ -154,7 +154,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Cuenta Mercado Pago
  - card_description: Ofrece a los pagadores la posibilidad de utilizar cualquiera de los medios de pago guardados en su cuenta de Mercado Pago.
  - card_button:
@@ -190,7 +190,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Cash
  - card_title: Otros medios de pago
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de OXXO, Paycash, Citibanamex, Santander o BBVA Bancomer.
  - card_button: /developers/es/docs/checkout-api/payment-integration/other-payment-methods
@@ -210,7 +210,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Cuenta Mercado Pago
  - card_description: Ofrece a los pagadores la posibilidad de utilizar cualquiera de los medios de pago guardados en su cuenta 
  - card_button:

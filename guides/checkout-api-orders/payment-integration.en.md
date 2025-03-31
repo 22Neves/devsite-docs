@@ -87,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: code
+ - card_icon: Pay
  - card_title: Pix
  - card_description: Receive instant electronic payments by offering your customers a QR code or a payment code.
  - card_button: /developers/en/docs/checkout-api/payment-integration/pix
@@ -97,7 +97,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Boleto
  - card_title: Boleto bancário
  - card_description: Receive the payments that the customer makes through Boleto bancário in your account.
  - card_button: /developers/en/docs/checkout-api/payment-integration/boleto
@@ -107,7 +107,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Mercado Pago Account
  - card_description: Offer the option to use any of the payment methods saved in the payer’s Mercado Pago account.
  - card_button:
@@ -144,7 +144,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Cash
  - card_title: Other payment methods
  - card_description: Receive the deferred payments that the customer makes through Rapipago or Pago Fácil in your account.
  - card_button: /developers/en/docs/checkout-api/payment-integration/other-payment-methods
@@ -154,7 +154,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Mercado Pago Account
  - card_description: Offer the option to use any of the payment methods saved in the payer’s Mercado Pago account.
  - card_button:
@@ -190,7 +190,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: Cash
  - card_title: Other payment methods
  - card_description: Receive the deferred payments that the customer makes through OXXO, Paycash, Citibanamex, Santander or BBVA Bancomer in your account.
  - card_button: /developers/en/docs/checkout-api/payment-integration/other-payment-methods
@@ -210,7 +210,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: Wallet
  - card_title: Mercado Pago Account
  - card_description: Offer the option to use any of the payment methods saved in the payer’s Mercado Pago account.
  - card_button:
