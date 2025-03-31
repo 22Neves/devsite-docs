@@ -11,7 +11,7 @@ Consulta el flujo general de una notificación en el diagrama a continuación.
 A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
 
 | Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
-|---|---|---|---|
+|-|-|-|-|
 | Configuración a través de Tus Integraciones       | Este método permite configurar notificaciones directamente en tu Panel de Desarrollador. Puedes configurar notificaciones para cada una de tus aplicaciones, identificar cuentas distintas si es necesario, y validar el origen de la notificación mediante una firma secreta. | - Identificación sencilla de cuentas distintas, asegurando una adecuada gestión en entornos diversos. <br> - Alta seguridad al validar el origen de las notificaciones mediante una firma secreta, que garantiza la integridad de la información recibida. <br> - Más versátil y eficaz para mantener un control centralizado y gestionar la comunicación con las aplicaciones de manera eficiente. | Recomendado para la mayoría de las integraciones.                                                          |
 | Configuración durante la creación de pagos o preferencias | Las notificaciones se configuran para cada transacción individualmente durante la creación del pago o preferencia.                                                                                                                  | - Ajustes específicos para cada transacción. <br> - Flexibilidad en casos de necesidad de parámetros dinámicos obligatorios. <br> - Ideal para integraciones como plataformas de pago para múltiples vendedores.                                                                                    | Conveniente en los casos en que sea necesario enviar un query parameter dinámico de forma obligatoria, además de ser adecuado para integraciones que funcionan como una plataforma de pago para múltiples vendedores. |
 
@@ -386,153 +386,6 @@ if sha == hash {
 }
 ```
 ]]]
-
-
-Una vez que las notificaciones sean configuradas, consulta las acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas:
-
-## Acciones necesarias después de recibir la notificación
-
-Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que esa recepción fue correcta. Para eso, debes devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)`.
-
-El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
-
-![not-necessary-actions](/images/cow/not-necessary-actions.png)
-
-Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
-
-Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como por ejemplo, actualizar un pago aprobado.
-
-Además, para consultar el estado del evento posterior a la notificación, puedes utilizar los diferentes métodos de nuestros SDKs para realizar la consulta con el ID que fue enviado en la notificación.
-
-[[[
-```java
-MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
-switch (type) {
-    case "payment":
-        Payment payment = Payment.findById(data.id);
-        break;
-    case "plan":
-        Plan plan = Plan.findById(data.id);
-        break;
-    case "subscription":
-        Subscription subscription = Subscription.findById(data.id);
-        break;
-    case "invoice":
-        Invoice invoice = Invoice.findById(data.id);
-        break;
-    case "point_integration_wh":
-        // POST contiene la informaciòn relacionada a la notificaciòn.
-        break;
-}
-```
-```node
-mercadopago.configurations.setAccessToken('ENV_ACCESS_TOKEN');
-switch (type) {
-  case 'payment':
-    const payment = await mercadopago.payment.findById(data.id);
-    break;
-  case 'plan':
-    const plan = await mercadopago.plans.get(data.id);
-    break;
-  case 'subscription':
-    const subscription = await mercadopago.subscriptions.get(data.id);
-    break;
-  case 'invoice':
-    const invoice = await mercadopago.invoices.get(data.id);
-    break;
-  case 'point_integration_wh':
-    // Contiene la informaciòn relacionada a la notificaciòn.
-    break;
-}
-```
-```ruby
-MercadoPago::SDK.configure(access_token: 'ENV_ACCESS_TOKEN')
-case payload['type']
-when 'payment'
-  payment = MercadoPago::Payment.search(id: payload['data']['id'])
-when 'plan'
-  plan = MercadoPago::Plan.search(id: payload['data']['id'])
-when 'subscription'
-  subscription = MercadoPago::Subscription.search(id: payload['data']['id'])
-when 'invoice'
-  invoice = MercadoPago::Invoice.search(id: payload['data']['id'])
-when 'point_integration_wh'
-  # Contiene la informaciòn relacionada a la notificaciòn.
-end
-```
-```csharp
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-switch (type)
-{
-    case "payment":
-        Payment payment = await Payment.FindByIdAsync(payload["data"]["id"].ToString());
-        break;
-    case "plan":
-        Plan plan = await Plan.FindByIdAsync(payload["data"]["id"].ToString());
-        break;
-    case "subscription":
-        Subscription subscription = await Subscription.FindByIdAsync(payload["data"]["id"].ToString());
-        break;
-    case "invoice":
-        Invoice invoice = await Invoice.FindByIdAsync(payload["data"]["id"].ToString());
-        break;
-    case "point_integration_wh":
-        // Contiene la informaciòn relacionada a la notificaciòn.
-        break;
-}
-```
-```python
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
-notification_type = data["type"]
-if notification_type == "payment":
-    payment = sdk.payment().get(payload["data"]["id"])
-elif notification_type == "plan":
-    plan = sdk.preapproval().get(payload["data"]["id"]) 
-elif notification_type == "subscription":
-    subscription = sdk.preapproval().get(payload["data"]["id"])
-elif notification_type == "invoice":
-    invoice = sdk.invoice().get(payload["data"]["id"])
-elif notification_type == "point_integration_wh":
-    # Contiene la informaciòn relacionada a la notificaciòn.
-else:
-    return
-```
-```golang
-accessToken := "{{ACCESS_TOKEN}}"
-cfg, err := config.New(accessToken)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-client := customer.NewClient(cfg)
-switch req.Type {
-case "payment":
-	client := payment.NewClient(cfg)
-	resource, err = client.Get(context.Background(), resource.ID)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-case "plan":
-    client := preapprovalplan.NewClient(cfg)
-    resource, err := client.Get(context.Background(), preApprovalPlanID)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-case "invoice":
-	client := invoice.NewClient(cfg)
-	resource, err := client.Get(context.Background(), req.Data.ID)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-case "point_integration_wh":
-	// Contiene la informaciòn relacionada a la notificaciòn.
-}
-```
-]]]
-
 ::::
 
 ::::TabComponent{title="Configuración al crear pagos y preferencias"}
@@ -849,7 +702,9 @@ Luego de realizar la configuración  necesaria, la notificación Webhook será e
 | **api_version** | Valor que indica la versión de la API que envía la notificación | `v1` |
 | **action** | Evento notificado, que indica si es una actualización de un recurso o la creación de uno nuevo | `payment.created` |
 | **data.id**  | ID del pago, de la orden comercial o del reclamo. | `999999999` |
+::::
 
+:::::
 
 Una vez que las notificaciones sean configuradas, consulta las acciones necesarias después de recibir una notificación para informar que las mismas fueron debidamente recibidas:
 
@@ -995,7 +850,3 @@ case "point_integration_wh":
 }
 ```
 ]]]
-
-::::
-
-:::::
