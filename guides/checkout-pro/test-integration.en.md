@@ -23,6 +23,6 @@ To test your integration, you need to perform a test purchase using a test buyer
 
 ![testuser](/images/dashboard/new-test-users-es.png)
 
-## Create Test Application and Obtain Credentials
+## 3. Create Test Application and Obtain Credentials
 
 [TXTSNIPPET][/guides/snippets/test-cross/create-test-app]
