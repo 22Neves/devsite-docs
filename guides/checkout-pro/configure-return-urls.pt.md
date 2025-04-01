@@ -2,9 +2,9 @@
 
 A URL de retorno é o endereço para o qual o usuário é redirecionado após completar o pagamento, seja ele bem-sucedido, falho ou pendente. Esta URL deve ser uma página web controlável, como um servidor com domínio nomeado (DNS).
 
-Esse processo é configurado através do atributo `back_urls` no backend, na preferência de pagamento associada à sua integração. Com este atributo, você pode definir que o comprador seja redirecionado ao site que você configurou, seja automaticamente ou através do botão "Voltar ao site", de acordo com o estado do pagamento.
+Esse processo é configurado através do atributo `back_urls` no backend, na preferência de pagamento associada à sua integração. Com este atributo, você pode definir para qual site o comprador será redirecionado, seja automaticamente ou através do botão "Voltar ao site", de acordo com o estado do pagamento.
 
-Você pode configurar até três URLs de retorno diferentes, correspondendo aos cenários de pagamento pendente, sucesso ou erro.
+Você pode configurar até três URLs de retorno diferentes, correspondendo aos cenários de pagamento **pendente**, **sucesso** ou **erro**.
 
 > NOTE
 >
