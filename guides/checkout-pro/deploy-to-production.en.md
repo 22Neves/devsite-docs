@@ -20,4 +20,4 @@ For more information, check our [Credentials](/developers/en/docs/checkout-pro/a
 
 Once you have finished setting up your integration, we recommend that you perform a **quality measurement**, which is a certification process for your integration. This will ensure that your development meets the necessary quality requirements to provide a better experience and a higher payment approval rate.
 
-To learn more, visit the [How to measure the quality of your integration](/developers/en/docs/integration-quality) documentation.
+To learn more, visit the [How to measure the quality of your integration](/developers/en/docs/checkout-pro/how-tos/integration-quality) documentation.
