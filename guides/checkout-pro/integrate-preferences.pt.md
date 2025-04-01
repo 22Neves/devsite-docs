@@ -6,7 +6,7 @@
 
 Uma preferência de pagamento é um objeto que reúne informações sobre o produto ou serviço pelo qual você deseja cobrar. No ecossistema do Mercado Pago, esse objeto é denominado `preference`. Ao criar uma preferência de pagamento, é possível definir atributos essenciais, como preço, quantidade e métodos de pagamento, além de configurar outros aspectos do fluxo de pagamento.
 
-Para configurar uma preferência de pagamento, utilize o método correspondente à _preference_ no SDK de backend. É necessário criar uma nova preferência de pagamento para cada pedido ou fluxo de pagamento que você deseja iniciar.
+Para configurar uma preferência de pagamento, utilize o método correspondente à `preference` no SDK de backend. É necessário criar uma nova preferência de pagamento para cada pedido ou fluxo de pagamento que você deseja iniciar.
 
 Abaixo, você encontrará exemplos práticos de como implementar essa funcionalidade em seu backend utilizando o SDK, disponível em várias linguagens de programação. Certifique-se de preencher os atributos com informações precisas para detalhar cada transação e garantir um processo de pagamento eficiente.
 

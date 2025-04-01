@@ -17,7 +17,7 @@ Para testar sua integração, você deve realizar uma compra de teste utilizando
 2. Depois de acessar "Detalhes da aplicação", vá para a seção **Contas de teste** no menu lateral esquerdo e clique no botão **+ Criar conta de teste**.
 
 3. Na tela "Criar nova conta", insira a descrição **Comprador** para identificar a conta.
-4. Em seguida, selecione o **país de operação** da conta, lembrando que essa informação **não poderá ser editada** posteriormente.
+4. Em seguida, selecione o **país de operação** da conta, considerando que essa informação **não poderá ser editada** posteriormente.
 5. Opcionalmente, indique um valor para o **dinheiro disponível** maior do que o dos dois produtos do seu site.
 6. Aceite a [Declaração de Privacidade](https://www.mercadopago[FAKER][URL][DOMAIN]/privacidad) e os [Termos e condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em Criar conta de teste.
 
