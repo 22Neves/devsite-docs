@@ -1,42 +1,42 @@
 # Reembolsos e cancelamentos
 
-Os reembolsos e cancelamentos são ações que você pode realizar uma vez que um pagamento tenha sido efetuado. Ambas as ações envolvem a devolução do dinheiro e, por isso, é importante identificar suas diferenças para executar corretamente cada um dos processos.
+Os **reembolsos** e **cancelamentos** são ações disponíveis após a realização de um pagamento. Embora ambas envolvam a devolução de dinheiro, é crucial compreender suas diferenças para executar os processos corretamente.
 
-Um **cancelamento** é realizado quando um pagamento ainda não foi aprovado, e o dinheiro é devolvido ao cartão do comprador dentro do período definido pelo banco emissor. Por sua vez, um **reembolso** é realizado após a captura do pagamento, e a devolução do montante é feita diretamente na fatura, no caso de um cartão de crédito, ou na conta do pagador, quando o pagamento foi realizado por outros meios.
+- **Cancelamento**: Realizado quando um pagamento ainda não foi aprovado. Nesse caso, o valor é devolvido ao cartão do comprador dentro do prazo estabelecido pelo banco emissor.
 
-Veja mais informações sobre reembolsos e cancelamentos a seguir.
+- **Reembolso**: Ocorre após a captura do pagamento. O valor é devolvido diretamente na fatura (em pagamentos com cartão de crédito) ou na conta do pagador (para outros métodos).
+
+Abaixo, detalhamos as informações essenciais sobre cada processo.
 
 > RED_MESSAGE
 >
 > Importante
 >
-> Esta documentação está **destinada a integradores**. Se você é um comprador e precisa cancelar ou solicitar o reembolso de um pagamento, acesse sua conta do Mercado Pago, selecione a compra para a qual deseja solicitar, clique em "Preciso de ajuda" e escolha a opção de reembolso ou cancelamento.
+> Esta documentação está **destinada a integradores**. Se você é um comprador e precisa cancelar ou solicitar o reembolso de um pagamento, acesse sua conta do Mercado Pago, selecione a compra, clique em "Preciso de ajuda" e escolha entre as opções de reembolso ou cancelamento.
 
 ## Reembolsos
 
-Os reembolsos, transações que são realizadas quando uma cobrança determinada é revertida e os montantes pagos retornam ao comprador, são diretamente gerenciados através da API [Criar reembolso](/developers/pt/reference/chargebacks/_payments_id_refunds/post).
+Os **reembolsos** referem-se à reversão de uma cobrança, devolvendo os montantes ao comprador. Esse processo é gerenciado diretamente através da API [Criar reembolso](/developers/pt/reference/chargebacks/_payments_id_refunds/post). Existem duas formas de realizar reembolsos:
 
-É possível realizar um reembolso de duas maneiras: 
-
-- **Total**: quando o valor total da venda é devolvido ao comprador. Neste caso, não se deve indicar o valor a ser reembolsado no `body` da solicitação, que deve ser enviado vazio.
-- **Parcial**: quando apenas uma parte do valor pago é devolvida ao comprador. Neste caso, deve-se especificar a quantia a ser reembolsada no `body` da solicitação junto com o ID da transação.
+- **Total**: O valor completo da venda é devolvido ao comprador. Nesse caso, o `body` da solicitação deve ser enviado vazio.
+- **Parcial**: Apenas uma parte do valor pago é devolvida ao comprador. O valor a ser reembolsado deve ser especificado no `body` da solicitação, juntamente com o ID da transação.
 
 Antes de realizar um reembolso, é importante levar em consideração os seguintes fatores:
 
-- **Prazo de reembolso**: é possível reembolsar um pagamento dentro de 180 dias a partir da sua data de aprovação.
-- **Meio de pagamento**: para pagamentos com cartão de crédito, o valor será devolvido diretamente na fatura. Para outros meios de pagamento,----[mlb]----como Pix, por exemplo,------------ o valor será devolvido na conta do pagador.
-- **Dinheiro na conta**: é necessário ter saldo suficiente disponível na sua conta para efetuar a devolução do valor; caso contrário, a transação não será realizada.
-- **Processamento do pedido em modo manual**: será possível reembolsar apenas uma transação específica, seja parcial ou totalmente, mas para que o pedido seja reembolsado na sua totalidade é necessário que **todas as suas transações incluídas manualmente** sejam revertidas por completo.
+- **Prazo de reembolso**: Reembolsos podem ser realizados dentro de 180 dias após a aprovação do pagamento.
+- **Meio de pagamento**: Pagamentos com cartão de crédito são devolvidos na fatura; outros métodos,----[mlb]----como Pix, por exemplo,------------ têm o valor devolvido na conta do pagador.
+- **Dinheiro na conta**: É necessário ter saldo suficiente na conta para efetuar o reembolso. Caso contrário, a transação será rejeitada.
+- **Processamento do pedido em modo manual**: Apenas transações individuais podem ser reembolsadas manualmente. Para reembolsar uma compra completa, todas as transações associadas devem ser revertidas.
 
-Para realizar reembolsos totais ou parciais de um pagamento e consultar os reembolsos realizados na sua loja, visite nossas APIs [Criar reembolso](/developers/pt/reference/chargebacks/_payments_id_refunds/post), [Obter lista de reembolsos](/developers/pt/reference/chargebacks/_payments_id_refunds/get) e [Obter reembolso específico](/developers/pt/reference/chargebacks/_payments_id_refunds_refund_id/get).
+Para realizar reembolsos totais ou parciais de um pagamento e consultar os reembolsos realizados na sua loja, consulte as APIs [Criar reembolso](/developers/pt/reference/chargebacks/_payments_id_refunds/post), [Obter lista de reembolsos](/developers/pt/reference/chargebacks/_payments_id_refunds/get) e [Obter reembolso específico](/developers/pt/reference/chargebacks/_payments_id_refunds_refund_id/get).
 
 ## Cancelamentos
 
-Os cancelamentos são transações que ocorrem quando uma compra é realizada, mas por algum motivo, o pagamento não é aprovado. Neste caso, considerando que a transação não foi processada e nenhum valor foi transacionado, a compra é cancelada e a cobrança não é efetuada.
+Os cancelamentos são operações realizadas quando uma compra é efetuada, mas o pagamento não é aprovado por algum motivo. Nesse caso, como a transação não foi concluída e nenhum valor foi processado, a compra é anulada e a cobrança não é efetuada.
 
-Antes de realizar o cancelamento de uma compra, é importante prestar atenção aos seguintes fatores:
+Antes de realizar o cancelamento de uma compra, é importante levar em consideração os seguintes fatores:
 
-- **Status do pagamento**: os cancelamentos só poderão ser realizados se o status do pagamento for `pending` ou `in_process`. Esse status é mostrado na resposta da chamada à API [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put), nos campos `status` e `status_detail`, respectivamente.
-- **Prazo de vencimento**: um pagamento expira após 30 dias sem confirmação e o cancelamento é automático. O status final dessa transação aparecerá como `cancelled` ou `expired`. Essas informações serão mostradas na resposta da chamada à API [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put), nos campos `status` e `status_detail`, respectivamente.
+- **Status do pagamento**: Cancelamentos podem ser realizados apenas se o status do pagamento for `pending` ou `in_process`. Essas informações são exibidas nos campos `status` e `status_detail` da resposta da API [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put), respectivamente.
+- **Prazo de vencimento**: Pagamentos expiram automaticamente após 30 dias sem confirmação. O status final será `cancelled` ou `expired`, conforme indicado nos campos `status` e `status_detail` da API [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put), respectivamente.
 
-Visite nossa Referência de API para acessar a API [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put).
+Para mais informações, consulte a API [Criar cancelamento](/developers/pt/reference/chargebacks/_payments_payment_id/put).
