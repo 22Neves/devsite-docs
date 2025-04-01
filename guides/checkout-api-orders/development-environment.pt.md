@@ -30,7 +30,7 @@ npm install @mercadopago/sdk-js
 
 Para inicializar a biblioteca do Mercado Pago, é necessário utilizar suas :toolTipComponent[credenciais]{content="Chaves de acesso únicas que usamos para identificar uma integração na sua conta, estando vinculadas à sua aplicação. Para mais informações, acesse a [documentação de Credenciais](/developers/pt/docs/checkout-api/resources/credentials)."}, chaves únicas que identificam sua integração e estão vinculadas à :toolTipComponent[aplicação]{content="Entidade registrada no Mercado Pago que atua como um identificador para gerenciar suas integrações. Para mais informações, acesse a [documentação de Detalhes das aplicação](/developers/pt/docs/checkout-api/more-resources/application-details)."} criada, garantindo que você desenvolva seu projeto contando com as melhores medidas de segurança do Mercado Pago.
 
-Nesta etapa, você deverá usar sua :toolTipComponent[_Public Key_ de teste]{content="Chave pública de testes e que é utilizada no _frontend_ para acessar informações e criptografar dados, seja na fase de desenvolvimento ou na fase de testes. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."}, que pode ser acessada nos [detalhes da sua aplicação](/developers/pt/docs/checkout-api/more-resources/application-details) em [Suas integrações](/developers/panel/app), sob o título **Teste > Credenciais de Teste** no menu localizado à esquerda da tela.
+Nesta etapa, você deverá usar sua :toolTipComponent[_Public Key_ de teste]{content="Chave pública de testes e que é utilizada no _frontend_ para acessar informações e criptografar dados, seja na fase de desenvolvimento ou na fase de testes. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."}, que pode ser acessada nos [detalhes da sua aplicação](/developers/pt/docs/checkout-api/more-resources/application-details) em [Suas integrações](/developers/panel/app), sob o título **Teste > Credenciais de Teste** no menu localizado à esquerda da tela.
 
 ![mercado-pago-library](/images/snippets/development-environment-publickey-pt.png) 
 
@@ -38,7 +38,7 @@ Nesta etapa, você deverá usar sua :toolTipComponent[_Public Key_ de teste]{con
 >
 > Se você estiver desenvolvendo para outra pessoa, poderá acessar as credenciais dos aplicativos que você não gerencia. Consulte [Compartilhar credenciais]() para mais informações.
 
-Depois de localizar a :toolTipComponent[_Public Key_]{content="Chave pública de testes e que é utilizada no _frontend_ para acessar informações e criptografar dados, seja na fase de desenvolvimento ou na fase de testes. Você pode acessá-la através de **Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste**."}, copie-a e inclua-a no _frontend_. Isso permitirá acessar as informações dos meios de pagamento e criptografar os dados do pagador e dos cartões utilizados.
+Depois de localizar a :toolTipComponent[_Public Key_]{content="Chave pública de testes e que é utilizada no _frontend_ para acessar informações e criptografar dados, seja na fase de desenvolvimento ou na fase de testes. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."}, copie-a e inclua-a no _frontend_. Isso permitirá acessar as informações dos meios de pagamento e criptografar os dados do pagador e dos cartões utilizados.
 
 [[[
 ```html

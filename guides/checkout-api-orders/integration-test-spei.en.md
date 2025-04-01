@@ -3,7 +3,7 @@
 To test your integration with **SPEI Transfers**, after configuring your [test environment](/developers/en/docs/checkout-api/integration-test), you'll need to create an order with predefined values. This means that it will only be possible to verify the operation of your integration through a requisition, and not by simulating a purchase.
 
 To perform these tests, send the following request to the :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} endpoint, along with the .
-:toolTipComponent[test user's Access Token]{content="Private key of the testing application created with your test user. It is used in the backend to test your development. You can access it by logging in with your test user and going to **Your integrations > Application details > Production > Production credentials**."}
+:toolTipComponent[test user's Access Token]{content="Private key of the testing application created with your test user. It is used in the backend to test your development. You can access it by logging in with your test user and going to *Your integrations > Application details > Production > Production credentials*."}
 
 ```curl 
 curl --request POST \
