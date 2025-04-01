@@ -47,13 +47,13 @@ As credenciais de teste são um conjunto de chaves que são utilizadas tanto na 
 > NOTE
 > 
 > As credenciais de teste só estão disponíveis para as integrações de [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) e [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
----------------
+------------
 
 ----[mlb]----
 > NOTE
 > 
 > As credenciais de teste só estão disponíveis para as integrações de [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) e [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
----------------
+------------
 
 Ao acessar as credenciais de teste, será exibido o par de credenciais **Public Key e Access Token**.
 
