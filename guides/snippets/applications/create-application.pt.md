@@ -1,8 +1,6 @@
 As **aplicações** são entidades registradas dentro do Mercado Pago que atuam como um identificador único para gerenciar a autenticação e a autorização de suas integrações. Ou seja, são o vínculo entre seu desenvolvimento e o Mercado Pago e constituem como a primeira etapa para realizar a integração.
 
-Com elas, é possível acessar as :toolTipComponent[credenciais]{content="Chaves de acesso únicas que usamos para identificar uma integração na sua conta, estando vinculadas à sua aplicação. Para mais informações, acesse a [documentação de Credenciais](/developers/pt/docs/checkout-api/more-resources/credentials)."} necessárias para interagir com nossas APIs ou serviços específicos, além de gerenciar e organizar sua integração.
-
-Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet *negrito* pellentesque. In a diam _italico_ amet velit tempor."}
+Com elas, é possível acessar as Lorem :toolTipComponent[Credenciais]{link="/developer/pt" linkText="Nulla cursu" content="haves de acesso únicas que usamos para identificar uma integração na sua conta, estando vinculadas à sua aplicação. Para mais informações, acesse o link abaixo."} necessárias para interagir com nossas APIs ou serviços específicos, além de gerenciar e organizar sua integração.
 
 Para criar uma **aplicação**, siga os passos abaixo.
 
