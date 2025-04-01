@@ -23,6 +23,6 @@ Para testar sua integração, você deve realizar uma compra de teste utilizando
 
 ![testuser](/images/dashboard/new-test-users-pt.png)
 
-## Criar aplicação de teste e obter credenciais
+## 3. Criar aplicação de teste e obter credenciais
 
 [TXTSNIPPET][/guides/snippets/test-cross/create-test-app]
