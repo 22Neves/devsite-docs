@@ -321,6 +321,33 @@
                                   "pt": "Número do imóvel onde mora o comprador. Caso não possua um número, enviar \"S/N\".",
                                   "es": "Número de la propiedad donde vive el comprador. Si no tiene un número, envía \"S/N\"."
                                 }
+                              },
+                              "neighborhood": {
+                                "type": "number",
+                                "example": "Bonfim",
+                                "description": {
+                                  "en": "Name of the neighborhood where the buyer resides. This field is required for payments made by boleto.",
+                                  "pt": "Nome do bairro onde o comprador mora. Este campo é obrigatório para pagamentos com boleto.",
+                                  "es": "Nombre del barrio donde reside el comprador. Este campo es obligatorio para pagos con boleto."
+                                }
+                              },
+                              "city": {
+                                "type": "number",
+                                "example": "3003",
+                                "description": {
+                                  "en": "City where the buyer resides. This field is mandatory for payments with boleto.",
+                                  "pt": "Cidade de residência do comprador. Este campo é obrigatório para pagamentos com boleto.",
+                                  "es": "Ciudad de residencia del comprador. Este campo es obligatorio para pagos con boleto."
+                                }
+                              },
+                              "federal_unit": {
+                                "type": "number",
+                                "example": "3003",
+                                "description": {
+                                  "en": "Federal unit of the buyer. This field is mandatory for payments made via boleto.",
+                                  "pt": "Unidade federativa (UF) do comprador. Este campo é obrigatório para pagamentos realizados por meio de boleto.",
+                                  "es": "Unidad federativa del comprador. Este campo es obligatorio para pagos realizados mediante boleto."
+                                }
                               }
                             }
                           },
