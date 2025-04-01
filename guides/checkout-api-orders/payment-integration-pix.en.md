@@ -69,7 +69,7 @@ To facilitate the correct entry of data in the payment form, it is necessary to 
 
 The function below will allow you to automatically populate the available options, thanks to the inclusion of the `select` element with the `id: form-checkout__identificationType` found in the form used as an example in the previous step.
 
-If you already have a development that includes the retrieval of document types, as indicated below, proceed to [Submit payment]().
+If you already have a development that includes the retrieval of document types, as indicated below, proceed to [Submit payment](/developers/en/docs/checkout-api/payment-integration/pix#:~:text=server%2Dside-,Submit,-payment).
 
 If you do not have this function, add the following to your project.
 

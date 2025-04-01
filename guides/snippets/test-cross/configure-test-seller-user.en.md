@@ -1,5 +1,5 @@
 
-[Test accounts](/developers/en/docs/order/additional-content/your-integrations/test/accounts) are users who have the same functionalities as a real Mercado Pago user, but allow you to test the operation of your development without compromising real data.
+[Test accounts](/developers/en/docs/test/accounts) are users who have the same functionalities as a real Mercado Pago user, but allow you to test the operation of your development without compromising real data.
 
 Follow the steps below to create a seller test user.
 

@@ -15,7 +15,7 @@ If you wish to continue with your integration after [setting up your environment
 
 To be able to receive payments, you need to add a form in the frontend that securely captures the payer's information.
 
-If you already have a development that includes your own payment form, make sure to include Rapipago and Pago Fácil among the payment options you want to offer, as indicated below, and continue to the [Get document types step]().
+If you already have a development that includes your own payment form, make sure to include Rapipago and Pago Fácil among the payment options you want to offer, as indicated below, and continue to the [Get document types step](/developers/en/docs/checkout-api/payment-integration/other-payment-methods#:~:text=client%2Dside-,Get,-document%20types).
 
 If you do not have a payment form, add the one below to your project, including the identifier of the payment methods to be offered.
 
@@ -68,7 +68,7 @@ To facilitate the correct entry of data in the payment form, it is necessary to 
 
 The function below will allow you to automatically populate the available options, thanks to the inclusion of the `select` element with the `id: form-checkout__identificationType` found in the form used as an example in the previous step.
 
-If you already have a development that includes the retrieval of document types, as indicated below, proceed to the [Submit payment step]().
+If you already have a development that includes the retrieval of document types, as indicated below, proceed to the [Submit payment step](/developers/en/docs/checkout-api/payment-integration/other-payment-methods#:~:text=server%2Dside-,Submit,-payment).
 
 If you do not have this function, add the following to your project.
 

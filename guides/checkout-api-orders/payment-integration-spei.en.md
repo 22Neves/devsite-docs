@@ -1,6 +1,6 @@
 # SPEI Transfers
 
-With Mercado Pago's ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ it is also possible to offer payments via SPEI Transfers, a service that allows payments to be made from any bank or financial institution using the CLABE (Standardized Banking Key).
+With Mercado Pago's ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ it is also possible to offer payments via SPEI Transfers, a service that allows payments to be made from any bank or financial institution using the CLABE (_Clave Bancaria Estandarizada_).
 
 If you already [set up your environment](/developers/en/docs/checkout-api/development-environment) and want to offer payments with SPEI Transfer, follow the steps below.
 
@@ -12,7 +12,7 @@ If you already [set up your environment](/developers/en/docs/checkout-api/develo
 
 To be able to receive payments, you need to add a form in the frontend that securely captures the payer's information.
 
-If you already have a development that includes your own payment form, make sure to include SPEI Transfer among the payment options you want to offer, as indicated below, and continue to the [Submit payment step]().
+If you already have a development that includes your own payment form, make sure to include SPEI Transfer among the payment options you want to offer, as indicated below, and continue to the [Submit payment step](/developers/en/docs/checkout-api/payment-integration/spei-transfers#:~:text=server%2Dside-,Submit,-payment).
 
 If you do not have a payment form, add the one below to your project, including the identifier for SPEI Transfer among the payment methods to be offered.
 
@@ -108,7 +108,7 @@ See the table below for descriptions of the parameters that are mandatory in the
 >
 > To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/order/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
 
-The response will return the parameter `ticket_url`, which contains the URL with instructions for the buyer to make the payment,. You should redirect them to it following the instructions in the [Make the payment available]() step. Additionally, it will show the status action_required until the payment is completed.
+The response will return the parameter `ticket_url`, which contains the URL with instructions for the buyer to make the payment. You should redirect them to it following the instructions in the [Make the payment available](/developers/en/docs/checkout-api/payment-integration/spei-transfers#:~:text=client%2Dside-,Make,-the%20payment%20available) step. Additionally, it will show the status action_required until the payment is completed.
 
 ```json
 {

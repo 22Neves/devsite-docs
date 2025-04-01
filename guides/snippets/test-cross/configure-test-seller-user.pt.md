@@ -1,5 +1,5 @@
 
-As [contas de teste](/developers/pt/docs/order/additional-content/your-integrations/test/accounts) são usuários que têm as mesmas funcionalidades que um usuário real do Mercado Pago, mas permitem testar o funcionamento do seu desenvolvimento sem comprometer dados reais.
+As [contas de teste](/developers/pt/docs/test/accounts) são usuários que têm as mesmas funcionalidades que um usuário real do Mercado Pago, mas permitem testar o funcionamento do seu desenvolvimento sem comprometer dados reais.
 
 Siga os passos abaixo para criar um usuário de teste vendedor.
 

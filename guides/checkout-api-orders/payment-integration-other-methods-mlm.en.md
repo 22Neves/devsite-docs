@@ -15,7 +15,7 @@ If you wish to continue with your integration after [setting up your environment
 
 To be able to receive payments, you need to add a form in the frontend that securely captures the payer's information.
 
-If you already have a development that includes your own payment form, make sure to include  these payment methods among the payment options you want to offer, as indicated below, and continue to the [Submit payment step]().
+If you already have a development that includes your own payment form, make sure to include  these payment methods among the payment options you want to offer, as indicated below, and continue to the [Submit payment step](/developers/en/docs/checkout-api/payment-integration/other-payment-methods#:~:text=server%2Dside-,Submit,-payment).
 
 If you do not have a payment form, add the one below to your project, including the identifier of the payment methods to be offered.
 
