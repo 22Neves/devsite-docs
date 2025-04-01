@@ -1,6 +1,6 @@
 # Reembolsos y cancelaciones
 
-Los **reembolsos** y **cancelaciones** son acciones disponibles después de la realización de un pago. Aunque ambas implican la devolución de dinero, es crucial comprender sus diferencias para ejecutar correctamente los procesos.
+Los **reembolsos** y las **cancelaciones** son acciones disponibles después de la realización de un pago. Aunque ambas implican la devolución de dinero, es crucial comprender sus diferencias para ejecutar correctamente los procesos.
 
 - **Cancelación**: Se realiza cuando un pago aún no ha sido aprobado. En este caso, el monto es devuelto a la tarjeta del comprador dentro del plazo establecido por el banco emisor.
 
@@ -24,7 +24,7 @@ Los **reembolsos** se refieren a la reversión de un cobro, devolviendo los mont
 Antes de realizar un reembolso, es importante considerar los siguientes factores:
 
 - **Plazo de reembolso**: Los reembolsos pueden realizarse dentro de los 180 días posteriores a la aprobación del pago.
-- **Método de pago**: Los pagos con tarjeta de crédito se devuelven en el estado de cuenta; otros métodos, como Pix, devuelven el monto a la cuenta del pagador.
+- **Método de pago**: Los pagos con tarjeta de crédito se devuelven en el estado de cuenta; otros métodos----[mlb]----, como Pix, por ejemplo,------------ devuelven el monto a la cuenta del pagador.
 - **Saldo en la cuenta**: Es necesario contar con saldo suficiente en la cuenta para efectuar el reembolso; de lo contrario, la transacción será rechazada.
 - **Procesamiento manual del pedido**: Solo se pueden reembolsar transacciones individuales manualmente. Para reembolsar una compra completa, todas las transacciones asociadas deben ser revertidas.
 
