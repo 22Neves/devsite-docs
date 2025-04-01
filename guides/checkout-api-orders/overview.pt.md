@@ -285,6 +285,7 @@ product_landing_what_differentiates:
  - line_type: text
  - line_values: No seu site|No seu site|No Mercado Pago
  - line_text: Meios de pagamento
+ - line_link: /developers/pt/docs/sales-processing/payment-methods
  - line_type: text
  - line_values: Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander e BBVA Bancomer | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta
  - line_text: Disponibilidade por país
