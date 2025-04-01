@@ -234,7 +234,7 @@ A su vez, nuestro procesador cumple con todas las garantías de seguridad para d
 
 El layout de Payment Brick se basa en las mejores prácticas UX para que sea posible ofrecer al comprador la mejor experiencia sin que debas preocuparte por detalles de diseño.
 
-![payment-Brick-layout-mlc](checkout-bricks/payment-brick-layout-mlc-es.jpg)
+![payment-Brick-layout-mlc](/images/checkout-bricks/payment-brick-layout-mlc-es.png)
 
 > WARNING
 >
