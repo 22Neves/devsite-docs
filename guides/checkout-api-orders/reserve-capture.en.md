@@ -103,7 +103,7 @@ If the reserve is rejected, a response will be returned in the following format:
 }
 ```
 
-It is also possible to receive a pending status. In these cases, you should pay attention to the [notifications sent by Mercado Pago]() to know what the final status of the payment is.
+It is also possible to receive a pending status. In these cases, you should pay attention to the [notifications sent by Mercado Pago](/developers/en/docs/checkout-api/notifications) to know what the final status of the payment is.
 
 > WARNING
 >

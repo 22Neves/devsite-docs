@@ -6,7 +6,7 @@ Ao integrar pagamentos com cartão com o ----[mlb]---- Checkout Transparente----
 
 Uma reserva de valores acontece quando uma compra é realizada e seu montante é reservado do limite total do cartão, garantindo que o valor fique guardado até a conclusão do processamento, ou seja, sua captura.
 
-Para realizar uma autorização de reserva de valores, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e todos os atributos necessários ao endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/order/online-payments/create/post"}, Será necessário definir o campo `capture_mode` como `manual` para posteriormente capturar os fundos que você reserva.
+Para realizar uma autorização de reserva de valores, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e todos os atributos necessários ao endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/order/online-payments/create/post"}.
 
 ```curl
 curl -X POST \
@@ -103,7 +103,7 @@ Caso a reserva seja recusada, será retornada uma resposta no seguinte formato:
 }
 ```
 
-Além disso, também é possível que o status retorne como pending. Caso isso aconteça, você deverá ficar atento às [notificações enviadas pelo Mercado Pago]() para saber qual o status final do pagamento.
+Além disso, também é possível que o status retorne como pending. Caso isso aconteça, você deverá ficar atento às [notificações enviadas pelo Mercado Pago](/developers/pt/docs/checkout-api/notifications) para saber qual o status final do pagamento.
 
 > WARNING
 >

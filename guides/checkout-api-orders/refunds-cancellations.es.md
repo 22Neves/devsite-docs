@@ -14,7 +14,7 @@ Accede a continuación a más información sobre reembolsos y cancelaciones.
 
 Son transacciones que se realizan cuando un cargo determinado es revertido y los montos pagados regresan al comprador. Esto significa que el cliente recibirá de vuelta el valor del pago.
 
-Es posible :TagComponent{tag="API" text="realizar en reembolso" href="/developers/pt/reference/order/online-payments/refund/post"} de dos maneras: 
+Es posible :TagComponent{tag="API" text="realizar un reembolso" href="/developers/es/reference/order/online-payments/refund/post"} de dos maneras: 
 
 - **Total**: cuando el importe total de la venta es devuelto al comprador. En este caso, no se debe indicar el monto a ser reembolsado en el `body` de la solicitud, que debe enviarse vacío.
 - **Parcial**: cuando solo se devuelve una parte del importe pagado al comprador. En este caso, se debe especificar la cantidad a ser reembolsada en el `body` de la solicitud junto con el ID de la transacción.

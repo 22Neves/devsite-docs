@@ -36,4 +36,4 @@ Check this list with all the possible errors that the API can return, and how to
 | Idempotency Error | 500 | `idempotency_validation_failed` | An internal server error occurred. Try resending the request with a new and unique idempotency key to avoid conflicts. If the problem persists, contact Support and provide the `x-request-id` along with more details about the operation performed. |
 | API Error | 500 | `internal_error` | An internal server error occurred. Please try again later. If the problem persists, contact Support and provide the `x-request-id` along with more details about the operation performed. |
 
-For more information on how to submit the necessary requests, requirements and validations, see our API Reference for [Online Payments](/developers/en/reference/order/online-payments/create/post) and [In-Store Payments](/developers/en/reference/order/in-person-payments/point/terminal/get).
+For more information on how to submit the necessary requests, requirements and validations, see our :TagComponent{tag="API" text="API Reference" href="/developers/en/reference/order/online-payments/create/post"}.

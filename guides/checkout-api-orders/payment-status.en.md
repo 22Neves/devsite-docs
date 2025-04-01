@@ -9,14 +9,9 @@ Check the list of the `status` and `status_detail` that a transaction can get.
 | `processed` | `partially_refunded` | The transaction was processed successfully and a part of the amount was refunded. This indicates that, although the transaction has been completed, there was a partial return of the amount paid in favor of the payer. |
 | `processing` | `in_process` | The transaction is being processed. This means that the transaction is underway and has not yet been completed. |
 | `processing` | `pending_review_manual` | The transaction is underway. This status indicates that it is waiting for a manual review. This usually happens when the order needs additional evaluation before proceeding. |
-| `action_required` | `check_on_terminal` | **Exclusive status for in-store payments**. The transaction requires an additional action at the terminal. It is necessary to perform a verification or confirmation at the terminal where the payment was made to check its status. |
 | `action_required` | `waiting_payment` | The transaction requires an additional action and is awaiting payment. This means that the transaction has been initiated, but the payment has not yet been completed. |
 | `action_required` | `waiting_capture` | The transaction requires an additional action and is awaiting the capture of the payment. This means that the payment has been authorized but has not yet been captured. |
 | `action_required` | `waiting_transfer` | The transaction requires an additional action and is awaiting the transfer of funds. This means that the payment has been initiated, but the funds have not yet been transferred to the seller's account. |
-| `at_terminal` | `at_terminal` | **Exclusive status for in-store payments**. The transaction is at the terminal. This means that it is being verified at the payment terminal. |
-| `cancelled` | `cancelled_transaction` | The transaction has been canceled and will not be completed. |
-| `cancelled` | `cancelled_by_api` | **Exclusive status for in-store payments**.The transaction has been canceled via API and will not be completed. |
-| `cancelled` | `cancelled_in_terminal` | **Exclusive status for in-store payments**.The transaction has been canceled at the terminal and will not be completed. |
 | `charged_back` | `in_process` | The transaction has suffered a chargeback. This means it has been disputed and the amount is being reverted. |
 | `charged_back` | `settled` | The transaction has suffered a chargeback. This means it has been disputed and the amount was credited to the seller. |
 | `charged_back` | `reimbursed` | The transaction has suffered a chargeback. This means it has been disputed and the amount was refunded to the buyer. |

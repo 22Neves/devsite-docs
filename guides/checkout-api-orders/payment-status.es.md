@@ -9,14 +9,9 @@ Consulta la lista de `status` y `status_detail` que puede tomar una transacción
 | `processed` | `partially_refunded` | La transacción fue procesada con éxito y una parte del monto fue reembolsada. Esto indica que, aunque la transacción se ha completado, hubo una devolución parcial del monto pagado a favor del pagador. |
 | `processing` | `in_process` | La transacción está en procesamiento. Esto significa que la transacción está en curso y aún no se ha completado. |
 | `processing` | `pending_review_manual` | La transacción está en curso. Este estado indica que está esperando una revisión manual. Esto generalmente ocurre cuando la orden necesita una evaluación adicional antes de continuar. |
-| `action_required` | `check_on_terminal` | Estado **exclusivo para pagos presenciales**. La transacción requiere una acción adicional en la terminal. Es necesario realizar una verificación o confirmación en la terminal donde se realizó el pago para verificar su estado. |
 | `action_required` | `waiting_payment` | La transacción requiere una acción adicional y está esperando el pago. Esto significa que la transacción ha sido iniciada, pero el pago aún no se ha completado. |
 | `action_required` | `waiting_capture` | La transacción requiere una acción adicional y está esperando la captura del pago. Esto significa que el pago ha sido autorizado, pero aún no ha sido capturado. |
 | `action_required` | `waiting_transfer` | La transacción requiere una acción adicional y está esperando la transferencia de los fondos. Esto significa que el pago ha sido iniciado, pero los fondos aún no se han transferido a la cuenta del vendedor. |
-| `at_terminal` | `at_terminal` | Estado **exclusivo para pagos presenciales**. La transacción está en la terminal. Esto significa que está siendo verificada en la terminal de pago. |
-| `cancelled` | `cancelled_transaction` | La transacción ha sido cancelada y no se completará. |
-| `cancelled` | `cancelled_by_api` | Estado **exclusivo para pagos presenciales**. La transacción ha sido cancelada vía API y no se completará. |
-| `cancelled` | `cancelled_in_terminal` | Estado **exclusivo para pagos presenciales**. La transacción ha sido cancelada en la terminal y no se completará. |
 | `charged_back` | `in_process` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto está siendo revertido. |
 | `charged_back` | `settled` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto fue acreditado al vendedor. |
 | `charged_back` | `reimbursed` | La transacción ha sufrido un contracargo. Esto significa que ha sido impugnada y el monto fue reembolsado al comprador. |

@@ -9,14 +9,9 @@ Veja a lista de possíveis `status` e `status_detail` que uma transação pode a
 | `processed` | `partially_refunded` | A transação foi processada com sucesso e uma parte do valor foi reembolsada. Isso indica que, embora a transação tenha sido concluída, houve um reembolso parcial do valor pago em favor do pagador. |
 | `processing` | `in_process` | A transação está em processamento. Isso significa que a transação está em andamento e ainda não foi concluída.  |
 | `processing` | `pending_review_manual` | A transação está em andamento. Este status detalha que está aguardando uma revisão manual. Isso geralmente acontece quando a order precisa de uma avaliação adicional antes de prosseguir.  |
-| `action_required` | `check_on_terminal` | Status **exclusivo para pagamentos presenciais**. A transação requer uma ação adicional no terminal. É necessário realizar uma verificação ou uma confirmação no terminal onde foi efetuado o pagamento para verificar seu status. |
 | `action_required` | `waiting_payment` | A transação requer uma ação adicional e está aguardando o pagamento. Isso significa que a transação foi iniciada, mas o pagamento ainda não foi concluído. |
 | `action_required` | `waiting_capture` | A transação requer uma ação adicional e está aguardando a captura do pagamento. Isso significa que o pagamento foi autorizado, mas ainda não foi capturado. |
 | `action_required` | `waiting_transfer` | A transação requer uma ação adicional e está aguardando a transferência dos valores. Isso significa que o pagamento foi iniciado, mas os valores ainda não foram transferidos para a conta do vendedor. |
-| `at_terminal` | `at_terminal` | Status **exclusivo para pagamentos presenciais**. A transação está no terminal. Isso significa que está sendo verificada no terminal de pagamento. |
-| `cancelled` | `cancelled_transaction` | A transação foi cancelada e não será concluída. |
-| `cancelled` | `cancelled_by_api` | Status **exclusivo para pagamentos presenciais**. A transação foi cancelada vía API e não será concluída. |
-| `cancelled` | `cancelled_in_terminal` | Status **exclusivo para pagamentos presenciais**. A transação foi cancelada no terminal e não será concluída. |
 | `charged_back` | `in_process` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor está sendo revertido. |
 | `charged_back` | `settled` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor foi disponibilizado ao vendedor. |
 | `charged_back` | `reimbursed` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor foi reembolsado ao comprador.  |

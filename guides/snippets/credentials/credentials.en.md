@@ -110,13 +110,13 @@ Test credentials are a set of keys that are used both in the development stage, 
 > NOTE
 > 
 > Test credentials are only available for [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) and [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing) integrations.
----------------
+------------
 
 ----[mlb]----
 > NOTE
 > 
 > Test credentials are only available for [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) and [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing) integrations.
----------------
+------------
 
 When accessing the test credentials, the **Public Key and Access Token** credential pair will be displayed.
 

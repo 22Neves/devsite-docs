@@ -6,7 +6,7 @@ Al integrar pagos con tarjeta en ----[mlb]---- Checkout Transparente------------
 
 Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, lo que asegura que el valor se mantenga hasta la finalización del procesamiento, o mejor dicho, su captura.
  
-Para realizar una autorización de reserva, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"}. Deberás definir el campo `capture_mode` como `manual`, para luego realizar la captura de los fondos que reserves.
+Para realizar una autorización de reserva, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"}. 
 
 ```curl
 curl -X POST \
@@ -103,7 +103,7 @@ En caso de que la reserva sea rechazada, se devolverá una respuesta en el sigui
 }
 ```
 
-También es posible que el status retorne como pending. En estos casos, deberás prestar atención a las [notificaciones enviadas por Mercado Pago]() para saber cuál es el estado final del pago.
+También es posible que el status retorne como pending. En estos casos, deberás prestar atención a las [notificaciones enviadas por Mercado Pago](/developers/es/docs/checkout-api/notifications) para saber cuál es el estado final del pago.
 
 > WARNING
 >

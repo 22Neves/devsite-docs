@@ -14,7 +14,7 @@ See below for more information on refunds and cancellations.
 
 Transactions that occur when a specific charge is reversed, and the amounts paid are returned to the buyer. This means the customer will receive the payment amounts back.
 
-There are two ways to :TagComponent{tag="API" text="process a refund" href="/developers/pt/reference/order/online-payments/refund/post"}:
+There are two ways to :TagComponent{tag="API" text="process a refund" href="/developers/en/reference/order/online-payments/refund/post"}:
 
 - **Total**: when the total amount of the sale is returned to the buyer. In this case, the amount to be refunded should not be specified in the `body` of the request, which should be sent empty.
 - **Partial**: when only part of the amount paid is returned to the buyer. In this case, the amount to be refunded should be specified in the `body` of the request along with the transaction ID.

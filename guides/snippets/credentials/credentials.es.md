@@ -110,13 +110,13 @@ Las credenciales de prueba son un conjunto de claves que se utilizan tanto en la
 > NOTE
 > 
 > Las credenciales de prueba sólo están disponibles para las integraciones de [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
----------------
+------------
 
 ----[mlb]----
 > NOTE
 > 
 > Las credenciales de prueba sólo están disponibles para las integraciones de [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
----------------
+------------
 
 Al acceder a las credenciales de prueba, se mostrará el par de credenciales **Public Key y Access Token**.
 
