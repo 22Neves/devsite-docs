@@ -10,11 +10,13 @@ Credentials are divided into two types: **production credentials** and **test cr
 
 ::::TabComponent{title="Production credentials"}
 ### Production credentials
+
 **Production credentials** are a set of keys that allow you to receive real payments in stores and other applications.
 
 When accessing production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, as well as **Client ID and Client Secret**.
 
 ### Public Key and Access Token
+
 The **Public Key** and **Access Token** credentials are used, not necessarily together, in integrations made with Mercado Pago payment solutions. They are directly linked to the application you created, so each credential pair is unique for each integration.
 
 | Type | Description |
@@ -25,6 +27,7 @@ The **Public Key** and **Access Token** credentials are used, not necessarily to
 For more information on which credentials will be needed for your integration, see the [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) of the solution being integrated.
 
 ### Client ID and Client Secret
+
 The **Client ID** and **Client Secret** credentials are used primarily in integrations that use [OAuth](/developers/es/docs/security/oauth/introduction) as a protocol for obtaining private information from Mercado Pago accounts. In particular, they are used during the **Client Credentials** flow (_grant type_), which allows you to access a resource on your own behalf and obtain an Access Token without user interaction.
 
 They may also be required in some older integrations with e-commerce platforms.
@@ -75,7 +78,7 @@ The test **Public Key** and **Access Token** credentials are used in the same wa
 ## Get credentials
 
 Mercado Pago credentials are created from a Mercado Pago application. That is, they are directly linked to the
-:toolTipComponent[application]{link="/developers/es/docs/your-integrations/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier to manage your integrations. For more information, see the documentation:"} that you created through Your integrations.
+:toolTipComponent[application]{link="/developers/en/docs/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier for managing your integrations. For more information, access the link below."} that you created through Your integrations.
 
 Below, learn how to get the credentials.
 
@@ -92,8 +95,6 @@ Below, learn how to get the credentials.
 ![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.gif)
 
 ------------
-
-
 ----[mlc, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.jpg)
 
@@ -104,6 +105,7 @@ Below, learn how to get the credentials.
 ------------
 
 ### Activate production credentials
+
 To obtain production credentials, you must **activate them** by completing some information about your business. Follow the steps below:
 
 1. Go to [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and select an application.
