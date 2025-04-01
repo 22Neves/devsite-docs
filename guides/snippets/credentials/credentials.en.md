@@ -34,71 +34,6 @@ They may also be required in some older integrations with e-commerce platforms.
 | Client ID | Unique identifier that represents your integration. |
 | Client Secret | Private key used in some plugins to generate payments. It is extremely important to keep this information secure on your servers and not allow access to any user of the system or intruder. | 
 
-## Get credentials
-
-Mercado Pago credentials are created from a Mercado Pago application. That is, they are directly linked to the
-:toolTipComponent[application]{link="/developers/es/docs/your-integrations/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier to manage your integrations. For more information, see the documentation on [Application details](/developers/es/docs/your-integrations/application-details)."} that you created through Your integrations.
-
-Below, learn how to get the credentials.
-
-1. In the upper right corner of [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es), click **Log in** and fill in the required data with the information corresponding to your Mercado Pago account. Then, click on the **Your integrations** button located in the upper right corner.
-2. Access your application or create one if you have not already done so.
-3. You will find your credentials under the title **Testing > Test credentials** or **Production > Production credentials**, in the menu located on the left side of the screen.
-
-![Test credentials](/images/snippets/credentials-test-panel-es.gif)
-
-![Production credentials](/images/snippets/credentials-prod-panel-es-v2.gif)
-
-### Activate production credentials
-To obtain production credentials, you must **activate them** by completing some information about your business. Follow the steps below:
-
-1. Go to [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and select an application.
-2. Go to the **Production credentials** section in the left side menu. You will find the **Public Key** and the **Access Token of the test user**.
-3. In the **Industry** field, select from the drop-down menu the industry or category to which the business you are integrating belongs.
-4. In the **Website (required)** field, complete with the URL of your business website.
-5. Accept the ----[mla, mlc, mlu, mlm, mco, mpe]----[Privacy Statement](https://www.mercadopago[FAKER[URL][DOMAIN]]/privacidad)----------------[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade)------------ and the [Terms and Conditions](/developers/es/docs/resources/legal/terms-and-conditions). Fill in the reCAPTCHA and click on **Activate production credentials**.
-
-When accessing production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, as well as **Client ID and Client Secret**.
-
-> NOTE
->
-> Test credentials do not need to be activated. By simply creating an application, you can already use them.
-
-## Share credentials
-
-If you are developing for someone else or receiving help in the integration or configuration of your stores, you can securely share the credentials with another Mercado Pago account.
-
-You can share credentials **up to a maximum of 10 times**. If you reach this limit, you must delete old permissions, without impacting already configured integrations.
-
-In addition, if for security reasons you no longer want to share your credentials, you can cancel access.
-
-Below, we show you how to share credentials.
-
-1. In the upper right corner of [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference), click **Log in** and enter the required data with the information corresponding to your Mercado Pago account. Then, click on the **Your integrations** button located in the upper right corner.
-2. Access the application of the integration for which you need to share the credentials.
-3. Go to the **Testing** or **Production** section, depending on the type of credential you want to share. Remember that to access production credentials, you must activate them. If you don't know how to activate them, go to [Activate production credentials](#activate-credenciales-de-producción).
-4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
-5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
-
-![Share credentials](/images/snippets/share-credentials-devpanel-es.png)
-
-## Renew credentials
-
-You can renew your **production credentials** for security reasons or any other relevant reason.
-
-> WARNING
->
-> Renewing credentials already configured in an integration will affect its operation. It is necessary that **you replace the old credentials with the ones obtained** after the renewal process to continue operating.
-
-To renew a credential pair, follow the steps below.
-
-1. Access your production credentials through [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
-2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
-3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
-
-![Renew credentials](/images/snippets/renew-credentials-es.gif)
-
-Ready, your credentials have been renewed.
 ::::
 
 ::::TabComponent{title="Test credentials"}
@@ -133,6 +68,10 @@ The test **Public Key** and **Access Token** credentials are used in the same wa
 > 
 > If when creating an application you selected a Mercado Pago product that does not require test credentials, you will not be able to use them. Instead, you must use the production credentials of a [test account](/developers/es/docs/your-integrations/test/accounts) to test your integration properly.
 
+::::
+
+:::::
+
 ## Get credentials
 
 Mercado Pago credentials are created from a Mercado Pago application. That is, they are directly linked to the
@@ -144,9 +83,25 @@ Below, learn how to get the credentials.
 2. Access your application or create one if you have not already done so.
 3. You will find your credentials under the title **Testing > Test credentials** or **Production > Production credentials**, in the menu located on the left side of the screen.
 
-![Test credentials](/images/snippets/credentials-test-panel-es.gif)
 
-![Production credentials](/images/snippets/credentials-prod-panel-es-v2.gif)
+----[mlc, mlu, mlm, mco, mpe]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-es.jpg)
+
+------------
+----[mla, mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
+
+------------
+
+
+----[mlc, mlu, mlm, mco, mpe]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.jpg)
+
+------------
+----[mla, mlb]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.gif)
+
+------------
 
 ### Activate production credentials
 To obtain production credentials, you must **activate them** by completing some information about your business. Follow the steps below:
@@ -179,7 +134,14 @@ Below, we show you how to share credentials.
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
-![Share credentials](/images/snippets/share-credentials-devpanel-es.gif)
+----[mla, mlb]----
+![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-pt.gif)
+
+------------
+----[mlc, mlu, mlm, mco, mpe]----
+![Share credentials in Your Integrations](/images/credentials/share-credentials-devpanel-es.jpg)
+
+------------
 
 ## Renew credentials
 
@@ -195,9 +157,12 @@ To renew a credential pair, follow the steps below.
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
-![Renew credentials](/images/snippets/renew-credentials-es.gif)
+----[mla, mlb]----
+![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
 
+------------
+----[mlc, mlu, mlm, mco, mpe]----
+![Como renovar suas credenciais](/images/credentials/renew-credentials-es.png)
+
+------------
 Ready, your credentials have been renewed.
-::::
-
-:::::
