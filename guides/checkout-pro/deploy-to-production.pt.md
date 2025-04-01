@@ -1,6 +1,6 @@
-# Sair à produção
+# Subir em produção
 
-Uma vez finalizado o processo de configuração e testes, sua integração estará pronta para sair à produção.
+Uma vez finalizado o processo de configuração e testes, sua integração estará pronta para subir em produção.
 
 A seguir, veja as recomendações necessárias para realizar essa transição de maneira eficaz e segura, garantindo que sua integração esteja preparada para receber transações reais.
 
