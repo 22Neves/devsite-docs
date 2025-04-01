@@ -85,21 +85,21 @@ Below, learn how to get the credentials.
 
 
 ----[mlc, mlu, mlm, mco, mpe]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-es.jpg)
+![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-es.jpg)
 
 ------------
 ----[mla, mlb]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
+![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.gif)
 
 ------------
 
 
 ----[mlc, mlu, mlm, mco, mpe]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.jpg)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.jpg)
 
 ------------
 ----[mla, mlb]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.gif)
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ------------
 
@@ -135,11 +135,11 @@ Below, we show you how to share credentials.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
 ----[mla, mlb]----
-![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-pt.gif)
+![Share credentials in Your Integrations](/images/snippets/share-credentials-panel-pt.gif)
 
 ------------
 ----[mlc, mlu, mlm, mco, mpe]----
-![Share credentials in Your Integrations](/images/credentials/share-credentials-devpanel-es.jpg)
+![Share credentials in Your Integrations](/images/snippets/share-credentials-panel-es.jpg)
 
 ------------
 
@@ -158,11 +158,11 @@ To renew a credential pair, follow the steps below.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
 ----[mla, mlb]----
-![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
+![Como renovar suas credenciais](/images/snippets/renew-credentials-pt.gif)
 
 ------------
 ----[mlc, mlu, mlm, mco, mpe]----
-![Como renovar suas credenciais](/images/credentials/renew-credentials-es.png)
+![Como renovar suas credenciais](/images/snippets/renew-credentials-es.png)
 
 ------------
 Ready, your credentials have been renewed.
