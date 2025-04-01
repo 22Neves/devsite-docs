@@ -87,15 +87,13 @@ Para inicializar a biblioteca do Mercado Pago, utilize suas **credenciais**, que
 >
 > Se estiver desenvolvendo para outra pessoa, você poderá acessar as credenciais das aplicações que não administra. Para mais informações, consulte a seção [Compartilhar credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_compartilhar_credenciais).
 
-Nesta etapa, utilize o seu `access token` de **produção**, disponível nos detalhes da sua aplicação em [Suas integrações](/developers/panel/app). Para acessá-lo, vá até a seção **Produção** e clique em **Credenciais de produção** no menu à esquerda da tela.
-
 Primeiro, é necessário **ativar as credenciais de produção**. Para isso, siga os passos abaixo e forneça as informações solicitadas sobre o seu negócio.
 
 1. No campo **Indústria**, selecione a indústria correspondente ao negócio que você está integrando no menu suspenso.
 2. No campo **Site web (obrigatório)**, insira a URL do site do seu negócio.
 3. Aceite a ----[mlb]----[Declaração de Privacidade](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Declaração de Privacidade](https://www.mercadopago.com/privacidad) ------------ e os [Termos e condições](/developers/pt/docs/resources/legal/terms-and-conditions) do Mercado Pago. Por fim, complete o reCAPTCHA e clique em **Ativar credenciais de produção**.
 
-Após ativar suas credenciais de produção, você poderá utilizar o seu `access token` de **produção**.
+Após ativar suas credenciais de produção, você poderá utilizar o seu `access token` de **produção**, disponível nos detalhes da sua aplicação em [Suas integrações](/developers/panel/app). Para acessá-lo, vá até a seção **Produção** e clique em **Credenciais de produção** no menu à esquerda da tela.
 
 Em seguida, no backend do seu projeto, crie um arquivo principal (_main_) na linguagem de programação que você está utilizando. Insira o seguinte código, substituindo `PROD_ACCESS_TOKEN` pelo seu `access token` de produção.
 

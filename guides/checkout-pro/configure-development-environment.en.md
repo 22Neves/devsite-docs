@@ -85,15 +85,13 @@ To initialize the Mercado Pago library, you will need to use your **credentials*
 >
 > If you are developing for someone else, you can access the credentials of applications you do not manage. See [Share credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_share_credentials) for more information.
 
-At this stage, you will need to use your **production** `access token`, which you can access by entering the **Details of your application** in [Your integrations](/developers/panel/app), under the title **Production > Production credentials** in the menu located on the left of the screen.
-
 First, you will need to **activate the production credentials**. To do this, you will need to complete some information about your business by following the steps below.
 
 1. In the **Industry** field, select from the drop-down menu the industry to which the business you are integrating belongs.
 2. In the **Website (required)** field, fill in the URL of your business's website.
 3. Accept the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and conditions](/developers/en/docs/resources/legal/terms-and-conditions). Complete the reCAPTCHA and click on **Activate production credentials**.
 
-Once you have activated your production credentials, you can use your **production** `access token`.
+After activating your production credentials, you will be able to use your **production** `access token`, available in the details of your application in [Your integrations](/developers/panel/app). To access it, go to the **Production** section and click on **Production Credentials** in the menu on the left side of the screen.
 
 Next, in the backend of your project, create a _main_ file based on the programming language you will use. There, place the following code, replacing the value `PROD_ACCESS_TOKEN` with your production `access token`.
 
