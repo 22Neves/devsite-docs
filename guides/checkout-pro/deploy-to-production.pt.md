@@ -16,4 +16,4 @@ Para fazer isso, acesse [Suas integrações](/developers/panel/app) e, no menu l
 
 ## Medir a qualidade da sua integração
 
-Depois de concluir a configuração da sua integração, recomendamos que você realize uma **medição de qualidade**. Este é um processo de certificação da sua integração que garante que seu desenvolvimento atenda aos requisitos de qualidade necessários para proporcionar uma melhor experiência e aumentar a taxa de aprovação de pagamentos. Para saber mais, acesse a documentação [Como medir a qualidade da sua integração](/developers/pt/docs/integration-quality).
+Depois de concluir a configuração da sua integração, recomendamos que você realize uma **medição de qualidade**. Este é um processo de certificação da sua integração que garante que seu desenvolvimento atenda aos requisitos de qualidade necessários para proporcionar uma melhor experiência e aumentar a taxa de aprovação de pagamentos. Para saber mais, acesse a documentação [Como medir a qualidade da sua integração](/developers/pt/docs/checkout-pro/how-tos/integration-quality).

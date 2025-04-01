@@ -19,4 +19,4 @@ Para más información, consulta nuestra documentación de [Credenciales](/devel
 
 Una vez que hayas terminado de configurar tu integración, recomendamos que realices una **medición de calidad**, que es un proceso de certificación de tu integración, con el que podrás asegurar que tu desarrollo cuente con los requisitos de calidad necesarios para asegurar una mejor experiencia, así como una mayor tasa de aprobación de pagos. 
 
-Para conocer más, ve a la documentación [Cómo medir la calidad de tu integración](/developers/es/docs/integration-quality).
+Para conocer más, ve a la documentación [Cómo medir la calidad de tu integración](/developers/es/docs/checkout-pro/how-tos/integration-quality).
