@@ -10,6 +10,8 @@ Agora que você concluiu todos os testes necessários para verificar que sua int
 
 Para fazer isso, acesse [Suas integrações](/developers/panel/app) e, no menu lateral esquerdo, acesse **Produção > Credenciais de produção**. Lá você encontrará sua `public_key` e `access_token` produtivos, que deverá utilizar no lugar das credenciais da conta de teste. Para mais informações, consulte nossa documentação de [Credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials).
 
+## Certificado SSL
+
 [TXTSNIPPET][/guides/snippets/ssl-certificate/ssl-certificate]
 
 ## Medir a qualidade da sua integração
