@@ -6,7 +6,7 @@ Depois de configurar seu ambiente de testes, você poderá realizar compras de t
 
 Para testar uma compra com cartão de crédito ou débito, siga o passo a passo:
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Por fim, realize uma compra de teste com os **cartões de teste** fornecidos abaixo. Para simular diferentes resultados de compra, utilize nomes variados para os titulares dos cartões de teste.
@@ -25,7 +25,7 @@ Confirme se sua integração está processando corretamente os meios de pagament
 
 Para realizar um teste, siga o passo a passo abaixo.
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
@@ -40,7 +40,7 @@ Confirme se sua integração está processando corretamente os meios de pagament
 
 Para realizar um teste, siga o passo a passo abaixo.
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
@@ -55,7 +55,7 @@ Confirme se sua integração está processando corretamente os meios de pagament
 
 Para realizar um teste, siga o passo a passo abaixo.
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
@@ -70,7 +70,7 @@ Confirme se sua integração está processando corretamente os meios de pagament
 
 Para realizar um teste, siga o passo a passo abaixo.
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
@@ -85,7 +85,7 @@ Confirme se sua integração está processando corretamente os meios de pagament
 
 Para realizar um teste, siga o passo a passo abaixo.
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
@@ -100,7 +100,7 @@ Confirme se sua integração está processando corretamente os meios de pagament
 
 Para realizar um teste, siga o passo a passo abaixo.
 
-1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a documentação [Teste de integração > Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration).
+1. Acesse [Mercado Pago Developers](/developers/pt/docs) e faça login como o **usuário de teste comprador** criado previamente. Use o nome de usuário e senha associados à conta de teste. Para mais informações, consulte a seção [Criar conta de teste comprador](/developers/pt/docs/checkout-pro/test-integration#bookmark_2._criar_conta_de_teste_comprador).
 2. Inicie o Checkout utilizando a preferência de pagamento configurada anteriormente. As instruções detalhadas sobre como proceder estão disponíveis na documentação [Adicionar o SDK ao frontend e inicializar o checkout](/developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk).
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.

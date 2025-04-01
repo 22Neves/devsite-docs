@@ -49,7 +49,7 @@ Para continuar, utilize sua credencial `public key` de produção, disponível n
 >
 > Se estiver desenvolvendo para outra pessoa, você poderá acessar as credenciais das aplicações que não administra. Para mais informações, consulte a seção [Compartilhar credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_compartilhar_credenciais).
 
-Agora, será necessário utilizar o identificador da preferência de pagamento obtido na etapa [Criar e configurar uma preferência de pagamento](/developers/en/docs/checkout-pro/create-payment-preference).
+Agora, será necessário utilizar o identificador da preferência de pagamento obtido na etapa [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
 
 Para inicializar o SDK via CDN, insira o código a seguir dentro da tag `<script>`. Substitua `YOUR_PUBLIC_KEY` pela `public_key` de produção da sua aplicação e `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento**.
 
@@ -158,6 +158,7 @@ Uma vez que você tenha finalizado a configuração no frontend, configure as [N
 <br>
 <br>
 
+:::AccordionComponent{title="Personalização"}
 Você pode personalizar o botão de pagamento do Mercado Pago para atender às suas necessidades. Confira as documentações disponíveis:
 
 - [Alterar textos dos botões](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-texts): escolha os diferentes textos que você pode mostrar no botão de pagamento.
