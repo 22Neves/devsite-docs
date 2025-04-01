@@ -102,7 +102,7 @@ O SDK do Mercado Pago é responsável por renderizar automaticamente o botão de
 
 Para integrar o SDK MercadoPago.js ao frontend do seu projeto React, siga os passos abaixo, certifique-se de que o **Node.js** e o **npm** estão instalados no sistema. Caso não estejam, faça o download através do [site oficial do Node.js](http://Node.js).
 
-No seu terminal ou linha de comando, execute o seguinte comando para criar uma nova aplicação React:
+No seu terminal, execute o seguinte comando para criar uma nova aplicação React:
 
 ```
 npx create-react-app my-mercadopago-app
