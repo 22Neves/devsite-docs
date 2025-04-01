@@ -24,7 +24,7 @@ Os **reembolsos** referem-se à reversão de uma cobrança, devolvendo os montan
 Antes de realizar um reembolso, é importante levar em consideração os seguintes fatores:
 
 - **Prazo de reembolso**: Reembolsos podem ser realizados dentro de 180 dias após a aprovação do pagamento.
-- **Meio de pagamento**: Pagamentos com cartão de crédito são devolvidos na fatura; outros métodos,----[mlb]----como Pix, por exemplo,------------ têm o valor devolvido na conta do pagador.
+- **Meio de pagamento**: Pagamentos com cartão de crédito são devolvidos na fatura; outros métodos----[mlb]----, como Pix, por exemplo,------------ têm o valor devolvido na conta do pagador.
 - **Dinheiro na conta**: É necessário ter saldo suficiente na conta para efetuar o reembolso. Caso contrário, a transação será rejeitada.
 - **Processamento do pedido em modo manual**: Apenas transações individuais podem ser reembolsadas manualmente. Para reembolsar uma compra completa, todas as transações associadas devem ser revertidas.
 

@@ -26,7 +26,7 @@ Refunds can be made in two ways:
 Before making a refund, it is important to consider the following factors:
 
 - **Refund period**: Refunds can be issued within 180 days after the payment approval.
-- **Payment method**: Credit card payments are refunded to the statement; other methods,----[mlb]----such as Pix, for example,------------refund the amount to the payer's account.
+- **Payment method**: Credit card payments are refunded to the statement; other methods----[mlb]----, such as Pix, for example,------------ refund the amount to the payer's account.
 - **Account balance**: It is necessary to have sufficient balance available in your account to perform the refund; otherwise, the transaction will be rejected.
 - **Manual order processing**: Only individual transactions can be refunded manually. To refund a complete purchase, all associated transactions must be fully reversed.
 
@@ -38,7 +38,7 @@ To perform total or partial refunds of a payment and check the refunds made in y
 
 Before canceling a purchase, it is important to pay attention to the following factors:
 
-- **Payment status**: Cancellations can only be performed if the payment status is `pending` or `in_process`. These details are displayed in the `status` and `status_detail` fields of the response from the API [Create Cancellation](/developers/en/reference/chargebacks/_payments_payment_id/put).
-- **Expiration period**: Payments automatically expire after 30 days without confirmation. The final status will be `cancelled` or `expired`, as indicated in the `status` and `status_detail` fields of the API [Create Cancellation](/developers/en/reference/chargebacks/_payments_payment_id/put).
+- **Payment status**: Cancellations can only be performed if the payment status is `pending` or `in_process`. These details are displayed in the `status` and `status_detail` fields of the response from the API [Create cancellation](/developers/en/reference/chargebacks/_payments_payment_id/put).
+- **Expiration period**: Payments automatically expire after 30 days without confirmation. The final status will be `cancelled` or `expired`, as indicated in the `status` and `status_detail` fields of the API [Create cancellation](/developers/en/reference/chargebacks/_payments_payment_id/put).
 
 For more information, consult the API [Create cancellation](/developers/en/reference/chargebacks/_payments_payment_id/put) API.
