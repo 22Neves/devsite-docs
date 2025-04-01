@@ -30,7 +30,7 @@ Para realizar um teste, siga o passo a passo abaixo.
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
 
-Se o teste for bem-sucedido, você verá uma tela indicando como completar o pagamento.
+Caso o teste seja bem-sucedido, uma tela será exibida orientando sobre como concluir o pagamento.
 
 ------------
 ----[mlb]----
@@ -45,7 +45,7 @@ Para realizar um teste, siga o passo a passo abaixo.
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
 
-Se o teste for bem-sucedido, você verá uma tela indicando como completar o pagamento.
+Caso o teste seja bem-sucedido, uma tela será exibida orientando sobre como concluir o pagamento.
 
 ------------
 ----[mco]----
@@ -60,7 +60,7 @@ Para realizar um teste, siga o passo a passo abaixo.
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
 
-Se o teste for bem-sucedido, você verá uma tela indicando como completar o pagamento.
+Caso o teste seja bem-sucedido, uma tela será exibida orientando sobre como concluir o pagamento.
 
 ------------
 ----[mlm]----
@@ -75,7 +75,7 @@ Para realizar um teste, siga o passo a passo abaixo.
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
 
-Se o teste for bem-sucedido, você verá uma tela indicando como completar o pagamento.
+Caso o teste seja bem-sucedido, uma tela será exibida orientando sobre como concluir o pagamento.
 
 ------------
 ----[mpe]----
@@ -90,7 +90,7 @@ Para realizar um teste, siga o passo a passo abaixo.
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
 
-Se o teste for bem-sucedido, você verá uma tela indicando como completar o pagamento.
+Caso o teste seja bem-sucedido, uma tela será exibida orientando sobre como concluir o pagamento.
 
 ------------
 ----[mlu]----
@@ -105,6 +105,6 @@ Para realizar um teste, siga o passo a passo abaixo.
 3. Navegue até a loja onde você integrou o Checkout Pro, selecione o produto ou serviço desejado e, na etapa de pagamento, clique no botão de compra do Mercado Pago.
 4. Selecione um meio de pagamento offline e complete o pagamento.
 
-Se o teste for bem-sucedido, você verá uma tela indicando como completar o pagamento.
+Caso o teste seja bem-sucedido, uma tela será exibida orientando sobre como concluir o pagamento.
 
 ------------
