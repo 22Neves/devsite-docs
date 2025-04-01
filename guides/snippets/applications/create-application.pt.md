@@ -2,6 +2,8 @@ As **aplicações** são entidades registradas dentro do Mercado Pago que atuam 
 
 Com elas, é possível acessar as :toolTipComponent[credenciais]{content="Chaves de acesso únicas que usamos para identificar uma integração na sua conta, estando vinculadas à sua aplicação. Para mais informações, acesse a [documentação de Credenciais](/developers/pt/docs/checkout-api/more-resources/credentials)."} necessárias para interagir com nossas APIs ou serviços específicos, além de gerenciar e organizar sua integração.
 
+Lorem :toolTipComponent[ipsum]{link="/developer/pt" linkText="Nulla cursu" content="Sed viverra nunc sit amet *negrito* pellentesque. In a diam _italico_ amet velit tempor."}
+
 Para criar uma **aplicação**, siga os passos abaixo.
 
 1. No canto superior direito de Mercado Pago Developers, clique em **Entrar** e faça login em sua conta do Mercado Pago.
