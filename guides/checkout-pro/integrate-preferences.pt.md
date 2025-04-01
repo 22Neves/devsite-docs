@@ -4,17 +4,17 @@
 >
 > Criar e configurar uma preferência de pagamento
 
-Uma preferência de pagamento é um objeto ou conjunto de informações que representa o produto ou serviço pelo qual você deseja cobrar. Dentro do ecossistema do Mercado Pago, este objeto é conhecido como `preference`. Ao criar uma preferência de pagamento, você pode definir detalhes essenciais como o preço, a quantidade e os meios de pagamento, bem como outras configurações relacionadas ao fluxo de pagamento.
+Uma preferência de pagamento é um objeto que reúne informações sobre o produto ou serviço pelo qual você deseja cobrar. No ecossistema do Mercado Pago, esse objeto é denominado `preference`. Ao criar uma preferência de pagamento, é possível definir atributos essenciais, como preço, quantidade e métodos de pagamento, além de configurar outros aspectos do fluxo de pagamento.
 
-Para criar uma preferência de pagamento, utilize o método associado a `preference` no SDK de backend. É necessário que você crie uma preferência de pagamento para cada pedido ou fluxo de pagamento que queira iniciar.
+Para configurar uma preferência de pagamento, utilize o método correspondente à _preference_ no SDK de backend. É necessário criar uma nova preferência de pagamento para cada pedido ou fluxo de pagamento que você deseja iniciar.
 
-A seguir, você encontrará exemplos de como implementar isso no seu backend utilizando o SDK, que está disponível em diferentes linguagens de programação. Complete os atributos com as informações adequadas para refletir os detalhes de cada transação e garantir um fluxo de pagamento preciso.
+Abaixo, você encontrará exemplos práticos de como implementar essa funcionalidade em seu backend utilizando o SDK, disponível em várias linguagens de programação. Certifique-se de preencher os atributos com informações precisas para detalhar cada transação e garantir um processo de pagamento eficiente.
 
 > NOTE
 >
 > Nota
 >
-> Você pode adaptar a integração do Checkout Pro ao seu modelo de negócio configurando os atributos da preferência de pagamento. Estes permitirão definir parcelas, excluir um meio de pagamento, alterar a data de vencimento de um determinado pagamento, entre outras opções. Para personalizar sua preferência de pagamento, acesse **[Personalização do checkout](/developers/pt/docs/checkout-pro/additional-settings)**.
+> Esses atributos permitem ajustar parcelas, excluir determinados meios de pagamento, modificar a data de vencimento de um pagamento, entre outras opções. Para personalizar sua preferência de pagamento, acesse **[Personalização do checkout](/developers/pt/docs/checkout-pro/additional-settings)**.
 
 [[[
 ```php
@@ -147,14 +147,14 @@ fmt.Println(resource)
 
 ## Obter o identificador da preferência
 
-O identificador da preferência é um identificador de transação único para uma solicitação de pagamento específica. Para obtê-lo, você deverá executar sua aplicação.
+O identificador da preferência é um código único que representa uma transação específica para uma solicitação de pagamento. Para obtê-lo, você deve executar sua aplicação.
 
-Na resposta, você obterá o **identificador da preferência** na propriedade `ID`. **Guarde este valor, pois você precisará dele no próximo passo para sua integração** em um site ou em um aplicativo móvel.
+Na resposta, o **identificador da preferência** estará localizado na **propriedade ID**. Guarde esse valor com atenção, pois ele será **necessário na próxima etapa para integrar o pagamento** ao seu site ou aplicativo móvel.
 
-A seguir, mostramos um exemplo de como o atributo `ID` com o identificador de preferência aparece em uma resposta.
+Veja abaixo um exemplo de como o atributo ID, contendo o identificador de preferência, é exibido em uma resposta:
 
 ```
 "id": "787997534-6dad21a1-6145-4f0d-ac21-66bf7a5e7a58"
 ```
 
-Uma vez configurada a preferência de pagamento, é o momento de [Configurar as URLs de retorno](/developers/pt/docs/checkout-pro/configure-back-urls) para onde seus clientes serão redirecionados ao finalizar o processo de pagamento.
+Após configurar a preferência de pagamento, o próximo passo será [configurar as URLs de retorno](/developers/pt/docs/checkout-pro/configure-back-urls) para redirecionar seus clientes ao final do processo de pagamento.

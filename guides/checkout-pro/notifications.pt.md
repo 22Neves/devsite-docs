@@ -2,18 +2,18 @@
 
 As notificações **Webhooks**, também conhecidas como **retornos de chamada web**, são um método eficaz que permite aos servidores do Mercado Pago enviar informações em **tempo real** quando ocorre um evento específico relacionado à sua integração.
 
-Em vez de seu sistema realizar consultas constantes para verificar atualizações, os Webhooks permitem a transmissão de dados de maneira **passiva e automática** entre o Mercado Pago e sua integração através de uma solicitação **HTTP POST**, otimizando a comunicação e reduzindo a carga nos servidores.
+Com os Webhooks, o seu sistema não precisa realizar consultas contínuas para buscar atualizações. Esse mecanismo transmite dados de maneira **passiva e automática**, utilizando solicitações **HTTP POST**. Assim, otimiza a comunicação e reduz a carga nos servidores.
 
 Consulte o fluxo geral de uma notificação no diagrama abaixo.
 
 ![Diagram](/images/cow/notifications-diagrama-pt.jpg)
 
-A seguir, apresentamos um passo a passo para configurar as notificações de criação e atualização de pagamentos. Uma vez configuradas, as notificações Webhook serão enviadas sempre que um pagamento for criado ou seu estado for modificado (Pendente, Rejeitado ou Aprovado). No processo de integração com o Mercado Pago, você pode configurar as notificações de duas maneiras:
+A seguir, apresentamos um passo a passo para configurar as notificações de criação e atualização de pagamentos. Depois de configuradas, as notificações Webhook serão enviadas sempre que um pagamento for criado ou seu estado for modificado (Pendente, Rejeitado ou Aprovado). No processo de integração com o Mercado Pago, as notificações podem ser configuradas de duas maneiras:
 
 | Tipo de Configuração | Descrição | Vantagens | Quando Usar |
 |---|---|---|---|
-| [Configuração através de Suas integrações](/developers/pt/docs/checkout-pro/payment-notifications#configuraoaocriarpagamentosepreferncias)       | Este método permite configurar notificações diretamente no seu Painel de Desenvolvedor. Você pode configurar notificações para cada uma de suas aplicações, identificar contas distintas se necessário, e validar a origem da notificação através de uma assinatura secreta. | - Identificação simples de contas distintas, garantindo uma gestão adequada em ambientes diversos. <br> - Alta segurança ao validar a origem das notificações através de uma assinatura secreta, que garante a integridade da informação recebida. <br> - Mais versátil e eficaz para manter um controle centralizado e gerenciar a comunicação com as aplicações de maneira eficiente. | Recomendado para a maioria das integrações.                                                          |
-| [Configuração durante a criação de pagamentos ou preferências](/developers/pt/docs/checkout-pro/payment-notifications#configuraoaocriarpagamentosepreferncias) | As notificações são configuradas para cada transação individualmente durante a criação do pagamento ou preferência.                                                                                                                  | - Ajustes específicos para cada transação. <br> - Flexibilidade em casos de necessidade de parâmetros dinâmicos obrigatórios. <br> - Ideal para integrações como plataformas de pagamento para múltiplos vendedores.                                                                                    | Conveniente em casos em que seja necessário enviar um query parameter dinâmico de forma obrigatória, além de ser adequado para integrações que funcionam como uma plataforma de pagamento para múltiplos vendedores. |
+| [Configuração através de Suas integrações](/developers/pt/docs/checkout-pro/payment-notifications#configuraoaocriarpagamentosepreferncias)       | Este método permite configurar notificações diretamente do seu Painel de Desenvolvedor. Você pode configurar notificações para cada uma de suas aplicações, identificar contas distintas, se necessário, e validar a origem da notificação através de uma assinatura secreta. | - Identificação simples de contas distintas, garantindo uma gestão adequada em ambientes diversos. <br> - Alta segurança ao validar a origem das notificações através de uma assinatura secreta, que garante a integridade da informação recebida. <br> - Mais versátil e eficaz para manter um controle centralizado e gerenciar a comunicação com as aplicações de maneira eficiente. | Recomendado para a maioria das integrações.                                                          |
+| [Configuração durante a criação de pagamentos ou preferências](/developers/pt/docs/checkout-pro/payment-notifications#configuraoaocriarpagamentosepreferncias) | As notificações são configuradas para cada transação individualmente durante a criação do pagamento ou preferência.                                                                                                                  | - Ajustes específicos para cada transação. <br> - Flexibilidade em casos de necessidade de parâmetros dinâmicos obrigatórios. <br> - Ideal para integrações como plataformas de pagamento para múltiplos vendedores.                                                                                    | Conveniente em casos em que seja necessário enviar um *query parameter* dinâmico de forma obrigatória, além de ser adequado para integrações que funcionam como uma plataforma de pagamento para múltiplos vendedores. |
 
 > RED_MESSAGE
 >
@@ -51,17 +51,17 @@ Para fazer isso, siga o passo a passo abaixo:
 
 ![Payment](/images/cow/not4-payment-pt.png)
 
-5. Por último, clique em **Salvar configuração**. Isso gerará uma **chave secreta** exclusiva para a aplicação, que permitirá validar a autenticidade das notificações recebidas, garantindo que tenham sido enviadas pelo Mercado Pago. Tenha em mente que essa chave gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja recomendada. Para fazer isso, basta clicar no botão **Restabelecer**.
+5.Por fim, clique em **Salvar configuração**. Isso gerará uma **chave secreta** exclusiva para a aplicação, utilizada para validar a autenticidade das notificações recebidas, assegurando que elas sejam provenientes do Mercado Pago. Vale ressaltar que essa chave não possui prazo de validade, mas recomenda-se sua renovação periódica como medida de segurança. Para renovar a chave, basta clicar no botão **Restabelecer**.
 
-### 2. Simular la recepción de la notificación
+### 2. Simular o recebimento da notificação
 
-Para garantizar que las notificaciones sean configuradas correctamente, es necesario simular su recepción. Para hacerlo, sigue el paso a paso a continuación.
+Para garantir que as notificações sejam configuradas corretamente, é necessário simular o recebimento delas. Para isso, siga o passo a passo abaixo:
 
-1. Después de configurar las URLs y los Eventos, haz clic en **Guardar configuración**.
-2. Luego, haz clic en **Simular** para probar si la URL indicada está recibiendo las notificaciones correctamente.
-3. En la pantalla de simulación, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
-4. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación (Data ID).
-5. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento. Recibirás una respuesta similar al ejemplo a continuación, que representa el `body` de la notificación recibida en tu servidor.
+1. Após configurar as URLs e os eventos, clique em **Salvar configuração**.
+2. Em seguida, clique em **Simular** para testar se a URL indicada está recebendo as notificações corretamente.
+3. Na tela de simulação, selecione a URL que será testada, que pode ser **a URL de teste ou a de produção**.
+4. Depois, escolha o **tipo de evento** e insira a **identificação** que será enviada no corpo da notificação (Data ID).
+5. Por fim, clique em **Enviar teste** para verificar a solicitação, a resposta fornecida pelo servidor e a descrição do evento. Você receberá uma resposta semelhante ao exemplo abaixo, que representa o `body` da notificação recebida em seu servidor.
 
 ```
 {
@@ -82,7 +82,7 @@ Para garantizar que las notificaciones sean configuradas correctamente, es neces
 
 A validação da origem de uma notificação é fundamental para assegurar a segurança e a autenticidade das informações recebidas. Este processo ajuda a prevenir fraudes e garante que apenas notificações legítimas sejam processadas.
 
-O Mercado Pago enviará ao seu servidor uma notificação semelhante ao exemplo abaixo para um alerta do tipo `payment`. Neste exemplo, está incluída a notificação completa, que contém os `query params`, o `body` e o `header` da notificação.
+O Mercado Pago enviará ao seu servidor uma notificação semelhante ao exemplo abaixo para um alerta do tópico `payment`. Neste exemplo, está incluída a notificação completa, que contém os `query params`, o `body` e o `header` da notificação.
 
 - **_Query params_**: São parâmetros de consulta que acompanham a URL. No exemplo, temos `data.id=123456` e `type=payment`. 
 - **_Body_**: O corpo da notificação contém informações detalhadas sobre o evento, como `action`, `api_version`, `data`, `date_created`, `id`, `live_mode`, `type` e `user_id`. 
@@ -126,7 +126,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 - Os parâmetros com o sufixo `_url` vêm de _query params_. Exemplo: [data.id_url] será substituído pelo valor correspondente ao ID do evento (`data.id`). Este _query param_ pode ser encontrado na notificação recebida. No exemplo de notificação mencionado anteriormente, o `data.id_url` é `123456`.
 - [x-request-id_header] deverá ser substituído pelo valor recebido no _header_ `x-request-id`. No exemplo de notificação mencionado anteriormente, o `x-request-id` é `bb56a2f1-6aae-46ac-982e-9dcd3581d08e`.
 - [ts_header] será o valor `ts` extraído do _header_ `x-signature`. No exemplo de notificação mencionado anteriormente, o `ts` é `1742505638683`.
-- Ao aplicar os dados ao _template_, ficaria da seguinte maneira:
+- Após aplicar os dados ao **template**, o resultado seria o seguinte
 `id:123456;request-id:bb56a2f1-6aae-46ac-982e-9dcd3581d08e;ts:1742505638683;`
 
 > RED_MESSAGE
@@ -710,7 +710,7 @@ Depois de realizar a configuração necessária, a notificação Webhook será e
 
 :::::
 
-Uma vez que as notificações sejam configuradas, consulte as Ações necessárias após receber uma notificação para informar que as mesmas foram devidamente recebidas.
+Após configurar as notificações, acesse a seção **Ações necessárias após receber uma notificação** para confirmar que elas foram devidamente recebidas.
 
 ## Ações necessárias após receber a notificação
 
@@ -718,7 +718,7 @@ Quando você recebe uma notificação na sua plataforma, o Mercado Pago espera u
 
 O tempo de espera para essa confirmação será de 22 segundos. Se não for enviada essa resposta, o sistema entenderá que a notificação não foi recebida e realizará uma nova tentativa de envio a cada 15 minutos, até que receba a resposta. Após a terceira tentativa, o prazo será prorrogado, mas os envios continuarão acontecendo.
 
-Após responder a notificação, confirmando seu recebimento, você pode obter todas as informações sobre o evento do tópico `payments` notificado fazendo um GET no endpoint [v1/payments/{id}](/developers/pt/reference/payments/_payments_id/get). 
+Após responder a notificação, confirmando seu recebimento, você pode obter todas as informações sobre o evento do tópico `payments` notificado fazendo um GET ao endpoint [v1/payments/{id}](/developers/pt/reference/payments/_payments_id/get). 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, como por exemplo, atualizar um pagamento aprovado.
 

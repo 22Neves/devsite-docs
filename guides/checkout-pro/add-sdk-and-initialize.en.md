@@ -153,7 +153,7 @@ When running your React application, the Mercado Pago SDK will render the paymen
 
 <br>
 
-Once you have completed the configuration of your frontend, you will need to set up [Notifications](/developers/en/docs/checkout-pro/payment-notifications) so that your integration receives real-time information about the events that occur with Mercado Pago.
+Once you have completed the configuration of your frontend, you will need to set up [Notifications](/developers/en/docs/checkout-pro/payment-notifications) so that your integration receives real-time information about the events that occur in your integration.
 
 <br>
 <br>

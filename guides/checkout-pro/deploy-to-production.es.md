@@ -1,6 +1,6 @@
 # Salir a producción
 
-Una vez finalizado el proceso de configuración y pruebas, tu integración estará lista para ser colocada en producción. 
+Una vez finalizado el proceso de configuración, tu integración estará lista para ser colocada en producción. 
 
 A continuación, mira las recomendaciones necesarias para realizar este pasaje de manera eficaz y segura, garantizando que tu integración esté preparada para recibir transacciones reales.
 
@@ -12,6 +12,7 @@ Para hacerlo, ingresa a [Tus integraciones](/developers/panel/app) y, el menú l
 
 Para más información, consulta nuestra documentación de [Credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials).
 
+## Certificado SSL
 [TXTSNIPPET][/guides/snippets/ssl-certificate/ssl-certificate]
 
 ## Medir la calidad de tu integración

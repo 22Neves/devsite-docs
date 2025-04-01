@@ -4,18 +4,18 @@
 >
 > Adicionar o SDK ao frontend e inicializar o checkout
 
-Uma vez que você tenha configurado seu backend, é necessário configurar o frontend para completar a experiência de pagamento do lado do cliente. Para isso, você pode utilizar o SDK MercadoPago.js, que permite capturar pagamentos diretamente no frontend de maneira segura.
+Uma vez configurado o backend, é necessário configurar o frontend para completar a experiência de pagamento do lado do cliente. Para isso, utilize o SDK MercadoPago.js, que permite capturar pagamentos diretamente no frontend de maneira segura.
 
-Nesta seção, você verá como incluí-lo e inicializá-lo corretamente, para finalmente renderizar o botão de pagamento do Mercado Pago.
+Nesta seção, você aprenderá como incluir e inicializar corretamente o SDK, e como renderizar o botão de pagamento do Mercado Pago.
 
-> Se preferir, você pode baixar o SDK MercadoPago.js em nossas [bibliotecas oficiais](/developers/pt/docs/sdks-library/client-side/mp-js-v2).
+> Caso prefira, você pode baixar o SDK MercadoPago.js em nossas [bibliotecas oficiais](/developers/pt/docs/sdks-library/client-side/mp-js-v2).
 
 :::::TabsComponent
 
 ::::TabComponent{title="Incluir o SDK com HTML/js"}
 ## Incluir o SDK com HTML/js
 
-Para incluir o SDK MercadoPago.js na sua página HTML a partir de um **CDN (Content Delivery Network)**, primeiro você deve adicionar a tag `<script>` logo antes da tag `</body>` no seu arquivo HTML principal, conforme mostrado no exemplo abaixo.
+Para incluir o SDK MercadoPago.js na sua página HTML a partir de um **CDN (Content Delivery Network)**, adicione a tag `<script>` antes da tag `</body>` no seu arquivo HTML principal, conforme mostrado no exemplo abaixo:
 
 ```html
 <!DOCTYPE html>
@@ -39,19 +39,19 @@ Para incluir o SDK MercadoPago.js na sua página HTML a partir de um **CDN (Cont
 
 ## Inicializar o checkout a partir da preferência de pagamento
 
-Depois de incluir o SDK no seu frontend, é hora de inicializá-lo e, em seguida, iniciar o Checkout.
+Após incluir o SDK no seu frontend, é necessário inicializá-lo e, em seguida, iniciar o Checkout.
 
-Para continuar, você deve utilizar sua credencial `public key` de produção, que pode ser acessada nos **Detalhes da sua aplicação** em [Suas integrações](/developers/panel/app), sob o título **Produção > Credenciais de produção** no menu à esquerda da tela.
+Para continuar, utilize sua credencial `public key` de produção, disponível nos detalhes da sua aplicação em [Suas integrações](/developers/panel/app). Para acessá-lo, vá até a seção **Produção** e clique em **Credenciais de produção** no menu à esquerda da tela.
 
 > NOTE
 >
 > Nota
 >
-> Se você está desenvolvendo para outra pessoa, poderá acessar as credenciais das aplicações que não administra. Consulte [Compartilhar credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) para mais informações.
+> Se estiver desenvolvendo para outra pessoa, você poderá acessar as credenciais das aplicações que não administra. Para mais informações, consulte a seção [Compartilhar credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_compartilhar_credenciais).
 
-Você também precisará utilizar o identificador da preferência de pagamento que obteve como resposta em [Criar e configurar uma preferência de pagamento](/developers/en/docs/checkout-pro/create-payment-preference).
+Agora, será necessário utilizar o identificador da preferência de pagamento obtido na etapa [Criar e configurar uma preferência de pagamento](/developers/en/docs/checkout-pro/create-payment-preference).
 
-A seguir, para inicializar o SDK utilizando um CDN, você deverá executar este código dentro da tag `<script>`, substituindo o valor `YOUR_PUBLIC_KEY` pela sua chave e `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento**.
+Para inicializar o SDK via CDN, insira o código a seguir dentro da tag `<script>`. Substitua `YOUR_PUBLIC_KEY` pela `public_key` de produção da sua aplicação e `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento**.
 
 ```js
 <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -81,9 +81,9 @@ A seguir, para inicializar o SDK utilizando um CDN, você deverá executar este 
 >
 > h2
 >
-> Criar um contêiner HTML para o botão de pagamento
+> Criar um container HTML para o botão de pagamento
 
-Por último, você precisará criar um _container_ em seu HTML para definir a localização onde o botão de pagamento do MercadoPago será exibido. A criação do _container_ é feita inserindo um elemento no código HTML da página onde o componente será apresentado.
+Por fim, adicione um _container_ ao código HTML para definir a localização onde o botão de pagamento do Mercado Pago será exibido. Para criar esse _container_, insira o seguinte elemento no HTML da página onde o componente será renderizado:
 
 ```html
 <!-- Container para o botão de pagamento -->
@@ -92,7 +92,7 @@ Por último, você precisará criar um _container_ em seu HTML para definir a lo
 
 ## Renderizar o botão de pagamento
 
-O SDK do Mercado Pago renderizará automaticamente um botão dentro desse elemento, o qual será responsável por redirecionar o comprador para um formulário de compra no ambiente do Mercado Pago, conforme mostrado na imagem a seguir.
+O SDK do Mercado Pago é responsável por renderizar automaticamente o botão de pagamento dentro do elemento definido, permitindo que o comprador seja redirecionado para um formulário de compra no ambiente do Mercado Pago. Veja um exemplo na imagem abaixo:
 
 ![Button](/images/cow/wallet-render-pt.png)
 ::::
@@ -100,9 +100,9 @@ O SDK do Mercado Pago renderizará automaticamente um botão dentro desse elemen
 ::::TabComponent{title="Instalar o SDK utilizando React"}
 ## Instalar o SDK utilizando React
 
-Para incluir o SDK MercadoPago.js no frontend do seu projeto React, primeiro você deve configurar seu ambiente React. Para isso, certifique-se de ter **Node.js** e **npm** instalados em seu sistema. Se não os tiver, faça o download a partir do [site oficial do Node.js](http://Node.js).
+Para integrar o SDK MercadoPago.js ao frontend do seu projeto React, siga os passos abaixo, certifique-se de que o **Node.js** e o **npm** estão instalados no sistema. Caso não estejam, faça o download através do [site oficial do Node.js](http://Node.js).
 
-No seu terminal ou linha de comando, execute o seguinte comando para criar uma nova aplicação React:
+No seu terminal, execute o seguinte comando para criar uma nova aplicação React:
 
 ```
 npx create-react-app my-mercadopago-app
@@ -120,9 +120,9 @@ npm install @mercadopago/sdk-react
 
 ## Criar um componente para o botão de pagamento
 
-Abra o arquivo `src/App.js` da sua aplicação React. Uma vez lá, modifique o conteúdo do arquivo para integrar o componente `wallet` do Mercado Pago, que é o responsável por mostrar o botão de pagamento do Mercado Pago.
+Abra o arquivo `src/App.js` da sua aplicação React e atualize o conteúdo para integrar o componente `wallet` do Mercado Pago, que é o responsável por mostrar o botão de pagamento do Mercado Pago.
 
-Você precisará substituir o valor `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento** que você obteve como resposta em [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
+No código, substitua o valor `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento** que você obteve na etapa [Criar e configurar uma preferência de pagamento](/developers/pt/docs/checkout-pro/create-payment-preference).
 
 A seguir, compartilhamos um exemplo de como completar o arquivo `src/App.js`.
 
@@ -144,7 +144,7 @@ export default App;
 
 ## Renderizar o botão de pagamento
 
-Ao executar sua aplicação em React, o SDK do Mercado Pago renderizará o botão de pagamento que será responsável por redirecionar o comprador para um formulário de compra no ambiente do Mercado Pago, conforme mostrado na imagem a seguir.
+Ao executar a aplicação, o SDK do Mercado Pago irá renderizar o botão de pagamento, permitindo que o comprador seja redirecionado para o ambiente de compra, como mostrado na imagem abaixo:
 
 ![Button](/images/cow/wallet-render-pt.png)
 ::::
@@ -153,16 +153,15 @@ Ao executar sua aplicação em React, o SDK do Mercado Pago renderizará o botã
 
 <br>
 
-Uma vez que você tenha finalizado a configuração do seu frontend, você deverá configurar as [Notificações](/developers/pt/docs/checkout-pro/payment-notifications) para que sua integração receba informações em tempo real sobre os eventos que ocorrem com o Mercado Pago.
+Uma vez que você tenha finalizado a configuração no frontend, configure as [Notificações](/developers/pt/docs/checkout-pro/payment-notifications) para que seu servidor receba atualizações em tempo real sobre os eventos ocorridos na sua integração.
 
 <br>
 <br>
 
-:::AccordionComponent{title="Personalização"}
-Se desejar, você pode alterar os textos ou modificar a aparência do botão de pagamento do Mercado Pago. Para isso, acesse as seguintes documentações:
+Você pode personalizar o botão de pagamento do Mercado Pago para atender às suas necessidades. Confira as documentações disponíveis:
 
 - [Alterar textos dos botões](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-texts): escolha os diferentes textos que você pode mostrar no botão de pagamento.
-- [Alterar a aparência do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): personalize o aspecto do botão de pagamento.
-- [Alterar estilo de cor](/developers/pt/docs/checkout-pro/additional-settings/user-interface/color-style): escolha uma das opções de cor disponíveis para o botão de pagamento.
-- [_Callbacks_ auxiliares](/developers/pt/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): adicione _callbacks_ que serão executados em momentos específicos do fluxo de pagamento.
+- [Alterar a aparência do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): ajuste a aparência do botão de pagamento.
+- [Alterar estilo de cor](/developers/pt/docs/checkout-pro/additional-settings/user-interface/color-style): escolha entre diferentes opções de cores para o botão de pagamento.
+- [_Callbacks_ auxiliares](/developers/pt/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): adicione _callbacks_ executados em momentos específicos do fluxo de pagamento.
 :::

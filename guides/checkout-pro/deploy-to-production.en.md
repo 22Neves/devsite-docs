@@ -1,6 +1,6 @@
 # Go to production
 
-Once the configuration and testing process is complete, your integration will be ready to go live.
+Once the configuration process is complete, your integration will be ready to go live.
 
 Below, you will find the necessary recommendations to make this transition effectively and safely, ensuring that your integration is prepared to receive real transactions.
 
@@ -11,6 +11,8 @@ Now that you have completed all the necessary tests to verify that your integrat
 To do this, go to [Your integrations](/developers/panel/app) and, in the side menu, access **Production > Production credentials**. There you will find your productive `public_key` and `access_token`, which you should use instead of the test account credentials.
 
 For more information, check our [Credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) documentation.
+
+## SSL Certificate
 
 [TXTSNIPPET][/guides/snippets/ssl-certificate/ssl-certificate]
 
