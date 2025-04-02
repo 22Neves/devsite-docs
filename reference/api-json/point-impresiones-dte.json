@@ -120,7 +120,7 @@
                                 "title": "image",
                                 "description": {
                                   "en": "Identifier of the subtype related to image printings. It must contain the image encoded in base64 format.",
-                                  "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen encodeada en formato base64.",
+                                  "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen codificada en formato base64.",
                                   "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                                 }
                               }
@@ -311,7 +311,7 @@
                           "title": "Error decoding base64, the provided base64 string is not valid.",
                           "description": {
                             "en": "The encoding of the image in base64 is incorrect.",
-                            "es": "El encodeado de la imagen en base64 no es correcto.",
+                            "es": "El codificado de la imagen en base64 no es correcto.",
                             "pt": "A codificação da imagem em base64 está incorreta."
                           }
                         }
@@ -921,7 +921,7 @@
         "title": {
           "en": "Cancel action by ID",
           "pt": "Cancelar ação por ID",
-          "es": "Cancelar action por ID"
+          "es": "Cancelar acción por ID"
         }
       }
     }
@@ -983,7 +983,7 @@
                     "title": "image",
                     "description": {
                       "en": "Subtype identifier related to image impressions. Must contain the image encoded in base64 format.",
-                      "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen encodeada en formato base64.",
+                      "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen codificada en formato base64.",
                       "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                     }
                   }
