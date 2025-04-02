@@ -7,7 +7,7 @@
 7. Em "Modelo de integração", selecione o modelo de integração de acordo com o seu modelo de negócio.
 8. Aceite a ----[mlb]---- [Declaração de Privacidade](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm]---- [Declaração de Privacidade](https://www.mercadopago.com/privacidad) ------------ e os [Termos e Condições](/developers/pt/docs/resources/legal/terms-and-conditions) e clique em **Criar aplicação**.
 
-![create-application-2](/images/api-orders/create-application-2-pt.png)
+![create-application-2](api-orders/create-application-2-pt.png)
 
 Em [Suas integrações](/developers/panel/app), é possível consultar a lista de todas as suas aplicações criadas e acessar os [detalhes da aplicação](/developers/pt/docs/checkout-api/more-resources/application-details) de cada uma delas.
 
