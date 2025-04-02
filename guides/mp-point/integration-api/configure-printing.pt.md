@@ -1,10 +1,10 @@
 # Configurar impressões
 
-A API de Impressões oferece uma solução prática para integrar seus sistemas e gerenciar impressões nas terminais Point configuradas. Este recurso permite a impressão de imagens e impressões personalizadas diretamente de um ponto de venda (PDV), utilizando a impressora integrada dos dispositivos Smart. Isso simplifica o processo de cobrança e responde rapidamente às necessidades do seu negócio.
+A API de Impressões permite integrar seus sistemas para gerenciar impressões nas terminais Point configuradas. Este recurso possibilita imprimir imagens personalizadas diretamente de um ponto de venda (PDV), utilizando a impressora integrada dos dispositivos Smart. 
 
 ## Tags personalizadas
 
-As tags personalizadas permitem ajustar a apresentação dos documentos impressos. Este recurso oferece flexibilidade e controle sobre o formato do texto, possibilitando a criação de impressões eficientes e visualmente atraentes. A seguir, consulte as diferentes tags disponíveis, suas funções e exemplos de uso:
+As tags personalizadas permitem ajustar o formato e a aparência dos documentos impressos, garantindo maior controle sobre o estilo e a estrutura do texto.  A seguir, consulte as diferentes tags disponíveis, suas funções e exemplos de uso:
 
 > As tags personalizadas têm um limite mínimo de 100 caracteres e um máximo de 4096 caracteres, incluindo as próprias tags.
 

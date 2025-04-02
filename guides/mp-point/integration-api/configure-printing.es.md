@@ -4,7 +4,7 @@ La API de Impresiones ofrece una solución práctica para integrar tus sistemas 
 
 ## Tags personalizadas
 
-Las tags personalizadas permiten ajustar la presentación de los documentos impresos. Este recurso ofrece flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
+Las **tags personalizadas** permiten ajustar la presentación de los documentos impresos. Este recurso ofrece flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
 
 > Las tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias tags.
 
@@ -21,16 +21,16 @@ Las tags personalizadas permiten ajustar la presentación de los documentos impr
 
 ## Configuración de la impresión
 
-Utilize los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrese de que el terminal esté configurado en modo PDV (Punto de Venta). 
+Utiliza los endpoints que compartimos a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada uno. Asegúrate de que el terminal esté configurado en modo PDV (Punto de Venta). 
 
 > WARNING
 >
 > Importante
 >
-> Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite se redimensionarán automáticamente para ajustarse al ancho del rollo de papel.
+> Para la impresión de imágenes, ten en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite se redimensionarán automáticamente para ajustarse al ancho del rollo de papel.
 
    - [Crear acción de la terminal](/developers/es/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de imagenes o impresiones personalizadas. En caso de éxito, la respuesta devolverá un código de estado 201.
    - [Obtener acción por ID](/developers/es/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200.
-   - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post): Permite una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
+   - [Cancelar acción por ID](/developers/es/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar una acción creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una acción en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
 
 Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.
