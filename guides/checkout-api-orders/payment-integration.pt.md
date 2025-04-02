@@ -87,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: QR code
+ - card_icon: QRCode
  - card_title: Pix
  - card_description: Receba pagamentos eletrônicos instantâneos, oferecendo aos seus clientes a possibilidade de pagar a partir de um código QR ou um código de pagamento.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/pix
@@ -117,7 +117,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Bank transfer
+ - card_icon: BankTransfer
  - card_title: Linha de Crédito
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
@@ -163,7 +163,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Cuotas sin tarjeta
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:
@@ -199,7 +199,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Transferências SPEI
  - card_description: Receba pagamentos eletrônicos instantâneos oferecendo aos seus clientes a possibilidade de pagar de qualquer banco ou instituição financeira utilizando a sua CLABE.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
@@ -219,7 +219,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Meses sin Tarjeta
  - card_description: Ofereça aos clientes a opção de pagar em parcelas sem precisar de um cartão: o Mercado Pago absorve o financiamento e o vendedor recebe o valor total em sua conta.
  - card_button:

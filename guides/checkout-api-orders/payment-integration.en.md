@@ -87,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: QRCode
  - card_title: Pix
  - card_description: Receive instant electronic payments by offering your customers a QR code or a payment code.
  - card_button: /developers/en/docs/checkout-api/payment-integration/pix
@@ -117,7 +117,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Parcelamento sem cartão
  - card_description: Provide customers with the option to pay in installments without needing a card: Mercado Pago absorbs the financing and the seller receives the full amount in their account.
  - card_button:
@@ -164,7 +164,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Cuotas sin tarjeta
  - card_description: Provide customers with the option to pay in installments without needing a card: Mercado Pago absorbs the financing and the seller receives the full amount in their account.
  - card_button:
@@ -200,7 +200,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: SPEI Transfers
  - card_description: Receive instant electronic payments by offering your customers the option to pay from any bank or financial institution using their CLABE.
  - card_button: /developers/es/docs/checkout-api/payment-integration/spei
@@ -220,7 +220,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Meses sin Tarjeta
  - card_description: Provide customers with the option to pay in installments without needing a card: Mercado Pago absorbs the financing and the seller receives the full amount in their account.
  - card_button:

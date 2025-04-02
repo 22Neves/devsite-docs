@@ -87,7 +87,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: QRCode
  - card_title: Pix
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes un código QR o un código de pago.
  - card_button: /developers/es/docs/checkout-api/payment-integration/pix
@@ -117,7 +117,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Linha de Crédito
  - card_description: Brinda a los clientes la opción de pagar en veces sin contar con una tarjeta: Mercado Pago absorbe la financiación y el vendedor recibe la totalidad del dinero en su cuenta.
  - card_button:
@@ -164,7 +164,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Cuotas sin tarjeta
  - card_description: Brinda a los clientes la opción de pagar en cuotas sin contar con una tarjeta: Mercado Pago absorbe la financiación y el vendedor recibe la totalidad del dinero en su cuenta.
  - card_button:
@@ -200,7 +200,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Transferencia SPEI
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes la posibilidad de pagar desde cualquier banco o institución financiera utilizando su CLABE.
  - card_button: /developers/es/docs/checkout-api/payment-integration/spei
@@ -220,7 +220,7 @@ future_product_avaible:
  - card_linkProof: 
  - card_linkProofDescription:
  - card_avaible: false
- - card_icon: Pay
+ - card_icon: BankTransfer
  - card_title: Meses sin Tarjeta
  - card_description: Brinda a los clientes la opción de pagar en veces sin contar con una tarjeta: Mercado Pago absorbe la financiación y el vendedor recibe la totalidad del dinero en su cuenta.
  - card_button:
