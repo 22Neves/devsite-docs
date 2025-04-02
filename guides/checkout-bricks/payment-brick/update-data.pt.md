@@ -4,10 +4,22 @@ Para atualizar dados no Payment Brick, disponibilizamos o método update atravé
 
 Dados disponíveis para atualização:
 
-----[mlb, mla, mlm]----
+----[mlb]----
 | Campo | Tipo | Descrição | Validação |
 | --- | --- | --- | --- |
-| amount | number | Valor do pagamento. <br><br> A atualização do `amount` não afeta os pagamentos via [Conta Mercado Pago e Parcelamento sem cartão](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) porque seus valores são definidos no backend. | Antes de atualizar o `amount`, o Brick verifica se o novo valor é maior ou igual ao valor mínimo permitido pelo meio de pagamento selecionado pelo usuário. Se a validação for bem-sucedida, o método update irá retornar `true`. Do contrário, irá retornar `false`. |
+| amount | number | Valor do pagamento. <br><br> A atualização do `amount` não afeta os pagamentos via [Conta Mercado Pago e Linha de Crédito](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) porque seus valores são definidos no backend. | Antes de atualizar o `amount`, o Brick verifica se o novo valor é maior ou igual ao valor mínimo permitido pelo meio de pagamento selecionado pelo usuário. Se a validação for bem-sucedida, o método update irá retornar `true`. Do contrário, irá retornar `false`. |
+
+------------
+----[mla]----
+| Campo | Tipo | Descrição | Validação |
+| --- | --- | --- | --- |
+| amount | number | Valor do pagamento. <br><br> A atualização do `amount` não afeta os pagamentos via [Conta Mercado Pago e Cuotas sin Tarjeta](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) porque seus valores são definidos no backend. | Antes de atualizar o `amount`, o Brick verifica se o novo valor é maior ou igual ao valor mínimo permitido pelo meio de pagamento selecionado pelo usuário. Se a validação for bem-sucedida, o método update irá retornar `true`. Do contrário, irá retornar `false`. |
+
+------------
+----[mlm]----
+| Campo | Tipo | Descrição | Validação |
+| --- | --- | --- | --- |
+| amount | number | Valor do pagamento. <br><br> A atualização do `amount` não afeta os pagamentos via [Conta Mercado Pago e Meses sin Tarjeta](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) porque seus valores são definidos no backend. | Antes de atualizar o `amount`, o Brick verifica se o novo valor é maior ou igual ao valor mínimo permitido pelo meio de pagamento selecionado pelo usuário. Se a validação for bem-sucedida, o método update irá retornar `true`. Do contrário, irá retornar `false`. |
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -23,24 +35,20 @@ let amount = 95;
 paymentBrickController.update({ amount });
 ```
 ```react-jsx
-import Payment, { usePaymentBrick } from '@mercadopago/sdk-react';
-
+import { Payment, usePaymentBrick } from "@mercadopago/sdk-react";
 const App = () => {
   const { update } = usePaymentBrick();
-
   const customization = {
     paymentMethods: {
-      creditCard: 'all',
-      debitCard: 'all',
+      creditCard: "all",
+      debitCard: "all",
     },
   };
-
   return (
     <>
       <button type="button" onClick={() => update({ amount: 95 })}>
         Update amount
       </button>
-
       <Payment
         initialization={{ amount: 100 }}
         customization={customization}
@@ -51,7 +59,6 @@ const App = () => {
     </>
   );
 };
-
 export default App;
 ```
 ]]]
