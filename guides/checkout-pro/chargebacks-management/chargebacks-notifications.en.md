@@ -8,11 +8,19 @@ Below, we present a step-by-step guide to perform the configuration.
 
 1. Access [Your integrations](/developers/panel/app) and select the application for which you want to activate chargeback notifications.
 
+![Application](/images/cow/not1-select-app-es.png)
+
 2. In the left menu, select **Webhooks > Configure Notifications**.
+
+![Webhooks](/images/cow/not2-webhooks-es.png) 
 
 3. Configure the productive HTTPS URL that will be used to receive notifications.
 
+![URL](/images/cow/not3-url-es.png) 
+
 4. In recommended events, select the **Chargebacks** event to receive notifications, which will be sent in `JSON` format via an `HTTPS POST` to the specified URL.
+
+![Chargebacks](/images/cow/not4-url-es.png) 
 
 5. Finally, click **Save Settings**. This will generate a unique secret key for the application, which will allow you to validate the authenticity of the received notifications, ensuring that they have been sent by Mercado Pago. For more details, refer to the [Webhook Notifications Documentation](/developers/en/docs/your-integrations/notifications/webhooks).
 

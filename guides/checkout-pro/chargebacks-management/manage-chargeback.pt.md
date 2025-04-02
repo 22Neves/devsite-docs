@@ -4,9 +4,11 @@ Ao receber uma notificação de início de contestação, utilize os dados forne
 
 Nesta etapa, analise as informações detalhadas incluídas na notificação para compreender os aspectos específicos da contestação. Abaixo, apresentamos um diagrama que ilustra como funciona o fluxo de envio e recebimento da documentação:
 
+![Chargebacks](/images/cow/chargebacks-flow.png) 
+
 ## Consultar contestação
 
-Inicie o processo consultando as informações da contestação utilizando o `id` ou o `payment_id` fornecidos no corpo da notificação. A partir dos detalhes obtidos, será possível avaliar se há necessidade de envio da documentação para dar continuidade à contestação.
+Inicie o processo consultando as informações da contestação utilizando o `id` ou o `payment_id` fornecidos no corpo da notificação. A partir dos detalhes obtidos, será possível avaliar se há necessidade de envio da documentação para dar continuidade ao processo de contestação.
 
 :::::TabsComponent
 
@@ -88,7 +90,7 @@ Confira abaixo um exemplo de resposta à requisição:
 
 :::::
 
-## Enviar documentação para contestação
+## Enviar documentação 
 
 Na resposta à consulta realizada para obter mais informações sobre a contestação, será indicado se você deve enviar a documentação necessária para contestá-lo. Você só precisará fazê-lo se o campo `documentation_required` for true e o campo `date_documentation_deadline` indicar uma data futura. 
 
@@ -116,8 +118,8 @@ Aguarde a notificação Webhook referente à resolução e cheque novamente a co
 
 | Valor | Descrição                                                                 |
 |-------|---------------------------------------------------------------------------|
-| true  | Indica que a decisão foi a favor do vendedor e o dinheiro será devolvido. |
-| false | Indica que a decisão foi contra o vendedor e o dinheiro será descontado.  |
+| `true`  | Indica que a decisão foi a favor do vendedor e o dinheiro será devolvido. |
+| `false` | Indica que a decisão foi contra o vendedor e o dinheiro será descontado.  |
 
 > RED_MESSAGE
 >
@@ -132,7 +134,7 @@ Quando uma contestação é iniciada, o status do pagamento associado é diretam
 
 | Status      | Status detail | Descrição                                                                 |
 |------------------|-------------------|-------------------------------------------------------------------------------|
-| charged_back     | `in_process`        | Contestação recebida. A disputa do pagamento está em andamento, aguardando uma decisão final. |
-| charged_back     | `settled`           | Decisão contra o vendedor. Dinheiro retirado da conta do vendedor.            |
-| charged_back     | `reimbursed`        | Decisão favorável ao vendedor. Dinheiro reembolsado para a conta do vendedor. |
+| `charged_back`     | `in_process`        | Contestação recebida. A disputa do pagamento está em andamento, aguardando uma decisão final. |
+| `charged_back`     | `settled`           | Decisão contra o vendedor. Dinheiro retirado da conta do vendedor.            |
+| `charged_back`     | `reimbursed`        | Decisão favorável ao vendedor. Dinheiro reembolsado para a conta do vendedor. |
 

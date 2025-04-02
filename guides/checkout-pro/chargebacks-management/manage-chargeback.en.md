@@ -4,6 +4,8 @@ Upon receiving a chargeback initiation notification, use the provided data to as
 
 In this stage, analyze the detailed information included in the notification to understand the specific aspects of the chargeback. Below, we present a diagram that illustrates how the document submission and receipt flow works:
 
+![Chargebacks](/images/cow/chargebacks-flow.png) 
+
 ## Consult chargeback
 
 Start the process by consulting the chargeback information using the `id` or `payment_id` provided in the notification body. From the obtained details, it will be possible to evaluate if there is a need to submit documentation to continue the chargeback.
@@ -116,8 +118,8 @@ Wait for the Webhook notification regarding the resolution and check the chargeb
 
 | Value | Description                                                               |
 |-------|---------------------------------------------------------------------------|
-| true  | Indicates that the decision was in favor of the seller and the money will be refunded. |
-| false | Indicates that the decision was against the seller and the money will be deducted.  |
+| `true`  | Indicates that the decision was in favor of the seller and the money will be refunded. |
+| `false` | Indicates that the decision was against the seller and the money will be deducted.  |
 
 > RED_MESSAGE
 >
@@ -131,6 +133,6 @@ When a chargeback is initiated, the status of the associated payment is directly
 
 | Status           | Status detail | Description                                                                                      |
 |------------------|---------------|--------------------------------------------------------------------------------------------------|
-| charged_back     | `in_process`  | Chargeback received. The payment dispute is in progress, awaiting a final decision.              |
-| charged_back     | `settled`     | Decision against the seller. Money withdrawn from the seller's account.                          |
-| charged_back     | `reimbursed`  | Decision in favor of the seller. Money refunded to the seller's account.                         |
+| `charged_back`     | `in_process`  | Chargeback received. The payment dispute is in progress, awaiting a final decision.              |
+| `charged_back`     | `settled`     | Decision against the seller. Money withdrawn from the seller's account.                          |
+| `charged_back`     | `reimbursed`  | Decision in favor of the seller. Money refunded to the seller's account.                         |
