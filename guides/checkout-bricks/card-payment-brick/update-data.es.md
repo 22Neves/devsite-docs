@@ -14,18 +14,15 @@ let amount = 95;
 cardPaymentBrickController.update({ amount });
 ```
 ```react-jsx
-import Card, { useCardPaymentBrick } from '@mercadopago/sdk-react';
-
+import { CardPayment, useCardPaymentBrick } from "@mercadopago/sdk-react";
 const App = () => {
   const { update } = useCardPaymentBrick();
-
   return (
     <>
       <button type="button" onClick={() => update({ amount: 95 })}>
         Update amount
       </button>
-
-      <Card
+      <CardPayment
         initialization={{ amount: 100 }}
         onSubmit={async (param) => {
           console.log(param);
@@ -34,7 +31,6 @@ const App = () => {
     </>
   );
 };
-
 export default App;
 ```
 ]]]

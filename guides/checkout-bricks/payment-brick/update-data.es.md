@@ -4,16 +4,22 @@ Para actualizar datos en Payment Brick, proporcionamos el método de actualizaci
 
 Datos disponibles para la actualización:
 
+----[mlb]----
+| Campo | Tipo | Descripción | Validación |
+| --- | --- | --- | --- |
+| amount | number | Monto del pago. <br><br> La actualización del `amount` no afecta los pagos a través de [Cuenta de Mercado Pago y Linha de Crédito](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ya que sus valores se establecen en el backend. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
+
+------------
 ----[mlm]----
 | Campo | Tipo | Descripción | Validación |
 | --- | --- | --- | --- |
-| amount | number | Monto del pago. <br><br> La actualización del `amount` no afecta los pagos a través de [Cuenta de Mercado Pago y Financiamiento sin tarjeta](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ya que sus valores se establecen en el backend. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
+| amount | number | Monto del pago. <br><br> La actualización del `amount` no afecta los pagos a través de [Cuenta de Mercado Pago y Meses sin Tarjeta](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ya que sus valores se establecen en el backend. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
 
 ------------
-----[mlb, mla]----
+----[mla]----
 | Campo | Tipo | Descripción | Validación |
 | --- | --- | --- | --- |
-| amount | number | Monto del pago. <br><br> La actualización del `amount` no afecta los pagos a través de [Cuenta de Mercado Pago y Financiación sin tarjeta](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ya que sus valores se establecen en el backend. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
+| amount | number | Monto del pago. <br><br> La actualización del `amount` no afecta los pagos a través de [Cuenta de Mercado Pago y Cuotas sin Tarjeta](/developers/es/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits) ya que sus valores se establecen en el backend. | Antes de actualizar el `amount`, el Brick verifica si el nuevo valor es mayor o igual al valor mínimo permitido por el método de pago seleccionado por el usuario. Si la validación es exitosa, el método de actualización devolverá `true`. De lo contrario, devolverá `false`. |
 
 ------------
 ----[mpe, mco, mlu, mlc]----
@@ -29,24 +35,20 @@ let amount = 95;
 paymentBrickController.update({ amount });
 ```
 ```react-jsx
-import Payment, { usePaymentBrick } from '@mercadopago/sdk-react';
-
+import { Payment, usePaymentBrick } from "@mercadopago/sdk-react";
 const App = () => {
   const { update } = usePaymentBrick();
-
   const customization = {
     paymentMethods: {
-      creditCard: 'all',
-      debitCard: 'all',
+      creditCard: "all",
+      debitCard: "all",
     },
   };
-
   return (
     <>
       <button type="button" onClick={() => update({ amount: 95 })}>
         Update amount
       </button>
-
       <Payment
         initialization={{ amount: 100 }}
         customization={customization}
@@ -57,7 +59,6 @@ const App = () => {
     </>
   );
 };
-
 export default App;
 ```
 ]]]
