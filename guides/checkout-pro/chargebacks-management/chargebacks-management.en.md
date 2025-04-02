@@ -4,10 +4,10 @@ A chargeback occurs when a customer contests a charge made to their credit or de
 
 At Mercado Pago, chargeback management is carried out in two main steps, ensuring both the analysis and resolution of disputes between the store and the customer. These steps are:
 
-1. **Chargeback notifications**
+1. **Chargeback notifications**:
 Configure chargeback notifications to receive alerts whenever a customer initiates a dispute. For more details, refer to the documentation [Configure chargeback notifications](/developers/en/docs/checkout-pro/additional-content/chargebacks/notifications).
 
-2. **Chargeback processing**
+2. **Chargeback processing**:
 After notification, if requested, it will be necessary to gather information and submit documentation through the Mercado Pago API. For more information, refer to the [Chargeback management documentation](/developers/en/docs/checkout-pro/additional-content/chargebacks/manage).
 
 > RED_MESSAGE

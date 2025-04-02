@@ -4,10 +4,10 @@ Un contracargo (o _chargeback_) ocurre cuando un cliente impugna un cargo realiz
 
 En Mercado Pago, la gestión de contracargos se realiza en dos pasos principales, que garantizan tanto el análisis como la resolución de las disputas entre la tienda y el cliente. Son los siguientes:
 
-1. **Notificación de contracargos**
+1. **Notificación de contracargos**:
 Configure las notificaciones de contracargos para recibir alertas siempre que un cliente inicie una disputa. Para más detalles, consulte la documentación [Configurar notificaciones de contracargos](/developers/es/docs/checkout-pro/additional-content/chargebacks/notifications).
 
-2. **Procesamiento de contracargos**
+2. **Procesamiento de contracargos**:
 Después de la notificación, si se solicita, será necesario reunir la información y enviar la documentación a través de la API de Mercado Pago. Para más información, consulte la [documentación Gestionar contracargos](/developers/es/docs/checkout-pro/additional-content/chargebacks/manage).
 
 > RED_MESSAGE

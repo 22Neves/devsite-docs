@@ -4,10 +4,10 @@ Uma contestação (ou _chargeback_) ocorre quando um cliente contesta uma cobran
 
 No Mercado Pago, a gestão de contestações é feita em dois passos principais, que garantem tanto a análise quanto a resolução das disputas entre a loja e o cliente. São eles:
 
-1. **Notificação de contestações**
+1. **Notificações de contestações**:
 Configure as notificações de contestações para receber alertas sempre que um cliente iniciar uma disputa. Para mais detalhes, consulte a documentação [Configurar notificações de contestações](/developers/pt/docs/checkout-pro/additional-content/chargebacks/notifications).
 
-2. **Processamento das contestações**
+2. **Processamento das contestações**:
 Após a notificação, caso solicitado, será necessário reunir as informações e enviar a documentação através da API do Mercado Pago. Para mais informações, consulte a [documentação Gerenciar contestações](/developers/pt/docs/checkout-pro/additional-content/chargebacks/manage).
 
 > RED_MESSAGE
