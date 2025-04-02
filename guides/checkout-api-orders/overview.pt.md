@@ -74,7 +74,7 @@ product_landing_what_differentiates:
  - line_text: Experiência de pagamento
  - line_type: text
  - line_values: No seu site|No seu site|No Mercado Pago
- - line_text: [Meios de pagamento](/developers/pt/docs/sales-processing/payment-methods)
+ - line_text: Meios de pagamento
  - line_type: text
  - line_values: Cartão de crédito, Pix, boleto e cartão de débito virtual Caixa|Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito | Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito
  - line_text: Disponibilidade por país
@@ -180,7 +180,7 @@ product_landing_what_differentiates:
  - line_text: Experiência de pagamento
  - line_type: text
  - line_values: No seu site|No seu site|No Mercado Pago
- - line_text: [Meios de pagamento](/developers/pt/docs/sales-processing/payment-methods)
+ - line_text: Meios de pagamento
  - line_type: text
  - line_values: Cartão de crédito ou débito, Rapipago e Pago Fácil |Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta | Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta
  - line_text: Disponibilidade por país
@@ -284,7 +284,7 @@ product_landing_what_differentiates:
  - line_text: Experiência de pagamento
  - line_type: text
  - line_values: No seu site|No seu site|No Mercado Pago
- - line_text: [Meios de pagamento](/developers/pt/docs/sales-processing/payment-methods)
+ - line_text: Meios de pagamento
  - line_type: text
  - line_values: Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander e BBVA Bancomer | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta
  - line_text: Disponibilidade por país
