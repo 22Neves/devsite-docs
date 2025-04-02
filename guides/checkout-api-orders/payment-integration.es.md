@@ -78,7 +78,7 @@ Con esta información, ya puedes elegir qué medios de pago deseas ofrecer y con
 future_product_avaible:
  - card_avaible: true
  - card_icon: Card
- - card_title: Tarjeta
+ - card_title: Tarjetas
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
  - card_button: /developers/es/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saber más
@@ -98,7 +98,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Boleto
- - card_title: Boleto bancário
+ - card_title: Boleto
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza a través de boleto bancário.
  - card_button: /developers/es/docs/checkout-api/payment-integration/boleto
  - card_buttonDescription: Saber más
@@ -135,7 +135,7 @@ future_product_avaible:
 future_product_avaible:
  - card_avaible: true
  - card_icon: Card
- - card_title: Tarjeta
+ - card_title: Tarjetas
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
  - card_button: /developers/es/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saber más
@@ -181,7 +181,7 @@ future_product_avaible:
 future_product_avaible:
  - card_avaible: true
  - card_icon: Card
- - card_title: Tarjeta
+ - card_title: Tarjetas
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
  - card_button: /developers/es/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saber más

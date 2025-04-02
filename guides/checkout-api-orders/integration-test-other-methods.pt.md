@@ -15,4 +15,3 @@ Para verificar se a compra de teste foi realizada corretamente, envie um **GET**
 A resposta a esta chamada deverá trazer as informações detalhadas da transação de teste, juntamente com o status `action_required`, que indica que se está aguardando o pagamento.
 
 Pronto! Após concluir estas etapas, a integração de outros meios de pagamento estará completa e você poderá continuar testando suas outras configurações ou [sair à produção](/developers/pt/docs/checkout-api/go-to-production).
-

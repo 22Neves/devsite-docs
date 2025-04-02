@@ -78,7 +78,7 @@ Com essas informações, você já pode escolher quais métodos de pagamento des
 future_product_avaible:
  - card_avaible: true
  - card_icon: Card
- - card_title: Cartão
+ - card_title: Cartões
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saiba mais
@@ -98,7 +98,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Boleto
- - card_title: Boleto bancário
+ - card_title: Boleto
  - card_description: Receba em sua conta os pagamentos que o cliente realizar através de um boleto bancário.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/boleto
  - card_buttonDescription: Saiba mais
@@ -134,7 +134,7 @@ future_product_avaible:
 future_product_avaible:
  - card_avaible: true
  - card_icon: Card
- - card_title: Cartão
+ - card_title: Cartões
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saiba mais
@@ -180,7 +180,7 @@ future_product_avaible:
 future_product_avaible:
  - card_avaible: true
  - card_icon: Card
- - card_title: Cartão
+ - card_title: Cartões
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
  - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
  - card_buttonDescription: Saiba mais

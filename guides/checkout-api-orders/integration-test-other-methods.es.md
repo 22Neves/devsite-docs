@@ -8,7 +8,6 @@ Luego, completa los datos del pagador requeridos en el checkout de manera aleato
 
 Una vez que hayas completado todos los campos, haz clic en el botón para procesar el pago, y aguarda el resultado.
 
-
 ## Verificar compra de prueba
 
 Para verificar que la compra de prueba se realizó correctamente, envía un GET al endpoint  :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/es/reference/order/online-payments/get-order/get"}, reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
