@@ -4,6 +4,8 @@ Al recibir una notificación de inicio de contracargo, utilice los datos proporc
 
 En esta etapa, analice la información detallada incluida en la notificación para comprender los aspectos específicos del contracargo. A continuación, presentamos un diagrama que ilustra cómo funciona el flujo de envío y recepción de la documentación:
 
+![Chargebacks](/images/cow/chargebacks-flow.png) 
+
 ## Consultar contracargo
 
 Inicie el proceso consultando la información del contracargo utilizando el `id` o el `payment_id` proporcionados en el cuerpo de la notificación. A partir de los detalles obtenidos, será posible evaluar si hay necesidad de enviar la documentación para dar continuidad al contracargo.
@@ -116,8 +118,8 @@ Espere la notificación Webhook referente a la resolución y verifique nuevament
 
 | Valor | Descripción                                                                |
 |-------|----------------------------------------------------------------------------|
-| true  | Indica que la decisión fue a favor del vendedor y el dinero será devuelto. |
-| false | Indica que la decisión fue en contra del vendedor y el dinero será descontado. |
+| `true`  | Indica que la decisión fue a favor del vendedor y el dinero será devuelto. |
+| `false` | Indica que la decisión fue en contra del vendedor y el dinero será descontado. |
 
 > RED_MESSAGE
 >
@@ -131,6 +133,6 @@ Cuando se inicia un contracargo, el estado del pago asociado se ve directamente 
 
 | Status           | Status detail  | Descripción                                                                                      |
 |------------------|----------------|--------------------------------------------------------------------------------------------------|
-| charged_back     | `in_process`   | Contracargo recibido. La disputa del pago está en progreso, esperando una decisión final.        |
-| charged_back     | `settled`      | Decisión en contra del vendedor. Dinero retirado de la cuenta del vendedor.                      |
-| charged_back     | `reimbursed`   | Decisión favorable al vendedor. Dinero reembolsado a la cuenta del vendedor.                     |
+| `charged_back`     | `in_process`   | Contracargo recibido. La disputa del pago está en progreso, esperando una decisión final.        |
+| `charged_back`     | `settled`      | Decisión en contra del vendedor. Dinero retirado de la cuenta del vendedor.                      |
+| `charged_back`     | `reimbursed`   | Decisión favorable al vendedor. Dinero reembolsado a la cuenta del vendedor.                     |

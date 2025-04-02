@@ -7,11 +7,19 @@ A seguir, apresentamos um passo a passo para realizar a configuração.
 
 1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações de contestações.
 
+![Application](/images/cow/not1-select-app-pt.png)
+
 2. No menu à esquerda, selecione **Webhooks > Configurar notificações**.
+
+![Webhooks](/images/cow/not2-webhooks-pt.png) 
 
 3. Configure a URL HTTPS produtiva que será utilizada para receber as notificações. 
 
+![URL](/images/cow/not3-url-pt.png) 
+
 4. Em eventos recomendados, selecione o evento **Contestações** para receber notificações, que serão enviadas no formato `JSON` por meio de um `HTTPS POST` para a URL especificada anteriormente.
+
+![Chargebacks](/images/cow/not4-url-pt.png) 
 
 5. Por último, clique em **Salvar configurações**. Isso gerará uma chave secreta exclusiva para a aplicação, que permitirá validar a autenticidade das notificações recebidas, garantindo que elas tenham sido enviadas pelo Mercado Pago. Para mais detalhes, consulte a [documentação de notificações de Webhooks](/developers/pt/docs/your-integrations/notifications/webhooks). 
 
