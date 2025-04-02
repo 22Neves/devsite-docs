@@ -6,6 +6,8 @@ The Printings API offers a practical solution to integrate your systems and mana
 
 Custom tags allow you to adjust the presentation of printed documents. This resource offers flexibility and control over the text format, enabling the creation of efficient and visually attractive printings. Below, check the different available tags, their functions, and usage examples:
 
+> NOTE
+>
 > Custom tags have a minimum limit of 100 characters and a maximum of 4096 characters, including the tags themselves.
 
 | Tag        | Function                                    | Example                          |
@@ -24,8 +26,6 @@ Custom tags allow you to adjust the presentation of printed documents. This reso
 Use the endpoints below to manage the print queue, taking into account the specifications of each endpoint. Ensure that the terminal is configured in POS (Point of Sale) mode.
 
 > WARNING
->
-> Important
 >
 > For image printing, keep in mind that the accepted formats are PNG or JPEG, with Base64 encoding and a maximum size of 1MB. Images that exceed this limit will be automatically resized to fit the width of the paper roll.
 
