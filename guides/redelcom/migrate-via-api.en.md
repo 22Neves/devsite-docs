@@ -18,7 +18,7 @@ To ensure a successful migration to the Order API, you must meet the following p
 
 The Order API provides various endpoints that allow you to perform the same functionalities more efficiently:
 
-> WARNING
+> RED_MESSAGE
 > 
 > Important
 >
@@ -57,7 +57,7 @@ Use the endpoints below to manage the print queue, taking into account the speci
 > For image printing, keep in mind that the accepted formats are PNG or JPEG, with Base64 encoding and a maximum size of 1MB. Images that exceed this limit will be automatically resized to fit the width of the paper roll.  
 
 The available endpoints are:
-   - [Create terminal action](/developers/en/reference/impressions_dte/post): Allows the creation of a new printing action for Mercado Pago Point, either images or [custom printings](#). If successful, the response will return a 201 status code.
+   - [Create terminal action](/developers/en/reference/impressions_dte/post): Allows the creation of a new printing action for Mercado Pago Point, either images or [custom printings](/developers/en/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration#configuracindeimpresiones#bookmark_custom_tags). If successful, the response will return a 201 status code.
    - [Get action by ID](/developers/en/reference/impressions_dte/get): Allows retrieving all information of an action created for a Point terminal using the ID obtained in the response upon its creation. Querying the printing action provides a practical tool to verify the action sent by the API, especially in case of printing failures on the terminal.
    - [Cancel action by ID](/developers/en/reference/impressions_dte_cancel/post): Allows you to cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in "created" status can be canceled. In case of success, the request will return a response with status 200.
     
@@ -65,7 +65,7 @@ Wait until the printing intent reaches the terminal and the print is processed. 
 
 ### Custom tags
 
-Custom tags allow you to adjust the format and appearance of printed documents, ensuring greater control over the style and structure of the text. They must be used when sending a **POST** to the [Create terminal action](/developers/pt/reference/mercado_pago_point/impressions/post) endpoint, through the `subtype` attribute, which must be set as `custom`. When `subtype` is defined as `custom`, the `content` attribute must include the formatted string using the supported tags.
+Custom tags allow you to adjust the format and appearance of printed documents, ensuring greater control over the style and structure of the text. They must be used when sending a **POST** to the [Create terminal action](/developers/en/reference/impressions_dte/post) endpoint, through the `subtype` attribute, which must be set as `custom`. When `subtype` is defined as `custom`, the `content` attribute must include the formatted string using the supported tags.
 
 Below, check out the different available tags, their functions, and examples of usage:
 

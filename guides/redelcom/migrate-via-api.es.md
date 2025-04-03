@@ -18,7 +18,7 @@ Para garantizar una migración exitosa a la API de Order, debes cumplir con los 
 
 La API de Order proporciona diversos endpoints que permiten ejecutar las mismas funcionalidades de manera más eficiente:
 
-> WARNING
+> RED_MESSAGE
 > 
 > Importante
 >
@@ -57,7 +57,7 @@ Utiliza los endpoints que compartimos a continuación para gestionar la cola de 
 > Para la impresión de imágenes, ten en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen las dimensiones del rollo de papel se ajustaran automáticamente. 
 
 Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/es/reference/impressions_dte/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de imágenes o [impresiones personalizadas](#). En caso de éxito, la respuesta devolverá un código de estado 201.
+   - [Crear acción de la terminal](/developers/es/reference/impressions_dte/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de imágenes o [impresiones personalizadas](/developers/es/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration#configuracindeimpresiones#bookmark_[object_object],_personalizadas). En caso de éxito, la respuesta devolverá un código de estado 201.
    - [Obtener acción por ID](/developers/es/reference/impressions_dte/get): Permite consultar toda la información de una acción creada para un terminal Point utilizando el ID obtenido en la respuesta a su creación. La consulta de la acción de impresión proporciona una herramienta práctica para verificar la acción enviada por la API, especialmente en caso de fallos de impresión en el terminal.
    - [Cancelar acción por ID](/developers/es/reference/impressions_dte_cancel/post): Permite una acción creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una acción en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
 
@@ -65,7 +65,7 @@ Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si
 
 ### _Tags_ personalizadas
 
-Las _tags_ personalizadas permiten ajustar el formato y la apariencia de los documentos impresos, garantizando un mayor control sobre el estilo y la estructura del texto. Deben utilizarse al enviar un **POST** al endpoint [Crear acción del terminal](/developers/pt/reference/mercado_pago_point/impressions/post), a través del atributo `subtype`, que debe configurarse como `custom`. Cuando el `subtype` se define como `custom`, el atributo `content` debe incluir la _string_ formateada utilizando las _tags_ soportadas.
+Las _tags_ personalizadas permiten ajustar el formato y la apariencia de los documentos impresos, garantizando un mayor control sobre el estilo y la estructura del texto. Deben utilizarse al enviar un **POST** al endpoint [Crear acción del terminal](/developers/es/reference/impressions_dte/post), a través del atributo `subtype`, que debe configurarse como `custom`. Cuando el `subtype` se define como `custom`, el atributo `content` debe incluir la _string_ formateada utilizando las _tags_ soportadas.
 
 A continuación, consulte las diferentes _tags_ disponibles, sus funciones y ejemplos de uso:
 
