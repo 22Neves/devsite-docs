@@ -231,8 +231,7 @@ Para avançar para a etapa de envio do pagamento, será necessário que seu *bac
 
 ------------
 
-:::
-:::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada. 
+::: :::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada. 
 
 Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"} e execute a requisição.      
 
@@ -329,10 +328,7 @@ Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 >
 > Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à :TagComponent{tag="API" text="Processar order" href="/developers/pt/reference/orders/online/process-order/post"}. Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
 
-Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) y [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
-
-:::
-
+Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) y [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente. :::
 ::::
 ::::TabComponent{title="Core Methods"} Na integração via _Core Methods_, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
 
@@ -431,8 +427,7 @@ Para obter esses dados e processar os pagamentos, insira o `HTML` abaixo diretam
 
 ------------
 
-:::
-:::AccordionComponent{title="Inicializar campos de cartão" pill="client-side"} Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
+::: :::AccordionComponent{title="Inicializar campos de cartão" pill="client-side"} Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
 
 Ao finalizar a inicialização dos campos, as &lt;div&gt; conterão os iframes com os inputs onde serão inseridos os dados PCI.
 
@@ -451,8 +446,7 @@ Ao finalizar a inicialização dos campos, as &lt;div&gt; conterão os iframes c
 ```
 ]]]
 
-:::
-:::AccordionComponent{title="Obter tipos de documento" pill="client-side"} Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
+::: :::AccordionComponent{title="Obter tipos de documento" pill="client-side"} Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
 
 Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função abaixo.
 
@@ -493,8 +487,7 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
 ```
 ]]]
 
-:::
-:::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"} Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
+::: :::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"} Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
 
 [[[
 ```javascript
@@ -570,8 +563,7 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
 ```
 ]]]
 
-:::
-:::AccordionComponent{title="Obter banco emissor" pill="client-side"} Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
+::: :::AccordionComponent{title="Obter banco emissor" pill="client-side"} Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
 
 O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, utilize o Javascript abaixo.
 
@@ -600,8 +592,7 @@ O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, uti
 ```
 ]]]
 
-:::
-:::AccordionComponent{title="Obter quantidade de parcelas" pill="client-side"} Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
+::: :::AccordionComponent{title="Obter quantidade de parcelas" pill="client-side"} Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
 
 [[[
 ```javascript
@@ -643,8 +634,7 @@ O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, uti
 
 ------------
 
-:::
-:::AccordionComponent{title="Criar token do cartão" pill="client-side"} O _token_ do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o _token_ é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o _token_ do cartão, utilize a função abaixo.
+::: :::AccordionComponent{title="Criar token do cartão" pill="client-side"} O _token_ do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o _token_ é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o _token_ do cartão, utilize a função abaixo.
 
 > NOTE
 >
@@ -678,8 +668,7 @@ O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, uti
 ```
 ]]]
 
-:::
-:::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+::: :::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
 Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"} e execute a requisição.      
 
@@ -776,9 +765,6 @@ Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 >
 > Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à :TagComponent{tag="API" text="Processar order " href="/developers/pt/reference/orders/online/process-order/post"}. Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
 
-Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) e [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
-
-:::
-
+Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) e [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.:::
 ::::
 :::::
