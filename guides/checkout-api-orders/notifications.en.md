@@ -370,6 +370,6 @@ When you receive a notification on your platform, Mercado Pago expects a respons
 
 The waiting time for this confirmation will be 22 seconds. If this response is not sent, the system will understand that the notification was not received and will make a new attempt to send it every 15 minutes until it receives the response. After the third attempt, the deadline will be extended, but the deliveries will continue to happen.
 
-After responding to the notification, confirming its receipt, you can get all the information about the notified resource by sending a **GET** to the endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/pt/reference/order/online-payments/get-order/get"}.
+After responding to the notification, confirming its receipt, you can get all the information about the notified resource by sending a **GET** to the endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/pt/reference/orders/online-payments/get-order/get"}.
 
 With this information, you will be able to make the necessary updates to your platform, such as updating an approved payment.

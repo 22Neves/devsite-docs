@@ -197,7 +197,7 @@ const onReady = async () => {
 
 The `onSubmit` callback of the Brick will obtain the minimum necessary data for creating a payment. Among those minimal data, there is the `CardToken`, that safely represents the card data. This token can only be used once, and will expire within 7 days.  
 
-In addition to the minimum data, we recommend collecting additional details or those that can facilitate the recognition of the purchase by the buyer, thus increasing the payment approval rate. Consult our [API Reference](/developers/en/reference/order/online-payments/create/post) for detailed information on all the parameters to be sent when creating a payment, including those that could improve your approval rate, and check which ones you want to include at this stage. 
+In addition to the minimum data, we recommend collecting additional details or those that can facilitate the recognition of the purchase by the buyer, thus increasing the payment approval rate. Consult our [API Reference](/developers/en/reference/orders/online-payments/create/post) for detailed information on all the parameters to be sent when creating a payment, including those that could improve your approval rate, and check which ones you want to include at this stage. 
 
 Then, add the relevant fields to the object being sent, which are returned in the callback response.
 
@@ -260,7 +260,7 @@ To move on to the payment submission stage, your backend must be able to receive
 
 The payment submission must be made by creating an order that contains associated payment transactions.    
 
-To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"} and execute the request.
 
 
 ```curl
@@ -306,7 +306,7 @@ See the table below for descriptions of the parameters that are mandatory in the
 
 > SUCCESS_MESSAGE
 >
-> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/order/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
 
 In case of success, the response will look like the example below.
 
@@ -761,7 +761,7 @@ The card token is created from the card information itself, increasing security 
 
 The payment submission must be made by creating an order that contains associated payment transactions.   
 
-To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"} and execute the request.
 
 
 ```curl
@@ -807,7 +807,7 @@ See the table below for descriptions of the parameters that are mandatory in the
 
 > SUCCESS_MESSAGE
 >
-> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/order/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
 
 In case of success, the response will look like the example below.
 

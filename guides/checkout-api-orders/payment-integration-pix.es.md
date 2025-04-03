@@ -112,7 +112,7 @@ Si no cuentas con esta función, añade la siguiente a tu proyecto.
 
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecutes la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl
 curl -X POST \
@@ -161,7 +161,7 @@ Consulte en la tabla a continuación las descripciones de los parámetros que so
 
 > SUCCESS_MESSAGE
 >
-> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
+> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
 
 Después de enviar la solicitud de pago, la respuesta traerá la siguiente información:
 
@@ -210,7 +210,7 @@ Entre los parámetros devueltos, tenemos los indicados en la tabla a continuaci�
 
 > WARNING
 > 
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado al endpoint :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/order/online/process-order/post"}.
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado al endpoint :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}.
 
 :::
 :::AccordionComponent{title="Disponibilizar el pago" pill="client-side"}

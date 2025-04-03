@@ -10,7 +10,7 @@ Once you have completed all the fields, click the button to process the payment 
 
 ## Verify Test Purchase
 
-To verify that the test purchase was carried out correctly, send a **GET** request to the :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/pt/reference/order/online-payments/get-order/get"} endpoint, replacing `id` with the order identification received in the response to its creation.
+To verify that the test purchase was carried out correctly, send a **GET** request to the :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/pt/reference/orders/online-payments/get-order/get"} endpoint, replacing `id` with the order identification received in the response to its creation.
 
 The response to this request should bring the detailed information of the test transaction, along with the `action_required` status, which indicates that payment is pending.
 

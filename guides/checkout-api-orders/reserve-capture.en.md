@@ -6,7 +6,7 @@ By integrating card payments with ----[mlb]---- Checkout Transparente-----------
 
 The reserve of amounts happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing, which is to say, its capture.
 
-To carry out an authorization of a reserved amount, send a **POST** request with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and all the necessary attributes to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"}.
+To carry out an authorization of a reserved amount, send a **POST** request with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and all the necessary attributes to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"}.
 
 ```curl
 curl -X POST \
@@ -119,10 +119,10 @@ Currently, it is only possible to capture the total amount of the reserved payme
 >
 > The time limit to capture the authorized payment is **5 days from its creation**. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 
-To capture the total amount of a reservation, you need to send a request to the endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/capture" href="/developers/en/reference/order/online-payments/capture/post"}, using your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and replacing `{order_id}` with the ID of the order you want to capture in full.
+To capture the total amount of a reservation, you need to send a request to the endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/capture" href="/developers/en/reference/orders/online-payments/capture/post"}, using your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and replacing `{order_id}` with the ID of the order you want to capture in full.
 
 ### Cancel reserve
 
 The cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reserved amount needs to return to the customer's card limit, or when a buyer withdraws from the purchase.
 
-To cancel a reserve, you must send a request to the endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/cancel" href="/developers/en/reference/order/online-payments/cancel-order/post"}. Be sure to replace `{order_id}` with the ID of the order you wish to cancel.
+To cancel a reserve, you must send a request to the endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/cancel" href="/developers/en/reference/orders/online-payments/cancel-order/post"}. Be sure to replace `{order_id}` with the ID of the order you wish to cancel.

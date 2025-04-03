@@ -376,7 +376,7 @@ Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respu
 
 El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
 
-Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el recurso notificado enviando un GET al endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/es/reference/order/online-payments/get-order/get"}.
+Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el recurso notificado enviando un GET al endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/es/reference/orders/online-payments/get-order/get"}.
 
 Con esta información podrás realizar las actualizaciones necesarias en tu plataforma, como actualizar un pago aprobado.
 

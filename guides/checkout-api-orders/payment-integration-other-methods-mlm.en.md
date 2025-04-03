@@ -67,7 +67,7 @@ If you do not have a payment form, add the one below to your project, including 
 
 The payment submission must be made by creating an order that contains associated payment transactions. 
 
-To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/order/online-payments/create/post"} and execute the request.
+To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"} and execute the request.
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
@@ -120,7 +120,7 @@ See the table below for descriptions of the parameters that are mandatory in the
 
 > SUCCESS_MESSAGE
 >
-> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/order/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/payment-management/integration-errors).
 
 The response will return the parameter `ticket_url`, which contains the URL with instructions for the buyer to make the payment, to which you should redirect them. Additionally, it will show the status `action_required` until the payment is completed.
 
@@ -167,7 +167,7 @@ The response will return the parameter `ticket_url`, which contains the URL with
 
 > WARNING
 > 
-> If you have created the order in manual mode, remember that processing the payment requires an additional step, which is calling the :TagComponent{tag="API" text="Process order" href="/developers/en/reference/order/online/process-order/post"}.
+> If you have created the order in manual mode, remember that processing the payment requires an additional step, which is calling the :TagComponent{tag="API" text="Process order" href="/developers/en/reference/orders/online/process-order/post"}.
 
 :::
 

@@ -61,7 +61,7 @@ Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao s
 
 O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
-Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/order/online-payments/create/post"} e execute a requisição.      
+Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"} e execute a requisição.      
 
 ```curl
 curl --location 'https://api.mercadopago.com/v1/orders' \
@@ -106,7 +106,7 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 
 > SUCCESS_MESSAGE
 >
-> Para conhecer em detalhe todos os parâmetros enviados e retornados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/order/online-payments/create/post). Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors) para mais informações.
+> Para conhecer em detalhe todos os parâmetros enviados e retornados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/orders/online-payments/create/post). Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors) para mais informações.
 
 A resposta retornará o parâmetro `ticket_url`, que contém a URL com as instruções para que o comprador efetue o pagamento. Você deve redirecioná-lo para essa página, seguindo as orientações da etapa de [Disponibilizar pagamento](/developers/pt/docs/checkout-api/payment-integration/spei-transfers#:~:text=client%2Dside-,Disponibilizar,-pagamento). Além disso, mostrará o status action_required até que o pagamento seja realizado.
 
@@ -150,7 +150,7 @@ A resposta retornará o parâmetro `ticket_url`, que contém a URL com as instru
 
 > WARNING
 > 
-> Caso tenha criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, a chamada ao endpoint :TagComponent{tag="API" text="Processar order" href="/developers/pt/reference/order/online/process-order/post"}.
+> Caso tenha criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, a chamada ao endpoint :TagComponent{tag="API" text="Processar order" href="/developers/pt/reference/orders/online/process-order/post"}.
 
 :::
 :::AccordionComponent{title="Disponibilizar pagamento" pill="client-side"}

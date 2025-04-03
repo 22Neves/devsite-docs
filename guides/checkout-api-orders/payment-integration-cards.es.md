@@ -195,7 +195,7 @@ const onReady = async () => {
 
 El _callback_ `onSubmit` del Brick obtendrá los datos mínimos necesarios para la creación de un pago. Entre esos datos se encuentra el `CardToken`, que representa de forma segura los datos de la tarjeta. Este _token_ solo puede ser usado una vez y expira dentro de los 7 días de su creación. 
 
-Además de la información mínima, recomendamos incluir detalles adicionales o que puedan facilitar el reconocimiento de la compra por parte del comprador, y aumentar así la tasa de aprobación de pagos. Consulta nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post) para conocer en detalle todos los parámetros a ser enviados al crear un pago, incluyendo aquellos que puedan mejorar tu aprobación, y verifica cuáles quieres incluir en esta etapa. 
+Además de la información mínima, recomendamos incluir detalles adicionales o que puedan facilitar el reconocimiento de la compra por parte del comprador, y aumentar así la tasa de aprobación de pagos. Consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post) para conocer en detalle todos los parámetros a ser enviados al crear un pago, incluyendo aquellos que puedan mejorar tu aprobación, y verifica cuáles quieres incluir en esta etapa. 
 
 Luego, agrega los campos relevantes para el objeto enviado, que son retornados en la respuesta del _callback_.
 
@@ -261,7 +261,7 @@ El envío del pago debe ser realizado mediante la creación de una order que con
 
 La definición del modo de procesamiento se realizará al momento de crear la order, mediante el parámetro `processing_mode`. Su valor deberá ser `automatic`, para procesamientos automáticos, o `manual`, para procesar la order manualmente.
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecuta la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"} y ejecuta la requisición.
 
 ```curl
 curl -X POST \
@@ -306,7 +306,7 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 
 > SUCCESS_MESSAGE
 >
-> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
+> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
 
 En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
@@ -354,7 +354,7 @@ En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
 > WARNING
 >
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/order/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
 
 Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
 
@@ -763,7 +763,7 @@ El envío del pago debe ser realizado mediante la creación de una order que con
 
 La definición del modo de procesamiento se realizará al momento de crear la order, mediante el parámetro `processing_mode`. Su valor deberá ser `automatic`, para procesamientos automáticos, o `manual`, para procesar la order manualmente.
 
-Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el _backend_. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/order/online-payments/create/post"} y ejecuta la requisición.
+Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el _backend_. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"} y ejecuta la requisición.
 
 ```curl
 curl -X POST \
@@ -808,7 +808,7 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 
 > SUCCESS_MESSAGE
 >
-> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
+> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/payment-management/integration-errors).
 
 En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
@@ -856,7 +856,7 @@ En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
 > WARNING
 >
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/order/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/payment-management/reserve-capture-cancel) para más información.
 
 Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
 

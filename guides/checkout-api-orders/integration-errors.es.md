@@ -36,4 +36,4 @@ Consulta la lista de posibles errores devueltos por la API y cómo corregirlos.
 | Error de Idempotencia | 500 | `idempotency_validation_failed` | Ocurrió un error interno en el servidor. Intenta reenviar la solicitud con una clave de idempotencia nueva y única para evitar conflictos. Si el problema persiste, comunícate con Soporte y proporciona el `x-request-id` junto a más detalles sobre la operación realizada. |
 | Error de la API | 500 | `internal_error` | Ocurrió un error interno en el servidor. Por favor, intenta nuevamente más tarde. Si el problema persiste, comunícate con Soporte y proporciona el `x-request-id` junto a más detalles sobre la operación realizada. |
 
-Para obtener más información sobre cómo enviar las solicitudes, requerimientos y validaciones necesarias, consulta nuestra :TagComponent{tag="API" text="Referencia de API" href="/developers/en/reference/order/online-payments/create/post"}.
+Para obtener más información sobre cómo enviar las solicitudes, requerimientos y validaciones necesarias, consulta nuestra :TagComponent{tag="API" text="Referencia de API" href="/developers/en/reference/orders/online-payments/create/post"}.

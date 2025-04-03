@@ -10,7 +10,7 @@ Depois de preencher todos os campos, clique no botão para processar o pagamento
 
 ## Verificar compra de teste
 
-Para verificar se a compra de teste foi realizada corretamente, envie um **GET** para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/order/online-payments/get-order/get"}, substituindo `id` pela identificação da order, recebida na resposta à sua criação.
+Para verificar se a compra de teste foi realizada corretamente, envie um **GET** para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/orders/online-payments/get-order/get"}, substituindo `id` pela identificação da order, recebida na resposta à sua criação.
 
 A resposta a esta chamada deverá trazer as informações detalhadas da transação de teste, juntamente com o status `action_required`, que indica que se está aguardando o pagamento.
 
