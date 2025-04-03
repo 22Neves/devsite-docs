@@ -12,26 +12,6 @@ Toda a informação envolvida no processamento da transação é armazenada no *
 
 Com isso, a implementação do fluxo é transparente para quem realiza a integração, conforme mostrado no diagrama a seguir.
 
-<pre class="mermaid">
-  sequenceDiagram
-    participant Navegador as Navegador do comprador
-    participant Frontend as Front-end do integrador
-    participant MPjs as MercadoPago.js
-    participant Backend as Back-end do integrador
-    participant API as API Mercado Pago
-
-    Navegador->>Frontend: 1. Tela de pagamento<br>O comprador acessa a tela de pagamento.
-    Frontend->>MPjs: 2. Inicialização SDK JS Mercado Pago<br>O front-end do integrador baixa e<br>inicializa o SDK JS do Mercado Pago.
-    Frontend->>Navegador: 3. Formulário de pagamento<br>O front-end do integrador exibe o<br>formulário de pagamento.
-    Navegador->>Frontend: 4. Confirmação de pagamento<br>O comprador preenche o formulário e<br>finaliza o pagamento.
-    Frontend->>MPjs: 5. Criação do token<br>O front-end do integrador usa o SDK JS<br>para criar o token que conterá os dados<br>do cartão de forma segura.
-    Frontend->>Backend: 6. Envio do token<br>O front-end do integrador envia o token do<br>cartão e os dados de pagamento para seu back-end.
-    Backend->>API: 7. Criação do pagamento<br>Do back-end, são chamados os serviços<br>do Mercado Pago para criar o pagamento.
-    API->>Navegador: 8. Resultado do pagamento<br>O front-end do integrador exibe ao<br>comprador o resultado da operação.
-    API->>Backend: 9. Atualizações de status do pagamento<br>O Mercado Pago pode enviar notificações<br>via Webhook com atualizações do status<br>do pagamento.
-    Backend->>Navegador: 10. Notificação ao comprador<br>Se aplicável, o comprador é notificado<br>sobre a atualização do pagamento.
-</pre>
-
 Além disso, o componente oferece a possibilidade de orientar o usuário com alertas sobre campos incompletos ou possíveis erros ao preencher os dados, otimizando o processo de compra.
 
 Para avançar com a configuração de pagamentos com cartão de débito e/ou crédito via _Card Payment Brick_, siga os passos abaixo.
