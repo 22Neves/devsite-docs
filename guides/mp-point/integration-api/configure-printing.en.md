@@ -8,7 +8,7 @@ Use the endpoints below to manage the printing queue, taking into account the sp
 >
 > For image printing, keep in mind that the accepted formats are PNG or JPEG, with Base64 encoding and a maximum size of 1MB. Images exceeding the dimensions of the paper roll will be automatically adjusted.
 
-   - [Create terminal action](/developers/pt/reference/mercado_pago_point/impressions/post): Allows the creation of a new printing action for Mercado Pago Point, either images or [custom printings](/developers/en/docs/mp-point/integration-configuration/configure-printing#bookmark_tags_personalizadas). If successful, the response will return a 201 status code.
+   - [Create terminal action](/developers/pt/reference/mercado_pago_point/impressions/post): Allows the creation of a new printing action for Mercado Pago Point, either images or [custom printings](/developers/en/docs/mp-point/integration-configuration/configure-printing#bookmark_custom_tags). If successful, the response will return a 201 status code.
    - [Get action by ID](/developers/en/reference/mercado_pago_point/impressions/get): Allows retrieving all information of an action created for a Point terminal using the ID obtained in the response upon its creation. Querying the printing action provides a practical tool to verify the action sent by the API, especially in case of printing failures on the terminal.
    - [Cancel action by ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Allows canceling an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response upon its creation. Only an action with a `created` status can be canceled. If successful, the request will return a 200 status response.
 
