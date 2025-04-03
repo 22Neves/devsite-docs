@@ -6,7 +6,7 @@ A seguir, veja as recomendações necessárias para realizar essa transição de
 
 ## Usar credenciais de produção
 
-Para subir em produção, é preciso substituir as **credenciais de teste** pelas **credenciais de produção** da sua aplicação do Mercado Pago.
+Para subir em produção, é preciso substituir as **credenciais de teste** pelas **credenciais de produção** da sua aplicação do Mercado Pago na sua integração.
 
 Para fazer isso, acesse [Suas integrações](/developers/panel/app) e, no menu lateral esquerdo, acesse **Produção > Credenciais de produção**. Lá você encontrará sua `public_key` e `access_token` produtivos, que deverá utilizar no lugar das credenciais da conta de teste. Para mais informações, consulte nossa documentação de [Credenciais](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials).
 
