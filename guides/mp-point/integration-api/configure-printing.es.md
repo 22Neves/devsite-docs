@@ -6,7 +6,7 @@ Utilice los endpoints a continuación para gestionar la cola de impresiones, ten
 
 > RED_MESSAGE
 >
-> Para la impresión de imágenes, tenga en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen este límite serán redimensionadas automáticamente para ajustarse al ancho del rollo de papel.
+> Para la impresión de imágenes, ten en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen las dimensiones del rollo de papel se ajustaran automáticamente.
 
    - [Crear acción del terminal](/developers/pt/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de imágenes o [impresiones personalizadas](/developers/es/docs/mp-point/integration-configuration/configure-printing#bookmark_tags_personalizadas). En caso de éxito, la respuesta devolverá un código de estado 201.
    - [Obtener acción por ID](/developers/pt/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción creada para un terminal Point utilizando el ID obtenido en la respuesta a su creación. La consulta de la acción de impresión proporciona una herramienta práctica para verificar la acción enviada por la API, especialmente en caso de fallos de impresión en el terminal.
@@ -47,6 +47,6 @@ A continuación, consulte las diferentes _tags_ disponibles, sus funciones y eje
     }
   },
   "external_reference": "8a42e06e45d5",
-  "content": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL ADIDAS WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA Cerro Navia test 12345  {/s}{br}{s}RECIBE: Pepito Perez{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
+  "content": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA  {/s}{br}{s}RECIBE: John{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
 }
 ```

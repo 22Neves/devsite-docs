@@ -4,9 +4,9 @@ A API de Impressões permite integrar seus sistemas para gerenciar impressões n
 
 Utilize os endpoints abaixo para gerenciar a fila de impressões, levando em conta as especificações de cada endpoint. Garanta que o terminal esteja corretamente configurado no **[modo PDV (Ponto de Venda)](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/configure-devices#bookmark_ativar_modo_pdv_no_dispositivo_point)**.
 
-> WARNING
+> RED_MESSAGE
 >
-> Para a impressão de imagens, tenha em mente que os formatos aceitos são PNG ou JPEG, com codificação Base64 e um tamanho máximo de 1MB. As imagens que excederem este limite serão redimensionadas automaticamente para se ajustarem à largura do rolo de papel.
+> Para a impressão de imagens, tenha em mente que os formatos aceitos são PNG ou JPEG, com codificação Base64 e um tamanho máximo de 1MB. As imagens que excederem as dimensões do rolo de papel serão ajustadas automaticamente.
 
    - [Criar ação da terminal](/developers/pt/reference/mercado_pago_point/impressions/post): Permite a criação de uma nova ação de impressão para Mercado Pago Point, seja de imagens ou [impressões personalizadas](/developers/pt/docs/mp-point/integration-configuration/configure-printing#bookmark_tags_personalizadas). Em caso de sucesso, a resposta devolverá um código de status 201.
    - [Obter ação por ID](/developers/pt/reference/mercado_pago_point/impressions/get): Permite consultar todas as informações da ação de impressão criada para uma terminal Point através do ID obtido na resposta à sua criação. A consulta da ação de impressão fornece uma ferramenta prática para verificar a ação enviada pela API, especialmente no caso de falhas de impressão na terminal.
@@ -47,6 +47,6 @@ A seguir, consulte as diferentes _tags_ disponíveis, suas funções e exemplos 
     }
   },
   "external_reference": "8a42e06e45d5",
-  "content": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL ADIDAS WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA Cerro Navia test 12345  {/s}{br}{s}RECIBE: Pepito Perez{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
+  "content": "{br}--------------------------------{br}{center}{w} COMPROVANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Loja: Loja de teste{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTIGO                     QUANTIDADE   {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BOLA FUTEBOL WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}ENDEREÇO: METROPOLITANA  {/s}{br}{s}RECEBE: John{/s}{br}{s}entrega ao cliente no período da manhã{/s}{br}--------------------------------{br}"
 }
 ```
