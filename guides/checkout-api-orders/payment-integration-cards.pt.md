@@ -229,9 +229,7 @@ Para avançar para a etapa de envio do pagamento, será necessário que seu *bac
 >
 > Para configurar as parcelas exibidas no _frontend_, consulte a seção de [Configurar parcelamento](/developers/pt/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) do _Card Payment Brick_. Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255).
 
-------------
-::: 
-::::
+------------ ::: ::::
 ::::TabComponent{title="Core Methods"} Na integração via _Core Methods_, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
 
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.
