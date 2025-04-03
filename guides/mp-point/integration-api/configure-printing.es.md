@@ -14,7 +14,7 @@ Utilice los endpoints a continuación para gestionar la cola de impresiones, ten
 
 Espere hasta que el intento llegue al terminal y se procese la impresión. Si la impresión no llega automáticamente, presione el botón **Actualizar** para buscar el intento manualmente.
 
-### Tags personalizadas
+### _Tags_ personalizadas
 
 Las _tags_ personalizadas permiten ajustar el formato y la apariencia de los documentos impresos, garantizando un mayor control sobre el estilo y la estructura del texto. Deben utilizarse al enviar un **POST** al endpoint [Crear acción del terminal](/developers/pt/reference/mercado_pago_point/impressions/post), a través del atributo `subtype`, que debe configurarse como `custom`. Cuando el `subtype` se define como `custom`, el atributo `content` debe incluir la _string_ formateada utilizando las _tags_ soportadas.
 
