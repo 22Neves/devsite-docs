@@ -38,7 +38,6 @@ O **modo automático** é o modo padrão da aplicação. Por meio dele, a transa
   - **Reembolso parcial**: deverá ser especificada a quantia a ser reembolsada no `body` da requisição junto com o ID da transação. Todas as outras transações permanecerão como estão e somente a transação alterada será reembolsada.
 
 :::
-
 :::TabComponent{title="Modo manual"}
 O **modo manual** é o modo personalizável da aplicação, que permite dividir o processamento do pagamento em etapas que podem ser configuradas e executadas de maneira incremental.
 

@@ -40,7 +40,6 @@ The allowed operations are:
    - **Partial refund**: the amount to be refunded must be specified in the request’s `body` along with de transaction ID. All other transactions will remain as they are, and only the modified transaction will be refunded.
 
 :::
-
 :::TabComponent{title="Manual mode"}
 The **manual mode** is where it is possible to divide the processing of the transaction into steps that can be configured and executed incrementally. It allows customization of each step of the payment process, adapting to different needs and scenarios. To create the order in manual mode, you need to ensure that the `processing_mode` field, that is responsible for defining the format of creation and processing of the transaction, is set to `manual`.
 

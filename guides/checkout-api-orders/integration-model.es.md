@@ -40,7 +40,6 @@ Las operaciones permitidas son:
     - **Reembolso parcial**: se debe especificar la cantidad a reembolsar en el `body` de la solicitud, junto con el ID de la transacción. Todas las otras transacciones permanecerán como están y solo la transacción modificada será reembolsada.
 
 :::
-
 :::TabComponent{title="Modo manual"}
 El **modo manual** es donde podemos dividir el procesamiento de la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental. Permite la personalización de cada etapa del proceso de pago, adaptándose a diferentes necesidades y escenarios. Para crear la order en modo manual, es necesario asegurarse de que el campo `processing_mode`, responsable de definir el formato de creación y procesamiento de la transacción, esté como `manual`.
 

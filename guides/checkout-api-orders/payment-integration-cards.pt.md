@@ -4,7 +4,8 @@ A integração de pagamentos com **cartão de crédito e/ou débito** no ----[ml
 
 :::::TabsComponent
 
-::::TabComponent{title="Card Payment Brick"} Na integração por meio do _Card Payment Brick_, a biblioteca `MercadoPago.js`, incluída no seu projeto durante a [configuração do ambiente de desenvolvimento](/developers/pt/docs/checkout-api/development-environment), é responsável por obter as informações necessárias para a geração de um pagamento. Ou seja, ela realiza uma busca pelos tipos de documentos disponíveis para o país correspondente e, conforme os dados do cartão são inseridos, também busca as informações relativas ao emissor e às parcelas disponíveis.
+::::TabComponent{title="Card Payment Brick"} 
+Na integração por meio do _Card Payment Brick_, a biblioteca `MercadoPago.js`, incluída no seu projeto durante a [configuração do ambiente de desenvolvimento](/developers/pt/docs/checkout-api/development-environment), é responsável por obter as informações necessárias para a geração de um pagamento. Ou seja, ela realiza uma busca pelos tipos de documentos disponíveis para o país correspondente e, conforme os dados do cartão são inseridos, também busca as informações relativas ao emissor e às parcelas disponíveis.
 
 Toda a informação envolvida no processamento da transação é armazenada no *backend*, em conformidade com os padrões de [segurança PCI](/developers/pt/docs/security/pci).
 
@@ -16,7 +17,8 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 >
 > Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model).
 
-:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} Para poder receber pagamentos, é necessário que você adicione no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
+:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} 
+Para poder receber pagamentos, é necessário que você adicione no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
 
 Essa inclusão deve ser feita por meio do _Card Payment Brick_, que oferece um formulário otimizado com temas variados e inclui os campos necessários para pagamentos com cartões.
 
@@ -229,348 +231,9 @@ Para avançar para a etapa de envio do pagamento, será necessário que seu *bac
 >
 > Para configurar as parcelas exibidas no _frontend_, consulte a seção de [Configurar parcelamento](/developers/pt/docs/checkout-bricks/card-payment-brick/advanced-features/configure-installments) do _Card Payment Brick_. Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255).
 
------------- ::: ::::
-::::TabComponent{title="Core Methods"} Na integração via _Core Methods_, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
+------------ 
 
-:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.
-
-Para obter esses dados e processar os pagamentos, insira o `HTML` abaixo diretamente no projeto.
-
-----[mla, mlb]----
-[[[
-```html
-
-  <style>
-    #form-checkout {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-    }
-
-    .container {
-      height: 18px;
-      display: inline-block;
-      border: 1px solid rgb(118, 118, 118);
-      border-radius: 2px;
-      padding: 1px 2px;
-    }
-  </style>
-  <form id="form-checkout" action="/process_payment" method="POST">
-    <div id="form-checkout__cardNumber" class="container"></div>
-    <div id="form-checkout__expirationDate" class="container"></div>
-    <div id="form-checkout__securityCode" class="container"></div>
-    <input type="text" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
-    <select id="form-checkout__issuer" name="issuer">
-      <option value="" disabled selected>Banco emissor</option>
-    </select>
-    <select id="form-checkout__installments" name="installments">
-      <option value="" disabled selected>Parcelas</option>
-    </select>
-    <select id="form-checkout__identificationType" name="identificationType">
-      <option value="" disabled selected>Tipo de documento</option>
-    </select>
-    <input type="text" id="form-checkout__identificationNumber" name="identificationNumber" placeholder="Número do documento" />
-    <input type="email" id="form-checkout__email" name="email" placeholder="E-mail" />
-
-    <input id="token" name="token" type="hidden">
-    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
-    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
-    <input id="description" name="description" type="hidden" value="Nome do Produto">
-
-    <button type="submit" id="form-checkout__submit">Pagar</button>
-  </form>
-```
-]]]
-
-------------
-----[mlm]----
-[[[
-```html
-
-  <style>
-    #form-checkout {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-    }
-
-    .container {
-      height: 18px;
-      display: inline-block;
-      border: 1px solid rgb(118, 118, 118);
-      border-radius: 2px;
-      padding: 1px 2px;
-    }
-  </style>
-  <form id="form-checkout" action="/process_payment" method="POST">
-    <div id="form-checkout__cardNumber" class="container"></div>
-    <div id="form-checkout__expirationDate" class="container"></div>
-    <div id="form-checkout__securityCode" class="container"></div>
-    <input type="text" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
-    <select id="form-checkout__issuer" name="issuer">
-      <option value="" disabled selected>Banco emissor</option>
-    </select>
-    <select id="form-checkout__installments" name="installments">
-      <option value="" disabled selected>Parcelas</option>
-    </select>
-    <input type="email" id="form-checkout__email" name="email" placeholder="E-mail" />
-
-    <input id="token" name="token" type="hidden">
-    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
-    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
-    <input id="description" name="description" type="hidden" value="Nome do Produto">
-
-    <button type="submit" id="form-checkout__submit">Pagar</button>
-  </form>
-```
-]]]
-
-------------
-
-::: :::AccordionComponent{title="Inicializar campos de cartão" pill="client-side"} Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
-
-Ao finalizar a inicialização dos campos, as &lt;div&gt; conterão os iframes com os inputs onde serão inseridos os dados PCI.
-
-[[[
-```javascript
-
-    const cardNumberElement = mp.fields.create('cardNumber', {
-      placeholder: "Número do cartão"
-    }).mount('form-checkout__cardNumber');
-    const expirationDateElement = mp.fields.create('expirationDate', {
-      placeholder: "MM/YY",
-    }).mount('form-checkout__expirationDate');
-    const securityCodeElement = mp.fields.create('securityCode', {
-      placeholder: "Código de segurança"
-    }).mount('form-checkout__securityCode');
-```
-]]]
-
-::: :::AccordionComponent{title="Obter tipos de documento" pill="client-side"} Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
-
-Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função abaixo.
-
-[[[
-```javascript
-
-    (async function getIdentificationTypes() {
-      try {
-        const identificationTypes = await mp.getIdentificationTypes();
-        const identificationTypeElement = document.getElementById('form-checkout__identificationType');
-
-        createSelectOptions(identificationTypeElement, identificationTypes);
-      } catch (e) {
-        return console.error('Error getting identificationTypes: ', e);
-      }
-    })();
-
-    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
-      const { label, value } = labelsAndKeys;
-
-      elem.options.length = 0;
-
-      const tempOptions = document.createDocumentFragment();
-
-      options.forEach(option => {
-        const optValue = option[value];
-        const optLabel = option[label];
-
-        const opt = document.createElement('option');
-        opt.value = optValue;
-        opt.textContent = optLabel;
-
-        tempOptions.appendChild(opt);
-      });
-
-      elem.appendChild(tempOptions);
-    }
-```
-]]]
-
-::: :::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"} Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
-
-[[[
-```javascript
-
-    const paymentMethodElement = document.getElementById('paymentMethodId');
-    const issuerElement = document.getElementById('form-checkout__issuer');
-    const installmentsElement = document.getElementById('form-checkout__installments');
-
-    const issuerPlaceholder = "Banco emissor";
-    const installmentsPlaceholder = "Parcelas";
-
-    let currentBin;
-    cardNumberElement.on('binChange', async (data) => {
-      const { bin } = data;
-      try {
-        if (!bin && paymentMethodElement.value) {
-          clearSelectsAndSetPlaceholders();
-          paymentMethodElement.value = "";
-        }
-
-        if (bin && bin !== currentBin) {
-          const { results } = await mp.getPaymentMethods({ bin });
-          const paymentMethod = results[0];
-
-          paymentMethodElement.value = paymentMethod.id;
-          updatePCIFieldsSettings(paymentMethod);
-          updateIssuer(paymentMethod, bin);
-          updateInstallments(paymentMethod, bin);
-        }
-
-        currentBin = bin;
-      } catch (e) {
-        console.error('error getting payment methods: ', e)
-      }
-    });
-
-    function clearSelectsAndSetPlaceholders() {
-      clearHTMLSelectChildrenFrom(issuerElement);
-      createSelectElementPlaceholder(issuerElement, issuerPlaceholder);
-
-      clearHTMLSelectChildrenFrom(installmentsElement);
-      createSelectElementPlaceholder(installmentsElement, installmentsPlaceholder);
-    }
-
-    function clearHTMLSelectChildrenFrom(element) {
-      const currOptions = [...element.children];
-      currOptions.forEach(child => child.remove());
-    }
-
-    function createSelectElementPlaceholder(element, placeholder) {
-      const optionElement = document.createElement('option');
-      optionElement.textContent = placeholder;
-      optionElement.setAttribute('selected', "");
-      optionElement.setAttribute('disabled', "");
-
-      element.appendChild(optionElement);
-    }
-
-    // Esta etapa melhora as validações cardNumber e securityCode
-    function updatePCIFieldsSettings(paymentMethod) {
-      const { settings } = paymentMethod;
-
-      const cardNumberSettings = settings[0].card_number;
-      cardNumberElement.update({
-        settings: cardNumberSettings
-      });
-
-      const securityCodeSettings = settings[0].security_code;
-      securityCodeElement.update({
-        settings: securityCodeSettings
-      });
-    }
-```
-]]]
-
-::: :::AccordionComponent{title="Obter banco emissor" pill="client-side"} Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
-
-O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, utilize o Javascript abaixo.
-
-[[[
-```javascript
-
-    async function updateIssuer(paymentMethod, bin) {
-      const { additional_info_needed, issuer } = paymentMethod;
-      let issuerOptions = [issuer];
-
-      if (additional_info_needed.includes('issuer_id')) {
-        issuerOptions = await getIssuers(paymentMethod, bin);
-      }
-
-      createSelectOptions(issuerElement, issuerOptions);
-    }
-
-    async function getIssuers(paymentMethod, bin) {
-      try {
-        const { id: paymentMethodId } = paymentMethod;
-        return await mp.getIssuers({ paymentMethodId, bin });
-      } catch (e) {
-        console.error('error getting issuers: ', e)
-      }
-    };
-```
-]]]
-
-::: :::AccordionComponent{title="Obter quantidade de parcelas" pill="client-side"} Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
-
-[[[
-```javascript
-
-    async function updateInstallments(paymentMethod, bin) {
-      try {
-        const installments = await mp.getInstallments({
-          amount: document.getElementById('transactionAmount').value,
-          bin,
-          paymentTypeId: 'credit_card'
-        });
-        const installmentOptions = installments[0].payer_costs;
-        const installmentOptionsKeys = { label: 'recommended_message', value: 'installments' };
-        createSelectOptions(installmentsElement, installmentOptions, installmentOptionsKeys);
-      } catch (error) {
-        console.error('error getting installments: ', e)
-      }
-    }
-```
-]]]
-
-----[mlb]----
-> NOTE
->
-> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454).
-
-------------
-
-----[mla]----
-> NOTE
->
-> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/cuotas-sin-interes_3299).
-
-------------
-----[mlm]----
-> NOTE
->
-> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255).
-
-------------
-
-::: :::AccordionComponent{title="Criar token do cartão" pill="client-side"} O _token_ do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o _token_ é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o _token_ do cartão, utilize a função abaixo.
-
-> NOTE
->
-> Importante
->
-> O método `createCardToken` retorna um _token_ com a representação segura dos dados do cartão. Tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores. Além disso, tenha em conta que o **_token_ tem uma validade de 7 dias** e só pode ser usado **uma única vez**.
-
-[[[
-```javascript
-
-    const formElement = document.getElementById('form-checkout');
-    formElement.addEventListener('submit', createCardToken);
-
-    async function createCardToken(event) {
-      try {
-        const tokenElement = document.getElementById('token');
-        if (!tokenElement.value) {
-          event.preventDefault();
-          const token = await mp.fields.createCardToken({
-            cardholderName: document.getElementById('form-checkout__cardholderName').value,
-            identificationType: document.getElementById('form-checkout__identificationType').value,
-            identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
-          });
-          tokenElement.value = token.id;
-          formElement.requestSubmit();
-        }
-      } catch (e) {
-        console.error('error creating card token: ', e)
-      }
-    }
-```
-]]]
-
-::: 
-::::
-:::::
+:::
 
 :::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
@@ -669,4 +332,472 @@ Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 >
 > Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à :TagComponent{tag="API" text="Processar order " href="/developers/pt/reference/orders/online/process-order/post"}. Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
 
-Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) e [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.:::
+Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) e [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
+
+:::
+
+::::
+
+::::TabComponent{title="Core Methods"} 
+Na integração via _Core Methods_, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
+
+:::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} 
+A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.
+
+Para obter esses dados e processar os pagamentos, insira o `HTML` abaixo diretamente no projeto.
+
+----[mla, mlb]----
+[[[
+```html
+
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout" action="/process_payment" method="POST">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
+    <select id="form-checkout__issuer" name="issuer">
+      <option value="" disabled selected>Banco emissor</option>
+    </select>
+    <select id="form-checkout__installments" name="installments">
+      <option value="" disabled selected>Parcelas</option>
+    </select>
+    <select id="form-checkout__identificationType" name="identificationType">
+      <option value="" disabled selected>Tipo de documento</option>
+    </select>
+    <input type="text" id="form-checkout__identificationNumber" name="identificationNumber" placeholder="Número do documento" />
+    <input type="email" id="form-checkout__email" name="email" placeholder="E-mail" />
+
+    <input id="token" name="token" type="hidden">
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
+    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
+    <input id="description" name="description" type="hidden" value="Nome do Produto">
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+  </form>
+```
+]]]
+
+------------
+----[mlm]----
+[[[
+```html
+
+  <style>
+    #form-checkout {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+
+    .container {
+      height: 18px;
+      display: inline-block;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 2px;
+      padding: 1px 2px;
+    }
+  </style>
+  <form id="form-checkout" action="/process_payment" method="POST">
+    <div id="form-checkout__cardNumber" class="container"></div>
+    <div id="form-checkout__expirationDate" class="container"></div>
+    <div id="form-checkout__securityCode" class="container"></div>
+    <input type="text" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
+    <select id="form-checkout__issuer" name="issuer">
+      <option value="" disabled selected>Banco emissor</option>
+    </select>
+    <select id="form-checkout__installments" name="installments">
+      <option value="" disabled selected>Parcelas</option>
+    </select>
+    <input type="email" id="form-checkout__email" name="email" placeholder="E-mail" />
+
+    <input id="token" name="token" type="hidden">
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden">
+    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100">
+    <input id="description" name="description" type="hidden" value="Nome do Produto">
+
+    <button type="submit" id="form-checkout__submit">Pagar</button>
+  </form>
+```
+]]]
+
+------------
+
+:::
+
+:::AccordionComponent{title="Inicializar campos de cartão" pill="client-side"} 
+Após adicionar o formulário de pagamento, é necessário inicializar os campos de cartão (número do cartão, data de validade e código de segurança) que deverão ser preenchidos ao iniciar o fluxo de pagamento.
+
+Ao finalizar a inicialização dos campos, as &lt;div&gt; conterão os iframes com os inputs onde serão inseridos os dados PCI.
+
+[[[
+```javascript
+
+    const cardNumberElement = mp.fields.create('cardNumber', {
+      placeholder: "Número do cartão"
+    }).mount('form-checkout__cardNumber');
+    const expirationDateElement = mp.fields.create('expirationDate', {
+      placeholder: "MM/YY",
+    }).mount('form-checkout__expirationDate');
+    const securityCodeElement = mp.fields.create('securityCode', {
+      placeholder: "Código de segurança"
+    }).mount('form-checkout__securityCode');
+```
+]]]
+
+::: 
+
+:::AccordionComponent{title="Obter tipos de documento" pill="client-side"}
+Após configurar a credencial, adicionar o formulário de pagamento e inicializar os campos de cartão, é preciso obter os tipos de documento que farão parte do preenchimento do formulário para pagamento.
+
+Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função abaixo.
+
+[[[
+```javascript
+
+    (async function getIdentificationTypes() {
+      try {
+        const identificationTypes = await mp.getIdentificationTypes();
+        const identificationTypeElement = document.getElementById('form-checkout__identificationType');
+
+        createSelectOptions(identificationTypeElement, identificationTypes);
+      } catch (e) {
+        return console.error('Error getting identificationTypes: ', e);
+      }
+    })();
+
+    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
+      const { label, value } = labelsAndKeys;
+
+      elem.options.length = 0;
+
+      const tempOptions = document.createDocumentFragment();
+
+      options.forEach(option => {
+        const optValue = option[value];
+        const optLabel = option[label];
+
+        const opt = document.createElement('option');
+        opt.value = optValue;
+        opt.textContent = optLabel;
+
+        tempOptions.appendChild(opt);
+      });
+
+      elem.appendChild(tempOptions);
+    }
+```
+]]]
+
+:::
+
+:::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"} 
+Nesta etapa ocorre a validação dos dados dos compradores no momento em que realizam o preenchimento dos campos necessários para efetuar o pagamento. Para que seja possível identificar o meio de pagamento utilizado pelo comprador, insira o código abaixo diretamente no projeto. 
+
+[[[
+```javascript
+
+    const paymentMethodElement = document.getElementById('paymentMethodId');
+    const issuerElement = document.getElementById('form-checkout__issuer');
+    const installmentsElement = document.getElementById('form-checkout__installments');
+
+    const issuerPlaceholder = "Banco emissor";
+    const installmentsPlaceholder = "Parcelas";
+
+    let currentBin;
+    cardNumberElement.on('binChange', async (data) => {
+      const { bin } = data;
+      try {
+        if (!bin && paymentMethodElement.value) {
+          clearSelectsAndSetPlaceholders();
+          paymentMethodElement.value = "";
+        }
+
+        if (bin && bin !== currentBin) {
+          const { results } = await mp.getPaymentMethods({ bin });
+          const paymentMethod = results[0];
+
+          paymentMethodElement.value = paymentMethod.id;
+          updatePCIFieldsSettings(paymentMethod);
+          updateIssuer(paymentMethod, bin);
+          updateInstallments(paymentMethod, bin);
+        }
+
+        currentBin = bin;
+      } catch (e) {
+        console.error('error getting payment methods: ', e)
+      }
+    });
+
+    function clearSelectsAndSetPlaceholders() {
+      clearHTMLSelectChildrenFrom(issuerElement);
+      createSelectElementPlaceholder(issuerElement, issuerPlaceholder);
+
+      clearHTMLSelectChildrenFrom(installmentsElement);
+      createSelectElementPlaceholder(installmentsElement, installmentsPlaceholder);
+    }
+
+    function clearHTMLSelectChildrenFrom(element) {
+      const currOptions = [...element.children];
+      currOptions.forEach(child => child.remove());
+    }
+
+    function createSelectElementPlaceholder(element, placeholder) {
+      const optionElement = document.createElement('option');
+      optionElement.textContent = placeholder;
+      optionElement.setAttribute('selected', "");
+      optionElement.setAttribute('disabled', "");
+
+      element.appendChild(optionElement);
+    }
+
+    // Esta etapa melhora as validações cardNumber e securityCode
+    function updatePCIFieldsSettings(paymentMethod) {
+      const { settings } = paymentMethod;
+
+      const cardNumberSettings = settings[0].card_number;
+      cardNumberElement.update({
+        settings: cardNumberSettings
+      });
+
+      const securityCodeSettings = settings[0].security_code;
+      securityCodeElement.update({
+        settings: securityCodeSettings
+      });
+    }
+```
+]]]
+
+::: 
+
+:::AccordionComponent{title="Obter banco emissor" pill="client-side"} Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
+
+O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, utilize o Javascript abaixo.
+
+[[[
+```javascript
+
+    async function updateIssuer(paymentMethod, bin) {
+      const { additional_info_needed, issuer } = paymentMethod;
+      let issuerOptions = [issuer];
+
+      if (additional_info_needed.includes('issuer_id')) {
+        issuerOptions = await getIssuers(paymentMethod, bin);
+      }
+
+      createSelectOptions(issuerElement, issuerOptions);
+    }
+
+    async function getIssuers(paymentMethod, bin) {
+      try {
+        const { id: paymentMethodId } = paymentMethod;
+        return await mp.getIssuers({ paymentMethodId, bin });
+      } catch (e) {
+        console.error('error getting issuers: ', e)
+      }
+    };
+```
+]]]
+
+::: 
+
+:::AccordionComponent{title="Obter quantidade de parcelas" pill="client-side"} 
+Um dos campos obrigatórios que compõem o formulário de pagamento é a **quantidade de parcelas**. Para ativá-lo e exibir as parcelas disponíveis no ato do pagamento, utilize a função abaixo. 
+
+[[[
+```javascript
+
+    async function updateInstallments(paymentMethod, bin) {
+      try {
+        const installments = await mp.getInstallments({
+          amount: document.getElementById('transactionAmount').value,
+          bin,
+          paymentTypeId: 'credit_card'
+        });
+        const installmentOptions = installments[0].payer_costs;
+        const installmentOptionsKeys = { label: 'recommended_message', value: 'installments' };
+        createSelectOptions(installmentsElement, installmentOptions, installmentOptionsKeys);
+      } catch (error) {
+        console.error('error getting installments: ', e)
+      }
+    }
+```
+]]]
+
+----[mlb]----
+> NOTE
+>
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/pt/support/oferecer-parcelas-sem-acrescimo-para-compradores_454).
+
+------------
+
+----[mla]----
+> NOTE
+>
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/cuotas-sin-interes_3299).
+
+------------
+----[mlm]----
+> NOTE
+>
+> Caso deseje configurar parcelamento sem juros, acesse a [documentação do Support Center](/developers/es/support/mensualidades-sin-intereses_2255).
+
+------------
+
+::: 
+
+:::AccordionComponent{title="Criar token do cartão" pill="client-side"} 
+O _token_ do cartão é criado a partir das próprias informações do cartão, aumentando a segurança durante o fluxo de pagamento. Além disso, uma vez que o _token_ é utilizado em determinada compra, ele é descartado, sendo necessário a criação de um novo para futuras compras. Para criar o _token_ do cartão, utilize a função abaixo.
+
+> NOTE
+>
+> Importante
+>
+> O método `createCardToken` retorna um _token_ com a representação segura dos dados do cartão. Tomaremos o token ID da resposta e salvaremos em um input oculto chamado `token` para depois enviar o formulário aos servidores. Além disso, tenha em conta que o **_token_ tem uma validade de 7 dias** e só pode ser usado **uma única vez**.
+
+[[[
+```javascript
+
+    const formElement = document.getElementById('form-checkout');
+    formElement.addEventListener('submit', createCardToken);
+
+    async function createCardToken(event) {
+      try {
+        const tokenElement = document.getElementById('token');
+        if (!tokenElement.value) {
+          event.preventDefault();
+          const token = await mp.fields.createCardToken({
+            cardholderName: document.getElementById('form-checkout__cardholderName').value,
+            identificationType: document.getElementById('form-checkout__identificationType').value,
+            identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
+          });
+          tokenElement.value = token.id;
+          formElement.requestSubmit();
+        }
+      } catch (e) {
+        console.error('error creating card token: ', e)
+      }
+    }
+```
+]]]
+
+:::
+
+:::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+
+Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"} e execute a requisição.      
+
+```curl
+curl -X POST \
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
+```
+
+Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
+
+| Atributo | Tipo | Descrição | Obrigatório/Opcional |
+|---|---|---|---|
+| `Authorization` | _Header_ | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} em ambientes de desenvolvimento e o :toolTipComponent[Access Token produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção*."} para pagamentos reais. | Obrigatório |
+| `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma _string_ aleatória. | Obrigatório |
+| `processing_mode` | _Body. String_ | Modo de processamento da order. Os valores possíveis são: <br><br> - `automatic`: para criar e processar a ordem em modo automático. <br><br> - `manual`: para criar a order e processá-la posteriormente. <br><br> Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model). | Obrigatório |
+| `total_amount` | _Body. String_ | Valor total da transação. | Obrigatório |
+| `transaction.payments.payment_method.id` | _Body. String_ | Identificador do meio de pagamento. **Neste caso, é a bandeira de cada cartão**. Você pode consultar a lista completa de identificadores disponíveis enviando uma requisição ao endpoint [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). | Obrigatório |
+| `transaction.payments.payment_method.type` | _Body. String_ | Tipo de método de pagamento. Para pagamentos com cartão de crédito, deve ser `credit_card`, e para pagamentos com cartão de débito, deve ser `debit_card`. | Obrigatório |
+
+> SUCCESS_MESSAGE
+>
+> Para conhecer em detalhe todos os parâmetros enviados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/orders/online-payments/create/post). Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api/payment-management/integration-errors).
+
+Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
+
+```json
+{
+  "id": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE",
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "marketplace": "NONE",
+  "total_amount": "200.00",
+  "country_code": "BRA",
+  "user_id": "1245621468",
+  "created_date": "2024-09-02T22:04:01.880469Z",
+  "last_updated_date": "2024-09-02T22:04:04.429289Z",
+  "type": "online",
+  "status": "action_required",
+  "status_detail": "waiting_payment",
+  "capture_mode": "automatic",
+  "integration_data": {
+    "application_id": "4599991948843755"
+  },
+  "transactions": {
+    "payments": [
+      {
+        "id": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24",
+        "reference_id": "22dvqmsbq8c",
+        "amount": "200.00",
+        "status": "action_required",
+        "status_detail": "waiting_payment",
+        "payment_method": {
+          "id": "bolbradesco",
+          "type": "ticket",
+          "ticket_url": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+          "barcode_content": "3335008800000000006004835002100020000242462010",
+          "reference": "1234567890",
+          "verification_code": "1234567890",
+          "financial_institution": "bolbradesco",
+          "digitable_line": "23793380296060054351030006333303799140000020000"
+        }
+      }
+    ]
+  }
+}
+```
+
+> WARNING
+>
+> Em caso de ter criado a order em modo manual, lembre-se de que o processamento do pagamento requer uma etapa adicional, que é a chamada à :TagComponent{tag="API" text="Processar order " href="/developers/pt/reference/orders/online/process-order/post"}. Adicionalmente, é possível realizar uma reserva e captura de valores. Dirija-se à seção [Reservar, capturar e cancelar valores](/developers/pt/docs/checkout-api/payment-management/reserve-capture-cancel) para mais informações.
+
+Uma vez criada a order e o pagamento, você pode consultar os estados possíveis dirigindo-se às seções [Status da order](/developers/pt/docs/checkout-api/payment-management/status/order-status) e [Status da transação](/developers/pt/docs/checkout-api/payment-management/status/transaction-status), respectivamente.
+
+:::
+
+::::
+
+:::::
