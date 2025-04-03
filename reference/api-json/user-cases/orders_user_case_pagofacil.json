@@ -56,6 +56,9 @@
                                         "amount": {
                                             "example": "1000.00"
                                         },
+                                        "payment_expiration_time": {
+                                            "example": "P3Y6M4DT12H30M5S"
+                                        },
                                         "payment_method": {
                                             "properties": {
                                                 "id": {

@@ -1,11 +1,11 @@
 {
     "name": {
-        "en": "Create payment with Pix",
-        "pt": "Criar pagamento Pix",
-        "es": "Crear pago con Pix"
+        "en": "Create payment with OXXO",
+        "pt": "Criar pagamento OXXO",
+        "es": "Crear pago con OXXO"
     },
     "siteId": [
-        "mlb"
+        "mlm"
     ],
     "requestBody": {
         "content": {
@@ -15,41 +15,17 @@
                         "type": {
                             "example": "online"
                         },
-                        "total_amount": {
-                            "example": "1000.00"
-                        },
                         "external_reference": {
                             "example": "ext_ref_1234"
                         },
-                        "transactions": {
-                            "properties": {
-                                "payments": {
-                                    "properties": {
-                                        "amount": {
-                                            "example": "1000.00"
-                                        },
-                                        "payment_method": {
-                                            "properties": {
-                                                "id": {
-                                                    "example": "pix"
-                                                },
-                                                "type": {
-                                                    "example": "bank_transfer"
-                                                },
-                                                "token": {
-                                                    "example": "disabled"
-                                                },
-                                                "installments": {
-                                                    "example": "disabled"
-                                                },
-                                                "statement_descriptor": {
-                                                    "example": "disabled"
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                        "processing_mode": {
+                            "example": "automatic"
+                        },
+                        "marketplace": {
+                            "example": "NONE"
+                        },
+                        "total_amount": {
+                            "example": "1000.00"
                         },
                         "payer": {
                             "properties": {
@@ -73,16 +49,43 @@
                                 }
                             }
                         },
+                        "transactions": {
+                            "properties": {
+                                "payments": {
+                                    "properties": {
+                                        "amount": {
+                                            "example": "1000.00"
+                                        },
+                                        "payment_expiration_time": {
+                                            "example": "P3Y6M4DT12H30M5S"
+                                        },
+                                        "payment_method": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "oxxo"
+                                                },
+                                                "type": {
+                                                    "example": "ticket"
+                                                },
+                                                "token": {
+                                                    "example": "disabled"
+                                                },
+                                                "installments": {
+                                                    "example": "disabled"
+                                                },
+                                                "statement_descriptor": {
+                                                    "example": "disabled"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
                         "capture_mode": {
                             "example": "disabled"
                         },
-                        "processing_mode": {
-                            "example": "disabled"
-                        },
                         "description": {
-                            "example": "disabled"
-                        },
-                        "marketplace": {
                             "example": "disabled"
                         },
                         "integration_data": {
@@ -106,28 +109,59 @@
                     "schema": {
                         "properties": {
                             "id": {
-                                "example": "ORD01HRYFWNYRE1MR1E60MW3X0T2P"
+                                "example": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE"
                             },
                             "type": {
                                 "example": "online"
                             },
-                            "total_amount": {
-                                "example": "1000.00"
+                            "processing_mode": {
+                                "example": "automatic"
                             },
                             "external_reference": {
                                 "example": "ext_ref_1234"
                             },
+                            "marketplace": {
+                                "example": "NONE"
+                            },
+                            "total_amount": {
+                                "example": "200.00"
+                            },
                             "country_code": {
-                                "example": "BRA"
+                                "example": "MEX"
+                            },
+                            "user_id": {
+                                "example": "disabled"
                             },
                             "status": {
                                 "example": "action_required"
                             },
                             "status_detail": {
-                                "example": "waiting_transfer"
+                                "example": "waiting_payment"
                             },
                             "capture_mode": {
                                 "example": "automatic"
+                            },
+                            "created_date": {
+                                "example": "disabled"
+                            },
+                            "last_updated_date": {
+                                "example": "disabled"
+                            },
+                            "integration_data": {
+                                "properties": {
+                                    "application_id": {
+                                        "example": "4599991948843755"
+                                    },
+                                    "integrator_id": {
+                                        "example": "disabled"
+                                    },
+                                    "platform_id": {
+                                        "example": "disabled"
+                                    },
+                                    "sponsor": {
+                                        "example": "disabled"
+                                    }
+                                }
                             },
                             "transactions": {
                                 "properties": {
@@ -135,36 +169,45 @@
                                         "items": {
                                             "properties": {
                                                 "id": {
-                                                    "example": "PAY01HRYFXQ53Q3JPEC48MYWMR0TE"
+                                                    "example": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24"
+                                                },
+                                                "amount": {
+                                                    "example": "200.00"
                                                 },
                                                 "reference_id": {
-                                                    "example": "123456789"
+                                                    "example": "22dvqmsbq8c"
                                                 },
                                                 "status": {
                                                     "example": "action_required"
                                                 },
                                                 "status_detail": {
-                                                    "example": "waiting_transfer"
-                                                },
-                                                "amount": {
-                                                    "example": "1000.00"
+                                                    "example": "waiting_payment"
                                                 },
                                                 "payment_method": {
                                                     "properties": {
                                                         "id": {
-                                                            "example": "pix"
+                                                            "example": "oxxo"
                                                         },
                                                         "type": {
-                                                            "example": "bank_transfer"
+                                                            "example": "ticket"
                                                         },
                                                         "ticket_url": {
-                                                            "example": "https://www.mercadopago.com.br/sandbox/payments/00000000000/ticket?caller_id=77777777777&hash=34cb0d7c-81d9-478c-92a5-767d0kakjja"
+                                                            "example": "https://www.mercadopago.com.mx/sandbox/payments/00000000000/ticket?caller_id=77777777777&hash=34cb0d7c-81d9-478c-92a5-767d0kakjja"
+                                                        },
+                                                        "barcode_content": {
+                                                            "example": "3335008800000000006004835002100020000242462010"
+                                                        },
+                                                        "reference": {
+                                                            "example": "1234567890"
+                                                        },
+                                                        "verification_code": {
+                                                            "example": "1234567890"
                                                         },
                                                         "qr_code": {
-                                                            "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0"
+                                                            "example": "disabled"
                                                         },
                                                         "qr_code_base64": {
-                                                            "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i"
+                                                            "example": "disabled"
                                                         },
                                                         "token": {
                                                             "example": "disabled"
@@ -173,15 +216,6 @@
                                                             "example": "disabled"
                                                         },
                                                         "statement_descriptor": {
-                                                            "example": "disabled"
-                                                        },
-                                                        "barcode_content": {
-                                                            "example": "disabled"
-                                                        },
-                                                        "reference": {
-                                                            "example": "disabled"
-                                                        },
-                                                        "verification_code": {
                                                             "example": "disabled"
                                                         },
                                                         "financial_institution": {
@@ -196,21 +230,6 @@
                                         }
                                     }
                                 }
-                            },
-                            "processing_mode": {
-                                "example": "automatic"
-                            },
-                            "marketplace": {
-                                "example": "NONE"
-                            },
-                            "created_date": {
-                                "example": "disabled"
-                            },
-                            "last_updated_date": {
-                                "example": "disabled"
-                            },
-                            "integration_data": {
-                                "example": "disabled"
                             },
                             "description": {
                                 "example": "disabled"
