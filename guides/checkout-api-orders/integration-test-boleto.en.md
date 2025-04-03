@@ -1,8 +1,8 @@
-# Perform a test purchase with other payment methods
+# Perform a test purchase with boleto
 
-Integration tests for offline payment methods such as ----[mla]----**Rapipago and Pago Fácil**,------------ ----[mlm]----**OXXO, Paycash, Citibanamex and BBVA Bancomer**,------------ only allow you to verify the correct creation of the payment flow, but not obtaining a final status, as this depends on the actual completion of the payment.
+Integration tests for **Boleto** only allow you to verify the correct creation of the payment flow, but not obtaining a final status, as this depends on the actual completion of the payment.
 
-To test your integration with these payment methods, after configuring your [test environment](/developers/en/docs/checkout-api/integration-test), access the store that has integrated your checkout, select a product or service, and start the purchase process.
+To test your integration with this payment method, after configuring your [test environment](/developers/en/docs/checkout-api/integration-test), access the store that has integrated your checkout, select a product or service, and start the purchase process.
 
 Then, fill in the payer data required at checkout randomly, but making sure to include the **email address test @testuser.com** in the email field, which is the only one allowed for testing. This way, your system will understand that it is a purchase made by test buyer user.
 

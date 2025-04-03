@@ -1,8 +1,8 @@
-# Realizar una compra de prueba con otros medios de pago
+# Realizar una compra de prueba con boleto
 
-Las pruebas de integración para medios de pago offline, ----[mla]----**Rapipago y Pago Fácil**,------------ ----[mlm]----**OXXO, Paycash, Citibanamex y BBVA Bancomer**,------------ solo permiten verificar la correcta creación del flujo de pago, pero no la obtención de un status final, en tanto este depende de la efectiva realización del pago.
+Las pruebas de integración para **Boleto** solo permiten verificar la correcta creación del flujo de pago, pero no la obtención de un status final, en tanto este depende de la efectiva realización del pago.
 
-Para probar tu integración con estos medios de pago, luego de haber [configurado tu ambiente de pruebas](/developers/es/docs/checkout-api/integration-test), accede a la tienda que tiene integrado tu checkout, selecciona algún producto o servicio, e inicia el proceso de compra. 
+Para probar tu integración con este medio de pago, luego de haber [configurado tu ambiente de pruebas](/developers/es/docs/checkout-api/integration-test), accede a la tienda que tiene integrado tu checkout, selecciona algún producto o servicio, e inicia el proceso de compra. 
 
 Luego, completa los datos del pagador requeridos en el checkout de manera aleatoria, pero cuidando de incluir en **el campo e-mail el correo electrónico test @testuser.com**, que es el único permitido para pruebas. De esta manera, tu sistema entenderá que se trata de una compra realizada con un usuario comprador de prueba.
 
