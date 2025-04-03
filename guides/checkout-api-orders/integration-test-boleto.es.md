@@ -14,4 +14,4 @@ Para verificar que la compra de prueba se realizó correctamente, envía un GET 
 
 La respuesta a este llamado deberá traer la información detallada de la transacción de prueba, junto con el `status action_required`, que indica que se está aguardando el pago.
 
-¡Listo! Una vez finalizados estos pasos, la integración de otros medios de pago estará completa y podrás, o bien continuar probando tus otras configuraciones, o bien [salir a producción](/developers/es/docs/checkout-api/go-to-production).
+¡Listo! Una vez finalizados estos pasos, la integración de boleto como medio de pago estará completa y podrás, o bien continuar probando tus otras configuraciones, o bien [salir a producción](/developers/es/docs/checkout-api/go-to-production).

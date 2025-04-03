@@ -14,4 +14,4 @@ To verify that the test purchase was carried out correctly, send a **GET** reque
 
 The response to this request should bring the detailed information of the test transaction, along with the `action_required` status, which indicates that payment is pending.
 
-Ready! Once these steps are completed, the integration of other payment methods is complete and you can either continue testing your other configurations or [go to production](/developers/en/docs/checkout-api/go-to-production).
+Ready! Once these steps are completed, the integration of boleto as a payment methods is complete and you can either continue testing your other configurations or [go to production](/developers/en/docs/checkout-api/go-to-production).
