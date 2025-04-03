@@ -7,9 +7,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows the creation of a new print action for Mercado Pago Point, whether for DTEs, custom prints, or images. For images, the Base64 format is supported. In case of success, the response will return a status code of 201",
-          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de DTEs, impresiones personalizadas o imágenes. Para imágenes, se soporta el formato Base64. En caso de éxito, la respuesta devolverá un código de estado 201",
-          "pt": "Este endpoint permite a criação de uma nova ação de impressão para o Mercado Pago Point, seja de DTEs, impressões personalizadas ou imagens. Para imagens, é suportado o formato Base64. Em caso de sucesso, a resposta retornará um código de status 201"
+          "en": "This endpoint allows you to create a new print action for the Mercado Pago Point. In case of success, the request will return a response with status 201",
+          "es": "Este endpoint permite la creación de una nueva acción de impresión para Mercado Pago Point. Se soporta el formato Base64 para imágenes. En caso de éxito, la respuesta devolverá un código de estado 201",
+          "pt": "Este endpoint permite a criação de uma nova ação de impressão para Mercado Pago Point. O formato Base64 é compatível com imagens. Em caso de sucesso, a resposta retornará um código de status 201"
         },
         "parameters": [
           {
@@ -37,9 +37,9 @@
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "Action type, associated with the Mercado Pago solution for wich it is created. Right now, the only supported value is \"print\".",
-                      "es": "Tipo de acción, asociada a la solución de Mercado Pago para la que se crea. En estos momentos, solo se soporta el valor \"print\".",
-                      "pt": "Tipo de ação, associado à solução Mercado Pago para a qual foi criado. No momento, o único valor suportado é \"print\"."
+                      "en": "Action type associated with the Mercado Pago solution for which it is created. Right now, the only supported value is \"print\".",
+                      "es": "Tipo de acción asociada a la solución de Mercado Pago para la que se crea. En estos momentos, solo se soporta el valor \"print\".",
+                      "pt": "Tipo de ação associado à solução Mercado Pago para a qual foi criado. No momento, o único valor suportado é \"print\"."
                     },
                     "enum": [
                       {
@@ -84,7 +84,7 @@
                             "type": "string",
                             "description": {
                               "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
-                              "es": "Identificador de la terminal Point que obtendrá la acción. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El nímero de serie de la terminal puede ser hallado en la etiqueta trasera del mismo.",
+                              "es": "Identificador de la terminal Point que obtendrá la acción. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El número de serie de la terminal puede ser hallado en la etiqueta trasera del mismo.",
                               "pt": "Identificador da terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial da terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial da terminal pode ser encontrado na etiqueta traseira."
                             },
                             "example": "NEWLAND_N950__N950NCB123456789",
@@ -93,19 +93,19 @@
                           "subtype": {
                             "type": "string",
                             "description": {
-                              "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between three values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing, or \"image\" for an image printout.",
-                              "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre tres valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
-                              "pt": "Identificador do subtipo de ação que será criado para o Point. Se a ação for \"print\" você deve escolher entre três valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, e \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
+                              "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose one of the values: \"custom\" for a customized printing, or \"image\" for an image printout.",
+                              "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir uno de los valores: \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
+                              "pt": "Identificador do subtipo de ação que será criado para  a terminal Point. Se a ação for \"print\" você deve escolher um dos valores: \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
                             },
-                            "example": "custom",
+                            "example": "image",
                             "required": true,
                             "enum": [
                               {
-                                "title": "invoice",
+                                "title": "image",
                                 "description": {
-                                  "en": "Identifier of the subtype related to invoices. It supports an .xml that must be compliant with the invoice issuer.",
-                                  "pt": "Identificador do subtipo relacionado às notas fiscais. Suporta um .xml que deve estar em conformidade com o emissor da nota fiscal.",
-                                  "es": "Identificador del subtipo relacionado con facturas. Soporta un .xml que debe ser conforme con el emisor de la factura."
+                                  "en": "Identifier of the subtype related to image printings. It must contain the image encoded in base64 format.",
+                                  "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen encodeada en formato base64.",
+                                  "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                                 }
                               },
                               {
@@ -114,14 +114,6 @@
                                   "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to realize a printing on the Point terminal.",
                                   "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las etiquetas admitidas para poder realizar una impresión en la terminal Point.",
                                   "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão na terminal Point."
-                                }
-                              },
-                              {
-                                "title": "image",
-                                "description": {
-                                  "en": "Identifier of the subtype related to image printings. It must contain the image encoded in base64 format.",
-                                  "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen codificada en formato base64.",
-                                  "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                                 }
                               }
                             ]
@@ -134,11 +126,11 @@
                     "type": "string",
                     "required": true,
                     "description": {
-                      "en": "String that contains the information to be printed in the Point terminal. If the subtype is \"custom\", it must contain the string formatted with the supported tags; if it is \"image\", it must contain the image content in base64.",
-                      "pt": "String que contém as informações a serem impressas na Point. Se o subtipo for \"custom\", deve conter a string formatada com as tags suportadas; se for \"image\", deve conter o conteúdo da imagem em base64.",
-                      "es": "String que contiene la información a imprimir en la terminal Point. Si el subtipo es \"custom\", debe contener un string formateado con las etiquetas soportadas; si es \"image\", debe contener el contenido de la imagen en base64."
+                    "en": "String that contains the information to be printed in the Point terminal. If the subtype is \"custom\", it must contain the string formatted with the supported tags; if it is \"image\", it must contain the image content in base64.",
+                    "pt": "String que contém as informações a serem impressas na Point. Se o subtipo for \"custom\", deve conter a string formatada com as tags suportadas; se for \"image\", deve conter o conteúdo da imagem em base64.",
+                    "es": "String que contiene la información a imprimir en la terminal Point. Si el subtipo es \"custom\", debe contener un string formateado con las etiquetas soportadas; si es \"image\", debe contener el contenido de la imagen en base64."
                     },
-                    "example": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL ADIDAS WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA Cerro Navia test 12345  {/s}{br}{s}RECIBE: Pepito Perez{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
+                    "example": "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="
                   }
                 }
               }
@@ -248,7 +240,7 @@
                           "description": {
                             "en": "There are some required properties missing. Check the message returned in the error details to find out what the problem was and try again.",
                             "es": "Ciertas propiedades requeridas están ausentes. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Certas propriedades obrigatórias estão ausentes. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                            "pt": "Certas propriedades obrigatórias estão ausentes. Verifique a mensagem retornada nos detalhes do erro para identificar o problema e tente novamente."
                           }
                         },
                         {
@@ -256,7 +248,7 @@
                           "description": {
                             "en": "An unsupported property was sent. Check the message returned in the error details to find out what the problem was and try again.",
                             "es": "Se envió una propiedad que no es soportada. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Foi enviada uma propriedade que não é suportada. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                            "pt": "Foi enviada uma propriedade que não é suportada. Verifique a mensagem retornada nos detalhes do erro para identificar o problema e tente novamente."
                           }
                         },
                         {
@@ -264,7 +256,7 @@
                           "description": {
                             "en": "The wrong property type was submitted. For example, an 'integer' value for a 'string' property. Check the message returned in the error details to find out what the problem was and try again.",
                             "es": "Se envió un tipo de propiedad incorrecto. Por ejemplo, un valor 'integer' para una propiedad 'string'. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Um tipo de propriedade incorreto foi enviado. Por exemplo, um valor 'integer' para uma propriedade 'string'. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                            "pt": "Um tipo de propriedade incorreto foi enviado. Por exemplo, um valor 'integer' para uma propriedade 'string'. Verifique a mensagem retornada nos detalhes do erro para identificar o problema e tente novamente."
                           }
                         },
                         {
@@ -272,31 +264,15 @@
                           "description": {
                             "en": "An incorrect value for some property was sent. Check the message returned in the error details to find out what the problem was and try again.",
                             "es": "Se envió un valor inválido para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Um valor inválido foi enviado para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
-                          }
-                        },
-                        {
-                          "title": "json_syntax_error",
-                          "description": {
-                            "en": "An incorrect JSON was sent. Check the message returned in the error details to find out what the problem was and try again.",
-                            "es": "Se envió un JSON inválido. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Um JSON inválido foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
-                          }
-                        },
-                        {
-                          "title": "invalid_data_xml",
-                          "description": {
-                            "en": "The data sent in the .xml is not compliant with the format provided by the invoices issuer. Check the message returned in the error details to find out what the problem was and try again.",
-                            "pt": "Os dados enviados no .xml não estão em conformidade com o formato fornecido pelo emissor das faturas. Verifique a mensagem retornada nos detalhes do erro para descobrir qual foi o problema e tente novamente.",
-                            "es": "Los datos enviados en el .xml no cumplen con el formato proporcionado por el emisor de las facturas. Verifica el mensaje devuelto en los detalles del error para averiguar cuál fue el problema e inténtalo nuevamente."
+                            "pt": "Um valor inválido foi enviado para alguma propriedade. Verifique a mensagem retornada nos detalhes do erro para identificar o problema e tente novamente."
                           }
                         },
                         {
                           "title": "content is required",
                           "description": {
-                            "en": "The content field is not present in the body of the request.",
+                            "en": "The content field is not present in the request body.",
                             "es": "El campo content no se encuentra en el body de la petición.",
-                            "pt": "O campo content não está presente no corpo da requisição."
+                            "pt": "O campo content não está presente no corpo da solicitação."
                           }
                         },
                         {
@@ -370,7 +346,7 @@
                           "description": {
                             "en": "The Point terminal does not belong to the user who submitted the request. Check if the value sent for \"terminal_id\" is correct or if the terminal is linked to your account.",
                             "es": "La terminal Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"terminal_id\" es correcto o si la terminal está vinculado a tu cuenta.",
-                            "pt": "O terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se a terminal está vinculado à sua conta."
+                            "pt": "A terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se a terminal está vinculado à sua conta."
                           }
                         }
                       ]
@@ -399,7 +375,7 @@
                           "description": {
                             "en": "The value sent as the idempotency header has already been used with a different request within the last 24 hours. Please try the request again sending a new value.",
                             "es": "El valor enviado como header de idempotencia ya fue utilizado con una solicitud distinta en un tiempo menor a 24 horas. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
-                            "pt": "O valor enviado como header de idempotência já foi utilizado em uma solicitação diferente em um período menor que 24 horas. Por favor, tente a solicitação novamente enviando um novo valor."
+                            "pt": "O valor enviado como header de idempotência já foi utilizado em uma solicitação diferente em um período menor que 24 horas. Por favor, tente realizar a solicitação novamente enviando um novo valor."
                           }
                         },
                         {
@@ -469,7 +445,7 @@
         ],
         "description": {
           "en": "Consult all the information of an action created for a Point terminal using the ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
-          "pt": "Consulte todas as informações da ação criada para um terminal Point utilizando o ID obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com status 200",
+          "pt": "Consulte todas as informações da ação criada para uma terminal Point utilizando o ID obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com status 200",
           "es": "Consulta toda la información de una acción creada para una terminal Point mediante el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con estado 200"
         },
         "parameters": [
@@ -706,9 +682,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "Cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
-          "pt": "Cancela uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es": "Cancela una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en": "This endpoint allows you to cancel an action created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an action in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite cancelar uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Este endpoint permite cancelar una accíon creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
@@ -956,19 +932,19 @@
               "subtype": {
                 "type": "string",
                 "description": {
-                  "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing, or \"image\" for an image printout.",
-                  "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
-                  "pt": "Identificador do subtipo de ação que será criado para a terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, ou \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
+                  "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between two values: \"custom\" for a customized printing, or \"image\" for an image printout.",
+                  "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
+                  "pt": "Identificador do subtipo de ação que será criado para a terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
                 },
-                "example": "invoice",
+                "example": "image",
                 "required": true,
                 "enum": [
                   {
-                    "title": "invoice",
+                    "title": "image",
                     "description": {
-                      "en": "Identifier of the subtype related to invoices. It supports an .xml that must be compliant with the invoice issuer.",
-                      "pt": "Identificador do subtipo relacionado às notas fiscais. Suporta um .xml que deve estar em conformidade com o emissor da nota fiscal.",
-                      "es": "Identificador del subtipo relacionado con facturas. Soporta un .xml que debe ser conforme con el emisor de la factura."
+                      "en": "Subtype identifier related to image impressions. Must contain the image encoded in base64 format.",
+                      "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen codificada en formato base64.",
+                      "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                     }
                   },
                   {
@@ -977,14 +953,6 @@
                       "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to perform a printing on the Point terminal.",
                       "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las tags admitidas para poder realizar una impresión en la terminal Point.",
                       "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão na Point."
-                    }
-                  },
-                  {
-                    "title": "image",
-                    "description": {
-                      "en": "Subtype identifier related to image impressions. Must contain the image encoded in base64 format.",
-                      "es": "Identificador del subtipo relacionado con las impresiones por imágenes. Debe contener la imagen codificada en formato base64.",
-                      "pt": "Identificador do subtipo relacionado às impressões de imagens. Deve conter a imagem codificada no formato base64."
                     }
                   }
                 ]
