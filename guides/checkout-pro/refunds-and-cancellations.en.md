@@ -2,7 +2,7 @@
 
 **Refunds** and **cancellations** are actions available after a payment has been made. While both involve returning money, it is crucial to understand their differences to correctly execute each process.
 
-- **Cancellation**: Performed when a payment has not yet been approved. In this case, the amount is refunded to the buyer's card within the time frame established by the issuing bank.
+- **Cancellation**:  It is performed when a payment has not been finalized or is in process. In this case, the amount is refunded to the buyer's card within the time frame established by the issuing bank.
 
 - **Refund**: Occurs after the payment has been captured. The amount is refunded directly to the statement (for credit card payments) or to the payer's account (for other methods).
 
