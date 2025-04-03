@@ -1,12 +1,12 @@
 # Salir a producción
 
-Una vez finalizado el proceso de configuración, tu integración estará lista para ser colocada en producción. 
+Una vez finalizado el proceso de configuración y pruebas, tu integración estará lista para recibir pagos reales en producción.
 
 A continuación, mira las recomendaciones necesarias para realizar este pasaje de manera eficaz y segura, garantizando que tu integración esté preparada para recibir transacciones reales.
 
 ## Usar credenciales de producción
 
-Ahora que ya finalizaste todas las pruebas necesarias para verificar que tu integración esté funcionando correctamente, deberás **reemplazar las credenciales de prueba por las credenciales de producción de tu aplicación de Mercado Pago**.
+Para salir a producción, deberás **reemplazar las credenciales de prueba por las credenciales de producción de tu aplicación de Mercado Pago** en tu integración.
 
 Para hacerlo, ingresa a [Tus integraciones](/developers/panel/app) y, el menú lateral, accede a **Producción > Credenciales de producción**. Allí encontrarás tu `public_key`  y `access_token` productivos, que deberás utilizar en lugar de los de la cuenta de prueba.
 
