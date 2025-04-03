@@ -8,28 +8,7 @@ La integración de pagos con **tarjeta de crédito y/o débito** en ----[mlb]---
 
 En la integración por medio del _Card Payment Brick_, la biblioteca de `MercadoPago.js`, incluída en tu proyecto durante la [configuración del ambiente de desarrollo](/developers/es/docs/checkout-api/development-environment), se encarga de obtener la información requerida para la generación de un pago. Esto es, realiza una búsqueda de los tipos de documentos disponibles para el país correspondiente, así como, a medida que se introducen los datos de la tarjeta, de la información relativa al emisor y a las cuotas disponibles. 
 
-Toda la información involucrada en el procesamiento de la transacción es almacenada en el _backend_, en conformidad con los padrones de [seguridad PCI](/developers/es/docs/security/pci). 
-
-Con esto, la implementación del flujo es transparente para quien realiza la integración, tal como muestra el diagrama a continuación.
-
-<pre class="mermaid">
-  sequenceDiagram
-      participant Navegador del comprador
-      participant Front-end del integrador
-      participant MercadoPago.js
-      participant Back-end del integrador
-      participant API Mercado Pago
-      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobro<br>El Comprador accede a la pantalla de cobro.
-      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado Pago<br> El front-end del integrador descarga e<br>inicializa la SDK JS de Mercado Pago 
-      Front-end del integrador->>Navegador del comprador: 3. Formulario de pago<br>El front-end del integrador muestra el<br>formulário de pago
-      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pago<br>El comprador completa el formulário y<br>finaliza el pago.
-      Front-end del integrador->>MercadoPago.js: 5. Creación del token<br>El front-end del integrador utiliza la SDK JS<br>para crear el token que contendrá los datos<br>de tarjeta de forma segura.
-      Front-end del integrador->>Back-end del integrador: 6. Envío del token<br>El front-end del integrador envía el token de<br>tarjeta y los datos de pago a su back-end.
-      Back-end del integrador->>API Mercado Pago: 7. Creación del pago<br>Desde el back-end, se llama a los servicios<br>de Mercado Pago para crear el pago.
-      API Mercado Pago->>Navegador del comprador: 8. Resultado del pago<br>El front-end del integrador le muestra al<br>comprador el resultado de la operación.
-      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pago<br>Mercado Pago puede enviar notificaciones<br>vía Webhook con actualizaciones del estado<br>del pago.
-      Back-end del integrador->>Navegador del comprador: 10. Notificación al comprador<br>Si corresponde, se le avisa al comprador<br>sobre la actualización del pago.
-</pre>
+Toda la información involucrada en el procesamiento de la transacción es almacenada en el _backend_, en conformidad con los padrones de [seguridad PCI](/developers/es/docs/security/pci).
 
 Además, el componente brinda la posibilidad de orientar al usuario con alertas de campos incompletos o posibles errores al rellenar los datos, optimizando el proceso de compra.
 
@@ -364,42 +343,6 @@ Una vez creada la order y el pago, puedes consultar los estados posibles dirigi�
 ::::TabComponent{title="Core Methods"}
 
 En la integración vía _Core Methods_, el responsable de la integración se encarga de definir cómo se buscará la información necesaria para completar el pago, incluyendo cuándo buscar información sobre el tipo de documento, además de aquella relativa a la tarjeta (emisor y cuotas). De esta forma, tiene total flexibilidad para construir la experiencia del flujo de pago, a diferencia de la integración a través del _Card Payment Brick_, donde la búsqueda de la información se realiza de forma automática.
-
-Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los _Core Methods_.
-
-<pre class="mermaid">
-  sequenceDiagram
-      participant Cliente as Navegador del cliente
-      participant Frontend as Front-end del vendedor
-      participant MPjs as MercadoPago.js
-      participant Backend as Back-end del vendedor
-      participant API as API Mercado Pago
-
-      Cliente->>Frontend: 1. Ingresar al sitio de pago
-      Frontend->>MPjs: 1.2 new MercadoPago(PUBLIC_KEY)
-      Frontend->>MPjs: 1.3 getIdentificationTypes()
-      MPjs->>Frontend: 1.4 identificationTypes
-      Frontend->>Cliente: 1.5 Mostrar formulario de pago
-
-      Cliente->>Frontend: 2.1 Ingresar los primeros 6 dígitos de la tarjeta
-      Frontend->>MPjs: 2.2 getPaymentMethods(OPTIONS)
-      MPjs->>Frontend: 2.3 paymentMethods
-      Frontend->>MPjs: 2.4 getIssuers(OPTIONS)
-      MPjs->>Frontend: 2.5 issuers
-      Frontend->>Cliente: 2.6 Mostrar los emisores disponibles
-      Frontend->>MPjs: 2.6 getInstallments(OPTIONS)
-      MPjs->>Frontend: 2.7 installments
-      Frontend->>Cliente: 2.8 Mostrar medio de pago y cuotas disponibles
-
-      Cliente->>Frontend: 3.1 Enviar el formulario completo
-      Frontend->>MPjs: 3.2 createCardToken(OPTIONS)
-      MPjs->>Frontend: 3.3 cardToken
-      Frontend->>Backend: 3.4 POST/payment
-      Backend->>API: 3.5 POST/v1/payments
-      API->>Backend: 3.6 Estado del pago
-      Backend->>Frontend: 3.7 Estado del pago
-      Frontend->>Cliente: 3.8 Mostrar resultado
-</pre>
 
 :::AccordionComponent{title="Añadir formulario de pago" pill="client-side"}
 

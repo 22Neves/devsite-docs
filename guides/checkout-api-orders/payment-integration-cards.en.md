@@ -10,27 +10,6 @@ In the integration through the _Card Payment Brick_, the `MercadoPago.js` librar
 
 All information involved in processing the transaction is stored in the backend, in compliance with [PCI security](/developers/en/docs/security/pci) standards.
 
-With this, the implementation of the flow is transparent for those who are performing the integration, as shown in the diagram below.
-
-<pre class="mermaid">
-  sequenceDiagram
-      participant Navegador del comprador
-      participant Front-end del integrador
-      participant MercadoPago.js
-      participant Back-end del integrador
-      participant API Mercado Pago
-      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobro<br>El Comprador accede a la pantalla de cobro.
-      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado Pago<br> El front-end del integrador descarga e<br>inicializa la SDK JS de Mercado Pago 
-      Front-end del integrador->>Navegador del comprador: 3. Formulario de pago<br>El front-end del integrador muestra el<br>formulário de pago
-      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pago<br>El comprador completa el formulário y<br>finaliza el pago.
-      Front-end del integrador->>MercadoPago.js: 5. Creación del token<br>El front-end del integrador utiliza la SDK JS<br>para crear el token que contendrá los datos<br>de tarjeta de forma segura.
-      Front-end del integrador->>Back-end del integrador: 6. Envío del token<br>El front-end del integrador envía el token de<br>tarjeta y los datos de pago a su back-end.
-      Back-end del integrador->>API Mercado Pago: 7. Creación del pago<br>Desde el back-end, se llama a los servicios<br>de Mercado Pago para crear el pago.
-      API Mercado Pago->>Navegador del comprador: 8. Resultado del pago<br>El front-end del integrador le muestra al<br>comprador el resultado de la operación.
-      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pago<br>Mercado Pago puede enviar notificaciones<br>vía Webhook con actualizaciones del estado<br>del pago.
-      Back-end del integrador->>Navegador del comprador: 10. Notificación al comprador<br>Si corresponde, se le avisa al comprador<br>sobre la actualización del pago.
-</pre>
-
 In addition, the component provides the ability to guide the user with alerts for incomplete fields or possible errors when filling out the data, optimizing the purchasing process.
 
 To proceed with the setup of debit and/or credit card payments via _Card Payment Brick_, follow the steps below.
@@ -364,42 +343,6 @@ Once the order and payment are created, you can check the possible statuses by g
 ::::TabComponent{title="Métodos Core"}
 
 In the integration via _Core Methods_, the developer is responsible for defining how the necessary information to complete the payment will be retrieved, including information about the type of document and about the card (issuer and installments). This allows for complete flexibility in building the checkout flow experience, unlike the integration via _Card Payment Brick_, where the information retrieval is done automatically and the interface is pre-established.
-
-Check out the diagram below that illustrates the payment process using a card with _Core Methods_.
-
-<pre class="mermaid">
-  sequenceDiagram
-      participant Client as Client's Browser
-      participant Frontend as Seller's Frontend
-      participant MPjs as MercadoPago.js
-      participant Backend as Seller's Backend
-      participant API as Mercado Pago API
-
-      Client->>Frontend: 1.1 Accesses the site to make a payment
-      Frontend->>MPjs: 1.2 new MercadoPago(PUBLIC_KEY)
-      Frontend->>MPjs: 1.3 getIdentificationTypes()
-      MPjs-->>Frontend: 1.4 identificationTypes
-      Frontend->>Client: 1.5 Displays payment form
-
-      Client->>Frontend: 2.1 Enters the first 6 card numbers
-      Frontend->>MPjs: 2.2 getPaymentMethods(OPTIONS)
-      MPjs-->>Frontend: 2.3 paymentMethods
-      Frontend->>MPjs: 2.4 getIssuers(OPTIONS)
-      MPjs-->>Frontend: 2.5 issuers
-      Frontend->>Client: 2.6 Show available issuers
-      Frontend->>MPjs: 2.6 getInstallments(OPTIONS)
-      MPjs-->>Frontend: 2.7 installments
-      Frontend->>Client: 2.8 Show payment method and available installments
-
-      Client->>Frontend: 3.1 Submits the completed form
-      Frontend->>MPjs: 3.2 createCardToken(OPTIONS)
-      MPjs-->>Frontend: 3.3 cardToken
-      Frontend->>Backend: 3.4 POST/payment
-      Backend->>API: 3.5 POST /v1/payments
-      API-->>Backend: 3.6 Payment status
-      Backend-->>Frontend: 3.7 Payment status
-      Frontend->>Client: 3.8 Show result
-</pre>
 
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 

@@ -10,8 +10,6 @@ Na integração por meio do _Card Payment Brick_, a biblioteca `MercadoPago.js`,
 
 Toda a informação envolvida no processamento da transação é armazenada no *backend*, em conformidade com os padrões de [segurança PCI](/developers/pt/docs/security/pci).
 
-Com isso, a implementação do fluxo é transparente para quem realiza a integração, conforme mostrado no diagrama a seguir.
-
 Além disso, o componente oferece a possibilidade de orientar o usuário com alertas sobre campos incompletos ou possíveis erros ao preencher os dados, otimizando o processo de compra.
 
 Para avançar com a configuração de pagamentos com cartão de débito e/ou crédito via _Card Payment Brick_, siga os passos abaixo.
