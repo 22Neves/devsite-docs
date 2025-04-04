@@ -1,4 +1,4 @@
-# Configure ambiente de desarrollo
+# Configurar ambiente de desarrollo
 
 Para comenzar a integrar las soluciones de cobro de Mercado Pago, es necesario preparar tu ambiente de desarrollo con una serie de configuraciones que te permitirán acceder a las funcionalidades de Mercado Pago desde el backend.
  
