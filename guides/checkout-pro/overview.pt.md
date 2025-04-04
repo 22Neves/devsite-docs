@@ -117,3 +117,37 @@ product_landing_how_integrate:
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
 ---
+
+<pre class=”mermaid”>
+sequenceDiagram
+    participant Cliente as Navegador do cliente
+    participant Frontend as Frontend do vendedor
+    participant MercadoPago as MercadoPago.js
+    participant Backend as Backend do vendedor
+    participant API as API de pagamentos
+
+    Cliente->>Frontend: 1.1. Acesso ao site para pagar
+    Frontend->>MercadoPago: 1.2. setPublishableKey(PUBLIC_KEY)
+    Frontend->>MercadoPago: 1.3. getIdentificationTypes()
+    MercadoPago-->>Frontend: 1.4. identificationTypes()
+
+    Frontend->>Cliente: 1.5. Mostrar formulário de pagamentos
+
+    Cliente->>Frontend: 2.1. Inserir os 6 primeiros números do cartão
+    Frontend->>MercadoPago: 2.2. getPaymentMethod(bin)
+    MercadoPago-->>Frontend: 2.3. paymentMethod
+    Frontend->>MercadoPago: 2.4. getInstallments(paymentMethodId)
+    MercadoPago-->>Frontend: 2.5. installments()
+
+    Frontend->>Cliente: 2.6. Mostrar meio de pagamento e parcelas disponíveis
+
+    Cliente->>Frontend: 3.1. Enviar formulário completo
+    Frontend->>MercadoPago: 3.2. createToken(form)
+    MercadoPago-->>Frontend: 3.3. token
+
+    Frontend->>Backend: 3.4. POST /payment
+    Backend->>API: 3.5. POST /v1/payments?access_token=ACCESS_TOKEN
+    API-->>Backend: 3.6. Estado do pago
+    Backend-->>Frontend: 3.7. Estado do pagamento
+    Frontend->>Cliente: 3.8. Mostrar resultado
+</pre>
