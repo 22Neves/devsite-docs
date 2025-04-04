@@ -118,7 +118,7 @@ product_landing_how_integrate:
  - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
 ---
 
-<pre class=”mermaid”>
+<pre class="mermaid">
 sequenceDiagram
     participant Cliente as Navegador do cliente
     participant Frontend as Frontend do vendedor
