@@ -151,3 +151,9 @@ sequenceDiagram
     Backend-->>Frontend: 3.7. Estado do pagamento
     Frontend->>Cliente: 3.8. Mostrar resultado
 </pre>
+
+---
+product_landing_how_integrate:
+ - image_text: Explore exemplos de código
+ - image_text_link: /developers/pt/live-demo/checkout-pro
+---
