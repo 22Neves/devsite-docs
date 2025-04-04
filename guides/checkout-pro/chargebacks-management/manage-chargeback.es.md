@@ -4,7 +4,24 @@ Al recibir una notificación de inicio de contracargo, utilice los datos proporc
 
 En esta etapa, analice la información detallada incluida en la notificación para comprender los aspectos específicos del contracargo. A continuación, presentamos un diagrama que ilustra cómo funciona el flujo de envío y recepción de la documentación:
 
-![Chargebacks](/images/cow/chargebacks-flow.png) 
+<pre class="mermaid">
+sequenceDiagram
+    participant Merchant as Merchant Server
+    participant MercadoPago as Mercado Pago API
+
+    MercadoPago->>Merchant: Chargeback notification
+    Merchant-->>MercadoPago: HTTP 200
+
+    Merchant->>MercadoPago: GET Chargeback
+    MercadoPago-->>Merchant: Chargeback response
+
+    Merchant->>MercadoPago: Upload documentation
+    MercadoPago-->>Merchant: HTTP 200
+
+    Merchant->>MercadoPago: Chargeback update
+    MercadoPago-->>Merchant: HTTP 200
+</pre>
+
 
 ## Consultar contracargo
 
