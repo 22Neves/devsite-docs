@@ -151,6 +151,7 @@ sequenceDiagram
 </pre>
 
 ---
+product_landing_how_integrate:
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
 ---
