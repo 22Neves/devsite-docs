@@ -15,7 +15,6 @@ Para testar sua integração, você deve realizar uma compra de teste utilizando
 
 1. No [Mercado Pago Developers](/developers/pt/docs), navegue até [Suas integrações](/developers/panel/app) na parte superior direita da tela e clique no cartão correspondente à aplicação com a qual você está desenvolvendo.
 2. Depois de acessar "Detalhes da aplicação", vá para a seção **Contas de teste** no menu lateral esquerdo e clique no botão **+ Criar conta de teste**.
-
 3. Na tela "Criar nova conta", insira a descrição **Comprador** para identificar a conta.
 4. Em seguida, selecione o **país de operação** da conta, considerando que essa informação **não poderá ser editada** posteriormente.
 5. Opcionalmente, indique um valor para o **dinheiro disponível** maior do que o dos dois produtos do seu site.
