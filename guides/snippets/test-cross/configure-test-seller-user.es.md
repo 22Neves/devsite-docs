@@ -1,5 +1,5 @@
 
-Las [cuentas de prueba](/developers/es/docs/order/additional-content/your-integrations/test/accounts) son usuarios que tienen las mismas funcionalidades que un usuario real de Mercado Pago, pero permiten probar el funcionamiento de tu desarrollo sin comprometer datos reales. 
+Las [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts) son usuarios que tienen las mismas funcionalidades que un usuario real de Mercado Pago, pero permiten probar el funcionamiento de tu desarrollo sin comprometer datos reales. 
 
 Sigue los pasos a continuación para crear un usuario de prueba vendedor.
 
