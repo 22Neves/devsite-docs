@@ -89,7 +89,7 @@ product_landing_what_differentiates:
  - line_values: false|true|true
  - line_text: Medios de pago
  - line_type: text
- - line_values: Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto
+ - line_values: Dinero en cuenta, ----[mlb]----Pix------------, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto
  - line_text: Disponibilidad por país
  - line_type: sites
  - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
