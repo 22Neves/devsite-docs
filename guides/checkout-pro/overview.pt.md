@@ -89,7 +89,7 @@ product_landing_what_differentiates:
  - line_values: false|true|true
  - line_text: Meios de pagamento
  - line_type: text
- - line_values: Dinheiro em conta, Pix, cartão de crédito ou débito, Linha de crédito, boleto|Dinheiro em conta, Pix, cartão de crédito ou débito, Linha de crédito, boleto|Dinheiro em conta, Pix, cartão de crédito ou débito, Linha de crédito, boleto
+ - line_values: Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto,----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto,----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto,----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Disponibilidade por país
  - line_type: sites
  - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
@@ -99,8 +99,6 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Como integrar
  - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
- - image_text: Explore exemplos de código
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Conta de vendedor
@@ -153,7 +151,6 @@ sequenceDiagram
 </pre>
 
 ---
-product_landing_how_integrate:
  - image_text: Explore exemplos de código
  - image_text_link: /developers/pt/live-demo/checkout-pro
 ---
