@@ -89,7 +89,7 @@ product_landing_what_differentiates:
  - line_values: false|true|true
  - line_text: Medios de pago
  - line_type: text
- - line_values: Dinero en cuenta, ----[mlb]----Pix------------, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto|Dinero en cuenta, Pix, tarjeta de crédito o débito, Línea de crédito, boleto
+ - line_values: Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto,----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto,----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto,----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Disponibilidad por país
  - line_type: sites
  - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
@@ -99,8 +99,6 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
- - image_text: Explora ejemplos de código
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de vendedor
@@ -116,4 +114,43 @@ product_landing_how_integrate:
  - list_item: Salir a producción
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+---
+
+<pre class="mermaid">
+sequenceDiagram
+    title Diagrama de secuencia V1
+
+    participant Cliente as Navegador del cliente
+    participant Frontend as Frontend del vendedor
+    participant MPJS as MercadoPago.js
+    participant Backend as Backend del vendedor
+    participant API as API de pagos
+
+    Cliente->>Frontend: 1.1 - Accede al site para pagar
+    Frontend->>MPJS: 1.2 - setPublishableKey(PUBLIC_KEY)
+    Frontend->>MPJS: 1.3 - getIdentificationTypes()
+    MPJS-->>Frontend: 1.4 - identificationTypes[ ]
+    Frontend-->>Cliente: 1.5 - Muestra el formulario de pago
+
+    Cliente->>MPJS: 2.1 - Inserta los primeros 6 números de la tarjeta
+    MPJS->>MPJS: 2.2 - getPaymentMethod(bin)
+    MPJS-->>Frontend: 2.3 - paymentMethod
+    MPJS->>MPJS: 2.4 - getInstallments(paymentMethod.id)
+    MPJS-->>Frontend: 2.5 - installments[ ]
+    Frontend-->>Cliente: 2.6 - Mostrar medio de pago y cuotas disponibles
+
+    Cliente->>Frontend: 3.1 - Envío del formulario completo
+    Frontend->>MPJS: 3.2 - createToken(form)
+    MPJS-->>Frontend: 3.3 - token
+    Frontend->>Backend: 3.4 - POST /payment
+
+    Backend->>API: 3.5 - POST /v1/payment?access_token=ACCESS_TOKEN
+    API-->>Backend: 3.6 - Estado del pago
+    Backend-->>Frontend: 3.7 - Estado del pago
+    Frontend-->>Cliente: 3.8 - Mostrar resultado
+</pre>
+
+---
+ - image_text: Explora ejemplos de código
+ - image_text_link: /developers/es/live-demo/checkout-pro
 ---
