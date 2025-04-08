@@ -11,6 +11,26 @@ Toda a informação envolvida no processamento da transação é armazenada no *
 
 Além disso, o componente oferece a possibilidade de orientar o usuário com alertas sobre campos incompletos ou possíveis erros ao preencher os dados, otimizando o processo de compra.
 
+<pre class="mermaid">
+  sequenceDiagram
+    participant Navegador as Navegador do comprador
+    participant Frontend as Front-end do integrador
+    participant MPjs as MercadoPago.js
+    participant Backend as Back-end do integrador
+    participant API as API Mercado Pago
+
+    Navegador->>Frontend: 1. Tela de pagamentoO comprador acessa a tela de pagamento.
+    Frontend->>MPjs: 2. Inicialização SDK JS Mercado PagoO front-end do integrador baixa einicializa o SDK JS do Mercado Pago.
+    Frontend->>Navegador: 3. Formulário de pagamentoO front-end do integrador exibe oformulário de pagamento.
+    Navegador->>Frontend: 4. Confirmação de pagamentoO comprador preenche o formulário efinaliza o pagamento.
+    Frontend->>MPjs: 5. Criação do tokenO front-end do integrador usa o SDK JSpara criar o token que conterá os dadosdo cartão de forma segura.
+    Frontend->>Backend: 6. Envio do tokenO front-end do integrador envia o token docartão e os dados de pagamento para seu back-end.
+    Backend->>API: 7. Criação do pagamentoDo back-end, são chamados os serviçosdo Mercado Pago para criar o pagamento.
+    API->>Navegador: 8. Resultado do pagamentoO front-end do integrador exibe aocomprador o resultado da operação.
+    API->>Backend: 9. Atualizações de status do pagamentoO Mercado Pago pode enviar notificaçõesvia Webhook com atualizações do statusdo pagamento.
+    Backend->>Navegador: 10. Notificação ao compradorSe aplicável, o comprador é notificadosobre a atualização do pagamento.
+</pre>
+
 Para avançar com a configuração de pagamentos com cartão de débito e/ou crédito via _Card Payment Brick_, siga os passos abaixo.
 
 > NOTE
@@ -341,6 +361,38 @@ Uma vez criada a order e o pagamento, você pode consultar os estados possíveis
 
 ::::TabComponent{title="Core Methods"} 
 Na integração via _Core Methods_, o desenvolvedor fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, incluindo as informações sobre o tipo de documento e sobre o cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout, diferentemente da integração via _Card Payment Brick_, onde a busca pelas informações é feita automaticamente e a interface é pré-estabelecida.
+
+Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando _Core Methods_.
+<pre class="mermaid">
+  sequenceDiagram
+      participant Cliente as Navegador do cliente
+      participant Frontend as Frontend do vendedor
+      participant MPjs as MercadoPago.js
+      participant Backend as Back-end do vendedor
+      participant API as API Mercado Pago
+      Cliente->>Frontend: 1.1 Acessa o site para pagar
+      Frontend->>MPjs: 1.2 new MercadoPago(PUBLIC_KEY)
+      Frontend->>MPjs: 1.3 getIdentificationTypes()
+      MPjs-->>Frontend: 1.4 identificationTypes
+      Frontend->>Cliente: 1.5 Mostra formulário de pagamento
+      Cliente->>Frontend: 2.1 Insere os 6 primeiros números do cartão
+      Frontend->>MPjs: 2.2 getPaymentMethods(OPTIONS)
+      MPjs-->>Frontend: 2.3 paymentMethods
+      Frontend->>MPjs: 2.4 getIssuers(OPTIONS)
+      MPjs-->>Frontend: 2.5 issuers
+      Frontend->>Cliente: 2.6 Mostrar emissores disponíveis
+      Frontend->>MPjs: 2.6 getInstallments(OPTIONS)
+      MPjs-->>Frontend: 2.7 installments
+      Frontend->>Cliente: 2.8 Mostrar meio de pagamento e parcelas disponíveis
+      Cliente->>Frontend: 3.1 Envio do formulário completo
+      Frontend->>MPjs: 3.2 createCardToken(OPTIONS)
+      MPjs-->>Frontend: 3.3 cardToken
+      Frontend->>Backend: 3.4 POST/payment
+      Backend->>API: 3.5 POST /v1/payments
+      API-->>Backend: 3.6 Estado do pagamento
+      Backend-->>Frontend: 3.7 Estado do pagamento
+      Frontend->>Cliente: 3.8 Mostrar resultado
+</pre>
 
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} 
 A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.

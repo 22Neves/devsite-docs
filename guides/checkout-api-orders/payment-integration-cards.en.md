@@ -340,6 +340,38 @@ Once the order and payment are created, you can check the possible statuses by g
 ::::TabComponent{title="Métodos Core"}
 In the integration via _Core Methods_, the developer is responsible for defining how the necessary information to complete the payment will be retrieved, including information about the type of document and about the card (issuer and installments). This allows for complete flexibility in building the checkout flow experience, unlike the integration via _Card Payment Brick_, where the information retrieval is done automatically and the interface is pre-established.
 
+Check out the diagram below that illustrates the payment process using a card with _Core Methods_.
+<pre class="mermaid">
+  sequenceDiagram
+      participant Client as Client's Browser
+      participant Frontend as Seller's Frontend
+      participant MPjs as MercadoPago.js
+      participant Backend as Seller's Backend
+      participant API as Mercado Pago API
+      Client->>Frontend: 1.1 Accesses the site to make a payment
+      Frontend->>MPjs: 1.2 new MercadoPago(PUBLIC_KEY)
+      Frontend->>MPjs: 1.3 getIdentificationTypes()
+      MPjs-->>Frontend: 1.4 identificationTypes
+      Frontend->>Client: 1.5 Displays payment form
+      Client->>Frontend: 2.1 Enters the first 6 card numbers
+      Frontend->>MPjs: 2.2 getPaymentMethods(OPTIONS)
+      MPjs-->>Frontend: 2.3 paymentMethods
+      Frontend->>MPjs: 2.4 getIssuers(OPTIONS)
+      MPjs-->>Frontend: 2.5 issuers
+      Frontend->>Client: 2.6 Show available issuers
+      Frontend->>MPjs: 2.6 getInstallments(OPTIONS)
+      MPjs-->>Frontend: 2.7 installments
+      Frontend->>Client: 2.8 Show payment method and available installments
+      Client->>Frontend: 3.1 Submits the completed form
+      Frontend->>MPjs: 3.2 createCardToken(OPTIONS)
+      MPjs-->>Frontend: 3.3 cardToken
+      Frontend->>Backend: 3.4 POST/payment
+      Backend->>API: 3.5 POST /v1/payments
+      API-->>Backend: 3.6 Payment status
+      Backend-->>Frontend: 3.7 Payment status
+      Frontend->>Client: 3.8 Show result
+</pre>
+
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 The capture of card data (card number, security code and expiration date) is done through a payment form that allows obtaining and validating the information necessary to process the payment.
 
