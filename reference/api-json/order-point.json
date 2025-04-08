@@ -21,9 +21,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, you must use an exclusive value in the header of each unique value for each call. If you use a value already assigned to another request, you will receive information corresponding to that created resource in response, not this new request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, deve usar um valor exclusivo para cada chamada. Caso utilize um valor já atribuído a outra requisição, você receberá em resposta informações correspondentes a esse recurso criado, e não a esta nova requisição. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, debes utilizar un valor exclusivo para cada llamado. Si utilizas un valor ya asignado a otra requisición, recibirás como respuesta información correspondiente a ese recurso creado, y no a esta nueva solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
             }
           }
         ],
@@ -89,7 +89,7 @@
                               "pt": "Valor total da order de pagamento. Para o Chile (CHL) deve ser um número inteiro, sem decimais. Para os demais países, o campo deve conter 2 números decimais, mesmo quando for um número inteiro (por exemplo, \"10.00\").",
                               "es": "Monto total de la order de pago. Para Chile (CHL) debe ser un número entero, sin decimales. Para el resto de los países, el campo debe llevar obligatoriamente 2 números decimales, incluso cuando es un número entero (por ejemplo, \"10.00\")."
                             },
-                            "example": "24.90"
+                            "example": "24"
                           }
                         }
                       }
@@ -148,6 +148,46 @@
                         }
                       }
                     }
+                  },
+                  "taxes":{
+                    "type":"array",
+                    "description":{
+                      "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                      "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                      "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "payer_condition": {
+                            "type":"string",
+                            "example": "payment_taxable_iva",
+                            "description":{
+                                "en":"This field will signal the terminal whether the order is generated with VAT or not.",
+                                "pt":"Este campo informará ao terminal se a order foi gerada com IVA ou não.",
+                                "es":"Este campo le indicará a la terminal si la order se genera con IVA o no."
+                            },
+                            "enum": [
+                              {
+                                "title": "payment_taxable_iva",
+                                "description": {
+                                    "en": "Default value. It indicates that the payment will be generated with VAT.",
+                                    "es": "Valor por defecto. Indica que el pago se generará con IVA.",
+                                    "pt": "Valor padrão. Indica que o pagamento será gerado com IVA."
+                                }
+                              },
+                              {
+                                "title": "payment_exempt_iva",
+                                "description": {
+                                    "en": "This value indicates that the payment will be exempt from VAT.",
+                                    "es": "Este valor indica que el pago estará exento de IVA.",
+                                    "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                }
+                              }
+                            ]
+                        }
+                      }
+                    }  
                   }
                 }
               }
@@ -194,6 +234,15 @@
                         }
                       ]
                     },
+                    "user_id":{
+                      "type":"string",
+                      "example":"5238400195",
+                      "description":{
+                        "en":"ID of the Mercado Pago account that created the order.",
+                        "pt":"ID do usuário do Mercado Pago que criou a order.",
+                        "es":"Identificador del usuario de Mercado Pago que creó la order."
+                      }
+                    },
                     "external_reference":{
                       "type":"string",
                       "example":"ext_ref_1234",
@@ -233,8 +282,8 @@
                       },
                       "properties":{
                         "application_id":{
-                          "type":"number",
-                          "example":1234567890,
+                          "type":"string",
+                          "example":"1234567890",
                           "description":{
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
@@ -363,7 +412,7 @@
                               },
                               "amount": {
                                 "type": "string",
-                                "example": "24.90",
+                                "example": "24",
                                 "description": {
                                   "pt": "Valor do pagamento.",
                                   "en": "Payment amount.",
@@ -393,6 +442,46 @@
                           }
                         }
                       }
+                    },
+                    "taxes":{
+                      "type":"array",
+                      "description":{
+                        "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                        "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                        "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payer_condition": {
+                              "type":"string",
+                              "example": "payment_taxable_iva",
+                              "description":{
+                                  "en":"This field will signal whether the order is generated with VAT or not.",
+                                  "pt":"Este campo informará se a order foi gerada com IVA ou não.",
+                                  "es":"Este campo indicará si la order fue generada con IVA o no."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment_taxable_iva",
+                                  "description": {
+                                      "en": "Default value. It indicates that the payment was generated with VAT.",
+                                      "es": "Valor por defecto. Indica que el pago se generó con IVA.",
+                                      "pt": "Valor padrão. Indica que o pagamento foi gerado com IVA."
+                                  }
+                                },
+                                {
+                                  "title": "payment_exempt_iva",
+                                  "description": {
+                                      "en": "This value indicates that the payment will be exempt from VAT.",
+                                      "es": "Este valor indica que el pago estará exento de IVA.",
+                                      "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                  }
+                                }
+                              ]
+                          }
+                        }
+                      }  
                     }
                   }
                 }
@@ -679,6 +768,15 @@
                         "es":"Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
                       }
                     },
+                    "user_id":{
+                      "type":"string",
+                      "example":"5238400195",
+                      "description":{
+                        "en":"ID of the Mercado Pago account that created the order.",
+                        "pt":"ID do usuário do Mercado Pago que criou a order.",
+                        "es":"Identificador del usuario de Mercado Pago que creó la order."
+                      }
+                    },
                     "type":{
                       "type":"string",
                       "description":{
@@ -737,8 +835,8 @@
                       },
                       "properties":{
                         "application_id":{
-                          "type":"number",
-                          "example":1234567890,
+                          "type":"string",
+                          "example":"1234567890",
                           "description":{
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
@@ -816,27 +914,11 @@
                           }
                         },
                         {
-                          "title": "canceled_by_api",
+                          "title": "processed",
                           "description": {
-                            "en": "The order has been canceled through the API.",
-                            "es": "La order fue cancelada desde la API.",
-                            "pt": "A order foi cancelada na API."
-                          }
-                        },
-                        {
-                          "title": "canceled_on_terminal",
-                          "description": {
-                            "en": "The order has been canceled through the terminal.",
-                            "es": "La order fue cancelada desde la terminal.",
-                            "pt": "A order foi cancelada na terminal."
-                          }
-                        },
-                        {
-                          "title": "accredited",
-                          "description": {
-                            "en": "The order has been successfully processed.",
-                            "es": "La order ha sido procesada de manera exitosa.",
-                            "pt": "A order foi processado com sucesso."
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "La transacción asociada a la order fue procesada exitosamente.",
+                            "pt": "A transação associada à order foi processada com sucesso."
                           }
                         },
                         {
@@ -856,83 +938,11 @@
                           }
                         },
                         {
-                          "title": "amount_limit_exceeded",
+                          "title": "action_required",
                           "description": {
-                            "en": "The transaction could not be completed because it exceeded the card limit.",
-                            "es": "La transacción no se pudo completar ya que superó el límite de la tarjeta.",
-                            "pt": "A transação não pôde ser concluída porque excedeu o limite do cartão."
-                          }
-                        },
-                        {
-                          "title": "bad_filled_card_data",
-                          "description": {
-                            "en": "The transaction could not be completed because there was an error with the card details.",
-                            "es": "La transacción no se logró completar ya que hubo un error en con los datos de la tarjeta.",
-                            "pt": "A transação não pôde ser concluída porque houve um erro nas informações do cartão."
-                          }
-                        },
-                        {
-                          "title": "required_call_for_authorize",
-                          "description": {
-                            "en": "The transaction failed because a call for authorization is needed.",
-                            "es": "La transacción falló porque es necesario un llamado para su autorización.",
-                            "pt": "A transação falhou porque é necessária uma chamada para autorização."
-                          }
-                        },
-                        {
-                          "title": "card_disabled",
-                          "description": {
-                            "en": "The card is disabled.",
-                            "es": "La tarjeta está deshabilitada.",
-                            "pt": "O cartão está desativado."
-                          }
-                        },
-                        {
-                          "title": "high_risk",
-                          "description": {
-                            "en": "The transaction failed because a risk of fraud was detected.",
-                            "es": "La transacción falló porque se detectó riesgo de fraude.",
-                            "pt": "A transação falhou devido a um alto risco detectado."
-                          }
-                        },
-                        {
-                          "title": "insufficient_amount",
-                          "description": {
-                            "en": "The card has insufficient amounts to make the transaction.",
-                            "es": "La tarjeta no dispone de dinero suficiente para realizar la transacción.",
-                            "pt": "O cartão não tem saldo suficiente para realizar a transação."
-                          }
-                        },
-                        {
-                          "title": "invalid_installments",
-                          "description": {
-                            "en": "Invalid number of installments to make the transaction.",
-                            "es": "Número de cuotas/meses inválido para hacer la transacción.",
-                            "pt": "Número de parcelas inválido para efetuar a transação."
-                          }
-                        },
-                        {
-                          "title": "max_attempts_exceeded",
-                          "description": {
-                            "en": "The maximum number of attempts allowed has been exceeded.",
-                            "es": "El número máximo de intentos permitidos fue superado.",
-                            "pt": "O número máximo de tentativas permitidas foi excedido."
-                          }
-                        },
-                        {
-                          "title": "processing_error",
-                          "description": {
-                            "en": "An error has been detected and is being processed.",
-                            "es": "Se detectó un error, que está siendo procesado.",
-                            "pt": "Um erro foi detectado e está sendo processado."
-                          }
-                        },
-                        {
-                          "title": "in_review",
-                          "description": {
-                            "en": "The status of the transaction should be reviewed to identify whether it was processed or failed.",
-                            "es": "El estado de la transacción se debe revisar para identificar si fue procesada o falló.",
-                            "pt": "O status da transação deve ser revisado para identificar se ela foi processada ou falhou."
+                            "en": "The associated transaction needs to be confirmed, please check the terminal to verify the final status.",
+                            "es": "La transacción asociada necesita ser confirmada, por favor, revisa la terminal para verificar el estado del final.",
+                            "pt": "A transação associada precisa ser confirmada. Verifique o terminal para verificar o status final."
                           }
                         }
                       ]
@@ -987,11 +997,38 @@
                               },
                               "amount": {
                                 "type": "string",
-                                "example": "24.90",
+                                "example": "24",
                                 "description": {
                                   "pt": "Valor do pagamento.",
                                   "en": "Payment amount.",
                                   "es": "Monto del pago."
+                                }
+                              },
+                              "refunded_amount": {
+                                "type": "string",
+                                "example": "38",
+                                "description": {
+                                  "pt": "Valor do reembolso, caso seja realizado. No México (MEX) e no Chile (CHL), caso tenha sido paga a gorjeta, também incluirá o seu valor.",
+                                  "en": "Refund amount, if one has been made. In Mexico (MEX) and Chile (CHL), if a tip was paid, this amount will also include its value.",
+                                  "es": "Valor del reembolso, en caso de haber realizado uno. En México (MEX) y Chile (CHL), si se pagó propina, este monto también incluirá su valor."
+                                }
+                              },
+                              "tip_amount": {
+                                "type": "string",
+                                "example": "14",
+                                "description": {
+                                  "pt": "Parâmetro exclusivo para transações no Mexico (MEX) e no Chile (CHL). Valor da gorjeta, inserido a partir do terminal ao efetuar o pagamento.",
+                                  "en": "Exclusive parameter for transactions in Mexico (MEX) and Chile (CHL). Tip amount, sent from the terminal when making the payment.",
+                                  "es": "Parámetro exclusivo para transacciones en México (MEX) y Chile (CHL). Monto de la propina que fue ingresado desde la terminal al momento del pago."
+                                }
+                              },
+                              "paid_amount": {
+                                "type": "string",
+                                "example": "38",
+                                "description": {
+                                  "pt": "Valor total pago. Por exemplo, no Mexico (MEX) e no Chile (CHL), se o pagamento foi gerado com gorjetas, você verá a soma do valor do produto mais o valor da gorjeta.",
+                                  "en": "It is the total paid amount. For example, for Mexico (MEX) and Chile (CHL), if the payment was generated with tips, you'll see the sum of the amount paid for the product plus the tip value.",
+                                  "es": "Valor total pagado. Por ejemplo, en México (MEX) y en Chile (CHL), si el pago se generó con propina, verás la suma del valor del producto y el valor de la propina."
                                 }
                               },
                               "status":{
@@ -1179,7 +1216,7 @@
                             "properties": { 
                               "id":{
                                 "type":"string",
-                                "example":"ref_01J67CQQH5904WDBVZEM1234D",
+                                "example":"REF01J67CQQH5904WDBVZEM1234D",
                                 "description":{
                                   "en":"Identifier of the refund transaction, automatically generated by Mercado Pago.",
                                   "pt":"Identificador da transação de reembolso, gerado automaticamente pelo Mercado Pago.",
@@ -1208,9 +1245,9 @@
                                 "type": "string",
                                 "example": "24",
                                 "description": {
-                                  "pt": "Valor do reembolso.",
-                                  "en": "Refund amount.",
-                                  "es": "Monto del reembolso."
+                                  "pt": "Valor do reembolso. No México (MEX) e no Chile (CHL), esse valor incluirá o valor da gorjeta, caso tenha sido paga.",
+                                  "en": "Refund amount. In Mexico (MEX) and Chile (CHL), this amount will include the value of the tip, if one was paid.",
+                                  "es": "Monto del reembolso. En México (MEX) y Chile (CHL), este monto incluirá el valor de la propina, en caso de que haya sido pagada."
                                 }
                               },
                               "status":{
@@ -1236,6 +1273,46 @@
                           }
                         }
                       }
+                    },
+                    "taxes":{
+                      "type":"array",
+                      "description":{
+                        "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                        "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                        "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payer_condition": {
+                              "type":"string",
+                              "example": "payment_taxable_iva",
+                              "description":{
+                                  "en":"This field will signal whether the order is generated with VAT or not.",
+                                  "pt":"Este campo informará se a order foi gerada com IVA ou não.",
+                                  "es":"Este campo indicará si la order fue generada con IVA o no."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment_taxable_iva",
+                                  "description": {
+                                      "en": "Default value. It indicates that the payment was generated with VAT.",
+                                      "es": "Valor por defecto. Indica que el pago se generó con IVA.",
+                                      "pt": "Valor padrão. Indica que o pagamento foi gerado com IVA."
+                                  }
+                                },
+                                {
+                                  "title": "payment_exempt_iva",
+                                  "description": {
+                                      "en": "This value indicates that the payment will be exempt from VAT.",
+                                      "es": "Este valor indica que el pago estará exento de IVA.",
+                                      "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                  }
+                                }
+                              ]
+                          }
+                        }
+                      }  
                     }
                   }
                 }
@@ -1400,9 +1477,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, you must use an exclusive value in the header of each unique value for each call. If you use a value already assigned to another request, you will receive information corresponding to that created resource in response, not this new request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, deve usar um valor exclusivo para cada chamada. Caso utilize um valor já atribuído a outra requisição, você receberá em resposta informações correspondentes a esse recurso criado, e não a esta nova requisição. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, debes utilizar un valor exclusivo para cada llamado. Si utilizas un valor ya asignado a otra requisición, recibirás como respuesta información correspondiente a ese recurso creado, y no a esta nueva solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
             }
           }
         ],
@@ -1425,6 +1502,15 @@
                         "en":"Identifier of the order cancelled in the request.",
                         "pt":"Identificador da order cancelada na requisição.",
                         "es":"Identificador de la order cancelada en la solicitud."
+                      }
+                    },
+                    "user_id":{
+                      "type":"string",
+                      "example":"5238400195",
+                      "description":{
+                        "en":"ID of the Mercado Pago account that created the order.",
+                        "pt":"ID do usuário do Mercado Pago que criou a order.",
+                        "es":"Identificador del usuario de Mercado Pago que creó la order."
                       }
                     },
                     "type":{
@@ -1485,8 +1571,8 @@
                       },
                       "properties":{
                         "application_id":{
-                          "type":"number",
-                          "example":1234567890,
+                          "type":"string",
+                          "example":"1234567890",
                           "description":{
                             "en":"Identifier of the Mercado Pago application that created the order.",
                             "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
@@ -1644,6 +1730,46 @@
                           }
                         }
                       }
+                    },
+                    "taxes":{
+                      "type":"array",
+                      "description":{
+                        "en":"This field is only for Chile (CHL). It contains information for VAT payment. ",
+                        "pt":"Campo apenas para Chile (CHL). Contém as informações do pagamento do IVA.",
+                        "es":"Campo exclusivo para Chile (CHL). Contiene la información relativa al pago del IVA."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "payer_condition": {
+                              "type":"string",
+                              "example": "payment_taxable_iva",
+                              "description":{
+                                  "en":"This field will signal whether the order is generated with VAT or not.",
+                                  "pt":"Este campo informará se a order foi gerada com IVA ou não.",
+                                  "es":"Este campo indicará si la order fue generada con IVA o no."
+                              },
+                              "enum": [
+                                {
+                                  "title": "payment_taxable_iva",
+                                  "description": {
+                                      "en": "Default value. It indicates that the payment was generated with VAT.",
+                                      "es": "Valor por defecto. Indica que el pago se generó con IVA.",
+                                      "pt": "Valor padrão. Indica que o pagamento foi gerado com IVA."
+                                  }
+                                },
+                                {
+                                  "title": "payment_exempt_iva",
+                                  "description": {
+                                      "en": "This value indicates that the payment will be exempt from VAT.",
+                                      "es": "Este valor indica que el pago estará exento de IVA.",
+                                      "pt": "Este valor indica que o pagamento estará isento de IVA."
+                                  }
+                                }
+                              ]
+                          }
+                        }
+                      }  
                     }
                   }
                 }
@@ -1863,6 +1989,32 @@
               "type": "integer",
               "example": 1
             }
+          },
+          {
+            "name": "store_id",
+            "in": "query",
+            "description": {
+              "en": "It's the store identifier, that you should send only if you want to filter the available devices by store.",
+              "es": "Es el identificador de la sucursal, que deberás enviar sólo si quieres filtrar los dispositivos disponibles por sucursal.",
+              "pt": "É o identificador da loja. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por loja."
+            },
+            "schema": {
+              "type": "string",
+              "example": "1235456678"
+            }
+          },
+          {
+            "name": "pos_id",
+            "in": "query",
+            "description": {
+              "en": "It's the device Point of Sale identifier, that you should send only if you want to filter the available devices by Point of Sale.",
+              "es": "Es el identificador de la caja, que deberás enviar sólo si quieres filtrar los dispositivos por caja.",
+              "pt": "É o identificador da caixa. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por caixa."
+            },
+            "schema": {
+              "type": "integer",
+              "example": 1235456678
+            }
           }
         ],
         "responses":{
@@ -1925,9 +2077,9 @@
                               "external_pos_id": {
                                 "type": "string",
                                 "description": {
-                                  "en": "External identifier of the store to which the point of sale belongs, defined by the integrator during its creation.",
-                                  "es": "Identificador externo de la sucursal a la que pertenece la caja, definido por el integrador durante su creación.",
-                                  "pt": "Identificador externo da loja a qual pertence a caixa, definido pelo integrador durante sua criação."
+                                  "en": "External identifier of the point of sale, defined by the integrator during its creation.",
+                                  "es": "Identificador externo de caja, definido por el integrador durante su creación.",
+                                  "pt": "Identificador externo da caixa, definido pelo integrador durante sua criação."
                                 },
                                 "example": "SUC0101POS"
                               },
@@ -2443,9 +2595,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to create a refund for a payment transactions associated with an order for Mercado Pago Point. In case of success, the request will return a response with status 200",
-          "pt": "Este endpoint permite criar uma devolução total de uma transação de pagamento associada a uma order para Mercado Pago Point. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es": "Este endpoint permite crear una devolución total de una transacción de pago asociada a una order para Mercado Pago Point. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en": "This endpoint allows to create a refund for a payment transactions associated with an order for Mercado Pago Point. Refunds may be issued subject to the following specific conditions: for payments made with physical cards, refunds can be issued up to 90 days after the payment is made; for payments made through Edenred (Chile), refunds can only be issued until 11:59:59 PM on the same day the payment was created; for payments made with Pluxee (exclusively in Chile), refunds can be issued up to 5 business days after the payment is created. In case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite criar uma devolução total de uma transação de pagamento associada a uma order para Mercado Pago Point. O reembolso poderá ser realizado sujeito às seguintes condições: para pagamentos efetuados com cartões físicos, o reembolso poderá ser emitido até 90 dias após o pagamento ter sido efetuado; Para pagamentos feitos através da Edenred (Chile), os reembolsos só podem ser feitos até às 23:59:59 do mesmo dia em que o pagamento foi criado; Para pagamentos feitos com Pluxee (exclusivamente no Chile), os reembolsos podem ser emitidos até 5 dias úteis após a criação do pagamento. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Este endpoint permite crear una devolución total de una transacción de pago asociada a una order para Mercado Pago Point. Será posible realizar un reembolso teniendo en cuenta las siguientes particularidades: para pagos con tarjetas físicas, el reembolso puede ser realizado hasta 90 días después de efectuado el pago; para pagos realizados mediante Edenred (Chile), solo podrán realizarse reembolsos hasta las 23:59:59 del mismo día en que fue creado el pago; para los pagos efectuados con Pluxee (exclusivamente en Chile), los reembolsos podrán ser realizados hasta 5 días hábiles desde la creación del pago. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
@@ -2471,9 +2623,9 @@
               "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
             },
             "description":{
-              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
-              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
-              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, you must use an exclusive value in the header of each unique value for each call. If you use a value already assigned to another request, you will receive information corresponding to that created resource in response, not this new request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, deve usar um valor exclusivo para cada chamada. Caso utilize um valor já atribuído a outra requisição, você receberá em resposta informações correspondentes a esse recurso criado, e não a esta nova requisição. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, debes utilizar un valor exclusivo para cada llamado. Si utilizas un valor ya asignado a otra requisición, recibirás como respuesta información correspondiente a ese recurso creado, y no a esta nueva solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
             }
           }
         ],
@@ -2546,7 +2698,7 @@
                             "properties": { 
                               "id":{
                                 "type":"string",
-                                "example":"ref_01J67CQQH5904WDBVZEM1234D",
+                                "example":"REF01J67CQQH5904WDBVZEM1234D",
                                 "description":{
                                   "en":"Identifier of the refund transaction, automatically generated by Mercado Pago.",
                                   "pt":"Identificador da transação de reembolso, gerado automaticamente pelo Mercado Pago.",
@@ -2573,11 +2725,11 @@
                               },
                               "amount": {
                                 "type": "string",
-                                "example": "24",
+                                "example": "38",
                                 "description": {
-                                  "pt": "Valor do reembolso.",
-                                  "en": "Refund amount.",
-                                  "es": "Monto del reembolso."
+                                  "pt": "Valor do reembolso. No México (MEX) e no Chile (CHL), esse valor incluirá o valor da gorjeta, caso tenha sido paga.",
+                                  "en": "Refund amount. In Mexico (MEX) and Chile (CHL), this amount will include the value of the tip, if one was paid.",
+                                  "es": "Monto del reembolso. En México (MEX) y Chile (CHL), este monto incluirá el valor de la propina, en caso de que haya sido pagada."
                                 }
                               },
                               "status":{
@@ -2890,19 +3042,27 @@
                   {
                     "title": "voucher_card",
                     "description": {
-                      "en": "This value is only allowed in Brazil (BRA). The terminal will only accept payments with voucher cards, and will offer the possibility to pay with Sodexo or Alelo in its screen.",
-                      "es": "Este valor es permitido sólo en Brasil (BRA). La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo.",
-                      "pt": "Este valor é permitido apenas no Brasil (BRA). O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo."
+                      "en": "This value is only allowed in Brazil (BRA) and Chile (CHL). The terminal will only accept payments with voucher cards, and will offer on its screen the possibility to pay, in Brazil, with Pluxee or Alelo, or in Chile, with Pluxee or Edenred.",
+                      "es": "Este valor es permitido sólo en Brasil (BRA) y en Chile (CHL). La terminal aceptará exclusivamente pagos con vouchers o tarjetas de alimentación, y ofrecerá en la pantalla la posibilidad de pagar con Pluxee o Alelo, en el caso de Brasil, o con Pluxee o Edenred, en el caso de Chile.",
+                      "pt": "Este valor é permitido apenas no Brasil (BRA) e no Chile (CHL). O terminal aceitará exclusivamente pagamentos com vales refeição ou alimentação, e oferecerá na tela a possibilidade de pagar com Pluxee ou Alelo no Brasil, ou Pluxee ou Edenred no caso do Chile."
+                    }
+                  },
+                  {
+                    "title": "cash",
+                    "description": {
+                      "en": "Este valor só é permitido no Chile (CHL). O terminal só aceitará pagamentos em dinheiro.",
+                      "es": "Este valor es permitido sólo en Chile (CHL). La terminal aceptará exclusivamente pagos con efectivo.",
+                      "pt": "This value is only allowed in Chile (CHL). The terminal will only accept cash payments."
                     }
                   }
                 ]
               },
               "default_installments":{
-                "type":"string",
+                "type":"integer",
                 "description": {
-                  "en": "This parameter only corresponds to transactions in Brasil (BRA) and is allowed only when \"default_type = credit_card\". It must be an integer value between 1 and 72.",
-                  "pt": "Este parâmetro corresponde apenas a transações na Brasil (BRA) e só é permitido quando \"default_type = credit_card\". Deve ser um valor inteiro entre 1 e 72.",
-                  "es": "Este parametro corresponde a transacciones en Brasil (BRA) y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor entero entre 1 y 72. "
+                  "en": "This parameter only corresponds to transactions in Brasil (BRA) and is allowed only when \"default_type = credit_card\". This field will serve to inform the terminal that the amount of installments was preselected and skip the screen selection. If the card selected for the payment does not support that number of installments, the terminal will display the installment selection screen.",
+                  "pt": "Este parâmetro corresponde apenas a transações na Brasil (BRA) e só é permitido quando \"default_type = credit_card\". Servirá para informar ao terminal que a quantidade de parcelas foi pré-selecionada e pular essa seleção desde a maquininha. Caso o cartão utilizado para o pagamento não suporte esse número de parcelas, o terminal exibirá a tela de seleção.",
+                  "es": "Este parametro corresponde a transacciones en Brasil (BRA) y sólo está permitido cuando \"default_type = credit_card\". Servirá para informar a la terminal que la cantidad de cuotas/meses fue pre-seleccionada y así saltar la selección desde la pantalla. Si la tarjeta utilizada para el pago no soporta esa cantidad de cuotas/meses, la terminal mostrará la pantalla de selección."
                 },
                 "example":"6"
               },
@@ -3045,19 +3205,27 @@
                   {
                     "title": "voucher_card",
                     "description": {
-                      "en": "This value is only allowed in Brazil (BRA). The terminal will only accept payments with voucher cards, and will offer the possibility to pay with Sodexo or Alelo in its screen.",
-                      "es": "Este valor es permitido sólo en Brasil (BRA). La terminal aceptará exclusivamente pagos con vouchers, y ofrecerá en la pantalla la posibilidad de pagar con Sodexo o Alelo.",
-                      "pt": "Este valor é permitido apenas no Brasil (BRA). O terminal aceitará exclusivamente pagamentos com vouchers, e oferecerá na tela a possibilidade de pagar com Sodexo ou Alelo."
+                      "en": "This value is only allowed in Brazil (BRA) and Chile (CHL). The terminal will only accept payments with voucher cards, and will offer on its screen the possibility to pay, in Brazil, with Pluxee or Alelo, or in Chile, with Pluxee or Edenred.",
+                      "es": "Este valor es permitido sólo en Brasil (BRA) y en Chile (CHL). La terminal aceptará exclusivamente pagos con vouchers o tarjetas de alimentación, y ofrecerá en la pantalla la posibilidad de pagar con Pluxee o Alelo, en el caso de Brasil, o con Pluxee o Edenred, en el caso de Chile.",
+                      "pt": "Este valor é permitido apenas no Brasil (BRA) e no Chile (CHL). O terminal aceitará exclusivamente pagamentos com vales refeição ou alimentação, e oferecerá na tela a possibilidade de pagar com Pluxee ou Alelo no Brasil, ou Pluxee ou Edenred no caso do Chile."
+                    }
+                  },
+                  {
+                    "title": "cash",
+                    "description": {
+                      "en": "Este valor só é permitido no Chile (CHL). O terminal só aceitará pagamentos em dinheiro.",
+                      "es": "Este valor es permitido sólo en Chile (CHL). La terminal aceptará exclusivamente pagos con efectivo.",
+                      "pt": "This value is only allowed in Chile (CHL). The terminal will only accept cash payments."
                     }
                   }
                 ]
               },
               "default_installments":{
-                "type":"string",
+                "type":"integer",
                 "description": {
-                  "en": "This parameter only corresponds to transactions in Brazil (BRA) and is allowed only when \"default_type = credit_card\". It must be an integer value between 1 and 72.",
-                  "pt": "Este parâmetro corresponde apenas a transações na Brasil (BRA) e só é permitido quando \"default_type = credit_card\". Deve ser um valor inteiro entre 1 e 72.",
-                  "es": "Este parametro corresponde a transacciones en Brasil (BRA) y sólo está permitido cuando \"default_type = credit_card\". Debe ser un valor entero entre 1 y 72. "
+                  "en": "This parameter only corresponds to transactions in Brazil (BRA) and is allowed only when \"default_type = credit_card\". This value represents the amount of installments that will be shown to the buyer by default, established when creating the order.",
+                  "pt": "Este parâmetro corresponde apenas a transações na Brasil (BRA) e só é permitido quando \"default_type = credit_card\". O valor representa a quantidade de parcelas que será exibida ao comprador por padrão, definida no momento da criação do pedido.",
+                  "es": "Este parametro corresponde a transacciones en Brasil (BRA) y sólo está permitido cuando \"default_type = credit_card\". Su valor representa la cantidad de cuotas que serán exhibidas al comprador por default, definido al momento de la creación de la order. "
                 },
                 "example":"6"
               },
@@ -3100,7 +3268,7 @@
           "pt":"Identificador do site ou local de onde a order foi criada, conforme lista pré-determinada.",
           "es":"Identificador del sitio o ubicación desde donde se creó la order, según lista predeterminada."
         },
-        "example": "BRA",
+        "example": "CHL",
         "enum": [
           {
             "title": "BRA",
@@ -3228,6 +3396,14 @@
               "en": "The order has been succesfully refunded.",
               "es": "La order ha sido reembolsada de manera exitosa.",
               "pt": "A order foi reembolsada com sucesso."
+            }
+          },
+          {
+            "title": "action_required",
+            "description": {
+              "en": "The associated transaction needs to be confirmed. Check the terminal to verify the final status.",
+              "es": "La transaccion asociada necesita ser confirmada. Revisa la terminal para verificar el estado final.",
+              "pt": "A transação associada precisa ser confirmada. Verifique o terminal para verificar o status final."
             }
           }
         ]
