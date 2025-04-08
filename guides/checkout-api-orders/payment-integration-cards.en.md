@@ -11,6 +11,27 @@ All information involved in processing the transaction is stored in the backend,
 
 In addition, the component provides the ability to guide the user with alerts for incomplete fields or possible errors when filling out the data, optimizing the purchasing process.
 
+With this, the implementation of the flow is transparent for those who are performing the integration, as shown in the diagram below.
+
+<pre class="mermaid">
+  sequenceDiagram
+      participant Navegador del comprador
+      participant Front-end del integrador
+      participant MercadoPago.js
+      participant Back-end del integrador
+      participant API Mercado Pago
+      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobroEl Comprador accede a la pantalla de cobro.
+      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado PagoEl front-end del integrador descarga einicializa la SDK JS de Mercado Pago
+      Front-end del integrador->>Navegador del comprador: 3. Formulario de pagoEl front-end del integrador muestra elformulário de pago
+      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pagoEl comprador completa el formulário yfinaliza el pago.
+      Front-end del integrador->>MercadoPago.js: 5. Creación del tokenEl front-end del integrador utiliza la SDK JSpara crear el token que contendrá los datosde tarjeta de forma segura.
+      Front-end del integrador->>Back-end del integrador: 6. Envío del tokenEl front-end del integrador envía el token detarjeta y los datos de pago a su back-end.
+      Back-end del integrador->>API Mercado Pago: 7. Creación del pagoDesde el back-end, se llama a los serviciosde Mercado Pago para crear el pago.
+      API Mercado Pago->>Navegador del comprador: 8. Resultado del pagoEl front-end del integrador le muestra alcomprador el resultado de la operación.
+      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pagoMercado Pago puede enviar notificacionesvía Webhook con actualizaciones del estadodel pago.
+      Back-end del integrador->>Navegador del comprador: 10. Notificación al compradorSi corresponde, se le avisa al compradorsobre la actualización del pago.
+</pre>
+
 To proceed with the setup of debit and/or credit card payments via _Card Payment Brick_, follow the steps below.
 
 > NOTE
