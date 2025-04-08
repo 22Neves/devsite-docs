@@ -960,7 +960,7 @@
                   "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
                   "pt": "Identificador do subtipo de ação que será criado para a terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, ou \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
                 },
-                "example": "invoice",
+                "example": "custom",
                 "required": true,
                 "enum": [
                   {
