@@ -1678,25 +1678,25 @@
         "type": "number",
         "example": 621102,
         "description": {
-          "en": "MCC code that indicates the category of the point of sale. If not specified, it remains as a generic category",
-          "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica",
-          "es": "Código MCC que indica el rubro del punto de venta. Si no se especifica, queda como categoría genérica"
+          "en": "MCC code that indicates the category of the point of sale. The only possible categories are Gastronomy and Gas Station, and the code varies depending on the country of operation. If not specified, it remains as a generic category",
+          "pt": "Código MCC que indica a categoria do ponto de venda. As únicas categorias possíveis são Gastronomia e Posto de Gasolina, e o código varia dependendo do país de operação. Se não especificado, ele permanece como uma categoria genérica",
+          "es": "Código MCC que indica el rubro del punto de venta. Las únicas categorías posibles son Gastronomía y Estación de Servicio, y el código varía según el país de operación. Si no se especifica, queda como categoría genérica"
         },
         "enum": [
           {
             "title": "Gas Station",
             "description": {
-              "en": "{{pos_category_gas_station}}",
-              "es": "{{pos_category_gas_station}}",
-              "pt": "{{pos_category_gas_station}}"
+              "en": "For gas stations, the code must be {{pos_category_gas_station}}",
+              "es": "Para estaciones de servicio, el código debe ser {{pos_category_gas_station}}",
+              "pt": "Para postos de gasolina, o código deve ser {{pos_category_gas_station}}"
             }
           },
           {
             "title": "Gastronomy",
             "description": {
-              "en": "{{pos_category_gastronomy}}",
-              "es": "{{pos_category_gastronomy}}",
-              "pt": "{{pos_category_gastronomy}}"
+              "en": "For gastronomy, the code must be {{pos_category_gastronomy}}",
+              "es": "Para gastronomía, el código debe ser {{pos_category_gastronomy}}",
+              "pt": "Para gastronomia, o código deve ser {{pos_category_gastronomy}}"
             }
           }
         ]
