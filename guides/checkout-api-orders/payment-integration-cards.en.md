@@ -5,7 +5,6 @@ The integration of payments with credit and/or debit cards in ----[mlb]---- Chec
 :::::TabsComponent
 
 ::::TabComponent{title="Card Payment Brick"}
-
 In the integration through the _Card Payment Brick_, the `MercadoPago.js` library, included in your project during the [configuration of the development environment](/developers/en/docs/checkout-api/development-environment), is responsible for obtaining the information required for processing a payment. This means it searches for the types of documents available for the corresponding country, and as the card data is entered, it also retrieves information related to the issuer and the available installments.
 
 All information involved in processing the transaction is stored in the backend, in compliance with [PCI security](/developers/en/docs/security/pci) standards.
@@ -19,7 +18,6 @@ To proceed with the setup of debit and/or credit card payments via _Card Payment
 > Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model).
 
 :::AccordionComponent{title="Add payment form" pill="client-side"}
-
 To receive payments, you need to add a form in the frontend that allows for securely capturing the payer's information and enables card encryption. 
 
 This inclusion should be done through the _Card Payment Brick_, which offers an optimized form with various themes and includes the necessary fields for card payments.
@@ -236,7 +234,6 @@ To move on to the payment submission stage, your backend must be able to receive
 
 :::
 :::AccordionComponent{title="Submit payment" pill="server-side"}
-
 The payment submission must be made by creating an order that contains associated payment transactions.    
 
 To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"} and execute the request.
@@ -341,11 +338,9 @@ Once the order and payment are created, you can check the possible statuses by g
 
 ::::
 ::::TabComponent{title="Métodos Core"}
-
 In the integration via _Core Methods_, the developer is responsible for defining how the necessary information to complete the payment will be retrieved, including information about the type of document and about the card (issuer and installments). This allows for complete flexibility in building the checkout flow experience, unlike the integration via _Card Payment Brick_, where the information retrieval is done automatically and the interface is pre-established.
 
 :::AccordionComponent{title="Add payment form" pill="client-side"}
-
 The capture of card data (card number, security code and expiration date) is done through a payment form that allows obtaining and validating the information necessary to process the payment.
 
 To obtain this data and process payments, insert the `HTML` below directly into the project.

@@ -18,7 +18,7 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 > Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/integration-model).
 
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} 
-Para poder receber pagamentos, é necessário que você adicione no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
+Para poder receber pagamentos, é necessário que você adicione no *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
 
 Essa inclusão deve ser feita por meio do _Card Payment Brick_, que oferece um formulário otimizado com temas variados e inclui os campos necessários para pagamentos com cartões.
 
@@ -235,7 +235,8 @@ Para avançar para a etapa de envio do pagamento, será necessário que seu *bac
 
 :::
 
-:::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+:::AccordionComponent{title="Enviar pagamento" pill="server-side"} 
+O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
 Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"} e execute a requisição.      
 
@@ -584,7 +585,8 @@ Nesta etapa ocorre a validação dos dados dos compradores no momento em que rea
 
 ::: 
 
-:::AccordionComponent{title="Obter banco emissor" pill="client-side"} Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
+:::AccordionComponent{title="Obter banco emissor" pill="client-side"} 
+Durante o preenchimento do formulário de pagamento, é possível identificar o banco emissor do cartão, evitando conflitos de processamento de dados entre os diferentes emissores. Além disso, é a partir dessa identificação que as opções de parcelamento são exibidas.
 
 O banco emissor é obtido através do parâmetro `issuer_id`. Para obtê-lo, utilize o Javascript abaixo.
 
@@ -697,7 +699,8 @@ O _token_ do cartão é criado a partir das próprias informações do cartão, 
 
 :::
 
-:::AccordionComponent{title="Enviar pagamento" pill="server-side"} O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
+:::AccordionComponent{title="Enviar pagamento" pill="server-side"} 
+O envio do pagamento deve ser realizado mediante a criação de uma order que contenha a transação de pagamento associada.
 
 Para isso, envie um **POST** com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} e os parâmetros requeridos listados abaixo para o endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"} e execute a requisição.      
 

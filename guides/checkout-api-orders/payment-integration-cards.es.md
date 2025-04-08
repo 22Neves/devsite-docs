@@ -5,7 +5,6 @@ La integración de pagos con **tarjeta de crédito y/o débito** en ----[mlb]---
 :::::TabsComponent
 
 ::::TabComponent{title="Card Payment Brick"}
-
 En la integración por medio del _Card Payment Brick_, la biblioteca de `MercadoPago.js`, incluída en tu proyecto durante la [configuración del ambiente de desarrollo](/developers/es/docs/checkout-api/development-environment), se encarga de obtener la información requerida para la generación de un pago. Esto es, realiza una búsqueda de los tipos de documentos disponibles para el país correspondiente, así como, a medida que se introducen los datos de la tarjeta, de la información relativa al emisor y a las cuotas disponibles. 
 
 Toda la información involucrada en el procesamiento de la transacción es almacenada en el _backend_, en conformidad con los padrones de [seguridad PCI](/developers/es/docs/security/pci).
@@ -19,7 +18,6 @@ Para avanzar con la configuración de pagos con tarjeta de débito y/o crédito 
 > Recuerda que, antes de configurar los medios de pago que deseas ofrecer, es necesario elegir el modo en el que serán procesadas las transacciones. Para más información, accede a la sección [ Modelo de integración](/developers/es/docs/checkout-api/integration-model).
 
 :::AccordionComponent{title="Añadir formulario de pago" pill="server-side"}
-
 Para poder recibir pagos, es necesario que añadas en el *frontend* un formulario que permita capturar los datos del pagador de manera segura y permita la criptografía de la tarjeta. Esta inclusión debe realizarse por medio del _Card Payment Brick_, que  ofrece un formulario optimizado con temas variados, e incluye los campos necesarios para pagos con tarjetas. 
 
 ---
@@ -235,7 +233,6 @@ Para avanzar a la etapa de envío del pago, será necesario que tu _backend_ pue
 
 :::
 :::AccordionComponent{title="Enviar pago" pill="server-side"}
-
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
 La definición del modo de procesamiento se realizará al momento de crear la order, mediante el parámetro `processing_mode`. Su valor deberá ser `automatic`, para procesamientos automáticos, o `manual`, para procesar la order manualmente.
@@ -341,7 +338,6 @@ Una vez creada la order y el pago, puedes consultar los estados posibles dirigi�
 
 ::::
 ::::TabComponent{title="Core Methods"}
-
 En la integración vía _Core Methods_, el responsable de la integración se encarga de definir cómo se buscará la información necesaria para completar el pago, incluyendo cuándo buscar información sobre el tipo de documento, además de aquella relativa a la tarjeta (emisor y cuotas). De esta forma, tiene total flexibilidad para construir la experiencia del flujo de pago, a diferencia de la integración a través del _Card Payment Brick_, donde la búsqueda de la información se realiza de forma automática.
 
 :::AccordionComponent{title="Añadir formulario de pago" pill="client-side"}
@@ -443,7 +439,6 @@ Para obtener estos datos y procesar los pagos, inserta el siguiente `HTML` direc
 
 :::
 :::AccordionComponent{title="Inicializar campos de tarjeta" pill="client-side"}
-
 Después de añadir el formulario de pago, es necesario inicializar los campos de la tarjeta (número de tarjeta, fecha de expiración y código de seguridad) que deberán completarse al iniciar el flujo de pagos.
 
 Una vez finalizada la inicialización de los campos, los &lt;div&gt; contendrán los iframes con los inputs donde se insertarán los datos PCI.
@@ -509,7 +504,6 @@ Al incluir el elemento del tipo `select` con el id: `form-checkout__identificati
 
 :::
 :::AccordionComponent{title="Obtener métodos de pago de la tarjeta" pill="client-side"}
-
 En esta etapa se validan los datos de los compradores cuando rellenan los campos necesarios para realizar el pago. Para poder identificar el método de pago utilizado por el comprador, introduce el siguiente código directamente en tu proyecto. 
 
 [[[
@@ -585,9 +579,9 @@ En esta etapa se validan los datos de los compradores cuando rellenan los campos
     }
 ```
 ]]]
+
 :::
 :::AccordionComponent{title="Obtener banco emisor" pill="client-side"}
-
 Al rellenar el formulario de pago, es posible identificar el banco emisor de la tarjeta, evitando conflictos de procesamiento de datos entre los diferentes emisores. Además, a partir de esta identificación se exhiben las opciones de pago en cuotas.
 
 El banco emisor se obtiene a través del parámetro `issuer_id`. Para obtenerlo, utiliza el Javascript que se indica a continuación.
@@ -619,7 +613,6 @@ El banco emisor se obtiene a través del parámetro `issuer_id`. Para obtenerlo,
 
 :::
 :::AccordionComponent{title="Obtener cantidad de pagos" pill="client-side"}
-
 Uno de los campos obligatorios que componen el formulario de pago es la----[mla]---- **cantidad de cuotas**------------ ----[mlm]----**cantidad de meses**------------. Para activarlo y mostrar las cuotas disponibles a la hora de efectuar el pago, utiliza la siguiente función. 
 
 [[[
@@ -663,7 +656,6 @@ Uno de los campos obligatorios que componen el formulario de pago es la----[mla]
 
 :::
 :::AccordionComponent{title="Crear token de la tarjeta" pill="client-side"}
-
 El _token_ de la tarjeta se crea a partir de la información de la misma, lo que aumenta la seguridad durante el flujo de pago. Además, después de que el _token_ se utiliza en una compra determinada, este es descartado y se debe crear uno nuevo para futuras compras. Para crear el _token_ de la tarjeta, utiliza la siguiente función.
 
 > NOTE
@@ -701,7 +693,6 @@ El _token_ de la tarjeta se crea a partir de la información de la misma, lo que
 :::
 
 :::AccordionComponent{title="Enviar pago" pill="server-side"}
-
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
 La definición del modo de procesamiento se realizará al momento de crear la order, mediante el parámetro `processing_mode`. Su valor deberá ser `automatic`, para procesamientos automáticos, o `manual`, para procesar la order manualmente.
