@@ -1686,9 +1686,9 @@
           {
             "title": "Gastronomy",
             "description": {
-              "en": "Gastronomy",
-              "es": "Gastronomía",
-              "pt": "Gastronomia"
+              "en": "{{pos_category_gas_station}}",
+              "es": "{{pos_category_gas_station}}",
+              "pt": "{{pos_category_gas_station}}"
             }
           },
           {

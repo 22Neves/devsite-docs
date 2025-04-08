@@ -16,5 +16,10 @@
     "mco": "COP",
     "mpe": "PEN",
     "mlu": "UYU"
+  },
+  "pos_category_gas_station": {
+    "mla": "473000",
+    "mlb": "4731300",
+    "mlm": "468419"
   }
 }
