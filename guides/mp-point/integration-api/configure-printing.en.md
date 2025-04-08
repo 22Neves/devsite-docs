@@ -1,6 +1,6 @@
 # Configure printings
 
-The Printing API offers a practical solution to integrate your systems and manage printings on configured Point terminals. This resource allows the printing of images and custom printings directly from a Point of Sale (POS), using the integrated printer of Smart devices.
+The Printing API offers a practical solution to integrate your systems and manage printings on configured Point terminals. This resource allows the printing of images and custom printings directly from a Point of Sale (POS), using the integrated printer of **Point Smart** and **Point Smart 2** devices.
 
 Use the endpoints below to manage the printing queue, taking into account the specifications of each endpoint. Ensure that the terminal is correctly configured in **[POS mode (Point of Sale)](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/configure-devices#bookmark_activar_el_modo_pdv_en_tu_dispositivo_point)**.
 
