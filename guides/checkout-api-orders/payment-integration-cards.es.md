@@ -5,7 +5,7 @@ La integración de pagos con **tarjeta de crédito y/o débito** en ----[mlb]---
 :::::TabsComponent
 
 ::::TabComponent{title="Card Payment Brick"}
-En la integración por medio del _Card Payment Brick_, la biblioteca de `MercadoPago.js`, incluída en tu proyecto durante la [configuración del ambiente de desarrollo](/developers/es/docs/checkout-api/v2/development-environment), se encarga de obtener la información requerida para la generación de un pago. Esto es, realiza una búsqueda de los tipos de documentos disponibles para el país correspondiente, así como, a medida que se introducen los datos de la tarjeta, de la información relativa al emisor y a las cuotas disponibles. 
+En la integración por medio del _Card Payment Brick_, la biblioteca de `MercadoPago.js`, incluída en tu proyecto durante la [configuración del ambiente de desarrollo](/developers/es/docs/checkout-api-v2/development-environment), se encarga de obtener la información requerida para la generación de un pago. Esto es, realiza una búsqueda de los tipos de documentos disponibles para el país correspondiente, así como, a medida que se introducen los datos de la tarjeta, de la información relativa al emisor y a las cuotas disponibles. 
 
 Toda la información involucrada en el procesamiento de la transacción es almacenada en el _backend_, en conformidad con los padrones de [seguridad PCI](/developers/es/docs/security/pci).
 
@@ -36,7 +36,7 @@ Para avanzar con la configuración de pagos con tarjeta de débito y/o crédito 
 
 > NOTE
 >
-> Recuerda que, antes de configurar los medios de pago que deseas ofrecer, es necesario elegir el modo en el que serán procesadas las transacciones. Para más información, accede a la sección [ Modelo de integración](/developers/es/docs/checkout-api/v2/integration-model).
+> Recuerda que, antes de configurar los medios de pago que deseas ofrecer, es necesario elegir el modo en el que serán procesadas las transacciones. Para más información, accede a la sección [ Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
 
 :::AccordionComponent{title="Añadir formulario de pago" pill="server-side"}
 Para poder recibir pagos, es necesario que añadas en el *frontend* un formulario que permita capturar los datos del pagador de manera segura y permita la criptografía de la tarjeta. Esta inclusión debe realizarse por medio del _Card Payment Brick_, que  ofrece un formulario optimizado con temas variados, e incluye los campos necesarios para pagos con tarjetas. 
@@ -296,14 +296,14 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 |---|---|---|---|
 | `Authorization` | _Header_ | Hace referencia a tu clave privada, o Access Token. Utiliza el :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} en ambientes de desarrollo, y el :toolTipComponent[Access Token productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción*."} para pagos reales. | Requerido |
 | `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Esta llave garantiza que cada solicitud sea procesada una única vez, evitando duplicidades. Utiliza un valor exclusivo en el encabezado de tu solicitud, como un UUID V4 o *strings* aleatorias. | Requerido |
-| `processing_mode` | _Body. String_ | Modo de procesamiento de la order. Los valores posibles son: <br><br>`automatic`, para crear y procesar la order en modo automático. <br><br>`manual`, para crear la order y procesarla con posterioridad. <br><br> Para más información, accede a [Modelo de integración](/developers/es/docs/checkout-api/v2/integration-model)| Requerido |
+| `processing_mode` | _Body. String_ | Modo de procesamiento de la order. Los valores posibles son: <br><br>`automatic`, para crear y procesar la order en modo automático. <br><br>`manual`, para crear la order y procesarla con posterioridad. <br><br> Para más información, accede a [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model)| Requerido |
 | `total_amount` | _Body. String_ | Monto total de la transacción. | Requerido |
 | `transaction.payments.payment_method.id` | _Body. String_ | Identificador del método de pago. En este caso, es la **bandera de cada tarjeta**. Puedes consultar la lista completa de identificadores disponibles enviando una requisición al endpoint [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get). | Requerido |
 | `transaction.payments.payment_method.type` | _Body. String_ | Tipo de método de pago. Para pagos con tarjetas de crédito, debe ser `credit_card`, y para pagos con tarjeta de débito, debe ser `debit_card`. | Requerido. |
 
 > SUCCESS_MESSAGE
 >
-> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/v2/payment-management/integration-errors).
+> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api-v2/payment-management/integration-errors).
 
 En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
@@ -351,9 +351,9 @@ En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
 > WARNING
 >
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/v2/payment-management/reserve-capture-cancel) para más información.
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api-v2/payment-management/reserve-capture-cancel) para más información.
 
-Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api/v2/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api/v2/payment-management/status/transaction-status), respectivamente.
+Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api-v2/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api-v2/payment-management/status/transaction-status), respectivamente.
 
 :::
 
@@ -788,14 +788,14 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 |---|---|---|---|
 | `Authorization` | _Header_ | Hace referencia a tu clave privada, o Access Token. Utiliza el :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} en ambientes de desarrollo, y el :toolTipComponent[Access Token productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción*."} para pagos reales. | Requerido |
 | `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Esta llave garantiza que cada solicitud sea procesada una única vez, evitando duplicidades. Utiliza un valor exclusivo en el encabezado de tu solicitud, como un UUID V4 o *strings* aleatorias. | Requerido |
-| `processing_mode` | _Body. String_ | Modo de procesamiento de la order. Los valores posibles son: <br><br> `automatic`, para crear y procesar la order en modo automático. <br><br> `manual`, para crear la order y procesarla con posterioridad. <br><br> Para más información, accede a [Modelo de integración](/developers/es/docs/checkout-api/v2/integration-model)| Requerido |
+| `processing_mode` | _Body. String_ | Modo de procesamiento de la order. Los valores posibles son: <br><br> `automatic`, para crear y procesar la order en modo automático. <br><br> `manual`, para crear la order y procesarla con posterioridad. <br><br> Para más información, accede a [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model)| Requerido |
 | `total_amount` | _Body. String_ | Monto total de la transacción. | Requerido |
 | `transaction.payments.payment_method.id` | _Body. String_ | Identificador del método de pago. En este caso, es la **bandera de cada tarjeta**. Puedes consultar la lista completa de identificadores disponibles enviando una requisición al endpoint [Obtener medios de pago](/developers/es/reference/payment_methods/_payment_methods/get). | Requerido |
 | `transaction.payments.payment_method.type` | _Body. String_ | Tipo de método de pago. Para pagos con tarjetas de crédito, debe ser `credit_card`, y para pagos con tarjeta de débito, debe ser `debit_card`. | Requerido. |
 
 > SUCCESS_MESSAGE
 >
-> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api/v2/payment-management/integration-errors).
+> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api-v2/payment-management/integration-errors).
 
 En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
@@ -843,9 +843,9 @@ En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
 > WARNING
 >
-> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api/v2/payment-management/reserve-capture-cancel) para más información.
+> En caso de haber creado la order en modo manual, recuerda que el procesamiento del pago requiere de una etapa adicional, el llamado a :TagComponent{tag="API" text="Procesar order" href="/developers/es/reference/orders/online/process-order/post"}. Adicionalmente, podrás realizar una reserva y captura de valores. Dirígete a la sección [Reservar, capturar y cancelar fondos](/developers/es/docs/checkout-api-v2/payment-management/reserve-capture-cancel) para más información.
 
-Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api/v2/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api/v2/payment-management/status/transaction-status), respectivamente.
+Una vez creada la order y el pago, puedes consultar los estados posibles dirigiéndote a las secciones [Estado de la order](/developers/es/docs/checkout-api-v2/payment-management/status/order-status) y [Estado de la transacción](/developers/es/docs/checkout-api-v2/payment-management/status/transaction-status), respectivamente.
 
 :::
 

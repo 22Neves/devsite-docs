@@ -16,8 +16,8 @@
 
 ------------ 
 
-In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [application details](/developers/en/docs/checkout-api/v2/more-resources/application-details) for each of them.
+In [Your integration](/developers/panel/app), you will be able to view the list of all your created applications and access the [application details](/developers/en/docs/checkout-api-v2/more-resources/application-details) for each of them.
 
 > NOTE
 >
-> If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/checkout-api/v2/more-resources/application-details).
+> If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/checkout-api-v2/more-resources/application-details).

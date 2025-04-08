@@ -1,6 +1,6 @@
 # Realizar compra de prueba con Pix 
 
-Para probar tu integración con **Pix**, luego de haber [configurado tu ambiente de pruebas](/developers/es/docs/checkout-api/v2/integration-test), deberás crear una order con valores predefinidos. Esto quiere decir que sólo será posible verificar el funcionamiento de tu integración mediante una requisición, y no simulando una compra. 
+Para probar tu integración con **Pix**, luego de haber [configurado tu ambiente de pruebas](/developers/es/docs/checkout-api-v2/integration-test), deberás crear una order con valores predefinidos. Esto quiere decir que sólo será posible verificar el funcionamiento de tu integración mediante una requisición, y no simulando una compra. 
 
 Para realizar estas pruebas, envía la siguiente solicitud al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"}, junto con el :toolTipComponent[_Access Token_ del usuario de pruebas]{content="Clave privada de la aplicación de pruebas creada con tu usuario de pruebas. Se utiliza en el backend para poder probar tu desarrollo. Puedes acceder a ella iniciando sesión con tu usuario de pruebas y dirigiéndote a *Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción*."}. 
 
@@ -72,4 +72,4 @@ El valor `APRO` para el campo `payer.first_name` es el que determina que esta so
 
 Por último, y para verificar que la compra de prueba se realizó correctamente, envía un **GET** al endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/es/reference/orders/online-payments/get-order/get"}, reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
 
-¡Listo! Una vez finalizados estos pasos, la integración de Pix como medio de pago estará completa y podrás, o bien continuar probando otros medios de pago integrados, o bien [salir a producción](/developers/es/docs/checkout-api/v2/go-to-production).
+¡Listo! Una vez finalizados estos pasos, la integración de Pix como medio de pago estará completa y podrás, o bien continuar probando otros medios de pago integrados, o bien [salir a producción](/developers/es/docs/checkout-api-v2/go-to-production).

@@ -1,6 +1,6 @@
 # Perform a test purchase with cards
 
-To test your integration with **credit and/or debit cards**, after configuring your [test environment](/developers/en/docs/checkout-api/v2/integration-test), you should perform a test purchase with these payment methods, simulating the actions of a buyer user.
+To test your integration with **credit and/or debit cards**, after configuring your [test environment](/developers/en/docs/checkout-api-v2/integration-test), you should perform a test purchase with these payment methods, simulating the actions of a buyer user.
 
 To do this, access the store that has your checkout integrated, select a product or service, and start the purchase process.
 
@@ -23,4 +23,4 @@ To verify that the test purchase was carried out according to the expected resul
 The response to this call should bring the detailed information of the test transaction, along with the status chosen for the payment in the previous step within the `status` field.
 
 
-Ready! Once these steps are completed, the integration of cards as a payment method is complete, and you can either continue testing other integrated payment methods, or [go to production](/developers/en/docs/checkout-api/v2/go-to-production).
+Ready! Once these steps are completed, the integration of cards as a payment method is complete, and you can either continue testing other integrated payment methods, or [go to production](/developers/en/docs/checkout-api-v2/go-to-production).

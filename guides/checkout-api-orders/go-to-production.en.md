@@ -23,7 +23,7 @@ To do this, access [Your integrations](/developers/panel/app), select the desire
 
 ------------
 
-For more information, check our [Credentials documentation](/developers/en/docs/checkout-api/v2/more-resources/credentials).
+For more information, check our [Credentials documentation](/developers/en/docs/checkout-api-v2/more-resources/credentials).
 
 ## Implement SSL certificate
 

@@ -5,7 +5,7 @@ The integration of payments with credit and/or debit cards in ----[mlb]---- Chec
 :::::TabsComponent
 
 ::::TabComponent{title="Card Payment Brick"}
-In the integration through the _Card Payment Brick_, the `MercadoPago.js` library, included in your project during the [configuration of the development environment](/developers/en/docs/checkout-api/v2/development-environment), is responsible for obtaining the information required for processing a payment. This means it searches for the types of documents available for the corresponding country, and as the card data is entered, it also retrieves information related to the issuer and the available installments.
+In the integration through the _Card Payment Brick_, the `MercadoPago.js` library, included in your project during the [configuration of the development environment](/developers/en/docs/checkout-api-v2/development-environment), is responsible for obtaining the information required for processing a payment. This means it searches for the types of documents available for the corresponding country, and as the card data is entered, it also retrieves information related to the issuer and the available installments.
 
 All information involved in processing the transaction is stored in the backend, in compliance with [PCI security](/developers/en/docs/security/pci) standards.
 
@@ -36,7 +36,7 @@ To proceed with the setup of debit and/or credit card payments via _Card Payment
 
 > NOTE
 >
-> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api/v2/integration-model).
+> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
 
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 To receive payments, you need to add a form in the frontend that allows for securely capturing the payer's information and enables card encryption. 
@@ -296,14 +296,14 @@ See the table below for descriptions of the parameters that are mandatory in the
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | `Authorization`                                     | _Header_        | Refers to your private key, or Access Token. Use the :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} in development environments, and the :toolTipComponent[production Access Token]{content="Private key of the application created in Mercado Pago, that is used in the backend when receiving real payments. You can access it through *Your integrations > Application details > Production > Production credentials*."} for real payments.                                                            | Required          |
 | `X-Idempotency-Key`                                 | _Header_          | Idempotency key. It is used to ensure that each request is processed only once, avoiding duplications.  Use a unique value in the header of your request, such as a UUID V4 or random strings.            | Required          |
-| `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api/v2/integration-model).                                          | Required          |
+| `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).                                          | Required          |
 | `total_amount`                                      | _Body. String_    | Total amount for the transaction.                                                                                                                                                                                                       | Optional             |
 | `transaction.payments.payment_method.id` | _Body. String_ | Payment method identifier. **In this case, it is the brand of each card**. You can check the complete list of available identifiers by sending a request to the [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get) endpoint. | Required |
 | `transaction.payments.payment_method.type` | _Body. String_ | Payment method type. For credit card payments, it should be `credit_card`, and for debit card payments, it should be `debit_card`. | Required |
 
 > SUCCESS_MESSAGE
 >
-> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/v2/payment-management/integration-errors).
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api-v2/payment-management/integration-errors).
 
 In case of success, the response will look like the example below.
 
@@ -351,9 +351,9 @@ In case of success, the response will look like the example below.
 
 > WARNING
 >
-> If you created the order manually, remember that processing the payment requires an additional step, which is the call to the Process order API. Additionally, this mode will allow you to reserve and capture funds. Refer to the [Reserve, capture, and cancel funds](/developers/en/docs/checkout-api/v2/payment-management/reserve-capture-cancel) section for more information.
+> If you created the order manually, remember that processing the payment requires an additional step, which is the call to the Process order API. Additionally, this mode will allow you to reserve and capture funds. Refer to the [Reserve, capture, and cancel funds](/developers/en/docs/checkout-api-v2/payment-management/reserve-capture-cancel) section for more information.
 
-Once the order and payment are created, you can check the possible statuses by going to the [Order status](/developers/en/docs/checkout-api/v2/payment-management/status/order-status) and [Transaction status](/developers/en/docs/checkout-api/v2/payment-management/status/transaction-status) sections, respectively.
+Once the order and payment are created, you can check the possible statuses by going to the [Order status](/developers/en/docs/checkout-api-v2/payment-management/status/order-status) and [Transaction status](/developers/en/docs/checkout-api-v2/payment-management/status/transaction-status) sections, respectively.
 
 :::
 
@@ -791,14 +791,14 @@ See the table below for descriptions of the parameters that are mandatory in the
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | `Authorization`                                     | _Header_        | Refers to your private key, or Access Token. Use the :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} in development environments, and the :toolTipComponent[production Access Token]{content="Private key of the application created in Mercado Pago, that is used in the backend when receiving real payments. You can access it through *Your integrations > Application details > Production > Production credentials*."} for real payments.                                                            | Required          |
 | `X-Idempotency-Key`                                 | _Header_          | Idempotency key. It is used to ensure that each request is processed only once, avoiding duplications.  Use a unique value in the header of your request, such as a UUID V4 or random strings.            | Required          |
-| `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api/v2/integration-model).                                          | Required          |
+| `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).                                          | Required          |
 | `total_amount`                                      | _Body. String_    | Total amount for the transaction.                                                                                                                                                                                                       | Optional             |
 | `transaction.payments.payment_method.id` | _Body. String_ | Payment method identifier. **In this case, it is the brand of each card**. You can check the complete list of available identifiers by sending a request to the [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get) endpoint. | Required |
 | `transaction.payments.payment_method.type` | _Body. String_ | Payment method type. For credit card payments, it should be `credit_card`, and for debit card payments, it should be `debit_card`. | Required |
 
 > SUCCESS_MESSAGE
 >
-> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/v2/payment-management/integration-errors).
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api-v2/payment-management/integration-errors).
 
 In case of success, the response will look like the example below.
 
@@ -846,9 +846,9 @@ In case of success, the response will look like the example below.
 
 > WARNING
 >
-> If you created the order manually, remember that processing the payment requires an additional step, which is the call to the Process order API. Additionally, this mode will allow you to reserve and capture funds. Refer to the [Reserve, capture, and cancel funds](/developers/en/docs/checkout-api/v2/payment-management/reserve-capture-cancel) section for more information.
+> If you created the order manually, remember that processing the payment requires an additional step, which is the call to the Process order API. Additionally, this mode will allow you to reserve and capture funds. Refer to the [Reserve, capture, and cancel funds](/developers/en/docs/checkout-api-v2/payment-management/reserve-capture-cancel) section for more information.
 
-Once the order and payment are created, you can check the possible statuses by going to the [Order status](/developers/en/docs/checkout-api/v2/payment-management/status/order-status) and [Transaction status](/developers/en/docs/checkout-api/v2/payment-management/status/transaction-status) sections, respectively.
+Once the order and payment are created, you can check the possible statuses by going to the [Order status](/developers/en/docs/checkout-api-v2/payment-management/status/order-status) and [Transaction status](/developers/en/docs/checkout-api-v2/payment-management/status/transaction-status) sections, respectively.
 
 :::
 

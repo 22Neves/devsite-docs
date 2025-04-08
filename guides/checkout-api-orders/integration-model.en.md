@@ -12,10 +12,10 @@ Below are the main differences between the two options.
 
 | Feature  |  Payments API	  | Orders API	 |
 | --- | --- |--- |
-| Payment processing	  | Automatic (create and process your transaction) | [Automatic and manual](/developers/en/docs/checkout-api/v2/integration-model#bookmark_processing_modes_for_orders) (choosing when to process your transaction). |
+| Payment processing	  | Automatic (create and process your transaction) | [Automatic and manual](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders) (choosing when to process your transaction). |
 | Transactions	 | One transaction per request.		 | Multiple transactions per request. |
 | Operations  | [Online payments](/developers/en/docs#online-payments).	 | [Online payments](/developers/en/docs#online-payments) and [In-person payments](/developers/en/docs#inperson-payments) (Mercado Pago Point).|
-| Notifications	  | Advanced setup via `notification_url`.	 | Simpler setup available in the [Notifications](/developers/en/docs/checkout-api/v2/notifications) section under [Your integrations](/developers/panel/app). |
+| Notifications	  | Advanced setup via `notification_url`.	 | Simpler setup available in the [Notifications](/developers/en/docs/checkout-api-v2/notifications) section under [Your integrations](/developers/panel/app). |
 | Error validation	 | Returns one error at a time.  | Returns a list of all errors in the request. |
 
 ## Processing modes for Orders
@@ -63,5 +63,5 @@ The allowed operations are:
 ---
 product_landing_how_integrate:
  - button_description: Start integrating
- - button_link: /developers/en/docs/checkout-api/v2/create-application
+ - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---

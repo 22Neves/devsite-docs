@@ -8,11 +8,11 @@ With Mercado Pago's ----[mlb]---- Checkout Transparente,------------ ----[mla, m
 
 **Pix** is an instant electronic payment method offered by the Central Bank of Brazil to individuals and businesses.
 
-If you already [set up your environment](/developers/en/docs/checkout-api/v2/development-environment) and want to offer payments with Pix, follow the steps below.
+If you already [set up your environment](/developers/en/docs/checkout-api-v2/development-environment) and want to offer payments with Pix, follow the steps below.
 
 > NOTE
 >
-> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether manual or automatic, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration model](/developers/en/docs/checkout-api/v2/integration-model). 
+> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether manual or automatic, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model). 
 
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 
@@ -69,7 +69,7 @@ To facilitate the correct entry of data in the payment form, it is necessary to 
 
 The function below will allow you to automatically populate the available options, thanks to the inclusion of the `select` element with the `id: form-checkout__identificationType` found in the form used as an example in the previous step.
 
-If you already have a development that includes the retrieval of document types, as indicated below, proceed to [Submit payment](/developers/en/docs/checkout-api/v2/payment-integration/pix#:~:text=server%2Dside-,Submit,-payment).
+If you already have a development that includes the retrieval of document types, as indicated below, proceed to [Submit payment](/developers/en/docs/checkout-api-v2/payment-integration/pix#:~:text=server%2Dside-,Submit,-payment).
 
 If you do not have this function, add the following to your project.
 
@@ -154,14 +154,14 @@ See the table below for descriptions of the parameters that are mandatory in the
 | `total_amount`                                      | _Body. String_    | Total amount for the transaction.                                                                                                                                                                                                       | Required             |
 | `payment_expiration_time`                                  | _Body. String_    | Allows you to set the **due date** using the ISO 8601 duration format. By default, **the due date of the boleto is 3 business days**, but it can be changed through this parameter. <br> The date can be set between 1 and 30 days after the payment is created. We recommend setting a duration of at least 3 days (“P3D", as in the example) to avoid conflicts between the due date and the crediting of the payment, which can take up to 2 business hours from the moment it is made. <br> In case the payment is made after the established expiration date, the amount will be refunded to the payer's Mercado Pago account.                 | Optional             |
 | `external_reference`                                   | _Body. String_    | External reference of the order, which can be, for example, a hashcode from the Central Bank, serving as the transaction's source identifier.                                          | Required          |
-| `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api/v2/integration-model).                                          | Required          |
+| `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).                                          | Required          |
 | `transaction.payments.payment_method.id`            | _Body. String_    | Identifier of the payment method. In this case, the value should be `pix`.                                                                                                                                                      | Required          |
 | `transaction.payments.payment_method.type`          | _Body. String_    | Type of the payment method. In the case of payments with a slip, the value should be `bank_transfer`.                                                                                                                                  | Required          |
 | `payer.email`                                       | _Body. String_    | Buyer’s e-mail.                                                                                                                                                                                                 | Required          |
 
 > SUCCESS_MESSAGE
 >
-> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api/v2/payment-management/integration-errors).
+> To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api-v2/payment-management/integration-errors).
 
 After sending the payment request, the response will include the following information:
 
@@ -204,9 +204,9 @@ Among the returned parameters, we have those indicated in the table below.
 |---------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `transaction.payments.status`                        | _String_        | Returns the status of the transaction. In this case, it will return `action_required` to indicate the need for action to complete processing, that is, until the payment of the Pix is made.                          |
 | `transaction.payments.status_detail`                 | _String_        | In this case, the obtained `status_detail` is waiting (`waiting_payment`) for the user to complete the payment process of the Pix with their bank.                                                                                |
-| `transaction.payments.payment_method.ticket_url`     | _String_        | URL for the rendered Pix with QR code, Pix Copia e Cola, and payment instructions. See more information in [Make the payment available](/developers/en/docs/checkout-api/v2/payment-integration/pix#bookmark_add_link_or_bottom).                                                                                                       |
-| `transaction.payments.payment_method.qr_code`      | _String_        | Presents an alphanumeric code to be used in the configuration to display the option that will allow copying and pasting the payment code for Pix payment. See more information in [Make the payment available](/developers/en/docs/checkout-api/v2/payment-integration/pix#bookmark_add_link_or_bottom).                                                                                                                      |
-| `transaction.payments.payment_method.qr_code_base64`  | _String_        | Base64 representation of the QR code image to be scanned to complete the payment. Provides the value to be used in the request to display the QR code for Pix payment. See more information in [Make the payment available](/developers/en/docs/checkout-api/v2/payment-integration/pix#bookmark_add_link_or_bottom).                                                                                                                                                           |
+| `transaction.payments.payment_method.ticket_url`     | _String_        | URL for the rendered Pix with QR code, Pix Copia e Cola, and payment instructions. See more information in [Make the payment available](/developers/en/docs/checkout-api-v2/payment-integration/pix#bookmark_add_link_or_bottom).                                                                                                       |
+| `transaction.payments.payment_method.qr_code`      | _String_        | Presents an alphanumeric code to be used in the configuration to display the option that will allow copying and pasting the payment code for Pix payment. See more information in [Make the payment available](/developers/en/docs/checkout-api-v2/payment-integration/pix#bookmark_add_link_or_bottom).                                                                                                                      |
+| `transaction.payments.payment_method.qr_code_base64`  | _String_        | Base64 representation of the QR code image to be scanned to complete the payment. Provides the value to be used in the request to display the QR code for Pix payment. See more information in [Make the payment available](/developers/en/docs/checkout-api-v2/payment-integration/pix#bookmark_add_link_or_bottom).                                                                                                                                                           |
 
 > WARNING
 > 

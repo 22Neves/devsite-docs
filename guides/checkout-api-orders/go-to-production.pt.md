@@ -19,7 +19,7 @@ Para isso, acesse [Suas integrações](/developers/panel/app), selecione a aplic
 
 ------------
 
-Para obter mais informações, consulte nossa [documentação sobre Credenciais](/developers/pt/docs/checkout-api/v2/more-resources/credentials).
+Para obter mais informações, consulte nossa [documentação sobre Credenciais](/developers/pt/docs/checkout-api-v2/more-resources/credentials).
 
 ## Implementar certificado SSL
 

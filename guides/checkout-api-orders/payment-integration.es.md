@@ -80,7 +80,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Tarjetas
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/cards
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/cards
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -90,7 +90,7 @@ future_product_avaible:
  - card_icon: QRCode
  - card_title: Pix
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes un código QR o un código de pago.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/pix
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/pix
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -100,7 +100,7 @@ future_product_avaible:
  - card_icon: Boleto
  - card_title: Boleto
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza a través de boleto bancário.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/boleto
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/boleto
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -137,7 +137,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Tarjetas
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/cards
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/cards
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -147,7 +147,7 @@ future_product_avaible:
  - card_icon: Cash
  - card_title: Otros medios de pago
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de Rapipago o Pago Fácil.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/other-payment-methods
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/other-payment-methods
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -183,7 +183,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Tarjetas
  - card_description: Recibe pagos con tarjetas de crédito o débito de manera segura a través de un formulario de pago dentro del checkout.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/cards
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/cards
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -193,7 +193,7 @@ future_product_avaible:
  - card_icon: Cash
  - card_title: Otros medios de pago
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de OXXO, Paycash, Citibanamex, Santander o BBVA Bancomer.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/other-payment-methods
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/other-payment-methods
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
@@ -203,7 +203,7 @@ future_product_avaible:
  - card_icon: BankTransfer
  - card_title: Transferencia SPEI
  - card_description: Recibe pagos electrónicos instantáneos ofreciendo a tus clientes la posibilidad de pagar desde cualquier banco o institución financiera utilizando su CLABE.
- - card_button: /developers/es/docs/checkout-api/v2/payment-integration/spei
+ - card_button: /developers/es/docs/checkout-api-v2/payment-integration/spei
  - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
