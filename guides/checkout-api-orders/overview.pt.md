@@ -25,7 +25,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/v2/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -42,7 +42,7 @@ product_landing_how_works:
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
  - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Como integrar
- - button_link: /developers/pt/docs/checkout-api/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/v2/create-aplication
 ---
 
 ---
@@ -100,7 +100,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Sair à produção
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/v2/create-aplication
 ---
 
 ------------
@@ -131,7 +131,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/v2/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -148,7 +148,7 @@ product_landing_how_works:
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
  - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Cómo integrar
- - button_link: /developers/pt/docs/checkout-api/create-application
+ - button_link: /developers/pt/docs/checkout-api/v2/create-application
 ---
 
 ---
@@ -159,7 +159,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196395192-overviewmlapt.png
  - column_product: Checkout API
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api/overview
+ - column_button_link: /developers/pt/docs/checkout-api/v2/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -204,7 +204,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Salir a producción
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api/create-application
+ - button_link: /developers/pt/docs/checkout-api/v2/create-application
 ---
 
 ------------
@@ -235,7 +235,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Obtenha dados de compras por cartão com segurança e menor burocracia, permitindo a certificação PCI de forma simplificada.
  - benefit_title: Flexibilidade para integrar
  - benefit_bullet: Adapte às suas necessidades de negócio.
- - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/integration-model#bookmark_modos_de_processamento_de_orders).
+ - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/ew/docs/checkout-api/v2/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
  - benefit_bullet: Ofereça um processo de compra com menos etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
@@ -252,7 +252,7 @@ product_landing_how_works:
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
  - list_title: Após as APIs de Mercado Pago processarem o pagamento, a compra é confirmada.
  - button_description: Cómo integrar
- - button_link: /developers/pt/docs/checkout-api/create-aplication
+ - button_link: /developers/pt/docs/checkout-api/v2/create-aplication
 ---
 
 ---
@@ -263,7 +263,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/1/1743539887056-overviewmlmpt.png
  - column_product: Checkout API
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api/overview
+ - column_button_link: /developers/pt/docs/checkout-api/v2/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -308,7 +308,7 @@ product_landing_how_integrate:
  - list_item: Testar sua integração
  - list_item: Salir a producción
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-api/create-application
+ - button_link: /developers/pt/docs/checkout-api/v2/create-application
 ---
 
 ------------

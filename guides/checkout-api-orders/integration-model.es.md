@@ -12,10 +12,10 @@ Ve a continuación las principales diferencias entre las dos opciones.
 
 | Funcionalidad  |  API de Pagamentos  | API de Orders |
 | --- | --- |--- |
-| Procesamiento del pago	  | Automático (cree y procese su transacción) | [Automático y manual](/developers/es/docs/checkout-api/integration-model#bookmark_modos_de_procesamiento_de_orders) (eligiendo cuándo procesar la transacción). |
+| Procesamiento del pago	  | Automático (cree y procese su transacción) | [Automático y manual](/developers/es/docs/checkout-api/v2/integration-model#bookmark_modos_de_procesamiento_de_orders) (eligiendo cuándo procesar la transacción). |
 | Transacciones | Una transacción por solicitud.	 | Múltiples transacciones por solicitud. |
 | Operaciones  | [Pagos online](/developers/es/docs#online-payments).	 | [Pagos online](/developers/es/docs#online-payments) y [Pagos presenciales](/developers/es/docs#inperson-payments) (Point de Mercado Pago).|
-| Notificaciones  | Configuración avanzada por `notification_url`.	 | Configuración más simple a partir de la sección de [Notificaciones](/developers/es/docs/checkout-api/notifications) en [Tus integraciones](/developers/panel/app). |
+| Notificaciones  | Configuración avanzada por `notification_url`.	 | Configuración más simple a partir de la sección de [Notificaciones](/developers/es/docs/checkout-api/v2/notifications) en [Tus integraciones](/developers/panel/app). |
 | Validación de errores | Retorna un error a la vez. | Retorna una lista con todos los errores en la solicitud. |
 
 ## Modos de procesamiento de Orders
@@ -63,5 +63,5 @@ Las operaciones permitidas son:
 ---
 product_landing_how_integrate:
  - button_description: Empezar a integrar
- - button_link: /developers/es/docs/checkout-api/create-application
+ - button_link: /developers/es/docs/checkout-api/v2/create-application
 ---

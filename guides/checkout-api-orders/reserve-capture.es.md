@@ -103,7 +103,7 @@ En caso de que la reserva sea rechazada, se devolverá una respuesta en el sigui
 }
 ```
 
-También es posible que el status retorne como pending. En estos casos, deberás prestar atención a las [notificaciones enviadas por Mercado Pago](/developers/es/docs/checkout-api/notifications) para saber cuál es el estado final del pago.
+También es posible que el status retorne como pending. En estos casos, deberás prestar atención a las [notificaciones enviadas por Mercado Pago](/developers/es/docs/checkout-api/v2/notifications) para saber cuál es el estado final del pago.
 
 > WARNING
 >

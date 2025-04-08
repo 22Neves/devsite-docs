@@ -1,6 +1,6 @@
 # Realizar compra de prueba con tarjetas
 
-Para probar tu integración con **tarjetas de crédito y/o débito**, luego de haber [configurado tu ambiente de pruebas](/developers/es/docs/checkout-api/integration-test), deberás realizar una compra de prueba con estos medios de pago simulando el accionar de un usuario comprador.
+Para probar tu integración con **tarjetas de crédito y/o débito**, luego de haber [configurado tu ambiente de pruebas](/developers/es/docs/checkout-api/v2/integration-test), deberás realizar una compra de prueba con estos medios de pago simulando el accionar de un usuario comprador.
 
 Para ello, accede a la tienda que tiene integrado tu checkout, selecciona algún producto o servicio, e inicia el proceso de compra. 
 
@@ -23,5 +23,5 @@ Para verificar que la compra de prueba se realizó de acuerdo a los resultados e
 La respuesta a este llamado deberá traer la información detallada de la transacción de prueba, junto con el estado elegido para el pago en la etapa anterior dentro del campo `status`.
 
 
-¡Listo! Una vez finalizados estos pasos, la integración de tarjetas como medio de pago estará completa y podrás, o bien continuar probando otros medios de pago integrados, o bien [salir a producción](/developers/es/docs/checkout-api/go-to-production).
+¡Listo! Una vez finalizados estos pasos, la integración de tarjetas como medio de pago estará completa y podrás, o bien continuar probando otros medios de pago integrados, o bien [salir a producción](/developers/es/docs/checkout-api/v2/go-to-production).
 

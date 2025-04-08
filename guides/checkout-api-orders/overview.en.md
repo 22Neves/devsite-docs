@@ -25,7 +25,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api/integration-model#bookmark_processing_modes_for_orders).
+ - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api/v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
  - benefit_bullet: Offer a purchasing process with fewer steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
@@ -42,7 +42,7 @@ product_landing_how_works:
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
  - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api/create-aplication
+ - button_link: /developers/en/docs/checkout-api/v2/create-aplication
 ---
 
 ---
@@ -53,7 +53,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png
  - column_product: Checkout Transparente
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-api/overview
+ - column_button_link: /developers/en/docs/checkout-api/v2/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to summary
@@ -100,7 +100,7 @@ product_landing_how_integrate:
  - list_item: Test your integration
  - list_item: Go live
  - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api/create-application
+ - button_link: /developers/en/docs/checkout-api/v2/create-application
 ---
 
 ------------
@@ -131,7 +131,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api/integration-model#bookmark_processing_modes_for_orders).
+ - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api/v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
  - benefit_bullet: Offer a purchasing process with fewer steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
@@ -148,7 +148,7 @@ product_landing_how_works:
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
  - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api/create-aplication
+ - button_link: /developers/en/docs/checkout-api/v2/create-aplication
 ---
 
 ---
@@ -159,7 +159,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - column_product: Checkout API
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-api/overview
+ - column_button_link: /developers/en/docs/checkout-api/v2/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to summary
@@ -206,7 +206,7 @@ product_landing_how_integrate:
  - list_item: Test your integration
  - list_item: Go live
  - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api/create-application
+ - button_link: /developers/en/docs/checkout-api/v2/create-application
 ---
 
 ------------
@@ -237,7 +237,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api/integration-model#bookmark_processing_modes_for_orders).
+ - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api/v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
  - benefit_bullet: Offer a purchasing process with fewer steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
@@ -254,7 +254,7 @@ product_landing_how_works:
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
  - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api/create-aplication
+ - button_link: /developers/en/docs/checkout-api/v2/create-aplication
 ---
 
 ---
@@ -265,7 +265,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743449632827-overviewmlmes.png
  - column_product: Checkout API
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-api/overview
+ - column_button_link: /developers/en/docs/checkout-api/v2/overview
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to summary
@@ -312,7 +312,7 @@ product_landing_how_integrate:
  - list_item: Test your integration
  - list_item: Go live
  - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api/create-application
+ - button_link: /developers/en/docs/checkout-api/v2/create-application
 ---
 
 ------------

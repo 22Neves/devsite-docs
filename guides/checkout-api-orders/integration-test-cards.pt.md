@@ -1,6 +1,6 @@
 # Realizar compra de teste com cartões
 
-Para testar sua integração com **cartões de crédito e/ou débito**, após ter [configurado seu ambiente de testes](/developers/pt/docs/checkout-api/integration-test), você deverá realizar uma compra de teste com esses meios de pagamento simulando a ação de um usuário comprador.
+Para testar sua integração com **cartões de crédito e/ou débito**, após ter [configurado seu ambiente de testes](/developers/pt/docs/checkout-api/v2/integration-test), você deverá realizar uma compra de teste com esses meios de pagamento simulando a ação de um usuário comprador.
 
 Para isso, acesse a loja que tem integrado seu checkout, selecione algum produto ou serviço, e inicie o processo de compra.
 
@@ -22,5 +22,5 @@ Para verificar se a compra de teste foi realizada de acordo com os resultados es
 
 A resposta a esta chamada deverá trazer as informações detalhadas da transação de teste, juntamente com o status escolhido para o pagamento na etapa anterior dentro do campo `status`.
 
-Pronto! Uma vez finalizadas estas etapas, a integração de cartões como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api/go-to-production).
+Pronto! Uma vez finalizadas estas etapas, a integração de cartões como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api/v2/go-to-production).
 

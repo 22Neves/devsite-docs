@@ -80,7 +80,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cards
  - card_description: Securely receive payments with credit or debit cards through a payment form within the checkout.
- - card_button: /developers/en/docs/checkout-api/payment-integration/cards
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/cards
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -90,7 +90,7 @@ future_product_avaible:
  - card_icon: QRCode
  - card_title: Pix
  - card_description: Receive instant electronic payments by offering your customers a QR code or a payment code.
- - card_button: /developers/en/docs/checkout-api/payment-integration/pix
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/pix
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -100,7 +100,7 @@ future_product_avaible:
  - card_icon: Boleto
  - card_title: Boleto
  - card_description: Receive the payments that the customer makes through Boleto bancário in your account.
- - card_button: /developers/en/docs/checkout-api/payment-integration/boleto
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/boleto
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -137,7 +137,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cards
  - card_description: Securely receive payments with credit or debit cards through a payment form within the checkout.
- - card_button: /developers/en/docs/checkout-api/payment-integration/cards
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/cards
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -147,7 +147,7 @@ future_product_avaible:
  - card_icon: Cash
  - card_title: Other payment methods
  - card_description: Receive the deferred payments that the customer makes through Rapipago or Pago Fácil in your account.
- - card_button: /developers/en/docs/checkout-api/payment-integration/other-payment-methods
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/other-payment-methods
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -183,7 +183,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cards
  - card_description: Securely receive payments with credit or debit cards through a payment form within the checkout.
- - card_button: /developers/en/docs/checkout-api/payment-integration/cards
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/cards
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -193,7 +193,7 @@ future_product_avaible:
  - card_icon: Cash
  - card_title: Other payment methods
  - card_description: Receive the deferred payments that the customer makes through OXXO, Paycash, Citibanamex, Santander or BBVA Bancomer in your account.
- - card_button: /developers/en/docs/checkout-api/payment-integration/other-payment-methods
+ - card_button: /developers/en/docs/checkout-api/v2/payment-integration/other-payment-methods
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
@@ -203,7 +203,7 @@ future_product_avaible:
  - card_icon: BankTransfer
  - card_title: SPEI Transfers
  - card_description: Receive instant electronic payments by offering your customers the option to pay from any bank or financial institution using their CLABE.
- - card_button: /developers/es/docs/checkout-api/payment-integration/spei
+ - card_button: /developers/es/docs/checkout-api/v2/payment-integration/spei
  - card_buttonDescription: Learn more
  - card_pillText: AVAILABLE
  - card_linkAvailable: false

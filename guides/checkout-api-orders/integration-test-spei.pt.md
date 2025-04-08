@@ -1,6 +1,6 @@
 # Realizar uma compra teste com Transferências SPEI
 
-Para testar sua integração com **Transferências SPEI**, após ter [configurado seu ambiente de testes](/developers/pt/docs/checkout-api/integration-test), você deverá criar um order. Isso significa que só será possível verificar o funcionamento da sua integração por meio de uma requisição, e não simulando uma compra.
+Para testar sua integração com **Transferências SPEI**, após ter [configurado seu ambiente de testes](/developers/pt/docs/checkout-api/v2/integration-test), você deverá criar um order. Isso significa que só será possível verificar o funcionamento da sua integração por meio de uma requisição, e não simulando uma compra.
 
 Para realizar estes testes, envie a seguinte solicitação ao endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/pt/reference/orders/online-payments/create/post"}, juntamente com o :toolTipComponent[_Access Token_ do usuário de testes]{content="Chave privada da aplicação de testes criada com seu usuário de testes. É utilizada no _backend_ para poder testar seu desenvolvimento. Você pode acessá-la fazendo login com seu usuário de testes e acessando *Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção*."}. 
 
@@ -89,4 +89,4 @@ A resposta devolverá o status `action_required`, que indica que se está aguard
 
 Por fim, para verificar se a compra de teste foi realizada corretamente, envie um **GET** para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/orders/online-payments/get-order/get"}, substituindo `id` pela identificação da order, recebida na resposta à sua criação.
 
-Pronto! Uma vez finalizadas estas etapas, a integração de Transferências SPEI como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api/go-to-production).
+Pronto! Uma vez finalizadas estas etapas, a integração de Transferências SPEI como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api/v2/go-to-production).

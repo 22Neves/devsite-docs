@@ -80,7 +80,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cartões
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/cards
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -90,7 +90,7 @@ future_product_avaible:
  - card_icon: QRCode
  - card_title: Pix
  - card_description: Receba pagamentos eletrônicos instantâneos, oferecendo aos seus clientes a possibilidade de pagar a partir de um código QR ou um código de pagamento.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/pix
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/pix
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -100,7 +100,7 @@ future_product_avaible:
  - card_icon: Boleto
  - card_title: Boleto
  - card_description: Receba em sua conta os pagamentos que o cliente realizar através de um boleto bancário.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/boleto
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/boleto
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -136,7 +136,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cartões
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/cards
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -146,7 +146,7 @@ future_product_avaible:
  - card_icon: Cash
  - card_title: Outros meios de pagamento
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do Rapipago ou Pago Fácil.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/other-payment-methods
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -182,7 +182,7 @@ future_product_avaible:
  - card_icon: Card
  - card_title: Cartões
  - card_description: Receba pagamentos com cartões de crédito ou débito (virtual Caixa) de forma segura através de um formulário de pagamento dentro do checkout.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/cards
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/cards
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -192,7 +192,7 @@ future_product_avaible:
  - card_icon: Cash
  - card_title: Outros meios de pagamento
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do OXXO, Paycash, Citibanamex, Santander ou BBVA Bancomer.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/other-payment-methods
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
@@ -202,7 +202,7 @@ future_product_avaible:
  - card_icon: BankTransfer
  - card_title: Transferências SPEI
  - card_description: Receba pagamentos eletrônicos instantâneos oferecendo aos seus clientes a possibilidade de pagar de qualquer banco ou instituição financeira utilizando a sua CLABE.
- - card_button: /developers/pt/docs/checkout-api/payment-integration/other-payment-methods
+ - card_button: /developers/pt/docs/checkout-api/v2/payment-integration/other-payment-methods
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
  - card_linkAvailable: false
