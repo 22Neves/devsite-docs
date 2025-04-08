@@ -6,7 +6,7 @@ The integration with ----[mlb]---- Checkout Transparente------------ ----[mla, m
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, the Caixa virtual debit card, Pix, boleto, payment in lottery, Mercado Pago Wallet and Installment payment without a card. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ------------
@@ -15,7 +15,7 @@ The integration with ----[mlb]---- Checkout Transparente------------ ----[mla, m
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit, Pago Fácil, Rapipago, Mercado Pago Wallet and Installment payment without a card. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ------------
@@ -24,35 +24,35 @@ The integration with ----[mlb]---- Checkout Transparente------------ ----[mla, m
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit, Mercado Pago Wallet, Installment payment without a card, Cash and ATM. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ----[mpe]---- 
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit, Mercado Pago Wallet and ATM. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ----[mco]---- 
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit, Mercado Pago Wallet, Efecty and PSE. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ----[mlu]---- 
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit, Mercado Pago Wallet, Abitab and Redpagos. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ----[mlc]---- 
 | Integration type | Payment methods | Frontend complexity | User Interface (UI) |
 | --- | --- | --- | --- |
 | [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) | Credit, debit and Mercado Pago Wallet. See more details in our documentation [Available payment methods](/developers/en/docs/sales-processing/payment-methods). | Easy | Components with UI already defined and that can be customized if necessary. |
-| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | Form without styling so it is possible to start the settings from scratch. |
+| [Cardform](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | Medium | The form has no styling, allowing full flexibility for style customization. |
 | [Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods) | [All available methods](/developers/en/docs/sales-processing/payment-methods). | High | Create your form and styling |
 
 ------------
