@@ -1684,7 +1684,7 @@
         },
         "enum": [
           {
-            "title": "Gastronomy",
+            "title": "Gas Station",
             "description": {
               "en": "{{pos_category_gas_station}}",
               "es": "{{pos_category_gas_station}}",
@@ -1692,123 +1692,11 @@
             }
           },
           {
-            "title": "621102",
+            "title": "Gastronomy",
             "description": {
-              "en": "Argentina",
-              "es": "Argentina",
-              "pt": "Argentina"
-            }
-          },
-          {
-            "title": "5611203",
-            "description": {
-              "en": "Brazil",
-              "es": "Brasil",
-              "pt": "Brasil"
-            }
-          },
-          {
-            "title": "5812",
-            "description": {
-              "en": "Mexico",
-              "es": "México",
-              "pt": "México"
-            }
-          },
-          {
-            "title": "5611",
-            "description": {
-              "en": "Colombia",
-              "es": "Colombia",
-              "pt": "Colômbia"
-            }
-          },
-          {
-            "title": "5520",
-            "description": {
-              "en": "Peru",
-              "es": "Perú",
-              "pt": "Peru"
-            }
-          },
-          {
-            "title": "56101",
-            "description": {
-              "en": "Uruguay",
-              "es": "Uruguay",
-              "pt": "Uruguai"
-            }
-          },
-          {
-            "title": "561000",
-            "description": {
-              "en": "Chile",
-              "es": "Chile",
-              "pt": "Chile"
-            }
-          },
-          {
-            "title": "Gas station",
-            "description": {
-              "en": "Gas station",
-              "es": "Estación de servicio",
-              "pt": "posto de gasolina"
-            }
-          },
-          {
-            "title": "473000",
-            "description": {
-              "en": "Argentina",
-              "es": "Argentina",
-              "pt": "Argentina"
-            }
-          },
-          {
-            "title": "4731300",
-            "description": {
-              "en": "Brazil",
-              "es": "Brasil",
-              "pt": "Brasil"
-            }
-          },
-          {
-            "title": "468419",
-            "description": {
-              "en": "Mexico",
-              "es": "México",
-              "pt": "México"
-            }
-          },
-          {
-            "title": "4731",
-            "description": {
-              "en": "Colombia",
-              "es": "Colombia",
-              "pt": "Colômbia"
-            }
-          },
-          {
-            "title": "5050",
-            "description": {
-              "en": "Peru",
-              "es": "Perú",
-              "pt": "Peru"
-            }
-          },
-          {
-            "title": "47300",
-            "description": {
-              "en": "Uruguay",
-              "es": "Uruguay",
-              "pt": "Uruguai"
-            }
-          },
-          {
-            "title": "473001",
-            "description": {
-              "en": "Chile",
-              "es": "Chile",
-              "pt": "Chile"
+              "en": "{{pos_category_gastronomy}}",
+              "es": "{{pos_category_gastronomy}}",
+              "pt": "{{pos_category_gastronomy}}"
             }
           }
         ]
