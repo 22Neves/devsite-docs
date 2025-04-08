@@ -18,10 +18,23 @@ You can obtain your production credentials in two ways:
 
 1. By accessing [**Your integrations > "Your application" > Production > Production credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
 
+----[mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.png)
+
+------------
+----[mlc, mlu, mlm, mco, mpe]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.png)
+
+------------
+----[mla]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es-v2.gif)
+
+------------
+
 2. Through your Mercado Pago account, by accessing [**Your business > Settings > Credentials**](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) through the [Developer dashboard](/developers/en/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
 ----[mlb]----
-![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.gif)
+![Como acessar as credenciais através do Mercado Pago](/images/credentials/credentials-prod-mp-pt.png)
 
 ------------
 ----[mlc, mlu, mlm, mco, mpe]----
@@ -90,7 +103,7 @@ You can obtain your test credentials, **as long as they are available for your i
 
 ------------
 ----[mlb]----
-![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.gif)
+![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-test-panel-pt.png)
 
 ------------
 ----[mla]----
@@ -125,7 +138,7 @@ When you receive assistance in integrating or setting up your payment channels, 
 4. Enter the email of the person you want to grant access to. Remember that the email must be associated with a Mercado Pago account.
 
 ----[mlb]----
-![Share credentials in Your Integrations](/images/credentials/share-credentials-panel-pt.gif)
+![Compartilhar credenciais em Suas Integrações](/images/credentials/share-credentials-devpanel-pt.png)
 
 ------------
 ----[mlc, mlu, mlm, mco, mpe]----
@@ -146,7 +159,7 @@ When you receive assistance in integrating or setting up your payment channels, 
 5. Select the application from which you want to share your credentials and enter the email of the person you want to grant access to. Remember that the email must be associated with a Mercado Pago account.
 
 ----[mlb]----
-![Share credentials in Mercado Pago](/images/credentials/share-credentials-mp-pt.gif)
+![Compartilhar credenciais no Mercado Pago](/images/credentials/share-credentials-mp-pt.png)
 
 ------------
 ----[mlc, mlu, mlm, mco, mpe]----
@@ -177,7 +190,7 @@ If for security reasons or any other relevant reason you need to renew your cred
 > Note that if the credentials you renew are being used in any of your integrations, they will be affected, and you will need to replace them with the new credentials you obtain after the renewal.
 
 ----[mlb]----
-![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.gif)
+![Como renovar suas credenciais](/images/credentials/renew-credentials-pt.png)
 
 ------------
 ----[mlc, mlu, mlm, mco, mpe]----
