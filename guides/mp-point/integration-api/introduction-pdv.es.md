@@ -16,17 +16,7 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 > Esta integración soporta dispositivos **Point Plus (POS)** y **Point Smart**. Puedes adquirirlos desde nuestra [tienda oficial](https://www.mercadopago.com.ar/point). Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
 
 ------------
-
-----[mlb]----
-> NOTE
->
-> Nota
->
-> Esta integración soporta dispositivos **Point Pro 1** y **Point Pro 2**. Puedes adquirirlos desde nuestra [tienda oficial](https://www.mercadopago.com.br/point). Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
-
-------------
-
-----[mlm]----
+----[mlm, mlb]----
 > NOTE
 >
 > Nota

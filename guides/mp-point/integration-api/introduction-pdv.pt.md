@@ -18,17 +18,7 @@ Veja abaixo o diagrama que ilustra o mecanismo de funcionamento da integração.
 > A integração é compatível com os dispositivos **Point Plus (POS)** e **Point Smart**. Se deseja adquirir um, consulte nossa [loja oficial](https://www.mercadopago.com.ar/point). Vale ressaltar que o dispositivo aceita exclusivamente cartões, pagamentos sem contato e SWIFT como métodos de pagamento.
 
 ------------
-
-----[mlb]----
-> NOTE
->
-> Nota
->
-> A integração é compatível com os dispositivos **Point Pro 1** e **Point Pro 2**. Se deseja adquirir um, consulte nossa [loja oficial](https://www.mercadopago.com.br/point). Vale ressaltar que o dispositivo aceita exclusivamente cartões, pagamentos sem contato e SWIFT como métodos de pagamento.
-
-------------
-
-----[mlm]----
+----[mlm, mlb]----
 > NOTE
 >
 > Nota

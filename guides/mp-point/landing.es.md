@@ -57,8 +57,6 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Dispositivos disponibles
  - type: reversed
- - benefit_title: Point Pro 2
- - benefit_message:
  - benefit_title: Point Smart
  - benefit_message:
  - benefit_title: Point Mini NFC 1
