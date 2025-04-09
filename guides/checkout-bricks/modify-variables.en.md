@@ -4,13 +4,13 @@
 >
 > Modify CSS variables
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mpe, mco, mlu]----
 | Key | Available options |
 | --- | --- |
 | Property  | customization.visual.style.customVariables.{textPrimaryColor, textSecondaryColor, inputBackgroundColor, formBackgroundColor, baseColor, baseColorFirstVariant, baseColorSecondVariant, errorColor, successColor, successSecondaryColor, outlinePrimaryColor, outlineSecondaryColor, buttonTextColor, fontSizeExtraExtraSmall, fontSizeExtraSmall, fontSizeSmall, fontSizeMedium, fontSizeLarge, fontSizeExtraLarge, fontWeightNormal, fontWeightSemiBold, formInputsTextTransform, inputVerticalPadding, inputHorizontalPadding, inputFocusedBoxShadow, inputErrorFocusedBoxShadow, inputBorderWidth, inputFocusedBorderWidth, borderRadiusSmall, borderRadiusMedium, borderRadiusLarge, formPadding} |
 
 ------------
-----[mlb, mla]----
+----[mla]----
 | - | Brick |
 | --- | --- |
 | Customization moment | When rendering Brick |

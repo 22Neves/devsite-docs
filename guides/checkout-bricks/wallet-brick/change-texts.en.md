@@ -44,7 +44,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlm]----
+----[mlm, mlb]----
 Wallet Brick is **composed of the button and the value proposition** (`valueProp`), which can be customized according to the options provided by Mercado Pago.
 
 There are two themes available: the **default** (also used when no configuration is specified) and **dark**. Choosing a theme affects the background color of the button, the value proposition, and the color of the images inside the button.
@@ -92,7 +92,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 Wallet Brick offers two reading levels: the **call to action (button)** and the **value proposition** (`valueProp`). In both cases, the text can be customized according to the options provided by Mercado Pago.
 
 The "call to action" is divided into two parts: the action, determined by the `Action` property, and the complement of the action, determined by the `Action Complement` property.
