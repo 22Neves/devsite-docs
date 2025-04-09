@@ -4,7 +4,8 @@ Para integrar Puntos de Venta vía API, es importante cumplir con los requisitos
 
 > RED_MESSAGE
 >
-> Mercado Pago está evolucionando la forma de integrar y ahora ofrecemos una nueva API para realizar integraciones con Mercado Pago Point, que descontinuará la actual. En caso de estar integrando esta solución de cobro por primera vez, recomendamos que utilices los endpoints de la nueva API Orders. Si, en cambio, ya cuentas con una integración con Mercado Pago Point, próximamente recibirás más información sobre el proceso de migración.
+> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the [endpoints of the new Orders API](/developers/en/reference/order/in-person-payments/point/terminal/get). <br> 
+> If you already have an integration with Point, you will soon receive more information about the migration process.
 
 | Requisito | Descripción |
 |---|---|
