@@ -2,6 +2,10 @@
 
 To integrate Point of Sale (POS) devices via API, it is important to meet the following requirements.
 
+> RED_MESSAGE
+>
+> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the endpoints of the new Orders API. If you already have an integration with Point, you will soon receive more information about the migration process.
+
 | Requirement | Description |
 |---|---|
 | ----[mlm]---- Mercado Pago **Point Smart** device ------------ ----[mla]---- Mercado Pago **Point Smart or Point Plus** device ------------ ----[mlb]---- Mercado Pago **Point Smart or Point Pro 2** device ------------ | To offer in-person payments through Point, it is necessary to acquire the device. If you haven't done so yet, go to the [store](https://www.mercadopago[FAKER][URL][DOMAIN]/point). |
