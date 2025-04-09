@@ -4,7 +4,7 @@ Al configurar ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ ---
 
 Para configurar estos medios de pago, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue las instrucciones a continuación:
 
-1. Haz clic en el botón **+ (Agregar nuevo plan de pago para ...)**.
+1. Haz clic en el botón **+ (Añadir nueva condición de pago para...)**.
 2. Dentro de las categorías **Tarjeta de débito** o **Tarjeta de crédito**, encontrarás las distintas marcas de tarjeta que puedes ofrecer. Debes hacer clic en ellas y configurar cada una de manera particular para poder habilitarlas. Puedes consultar más información sobre esta configuración en la [sección de tutoriales de VTEX](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). 
 3. Una vez hayas seleccionado la marca de la tarjeta que deseas ofrecer, completa los campos que te mostrará la pantalla siguiente: 
     1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
@@ -19,11 +19,6 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
 > También puedes configurar condiciones especiales de pago. Haz clic [aqui](https://help.vtex.com/es/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obtener más información.
 
 4. Haz clic en **Guardar** para activar la configuración de esa tarjeta y, si lo deseas, repite el proceso para configurar otras marcas.
-
-----[mlb, mla, mlm, mco, mpe, mlu]----
-![Configure payment conditions with credit card](/images/vtex/paymentconditions-cc-imagenv2-es.gif)
-
-------------
 
 ## Plazos e intereses
 

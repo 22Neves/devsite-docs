@@ -28,11 +28,11 @@ Aprenda a adaptar a identidade e construção visual do seu aplicativo dentro do
 
 Para ser aprovado, seu aplicativo deve ter um esquema de cores diferente da paleta mostrada abaixo, que é de uso exclusivo do Mercado Pago.
 
-----[mlc]----
+----[mlc, mlm, mpe, mlu, mco]----
 ![miniapps-colors](/mini-apps/miniapps-colors.png)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
+----[mlb, mla]----
 ![miniapps-colors](/mini-apps/miniapps-colors-pt.png)
 
 ------------

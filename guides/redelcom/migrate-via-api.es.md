@@ -18,7 +18,7 @@ Para garantizar una migración exitosa a la API de Order, debes cumplir con los 
 
 La API de Order proporciona diversos endpoints que permiten ejecutar las mismas funcionalidades de manera más eficiente:
 
-> WARNING
+> RED_MESSAGE
 > 
 > Importante
 >
@@ -33,17 +33,13 @@ La API de Order proporciona diversos endpoints que permiten ejecutar las mismas 
 
 ## Configuración de impresiones
 
-La API de Impresiones ofrece una solución práctica para conectar tus sistemas y realizar la gestión de impresión de facturas y comprobantes, así como impresiones personalizadas, en las terminales Point que tengas configuradas. Con esta API, es posible garantizar una experiencia de cobro unificada y eficiente.
-
-Este recurso permite la impresión de recibos y facturas electrónicas (DTE) e impresiones personalizadas directamente desde un punto de venta (PDV) a través de la API, utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
+La API de Impresiones ofrece una solución práctica para integrar tus sistemas y gestionar impresiones en las terminales Point configuradas. Este recurso permite la impresión de recibos, facturas electrónicas (DTE), imágenes e impresiones personalizadas directamente desde un punto de venta (PDV), utilizando la impresora integrada de los dispositivos Smart. Esto simplifica el proceso de cobro y responde rápidamente a las necesidades de tu negocio.
 
 ### Impresión de facturas y recibos electrónicos
 
-Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
+Para la impresión de DTEs, se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en formato XML:
 
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > El DTE enviado debe ser compatible con los formatos definidos por el [SII](https://www.sii.cl/servicios_online/3532-formato_xml-3811.html).
 
@@ -52,36 +48,54 @@ Se admiten los siguientes tipos de Documentos Tributarios Electrónicos (DTE) en
 | Factura Afecta (33) y Exenta (34)    | Se refiere al documento tributario que tiene validez legal ante el Servicio de Impuestos Internos (SII). |
 | Boleta Afecta (39) y Exenta (41)     | Se refiere al documento que el cliente recibe al realizar una compra, que tiene validez contable y tributaria. |
 
-### Tags personalizadas
-
-Las tags personalizadas permiten ajustar la presentación de los documentos impresos. Ofrecen flexibilidad y control sobre el formato del texto, lo que posibilita la creación de impresiones eficientes y visualmente atractivas. A continuación, consulta las diferentes tags disponibles, sus funciones y ejemplos de uso:
-
-> Las tags personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias tags.
-
-| Tag        | Función                                     | Ejemplo                          |
-|------------|---------------------------------------------|----------------------------------|
-| `{b}`      | Negrita                                    | `{b}Texto en negrita{/b}`      |
-| `{w}`      | Letra grande                               | `{w}Texto en letra grande{/w}`  |
-| `{s}`      | Letra pequeña                              | `{s}Texto en letra pequeña{/s}` |
-| `{br}`     | Salto de línea                             | `{br}`                          |
-| `{left}`   | Alinear a la izquierda                     | `{left}Texto alineado a la izquierda{/left}` |
-| `{center}` | Centrar texto                              | `{center}Texto centrado{/center}` |
-| `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`               |
-| `{pdf417}` | Imprimir la mancha de un TED              | `{pdf417}Texto{/pdf417}`       |
-
 ### Configuración de la impresión
 
-Utilice la API para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint.
+Utiliza los endpoints que compartimos a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrate de que la terminal esté configurada en modo PDV (Punto de Venta). 
 
-> WARNING
+> RED_MESSAGE
 >
-> Importante
->
-> El terminal debe estar configurado en modo PDV (Punto de Venta).  
+> Para la impresión de imágenes, ten en cuenta que los formatos aceptados son PNG o JPEG, con codificación Base64 y un tamaño máximo de 1MB. Las imágenes que superen las dimensiones del rollo de papel se ajustaran automáticamente. 
 
 Los endpoints disponibles son:
-   - [Crear acción de la terminal](/developers/en/reference/mercado_pago_point/impressions/post): Permite la creación de una nueva acción de terminal para Mercado Pago Point.
-   - [Obtener acción por ID](/developers/en/reference/mercado_pago_point/impressions/get): Permite consultar toda la información de una acción mediante el ID obtenido en la respuesta a su creación.
-   - [Cancelar acción por ID](/developers/en/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una action en status "created". 
+   - [Crear acción de la terminal](/developers/es/reference/impressions_dte/post): Permite la creación de una nueva acción de impresión para Mercado Pago Point, ya sea de imágenes o [impresiones personalizadas](/developers/es/docs/redelcom/how-tos/migrate-to-mercadopago/api-integration#configuracindeimpresiones#bookmark_tags_personalizadas). En caso de éxito, la respuesta devolverá un código de estado 201.
+   - [Obtener acción por ID](/developers/es/reference/impressions_dte/get): Permite consultar toda la información de una acción creada para un terminal Point utilizando el ID obtenido en la respuesta a su creación. La consulta de la acción de impresión proporciona una herramienta práctica para verificar la acción enviada por la API, especialmente en caso de fallos de impresión en el terminal.
+   - [Cancelar acción por ID](/developers/es/reference/impressions_dte_cancel/post): Permite una acción creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una acción en status "created". En caso de éxito, la solicitud devolverá una respuesta con el estado 200. 
 
 Aguarda hasta que el intento llegue a la terminal y se procese la impresión. Si la impresión no llega automáticamente, presiona el botón **Actualizar** para buscar el intento manualmente.
+
+### _Tags_ personalizadas
+
+Las _tags_ personalizadas permiten ajustar el formato y la apariencia de los documentos impresos, garantizando un mayor control sobre el estilo y la estructura del texto. Deben utilizarse al enviar un **POST** al endpoint [Crear acción del terminal](/developers/es/reference/impressions_dte/post), a través del atributo `subtype`, que debe configurarse como `custom`. Cuando el `subtype` se define como `custom`, el atributo `content` debe incluir la _string_ formateada utilizando las _tags_ soportadas.
+
+A continuación, consulte las diferentes _tags_ disponibles, sus funciones y ejemplos de uso:
+
+> NOTE
+>
+> Las _tags_ personalizadas tienen un límite mínimo de 100 caracteres y un máximo de 4096 caracteres, incluyendo las propias _tags_.
+
+| _Tags_   | Función                                      | Ejemplo                          |
+|------------|---------------------------------------------|----------------------------------|
+| `{b}`      | Negrita                                     | `{b}Texto en negrita{/b}`        |
+| `{w}`      | Letra grande                                | `{w}Texto en letra grande{/w}`   |
+| `{s}`      | Letra pequeña                               | `{s}Texto en letra pequeña{/s}`  |
+| `{br}`     | Salto de línea                              | `{br}`                           |
+| `{left}`   | Alinear a la izquierda                      | `{left}Texto alineado a la izquierda{/left}` |
+| `{center}` | Centrar texto                               | `{center}Texto centrado{/center}` |
+| `{qr}`     | Imprimir un QR que representa el texto enviado | `{qr}Texto{/qr}`                 |
+| `{pdf417}` | Imprimir la mancha de un TED                | `{pdf417}Texto{/pdf417}`         |
+
+**Ejemplo de uso:**
+
+```
+{
+  "type": "print",
+  "config": {
+    "point": {
+      "terminal_id": "{{device.id}}",
+      "subtype": "custom"
+    }
+  },
+  "external_reference": "8a42e06e45d5",
+  "content": "{br}--------------------------------{br}{center}{w} COMPROBANTE DE ENTREGA{/w}{br}{br}{s} Nro pedido :12345{/s}{br}{s} Tienda: Tienda de prueba{/s}{br}--------------------------------{br}{s}***ITEM(S) DESPACHO***{/s}{br}{s}SKU / ARTICULO                    CANTIDAD    {/s}{br}{s}----------------------------------------------{/s}{br}{s}4065432630504 / BALON FUTBOL WUCL LGE EHV240424   1{br}{s}ENTREGAR: 06/06/2024{/s}{br}{s}DIRECCION: METROPOLITANA  {/s}{br}{s}RECIBE: John{/s}{br}{s}entrega a cliente en horario am{/s}{br}--------------------------------{br}"
+}
+```

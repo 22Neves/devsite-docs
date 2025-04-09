@@ -1,11 +1,21 @@
 # Why is a payment order rejected?
 
+----[mla]----
 > WARNING
 >
 > Important
 >
-> This documentation is intended for integrators. If you are a buyer and your payment was declined when using Mercado Pago, please refer to [this article](https://www.mercadopago.com.br/ajuda/por-que-meu-pagamento-com-mercado-credito-pode-ser-recusado_26271#:~:text=O%20que%20fazer%20se%20meu,se%C3%A7%C3%A3o%20Perfil%20do%20Mercado%20Pago.) in our Help Center for guidance on how to proceed.
+> This documentation is intended for integrators. If you are a buyer and your payment was declined when using Mercado Pago, please refer to [this article](https://www.mercadopago.com.br/ajuda/por-que-meu-pagamento-com-mercado-credito-pode-ser-recusado_26271#:~:text=O%20que%20fazer%20se%20meu,se%C3%A7%C3%A3o%20Perfil%20do%20Mercado%20Pago) in our Help Center for guidance on how to proceed.
 
+------------
+----[mla]----
+> WARNING
+>
+> Important
+>
+> This documentation is intended for integrators. If you are a buyer and your payment was declined when using Mercado Pago, please refer to [this article](https://www.mercadopago.com.ar/ayuda/por-que-meu-pagamento-com-mercado-credito-pode-ser-recusado_26271) in our Help Center for guidance on how to proceed.
+
+------------
 Payment refusal is a reality in the world of online sales and can happen for several reasons. **A payment may be declined due to**:
  * an issue with the payment method;
  * incorrect data filling on the client side;

@@ -448,7 +448,7 @@ Depois de criar o pagamento em seu backend com a SDK do Mercado Pago, é preciso
 
 Uma vez que o pagamento já foi concluído, também é possível continuar usando o Status Screen Brick para mostrar o status do pagamento ao usuário em seu site, por exemplo. Basta criar a instância da tela de status usando o ID de pagamento.
 
-![payment-status-pse](checkout-bricks/payment-status-pse-pt.jpg)
+![payment-status-pse](checkout-bricks/payment-status-pse-pt.png)
 
 ## Teste sua integração
 

@@ -629,23 +629,33 @@ func processPayment(r *http.Request) {
 }
 ```
 ```curl
-curl -X POST \
-   -H 'accept: application/json' \
-   -H 'content-type: application/json' \
-   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-   'https://api.mercadopago.com/v1/payments' \
-   -d '{
-         "transaction_amount": 100,
-         "token": "CARD_TOKEN",
-         "description": "Blue shirt",
-         "installments": 1,
-         "payment_method_id": "master",
-         "issuer_id": 310,
-         "payer": {
-           "email": "PAYER_EMAIL"
-         },
-         "three_d_secure_mode": "optional"
-   }'
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+--header 'Authorization: <ENV_ACCESS_TOKEN>' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "payer": {
+        "email": "<BUYER_EMAIL>"
+    },
+    "additional_info": {
+        "items": [
+            {
+                "quantity": <ITEM_QUANTITY>,
+                "category_id": <CATEGORY_ID>,
+                "title": <ITEM_TITLE>,
+                "unit_price": <TRANSACTION_AMOUNT>
+            }
+        ]
+    },
+    "payment_method_id": <PAYMENT_METHOD_ID>,
+    "marketplace": "NONE",
+    "installments": <INSTALLLMENTS_NUMBER>,
+    "transaction_amount": <TRANSACTION_AMOUNT>,
+    "description": "<DESCRIPTION>",
+    "token": "CARD_TOKEN",
+    "three_d_secure_mode": "optional",
+    "capture": true,
+    "binary_mode": false
+}'
 ```
 ]]]
 

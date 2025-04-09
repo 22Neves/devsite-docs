@@ -449,7 +449,7 @@ After creating the payment in your backend with the Mercado Pago SDK, you need t
 
 Once the payment has already been completed, it is also possible to continue using the Status Screen Brick to show the payment status to the user on your website, for example. Simply create the Status Screen instance using the payment ID.
 
-![payment-status-pse](checkout-bricks/payment-status-pse-en.jpg)
+![payment-status-pse](checkout-bricks/payment-status-pse-en.png)
 
 ## Test your integration
 
