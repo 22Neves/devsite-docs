@@ -115,5 +115,5 @@ product_landing_how_integrate:
  - list_item: Testar a integração
  - list_item: Sair à produção
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - button_link: /developers/pt/docs/checkout-pro/create-aplication
 ---
