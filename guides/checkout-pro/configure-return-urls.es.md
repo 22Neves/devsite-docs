@@ -159,7 +159,7 @@ future_product_avaible:
  - card_title: Continuar integración para sitios web
  - card_description: Ofrece cobros con redirección a Mercado Pago en tu sitio web o tienda online.
  - card_button: /developers/es/docs/checkout-pro/web-integration/add-frontend-sdk
- - card_buttonDescription: Ir a la documentación
+ - card_buttonDescription: Integración web
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
  - card_linkProof:
@@ -169,7 +169,7 @@ future_product_avaible:
  - card_title: Continuar integración para aplicaciones móviles
  - card_description: Ofrece cobros con redirección Mercado Pago en tu aplicación para dispositivos móviles.
  - card_button: /developers/es/docs/checkout-pro/mobile-integration
- - card_buttonDescription: Ir a la documentación
+ - card_buttonDescription: Integración mobile
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
  - card_linkProof:
