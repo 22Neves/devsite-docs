@@ -2,6 +2,10 @@
 
 A API de Integrações Point é uma ferramenta que possibilita a conexão dos seus Pontos de Venda (PDV) com o ecossistema de Point. Essa conexão facilita o recebimento de pagamentos nos terminais previamente configurados por você, assegurando uma experiência de pagamento consistente e integrada.
 
+> RED_MESSAGE
+>
+> Mercado Pago está evoluindo a maneira de integrar e agora oferecemos uma nova API para realizar integrações com o Mercado Pago Point, que descontinuará a API atual. Caso você esteja integrando esta solução de pagamento pela primeira vez, utilize os endpoints da nova API de Orders. Se você já integrou Point anteriormente, em breve traremos mais informações sobre o processo de migração.
+
 Veja abaixo o diagrama que ilustra o mecanismo de funcionamento da integração.
 
 ![Diagram 1](/images/point-api/1-diagram-pt.png)
