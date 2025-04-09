@@ -155,21 +155,21 @@ Selecciona el tipo de integración que quieres hacer y sigue los pasos detallado
 ---
 future_product_avaible: 
  - card_avaible: true
- - card_icon: Card
- - card_title: Continuar integración para web
+ - card_icon: Laptop
+ - card_title: Continuar integración para sitios web
  - card_description: Ofrece cobros con redirección a Mercado Pago en tu sitio web o tienda online.
  - card_button: /developers/es/docs/checkout-pro/web-integration/add-frontend-sdk
- - card_buttonDescription: Integración para websites
+ - card_buttonDescription: Ir a la documentación
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Loading
- - card_title: Continuar integración para mobile
+ - card_icon: Smartphone
+ - card_title: Continuar integración para aplicaciones móviles
  - card_description: Ofrece cobros con redirección Mercado Pago en tu aplicación para dispositivos móviles.
  - card_button: /developers/es/docs/checkout-pro/mobile-integration
- - card_buttonDescription: Integración para aplicaciones móviles
+ - card_buttonDescription: Ir a la documentación
  - card_pillText: DISPONIBLE
  - card_linkAvailable: false
  - card_linkProof:
