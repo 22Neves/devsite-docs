@@ -1630,3 +1630,122 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     }
 }'
 ```
+
+## Gambling
+
+These are the specific data for the **gambling** industry that you can add to your integration to improve payment approval.
+
+### About items
+
+----[mla, mlm, mlu, mco, mlb, mpe]----
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `warranty` | Boolean | `true` if it is, `false` if it is not. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It can be an integer or a decimal. |
+------------
+
+----[mlc]----
+| Array `items` | Type | Description |
+| --- | --- | --- |
+| `id` | String | Item identification code. |
+| `title` | String | Item name. |
+| `warranty` | Boolean | `true` if it is, `false` if it is not. |
+| `category_id` | String | Item category. |
+| `quantity` | Integer | Quantity of units for the item. |
+| `unit_price` | Float | Unit price assigned to the item. It must be an integer. |
+------------
+
+### About the buyer
+
+| Object `payer` | Type | Description |
+| --- | --- | --- |
+| `first_name` | String | Buyer's first name. |
+| `last_name` | String | Buyer's last name. |
+| `identification` | Object | Buyer's identification data. |
+| `type` | String | Type of identification. It is found within the `identification` object. |
+| `number` | String | Identification number. It is found within the `identification` object. |
+| `phone` | Object | Buyer's phone number. |
+| `area_code` | Integer | Buyer's area code. It is found within the `phone` object. |
+| `number` | Integer | Buyer's phone number. It is found within the `phone` object. |
+| `address` | Object | Buyer's address data. |
+| `zip_code` | String | Buyer's postal code. It is found within the `address` object. |
+| `street_name` | String | Street name of the buyer's address. It is found within the `address` object. |
+| `street_number` | Integer | Street number of the buyer's address. It is found within the `address` object. |
+| `authentication_type` | Enum | Type of authentication. It can be "Gmail", "Facebook", "Native Web", or "Other". |
+| `registration_date` | Date | Buyer's registration date on the site. |
+| `is_prime_user` | Boolean | Indicates if the user is premium. Put `true` if they are or `false` if they are not. |
+| `is_first_purchase_online` | Boolean | Indicates if this is the customer's first purchase. Put `true` if they are or `false` if they are not. |
+| `last_purchase` | Date | Date of the last purchase on the site. |
+
+```curl
+curl --location 'https://api.mercadopago.com/checkout/preferences' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{access_token}}' \
+--data-raw '{
+    "auto_return": "approved",
+    "back_urls": {
+        "failure": "https://www.mercadopago.com/home/failure",
+        "pending": "https://www.mercadopago.com/home/pending",
+        "success": "https://www.mercadopago.com/home/success"
+    },
+    "notification_url": "https://webhook.site/xyz",
+    "expires": false,
+    "external_reference": "order-123",
+    "date_of_expiration": "2026-03-12T12:58:41.425-04:00",
+    "items": [
+        {
+            "id": "1234",
+            "currency_id": "MXN",
+            "title": "Producto",
+            "picture_url": "",
+            "description": "Descripción de producto",
+            "category_id": "lottery",
+            "quantity": 1,
+            "unit_price": 150
+        }
+    ],
+    "payer": {
+        "phone": {
+            "area_code": "11",
+            "number": "619 911 306"
+        },
+        "address": {
+            "zip_code": "52",
+            "street_name": "Insurgentes Sur",
+            "street_number": 1000
+        },
+        "identification": {
+          "identification_type": "-",
+          "identification_number": "12345678"
+        },
+        "email": "carlota.castellanos@yourdomain.com",
+        "name": "Carlota",
+        "surname": "Castellanos",
+        "date_created": "",
+        "authentication_type": "Facebook",
+        "registration date": "2015-06-02T12:58:41.425-04:00",
+        "is_first_purchase_online": false,
+        "is_prime_user": false,
+        "last_purchase": "2020-01-02T12:58:41.425-04:00"
+    },
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": ""
+            }
+        ],
+        "default_installments": null,
+        "default_payment_method_id": null,
+        "excluded_payment_types": [
+            {
+                "id": ""
+            }
+        ],
+        "installments": null
+    }
+}'
+```
