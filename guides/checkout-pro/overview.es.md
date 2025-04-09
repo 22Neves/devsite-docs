@@ -99,6 +99,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
@@ -109,7 +110,7 @@ product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Construir el ambiente de desarrollo
- - list_item: Crear y configurar la intención de pago.
+ - list_item: Crear y configurar la intención de pago
  - list_item: Establecer las notificaciones de pago
  - list_item: Probar la integración
  - list_item: Salir a producción
