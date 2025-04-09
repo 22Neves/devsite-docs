@@ -155,21 +155,21 @@ Select the type of integration you want to perform and follow the detailed steps
 ---
 future_product_avaible: 
  - card_avaible: true
- - card_icon: Card
- - card_title: Checkout Pro for Web
+ - card_icon: Laptop
+ - card_title: Continue integration for websites
  - card_description: Offers payments with redirection to Mercado Pago on your website or online store.
  - card_button: /developers/en/docs/checkout-pro/web-integration/add-frontend-sdk
- - card_buttonDescription: Integrate
+ - card_buttonDescription: Web integration
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof:
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Loading
- - card_title: Checkout Pro for Mobile
+ - card_icon: Smartphone
+ - card_title: Continue integration for mobile applications
  - card_description: Offers payments with redirection to Mercado Pago in your mobile application.
  - card_button: /developers/en/docs/checkout-pro/mobile-integration
- - card_buttonDescription: Integrate
+ - card_buttonDescription: Mobile integration
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof:
