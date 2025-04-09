@@ -156,7 +156,7 @@ Selecione a opção de integração desejada e siga as instruções detalhadas p
 ---
 future_product_avaible: 
  - card_avaible: true
- - card_icon: Card
+ - card_icon: Laptop
  - card_title: Continuar a integração para sites
  - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu site ou loja online.
  - card_button:  /developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk
@@ -166,8 +166,8 @@ future_product_avaible:
  - card_linkProof:
  - card_linkProofDescription:
  - card_avaible: true
- - card_icon: Loading
- - card_title: : Continuar a integração para aplicações móveis
+ - card_icon: Smartphone
+ - card_title: Continuar a integração para aplicações móveis
  - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu aplicativo para dispositivos móveis.
  - card_button: /developers/pt/docs/checkout-pro/mobile-integration
  - card_buttonDescription: Integração mobile
