@@ -7,7 +7,8 @@ content_section_with_media:
 
 > RED_MESSAGE
 >
-> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the endpoints of the new Orders API. If you already have an integration with Point, you will soon receive more information about the migration process.
+> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the [endpoints of the new Orders API](/developers/en/reference/order/in-person-payments/point/terminal/get). <br> 
+> If you already have an integration with Point, you will soon receive more information about the migration process.
 
 --- mini_landing_separator ---
 
