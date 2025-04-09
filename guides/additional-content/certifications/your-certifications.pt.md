@@ -28,7 +28,6 @@ Em [Suas certificações](/developers/panel/developer-program), clique em **Sabe
 
 Observe que o processo de utilização do Integrator ID na integração pode variar dependendo do produto no qual você está buscando certificação. Leia as seguintes documentações de cada produto para saber como incluir o Integrator ID nas suas integrações:
 
-   - [Checkout Pro](/developers/pt/docs/checkout-pro/additional-content/integration-metrics)
    - [WooCommerce Integration](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)
    - [Adobe Commerce (Magento)](/developers/pt/docs/additional-content/integration-metrics)
    - [WooCommerce Configuration](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)
