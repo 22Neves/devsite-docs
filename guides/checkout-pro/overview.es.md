@@ -22,7 +22,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Financiamiento en cuotas.
  - benefit_bullet: URL de retorno tras aprobar el pago.
  - benefit_bullet: Apariencia y estilo del botón de pago.
- - benefit_bullet: Medios de pago customizables con opción de dividir el monto en 2 partes.
+ - benefit_bullet: Medios de pago combinables y customizables.
  - benefit_title: Conversión
  - benefit_bullet: Cobro ágil con los medios de pago guardados en Mercado Pago.
  - benefit_bullet: Opción de pagar sin cuenta de Mercado Pago, como usuario invitado.

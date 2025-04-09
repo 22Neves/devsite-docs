@@ -4,9 +4,9 @@
 >
 > Crear y configurar una preferencia de pago
 
-Una preferencia de pago es un objeto o conjunto de información que representa el producto o servicio por el que deseas cobrar. Dentro del ecosistema de Mercado Pago, este objeto se conoce como `preference`. Al crear una preferencia de pago, puedes definir detalles esenciales como el precio, la cantidad y los medios de pago, así como otras configuraciones relacionadas para el flujo de pago.
+Una **preferencia de pago** es un objeto o conjunto de información que representa el producto o servicio por el que deseas cobrar. Dentro del ecosistema de Mercado Pago, este objeto se conoce como `preference`. Al crear una preferencia de pago, puedes definir detalles esenciales como el precio, la cantidad y los medios de pago, así como otras configuraciones relacionadas para el flujo de pago.
 
-Para crear una preferencia de pago, utiliza el método asociado a `preference` en el SDK de backend. Es necesario que crees una preferencia de pago para cada pedido o flujo de pago que quieras iniciar.
+Para crear una preferencia de pago, utiliza el método asociado a `preference` en el SDK de backend. Es necesario que **crees una preferencia de pago para cada pedido o flujo de pago** que quieras iniciar.
 
 A continuación, encontrarás ejemplos de cómo implementar esto en tu backend utilizando el SDK, que está disponible en diferentes lenguajes de programación. Completa los atributos con la información adecuada para reflejar los detalles de cada transacción y garantizar un flujo de pago preciso.
 
@@ -14,7 +14,7 @@ A continuación, encontrarás ejemplos de cómo implementar esto en tu backend u
 >
 > Nota
 >
-> Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando los atributos de la preferencia de pago. Estos te permitirán definir cuotas, excluir un medio de pago, cambiar la fecha de vencimiento de un determinado pago, entre otras opciones. Para personalizar tu preferencia de pago, accede a **[Personalización del checkout](/developers/es/docs/checkout-pro/additional-settings)**.
+> Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando los atributos de la preferencia de pago. Estos te permitirán definir cuotas, excluir un medio de pago, cambiar la fecha de vencimiento de un determinado pago, entre otras opciones. Para personalizar tu preferencia de pago, accede a [Personalización del checkout](/developers/es/docs/checkout-pro/additional-settings).
 
 [[[
 ```php

@@ -87,11 +87,12 @@ To initialize the Mercado Pago library, you will need to use your **credentials*
 
 First, you will need to **activate the production credentials**. To do this, you will need to complete some information about your business by following the steps below.
 
-1. In the **Industry** field, select from the drop-down menu the industry to which the business you are integrating belongs.
-2. In the **Website (required)** field, fill in the URL of your business's website.
-3. Accept the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and conditions](/developers/en/docs/resources/legal/terms-and-conditions). Complete the reCAPTCHA and click on **Activate production credentials**.
+1. In [Your integrations](/developers/panel/app), select your application. Then, go to the **Production** section and click on **Production Credentials** in the menu on the left side of the screen.
+2. In the **Industry** field, select from the drop-down menu the industry to which the business you are integrating belongs.
+3. In the **Website (required)** field, fill in the URL of your business's website.
+4. Accept the ----[mlb]----[Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and conditions](/developers/en/docs/resources/legal/terms-and-conditions). Complete the reCAPTCHA and click on **Activate production credentials**.
 
-After activating your production credentials, you will be able to use your **production** `access token`, available in the details of your application in [Your integrations](/developers/panel/app). To access it, go to the **Production** section and click on **Production Credentials** in the menu on the left side of the screen.
+After activating your production credentials, you will be able to use your **production** `access token`, available in the details of your application in [Your integrations](/developers/panel/app).
 
 Next, in the backend of your project, create a _main_ file based on the programming language you will use. There, place the following code, replacing the value `PROD_ACCESS_TOKEN` with your production `access token`.
 
