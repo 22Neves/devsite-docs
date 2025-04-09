@@ -18,15 +18,6 @@ Reembolsos são transações realizadas quando determinada cobrança é revertid
 
 É possível escolher a opção de reembolso que melhor atenda às suas necessidades. No entanto, recomendamos usar nossa API para dispositivos Point sempre que for necessária a **impressão de tickets de reembolso ou realizar reembolsos aproximando o cartão do dispositivo**.
 
-----[mlb]----
-
-> WARNING
->
-> Importante
->
-> O processamento de reembolsos está disponível apenas para dispositivos Point Pro 2.
-------------
-
 Para efetuar reembolsos via API, é necessário primeiramente criar uma intenção de reembolso e, em seguida, processá-la. Além disso, é possível consultar o status de uma intenção de reembolso ou cancelá-la, se for preciso. Veja abaixo as etapas necessárias para realizar cada operação. 
 
 
@@ -66,7 +57,7 @@ Como resposta, você receberá algo semelhante ao exemplo abaixo:
 
 ## Processar intenção de reembolso
 
-Após criar a intenção de reembolso, você pode acessá-la no seu dispositivo Point. Para isso, inicie a transação pressionando a tecla correspondente: no caso de Point Plus e Point Pro 2 o **botão verde** e, no caso de Point Smart, o botão digital **Atualizar**.
+Após criar a intenção de reembolso, você pode acessá-la no seu dispositivo Point. Para isso, inicie a transação pressionando a tecla correspondente: no caso de Point Plus o **botão verde** e, no caso de Point Smart, o botão digital **Atualizar**.
 
 ## Verificar status da intenção de reembolso
 

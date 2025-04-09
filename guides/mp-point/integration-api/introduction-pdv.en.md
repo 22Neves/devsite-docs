@@ -16,17 +16,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 > This integration supports **Point Plus (POS)** and **Point Smart** devices. You can purchase them from our [official store](https://www.mercadopago.com.ar/point). Additionally, please note that this integration only allows cards, contactless, and SWIFT as payment methods.
 
 ------------
-
-----[mlb]----
-> NOTE
->
-> Note
->
-> This integration supports **Point Pro 1** and **Point Pro 2** devices. You can purchase them from our [official store](https://www.mercadopago.com.br/point). Additionally, please note that this integration only allows cards, contactless, and SWIFT as payment methods.
-
-------------
-
-----[mlm]----
+----[mlm, mlb]----
 > NOTE
 >
 > Note
