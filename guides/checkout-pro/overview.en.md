@@ -46,13 +46,13 @@ product_landing_how_works:
  - sub_title: Payment process
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
  - image_text: Simulate the payment processing
- - image_text_link: /developers/pt/live-demo/checkout-pro
+ - image_text_link: /developers/en/live-demo/checkout-pro
  - list_title: The buyer completes the shopping cart on your site and selects to pay with Mercado Pago.
  - list_title: They are redirected to the payment form, where they decide whether to proceed with their Mercado Pago account or as a guest user.
  - list_title: They can choose their preferred payment method, either one saved in their account or a new one entered.
  - list_title: Once the purchase is complete, they are redirected to your website or the configured destination.
  - button_description: How to integrate
- - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - button_link: /developers/en/docs/checkout-pro/create-aplication
 ---
 
 ---
@@ -63,18 +63,18 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
  - column_button_text: How to integrate
- - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - column_button_link: /developers/en/docs/checkout-pro/integrate-checkout-pro/web
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
- - column_product: Checkout API
+ - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Go to the summary
- - column_button_link: /developers/pt/docs/checkout-api/landing
+ - column_button_link: /developers/en/docs/checkout-api/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to the summary
- - column_button_link: /developers/pt/docs/checkout-bricks/landing
+ - column_button_link: /developers/en/docs/checkout-bricks/landing
  - line_text: Integration effort
  - line_type: dots
- - line_values: 3|5|2
+ - line_values: 2|5|3
  - line_text: Level of customization
  - line_type: dots
  - line_values: 2|5|3
@@ -104,7 +104,7 @@ product_landing_how_integrate:
  - image_text_link: /developers/en/live-demo/checkout-pro
  - requirement_title: Prerequisites
  - requirement_table_title: Seller account
- - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: SSL Certificate (Secure Sockets Layer)
  - requirement_table_list: Allows secure browsing and the protection of your data during information transfers.
  - list_title: Integration process

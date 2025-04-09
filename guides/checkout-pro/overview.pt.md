@@ -65,7 +65,7 @@ product_landing_what_differentiates:
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
- - column_product: Checkout API
+ - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-api/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
@@ -74,7 +74,7 @@ product_landing_what_differentiates:
  - column_button_link: /developers/pt/docs/checkout-bricks/landing
  - line_text: Esforço de integração
  - line_type: dots
- - line_values: 3|5|2
+ - line_values: 2|5|3
  - line_text: Nível de personalização
  - line_type: dots
  - line_values: 2|5|3
@@ -104,7 +104,7 @@ product_landing_how_integrate:
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Conta de vendedor
- - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
  - list_title: Processo de integração

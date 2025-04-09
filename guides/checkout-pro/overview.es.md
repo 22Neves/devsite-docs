@@ -11,7 +11,7 @@ product_landing_hero:
  - benefit_title: Personalización limitada
  - benefit_icon: sort
  - benefit_title: Con redirección a Mercado Pago
- - info: ¿Buscas opciones sin desarrollo? Explora [más soluciones](/developers/pt/docs#online-payments).
+ - info: ¿Buscas opciones sin desarrollo? Explora [más soluciones](/developers/es/docs#online-payments).
 ---
 
 ---
@@ -46,13 +46,13 @@ product_landing_how_works:
  - sub_title: Proceso de cobro
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
  - image_text: Simula el procesamiento de pago
- - image_text_link: /developers/pt/live-demo/checkout-pro
+ - image_text_link: /developers/es/live-demo/checkout-pro
  - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
  - list_title: Es redirigido al formulario de cobro, donde decide si avanzar con su cuenta de Mercado Pago o como usuario invitado.
  - list_title: Puede elegir su medio de pago preferido, ya sea uno guardado en su cuenta o uno nuevo ingresado.
  - list_title: Una vez que completó la compra, es redireccionado a tu sitio web o al destino configurado.
  - button_description: Cómo integrar
- - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - button_link: /developers/es/docs/checkout-pro/create-aplication
 ---
 
 ---
@@ -63,18 +63,18 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
  - column_button_text: Cómo integrar
- - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - column_button_link: /developers/es/docs/checkout-pro/integrate-checkout-pro/web
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
- - column_product: Checkout API
+ - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir al resumen
- - column_button_link: /developers/pt/docs/checkout-api/landing
+ - column_button_link: /developers/es/docs/checkout-api/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
- - column_button_link: /developers/pt/docs/checkout-bricks/landing
+ - column_button_link: /developers/es/docs/checkout-bricks/landing
  - line_text: Esfuerzo de integración
  - line_type: dots
- - line_values: 3|5|2
+ - line_values: 2|5|3
  - line_text: Nivel de personalización
  - line_type: dots
  - line_values: 2|5|3
@@ -104,7 +104,7 @@ product_landing_how_integrate:
  - image_text_link: /developers/es/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de vendedor
- - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
+ - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
  - list_title: Proceso de integración
