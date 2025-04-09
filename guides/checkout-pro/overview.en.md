@@ -22,7 +22,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Financing in installments.
  - benefit_bullet: Return URL after payment approval.
  - benefit_bullet: Appearance and style of the payment button.
- - benefit_bullet: Customizable payment methods with the option to split the amount into 2 parts.
+ - benefit_bullet: Combinable and customizable payment methods.
  - benefit_title: Conversion
  - benefit_bullet: Fast collection with the payment methods saved in Mercado Pago.
  - benefit_bullet: Option to pay without a Mercado Pago account, as a guest user.

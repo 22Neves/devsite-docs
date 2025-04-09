@@ -64,7 +64,7 @@ A seguir, você pode ver os **dados dos cartões de débito e crédito de teste*
 | Cartão de débito | Mastercard | 5178 7816 2220 2455 | 123 | 11/30 |
 ------------
 
-Em seguida, escolha qual cenário de pagamento testar e preencha os campos do **titular do cartão** (Nome e sobrenome e Tipo e número de documento) conforme indicado na tabela abaixo.
+Em seguida, escolha qual cenário de pagamento testar e preencha os campos do **titular do cartão** (Nome e sobrenome, Tipo e número de documento) conforme indicado na tabela abaixo.
 
 ----[mla]----
 

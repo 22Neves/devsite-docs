@@ -22,7 +22,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Parcelamento
  - benefit_bullet: URL de retorno após a aprovação do pagamento
  - benefit_bullet: Aparência e estilo do botão de pagamento
- - benefit_bullet: Meios de pagamento customizáveis com a opção de dividir o valor em 2 partes
+ - benefit_bullet: Meios de pagamento combináveis e customizáveis.
  - benefit_title: Conversão
  - benefit_bullet: Cobrança ágil com os meios de pagamento salvos no Mercado Pago
  - benefit_bullet: Opção de pagar sem conta do Mercado Pago, como usuário convidado
@@ -110,7 +110,7 @@ product_landing_how_integrate:
  - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
  - list_item: Construir o ambiente de desenvolvimento
  - list_item: Criar e configurar a preferência de pagamento.
- - list_item: Coonfigurar as notificações de pagamento
+ - list_item: Configurar as notificações de pagamento
  - list_item: Testar a integração
  - list_item: Sair à produção
  - button_description: Quero começar a integrar

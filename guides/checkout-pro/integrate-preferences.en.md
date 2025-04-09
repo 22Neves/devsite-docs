@@ -4,9 +4,9 @@
 >
 > Create and configure a payment preference
 
-A payment preference is an object or set of information that represents the product or service you want to charge for. Within the Mercado Pago ecosystem, this object is known as `preference`. When creating a payment preference, you can define essential details such as price, quantity, and payment methods, as well as other related configurations for the payment flow.
+A **payment preference** is an object or set of information that represents the product or service you want to charge for. Within the Mercado Pago ecosystem, this object is known as `preference`. When creating a payment preference, you can define essential details such as price, quantity, and payment methods, as well as other related configurations for the payment flow.
 
-To create a payment preference, use the method associated with `preference` in the backend SDK. You need to create a payment preference for each order or payment flow you want to initiate.
+To create a payment preference, use the method associated with `preference` in the backend SDK. You need to **create a payment preference for each order or payment flow** you want to initiate.
 
 Below, you will find examples of how to implement this in your backend using the SDK, which is available in different programming languages. Complete the attributes with the appropriate information to reflect the details of each transaction and ensure an accurate payment flow.
 
@@ -14,7 +14,7 @@ Below, you will find examples of how to implement this in your backend using the
 >
 > Nota
 >
-> You can adapt the Checkout Pro integration to your business model by configuring the attributes of the payment preference. These will allow you to define installments, exclude a payment method, change the expiration date of a specific payment, among other options. To customize your payment preference, access **[Checkout customization](/developers/en/docs/checkout-pro/additional-settings)**.
+> You can adapt the Checkout Pro integration to your business model by configuring the attributes of the payment preference. These will allow you to define installments, exclude a payment method, change the expiration date of a specific payment, among other options. To customize your payment preference, access [Checkout customization](/developers/en/docs/checkout-pro/additional-settings).
 
 [[[
 ```php

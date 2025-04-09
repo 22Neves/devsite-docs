@@ -87,11 +87,12 @@ Para inicializar la biblioteca de Mercado Pago, deberás utilizar tus **credenci
 
 Primero, deberás **activar las credenciales de producción**. Para hacerlo, deberás completar algunos datos datos sobre tu negocio siguiendo los pasos a continuación.
 
-1. En el campo **Industria**, selecciona del menú desplegable la industria a la que pertenece el negocio que estás integrando. 
-2. En el campo **Sitio web (obligatorio)**, completa con la URL del sitio web de tu negocio.
-3. Acepta la ----[mlb]----[Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Declaración de Privacidad](https://www.mercadopago.com/privacidad) ------------ y los [Términos y condiciones](/developers/es/docs/resources/legal/terms-and-conditions). Completa el reCAPTCHA y haz clic en **Activar credenciales de producción**.
+1. En [Tus integraciones](/developers/panel/app), selecciona tu aplicación. Luego, dirígete a la sección **Producción** y haz clic en **Credenciales de producción** en el menú a la izquierda de la pantalla.
+2. En el campo **Industria**, selecciona del menú desplegable la industria a la que pertenece el negocio que estás integrando. 
+3. En el campo **Sitio web (obligatorio)**, completa con la URL del sitio web de tu negocio.
+4. Acepta la ----[mlb]----[Declaración de Privacidad](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm, mlu, mco, mlc, mpe]----[Declaración de Privacidad](https://www.mercadopago.com/privacidad) ------------ y los [Términos y condiciones](/developers/es/docs/resources/legal/terms-and-conditions). Completa el reCAPTCHA y haz clic en **Activar credenciales de producción**.
 
-Después de activar tus credenciales de producción, podrás utilizar tu `access token` de **producción**, disponible en los detalles de tu aplicación en [Tus integraciones](/developers/panel/app). Para acceder a él, dirígete a la sección **Producción** y haz clic en **Credenciales de producción** en el menú a la izquierda de la pantalla.
+Después de activar tus credenciales de producción, podrás utilizar tu `access token` de **producción**, disponible en los detalles de tu aplicación en [Tus integraciones](/developers/panel/app).
 
 A continuación, en el backend de tu proyecto, crea un archivo _main_ en base al lenguaje de programación que usaras. Allí, coloca el siguiente código reemplazando el valor `PROD_ACCESS_TOKEN` con tu `access token` de producción. 
 
