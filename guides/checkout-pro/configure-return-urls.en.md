@@ -10,7 +10,7 @@ You can configure up to three different return URLs, corresponding to pending pa
 >
 > Note
 >
-> In mobile integrations, we recommend that the return URLs be deep links. To learn more, refer to the **[Integration for mobile applications](/developers/en/docs/checkout-pro/mobile-integration)** documentation.
+> In mobile integrations, we recommend that the return URLs be deep links. To learn more, refer to the [Integration for mobile applications](/developers/en/docs/checkout-pro/mobile-integration) documentation.
 
 ## Define return URL
 

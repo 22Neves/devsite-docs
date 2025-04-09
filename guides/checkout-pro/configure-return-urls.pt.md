@@ -10,7 +10,7 @@ Você pode configurar até três URLs de retorno diferentes, correspondendo aos 
 >
 > Nota
 >
-> Em integrações _mobile_, recomendamos que as URLs de retorno sejam _deep links_. Para saber mais, acesse a **[documentação Integração para aplicações móveis](/developers/pt/docs/checkout-pro/mobile-integration)**.
+> Em integrações _mobile_, recomendamos que as URLs de retorno sejam _deep links_. Para saber mais, acesse a [documentação Integração para aplicações móveis](/developers/pt/docs/checkout-pro/mobile-integration).
 
 ## Definir URLs de retorno
 
