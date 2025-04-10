@@ -8,7 +8,7 @@ product_landing_hero:
  - benefit_icon: link
  - benefit_title: Para web, Android y iOS
  - benefit_icon: edit
- - benefit_title: Personalización limitada
+ - benefit_title: Experiencia preconstruida
  - benefit_icon: sort
  - benefit_title: Con redirección a Mercado Pago
  - info: ¿Buscas opciones sin desarrollo? Explora [más soluciones](/developers/es/docs#online-payments).
