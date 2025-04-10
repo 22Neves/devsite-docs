@@ -1,64 +1,64 @@
 ---
 product_landing_hero:
- - title: Integra Checkout Pro and set up a pre-designed experience
- - message: With this solution, your customers shop on your site and pay in a Mercado Pago environment with their saved payment methods.
+ - title: Integrate Checkout Pro and set up a predesigned experience
+ - message: With this solution, your customers buy on your website and pay in the Mercado Pago environment with their saved payment methods.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
  - benefit_icon: categories
  - benefit_title: Agile integration
  - benefit_icon: link
  - benefit_title: For web, Android, and iOS
  - benefit_icon: edit
- - benefit_title: Limited customization
+ - benefit_title: Pre-built experience
  - benefit_icon: sort
  - benefit_title: With redirection to Mercado Pago
- - info: Looking for options without development? Explore [more solutions](/developers/pt/docs#online-payments).
+ - info: Looking for development-free options? Explore [more solutions](/developers/pt/docs#online-payments).
 ---
 
 ---
 product_landing_what_it_offers:
  - title: What it offers
- - message: Combines different functionalities to ensure the security and conversion of operations.
+ - message: Combine different features to ensure transaction security and conversion.
  - benefit_title: Customization
- - benefit_bullet: Financing in installments.
- - benefit_bullet: Return URL after payment approval.
- - benefit_bullet: Appearance and style of the payment button.
- - benefit_bullet: Combinable and customizable payment methods.
+ - benefit_bullet: Financing in installments
+ - benefit_bullet: Return URL after payment approval
+ - benefit_bullet: Appearance and style of the payment button
+ - benefit_bullet: Customizable payment methods with the option to split the total amount into 2 parts
  - benefit_title: Conversion
- - benefit_bullet: Fast collection with the payment methods saved in Mercado Pago.
- - benefit_bullet: Option to pay without a Mercado Pago account, as a guest user.
- - benefit_bullet: Online and offline payment methods, such as cards and money in account.
- - benefit_bullet: Recovery of rejected payments.
- - benefit_bullet: Coupons and promotional campaigns.
+ - benefit_bullet: Quick payment with the payment methods saved in Mercado Pago
+ - benefit_bullet: Option to pay without a Mercado Pago account, as a guest user
+ - benefit_bullet: Online and offline payment methods, such as cards and account money
+ - benefit_bullet: Recovery of rejected payments
+ - benefit_bullet: Coupons and promotional campaigns
  - benefit_title: Payment approval
- - benefit_bullet: 3DS 2.0 technology for operation authentication.
- - benefit_bullet: Fraud prevention tools and client identity verification.
- - benefit_bullet: Transaction validation using industry-specific data.
+ - benefit_bullet: 3DS 2.0 technology for transaction authentication
+ - benefit_bullet: Fraud prevention tools and customer identity verification
+ - benefit_bullet: Transaction validation using industry-specific data
  - benefit_title: Fraud protection
- - benefit_bullet: OWASP and PCI DSS protocols.
- - benefit_bullet: Buyer identity verification.
- - benefit_bullet: Facial recognition with FaceAuth to access the Mercado Pago account.
+ - benefit_bullet: OWASP and PCI DSS protocols
+ - benefit_bullet: Buyer identity verification
+ - benefit_bullet: Facial recognition with FaceAuth to access the Mercado Pago account
 ---
 
 ---
 product_landing_how_works:
  - title: How it works
- - message: The customer chooses the product or service on your site, pays in the secure Mercado Pago environment, and returns to your site or the configured destination.
+ - message: The customer chooses the product or service on your site, pays in Mercado Pago’s secure environment, and returns to your website or the configured destination.
  - sub_title: Payment process
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
  - image_text: Simulate the payment processing
  - image_text_link: /developers/en/live-demo/checkout-pro
- - list_title: The buyer completes the shopping cart on your site and selects to pay with Mercado Pago.
- - list_title: They are redirected to the payment form, where they decide whether to proceed with their Mercado Pago account or as a guest user.
- - list_title: They can choose their preferred payment method, either one saved in their account or a new one entered.
- - list_title: Once the purchase is complete, they are redirected to your website or the configured destination.
+ - list_title: The buyer checks out their shopping cart on your website and chooses to pay with Mercado Pago.
+ - list_title: They’re redirected to the payment form, where they decide whether to proceed with their Mercado Pago account or as a guest user.
+ - list_title: They can choose their preferred payment method, whether it’s one saved in their account or a new one they entered.
+ - list_title: Once the purchase is completed, they are redirected to your website or the configured destination.
  - button_description: How to integrate
  - button_link: /developers/en/docs/checkout-pro/create-application
 ---
 
 ---
 product_landing_what_differentiates:
- - title: What differentiates it
- - message: Compare our checkouts and choose the one that best suits your business. Check the [rates](https://www.mercadopago.com.br/ajuda/33399).
+ - title: What sets it apart
+ - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: You are here
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
@@ -66,22 +66,22 @@ product_landing_what_differentiates:
  - column_button_link: /developers/en/docs/checkout-pro/create-application
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
- - column_button_text: Go to the summary
+ - column_button_text: Go to the overview
  - column_button_link: /developers/en/docs/checkout-api/landing
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
- - column_button_text: Go to the summary
+ - column_button_text: Go to the overview
  - column_button_link: /developers/en/docs/checkout-bricks/landing
  - line_text: Integration effort
  - line_type: dots
  - line_values: 2|5|3
- - line_text: Level of customization
+ - line_text: Customization level
  - line_type: dots
  - line_values: 2|5|3
- - line_text: Ready-to-configure design
+ - line_text: Design ready to set up
  - line_type: check
  - line_values: true|false|true
- - line_text: Payment experience
+ - line_text: Collection experience
  - line_type: text
  - line_values: In Mercado Pago|In your site|In your site
  - line_text: Recurring payments
@@ -98,7 +98,7 @@ product_landing_what_differentiates:
 ---
 product_landing_how_integrate:
  - title: How to integrate
- - sub_title: Learn the steps you need to follow to integrate this solution.
+ - sub_title: Learn about the steps you need to follow to integrate this solution.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
  - image_text: Explore code examples
  - image_text_link: /developers/en/live-demo/checkout-pro
@@ -110,10 +110,10 @@ product_landing_how_integrate:
  - list_title: Integration process
  - list_item: Create an application from [Your integrations](/developers/panel/app)
  - list_item: Build the development environment
- - list_item: Create and configure the payment intent
+ - list_item: Create and set up your payment preferences
  - list_item: Set up payment notifications
- - list_item: Test the integration
- - list_item: Go to production
+ - list_item: Test your integration
+ - list_item: Go live
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-pro/create-application
 ---
