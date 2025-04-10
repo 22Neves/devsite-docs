@@ -99,7 +99,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
  - image_text: Explore code examples
  - image_text_link: /developers/en/live-demo/checkout-pro
  - requirement_title: Prerequisites
