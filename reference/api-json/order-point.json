@@ -1243,7 +1243,7 @@
                               },
                               "amount": {
                                 "type": "string",
-                                "example": "24",
+                                "example": "38",
                                 "description": {
                                   "pt": "Valor do reembolso. No México (MEX) e no Chile (CHL), esse valor incluirá o valor da gorjeta, caso tenha sido paga.",
                                   "en": "Refund amount. In Mexico (MEX) and Chile (CHL), this amount will include the value of the tip, if one was paid.",
@@ -1634,11 +1634,11 @@
                     },
                     "status_detail": {
                       "type": "string",
-                      "example": "canceled_by_api",
+                      "example": "canceled",
                       "description": {
-                        "en":"Details about payment status. It is returned exclusively when the order is canceled through the API, with the value \"cancelsed_by_api\".",
-                        "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"canceled_by_api\".",
-                        "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"canceled_by_api\"."
+                        "en":"Details about payment status. It is returned exclusively when the order is canceled through the API, with the value \"cancelsed\".",
+                        "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"canceled\".",
+                        "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"canceled\"."
                       }
                     },
                     "created_date":{
@@ -2676,7 +2676,17 @@
                         "en":"Details about the refund status. It is returned exclusively when the order is reimbursed through the API",
                         "pt":"Detalhes sobre o status do reembolso. É devolvido exclusivamente quando a order é reembolsada através da API.",
                         "es":"Detalles sobre el estado del reembolso. Es devuelto exclusivamente cuando la order es reembolsada por medio de la API."
-                      }
+                      },
+                      "enum": [
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The order has been succesfully refunded.",
+                            "es": "La order ha sido reembolsada de manera exitosa.",
+                            "pt": "A order foi reembolsada com sucesso."
+                          }
+                        }
+                      ]
                     },
                     "transactions":{
                       "type":"object",
