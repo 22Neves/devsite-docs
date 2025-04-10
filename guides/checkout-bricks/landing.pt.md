@@ -1,119 +1,386 @@
 ---
-product_landing_hero:
- - title: Integre Checkout Pro e configure uma experiência pré-desenhada
- - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
- - benefit_icon: categories
- - benefit_title: Integração ágil
- - benefit_icon: link
- - benefit_title: Para web, Android e iOS
- - benefit_icon: edit
- - benefit_title: Personalização limitada
- - benefit_icon: sort
- - benefit_title: Com redirecionamento
- - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
+content_section_with_media: 
+ - title: Checkout Bricks
+ - message: O Checkout Bricks é um conjunto de módulos de interface do usuário que já vêm prontos para o front-end e são otimizados para uma melhor usabilidade e conversão. Cada Brick pode ser utilizado de forma independente ou em conjunto, formando a experiência de um checkout completo.
+ - media_image: /checkout-bricks/landing-bricks.png
+---
+---
+bullet_section_with_media: 
+ - title: 
+ - type: normal
+ - message: Oferece uma experiência de checkout transparente com possibilidade de customização de acordo com cada loja e é seguro porque as informações de pagamento são processadas através do Mercado Pago, possuindo um processo de integração mais simples que minimiza o tempo de produção e desenvolvimento.
+ - image:/checkout-bricks/bricks-landing.png
 ---
 
+--- mini_landing_separator ---
+
+>>>> Disponibilidade por país <<<<
 ---
-product_landing_what_it_offers:
- - title: O que oferece
- - message: Combine diferentes funcionalidades para garantir a segurança e conversão das operações.
- - benefit_title: Personalização
- - benefit_bullet: Parcelamento
- - benefit_bullet: URL de retorno após a aprovação do pagamento
- - benefit_bullet: Aparência e estilo do botão de pagamento
- - benefit_bullet: Meios de pagamento customizáveis com a opção de dividir o valor em 2 partes
- - benefit_title: Conversão
- - benefit_bullet: Cobrança ágil com os meios de pagamento salvos no Mercado Pago
- - benefit_bullet: Opção de pagar sem conta do Mercado Pago, como usuário convidado
- - benefit_bullet: Meios de pagamento online e offline, como Pix e boleto
- - benefit_bullet: Recuperação de pagamentos rejeitados
- - benefit_bullet: Cupons e campanhas promocionais
- - benefit_title: Aprovação de pagamentos
- - benefit_bullet: Tecnologia 3DS 2.0 para autenticação de operações
- - benefit_bullet: Ferramentas de prevenção de fraudes e verificação de identidade do cliente
- - benefit_bullet: Validação de transações utilizando dados específicos de cada indústria
- - benefit_title: Segurança contra fraudes
- - benefit_bullet: Protocolos OWASP e PCI DSS
- - benefit_bullet: Verificação de identidade dos compradores
- - benefit_bullet: Reconhecimento facial com FaceAuth para acessar a conta do Mercado Pago
----
+available_countries: mla, mlb, mlm, mlu, mlc, mco, mpe
 
 ---
-product_landing_how_works:
- - title: Como funciona
- - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
- - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
- - image_text: Simule o processamento de pagamento
- - image_text_link: /developers/pt/live-demo/checkout-pro
- - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
- - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
- - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
- - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
- - button_description: Como integrar
- - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
----
+
+--- mini_landing_separator ---
+
+----[mlb, mlu, mlc, mco, mpe]----
 
 ---
-product_landing_what_differentiates:
- - title: Quais os diferenciais
- - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
- - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
- - column_product: Checkout Pro
- - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
- - column_product: Checkout API
- - column_button_text: Ir à visão geral
- - column_button_link: /developers/pt/docs/checkout-api/landing
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
- - column_product: Checkout Bricks
- - column_button_text: Ir à visão geral
- - column_button_link: /developers/pt/docs/checkout-bricks/landing
- - line_text: Esforço de integração
- - line_type: dots
- - line_values: 3|5|2
- - line_text: Nível de personalização
- - line_type: dots
- - line_values: 2|5|3
- - line_text: Design pronto para configurar
- - line_type: check
- - line_values: true|false|true
- - line_text: Experiência de pagamento
- - line_type: text
- - line_values: No Mercado Pago|No seu site|No seu site
- - line_text: Pagamentos recorrentes
- - line_type: check
- - line_values: false|true|true
- - line_text: Meios de pagamento
- - line_type: text
- - line_values: Dinheiro em conta, Pix, cartão de crédito ou débito, Linha de crédito, boleto|Dinheiro em conta, Pix, cartão de crédito ou débito, Linha de crédito, boleto|Dinheiro em conta, Pix, cartão de crédito ou débito, Linha de crédito, boleto
- - line_text: Disponibilidade por país
- - line_type: sites
- - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
+future_product_avaible:
+ - title: Bricks
+ - description: Conheça todos os módulos do Checkout Bricks e as suas disponibilidades.
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofereça diversos métodos de pagamento para os clientes escolherem, com a capacidade de salvar dados do cartão para compras futuras. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/payment-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/wallet-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/status-screen-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/card-payment-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: false
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Exiba um resumo de todo o processo de compra com as informações mais relevantes, assim os clientes poderão analisar antes de confirmar a compra.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Comunique diferentes mensagens relacionadas às formas de pagamento disponíveis via Mercado Pago em sua loja.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Colete os dados dos clientes para deduzir aqueles que serão necessários no processo de compra.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Colete dados de envio dos clientes e exiba as opções de entrega disponíveis, além de seus benefícios.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
+------------
+----[mla]----
+
 ---
-product_landing_how_integrate:
- - title: Como integrar
- - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/25/1740511571091-Group94928.png
- - image_text: Explore exemplos de código
- - image_text_link: /developers/pt/live-demo/checkout-pro
- - requirement_title: Requisitos prévios
- - requirement_table_title: Conta de vendedor
- - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago.com.br/hub/registration/landing).
- - requirement_table_title: Certificado SSL (Secure Sockets Layer)
- - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
- - list_title: Processo de integração
- - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Criar e configurar a preferência de pagamento.
- - list_item: Coonfigurar as notificações de pagamento
- - list_item: Testar a integração
- - list_item: Sair à produção
- - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+future_product_avaible:
+ - title: Bricks
+ - description: Conheça todos os módulos do Checkout Bricks e as suas disponibilidades.
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofereça diversos métodos de pagamento para os clientes escolherem, com a capacidade de salvar dados do cartão para compras futuras. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/payment-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/wallet-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/card-payment-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/status-screen-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Comunique diferentes mensagens relacionadas às formas de pagamento disponíveis via Mercado Pago em sua loja.
+ - card_button: /developers/pt/docs/checkout-bricks/brand-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/brand-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Exiba um resumo de todo o processo de compra com as informações mais relevantes, assim os clientes poderão analisar antes de confirmar a compra.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Colete os dados dos clientes para deduzir aqueles que serão necessários no processo de compra.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Colete dados de envio dos clientes e exiba as opções de entrega disponíveis, além de seus benefícios.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
+
+------------
+----[mlm]----
+
+---
+future_product_avaible: 
+ - title: Bricks
+ - description: Conheça todos os módulos do Checkout Bricks e as suas disponibilidades.
+ - card_avaible: true
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofereça diversos métodos de pagamento para os clientes escolherem, com a capacidade de salvar dados do cartão para compras futuras. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/payment-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/wallet-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/wallet-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Loading
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/status-screen-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofereça pagamentos com cartão de crédito e débito. Teste a demonstração do Brick antes de integrá-lo.
+ - card_button: /developers/pt/docs/checkout-bricks/card-payment-brick/introduction
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: true
+ - card_linkProof: /developers/pt/live-demo/card-payment-brick
+ - card_linkProofDescription: Acessar demonstração
+ - card_avaible: true
+ - card_icon: Check
+ - card_title: Review & Confirm
+ - card_description: Exiba um resumo de todo o processo de compra com as informações mais relevantes, assim os clientes poderão analisar antes de confirmar a compra.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/advanced-features/add-confirmation-step
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
+ - card_title: Brand Brick
+ - card_description: Comunique diferentes mensagens relacionadas às formas de pagamento disponíveis via Mercado Pago em sua loja.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: User
+ - card_title: User Info Brick
+ - card_description: Colete os dados dos clientes para deduzir aqueles que serão necessários no processo de compra.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: false
+ - card_icon: Truck
+ - card_title: Shipping Brick
+ - card_description: Colete dados de envio dos clientes e exiba as opções de entrega disponíveis, além de seus benefícios.
+ - card_button:
+ - card_buttonDescription:
+ - card_pillText: EM BREVE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+---
+
+------------
+
+--- mini_landing_separator ---
+>>>> Tipos de pagamento aceitos <<<<
+
+----[mlb]----
+
+---
+available_payments: credit, debit, mercadopago, boleto, pix
+
+---
+
+------------
+
+----[mla]---- 
+
+---
+available_payments: credit, debit, mercadopago, rapipago, pagofacil
+
+---
+------------
+
+----[mlm]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo, atm
+
+---
+------------
+
+----[mlu]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo
+
+---
+------------
+
+----[mco]---- 
+
+---
+available_payments: credit, debit, mercadopago, efectivo, pse
+
+---
+------------
+
+----[mlc]---- 
+
+---
+available_payments: credit, debit, mercadopago
+
+---
+------------
+
+----[mpe]---- 
+
+---
+available_payments: credit, debit, mercadopago, atm
+
+---
+------------
+
+----[mlb, mlm, mlu, mlc, mco, mpe]----
+
+---
+anchored_menu: 
+ - title: Card Payment Brick
+ - link: /developers/pt/live-demo/card-payment-brick
+ - title: Payment Brick
+ - link: /developers/pt/live-demo/payment-brick
+ - title: Status Screen Brick
+ - link: /developers/pt/live-demo/status-screen-brick
+ - title: Wallet Brick
+ - link: /developers/pt/live-demo/wallet-brick
+---
+
+------------
+----[mla]----
+
+---
+anchored_menu: 
+ - title: Card Payment Brick
+ - link: /developers/pt/live-demo/card-payment-brick
+ - title: Payment Brick
+ - link: /developers/pt/live-demo/payment-brick
+ - title: Status Screen Brick
+ - link: /developers/pt/live-demo/status-screen-brick
+ - title: Wallet Brick
+ - link: /developers/pt/live-demo/wallet-brick
+ - title: Brand Brick
+ - link: /developers/pt/live-demo/brand-brick
+---
+
+------------
+
+> Para detalhes dos meios de pagamento aceitos em cada país, verifique a lista completa com a [disponibilidade de meios de pagamento.](/developers/pt/docs/sales-processing/payment-methods)
