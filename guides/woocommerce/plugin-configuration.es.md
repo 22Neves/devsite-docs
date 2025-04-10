@@ -28,15 +28,19 @@ Conecte su cuenta de Mercado Pago a su tienda para recibir los pagos de las vent
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
-2. Se abrirá una nueva ventana para que elija la cuenta de recepción de los pagos, ya sea la suya o la de otra persona.
+2. Si ya has iniciado sesión en tu cuenta de Mercado Pago, esta etapa se omitirá automáticamente. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta y continuar con la vinculación.
 
-![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
+![Plugin MP](/images/woocomerce/automation-cred-1.1-es.png)
 
-3. Espere hasta que la vinculación se haya completado.
+3. Se abrirá una nueva ventana para que elija la cuenta de recepción de los pagos, ya sea la suya o la de otra persona.
+
+![Plugin MP](/images/woocomerce/automation-cred-2-es.png)
+
+4. Espere hasta que la vinculación se haya completado.
 
 ![Plugin MP](/images/woocomerce/automation-cred-3-es.png)
 
-4. ¡Listo! La vinculación se ha completado con éxito. Ahora, puede avanzar para personalizar su tienda.
+5. ¡Listo! La vinculación se ha completado con éxito. Ahora, puede avanzar para personalizar su tienda.
 
 ![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 

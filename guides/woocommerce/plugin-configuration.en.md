@@ -24,19 +24,23 @@ Connect your Mercado Pago account to your store to receive payments for sales. F
 
 1. Click on **1. Link your store to a Mercado Pago account** to be redirected to Mercado Pago and select the account where you want to receive payments for your sales.
 
-![Plugin MP](/images/woocomerce/automation-cred-1-pt.png)
+![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
-2. A new window will open for you to choose the payment receiving account, whether it is yours or someone else's.
+2. If you are already logged into your Mercado Pago account, this step will be skipped automatically. Otherwise, enter your email and password to access your account and continue with the linking process.
 
-![Plugin MP](/images/woocomerce/automation-cred-2-pt.png)
+![Plugin MP](/images/woocomerce/automation-cred-1.1-es.png)
 
-3. Wait until the linking process is complete.
+3. A new window will open for you to choose the account to receive payments, whether it’s yours or someone else's.
 
-![Plugin MP](/images/woocomerce/automation-cred-3-pt.png)
+![Plugin MP](/images/woocomerce/automation-cred-2-es.png)
 
-4. Done! The linking process has been successfully completed. Now, you can proceed to customize your business.
+4. Please wait until the linking process is completed.
 
-![Plugin MP](/images/woocomerce/automation-cred-4-pt.png)
+![Plugin MP](/images/woocomerce/automation-cred-3-es.png)
+
+5. Done! The linking process has been successfully completed. Now, you can proceed to customize your store.
+
+![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 
 ## Customize business
 
