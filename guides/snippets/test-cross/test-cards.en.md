@@ -68,7 +68,7 @@ Below, you can see the data of the **test debit and credit cards**. Select the o
 | Debit card | Mastercard | 5178 7816 2220 2455 | 123 | 11/30 |
 ------------
 
-Next, choose which payment scenario to test and fill in the **cardholder's information** (First name and last name, and Document type and number) as indicated in the table below.
+Next, choose which payment scenario to test and fill in the **cardholder's information** (First name and last name, Document type and number) as indicated in the table below.
 
 ----[mla]---- 
 | Payment Status | Cardholder’s first and last name | Identity document |

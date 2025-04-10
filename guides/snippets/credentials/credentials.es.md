@@ -48,13 +48,15 @@ Las credenciales de prueba son un conjunto de claves que se utilizan tanto en la
 > NOTE
 > 
 > Las credenciales de prueba sólo están disponibles para las integraciones de [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
-------------
+
+---------------
 
 ----[mlb]----
 > NOTE
 > 
 > Las credenciales de prueba sólo están disponibles para las integraciones de [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) y [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing).
-------------
+
+---------------
 
 Al acceder a las credenciales de prueba, se mostrará el par de credenciales **Public Key y Access Token**.
 
@@ -77,7 +79,7 @@ Las credenciales **Public Key** y **Access Token** de prueba se utilizan al igua
 
 ## Obtener credenciales
 
-Las credenciales de Mercado Pago son creadas a partir de una aplicación de Mercado Pago. Es decir, están directamente vinculadas a la :toolTipComponent[aplicación]{link="/developers/es/docs/application-details" linkText="Detalles de aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información, accede al link a continuación."} que creaste a través de Tus integraciones.
+Las credenciales de Mercado Pago son creadas a partir de una aplicación de Mercado Pago. Es decir, están directamente vinculadas a la :toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información,  accede a la documentación"} que creaste a través de Tus integraciones.
 
 A continuación, conoce cómo obtener las credenciales.
 
@@ -89,14 +91,17 @@ A continuación, conoce cómo obtener las credenciales.
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-test-panel-es.jpg)
 
 ------------
+
 ----[mla, mlb]---- 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-test-panel-es.gif)
 
 ------------
+
 ----[mlc, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.jpg)
 
 ------------
+
 ----[mla, mlb]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.gif)
 
@@ -161,6 +166,7 @@ Para renovar un par de credenciales, sigue los pasos a continuación.
 ![Cómo renovar tus credenciales](/images/snippets/renew-credentials-es.jpg)
 
 ------------
+
 ----[mla, mlb]----
 ![Cómo renovar tus credenciales](/images/snippets/renew-credentials-es.gif)
 

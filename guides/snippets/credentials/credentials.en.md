@@ -48,13 +48,14 @@ Test credentials are a set of keys that are used both in the development stage, 
 > NOTE
 > 
 > Test credentials are only available for [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) and [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing) integrations.
-------------
 
+---------------
 ----[mlb]----
 > NOTE
 > 
 > Test credentials are only available for [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-api/landing) and [Checkout Bricks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs/checkout-bricks/landing) integrations.
-------------
+
+---------------
 
 When accessing the test credentials, the **Public Key and Access Token** credential pair will be displayed.
 
@@ -78,7 +79,7 @@ The test **Public Key** and **Access Token** credentials are used in the same wa
 ## Get credentials
 
 Mercado Pago credentials are created from a Mercado Pago application. That is, they are directly linked to the
-:toolTipComponent[application]{link="/developers/en/docs/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier for managing your integrations. For more information, access the link below."} that you created through Your integrations.
+:toolTipComponent[application]{link="/developers/es/docs/your-integrations/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier to manage your integrations. For more information, see the documentation on [Application details](/developers/es/docs/your-integrations/application-details)."} that you created through Your integrations.
 
 Below, learn how to get the credentials.
 

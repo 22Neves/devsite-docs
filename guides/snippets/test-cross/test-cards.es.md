@@ -66,7 +66,7 @@ A continuación, puedes ver los datos de las **tarjetas de débito y crédito de
 
 ------------
 
-Luego, elige qué escenario de pago probar, y completa los campos del **titular de la tarjeta** (Nombre y apellido y Tipo y número de documento) según lo indica la tabla a continuación.
+Luego, elige qué escenario de pago probar, y completa los campos del **titular de la tarjeta** (Nombre y apellido, Tipo y número de documento) según lo indica la tabla a continuación.
 
 ----[mla]----
 
