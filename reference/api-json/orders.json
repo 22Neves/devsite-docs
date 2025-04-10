@@ -3853,6 +3853,15 @@
                                 "pt": "Identificador da categoria do item.",
                                 "es": "Identificador de la categoría del ítem."
                             }
+                        },
+                        "type": {
+                            "type": "string",
+                            "example": "MLB1055",
+                            "description": {
+                                "en": "Item type.",
+                                "pt": "Tipo do item.",
+                                "es": "Tipo de elemento."
+                            }
                         }
                     }
                 }
