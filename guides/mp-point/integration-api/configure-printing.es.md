@@ -1,6 +1,6 @@
 # Configurar impresiones
 
-La API de Impresiones ofrece una solución práctica para integrar tus sistemas y gestionar impresiones en las terminales Point configuradas. Este recurso permite la impresión de imágenes e impresiones personalizadas directamente desde un punto de venta (PDV), utilizando la impresora integrada de los dispositivos Smart. 
+La API de Impresiones ofrece una solución práctica para integrar tus sistemas y gestionar impresiones en las terminales Point configuradas. Este recurso permite la impresión de imágenes e impresiones personalizadas directamente desde un punto de venta (PDV), utilizando la impresora integrada de los dispositivos **Point Smart** y **Point Smart 2**.
 
 Utilice los endpoints a continuación para gestionar la cola de impresiones, teniendo en cuenta las especificaciones de cada endpoint. Asegúrese de que el terminal esté correctamente configurado en el **[modo PDV (Punto de Venta)](/developers/es/docs/mp-point/integration-configuration/integrate-with-pdv/configure-devices#bookmark_activar_el_modo_pdv_en_tu_dispositivo_point)**.
 

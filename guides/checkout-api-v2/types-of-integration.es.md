@@ -6,7 +6,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito virtual Caixa, Pix, boleto, pago en agencia de lotería, Cuenta de Mercado Pago y Pago a cuotas sin tarjeta. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods). | Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------
@@ -15,7 +15,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito, Pago Fácil, Rapipago, Cuenta de Mercado Pago y Pago a cuotas sin tarjeta. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods). | Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------
@@ -24,7 +24,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito, Cuenta de Mercado Pago, Pago a cuotas sin tarjeta, ATM y Efectivo. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods). | Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------
@@ -33,7 +33,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito, Cuenta de Mercado Pago y Pago Efectivo. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods).| Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------
@@ -42,7 +42,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito, Cuenta de Mercado Pago, PSE y Efecty. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods). | Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------
@@ -51,7 +51,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito, Cuenta de Mercado Pago, Abitab y Redpagos. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods). | Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------
@@ -60,7 +60,7 @@ La integración con ----[mlb]---- Checkout Transparente------------ ----[mla, ml
 | Tipo de integración  | Medios de pago  | Complejidad a nível front-end | User interface (UI)  | 
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)  | Crédito, débito y Cuenta de Mercado Pago. Vea más detalles en nuestra documentación [Medios de pago disponibles](/developers/es/docs/sales-processing/payment-methods). | Fácil | Componentes con UI predefinida y que puede ser personalizada si es necesario.  | 
-| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | Formulario sin opciones de estilización para empezar la configuración desde cero.  |
+| [Cardform](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Medio | El formulario no tiene ninguna estilización, lo que permite una flexibilidad total para la personalización de estilos.  |
 | [Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos los medios disponibles](/developers/es/docs/sales-processing/payment-methods). | Alto | Crea tu formulario y su estilización  | 
 
 ------------

@@ -85,7 +85,7 @@
                             "description": {
                               "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
                               "es": "Identificador de la terminal Point que obtendrá la acción. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El nímero de serie de la terminal puede ser hallado en la etiqueta trasera del mismo.",
-                              "pt": "Identificador da terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial da terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial da terminal pode ser encontrado na etiqueta traseira."
+                              "pt": "Identificador do terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira."
                             },
                             "example": "NEWLAND_N950__N950NCB123456789",
                             "required": true
@@ -113,7 +113,7 @@
                                 "description": {
                                   "en": "Identifier of the subtype related to custom printings. It must contains one or more of the supported tags in order to realize a printing on the Point terminal.",
                                   "es": "Identificador del subtipo relacionado con las impresiones personalizadas. Debe contener una o más de las etiquetas admitidas para poder realizar una impresión en la terminal Point.",
-                                  "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão na terminal Point."
+                                  "pt": "Identificador do subtipo relacionado a impressões personalizadas. Deve conter uma ou mais das tags suportadas para realizar uma impressão no terminal Point."
                                 }
                               },
                               {
@@ -370,7 +370,7 @@
                           "description": {
                             "en": "The Point terminal does not belong to the user who submitted the request. Check if the value sent for \"terminal_id\" is correct or if the terminal is linked to your account.",
                             "es": "La terminal Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"terminal_id\" es correcto o si la terminal está vinculado a tu cuenta.",
-                            "pt": "O terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se a terminal está vinculado à sua conta."
+                            "pt": "O terminal Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o terminal está vinculado à sua conta."
                           }
                         }
                       ]
@@ -458,7 +458,7 @@
         "title": {
           "en": "Create terminal action",
           "es": "Crear acción de terminal",
-          "pt": "Criar ação da terminal"
+          "pt": "Criar ação do terminal"
         }
       }
     },
@@ -559,7 +559,7 @@
                           "description": {
                             "en": "The action was obtained by the terminal and is ready for process.",
                             "es": "La acción fue obtenida por la terminal y está lista para ser procesada.",
-                            "pt": "A ação foi obtida na terminal e está pronta para ser processada."
+                            "pt": "A ação foi obtida no terminal e está pronta para ser processada."
                           }
                         },
                         {
@@ -567,7 +567,7 @@
                           "description": {
                             "en": "The action has been cancelled, either through the API or the terminal.",
                             "es": "La acción fue cancelada desde la API o desde la terminal.",
-                            "pt": "A ação foi cancelada na API ou na terminal."
+                            "pt": "A ação foi cancelada na API ou no terminal."
                           }
                         },
                         {
@@ -870,7 +870,7 @@
                           "description": {
                             "en": "There is a conflict trying to cancel the order due to its current status. Please note that orders can only be cancelled via API when \"status=created\". If you are trying to cancel an order with status \"status=at_terminal\", you will need to do from the terminal.",
                             "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=at_terminal\", deberás hacerlo desde la terminal.",
-                            "pt": "Há um conflito ao tentar cancelar a order devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar uma order com o estado \"status=at_terminal\", deverá fazê-lo a partir da terminal."
+                            "pt": "Há um conflito ao tentar cancelar a order devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar uma order com o estado \"status=at_terminal\", deverá fazê-lo a partir do terminal."
                           }
                         }
                       ]
@@ -948,7 +948,7 @@
                 "type": "string",
                 "description": {
                   "en": "Identifier of the terminal that will obtain the action. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"NEWLAND_N950__N950NCB123456789\". The serial number can be found on the rear label of the terminal.",
-                  "pt": "Identificador da terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial da terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial da terminal pode ser encontrado na etiqueta traseira.",
+                  "pt": "Identificador do terminal que obterá a ação. Deve ser enviado seguindo o formato \"tipo de terminal + “__” + serial do terminal\", como no exemplo a seguir: \"NEWLAND_N950__N950NCB123456789\". O serial do terminal pode ser encontrado na etiqueta traseira.",
                   "es": "Identificador de la terminal Point que obtendrá la acción. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"NEWLAND_N950__N950NCB123456789\". El número de serie de la terminal puede ser hallado en la etiqueta trasera del mismo."
                 },
                 "example": "NEWLAND_N950__N950NCB123456789"
@@ -958,9 +958,9 @@
                 "description": {
                   "en": "Identifier of the action subtype that will be created for the Point terminal. If the action is \"print\" you must choose between two values: \"invoice\" for .xml that represents electronic invoices, or \"custom\" for a customized printing, or \"image\" for an image printout.",
                   "es": "Identificador del subtipo de acción que se creará para la terminal Point. Si la acción es \"print\" se debe elegir entre dos valores: \"invoice\" para .xml que represente facturas electrónicas, o \"custom\" para una impresión personalizada, o \"image\" para una impresión de imágenes.",
-                  "pt": "Identificador do subtipo de ação que será criado para a terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, ou \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
+                  "pt": "Identificador do subtipo de ação que será criado para o terminal Point. Se a ação for \"print\", você deve escolher entre dois valores: \"invoice\" para .xml que representa notas fiscais eletrônicas, ou \"custom\" para uma impressão personalizada, ou \"image\" para uma impressão de imagem."
                 },
-                "example": "invoice",
+                "example": "custom",
                 "required": true,
                 "enum": [
                   {

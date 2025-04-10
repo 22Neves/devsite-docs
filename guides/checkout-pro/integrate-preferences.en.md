@@ -1,273 +1,20 @@
-# Integrate Checkout Pro
-
-The integration with Checkout Pro allows you to receive payments via our web form from any device in a simple, fast and secure way.
-
-In this documentation you will find all the necessary steps to integrate Checkout Pro through **our SDKs**. To do this, follow the steps described below.
-
----
-live_demo_code_action:
- - title: Try our Checkout Pro
- - description: Build the Checkout Pro visual experience in real-time. When you are all set, download or copy the generated code to add it to your website or share it with a developer.
- - link: /developers/en/live-demo/checkout-pro
- - image: /cow/live-demo-cho-pro.png
- - linkName: Demo
- - buttonDescription: Build your Checkout Pro
----
-
 > SERVER_SIDE
 >
-> h2
+> h1
 >
-> Install Mercado Pago SDK
+> Create and configure a payment preference
 
-The first step to integrate Checkout Pro is to install the Mercado Pago SDK in your project. To do this, use one of the codes available below.
+A **payment preference** is an object or set of information that represents the product or service you want to charge for. Within the Mercado Pago ecosystem, this object is known as `preference`. When creating a payment preference, you can define essential details such as price, quantity, and payment methods, as well as other related configurations for the payment flow.
 
-[[[
-```php
-===
-To install the SDK, you must run the following code in your terminal command line using [Composer](https://getcomposer.org/download):
-===
-php composer.phar require "mercadopago/dx-php"
-```
-```node
-===
-To install the SDK, you must run the following code in your terminal command line using [npm](https://www.npmjs.com/get-npm):
-===
-npm install Mercadopago
-```
-```java
-===
-To install the SDK in your [Maven](http://maven.apache.org/install.html) project, you must add the following dependency to your <code>pom.xml</code> file and run the code <code>maven install</code> in your terminal command line:
-===
-<dependency>
-<groupId>com.mercadopago</groupId>
-<artifactId>sdk-java</artifactId>
-<version>2.1.7</version>
-</dependency>
-```
-```ruby
-===
-To install the SDK, you must run the following code in your terminal command line using [gem](https://rubygems.org/gems/mercadopago-sdk):
-===
-gem install Mercadopago-sdk
-```
-```csharp
-===
-----[mlb]----
-To install the SDK, you must run the following code in the command line of your terminal using [NuGet](https://docs.microsoft.com/en-us/nuget/reference/nuget-exe-cli-reference):
+To create a payment preference, use the method associated with `preference` in the backend SDK. You need to **create a payment preference for each order or payment flow** you want to initiate.
 
-------------
-----[mla, mpe, mlm, mco, mlc, mlu]----
-To install the SDK, you must run the following code in the command line of your terminal using [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
+Below, you will find examples of how to implement this in your backend using the SDK, which is available in different programming languages. Complete the attributes with the appropriate information to reflect the details of each transaction and ensure an accurate payment flow.
 
-------------
-===
-nuget install Mercadopago-sdk
-```
-```python
-===
-To install the SDK, you must run the following code in the command line of your terminal using [pip](https://pypi.org/project/mercadopago/):
-===
-pip3 install MercadoPago
-```
-```go
-go get -u github.com/mercadopago/sdk-go
-```
-]]]
-
-> SERVER_SIDE
+> NOTE
 >
-> h2
+> Nota
 >
-> Create preference
-
-Preferences are sets of information that allow you to configure a product or service that you want to charge, such as price and quantity, as well as other settings related to the defined payment flow.
-
-To create a preference, use one of the SDKs available below, filling in the attributes with the respective information.
-
-[[[
-```php
-<?php
-// Mercado Pago SDK
-use MercadoPago\MercadoPagoConfig;
-// Add Your credentials
-MercadoPagoConfig::setAccessToken("PROD_ACCESS_TOKEN");
-?>
-```
-```node
-// Mercado Pago SDK
-import { MercadoPagoConfig } from 'mercadopago';
-// Add Your credentials
-const client = new MercadoPagoConfig({ accessToken: 'YOUR_ACCESS_TOKEN' });
-```
-```java
-// Mercado Pago SDK
-import com.mercadopago.MercadoPagoConfig;
-// Add Your credentials
-MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
-```
-```ruby
-# Mercado Pago SDK
-require 'mercadopago'
-# Add Your credentials
-sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
-```
-```csharp
-// Mercado Pago SDK
- using MercadoPago.Config;
- // Add Your credentials
-MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
-```
-```python
-# Mercado Pago SDK
-import mercadopago
-# Add Your credentials
-sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
-```
-```go
-import (
-	"github.com/mercadopago/sdk-go/pkg/config"
-)
-
-cfg, err := config.New("{{ACCESS_TOKEN}}")
-if err != nil {
-	fmt.Println(err)
-}
-```
-]]]
-
-When you finish creating the preference, you need to configure it according to your product or service. To do so, use one of the codes available below, filling in the attributes with the respective information.
-
-----[mlb]----
-
-[[[
-```php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "My product",
-      "quantity" => 1,
-      "unit_price" => 25
-    )
-  )
-]);
-?>
-```
-```node
-const preference = new Preference(client);
-
-preference.create({
-  body: {
-    items: [
-      {
-        title: 'My product',
-        quantity: 1,
-        unit_price: 25
-      }
-    ],
-  }
-})
-.then(console.log)
-.catch(console.log);
-```
-```java
- PreferenceItemRequest itemRequest =
-       PreferenceItemRequest.builder()
-           .id("1234")
-           .title("Games")
-           .description("PS5")
-           .pictureUrl("http://picture.com/PS5")
-           .categoryId("games")
-           .quantity(2)
-           .currencyId("BRL")
-           .unitPrice(new BigDecimal("4000"))
-           .build();
-   List<PreferenceItemRequest> items = new ArrayList<>();
-   items.add(itemRequest);
-PreferenceRequest preferenceRequest = PreferenceRequest.builder()
-.items(items).build();
-PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
-```
-```ruby
-# Create a preference request
-preference_data = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 75.56,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference['id']
-```
-```csharp
-// Create the preference request object
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "My Item",
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75.56m,
-        },
-    },
-};
-
-// Create the preference using the client
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# Create a preference item
-preference_data = {
-    "items": [
-        {
-            "title": "My Item",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```go
-client := preference.NewClient(cfg)
-
-request := preference.Request{
-	Items: []preference.ItemRequest{
-		{
-			Title:       "My product",
-			Quantity:    1,
-			UnitPrice:   75.76,
-		},
-	},
-}
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-
-fmt.Println(resource)
-```
-]]]
-
-------------
-----[mla]----
+> You can adapt the Checkout Pro integration to your business model by configuring the attributes of the payment preference. These will allow you to define installments, exclude a payment method, change the expiration date of a specific payment, among other options. To customize your payment preference, access [Checkout customization](/developers/en/docs/checkout-pro/additional-settings).
 
 [[[
 ```php
@@ -282,6 +29,8 @@ $preference = $client->create([
     )
   )
 ]);
+
+echo $preference
 ?>
 ```
 ```node
@@ -302,7 +51,7 @@ preference.create({
 .catch(console.log);
 ```
 ```java
- PreferenceItemRequest itemRequest =
+PreferenceItemRequest itemRequest =
        PreferenceItemRequest.builder()
            .id("1234")
            .title("Games")
@@ -321,665 +70,12 @@ PreferenceClient client = new PreferenceClient();
 Preference preference = client.create(request);
 ```
 ```ruby
-# Create a preference request
-preference_data = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 75.56,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference['id']
-```
-```csharp
-// Create the preference request object
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "My Item",
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75.56m,
-        },
-    },
-};
-
-// Create the preference using the client
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# Create a preference item
-preference_data = {
-    "items": [
-        {
-            "title": "My Item",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```go
-client := preference.NewClient(cfg)
-
-request := preference.Request{
-	Items: []preference.ItemRequest{
-		{
-			Title:       "My product",
-			Quantity:    1,
-			UnitPrice:   75.76,
-		},
-	},
-}
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-
-fmt.Println(resource)
-```
-]]]
-
-------------
-----[mlm]----
-
-[[[
-```php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "My product",
-      "quantity" => 1,
-      "unit_price" => 85
-    )
-  )
-]);
-?>
-```
-```node
-const preference = new Preference(client);
-
-preference.create({
-  body: {
-    items: [
-      {
-        title: 'My product',
-        quantity: 1,
-        unit_price: 85
-      }
-    ],
-  }
-})
-.then(console.log)
-.catch(console.log);
-```
-```java
- PreferenceItemRequest itemRequest =
-       PreferenceItemRequest.builder()
-           .id("1234")
-           .title("Games")
-           .description("PS5")
-           .pictureUrl("http://picture.com/PS5")
-           .categoryId("games")
-           .quantity(2)
-           .currencyId("BRL")
-           .unitPrice(new BigDecimal("4000"))
-           .build();
-   List<PreferenceItemRequest> items = new ArrayList<>();
-   items.add(itemRequest);
-PreferenceRequest preferenceRequest = PreferenceRequest.builder()
-.items(items).build();
-PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
-```
-```ruby
-# Create a preference request
-preference_data = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 75.56,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference['id']
-```
-```csharp
-// Create the preference request object
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "My Item",
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75.56m,
-        },
-    },
-};
-
-// Create the preference using the client
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# Create a preference item
-preference_data = {
-    "items": [
-        {
-            "title": "My Item",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```go
-client := preference.NewClient(cfg)
-
-request := preference.Request{
-	Items: []preference.ItemRequest{
-		{
-			Title:       "My product",
-			Quantity:    1,
-			UnitPrice:   75.76,
-		},
-	},
-}
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-
-fmt.Println(resource)
-```
-]]]
-
-------------
-----[mlu]----
-
-[[[
-```php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "My product",
-      "quantity" => 1,
-      "unit_price" => 200
-    )
-  )
-]);
-?>
-```
-```node
-const preference = new Preference(client);
-
-preference.create({
-  body: {
-    items: [
-      {
-        title: 'My product',
-        quantity: 1,
-        unit_price: 200
-      }
-    ],
-  }
-})
-.then(console.log)
-.catch(console.log);
-```
-```java
- PreferenceItemRequest itemRequest =
-       PreferenceItemRequest.builder()
-           .id("1234")
-           .title("Games")
-           .description("PS5")
-           .pictureUrl("http://picture.com/PS5")
-           .categoryId("games")
-           .quantity(2)
-           .currencyId("BRL")
-           .unitPrice(new BigDecimal("4000"))
-           .build();
-   List<PreferenceItemRequest> items = new ArrayList<>();
-   items.add(itemRequest);
-PreferenceRequest preferenceRequest = PreferenceRequest.builder()
-.items(items).build();
-PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
-```
-```ruby
-# Create a preference request
-preference_data = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 75.56,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference['id']
-```
-```csharp
-// Create the preference request object
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "My Item",
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75.56m,
-        },
-    },
-};
-
-// Create the preference using the client
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# Create a preference item
-preference_data = {
-    "items": [
-        {
-            "title": "My Item",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```go
-client := preference.NewClient(cfg)
-
-request := preference.Request{
-	Items: []preference.ItemRequest{
-		{
-			Title:       "My product",
-			Quantity:    1,
-			UnitPrice:   75.76,
-		},
-	},
-}
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-
-fmt.Println(resource)
-```
-]]]
-
-------------
-----[mpe]----
-
-[[[
- ```php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "My product",
-      "quantity" => 1,
-      "unit_price" => 20
-    )
-  )
-]);
-?>
-```
-```node
-const preference = new Preference(client);
-
-preference.create({
-  body: {
-    items: [
-      {
-        title: 'My product',
-        quantity: 1,
-        unit_price: 20
-      }
-    ],
-  }
-})
-.then(console.log)
-.catch(console.log);
-```
-```java
- PreferenceItemRequest itemRequest =
-       PreferenceItemRequest.builder()
-           .id("1234")
-           .title("Games")
-           .description("PS5")
-           .pictureUrl("http://picture.com/PS5")
-           .categoryId("games")
-           .quantity(2)
-           .currencyId("BRL")
-           .unitPrice(new BigDecimal("4000"))
-           .build();
-   List<PreferenceItemRequest> items = new ArrayList<>();
-   items.add(itemRequest);
-PreferenceRequest preferenceRequest = PreferenceRequest.builder()
-.items(items).build();
-PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
-```
-```ruby
-# Create a preference request
-preference_data = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 75.56,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference['id']
-```
-```csharp
-// Create the preference request object
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "My Item",
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75.56m,
-        },
-    },
-};
-
-// Create the preference using the client
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# Create a preference item
-preference_data = {
-    "items": [
-        {
-            "title": "My Item",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```go
-client := preference.NewClient(cfg)
-
-request := preference.Request{
-	Items: []preference.ItemRequest{
-		{
-			Title:       "My product",
-			Quantity:    1,
-			UnitPrice:   75.76,
-		},
-	},
-}
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-
-fmt.Println(resource)
-```
-]]]
-
-------------
-----[mco]----
-
-[[[
- ```php
-<?php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "My product",
-      "quantity" => 1,
-      "unit_price" => 20000
-    )
-  )
-]);
-?>
-```
-```node
-const preference = new Preference(client);
-
-preference.create({
-  body: {
-    items: [
-      {
-        title: 'My product',
-        quantity: 1,
-        unit_price: 20000
-      }
-    ],
-  }
-})
-.then(console.log)
-.catch(console.log);
-```
-```java
- PreferenceItemRequest itemRequest =
-       PreferenceItemRequest.builder()
-           .id("1234")
-           .title("Games")
-           .description("PS5")
-           .pictureUrl("http://picture.com/PS5")
-           .categoryId("games")
-           .quantity(2)
-           .currencyId("BRL")
-           .unitPrice(new BigDecimal("4000"))
-           .build();
-   List<PreferenceItemRequest> items = new ArrayList<>();
-   items.add(itemRequest);
-PreferenceRequest preferenceRequest = PreferenceRequest.builder()
-.items(items).build();
-PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
-```
-```ruby
-# Create a preference request
-preference_data = {
-  items: [
-    {
-      title: 'My Item',
-      unit_price: 75,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference['id']
-```
-```csharp
-// Create the preference request object
-var request = new PreferenceRequest
-{
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "My Item",
-            Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75m,
-        },
-    },
-};
-
-// Create the preference using the client
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
 # Create a preference object
 preference_data = {
-    "items": [
-        {
-            "title": "My Item",
-            "quantity": 1,
-            "unit_price": 75
-            
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```go
-client := preference.NewClient(cfg)
-
-request := preference.Request{
-	Items: []preference.ItemRequest{
-		{
-			Title:       "My product",
-			Quantity:    1,
-			UnitPrice:   75.76,
-		},
-	},
-}
-
-resource, err := client.Create(context.Background(), request)
-if err != nil {
-	fmt.Println(err)
-	return
-}
-
-fmt.Println(resource)
-```
-]]]
-
-> WARNING
->
-> Important
->
-> The value of `unit_price` must be an integer.
-
-------------
-----[mlc]----
-
-[[[
- ```php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "My product",
-      "quantity" => 1,
-      "unit_price" => 4500
-    )
-  )
-]);
-?>
-```
-```node
-const preference = new Preference(client);
-
-preference.create({
-  body: {
-    items: [
-      {
-        title: 'My product',
-        quantity: 1,
-        unit_price: 4500
-      }
-    ],
-  }
-})
-.then(console.log)
-.catch(console.log);
-```
-```java
- PreferenceItemRequest itemRequest =
-       PreferenceItemRequest.builder()
-           .id("1234")
-           .title("Games")
-           .description("PS5")
-           .pictureUrl("http://picture.com/PS5")
-           .categoryId("games")
-           .quantity(2)
-           .currencyId("BRL")
-           .unitPrice(new BigDecimal("4000"))
-           .build();
-   List<PreferenceItemRequest> items = new ArrayList<>();
-   items.add(itemRequest);
-PreferenceRequest preferenceRequest = PreferenceRequest.builder()
-.items(items).build();
-PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
-```
-```ruby
-# Create a preference request
-preference_data = {
   items: [
     {
-      title: 'My Item',
-      unit_price: 75,
+      title: 'My product',
+      unit_price: 75.56,
       quantity: 1
     }
   ]
@@ -987,7 +83,7 @@ preference_data = {
 preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 
-# This value replaces the String "<%= @preference_id %>" in your HTML
+# This value will replace the string "<%= @preference_id %>" in your HTML
 @preference_id = preference['id']
 ```
 ```csharp
@@ -998,10 +94,10 @@ var request = new PreferenceRequest
     {
         new PreferenceItemRequest
         {
-            Title = "My Item",
+            Title = "My product",
             Quantity = 1,
-            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-            UnitPrice = 75m,
+            CurrencyId = "ARS",
+            UnitPrice = 75.56m,
         },
     },
 };
@@ -1011,14 +107,13 @@ var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
-# Create a preference object
+# Create an item in the preference
 preference_data = {
     "items": [
         {
-            "title": "My Item",
+            "title": "My product",
             "quantity": 1,
-            "unit_price": 75
-            
+            "unit_price": 75.76,
         }
     ]
 }
@@ -1027,6 +122,7 @@ preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
 ```go
+
 client := preference.NewClient(cfg)
 
 request := preference.Request{
@@ -1049,42 +145,16 @@ fmt.Println(resource)
 ```
 ]]]
 
-> WARNING
->
-> Important
->
-> The value of `unit_price` must be an integer.
+## Obtain the preference identifier
 
-------------
+The preference identifier is a unique transaction identifier for a specific payment request. To obtain it, you need to run your application.
 
-> CLIENT_SIDE
->
-> h2
->
-> Choosing the type of integration
+In the response, you will get the **preference identifier** in the `ID` property. **Save this value as you will need it in the next step for your integration** on a website or a mobile application.
 
-With the SDK installed and configured correctly in your project, you are ready to proceed with the integration. To isso, choose the type of integration that best suits your needs, choose **Web** or **Mobile**, and follow the steps detailed in the section corresponding to the type of solution chosen
+Below, we show an example of how the `ID` attribute with the preference identifier looks in a response.
 
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Card
- - card_title: Checkout Pro for Web
- - card_description: Offer different payment methods to customers on a website in a simple, fast, and secure manner.
- - card_button:  /developers/en/docs/checkout-pro/integrate-checkout-pro/web
- - card_buttonDescription: Integrar
- - card_pillText: AVAILABLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
- - card_avaible: true
- - card_icon: Loading
- - card_title: Checkout Pro for Mobile
- - card_description: Offer various payment methods to customers in your mobile application, using the language that best suits your project.
- - card_button: /developers/en/docs/checkout-pro/integrate-checkout-pro/mobile
- - card_buttonDescription: Integrar
- - card_pillText: AVAILABLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
----
+```
+"id": "787997534-6dad21a1-6145-4f0d-ac21-66bf7a5e7a58"
+```
+
+Once you have configured the payment preference, it is time to [Configure the back URLs](/developers/en/docs/checkout-pro/configure-back-urls) to which your customers will be redirected at the end of the payment process.

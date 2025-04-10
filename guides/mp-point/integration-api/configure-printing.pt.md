@@ -1,6 +1,6 @@
 # Configurar impressões
 
-A API de Impressões permite integrar seus sistemas para gerenciar impressões nas terminais Point configuradas. Este recurso possibilita imprimir imagens personalizadas diretamente de um ponto de venda (PDV), utilizando a impressora integrada dos dispositivos Smart. 
+A API de Impressões permite integrar seus sistemas para gerenciar impressões nos terminais Point configurados. Este recurso possibilita realizar impressões personalizadas e de imagens diretamente de um ponto de venda (PDV), utilizando a impressora integrada dos dispositivos **Point Smart** e **Point Smart 2**.
 
 Utilize os endpoints abaixo para gerenciar a fila de impressões, levando em conta as especificações de cada endpoint. Garanta que o terminal esteja corretamente configurado no **[modo PDV (Ponto de Venda)](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/configure-devices#bookmark_ativar_modo_pdv_no_dispositivo_point)**.
 
@@ -8,8 +8,8 @@ Utilize os endpoints abaixo para gerenciar a fila de impressões, levando em con
 >
 > Para a impressão de imagens, tenha em mente que os formatos aceitos são PNG ou JPEG, com codificação Base64 e um tamanho máximo de 1MB. As imagens que excederem as dimensões do rolo de papel serão ajustadas automaticamente.
 
-   - [Criar ação da terminal](/developers/pt/reference/mercado_pago_point/impressions/post): Permite a criação de uma nova ação de impressão para Mercado Pago Point, seja de imagens ou [impressões personalizadas](/developers/pt/docs/mp-point/integration-configuration/configure-printing#bookmark_tags_personalizadas). Em caso de sucesso, a resposta devolverá um código de status 201.
-   - [Obter ação por ID](/developers/pt/reference/mercado_pago_point/impressions/get): Permite consultar todas as informações da ação de impressão criada para uma terminal Point através do ID obtido na resposta à sua criação. A consulta da ação de impressão fornece uma ferramenta prática para verificar a ação enviada pela API, especialmente no caso de falhas de impressão na terminal.
+   - [Criar ação do terminal](/developers/pt/reference/mercado_pago_point/impressions/post): Permite a criação de uma nova ação de impressão para Mercado Pago Point, seja de imagens ou [impressões personalizadas](/developers/pt/docs/mp-point/integration-configuration/configure-printing#bookmark_tags_personalizadas). Em caso de sucesso, a resposta devolverá um código de status 201.
+   - [Obter ação por ID](/developers/pt/reference/mercado_pago_point/impressions/get): Permite consultar todas as informações da ação de impressão criada para o terminal Point através do ID obtido na resposta à sua criação. A consulta da ação de impressão fornece uma ferramenta prática para verificar a ação enviada pela API, especialmente no caso de falhas de impressão no terminal.
    - [Cancelar ação por ID](/developers/pt/reference/mercado_pago_point/impressions_cancel/post): Permite cancelar uma ação criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma ação com status `created` pode ser cancelada. Em caso de sucesso, a solicitação devolverá uma resposta com status 200. 
 
 Aguarde até que a tentativa chegue ao terminal e a impressão seja processada. Se a impressão não chegar automaticamente, pressione o botão **Atualizar** para buscar a tentativa manualmente.
