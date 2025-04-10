@@ -52,7 +52,7 @@ product_landing_how_works:
  - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
  - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
  - button_description: Como integrar
- - button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
 
 ---
@@ -63,7 +63,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
+ - column_button_link: /developers/pt/docs/checkout-pro/create-application
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir à visão geral
@@ -115,5 +115,5 @@ product_landing_how_integrate:
  - list_item: Testar a integração
  - list_item: Sair à produção
  - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-pro/create-aplication
+ - button_link: /developers/pt/docs/checkout-pro/create-application
 ---

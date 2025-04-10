@@ -52,7 +52,7 @@ product_landing_how_works:
  - list_title: They can choose their preferred payment method, either one saved in their account or a new one entered.
  - list_title: Once the purchase is complete, they are redirected to your website or the configured destination.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-pro/create-aplication
+ - button_link: /developers/en/docs/checkout-pro/create-application
 ---
 
 ---
@@ -63,7 +63,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
  - column_product: Checkout Pro
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-pro/integrate-checkout-pro/web
+ - column_button_link: /developers/en/docs/checkout-pro/create-application
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Go to the summary
@@ -115,5 +115,5 @@ product_landing_how_integrate:
  - list_item: Test the integration
  - list_item: Go to production
  - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-pro/create-aplication
+ - button_link: /developers/en/docs/checkout-pro/create-application
 ---
