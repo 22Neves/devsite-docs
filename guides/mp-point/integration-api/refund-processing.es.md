@@ -18,16 +18,6 @@ Al elegir la integración Point vía API para Punto de Venta, cuentas con tres o
 
 Puedes elegir la opción de reembolso que mejor se adapte a tus necesidades. Sin embargo, recomendamos utilizar nuestra API para dispositivos Point en los casos en los que se requiera la **impresión de tickets de reembolso, o bien realizar reembolsos aproximando la tarjeta al dispositivo**. 
 
-
-----[mlb]----
-
-> WARNING
->
-> Importante
->
-> El procesamiento de reembolsos sólo está disponible para dispositivos Point Pro 2.
-------------
-
 Para realizar reembolsos vía API deberás, primero, crear una intención de reembolso, y luego procesarla. Adicionalmente, puedes consultar el estado de una intención de reembolso o cancelarla. Continúa leyendo para saber cómo llevar adelante cada operación.
 
 ## Crear intención de reembolso
@@ -66,7 +56,7 @@ Como respuesta, recibirás algo similar a esto:
 
 ## Procesar intención de reembolso
 
-Una vez creada la intención de reembolso, puedes obtenerla desde tu dispositivo Point. Para eso, inicia la transacción oprimiendo el botón correspondiente: en caso de Point Plus y Point Pro 2, el **botón verde**, y en el caso de Point Smart, el botón digital **Actualizar**.
+Una vez creada la intención de reembolso, puedes obtenerla desde tu dispositivo Point. Para eso, inicia la transacción oprimiendo el botón correspondiente: en caso de Point Plus, el **botón verde**, y en el caso de Point Smart, el botón digital **Actualizar**.
 
 ## Consultar el estado de una intención de reembolso
 

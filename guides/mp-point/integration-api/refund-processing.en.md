@@ -18,15 +18,6 @@ When choosing a Point integration via API for Point of Sale, you have three opti
 
 You can choose the refund option that best suits your needs. However, we recommend using our API for Point Devices in **cases where the printing of refund tickets is required, or for refunds made by tapping the card on the device**.
 
-----[mlb]----
-
-> WARNING
->
-> Important
->
-> Refund processing is only available for Point Pro 2 devices.
-------------
-
 To perform refunds via API, first you will need to create a refund intent and then process it. Additionally, you can check the status of a refund intent or cancel it. Keep reading to learn how to proceed with each operation.
 
 ## Create refund intent
@@ -64,7 +55,7 @@ In response, you will receive something similar to this:
 ```
 
 ## Process your refund intent
-Once the refund intent has been created, you can obtain it from your Point device. To start the transaction, press on the corresponding key: in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the digital button **Update**.
+Once the refund intent has been created, you can obtain it from your Point device. To start the transaction, press on the corresponding key: in the case of Point Plus the **green button** and, in the case of the Point Smart, the digital button **Update**.
 
 ## Check the status of your refund intent
 If you want to know the status of a particular refund intent, you can [check its current status](/developers/en/reference/integrations_api/_point_integration-api_refund_refundintentid/get) using the `ID` that you received in the response when creating it.

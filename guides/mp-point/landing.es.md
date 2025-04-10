@@ -5,6 +5,11 @@ content_section_with_media:
  - media_image: /point-api/point-landing.png
 ---
 
+> RED_MESSAGE
+>
+> Mercado Pago está evolucionando la forma de integrar y ahora ofrecemos una nueva API para realizar integraciones con Mercado Pago Point, que descontinuará la actual. En caso de estar integrando esta solución de cobro por primera vez, recomendamos que utilices los [endpoints de la nueva API Orders](/developers/es/reference/order/in-person-payments/point/terminal/get). <br>
+> Si, en cambio, ya cuentas con una integración con Mercado Pago Point, próximamente recibirás más información sobre el proceso de migración.
+
 --- mini_landing_separator ---
 
 >>>> Disponibilidad por país<<<<
@@ -53,8 +58,6 @@ bullet_section_with_media:
 bullet_section_with_media: 
  - title: Dispositivos disponibles
  - type: reversed
- - benefit_title: Point Pro 2
- - benefit_message:
  - benefit_title: Point Smart
  - benefit_message:
  - benefit_title: Point Mini NFC 1
