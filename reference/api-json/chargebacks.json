@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "This endpoint allows you to check the status of a payment chargeback iniciated by a payer. You must inform the ID of the chargeback that was notified to you and, if the request is correct, a response with status code 200 and all the information related to it will be returned",
-          "pt": "Este endpoint permite consultar o estado do processo de desconhecimento de um pagamento por parte de um pagador. Você deverá informar o ID do estorno que lhe foi notificado e, caso a solicitação esteja correta, será devolvida uma resposta com status code 200 e todas as informações relacionadas a ele",
+          "pt": "Este endpoint permite consultar o estado do processo de desconhecimento de um pagamento por parte de um pagador. Você deverá informar o ID da contestação que lhe foi notificado e, caso a solicitação esteja correta, será devolvida uma resposta com status code 200 e todas as informações relacionadas a ele",
           "es": "Este endpoint permite consultar el estado del proceso de desconocimiento de un pago por parte de un pagador. Deberás informar el ID del contracargo que te fue notificado y, si la solicitud es correcta, te será devuelta una respuesta con status code 200 y toda la información relativa al mismo"
         },
         "parameters": [
@@ -17,7 +17,7 @@
             "in": "path",
             "description": {
               "en": "The \"id\" parameter represents a unique identifier for the chargeback transaction. If you do not have this specific information, simply insert the payment ID for which you want to obtain the chargeback details. It is important to note that when using the payment ID, a small modification to the endpoint is required in order to make the call following the following format - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID_.",
-              "pt": "O parâmetro \"id\" refere-se a um identificador exclusivo para a transação de estorno. Caso não possua essa informação, basta inserir o ID do pagamento para o qual deseja obter os detalhes do estorno. É fundamental destacar que, ao utilizar o ID de pagamento, é necessário efetuar uma pequena alteração no endpoint a fim de realizar a chamada corretamente. A URL modificada deve seguir o seguinte formato - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.",
+              "pt": "O parâmetro \"id\" refere-se a um identificador exclusivo para a transação da contestação. Caso não possua essa informação, basta inserir o ID do pagamento para o qual deseja obter os detalhes da contestação. É fundamental destacar que, ao utilizar o ID de pagamento, é necessário efetuar uma pequena alteração no endpoint a fim de realizar a chamada corretamente. A URL modificada deve seguir o seguinte formato - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID.",
               "es": "El parámetro \"id\" corresponde a un identificador único para la transacción de reembolso. En caso de no contar con esta información, simplemente debes ingresar el ID de pago para el cual deseas obtener los detalles del reembolso. Es importante resaltar que al utilizar el ID de pago, es necesario realizar una pequeña modificación en el endpoint para poder realizar la llamada de la siguiente manera - https://api.mercadopago.com/v1/chargebacks/search?payment_id=PAYMENT_ID."
             },
             "required": true,
@@ -44,7 +44,7 @@
                       "example": "217000087654321000",
                       "description": {
                         "en": "Unique chargeback identifier.",
-                        "pt": "Identificador único do estorno",
+                        "pt": "Identificador único da contestação",
                         "es": "Identificador único del contracargo"
                       }
                     },
@@ -66,7 +66,7 @@
                       "example": "BRL",
                       "description": {
                         "en": "Chergeback amount currency.",
-                        "pt": "Moeda do valor do estorno.",
+                        "pt": "Moeda do valor da contestação.",
                         "es": "Moneda del monto de la contracargo."
                       }
                     },
@@ -75,7 +75,7 @@
                       "example": "108.43",
                       "description": {
                         "en": "Chargeback amount.",
-                        "pt": "Valor do estorno.",
+                        "pt": "Valor da contestação.",
                         "es": "Monto de la contracargo."
                       }
                     },
@@ -93,7 +93,7 @@
                       "example": "true",
                       "description": {
                         "en": "Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.",
-                        "pt": "Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se o estorno puder ser coberto.",
+                        "pt": "Define se o dinheiro devolvido ao comprador pode ser coberto pelo Mercado Pago. Só é possível continuar com o restante das etapas se a contestação puder ser coberta.",
                         "es": "Define si el dinero devuelto al comprador puede ser cubierto por Mercado Pago. Solo es posible continuar con el resto de los pasos si el contracargo puede ser cubierto."
                       }
                     },
@@ -102,7 +102,7 @@
                       "example": "true",
                       "description": {
                         "en": "Whether the seller needs to send documentation for this chargeback.",
-                        "pt": "Se o vendedor precisa enviar a documentação para este estorno.",
+                        "pt": "Se o vendedor precisa enviar a documentação para esta contestação.",
                         "es": "Si el vendedor debe enviar la documentación para el contracargo."
                       }
                     },
@@ -160,7 +160,7 @@
                           "description": {
                             "en": "Documentation wasn't needed for this chargeback.",
                             "es": "No se necesitó documentación para este contracargo.",
-                            "pt": "A documentação não foi necessária para este estorno."
+                            "pt": "A documentação não foi necessária para esta contestação."
                           }
                         }
                       ]
@@ -211,7 +211,7 @@
                       "format": "date",
                       "description": {
                         "en": "Chargeback's last day to send documentation.",
-                        "pt": "Último dia para o envio da documentação do estorno.",
+                        "pt": "Último dia para o envio da documentação da contestação.",
                         "es": "Último día para el envío de documentación del contracargo."
                       }
                     },
@@ -221,7 +221,7 @@
                       "format": "date",
                       "description": {
                         "en": "Chargeback’s creation date.",
-                        "pt": "Data de criação do estorno.",
+                        "pt": "Data de criação da contestação.",
                         "es": "Fecha de creación del contracargo."
                       }
                     },
@@ -231,7 +231,7 @@
                       "format": "date",
                       "description": {
                         "en": "Chargeback's last modified date.",
-                        "pt": "Data da última modificação do estorno.",
+                        "pt": "Data da última modificação da contestação.",
                         "es": "Fecha de última modificación del contracargo."
                       }
                     },
@@ -240,7 +240,7 @@
                       "example": "true",
                       "description": {
                         "en": "Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
-                        "pt": "Se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
+                        "pt": "Se a contestação será processada em modo sandbox ou em produção. Se TRUE, a contestação será processado em modo de produção. Se FALSE, a contestação será processada no modo sandbox.",
                         "es": "Si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
                       }
                     }
@@ -252,7 +252,7 @@
         },
         "title": {
           "en": "Get chargeback",
-          "pt": "Obter estorno",
+          "pt": "Obter contestação",
           "es": "Obtener contracargo"
         }
       }
@@ -1683,7 +1683,7 @@
                       "example": null,
                       "description": {
                         "en": "This parameter indicates Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
-                        "pt": "Este parâmetro indica se o estorno será processada em modo sandbox ou em produção. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
+                        "pt": "Este parâmetro indica se a contestação será processada em modo sandbox ou em produção. Se TRUE, a contestação será processada em modo de produção. Se FALSE, a contestação será processada no modo sandbox.",
                         "es": "Este parámetro indica si la devolución será procesada en el \"sandbox\" o en el modo de producción. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
                       }
                     },

@@ -1632,3 +1632,122 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     }
 }'
 ```
+
+## Gambling
+
+Estes são os dados específicos para a indústria de **gambling** que podem ser adicionados à sua integração para melhorar a aprovação dos pagamentos.
+
+### Sobre itens
+
+----[mla, mlm, mlu, mco, mlb, mpe]----
+| Array `items` | Tipo | Descrição |
+| --- | --- | --- |
+| `id` | String | Código de identificação do item. |
+| `title` | String | Nome do item. |
+| `warranty` | Boolean | `true` se é, `false` se não é. |
+| `category_id` | String | Categoria do item. |
+| `quantity` | Integer | Quantidade de unidades do item. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Pode ser um valor inteiro ou em casas decimais. |
+------------
+
+----[mlc]----
+| Array `items` | Tipo | Descrição |
+| --- | --- | --- |
+| `id` | String | Código de identificação do item. |
+| `title` | String | Nome do item. |
+| `warranty` | Boolean | `true` se é, `false` se não é. |
+| `category_id` | String | Categoria do item. |
+| `quantity` | Integer | Quantidade de unidades do item. |
+| `unit_price` | Float | Preço unitário atribuído ao item. Deve ser um valor inteiro. |
+------------
+
+### Sobre o comprador
+
+| Object `payer` | Tipo | Descrição |
+| --- | --- | --- |
+| `first_name` | String | Nome do comprador. |
+| `last_name` | String | Sobrenome do comprador. |
+| `identification` | Object | Dados de identificação do comprador. |
+| `type` | String | Tipo de identificação. Está dentro do objeto `identification`. |
+| `number` | String | Número de identificação. Está dentro do objeto `identification`. |
+| `phone` | Object | Telefone do comprador. |
+| `area_code` | Integer | Código de área do comprador. Está dentro do objeto `phone`. |
+| `number` | Integer | Número de telefone do comprador. Está dentro do objeto `phone`. |
+| `address` | Object | Dados do endereço do comprador. |
+| `zip_code` | String | Código postal do comprador. Está dentro do objeto `address`. |
+| `street_name` | String | Nome da rua do endereço do comprador. Está dentro do objeto `address`. |
+| `street_number` | Integer | Número da rua do endereço do comprador. Está dentro do objeto `address`. |
+| `authentication_type` | Enum | Tipo de autenticação. Pode ser "Gmail", "Facebook", "Web Nativa" ou "Outro". |
+| `registration_date` | Date | Data de registro do comprador no site. |
+| `is_prime_user` | Boolean | Indica se o usuário é *premium*. Caso seja, use `true` e, caso não seja, use `false`. |
+| `is_first_purchase_online` | Boolean | Indica se é a primeira compra do cliente. Caso seja, use `true` e, caso não seja, use `false`. |
+| `last_purchase` | Date | Data da última compra no site. |
+
+```curl
+curl --location 'https://api.mercadopago.com/checkout/preferences' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer {{access_token}}' \
+--data-raw '{
+    "auto_return": "approved",
+    "back_urls": {
+        "failure": "https://www.mercadopago.com/home/failure",
+        "pending": "https://www.mercadopago.com/home/pending",
+        "success": "https://www.mercadopago.com/home/success"
+    },
+    "notification_url": "https://webhook.site/xyz",
+    "expires": false,
+    "external_reference": "order-123",
+    "date_of_expiration": "2026-03-12T12:58:41.425-04:00",
+    "items": [
+        {
+            "id": "1234",
+            "currency_id": "MXN",
+            "title": "Producto",
+            "picture_url": "",
+            "description": "Descripción de producto",
+            "category_id": "lottery",
+            "quantity": 1,
+            "unit_price": 150
+        }
+    ],
+    "payer": {
+        "phone": {
+            "area_code": "11",
+            "number": "619 911 306"
+        },
+        "address": {
+            "zip_code": "52",
+            "street_name": "Insurgentes Sur",
+            "street_number": 1000
+        },
+        "identification": {
+          "identification_type": "-",
+          "identification_number": "12345678"
+        },
+        "email": "carlota.castellanos@yourdomain.com",
+        "name": "Carlota",
+        "surname": "Castellanos",
+        "date_created": "",
+        "authentication_type": "Facebook",
+        "registration date": "2015-06-02T12:58:41.425-04:00",
+        "is_first_purchase_online": false,
+        "is_prime_user": false,
+        "last_purchase": "2020-01-02T12:58:41.425-04:00"
+    },
+    "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": ""
+            }
+        ],
+        "default_installments": null,
+        "default_payment_method_id": null,
+        "excluded_payment_types": [
+            {
+                "id": ""
+            }
+        ],
+        "installments": null
+    }
+}'
+```
