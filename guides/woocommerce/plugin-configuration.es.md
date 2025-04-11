@@ -24,23 +24,27 @@ A continuación, explicaremos cómo configurar cada elemento del plugin.
 
 Conecte su cuenta de Mercado Pago a su tienda para recibir los pagos de las ventas. Siga los pasos a continuación para completar la integración.
 
-1. Haz clic en **1. Vincule su tienda a una cuenta de Mercado Pago** para ser redirigido a Mercado Pago y seleccionar la cuenta donde desea recibir los pagos de sus ventas.
+1. Seleccione su país de la lista del menú desplegable.
+
+![Plugin MP](/images/woocomerce/automation-cred-0-es.png)
+
+2. Haz clic en **1. Vincule su tienda a una cuenta de Mercado Pago** para ser redirigido a Mercado Pago y seleccionar la cuenta donde desea recibir los pagos de sus ventas.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
-2. Si ya has iniciado sesión en tu cuenta de Mercado Pago, esta etapa se omitirá automáticamente. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta y continuar con la vinculación.
+3. Si ya has iniciado sesión en tu cuenta de Mercado Pago, esta etapa se omitirá automáticamente. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta y continuar con la vinculación.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1.1-es.png)
 
-3. Se abrirá una nueva ventana para que elija la cuenta de recepción de los pagos, ya sea la suya o la de otra persona.
+4. Se abrirá una nueva ventana para que elija la cuenta de recepción de los pagos, ya sea la suya o la de otra persona.
 
 ![Plugin MP](/images/woocomerce/automation-cred-2-es.png)
 
-4. Espere hasta que la vinculación se haya completado.
+5. Espere hasta que la vinculación se haya completado.
 
 ![Plugin MP](/images/woocomerce/automation-cred-3-es.png)
 
-5. ¡Listo! La vinculación se ha completado con éxito. Ahora, puede avanzar para personalizar su tienda.
+6. ¡Listo! La vinculación se ha completado con éxito. Ahora, puede avanzar para personalizar su tienda.
 
 ![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 
