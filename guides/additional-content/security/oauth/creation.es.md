@@ -39,7 +39,7 @@ Siga los pasos a continuación para habilitar y configurar el uso del flujo de c
 3. Después de generar y cifrar los campos, será necesario enviar los códigos respectivos a Mercado Pago a través de `query_params`. Para eso, utiliza la URL de autenticación presentada a continuación, reemplazando los campos necesarios según se describen debajo.
 
 ```URL
-https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
+https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_IDredirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
 - **Redirect_uri**: URL proporcionada en el campo "URLs de redireccionamiento" de [tu aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
