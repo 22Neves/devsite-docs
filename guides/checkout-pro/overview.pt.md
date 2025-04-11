@@ -99,15 +99,30 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Como integrar
  - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
- - image_text: Explore exemplos de código
- - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Conta de vendedor
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
+---
+
+<pre class="mermaid">
+flowchart TD
+    A["Mercado Pago Developers: Tus integraciones"] --> B["Crear una aplicación"]
+    B --> C["Construir el ambiente de desarrollo"]
+    C --> D["Crear y configurar la preferencia de pago"]
+    D -- Monto, Medios de pago, Detalles, Otros --> F["Configurar las notificaciones de pago"]
+    F -- Webhooks e IPN --> E["Probar la integración"]
+    E -- Pruebas exitosas --> H["Salir a producción"]
+    E -- Errores detectados --> I["Revisar configuración y corregir"]
+    I --> H
+    H --> J["Medir calidad"]
+</pre>
+
+---
+product_landing_how_integrate:
  - list_title: Processo de integração
+ - list_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida.
  - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
  - list_item: Construir o ambiente de desenvolvimento
  - list_item: Criar e configurar a preferência de pagamento
