@@ -40,9 +40,7 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 ![Manage](/images/shopify/pix-manage-account.png) 
 
-> WARNING
->
-> Importante
+> RED_MESSAGE
 >
 > Se você já instalou o aplicativo [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não é necessário inserir suas credenciais novamente. Avance para o passo 13 deste tutorial.
 
