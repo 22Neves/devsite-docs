@@ -40,7 +40,7 @@ Siga os passos abaixo para habilitar e configurar o uso o fluxo de código de au
 3. Após gerar e criptografar os campos, será necessário enviar os respectivos códigos ao Mercado Pago. Para isso, envie via `query_params` utilizando a URL de autenticação abaixo.
 
 ```URL
-https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
+https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_IDredirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
 - **Redirect_uri**: URL informada no campo "Redirect URL" da [sua aplicação](/developers/pt/docs/your-integrations/application-details).
