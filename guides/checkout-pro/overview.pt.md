@@ -44,7 +44,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/11/1744393228322-chopromla.gif
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
@@ -104,6 +104,8 @@ product_landing_how_integrate:
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
+ - list_title: Processo de integração
+ - list_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida.
 ---
 
 <pre class="mermaid">
@@ -121,8 +123,6 @@ flowchart TD
 
 ---
 product_landing_how_integrate:
- - list_title: Processo de integração
- - list_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida.
  - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
  - list_item: Construir o ambiente de desenvolvimento
  - list_item: Criar e configurar a preferência de pagamento
