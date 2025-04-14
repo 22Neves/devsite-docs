@@ -92,7 +92,7 @@ product_landing_what_differentiates:
  - line_values: Money in account, ----[mlb]----Pix, ------------ credit or debit card, ----[mlb, mla, mlm]----Credit line, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Money in account, ----[mlb]----Pix, ------------ credit or debit card, ----[mlb, mla, mlm]----Credit line, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Money in account, ----[mlb]----Pix, ------------ credit or debit card, ----[mlb, mla, mlm]----Credit line, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Availability by country
  - line_type: sites
- - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
+ - line_values: all|all|mla, mlb, mlc, mlm, mpe, mlu
 ---
 
 ---
