@@ -122,7 +122,7 @@ Ao acessar as credenciais de produção, serão exibidos os seguintes pares de c
 
 Se você estiver desenvolvendo para outra pessoa ou estiver recebendo ajuda durante a integração ou configuração de suas lojas, poderá compartilhar as credenciais de forma segura com outra conta do Mercado Pago.
 
-Você pode compartilhar as credenciais **até de 10 vezes**. Se você atingir este limite, deverá eliminar permissões antigas, sem impacto nas integrações já configuradas.
+Você pode compartilhar as credenciais **até 10 vezes**. Se você atingir este limite, deverá eliminar permissões antigas, sem impacto nas integrações já configuradas.
 
 Além disso, se por questões de segurança você não desejar mais compartilhar suas credenciais, você pode cancelar o acceso.
 
