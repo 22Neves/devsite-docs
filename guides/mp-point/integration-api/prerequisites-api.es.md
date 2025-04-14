@@ -7,6 +7,7 @@ Para integrar Puntos de Venta vía API, es importante cumplir con los requisitos
 > Mercado Pago está evolucionando la forma de integrar y ahora ofrecemos una nueva API para realizar integraciones con Mercado Pago Point, que descontinuará la actual. En caso de estar integrando esta solución de cobro por primera vez, recomendamos que utilices los [endpoints de la nueva API Orders](/developers/es/reference/order/in-person-payments/point/terminal/get). <br>
 > Si, en cambio, ya cuentas con una integración con Mercado Pago Point, próximamente recibirás más información sobre el proceso de migración.
 
+
 | Requisito | Descripción |
 |---|---|
 | ----[mlm, mlb]---- Dispositivo **Point Smart** Mercado Pago ------------ ----[mla]---- Dispositivo **Point Smart o Point Plus** Mercado Pago ------------  | Para ofrecer pagos presenciales a través de Point, es necesario adquirir la máquina. Si aún no lo has hecho, dirígete a la [tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/point). |
