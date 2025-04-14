@@ -1420,11 +1420,40 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "not_found",
+                          "title": "cards API unavailable for legal reasons",
                           "description": {
-                            "en": "not_found.",
-                            "es": "not_found.",
-                            "pt": "not_found."
+                            "en": "Error returned when the email used by the payer requests cancellation from Mercado Pago.",
+                            "es": "Error retornado cuando el email utilizado por el pagador solicita la cancelación a Mercado Pago.",
+                            "pt": "Erro retornado quando o e-mail utilizado pelo pagador solicita o cancelamento ao Mercado Pago."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "451": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "Unavailable for legal reasons",
+                          "description": {
+                            "en": "Error returned when the email used by the payer requests cancellation from Mercado Pago.",
+                            "es": "Error retornado cuando el email utilizado por el pagador solicita la cancelación a Mercado Pago.",
+                            "pt": "Erro retornado quando o e-mail utilizado pelo pagador solicita o cancelamento ao Mercado Pago."
                           }
                         }
                       ]

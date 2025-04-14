@@ -1,6 +1,6 @@
 # Credentials
 
-Credentials are unique access keys that we use to identify an integration in your account. They are directly linked to the application you created for that integration and will allow you to develop your project with the best Mercado Pago security measures.
+Credentials are unique access keys that we use to identify an integration in your account. They are directly linked to the :toolTipComponent[application]{link="/developers/en/docs/your-integrations/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier to manage your integrations. For more information, access the link below."} you created for that integration and will allow you to develop your project with the best Mercado Pago security measures.
 
 ## Types of credentials
 
@@ -16,13 +16,12 @@ Credentials are divided into two types: **production credentials** and **test cr
 When accessing production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, as well as **Client ID and Client Secret**.
 
 ### Public Key and Access Token
-
-The **Public Key** and **Access Token** credentials are used, not necessarily together, in integrations made with Mercado Pago payment solutions. They are directly linked to the application you created, so each credential pair is unique for each integration.
+The **Public Key** and **Access Token** credentials are used, not necessarily together, in integrations made with Mercado Pago payment solutions. They are directly linked to the :toolTipComponent[application]{link="/developers/en/docs/your-integrations/application-details" linkText="Application details" content="Entity registered in Mercado Pago that acts as an identifier to manage your integrations. For more information, access the link below."} you created, so each credential pair is unique for each integration.
 
 | Type | Description |
 |---|---|
-| Public Key | The application's public key is generally used in the *frontend*. It allows, for example, access to information about payment methods and encrypt card data. |
-| Access Token | Application's private key that should always be used in the *backend* to generate payments. It is essential to keep this information safe on your servers. |
+| Public Key | The application's public key is generally used in the frontend. It allows, for example, access to information about payment methods and encrypt card data. |
+| Access Token | Application's private key that should always be used in the backend to generate payments. It is essential to keep this information safe on your servers. |
 
 For more information on which credentials will be needed for your integration, see the [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) of the solution being integrated.
 
@@ -64,8 +63,8 @@ The test **Public Key** and **Access Token** credentials are used in the same wa
 
 | Type | Description |
 |---|---|
-| Public Key | The application's public key is generally used in the *frontend*. It allows, for example, access to information about payment methods and encrypt card data. |
-| Access Token | Application's private key that should always be used in the *backend* to generate payments. It is essential to keep this information safe on your servers. |
+| Public Key | The application's public key is generally used in the frontend. It allows, for example, access to information about payment methods and encrypt card data. |
+| Access Token | Application's private key that should always be used in the backend to generate payments. It is essential to keep this information safe on your servers. |
 
 > NOTE
 > 
