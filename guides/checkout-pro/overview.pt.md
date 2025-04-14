@@ -44,6 +44,38 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/14/1744644023351-chopromlbpix2.gif
+ - image_text: Simule o processamento de pagamento
+ - image_text_link: /developers/pt/live-demo/checkout-pro
+ - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
+ - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
+ - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
+ - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
+ - button_description: Como integrar
+ - button_link: /developers/pt/docs/checkout-pro/create-application
+---
+
+---
+product_landing_how_works:
+ - title: Como funciona
+ - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
+ - sub_title: Processo de pagamento
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/14/1744644052108-chopromlm2.gif
+ - image_text: Simule o processamento de pagamento
+ - image_text_link: /developers/pt/live-demo/checkout-pro
+ - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
+ - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
+ - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
+ - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
+ - button_description: Como integrar
+ - button_link: /developers/pt/docs/checkout-pro/create-application
+---
+
+---
+product_landing_how_works:
+ - title: Como funciona
+ - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
+ - sub_title: Processo de pagamento
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/11/1744393228322-chopromla.gif
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
@@ -123,12 +155,12 @@ flowchart TD
 
 ---
 product_landing_how_integrate:
- - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Criar e configurar a preferência de pagamento
- - list_item: Configurar as notificações de pagamento
- - list_item: Testar a integração
- - list_item: Sair à produção
+ - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app).
+ - list_item: Construir o ambiente de desenvolvimento.
+ - list_item: Criar e configurar a preferência de pagamento.
+ - list_item: Configurar as notificações de pagamento.
+ - list_item: Testar a integração.
+ - list_item: Sair à produção.
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
