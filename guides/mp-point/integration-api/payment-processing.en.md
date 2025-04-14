@@ -281,7 +281,7 @@ Please note that payment intents are the foundation for processing payments with
 
 ## Process your payment intent
 
-Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus and Point Pro 2 the **green button** and, in the case of the Point Smart, the **digital button “Cobrar”**). 
+Once the payment intent has been created, you can obtain it from your Point device by pressing on the key to pay (in the case of Point Plus the **green button** and, in the case of the Point Smart, the **digital button “Cobrar”**). 
 
 Then, follow the steps shown on the screen afterwards to complete the payment.
 
@@ -428,7 +428,6 @@ If the status of the payment intent is `on_terminal`, you will need to cancel it
 ------------
 ----[mlb]----
 - **Point Smart**: on the device, press and hold the **bottom right button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
-- **Point Pro 2**: on the device, press and hold the **red button** for a few seconds, and when the message appears asking if you want to exit the screen without completing the charge, click **yes**.
 
 ------------
 ----[mla]----

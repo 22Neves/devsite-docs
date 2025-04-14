@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son claves de acceso únicas con las que identificamos una integración en tu cuenta. Están directamente vinculadas a la aplicación que creaste para esa integración, y te permitirán desarrollar tu proyecto contando con las mejores medidas de seguridad de Mercado Pago.
+Las credenciales son claves de acceso únicas con las que identificamos una integración en tu cuenta. Están directamente vinculadas a la :toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de la aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información, accede al enlace a continuación."} que creaste para esa integración, y te permitirán desarrollar tu proyecto contando con las mejores medidas de seguridad de Mercado Pago.
 
 ## Tipos de credenciales
 
@@ -17,12 +17,13 @@ Al acceder a las credenciales de producción, se mostrarán los siguientes pares
 
 ### Public Key y Access Token
 
-Las credenciales **Public Key** y **Access Token** se utilizan, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago. Están directamente vinculadas a la aplicación que creaste, por lo que cada par de credenciales es único para cada integración.
+Las credenciales **Public Key** y **Access Token** se utilizan, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago. Están directamente vinculadas a la :toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de la aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información, accede al enlace a continuación."} que creaste, por lo que cada par de credenciales es único para cada integración.
+
 
 | Tipo | Descripción |
 |---|---|
-| Public Key | La clave pública de la aplicación se utiliza generalmente en el *frontend*. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
-| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el *backend* para generar pagos. Es esencial mantener esta información segura en tus servidores. |
+| Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
+| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
 Para obtener más información sobre qué credenciales serán necesarias para tu integración, consulta la [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) de la solución que se está integrando.
 
@@ -66,8 +67,8 @@ Las credenciales **Public Key** y **Access Token** de prueba se utilizan al igua
 
 | Tipo | Descripción |
 |---|---|
-| Public Key | La clave pública de la aplicación se utiliza generalmente en el *frontend*. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
-| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el *backend* para generar pagos. Es esencial mantener esta información segura en tus servidores. |
+| Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
+| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
 > NOTE
 > 

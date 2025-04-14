@@ -40,7 +40,7 @@ Follow the steps below to enable and configure the use of the authorization code
 3. After generating and encrypting the fields, it will be necessary to send the respective codes to Mercado Pago. To do this, send them via `query_params` using the authentication URL below.
 
 ```URL
-https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_ID`redirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
+https://auth.mercadopago.com/authorization?response_type=code&client_id=$APP_IDredirect_uri=$YOUR_URL&code_challenge=$CODE_CHALLENGE&code_challenge_method=$CODE_METHOD
 ```
 
 - **Redirect_uri**: URL provided in the "Redirect URL" field of [your application](/developers/en/docs/your-integrations/application-details).

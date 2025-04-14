@@ -2,6 +2,11 @@
 
 La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al ecosistema Point para recibir pagos en las terminales que tengas configuradas y garantizar una experiencia de cobro unificada.
 
+> RED_MESSAGE
+>
+> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the [endpoints of the new Orders API](/developers/en/reference/order/in-person-payments/point/terminal/get). <br> 
+> If you already have an integration with Point, you will soon receive more information about the migration process.
+
 ![Diagram 1](/images/point-api/1-diagram-es.png)
 
 ----[mla]----
@@ -12,17 +17,7 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 > Esta integración soporta dispositivos **Point Plus (POS)** y **Point Smart**. Puedes adquirirlos desde nuestra [tienda oficial](https://www.mercadopago.com.ar/point). Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
 
 ------------
-
-----[mlb]----
-> NOTE
->
-> Nota
->
-> Esta integración soporta dispositivos **Point Pro 1** y **Point Pro 2**. Puedes adquirirlos desde nuestra [tienda oficial](https://www.mercadopago.com.br/point). Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
-
-------------
-
-----[mlm]----
+----[mlm, mlb]----
 > NOTE
 >
 > Nota
@@ -30,7 +25,6 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 > Esta integración soporta dispositivos **Point Smart**. Puedes adquirirlos desde nuestra [tienda oficial](https://www.mercadopago.com.mx/point). Además, ten en cuenta que sólo permite tarjetas, contactless y SWIFT como medios de pago.
 
 ------------
-
 
 ### Conoce sus ventajas
 
