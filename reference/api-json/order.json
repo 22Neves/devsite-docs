@@ -531,7 +531,20 @@
                     "en": "Create order",
                     "pt": "Criar order",
                     "es": "Crear order"
-                }
+                },
+                "userCases": [
+                    {
+                        "name": {
+                            "en": "Create payment with card",
+                            "pt": "Criar pagamento com cartão",
+                            "es": "Crear pago con tarjeta"
+                        }
+                    },
+                "ext_reference::reference/api-json/user-cases/order_user_case_pagofacil",
+                "ext_reference::reference/api-json/user-cases/order_user_case_pix",
+                "ext_reference::reference/api-json/user-cases/order_user_case_oxxo"
+                ]
+
             }
         },
         "/v1/orders/{id}": {
@@ -3525,7 +3538,7 @@
                     "email": {
                         "type": "string",
                         "required": true,
-                        "example": "test@test.com",
+                        "example": "test@testuser.com",
                         "description": {
                             "pt": "E-mail do pagador",
                             "en": "Payer email",
