@@ -44,39 +44,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/14/1744644023351-chopromlbpix2.gif
- - image_text: Simule o processamento de pagamento
- - image_text_link: /developers/pt/live-demo/checkout-pro
- - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
- - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
- - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
- - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
- - button_description: Como integrar
- - button_link: /developers/pt/docs/checkout-pro/create-application
----
-
----
-product_landing_how_works:
- - title: Como funciona
- - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
- - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/14/1744644052108-chopromlm2.gif
- - image_text: Simule o processamento de pagamento
- - image_text_link: /developers/pt/live-demo/checkout-pro
- - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
- - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
- - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
- - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
- - button_description: Como integrar
- - button_link: /developers/pt/docs/checkout-pro/create-application
----
-
----
-product_landing_how_works:
- - title: Como funciona
- - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
- - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/11/1744393228322-chopromla.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/15/1744742536367-testcheckoutvideo.gif
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
@@ -140,19 +108,7 @@ product_landing_how_integrate:
  - list_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida.
 ---
 
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: Tus integraciones"] --> B["Crear una aplicación"]
-    B --> C["Construir el ambiente de desarrollo"]
-    C --> D["Crear y configurar la preferencia de pago"]
-    D -- Monto, Medios de pago, Detalles, Otros --> F["Configurar las notificaciones de pago"]
-    F -- Webhooks e IPN --> E["Probar la integración"]
-    E -- Pruebas exitosas --> H["Salir a producción"]
-    E -- Errores detectados --> I["Revisar configuración y corregir"]
-    I --> H
-    H --> J["Medir calidad"]
-</pre>
-
+|||column1|||
 ---
 product_landing_how_integrate:
  - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app).
@@ -164,3 +120,15 @@ product_landing_how_integrate:
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
+|||column2|||
+<pre class="mermaid">
+flowchart TD
+    A["Crear una aplicación"] --> B["Construir el ambiente"]
+    B --> D["Crear preferencia"]
+    D -- Monto, Medios de pago, Otros --> F("Configurar notificaciones")
+    F -- Webhooks e IPN --> E["Probar integración"]
+    E -- Pruebas exitosas --> H["Salir a producción"]
+    E -- Errores detectados --> I["Corregir"]
+    I --> H
+</pre>
+|||
