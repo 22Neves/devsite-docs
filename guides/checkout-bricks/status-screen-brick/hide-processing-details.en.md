@@ -45,7 +45,7 @@ const customization = {
 
 ------------
 ----[mlb]----
-![status-screen-brick-hide-processing-details](/images/checkout-bricks/status-screen-brick-hide-processing-details-mlb-en-rebranding.jpg)
+![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-mlb-en.jpg)
 
 ------------
 ----[mla]----

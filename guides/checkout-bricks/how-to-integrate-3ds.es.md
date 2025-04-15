@@ -122,7 +122,7 @@ El usuario debe responder al _Challenge_ para que la transición se valide corre
 ------------
 ----[mlb]----
 
-![status-screen-brick-layout](/images/checkout-bricks/status-screen-brick-layout-mlb-es-rebranding.jpg)
+![status-screen-brick-layout](/images/checkout-bricks/status-screen-brick-layout-mlb-es.jpg)
 
 ------------
 ----[mpe]----
