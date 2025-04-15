@@ -53,28 +53,34 @@ Agora, será necessário utilizar o identificador da preferência de pagamento o
 
 Para inicializar o SDK via CDN, insira o código a seguir dentro da tag `<script>`. Substitua `YOUR_PUBLIC_KEY` pela `public_key` de produção da sua aplicação e `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento**.
 
-```js
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-  // Configure sua chave pública do Mercado Pago
-  const publicKey = 'YOUR_PUBLIC_KEY';  
-  // Configure o ID de preferência que você deve receber do seu backend
-  const preferenceId = 'YOUR_PREFERENCE_ID';
+```JavaScript
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão de Pagamento - Mercado Pago</title>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+<body>
+  <h1>Botão de Pagamento</h1>
   
-  // Inicializa o SDK do Mercado Pago
-  const mp = new MercadoPago(publicKey);
-  
-  // Cria o botão de pagamento
-  const checkout = mp.checkout({
-    preference: {
-      id: preferenceId
-    },
-    render: {
-      container: '#wallet_container', // Use o ID do seu div existente
-      label: 'Pagar com Mercado Pago'
-    }
-  });
-</script>
+  <!-- Container onde o botão será renderizado -->
+  <div id="wallet_container"></div>
+
+  <script>
+    // Inicialize o Mercado Pago com sua chave pública
+    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+
+    // Crie o botão de pagamento no container especificado
+    mp.bricks().create("wallet", "wallet_container", {
+      initialization: {
+        preferenceId: "YOUR_PREFERENCE_ID", // Substitua com seu ID de preferência
+      }
+    });
+  </script>
+</body>
+</html>
 ```
 
 > CLIENT_SIDE
@@ -126,15 +132,22 @@ No código, substitua o valor `YOUR_PREFERENCE_ID` pelo **identificador da prefe
 
 A seguir, compartilhamos um exemplo de como completar o arquivo `src/App.js`.
 
-```js
+```JavaScript
 import React from 'react';
-import { Wallet } from '@mercadopago/sdk-react';
+import { initMercadoPago, Wallet } from '@mercadopago/sdk-react';
+
+// Inicialize o Mercado Pago com seu Public Key
+initMercadoPago('YOUR_PUBLIC_KEY');
 
 const App = () => {
   return (
-    <div>
-      <h1>MercadoPago Checkout</h1>
-      <Wallet initialization={{ preferenceId: 'YOUR_PREFERENCE_ID' }} />
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
+      <h1>Botão de Pagamento</h1>
+      <p>Clique no botão para realizar o pagamento.</p>
+      {/* Renderize o botão de pagamento */}
+      <div style={{ width: '300px' }}>
+        <Wallet initialization={{ preferenceId: 'YOUR_PREFERENCE_ID' }} />
+      </div>
     </div>
   );
 };
