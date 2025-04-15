@@ -1,6 +1,6 @@
 Las **aplicaciones** son entidades registradas dentro de Mercado Pago que actúan como un identificador único para gestionar la autenticación y autorización de tus integraciones. Es decir,  son el vínculo entre tu desarrollo y Mercado Pago, y constituyen la primera etapa para realizar la integración. 
 
-Con ellas, es posible acceder a las :toolTipComponent[credenciales]{content="Claves de acceso únicas con las que identificamos una integración en tu cuenta, vinculadas a tu aplicación."} necesarias para interactuar con nuestras APIs o servicios específicos, así como gestionar y organizar tu integración. 
+Con ellas, es posible acceder a las :toolTipComponent[credenciales]{link="/developers/es/docs/credentials" linkText="Credenciales" content="Claves de acceso únicas con las que identificamos una integración en tu cuenta, vinculadas a tu aplicación. Para más información, accede al link a continuación."} necesarias para interactuar con nuestras APIs o servicios específicos, así como gestionar y organizar tu integración.  
 
 Para crear una **aplicación**, sigue los pasos a continuación.
 

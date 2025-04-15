@@ -60,6 +60,9 @@
                                                     "amount": {
                                                         "$ref": "#/components/schemas/amount"
                                                     },
+                                                    "payment_expiration_time": {
+                                                        "$ref": "#/components/schemas/payment_expiration_time"
+                                                    },
                                                     "payment_method": {
                                                         "$ref": "#/components/schemas/payment_method"
                                                     }
@@ -97,9 +100,6 @@
                                     },
                                     "items": {
                                         "$ref": "#/components/schemas/items"
-                                    },
-                                    "expiration_time": {
-                                        "$ref": "#/components/schemas/expiration_time"
                                     }
                                 }
                             }
@@ -135,6 +135,9 @@
                                         },
                                         "total_amount": {
                                             "$ref": "#/components/schemas/total_amount"
+                                        },
+                                        "total_paid_amount": {
+                                            "$ref": "#/components/schemas/total_paid_amount"
                                         },
                                         "integration_data": {
                                             "$ref": "#/components/schemas/integration_data_response"
@@ -195,6 +198,15 @@
                                                                     "en": "Payment amount.",
                                                                     "es": "Monto del pago."
                                                                 }
+                                                            },
+                                                            "paid_amount": {
+                                                                "$ref": "#/components/schemas/paid_amount"
+                                                            },
+                                                            "payment_expiration_time": {
+                                                                "$ref": "#/components/schemas/payment_expiration_time"
+                                                            },
+                                                            "date_of_expiration": {
+                                                                "$ref": "#/components/schemas/date_of_expiration"
                                                             },
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
@@ -351,9 +363,6 @@
                                         },
                                         "items": {
                                             "$ref": "#/components/schemas/items"
-                                        },
-                                        "expiration_time": {
-                                            "$ref": "#/components/schemas/expiration_time"
                                         },
                                         "client_token": {
                                             "$ref": "#/components/schemas/client_token"
@@ -631,6 +640,9 @@
                                         "capture_mode": {
                                             "$ref": "#/components/schemas/capture_mode"
                                         },
+                                        "total_paid_amount": {
+                                            "$ref": "#/components/schemas/total_paid_amount"
+                                        },
                                         "transactions":{
                                             "type":"object",
                                             "description":{
@@ -666,6 +678,15 @@
                                                                     "en": "Payment amount.",
                                                                     "es": "Monto del pago."
                                                                 }
+                                                            },
+                                                            "paid_amount": {
+                                                                "$ref": "#/components/schemas/paid_amount"
+                                                            },
+                                                            "payment_expiration_time": {
+                                                                "$ref": "#/components/schemas/payment_expiration_time"
+                                                            },
+                                                            "date_of_expiration": {
+                                                                "$ref": "#/components/schemas/date_of_expiration"
                                                             },
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
@@ -1236,9 +1257,6 @@
                                         "items": {
                                             "$ref": "#/components/schemas/items"
                                         },
-                                        "expiration_time": {
-                                            "$ref": "#/components/schemas/expiration_time"
-                                        },
                                         "client_token": {
                                             "$ref": "#/components/schemas/client_token"
                                         }
@@ -1534,9 +1552,6 @@
                                         },
                                         "items": {
                                             "$ref": "#/components/schemas/items"
-                                        },
-                                        "expiration_time": {
-                                            "$ref": "#/components/schemas/expiration_time"
                                         }
                                     }
                                 }
@@ -1704,6 +1719,9 @@
                                                 "amount": {
                                                     "$ref": "#/components/schemas/amount"
                                                 },
+                                                "payment_expiration_time": {
+                                                    "$ref": "#/components/schemas/payment_expiration_time"
+                                                    },
                                                 "payment_method": {
                                                     "$ref": "#/components/schemas/payment_method"
                                                 }
@@ -1754,6 +1772,12 @@
                                                             "en": "Payment amount.",
                                                             "es": "Monto del pago."
                                                         }
+                                                    },
+                                                    "payment_expiration_time": {
+                                                        "$ref": "#/components/schemas/payment_expiration_time"
+                                                    },
+                                                    "date_of_expiration": {
+                                                        "$ref": "#/components/schemas/date_of_expiration"
                                                     },
                                                     "status":{
                                                         "type":"string",
@@ -2338,6 +2362,9 @@
                                         "total_amount": {
                                             "$ref": "#/components/schemas/total_amount"
                                         },
+                                        "total_paid_amount": {
+                                            "$ref": "#/components/schemas/total_paid_amount"
+                                        },
                                         "integration_data": {
                                             "$ref": "#/components/schemas/integration_data_response"
                                         },
@@ -2401,6 +2428,15 @@
                                                                     "es": "Monto del pago."
                                                                 }
                                                             },
+                                                            "paid_amount": {
+                                                                "$ref": "#/components/schemas/paid_amount"
+                                                            },
+                                                            "payment_expiration_time": {
+                                                                "$ref": "#/components/schemas/payment_expiration_time"
+                                                            },
+                                                            "date_of_expiration": {
+                                                                "$ref": "#/components/schemas/date_of_expiration"
+                                                            },
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
                                                             },
@@ -2432,9 +2468,6 @@
                                         },
                                         "items": {
                                             "$ref": "#/components/schemas/items"
-                                        },
-                                        "expiration_time": {
-                                            "$ref": "#/components/schemas/expiration_time"
                                         }
                                     }
                                 }
@@ -2612,6 +2645,9 @@
                                                 },
                                                 "amount": {
                                                     "$ref": "#/components/schemas/amount"
+                                                },
+                                                "payment_expiration_time": {
+                                                    "$ref": "#/components/schemas/payment_expiration_time"
                                                 }
                                             }
                                         }
@@ -3170,6 +3206,15 @@
                 },
                 "example": "24.90"
             },
+            "paid_amount": {
+                "type": "string",
+                "description": {
+                    "en": "Transaction paid amount. Represents the real amount paid including discounts or tips.",
+                    "pt": "Valor pago da transação. Representa o valor real pago incluindo descontos ou gorjetas.",
+                    "es": "Monto pagado de la transacción. Representa el valor real pagado, incluidos descuentos o propinas."
+                },
+                "example": "24.90"
+            },
             "total_amount": {
                 "type": "string",
                 "example": "24.90",
@@ -3178,6 +3223,34 @@
                     "pt": "Valor total a ser pago. Deve ser enviado com duas casas decimais.",
                     "es": "Monto total a pagar. Debe ser enviado con dos números decimales."
                 }
+            },
+            "total_paid_amount": {
+                "type": "string",
+                "example": "24.90",
+                "description": {
+                    "en": "Total amount to be paid, represents the sum of all the transaction's paid_amount values. It must be sent with two decimals.",
+                    "pt": "Valor total a ser pago, representa a soma de todos os valores de paid_amount da transação. Deve ser enviado com duas casas decimais.",
+                    "es": "Monto total a pagar, representa la suma de todos los valores de paid_amount de la transacción. Debe ser enviado con dos números decimales."
+                }
+            },
+            "payment_expiration_time": {
+                "type": "string",
+                "format": "date",
+                "description": {
+                    "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
+                    "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
+                    "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
+                },
+                "example": "P3Y6M4DT12H30M5S"
+            },
+            "date_of_expiration": {
+                "type": "string",
+                "description": {
+                    "en": "Date and time of the expiration of the Payment. It is returned in the response to the Create Order request.",
+                    "pt": "Data de expiração do Payment. É retornado na resposta à requisição Criar Order.",
+                    "es": "Fecha y hora de vencimiento del Payment. Se devuelve en la respuesta a la solicitud Crear Order."
+                },
+                "example": "2023-03-01T10:00:00.000-04:00"
             },
             "refunded_amount": {
                 "type": "string",
@@ -3682,6 +3755,24 @@
                                     "pt": "Cidade do endereço do pagador. Obrigatório para \"payment_method.id\" bolbradesco",
                                     "es": "Ciudad de la dirección del pagador. Requerido para \"payment_method.id\" bolbradesco"
                                 }
+                            },
+                            "complement": {
+                                "type": "string",
+                                "example": "Apto 303",
+                                "description": {
+                                    "en": "Payer's address complement.",
+                                    "pt": "Complemento do endereço do pagador.",
+                                    "es": "Complemento de la dirección del pagador."
+                                }
+                            },
+                            "floor": {
+                                "type": "string",
+                                "example": "3",
+                                "description": {
+                                    "en": "Payer's address floor.",
+                                    "pt": "Andar do endereço do pagador.",
+                                    "es": "Piso de la dirección del pagador."
+                                }
                             }
                         }
                     }
@@ -3761,6 +3852,15 @@
                                 "en": "Item category ID.",
                                 "pt": "Identificador da categoria do item.",
                                 "es": "Identificador de la categoría del ítem."
+                            }
+                        },
+                        "type": {
+                            "type": "string",
+                            "example": "MLB1055",
+                            "description": {
+                                "en": "Item type.",
+                                "pt": "Tipo do item.",
+                                "es": "Tipo de elemento."
                             }
                         }
                     }
@@ -3893,16 +3993,6 @@
                         }
                     }
                 }
-            },
-            "expiration_time": {
-                "type": "string",
-                "format": "date",
-                "description": {
-                    "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
-                    "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
-                    "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
-                },
-                "example": "P3Y6M4DT12H30M5S"
             },
             "client_token": {
                 "type": "string",
@@ -5058,11 +5148,11 @@
                         }
                     },
                     {
-                        "title": "automatic",
+                        "title": "automatic_async",
                         "description": {
-                            "en": "The collection will be made instantly.",
-                            "es": "El cobro se hará instantáneamente.",
-                            "pt": "A cobrança será realizada imediatamente."
+                            "en": "The order can be processed asynchronously.",
+                            "es": "La order se puede procesar de forma asincrónica.",
+                            "pt": "A order pode ser processada de maneira assíncrona."
                         }
                     }
                 ]
