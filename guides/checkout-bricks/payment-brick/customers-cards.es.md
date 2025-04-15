@@ -50,11 +50,16 @@ Con solo pasar estas dos propiedades, Brick le dará automáticamente al usuario
 ![payment-brick-c](checkout-bricks/payment-brick-cc-es-mlm.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+
+![payment-brick-c](checkout-bricks/payment-brick-cc-es-mlb.jpg)
+
+------------
+----[mla]----
 
 ![payment-brick-saved-cards](checkout-bricks/payment-brick-saved-cards-es.gif) 
 
-------------
+------------ 
 
 ----[mlb]----
 Para obtener información sobre cómo crear, modificar y obtener `customerId` y `cardsIds`, consulte la sección [Gestión de tarjetas y clientes](/developers/es/docs/checkout-api/customer-management) de la documentación de Checkout Transparente.

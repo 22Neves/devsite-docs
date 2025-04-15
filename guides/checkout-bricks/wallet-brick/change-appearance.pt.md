@@ -4,7 +4,7 @@
 >
 > Alterar visual
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mpe, mco, mlu]----
 Wallet Brick permite algumas customizações visuais listadas na tabela abaixo, todas opcionais e do tipo `string`.
 
 Caso a propriedade enviada esteja vazia, a tela apresentará o visual definido pelo [*layout* padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#bookmark_renderizar_o_brick). Por outro lado, ao enviar um valor alternativo, este substituirá o valor padrão. 
@@ -49,7 +49,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ## Propriedades de estilo
 
 | - | Descrição |
@@ -94,7 +94,7 @@ const customization = {
 
 ## Ocultar texto da proposta de valor (valueProp)
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mpe, mco, mlu]----
 Também é possível ocultar o texto da proposta de valor passando o valor `boolean true` para a propriedade `customStyle.hideValueProp`. O **valor padrão** é `false`. 
 
 [[[
@@ -120,7 +120,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 | - | Descrição |
 |--- |--- |
 | Momento de customização | Ao renderizar Brick |

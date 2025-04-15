@@ -638,7 +638,7 @@ O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
 ----[mlb]----
 
-![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.gif)
+![payment-Brick-layout-mlb](checkout-bricks/payment-brick-layout-mlb-pt.jpg)
 
 ------------
 ----[mla]----

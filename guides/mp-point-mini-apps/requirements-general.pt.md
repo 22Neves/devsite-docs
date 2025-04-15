@@ -28,11 +28,11 @@ Aprenda a adaptar a identidade e construção visual do seu aplicativo dentro do
 
 Para ser aprovado, seu aplicativo deve ter um esquema de cores diferente da paleta mostrada abaixo, que é de uso exclusivo do Mercado Pago.
 
-----[mlc, mlm, mpe, mlu, mco]----
+----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-colors](/mini-apps/miniapps-colors.png)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![miniapps-colors](/mini-apps/miniapps-colors-pt.png)
 
 ------------
@@ -47,11 +47,11 @@ Logos, imagens de produtos e serviços ou qualquer referência visual do Mercado
 
 O Mercado Pago utiliza a **fonte Proxima Nova/ML Font e suas variantes**. Integre seu aplicativo com  outra família tipográfica.
 
-----[mlc]----
+----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-typography](/mini-apps/miniapps-typography.png)
 
 ------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
+----[mla]----
 ![miniapps-typography](/mini-apps/miniapps-typography-pt.png)
 
 ------------

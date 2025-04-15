@@ -2,7 +2,7 @@
 
 Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. A partir de esto, a continuación se presentan las informaciones necesarias para que configures y renderices el Wallet Brick.
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mco, mlu, mpe]----
 > NOTE
 >
 > Nota
@@ -10,7 +10,7 @@ Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos
 > Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
 ------------
-----[mlb, mla]----
+----[mla]----
 > NOTE
 >
 > Nota
@@ -23,7 +23,7 @@ Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos
 
 Crea la configuración de inicio de Brick
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mco, mlu, mpe]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -72,7 +72,7 @@ const onReady = async () => {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -159,12 +159,12 @@ import { Wallet } from '@mercadopago/sdk-react';
 
 El resultado de renderizar el Brick debe ser como se muestra en la imagen a continuación, presentando un texto y un aspecto predeterminado.
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mpe, mco, mlu]----
 ![wallet-brick-render](checkout-bricks/wallet-brick-render-es-all.png)
 
 ------------
-----[mlb, mla]----
-![wallet-brick-render](checkout-bricks/wallet-brick-render-es.png)
+----[mla]----
+![wallet-brick-render](checkout-bricks/wallet-brick-render-es-mla.png)
 
 ------------
 
@@ -235,7 +235,7 @@ Luego establezca la preferencia de acuerdo a su producto o servicio.
 Los ejemplos de código a continuación establecen el **purpose de la preferencia** en `wallet_purchase`, donde el usuario debe iniciar sesión cuando es redirigido a su cuenta de Mercado Pago.
 
 ------------
-----[mlb, mla]----
+----[mla]----
 [[[
 ```php
 <?php
@@ -378,7 +378,7 @@ curl -X POST \
 ]]]
 
 ------------
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mco, mlu, mpe]----
 [[[
 ```php
 <?php

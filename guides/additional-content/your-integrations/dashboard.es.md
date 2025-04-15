@@ -34,11 +34,11 @@ Si no estás utilizando una plataforma de comercio electrónico, marca **No** y 
 6. Marca la casilla de selección **No soy un robot**.
 7. Haz clic en **Crear aplicación**.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![Crear aplicación](/images/dashboard/dashboard-es-animated.png)
 
 ------------
-----[mla, mlb]----
+----[mla]----
 ![Crear aplicación](/images/dashboard/dashboard-es-animated.gif)
 
 ------------
