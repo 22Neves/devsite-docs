@@ -294,6 +294,7 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 > SUCCESS_MESSAGE
 >
 > Para conhecer em detalhe todos os parâmetros enviados nesta requisição, consulte nossa [Referência de API](/developers/pt/reference/orders/online-payments/create/post). Além disso, caso receba um erro ao enviar o pagamento, consulte nossa [lista de erros](/developers/pt/docs/checkout-api-v2/payment-management/integration-errors).
+
 Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 
 ```json

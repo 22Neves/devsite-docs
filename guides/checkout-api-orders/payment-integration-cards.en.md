@@ -15,21 +15,22 @@ With this, the implementation of the flow is transparent for those who are perfo
 
 <pre class="mermaid">
   sequenceDiagram
-      participant Navegador del comprador
-      participant Front-end del integrador
-      participant MercadoPago.js
-      participant Back-end del integrador
-      participant API Mercado Pago
-      Navegador del comprador->>Front-end del integrador: 1. Pantalla del cobroEl Comprador accede a la pantalla de cobro.
-      Front-end del integrador->>MercadoPago.js: 2. Inicialización SDK JS Mercado PagoEl front-end del integrador descarga einicializa la SDK JS de Mercado Pago
-      Front-end del integrador->>Navegador del comprador: 3. Formulario de pagoEl front-end del integrador muestra elformulário de pago
-      Navegador del comprador->>Front-end del integrador: 4. Confirmación de pagoEl comprador completa el formulário yfinaliza el pago.
-      Front-end del integrador->>MercadoPago.js: 5. Creación del tokenEl front-end del integrador utiliza la SDK JSpara crear el token que contendrá los datosde tarjeta de forma segura.
-      Front-end del integrador->>Back-end del integrador: 6. Envío del tokenEl front-end del integrador envía el token detarjeta y los datos de pago a su back-end.
-      Back-end del integrador->>API Mercado Pago: 7. Creación del pagoDesde el back-end, se llama a los serviciosde Mercado Pago para crear el pago.
-      API Mercado Pago->>Navegador del comprador: 8. Resultado del pagoEl front-end del integrador le muestra alcomprador el resultado de la operación.
-      API Mercado Pago->>Back-end del integrador: 9. Actualizaciones de estado del pagoMercado Pago puede enviar notificacionesvía Webhook con actualizaciones del estadodel pago.
-      Back-end del integrador->>Navegador del comprador: 10. Notificación al compradorSi corresponde, se le avisa al compradorsobre la actualización del pago.
+    participant Buyer's Browser
+    participant Integrator Front-end
+    participant MercadoPago.js
+    participant Integrator Back-end
+    participant Mercado Pago API
+
+    Buyer's Browser->>Integrator Front-end: 1. Payment screen\nThe buyer accesses the payment screen.
+    Integrator Front-end->>MercadoPago.js: 2. SDK JS Initialization\nThe integrator's front-end downloads and initializes Mercado Pago's JS SDK.
+    Integrator Front-end->>Buyer's Browser: 3. Payment form\nThe integrator's front-end displays the payment form.
+    Buyer's Browser->>Integrator Front-end: 4. Payment confirmation\nThe buyer completes the form and submits the payment.
+    Integrator Front-end->>MercadoPago.js: 5. Token creation\nThe integrator's front-end uses the JS SDK to create a token containing the card data securely.
+    Integrator Front-end->>Integrator Back-end: 6. Token sending\nThe integrator's front-end sends the card token and payment data to its back-end.
+    Integrator Back-end->>Mercado Pago API: 7. Payment creation\nThe back-end calls Mercado Pago services to create the payment.
+    Mercado Pago API->>Buyer's Browser: 8. Payment result\nThe integrator's front-end shows the buyer the result of the transaction.
+    Mercado Pago API->>Integrator Back-end: 9. Payment status updates\nMercado Pago may send notifications via Webhook with payment status updates.
+    Integrator Back-end->>Buyer's Browser: 10. Buyer notification\nIf applicable, the buyer is notified about the payment update.
 </pre>
 
 To proceed with the setup of debit and/or credit card payments via _Card Payment Brick_, follow the steps below.
@@ -294,6 +295,7 @@ See the table below for descriptions of the parameters that are mandatory in the
 > SUCCESS_MESSAGE
 >
 > To learn in detail about all the parameters sent and returned in this request, please refer to our [API Reference](/developers/en/reference/orders/online-payments/create/post). Additionally, if you receive an error when submitting the payment, you can consult our [list of errors](/developers/en/docs/checkout-api-v2/payment-management/integration-errors).
+
 In case of success, the response will look like the example below.
 
 ```json

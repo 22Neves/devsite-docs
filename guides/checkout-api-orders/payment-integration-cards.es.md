@@ -778,6 +778,7 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 > SUCCESS_MESSAGE
 >
 > Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api-v2/payment-management/integration-errors).
+
 En caso de éxito, la respuesta se verá como el ejemplo a continuación.
 
 ```json
