@@ -96,11 +96,11 @@ renderStatusScreenBrick(bricksBuilder);
 
 El Status Screen Brick mostrará una transición que indica la redirección y, luego, se mostrará el _Challenge_ del banco en cuestión.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlc, mlu, mlm, mco, mpe, mlb]----
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-es.png)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-es.gif)
 
 ------------
@@ -115,7 +115,7 @@ El usuario debe responder al _Challenge_ para que la transición se valide corre
 
 3. Después de resolver el _Challenge_, se mostrará el resultado final del pago de acuerdo con la respuesta emitida por el banco al final del _Challenge_.
 
-----[mlc, mlm, mlu, mco]----
+----[mlc, mlm, mlu, mco, mlb]----
 
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-all-es.jpg)
 
@@ -125,7 +125,7 @@ El usuario debe responder al _Challenge_ para que la transición se valide corre
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-es.jpg)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
 
 ------------ 
@@ -147,6 +147,6 @@ Para poder validar pagos con 3DS, ponemos a disposición un **entorno de pruebas
 
 En ambos los flujos (éxito y fallo), el _Challenge_, que es una pantalla similar a la mostrada a continuación, debe ser mostrado por el [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 
-![bricks_sandbox](checkout-bricks/sandbox-v1-es.png)
+![bricks_sandbox](/images/checkout-bricks/sandbox-v1-es.png)
 
 El código de verificación proporcionado es solo ilustrativo. Para concluir el flujo de prueba, simplemente haz clic en el botón **Confirmar** y el Status Screen mostrará el estado final del pago.

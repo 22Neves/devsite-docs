@@ -2,7 +2,7 @@
 
 Before rendering the Wallet Brick, first execute the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. From there, see below the necessary information to configure and render the Wallet Brick.
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mco, mlu, mpe]----
 > NOTE
 >
 > Note
@@ -10,7 +10,7 @@ Before rendering the Wallet Brick, first execute the [initialization steps](/dev
 > To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
 
 ------------
-----[mlb, mla]----
+----[mla]----
 > NOTE
 >
 > Note
@@ -23,7 +23,7 @@ Before rendering the Wallet Brick, first execute the [initialization steps](/dev
 
 Create Brick's startup configuration.
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mco, mlu, mpe]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -72,7 +72,7 @@ const onReady = async () => {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -227,7 +227,7 @@ Then set the preference according to your product or service.
 The code examples below set the **purpose of preference** to `wallet_purchase`, where the user must log in when redirected to his Mercado Pago account.
 
 ------------
-----[mlb, mla]----
+----[mla]----
 [[[
 ```php
 <?php
@@ -370,7 +370,7 @@ curl -X POST \
 ]]]
 
 ------------
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mco, mlu, mpe]----
 [[[
 ```php
 <?php

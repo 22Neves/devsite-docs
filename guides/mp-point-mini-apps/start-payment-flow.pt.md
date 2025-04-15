@@ -1,6 +1,6 @@
 # Iniciar o fluxo de pagamento
 
-----[mlb, mla]----
+----[mlb, mlc, mla, mpe, mlu, mco]----
 > Neste momento, os métodos de pagamento disponíveis são: **cartões de crédito e débito**, **pagamento com [código QR](/developers/pt/docs/qr-code/landing)** e **[link de pagamento.](/developers/pt/docs/payment-link/intro-button)**
 
 ------------

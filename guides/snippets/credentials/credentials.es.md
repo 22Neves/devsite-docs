@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son claves de acceso únicas con las que identificamos una integración en tu cuenta. Están directamente vinculadas a la aplicación que creaste para esa integración, y te permitirán desarrollar tu proyecto contando con las mejores medidas de seguridad de Mercado Pago.
+Las credenciales son claves de acceso únicas con las que identificamos una integración en tu cuenta. Están directamente vinculadas a la :toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de la aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información, accede al enlace a continuación."} que creaste para esa integración, y te permitirán desarrollar tu proyecto contando con las mejores medidas de seguridad de Mercado Pago.
 
 ## Tipos de credenciales
 
@@ -10,21 +10,23 @@ Las credenciales están divididas en dos tipos, **credenciales de producción** 
 
 ::::TabComponent{title="Credenciales de producción"}
 ### Credenciales de producción
+
 Las **credenciales de producción** son un conjunto de claves que permiten recibir pagos reales en tiendas y en otras aplicaciones. 
 
 Al acceder a las credenciales de producción, se mostrarán los siguientes pares de credenciales: **Public Key y Access Token**, además de **Client ID y Client Secret**.
 
 ### Public Key y Access Token
-Las credenciales **Public Key** y **Access Token** se utilizan, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago. Están directamente vinculadas a la aplicación que creaste, por lo que cada par de credenciales es único para cada integración.
+Las credenciales **Public Key** y **Access Token** se utilizan, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago. Están directamente vinculadas a la :toolTipComponent[aplicación]{link="/developers/es/docs/your-integrations/application-details" linkText="Detalles de la aplicación" content="Entidad registrada en Mercado Pago que actúa como un identificador para gestionar tus integraciones. Para más información, accede al enlace a continuación."} que creaste, por lo que cada par de credenciales es único para cada integración.
 
 | Tipo | Descripción |
 |---|---|
-| Public Key | La clave pública de la aplicación se utiliza generalmente en el *frontend*. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
-| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el *backend* para generar pagos. Es esencial mantener esta información segura en tus servidores. |
+| Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
+| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
 Para obtener más información sobre qué credenciales serán necesarias para tu integración, consulta la [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) de la solución que se está integrando.
 
 ### Client ID y Client Secret
+
 Las credenciales **Client ID** y **Client Secret** se utilizan, principalmente, en las integraciones que utilizan [OAuth](/developers/es/docs/security/oauth/introduction) como protocolo para obtención de información privada de cuentas de Mercado Pago. En particular, se utilizan durante el flujo (_grant type_) de **Client Credentials**, que permite acceder a un recurso en nombre propio y obtener un Access Token sin interacción del usuario.
 
 También pueden ser requeridas en algunas integraciones más antiguas con plataformas de e-commerce. 
@@ -61,8 +63,8 @@ Las credenciales **Public Key** y **Access Token** de prueba se utilizan al igua
 
 | Tipo | Descripción |
 |---|---|
-| Public Key | La clave pública de la aplicación se utiliza generalmente en el *frontend*. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
-| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el *backend* para generar pagos. Es esencial mantener esta información segura en tus servidores. |
+| Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
+| Access Token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
 > NOTE
 > 
@@ -83,20 +85,23 @@ A continuación, conoce cómo obtener las credenciales.
 2. Accede a tu aplicación o crea una si aún no lo has hecho.
 3. Encontrarás tus credenciales bajo el título **Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**, en el menú ubicado a la izquierda de la pantalla.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-test-panel-es.jpg)
+
 ------------
 
-----[mla, mlb]---- 
+----[mla]---- 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-test-panel-es.gif)
-------------
 
-----[mlc, mlu, mlm, mco, mpe]----
+------------
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.jpg)
+
 ------------
 
-----[mla, mlb]----
+----[mla]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.gif)
+
 ------------
 
 ### Activar credenciales de producción
@@ -130,12 +135,13 @@ A continuación, te mostramos cómo compartir credenciales.
 4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
 5. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. **Recuerda**: es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Compartir credenciales en Tus Integraciones](/images/snippets/share-credentials-panel-es.jpg)
-------------
 
-----[mla, mlb]----
+------------
+----[mla]----
 ![Compartir credenciales en Tus Integraciones](/images/snippets/share-credentials-panel-es.gif)
+
 ------------
 
 ## Renovar credenciales
@@ -152,12 +158,13 @@ Para renovar un par de credenciales, sigue los pasos a continuación.
 2. Selecciona el par de credenciales que quieres renovar. Estas pueden ser **Public Key** y **Access Token** o **Client ID** y **Client Secret**. Ten en cuenta que se renovarán ambas credenciales del par que elijas. 
 3. Haz clic en los tres puntos ubicados a la derecha de la credencial que quieras renovar y selecciona **Renovar**. Haz clic en **Renovar ahora** para confirmar el cambio.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Cómo renovar tus credenciales](/images/snippets/renew-credentials-es.jpg)
-------------
 
-----[mla, mlb]----
+------------
+----[mla]----
 ![Cómo renovar tus credenciales](/images/snippets/renew-credentials-es.gif)
+
 ------------
 
 Listo, tus credenciales ya fueron renovadas. 
