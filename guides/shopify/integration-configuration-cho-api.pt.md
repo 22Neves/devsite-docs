@@ -79,8 +79,6 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 
 ![installation cards 8](/images/shopify/connect-account-5-pt.png)
 
-Sua loja foi vinculada com sucesso à conta Mercado Pago. 
-
 > NOTE
 >
 > Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
@@ -165,7 +163,7 @@ Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
 
 ![installation cards 2](/images/shopify/installation-cards-2-pt.png)
 
-O aplicativo Mercado Pago Cartões foi instalado com sucesso através do Marketplace. Agora, siga as instruções a partir do passo 7 da sessão [Instalar aplicativo via painel da Shopify](#) para completar a vinculação da sua loja à sua conta Mercado Pago.
+O aplicativo Mercado Pago Cartões foi instalado com sucesso através do Marketplace. Agora, siga as instruções a partir do passo 7 da sessão [Instalar aplicativo via painel da Shopify](#bookmark_instalar_via_painel_da_shopify) para completar a vinculação da sua loja à sua conta Mercado Pago.
 
 ## Configurar parcelas sem acréscimo
 

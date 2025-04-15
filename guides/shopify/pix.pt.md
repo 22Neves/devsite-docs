@@ -10,7 +10,7 @@ Para integrar o Mercado Pago Pix, instale o aplicativo via [painel da Shopify](/
 >
 > Para habilitar pagamentos com Pix, é necessário verificar se as chaves Pix foram criadas na sua conta do Mercado Pago. Se ainda não as criou, recomendamos assistir ao [vídeo tutorial](https://www.youtube.com/watch?v=60tApKYVnkA) para um guia passo a passo.
 
-## Instalar via painel da Shopify
+## Instalar aplicativo via painel da Shopify
 
 Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os passos abaixo:
 
@@ -36,43 +36,51 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 ![Permissions](/images/shopify/pix-permissions.png) 
 
-8. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para vincular sua conta Mercado Pago à loja utilizando suas credenciais.
+8. Clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja à sua conta para receber pagamentos.
 
-![Manage](/images/shopify/pix-manage-account.png) 
+![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
 
-> RED_MESSAGE
->
-> Se você já instalou o aplicativo [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não é necessário inserir suas credenciais novamente. Avance para o passo 13 deste tutorial.
+9. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para iniciar o processo.
 
-9. No admin do Mercado Pago, acesse [Suas integrações](/developers/panel/app) e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard) e saiba como criá-la.
-10. Na aplicação, clique em **Credenciais de produção** no menu à esquerda. Copie a *public_key* e o *access_token*.
+![installation chopro 7](/images/shopify/connect-account-1-pt.png)
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
+10. Se você já estiver logado na sua conta do Mercado Pago, ignore esta etapa. Caso contrário, insira seu e-mail e senha para acessar sua conta.
 
-11. Insira suas credenciais produtivas *access_token* e a *public_key* nos campos correspondentes. **Certifique-se de não inverter os campos ao copiar e colar as credenciais**.
-12. Clique em **Salvar credenciais**.
+![installation chopro 8](/images/shopify/connect-account-2-pt.png)
 
-![Save credentials](/images/shopify/pix-save-credentials.png)
+11. Escolha qual conta do Mercado Pago deseja vincular à loja.
+
+![installation chopro 9](/images/shopify/connect-account-3-pt.png)
+
+12. Clique em **Vincular conta** e aceite as permissões solicitadas. Essas permissões são essenciais para que o Mercado Pago processe os pagamentos da sua loja de maneira segura e integrada.
+
+![installation chopro 10](/images/shopify/connect-account-4-pt.png)
+
+13. O processo será realizado automaticamente e poderá levar alguns segundos.
+
+![installation chopro 11](/images/shopify/connect-account-5-pt.png)
 
 > NOTE
 >
-> Nota
->
-> Renove suas credenciais conforme necessário, consultando a [documentação correspondente](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: **ao alterar a senha da sua conta Mercado Pago, é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+> Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
 
-13. Clique na opção **Verificar ativação** do Mercado Pago Pix. 
+14. Após a vinculação da sua loja à sua conta Mercado Pago, é necessário cadastrar uma chave Pix na sua conta Mercado Pago. Clique em **Cadastrar chave Pix** para cadastrá-la.
 
-![Check activation](/images/shopify/pix-check-activation.png)
+![Pix configuration](/images/shopify/connect-pix-1-pt.png)
 
-14. Caso o app ainda não esteja ativado, clique em **Ir para Configurações** para ativá-lo.
+15. Após cadastrar a chave Pix, clique em **Ativar app**.
 
-![Go to settings](/images/shopify/pix-go-to-settings.png)
+![Pix configuration](/images/shopify/connect-pix-2-pt.png)
 
-15. Na tela seguinte, clique em **Ativar**.
+16. Clique em **Ir para configurações** para retornar ao painel da Shopify. 
 
-![Activate](/images/shopify/pix-activate.png)
+![Pix configuration](/images/shopify/connect-pix-3-pt.png)
 
-Pronto! O Mercado Pago Pix está pronto para receber os pagamentos da sua loja.
+17. No painel administrativo da loja, vá até **Configurações > Pagamentos** e clique em **Ativar** para ativar o Mercado Pago Pix.
+
+![Pix configuration](/images/shopify/connect-pix-4-pt.png)
+
+O aplicativo **Mercado Pago Pix** foi instalado e configurado com sucesso, e agora está pronto para processar os pagamentos da sua loja diretamente na sua conta do Mercado Pago. 
 
 ## Instalar via Marketplace
 
@@ -87,45 +95,7 @@ Para instalar o Mercado Pago Pix via Marketplace, siga os passos abaixo:
 
 ![Permissions](/images/shopify/pix-permissions.png) 
 
-4. Após aceitar as permissões solicitadas, clique em **Gerenciar conta** para vincular sua conta Mercado Pago à loja utilizando suas credenciais.
-
-![Manage](/images/shopify/pix-manage-account.png) 
-
-> WARNING
->
-> Importante
->
-> Se você já instalou o aplicativo [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não é necessário inserir suas credenciais novamente. Avance para o passo 9 deste tutorial.
-
-5. No admin do Mercado Pago, acesse [Suas integrações](/developers/panel/app) e selecione sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação do Painel do desenvolvedor](/developers/pt/docs/shopify/additional-content/your-integrations/dashboard) e saiba como criá-la.
-6. Na aplicação, clique em **Credenciais de produção** no menu à esquerda. Copie a *public_key* e o *access_token*.
-
-![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
-
-7. Insira suas credenciais produtivas *access_token* e a *public_key* nos campos correspondentes. **Certifique-se de não inverter os campos ao copiar e colar as credenciais**.
-8. Clique em **Salvar credenciais**.
-
-![Save credentials](/images/shopify/pix-save-credentials.png)
-
-> NOTE
->
-> Nota
->
-> Renove suas credenciais conforme necessário, consultando a [documentação correspondente](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials) como guia. Após a renovação, é essencial atualizá-las no painel de Shopify. Lembre-se: **ao alterar a senha da sua conta Mercado Pago, é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
-
-9. Clique na opção **Verificar ativação** do Mercado Pago Pix. 
-
-![Check activation](/images/shopify/pix-check-activation.png)
-
-10. Caso o app ainda não esteja ativo, clique em **Ir para Configurações** para ativá-lo.
-
-![Go to settings](/images/shopify/pix-go-to-settings.png)
-
-11. Na tela seguinte, clique em **Ativar**.
-
-![Activate](/images/shopify/pix-activate.png)
-
-Pronto! O Mercado Pago Pix está pronto para receber os pagamentos da sua loja.
+O aplicativo Mercado Pago Pix foi instalado com sucesso através do Marketplace. Agora, siga as instruções a partir do passo 8 da sessão [Instalar aplicativo via painel da Shopify](#bookmark_instalar_via_painel_da_shopify) para completar a vinculação da sua loja à sua conta Mercado Pago.
 
 ## Configurar prazo de vencimento
 
