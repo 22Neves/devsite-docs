@@ -712,48 +712,19 @@ Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respu
 
 El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
 
-<pre class=”mermaid”>
+<pre class="mermaid">
 sequenceDiagram
-    participant A
-    participant B
+    participant MercadoPago as Mercado Pago
+    participant Plataforma as Plataforma
 
-    A->>B: retry: 1. Delay: 0 minutes
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 2. Delay: 15 minutes
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 3. Delay: 30 minutes
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 4. Delay: 6 hours
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 5. Delay: 48 hours
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 6. Delay: 96 hours
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 7. Delay: 96 hours
-    Note right of B: 
-    B->>A: 
-    Note left of A: 
-
-    A->>B: retry: 8. Delay: 96 hours
-    Note right of B: 
+    MercadoPago->>Plataforma: reintento: 1. Demora: 0 minutos
+    MercadoPago->>Plataforma: reintento: 2. Demora: 15 minutos
+    MercadoPago->>Plataforma: reintento: 3. Demora: 30 minutos
+    MercadoPago->>Plataforma: reintento: 4. Demora: 6 horas
+    MercadoPago->>Plataforma: reintento: 5. Demora: 48 horas
+    MercadoPago->>Plataforma: reintento: 6. Demora: 96 horas
+    MercadoPago->>Plataforma: reintento: 7. Demora: 96 horas
+    MercadoPago->>Plataforma: reintento: 8. Demora: 96 horas
 </pre>
 
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
