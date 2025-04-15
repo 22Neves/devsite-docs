@@ -4,9 +4,7 @@ El esquema de apertura le permite definir cómo se abrirá el checkout para el u
 
 Sin embargo, es posible personalizar la apertura para que se abra en una página externa.
 
-> NOTE
-> 
-> Atención
+> WARNING
 >
 > Es sumamente importante prestar atención, al crear la preferencia, a la configuración de las `back_urls` porque serán las encargadas de guiar el flujo de regreso a su sitio web cuando se complete el pago. Para obtener más información, consulte la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 

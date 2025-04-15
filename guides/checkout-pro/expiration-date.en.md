@@ -2,9 +2,7 @@
 
 Expiration date is the maximum period defined for making a payment. With Checkout Pro it is possible to change the default expiration date to **cash payments** by sending the `date_of_expiration` field in the preference creation request.
 
-> NOTE
->
-> Important
+> WARNING
 >
 > The crediting timeframe is up to 2 business hours depending on the payment method. Therefore, we recommend setting the expiration date at least 3 days apart to ensure payment is made. In addition, if payment is made after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 

@@ -12,8 +12,6 @@ Abaixo, você encontrará exemplos práticos de como implementar essa funcionali
 
 > NOTE
 >
-> Nota
->
 > Esses atributos permitem ajustar parcelas, excluir determinados meios de pagamento, modificar a data de vencimento de um pagamento, entre outras opções. Para personalizar sua preferência de pagamento, acesse [Personalização do checkout](/developers/pt/docs/checkout-pro/additional-settings).
 
 [[[
