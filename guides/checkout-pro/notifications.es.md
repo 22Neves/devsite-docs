@@ -712,6 +712,50 @@ Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respu
 
 El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
 
+<pre class=”mermaid”>
+sequenceDiagram
+    participant A
+    participant B
+
+    A->>B: retry: 1. Delay: 0 minutes
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 2. Delay: 15 minutes
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 3. Delay: 30 minutes
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 4. Delay: 6 hours
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 5. Delay: 48 hours
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 6. Delay: 96 hours
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 7. Delay: 96 hours
+    Note right of B: 
+    B->>A: 
+    Note left of A: 
+
+    A->>B: retry: 8. Delay: 96 hours
+    Note right of B: 
+</pre>
+
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como por ejemplo, actualizar un pago aprobado.
