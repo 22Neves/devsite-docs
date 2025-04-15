@@ -44,7 +44,11 @@ const customization = {
 ![status-screen-external-reference](checkout-bricks/status-screen-add-reference-mpe-es.png)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+![status-screen-external-reference](checkout-bricks/status-screen-add-reference-mlb-es.png)
+
+------------
+----[mla]----
 ![status-screen-brick-external-reference](checkout-bricks/status-screen-add-reference-es.jpg)
  
 ------------
