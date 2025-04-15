@@ -715,16 +715,16 @@ El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía
 <pre class="mermaid">
 sequenceDiagram
     participant MercadoPago as Mercado Pago
-    participant Plataforma as Plataforma
+    participant Integrador as Integrador
 
-    MercadoPago->>Plataforma: reintento: 1. Demora: 0 minutos
-    MercadoPago->>Plataforma: reintento: 2. Demora: 15 minutos
-    MercadoPago->>Plataforma: reintento: 3. Demora: 30 minutos
-    MercadoPago->>Plataforma: reintento: 4. Demora: 6 horas
-    MercadoPago->>Plataforma: reintento: 5. Demora: 48 horas
-    MercadoPago->>Plataforma: reintento: 6. Demora: 96 horas
-    MercadoPago->>Plataforma: reintento: 7. Demora: 96 horas
-    MercadoPago->>Plataforma: reintento: 8. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 1. Demora: 0 minutos
+    MercadoPago->>Integrador: reintento: 2. Demora: 15 minutos
+    MercadoPago->>Integrador: reintento: 3. Demora: 30 minutos
+    MercadoPago->>Integrador: reintento: 4. Demora: 6 horas
+    MercadoPago->>Integrador: reintento: 5. Demora: 48 horas
+    MercadoPago->>Integrador: reintento: 6. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 7. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 8. Demora: 96 horas
 </pre>
 
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 

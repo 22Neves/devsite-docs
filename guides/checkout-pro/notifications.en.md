@@ -721,16 +721,16 @@ The timeout for this confirmation will be 22 seconds. If this response is not se
 <pre class="mermaid">
 sequenceDiagram
     participant MercadoPago as Mercado Pago
-    participant Platform as Platform
+    participant Integrator as Integrator
 
-    MercadoPago->>Platform: retry: 1. Delay: 0 minutes
-    MercadoPago->>Platform: retry: 2. Delay: 15 minutes
-    MercadoPago->>Platform: retry: 3. Delay: 30 minutes
-    MercadoPago->>Platform: retry: 4. Delay: 6 hours
-    MercadoPago->>Platform: retry: 5. Delay: 48 hours
-    MercadoPago->>Platform: retry: 6. Delay: 96 hours
-    MercadoPago->>Platform: retry: 7. Delay: 96 hours
-    MercadoPago->>Platform: retry: 8. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 1. Delay: 0 minutes
+    MercadoPago->>Integrator: retry: 2. Delay: 15 minutes
+    MercadoPago->>Integrator: retry: 3. Delay: 30 minutes
+    MercadoPago->>Integrator: retry: 4. Delay: 6 hours
+    MercadoPago->>Integrator: retry: 5. Delay: 48 hours
+    MercadoPago->>Integrator: retry: 6. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 7. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 8. Delay: 96 hours
 </pre>
 
 After responding to the notification, confirming its receipt, you can obtain all information about the notified `payments` topic event by making a GET request to the endpoint [v1/payments/{id}](/developers/en/reference/payments/_payments_id/get).

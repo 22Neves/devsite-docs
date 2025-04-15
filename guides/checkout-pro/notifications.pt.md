@@ -720,16 +720,16 @@ O tempo de espera para essa confirmação será de 22 segundos. Se não for envi
 
 sequenceDiagram
     participant MercadoPago as Mercado Pago
-    participant Plataforma as Plataforma
+    participant Integrador as Integrador
 
-    MercadoPago->>Plataforma: tentativa: 1. Atraso: 0 minutos
-    MercadoPago->>Plataforma: tentativa: 2. Atraso: 15 minutos
-    MercadoPago->>Plataforma: tentativa: 3. Atraso: 30 minutos
-    MercadoPago->>Plataforma: tentativa: 4. Atraso: 6 horas
-    MercadoPago->>Plataforma: tentativa: 5. Atraso: 48 horas
-    MercadoPago->>Plataforma: tentativa: 6. Atraso: 96 horas
-    MercadoPago->>Plataforma: tentativa: 7. Atraso: 96 horas
-    MercadoPago->>Plataforma: tentativa: 8. Atraso: 96 horas
+    MercadoPago->>Integrador: tentativa: 1. Atraso: 0 minutos
+    MercadoPago->>Integrador: tentativa: 2. Atraso: 15 minutos
+    MercadoPago->>Integrador: tentativa: 3. Atraso: 30 minutos
+    MercadoPago->>Integrador: tentativa: 4. Atraso: 6 horas
+    MercadoPago->>Integrador: tentativa: 5. Atraso: 48 horas
+    MercadoPago->>Integrador: tentativa: 6. Atraso: 96 horas
+    MercadoPago->>Integrador: tentativa: 7. Atraso: 96 horas
+    MercadoPago->>Integrador: tentativa: 8. Atraso: 96 horas
 
 
 Após responder a notificação, confirmando seu recebimento, você pode obter todas as informações sobre o evento do tópico `payments` notificado fazendo um GET ao endpoint [v1/payments/{id}](/developers/pt/reference/payments/_payments_id/get). 
