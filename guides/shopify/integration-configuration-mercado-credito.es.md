@@ -15,7 +15,6 @@
 
 A través de esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 meses, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
 
-------------
 ----[mlb]----
 Actualmente puedes ofrecer **Linha de Crédito** a través de nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) o directamente desde el checkout de tu tienda con la app **Mercado Pago Linha de Crédito**.
 

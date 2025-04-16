@@ -24,7 +24,7 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 ![Add payment method](/images/shopify/pix-add-payment-method.png) 
 
-5. Selecione a aba **Buscar por provedor** e procure pelo aplicativo "Mercado Pago Pix" e selecione a opção correspondente. 
+5. Selecione a aba **Pesquisar por provedor** e procure pelo aplicativo "Mercado Pago Pix" e selecione a opção correspondente. 
 
 ![Add](/images/shopify/pix-app-search.png) 
 

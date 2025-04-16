@@ -14,48 +14,46 @@ Para instalar o Mercado Pago Antifraude Plus, siga as etapas abaixo.
 
 ![antifraude plus 2](/images/shopify/antifraude-plus-2-pt.png)
 
-7. Após a instalação, clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja à sua conta para receber pagamentos.
+3. Após a instalação, clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja à sua conta para receber pagamentos.
 
 > RED_MESSAGE
 >
-> Se você já instalou outro aplicativo do Mercado Pago, como Mercado Pago Cartões, ----[mlb]----Mercado Pago Pix------------ou o Mercado Pago Checkout Pro, sua loja já estará automaticamente vinculada à sua conta. Nesse caso, você pode avançar para o passo 13 desta documentação.
+> Se você já instalou outro aplicativo do Mercado Pago, como Mercado Pago Cartões, ----[mlb]----Mercado Pago Pix ------------ou o Mercado Pago Checkout Pro, sua loja já estará automaticamente vinculada à sua conta. Nesse caso, você pode avançar para o passo 11 desta documentação.
 
-![installation cards 3](/images/shopify/installation-cards-3-1-pt.png)
-
-8. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para iniciar o processo.
+4. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para iniciar o processo.
 
 ![installation cards 4](/images/shopify/connect-account-1-pt.png)
 
-9. Se você já estiver logado na sua conta do Mercado Pago, ignore esta etapa. Caso contrário, insira seu e-mail e senha para acessar sua conta.
+5. Se você já estiver logado na sua conta do Mercado Pago, ignore esta etapa. Caso contrário, insira seu e-mail e senha para acessar sua conta.
 
 ![installation cards 5](/images/shopify/connect-account-2-pt.png)
 
-10. Escolha qual conta do Mercado Pago deseja vincular à loja.
+6. Escolha qual conta do Mercado Pago deseja vincular à loja.
 
 ![installation cards 6](/images/shopify/connect-account-3-pt.png)
 
-11. Clique em **Vincular conta** e aceite as permissões solicitadas. Essas permissões são essenciais para que o Mercado Pago processe os pagamentos da sua loja de maneira segura e integrada.
+7. Clique em **Vincular conta** e aceite as permissões solicitadas. Essas permissões são essenciais para que o Mercado Pago processe os pagamentos da sua loja de maneira segura e integrada.
 
 ![installation cards 7](/images/shopify/connect-account-4-pt.png)
 
-12. O processo será realizado automaticamente e poderá levar alguns segundos.
+8. O processo será realizado automaticamente e poderá levar alguns segundos.
 
 ![installation cards 8](/images/shopify/connect-account-5-pt.png)
+
+9. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus.
 
 > NOTE
 >
 > Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
 
-13. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus.
-
 ![antifraude plus 3](/images/shopify/antifraude-plus-3-pt.png)
 
-14. Para ativar o aplicativo, clique em **Ir para temas** da Shopify.
+10. Para ativar o aplicativo, clique em **Ir para temas** da Shopify.
 
 ![antifraude plus 3](/images/shopify/antifraude-plus-3.1-pt.png)
 
-15. Por fim, clique em **Salvar** para finalizar a instalação.
+11. Por fim, clique em **Salvar** para finalizar a instalação.
 
 ![antifraude plus 4](/images/shopify/antifraude-plus-4-pt.png)
 
-Pronto! O **Mercado Pago Antifraude Plus** foi instalado com sucesso!
+O **Mercado Pago Antifraude Plus** foi instalado com sucesso.
