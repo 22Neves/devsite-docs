@@ -7,7 +7,6 @@ Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchen
  Neste último cenário, cartões previamente salvos e saldo disponível na conta serão habilitados como meios de pagamento.
 
 ------------
-
 ## Usuário convidado
 
 1. Siga o fluxo de compra e, ao abrir o checkout, insira os dados de **usuário comprador**.
