@@ -57,7 +57,7 @@ product_landing_how_works:
 ---
 ------------
 
-----[mla, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ---
 product_landing_how_works:
  - title: Cómo funciona
@@ -123,7 +123,7 @@ product_landing_how_integrate:
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
- - requirement_title: Requisitos prévios
+ - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de vendedor
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
@@ -140,7 +140,7 @@ product_landing_how_integrate:
 ---
 ------------
 
-----[mla, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -148,7 +148,7 @@ product_landing_how_integrate:
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
- - requirement_title: Requisitos prévios
+ - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de vendedor
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)

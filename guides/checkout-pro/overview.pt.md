@@ -57,7 +57,7 @@ product_landing_how_works:
 ---
 ------------
 
-----[mla, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ---
 product_landing_how_works:
  - title: Como funciona
@@ -140,7 +140,7 @@ product_landing_how_integrate:
 ---
 ------------
 
-----[mla, mlu, mlc, mco, mpe, mlm]----
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ---
 product_landing_how_integrate:
  - title: Como integrar
