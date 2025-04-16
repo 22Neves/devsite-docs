@@ -28,7 +28,7 @@ Puedes hacer clic en el botón **Editar datos** para ver y editar las configurac
 
 #### Configuraciones avanzadas
 
-* **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se utilice el flujo **Authorization code** de OAuth. **Asegúrate de que sea una URL estática**. Consulta [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más detalles.
+* **URLs de redireccionamiento**: URLs (en https) donde deseas recibir el código de autorización cuando tu integración sea configurada como Marketplace o se utilice el flujo **Authorization code** de OAuth. **Asegúrate de que sea una URL estática**. Consulta [OAuth](/developers/es/docs/security/oauth) para obtener más detalles.
 * **Usar el flujo de código de autorización con PKCE**: en caso de que la integración se realice a través del flujo **Authorization code** de OAuth, puedes habilitar el PKCE (_Proof Key for Code Exchange_) para generar un código secreto adicional que se usará durante el proceso de autorización. Consulta [Configurar PKCE](/developers/es/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-El%20PKCE%20) para obtener más detalles. 
 * **Permisos de la aplicación**: son opciones de acceso de tu aplicación, cómo **lectura**, **acceso offline** y **escritura**. Por defecto, tu aplicación se crea con todos los permisos activados, pero puedes desactivar un permiso haciendo clic en la casilla de verificación correspondiente al permiso que deseas cambiar.
 
@@ -71,11 +71,11 @@ En esta sección, cuentas con una guía paso a paso para poder probar tu integra
 
 Además, cuentas con enlaces directos a la documentación correspondiente, así como con una barra de estado que te permitirá visualizar tus avances de manera sencilla.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![pantalla de validación de prueba de integración](/images/dashboard/testing-es.png)
 
 ------------
-----[mla, mlb]----
+----[mla]----
 ![pantalla de validación de prueba de integración](/images/dashboard/testing-es.gif)
 
 ------------

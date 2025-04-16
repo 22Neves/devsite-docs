@@ -44,7 +44,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlm]----
+----[mlm, mlb]----
 The payment button is **composed of the button and the value proposition** (`valueProp`), which can be customized according to the options provided by Mercado Pago.
 
 There are two themes available: the **default** (also used when no configuration is specified) and **dark**. Choosing a theme affects the background color of the button, the value proposition, and the color of the images inside the button.
@@ -86,7 +86,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 The payment button offers two reading levels: the **call to action (button)** and the **value proposition**. In both cases, the text can be customized according to the options provided by Mercado Pago. By default, the payment button renders as in the following image.
 
 ![cow-text-wallet-default](cow/cow-text-wallet-default.en.png)

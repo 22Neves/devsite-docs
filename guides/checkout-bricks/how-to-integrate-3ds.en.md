@@ -96,11 +96,11 @@ renderStatusScreenBrick(bricksBuilder);
 
 The Status Screen Brick will display a transition indicating redirection and then the _Challenge_ of the bank in question will be displayed.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlc, mlu, mlm, mco, mpe, mlb]----
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-en.png)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![how-to-integrate-3ds](checkout-bricks/how-to-integrate-3ds-en.gif)
 
 ------------
@@ -122,10 +122,15 @@ The user must respond to the _Challenge_ for the transition to be properly valid
 ------------
 ----[mpe]----
 
-![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-en.jpg)
+![status-screen-brick-layout](/images/checkout-bricks/status-screen-brick-layout-mpe-en.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+
+![status-screen-brick-layout](/images/checkout-bricks/status-screen-brick-layout-mlb-en.jpg)
+
+------------
+----[mla]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-en.gif)
 
 ------------ 
@@ -147,6 +152,6 @@ To enable the validation of payments with 3DS, we provide a **sandbox testing en
 
 In both flows (success and failure), the _Challenge_, which is a screen similar to the one shown below, must be displayed by the [Status Screen Brick](/developers/pt/docs/checkout-bricks/status-screen-brick/introduction).
 
-![bricks_sandbox](checkout-bricks/sandbox-v1-en.png)
+![bricks_sandbox](/images/checkout-bricks/sandbox-v1-en.png)
 
 The provided verification code is for illustrative purposes only. To complete the test flow, simply click the **Confirm** button, and the Status Screen will display the final state of the payment.

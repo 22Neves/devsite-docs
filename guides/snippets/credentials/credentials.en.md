@@ -10,6 +10,7 @@ Credentials are divided into two types: **production credentials** and **test cr
 
 ::::TabComponent{title="Production credentials"}
 ### Production credentials
+
 **Production credentials** are a set of keys that allow you to receive real payments in stores and other applications.
 
 When accessing production credentials, the following credential pairs will be displayed: **Public Key and Access Token**, as well as **Client ID and Client Secret**.
@@ -25,6 +26,7 @@ The **Public Key** and **Access Token** credentials are used, not necessarily to
 For more information on which credentials will be needed for your integration, see the [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) of the solution being integrated.
 
 ### Client ID and Client Secret
+
 The **Client ID** and **Client Secret** credentials are used primarily in integrations that use [OAuth](/developers/es/docs/security/oauth/introduction) as a protocol for obtaining private information from Mercado Pago accounts. In particular, they are used during the **Client Credentials** flow (_grant type_), which allows you to access a resource on your own behalf and obtain an Access Token without user interaction.
 
 They may also be required in some older integrations with e-commerce platforms.
@@ -83,22 +85,19 @@ Below, learn how to get the credentials.
 2. Access your application or create one if you have not already done so.
 3. You will find your credentials under the title **Testing > Test credentials** or **Production > Production credentials**, in the menu located on the left side of the screen.
 
-
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-es.jpg)
 
 ------------
-----[mla, mlb]----
+----[mla]----
 ![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.gif)
 
 ------------
-
-
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.jpg)
 
 ------------
-----[mla, mlb]----
+----[mla]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ------------
@@ -134,11 +133,11 @@ Below, we show you how to share credentials.
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
-----[mla, mlb]----
+----[mla]----
 ![Share credentials in Your Integrations](/images/snippets/share-credentials-panel-pt.gif)
 
 ------------
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Share credentials in Your Integrations](/images/snippets/share-credentials-panel-es.jpg)
 
 ------------
@@ -157,11 +156,11 @@ To renew a credential pair, follow the steps below.
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
-----[mla, mlb]----
+----[mla]----
 ![Como renovar suas credenciais](/images/snippets/renew-credentials-pt.gif)
 
 ------------
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Como renovar suas credenciais](/images/snippets/renew-credentials-es.png)
 
 ------------

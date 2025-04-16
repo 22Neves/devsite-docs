@@ -4,7 +4,7 @@
 >
 > Alterar visual do botão
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlb, mlc, mlm, mpe, mco, mlu]----
 O **botão de pagamento** permite algumas customizações visuais listadas na tabela abaixo, todas opcionais e do tipo `string`.
 
 Caso a propriedade enviada esteja vazia, a tela apresentará o visual definido pelo [*layout* padrão](/developers/pt/docs/checkout-pro/integrate-checkout-pro/web). Por outro lado, ao enviar um valor alternativo, este substituirá o valor padrão. 
@@ -75,7 +75,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 É possível customizar o visual do botão de pagamento através da definição de propriedades visuais com valores alternativos aos padrões. Por padrão, o botão de pagamento é renderizado como na imagem a seguir.
 
 ![cow-visual-wallet-default](cow/cow-visual-wallet-default.pt.png)

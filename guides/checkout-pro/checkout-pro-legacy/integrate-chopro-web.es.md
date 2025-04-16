@@ -6,11 +6,11 @@
 
 Primero, asegúrate de haber **creado la [preferencia en tu backend](/developers/es/docs/checkout-pro/integrate-preferences)**.
 
-----[mlc, mlm, mco, mpe, mlu]----
+----[mlb, mlc, mlm, mco, mpe, mlu]----
 A continuación, instala el SDK de **frontend** (`Javascript`) de Mercado Pago, que se utiliza para acceder de forma segura a las funcionalidades de Mercado Pago y añadir el botón de pago a tu proyecto.
 
 ------------
-----[mla, mlb]----
+----[mla]----
 Luego, deberás instalar el SDK de **frontend** de Mercado Pago en tu proyecto para agregar el botón de pago.
 
 ------------
@@ -26,7 +26,7 @@ La instalación se realiza, básicamente, en **dos pasos**:
 >
 > Agregar el SDK de Mercado Pago al proyecto
 
-----[mlc, mlm, mco, mpe, mlu]----
+----[mlb, mlc, mlm, mco, mpe, mlu]----
 Para incluir el SDK de Javascript de Mercado Pago, agrega el siguiente código al HTML de tu proyecto o instala la biblioteca para ReactJS.
 
 [[[
@@ -40,7 +40,7 @@ npm install @mercadopago/sdk-react
 ]]]
 
 ------------
-----[mla, mlb]----
+----[mla]----
 Para incluir el SDK de Mercado Pago.js, agrega el siguiente código al HTML del proyecto o instala la biblioteca para ReactJs.
 
 [[[
@@ -74,9 +74,7 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberás crear un c
  <div id="wallet_container"></div>
 ```
 
-> NOTE
->
-> Atención
+> WARNING
 >
 > El valor que se muestra en la propiedad de ID a continuación es solo un ejemplo y se puede cambiar, pero siempre debe coincidir con el ID indicado en el paso de renderizado. 
 
@@ -88,7 +86,7 @@ Para las integraciones de JavaScript/HTML, a través de CDN, deberás crear un c
 
 Al finalizar el paso anterior, **inicializa tu checkout usando el ID de la preferencia previamente creada con el identificador del elemento donde se debe mostrar el botón**, si estás usando la integración `Javascript/HTML`, o instanciando el componente, en el caso de la biblioteca `React`, como se muestra en los ejemplos a continuación.
 
-----[mlc, mlm, mco, mpe, mlu]----
+----[mlb, mlc, mlm, mco, mpe, mlu]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -111,7 +109,7 @@ export default App;
 ]]]
 
 ------------
-----[mla, mlb]----
+----[mla]----
 [[[
 ```Javascript
 mp.bricks().create("wallet", "wallet_container", {
@@ -149,9 +147,7 @@ Al final del proceso de pago, es posible redirigir al comprador a otro entorno d
 
 Para obtener más información, consulta la sección [URL de retorno](/developers/es/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
-> WARNING
->
-> Importante
+> NOTE
 >
 > No utilices dominios locales en el valor `back_urls`, tales como 'localhost/' o '127.0.0.1' con o sin puerto especificado. Recomendamos usar un servidor con dominio nombrado (DNS) o IPs de desarrollo para poder regresar al sitio después del pago. De lo contrario, aparecerá el mensaje de "Algo ha salido mal" al finalizar el proceso de compra.
 

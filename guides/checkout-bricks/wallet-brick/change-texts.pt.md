@@ -44,7 +44,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlm]----
+----[mlm, mlb]----
 O Wallet Brick é **composto pelo botão e a proposta de valor** (`valueProp`), que pode ser customizada de acordo com as opções disponibilizadas pelo Mercado Pago. 
 
 Há dois temas disponíveis: o **default** (também usado quando nenhuma configuração for especificada) e o **dark**. A escolha do tema impacta a cor de fundo do botão, da proposta de valor e a cor das imagens de dentro do botão.
@@ -92,7 +92,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 O Wallet Brick oferece dois níveis de leitura: o **call to action (botão)** e a **proposta de valor** (`valueProp`). Em ambos os casos, o texto pode ser customizado de acordo com as opções disponibilizadas pelo Mercado Pago. 
 
 O _call to action_ é separado em duas partes: a ação, determinada pela propriedade `Action`, e o complemento da ação, determinado pela propriedade `Action Complement`.

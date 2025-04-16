@@ -26,7 +26,7 @@ Veja nas seções a seguir como enviar ao Mercado Pago os pagamentos realizados 
 
 ----[mlb]----
 * [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Conta Mercado Pago e Parcelamento ser cartão](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Conta Mercado Pago e Linha de Crédito](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Pix](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/pix)
 * [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
 
@@ -43,9 +43,15 @@ Veja nas seções a seguir como enviar ao Mercado Pago os pagamentos realizados 
 * [Conta Mercado Pago](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet)
 
 ------------
-----[mla, mlm]----
+----[mla]----
 * [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
-* [Conta Mercado Pago e Parcelamento ser cartão](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Conta Mercado Pago e Cuotas sin Tarjeta](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
+* [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
+
+------------
+----[mlm]----
+* [Cartões](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/cards)
+* [Conta Mercado Pago e Meses sin Tarjeta](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/wallet-credits)
 * [Outros meios de pagamento](/developers/pt/docs/checkout-bricks/payment-brick/payment-submission/other-payment-methods)
 
 ------------
