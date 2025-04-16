@@ -10,7 +10,7 @@ Con el certificado activado y la prueba completada, puedes sacar tu tienda del m
 
 Sigue este paso a paso para realizar el cambio:
 
-1. Ve a tu cuenta de [Wordpress](https://wordpress.com/).
+1. Ve a tu cuenta de [WordPress](https://wordpress.com/).
 2. Accede al Panel de tu cuenta y haz clic en **Plugins > Plugins instalados**.
 3. En el buscador de plugins, busca “Mercado Pago payments for WooCommerce”.
 4. Haz clic en **Configurar Plugin**.

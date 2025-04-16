@@ -28,7 +28,7 @@ Para obter mais informações sobre quais credenciais serão necessárias para a
 
 ### Client ID e Client Secret
 
-As credenciais **Client ID** e **Client Secret** são utilizadas, principalmente, nas integrações que utilizam [OAuth](/developers/pt/docs/security/oauth/introduction) como protocolo para obtenção de informação privada de contas do Mercado Pago. Em particular, são utilizadas durante o fluxo (_grant type_) de **Client Credentials**, que permite acessar um recurso em nome próprio e obter um Access Token sem interação do usuário.
+As credenciais **Client ID** e **Client Secret** são utilizadas, principalmente, nas integrações que utilizam [OAuth](/developers/pt/docs/security/oauth) como protocolo para obtenção de informação privada de contas do Mercado Pago. Em particular, são utilizadas durante o fluxo (_grant type_) de **Client Credentials**, que permite acessar um recurso em nome próprio e obter um Access Token sem interação do usuário.
 
 Também podem ser requeridas em algumas integrações mais antigas com plataformas de e-commerce.
 

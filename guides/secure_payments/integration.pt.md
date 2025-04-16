@@ -16,7 +16,7 @@ Para utilizar Secure Payments, é necessário fazer chamadas para as seguintes A
 
 ## Integrar pagamentos online
 
-A seguir, compartilhamos um exemplo de solicitação. Lembre-se de alterar o valor do campo `token` pelo seu Access Token. [Acesse a documentação do OAuth](/developers/pt/docs/security/oauth/introduction) para mais informações sobre o Access Token.
+A seguir, compartilhamos um exemplo de solicitação. Lembre-se de alterar o valor do campo `token` pelo seu Access Token. [Acesse a documentação do OAuth](/developers/pt/docs/security/oauth) para mais informações sobre o Access Token.
 
 ```curl
 curl -X POST \
