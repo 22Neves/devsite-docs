@@ -57,7 +57,7 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 
 7. Clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja à sua conta para receber pagamentos.
 
-![installation cards 3](/images/shopify/installation-cards-3-1-pt.png)
+![installation cards 3](/images/shopify/installation-cards-3-pt.png)
 
 8. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para iniciar o processo.
 

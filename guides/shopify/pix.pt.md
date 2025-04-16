@@ -60,10 +60,6 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 ![installation chopro 11](/images/shopify/connect-account-5-pt.png)
 
-> NOTE
->
-> Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
-
 14. Após a vinculação da sua loja à sua conta Mercado Pago, é necessário cadastrar uma chave Pix na sua conta Mercado Pago. Clique em **Cadastrar chave Pix** para cadastrá-la.
 
 ![Pix configuration](/images/shopify/connect-pix-1-pt.png)
