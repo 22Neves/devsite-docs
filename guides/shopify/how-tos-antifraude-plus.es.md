@@ -58,4 +58,4 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 
 ![antifraude plus 4](/images/shopify/antifraude-plus-4-pt.png)
 
-El **Mercado Pago Antifraude Plus** se ha instalado con éxito.
+**Mercado Pago Antifraude Plus** se ha instalado con éxito.
