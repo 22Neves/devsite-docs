@@ -120,9 +120,17 @@ Esto creará un nuevo directorio llamado `my-mercadopago-app` con una estructura
 
 Instala la biblioteca SDK MercadoPago.js en el directorio `my-mercadopago-app`. Puedes hacerlo ejecutando el siguiente comando:
 
+----[mla]----
+```
+npm install @mercadopago/sdk-react@0.0.24
+```
+------------
+
+----[mlb, mlu, mlc, mco, mpe, mlm]----
 ```
 npm install @mercadopago/sdk-react
 ```
+------------
 
 ## Crear un componente para el botón de pago
 
