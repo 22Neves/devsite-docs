@@ -6,7 +6,7 @@ Los miembros certificados del programa de socios del Mercado Pago, el [&lt;dev>p
 >
 > Importante
 >
-> Si estás integrando como una plataforma o PDV (Punto de Venta), recuerda configurar OAuth para que puedas identificar correctamente los pagos de tus vendedores. Consulte [OAuth](/developers/es/docs/security/oauth/introduction) para obtener más información.
+> Si estás integrando como una plataforma o PDV (Punto de Venta), recuerda configurar OAuth para que puedas identificar correctamente los pagos de tus vendedores. Consulte [OAuth](/developers/es/docs/security/oauth) para obtener más información.
 
 ## Plugin disponibles
 
