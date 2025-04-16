@@ -100,7 +100,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 ----[mlm]----
 > RED_MESSAGE
 >
-> El aplicativo **Mercado Pago Meses sin Tarjeta** **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_.  
+> La aplicación "Mercado Pago Meses sin Tarjeta" **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_.  
 
 ------------
 ----[mla]----
