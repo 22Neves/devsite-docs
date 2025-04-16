@@ -103,7 +103,11 @@ The result of rendering the Brick should look like the image below.
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-en.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-mlb-en.jpg)
+
+------------ 
+----[mla]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-en.gif)
 
 ------------ 
