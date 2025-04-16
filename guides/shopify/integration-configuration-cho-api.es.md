@@ -57,7 +57,7 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 
 ![installation cards 3](/images/shopify/installation-cards-2-es.png)
 
-7. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta para recibir pagos.
+7. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta y comenzar a recibir pagos.
 
 ![installation cards 3](/images/shopify/installation-cards-3-pt.png)
 
