@@ -37,17 +37,19 @@ The process of redirecting the buyer to authorize the use of their saved payment
 
 If you need to implement Custom Tabs in your project, start by installing the following dependency in the `build.gradle` file.
 
-```Android
+[[[ 
+```android
 dependencies {
     ...
     implementation "androidx.browser:browser:1.4.0"
 }
 ```
+]]]
 
 Then instantiate the Custom Tabs using the examples below, which you can place when opening an activity or performing an action in it.
 
 [[[
-```Java
+```java
 
 String url = "URL-CHECKOUT";
 CustomTabsIntent intent = new CustomTabsIntent.Builder()
@@ -55,7 +57,7 @@ CustomTabsIntent intent = new CustomTabsIntent.Builder()
 intent.launchUrl(MainActivity.this, Uri.parse(url));
 
 ```
-```Kotlin
+```kotlin
 
 val url = "URL-CHECKOUT"
     val intent = CustomTabsIntent.Builder()
@@ -136,7 +138,7 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 > NOTE
 >
-> If you encounter an error during this stage, you can refer to our [list of possible errors]().
+> If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
 
 :::
 :::AccordionComponent{title="2. Obtain Account Authentication Token" pill="client-side"}
@@ -171,7 +173,7 @@ The `.show` method is responsible for displaying a confirmation modal to the buy
 
 > NOTE
 >
-> If you encounter an error during this stage, you can refer to our [list of possible errors]().
+> If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
 
 ![Authentication experience]()
 
@@ -361,7 +363,7 @@ Below, you can see an example of the structure of the response from the `userPay
 
 > NOTE
 >
-> It is important to wrap these requests in a _try-catch_ block to ensure that any potential errors are handled properly. If you encounter one, you can refer to our [list of possible errors]().
+> It is important to wrap these requests in a _try-catch_ block to ensure that any potential errors are handled properly. If you encounter one, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
 
 Finally, to allow the buyer to view these payment options in your checkout and select their preferred one, you need to render them on a screen. Below is an example of how to display them.
 
@@ -426,7 +428,7 @@ createOrder();
 With a successful payment result, remember to redirect the user to a confirmation screen, informing them that the payment has been completed.
 
 :::
-:::AccordionComponent{title="Possible errors" pill=" "}
+:::AccordionComponent{title="Possible errors"}
 
 Below, you can find two lists of possible errors that may occur during the integration. First, you will find those from the `Authenticator` subclass, followed by those related to the API used for validations.
 

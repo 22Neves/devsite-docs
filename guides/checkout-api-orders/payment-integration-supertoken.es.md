@@ -139,7 +139,7 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 > NOTE
 >
-> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores]().
+> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
 :::
 :::AccordionComponent{title="2. Obtener token de autenticación de cuenta" pill="client-side"}
@@ -175,7 +175,7 @@ El método `.show` es el encargado de mostrar al comprador un modal de confirmac
 
 > NOTE
 >
-> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores.]().
+> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
 ![Experiencia de autenticación]()
 
@@ -365,7 +365,7 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
 
 > NOTE
 >
-> Es importante que estas llamadas estén envueltas en un bloque _try-catch_ para que posibles errores sean procesados adecuadamente. Si llegaras a recibir uno, puedes consultar nuestro [listado de posibles errores]().
+> Es importante que estas llamadas estén envueltas en un bloque _try-catch_ para que posibles errores sean procesados adecuadamente. Si llegaras a recibir uno, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
 Por último, para que el comprador visualice estas opciones de pago en tu checkout y seleccione la que prefiera, debes renderizarlas en una pantalla. Ve a continuación un ejemplo de cómo exhibirlas. 
 
@@ -430,7 +430,7 @@ createOrder();
 Con un resultado de pago exitoso, recuerda redirigir al usuario a una pantalla de confirmación, informando que el pago ha sido completado.
 
 :::
-:::AccordionComponent{title="Posibles errores" pill=" "}
+:::AccordionComponent{title="Posibles errores"}
 
 A continuación, puedes ver dos listados de posibles errores que pueden suceder durante la integración. En primer lugar, encontrarás aquellos de la subclase `Authenticator`, y luego aquellos vinculados a la API utilizada para las validaciones.
 

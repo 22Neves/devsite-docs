@@ -84,7 +84,7 @@ A integração de métodos de pagamento salvos no Mercado Pago consiste em garan
         participant SDK JS
         participant APIs do Mercado Pago
         participant App Mercado Pago / Mercado Livre
-        participant API de Pedido
+        participant Order API
 
         Comprador->>Site do Vendedor: 1. Acessa a página de checkout
         Site do Vendedor->>SDK JS: 2. Inicializa
@@ -98,7 +98,7 @@ A integração de métodos de pagamento salvos no Mercado Pago consiste em garan
         Comprador->>SDK JS: 9. Consente com o compartilhamento de dados
 
         SDK JS->>App Mercado Pago / Mercado Livre: 10. Usuário tem o app instalado
-        App Mercado Pago / Mercado Livre->>App Mercado Pago / Livre: 11. Autentica com digital/rosto
+        App Mercado Pago / Mercado Livre->>App Mercado Pago / Mercado Livre: 11. Autentica com digital/rosto
         App Mercado Pago / Mercado Livre->>SDK JS: 12. Retorna a chave de autenticação
         SDK JS->>Site do Vendedor: 13. Retorna a chave de autenticação
 
@@ -109,8 +109,8 @@ A integração de métodos de pagamento salvos no Mercado Pago consiste em garan
         Site do Vendedor->>Comprador: 18. Mostra os meios de pagamento
 
         Comprador->>Site do Vendedor: 19. Seleciona o meio de pagamento
-        Site do Vendedor->>API de Pedido: 20. Processa o pedido de pagamento
-        API de Pedido-->>Site do Vendedor: 21. Retorna as informações da transação
+        Site do Vendedor->>Order API: 20. Processa o pedido de pagamento
+        Order API-->>Site do Vendedor: 21. Retorna as informações da transação
 </pre>
 
 
@@ -139,7 +139,7 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 > NOTE
 >
-> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.]().
+> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
 :::
 :::AccordionComponent{title="2. Obter token de autenticação de conta" pill="client-side"}
@@ -175,7 +175,7 @@ O método `.show` é responsável por exibir um modal de confirmação para o co
 
 > NOTE
 >
-> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.]().
+> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
 ![Autenticação]()
 
@@ -365,7 +365,7 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
 
 > NOTE
 >
-> É importante que essas chamadas estejam envolvidas em um bloco _try-catch_ para que possíveis erros sejam processados adequadamente. Se você encontrar um, pode consultar nossa [lista de possíveis erros.]().
+> É importante que essas chamadas estejam envolvidas em um bloco _try-catch_ para que possíveis erros sejam processados adequadamente. Se você encontrar um, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
 Por fim, para que o comprador visualize essas opções de pagamento em seu checkout e selecione a que desejar, você deve renderizá-las em uma tela. Abaixo está um exemplo de como exibi-las. 
 
@@ -430,7 +430,7 @@ createOrder();
 Com um resultado de pagamento bem-sucedido, lembre-se de redirecionar o usuário para uma tela de confirmação, informando que o pagamento foi concluído.
 
 :::
-:::AccordionComponent{title="Possíveis erros" pill=" "}
+:::AccordionComponent{title="Possíveis erros"}
 
 A seguir, você pode encontrar duas listas de possíveis erros que podem ocorrer durante a integração. Primeiro, você encontrará aqueles da subclasse `Authenticator` e, em seguida, aqueles relacionados à API utilizada para as validações.
 
