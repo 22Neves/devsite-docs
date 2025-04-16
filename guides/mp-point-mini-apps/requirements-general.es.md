@@ -26,11 +26,11 @@ Consulta cómo adaptar la identidad y construcción visual de tu aplicación par
 
 Esta paleta se limita al uso de la marca y sus comunicaciones.
 
-----[mlc, mlm, mpe, mlu, mco]----
+----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-colors](/mini-apps/miniapps-colors.png)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![miniapps-colors](/mini-apps/miniapps-colors-es.png)
 
 ------------
@@ -45,11 +45,11 @@ Están prohibidos los logos, imágenes de productos y servicios o cualquier otra
 
 Próxima Nova/ML Font y ninguna de sus variantes.
 
-----[mlc, mlm, mpe, mlu, mco]----
+----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-typography](/mini-apps/miniapps-typography.png)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![miniapps-typography](/mini-apps/miniapps-typography-es.png)
 
 ------------

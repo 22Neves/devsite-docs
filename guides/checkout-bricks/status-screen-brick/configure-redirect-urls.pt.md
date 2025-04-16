@@ -52,4 +52,15 @@ O endereço fornecido na propriedade `return` do objeto `backUrls` será exibido
 >
 > É possível customizar os textos dos botões que contém as URL de retorno via configuração de textos do Brick. As chaves dos textos dos botões são: `ctaGeneralErrorLabel` (para erros no pagamento),  `ctaCardErrorLabel` (para erros no preenchimento de dados do cartão) e `ctaReturnLabel` (para a URL de retorno, que será mostrada em todos os estados).
 
-![configure-redirect-urls](checkout-bricks/configure-redirect-urls-pt.jpg)
+----[mlc, mlm, mco, mlu, mla]----
+![configure-redirect-urls](/images/checkout-bricks/configure-redirect-urls-pt.jpg)
+
+------------
+----[mlb]----
+![configure-redirect-urls](/images/checkout-bricks/configure-redirect-urls-pt-mlb.jpg)
+
+------------
+----[mpe]----
+![configure-redirect-urls](/images/checkout-bricks/configure-redirect-urls-pt-mpe.jpg)
+
+------------

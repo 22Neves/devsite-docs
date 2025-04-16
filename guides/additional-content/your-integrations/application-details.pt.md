@@ -28,7 +28,7 @@ Você pode clicar no botão **Editar dados** para visualizar e editar as **confi
 
 #### Configurações avançadas
 
-* **URLs de redirecionamento**: URLs (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada por meio do fluxo **Authorization code** de OAuth. **Certifique-se de que seja uma URL estática**. Veja [OAuth](/developers/pt/docs/security/oauth/introduction) para mais detalhes. 
+* **URLs de redirecionamento**: URLs (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada por meio do fluxo **Authorization code** de OAuth. **Certifique-se de que seja uma URL estática**. Veja [OAuth](/developers/pt/docs/security/oauth) para mais detalhes. 
 * **Usar o fluxo de código de autorização com o PKCE**: caso a integração seja realizada por meio do fluxo **Authorization code** de OAuth, você poderá habilitar o PKCE (_Proof Key for Code Exchange_) para que seja gerado um código secreto adicional a ser usado durante o processo de autorização. Veja [Configurar PKCE](/developers/pt/docs/security/oauth/creation#:~:text=Access%20Token.-,Configurar%20PKCE,-O%20PKCE%20) para mais detalhes.
 * **Permissões da aplicação**: opções de acesso da sua aplicação, como **leitura**, **acesso offline** e **escrita**. Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
 
@@ -71,11 +71,11 @@ Nesta seção, você tem um passo a passo para testar sua integração, permitin
 
 Além disso, você tem links diretos para a documentação correspondente, bem como uma barra de status que lhe permitirá visualizar facilmente o seu progresso.
 
-----[mlc, mlu, mlm, mco, mpe]----
+----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![tela de validação de teste de integração](/images/dashboard/testing-pt.png)
 
 ------------
-----[mla, mlb]----
+----[mla]----
 ![tela de validação de teste de integração](/images/dashboard/testing-pt.gif)
 
 ------------

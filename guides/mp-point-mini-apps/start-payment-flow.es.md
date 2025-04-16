@@ -1,6 +1,6 @@
 # Iniciar el flujo de pago
 
-----[mlb, mla]----
+----[mlb, mlc, mla, mpe, mlu, mco]----
 > En este momento, los medios de pago disponibles son: **tarjetas de crédito y débito**, **pago con [código QR](/developers/es/docs/qr-code/landing)** y **[link de pago.](/developers/es/docs/payment-link/intro-button)**
 
 ------------
