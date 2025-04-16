@@ -26,49 +26,42 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ![installation chopro 5](/images/shopify/installation-chopro-5-es.png)
 
-8. Haz clic en **Gestionar cuenta** para vincular tu cuenta de Mercado Pago a la tienda a través de tus credenciales.
+8. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta para recibir pagos.
 
-![installation chopro 6](/images/shopify/installation-chopro-6-es.png)
+![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
 
-> WARNING
->
-> Importante
->
-> Las credenciales identifican la cuenta que recibirá los pagos realizados en tu tienda. Esto significa que no podrás activar los métodos de pago hasta que ingreses tus credenciales.
+9. Al acceder al entorno de Mercado Pago, haz clic en **Iniciar vinculación** para comenzar el proceso.
 
-![installation cards 5](/images/shopify/installation-chopro-6-2-es.png)
+![installation chopro 7](/images/shopify/connect-account-1-pt.png)
 
-9. En una nueva pestaña de tu navegador, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación para copiar tus credenciales. Si aún no has creado una aplicación, accede a la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) y aprende cómo hacerlo.
-10. Haz clic en **Credenciales de producción**. Las credenciales pueden estar ocultas por motivos de seguridad. Para verlas, localiza el ícono de ojo y haz clic en él. Copia las credenciales (Public Key y Access Token). 
+10. Si ya has iniciado sesión en tu cuenta de Mercado Pago, omite este paso. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta.
 
-![installation chopro 7](/images/shopify/installation-chopro-7-es.png)
+![installation chopro 8](/images/shopify/connect-account-2-pt.png)
+
+11. Elige qué cuenta de Mercado Pago deseas vincular a la tienda.
+
+![installation chopro 9](/images/shopify/connect-account-3-pt.png)
+
+12. Haz clic en **Vincular cuenta** y acepta los permisos solicitados. Estos permisos son esenciales para que Mercado Pago procese los pagos de tu tienda de manera segura e integrada.
+
+![installation chopro 10](/images/shopify/connect-account-4-pt.png)
+
+13. El proceso se realizará automáticamente y podría tardar unos segundos.
+
+![installation chopro 11](/images/shopify/connect-account-5-pt.png)
+
+14. Tras vincular tu tienda a tu cuenta de Mercado Pago, haz clic en **Activar app**.
+
+![installation chopro 12](/images/shopify/connect-account-pro-1-pt.png)
 
 > NOTE
 >
-> Nota
->
-> Alternativamente, también puedes hacer clic en el enlace "[consultarlas y copiarlas](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)" en el admin de Shopify para copiar tus credenciales.
+> En esta etapa, también puedes acceder a tu cuenta de Mercado Pago para configurar el número de cuotas disponibles y la tasa de interés que deseas ofrecer a tus clientes haciendo clic en **Configurar cuotas e interés**.
 
-11. Regresa a la configuración de tu tienda Shopify e ingresa tus credenciales de producción (Public Key y Access Token) en los campos correspondientes, **teniendo cuidado de no invertir los campos al copiar y pegar las credenciales**.
+15. Haz clic en **Ir a configuraciones** para volver al panel de Shopify.
 
-![installation cards 5](/images/shopify/installation-cards-5-es.png)
+![installation chopro 13](/images/shopify/connect-account-pro-2-pt.png)
 
-12. Haz clic en **Guardar credenciales**.
+16. En el panel administrativo de la tienda, ve a **Configuraciones > Pagos** y haz clic en **Activar** para activar Mercado Pago Checkout Pro.
 
-> NOTE
->
-> Nota
->
-> Una vez configuradas, las credenciales no serán solicitadas en futuras instalaciones de las aplicaciones de Mercado Pago en Shopify. Sin embargo, si cambias la contraseña de tu cuenta de Shopify, será necesario **renovarlas**. Para ello, sigue las instrucciones en la documentación de [Buenas prácticas de credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, completa nuevamente los campos de Public Key y Access Token, como se indica en esta documentación.
-
-13. Por último, haz clic en **Verificar activación**.
-
-![installation chopro 9](/images/shopify/installation-chopro-9-es.png)
-
-14. Ve a la sección de **Configuraciones** y haz clic en **Activar** para finalizar la instalación.
-
-![installation chopro 9](/images/shopify/installation-chopro-9-2-es.png)
-
-> En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. 
-
-¡Listo! **Mercado Pago Checkout Pro** está preparado para recibir pagos.
+La aplicación **Mercado Pago Checkout Pro** se ha instalado y configurado con éxito, y ahora está lista para procesar los pagos de tu tienda directamente en tu cuenta de Mercado Pago.

@@ -28,7 +28,11 @@ The Status Screen Brick layout is based on the best UX practices, so that it is 
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-en.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-mlb-en.jpg)
+
+------------ 
+----[mla]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-en.gif)
 
 ------------ 

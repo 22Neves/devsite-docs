@@ -57,57 +57,64 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 
 ![installation cards 3](/images/shopify/installation-cards-2-es.png)
 
-7. Después de aceptar los permisos, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
+7. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta para recibir pagos.
 
-> Las credenciales son responsables de identificar la cuenta receptora de los pagos que recibirás en tu tienda.
+![installation cards 3](/images/shopify/installation-cards-3-pt.png)
 
-![installation cards 3](/images/shopify/installation-cards-3-es.png)
+8. Al acceder al entorno de Mercado Pago, haz clic en **Iniciar vinculación** para comenzar el proceso.
 
-8. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una, consulta la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) para aprender cómo hacerlo.
-9. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
+![installation cards 4](/images/shopify/connect-account-1-pt.png)
 
-![installation cards 4](/images/shopify/installation-cards-4-es.png)
+9. Si ya has iniciado sesión en tu cuenta de Mercado Pago, omite este paso. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta.
 
-10. Regresa a las configuraciones de su tienda en Shopify y ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
-11. Haz clic en **Guardar credenciales**.
+![installation cards 5](/images/shopify/connect-account-2-pt.png)
 
-![installation cards 5](/images/shopify/installation-cards-5-es.png)
+10. Elige qué cuenta de Mercado Pago deseas vincular a la tienda.
+
+![installation cards 6](/images/shopify/connect-account-3-pt.png)
+
+11. Haz clic en **Vincular cuenta** y acepta los permisos solicitados. Estos permisos son esenciales para que Mercado Pago procese los pagos de tu tienda de manera segura e integrada.
+
+![installation cards 7](/images/shopify/connect-account-4-pt.png)
+
+12. El proceso se realizará automáticamente y podría tardar unos segundos.
+
+![installation cards 8](/images/shopify/connect-account-5-pt.png)
+
+13. Tras vincular tu tienda a tu cuenta de Mercado Pago, haz clic en **Activar app**.
+
+![installation cards 8](/images/shopify/connect-account-cards-6-pt.png)
 
 > NOTE
 >
-> Nota
+> En esta etapa, también puedes acceder a tu cuenta de Mercado Pago para configurar el número de cuotas disponibles y la tasa de interés que deseas ofrecer a tus clientes haciendo clic en **Configurar cuotas e interés**.
+
+14. Haz clic en **Ir a configuraciones** para volver al panel de Shopify.
+
+![installation cards 8](/images/shopify/connect-account-7-pt.png)
+
+15. En el panel administrativo de la tienda, ve a **Configuraciones > Pagos** y haz clic en **Activar** para activar Mercado Pago Tarjetas.
+
+![installation cards 6](/images/shopify/installation-cards-6-pt.png)
+
+> RED_MESSAGE
 >
-> Una vez ingresadas, las credenciales no serán solicitadas en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
-> <br><br>
-> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
+> Si alguna de las marcas de tarjetas de crédito mostradas en la pantalla está desactivada, los pagos con esa marca no podrán procesarse.
 
-12. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
+16. Aún en **Configuraciones > Pagos**, busca "Forma de captura de pago" y asegúrate de que el campo **Automáticamente en el checkout** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
 
-> WARNING
->
-> Atención
->
-> Es importante señalar que, si alguna de las marcas de tarjetas de crédito listadas en pantalla es deshabitada, se bloqueará el procesamiento de pagos para ella.
+![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
-![installation cards 6](/images/shopify/installation-cards-6-es.png)
+17. Haz clic en **Checkout > Forma de contacto del cliente** y asegúrate de que el campo “Correo electrónico” esté seleccionado como método de contacto que los clientes deben proporcionar para recibir las notificaciones del pedido. El uso del correo electrónico como forma de contacto es obligatorio para procesar pagos con Mercado Pago.
 
-13. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
-14. En "Método de captura de pago", asegúrate de que el campo **De forma automática al pagar** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
+![installation cards 8](/images/shopify/installation-cards-8-pt.png)
 
-![installation cards 7](/images/shopify/installation-cards-7-es.png)
+La aplicación **Mercado Pago Tarjetas** se ha instalado y configurado con éxito, y ahora está lista para procesar los pagos de tu tienda directamente en tu cuenta de Mercado Pago.
 
-15. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
+----[mlb]----
+Por defecto, los campos **"Número de la Casa"** y **"Barrio"** no se muestran automáticamente en el formulario de datos de entrega del pedido. Si necesitas incluirlos, ponte en contacto con el equipo de soporte de la plataforma Shopify y solicita la activación de estos campos.
 
-> WARNING
->
-> Atención
->
-> El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
-
-![installation cards 8](/images/shopify/installation-cards-8-es.png)
-
-¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
-
+------------
 ----[mlm, mco, mlc, mla]----
 > WARNING
 >
@@ -122,8 +129,6 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 > Importante
 >
 > Una vez finalizada la instalación de Mercado Pago Tarjetas, te recomendamos complementarla instalando la aplicación **Mercado Pago Antifraude Plus**, que cuenta con la tecnología **3DS 2.0 (3-D Secure)** para **reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos**. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
-> <br><br>
-> Con Mercado Pago Tarjetas, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
 
 ------------
 
@@ -165,75 +170,8 @@ Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a
 
 ![installation cards 3](/images/shopify/installation-cards-2-es.png)
 
-3. Después de aceptar los permisos solicitados, haz clic en **Gestionar cuenta** para incluir tus credenciales y vincular tu cuenta de Mercado Pago a la tienda.
+La aplicación Mercado Pago Tarjetas se instaló con éxito a través del Marketplace. Ahora, sigue las instrucciones a partir del paso 7 de la sección [Instalar aplicación a través del panel de Shopify](#bookmark_instalar_via_painel_da_shopify) para completar la vinculación de tu tienda con tu cuenta de Mercado Pago.
 
-> Las credenciales son responsables de identificar la cuenta receptora de los pagos que recibirás en tu tienda.
-
-![installation cards 3](/images/shopify/installation-cards-3-es.png)
-
-4. En el panel de administración de Mercado Pago, accede a **[Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** y selecciona tu aplicación. Si aún no has creado una, consulta la [documentación del Panel del desarrollador](/developers/es/guides/additional-content/your-integrations/dashboard) para aprender cómo hacerlo.
-5. Haz clic en **Credenciales de producción** en el menú de la izquierda. Copia la `public_key` y el `access_token`.
-
-![installation cards 4](/images/shopify/installation-cards-4-es.png)
-
-6. Regresa a las configuraciones de su tienda en Shopify y ingresa tus credenciales de producción (`access_token` y `public_key`) en los campos correspondientes, teniendo cuidado de no invertir los campos al copiar y pegar las credenciales.
-
-![installation cards 5](/images/shopify/installation-cards-5-es.png)
-
-> NOTE
->
-> Nota
->
-> Una vez ingresadas, las credenciales no serán solicitadas en futuras instalaciones de aplicaciones de Mercado Pago para Shopify.
-> <br><br>
-> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
-
-7. Haz clic en **Guardar credenciales**.
-8. Por último, haz clic en la opción **Revisar activación** de Mercado Pago Tarjetas, ve a la sección de "Configuraciones" de Shopify y haz clic en **Activar** para activar la app y finalizar la instalación.
-
-> WARNING
->
-> Atención
->
-> Es importante señalar que, si alguna de las marcas de tarjetas de crédito listadas en pantalla es deshabitada, se bloqueará el procesamiento de pagos para ella.
-
-![installation cards 6](/images/shopify/installation-cards-6-es.png)
-
-9. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
-10. En "Método de captura de pago", asegúrate de que el campo **De forma automática al pagar** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
-
-![installation cards 7](/images/shopify/installation-cards-7-es.png)
-
-11. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
-
-> WARNING
->
-> Atención
->
-> El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
-
-![installation cards 8](/images/shopify/installation-cards-8-es.png)
-
-¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
-
-----[mlm, mco, mlc]----
-> WARNING
->
-> Importante
->
-> Una vez finalizada la instalación de Mercado Pago Tarjetas, te recomendamos complementarla instalando la aplicación **Mercado Pago Antifraude Plus**, que cuenta con la tecnología **3DS 2.0 (3-D Secure)** para **reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos**. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
-
-------------
-----[mlb]----
-> WARNING
->
-> Importante
->
-> Una vez finalizada la instalación de Mercado Pago Tarjetas, te recomendamos complementarla instalando la aplicación **Mercado Pago Antifraude Plus**, que cuenta con la tecnología **3DS 2.0 (3-D Secure)** para **reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos**. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
-> <br><br>
-> Con Mercado Pago Tarjetas, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
-
-------------
 ----[mlm]----
 ## Configura meses sin intereses
 

@@ -50,13 +50,13 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga as segui
 
 ![installation chopro 11](/images/shopify/connect-account-5-pt.png)
 
-> NOTE
->
-> Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
-
 14. Após a vinculação da sua loja à sua conta Mercado Pago, clique em **Ativar app**.
 
 ![installation chopro 12](/images/shopify/connect-account-pro-1-pt.png)
+
+> NOTE
+>
+> Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
 
 15. Clique em **Ir para configurações** para retornar ao painel da Shopify. 
 
