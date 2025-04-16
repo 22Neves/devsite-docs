@@ -39,12 +39,13 @@ product_landing_what_it_offers:
  - benefit_bullet: Reconocimiento facial con FaceAuth para ingresar a la cuenta de Mercado Pago.
 ---
 
+
 ---
 product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio en tu sitio, paga en el entorno seguro de Mercado Pago y regresa a tu sitio o al destino configurado.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: ----[mla]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811508648-walletrenderesmla.png ------------ ----[mla, mlu, mlc, mco, mpe, mlm]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811639459-walletrenderesrebranding.png ------------
  - image_text: Simula el procesamiento de pago
  - image_text_link: /developers/es/live-demo/checkout-pro
  - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
@@ -99,7 +100,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
+ - image: ----[mla]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg ------------ ----[mla, mlu, mlc, mco, mpe, mlm]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg ------------
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
  - requirement_title: Requisitos prévios

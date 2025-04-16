@@ -44,7 +44,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: ----[mla]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811758177-walletrenderpt.png ------------ ----[mla, mlu, mlc, mco, mpe, mlm]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811775826-walletrenderptrebranding.png ------------
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
@@ -99,7 +99,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Como integrar
  - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
+ - image: ----[mla]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg ------------ ----[mla, mlu, mlc, mco, mpe, mlm]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg ------------
  - image_text: Explore exemplos de código
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
