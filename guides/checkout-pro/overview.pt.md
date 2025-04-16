@@ -39,12 +39,13 @@ product_landing_what_it_offers:
  - benefit_bullet: Reconhecimento facial com FaceAuth para acessar a conta do Mercado Pago
 ---
 
+----[mla]----
 ---
 product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
- - image: ----[mla]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811758177-walletrenderpt.png ------------ ----[mla, mlu, mlc, mco, mpe, mlm]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811775826-walletrenderptrebranding.png ------------
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811758177-walletrenderpt.png
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
@@ -54,6 +55,25 @@ product_landing_how_works:
  - button_description: Como integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
+------------
+
+----[mla, mlu, mlc, mco, mpe, mlm]----
+---
+product_landing_how_works:
+ - title: Como funciona
+ - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
+ - sub_title: Processo de pagamento
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811775826-walletrenderptrebranding.png
+ - image_text: Simule o processamento de pagamento
+ - image_text_link: /developers/pt/live-demo/checkout-pro
+ - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
+ - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
+ - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
+ - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
+ - button_description: Como integrar
+ - button_link: /developers/pt/docs/checkout-pro/create-application
+---
+------------
 
 ---
 product_landing_what_differentiates:
@@ -95,11 +115,12 @@ product_landing_what_differentiates:
  - line_values: all|all|mla, mlb, mlc, mlm, mpe, mlu
 ---
 
+----[mla]----
 ---
 product_landing_how_integrate:
  - title: Como integrar
  - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - image: ----[mla]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg ------------ ----[mla, mlu, mlc, mco, mpe, mlm]---- https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg ------------
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
  - image_text: Explore exemplos de código
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
@@ -117,3 +138,29 @@ product_landing_how_integrate:
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
+------------
+
+----[mla, mlu, mlc, mco, mpe, mlm]----
+---
+product_landing_how_integrate:
+ - title: Como integrar
+ - sub_title: Conheça as etapas necessárias para integrar esta solução.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg
+ - image_text: Explore exemplos de código
+ - image_text_link: /developers/pt/live-demo/checkout-pro
+ - requirement_title: Requisitos prévios
+ - requirement_table_title: Conta de vendedor
+ - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+ - requirement_table_title: Certificado SSL (Secure Sockets Layer)
+ - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
+ - list_title: Processo de integração
+ - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
+ - list_item: Construir o ambiente de desenvolvimento
+ - list_item: Criar e configurar a preferência de pagamento
+ - list_item: Configurar as notificações de pagamento
+ - list_item: Testar a integração
+ - list_item: Sair à produção
+ - button_description: Quero começar a integrar
+ - button_link: /developers/pt/docs/checkout-pro/create-application
+---
+------------
