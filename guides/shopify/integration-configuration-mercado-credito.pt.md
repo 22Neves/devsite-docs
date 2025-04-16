@@ -22,22 +22,22 @@ Para **exibir a Linha de Crédito no checkout da sua loja**, siga os passos abai
 
 ------------
 ----[mlm]----
-Atualmente, você pode oferecer **Meses sin Tarjeta** através do nosso [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Meses sin Tarjeta**.
+Atualmente, você pode oferecer **Meses sin Tarjeta** através do [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Meses sin Tarjeta**.
 
-Além disso, você poderá complementar a integração com a habilitação do app **Mercado Pago Banner**, um app que permite promover durante o processo de compra, a opção de pagamento com **Mercado Pago Meses sin Tarjeta**. Para mais informações sobre o como habilitar o banner, acesse a documentação [Como promover "Meses sin Tarjeta" em sua loja](/developers/pt/docs/shopify/shopify/how-tos/banner).
+Além disso, é possível complementar a integração ativando o app **Mercado Pago Banner**, que permite destacar, durante o processo de compra, a opção de pagamento com **Mercado Pago Meses sin Tarjeta**. Para mais informações sobre o como habilitar o banner, acesse a documentação [Como promover "Meses sin Tarjeta" em sua loja](/developers/pt/docs/shopify/shopify/how-tos/banner).
 
 Para **exibir o Meses sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
 ------------
 ----[mla]----
-Atualmente, você pode oferecer **Cuotas sin Tarjeta** através do nosso [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Cuotas sin Tarjeta**.
+Atualmente, você pode oferecer **Cuotas sin Tarjeta** através do [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Cuotas sin Tarjeta**.
 
 Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
 ------------
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações**.
-3. Uma vez lá, selecione a opção **Pagamentos**. 
+2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
+3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
 4. Em "Formas de pagamento adicionais", clique em **Adicionar formas de pagamento**.
 ----[mlb]----
 5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Mercado Pago Linha de Crédito".

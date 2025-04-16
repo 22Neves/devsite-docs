@@ -78,8 +78,6 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 17. No painel administrativo da loja, vá até **Configurações > Pagamentos** e clique em **Ativar** para ativar o Mercado Pago Pix.
 
-![Pix configuration](/images/shopify/connect-pix-4-pt.png)
-
 O aplicativo **Mercado Pago Pix** foi instalado e configurado com sucesso, e agora está pronto para processar os pagamentos da sua loja diretamente na sua conta do Mercado Pago. 
 
 ## Instalar via Marketplace
