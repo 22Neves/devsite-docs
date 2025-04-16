@@ -2,6 +2,11 @@
 
 Sigue los pasos a continuación para comenzar a procesar tus pagos con Punto de Venta (PDV).
 
+> RED_MESSAGE
+>
+> Mercado Pago está evolucionando la forma de integrar y ahora ofrecemos una nueva API para realizar integraciones con Mercado Pago Point, que descontinuará la actual. En caso de estar integrando esta solución de cobro por primera vez, recomendamos que utilices los [endpoints de la nueva API Orders](/developers/es/reference/order/in-person-payments/point/terminal/get). <br>
+> Si, en cambio, ya cuentas con una integración con Mercado Pago Point, próximamente recibirás más información sobre el proceso de migración.
+
 ## Obtener el listado de dispositivos disponibles
 
 Antes de crear una intención de pago, debes [obtener los dispositivos Point](/developers/es/reference/integrations_api/_point_integration-api_devices/get) asociados a tu cuenta. Puedes hacerlo a través del siguiente llamado:
