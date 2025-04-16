@@ -105,7 +105,7 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 
 ![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
-17. Haz clic en **Checkout > Forma de contacto del cliente** y asegúrate de que el campo “Correo electrónico” esté seleccionado como método de contacto que los clientes deben proporcionar para recibir las notificaciones del pedido. El uso del correo electrónico como forma de contacto es obligatorio para procesar pagos con Mercado Pago.
+17. Haz clic en **Checkout > Forma de contacto del cliente** y asegúrate de que el campo “Correo electrónico” esté seleccionado como método de contacto que los clientes deben proporcionar para recibir las notificaciones del pedido. **El uso del correo electrónico como forma de contacto es obligatorio para procesar pagos con Mercado Pago**.
 
 ![installation cards 8](/images/shopify/installation-cards-8-pt.png)
 
