@@ -129,12 +129,14 @@ product_landing_how_integrate:
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
  - list_title: Proceso de integración
- - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
- - list_item: Construir el ambiente de desarrollo
- - list_item: Crear y configurar la intención de pago
- - list_item: Establecer las notificaciones de pago
- - list_item: Probar la integración
- - list_item: Salir a producción
+ - list_item: Crear una aplicación.
+ - list_item: Configurar el ambiente de desarrollo.
+ - list_item: Crear y configurar una preferencia de pago.
+ - list_item: Configurar las URLs de retorno.
+ - list_item: Agregar el SDK al frontend e inicializar el checkout.
+ - list_item: Probar la integración.
+ - list_item: Configurar las notificaciones de pago.
+ - list_item: Salir a producción.
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
@@ -154,12 +156,14 @@ product_landing_how_integrate:
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
  - list_title: Proceso de integración
- - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
- - list_item: Construir el ambiente de desarrollo
- - list_item: Crear y configurar la intención de pago
- - list_item: Establecer las notificaciones de pago
- - list_item: Probar la integración
- - list_item: Salir a producción
+ - list_item: Crear una aplicación.
+ - list_item: Configurar el ambiente de desarrollo.
+ - list_item: Crear y configurar una preferencia de pago.
+ - list_item: Configurar las URLs de retorno.
+ - list_item: Agregar el SDK al frontend e inicializar el checkout.
+ - list_item: Probar la integración.
+ - list_item: Configurar las notificaciones de pago.
+ - list_item: Salir a producción.
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---

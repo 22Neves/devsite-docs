@@ -129,12 +129,15 @@ product_landing_how_integrate:
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
  - list_title: Processo de integração
- - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Criar e configurar a preferência de pagamento
- - list_item: Configurar as notificações de pagamento
- - list_item: Testar a integração
- - list_item: Sair à produção
+ - list_item: Criar uma aplicação.
+ - list_item: Configurar o ambiente de desenvolvimento.
+ - list_item: Criar e configurar a preferência de pagamento.
+ - list_item: Configurar as URLs de retorno.
+ - list_item: Testar a integraçã.
+ - list_item: Adicionar o SDK ao frontend e inicializar o checkout.
+ - list_item: Testar a integração.
+ - list_item: Configurar as notificações de pagamento.
+ - list_item: Sair à produção.
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
@@ -154,12 +157,15 @@ product_landing_how_integrate:
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
  - list_title: Processo de integração
- - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Criar e configurar a preferência de pagamento
- - list_item: Configurar as notificações de pagamento
- - list_item: Testar a integração
- - list_item: Sair à produção
+ - list_item: Criar uma aplicação.
+ - list_item: Configurar o ambiente de desenvolvimento.
+ - list_item: Criar e configurar a preferência de pagamento.
+ - list_item: Configurar as URLs de retorno.
+ - list_item: Testar a integraçã.
+ - list_item: Adicionar o SDK ao frontend e inicializar o checkout.
+ - list_item: Testar a integração.
+ - list_item: Configurar as notificações de pagamento.
+ - list_item: Sair à produção.
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---

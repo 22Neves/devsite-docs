@@ -129,12 +129,14 @@ product_landing_how_integrate:
  - requirement_table_title: SSL Certificate (Secure Sockets Layer)
  - requirement_table_list: Allows secure browsing and the protection of your data during information transfers.
  - list_title: Integration process
- - list_item: Create an application from [Your integrations](/developers/panel/app)
- - list_item: Build the development environment
- - list_item: Create and set up your payment preferences
- - list_item: Set up payment notifications
- - list_item: Test your integration
- - list_item: Go live
+ - list_item: Create an application.
+ - list_item: Configure the development environment.
+ - list_item: Create and configure your payment preference.
+ - list_item: Configure the Back URLs.
+ - list_item: Add the SDK to the frontend and initialize the checkout.
+ - list_item: Test your integration.
+ - list_item: Configure the payment notifications.
+ - list_item: Go to production.
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-pro/create-application
 ---
@@ -154,12 +156,14 @@ product_landing_how_integrate:
  - requirement_table_title: SSL Certificate (Secure Sockets Layer)
  - requirement_table_list: Allows secure browsing and the protection of your data during information transfers.
  - list_title: Integration process
- - list_item: Create an application from [Your integrations](/developers/panel/app)
- - list_item: Build the development environment
- - list_item: Create and set up your payment preferences
- - list_item: Set up payment notifications
- - list_item: Test your integration
- - list_item: Go live
+ - list_item: Create an application.
+ - list_item: Configure the development environment.
+ - list_item: Create and configure your payment preference.
+ - list_item: Configure the Back URLs.
+ - list_item: Add the SDK to the frontend and initialize the checkout.
+ - list_item: Test your integration.
+ - list_item: Configure the payment notifications.
+ - list_item: Go to production.
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-pro/create-application
 ---
