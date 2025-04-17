@@ -2,6 +2,7 @@
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-configurada
  - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
+ - product_svg_image: checkout-pro
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
  - benefit_icon: categories
  - benefit_title: Integração ágil
