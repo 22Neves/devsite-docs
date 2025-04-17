@@ -93,7 +93,7 @@ product_landing_what_differentiates:
  - line_values: Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
+ - line_values: all|all|all
 ---
 
 ---
@@ -106,7 +106,6 @@ product_landing_how_integrate:
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
  - list_title: Processo de integração
- - list_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper luctus massa in gravida.
 ---
 
 |||column1|||
