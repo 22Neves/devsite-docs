@@ -4,7 +4,7 @@ O esquema de abertura permite definir como o checkout será aberto para o usuár
 
 Contudo, é possível personalizar a abertura para que a abertura seja em uma página externa. 
 
-> WARNING
+> RED_MESSAGE
 > 
 > É de extrema importância que se atente, durante a criação da preferência, para a configuração das `back_urls` porque elas serão responsáveis por guiar o fluxo de retorno ao seu website quando o checkout for finalizado. Para mais informações, veja a seção de [URLs de retorno](/developers/pt/docs/checkout-pro/checkout-customization/user-interface/redirection).
 
