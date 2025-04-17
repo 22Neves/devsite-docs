@@ -44,7 +44,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/15/1744742536367-testcheckoutvideo.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/17/1744889416673-chopro1000.gif
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
@@ -60,15 +60,15 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
+ - column_product_svg_image: checkout-pro
  - column_product: Checkout Pro
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-pro/create-application
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_product_svg_image: checkout-api
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-api/landing
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
+ - column_product_svg_image: checkout-bricks
  - column_product: Checkout Bricks
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-bricks/landing
