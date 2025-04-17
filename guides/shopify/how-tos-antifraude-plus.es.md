@@ -18,7 +18,7 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 
 > RED_MESSAGE
 >
-> Si ya has instalado otra aplicación de Mercado Pago, como Mercado Pago Tarjetas, ----[mlb]----Mercado Pago Pix ------------o Mercado Pago Checkout Pro, tu tienda ya estará automáticamente vinculada a tu cuenta. En ese caso, puedes avanzar al paso 11 de esta documentación.
+> Si ya has instalado otra aplicación de Mercado Pago, como Mercado Pago Tarjetas----[mlb]----, Mercado Pago Pix------------ o Mercado Pago Checkout Pro, tu tienda ya estará automáticamente vinculada a tu cuenta. En ese caso, puedes avanzar al paso 11 de esta documentación.
 
 ![installation cards 3](/images/shopify/installation-cards-3-1-pt.png)
 
@@ -58,4 +58,4 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 
 ![antifraude plus 4](/images/shopify/antifraude-plus-4-pt.png)
 
-El **Mercado Pago Antifraude Plus** se ha instalado con éxito.
+**Mercado Pago Antifraude Plus** se ha instalado con éxito.

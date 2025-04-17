@@ -11,7 +11,7 @@
 
 ------------
 
-----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------ ----[mlb]----Linha de Crédito------------es la opción de financiamiento de Mercado Pago que permite a los clientes pagar en mensualidades sin contar con una tarjeta de crédito.
+----[mlm]----Meses sin Tarjeta----------------[mla]----Cuotas sin Tarjeta----------------[mlb]----Linha de Crédito------------es la opción de financiamiento de Mercado Pago que permite a los clientes pagar en mensualidades sin contar con una tarjeta de crédito.
 
 A través de esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 meses, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
 
@@ -94,19 +94,19 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 ----[mlb]----
 > RED_MESSAGE
 >
-> El aplicativo **Mercado Pago Linha de Crédito** **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_. 
+> La aplicación "Mercado Pago Linha de Crédito" **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_. 
 
 ------------
 ----[mlm]----
 > RED_MESSAGE
 >
-> El aplicativo **Mercado Pago Meses sin Tarjeta** **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_.  
+> La aplicación "Mercado Pago Meses sin Tarjeta" **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_.  
 
 ------------
 ----[mla]----
 > RED_MESSAGE
 >
-> El aplicativo **Mercado Pago Cuotas sin Tarjeta** **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_.  
+> La aplicación "Mercado Pago Cuotas sin Tarjeta" **no cuenta con un flujo de prueba**, por lo que no es necesario marcar la opción _"habilitar modo de prueba"_.  
 
 ------------
 ----[mla, mlb]----
