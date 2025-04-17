@@ -1,15 +1,13 @@
 ----[mlb]----
 # Cartões
 
-O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é uma solução que possibilita pagamentos com cartões de débito ou crédito diretamente no ambiente da loja online, sem redirecionar o cliente para páginas externas. Essa funcionalidade proporciona uma experiência de compra mais fluida e integrada, reduzindo o abandono de carrinhos e aumentando as chances de conversão. Além disso, oferece maior controle sobre a personalização e a integração do processo de checkout.
 
 Para integrar o Mercado Pago Cartões, instale o aplicativo via [painel da Shopify](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_painel_da_shopify) ou via [Marketplace](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_marketplace). Após a instalação, você poderá [configurar parcelas sem acréscimo](/developers/pt/docs/shopify/integration-configuration/checkout-cards#configurarparcelassemacrscimo).
 
-> WARNING
+> RED_MESSAGE
 >
-> Atenção
->
-> A integração com Mercado Pago Cartões não é compatível com o recurso **multi currency** da plataforma Shopify.
+> A integração com Mercado Pago Cartões não é compatível com o recurso _multi currency_ da plataforma Shopify.
 > <br><br>
 > Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
@@ -17,15 +15,13 @@ Para integrar o Mercado Pago Cartões, instale o aplicativo via [painel da Shopi
 ----[mlm, mco, mlc, mla]----
 # Tarjetas
 
-O **Mercado Pago Tarjetas** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+O **Mercado Pago Tarjetas** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é uma solução que possibilita pagamentos com cartões de débito ou crédito diretamente no ambiente da loja online, sem redirecionar o cliente para páginas externas. Essa funcionalidade proporciona uma experiência de compra mais fluida e integrada, reduzindo o abandono de carrinhos e aumentando as chances de conversão. Além disso, oferece maior controle sobre a personalização e a integração do processo de checkout.
 
 Para integrar o Mercado Pago Tarjetas, instale o aplicativo via [painel da Shopify](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_painel_da_shopify) ou via [Marketplace](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_marketplace). Após a instalação, você poderá [configurar parcelas sem acréscimo](/developers/pt/docs/shopify/integration-configuration/checkout-cards#configurarparcelassemacrscimo).
 
-> WARNING
+> RED_MESSAGE
 >
-> Atenção
->
-> A integração com Mercado Pago Cartões não é compatível com o recurso **multi currency** da plataforma Shopify.
+> A integração com Mercado Pago Cartões não é compatível com o recurso _multi currency_ da plataforma Shopify.
 
 ------------
 
@@ -42,7 +38,7 @@ Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga
 
 1. Acesse sua [loja Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
-3. Uma vez lá, selecione a opção **Pagamentos** no menu ao lado esquerdo da página. 
+3. Uma vez lá, selecione a opção **Pagamentos** no menu. 
 4. Em "Provedores de pagamento", clique em **Escolher um provedor**.
 
 ![installation panel 1](/images/shopify/installation-cards-panel.1-pt.png)
@@ -120,9 +116,7 @@ Por padrão, os campos **"Número da Casa"** e **"Bairro"** não são exibidos a
 
 ------------
 ----[mlm, mco, mlc, mla]----
-> WARNING
->
-> Importante
+> RED_MESSAGE
 >
 > Após concluir a instalação do **Mercado Pago Cartões**, recomendamos complementar a proteção da sua loja instalando o app **Mercado Pago Antifraude Plus**, que utiliza a tecnologia **3DS 2.0 (3-D Secure)** para reforçar a segurança das transações e aumentar a taxa de aprovação de pagamentos. Para mais detalhes, consulte a documentação [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 
@@ -170,7 +164,7 @@ O aplicativo Mercado Pago Cartões foi instalado com sucesso através do Marketp
 
 ## Configurar parcelas sem acréscimo
 
-Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção correspondente para permitir que seus clientes parcelem suas compras sem acréscimos, utilizando qualquer cartão de crédito. Para isso, siga os passos abaixo.
+Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de parcelamento sem acréscimo para permitir que seus clientes parcelem suas compras sem acréscimos, utilizando qualquer cartão de crédito. Para isso, siga os passos abaixo.
 
 1. Faça login em sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
 
@@ -196,12 +190,12 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção cor
 
 ![configure installments 7](/images/shopify/configure-installments-7-pt.png)
 
-11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja.
+11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja. 
 
 ![configure installments 8](/images/shopify/configure-installments-8-pt.png)
 
-> WARNING
->
-> Atenção
+> RED_MESSAGE
 >
 > Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
+
+Dessa forma, seus clientes poderão parcelar suas compras sem acréscimos.

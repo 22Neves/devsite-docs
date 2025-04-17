@@ -10,7 +10,7 @@ With the certificate activated and testing completed, you can take your store ou
 
 Follow this step by step to make the change:
 
-1. Go to your [Wordpress](https://wordpress.com/) account.
+1. Go to your [WordPress](https://wordpress.com/) account.
 2. Access your account Dashboard and click **Plugins > Installed Plugins**.
 3. In the plugin search engine, search for “Mercado Pago payments for WooCommerce”.
 4. Click **Configure Plugin**.

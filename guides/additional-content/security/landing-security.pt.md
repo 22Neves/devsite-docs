@@ -8,7 +8,7 @@ A seguir, apresentamos os protocolos utilizados pelo Mercado Pago.
 
 OAuth (*Open Authorization*) é um protocolo de autorização que permite que aplicativos tenham acesso limitado a contas de usuários em um serviço HTTP, como em redes sociais, sem que o usuário precise compartilhar suas credenciais. Em vez disso, o OAuth define um método para que os usuários concedam acesso de aplicativos de terceiros aos seus dados sem precisar revelar suas informações de login.
 
-Para mais informações, acesse a [documentação](/developers/pt/docs/security/oauth/introduction).
+Para mais informações, acesse a [documentação](/developers/pt/docs/security/oauth).
 
 ## OWASP
 
