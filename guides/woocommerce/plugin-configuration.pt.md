@@ -22,9 +22,9 @@ A seguir, explicaremos como configurar cada item do plugin.
 
 ## Integrar loja ao Mercado Pago
 
-Conecte sua conta do Mercado Pago à sua loja para receber os pagamentos das vendas. Siga as etapas abaixo para concluir a integração.
+Conecte sua conta do Mercado Pago à sua loja para começar a receber pagamentos pelas vendas. Siga as etapas abaixo para realizar a integração.
 
-1. Selecione seu país na lista do menu suspenso.
+1. No menu suspenso, escolha o país onde sua loja está localizada.
 
 ![Plugin MP](/images/woocomerce/automation-cred-0-pt.png)
 
@@ -32,19 +32,19 @@ Conecte sua conta do Mercado Pago à sua loja para receber os pagamentos das ven
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-pt.png)
 
-3. Se você já iniciou sessão na sua conta do Mercado Pago, esta etapa será pulada automaticamente. Caso contrário, insira seu e-mail e senha para acessar sua conta e continuar com a vinculação.
+3. Se você já estiver conectado à sua conta, esta etapa será automaticamente ignorada. Caso contrário, insira seu e-mail e senha para fazer login e prosseguir com o processo de vinculação.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1.1-pt.png)
 
-4. Uma nova janela será aberta para que você escolha a conta de recebimento dos pagamentos, seja a sua ou a de outra pessoa.  
+4. Na nova aba aberta, selecione a conta que receberá os pagamentos, seja ela sua ou de outra pessoa. 
 
 ![Plugin MP](/images/woocomerce/automation-cred-2-pt.png)
 
-5. Aguarde até que a vinculação seja finalizada.
+5. Aguarde até que a vinculação seja finalizada. Isso pode levar alguns segundos.
 
 ![Plugin MP](/images/woocomerce/automation-cred-3-pt.png)
 
-6. Pronto! A vinculação foi concluída com sucesso. Agora, você pode avançar para personalizar sua loja.
+6. A vinculação foi finalizada. Agora, você pode avançar para configurar e personalizar sua loja.
 
 ![Plugin MP](/images/woocomerce/automation-cred-4-pt.png)
 

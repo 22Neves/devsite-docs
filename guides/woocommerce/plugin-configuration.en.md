@@ -20,29 +20,29 @@ Next, we'll explain how to configure each item of the plugin.
 
 ## Integrate store with Mercado Pago
 
-Connect your Mercado Pago account to your store to receive payments for sales. Follow the steps below to complete the integration.
+Connect your Mercado Pago account to your store to start receiving payments for your sales. Follow the steps below to complete the integration.
 
-1. Select your country from the drop-down menu.
+1. From the dropdown menu, choose the country where your store is located.
 
 ![Plugin MP](/images/woocomerce/automation-cred-0-es.png)
 
-2. Click on **1. Link your store to a Mercado Pago account** to be redirected to Mercado Pago and select the account where you want to receive payments for your sales.
+2. Click on **1. Link your store to a Mercado Pago account** to be redirected to Mercado Pago to select the account where you want to receive payments.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
-3. If you are already logged into your Mercado Pago account, this step will be skipped automatically. Otherwise, enter your email and password to access your account and continue with the linking process.
+3. If you are already logged in, this step will be automatically skipped. Otherwise, enter your email and password to log in and proceed with the linking process.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1.1-es.png)
 
-4. A new window will open for you to choose the account to receive payments, whether it’s yours or someone else's.
+4. In the new tab that opens, select the account to receive payments, whether it's yours or someone else's.
 
 ![Plugin MP](/images/woocomerce/automation-cred-2-es.png)
 
-5. Please wait until the linking process is completed.
+5. Please wait until the linking process is completed. This may take a few seconds.
 
 ![Plugin MP](/images/woocomerce/automation-cred-3-es.png)
 
-6. Done! The linking process has been successfully completed. Now, you can proceed to customize your store.
+6. The process is finalized. You can now proceed to configure and customize your store.
 
 ![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 
