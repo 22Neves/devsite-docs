@@ -14,8 +14,6 @@ El **SDK de backend** está diseñado para manejar las operaciones del lado del 
 
 > NOTE
 >
-> Nota
->
 > Si lo prefieres, puedes descargar los SDKs de Mercado Pago en nuestras [bibliotecas oficiales](/developers/es/docs/sdks-library/server-side).
 
 Instala el SDK de Mercado Pago en el lenguaje que mejor se ajuste a tu integración utilizando un gestor de dependencias, tal como mostramos a continuación. 

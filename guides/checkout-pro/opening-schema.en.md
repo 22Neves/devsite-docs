@@ -4,9 +4,7 @@ The opening scheme allows you to define how the checkout will open for the user.
 
 However, it is possible to customize the opening so that it opens on an external page.
 
-> NOTE
-> 
-> Attention
+> WARNING
 >
 > It is extremely important to pay attention, when creating the preference, to the configuration of the `back_urls` because they will be responsible for guiding the return flow to your website when the checkout is completed. For more information, see the [Return URLs](/developers/en/docs/checkout-pro/checkout-customization/user-interface/redirection) section.
 

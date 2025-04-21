@@ -718,6 +718,21 @@ When you receive a notification on your platform, Mercado Pago expects a respons
 
 The timeout for this confirmation will be 22 seconds. If this response is not sent, the system will understand that the notification was not received and will make a new attempt to send it every 15 minutes until it receives the response. After the third attempt, the interval will be extended, but the sending will continue.
 
+<pre class="mermaid">
+sequenceDiagram
+    participant MercadoPago as Mercado Pago
+    participant Integrator as Integrator
+
+    MercadoPago->>Integrator: retry: 1. Delay: 0 minutes
+    MercadoPago->>Integrator: retry: 2. Delay: 15 minutes
+    MercadoPago->>Integrator: retry: 3. Delay: 30 minutes
+    MercadoPago->>Integrator: retry: 4. Delay: 6 hours
+    MercadoPago->>Integrator: retry: 5. Delay: 48 hours
+    MercadoPago->>Integrator: retry: 6. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 7. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 8. Delay: 96 hours
+</pre>
+
 After responding to the notification, confirming its receipt, you can obtain all information about the notified `payments` topic event by making a GET request to the endpoint [v1/payments/{id}](/developers/en/reference/payments/_payments_id/get).
 
 With this information, you will be able to make the necessary updates to your platform, such as updating an approved payment.

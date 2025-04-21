@@ -712,6 +712,21 @@ Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respu
 
 El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
 
+<pre class="mermaid">
+sequenceDiagram
+    participant MercadoPago as Mercado Pago
+    participant Integrador as Integrador
+
+    MercadoPago->>Integrador: reintento: 1. Demora: 0 minutos
+    MercadoPago->>Integrador: reintento: 2. Demora: 15 minutos
+    MercadoPago->>Integrador: reintento: 3. Demora: 30 minutos
+    MercadoPago->>Integrador: reintento: 4. Demora: 6 horas
+    MercadoPago->>Integrador: reintento: 5. Demora: 48 horas
+    MercadoPago->>Integrador: reintento: 6. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 7. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 8. Demora: 96 horas
+</pre>
+
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como por ejemplo, actualizar un pago aprobado.

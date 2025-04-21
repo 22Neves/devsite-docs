@@ -39,12 +39,13 @@ product_landing_what_it_offers:
  - benefit_bullet: Reconocimiento facial con FaceAuth para ingresar a la cuenta de Mercado Pago.
 ---
 
+----[mla]----
 ---
 product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio en tu sitio, paga en el entorno seguro de Mercado Pago y regresa a tu sitio o al destino configurado.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811508648-walletrenderesmla.png
  - image_text: Simula el procesamiento de pago
  - image_text_link: /developers/es/live-demo/checkout-pro
  - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
@@ -54,6 +55,25 @@ product_landing_how_works:
  - button_description: Cómo integrar
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
+------------
+
+----[mlb, mlu, mlc, mco, mpe, mlm]----
+---
+product_landing_how_works:
+ - title: Cómo funciona
+ - message: El cliente elige el producto o servicio en tu sitio, paga en el entorno seguro de Mercado Pago y regresa a tu sitio o al destino configurado.
+ - sub_title: Proceso de cobro
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811639459-walletrenderesrebranding.png
+ - image_text: Simula el procesamiento de pago
+ - image_text_link: /developers/es/live-demo/checkout-pro
+ - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
+ - list_title: Es redirigido al formulario de cobro, donde decide si avanzar con su cuenta de Mercado Pago o como usuario invitado.
+ - list_title: Puede elegir su medio de pago preferido, ya sea uno guardado en su cuenta o uno nuevo ingresado.
+ - list_title: Una vez que completó la compra, es redireccionado a tu sitio web o al destino configurado.
+ - button_description: Cómo integrar
+ - button_link: /developers/es/docs/checkout-pro/create-application
+---
+------------
 
 ---
 product_landing_what_differentiates:
@@ -92,9 +112,10 @@ product_landing_what_differentiates:
  - line_values: Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Disponibilidad por país
  - line_type: sites
- - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
+ - line_values: all|all|mla, mlb, mlc, mlm, mpe, mlu
 ---
 
+----[mla]----
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -102,18 +123,48 @@ product_landing_how_integrate:
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
- - requirement_title: Requisitos prévios
+ - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de vendedor
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
  - list_title: Proceso de integración
- - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
- - list_item: Construir el ambiente de desarrollo
- - list_item: Crear y configurar la intención de pago
- - list_item: Establecer las notificaciones de pago
- - list_item: Probar la integración
- - list_item: Salir a producción
+ - list_item: Crear una aplicación.
+ - list_item: Configurar el ambiente de desarrollo.
+ - list_item: Crear y configurar una preferencia de pago.
+ - list_item: Configurar las URLs de retorno.
+ - list_item: Agregar el SDK al frontend e inicializar el checkout.
+ - list_item: Probar la integración.
+ - list_item: Configurar las notificaciones de pago.
+ - list_item: Salir a producción.
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
+------------
+
+----[mlb, mlu, mlc, mco, mpe, mlm]----
+---
+product_landing_how_integrate:
+ - title: Cómo integrar
+ - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg
+ - image_text: Explora ejemplos de código
+ - image_text_link: /developers/es/live-demo/checkout-pro
+ - requirement_title: Requisitos previos
+ - requirement_table_title: Cuenta de vendedor
+ - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+ - requirement_table_title: Certificado SSL (Secure Sockets Layer)
+ - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
+ - list_title: Proceso de integración
+ - list_item: Crear una aplicación.
+ - list_item: Configurar el ambiente de desarrollo.
+ - list_item: Crear y configurar una preferencia de pago.
+ - list_item: Configurar las URLs de retorno.
+ - list_item: Agregar el SDK al frontend e inicializar el checkout.
+ - list_item: Probar la integración.
+ - list_item: Configurar las notificaciones de pago.
+ - list_item: Salir a producción.
+ - button_description: Quiero comenzar a integrar
+ - button_link: /developers/es/docs/checkout-pro/create-application
+---
+------------
