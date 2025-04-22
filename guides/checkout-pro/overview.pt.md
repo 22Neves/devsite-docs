@@ -105,12 +105,12 @@ product_landing_how_integrate:
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
- - list_title: Processo de integração
 ---
 
 |||column1|||
 ---
 product_landing_how_integrate:
+ - list_title: Processo de integração
  - list_item: Criar uma aplicação em [Suas integrações](/developers/panel/app).
  - list_item: Construir o ambiente de desenvolvimento.
  - list_item: Criar e configurar a preferência de pagamento.
