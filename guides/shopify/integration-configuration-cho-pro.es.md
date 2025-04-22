@@ -26,7 +26,7 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ![installation chopro 5](/images/shopify/installation-chopro-5-es.png)
 
-8. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta para recibir pagos.
+8. Accede al entorno de Mercado Pago haciendo clic en **Gestionar cuenta** y comienza el proceso de vinculación de tu tienda con tu cuenta para habilitar la recepción de pagos.
 
 ![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
 
