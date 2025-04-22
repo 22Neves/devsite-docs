@@ -6,6 +6,18 @@ Instead of your system constantly polling for updates, Webhooks allow for **pass
 
 Check the general flow of a notification in the diagram below.
 
+<pre class=”mermaid”>
+sequenceDiagram
+    participant C as Checkout Pro (Webhook Source)
+    participant A as Client Application (Webhook Receiver)
+    
+    C->>C: 1. Registration\nCheckout Pro identifies the payment\noperation and registers an event.
+    C->>A: 2. HTTP POST Sent\nSends a POST request to the client's API.
+    A->>A: 3. POST Request Received\nThe client's API receives the POST.
+    A->>A: Action Performed\n(e.g., update payment status)
+    A->>C: 4. HTTP POST Sent\nThe API responds with status code 200\nconfirming the notification.
+</pre>
+
 ![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
 Below, we present a step-by-step guide to configure payment creation and update notifications. Once configured, Webhook notifications will be sent every time a payment is created or its status is modified (Pending, Rejected, or Approved). 
