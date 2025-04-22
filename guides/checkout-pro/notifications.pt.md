@@ -12,7 +12,7 @@ A seguir, apresentamos um passo a passo para configurar as notificações de cri
 
 > NOTE
 >
-> Esta documentação trata exclusivamente da configuração de notificações de pagamento, incluindo criações e atualizações, por meio do evento **Pagamentos**. Para obter informações sobre outros eventos de notificações disponíveis para configuração, consulte a [documentação geral de Notificações](/developers/pt/docs/checkout-pro/additional-content/your-integrations/notifications).
+> Esta documentação trata exclusivamente da configuração de notificações de pagamento, incluindo criações e atualizações, por meio do evento **Pagamentos**. Para obter informações sobre outros eventos de notificações disponíveis para configuração, consulte a [documentação geral de Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications).
 
  No processo de integração com o Mercado Pago, as notificações podem ser configuradas de duas maneiras:
 
