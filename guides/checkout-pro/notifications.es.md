@@ -6,18 +6,6 @@ En lugar de que tu sistema realice consultas constantes para verificar actualiza
 
 Consulta el flujo general de una notificación en el diagrama a continuación. 
 
-<pre class="mermaid">
-sequenceDiagram
-    participant C as Checkout Pro (Origen de Webhook)
-    participant A as Aplicación cliente (Receptor de Webhook)
-    
-    C->>C: 1. Registro\nCheckout Pro identifica la operación\nde pago y registra un evento.
-    C->>A: 2. Envío de HTTP POST\nEnvía un POST request a la API del cliente.
-    A->>A: 3. Recepción de POST Request\nLa API del cliente recibe el POST.
-    A->>A: Acción realizada\n(Ej.: actualizar estado de pago)
-    A->>C: 4. Envío de HTTP POST\nLa API responde con código 200\nconfirmando la notificación.
-</pre>
-
 ![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
 A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). 
