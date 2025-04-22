@@ -12,7 +12,7 @@ Below, we present a step-by-step guide to configure payment creation and update 
 
 > NOTE 
 >  
-> This documentation exclusively covers the configuration of payment notifications, including creations and updates, through the **Payments** event. To obtain information about other notification events available for configuration, please refer to the [general Notifications documentation](/developers/pt/docs/checkout-pro/additional-content/notifications).
+> This documentation exclusively covers the configuration of payment notifications, including creations and updates, through the **Payments** event. To obtain information about other notification events available for configuration, please refer to the [general Notifications documentation](/developers/en/docs/checkout-pro/additional-content/notifications).
 
 In the process of integrating with Mercado Pago, you can configure notifications in two ways:
 
