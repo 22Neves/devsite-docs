@@ -6,9 +6,40 @@ En lugar de que tu sistema realice consultas constantes para verificar actualiza
 
 Consulta el flujo general de una notificación en el diagrama a continuación. 
 
+<pre class=”mermaid”>
+graph TD
+    subgraph Checkout Pro (Origen de Webhook)
+        A1["Operación de pago"] --> A2["Evento"]
+        A2 --> A3["Confirmación de la notificación"]
+        A1_desc(["1. Registro\nCheckout Pro identifica la operación de pago realizada por el comprador y registra un evento a notificar."])
+        A2_desc(["2. Envío de HTTP POST\nEl evento envía un HTTP POST request a la API de notificación del cliente."])
+        A4_desc(["4. Envío de HTTP POST\nLa API del cliente completa el request, envía un mensaje de confirmación a Mercado Pago (response http code 200) y completa la tarea que corresponda en base a la notificación."])
+        A1 --> A1_desc
+        A2 --> A2_desc
+        A3 --> A4_desc
+    end
+
+    subgraph Aplicación cliente (Receptor de Webhook)
+        B1["API - Notificación (notification_url)"]
+        B2["Acción realizada (Ej.: actualizar estado de pago)"]
+        B1_desc(["3. Recibimiento de POST Request\nLa API del cliente recibe el POST Request."])
+        B1 --> B1_desc
+        B1 --> B2
+    end
+
+    A2_desc --> B1
+    B1 --> A3
+</pre>
+
 ![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
-A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
+A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). 
+
+> NOTE
+>
+> Esta documentación trata exclusivamente de la configuración de notificaciones de pago, incluidas creaciones y actualizaciones, a través del evento **Pagos**. Para obtener información sobre otros eventos de notificaciones disponibles para configuración, consulte la [documentación general de Notificaciones](/developers/es/docs/checkout-pro/additional-content/your-integrations/notifications).
+
+En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
 
 | Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
 |-|-|-|-|
