@@ -4,7 +4,19 @@ Com o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checko
 
 Com a autorização do comprador, o Mercado Pago exibirá seus meios de pagamento salvos como opções para realizar o pagamento dentro da loja, oferecendo uma maior probabilidade de aprovação de pagamentos e uma experiência de compra agilizada e segura.
 
-![Frontend]()
+----[mlb]----  
+![Experience from the frontend](/images/api-orders/supertoken-exp-mlb-rebranding.gif)
+------------
+
+----[mla]---- 
+
+![Experience from the frontend](/images/api-orders/supertoken-exp-mla-rebranding.gif)
+------------
+
+----[mlm]---- 
+
+![Experience from the frontend](/images/api-orders/supertoken-exp-mlm-rebranding.gif)
+------------
 
 
 > RED_MESSAGE
@@ -148,7 +160,19 @@ Uma vez inicializada a classe `Authenticator`, é necessário fazer uma requisi�
 
 Recomendamos que essa requisição seja acionada por algum botão clicável que inclua uma etiqueta semelhante a _Mostrar meus meios de pagamento_ ou por algum elemento visual que simbolize uma transação com cartão de crédito, como na imagem abaixo:
 
-![bottom sheet de exemplo]()
+----[mlb]----  
+![bottom sheet de exemplo](/images/api-orders/supertoken-bottomsheet-mlb-rebranding.png)
+------------
+
+----[mla]---- 
+
+![bottom sheet de exemplo](/images/api-orders/supertoken-bottomsheet-mla.png)
+------------
+
+----[mlm]---- 
+
+![bottom sheet de exemplo](/images/api-orders/supertoken-bottomsheet-mlm-rebranding.png)
+------------
 
 A função que faz a requisição e que deve ser inserida no elemento clicável é a seguinte:
 
@@ -177,7 +201,20 @@ O método `.show` é responsável por exibir um modal de confirmação para o co
 >
 > Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
-![Autenticação]()
+----[mlb]----  
+![Autenticação](/images/api-orders/supertoken-exp-2-mlb-rebranding.png)
+------------
+
+----[mla]---- 
+
+![Autenticação](/images/api-orders/supertoken-exp-2-mla-rebranding.png)
+------------
+
+----[mlm]---- 
+
+![Autenticação](/images/api-orders/supertoken-exp-2-mlm-rebranding.png)
+------------
+
 
 :::
 :::AccordionComponent{title="3. Obter meios de pagamento do comprador" pill="client-side"}
@@ -369,7 +406,19 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
 
 Por fim, para que o comprador visualize essas opções de pagamento em seu checkout e selecione a que desejar, você deve renderizá-las em uma tela. Abaixo está um exemplo de como exibi-las. 
 
-![Exemplo do frontend da loja com os meios de pagamento salvos]()
+----[mlb]----  
+![Exemplo do frontend da loja com os meios de pagamento salvos](/images/api-orders/supertoken-payment-methods-mlb-rebranding.png)
+------------
+
+----[mla]---- 
+
+![Exemplo do frontend da loja com os meios de pagamento salvos](/images/api-orders/supertoken-payment-methods-mla-rebranding.png)
+------------
+
+----[mlm]---- 
+
+![Exemplo do frontend da loja com os meios de pagamento salvos](/images/api-orders/supertoken-payment-methods-mlm-rebranding.png)
+------------
 
 :::
 :::AccordionComponent{title="4. Processar Pagamento" pill="server-side"}

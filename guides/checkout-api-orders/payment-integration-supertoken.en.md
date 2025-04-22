@@ -4,8 +4,19 @@ With ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkou
 
 With the buyer's authorization, Mercado Pago will display their saved payment methods as options for making the payment within the store, providing a higher payment approval rate and a streamlined and secure shopping experience.
 
-![Experience from the frontend]()
+----[mlb]----  
+![Experience from the frontend](/images/api-orders/supertoken-exp-mlb-rebranding.gif)
+------------
 
+----[mla]---- 
+
+![Experience from the frontend](/images/api-orders/supertoken-exp-mla-rebranding.gif)
+------------
+
+----[mlm]---- 
+
+![Experience from the frontend](/images/api-orders/supertoken-exp-mlm-rebranding.gif)
+------------
 
 > RED_MESSAGE
 >
@@ -147,7 +158,20 @@ Once the `Authenticator` class has been initialized, it is necessary to send a r
 
 We recommend that this request be triggered by some clickable button that includes a label similar to _Show my payment methods_, or by a visual element that symbolizes a credit card transaction, as shown in the image below:
 
-![Example bottom sheet]()
+----[mlb]----  
+![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb-rebranding.png)
+------------
+
+----[mla]---- 
+
+![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mla.png)
+------------
+
+----[mlm]---- 
+
+![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm-rebranding.png)
+------------
+
 
 The function that performs the request and must be inserted in the clickable button is the one that follows:
 
@@ -175,7 +199,20 @@ The `.show` method is responsible for displaying a confirmation modal to the buy
 >
 > If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
 
-![Authentication experience]()
+----[mlb]----  
+![Authentication experience](/images/api-orders/supertoken-exp-2-mlb-rebranding.png)
+------------
+
+----[mla]---- 
+
+![Authentication experience](/images/api-orders/supertoken-exp-2-mla-rebranding.png)
+------------
+
+----[mlm]---- 
+
+![Authentication experience](/images/api-orders/supertoken-exp-2-mlm-rebranding.png)
+------------
+
 
 :::
 :::AccordionComponent{title="3. Obtain Buyer’s Payment Methods" pill="client-side"}
@@ -367,7 +404,20 @@ Below, you can see an example of the structure of the response from the `userPay
 
 Finally, to allow the buyer to view these payment options in your checkout and select their preferred one, you need to render them on a screen. Below is an example of how to display them.
 
-![Example of the store frontend with the saved payment methods]()
+----[mlb]----  
+![Example of the store frontend with the saved payment methods](/images/api-orders/supertoken-payment-methods-mlb-rebranding.png)
+------------
+
+----[mla]---- 
+
+![Example of the store frontend with the saved payment methods](/images/api-orders/supertoken-payment-methods-mla-rebranding.png)
+------------
+
+----[mlm]---- 
+
+![Example of the store frontend with the saved payment methods](/images/api-orders/supertoken-payment-methods-mlm-rebranding.png)
+------------
+
 
 :::
 :::AccordionComponent{title="4. Process Payment" pill="server-side"}
