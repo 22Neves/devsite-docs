@@ -8,7 +8,13 @@ Consulta el flujo general de una notificación en el diagrama a continuación.
 
 ![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
-A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
+A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). 
+
+> NOTE
+>
+> Esta documentación trata exclusivamente de la configuración de notificaciones de pago, incluidas creaciones y actualizaciones, a través del evento **Pagos**. Para obtener información sobre otros eventos de notificaciones disponibles para configuración, consulta la [documentación de Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications) general.
+
+En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
 
 | Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
 |-|-|-|-|
