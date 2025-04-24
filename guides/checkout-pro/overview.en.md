@@ -1,3 +1,4 @@
+----[mla, mlu]----
 ---
 product_landing_hero:
  - title: Integrate Checkout Pro and set up a predesigned experience
@@ -13,6 +14,43 @@ product_landing_hero:
  - benefit_title: With redirection to Mercado Pago
  - info: Looking for development-free options? Explore [more solutions](/developers/pt/docs#online-payments).
 ---
+------------
+
+----[mlm, mlc, mco, mpe]----
+---
+product_landing_hero:
+ - title: Integrate Checkout Pro and set up a predesigned experience
+ - message: With this solution, your customers buy on your website and pay in the Mercado Pago environment with their saved payment methods.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - benefit_icon: categories
+ - benefit_title: Agile integration
+ - benefit_icon: link
+ - benefit_title: For web, Android, and iOS
+ - benefit_icon: edit
+ - benefit_title: Pre-built experience
+ - benefit_icon: sort
+ - benefit_title: With redirection to Mercado Pago
+ - info: Looking for development-free options? Explore [more solutions](/developers/pt/docs#online-payments).
+---
+------------
+
+----[mlb]----
+---
+product_landing_hero:
+ - title: Integrate Checkout Pro and set up a predesigned experience
+ - message: With this solution, your customers buy on your website and pay in the Mercado Pago environment with their saved payment methods.
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - benefit_icon: categories
+ - benefit_title: Agile integration
+ - benefit_icon: link
+ - benefit_title: For web, Android, and iOS
+ - benefit_icon: edit
+ - benefit_title: Pre-built experience
+ - benefit_icon: sort
+ - benefit_title: With redirection to Mercado Pago
+ - info: Looking for development-free options? Explore [more solutions](/developers/pt/docs#online-payments).
+---
+------------
 
 ---
 product_landing_what_it_offers:
