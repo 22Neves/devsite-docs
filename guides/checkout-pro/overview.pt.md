@@ -123,12 +123,11 @@ product_landing_how_integrate:
 |||column2|||
 <pre class="mermaid">
 flowchart TD
-    A["Crear una aplicación"] --> B["Construir el ambiente"]
-    B --> D["Crear preferencia"]
-    D -- Monto, Medios de pago, Otros --> F("Configurar notificaciones")
-    F -- Webhooks e IPN --> E["Probar integración"]
-    E -- Pruebas exitosas --> H["Salir a producción"]
-    E -- Errores detectados --> I["Corregir"]
-    I --> H
+    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Tus integraciones</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Crear aplicación</a>]
+    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir el ambiente de desarollo</a>]
+    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Crear y configurar preferencias de pago</a>]
+    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar las notificaciones de pago</a>]
+    F --> E["Probar la integración"]
+    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir calidad</a>]
 </pre>
 |||
