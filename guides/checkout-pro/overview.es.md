@@ -2,7 +2,7 @@
 product_landing_hero:
  - title: Integra Checkout Pro y configura una experiencia prediseñada
  - message: Con esta solución tus clientes compran en tu sitio y pagan en un ambiente de Mercado Pago con sus medios de pago guardados.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - product_svg_image: checkout-pro-es
  - benefit_icon: categories
  - benefit_title: Integración ágil
  - benefit_icon: link
@@ -44,7 +44,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio en tu sitio, paga en el entorno seguro de Mercado Pago y regresa a tu sitio o al destino configurado.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/1/20/1740032685728-image450.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745506406913-choproes990px.gif
  - image_text: Simula el procesamiento de pago
  - image_text_link: /developers/es/live-demo/checkout-pro
  - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
@@ -60,15 +60,15 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
+ - column_product_svg_image: checkout-pro-es
  - column_product: Checkout Pro
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-pro/create-application
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_product_svg_image: checkout-api-es
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir al resumen
  - column_button_link: /developers/es/docs/checkout-api/landing
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
+ - column_product_svg_image: checkout-bricks-es
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
  - column_button_link: /developers/es/docs/checkout-bricks/landing
@@ -92,21 +92,23 @@ product_landing_what_differentiates:
  - line_values: Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinero en cuenta, ----[mlb]----Pix, ------------tarjeta de crédito o débito, ----[mlb, mla, mlm]----Línea de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Disponibilidad por país
  - line_type: sites
- - line_values: all|all|mlb, mla, mlm, mlc, mlu, mpe
+ - line_values: all|all|all
 ---
 
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
- - image_text: Explora ejemplos de código
- - image_text_link: /developers/es/live-demo/checkout-pro
  - requirement_title: Requisitos prévios
  - requirement_table_title: Cuenta de vendedor
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
+---
+
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Construir el ambiente de desarrollo
@@ -117,3 +119,14 @@ product_landing_how_integrate:
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
+|||column2|||
+<pre class="mermaid">
+flowchart TD
+    A[Acceder Tus integraciones] --> B[Crear aplicación]
+    B --> C[Construir el ambiente]
+    C --> D[Crear preferencias de pago]
+    D --> E[Configurar las notificaciones]
+    E --> F[Probar la integración]
+    F --> G[Medir calidad]
+</pre>
+|||

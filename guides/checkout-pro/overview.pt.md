@@ -2,8 +2,7 @@
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-configurada
  - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
- - product_svg_image: checkout-pro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - product_svg_image: checkout-pro-pt
  - benefit_icon: categories
  - benefit_title: Integração ágil
  - benefit_icon: link
@@ -45,7 +44,7 @@ product_landing_how_works:
  - title: Como funciona
  - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
  - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/23/1745405466275-choprooverview1000.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745506444573-chopropt990px.gif
  - image_text: Simule o processamento de pagamento
  - image_text_link: /developers/pt/live-demo/checkout-pro
  - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
@@ -61,15 +60,15 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_product_svg_image: checkout-pro
+ - column_product_svg_image: checkout-pro-pt
  - column_product: Checkout Pro
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-pro/create-application
- - column_product_svg_image: checkout-api
+ - column_product_svg_image: checkout-api-pt
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-api/landing
- - column_product_svg_image: checkout-bricks
+ - column_product_svg_image: checkout-bricks-pt
  - column_product: Checkout Bricks
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-bricks/landing
@@ -121,14 +120,15 @@ product_landing_how_integrate:
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Crear una aplicación"] --> B["Construir el ambiente"]
-    B --> D["Crear preferencia"]
-    D -- Monto, Medios de pago, Otros --> F("Configurar notificaciones")
-    F -- Webhooks e IPN --> E["Probar integración"]
-    E -- Pruebas exitosas --> H["Salir a producción"]
-    E -- Errores detectados --> I["Corregir"]
-    I --> H
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A[Acessar Suas integrações] --> B[Criar aplicação]
+        B --> C[Construir o ambiente]
+        C --> D[Criar preferência de pagamento]
+        D --> E[Configurar as notificações]
+        E --> F[Testar a integração]
+        F --> G[Medir qualidade]
+    </pre>
+</div>
 |||
