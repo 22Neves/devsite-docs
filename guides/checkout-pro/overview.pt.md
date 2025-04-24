@@ -9,7 +9,7 @@ product_landing_hero:
  - benefit_icon: link
  - benefit_title: Para web, Android e iOS
  - benefit_icon: edit
- - benefit_title: Experiencia pré-construída
+ - benefit_title: Experiência pré-construída
  - benefit_icon: sort
  - benefit_title: Com redirecionamento
  - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
@@ -27,7 +27,7 @@ product_landing_hero:
  - benefit_icon: link
  - benefit_title: Para web, Android e iOS
  - benefit_icon: edit
- - benefit_title: Experiencia pré-construída
+ - benefit_title: Experiência pré-construída
  - benefit_icon: sort
  - benefit_title: Com redirecionamento
  - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
@@ -45,7 +45,7 @@ product_landing_hero:
  - benefit_icon: link
  - benefit_title: Para web, Android e iOS
  - benefit_icon: edit
- - benefit_title: Experiencia pré-construída
+ - benefit_title: Experiência pré-construída
  - benefit_icon: sort
  - benefit_title: Com redirecionamento
  - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
