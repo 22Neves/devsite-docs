@@ -3,7 +3,8 @@
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-configurada
  - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - product_svg_image: checkout-pro
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745530550206-BR.PT.png
  - benefit_icon: categories
  - benefit_title: Integração ágil
  - benefit_icon: link
@@ -21,7 +22,8 @@ product_landing_hero:
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-configurada
  - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - product_svg_image: checkout-pro
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745530604905-BR.PT.png
  - benefit_icon: categories
  - benefit_title: Integração ágil
  - benefit_icon: link
@@ -39,7 +41,8 @@ product_landing_hero:
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-configurada
  - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741607300137-choproes4x.png
+ - product_svg_image: checkout-pro
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745530639414-BR.PT.png
  - benefit_icon: categories
  - benefit_title: Integração ágil
  - benefit_icon: link
@@ -118,15 +121,15 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608134347-prodchopro4x.png
+ - column_product_svg_image: checkout-pro
  - column_product: Checkout Pro
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-pro/create-application
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608155341-prodchoapi4x.png
+ - column_product_svg_image: checkout-api
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-api/landing
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
+ - column_product_svg_image: checkout-bricks
  - column_product: Checkout Bricks
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-bricks/landing
@@ -150,10 +153,11 @@ product_landing_what_differentiates:
  - line_values: Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------|Dinheiro em conta, ----[mlb]----Pix, ------------cartão de crédito ou débito,  ----[mlb, mla, mlm]----Linha de crédito, ----------------[mlb]----boleto----------------[mla]----Rapipago, Pago Fácil----------------[mco]----PSE, Efecty----------------[mlm]----CLABE, Oxxo Paycash----------------[mpe]----Yape----------------[mlu]----Abitab, Red Pagos------------
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: all|all|mla, mlb, mlc, mlm, mpe, mlu
+ - line_values: all|all|all
 ---
 
 ----[mla]----
+|||column1|||
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -179,9 +183,21 @@ product_landing_how_integrate:
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
+|||column2|||
+<pre class="mermaid">
+flowchart TD
+    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
+    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
+    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
+    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
+    F --> E["Testar a integração"]
+    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
+</pre>
+|||
 ------------
 
 ----[mlb, mlu, mlc, mco, mpe, mlm]----
+|||column1|||
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -207,4 +223,15 @@ product_landing_how_integrate:
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
+|||column2|||
+<pre class="mermaid">
+flowchart TD
+    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
+    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
+    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
+    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
+    F --> E["Testar a integração"]
+    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
+</pre>
+|||
 ------------
