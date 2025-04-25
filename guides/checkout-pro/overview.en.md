@@ -86,7 +86,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service on your site, pays in Mercado Pago’s secure environment, and returns to your website or the configured destination.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811692697-walletrenderen.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745588070537-choproesmx990px.gif
  - image_text: Simulate the payment processing
  - image_text_link: /developers/en/live-demo/checkout-pro
  - list_title: The buyer checks out their shopping cart on your website and chooses to pay with Mercado Pago.
@@ -104,7 +104,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service on your site, pays in Mercado Pago’s secure environment, and returns to your website or the configured destination.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811715085-walletrenderenrebranding.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745588445182-choproesmx990px1.gif
  - image_text: Simulate the payment processing
  - image_text_link: /developers/en/live-demo/checkout-pro
  - list_title: The buyer checks out their shopping cart on your website and chooses to pay with Mercado Pago.
