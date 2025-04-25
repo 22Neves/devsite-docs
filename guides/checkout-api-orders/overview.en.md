@@ -10,7 +10,7 @@ product_landing_hero:
  - benefit_icon: categories
  - benefit_title: Advanced integration
  - benefit_icon: link
- - benefit_title: Without a redirect to Mercado Pago
+ - benefit_title: Without redirect
  - benefit_icon: edit
  - benefit_title: Total customization
  - info: Looking for development-free options? Explore [other solutions](/developers/en/docs#online-payments).
@@ -116,7 +116,7 @@ product_landing_hero:
  - benefit_icon: categories
  - benefit_title: Advanced integration
  - benefit_icon: link
- - benefit_title: Without a redirect to Mercado Pago
+ - benefit_title: Without redirect
  - benefit_icon: edit
  - benefit_title: Total customization
  - info: Looking for development-free options? Explore [other solutions](/developers/en/docs#online-payments).
@@ -222,7 +222,7 @@ product_landing_hero:
  - benefit_icon: categories
  - benefit_title: Advanced integration
  - benefit_icon: link
- - benefit_title: Without a redirect to Mercado Pago
+ - benefit_title: Without redirect
  - benefit_icon: edit
  - benefit_title: Total customization
  - info: Looking for development-free options? Explore [other solutions](/developers/en/docs#online-payments).

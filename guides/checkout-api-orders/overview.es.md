@@ -10,7 +10,7 @@ product_landing_hero:
  - benefit_icon: categories
  - benefit_title: Integración avanzada
  - benefit_icon: link
- - benefit_title: Sin redirección a Mercado Pago
+ - benefit_title: Sin redirección
  - benefit_icon: edit
  - benefit_title: Personalización total
  - info: ¿Buscas opciones sin desarrollo? Consulta [otras soluciones](/developers/es/docs#online-payments).
@@ -118,7 +118,7 @@ product_landing_hero:
  - benefit_icon: categories
  - benefit_title: Integración avanzada
  - benefit_icon: link
- - benefit_title: Sin redirección a Mercado Pago
+ - benefit_title: Sin redirección
  - benefit_icon: edit
  - benefit_title: Personalización total
  - info: ¿Buscas opciones sin desarrollo? Consulta [otras soluciones](/developers/es/docs#online-payments).
@@ -224,7 +224,7 @@ product_landing_hero:
  - benefit_icon: categories
  - benefit_title: Integración avanzada
  - benefit_icon: link
- - benefit_title: Sin redirección a Mercado Pago
+ - benefit_title: Sin redirección
  - benefit_icon: edit
  - benefit_title: Personalización total
  - info: ¿Buscas opciones sin desarrollo? Consulta [otras soluciones](/developers/es/docs#online-payments).

@@ -15,7 +15,7 @@ Para poder recibir pagos, es necesario que añadas en el _frontend_ un formulari
 
 Si ya cuentas con un desarrollo que contempla un formulario de pago propio, asegúrate de incluir Rapipago y Pago Fácil entre las opciones de pago que deseas ofrecer, como es indicado a continuación, y avanza a la etapa de [Obtener tipos de documentos](/developers/es/docs/checkout-api-v2/payment-integration/other-payment-methods#:~:text=client%2Dside-,Obtener,-tipos%20de%20documento). 
 
-Si no cuentas con un formulario de pago, añade el siguiente a tu proyecto, incluyendo el identificador de Pix como medio de pago a ofrecer.
+Si no cuentas con un formulario de pago, añade el siguiente a tu proyecto, incluyendo el identificador del medio de pago a ofrecer.
 
 | Medio de pago | `payment_method_id`|
 |:---:|:---:|

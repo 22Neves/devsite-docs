@@ -19,16 +19,16 @@ Além disso, o componente oferece a possibilidade de orientar o usuário com ale
     participant Backend as Back-end do integrador
     participant API as API Mercado Pago
 
-    Navegador->>Frontend: 1. Tela de pagamentoO comprador acessa a tela de pagamento.
-    Frontend->>MPjs: 2. Inicialização SDK JS Mercado PagoO front-end do integrador baixa einicializa o SDK JS do Mercado Pago.
-    Frontend->>Navegador: 3. Formulário de pagamentoO front-end do integrador exibe oformulário de pagamento.
-    Navegador->>Frontend: 4. Confirmação de pagamentoO comprador preenche o formulário efinaliza o pagamento.
-    Frontend->>MPjs: 5. Criação do tokenO front-end do integrador usa o SDK JSpara criar o token que conterá os dadosdo cartão de forma segura.
-    Frontend->>Backend: 6. Envio do tokenO front-end do integrador envia o token docartão e os dados de pagamento para seu back-end.
-    Backend->>API: 7. Criação do pagamentoDo back-end, são chamados os serviçosdo Mercado Pago para criar o pagamento.
-    API->>Navegador: 8. Resultado do pagamentoO front-end do integrador exibe aocomprador o resultado da operação.
-    API->>Backend: 9. Atualizações de status do pagamentoO Mercado Pago pode enviar notificaçõesvia Webhook com atualizações do statusdo pagamento.
-    Backend->>Navegador: 10. Notificação ao compradorSe aplicável, o comprador é notificadosobre a atualização do pagamento.
+    Navegador->>Frontend: 1. O comprador acessa a tela de pagamento.
+    Frontend->>MPjs: 2. O front-end do integrador baixa e inicializa o SDK JS do Mercado Pago.
+    Frontend->>Navegador: 3. O front-end do integrador exibe o formulário de pagamento.
+    Navegador->>Frontend: 4. O comprador preenche o formulário e finaliza o pagamento.
+    Frontend->>MPjs: 5. O front-end do integrador usa o SDK JS para criar o token que conterá os dados do cartão de forma segura.
+    Frontend->>Backend: 6.O front-end do integrador envia o token do cartão e os dados de pagamento para seu back-end.
+    Backend->>API: 7. Do back-end, são chamados os serviços do Mercado Pago para criar o pagamento.
+    API->>Navegador: 8. O front-end do integrador exibe ao comprador o resultado da operação.
+    API->>Backend: 9. O Mercado Pago pode enviar notificações via Webhook com atualizações do status do pagamento.
+    Backend->>Navegador: 10. Se aplicável, o comprador é notificado sobre a atualização do pagamento.
 </pre>
 
 Para avançar com a configuração de pagamentos com cartão de débito e/ou crédito via _Card Payment Brick_, siga os passos abaixo.
@@ -40,16 +40,6 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 Para poder receber pagamentos, é necessário que você adicione no *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
 
 Essa inclusão deve ser feita por meio do _Card Payment Brick_, que oferece um formulário otimizado com temas variados e inclui os campos necessários para pagamentos com cartões.
-
----
-live_demo_code_action:
- - title: Experimente nosso Brick
- - description: Construa experiências visuais em tempo real. Quando estiver tudo pronto, baixe ou copie o código gerado para adicionar no seu site ou compartilhar com um desenvolvedor.
- - link: /developers/pt/live-demo/card-payment-brick
- - image: /checkout-bricks/live-demo-card-brick.png
- - linkName: Demo
- - buttonDescription: Construir seu Card Payment Brick
----
 
 Para adicionar o _Card Payment Brick_, primeiro realize sua **configuração e inicialização** a partir do *frontend*, como mostram os exemplos a seguir.
 
@@ -217,11 +207,12 @@ Como resultado, a renderização do Brick ficará semelhante à imagem abaixo.
 
 ----[mlm]----
 ![cardform](checkout-bricks/card-form-mlm-pt.png)
-
 ------------
-----[mla, mlb]----
-![cardform](checkout-bricks/card-form-pt.png)
-
+----[mla]----
+![cardform](checkout-bricks/card-form-mla-pt.png)
+------------ 
+----[mlb]----
+![cardform](checkout-bricks/card-form-mlb-pt.png)
 ------------ 
 
 Para avançar para a etapa de envio do pagamento, será necessário que seu *backend* possa receber as informações do formulário criado, junto com o _token_ resultante da criptografia do cartão. Para isso, recomendamos disponibilizar um endpoint */Process_order* que receba os dados coletados pelo Brick após a ação de _submit_.
@@ -280,12 +271,12 @@ curl -X POST \
 }'
 ```
 
-Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
+Veja na tabela abaixo as descrições dos parâmetros que possuem alguma particularidade importante de ser destacada.
 
 | Atributo | Tipo | Descrição | Obrigatório/Opcional |
 |---|---|---|---|
 | `Authorization` | _Header_ | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} em ambientes de desenvolvimento e o :toolTipComponent[Access Token produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção*."} para pagamentos reais. | Obrigatório |
-| `X-Idempotency-Key` | _Header_ | Llave de idempotencia. Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma _string_ aleatória. | Obrigatório |
+| `X-Idempotency-Key` | _Header_ | Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma _string_ aleatória. | Obrigatório |
 | `processing_mode` | _Body. String_ | Modo de processamento da order. Os valores possíveis são: <br><br> - `automatic`: para criar e processar a ordem em modo automático. <br><br> - `manual`: para criar a order e processá-la posteriormente. <br><br> Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model). | Obrigatório |
 | `total_amount` | _Body. String_ | Valor total da transação. | Obrigatório |
 | `transaction.payments.payment_method.id` | _Body. String_ | Identificador do meio de pagamento. **Neste caso, é a bandeira de cada cartão**. Você pode consultar a lista completa de identificadores disponíveis enviando uma requisição ao endpoint [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). | Obrigatório |
@@ -299,44 +290,42 @@ Em caso de sucesso, a resposta será semelhante ao exemplo abaixo.
 
 ```json
 {
-  "id": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE",
+  "id": "ORD01JS2V6CM8KJ0EC4H502TGK1WP",
+  "type": "online",
   "processing_mode": "automatic",
   "external_reference": "ext_ref_1234",
-  "marketplace": "NONE",
   "total_amount": "200.00",
+  "total_paid_amount": "200.00",
   "country_code": "BRA",
-  "user_id": "1245621468",
-  "created_date": "2024-09-02T22:04:01.880469Z",
-  "last_updated_date": "2024-09-02T22:04:04.429289Z",
-  "type": "online",
-  "status": "action_required",
-  "status_detail": "waiting_payment",
-  "capture_mode": "automatic",
+  "user_id": "2021490138",
+  "status": "processed",
+  "status_detail": "accredited",
+  "capture_mode": "automatic_async",
+  "created_date": "2025-04-17T21:41:33.96Z",
+  "last_updated_date": "2025-04-17T21:41:35.144Z",
   "integration_data": {
-    "application_id": "4599991948843755"
+    "application_id": "874202490252970"
   },
   "transactions": {
     "payments": [
       {
-        "id": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24",
-        "reference_id": "22dvqmsbq8c",
+        "id": "PAY01JS2V6CM8KJ0EC4H504R7YE34",
         "amount": "200.00",
-        "status": "action_required",
-        "status_detail": "waiting_payment",
+        "paid_amount": "200.00",
+        "reference_id": "0002yjis6j",
+        "status": "processed",
+        "status_detail": "accredited",
         "payment_method": {
-          "id": "bolbradesco",
-          "type": "ticket",
-          "ticket_url": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
-          "barcode_content": "3335008800000000006004835002100020000242462010",
-          "reference": "1234567890",
-          "verification_code": "1234567890",
-          "financial_institution": "bolbradesco",
-          "digitable_line": "23793380296060054351030006333303799140000020000"
+          "id": "master",
+          "type": "credit_card",
+          "token": "519ada5ac7431ef6ce24ac19c38f6768",
+          "installments": 1
         }
       }
     ]
   }
 }
+
 ```
 
 > WARNING
