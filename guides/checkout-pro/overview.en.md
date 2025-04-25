@@ -179,9 +179,6 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/10/1744319778748-Diagrama.jpg
- - image_text: Explore code examples
- - image_text_link: /developers/en/live-demo/checkout-pro
  - requirement_title: Prerequisites
  - requirement_table_title: Seller account
  - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
@@ -224,9 +221,6 @@ product_landing_how_integrate:
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg
- - image_text: Explore code examples
- - image_text_link: /developers/en/live-demo/checkout-pro
  - requirement_title: Prerequisites
  - requirement_table_title: Seller account
  - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
