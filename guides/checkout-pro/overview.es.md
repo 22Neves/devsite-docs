@@ -87,7 +87,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio en tu sitio, paga en el entorno seguro de Mercado Pago y regresa a tu sitio o al destino configurado.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745588070537-choproesmx990px.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745607187974-choproes990px.gif
  - image_text: Simula el procesamiento de pago
  - image_text_link: /developers/es/live-demo/checkout-pro
  - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
@@ -158,7 +158,6 @@ product_landing_what_differentiates:
 ---
 
 ----[mla]----
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -171,6 +170,11 @@ product_landing_how_integrate:
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
+---
+
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación.
  - list_item: Configurar el ambiente de desarrollo.
@@ -184,25 +188,26 @@ product_landing_how_integrate:
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Tus integraciones</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Crear aplicación</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir el ambiente de desarollo</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Crear y configurar preferencias de pago</a>]
-    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar las notificaciones de pago</a>]
-    F --> E["Probar la integración"]
-    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir calidad</a>]
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Tus integraciones</a>"] --> B[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/create-application' target="blank">Crear aplicación</a>]
+        B --> C[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/configure-development-enviroment' target="blank">Construir el ambiente de desarollo</a>]
+        C --> D[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/create-payment-preference' target="blank">Crear y configurar preferencias de pago</a>]
+        D --> F[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/payment-notifications' target="blank">Configurar las notificaciones de pago</a>]
+        F --> E["Probar la integración"]
+        E --> J[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir calidad</a>]
+    </pre>
+</div>
 |||
 ------------
 
 ----[mlb, mlu, mlc, mco, mpe, mlm]----
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/16/1744811907990-Diagrama.jpg
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745582249847-choproesmx990px.gif
  - image_text: Explora ejemplos de código
  - image_text_link: /developers/es/live-demo/checkout-pro
  - requirement_title: Requisitos previos
@@ -210,6 +215,11 @@ product_landing_how_integrate:
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite la navegación segura y la protección de tus datos durante las transferencias de información.
+--
+
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación.
  - list_item: Configurar el ambiente de desarrollo.
@@ -223,14 +233,16 @@ product_landing_how_integrate:
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Tus integraciones</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Crear aplicación</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir el ambiente de desarollo</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Crear y configurar preferencias de pago</a>]
-    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar las notificaciones de pago</a>]
-    F --> E["Probar la integración"]
-    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir calidad</a>]
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Tus integraciones</a>"] --> B[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/create-application' target="blank">Crear aplicación</a>]
+        B --> C[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/configure-development-enviroment' target="blank">Construir el ambiente de desarollo</a>]
+        C --> D[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/create-payment-preference' target="blank">Crear y configurar preferencias de pago</a>]
+        D --> F[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/payment-notifications' target="blank">Configurar las notificaciones de pago</a>]
+        F --> E["Probar la integración"]
+        E --> J[<a href='https://www.mercadopago.com/developers/es/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir calidad</a>]
+    </pre>
+</div>
 |||
 ------------

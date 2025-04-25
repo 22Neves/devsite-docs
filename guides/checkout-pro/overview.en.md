@@ -86,7 +86,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service on your site, pays in Mercado Pago’s secure environment, and returns to your website or the configured destination.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745588070537-choproesmx990px.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745607187974-choproes990px.gif
  - image_text: Simulate the payment processing
  - image_text_link: /developers/en/live-demo/checkout-pro
  - list_title: The buyer checks out their shopping cart on your website and chooses to pay with Mercado Pago.
@@ -98,13 +98,31 @@ product_landing_how_works:
 ---
 ------------
 
-----[mlb, mlu, mlc, mco, mpe, mlm]----
+----[mlu, mlc, mco, mpe, mlm]----
 ---
 product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service on your site, pays in Mercado Pago’s secure environment, and returns to your website or the configured destination.
  - sub_title: Payment process
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745588445182-choproesmx990px1.gif
+ - image_text: Simulate the payment processing
+ - image_text_link: /developers/en/live-demo/checkout-pro
+ - list_title: The buyer checks out their shopping cart on your website and chooses to pay with Mercado Pago.
+ - list_title: They’re redirected to the payment form, where they decide whether to proceed with their Mercado Pago account or as a guest user.
+ - list_title: They can choose their preferred payment method, whether it’s one saved in their account or a new one they entered.
+ - list_title: Once the purchase is completed, they are redirected to your website or the configured destination.
+ - button_description: How to integrate
+ - button_link: /developers/en/docs/checkout-pro/create-application
+---
+------------
+
+----[mlb]----
+---
+product_landing_how_works:
+ - title: How it works
+ - message: The customer chooses the product or service on your site, pays in Mercado Pago’s secure environment, and returns to your website or the configured destination.
+ - sub_title: Payment process
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745606380425-chopropt990px.gif
  - image_text: Simulate the payment processing
  - image_text_link: /developers/en/live-demo/checkout-pro
  - list_title: The buyer checks out their shopping cart on your website and chooses to pay with Mercado Pago.
@@ -157,7 +175,6 @@ product_landing_what_differentiates:
 ---
 
 ----[mla]----
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: How to integrate
@@ -170,6 +187,11 @@ product_landing_how_integrate:
  - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: SSL Certificate (Secure Sockets Layer)
  - requirement_table_list: Allows secure browsing and the protection of your data during information transfers.
+---
+
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Integration process
  - list_item: Create an application.
  - list_item: Configure the development environment.
@@ -183,20 +205,21 @@ product_landing_how_integrate:
  - button_link: /developers/en/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Your integrations</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Create application</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Build the development environment</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Create and configure payment preferences</a>]
-    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configure payment notifications</a>]
-    F --> E["Test the integration"]
-    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Measure quality</a>]
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Your integrations</a>"] --> B[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-application' target="blank">Create application</a>]
+        B --> C[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/configure-development-enviroment' target="blank">Build the development environment</a>]
+        C --> D[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-payment-preference' target="blank">Create and configure payment preferences</a>]
+        D --> F[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/payment-notifications' target="blank">Configure payment notifications</a>]
+        F --> E["Test the integration"]
+        E --> J[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/how-tos/integration-quality' target="blank">Measure quality</a>]
+    </pre>
+</div>
 |||
 ------------
 
 ----[mlb, mlu, mlc, mco, mpe, mlm]----
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: How to integrate
@@ -209,6 +232,11 @@ product_landing_how_integrate:
  - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: SSL Certificate (Secure Sockets Layer)
  - requirement_table_list: Allows secure browsing and the protection of your data during information transfers.
+---
+|||column1|||
+
+---
+product_landing_how_integrate:
  - list_title: Integration process
  - list_item: Create an application.
  - list_item: Configure the development environment.
@@ -222,14 +250,16 @@ product_landing_how_integrate:
  - button_link: /developers/en/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Your integrations</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Create application</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Build the development environment</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Create and configure payment preferences</a>]
-    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configure payment notifications</a>]
-    F --> E["Test the integration"]
-    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Measure quality</a>]
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Your integrations</a>"] --> B[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-application' target="blank">Create application</a>]
+        B --> C[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/configure-development-enviroment' target="blank">Build the development environment</a>]
+        C --> D[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-payment-preference' target="blank">Create and configure payment preferences</a>]
+        D --> F[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/payment-notifications' target="blank">Configure payment notifications</a>]
+        F --> E["Test the integration"]
+        E --> J[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/how-tos/integration-quality' target="blank">Measure quality</a>]
+    </pre>
+</div>
 |||
 ------------

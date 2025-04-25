@@ -80,7 +80,6 @@ product_landing_what_it_offers:
  - benefit_bullet: Reconhecimento facial com FaceAuth para acessar a conta do Mercado Pago
 ---
 
-----[mla]----
 ---
 product_landing_how_works:
  - title: Como funciona
@@ -96,25 +95,6 @@ product_landing_how_works:
  - button_description: Como integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
-------------
-
-----[mlb, mlu, mlc, mco, mpe, mlm]----
----
-product_landing_how_works:
- - title: Como funciona
- - message: O cliente escolhe o produto ou serviço no seu site, paga no ambiente seguro do Mercado Pago e retorna à sua loja ou ao destino configurado.
- - sub_title: Processo de pagamento
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745588214106-chopropt990px.gif
- - image_text: Simule o processamento de pagamento
- - image_text_link: /developers/pt/live-demo/checkout-pro
- - list_title: O comprador finaliza o carrinho de compras no seu site e escolhe pagar com o Mercado Pago.
- - list_title: Ele é redirecionado para o formulário de cobrança, onde decide prosseguir com sua conta do Mercado Pago ou como usuário convidado.
- - list_title: Ele pode escolher seu meio de pagamento preferido, seja já salvo em sua conta ou um novo que deseje adicionar.
- - list_title: Após concluir a compra, o cliente é redirecionado para o seu site ou para o destino previamente configurado.
- - button_description: Como integrar
- - button_link: /developers/pt/docs/checkout-pro/create-application
----
-------------
 
 ---
 product_landing_what_differentiates:
@@ -157,7 +137,6 @@ product_landing_what_differentiates:
 ---
 
 ----[mla]----
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -170,6 +149,10 @@ product_landing_how_integrate:
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Processo de integração
  - list_item: Criar uma aplicação.
  - list_item: Configurar o ambiente de desenvolvimento.
@@ -179,25 +162,26 @@ product_landing_how_integrate:
  - list_item: Adicionar o SDK ao frontend e inicializar o checkout.
  - list_item: Testar a integração.
  - list_item: Configurar as notificações de pagamento.
- - list_item: Sair à produção.
+ - list_item: Subir em produção.
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
-    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
-    F --> E["Testar a integração"]
-    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
+        B --> C[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
+        C --> D[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
+        D --> F[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
+        F --> E["Testar a integração"]
+        E --> J[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
+    </pre>
+</div>
 |||
 ------------
 
 ----[mlb, mlu, mlc, mco, mpe, mlm]----
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -210,6 +194,11 @@ product_landing_how_integrate:
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Certificado SSL (Secure Sockets Layer)
  - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
+---
+
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Processo de integração
  - list_item: Criar uma aplicação.
  - list_item: Configurar o ambiente de desenvolvimento.
@@ -219,19 +208,21 @@ product_landing_how_integrate:
  - list_item: Adicionar o SDK ao frontend e inicializar o checkout.
  - list_item: Testar a integração.
  - list_item: Configurar as notificações de pagamento.
- - list_item: Sair à produção.
+ - list_item: Subir em produção.
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
-    D --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
-    F --> E["Testar a integração"]
-    E --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
-</pre>
+<div class="mermaid-overview">
+    <pre class="mermaid">
+    flowchart TD
+        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
+        B --> C[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
+        C --> D[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
+        D --> F[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
+        F --> E["Testar a integração"]
+        E --> J[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
+    </pre>
+</div>
 |||
 ------------
