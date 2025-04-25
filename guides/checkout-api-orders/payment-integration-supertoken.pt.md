@@ -1,37 +1,37 @@
-# Meios de pagamento salvos no Mercado Pago
+# Pagamentos rápidos com Mercado Pago
 
 Com o ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout API ------------ oferecemos aos compradores a possibilidade de pagar com os cartões de débito e crédito salvos no Mercado Pago ou com seu dinheiro em conta.
 
-Com a autorização do comprador, o Mercado Pago exibirá seus meios de pagamento salvos como opções para realizar o pagamento dentro da loja, oferecendo uma maior probabilidade de aprovação de pagamentos e uma experiência de compra agilizada e segura.
+Com a autorização do comprador, o Mercado Pago exibirá os meios de pagamento disponíveis na sua conta como opções para realizar o pagamento dentro da loja, oferecendo uma maior probabilidade de aprovação de pagamentos e uma experiência de compra agilizada e segura.
 
 ----[mlb]----  
-![Experience from the frontend](/images/api-orders/supertoken-exp-mlb-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
 ------------
 
 ----[mla]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-exp-mla-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mla.gif)
 ------------
 
 ----[mlm]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-exp-mlm-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlm.gif)
 ------------
 
 
 > RED_MESSAGE
 >
-> Atualmente, é possível oferecer esta modalidade de pagamento por meio de integrações web mobile e nativas. **Não é possível realizá-lo por meio de integrações web desktop.**.
+> Atualmente, é possível oferecer esta modalidade de pagamento por meio de integrações web mobile e nativas. **Não é possível realizá-lo por meio de integrações web desktop**.
 
 ## Pré-requisitos
-Para oferecer pagamentos com os meios de pagamento salvos no Mercado Pago, é necessário atender os seguintes requisitos, que dependerão do seu tipo de integração.
+Para oferecer Pagamentos rápidos com Mercado Pago, é necessário atender os seguintes requisitos, que dependerão do seu tipo de integração.
 
 :::::TabsComponent
 
 ::::TabComponent{title="Integração web mobile"}
 
 ### Navegadores compatíveis
-Para que o comprador autorize o uso de seus meios de pagamento salvos no Mercado Pago, ele deverá ser redirecionado para um modal. Isso pode ser realizado com os seguintes **navegadores compatíveis**:  
+Para que o comprador autorize o uso de seus meios de pagamento disponíveis no Mercado Pago, ele deverá ser redirecionado. Isso pode ser realizado com os seguintes **navegadores compatíveis**:  
 * Google Chrome  
 * Chrome Mobile  
 * Microsoft Edge  
@@ -44,7 +44,7 @@ A API responsável por criar a interface entre o navegador onde a compra é real
 ::::TabComponent{title=" Integração nativa"}
 
 ### Sistema operacional compatível
-O processo de redirecionamento para que o comprador autorize o uso de seus meios de pagamento salvos no Mercado Pago deve ser realizado por meio de **Custom Tabs**. 
+O processo de redirecionamento para que o comprador autorize o uso de seus meios de pagamento disponíveis no Mercado Pago deve ser realizado por meio de **Custom Tabs**. 
 
 As Custom Tabs permitem a abertura de páginas web em um navegador nativo incorporado no aplicativo. Neste caso, o único sistema operacional compatível é o **Android**.
 
@@ -84,10 +84,10 @@ A API responsável por criar a interface entre o navegador onde a compra é real
 ::::
 :::::
 
-Se todos os pré-requisitos foram cumpridos e já tiver configurado seu [ambiente de desenvolvimento](/developers/pt/docs/checkout-api-v2/development-environment), você poderá continuar com a integração.
+Se todos os pré-requisitos foram levados em consideração e já tiver configurado seu [ambiente de desenvolvimento](/developers/pt/docs/checkout-api-v2/development-environment), você poderá continuar com a integração.
 
 ## Etapas de integração
-A integração de métodos de pagamento salvos no Mercado Pago consiste em garantir que o fluxo funcionará corretamente para o usuário, seguido pelo processo de autorização da conta e a obtenção dos meios de pagamento salvos. Tudo é realizado através da subclasse `Authenticator`, contida na biblioteca do Mercado Pago.
+A integração de Pagamentos rápidos com Mercado Pago consiste em garantir que o fluxo funcionará corretamente para o usuário, seguido pelo processo de autorização da conta e a obtenção dos meios de pagamento disponíveis. Tudo é realizado através da subclasse `Authenticator`, contida na biblioteca do Mercado Pago.
 
 <pre class="mermaid">
     sequenceDiagram
@@ -151,30 +151,14 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 > NOTE
 >
-> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
+> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
 :::
 :::AccordionComponent{title="2. Obter token de autenticação de conta" pill="client-side"}
 
-Uma vez inicializada a classe `Authenticator`, é necessário fazer uma requisição para obter o _token_ de autorização. Este _token_ é necessário para acessar os meios de pagamento salvos na conta do comprador no Mercado Pago. 
+Uma vez inicializada a classe `Authenticator`, é necessário fazer uma requisição para obter o _token_ de autorização. Este _token_ é necessário para acessar os meios de pagamento disponíveis na conta do comprador no Mercado Pago. 
 
-Recomendamos que essa requisição seja acionada por algum botão clicável que inclua uma etiqueta semelhante a _Mostrar meus meios de pagamento_ ou por algum elemento visual que simbolize uma transação com cartão de crédito, como na imagem abaixo:
-
-----[mlb]----  
-![bottom sheet de exemplo](/images/api-orders/supertoken-bottomsheet-mlb-rebranding.png)
-------------
-
-----[mla]---- 
-
-![bottom sheet de exemplo](/images/api-orders/supertoken-bottomsheet-mla.png)
-------------
-
-----[mlm]---- 
-
-![bottom sheet de exemplo](/images/api-orders/supertoken-bottomsheet-mlm-rebranding.png)
-------------
-
-A função que faz a requisição e que deve ser inserida no elemento clicável é a seguinte:
+A função que faz a requisição é a seguinte:
 
 ```JavaScript
 async function getAuthorizationToken() {
@@ -192,36 +176,49 @@ const authorizationToken = await getAuthorizationToken();
 
 ```
 
-O método `.show` é responsável por exibir um modal de confirmação para o comprador, permitindo que ele escolha se deseja ser direcionado ao Mercado Pago para usar seus meios de pagamento salvos. Existem duas opções:
+O método `.show` é responsável por exibir um modal de confirmação para o comprador, permitindo que ele escolha se deseja ser direcionado ao Mercado Pago para usar seus meios de pagamento disponíveis. Existem duas opções:
  * **Abrir modal de confirmação:** ao chamar o método conforme mostrado no bloco de código, será aberto um _bottom sheet_ e, quando o comprador fizer a confirmação, ele será redirecionado para o aplicativo do Mercado Pago ou Mercado Livre. Lá, poderá autorizar o pagamento de forma segura, utilizando métodos como leitura de impressões digitais ou reconhecimento facial, dependendo do que seu dispositivo suporta.
+  ----[mlb]----  
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb.png)
+  ------------
+
+  ----[mla]---- 
+
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mla.png)
+  ------------
+
+  ----[mlm]---- 
+
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm.png)
+  ------------
 
  * **Omitir o modal de confirmação:** este método também pode opcionalmente receber o parâmetro `hideRedirectionConfirmation`, que permite ignorar o modal de confirmação e que o usuário seja redirecionado automaticamente para o aplicativo. Quando este parâmetro está ativado, recomenda-se usar `.getApplication` para identificar qual aplicativo o usuário utilizará, permitindo a criação de um modal de confirmação personalizado que melhore a experiência do usuário.
 
 > NOTE
 >
-> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
+> Se você encontrar um erro durante esta etapa, pode consultar nossa [lista de possíveis erros](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
 ----[mlb]----  
-![Autenticação](/images/api-orders/supertoken-exp-2-mlb-rebranding.png)
+![Autenticação](/images/api-orders/supertoken-exp-2-mlb.png)
 ------------
 
 ----[mla]---- 
 
-![Autenticação](/images/api-orders/supertoken-exp-2-mla-rebranding.png)
+![Autenticação](/images/api-orders/supertoken-exp-2-mla.png)
 ------------
 
 ----[mlm]---- 
 
-![Autenticação](/images/api-orders/supertoken-exp-2-mlm-rebranding.png)
+![Autenticação](/images/api-orders/supertoken-exp-2-mlm.png)
 ------------
 
 
 :::
 :::AccordionComponent{title="3. Obter meios de pagamento do comprador" pill="client-side"}
 
-Após a autorização do comprador, o aplicativo do Mercado Pago redirecionará automaticamente para o site inicial do checkout, desta vez com a opção de realizar o pagamento com seus meios salvos. 
+Após a autorização do comprador, o aplicativo do Mercado Pago será fechado e o comprador retornará ao site inicial do checkout, desta vez com a opção de realizar o pagamento com seus meios salvos. 
 
-Para obter esses meios de pagamento salvos na conta do comprador em seu sistema, após a obtenção do _token_ na etapa anterior, você deve executar a seguinte função.
+Para obter esses meios de pagamento disponíveis na conta do comprador em seu sistema, após a obtenção do _token_ na etapa anterior, você deve executar a seguinte função.
 
 ```JavaScript
 async function getAccountPaymentMethods(authorizationToken) {
@@ -238,7 +235,7 @@ const userPaymentMethods = await getAccountPaymentMethods(authorizationToken);
 
 ```
 
-A seguir, você verá um exemplo da estrutura da resposta do objeto `userPaymentMethods`, que retorna os meios de pagamento salvos na conta do comprador.
+A seguir, você verá um exemplo da estrutura da resposta do objeto `userPaymentMethods`, que retorna os meios de pagamento disponíveis na conta do comprador.
 
 ```JavaScript
 {
@@ -402,22 +399,22 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
 
 > NOTE
 >
-> É importante que essas chamadas estejam envolvidas em um bloco _try-catch_ para que possíveis erros sejam processados adequadamente. Se você encontrar um, pode consultar nossa [lista de possíveis erros.](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
+> É importante que essas chamadas estejam envolvidas em um bloco _try-catch_ para que possíveis erros sejam processados adequadamente. Se você encontrar um, pode consultar nossa [lista de possíveis erros](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
 Por fim, para que o comprador visualize essas opções de pagamento em seu checkout e selecione a que desejar, você deve renderizá-las em uma tela. Abaixo está um exemplo de como exibi-las. 
 
 ----[mlb]----  
-![Exemplo do frontend da loja com os meios de pagamento salvos](/images/api-orders/supertoken-payment-methods-mlb-rebranding.png)
+![Exemplo do frontend da loja com os meios de pagamento disponíveis](/images/api-orders/supertoken-payment-methods-mlb.png)
 ------------
 
 ----[mla]---- 
 
-![Exemplo do frontend da loja com os meios de pagamento salvos](/images/api-orders/supertoken-payment-methods-mla-rebranding.png)
+![Exemplo do frontend da loja com os meios de pagamento disponíveis](/images/api-orders/supertoken-payment-methods-mla.png)
 ------------
 
 ----[mlm]---- 
 
-![Exemplo do frontend da loja com os meios de pagamento salvos](/images/api-orders/supertoken-payment-methods-mlm-rebranding.png)
+![Exemplo do frontend da loja com os meios de pagamento disponíevis](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
 
 :::

@@ -1,21 +1,21 @@
-# Saved Payment Methods in Mercado Pago
+# Fast payments with Mercado Pago
 
 With ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout API ------------, you can offer buyers the option to pay with the debit and credit cards saved in their Mercado Pago wallet or with their account money.
 
-With the buyer's authorization, Mercado Pago will display their saved payment methods as options for making the payment within the store, providing a higher payment approval rate and a streamlined and secure shopping experience.
+With the buyer's authorization, Mercado Pago will display their available payment methods as options for making the payment within the store, providing a higher payment approval rate and a streamlined and secure shopping experience.
 
 ----[mlb]----  
-![Experience from the frontend](/images/api-orders/supertoken-exp-mlb-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
 ------------
 
 ----[mla]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-exp-mla-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mla.gif)
 ------------
 
 ----[mlm]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-exp-mlm-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlm.gif)
 ------------
 
 > RED_MESSAGE
@@ -24,14 +24,14 @@ With the buyer's authorization, Mercado Pago will display their saved payment me
 
 ## Prerequisites
 
-To offer payments with saved payment methods in Mercado Pago, you must meet the following requirements, which will depend on your type of integration.
+To offer Fast payments with Mercado Pago, you must meet the following requirements, which will depend on your type of integration.
 
 :::::TabsComponent
 
 ::::TabComponent{title="Mobile Web Integration"}
 
 ### Compatible Browsers
-For the buyer to authorize the use of their saved payment methods in Mercado Pago, they must be redirected to a modal. This can be made with the following **compatible browsers**:
+For the buyer to authorize the use of their available payment methods in Mercado Pago, they must be redirected. This can be made with the following **compatible browsers**:
 * Google Chrome  
 * Chrome Mobile  
 * Microsoft Edge  
@@ -44,7 +44,7 @@ The API responsible for creating the interface between the browser where the pur
 ::::TabComponent{title="Native Integration"}
 
 ### Compatible Operating System
-The process of redirecting the buyer to authorize the use of their saved payment methods in Mercado Pago can only be done through **Custom Tabs**, which allow the opening of web pages in a native browser embedded in the app. Therefore, the only compatible operating system is **Android**.
+The process of redirecting the buyer to authorize the use of their available payment methods in Mercado Pago can only be done through **Custom Tabs**, which allow the opening of web pages in a native browser embedded in the app. Therefore, the only compatible operating system is **Android**.
 
 If you need to implement Custom Tabs in your project, start by installing the following dependency in the `build.gradle` file.
 
@@ -83,10 +83,10 @@ The API responsible for creating the interface between the browser where the pur
 ::::
 :::::
 
-If you meet these conditions and have already [set up your development environment](/developers/en/docs/checkout-api-v2/development-environment), you can proceed with your integration.
+If these conditions are being taken into consideration and you have already [set up your development environment](/developers/en/docs/checkout-api-v2/development-environment), you can proceed with your integration.
 
 ## Integration Stages
-The integration of saved payment methods in Mercado Pago consists of ensuring that the flow will work correctly for the user, followed by the account authorization process and obtaining the saved payment methods. This is all done through the `Authenticator` subclass contained in the Mercado Pago library.
+The integration of Fast payments with Mercado Pago consists of ensuring that the flow will work correctly for the user, followed by the account authorization process and obtaining the available payment methods. This is all done through the `Authenticator` subclass contained in the Mercado Pago library.
 
 <pre class="mermaid">
     sequenceDiagram
@@ -154,26 +154,9 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 :::
 :::AccordionComponent{title="2. Obtain Account Authentication Token" pill="client-side"}
 
-Once the `Authenticator` class has been initialized, it is necessary to send a request to obtain the authorization token. This token is required to access the saved payment methods in the buyer's Mercado Pago account. 
+Once the `Authenticator` class has been initialized, it is necessary to send a request to obtain the authorization token. This token is required to access the available payment methods in the buyer's Mercado Pago account. 
 
-We recommend that this request be triggered by some clickable button that includes a label similar to _Show my payment methods_, or by a visual element that symbolizes a credit card transaction, as shown in the image below:
-
-----[mlb]----  
-![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb-rebranding.png)
-------------
-
-----[mla]---- 
-
-![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mla.png)
-------------
-
-----[mlm]---- 
-
-![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm-rebranding.png)
-------------
-
-
-The function that performs the request and must be inserted in the clickable button is the one that follows:
+The function that performs the request is the one that follows:
 
 ```JavaScript
 async function getAuthorizationToken() {
@@ -193,6 +176,19 @@ const authorizationToken = await getAuthorizationToken();
 
 The `.show` method is responsible for displaying a confirmation modal to the buyer, allowing them to choose whether they want to be directed to Mercado Pago to use their saved methods. There are two options:
  * **Open confirmation modal:** when calling the method as shown in the code block, a bottom sheet will open, and when the buyer confirms, they will be redirected to the Mercado Pago or Mercado Libre app. There, they can securely authorize the payment using methods such as fingerprint scanning or facial recognition, depending on what their device supports.
+  ----[mlb]----  
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb.png)
+  ------------
+
+  ----[mla]---- 
+
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mla.png)
+  ------------
+
+  ----[mlm]---- 
+
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm.png)
+  ------------
  * **Skip confirmation modal:** this method can also optionally receive the parameter `hideRedirectionConfirmation`, which allows the confirmation modal to be skipped and the user to be automatically redirected to the app. When this parameter is enabled, it is recommended to use `.getApplication` to identify which app the user will be using, allowing for the creation of a customized confirmation modal that enhances the user experience.
 
 > NOTE
@@ -200,26 +196,26 @@ The `.show` method is responsible for displaying a confirmation modal to the buy
 > If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
 
 ----[mlb]----  
-![Authentication experience](/images/api-orders/supertoken-exp-2-mlb-rebranding.png)
+![Authentication experience](/images/api-orders/supertoken-exp-2-mlb.png)
 ------------
 
 ----[mla]---- 
 
-![Authentication experience](/images/api-orders/supertoken-exp-2-mla-rebranding.png)
+![Authentication experience](/images/api-orders/supertoken-exp-2-mla.png)
 ------------
 
 ----[mlm]---- 
 
-![Authentication experience](/images/api-orders/supertoken-exp-2-mlm-rebranding.png)
+![Authentication experience](/images/api-orders/supertoken-exp-2-mlm.png)
 ------------
 
 
 :::
 :::AccordionComponent{title="3. Obtain Buyer’s Payment Methods" pill="client-side"}
 
-After the buyer's authorization, the Mercado Pago application will automatically redirect them to the initial checkout site, this time with the option to make the payment using their saved methods. 
+After the buyer's authorization, the Mercado Pago application will be closed and they will come back to the initial checkout site, this time with the option to make the payment using their available methods. 
 
-To obtain these saved payment methods from the buyer's account in your system, after obtaining the token in the previous step, you must execute the following function.
+To obtain these available payment methods from the buyer's account in your system, after obtaining the token in the previous step, you must execute the following function.
 
 ```JavaScript
 async function getAccountPaymentMethods(authorizationToken) {
@@ -236,7 +232,7 @@ const userPaymentMethods = await getAccountPaymentMethods(authorizationToken);
 
 ```
 
-Below, you can see an example of the structure of the response from the `userPaymentMethods` object, which returns the saved payment methods in the buyer's account.
+Below, you can see an example of the structure of the response from the `userPaymentMethods` object, which returns the available payment methods in the buyer's account.
 
 ```JavaScript
 {
@@ -405,17 +401,17 @@ Below, you can see an example of the structure of the response from the `userPay
 Finally, to allow the buyer to view these payment options in your checkout and select their preferred one, you need to render them on a screen. Below is an example of how to display them.
 
 ----[mlb]----  
-![Example of the store frontend with the saved payment methods](/images/api-orders/supertoken-payment-methods-mlb-rebranding.png)
+![Example of the store frontend with the available payment methods](/images/api-orders/supertoken-payment-methods-mlb.png)
 ------------
 
 ----[mla]---- 
 
-![Example of the store frontend with the saved payment methods](/images/api-orders/supertoken-payment-methods-mla-rebranding.png)
+![Example of the store frontend with the available payment methods](/images/api-orders/supertoken-payment-methods-mla.png)
 ------------
 
 ----[mlm]---- 
 
-![Example of the store frontend with the saved payment methods](/images/api-orders/supertoken-payment-methods-mlm-rebranding.png)
+![Example of the store frontend with the available payment methods](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
 
 

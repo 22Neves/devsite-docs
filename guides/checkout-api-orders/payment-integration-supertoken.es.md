@@ -1,37 +1,36 @@
-# Medios de pago guardados en Mercado Pago
+# Pagos rápidos con Mercado Pago
 
 Con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout API ------------ ofrece a los compradores la posibilidad de pagar con las tarjetas de débito y crédito guardadas en su billetera de Mercado Pago o con su dinero en cuenta. 
 
-Con la autorización del comprador Mercado Pago le exhibirá sus medios de pago guardados como opciones para realizar el pago dentro de la tienda, ofreciendo una mayor probabilidad de aprobación de pagos y una experiencia de compra agilizada y segura.
+Con la autorización del comprador, Mercado Pago le exhibirá los medios de pago disponibles en su cuenta como opciones para realizar el pago dentro de la tienda, ofreciendo una mayor probabilidad de aprobación de pagos y una experiencia de compra agilizada y segura.
 
 ----[mlb]----  
-![Experience from the frontend](/images/api-orders/supertoken-exp-mlb-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
 ------------
 
 ----[mla]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-exp-mla-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mla.gif)
 ------------
 
 ----[mlm]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-exp-mlm-rebranding.gif)
+![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlm.gif)
 ------------
-
 
 > RED_MESSAGE
 >
 > Actualmente, es posible ofrecer esta modalidad de pago mediante integraciones web mobile y nativas. **No es posible hacerlo a través de integraciones web desktop**.
 
 ## Requisitos previos
-Para ofrecer pagos con medios de pago guardados en Mercado Pago es necesario que cumplas con los siguientes requisitos, que dependerán de tu tipo de integración.
+Para ofrecer Pagos rápidos con Mercado Pago es necesario que cumplas con los siguientes requisitos, que dependerán de tu tipo de integración.
 
 :::::TabsComponent
 
 ::::TabComponent{title="Integración web mobile"}
 
 ### Navegadores compatibles
-Para que el comprador autorice el uso de sus medios de pago guardados en Mercado Pago deberá ser redirigido a un modal. Esto puede ser hecho con los siguientes **navegadores compatibles**: 
+Para que el comprador autorice el uso de los medios de pago disponibles en su cuenta de Mercado Pago deberá ser redirigido. Esto puede ser hecho con los siguientes **navegadores compatibles**: 
 * Google Chrome  
 * Chrome Mobile  
 * Microsoft Edge  
@@ -44,7 +43,7 @@ La API responsable de crear la interfaz entre el navegador donde se realiza la c
 ::::TabComponent{title="Integración nativa"}
 
 ### Sistema operativo compatible
-El proceso de redirección del comprador para que autorice el uso de sus medios de pago guardados en Mercado Pago debe realizarse mediante **Custom Tabs**, que permiten la apertura de páginas web en un navegador nativo incorporado en la aplicación. Por esto, el único sistema operativo compatible es **Android**.
+El proceso de redirección del comprador para que autorice el uso de los medios de pago disponibles en su cuenta de Mercado Pago debe realizarse mediante **Custom Tabs**, que permiten la apertura de páginas web en un navegador nativo incorporado en la aplicación. Por esto, el único sistema operativo compatible es **Android**.
 
 Si necesitas implementar Custom Tabs en tu proyecto comienza por instalar la siguiente dependencia en el archivo `build.gradle`.
 
@@ -81,11 +80,11 @@ La API responsable de crear la interfaz entre el navegador donde se realiza la c
 ::::
 :::::
 
-Si cumples con estas condiciones y ya has [configurado tu ambiente de desarrollo](/developers/es/docs/checkout-api-v2/development-environment), puedes continuar con tu integración. 
+Si estas condiciones son tenidas en cuenta y ya has [configurado tu ambiente de desarrollo](/developers/es/docs/checkout-api-v2/development-environment), puedes continuar con tu integración. 
 
 
 ## Etapas de integración
-La integración de medios de pago guardados en Mercado Pago consiste en, luego de asegurarse que el flujo funcionará correctamente para el usuario, realizar el proceso de autorización de cuenta y obtención de medios de pago guardados. Todo es realizado a través de la subclase `Authenticator`, contenida en la biblioteca de Mercado Pago.
+La integración de Pagos rápidos con Mercado Pago consiste en, luego de asegurarse que el flujo funcionará correctamente para el usuario, realizar el proceso de autorización de cuenta y obtención de los medios de pago disponibles en Mercado Pago. Todo es realizado a través de la subclase `Authenticator`, contenida en la biblioteca de Mercado Pago.
 
 
 <pre class="mermaid">
@@ -155,26 +154,9 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 :::
 :::AccordionComponent{title="2. Obtener token de autenticación de cuenta" pill="client-side"}
 
-Una vez inicializada la clase `Authenticator` es necesario hacer una solicitud para obtener el _token_ de autorización. Este _token_ es requerido para acceder a los medios de pago guardados en la cuenta de Mercado Pago del comprador.
+Una vez inicializada la clase `Authenticator` es necesario hacer una solicitud para obtener el _token_ de autorización. Este _token_ es requerido para acceder a los medios de pago disponibles en la cuenta de Mercado Pago del comprador.
 
-Recomendamos que, de cara al comprador, esta solicitud sea introducida en algún botón cliqueable que incluya una etiqueta similar a _Mostrar mis medios de pago_, o en algún elemento visual que simbolice una transacción con tarjeta de crédito, como en la imagen a continuación:
-
-----[mlb]----  
-![bottom sheet de ejemplo](/images/api-orders/supertoken-bottomsheet-mlb-rebranding.png)
-------------
-
-----[mla]---- 
-
-![bottom sheet de ejemplo](/images/api-orders/supertoken-bottomsheet-mla.png)
-------------
-
-----[mlm]---- 
-
-![bottom sheet de ejemplo](/images/api-orders/supertoken-bottomsheet-mlm-rebranding.png)
-------------
-
-
-La función que  realiza la solicitud y debes insertar en el elemento cliqueable es la siguiente.
+La función que  realiza la solicitud es la siguiente.
 
 ```JavaScript
 async function getAuthorizationToken() {
@@ -195,6 +177,20 @@ const authorizationToken = await getAuthorizationToken();
 El método `.show` es el encargado de mostrar al comprador un modal de confirmación, que le permite elegir si quiere ser dirigido a Mercado Pago para utilizar sus métodos guardados. Allí, tienes dos opciones:
  * **Abrir modal de confirmación**: al llamar al método tal como muestra el bloque de código, se producirá la apertura de un _bottom sheet_ y, cuando el comprador realice la confirmación, será redireccionado a la aplicación de Mercado Pago o Mercado Libre. Allí podrá autorizar el pago de forma segura, utilizando métodos como la lectura de huellas dactilares o el reconocimiento facial, dependiendo de lo que su dispositivo soporte.
 
+  ----[mlb]----  
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb.png)
+  ------------
+
+  ----[mla]---- 
+
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mla.png)
+  ------------
+
+  ----[mlm]---- 
+
+  ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm.png)
+  ------------
+
  * **Omitir el modal de confirmación**: este método también puede recibir opcionalmente el parámetro `hideRedirectionConfirmation`, que permite omitir el modal de confirmación y que el usuario sea redirigido automáticamente a la aplicación. Cuando este parámetro está activado, se recomienda usar `.getApplication` para identificar qué aplicación utilizará el usuario, lo que permite crear un modal de confirmación personalizado que mejore la experiencia del usuario.
 
 > NOTE
@@ -202,25 +198,25 @@ El método `.show` es el encargado de mostrar al comprador un modal de confirmac
 > Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
 ----[mlb]----  
-![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mlb-rebranding.png)
+![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mlb.png)
 ------------
 
 ----[mla]---- 
 
-![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mla-rebranding.png)
+![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mla.png)
 ------------
 
 ----[mlm]---- 
 
-![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mlm-rebranding.png)
+![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mlm.png)
 ------------
 
 :::
 :::AccordionComponent{title="3. Obtener medios de pago del comprador" pill="client-side"}
 
-Después de la autorización del comprador, la aplicación de Mercado Pago lo redirigirá de forma automática al sitio inicial del checkout, esta vez con la opción de realizar el pago con sus medios guardados. 
+Después de la autorización del comprador, la aplicación de Mercado Pago se cerrará y se volverá al sitio inicial del checkout, esta vez con la opción de realizar el pago con sus medios guardados. 
 
-Para obtener estos medios de pago guardados en la cuenta del comprador en tu sistema, luego de la obtención del _token_ en el paso anterior, debes ejecutar la siguiente función.
+Para obtener estos medios de pago disponibles en la cuenta del comprador en tu sistema, luego de la obtención del _token_ en el paso anterior, debes ejecutar la siguiente función.
 
 ```JavaScript
 async function getAccountPaymentMethods(authorizationToken) {
@@ -237,7 +233,7 @@ const userPaymentMethods = await getAccountPaymentMethods(authorizationToken);
 
 ```
 
-A continuación, puedes ver un ejemplo de la estructura de la respuesta del objeto `userPaymentMethods`, que devuelve los medios de pago guardados en la cuenta del comprador. 
+A continuación, puedes ver un ejemplo de la estructura de la respuesta del objeto `userPaymentMethods`, que devuelve los medios de pago disponibles en la cuenta del comprador. 
 
 ```JavaScript
 {
@@ -406,17 +402,17 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
 Por último, para que el comprador visualice estas opciones de pago en tu checkout y seleccione la que prefiera, debes renderizarlas en una pantalla. Ve a continuación un ejemplo de cómo exhibirlas. 
 
 ----[mlb]----  
-![Ejemplo del frontend de la tienda con los medios de pago guardados](/images/api-orders/supertoken-payment-methods-mlb-rebranding.png)
+![Ejemplo del frontend de la tienda con los medios de pago disponibles](/images/api-orders/supertoken-payment-methods-mlb.png)
 ------------
 
 ----[mla]---- 
 
-![Ejemplo del frontend de la tienda con los medios de pago guardados](/images/api-orders/supertoken-payment-methods-mla-rebranding.png)
+![Ejemplo del frontend de la tienda con los medios de pago disponibles](/images/api-orders/supertoken-payment-methods-mla.png)
 ------------
 
 ----[mlm]---- 
 
-![Ejemplo del frontend de la tienda con los medios de pago guardados](/images/api-orders/supertoken-payment-methods-mlm-rebranding.png)
+![Ejemplo del frontend de la tienda con los medios de pago disponibles](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
 
 :::
@@ -473,7 +469,7 @@ createOrder();
 
 > SUCCESS_MESSAGE
 >
-> Para conocer en detalle todos los parámetros a ser enviados en esta requisición, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api-v2/payment-management/integration-errors).
+> Para conocer en detalle todos los parámetros a ser enviados en esta solicitud, consulta nuestra [Referencia de API](/developers/es/reference/orders/online-payments/create/post). Adicionalmente, si recibes un error al enviar el pago, puedes consultar nuestro [listado de errores](/developers/es/docs/checkout-api-v2/payment-management/integration-errors).
 
 Con un resultado de pago exitoso, recuerda redirigir al usuario a una pantalla de confirmación, informando que el pago ha sido completado.
 
