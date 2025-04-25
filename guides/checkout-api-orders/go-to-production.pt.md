@@ -1,4 +1,4 @@
-# Sair à produção
+# Subir em produção
 
 Uma vez finalizado o processo de configuração e dos testes, sua integração estará pronta para ser colocada em produção.
 

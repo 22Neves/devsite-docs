@@ -27,7 +27,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Adapte às suas necessidades de negócio.
  - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api-v2/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
- - benefit_bullet: Ofereça um processo de compra com menos etapas.
+ - benefit_bullet: Ofereça um processo de compra com poucas etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
 ---
 
@@ -53,7 +53,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png
  - column_product: Checkout Transparente
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api-orders/overview
+ - column_button_link: /developers/pt/docs/checkout-api-v2/overview#:~:text=UY-,Como,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -79,7 +79,7 @@ product_landing_what_differentiates:
  - line_values: Cartão de crédito, Pix, boleto e cartão de débito virtual Caixa|Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito | Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -94,11 +94,11 @@ product_landing_how_integrate:
  - requirement_table_list: Caso queira oferecer pagamentos via Pix, é necessário ter as [chaves Pix cadastradas](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Processo de integração
  - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Integrar os meios de pagamento desejados
+ - list_item: Configurar o ambiente de desenvolvimento
+ - list_item: Configurar os meios de pagamento desejados
  - list_item: Configurar as notificações de pagamento
  - list_item: Testar sua integração
- - list_item: Sair à produção
+ - list_item: Subir em produção
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-api-v2/create-aplication
 ---
@@ -133,7 +133,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Adapte às suas necessidades de negócio.
  - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api-v2/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
- - benefit_bullet: Ofereça um processo de compra com menos etapas.
+ - benefit_bullet: Ofereça um processo de compra com poucas etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
 ---
 
@@ -159,7 +159,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196395192-overviewmlapt.png
  - column_product: Checkout API
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api-v2/overview
+ - column_button_link: /developers/pt/docs/checkout-api-v2/overview#:~:text=UY-,Como,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -185,7 +185,7 @@ product_landing_what_differentiates:
  - line_values: Cartão de crédito ou débito, Rapipago e Pago Fácil |Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta | Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -198,11 +198,11 @@ product_landing_how_integrate:
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - list_title: Processo de integração
  - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Integrar os meios de pagamento desejados
+ - list_item: Configurar o ambiente de desenvolvimento
+ - list_item: Configurar os meios de pagamento desejados
  - list_item: Configurar as notificações de pagamento
  - list_item: Testar sua integração
- - list_item: Salir a producción
+ - list_item: Subir em produção
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-api-v2/create-application
 ---
@@ -237,7 +237,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Adapte às suas necessidades de negócio.
  - benefit_bullet: Escolha como as transações serão processadas: [manual ou automaticamente](/developers/pt/docs/checkout-api-v2/integration-model#bookmark_modos_de_processamento_de_orders).
  - benefit_title: Otimização dos pagamentos
- - benefit_bullet: Ofereça um processo de compra com menos etapas.
+ - benefit_bullet: Ofereça um processo de compra com poucas etapas.
  - benefit_bullet: Finalização de compra de forma prática e segura.
 ---
 
@@ -263,7 +263,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/1/1743539887056-overviewmlmpt.png
  - column_product: Checkout API
  - column_button_text: Como integrar
- - column_button_link: /developers/pt/docs/checkout-api-v2/overview
+ - column_button_link: /developers/pt/docs/checkout-api-v2/overview#:~:text=UY-,Como,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir ao resumo
@@ -289,7 +289,7 @@ product_landing_what_differentiates:
  - line_values: Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander e BBVA Bancomer | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -302,11 +302,11 @@ product_landing_how_integrate:
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - list_title: Processo de integração
  - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
- - list_item: Construir o ambiente de desenvolvimento
- - list_item: Integrar os meios de pagamento desejados
+ - list_item: Configurar o ambiente de desenvolvimento
+ - list_item: Configurar os meios de pagamento desejados
  - list_item: Configurar as notificações de pagamento
  - list_item: Testar sua integração
- - list_item: Salir a producción
+ - list_item: Subir em produção
  - button_description: Quero começar a integrar
  - button_link: /developers/pt/docs/checkout-api-v2/create-application
 ---

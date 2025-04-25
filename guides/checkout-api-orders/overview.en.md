@@ -25,9 +25,9 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed:[manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
+ - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
- - benefit_bullet: Offer a purchasing process with fewer steps.
+ - benefit_bullet: Offer a purchasing process with just a few steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
 ---
 
@@ -53,7 +53,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png 
  - column_product: Checkout Transparente
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-api-v2/overview
+ - column_button_link: /developers/en/docs/checkout-api-v2/overview#:~:text=UY-,How,-to%20integrate
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to summary
@@ -79,7 +79,7 @@ product_landing_what_differentiates:
  - line_values: Credit card, Pix, boleto bancário and debit card virtual Caixa | Credit or debit card, Pix, boleto bancário, Mercado Pago Wallet and Installments without Card |Credit or debit card, Pix, boleto bancário, Mercado Pago Wallet and Installments without Card
  - line_text: Availability by country
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -93,12 +93,12 @@ product_landing_how_integrate:
  - requirement_table_title: Pix key
  - requirement_table_list: If you want to offer Pix payments, register [Pix keys](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Integration process
- - list_item: CCreate an application from [Your integrations](/developers/panel/app)
- - list_item: Build the development environment
- - list_item: Integrated preferred payment methods
- - list_item: Set up payment notifications
+ - list_item: Create an application from [Your integrations](/developers/panel/app)
+ - list_item: Configure the development environment
+ - list_item: Configure the preferred payment methods
+ - list_item: Configure payment notifications
  - list_item: Test your integration
- - list_item: Go live
+ - list_item: Go to production
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---
@@ -131,9 +131,9 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed:[manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
+ - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
- - benefit_bullet: Offer a purchasing process with fewer steps.
+ - benefit_bullet: Offer a purchasing process with just a few steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
 ---
 
@@ -159,7 +159,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png 
  - column_product: Checkout API
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-api-v2/overview
+ - column_button_link: /developers/en/docs/checkout-api-v2/overview#:~:text=UY-,How,-to%20integrate
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to summary
@@ -185,7 +185,7 @@ product_landing_what_differentiates:
  - line_values: Credit or debit card, Rapipago and Pago Fácil |Credit or debit card, Rapipago, Pago Fácil, Mercado Pago Wallet and Installments without Card | Credit or debit card, Rapipago, Pago Fácil, Mercado Pago Wallet and Installments without Card
  - line_text: Availability by country
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -199,12 +199,12 @@ product_landing_how_integrate:
  - requirement_table_title: Pix key
  - requirement_table_list: If you want to offer Pix payments, register [Pix keys](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Integration process
- - list_item: CCreate an application from [Your integrations](/developers/panel/app)
- - list_item: Build the development environment
- - list_item: Integrated preferred payment methods
- - list_item: Set up payment notifications
+ - list_item: Create an application from [Your integrations](/developers/panel/app)
+ - list_item: Configure the development environment
+ - list_item: Configure your preferred payment methods
+ - list_item: Configure payment notifications
  - list_item: Test your integration
- - list_item: Go live
+ - list_item: Go to production
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---
@@ -237,9 +237,9 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed:[manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
+ - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
- - benefit_bullet: Offer a purchasing process with fewer steps.
+ - benefit_bullet: Offer a purchasing process with just a few steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
 ---
 
@@ -265,7 +265,7 @@ product_landing_what_differentiates:
  - column_image:  https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743449632827-overviewmlmes.png 
  - column_product: Checkout API
  - column_button_text: How to integrate
- - column_button_link: /developers/en/docs/checkout-api-v2/overview
+ - column_button_link: /developers/en/docs/checkout-api-v2/overview#:~:text=UY-,How,-to%20integrate
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Go to summary
@@ -291,7 +291,7 @@ product_landing_what_differentiates:
  - line_values: Credit or debit card, SPEI Transfer, OXXO, Paycash, Citibanamex, Santander and BBVA Bancomer | Credit or debit card, SPEI Transfer, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Mercado Pago Wallet and Installments without Card | Credit or debit card, SPEI Transfer, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Mercado Pago Wallet and Installments without Card
  - line_text: Availability by country
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -305,12 +305,12 @@ product_landing_how_integrate:
  - requirement_table_title: Pix key
  - requirement_table_list: If you want to offer Pix payments, register [Pix keys](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Integration process
- - list_item: CCreate an application from [Your integrations](/developers/panel/app)
- - list_item: Build the development environment
- - list_item: Integrated preferred payment methods
- - list_item: Set up payment notifications
+ - list_item: Create an application from [Your integrations](/developers/panel/app)
+ - list_item: Configure the development environment
+ - list_item: Configure your preferred payment methods
+ - list_item: Configure payment notifications
  - list_item: Test your integration
- - list_item: Go live
+ - list_item: Go to production
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---

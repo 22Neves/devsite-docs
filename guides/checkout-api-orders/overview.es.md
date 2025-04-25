@@ -27,7 +27,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
  - benefit_title: Optimización de pagos
- - benefit_bullet: Ofrece un proceso de compra con menos etapas.
+ - benefit_bullet: Ofrece un proceso de compra con pocas etapas.
  - benefit_bullet: Asegura una finalización de compra práctica y segura.
 ---
 
@@ -52,7 +52,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196416015-overviewmlbes.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-order/overview
+ - column_button_link: /developers/es/docs/checkout-api-v2/overview#:~:text=UY-,C%C3%B3mo,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -81,7 +81,7 @@ product_landing_what_differentiates:
  - line_values: Tarjeta de crédito, Pix, boleto bancário y tarjeta de débito virtual Caixa|Tarjeta de crédito y débito, Pix, boleto bancário, Cuenta Mercado Pago y Linha de Crédito | Tarjeta de crédito y débito, Pix, boleto bancário, Cuenta Mercado Pago y Linha de Crédito
  - line_text: Disponibilidad por país
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -89,15 +89,15 @@ product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440711524-apiintegrationflowchartcardform2es.png
- - requirement_title: Requisitos prévios
+ - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Clave Pix
  - requirement_table_list: Si deseas ofrecer pagos a través de Pix, es necesario tener las [claves Pix registradas](https://www.youtube.com/watch?v=60tApKYVnkA).
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
- - list_item: Construir el ambiente de desarrollo
- - list_item: Integrar los medios de pago deseados
+ - list_item: Configurar el ambiente de desarrollo
+ - list_item: Configurar los medios de pago deseados
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
@@ -135,7 +135,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
  - benefit_title: Optimización de pagos
- - benefit_bullet: Ofrece un proceso de compra con menos etapas.
+ - benefit_bullet: Ofrece un proceso de compra con pocas etapas.
  - benefit_bullet: Asegura una finalización de compra práctica y segura.
 ---
 
@@ -160,7 +160,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - column_product: Checkout API
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-v2/overview
+ - column_button_link: /developers/es/docs/checkout-api-v2/overview#:~:text=UY-,C%C3%B3mo,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -189,7 +189,7 @@ product_landing_what_differentiates:
  - line_values: Tarjeta de crédito o débito, Rapipago y Pago Fácil |Tarjeta de crédito o débito, Rapipago, Pago Fácil, Cuenta Mercado Pago y Cuotas sin Tarjeta | Cartão de crédito o débito, Rapipago, Pago Fácil, Cuenta Mercado Pago y Cuotas sin Tarjeta
  - line_text: Disponibilidad por país
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -197,13 +197,13 @@ product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440711524-apiintegrationflowchartcardform2es.png
- - requirement_title: Requisitos prévios
+ - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
- - list_item: Construir el ambiente de desarrollo
- - list_item: Integrar los medios de pago deseados
+ - list_item: Configurar el ambiente de desarrollo
+ - list_item: Configurar los medios de pago deseados
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
@@ -241,7 +241,7 @@ product_landing_what_it_offers:
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
  - benefit_title: Optimización de pagos
- - benefit_bullet: Ofrece un proceso de compra con menos etapas.
+ - benefit_bullet: Ofrece un proceso de compra con pocas etapas.
  - benefit_bullet: Asegura una finalización de compra práctica y segura.
 ---
 
@@ -266,7 +266,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/1/1743539838808-overviewmlmes.png
  - column_product: Checkout API
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-v2/overview
+ - column_button_link: /developers/es/docs/checkout-api-v2/overview#:~:text=UY-,C%C3%B3mo,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -295,7 +295,7 @@ product_landing_what_differentiates:
  - line_values: Tarjeta de crédito o débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander y BBVA Bancomer | Tarjeta de crédito o débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Cuenta Mercado Pago y Meses sin Tarjeta | Tarjeta de crédito o débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Cuenta Mercado Pago y Meses sin Tarjeta
  - line_text: Disponibilidad por país
  - line_type: sites
- - line_values: mla, mlm, mlb|all|all
+ - line_values: mla, mlb, mlm|all|all
 ---
 
 ---
@@ -303,13 +303,13 @@ product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440686816-apiintegrationflowchartcardform2esrebranding.png
- - requirement_title: Requisitos prévios
+ - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
- - list_item: Construir el ambiente de desarrollo
- - list_item: Integrar los medios de pago deseados
+ - list_item: Configurar el ambiente de desarrollo
+ - list_item: Configurar los medios de pago deseados
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
