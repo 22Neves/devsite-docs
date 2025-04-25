@@ -44,7 +44,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio en tu sitio, paga en el entorno seguro de Mercado Pago y regresa a tu sitio o al destino configurado.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745506406913-choproes990px.gif
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/25/1745582249847-choproesmx990px.gif
  - image_text: Simula el procesamiento de pago
  - image_text_link: /developers/es/live-demo/checkout-pro
  - list_title: El comprador cierra el carrito de compra en tu sitio y selecciona pagar con Mercado Pago.
@@ -120,13 +120,15 @@ product_landing_how_integrate:
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A[Acceder Tus integraciones] --> B[Crear aplicación]
-    B --> C[Construir el ambiente]
-    C --> D[Crear preferencias de pago]
-    D --> E[Configurar las notificaciones]
-    E --> F[Probar la integración]
-    F --> G[Medir calidad]
-</pre>
+<div class="mermaid-overview">
+  <pre class="mermaid">
+  flowchart TD
+      A[Acceder Tus integraciones] --> B[Crear aplicación]
+      B --> C[Construir el ambiente]
+      C --> D[Crear preferencias de pago]
+      D --> E[Configurar las notificaciones]
+      E --> F[Probar la integración]
+      F --> G[Medir calidad]
+  </pre>
+</div>
 |||
