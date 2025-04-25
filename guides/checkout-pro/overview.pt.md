@@ -16,31 +16,12 @@ product_landing_hero:
 ---
 ------------
 
-----[mlm, mlc, mco, mpe]----
+----[mlb, mlm, mlc, mco, mpe]----
 ---
 product_landing_hero:
  - title: Integre Checkout Pro e configure uma experiência pré-configurada
  - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
  - product_svg_image: checkout-pro-pt
- - benefit_icon: categories
- - benefit_title: Integração ágil
- - benefit_icon: link
- - benefit_title: Para web, Android e iOS
- - benefit_icon: edit
- - benefit_title: Experiência pré-construída
- - benefit_icon: sort
- - benefit_title: Com redirecionamento
- - info: Busca opções sem desenvolvimento? Explore [mais soluções](/developers/pt/docs#online-payments).
----
-------------
-
-----[mlb]----
----
-product_landing_hero:
- - title: Integre Checkout Pro e configure uma experiência pré-configurada
- - message: Com esta solução, seus clientes compram em seu site e pagam no ambiente do Mercado Pago com seus meios de pagamento salvos.
- - product_svg_image: checkout-pro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745530639414-BR.PT.png
  - benefit_icon: categories
  - benefit_title: Integração ágil
  - benefit_icon: link

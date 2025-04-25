@@ -16,7 +16,7 @@ product_landing_hero:
 ---
 ------------
 
-----[mlm, mlc, mco, mpe]----
+----[mlb, mlm, mlc, mco, mpe]----
 ---
 product_landing_hero:
  - title: Integrate Checkout Pro and set up a predesigned experience
@@ -39,8 +39,7 @@ product_landing_hero:
 product_landing_hero:
  - title: Integrate Checkout Pro and set up a predesigned experience
  - message: With this solution, your customers buy on your website and pay in the Mercado Pago environment with their saved payment methods.
- - product_svg_image: checkout-pro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/24/1745530752299-BR.PT2.png
+ - product_svg_image: checkout-pro-pt
  - benefit_icon: categories
  - benefit_title: Agile integration
  - benefit_icon: link
