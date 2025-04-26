@@ -257,7 +257,7 @@ curl -X POST \
     "total_amount": "200.00",
     "external_reference": "ext_ref_1234",
     "payer": {
-        "email": "{{EMAIL}}"
+        "email": "test@testuser.com"
     },
     "transactions": {
         "payments": [
