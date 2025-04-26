@@ -16,7 +16,7 @@ En el campo **e-mail**, ingresa el correo electrónico **test @testuser.com**, q
 
 [TXTSNIPPET][/guides/snippets/test-cross/test-cards]
 
-## 3. Verificar compra de prueba
+## Verificar compra de prueba
 
 Para verificar que la compra de prueba se realizó de acuerdo a los resultados esperados en función de los datos ingresados, envía un **GET** al endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/es/reference/orders/online-payments/get-order/get"}, reemplazando `id` por la identificación de la order, recibida en la respuesta a su creación.
 

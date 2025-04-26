@@ -16,7 +16,7 @@ In the **email** field, enter the email address **test @testuser.com**, which is
 
 [TXTSNIPPET][/guides/snippets/test-cross/test-cards]
 
-## 3. Verify Test Purchase
+## Verify Test Purchase
 
 To verify that the test purchase was carried out according to the expected results based on the data entered, send a **GET** request to the :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/pt/reference/orders/online-payments/get-order/get"} endpoint, replacing `id` with the order identification, received in the response to its creation.
 

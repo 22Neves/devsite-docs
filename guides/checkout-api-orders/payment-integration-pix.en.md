@@ -122,7 +122,6 @@ curl -X POST \
     -d '{
   "type": "online",
   "total_amount": "1000.00",
-  "payment_expiration_time": "P3Y6M4DT12H30M5S",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
   "payment_expiration_time": "P3D"
@@ -133,14 +132,15 @@ curl -X POST \
         "payment_method": {
           "id": "pix",
           "type": "bank_transfer"
-        }
+        },
+        "expiration_time": "P3Y6M4DT12H30M5S"
       }
     ]
   },
   "payer": {
     "email": "test@testuser.com"
   }
-}
+}'
 ```
 
 See the table below for descriptions of the parameters that are mandatory in the request and those that, although optional, have some important particularity that should be highlighted.
@@ -150,11 +150,11 @@ See the table below for descriptions of the parameters that are mandatory in the
 | `Authorization`                                     | _Header_        | Refers to your private key, or Access Token. Use the :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} in development environments, and the :toolTipComponent[production Access Token]{content="Private key of the application created in Mercado Pago, that is used in the backend when receiving real payments. You can access it through *Your integrations > Application details > Production > Production credentials*."} for real payments.                                                            | Required          |
 | `X-Idempotency-Key`                                 | _Header_          | Idempotency key. It is used to ensure that each request is processed only once, avoiding duplications.  Use a unique value in the header of your request, such as a UUID V4 or random strings.            | Required          |
 | `total_amount`                                      | _Body. String_    | Total amount for the transaction.                                                                                                                                                                                                       | Required             |
-| `payment_expiration_time`                                  | _Body. String_    | Allows you to set the **due date** using the ISO 8601 duration format. By default, **the due date of the boleto is 3 business days**, but it can be changed through this parameter. <br> The date can be set between 1 and 30 days after the payment is created. We recommend setting a duration of at least 3 days (“P3D", as in the example) to avoid conflicts between the due date and the crediting of the payment, which can take up to 2 business hours from the moment it is made. <br> In case the payment is made after the established expiration date, the amount will be refunded to the payer's Mercado Pago account.                 | Optional             |
 | `external_reference`                                   | _Body. String_    | External reference of the order, which can be, for example, a hashcode from the Central Bank, serving as the transaction's source identifier.                                          | Required          |
 | `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).                                          | Required          |
 | `transaction.payments.payment_method.id`            | _Body. String_    | Identifier of the payment method. In this case, the value should be `pix`.                                                                                                                                                      | Required          |
 | `transaction.payments.payment_method.type`          | _Body. String_    | Type of the payment method. In the case of payments with a slip, the value should be `bank_transfer`.                                                                                                                                  | Required          |
+| `transaction.payment.expiration_time`                                  | _Body. String_    | Allows you to set the **due date** using the ISO 8601 duration format. By default, **the due date of a Pix payment is 24 hours**, but it can be changed through this parameter. It must be set to a minimum of 30 minutes from the creation of the payment, and a maximum of 30 days.               | Optional             |
 | `payer.email`                                       | _Body. String_    | Buyer’s e-mail.                                                                                                                                                                                                 | Required          |
 
 > SUCCESS_MESSAGE

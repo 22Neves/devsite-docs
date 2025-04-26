@@ -132,14 +132,15 @@ curl -X POST \
         "payment_method": {
           "id": "pix",
           "type": "bank_transfer"
-        }
+        },
+        "expiration_time": "P3Y6M4DT12H30M5S"
       }
     ]
   },
   "payer": {
     "email": "test@testuser.com"
   }
-}
+}'
 ```
 
 Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na requisição e daqueles que, embora sejam opcionais, possuem alguma particularidade importante de ser destacada.
@@ -148,12 +149,12 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | `Authorization`                                     | _Header_        | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} em ambientes de desenvolvimento e o :toolTipComponent[Access Token produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção*."} para pagamentos reais.                                                            | Obrigatório          |
 | `X-Idempotency-Key`                                 | _Header_          | Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma *string* aleatória.            | Obrigatório          |
-| `total_amount`                                      | _Body. String_    | Valor total da transação.                                                                                                                                                                                                       | Opcional             |
-| `payment_expiration_time`                                  | _Body. String_    | Permite definir a **data de vencimento** utilizando o formato de duração ISO 8601. Por padrão, a data de vencimento de pagamentos via Pix é de 24 horas, mas é possível alterá-la através deste parâmetro.                 | Opcional             |
+| `total_amount`                                      | _Body. String_    | Valor total da transação.                                                                                                                                                                                                       | Obrigatório             |
 | `external_reference`                                 | _Body. String_    | Referência externa da order que pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.                                                                                   | Obrigatório          |
 | `processing_mode`                                   | _Body. String_    | Modo de processamento da order. Os valores possíveis são: <br><br> - `automatic`: para criar e processar a ordem em modo automático. <br><br> - `manual`: para criar a order e processá-la posteriormente. <br><br> Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).                                          | Obrigatório          |
 | `transaction.payments.payment_method.id`            | _Body. String_    | Identificador do meio de pagamento. Neste caso, o valor deverá ser `pix`.                                                                                                                                                      | Obrigatório          |
 | `transaction.payments.payment_method.type`          | _Body. String_    | Tipo do meio de pagamento. No caso de pagamentos com Pix, o valor deverá ser `bank_transfer`.                                                                                                                                  | Obrigatório          |
+| `transaction.payment.expiration_time`                                 | _Body. String_    | Permite definir a **data de vencimento** utilizando o formato de duração ISO 8601. Por padrão, a data de vencimento de pagamentos via Pix é de 24 horas, mas é possível alterá-la através deste parâmetro. A data configurada deve estar entre 30 minutos até 30 dias a partir da data de emissão do pagamento.             | Opcional             |
 | `payer.email`                                       | _Body. String_    | E-mail do comprador.                                                                                                                                                                                                 | Obrigatório          |
 
 > SUCCESS_MESSAGE
@@ -166,7 +167,6 @@ Após enviar a requisição do pagamento, a resposta trará as seguintes informa
   "id": "ORD01HRYFWNYRE1MR1E60MW3X0T2P",
   "type": "online",
   "total_amount": "1000.00",
-  "payment_expiration_time": "P3Y6M4DT12H30M5S"
   "external_reference": "ext_ref_1234",
   "country_code": "BRA",
   "status": "action_required",

@@ -122,7 +122,6 @@ curl -X POST \
     -d '{
   "type": "online",
   "total_amount": "1000.00",
-  "payment_expiration_time": "P3Y6M4DT12H30M5S",
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
   "payment_expiration_time": "P3D"
@@ -133,14 +132,15 @@ curl -X POST \
         "payment_method": {
           "id": "pix",
           "type": "bank_transfer"
-        }
+        },
+        "expiration_time": "P3Y6M4DT12H30M5S"
       }
     ]
   },
   "payer": {
     "email": "test@testuser.com"
   }
-}
+}'
 ```
 
 Consulte en la tabla a continuación las descripciones de los parámetros que son obligatorios en la solicitud y aquellos que, aunque son opcionales, tienen alguna particularidad importante que debe destacarse.
@@ -150,11 +150,11 @@ Consulte en la tabla a continuación las descripciones de los parámetros que so
 | `Authorization`                                     | _Header_        | Hace referencia a tu clave privada, o Access Token. Utiliza el :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} en ambientes de desarrollo, y el :toolTipComponent[Access Token productivo]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el backend al momento de recibir pagos reales. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Producción > Credenciales de producción*."} para pagos reales.                                                            | Requerido          |
 | `X-Idempotency-Key`                                 | _Header_          | Llave de idempotencia. Esta llave garantiza que cada solicitud sea procesada una única vez, evitando duplicidades. Utiliza un valor exclusivo en el encabezado de tu solicitud, como un UUID V4 o _strings_ aleatorias.            | Requerido          |
 | `total_amount`                                      | _Body. String_    | Monto total de la transacción.                                                                                                                                                                                                       | Requerido             |
-| `payment_expiration_time`                                  | _Body. String_    | Permite definir la **fecha de vencimiento** utilizando el formato de duración ISO 8601. Por defecto, **la fecha de vencimiento del boleto es de 3 días hábiles**, pero es posible cambiarla a través de este parámetro. La fecha se puede configurar entre 1 y 30 días después de la creación del pago. Recomendamos establecer una duración de, al menos, 3 días (“P3D", como en el ejemplo) para evitar conflictos entre la fecha de vencimiento y la acreditación del pago, que puede tardar hasta 2 horas hábiles desde su realización. En caso de que el pago se efectúe luego de la fecha de vencimiento establecida, el valor será devuelto a la cuenta de Mercado Pago del pagador.                | Opcional             |
 | `external_reference`                                   | _Body. String_    | Referencia externa de la order que puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.                                          | Requerido          |
 | `processing_mode`                                   | _Body. String_    | Modo de procesamiento de la order. Los valores posibles son: <br><br> - `automatic`: para crear y procesar la order en modo automático. <br><br> - `manual`: para crear la order y procesarla con posterioridad. <br><br> Para más información, acceda a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).                                          | Requerido          |
 | `transaction.payments.payment_method.id`            | _Body. String_    | Identificador del medio de pago. En este caso, el valor deberá ser `pix`.                                                                                                                                                      | Requerido          |
 | `transaction.payments.payment_method.type`          | _Body. String_    | Tipo del medio de pago. En el caso de pagos con boleto, el valor deberá ser `bank_transfer`.                                                                                                                                  | Requerido          |
+| `transaction.payment.expiration_time`                                 | _Body. String_    | Permite definir la **fecha de vencimiento** utilizando el formato de duración ISO 8601. Por defecto, **la fecha de vencimiento de un pago con Pix es de 24 hs.**, pero es posible cambiarla a través de este parámetro. Esta debe configurar como mínimo un plazo de 30 minutos desde la creación del pago, y como máximo, un plazo de 30 días.               | Opcional             |
 | `payer.email`                                       | _Body. String_    | E-mail del comprador.                                                                                                                                                                         | Requerido          |
 
 > SUCCESS_MESSAGE

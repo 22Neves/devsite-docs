@@ -146,10 +146,9 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
   "total_amount": "200.00",
-  "payment_expiration_time": "P3D",
   "description": "some description",
   "payer": {
-    "email": "{email}",
+    "email": "test@testuser.com",
     "first_name": "John",
     "last_name": "Doe",
     "identification": {
@@ -161,9 +160,9 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
         "street_name": "Av. das Nações Unidas",
         "street_number": "3003",
         "zip_code": "06233903",
-  "neighborhood": "Bonfim",
-  "state": "SP",
-  "city": "Osasco"
+        "neighborhood": "Bonfim",
+        "state": "SP",
+        "city": "Osasco"
       }
     ]
   },
@@ -174,7 +173,8 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
         "payment_method": {
           "id": "bolbradesco",
           "type": "ticket"
-        }
+        },
+        "expiration_time": "P3D"
       }
     ]
   }
@@ -189,7 +189,6 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 | `X-Idempotency-Key`                                 | _Header_          | Llave de idempotencia. Esta llave garantiza que cada solicitud sea procesada una única vez, evitando duplicidades. Utiliza un valor exclusivo en el encabezado de tu solicitud, como un UUID V4 o _strings_ aleatorias.            | Requerido          |
 | `processing_mode`                                   | _Body. String_    | Modo de procesamiento de la order. Los valores posibles son: <br><br> - `automatic`: para crear y procesar la order en modo automático. <br><br> - `manual`: para crear la order y procesarla con posterioridad. <br><br> Para más información, acceda a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).                                          | Requerido          |
 | `total_amount`                                      | _Body. String_    | Monto total de la transacción.                                                                                                                                                                                                       | Requerido             |
-| `payment_expiration_time`                                  | _Body. String_    | Permite definir la **fecha de vencimiento** utilizando el formato de duración ISO 8601. Por defecto, **la fecha de vencimiento del boleto es de 3 días hábiles**, pero es posible cambiarla a través de este parámetro. <br><br> La fecha se puede configurar entre 1 y 30 días después de la creación del pago. Recomendamos establecer una duración de, al menos, 3 días (“P3D", como en el ejemplo) para evitar conflictos entre la fecha de vencimiento y la acreditación del pago, que puede tardar hasta 2 horas hábiles desde su realización. <br><br> En caso de que el pago se efectúe luego de la fecha de vencimiento establecida, el valor será devuelto a la cuenta de Mercado Pago del pagador.                | Opcional             |
 | `payer.email`                                       | _Body. String_    | E-mail del comprador.                                                                                                                                                                         | Requerido          |
 | `payer.identification.type`                          | _Body. String_   | Tipo de identificación utilizada por el comprador.                                                                                                                                             | Requerido          |
 | `payer.identification.number `                       | _Body. String_   | Número de identificación del comprador.                                                                                                                                                       | Requerido          |
@@ -201,6 +200,7 @@ Consulta en la tabla a continuación las descripciones de los parámetros que so
 | `payer.adress.city`                                  | _Body. String_   | Ciudad en la que se encuentra la dirección del pagador.                                                                                                                                           | Requerido          |
 | `transaction.payments.payment_method.id`            | _Body. String_    | Identificador del medio de pago. En este caso, el valor deberá ser `bolbradesco`.                                                                                                                                                      | Requerido          |
 | `transaction.payments.payment_method.type`          | _Body. String_    | Tipo del medio de pago. En el caso de pagos con boleto, el valor deberá ser `ticket`.                                                                                                                                  | Requerido          |
+| `transactions.payments.expiration_time`                                  | _Body. String_    | Permite definir la **fecha de vencimiento** utilizando el formato de duración ISO 8601. Por defecto, **la fecha de vencimiento del boleto es de 3 días hábiles**, pero es posible cambiarla a través de este parámetro. <br><br> La fecha se puede configurar entre 1 y 30 días después de la creación del pago. Recomendamos establecer una duración de, al menos, 3 días (“P3D", como en el ejemplo) para evitar conflictos entre la fecha de vencimiento y la acreditación del pago, que puede tardar hasta 2 horas hábiles desde su realización. <br><br> En caso de que el pago se efectúe luego de la fecha de vencimiento establecida, el valor será devuelto a la cuenta de Mercado Pago del pagador.                | Opcional             |
 
 > SUCCESS_MESSAGE
 >

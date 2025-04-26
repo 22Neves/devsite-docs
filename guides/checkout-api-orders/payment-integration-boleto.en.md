@@ -146,10 +146,9 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
   "external_reference": "ext_ref_1234",
   "processing_mode": "automatic",
   "total_amount": "200.00",
-  "payment_expiration_time": "P3D",
   "description": "some description",
   "payer": {
-    "email": "{email}",
+    "email": "test@testuser.com",
     "first_name": "John",
     "last_name": "Doe",
     "identification": {
@@ -161,9 +160,9 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
         "street_name": "Av. das Nações Unidas",
         "street_number": "3003",
         "zip_code": "06233903",
-  "neighborhood": "Bonfim",
-  "state": "SP",
-  "city": "Osasco"
+        "neighborhood": "Bonfim",
+        "state": "SP",
+        "city": "Osasco"
       }
     ]
   },
@@ -174,7 +173,8 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
         "payment_method": {
           "id": "bolbradesco",
           "type": "ticket"
-        }
+        },
+        "expiration_time": "P3D"
       }
     ]
   }
@@ -189,7 +189,6 @@ See the table below for descriptions of the parameters that are mandatory in the
 | `X-Idempotency-Key`                                 | _Header_          | Idempotency key. It is used to ensure that each request is processed only once, avoiding duplications.  Use a unique value in the header of your request, such as a UUID V4 or random strings.            | Required          |
 | `processing_mode`                                   | _Body. String_    | Processing mode of the order. The possible values are: <br><br> - `automatic`: to create and process the order in automatic mode. <br><br> - `manual`:  to create the order and process it later. <br><br> For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).                                          | Required          |
 | `total_amount`                                      | _Body. String_    | Total amount for the transaction.                                                                                                                                                                                                       | Required             |
-| `payment_expiration_time`                                  | _Body. String_    | Allows you to set the **due date** using the ISO 8601 duration format. By default, **the due date of the boleto is 3 business days**, but it can be changed through this parameter. <br><br> The date can be set between 1 and 30 days after the payment is created. We recommend setting a duration of at least 3 days (“P3D", as in the example) to avoid conflicts between the due date and the crediting of the payment, which can take up to 2 business hours from the moment it is made. <br><br> In case the payment is made after the established expiration date, the amount will be refunded to the payer's Mercado Pago account.                 | Optional             |
 | `payer.email`                                       | _Body. String_    | Buyer’s e-mail.                                                                                                                                                                                                 | Required          |
 | `payer.identification.type`                          | _Body. String_   | Buyer’s identification type.                                                                                                                                             | Required          |
 | `payer.identification.number `                       | _Body. String_   | Buyer’s identification number.                                                                                                                                                       | Required          |
@@ -201,6 +200,7 @@ See the table below for descriptions of the parameters that are mandatory in the
 | `payer.adress.city`                                  | _Body. String_   | City where the payer's address is located.                                                                                                                                           | Required          |
 | `transaction.payments.payment_method.id`            | _Body. String_    | Identifier of the payment method. In this case, the value should be `bolbradesco`.                                                                                                                                                      | Required          |
 | `transaction.payments.payment_method.type`          | _Body. String_    | Type of the payment method. In the case of payments with a slip, the value should be `ticket`.                                                                                                                                  | Required          |
+| `transactions.payments.expiration_time`                                  | _Body. String_    | Allows you to set the **due date** using the ISO 8601 duration format. By default, **the due date of the boleto is 3 business days**, but it can be changed through this parameter. <br><br> The date can be set between 1 and 30 days after the payment is created. We recommend setting a duration of at least 3 days (“P3D", as in the example) to avoid conflicts between the due date and the crediting of the payment, which can take up to 2 business hours from the moment it is made. <br><br> In case the payment is made after the established expiration date, the amount will be refunded to the payer's Mercado Pago account.                 | Optional             |
 
 > SUCCESS_MESSAGE
 >

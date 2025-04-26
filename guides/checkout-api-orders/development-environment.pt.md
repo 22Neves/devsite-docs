@@ -1,6 +1,6 @@
 # Configurar ambiente de desenvolvimento
 
-Para começar a integrar as soluções de pago do Mercado Pago, é necessário preparar seu ambiente de desenvolvimento com uma série de configurações básicas que permitirão acessar as funcionalidades do Mercado Pago desde o _frontend_ de forma segura.
+Para começar a integrar as soluções de pago do Mercado Pago, é necessário preparar seu ambiente de desenvolvimento com uma série de configurações básicas que permitirão acessar as funcionalidades do Mercado Pago a partir do _frontend_ de forma segura.
 
 > CLIENT_SIDE
 >
