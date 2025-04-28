@@ -128,7 +128,7 @@ Follow the steps below to successfully complete this integration.
 
 :::AccordionComponent{title="1. Initialize the flow" pill="client-side"}
 
-To ensure that the user's browser and operating system support the use of the flow, a series of internal validations are performed transparently. Start these validations by incorporating the following function into your project, making sure to include the buyer's email and the payment amount in the `<AMOUNT>` and `<EMAIL>` fields, respectively.
+We recommend starting the flow on the payment method or card selection screen, by incorporating the following function into your project and making sure to include the buyer's email and the payment amount in the `<AMOUNT>` and `<EMAIL>` fields, respectively.
 
 ```JavaScript
 async function initializeAuthenticator(amount, payerEmail) {
@@ -147,9 +147,9 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 ```
 
-> NOTE
->
-> If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
+This will validate whether the user's system is eligible for authentication with Mercado Pago and thus initialize the `Authenticator` class.
+
+If the user is unable to continue with the flow, you will receive an error. See our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors) for details.
 
 :::
 :::AccordionComponent{title="2. Obtain Account Authentication Token" pill="client-side"}
@@ -465,6 +465,62 @@ async function createOrder() {
 }
 
 createOrder();
+```
+
+If successful, the response to this request will look as the following example. 
+
+```json
+{
+  "id": "ORD01JSQ9E9VESGKF543MRBMR9YKH",
+  "type": "online",
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "description": "order description",
+  "marketplace": "NONE",
+  "marketplace_fee": "1.00",
+  "total_amount": "100.00",
+  "total_paid_amount": "100.00",
+  "expiration_time": "P3Y6M4DT12H30M5S",
+  "country_code": "ARG",
+  "user_id": "791690672",
+  "status": "processed",
+  "status_detail": "accredited",
+  "capture_mode": "automatic_async",
+  "created_date": "2025-04-25T20:15:21.966Z",
+  "last_updated_date": "2025-04-25T20:15:23.277Z",
+  "integration_data": {
+    "application_id": "8275829243271683"
+  },
+  "transactions": {
+    "payments": [
+      {
+        "id": "PAY01JSQ9E9VESGKF543MRCB217H4",
+        "amount": "100.00",
+        "paid_amount": "100.00",
+        "reference_id": "00032idm6r",
+        "status": "processed",
+        "status_detail": "accredited",
+        "payment_method": {
+          "id": "account_money",
+          "type": "account_money",
+          "token": "STPRAPI01JSQ9E8H7ZRK4Q0KN4AE8MB7P",
+          "statement_descriptor": "somedescription"
+        }
+      }
+    ]
+  },
+  "items": [
+    {
+      "category_id": "category",
+      "title": "title",
+      "description": "description",
+      "unit_price": "10.00",
+      "picture_url": "https://www.mercadopago.com/img",
+      "external_code": "ABC",
+      "quantity": 1
+    }
+  ]
+}
 ```
 
 > SUCCESS_MESSAGE

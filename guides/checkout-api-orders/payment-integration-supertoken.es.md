@@ -127,8 +127,7 @@ Sigue los pasos a continuación para realizar esta integración correctamente.
 
 :::AccordionComponent{title="1. Inicializar el flujo" pill="client-side"}
 
-Para garantizar que el navegador y el sistema operativo del usuario soportan la utilización del flujo, se realizan una serie de validaciones internas de forma transparente.
-Inícialas incorporando la siguiente función en tu proyecto, cuidando de incluir el e-mail del comprador y el monto del pago en los campos  `<AMOUNT>` e `<EMAIL>`, respectivamente.
+Recomendamos iniciar el flujo en la pantalla de selcción de medios de pago o de selección de tarjetas por parte del comprador, incorporando la siguiente función en tu proyecto y cuidando de incluir el e-mail del comprador y el monto del pago en los campos  `<AMOUNT>` e `<EMAIL>`, respectivamente.
 
 ```JavaScript
 async function initializeAuthenticator(amount, payerEmail) {
@@ -146,10 +145,10 @@ async function initializeAuthenticator(amount, payerEmail) {
 const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 ```
+Esto permitirá validar si el sistema del usuario es apto para realizar la autenticación con Mercado pago, y así inicializar la clase `Authenticator`. 
 
-> NOTE
->
-> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
+En caso de que el usuario esté impedido de continuar con el flujo, recibirás un error. Consulta nuestra nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores) para conocer los detalles.
+
 
 :::
 :::AccordionComponent{title="2. Obtener token de autenticación de cuenta" pill="client-side"}
@@ -465,6 +464,62 @@ async function createOrder() {
 }
 
 createOrder();
+```
+
+En caso de éxito, la respuesta a esta solicitud se verá como el ejemplo a continuación. 
+
+```json
+{
+  "id": "ORD01JSQ9E9VESGKF543MRBMR9YKH",
+  "type": "online",
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "description": "order description",
+  "marketplace": "NONE",
+  "marketplace_fee": "1.00",
+  "total_amount": "100.00",
+  "total_paid_amount": "100.00",
+  "expiration_time": "P3Y6M4DT12H30M5S",
+  "country_code": "ARG",
+  "user_id": "791690672",
+  "status": "processed",
+  "status_detail": "accredited",
+  "capture_mode": "automatic_async",
+  "created_date": "2025-04-25T20:15:21.966Z",
+  "last_updated_date": "2025-04-25T20:15:23.277Z",
+  "integration_data": {
+    "application_id": "8275829243271683"
+  },
+  "transactions": {
+    "payments": [
+      {
+        "id": "PAY01JSQ9E9VESGKF543MRCB217H4",
+        "amount": "100.00",
+        "paid_amount": "100.00",
+        "reference_id": "00032idm6r",
+        "status": "processed",
+        "status_detail": "accredited",
+        "payment_method": {
+          "id": "account_money",
+          "type": "account_money",
+          "token": "STPRAPI01JSQ9E8H7ZRK4Q0KN4AE8MB7P",
+          "statement_descriptor": "somedescription"
+        }
+      }
+    ]
+  },
+  "items": [
+    {
+      "category_id": "category",
+      "title": "title",
+      "description": "description",
+      "unit_price": "10.00",
+      "picture_url": "https://www.mercadopago.com/img",
+      "external_code": "ABC",
+      "quantity": 1
+    }
+  ]
+}
 ```
 
 > SUCCESS_MESSAGE
