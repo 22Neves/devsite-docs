@@ -181,7 +181,14 @@ Para esto, puedes redirigir al usuario a la URL directamente o presentar un bot√
 
 La imagen siguiente muestra un ejemplo de este proceso en la vista del usuario:
 
+----[mla]----
 ![Payment flow sample](/images/api/api-integrate-openfinance.gif)
+
+------------
+----[mlb, mlm, mpe, mlc, mlu, mco]----
+![Payment flow sample](/images/api/api-integrate-openfinance-es.png)
+
+------------
 
 ## Prueba la integraci√≥n
 
