@@ -670,9 +670,6 @@
                                                             "paid_amount": {
                                                                 "$ref": "#/components/schemas/paid_amount"
                                                             },
-                                                            "payment_expiration_time": {
-                                                                "$ref": "#/components/schemas/payment_expiration_time"
-                                                            },
                                                             "date_of_expiration": {
                                                                 "$ref": "#/components/schemas/date_of_expiration"
                                                             },
@@ -1244,9 +1241,6 @@
                                         },
                                         "items": {
                                             "$ref": "#/components/schemas/items"
-                                        },
-                                        "client_token": {
-                                            "$ref": "#/components/schemas/client_token"
                                         }
                                     }
                                 }
@@ -1707,9 +1701,6 @@
                                                 "amount": {
                                                     "$ref": "#/components/schemas/amount"
                                                 },
-                                                "payment_expiration_time": {
-                                                    "$ref": "#/components/schemas/payment_expiration_time"
-                                                    },
                                                 "payment_method": {
                                                     "$ref": "#/components/schemas/payment_method"
                                                 }
@@ -2419,9 +2410,6 @@
                                                             "paid_amount": {
                                                                 "$ref": "#/components/schemas/paid_amount"
                                                             },
-                                                            "payment_expiration_time": {
-                                                                "$ref": "#/components/schemas/payment_expiration_time"
-                                                            },
                                                             "date_of_expiration": {
                                                                 "$ref": "#/components/schemas/date_of_expiration"
                                                             },
@@ -2633,9 +2621,6 @@
                                                 },
                                                 "amount": {
                                                     "$ref": "#/components/schemas/amount"
-                                                },
-                                                "payment_expiration_time": {
-                                                    "$ref": "#/components/schemas/payment_expiration_time"
                                                 }
                                             }
                                         }
