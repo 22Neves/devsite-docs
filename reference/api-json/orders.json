@@ -60,9 +60,6 @@
                                                     "amount": {
                                                         "$ref": "#/components/schemas/amount"
                                                     },
-                                                    "payment_expiration_time": {
-                                                        "$ref": "#/components/schemas/payment_expiration_time"
-                                                    },
                                                     "payment_method": {
                                                         "$ref": "#/components/schemas/payment_method"
                                                     }
@@ -95,9 +92,6 @@
                                     "marketplace": {
                                         "$ref": "#/components/schemas/marketplace"
                                     },
-                                    "integration_data": {
-                                        "$ref": "#/components/schemas/integration_data_request"
-                                    },
                                     "items": {
                                         "$ref": "#/components/schemas/items"
                                     }
@@ -127,6 +121,9 @@
                                                 "es": "Identificador de la Order creada en la solicitud, generado automáticamente por Mercado Pago."
                                             }
                                         },
+                                        "type": {
+                                            "$ref": "#/components/schemas/type"
+                                        },
                                         "processing_mode": {
                                             "$ref": "#/components/schemas/processing_mode"
                                         },
@@ -150,9 +147,6 @@
                                         },
                                         "country_code": {
                                             "$ref": "#/components/schemas/country_code"
-                                        },
-                                        "type": {
-                                            "$ref": "#/components/schemas/type"
                                         },
                                         "status": {
                                             "$ref": "#/components/schemas/create_order_status"
@@ -201,9 +195,6 @@
                                                             },
                                                             "paid_amount": {
                                                                 "$ref": "#/components/schemas/paid_amount"
-                                                            },
-                                                            "payment_expiration_time": {
-                                                                "$ref": "#/components/schemas/payment_expiration_time"
                                                             },
                                                             "date_of_expiration": {
                                                                 "$ref": "#/components/schemas/date_of_expiration"
@@ -363,9 +354,6 @@
                                         },
                                         "items": {
                                             "$ref": "#/components/schemas/items"
-                                        },
-                                        "client_token": {
-                                            "$ref": "#/components/schemas/client_token"
                                         }
                                     }
                                 }
@@ -3233,16 +3221,6 @@
                     "es": "Monto total a pagar, representa la suma de todos los valores de paid_amount de la transacción. Debe ser enviado con dos números decimales."
                 }
             },
-            "payment_expiration_time": {
-                "type": "string",
-                "format": "date",
-                "description": {
-                    "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
-                    "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
-                    "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
-                },
-                "example": "P3Y6M4DT12H30M5S"
-            },
             "date_of_expiration": {
                 "type": "string",
                 "description": {
@@ -3647,7 +3625,7 @@
                             "type": {
                                 "type": "string",
                                 "required": true,
-                                "example": "CPF",
+                                "example": "{{document_identification}}",
                                 "description": {
                                     "en": "Payer's identification document type. Access the endpoint '/v1/identification_type' to check all available identification types by country and get a list with the details of each one and their properties.",
                                     "pt": "Tipo de documento de identificação. Acesse o endpoint '/v1/identification_type' para consultar todos os tipos de documento disponíveis por país e obter uma lista com os detalhes de cada um deles e suas propriedades.",
@@ -3763,15 +3741,6 @@
                                     "en": "Payer's address complement.",
                                     "pt": "Complemento do endereço do pagador.",
                                     "es": "Complemento de la dirección del pagador."
-                                }
-                            },
-                            "floor": {
-                                "type": "string",
-                                "example": "3",
-                                "description": {
-                                    "en": "Payer's address floor.",
-                                    "pt": "Andar do endereço do pagador.",
-                                    "es": "Piso de la dirección del pagador."
                                 }
                             }
                         }
@@ -3946,62 +3915,8 @@
                             "en": "Identifier of the Mercado Pago application that created the Order.",
                             "es": "Identificador de la aplicación de Mercado Pago que creó la Order."
                         }
-                    },
-                    "integrator_id": {
-                        "type": "string",
-                        "example":"dev_123",
-                        "description": {
-                            "en": "Identifier of the integrator in Mercado Pago. It is the unique identifier of the integrator in Mercado Pago's systems.",
-                            "es": "Identificador del integrador en Mercado Pago. Es el identificador único del integrador en los sistemas de Mercado Pago.",
-                            "pt": "Identificador do integrador no Mercado Pago. É o identificador único do integrador nos sistemas do Mercado Pago."
-                        }
-                    },
-                    "platform_id": {
-                        "type": "string",
-                        "example":"1234567890",
-                        "description": {
-                            "en": "Identifier of the platform in Mercado Pago. It is the unique identifier of the platform in Mercado Pago's systems.",
-                            "es": "Identificador de la plataforma en Mercado Pago. Es el identificador único de la plataforma en los sistemas de Mercado Pago.",
-                            "pt": "Identificador da plataforma no Mercado Pago. É o identificador único da plataforma nos sistemas do Mercado Pago."
-                        }
-                    },
-                    "corporation_id": {
-                        "type": "string",
-                        "description": {
-                            "en": "Identifier of the corporation in Mercado Pago. It is the unique identifier of the corporation in Mercado Pago's systems.",
-                            "es": "Identificador de la corporación en Mercado Pago. Es el identificador único de la corporación en los sistemas de Mercado Pago.",
-                            "pt": "Identificador da corporação no Mercado Pago. É o identificador único da corporação nos sistemas do Mercado Pago."
-                        }
-                    },
-                    "sponsor": {
-                        "type": "object",
-                        "description": {
-                            "en": "Identifier of the sponsor in Mercado Pago. It is the unique identifier of the sponsor in Mercado Pago's systems.",
-                            "es": "Identificador del patrocinador en Mercado Pago. Es el identificador único del patrocinador en los sistemas de Mercado Pago.",
-                            "pt": "Identificador do patrocinador no Mercado Pago. É o identificador único do patrocinador nos sistemas do Mercado Pago."
-                        },
-                        "properties": {
-                            "id": {
-                                "type": "string",
-                                "description": {
-                                    "en": "Identifier of the sponsor in Mercado Pago. It is the unique identifier of the sponsor in Mercado Pago's systems.",
-                                    "es": "Identificador del patrocinador en Mercado Pago. Es el identificador único del patrocinador en los sistemas de Mercado Pago.",
-                                    "pt": "Identificador do patrocinador no Mercado Pago. É o identificador único do patrocinador nos sistemas do Mercado Pago."
-                                },
-                                "example": "446566691"
-                            }
-                        }
                     }
                 }
-            },
-            "client_token": {
-                "type": "string",
-                "description": {
-                    "en": "Authentication token to execute operations on the client side.",
-                    "pt": "Token de autenticação para executar operações no lado do cliente.",
-                    "es": "Token de autenticación para ejecutar operaciones en el lado del cliente."
-                },
-                "example": "QWERTY12345.ASDFG67890"
             },
             "create_order_status": {
                 "type": "string",
@@ -5137,14 +5052,14 @@
                     "pt": "Modo de captura da Order.",
                     "es": "Modo de captura de la Order."
                 },
-                "example": "manual",
+                "example": "automatic_assync",
                 "enum": [
                     {
                         "title": "manual",
                         "description": {
                             "en": "Order's capture will be made manually. It allows the reservation of the transaction value in the payer's card, so the capture can be made afterwards, by using the \"Capture Order by ID\" endpoint.",
-                            "es": "La captura de la Order se hará de manera manual. O sea, permite reservar valores en la tarjeta del pagador para que la captura sea hecha posteriormente, utilizando el endpoint \"Capturar Order por ID\".",
-                            "pt": "A captura da Order será feita manualmente. Ou seja, permite reservar valores do cartão do pagador para realizar a captura posteriormente, utilizando o endpoint \"Capturar Order por ID\"."
+                            "es": "La captura de la order se hará de manera manual. O sea, permite reservar valores en la tarjeta del pagador para que la captura sea hecha posteriormente, utilizando el endpoint \"Capturar Order por ID\".",
+                            "pt": "A captura da order será feita manualmente. Ou seja, permite reservar valores do cartão do pagador para realizar a captura posteriormente, utilizando o endpoint \"Capturar Order por ID\"."
                         }
                     },
                     {

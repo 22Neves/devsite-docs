@@ -30,7 +30,7 @@
                         "payer": {
                             "properties": {
                                 "email": {
-                                    "example": "{email}"
+                                    "example": "test@testuser.com"
                                 },
                                 "first_name": {
                                     "example": "disabled"
@@ -55,9 +55,6 @@
                                     "properties": {
                                         "amount": {
                                             "example": "1000.00"
-                                        },
-                                        "payment_expiration_time": {
-                                            "example": "P3Y6M4DT12H30M5S"
                                         },
                                         "payment_method": {
                                             "properties": {
@@ -130,7 +127,7 @@
                                 "example": "MEX"
                             },
                             "user_id": {
-                                "example": "disabled"
+                                "example": "12345"
                             },
                             "status": {
                                 "example": "action_required"
@@ -142,10 +139,10 @@
                                 "example": "automatic"
                             },
                             "created_date": {
-                                "example": "disabled"
+                                "example": "2025-04-25T13:51:07.942Z"
                             },
                             "last_updated_date": {
-                                "example": "disabled"
+                                "example": "2025-04-25T13:51:07.942Z"
                             },
                             "integration_data": {
                                 "properties": {

@@ -1,8 +1,8 @@
 {
     "name": {
-        "en": "Create payment with PagoFacil",
-        "pt": "Criar pagamento PagoFacil",
-        "es": "Crear pago con PagoFacil"
+        "en": "Create payment with Pago Fácil",
+        "pt": "Criar pagamento Pago Fácil",
+        "es": "Crear pago con Pago Fácil"
     },
     "siteId": [
         "MLA"
@@ -30,7 +30,7 @@
                         "payer": {
                             "properties": {
                                 "email": {
-                                    "example": "{email}"
+                                    "example": "test@testuser.com"
                                 },
                                 "first_name": {
                                     "example": "disabled"
@@ -56,9 +56,6 @@
                                         "amount": {
                                             "example": "1000.00"
                                         },
-                                        "payment_expiration_time": {
-                                            "example": "P3Y6M4DT12H30M5S"
-                                        },
                                         "payment_method": {
                                             "properties": {
                                                 "id": {
@@ -83,13 +80,13 @@
                                                     "example": "6005407568"
                                                 },
                                                 "ticket_url": {
-                                                    "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=pagofacil&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e"
+                                                    "example": "disabled"
                                                 },
                                                 "barcode_content": {
-                                                    "example": "3335008800000000006004835002100020000242462010"
+                                                    "example": "disabled"
                                                 },
                                                 "reference": {
-                                                    "example": "6005407568"
+                                                    "example": "disabled"
                                                 },
                                                 "qr_code": {
                                                     "example": "disabled"
@@ -151,7 +148,7 @@
                                 "example": "ARG"
                             },
                             "user_id": {
-                                "example": "disabled"
+                                "example": "123456"
                             },
                             "status": {
                                 "example": "action_required"
@@ -160,7 +157,7 @@
                                 "example": "waiting_payment"
                             },
                             "capture_mode": {
-                                "example": "automatic"
+                                "example": "automatic_async"
                             },
                             "created_date": {
                                 "example": "2024-09-02T22:04:01.880469Z"

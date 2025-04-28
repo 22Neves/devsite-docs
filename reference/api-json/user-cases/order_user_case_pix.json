@@ -28,9 +28,6 @@
                                         "amount": {
                                             "example": "1000.00"
                                         },
-                                        "payment_expiration_time": {
-                                            "example": "P3Y6M4DT12H30M5S"
-                                        },
                                         "payment_method": {
                                             "properties": {
                                                 "id": {
@@ -57,7 +54,7 @@
                         "payer": {
                             "properties": {
                                 "email": {
-                                    "example": "{email}"
+                                    "example": "test@testuser.com"
                                 },
                                 "first_name": {
                                     "example": "disabled"
@@ -123,6 +120,9 @@
                             "country_code": {
                                 "example": "BRA"
                             },
+                            "user_id": {
+                                "example":"123456"
+                            },
                             "status": {
                                 "example": "action_required"
                             },
@@ -130,7 +130,7 @@
                                 "example": "waiting_transfer"
                             },
                             "capture_mode": {
-                                "example": "automatic"
+                                "example": "automatic_assync"
                             },
                             "transactions": {
                                 "properties": {
@@ -204,16 +204,33 @@
                                 "example": "automatic"
                             },
                             "marketplace": {
-                                "example": "NONE"
+                                "example": "disabled"
                             },
                             "created_date": {
-                                "example": "disabled"
+                                "example": "2025-04-25T13:49:10.931Z"
                             },
                             "last_updated_date": {
-                                "example": "disabled"
+                                "example": "2025-04-25T13:49:10.931Z"
                             },
                             "integration_data": {
-                                "example": "disabled"
+                                "properties": {
+                                    "application_id": {
+                                        "example": "4599991948843755"
+                                    },
+                                    "integrator_id": {
+                                        "example": "disabled"
+                                    },
+                                    "platform_id": {
+                                        "example": "disabled"
+                                    },
+                                    "sponsor": {
+                                        "properties": {
+                                            "id": {
+                                                "example": "disabled"
+                                            }
+                                        }
+                                    }
+                                }
                             },
                             "description": {
                                 "example": "disabled"
