@@ -28,7 +28,7 @@ Conecta tu cuenta de Mercado Pago a tu tienda para comenzar a recibir pagos por 
 
 ![Plugin MP](/images/woocomerce/automation-cred-0-es.png)
 
-2. Haz clic en **1. Vincule su tienda a una cuenta de Mercado Pago** para ser redirigido a Mercado Pago y seleccionar la cuenta donde desea recibir los pagos de sus ventas.
+2. Haz clic en **1. Vincule su tienda a una cuenta de Mercado Pago** para ser redirigido a Mercado Pago y seleccionar la cuenta donde deseas recibir los pagos de tus ventas.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
