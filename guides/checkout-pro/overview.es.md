@@ -21,7 +21,7 @@ product_landing_hero:
 product_landing_hero:
  - title: Integra Checkout Pro y configura una experiencia prediseñada
  - message: Con esta solución tus clientes compran en tu sitio y pagan en un ambiente de Mercado Pago con sus medios de pago guardados.
- - product_svg_image: checkout-pro-es
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/28/1745869692336-MX.ES.png
  - benefit_icon: categories
  - benefit_title: Integración ágil
  - benefit_icon: link
@@ -162,16 +162,16 @@ product_landing_how_integrate:
  - button_link: /developers/es/docs/checkout-pro/create-application
 ---
 |||column2|||
-<pre class="mermaid">
-flowchart TD
-    A["Mercado Pago Developers: <a href='https://www.mercadopago.com.br/developers/panel/app' target="blank">Tus integraciones</a>"] --> B[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-application' target="blank">Crear aplicación</a>]
-    B --> C[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir el ambiente de desarollo</a>]
-    C --> D[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Crear y configurar una preferencia de pago</a>]
-    D -- Monto, Medios de pago, Detalles, Otros --> F[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar las notificaciones de pago</a>]
-    F -- Webhooks e IPN --> E["Probar la integración"]
-    E -- Pruebas exitosas --> H[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/go-to-production' target="blank">Salir a producción</a>]
-    E -- Errores detectados --> I["Revisar configuración y corregir"]
-    I --> H
-H --> J[<a href='https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir calidad</a>]
-</pre>
+<div class="mermaid-overview">
+  <pre class="mermaid">
+  flowchart TD
+      A[Acceder Tus integraciones] --> B[Crear aplicación]
+      B --> C[Construir el ambiente]
+      C --> D[Crear preferencias de pago]
+      D --> E[Probar la integración]
+      E --> F[Configurar las notificaciones]
+      F --> G[Medir calidad]
+      G --> H[Salir a producción]
+  </pre>
+</div>
 |||
