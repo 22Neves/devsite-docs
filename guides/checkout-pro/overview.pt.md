@@ -95,7 +95,6 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-----[mla]----
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -125,57 +124,16 @@ product_landing_how_integrate:
 |||column2|||
 <div class="mermaid-overview">
     <pre class="mermaid">
-    flowchart TD
-        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
-        B --> C[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
-        C --> D[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
-        D --> F[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
-        F --> E["Testar a integração"]
-        E --> J[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
+flowchart TD
+            A["Acessar: Suas integrações"] --> B["Criar aplicação"]
+            B --> C["Construir o ambiente"]
+            C --> D["Criar preferências de pagamento"]
+            D -- Valor, meios de pagamento, detalhes, outros --> F["Configurar as notificações"]
+            F -- Webhooks e IPN --> E["Testar a integração"]
+            E -- Testes bem-sucedidos --> H["Subir em produção"]
+            E -- Erros detectados --> I["Revisar configuração e corrigir"]
+            I --> H
+            H --> J["Medir qualidade"]
     </pre>
 </div>
 |||
-------------
-
-----[mlb, mlu, mlc, mco, mpe, mlm]----
----
-product_landing_how_integrate:
- - title: Como integrar
- - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - requirement_title: Requisitos prévios
- - requirement_table_title: Conta de vendedor
- - requirement_table_list: Você precisa criar um usuário no Mercado Pago ou no Mercado Livre para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
- - requirement_table_title: Certificado SSL (Secure Sockets Layer)
- - requirement_table_list: Permite a navegação segura e a proteção dos seus dados durante as transferências de informação.
----
-
-|||column1|||
----
-product_landing_how_integrate:
- - list_title: Processo de integração
- - list_item: Criar uma aplicação.
- - list_item: Configurar o ambiente de desenvolvimento.
- - list_item: Criar e configurar a preferência de pagamento.
- - list_item: Configurar as URLs de retorno.
- - list_item: Testar a integração.
- - list_item: Adicionar o SDK ao frontend e inicializar o checkout.
- - list_item: Testar a integração.
- - list_item: Configurar as notificações de pagamento.
- - list_item: Subir em produção.
- - button_description: Quero começar a integrar
- - button_link: /developers/pt/docs/checkout-pro/create-application
----
-|||column2|||
-<div class="mermaid-overview">
-    <pre class="mermaid">
-    flowchart TD
-        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Suas integrações</a>"] --> B[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-application' target="blank">Criar aplicação</a>]
-        B --> C[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/configure-development-enviroment' target="blank">Construir o ambiente de desenvolvimento</a>]
-        C --> D[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/create-payment-preference' target="blank">Criar e configurar preferências de pagamento</a>]
-        D --> F[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/payment-notifications' target="blank">Configurar as Notificações de Pagamento</a>]
-        F --> E["Testar a integração"]
-        E --> J[<a href='https://www.mercadopago.com/developers/pt/docs/checkout-pro/how-tos/integration-quality' target="blank">Medir qualidade</a>]
-    </pre>
-</div>
-|||
-------------

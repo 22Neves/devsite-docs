@@ -133,49 +133,6 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-----[mla]----
----
-product_landing_how_integrate:
- - title: How to integrate
- - sub_title: Learn about the steps you need to follow to integrate this solution.
- - requirement_title: Prerequisites
- - requirement_table_title: Seller account
- - requirement_table_list: To integrate Checkout Pro, you need to access Mercado Pago and [create a seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
- - requirement_table_title: SSL Certificate (Secure Sockets Layer)
- - requirement_table_list: Allows secure browsing and the protection of your data during information transfers.
----
-
-|||column1|||
----
-product_landing_how_integrate:
- - list_title: Integration process
- - list_item: Create an application.
- - list_item: Configure the development environment.
- - list_item: Create and configure your payment preference.
- - list_item: Configure the Back URLs.
- - list_item: Add the SDK to the frontend and initialize the checkout.
- - list_item: Test your integration.
- - list_item: Configure the payment notifications.
- - list_item: Go to production.
- - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-pro/create-application
----
-|||column2|||
-<div class="mermaid-overview">
-    <pre class="mermaid">
-    flowchart TD
-        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Your integrations</a>"] --> B[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-application' target="blank">Create application</a>]
-        B --> C[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/configure-development-enviroment' target="blank">Build the development environment</a>]
-        C --> D[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-payment-preference' target="blank">Create and configure payment preferences</a>]
-        D --> F[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/payment-notifications' target="blank">Configure payment notifications</a>]
-        F --> E["Test the integration"]
-        E --> J[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/how-tos/integration-quality' target="blank">Measure quality</a>]
-    </pre>
-</div>
-|||
-------------
-
-----[mlb, mlu, mlc, mco, mpe, mlm]----
 ---
 product_landing_how_integrate:
  - title: How to integrate
@@ -206,13 +163,15 @@ product_landing_how_integrate:
 <div class="mermaid-overview">
     <pre class="mermaid">
     flowchart TD
-        A["Mercado Pago Developers: <a href='https://www.mercadopago.com/developers/panel/app' target="blank">Your integrations</a>"] --> B[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-application' target="blank">Create application</a>]
-        B --> C[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/configure-development-enviroment' target="blank">Build the development environment</a>]
-        C --> D[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/create-payment-preference' target="blank">Create and configure payment preferences</a>]
-        D --> F[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/payment-notifications' target="blank">Configure payment notifications</a>]
-        F --> E["Test the integration"]
-        E --> J[<a href='https://www.mercadopago.com/developers/en/docs/checkout-pro/how-tos/integration-quality' target="blank">Measure quality</a>]
+            A["Access: Your integrations"] --> B["Create application"]
+            B --> C["Build the environment"]
+            C --> D["Create payment preferences"]
+            D -- Amount, payment methods, details, others --> F["Configure notifications"]
+            F -- Webhooks and IPN --> E["Test the integration"]
+            E -- Successful tests --> H["Go to production"]
+            E -- Errors detected --> I["Review configuration and correct"]
+            I --> H
+            H --> J["Measure quality"]
     </pre>
 </div>
 |||
-------------
