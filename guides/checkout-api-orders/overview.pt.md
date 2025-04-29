@@ -79,7 +79,7 @@ product_landing_what_differentiates:
  - line_values: Cartão de crédito, Pix, boleto e cartão de débito virtual Caixa|Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito | Cartão de crédito ou débito, Pix, boleto, Conta Mercado Pago e Linha de Crédito
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: mla, mlb, mlm|all|all
+ - line_values: all|all|all
 ---
 
 ---
@@ -185,7 +185,7 @@ product_landing_what_differentiates:
  - line_values: Cartão de crédito ou débito, Rapipago e Pago Fácil |Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta | Cartão de crédito ou débito, Rapipago, Pago Fácil, Conta Mercado Pago e Cuotas sin Tarjeta
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: mla, mlb, mlm|all|all
+ - line_values: all|all|all
 ---
 
 ---
@@ -289,7 +289,7 @@ product_landing_what_differentiates:
  - line_values: Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander e BBVA Bancomer | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta | Cartão de crédito ou débito, Transferencia SPEI, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Conta Mercado Pago e Meses sin Tarjeta
  - line_text: Disponibilidade por país
  - line_type: sites
- - line_values: mla, mlb, mlm|all|all
+ - line_values: all|all|all
 ---
 
 ---

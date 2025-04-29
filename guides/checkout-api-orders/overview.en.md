@@ -79,7 +79,7 @@ product_landing_what_differentiates:
  - line_values: Credit card, Pix, boleto bancário and debit card virtual Caixa | Credit or debit card, Pix, boleto bancário, Mercado Pago Wallet and Installments without Card |Credit or debit card, Pix, boleto bancário, Mercado Pago Wallet and Installments without Card
  - line_text: Availability by country
  - line_type: sites
- - line_values: mla, mlb, mlm|all|all
+ - line_values: all|all|all
 ---
 
 ---
@@ -185,7 +185,7 @@ product_landing_what_differentiates:
  - line_values: Credit or debit card, Rapipago and Pago Fácil |Credit or debit card, Rapipago, Pago Fácil, Mercado Pago Wallet and Installments without Card | Credit or debit card, Rapipago, Pago Fácil, Mercado Pago Wallet and Installments without Card
  - line_text: Availability by country
  - line_type: sites
- - line_values: mla, mlb, mlm|all|all
+ - line_values: all|all|all
 ---
 
 ---
@@ -291,7 +291,7 @@ product_landing_what_differentiates:
  - line_values: Credit or debit card, SPEI Transfer, OXXO, Paycash, Citibanamex, Santander and BBVA Bancomer | Credit or debit card, SPEI Transfer, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Mercado Pago Wallet and Installments without Card | Credit or debit card, SPEI Transfer, OXXO, Paycash, Citibanamex, Santander, BBVA Bancomer, Mercado Pago Wallet and Installments without Card
  - line_text: Availability by country
  - line_type: sites
- - line_values: mla, mlb, mlm|all|all
+ - line_values: all|all|all
 ---
 
 ---
