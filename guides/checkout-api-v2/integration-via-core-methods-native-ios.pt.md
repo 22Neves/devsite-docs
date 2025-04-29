@@ -449,3 +449,205 @@ func generateTokenByCardID() {
 > Importante
 >
 > Mantenha sua SDK sempre atualizada para ter acesso às últimas funcionalidades e correções de segurança.
+
+## Customização visual dos componentes
+
+Os Secure Fields foram desenvolvidos com um design minimalista e sem características visuais predefinidas, proporcionando total flexibilidade para customização. Além disso, os componentes já vêm com parâmetros que agilizam e facilitam o processo de personalização.
+
+O iOS oferece dois principais métodos para personalizar a aparência dos seus componentes:
+
+### 1. Customização por propriedades específicas
+
+Neste método, é possível ajustar atributos individuais, como cores, fontes, bordas e dimensões, de maneira direta e simplificada. Essa abordagem é ideal para personalizações básicas e rápidas.
+
+### 2. Customização total via `PCIFieldStateStyleProtocol`
+
+Quando a personalização exige um controle mais detalhado sobre a aparência e o comportamento dos campos, você pode optar por implementar o protocolo `PCIFieldStateStyleProtocol`. Esse método permite definir estilos avançados e consistentes para cada estado do componente, proporcionando uma customização avançada.
+
+## Exemplos de utilização
+
+Os exemplos a seguir demonstram as duas abordagens, permitindo que você escolha a estratégia mais adequada ao nível de personalização e à complexidade dos requisitos de _design_ do seu aplicativo.
+
+### Customização por propriedades específicas
+
+Abaixo, apresentamos um exemplo de utilização do método de customização por propriedades específicas:
+
+```
+let style = TextFieldDefaultStyle()
+       .borderColor(.systemGray)
+       .borderWidth(2)
+       .cornerRadius(8)
+
+let field = CardNumberTextField(style: style)
+```
+
+### Customização avançada com `PCIFieldStateStyleProtocol`
+
+Abaixo, apresentamos um exemplo de utilização do método de customização avançada:
+
+```
+public class CustomDefaultStyle: PCIFieldStateStyleProtocol {
+    // MARK: - Text Configuration
+
+    public var textColor: UIColor = .label
+
+    public var font: UIFont = .systemFont(ofSize: 17)
+
+    public var textAlignment: NSTextAlignment = .natural
+
+    public var adjustsFontSizeToFitWidth = false
+
+    public var minimumFontSize: CGFloat = 0.0
+
+    // MARK: - Placeholder Configuration
+
+    public var placeholderColor: UIColor = .placeholderText
+
+    public var placeholderFont: UIFont?
+
+    // MARK: - Background Configuration
+
+    public var backgroundColor: UIColor = .clear
+
+    public var borderColor: UIColor = .clear
+
+    public var borderWidth: CGFloat = 0
+
+    public var cornerRadius: CGFloat = 0
+
+    public var borderStyle: UITextField.BorderStyle = .none
+
+    // MARK: - Clear Button Configuration
+
+    public var clearButtonMode: UITextField.ViewMode = .never
+
+    public var clearButtonTintColor: UIColor? = .blue
+
+    public var opacity: Float = 1.0
+
+    public init() {}
+}
+
+// Insira classe que criou dentro do campos 
+CardNumberTextField(style: CustomDefaultStyle())
+```
+
+## Métodos Core
+
+Os métodos core da SDK Nativa são essenciais para construir um checkout integrado com a API do Mercado Pago. Eles utilizam valores provenientes dos eventos dos componentes PCI e de outros método core para compor as funcionalidades de pagamento. Confira abaixo os Métodos Core disponíveis:
+
+
+| Método                    | Descrição                                                         |
+| ------------------------- | ----------------------------------------------------------------- |
+| **Search**                | Lista os métodos de pagamento disponíveis.                        |
+| **GetInstallment**        | Consulta as opções de parcelamento para o cartão digitado.          |
+| **Card Issuers**          | Recupera os dados dos emissores do cartão.                          |
+| **GetIdentificationTypes**| Verifica os tipos de documentos obrigatórios por país.              |
+| **Generate Card Token**   | Gera o token do cartão, essencial para concluir a transação.        |
+
+## GetInstallment
+
+A chamada do método **GetInstallment** retorna uma lista de objetos do tipo **Installment**. Cada objeto contém informações essenciais, como dados do emissor (*Issuer*), uma lista de opções de parcelamento (*PayerCosts*) e acordos (*Agreement*), entre outros valores necessários para a funcionalidade de parcelas no checkout.
+
+Cada item em *PayerCost* detalha os custos de pagamento, como número de parcelas, valor, juros, etc., permitindo que o comprador escolha a opção que melhor se adapta à sua necessidade, aumentando a flexibilidade e a personalização do processo.
+
+Confira o exemplo de utilização a seguir:
+
+```
+Task {
+    let installments = try await coreMethods.getInstallments(
+        bin: "12345678",
+        amount: "100"
+    )
+}
+```
+
+Confira abaixo a  tabela de parâmetros:
+
+| Parâmetro       | Tipo             | Descrição                                              |
+| --------------- | ---------------- | ------------------------------------------------------ |
+| `bin`           | String           | 8 dígitos do cartão de crédito.                       |
+| `amount`        | Long             | Valor da ordem.                                        |
+| `processingMode`| ProcessingMode   | Modo de processamento da ordem (`ProcessingMode.Aggregator` ou `ProcessingMode.Gateway`). |
+
+## Generate Card Token
+
+O método **Generate Card Token** retorna o token do cartão, que é necessário para finalizar a ordem. Essa chamada utiliza uma instância dos Secure Fields configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os Secure Fields, como `CardNumberTextField`, `ExpirationDateTextField` e `SecurityCodeTextField`, estejam devidamente configurados na tela.
+
+> NOTE
+> 
+> Para configurar os campos seguros, basta adicioná-los à interface do fluxo de checkout, como detalhado na seção [NOMEDASEÇÃO](LINKDA SEÇÃO).
+
+### Criar um token para um novo cartão
+
+Para gerar um token para um novo cartão, crie um formulário com os Secure Fields da SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
+
+```
+func generateToken() {
+    Task {
+        let response = try await coreMethods.createToken(
+            cardNumber: self.cardNumberField,
+            expirationDate: self.expirationDateField,
+            securityCode: self.securityCodeField
+        )
+        print("Token response => \(response.token)")
+    }
+}
+```
+
+Confira os parâmetros na tabela abaixo:
+
+| Parâmetro             | Tipo                    | Descrição                                    |
+| --------------------- | ----------------------- | -------------------------------------------- |
+| `cardNumberState`     | -   | Classe do campo de número de cartão.      |
+| `expirationDateState` | -| Classe do campo de expiração do cartão.      |
+| `securityCodeState`   | - | Classe do campo de código de segurança do cartão.   |
+
+### Gerar um token para um cartão existente
+
+Também é possível gerar um token para um cartão existente  utilizando seu ID. Confira o exemplo a seguir:
+
+```
+func generateTokenByCardID() {
+    Task {
+        let response = try await coreMethods.createToken(
+            cardID: "ID_CARD",
+            securityCode: securityCodeField
+        )
+        print("Token response => \(response.token)")
+    }
+}
+```
+
+Confira os parâmetros na tabela abaixo:
+
+| Parâmetro      | Tipo                    | Descrição                                      | Obrigatoriedade |
+| -------------- | ----------------------- | ---------------------------------------------- | - |
+| `cardID`       | String                  | ID do cartão existente gerado.     | Obrigatório |
+| `securityCode: SecurityCodeTextField` | - | Classe do campo de código de segurança do cartão | Opcional |
+
+### Gerar um token e enviar o documento do titular do cartão
+
+Você também pode gerar um token para um cartão existente, utilizando o ID do cartão e, se necessário, enviar o documento do titular. Confira o exemplo a seguir:
+
+```
+func generateTokenByCardID() {
+    Task {
+        let response = try await coreMethods.createToken(
+            cardID: "ID_CARD",
+            securityCode: securityCodeField
+        )
+        print("Token response => \(response.token)")
+    }
+}
+```
+
+Confira os parâmetros na tabela abaixo:
+
+| Parâmetro      | Tipo                    | Descrição                                           | Obrigatoriedade |
+| - | - | - | - |
+| `cardID`       | String                  | Identificador do cartão salvo.                      | Obrigatoriedade |
+| `securityCode: SecurityCodeTextField` | -  | Classe do campo de código de segurança do cartão.  | Opcional |
+
+Este método possibilita a emissão do token mesmo para cartões já cadastrados, garantindo flexibilidade no fluxo de pagamento. 
+
