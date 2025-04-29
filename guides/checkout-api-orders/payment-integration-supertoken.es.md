@@ -1,8 +1,8 @@
 # Pagos rápidos con Mercado Pago
 
-Con ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout API ------------ ofrece a los compradores la posibilidad de pagar con las tarjetas de débito y crédito guardadas en su billetera de Mercado Pago o con su dinero en cuenta. 
+----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout API ------------ de Mercado Pago ahora ofrece **Pagos rápidos con Mercado Pago**. Con esta solución, es posible brindar a los compradores una experiencia que agiliza el proceso de pago utilizando los datos guardados en nuestro ecosistema.
 
-Con la autorización del comprador, Mercado Pago le exhibirá los medios de pago disponibles en su cuenta como opciones para realizar el pago dentro de la tienda, ofreciendo una mayor probabilidad de aprobación de pagos y una experiencia de compra agilizada y segura.
+Con la autorización del comprador, facilitaremos los métodos de pago disponibles en Mercado Pago o Mercado Libre para ofrecerlos directamente en el checkout de la tienda, creando una experiencia más rápida, segura y sin fricciones para el comprador.
 
 ----[mlb]----  
 ![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
@@ -22,8 +22,8 @@ Con la autorización del comprador, Mercado Pago le exhibirá los medios de pago
 >
 > Actualmente, es posible ofrecer esta modalidad de pago mediante integraciones web mobile y nativas. **No es posible hacerlo a través de integraciones web desktop**.
 
-## Requisitos previos
-Para ofrecer Pagos rápidos con Mercado Pago es necesario que cumplas con los siguientes requisitos, que dependerán de tu tipo de integración.
+## Compatibilidad de la solución
+Pagos rápidos con Mercado Pago utiliza una tecnología para _browsers_ llamada _Payment Request API_, que es soportada en circunstancias que dependen del tipo de integración. Mira a continuación los detalles.
 
 :::::TabsComponent
 
@@ -36,6 +36,10 @@ Para que el comprador autorice el uso de los medios de pago disponibles en su cu
 * Microsoft Edge  
 * Samsung Internet  
 
+> WARNING
+>
+>  Si el usuario no utiliza un navegador compatible, esta modalidad de pago no será presentada y podrá seguir con el flujo de compra normalmente. 
+
 ### Protocolo HTTPS para entornos web
 La API responsable de crear la interfaz entre el navegador donde se realiza la compra y las aplicaciones de Mercado Pago solo funciona en dominios con protocolo HTTPS. Si no cuentas con uno, puedes usar [herramientas de terceros](https://github.com/localtunnel/localtunnel) para obtenerlo.
 
@@ -44,6 +48,10 @@ La API responsable de crear la interfaz entre el navegador donde se realiza la c
 
 ### Sistema operativo compatible
 El proceso de redirección del comprador para que autorice el uso de los medios de pago disponibles en su cuenta de Mercado Pago debe realizarse mediante **Custom Tabs**, que permiten la apertura de páginas web en un navegador nativo incorporado en la aplicación. Por esto, el único sistema operativo compatible es **Android**.
+
+> WARNING
+>
+>  En caso de que el sistema operativo del usuario no sea compatible, esta modalidad de pago no será presentada y podrá continuar con el flujo de compra normalmente. 
 
 Si necesitas implementar Custom Tabs en tu proyecto comienza por instalar la siguiente dependencia en el archivo `build.gradle`.
 
@@ -80,12 +88,10 @@ La API responsable de crear la interfaz entre el navegador donde se realiza la c
 ::::
 :::::
 
-Si estas condiciones son tenidas en cuenta y ya has [configurado tu ambiente de desarrollo](/developers/es/docs/checkout-api-v2/development-environment), puedes continuar con tu integración. 
-
+Si ya has [configurado tu ambiente de desarrollo](/developers/es/docs/checkout-api-v2/development-environment), puedes continuar con tu integración siguiendo las etapas descritas a continuación. 
 
 ## Etapas de integración
-La integración de Pagos rápidos con Mercado Pago consiste en, luego de asegurarse que el flujo funcionará correctamente para el usuario, realizar el proceso de autorización de cuenta y obtención de los medios de pago disponibles en Mercado Pago. Todo es realizado a través de la subclase `Authenticator`, contenida en la biblioteca de Mercado Pago.
-
+La integración de Pagos Rápidos con Mercado Pago tiene implementaciones server-side y client-side. El diagrama a continuación describe las principales llamadas del flujo de integración.
 
 <pre class="mermaid">
     sequenceDiagram
@@ -145,7 +151,7 @@ async function initializeAuthenticator(amount, payerEmail) {
 const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 ```
-Esto permitirá validar si el sistema del usuario es apto para realizar la autenticación con Mercado pago, y así inicializar la clase `Authenticator`. 
+Esto permitirá validar si el sistema del usuario es apto para realizar la autenticación con Mercado Pago o Mercado Libre, y así inicializar la clase `Authenticator`. 
 
 En caso de que el usuario esté impedido de continuar con el flujo, recibirás un error. Consulta nuestra nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores) para conocer los detalles.
 
@@ -234,7 +240,7 @@ const userPaymentMethods = await getAccountPaymentMethods(authorizationToken);
 
 A continuación, puedes ver un ejemplo de la estructura de la respuesta del objeto `userPaymentMethods`, que devuelve los medios de pago disponibles en la cuenta del comprador. 
 
-```JavaScript
+```json
 {
     "data": [
         {
