@@ -31,7 +31,7 @@ curl --request POST \
 }'
 ```
 
-The value `APRO` for the `payer.first_name` field is what determines that this predefined request returns as a response a created order with the status `action_required`, which indicates that payment is pending, as shown below.
+The value `APRO` for the `payer.first_name` field is what determines that this predefined request returns as a response a created order with the status `action_required`, as shown below. Afterwards, the payment status will automatically change to approved. 
 
 ```json
 {

@@ -1,6 +1,6 @@
 # Reservar, capturar e cancelar valores
 
-Ao integrar pagamentos com cartão com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------, é possível processar transações reservando fundos e posteriormente capturá-los. Veja abaixo como gerenciar as transações realizadas.
+Ao integrar pagamentos com cartão com o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ é possível processar transações reservando fundos e posteriormente capturá-los. Veja abaixo como gerenciar as transações realizadas.
 
 ## Reserva de valores
 
@@ -46,7 +46,7 @@ curl -X POST \
 }
 ```
 
-Caso a requisição tenha ocorrido com sucesso, a resposta indicará que o pagamento se encontra autorizado e pendente de captura, conforme o exemplo abaixo.
+Caso a requisição tenha ocorrido com sucesso, a resposta indicará que o pagamento encontra-se autorizado e pendente de captura, conforme o exemplo abaixo.
 
 ```json
 {

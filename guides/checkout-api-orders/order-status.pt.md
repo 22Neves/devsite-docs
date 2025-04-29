@@ -4,7 +4,7 @@ Veja a lista de possíveis `status` e `status_detail` que uma order pode assumir
 
 | `status` | `status_detail` | Descrição |
 |:---:|:---:|:---:|
-| `created` | `created` | A order foi criada com sucesso. Nesse momento, ainda não foi iniciada nenhuma ação de processamento, e a order está no estado inicial de espera. |
+| `created` | `created` | A order foi criada com sucesso. Nesse momento, ainda não foi iniciada nenhuma ação de processamento, e a order está no status inicial de espera. |
 | `processed` | `accredited` | A order foi processada com sucesso e o pagamento foi creditado. |
 | `processed` | `partially_refunded` | A order foi processada e uma parte do valor foi reembolsada. Isso indica que, embora a transação tenha sido concluída, houve um reembolso parcial do valor pago em favor do pagador. |
 | `processing` | `in_process` | A order está em processamento. Isso significa que a transação está em andamento e ainda não foi concluída.  |

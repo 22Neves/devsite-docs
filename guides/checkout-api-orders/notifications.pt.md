@@ -14,13 +14,13 @@ A seguir, apresentaremos um passo a passo para poder receber notificações de p
 
 ![cofigure notifications](/images/api-orders/not2-configure-pt.png)
 
-3. Selecione a aba **Modo produtivo** e forneça uma `URL HTTPS` para receber notificações com sua integração produtiva.
+3. Selecione a aba **Modo de produção** e forneça uma `URL HTTPS` para receber notificações com sua integração produtiva.
 
 ![cofigure notifications](/images/api-orders/not3-url-pt.png)
 
 4. Selecione o evento **Order (Mercado Pago)** para receber notificações, que serão enviadas em formato `JSON` através de um `HTTP POST` para a URL especificada anteriormente.
 
-![cofigure notifications](/images/api-orders/not4-order-es.png)
+![cofigure notifications](/images/api-orders/not4-order-pt.png)
 
 5. Por fim, clique em **Salvar configuração**. Isso gerará uma chave secreta exclusiva para a aplicação, que permitirá validar a autenticidade das notificações recebidas, garantindo que tenham sido enviadas pelo Mercado Pago. Tenha em mente que esta chave gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja recomendada. Para isso, basta clicar no botão **Restabelecer**.
 

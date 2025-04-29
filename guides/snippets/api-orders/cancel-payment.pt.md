@@ -1,4 +1,4 @@
-Caso deseje, você pode cancelar um pagamento criado, desde que esteja pendente ou em processo. Ou seja, com `status=action_required`.
+Caso deseje, você pode cancelar um pagamento criado, desde que esteja pendente ou em processamento. Ou seja, com `status=action_required`.
 
 Além disso, recomendamos cancelar os pagamentos que não foram realizados dentro da data de vencimento estabelecida, para evitar problemas de cobrança e conciliação.
 

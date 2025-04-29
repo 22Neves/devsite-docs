@@ -16,7 +16,7 @@ Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api-v2/devel
 
 Para receber pagamentos, é necessário adicionar no  *frontend* um formulário que permita capturar os dados do pagador de maneira segura.
 
-Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Pix entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Obter tipos de documento](https://beta.mercadopago.com.br/developers/pt/docs/checkout-api-v2/payment-integration/pix#:~:text=client%2Dside-,Obter,-tipos%20de%20documento).
+Se você já tem um desenvolvimento que inclui um formulário de pagamento próprio, certifique-se de incluir Pix entre as opções de pagamento que deseja oferecer, conforme indicado abaixo, e continue para a etapa de [Obter tipos de documento](/developers/pt/docs/checkout-api-v2/payment-integration/pix#:~:text=client%2Dside-,Obter,-tipos%20de%20documento).
 
 Caso ainda não tenha um formulário de pagamento, adicione o modelo abaixo ao seu projeto e inclua o identificador do Pix como opção a ser oferecida.
 
@@ -147,7 +147,7 @@ Veja na tabela abaixo as descrições dos parâmetros que são obrigatórios na 
 
 | Atributo                                          | Tipo            | Descrição                                                                                                                                                                                                                        | Obrigatório/Opcional |
 |---------------------------------------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| `Authorization`                                     | _Header_        | Faz referência a sua chave privada, o Access Token. Utilize o :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} em ambientes de desenvolvimento e o :toolTipComponent[Access Token produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção*."} para pagamentos reais.                                                            | Obrigatório          |
+| `Authorization`                                     | _Header_        | Faz referência à sua chave privada, o Access Token. Utilize o :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."} em ambientes de desenvolvimento e o :toolTipComponent[Access Token produtivo]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_ ao receber pagamentos reais. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Produção > Credenciais de produção*."} para pagamentos reais.                                                            | Obrigatório          |
 | `X-Idempotency-Key`                                 | _Header_          | Chave de idempotência. Essa chave garante que cada solicitação seja processada apenas uma vez, evitando duplicidades. Use um valor exclusivo no `header` da requisição, como um UUID V4 ou uma *string* aleatória.            | Obrigatório          |
 | `total_amount`                                      | _Body. String_    | Valor total da transação.                                                                                                                                                                                                       | Obrigatório             |
 | `external_reference`                                 | _Body. String_    | Referência externa da order que pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação.                                                                                   | Obrigatório          |
@@ -213,13 +213,13 @@ Dentre os parâmetros retornados, temos os indicados na tabela abaixo.
 
 Após criar a requisição do pagamento com Pix, escolha a forma com que o usuário realizará o pagamento no frontend, podendo ser através de um **link ou botão de pagamento** ou de um **código QR renderizado**.
 
-Selecione a opção que mais se adéqua ao seu modelo de negócio e siga as etapas descritas abaixo.
+Selecione a opção que mais se adequa ao seu modelo de negócio e siga as etapas descritas abaixo.
 
 ### Adicionar link ou botão
 
 Ao optar por **adicionar um link ou botão para pagamento com Pix**, o comprador será direcionado a uma nova janela contendo todas as informações para realização do pagamento, como **código QR** ou **Pix Copia e Cola** e as suas respectivas instruções de pagamento.
 
-Para oferecer esta opção, utilize o atributo `ticket_url`, [retornado na resposta da requisição](/developers/pt/docs/checkout-api-v2/payment-integration/pix#:~:text=Dentre%20os%20par%C3%A2metros%20retornados%2C%20temos%20os%20indicados%20na%20tabela%20abaixo.), como apresentado abaixo:
+Para oferecer esta opção, utilize o atributo `ticket_url`, retornado na resposta da requisição, como apresentado abaixo:
 
 ```html
 <a href="https://www.mercadopago.com.br/payments/123456789/ticket?caller_id=123456&hash=123e4567-e89b-12d3-a456-426655440000" target="_blank">Pagar com Pix</a>
@@ -237,7 +237,7 @@ Para isso, siga as etapas abaixo.
 <img src={`data:image/jpeg;base64,${qr_code_base64}`}/>
 ```
 
-2. Em seguida, adicione o `qr_code`, [retornado na resposta da requisição](/developers/pt/docs/checkout-api-v2/payment-integration/pix#:~:text=Dentre%20os%20par%C3%A2metros%20retornados%2C%20temos%20os%20indicados%20na%20tabela%20abaixo.), para apresentar a opção que permitirá copiar e colar o código.
+2. Em seguida, adicione o `qr_code`, retornado na resposta da requisição, para apresentar a opção que permitirá copiar e colar o código.
 
 ```html
 <label for="copiar">Copiar Hash:</label>

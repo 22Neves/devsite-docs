@@ -30,7 +30,7 @@ curl --request POST \
 }'
 ```
 
-O valor `APRO` para o campo `payer.first_name` é o que determina que esta solicitação predefinida retorne como resposta uma order criada e com status `action_required`, que indica que se está aguardando o pagamento, conforme mostrado a seguir.
+O valor `APRO` para o campo `payer.first_name` é o que determina que esta solicitação predefinida retorne como resposta uma order criada e com status `action_required`, conforme mostrado a seguir. Em seguida, o status do pagamento será atualizado automaticamente para aprovado.
 
 ```json
 {

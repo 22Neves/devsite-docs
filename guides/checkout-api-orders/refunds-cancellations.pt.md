@@ -1,6 +1,6 @@
 # Reembolsos e cancelamentos
 
-Os reembolsos e as cancelamentos são gestões que você pode realizar uma vez que um pagamento tenha sido efetuado. Por se tratar de ações que implicam uma devolução de dinheiro, podem parecer similares, mas é importante levar em consideração o que as diferencia para poder realizar corretamente cada um dos processos.
+Os reembolsos e os cancelamentos são gestões que você pode realizar uma vez que um pagamento tenha sido efetuado. Por se tratar de ações que implicam uma devolução de dinheiro, podem parecer similares, mas é importante levar em consideração o que as diferencia para poder realizar corretamente cada um dos processos.
 
 Um **cancelamento** é feito quando um pagamento ainda não foi aprovado e o limite é devolvido ao cartão do comprador dentro do período definido pelo banco emissor, enquanto o **reembolso** é feito após a captura do pagamento e a devolução do valor será feita diretamente na fatura, no caso de cartão de crédito, ou na conta do pagador, quando o pagamento for feito por outros meios.
 

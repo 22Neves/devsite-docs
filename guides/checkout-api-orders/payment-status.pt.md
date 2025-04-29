@@ -4,7 +4,7 @@ Veja a lista de possíveis `status` e `status_detail` que uma transação pode a
 
 | `status` | `status_detail` | Descrição |
 |:---:|:---:|:---:|
-| `created` | `created` | A transação foi criada com sucesso, mas ainda não foi processada. Este é o estado inicial de uma transação após sua criação. |
+| `created` | `created` | A transação foi criada com sucesso, mas ainda não foi processada. Este é o status inicial de uma transação após sua criação. |
 | `processed` | `accredited` | A transação foi processada com sucesso e o valor foi efetivamente creditado. |
 | `processed` | `partially_refunded` | A transação foi processada com sucesso e uma parte do valor foi reembolsada. Isso indica que, embora a transação tenha sido concluída, houve um reembolso parcial do valor pago em favor do pagador. |
 | `processing` | `in_process` | A transação está em processamento. Isso significa que a transação está em andamento e ainda não foi concluída.  |
