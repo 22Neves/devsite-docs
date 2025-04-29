@@ -44,7 +44,11 @@ const customization = {
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-mpe-en.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-mlb-en.jpg)
+
+------------
+----[mla]----
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-en.jpg)
 
 ------------

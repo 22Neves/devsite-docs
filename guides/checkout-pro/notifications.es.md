@@ -8,7 +8,13 @@ Consulta el flujo general de una notificación en el diagrama a continuación.
 
 ![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
-A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
+A continuación, presentamos un paso a paso para configurar las notificaciones de creación y actualización de pagos. Una vez configuradas, las notificaciones Webhook se enviarán cada vez que se cree un pago o se modifique su estado (Pendiente, Rechazado o Aprobado). 
+
+> NOTE
+>
+> Esta documentación trata exclusivamente de la configuración de notificaciones de pago, incluidas creaciones y actualizaciones, a través del evento **Pagos**. Para obtener información sobre otros eventos de notificaciones disponibles para configuración, consulta la [documentación de Notificaciones](/developers/es/docs/checkout-pro/additional-content/notifications) general.
+
+En el proceso de integración con Mercado Pago, puedes configurar las notificaciones de dos maneras:
 
 | Tipo de Configuración | Descripción | Ventajas | Cuándo Usar |
 |-|-|-|-|
@@ -711,6 +717,21 @@ Una vez que las notificaciones sean configuradas, consulta las acciones necesari
 Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que esa recepción fue correcta. Para eso, debes devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)`.
 
 El tiempo de espera para esa confirmación será de 22 segundos. Si no se envía esta respuesta, el sistema entenderá que la notificación no fue recibida y realizará un nuevo intento de envío cada 15 minutos, hasta que reciba la respuesta. Después del tercer intento, el plazo será prorrogado, pero los envíos continuarán sucediendo.
+
+<pre class="mermaid">
+sequenceDiagram
+    participant MercadoPago as Mercado Pago
+    participant Integrador as Integrador
+
+    MercadoPago->>Integrador: reintento: 1. Demora: 0 minutos
+    MercadoPago->>Integrador: reintento: 2. Demora: 15 minutos
+    MercadoPago->>Integrador: reintento: 3. Demora: 30 minutos
+    MercadoPago->>Integrador: reintento: 4. Demora: 6 horas
+    MercadoPago->>Integrador: reintento: 5. Demora: 48 horas
+    MercadoPago->>Integrador: reintento: 6. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 7. Demora: 96 horas
+    MercadoPago->>Integrador: reintento: 8. Demora: 96 horas
+</pre>
 
 Luego de responder la notificación, confirmando su recibimiento, puedes obtener toda la información sobre el evento del tópico `payments` notificado haciendo un GET al endpoint [v1/payments/{id}](/developers/es/reference/payments/_payments_id/get). 
 

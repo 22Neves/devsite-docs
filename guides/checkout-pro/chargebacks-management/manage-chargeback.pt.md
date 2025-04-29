@@ -98,8 +98,6 @@ Nesta etapa, você poderá enviar a documentação que comprove que a venda é v
 
 > RED_MESSAGE
 >
-> Importante
->
 > Os arquivos devem ser enviados em formato .jpg, .png ou .pdf e ter um tamanho máximo de até 10MB. 
 
 ```
@@ -122,8 +120,6 @@ Aguarde a notificação Webhook referente à resolução e cheque novamente a co
 | `false` | Indica que a decisão foi contra o vendedor e o dinheiro será descontado.  |
 
 > RED_MESSAGE
->
-> Importante
 >
 > A resolução da contestação pode levar até 6 meses, dependendo da bandeira do cartão.
 

@@ -28,8 +28,12 @@ El layout de Card Payment Brick se basa en las mejores prácticas de UX para que
 ![cardform](checkout-bricks/card-form-mlm-es.png)
 
 ------------
-----[mla, mlb]----
+----[mla]----
 ![cardform](checkout-bricks/card-form-es.png)
+
+------------ 
+----[mlb]----
+![cardform](checkout-bricks/card-form-mlb-es.png)
 
 ------------ 
 ----[mco, mpe, mlu]----

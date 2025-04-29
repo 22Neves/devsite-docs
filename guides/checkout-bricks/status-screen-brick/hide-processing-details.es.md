@@ -37,14 +37,18 @@ const customization = {
 ]]]
 
 ----[mlc, mlm, mco, mlu]----
-![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-all-es.jpg)
+![status-screen-brick-hide-processing-details](/images/checkout-bricks/status-screen-brick-hide-processing-details-all-es.jpg)
+
+------------
+----[mlb]----
+![status-screen-brick-hide-processing-details](/images/checkout-bricks/status-screen-brick-hide-processing-details-mlb-es.jpg)
 
 ------------
 ----[mpe]----
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-mpe-es.jpg)
 
 ------------
-----[mlb, mla]----
+----[mla]----
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-es.jpg)
 
 ------------

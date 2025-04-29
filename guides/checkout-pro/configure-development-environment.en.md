@@ -14,8 +14,6 @@ The **backend SDK** is designed to handle server-side operations, allowing you t
 
 > NOTE
 >
-> Note
->
 > If you prefer, you can download the Mercado Pago SDKs from our [official libraries](/developers/en/docs/sdks-library/server-side).
 
 Install the Mercado Pago SDK in the language that best fits your integration using a dependency manager, as shown below.

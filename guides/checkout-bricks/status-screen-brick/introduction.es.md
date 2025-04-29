@@ -28,7 +28,11 @@ El layout de Status Screen Brick se basa en las mejores prácticas UX para que s
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-es.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-mlb-es.jpg)
+
+------------ 
+----[mla]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-es.gif)
 
 ------------ 

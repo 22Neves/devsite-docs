@@ -8,7 +8,7 @@ Next, we present the protocols used by Mercado Pago.
 
 OAuth (Open Authorization) is an authorization protocol that allows applications to gain limited access to user accounts on an HTTP service, such as social networks, without the user having to share their credentials. Instead, OAuth defines a method for users to grant third-party applications access to their data without needing to reveal their login information.
 
-For more information, access the [documentation](/developers/en/docs/security/oauth/introduction).
+For more information, access the [documentation](/developers/en/docs/security/oauth).
 
 ## OWASP
 

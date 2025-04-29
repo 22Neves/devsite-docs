@@ -28,7 +28,12 @@ O layout do Status Screen Brick foi construído com base nas melhores práticas 
 ![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mpe-pt.jpg)
 
 ------------
-----[mlb, mla]----
+----[mlb]----
+
+![status-screen-brick-layout](checkout-bricks/status-screen-brick-layout-mlb-pt.jpg)
+
+------------
+----[mla]----
 ![status-screen-Brick-layout](checkout-bricks/status-screen-brick-layout-pt.gif)
 
 ------------ 

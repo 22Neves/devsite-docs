@@ -8,8 +8,6 @@ Você pode configurar até três URLs de retorno diferentes, correspondendo aos 
 
 > NOTE
 >
-> Nota
->
 > Em integrações _mobile_, recomendamos que as URLs de retorno sejam _deep links_. Para saber mais, acesse a [documentação Integração para aplicações móveis](/developers/pt/docs/checkout-pro/mobile-integration).
 
 ## Definir URLs de retorno
@@ -17,8 +15,6 @@ Você pode configurar até três URLs de retorno diferentes, correspondendo aos 
 No seu código backend, configure a URL para a qual deseja que o Mercado Pago redirecione o usuário após a conclusão do processo de pagamento.
 
 > NEUTRAL_MESSAGE
-> 
-> Nota
 >
 > Se preferir, você também pode configurar as URLs de retorno enviando um POST para a API [Criar preferência](/developers/pt/reference/preferences/_checkout_preferences/post) com o atributo `back_urls`, especificando as URLs para as quais o comprador deve ser redirecionado após finalizar o pagamento.
 

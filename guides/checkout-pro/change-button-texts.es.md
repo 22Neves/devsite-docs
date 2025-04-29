@@ -44,7 +44,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlm]----
+----[mlm, mlb]----
 El botón de pago está **compuesto por el botón y la propuesta de valor** (`valueProp`), que puede ser personalizada de acuerdo con las opciones disponibles en Mercado Pago.
 
 Hay dos temas disponibles: el **default** (también utilizado cuando no se especifica ninguna configuración) y el **dark**. La elección del tema impacta el color de fondo del botón, de la propuesta de valor y el color de las imágenes dentro del botón.
@@ -86,7 +86,7 @@ const customization = {
 ]]]
 
 ------------
-----[mlb, mla]----
+----[mla]----
 El botón de pago ofrece dos niveles de lectura: la **call to action (botón)** y la **propuesta de valor**. En ambos casos, el texto se puede personalizar de acuerdo a las opciones brindadas por Mercado Pago. De forma predeterminada, el botón de pago se muestra como en la siguiente imagen.
 
 ![cow-text-wallet-default](cow/cow-text-wallet-default.es.png)

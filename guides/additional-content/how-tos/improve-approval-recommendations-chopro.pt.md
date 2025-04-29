@@ -4,7 +4,7 @@ Para **evitar que um pagamento legítimo seja recusado** por não atender as val
 
 Você pode ver em detalhes nossas **recomendações para melhorar sua aprovação** abaixo.
 
-## Coleta e envío de Device ID
+## Coleta e envio de Device ID
 
 O **Device ID** é uma informação importante para garantir uma melhor segurança e, consequentemente, uma melhor taxa de aprovação de pagamentos. Ele representa um **identificador único para cada dispositivo do comprador** no momento da compra.
 Caso um comprador frequente faça uma compra a partir de um dispositivo diferente do habitual, isso pode representar um comportamento atípico. Embora possa não ser necessariamente fraude, o ID do dispositivo nos ajuda a refinar a avaliação e nos impede de rejeitar pagamentos legítimos.

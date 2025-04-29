@@ -180,9 +180,14 @@ Com a resposta da requisição de criação de pagamento, basta utilizar a url d
 Para isso, é preciso redirecionar o usuário para a URL diretamente ou apresentar um botão que faz o redirecionamento quando clicado.
 
 A imagem a seguir apresenta um exemplo deste fluxo na visão do usuário:
-
+----[mla]----
 ![Exemplo de fluxo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance.gif)
 
+------------
+----[mlb, mlm, mpe, mlc, mlu, mco]----
+![Exemplo de fluxo de pagamento Pix Open Finance](/images/api/api-integrate-openfinance-pt.png)
+
+------------
 ## Testar integração
 
 Para testar a integração é necessário utilizar uma credencial de testes ao criar um pagamento e possuir um usuário de testes com Chave Pix cadastrada. [Clique aqui](/developers/pt/docs/checkout-api/integration-test/make-test-purchase) para acessar a documentação e encontrar mais detalhes sobre como fazer isso.

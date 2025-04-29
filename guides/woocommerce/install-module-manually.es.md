@@ -1,6 +1,6 @@
 # Instalación manual
 
-Para instalar el plugin manualmente en Wordpress, sigue estos pasos:
+Para instalar el plugin manualmente en WordPress, sigue estos pasos:
 
 1. Descarga el archivo .zip desde la [página de releases](https://github.com/mercadopago/cart-woocommerce/releases) de nuestro repositorio.
 2. Una vez descargado, cambia el nombre del archivo .zip a **woocommerce-mercadopago**. 
@@ -11,7 +11,7 @@ Para instalar el plugin manualmente en Wordpress, sigue estos pasos:
     >
     > No descomprimas el archivo .zip antes de cargarlo en WordPress. Para que el complemento se instale correctamente, debes cargar el archivo en el formato original.
     
-3. Accede a tu cuenta de [Wordpress](https://wordpress.com/) y ve al panel. Haz clic en **Plugins > Añadir nuevo**.
+3. Accede a tu cuenta de [WordPress](https://wordpress.com/) y ve al panel. Haz clic en **Plugins > Añadir nuevo**.
 4. En “Añadir plugins”, haz clic en el botón **Subir plugin**.
 5. Haz clic en el botón **Elegir archivo** y selecciona el archivo .zip que descargaste y renombraste.
 6. Haz clic en **Instalar ahora**.
