@@ -21,7 +21,7 @@ product_landing_hero:
 product_landing_hero:
  - title: Integra Checkout Pro y configura una experiencia prediseñada
  - message: Con esta solución tus clientes compran en tu sitio y pagan en un ambiente de Mercado Pago con sus medios de pago guardados.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/28/1745869692336-MX.ES.png
+- image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/28/1745869692336-MX.ES.png 
  - benefit_icon: categories
  - benefit_title: Integración ágil
  - benefit_icon: link
@@ -100,15 +100,15 @@ product_landing_what_differentiates:
  - title: Qué lo diferencia
  - message: Compara nuestros checkouts y elige el que mejor se adapte a tu negocio. Consulta las [tarifas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Estás aquí
- - column_product_svg_image: checkout-pro
+ - column_product_svg_image: checkout-pro-es
  - column_product: Checkout Pro
  - column_button_text: Cómo integrar
  - column_button_link: /developers/es/docs/checkout-pro/create-application
- - column_product_svg_image: checkout-api
+ - column_product_svg_image: checkout-api-es
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir al resumen
  - column_button_link: /developers/es/docs/checkout-api/landing
- - column_product_svg_image: checkout-bricks
+ - column_product_svg_image: checkout-bricks-es
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
  - column_button_link: /developers/es/docs/checkout-bricks/landing
@@ -168,7 +168,7 @@ product_landing_how_integrate:
             A["Acceder a: Tus integraciones"] --> B["Crear aplicación"]
             B --> C["Construir el ambiente"]
             C --> D["Crear preferencias de pago"]
-            D -- Monto, Medios de pago, Detalles, Otros --> F["Configurar las notificaciones"]
+            D -- Monto, medios de pago, detalles, otros --> F["Configurar las notificaciones"]
             F -- Webhooks e IPN --> E["Probar la integración"]
             E -- Pruebas exitosas --> H["Salir a producción"]
             E -- Errores detectados --> I["Revisar configuración y corregir"]

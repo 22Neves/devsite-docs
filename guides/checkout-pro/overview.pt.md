@@ -60,15 +60,15 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: Você está aqui
- - column_product_svg_image: checkout-pro
+ - column_product_svg_image: checkout-pro-pt
  - column_product: Checkout Pro
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-pro/create-application
- - column_product_svg_image: checkout-api
+ - column_product_svg_image: checkout-api-pt
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-api/landing
- - column_product_svg_image: checkout-bricks
+ - column_product_svg_image: checkout-bricks-pt
  - column_product: Checkout Bricks
  - column_button_text: Ir à visão geral
  - column_button_link: /developers/pt/docs/checkout-bricks/landing

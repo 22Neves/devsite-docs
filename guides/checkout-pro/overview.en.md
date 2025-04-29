@@ -98,15 +98,15 @@ product_landing_what_differentiates:
  - title: What sets it apart
  - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](https://www.mercadopago.com.br/ajuda/33399).
  - highlight_text: You are here
- - column_product_svg_image: checkout-pro
+ - column_product_svg_image: checkout-pro-en
  - column_product: Checkout Pro
  - column_button_text: How to integrate
  - column_button_link: /developers/en/docs/checkout-pro/create-application
- - column_product_svg_image: checkout-api
+ - column_product_svg_image: checkout-api-en
  - column_product: ----[mlb]----Checkout Transparente----------------[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------
  - column_button_text: Go to the overview
  - column_button_link: /developers/en/docs/checkout-api/landing
- - column_product_svg_image: checkout-bricks
+ - column_product_svg_image: checkout-bricks-en
  - column_product: Checkout Bricks
  - column_button_text: Go to the overview
  - column_button_link: /developers/en/docs/checkout-bricks/landing
