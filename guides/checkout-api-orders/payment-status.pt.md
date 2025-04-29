@@ -1,6 +1,6 @@
 # Status da transação
 
-Veja a lista de possíveis `status` e `status_detail` que uma transação pode assumir. 
+Veja a lista de possíveis `status` e `status_detail` que uma transação pode retornar. 
 
 | `status` | `status_detail` | Descrição |
 |:---:|:---:|:---:|

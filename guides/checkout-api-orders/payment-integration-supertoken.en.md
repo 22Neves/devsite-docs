@@ -1,8 +1,8 @@
 # Fast payments with Mercado Pago
 
-With ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout API ------------, you can offer buyers the option to pay with the debit and credit cards saved in their Mercado Pago wallet or with their account money.
+Mercado Pago's ----[mlb]----Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ now offers **Fast Payments with Mercado Pago**. With this solution, it is possible to provide buyers with an experience that speeds up the payment process using the data saved in our ecosystem.
 
-With the buyer's authorization, Mercado Pago will display their available payment methods as options for making the payment within the store, providing a higher payment approval rate and a streamlined and secure shopping experience.
+With the buyer's authorization, we will facilitate the payment methods available in Mercado Pago or Mercado Livre to offer them directly at the store's checkout, creating a faster, safer and frictionless experience for the buyer.
 
 ----[mlb]----  
 ![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
@@ -22,9 +22,8 @@ With the buyer's authorization, Mercado Pago will display their available paymen
 >
 > Currently, it is possible to offer this payment method through mobile web and native integrations. **It is not possible to do so through desktop web integrations**.
 
-## Prerequisites
-
-To offer Fast payments with Mercado Pago, you must meet the following requirements, which will depend on your type of integration.
+## Solution Compatibility
+Fast payments with Mercado Pago uses a browser-based technology called "Payment Request API", which is supported in circumstances that depend on the type of integration. See more details below.
 
 :::::TabsComponent
 
@@ -37,6 +36,10 @@ For the buyer to authorize the use of their available payment methods in Mercado
 * Microsoft Edge  
 * Samsung Internet  
 
+> WARNING
+>
+> If the user does not use a supported browser, this payment solution will not be presented and they will be able to continue with the purchase process normally.
+
 ### HTTPS Protocol for Web Environments
 The API responsible for creating the interface between the browser where the purchase is made and the Mercado Pago applications only works on domains with HTTPS protocol. If you do not have one, you can use [third-party tools](https://github.com/localtunnel/localtunnel) to obtain it.
 
@@ -45,6 +48,10 @@ The API responsible for creating the interface between the browser where the pur
 
 ### Compatible Operating System
 The process of redirecting the buyer to authorize the use of their available payment methods in Mercado Pago can only be done through **Custom Tabs**, which allow the opening of web pages in a native browser embedded in the app. Therefore, the only compatible operating system is **Android**.
+
+> WARNING
+>
+> If the user's operating system is not supported, this payment solution will not be presented and they will be able to continue with the purchase process normally.
 
 If you need to implement Custom Tabs in your project, start by installing the following dependency in the `build.gradle` file.
 
@@ -83,10 +90,10 @@ The API responsible for creating the interface between the browser where the pur
 ::::
 :::::
 
-If these conditions are being taken into consideration and you have already [set up your development environment](/developers/en/docs/checkout-api-v2/development-environment), you can proceed with your integration.
+If you have already [set up your development environment](/developers/en/docs/checkout-api-v2/development-environment), you can proceed with your integration following the steps detailed below.
 
 ## Integration Stages
-The integration of Fast payments with Mercado Pago consists of ensuring that the flow will work correctly for the user, followed by the account authorization process and obtaining the available payment methods. This is all done through the `Authenticator` subclass contained in the Mercado Pago library.
+The integration of Fast Payments with Mercado Pago has client-side and server-side implementations. The diagram below describes the main requests of the integration flow.
 
 <pre class="mermaid">
     sequenceDiagram
@@ -147,7 +154,7 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 ```
 
-This will validate whether the user's system is eligible for authentication with Mercado Pago and thus initialize the `Authenticator` class.
+This will validate whether the user's system is eligible for authentication with Mercado Pago or Mercado Libre and thus initialize the `Authenticator` class.
 
 If the user is unable to continue with the flow, you will receive an error. See our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors) for details.
 
@@ -234,7 +241,7 @@ const userPaymentMethods = await getAccountPaymentMethods(authorizationToken);
 
 Below, you can see an example of the structure of the response from the `userPaymentMethods` object, which returns the available payment methods in the buyer's account.
 
-```JavaScript
+```json
 {
     "data": [
         {
