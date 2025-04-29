@@ -125,13 +125,13 @@ product_landing_how_integrate:
 <div class="mermaid-overview">
     <pre class="mermaid">
 flowchart TD
-            A["Acessar: Suas integrações"] --> B["Criar aplicação"]
+            A["Ir para: Suas Integrações"] --> B["Criar aplicação"]
             B --> C["Construir o ambiente"]
             C --> D["Criar preferências de pagamento"]
             D -- Valor, meios de pagamento, detalhes, outros --> F["Configurar as notificações"]
             F -- Webhooks e IPN --> E["Testar a integração"]
             E -- Testes bem-sucedidos --> H["Subir em produção"]
-            E -- Erros detectados --> I["Revisar configuração e corrigir"]
+            E -- Erros detectados --> I["Corrigir configuração"]
             I --> H
             H --> J["Medir qualidade"]
     </pre>

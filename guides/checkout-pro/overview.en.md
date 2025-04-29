@@ -169,7 +169,7 @@ product_landing_how_integrate:
             D -- Amount, payment methods, details, others --> F["Configure notifications"]
             F -- Webhooks and IPN --> E["Test the integration"]
             E -- Successful tests --> H["Go to production"]
-            E -- Errors detected --> I["Review configuration and correct"]
+            E -- Errors detected --> I["Fix configuration"]
             I --> H
             H --> J["Measure quality"]
     </pre>
