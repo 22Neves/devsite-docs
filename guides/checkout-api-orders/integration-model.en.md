@@ -12,7 +12,7 @@ Below are the main differences between the two options.
 
 | Feature  |  Payments API	  | Orders API	 |
 | --- | --- |--- |
-| Payment processing	  | Automatic (create and process your transaction) | [Automatic and manual](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders) (choosing when to process your transaction). |
+| Payment processing	  | Automatic (create and process your transaction). | [Automatic and manual](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders) (choosing when to process your transaction). |
 | Transactions	 | One transaction per request.		 | Multiple transactions per request. |
 | Operations  | [Online payments](/developers/en/docs#online-payments).	 | [Online payments](/developers/en/docs#online-payments) and [In-person payments](/developers/en/docs#inperson-payments) (Mercado Pago Point).|
 | Notifications	  | Advanced setup via `notification_url`.	 | Simpler setup available in the [Notifications](/developers/en/docs/checkout-api-v2/notifications) section under [Your integrations](/developers/panel/app). |
@@ -22,7 +22,7 @@ Below are the main differences between the two options.
 
 An online payment order can be created to be processed in two modes: **Automatic mode** and **Manual mode**.
 
-The definition of the processing mode will be done at the time of creating the order, using the parameter `processing_mode`. Its value should be `automatic` for automatic processing or manual for manually processing the order.
+The definition of the processing mode will be done at the time of creating the order, using the parameter `processing_mode`. Its value should be `automatic` for automatic processing or `manual` for manually processing the order.
 
 ::::TabsComponent
 

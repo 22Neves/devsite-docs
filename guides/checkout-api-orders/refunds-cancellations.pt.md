@@ -30,7 +30,7 @@ Para realizar reembolsos totais ou parciais de um pagamento e consultar os reemb
 
 ## Cancelamentos
 
-Transações que ocorrem quando uma compra é realizada, mas por algum motivo o pagamento não foi aprovado. Nesse caso, considerando que a transação não foi processada e nenhum valor foi transacionado, a compra é cancelada e a cobrança não é efetivada.
+Transações que ocorrem quando uma compra é realizada, mas por algum motivo o pagamento não foi aprovado. Nesse caso, considerando que a transação não foi processada e nenhum valor foi transacionado, a compra é cancelada e a cobrança não é efetuada.
 
 Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguintes fatores:
 

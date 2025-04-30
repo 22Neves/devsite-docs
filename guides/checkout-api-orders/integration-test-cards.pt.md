@@ -22,4 +22,4 @@ Para verificar se a compra de teste foi realizada de acordo com os resultados es
 
 A resposta a esta chamada deverá trazer as informações detalhadas da transação de teste, juntamente com o status escolhido para o pagamento na etapa anterior dentro do campo `status`.
 
-Pronto! Uma vez finalizadas estas etapas, a integração de cartões como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api-v2/go-to-production).
+Pronto! Uma vez finalizadas estas etapas, a integração de cartões como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [subir em produção](/developers/pt/docs/checkout-api-v2/go-to-production).

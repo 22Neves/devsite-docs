@@ -4,7 +4,7 @@ Para acceder a los datos generales de tu aplicación, ve al [Panel del desarroll
 
 ## Datos de la aplicación
 
-* **Datos de la aplicación**: esta sección muestra los datos básicos de la aplicación, incluyendo:
+Esta sección muestra los datos básicos de la aplicación, incluyendo:
   - **ID de usuario**: número de identificación de usuario, que es creado automáticamente.
   - **Número de aplicación**: número de identificación de la aplicación, que es creado automáticamente.
   - **Integración con**: el producto o plataforma integrada con la aplicación.

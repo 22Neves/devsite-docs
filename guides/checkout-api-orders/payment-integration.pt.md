@@ -2,7 +2,7 @@
 
 Com o ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ você pode escolher quais meios de pagamento deseja disponibilizar nas lojas online.
 
-O processo de integração se baseia na configuração individual desses meios de pagamento dentro do ambiente comum previamente estabelecido, o que facilita a experiência de integração, e permite um maior nível de personalização.
+O processo de integração se baseia na configuração individual desses meios de pagamento dentro do ambiente comum previamente estabelecido, o que facilita a experiência de integração e permite um maior nível de personalização.
 
 Se desejar, é possível obter uma lista detalhada com todos os meios de pagamento disponíveis para integração enviando um **GET** com seu :toolTipComponent[Acess Token]{content="Chave privada da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste* ou *Produção > Credenciais de produção*."} ao endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/pt/reference/payment_methods/_payment_methods/get"} utilizando um dos códigos abaixo.
 

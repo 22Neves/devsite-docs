@@ -89,4 +89,4 @@ A resposta devolverá o status `action_required`, que indica que se está aguard
 
 Por fim, para verificar se a compra de teste foi realizada corretamente, envie um **GET** para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/orders/online-payments/get-order/get"}, substituindo `id` pela identificação da order, recebida na resposta à sua criação.
 
-Pronto! Uma vez finalizadas estas etapas, a integração de Transferências SPEI como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api-v2/go-to-production).
+Pronto! Uma vez finalizadas estas etapas, a integração de Transferências SPEI como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [subir em produção](/developers/pt/docs/checkout-api-v2/go-to-production).

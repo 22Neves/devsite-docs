@@ -12,7 +12,7 @@ Veja abaixo as principais diferenças entre as duas opções.
 
 | Funcionalidade  |  API de Pagamentos  | API de Orders |
 | --- | --- |--- |
-| Processamento do pagamento  | Automático (crie e processe sua transação) | [Automático ou manual](/developers/ew/docs/checkout-api-v2/integration-model#bookmark_modos_de_processamento_de_orders) (escolhendo quando processar a  sua transação) . |
+| Processamento do pagamento  | Automático (crie e processe sua transação). | [Automático ou manual](/developers/pt/docs/checkout-api-v2/integration-model#bookmark_modos_de_processamento_de_orders) (escolhendo quando processar a  sua transação). |
 | Transações | Uma transação por requisição. | Múltiplas transações por requisição. |
 | Operações  | [Pagamentos online](/developers/pt/docs#online-payments). | [Pagamentos online](/developers/pt/docs#online-payments) e [Pagamentos presenciais](/developers/pt/docs#inperson-payments) (Point do Mercado Pago).|
 | Notificações  | Configuração avançada por `notification_url`. | Configuração mais simples a partir da seção de [Notificações](/developers/pt/docs/checkout-api-v2/notifications) em [Suas integrações](/developers/panel/app). |
@@ -27,7 +27,9 @@ A definição do modo de processamento será realizada no momento da criação d
 ::::TabsComponent
 
 :::TabComponent{title="Modo automático"}
-O **modo automático** é o modo padrão da aplicação. Por meio dele, a transação é concluída em uma única etapa e as modificações são limitadas.
+O **modo automático** é o modo padrão da aplicação. Por meio dele, a transação é concluída em uma única etapa e as modificações são limitadas. Para criar a order no modo automático, o campo `processing_mode`, responsável por definir o formato de criação e processamento da transação, será definido como `automatic` e todas as informações serão enviadas em uma única requisição.
+
+As operações permitidas são:
 
 - [**Criar e processar order**](/developers/pt/reference/orders/online-payments/create/post): responsável pela criação da order já com o processamento da transação simultâneo.
 - [**Obter order**](/developers/pt/reference/orders/online-payments/get-order/get): permite obter informações sobre uma order, incluindo o seu status em tempo real.

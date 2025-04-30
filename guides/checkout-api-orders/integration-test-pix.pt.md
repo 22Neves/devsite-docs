@@ -72,4 +72,4 @@ O valor `APRO` para o campo `payer.first_name` é o que determina que esta solic
 
 Por fim, para verificar se a compra de teste foi realizada corretamente, envie um **GET** para o endpoint :TagComponent{tag="API" text="/v1/orders/{id}" href="/developers/en/reference/orders/online-payments/get-order/get"}, substituindo `id` pela identificação da order, recebida na resposta à sua criação.
 
-Pronto! Uma vez finalizadas estas etapas, a integração de Pix como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [sair à produção](/developers/pt/docs/checkout-api-v2/go-to-production).
+Pronto! Uma vez finalizadas estas etapas, a integração de Pix como meio de pagamento estará completa e você poderá, ou continuar testando outros meios de pagamento integrados, ou [subir em produção](/developers/pt/docs/checkout-api-v2/go-to-production).

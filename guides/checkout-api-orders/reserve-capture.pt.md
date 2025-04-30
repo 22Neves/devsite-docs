@@ -116,7 +116,7 @@ Atualmente, só é possível capturar o valor integral do pagamento reservado.
 
 > RED_MESSAGE
 >
-> O prazo para capturar o pagamento autorizado é de **5 dias a partir da sua criação**. Se não capturá-la nesse período, será cancelado. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
+> O prazo para capturar o pagamento autorizado é de **5 dias a partir da sua criação**. Se não capturá-lo nesse período, será cancelado. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
 Para realizar a captura do valor total de uma reserva, é necessário enviar uma requisição ao endpoint :TagComponent{tag="API" text="/v1/orders/{order_id}/capture" href="/developers/pt/reference/orders/online-payments/capture/post"} com seu :toolTipComponent[Access Token de teste]{content="Chave privada de testes da aplicação criada no Mercado Pago e que é utilizada no _backend_. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."}, substituindo `{order_id}` pelo ID da order cuja captura total deseja efetuar.
 
 ### Cancelamento de reserva

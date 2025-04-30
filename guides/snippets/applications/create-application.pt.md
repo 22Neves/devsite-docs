@@ -9,7 +9,7 @@ Para criar uma **aplicação**, siga os passos abaixo.
 
 > SUCCESS_MESSAGE
 >
-> Para proteger sua conta e garantir a conformidade das operações, durante a criação de uma aplicação será necessário que realize uma verificação de identidade, em caso de que ainda não tenha feito, ou uma reautenticação, se já tiver concluído previamente o precesso de verificação.
+> Para proteger sua conta e garantir a conformidade das operações, durante a criação de uma aplicação será necessário que realize uma verificação de identidade, em caso de que ainda não tenha feito, ou uma reautenticação, se já tiver concluído previamente o processo de verificação.
 
 ![create-application-1](/images/snippets/create-application-1-pt.png)
 

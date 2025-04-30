@@ -25,7 +25,7 @@ Consulta la lista de posibles errores devueltos por la API y cómo corregirlos.
 | Error de solicitud | 404 | `order_not_found` | La order no fue encontrada. Verifica si el ID informado es correcto. |
 | Error de solicitud | 404 | `transaction_not_found` | La transacción no fue encontrada. Verifica si el ID informado es correcto. |
 | Error de solicitud | 409 | `cannot_refund_order` | Asegúrate de que la order esté en un estado que permita la realización de un reembolso. |
-| Error de solicitud | 409 | `cannot_capture_order` | Verifica si el estado de la order permite la captura y que esta haya sido creada con el campo `processing_mode` definido como "automatic". |
+| Error de solicitud | 409 | `cannot_capture_order` | Verifica si el estado de la order permite la captura y que esta haya sido creada con el campo `processing_mode` definido como `automatic`. |
 | Error de solicitud | 409 | `cannot_cancel_order` | Asegúrate de que la order esté en un estado que permita su cancelación. |
 | Error de solicitud | 409 | `already_queued_order_for_device` | Ya existe una order en espera para el dispositivo informado. No es posible crear una nueva order del tipo "point" mientras una anterior está pendiente de ser procesada. Espera el procesamiento de la order actual antes de intentar nuevamente. |
 | Error de Idempotencia | 409 | `idempotency_key_already_used` | La clave `X-Idempotency-Key` proporcionada ya ha sido utilizada. Cada clave de idempotencia debe ser única para garantizar que la operación se realice una única vez. Utiliza una nueva clave para la próxima solicitud. |

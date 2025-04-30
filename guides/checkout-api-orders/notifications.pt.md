@@ -2,7 +2,7 @@
 
 As notificações **Webhooks**, também conhecidas como **devoluções de chamada web**, são um método eficaz que permitem aos servidores do Mercado Pago enviar informações em **tempo real** quando ocorre um evento específico relacionado à sua integração. Em vez de seu sistema realizar consultas constantes para verificar atualizações, os Webhooks permitem a transmissão de dados de maneira **passiva e automática** entre Mercado Pago e sua integração através de uma solicitação **HTTP POST**, otimizando a comunicação e reduzindo a carga nos servidores.
 
-## Configurar notificaciones 
+## Configurar notificações 
 
 A seguir, apresentaremos um passo a passo para poder receber notificações de pagamento em integrações com ----[mla, mlm, mco, mlc, mlu, mpe]----Checkout API------------ ----[mlb]----Checkout Transparente------------. Uma vez configuradas, as notificações Webhook serão enviadas sempre que ocorrer qualquer atualização sobre o tópico reportado, incluindo criação e atualização de orders e processamento de transações.
 
@@ -22,7 +22,7 @@ A seguir, apresentaremos um passo a passo para poder receber notificações de p
 
 ![cofigure notifications](/images/api-orders/not4-order-pt.png)
 
-5. Por fim, clique em **Salvar configuração**. Isso gerará uma chave secreta exclusiva para a aplicação, que permitirá validar a autenticidade das notificações recebidas, garantindo que tenham sido enviadas pelo Mercado Pago. Tenha em mente que esta chave gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja recomendada. Para isso, basta clicar no botão **Restabelecer**.
+5. Por fim, clique em **Salvar configuração**. Isso gerará uma chave secreta exclusiva para a aplicação, que permitirá validar a autenticidade das notificações recebidas, garantindo que tenham sido enviadas pelo Mercado Pago. Tenha em mente que esta chave gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja recomendada. Para isso, basta clicar no botão **Redefinir**.
 
 ## Simular a recepção da notificação
 
@@ -99,7 +99,7 @@ id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
 - Os parâmetros com o sufixo `_url` provêm de _query params_. Exemplo: [`data.id_url`] será substituído pelo valor correspondente ao ID do evento (`data.id`). Este query param pode ser encontrado na notificação recebida. No exemplo de notificação mencionado anteriormente, o `data.id_url` é `ORD01JQ4S4KY8HWQ6NA5PXB65B3D3`.
-- - [x-request-id_header] deverá ser substituído pelo valor recebido no _header_ `x-request-id`. No exemplo de notificação mencionado anteriormente, o `x-request-id` é `2066ca19-c6f1-498a-be75-1923005edd06`.
+- [`x-request-id_header`] deverá ser substituído pelo valor recebido no _header_ `x-request-id`. No exemplo de notificação mencionado anteriormente, o `x-request-id` é `2066ca19-c6f1-498a-be75-1923005edd06`.
 - [`ts_header`] será o valor `ts` extraído do _header_ `x-signature`. No exemplo de notificação mencionado anteriormente, o `ts` é `1742505638683`.
 - Ao aplicar os dados ao template, ficaria da seguinte forma:
 `id:ORD01JQ4S4KY8HWQ6NA5PXB65B3D3;request-id:2066ca19-c6f1-498a-be75-1923005edd06;ts:1742505638683;`

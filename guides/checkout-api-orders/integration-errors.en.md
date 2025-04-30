@@ -25,7 +25,7 @@ Check this list with all the possible errors that the API can return, and how to
 | Request Error | 404 | `order_not_found` | The order was not found. Check if the provided ID is correct. |
 | Request Error | 404 | `transaction_not_found` | The transaction was not found. Check if the provided ID is correct. |
 | Request Error | 409 | `cannot_refund_order` | Ensure that the order is in a status that allows for a refund to be made. |
-| Request Error | 409 | `cannot_capture_order` | Check if the order's status allows capturing and whether it was created with the `processing_mode` field set to "automatic." |
+| Request Error | 409 | `cannot_capture_order` | Check if the order's status allows capturing and whether it was created with the `processing_mode` field set to `automatic.` |
 | Request Error | 409 | `cannot_cancel_order` | Ensure that the order is in a status that allows cancellation. |
 | Request Error | 409 | `already_queued_order_for_device` | There is already an order waiting for the provided device. It is not possible to create a new order of the type "point" while a previous one is pending processing. Wait for the current order to be processed before trying again. |
 | Idempotency Error | 409 | `idempotency_key_already_used` | The provided `X-Idempotency-Key` has already been used. Each idempotency key must be unique to ensure that the operation is performed only once. Use a new key for the next request. |

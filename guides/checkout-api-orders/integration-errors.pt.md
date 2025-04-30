@@ -15,9 +15,9 @@ Veja a lista de possíveis erros retornados pela API e como corrigi-los.
 | Erro de requisição | 400 | `invalid_path_param` | Verifique se o ID fornecido como parâmetro é válido. |
 | Erro de requisição | 400 | `invalid_properties` | Algumas propriedades informadas são inválidas ou estão com formato incorreto. Revise as propriedades enviadas e verifique se estão de acordo com as especificações da API.  |
 | Erro de requisição | 400 | `empty_required_header` | Um ou mais _headers_ obrigatórios estão vazios. Verifique a solicitação e assegure-se de que todos os headers obrigatórios estão presentes e devidamente preenchidos.  |
-| Erro de requisição | 400 | `order_builder_without_transactions` | Não há uma transação associada a order. Certifique-se de incluir ao menos uma transação a criação da order. |
+| Erro de requisição | 400 | `order_builder_without_transactions` | Não há uma transação associada a order. Certifique-se de incluir ao menos uma transação à criação da order. |
 | Erro de requisição | 400 | `invalid_order_mode_for_operation` | O modo informado não é valido para esta operação. Verifique se está utilizando o modo correto conforme a operação desejada. |
-| Erro de requisição | 400 | `invalid_order_type` | Tipo da order é invalido. Verifique se o tipo utilizado é valido para a operação. |
+| Erro de requisição | 400 | `invalid_order_type` | Tipo da order é inválido. Verifique se o tipo utilizado é valido para a operação. |
 | Erro de requisição | 400 | `invalid_transaction_id` | O ID da transação é inválido. Certifique-se de que o ID está correto. |
 | Erro de requisição | 400 | `exceeded_number_of_transactions` | Ocorreu um erro na requisição. A order aceita, no máximo, uma transação. Remova as transações excedentes. |
 | Erro de requisição | 400 | `invalid_email_for_sandbox` | O formato de e-mail é inválido para o ambiente de *sandbox*, deve conter "@testuser.com". |
@@ -25,7 +25,7 @@ Veja a lista de possíveis erros retornados pela API e como corrigi-los.
 | Erro de requisição | 404 | `order_not_found` | A order não foi encontrada. Verifique se o ID informado está correto. |
 | Erro de requisição | 404 | `transaction_not_found` | A transação não foi encontrada. Verifique se o ID informado está correto. |
 | Erro de requisição | 409 | `cannot_refund_order` | Certifique-se de que a order esteja em um status que permita a realização de um reembolso. |
-| Erro de requisição | 409 | `cannot_capture_order` | Verifique se o status que permite a captura e que a order foi criada com o campo `processing_mode` definido como "automatic".  |
+| Erro de requisição | 409 | `cannot_capture_order` | Verifique se o status da order permite a captura e se a order foi criada com o campo `processing_mode` definido como `automatic`.  |
 | Erro de requisição | 409 | `cannot_cancel_order` | Certifique-se de que a order esteja em um status que permita cancelamento. |
 | Erro de requisição | 409 | `already_queued_order_for_device` | Já existe uma order na fila para o dispositivo informado. Não é possível criar uma nova order do tipo "point" enquanto uma order anterior estiver aguardando. Aguarde o processamento da order atual antes de tentar novamente.  |
 | Erro de Idempotência | 409 | `idempotency_key_already_used` | A chave `X-Idempotency-Key` fornecida já foi utilizada. Cada chave de idempotência deve ser única para garantir que a operação seja realizada uma única vez. Utilize uma nova chave para a próxima solicitação. |

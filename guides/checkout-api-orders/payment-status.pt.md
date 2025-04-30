@@ -12,9 +12,9 @@ Veja a lista de possíveis `status` e `status_detail` que uma transação pode r
 | `action_required` | `waiting_payment` | A transação requer uma ação adicional e está aguardando o pagamento. Isso significa que a transação foi iniciada, mas o pagamento ainda não foi concluído. |
 | `action_required` | `waiting_capture` | A transação requer uma ação adicional e está aguardando a captura do pagamento. Isso significa que o pagamento foi autorizado, mas ainda não foi capturado. |
 | `action_required` | `waiting_transfer` | A transação requer uma ação adicional e está aguardando a transferência dos valores. Isso significa que o pagamento foi iniciado, mas os valores ainda não foram transferidos para a conta do vendedor. |
-| `charged_back` | `in_process` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor está sendo revertido. |
-| `charged_back` | `settled` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor foi disponibilizado ao vendedor. |
-| `charged_back` | `reimbursed` | A transação sofreu um chargeback. Isso significa que foi contestada e o valor foi reembolsado ao comprador.  |
+| `charged_back` | `in_process` | A transação sofreu uma contestação. Isso significa que foi contestada e o valor está sendo revertido. |
+| `charged_back` | `settled` | A transação sofreu uma contestação. Isso significa que foi contestada e o valor foi disponibilizado ao vendedor. |
+| `charged_back` | `reimbursed` | A transação sofreu uma contestação. Isso significa que foi contestada e o valor foi reembolsado ao comprador.  |
 | `expired` | `expired` | A transação expirou. Isso significa que não foi concluída dentro do tempo limite e, portanto, foi encerrada. |
 | `refunded` | `refunded` | A order foi reembolsada. Isso significa que o valor da transação foi devolvido integralmente ao pagador. |
 | `failed` | `bad_filled_card_data` | A transação falhou devido a dados do cartão preenchidos incorretamente. Isso pode incluir informações como número do cartão, CVV, data de validade, entre outros. |
