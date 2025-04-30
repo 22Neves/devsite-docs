@@ -155,8 +155,8 @@ product_landing_how_integrate:
  - list_item: Crear y configurar una preferencia de pago.
  - list_item: Configurar las URLs de retorno.
  - list_item: Agregar el SDK al frontend e inicializar el checkout.
- - list_item: Probar la integración.
  - list_item: Configurar las notificaciones de pago.
+ - list_item: Probar la integración.
  - list_item: Salir a producción.
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-pro/create-application

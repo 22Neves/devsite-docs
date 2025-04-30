@@ -153,8 +153,8 @@ product_landing_how_integrate:
  - list_item: Create and configure your payment preference.
  - list_item: Configure the Back URLs.
  - list_item: Add the SDK to the frontend and initialize the checkout.
- - list_item: Test your integration.
  - list_item: Configure the payment notifications.
+ - list_item: Test your integration.
  - list_item: Go to production.
  - button_description: I want to start integrating
  - button_link: /developers/en/docs/checkout-pro/create-application
