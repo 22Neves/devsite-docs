@@ -3939,9 +3939,9 @@
                     {
                         "title": "processing",
                         "description": {
-                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A Order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "en": "The Order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review. This status may also be returned in the case of asynchronous payment creation.",
+                            "es": "La Order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual. Este status también puede ser devuelto en caso de creación de pagos de forma asíncrona.",
+                            "pt": "A Order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual. Esse status também pode ser retornado em caso da criação de pagamentos de forma assíncrona."
                         }
                     }
                 ]

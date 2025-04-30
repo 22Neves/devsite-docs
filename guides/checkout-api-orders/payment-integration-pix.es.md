@@ -110,6 +110,10 @@ Si no cuentas con esta función, añade la siguiente a tu proyecto.
 
 El envío del pago debe ser realizado mediante la creación de una order que contenga transacciones de pago asociadas. 
 
+> NOTE
+>
+> La creación de un pago puede ocurrir de forma asíncrona en una order. En este escenario, la order queda con el estado processing y sin información. Recomendamos configurar las [notificaciones del tópico Order](/developers/es/docs/checkout-api-v2/notifications) para recibir actualizaciones sobre el cambio de estado, incluyendo los datos actualizados de la order. Alternativamente, puedes optar por enviar un **GET** al endpoint [/v1/orders/{id}](/developers/es/reference/orders/online-payments/get-order/get) para buscar esos datos actualizados.
+
 Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl

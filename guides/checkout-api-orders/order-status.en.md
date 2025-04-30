@@ -7,7 +7,7 @@ Check the list of the `status` and `status_detail` that an order can get.
 | `created` | `created` | The order was created successfully. At this moment, no processing actions have been initiated, and the order is in the initial waiting state. |
 | `processed` | `accredited` | The order was processed successfully and the payment was credited. |
 | `processed` | `partially_refunded` | The order was processed and a part of the amount was refunded. This indicates that, although the transaction has been completed, there was a partial refund of the amount paid in favor of the payer. |
-| `processing` | `in_process` | The order is being processed. This means that the transaction is ongoing and has not yet been completed. |
+| `processing` | `in_process` | The order is being processed. This means that the transaction is ongoing and has not yet been completed. This status may also be returned in the case of asynchronous payment creation. |
 | `action_required` | `waiting_payment` | The order requires an additional action from the payer and is awaiting payment. This means that the transaction has been initiated, but the payment has not yet been completed. |
 | `action_required` | `waiting_capture` | The order requires an additional action from the seller and is awaiting the capture of the payment. This means that the payment has been authorized but has not yet been captured. |
 | `action_required` | `waiting_transfer` | The order requires an additional action from the payer and is awaiting the transfer of funds. This means that the payment has been initiated, but the funds have not yet been transferred to the seller's account. |

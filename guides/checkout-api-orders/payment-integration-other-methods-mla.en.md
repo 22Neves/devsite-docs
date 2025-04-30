@@ -109,7 +109,11 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 :::
 :::AccordionComponent{title="Submit payment" pill="server-side"}
 
-The payment submission must be made by creating an order that contains associated payment transactions. 
+The payment submission must be made by creating an order that contains associated payment transactions.
+
+> NOTE
+>
+> The creation of a payment can occur asynchronously in an order. In this scenario, the order remains in a processing state and without information. We recommend setting up [Order topic notifications](/developers/en/docs/checkout-api-v2/notifications) to receive updates on the status change, including the updated order data. Alternatively, you can choose to send a **GET** request to the [/v1/orders/{id}](/developers/en/reference/orders/online-payments/get-order/get) endpoint to retrieve that updated information.
 
 To do this, send a **POST** with your :toolTipComponent[test Access Token]{content="Testing private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials*."} and the required parameters listed below to the endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"} and execute the request.
 
