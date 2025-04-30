@@ -14,7 +14,7 @@ Para integrar o Mercado Pago Cartões, instale o aplicativo via [painel da Shopi
 > Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 # Tarjetas
 
 O **Mercado Pago Tarjetas** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
@@ -35,7 +35,7 @@ Para integrar o Mercado Pago Tarjetas, instale o aplicativo via [painel da Shopi
 Para instalar o Mercado Pago Cartões via painel administrativo da Shopify, siga os passos abaixo:
 
 ------------
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga os passos abaixo:
 
 ------------
@@ -116,7 +116,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 > Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
 
 ------------
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 > WARNING
 >
 > Importante
@@ -149,6 +149,12 @@ Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
 Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
 
 1. Acesse a [página do app **Mercado Pago Cartões**](https://apps.shopify.com/mercado-pago-tarjetas-ar) no Marketplace e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
+
+------------
+----[mpe]----
+Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
+
+1. Acesse a [página do app **Mercado Pago Cartões**](https://apps.shopify.com/mercado-pago-tarjetas-pe) no Marketplace e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ------------
 ----[mco]----
@@ -224,7 +230,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 > Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
 
 ------------
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 > WARNING
 >
 > Importante
