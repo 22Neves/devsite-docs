@@ -129,7 +129,7 @@ Below, we show you how to share credentials.
 
 1. In the upper right corner of [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), click **Log in** and enter the required data with the information corresponding to your Mercado Pago account. Then, click on the **Your integrations** button located in the upper right corner.
 2. Access the application of the integration for which you need to share the credentials.
-3. Go to the **Testing** or **Production** section, depending on the type of credential you want to share. Remember that to access production credentials, you must activate them. If you don't know how to activate them, go to [Activate production credentials](/developers/en/docs/credentials#ativar-credenciais-de-produ%C3%A7%C3%A3o#bookmark_activate_production_credentials).
+3. Go to the **Testing** or **Production** section, depending on the type of credential you want to share. Remember that to access production credentials, you must activate them. If you don't know how to activate them, go to [Activate production credentials](/developers/en/docs/credentials#bookmark_activate_production_credentials).
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 

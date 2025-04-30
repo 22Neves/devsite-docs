@@ -131,7 +131,7 @@ A continuación, te mostramos cómo compartir credenciales.
 
 1. En la esquina superior derecha de [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), haz clic en **Ingresar** e ingresa los datos requeridos con la información correspondiente a tu cuenta de Mercado Pago. Luego, haz clic en el botón **Tus integraciones** ubicado en la esquina superior derecha. 
 2. Accede a la aplicación de la integración para la cual necesitas compartir las credenciales.
-3. Ve a la sección **Pruebas** o **Producción**, según el tipo de credencial que desees compartir. Recuerda que para acceder a las credenciales de producción, deberás activarlas. Si no sabes cómo activarlas, ve a [Activar credenciales de producción](/developers/es/docs/credentials#ativar-credenciais-de-produ%C3%A7%C3%A3o#bookmark_activar_credenciales_de_producción).
+3. Ve a la sección **Pruebas** o **Producción**, según el tipo de credencial que desees compartir. Recuerda que para acceder a las credenciales de producción, deberás activarlas. Si no sabes cómo activarlas, ve a [Activar credenciales de producción](/developers/es/docs/credentials#bookmark_activar_credenciales_de_producción).
 4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
 5. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. **Recuerda**: es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
