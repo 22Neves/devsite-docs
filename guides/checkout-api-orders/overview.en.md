@@ -42,7 +42,7 @@ product_landing_how_works:
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-aplication
+ - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---
 
 ---
@@ -148,7 +148,7 @@ product_landing_how_works:
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-aplication
+ - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---
 
 ---
@@ -254,7 +254,7 @@ product_landing_how_works:
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-aplication
+ - button_link: /developers/en/docs/checkout-api-v2/create-application
 ---
 
 ---

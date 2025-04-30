@@ -41,7 +41,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-aplication
+ - button_link: /developers/es/docs/checkout-api-v2/create-application
 ---
 
 ---
@@ -149,7 +149,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-aplication
+ - button_link: /developers/es/docs/checkout-api-v2/create-application
 ---
 
 ---
@@ -255,7 +255,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-aplication
+ - button_link: /developers/es/docs/checkout-api-v2/create-application
 ---
 
 ---
