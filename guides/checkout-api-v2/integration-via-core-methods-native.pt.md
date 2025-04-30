@@ -1,4 +1,4 @@
-# Métodos Core (Native)
+# Métodos _Core_ (_Native_)
 
 A integração via Métodos _Core_ do SDK Nativo do Mercado Pago proporciona controle total sobre a captura e o processamento das informações de pagamento. Diferente da integração via Cardform, que coleta os dados automaticamente, essa abordagem permite que o integrador defina como e quando obter informações essenciais, como tipo de documento, emissor do cartão e número de parcelas.
 

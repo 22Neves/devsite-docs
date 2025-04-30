@@ -1,6 +1,6 @@
 # iOS 
 
-O SDK Nativo do Mercado Pago para **iOS** oferece uma solução completa e segura para integração de métodos de pagamento, garantindo conformidade com as normas PCI. Este guia detalha o uso dos _Secure Fields_ para captura de dados sensíveis, como número do cartão, data de expiração e CVV, além de Métodos _Core_ que possibilitam operações essenciais, como geração de tokens e consulta de parcelamentos. 
+O SDK Nativo do Mercado Pago para **iOS** oferece uma solução robusta e segura para integrar métodos de pagamento, garantindo total conformidade com as normas PCI. Esta documentação aborda os **Métodos Core**, ferramentas essenciais para operações como consulta de parcelamentos e criação de tokens, utilizando os dados capturados através dos **[_Secure Fields_](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios)**.
 
 ## Requisitos
 
@@ -89,7 +89,7 @@ Os **Métodos _Core_** são uma das principais funcionalidades do SDK Nativo, fu
 | **GetInstallment**        | Consulta as opções de parcelamento para o cartão digitado.          |
 | **Card Issuers**          | Recupera os dados dos emissores do cartão.                          |
 | **GetIdentificationTypes**| Verifica os tipos de documentos obrigatórios por país.              |
-| **Generate Card Token**   | Gera o _token_ do cartão, essencial para concluir a transação.        |
+| **Generate Card Token**   | Cria o _token_ do cartão, essencial para concluir a transação.        |
 
 ### GetInstallment
 
@@ -122,11 +122,11 @@ O método **Generate Card Token** retorna o _token_ do cartão, que é necessár
 
 > RED_MESSAGE
 > 
-> Esta chamada utiliza uma instância dos _Secure Fields_ configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os _Secure Fields_, como [CardNumberTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_card_number_text_field), [ExpirationDateTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_expiration_date_text_field) e [SecurityCodeTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_security_code_text_field), estejam devidamente configurados na tela antes de utilizar o método `generateCardToken`. 
+> Esta chamada utiliza uma instância dos _Secure Fields_ configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os _Secure Fields_, como [CardNumberTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_card_number_text_field), [ExpirationDateTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_expiration_date_text_field) e [SecurityCodeTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_security_code_text_field), estejam devidamente configurados antes de utilizar o método `generateCardToken`. 
 
 #### Criar um _token_ para um novo cartão
 
-Para gerar um _token_ para um novo cartão, crie um formulário com os _Secure Fields_ do SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
+Para criar um _token_ para um novo cartão, crie um formulário com os _Secure Fields_ do SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
 
 ```
 func generateToken() {
@@ -149,9 +149,9 @@ Confira os parâmetros na tabela abaixo:
 | `expirationDateState` | -| Classe do campo de expiração do cartão.      | Obrigatório |
 | `securityCodeState`   | - | Classe do campo de código de segurança do cartão.   | Obrigatório |
 
-### Gerar um _token_ para um cartão existente
+### Criar um _token_ para um cartão existente
 
-Também é possível gerar um _token_ para um cartão existente utilizando seu ID. Confira o exemplo a seguir:
+Também é possível criar um _token_ para um cartão existente utilizando seu ID. Confira o exemplo a seguir:
 
 ```
 func generateTokenByCardID() {
@@ -172,9 +172,9 @@ Confira os parâmetros na tabela abaixo:
 | `cardID`       | String                  | ID do cartão existente gerado.     | Obrigatório |
 | `securityCode: SecurityCodeTextField` | - | Classe do campo de código de segurança do cartão | Opcional |
 
-#### Gerar um _token_ e enviar o documento do titular do cartão
+#### Criar um _token_ e enviar o documento do titular do cartão
 
-Você também pode gerar um _token_ para um cartão existente, utilizando o ID do cartão e, se necessário, enviar o documento do titular. Confira o exemplo a seguir:
+Você também pode criar um _token_ para um cartão existente, utilizando o ID do cartão e, se necessário, enviar o documento do titular. Confira o exemplo a seguir:
 
 ```
 func generateTokenByCardID() {
