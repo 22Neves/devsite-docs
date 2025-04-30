@@ -1,20 +1,20 @@
-# Secure Fields (PCI)
+# _Secure Fields_ (PCI)
 
-Os Secure Fields são campos de edição de texto desenvolvidos para capturar dados sensíveis do cartão de forma segura, em conformidade com as regras PCI. Seu funcionamento pode ser monitorado por meio de _callbacks_, permitindo o controle da captura das informações. São fornecidos três campos **PCITextField** principais para garantir a proteção dos dados:
+Os _Secure Fields_ são campos de edição de texto desenvolvidos para capturar dados sensíveis do cartão de forma segura, em conformidade com as regras PCI. Seu funcionamento pode ser monitorado por meio de _callbacks_, permitindo o controle da captura das informações. São fornecidos três campos **PCITextField** principais para garantir a proteção dos dados:
 
 | API | Descrição |
 |-|-|
-| **CardNumberTextField** | Componente de entrada do número do cartão. Este PCI lida com a entrada do usuário de números de cartão. |
-| **ExpirationDateTextField** | Componente de entrada da data de expiração do cartão. |
-| **SecurityTextField** | Componente do número de CVV. |
+| **[CardNumberTextField](#bookmark_card_number_text_field)** | Componente de entrada do número do cartão. Este PCI lida com a entrada do usuário de números de cartão. |
+| **[ExpirationDateTextField](#bookmark_expiration_date_text_field)** | Componente de entrada da data de expiração do cartão. |
+| **[SecurityTextField](#bookmark_security_code_text_field)** | Componente de entrada do número de CVV. |
 
 > NOTE
 >
 > O PCI Security Standards Council, conselho formado pelas empresas American Express, Discover Financial Services, JCB International, MasterCard e Visa, estabeleceu em 2006 as regras e normas que garantem a segurança durante o manuseio dos dados de cartões de crédito em transações eletrônicas.
 
-Os campos não possuem atributos visuais, caracterizando-se como campos básicos que gerenciam a edição de texto e retornam _callbacks_ específicos ao seu uso. No entanto, a customização visual desses campos é bastante simples. Para mais detalhes, consulte a seção [Customizar visualmente os componentes](#LINKDELA).
+Os campos não possuem atributos visuais, caracterizando-se como campos básicos que gerenciam a edição de texto e retornam _callbacks_ específicos ao seu uso. No entanto, a customização visual desses campos é bastante simples. Para mais detalhes, consulte a seção [Customizar visualmente os componentes](#bookmark_customizar_visualmente_os_componentes).
 
-A seguir, confira as especificações e exemplos de implementação para os campos **CardNumberTextField**, **ExpirationDateTextField** e **SecurityTextField**.  
+A seguir, confira as especificações e exemplos de implementação para os campos [**CardNumberTextField**](#bookmark_card_number_text_field), **[ExpirationDateTextField](#bookmark_expiration_date_text_field)** e **[SecurityTextField](#bookmark_security_code_text_field)**.  
 
 ## Card Number Text Field
 
@@ -291,7 +291,7 @@ Os eventos (_callbacks_) permitem recuperar eventos de interação com o compone
 
 ## Customizar visualmente os componentes
 
-Os Secure Fields foram desenvolvidos com um design minimalista e sem características visuais predefinidas, proporcionando total flexibilidade para customização. Além disso, os componentes já vêm com parâmetros que agilizam e facilitam o processo de personalização.
+Os _Secure Fields_ foram desenvolvidos com um design minimalista e sem características visuais predefinidas, proporcionando total flexibilidade para customização. Além disso, os componentes já vêm com parâmetros que agilizam e facilitam o processo de personalização.
 
 O iOS oferece dois principais métodos para personalizar a aparência dos seus componentes:
 
