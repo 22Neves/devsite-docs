@@ -163,7 +163,7 @@ product_landing_how_integrate:
 <div class="mermaid-overview">
     <pre class="mermaid">
     flowchart TD
-            A["Access: Your integrations"] --> B["Create application"]
+            A["Access Your integrations"] --> B["Create application"]
             B --> C["Build the environment"]
             C --> D["Create payment preferences"]
             D -- Amount, payment methods, details, others --> F["Configure notifications"]
