@@ -1,24 +1,19 @@
-# Integração via Métodos Core - iOS Native SDK
+# iOS 
 
-Neste método de integração, a pessoa responsável pela integração tem controle total sobre como as informações necessárias para completar o pagamento serão capturadas e processadas, utilizando os componentes seguros e métodos core fornecidos pelo SDK Nativo do Mercado Pago para iOS.
-
-Na integração via Métodos Core, você decide quando buscar as informações sobre o tipo de documento, além das informações do cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout em aplicativos iOS nativos.
-
-> NOTE
->
-> Importante
->
-> Esta documentação é específica para o SDK Nativo do iOS. Para outras plataformas, consulte as documentações específicas disponíveis em nossa [seção de desenvolvedores](/developers).
+A integração com o SDK Nativo do Mercado Pago oferece funcionalidades avançadas de pagamento, garantindo segurança e conformidade com as normas PCI. Esta documentação detalha o processo completo de integração para aplicativos iOS, desde os pré-requisitos e configuração inicial até a personalização de componentes como Secure Fields e a utilização de métodos _core_.
 
 ## Requisitos
 
 Antes de começar a integração, certifique-se de que seu projeto atende aos seguintes requisitos:
 
-
 | Requisitos | Descrição |
 |-|-|
 | iOS | Versão 13 ou superior |
+| XCode | Versão 5.5 ou superior |
+| Swift | Versão 16 ou superior |
 | Public Key | A Public Key está diretamente vinculada à :toolTipComponent[aplicação]{link="/developers/pt/docs/your-integrations/application-details" linkText="Detalhes da aplicação" content="Entidade registrada no Mercado Pago que atua como um identificador para gerenciar suas integrações. Para mais informações, acesse o link abaixo."} que você criou, por isso cada uma delas é única para cada integração. |
+
+TEXTO
 
 ## Importar SDK
 
@@ -30,10 +25,10 @@ import CoreMethods
 
 ## Configurar SDK
 
-Após importar o SDK, é necessário inicializá-la no início da execução do seu aplicativo. A inicialização pode ser feita de duas formas, a depender se você está usando UIKit ou SwiftUI.
+Após importar o SDK, é essencial inicializá-lo no início da execução do aplicativo. O processo de inicialização varia conforme a tecnologia utilizada, dependendo da tecnologia utilizada, seja com UIKit ou SwiftUI.
 
 [[[
-```swift
+```UIKit
 import UIKit
 import CoreMethods
 
@@ -51,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
-```swift
+```SwiftUI
 import SwiftUI
 import CoreMethods
 
@@ -76,37 +71,37 @@ struct YourApp: App {
 
 Os parâmetros de inicialização estão detalhados na tabela abaixo.
 
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `public_key` | `String` | Chave pública do Mercado Pago. |
-| `locale` | `String` | Identificador do `locale` (padrão: `locale` do sistema). |
-| `country` | `Enum` | (Opcional) País onde serão processados os métodos core. |
+| Parâmetro | Tipo | Descrição | Obrigatoriedade |
+| - | - | - | - |
+| `public_key` | String | Chave pública do Mercado Pago. | Obrigatório |
+| `locale = Locale.current.identifier` | String | Identificador do `locale` (Por padrão, utiliza-se o `locale` do sistema). | Obrigatório |
+| `country` | - | País onde serão processados os métodos _core_. | Opcional |
 
 > RED_MESSAGE
 >
-> O SDK deve ser inicializado apenas uma vez, no momento em que o aplicativo é aberto. É fundamental garantir que o método `initialize()` seja chamado antes de utilizar qualquer outra funcionalidade do SDK.
+> O SDK precisa ser inicializado uma única vez, no momento da abertura do aplicativo. Para garantir o funcionamento correto, é essencial chamar `initialize()` antes de utilizar qualquer outra funcionalidade do SDK.
 
 ## Secure Fields (PCI)
 
-Os Secure Fields são componentes especialmente desenvolvidos para capturar dados sensíveis do cartão de forma segura, seguindo as regras PCI. São fornecidos três campos principais:
+Os Secure Fields são campos de edição de texto desenvolvidos para capturar dados sensíveis do cartão de forma segura, em conformidade com as regras PCI. Seu funcionamento pode ser monitorado por meio de _callbacks_, permitindo o controle da captura das informações. São fornecidos três campos **PCITextField** principais para garantir a proteção dos dados:
 
-
-| Componentes | API | Descrição |
-|-|-|-|
-| PCITextField | CardNumberTextField | Componente de entrada do número do cartão. Este PCI lida com a entrada do usuário de números de cartão. |
-| | ExpirationDateTextField | Componente de entrada da data de expiração do cartão. |
-| | SecurityTextField | Componente do número de CVV. |
-
+| API | Descrição |
+|-|-|
+| **CardNumberTextField** | Componente de entrada do número do cartão. Este PCI lida com a entrada do usuário de números de cartão. |
+| **ExpirationDateTextField** | Componente de entrada da data de expiração do cartão. |
+| **SecurityTextField** | Componente do número de CVV. |
 
 > NOTE
 >
 > O PCI Security Standards Council, conselho formado pelas empresas American Express, Discover Financial Services, JCB International, MasterCard e Visa, estabeleceu em 2006 as regras e normas que garantem a segurança durante o manuseio dos dados de cartões de crédito em transações eletrônicas.
 
-Os campos não possuem atributos visuais específicos, caracterizando-se como componentes básicos que gerenciam a edição de texto e retornam callbacks específicos ao seu uso. No entanto, a customização visual desses campos é bastante simples. Para saber mais, consulte a seção [NOMEDASESSÃO](LINKDELA).
+Os campos não possuem atributos visuais, caracterizando-se como campos básicos que gerenciam a edição de texto e retornam _callbacks_ específicos ao seu uso. No entanto, a customização visual desses campos é bastante simples. Para saber mais, consulte a seção [NOMEDASESSÃO](#LINKDELA).
 
-### CardNumberTextField
+A seguir, confira as especificações e exemplos de implementação para os campos **CardNumberTextField**, **ExpirationDateTextField** e **SecurityTextField**.  
 
-O componente de edição de teste `CardNumberTextField` é responsável pela captura segura do número do cartão. Confira o exemplo de implementação básica abaixo:
+### Card Number Text Field
+
+O componente de edição de texto **CardNumberTextField** é responsável pela captura segura do número do cartão. Ele oferece suporte a personalizações visuais e eventos (_callbacks_) que ajudam a monitorar e validar os dados inseridos.
 
 ```UIKit
 lazy var cardNumberField: CardNumberTextField = {
@@ -136,29 +131,30 @@ lazy var cardNumberField: CardNumberTextField = {
 }()
 ```
 
-Para inserir uma máscara no número do cartão, adicione o seguinte código:
+Para adicionar uma máscara ao número do cartão, você pode utilizar o método `setMask`, como no exemplo abaixo:
 
 ```UIKit
 let field = CardNumberTextField().setMask(pattern: "#### ##### ####")
 ```
 
-Os parâmetros estão detalhados na tabela abaixo.
+Os parâmetros configuráveis no **CardNumberTextField** estão descritos na tabela a seguir:
 
-| Parâmetros  | Tipo                               | Descrição                                        |
-|------------------|----------------------------------------|-----------------------------------------------------|
-| `style`        | PCIFieldStateStyleProtocol             | Estilo do campo.                                     |
-| `maxLength`    | Integer                                | Define o comprimento máximo do número do cartão.     |
-| `mask`        | String                                 | Máscara do campo.                                    |
+| Parâmetros  | Tipo                               | Descrição                                        | Obrigatoriedade |
+| - | - | - | - |
+| `style: PCIFieldStateStyleProtocol`        | -             | Estilo do campo.                                     | Obrigatório |
+| `maxLength`    | -                                | Define o comprimento máximo do número do cartão.     | Obrigatório |
+| `mask`        | -                                 | Máscara do campo.                                    | Obrigatório |
 
-Propriedades:
+As propriedades disponíveis no componente são apresentadas abaixo:
+
 | Propriedades | Tipo | Descrição |
 |-----------|------|-----------|
-| `isValid` | `Bool` | Indica se o input está válido. |
-| `count` | `Int` | Contador de dígitos. |
-| `isEnabled` | `Bool` | Status de habilitação do campo. |
-| `keyboardAppearance` | `UIKeyboardAppearance` | Aparência do teclado. |
+| `isValid` | Boolean | Indica se o input está válido. |
+| `count` | Int | Contador de dígitos. |
+| `isEnabled` | Boolean | Status de habilitação do campo. |
+| `keyboardAppearance` | - | Aparência do teclado. |
 
-Funções disponíveis:
+O **CardNumberTextField** permite personalizações e ajustes por meio das funções listadas abaixo:
 
 | Função | Descrição |
 |--------|-----------|
@@ -170,15 +166,15 @@ Funções disponíveis:
 | `setMaxLength` | Define o comprimento máximo. |
 | `setMask` | Configura o padrão de máscara. |
 
-## Implementação do CardNumberTextField
+#### Implementar o Card Number Text Field
 
-O `CardNumberTextField` pode ser instanciado diretamente no fluxo de checkout em desenvolvimento. Para utilizá-lo, basta instanciá-lo conforme demonstrado abaixo.
+O **CardNumberTextField** pode ser instanciado diretamente no fluxo de checkout. Veja o exemplo mais básico:
 
 ```
 let field = CardNumberTextField()
 ```
 
-Também é possível criar uma versão personalizada do componente, ajustando sua aparência e incorporando novos comportamentos. No exemplo abaixo, adicionamos uma borda e a opção de exibir um ícone no campo:
+Também é possível personalizar o componente, ajustando sua aparência e adicionando novos comportamentos. No exemplo abaixo, foi configurada uma borda e a possibilidade de exibir um ícone no campo:
 
 ```
 private let style = TextFieldDefaultStyle()
@@ -189,28 +185,23 @@ private let style = TextFieldDefaultStyle()
 let field = CardNumberTextField(style: style)
 ```
 
-### CardNumberTextFieldEvent
+### Eventos de interação Card Number Text Field Event
 
-Este callback permite a captura segura de eventos de interação com o componente.
+Os eventos (_callbacks_) permitem recuperar eventos de interação com o componente de forma segura. A tabela abaixo detalha os _callbacks_ e seus respectivos parâmetros:
 
-Os _callbacks_ e parâmetros estão detalhados na tabela abaixo.
-
-| Callback | Parâmetro | Descrição |
-|----------|----------|-----------|
-| **OnBinChanged** | `cardBin: String?` | Indica se o campo foi preenchido. |
-| **OnLengthChanged** | `length: Int` | Informa o comprimento do campo. |
-| **OnFocusChanged** | `isFocused: Boolean` | Indica se o campo está focado. |
-| **IsValid** | `isValid: Boolean` | Indica se o campo é válido. |
-| **OnLastFourDigitsFilled** | `lastFourDigits: String` | Indica se os últimos quatro dígitos do cartão foram escritos.
-
+| Callback | Parâmetro | Tipo| Descrição |
+| - | - | - | - |
+| **OnBinChanged** | `cardBin` | String | Indica se o campo foi preenchido. |
+| **OnLengthChanged** | `length` | Int | Informa o comprimento do campo. |
+| **OnFocusChanged** | `isFocused` | Boolean | Indica se o campo está focado. |
+| **IsValid** | `isValid` | Boolean | Indica se o campo é válido. |
+| **OnLastFourDigitsFilled** | `lastFourDigits` | String | Indica se os últimos quatro dígitos do cartão foram escritos.
 
 ### Expiration Date Text Field  
 
-O componente `Expiration Date Text Field` foi desenvolvido para fornecer a data de validade do cartão de forma segura. Ele também permite configurar o formato da data, podendo ser curto ou longo.
- 
-O `Expiration Date Text Field` pode ser facilmente instanciado e utilizado em uma tela de checkout:  
+O componente **ExpirationDateTextField** foi desenvolvido para fornecer a data de validade do cartão de forma segura. Ele também permite configurar o formato da data, podendo ser curto ou longo.
 
-```swift
+```UIKit
 lazy var expirationDateField: ExpirationDateTextfield = {
 let field = ExpirationDateTextfield()
      	field.translatesAutoresizingMaskIntoConstraints = false
@@ -235,30 +226,32 @@ print("Date completed")
 
 ```
 
-Os parâmetros podem ser configurados no momento da instanciação do `TextField` ou ajustados posteriormente por meio da chamada de funções específicas para modificá-los.  
+Os parâmetros do componente podem ser definidos no momento da instanciação ou modificados posteriormente por meio de funções específicas.
 
-Parâmetros:  
+Os parâmetros configuráveis no **ExpirationDateTextField** estão descritos na tabela a seguir:
+
 | Nome | Tipo | Descrição |
-|------|------|-----------|
-| **style** | `PCIFieldStateStyleProtocol` | Define o estilo visual do campo. |
+| - | - | - |
+| `stylePCIFieldStateStyleProtocol` | - | Define o estilo visual do campo. |
 
-Propriedades : 
+As propriedades disponíveis no componente são apresentadas abaixo:
+
 | Nome | Descrição |
-|------|------|-----------|
-| **isValid** | Indica se o input está válido. |
-| **count** | Contador de dígitos inseridos. |
-| **isEnabled** | Define o status de habilitação do campo. |
-| **keyboardAppearance** | Configura a aparência do teclado. |
+| - | - |
+| `isValid` | Indica se o input está válido. |
+| `count` | Contador de dígitos inseridos. |
+| `isEnabled` | Define o status de habilitação do campo. |
+| `keyboardAppearance` | Configura a aparência do teclado. |
 
-### Criando o componente  
+#### Implementar o Expiration Date Text Field
 
-O `Expiration Date Text Field` pode ser facilmente instanciado e utilizado em uma tela de checkout em desenvolvimento:  
+O **ExpirationDateTextField** pode ser instanciado diretamente no fluxo de checkout. Veja o exemplo mais básico:
 
 ```
 let expirationDateTextField = ExpirationDateTextfield()
 ```
 
-Também é possível personalizar o componente, ajustando sua aparência e adicionando novos comportamentos. No exemplo abaixo, adicionamos uma borda:  
+Também é possível personalizar o componente, ajustando sua aparência e adicionando novos comportamentos. No exemplo abaixo, foi configurada uma borda para o campo:  
 
 ```
 private let style = TextFieldDefaultStyle()
@@ -269,32 +262,31 @@ private let style = TextFieldDefaultStyle()
 let field = ExpirationDateTextfield(style: style)
 ```
 
-### ExpirationDateTextFieldEvent`
-Este callback permite capturar eventos de interação com o componente de forma segura.
+### Eventos de interação Expiration Date Text Field Event
 
-#### Callback e Parâmetros  
-| Callback | Parâmetro | Descrição |
-|----------|----------|-----------|
-| **OnFocusChanged** | `isFocused: Boolean` | Indica se o campo foi focado. |
-| **OnInputFilled** | `isFilled: Boolean` | Indica se o campo foi preenchido. |
-| **IsValid** | `isValid: Boolean` | Indica se o campo é válido. |
-| **OnLengthChanged** | `length: Int` | Informa o comprimento do campo. |
+Os eventos (_callbacks_) permitem recuperar eventos de interação com o componente de forma segura. A tabela abaixo detalha os _callbacks_ e seus respectivos parâmetros:
 
-Funções disponíveis:
-O `Expiration Date Text Field` possui diversas funções para personalização e manipulação:
+| Callback | Parâmetro | Tipo | Descrição |
+| - | - | - | - |
+| **OnFocusChanged** | `isFocused` | Boolean | Indica se o campo foi focado. |
+| **OnInputFilled** | `isFilled` | Boolean | Indica se o campo foi preenchido. |
+| **IsValid** | `isValid` | Boolean | Indica se o campo é válido. |
+| **OnLengthChanged** | `length` | Int | Informa o comprimento do campo. |
+
+O **ExpirationDateTextField** permite personalizações e ajustes por meio das funções listadas abaixo:
 
 | Função | Descrição |
 |--------|-----------|
-| **setStyle** | Define o estilo visual do campo de texto. |
-| **setPlaceholder** | Define o texto placeholder do campo. |
-| **setLeftImage** | Define uma view para exibição à esquerda. |
-| **setRightImage** | Define uma view para exibição à direita. |
-| **clear** | Limpa o conteúdo do campo de texto. |
-| **setFormat (.long ou .short)** | Define o formato da data inserida pelo usuário. <br> **Short →** `MM/YY` <br> **Long →** `MM/YYYY` |
+| `setStyle` | Define o estilo visual do campo de texto. |
+| `setPlaceholder` | Define o texto placeholder do campo. |
+| `setLeftImage` | Define uma view para exibição à esquerda. |
+| `setRightImage` | Define uma view para exibição à direita. |
+| `clear` | Limpa o conteúdo do campo de texto. |
+| `setFormat` (.long ou .short) | Define o formato da data inserida pelo usuário. <br> **Short →** `MM/YY` <br> **Long →** `MM/YYYY` |
 
-### Security Code 
+### Security Code Text Field
 
-O componente `Security Code Text Field` foi desenvolvido para capturar o código de segurança do cartão (CVV) de forma segura. Ele também permite definir o comprimento máximo do código.
+O componente **SecurityCodeTextField** foi desenvolvido para capturar o código de segurança do cartão (CVV) de maneira segura. Ele permite configurar o comprimento máximo do código e oferece opções de personalização.
 
 ```
 private lazy var securityCodeField: SecurityCodeTextField = {
@@ -322,42 +314,44 @@ print("onLengthChanged:", length)
 }()
 ```
 
-Esses parâmetros podem ser definidos na hora de instanciar o textfield ou poderá ser feito em outro momento chamando função que deseja modificar.
+Os parâmetros do componente podem ser definidos no momento da instanciação ou modificados posteriormente por meio de funções específicas.
 
-Parâmetros e propriedades:
+Os parâmetros configuráveis no **SecurityCodeTextField** estão descritos na tabela a seguir:
 
-| Nome | Tipo | Descrição |
-|------|------|-----------|
-| **style** | `PCIFieldStateStyleProtocol` | Define o estilo visual do campo. |
-| **maxLength** | `Int` | Define o comprimento máximo do código de segurança. |
+| Nome | Tipo | Descrição | Obrigatoriedade |
+| - | - | - | - |
+| `style: PCIFieldStateStyleProtocol` | - | Define o estilo visual do campo. | Obrigatório |
+| `maxLength` | Int | Define o comprimento máximo do código de segurança. | Obrigatório |
 
-| Nome | Tipo | Descrição |
-|------|------|-----------|
-| **isValid** | `Bool` | Indica se o input está válido. |
-| **count** | `Int` | Contador de dígitos inseridos. |
-| **isEnabled** | `Bool` | Define o status de habilitação do campo. |
-| **keyboardAppearance** | `UIKeyboardAppearance` | Configura a aparência do teclado. |
+As propriedades disponíveis no componente são apresentadas abaixo:
 
-### Funções disponíveis:  
-O `Security Code Text Field` oferece diversas funções para personalização e manipulação:
+| Nome | Tipo | Descrição | Obrigatoriedade |
+| - | - | - | - |
+| `isValid` | Boolean | Indica se o input está válido. | Obrigatório |
+| `count` | Int | Contador de dígitos inseridos. | Obrigatório |
+| `isEnabled` | Boolean | Define o status de habilitação do campo. | Obrigatório |
+| `keyboardAppearance` | - | Configura a aparência do teclado. | Obrigatório |
+
+O **SecurityCodeTextField** permite personalizações e ajustes por meio das funções listadas abaixo:
 
 | Função | Descrição |
 |--------|-----------|
-| **setStyle** | Define o estilo visual do campo de texto. |
-| **setPlaceholder** | Define o texto placeholder do campo. |
-| **setLeftImage** | Define uma view para exibição à esquerda. |
-| **setRightImage** | Define uma view para exibição à direita. |
-| **clear** | Limpa o conteúdo do campo de texto. |
-| **setMaxLength** | Define o comprimento máximo do código de segurança. |
+| `setStyle` | Define o estilo visual do campo de texto. |
+| `setPlaceholder` | Define o texto placeholder do campo. |
+| `setLeftImage` | Define uma view para exibição à esquerda. |
+| `setRightImage` | Define uma view para exibição à direita. |
+| `clear` | Limpa o conteúdo do campo de texto. |
+| `setMaxLength` | Define o comprimento máximo do código de segurança. |
 
+#### Implementar o Security Code Text Field
 
-O `Security Code Text Field` pode ser facilmente instanciado e utilizado em uma tela de checkout em desenvolvimento:  
+O **Security Code Text Field** pode ser instanciado diretamente no fluxo de checkout. Veja o exemplo mais básico:
 
 ```
 private let securityCodeField = SecurityCodeTextField()
 ```
 
-Também é possível personalizar o componente, ajustando sua aparência e adicionando novos comportamentos. No exemplo abaixo, adicionamos uma borda:  
+Também é possível personalizar o componente, ajustando sua aparência e adicionando novos comportamentos. No exemplo abaixo, foi configurada uma borda para o campo:  
 
 ```
 private let style = TextFieldDefaultStyle()
@@ -368,89 +362,17 @@ private let style = TextFieldDefaultStyle()
 private let securityCodeField = SecurityCodeTextField(style: style)
 ```
 
+### Eventos de interação Security Code Text Field Event
 
-### Eventos de interação (`SecurityCodeTextFieldEvent`)  
-Este callback permite capturar eventos de interação com o componente de forma segura.
+Os eventos (_callbacks_) permitem recuperar eventos de interação com o componente de forma segura. A tabela abaixo detalha os _callbacks_ e seus respectivos parâmetros:
+ 
+| Callback | Parâmetro | Tipo | Descrição |
+| - | - | - | - |
+| **OnInputFilled** | `isFilled` | Boolean | Indica se o campo foi preenchido. |
+| **OnLengthChanged** | `length` |  Int | Informa o comprimento do campo. |
+| **OnFocusChanged** | `isFocused` | Boolean | Indica se o campo foi focado. |
 
-#### Callback e Parâmetros  
-| Callback | Parâmetro | Descrição |
-|----------|----------|-----------|
-| **OnInputFilled** | `isFilled: Boolean` | Indica se o campo foi preenchido. |
-| **OnLengthChanged** | `length: Int` | Informa o comprimento do campo. |
-| **OnFocusChanged** | `isFocused: Boolean` | Indica se o campo foi focado. |
-
-
-
-
-## Métodos Core
-
-### GetInstallments
-
-Retorna as opções de parcelamento disponíveis:
-
-```swift
-Task {
-    let installments = try await coreMethods.getInstallments(
-        bin: "12345678",
-        amount: "100"
-    )
-}
-```
-
-### Generate Card Token
-
-Existem três formas de gerar o token do cartão:
-
-#### 1. Novo Cartão
-
-```swift
-func generateToken() {
-    Task {
-        let response = try await coreMethods.createToken(
-            cardNumber: self.cardNumberField,
-            expirationDate: self.expirationDateField,
-            securityCode: self.securityCodeField
-        )
-        print("Token response => \(response.token)")
-    }
-}
-```
-
-#### 2. Cartão Existente
-
-```swift
-func generateTokenByCardID() {
-    Task {
-        let response = try await coreMethods.createToken(
-            cardID: "ID_CARD",
-            securityCode: securityCodeField
-        )
-        print("Token response => \(response.token)")
-    }
-}
-```
-
-> NOTE
->
-> Importante
->
-> Para aumentar as chances de aprovação do pagamento, certifique-se de que todos os campos estejam devidamente validados antes de gerar o token do cartão.
-
-## Outros Métodos Core Disponíveis
-
-| Método | Descrição |
-|--------|-----------|
-| `Search` | Lista métodos de pagamento disponíveis |
-| `Card Issuers` | Obtém dados dos emissores do cartão |
-| `Get IdentificationTypes` | Verifica tipos de documentos obrigatórios por país |
-
-> WARNING
->
-> Importante
->
-> Mantenha sua SDK sempre atualizada para ter acesso às últimas funcionalidades e correções de segurança.
-
-## Customização visual dos componentes
+## Customizar visualmente os componentes
 
 Os Secure Fields foram desenvolvidos com um design minimalista e sem características visuais predefinidas, proporcionando total flexibilidade para customização. Além disso, os componentes já vêm com parâmetros que agilizam e facilitam o processo de personalização.
 
@@ -534,8 +456,9 @@ CardNumberTextField(style: CustomDefaultStyle())
 
 ## Métodos Core
 
-Os métodos core da SDK Nativa são essenciais para construir um checkout integrado com a API do Mercado Pago. Eles utilizam valores provenientes dos eventos dos componentes PCI e de outros método core para compor as funcionalidades de pagamento. Confira abaixo os Métodos Core disponíveis:
+Uma das principais funcionalidades da SDK Nativa são os Métodos Core, essenciais para a construção de um checkout integrado à API do Mercado Pago.
 
+Esses métodos utilizam dados obtidos pelos eventos dos [componentes PCI](#), além de informações obtidas por outros Métodos Core, garantindo flexibilidade e segurança na captura das informações de pagamento.
 
 | Método                    | Descrição                                                         |
 | ------------------------- | ----------------------------------------------------------------- |
@@ -544,6 +467,7 @@ Os métodos core da SDK Nativa são essenciais para construir um checkout integr
 | **Card Issuers**          | Recupera os dados dos emissores do cartão.                          |
 | **GetIdentificationTypes**| Verifica os tipos de documentos obrigatórios por país.              |
 | **Generate Card Token**   | Gera o token do cartão, essencial para concluir a transação.        |
+
 
 ## GetInstallment
 
@@ -564,15 +488,15 @@ Task {
 
 Confira abaixo a  tabela de parâmetros:
 
-| Parâmetro       | Tipo             | Descrição                                              |
-| --------------- | ---------------- | ------------------------------------------------------ |
-| `bin`           | String           | 8 dígitos do cartão de crédito.                       |
-| `amount`        | Long             | Valor da ordem.                                        |
-| `processingMode`| ProcessingMode   | Modo de processamento da ordem (`ProcessingMode.Aggregator` ou `ProcessingMode.Gateway`). |
+| Parâmetro       | Tipo             | Descrição                                              | Obrigatoriedade |
+| - | - | - | - |
+| `bin`           | String           | 8 dígitos do cartão de crédito.                       | Obrigatório |
+| `amount`        | Long             | Valor da ordem.                                        | Obrigatório |
+| `processingMode: ProcessingMode = ProcessingMode.Aggregator`| -   | Modo de processamento da ordem (`ProcessingMode.Aggregator` ou `ProcessingMode.Gateway`). | Obrigatório |
 
 ## Generate Card Token
 
-O método **Generate Card Token** retorna o token do cartão, que é necessário para finalizar a ordem. Essa chamada utiliza uma instância dos Secure Fields configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os Secure Fields, como `CardNumberTextField`, `ExpirationDateTextField` e `SecurityCodeTextField`, estejam devidamente configurados na tela.
+O método **Generate Card Token** retorna o token do cartão, que é necessário para finalizar a ordem. Essa chamada utiliza uma instância dos Secure Fields configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os Secure Fields, como `CardNumberTextField`, `ExpirationDateTextField` e `SecurityCodeTextField`, estejam devidamente configurados na tela antes de utilizar a chamada de `generateCardToken`.
 
 > NOTE
 > 
@@ -597,11 +521,11 @@ func generateToken() {
 
 Confira os parâmetros na tabela abaixo:
 
-| Parâmetro             | Tipo                    | Descrição                                    |
-| --------------------- | ----------------------- | -------------------------------------------- |
-| `cardNumberState`     | -   | Classe do campo de número de cartão.      |
-| `expirationDateState` | -| Classe do campo de expiração do cartão.      |
-| `securityCodeState`   | - | Classe do campo de código de segurança do cartão.   |
+| Parâmetro             | Tipo                    | Descrição                                    | Obrigatoriedade |
+| - | - | - | - |
+| `cardNumberState`     | -   | Classe do campo de número de cartão.      | Obrigatório |
+| `expirationDateState` | -| Classe do campo de expiração do cartão.      | Obrigatório |
+| `securityCodeState`   | - | Classe do campo de código de segurança do cartão.   | Obrigatório |
 
 ### Gerar um token para um cartão existente
 
@@ -622,7 +546,7 @@ func generateTokenByCardID() {
 Confira os parâmetros na tabela abaixo:
 
 | Parâmetro      | Tipo                    | Descrição                                      | Obrigatoriedade |
-| -------------- | ----------------------- | ---------------------------------------------- | - |
+| - | - | - | - |
 | `cardID`       | String                  | ID do cartão existente gerado.     | Obrigatório |
 | `securityCode: SecurityCodeTextField` | - | Classe do campo de código de segurança do cartão | Opcional |
 
