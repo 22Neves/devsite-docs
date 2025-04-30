@@ -469,7 +469,7 @@ Esses métodos utilizam dados obtidos pelos eventos dos [componentes PCI](#), al
 | **Generate Card Token**   | Gera o token do cartão, essencial para concluir a transação.        |
 
 
-## GetInstallment
+### GetInstallment
 
 A chamada do método **GetInstallment** retorna uma lista de objetos do tipo **Installment**. Cada objeto contém informações essenciais, como dados do emissor (*Issuer*), uma lista de opções de parcelamento (*PayerCosts*) e acordos (*Agreement*), entre outros valores necessários para a funcionalidade de parcelas no checkout.
 
@@ -494,7 +494,7 @@ Confira abaixo a  tabela de parâmetros:
 | `amount`        | Long             | Valor da ordem.                                        | Obrigatório |
 | `processingMode: ProcessingMode = ProcessingMode.Aggregator`| -   | Modo de processamento da ordem (`ProcessingMode.Aggregator` ou `ProcessingMode.Gateway`). | Obrigatório |
 
-## Generate Card Token
+### Generate Card Token
 
 O método **Generate Card Token** retorna o token do cartão, que é necessário para finalizar a ordem. Essa chamada utiliza uma instância dos Secure Fields configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os Secure Fields, como `CardNumberTextField`, `ExpirationDateTextField` e `SecurityCodeTextField`, estejam devidamente configurados na tela antes de utilizar a chamada de `generateCardToken`.
 
@@ -502,7 +502,7 @@ O método **Generate Card Token** retorna o token do cartão, que é necessário
 > 
 > Para configurar os campos seguros, basta adicioná-los à interface do fluxo de checkout, como detalhado na seção [NOMEDASEÇÃO](LINKDA SEÇÃO).
 
-### Criar um token para um novo cartão
+#### Criar um token para um novo cartão
 
 Para gerar um token para um novo cartão, crie um formulário com os Secure Fields da SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
 
@@ -550,7 +550,7 @@ Confira os parâmetros na tabela abaixo:
 | `cardID`       | String                  | ID do cartão existente gerado.     | Obrigatório |
 | `securityCode: SecurityCodeTextField` | - | Classe do campo de código de segurança do cartão | Opcional |
 
-### Gerar um token e enviar o documento do titular do cartão
+#### Gerar um token e enviar o documento do titular do cartão
 
 Você também pode gerar um token para um cartão existente, utilizando o ID do cartão e, se necessário, enviar o documento do titular. Confira o exemplo a seguir:
 
