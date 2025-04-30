@@ -1,6 +1,6 @@
 # iOS 
 
-A SDK Nativa do Mercado Pago para **iOS** oferece uma solução completa e segura para integração de métodos de pagamento, garantindo conformidade com as normas PCI. Este guia detalha o uso dos _Secure Fields_ para captura de dados sensíveis, como número do cartão, data de expiração e CVV, além de Métodos _Core_ que possibilitam operações essenciais, como geração de tokens e consulta de parcelamentos. 
+O SDK Nativo do Mercado Pago para **iOS** oferece uma solução completa e segura para integração de métodos de pagamento, garantindo conformidade com as normas PCI. Este guia detalha o uso dos _Secure Fields_ para captura de dados sensíveis, como número do cartão, data de expiração e CVV, além de Métodos _Core_ que possibilitam operações essenciais, como geração de tokens e consulta de parcelamentos. 
 
 ## Requisitos
 
@@ -23,7 +23,7 @@ import CoreMethods
 
 ## Iniciar SDK
 
-Após importar o SDK, é essencial inicializá-lo no início da execução do aplicativo. O processo de inicialização varia conforme a tecnologia utilizada, seja com UIKit ou SwiftUI.
+Após importar o SDK, é essencial inicializá-lo logo no início da execução do aplicativo. O processo de inicialização varia conforme a tecnologia utilizada, seja com UIKit ou SwiftUI.
 
 [[[
 ```UIKit
@@ -126,7 +126,7 @@ O método **Generate Card Token** retorna o _token_ do cartão, que é necessár
 
 #### Criar um _token_ para um novo cartão
 
-Para gerar um _token_ para um novo cartão, crie um formulário com os _Secure Fields_ da SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
+Para gerar um _token_ para um novo cartão, crie um formulário com os _Secure Fields_ do SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
 
 ```
 func generateToken() {
