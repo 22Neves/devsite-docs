@@ -386,11 +386,11 @@ Neste método, é possível ajustar atributos individuais, como cores, fontes, b
 
 Quando a personalização exige um controle mais detalhado sobre a aparência e o comportamento dos campos, você pode optar por implementar o protocolo `PCIFieldStateStyleProtocol`. Esse método permite definir estilos avançados e consistentes para cada estado do componente, proporcionando uma customização avançada.
 
-## Exemplos de utilização
+### Exemplos de utilização
 
 Os exemplos a seguir demonstram as duas abordagens, permitindo que você escolha a estratégia mais adequada ao nível de personalização e à complexidade dos requisitos de _design_ do seu aplicativo.
 
-### Customização por propriedades específicas
+#### Customização por propriedades específicas
 
 Abaixo, apresentamos um exemplo de utilização do método de customização por propriedades específicas:
 
@@ -403,7 +403,7 @@ let style = TextFieldDefaultStyle()
 let field = CardNumberTextField(style: style)
 ```
 
-### Customização avançada com `PCIFieldStateStyleProtocol`
+#### Customização avançada com `PCIFieldStateStyleProtocol`
 
 Abaixo, apresentamos um exemplo de utilização do método de customização avançada:
 
