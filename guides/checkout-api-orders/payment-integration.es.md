@@ -4,7 +4,7 @@ Con ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout
 
 El proceso de integración, luego de la inclusión e inicialización de la biblioteca MercadoPago.js, se basa en la configuración individual de los medios de pago que deseas ofrecer, lo que facilita la experiencia de integración, al mismo tiempo que permite un mayor nivel de personalización. 
 
-Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu :toolTipComponent[Acess Token]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el _backend_. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba* o *Producción > Credenciales de producción*."} al endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/es/reference/payment_methods/_payment_methods/get"} utilizando uno de los códigos debajo.
+Si lo deseas, puedes consultar una lista detallada de todos estos medios de pago disponibles para integración. Envía un **GET** con tu :toolTipComponent[Access Token]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el _backend_. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba* o *Producción > Credenciales de producción*."} al endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/es/reference/payment_methods/_payment_methods/get"} utilizando uno de los códigos debajo.
 
 [[[
 ```php
