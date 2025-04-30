@@ -14,7 +14,7 @@ Para integrar Mercado Pago Cartões, instala la aplicación a través del [panel
 > Esta nueva aplicación es exclusiva para pagos con tarjetas. Para configurar pagos con Pix, consulta la [documentación correspondiente](/developers/es/docs/shopify/integration-configuration/pix). Para pagos con boleto bancário, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). 
 
 ------------
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 # Tarjetas
 
 **Mercado Pago Tarjetas** ([Checkout API](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
@@ -36,7 +36,7 @@ Para integrar el Mercado Pago Tarjetas, instala la aplicación a través del [pa
 Para instalar Mercado Pago Cartões a través del panel administrativo de Shopify, sigue los pasos a continuación:
 
 ------------
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 
 Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopify, sigue los pasos a continuación:
 
@@ -108,7 +108,7 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-----[mlm, mco, mlc, mla]----
+----[mlm, mco, mlc, mla, mpe]----
 > WARNING
 >
 > Importante
@@ -145,6 +145,12 @@ Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a
 Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a continuación:
 
 1. Accede a la [página de la aplicación **Mercado Pago Tarjetas**](https://apps.shopify.com/mercado-pago-tarjetas-cl) en el Marketplace y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+
+------------
+----[mpe]----
+Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a continuación:
+
+1. Accede a la [página de la aplicación **Mercado Pago Tarjetas**](https://apps.shopify.com/mercado-pago-tarjetas-pe) en el Marketplace y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ------------
 ----[mla]----
@@ -216,7 +222,7 @@ Para instalar Mercado Pago Tarjetas a través del Marketplace, sigue los pasos a
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-----[mlm, mco, mlc]----
+----[mlm, mco, mlc, mpe]----
 > WARNING
 >
 > Importante
@@ -273,7 +279,7 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 > Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ------------
-----[mla, mco, mlc, mlb]----
+----[mla, mco, mlc, mlb, mpe]----
 ## Configura cuotas sin intereses
 
 Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configura la opción de ofrecer a tus clientes pagos en cuotas sin intereses con cualquier tarjeta de crédito. Para ello, sigue los pasos a continuación.
