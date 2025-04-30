@@ -102,7 +102,7 @@ private let style = TextFieldDefaultStyle()
 let field = CardNumberTextField(style: style)
 ```
 
-### Eventos de interação Card Number Text Field Event
+### Eventos de interação do Card Number Text Field Event
 
 Os eventos (_callbacks_) permitem recuperar eventos de interação com o componente de forma segura. A tabela abaixo detalha os _callbacks_ e seus respectivos parâmetros:
 
@@ -179,7 +179,7 @@ private let style = TextFieldDefaultStyle()
 let field = ExpirationDateTextfield(style: style)
 ```
 
-### Eventos de interação Expiration Date Text Field Event
+### Eventos de interação do Expiration Date Text Field Event
 
 Os eventos (_callbacks_) permitem recuperar eventos de interação com o componente de forma segura. A tabela abaixo detalha os _callbacks_ e seus respectivos parâmetros:
 
@@ -279,7 +279,7 @@ private let style = TextFieldDefaultStyle()
 private let securityCodeField = SecurityCodeTextField(style: style)
 ```
 
-### Eventos de interação Security Code Text Field Event
+### Eventos de interação do Security Code Text Field Event
 
 Os eventos (_callbacks_) permitem recuperar eventos de interação com o componente de forma segura. A tabela abaixo detalha os _callbacks_ e seus respectivos parâmetros:
  
