@@ -45,7 +45,14 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 3. Una vez allí, selecciona la opción **Pagos** en el menú.
 4. En "Proveedores de pago", haz clic en **Seleccionar un proveedor**.
 
+----[mla, mlb, mco, mlc, mpe, mlu]----
 ![installation panel 1](/images/shopify/installation-cards-panel.1-es.png)
+
+------------
+----[mlm]----
+![installation panel 1](/images/shopify/installation-cards-panel.1-es-mlm.png)
+
+------------
 
 5. En la pantalla de "Provedores de pago externos", busca la aplicación "Mercado Pago Tarjetas".
 
