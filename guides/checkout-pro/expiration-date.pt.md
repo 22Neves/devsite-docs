@@ -2,9 +2,7 @@
 
 Data de vencimento é o período máximo definido para realização de um pagamento. Com o Checkout Pro é possível alterar a data de vencimento padrão para **pagamentos em dinheiro** enviando o campo `date_of_expiration` na requisição de criação da preferência. 
 
-> NOTE
->
-> Importante
+> RED_MESSAGE
 >
 > O prazo de compensação é de até 2h úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos definir a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento. Além disso, caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta Mercado Pago do pagador.
 

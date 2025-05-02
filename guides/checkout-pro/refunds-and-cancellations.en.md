@@ -10,8 +10,6 @@ Below are the essential details about each process.
 
 > RED_MESSAGE
 >
-> Important
->
 > This documentation is **intended for integrators**. If you are a buyer and need to cancel or request a refund for a payment, log in to your Mercado Pago account, select the purchase you want to request it for, click on "I need help" and choose the refund or cancellation option.
 
 ## Refunds

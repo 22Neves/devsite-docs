@@ -10,8 +10,6 @@ A continuación, se detallan las informaciones esenciales sobre cada proceso.
 
 > RED_MESSAGE
 >
-> Importante
->
 > Esta documentación está **destinada a integradores**. Si eres comprador y necesitas cancelar o solicitar el reembolso de un pago, ingresa a tu cuenta de Mercado Pago, selecciona la compra para la que quieres solicitarlo, haz clic en "Necesito ayuda" y elige la opción de reembolso o cancelación.
 
 ## Reembolsos

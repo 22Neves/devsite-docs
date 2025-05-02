@@ -20,6 +20,4 @@ In [Your integration](/developers/panel/app), you will be able to view the list 
 
 > NOTE
 >
-> Note
->
 > If you wish, you can edit or delete an application. In the latter case, keep in mind that your store will lose the ability to receive payments through the Mercado Pago integration associated with that application. For more information, please refer to the [Application details](/developers/en/docs/checkout-pro/more-resources/application-details).

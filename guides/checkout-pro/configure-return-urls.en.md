@@ -8,8 +8,6 @@ You can configure up to three different return URLs, corresponding to pending pa
 
 > NOTE
 >
-> Note
->
 > In mobile integrations, we recommend that the return URLs be deep links. To learn more, refer to the [Integration for mobile applications](/developers/en/docs/checkout-pro/mobile-integration) documentation.
 
 ## Define return URL
@@ -17,8 +15,6 @@ You can configure up to three different return URLs, corresponding to pending pa
 In your backend code, you need to set up the URL to which you want Mercado Pago to redirect the user once they have completed the payment process.
 
 > NEUTRAL_MESSAGE
-> 
-> Note
 >
 > If you prefer, it is also possible to configure the return URLs by sending a POST request to the [Create Preference](/developers/en/reference/preferences/_checkout_preferences/post) API with the `back_urls` attribute specifying the URLs to which the buyer should be directed upon payment completion.
 

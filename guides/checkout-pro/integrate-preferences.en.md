@@ -12,8 +12,6 @@ Below, you will find examples of how to implement this in your backend using the
 
 > NOTE
 >
-> Nota
->
 > You can adapt the Checkout Pro integration to your business model by configuring the attributes of the payment preference. These will allow you to define installments, exclude a payment method, change the expiration date of a specific payment, among other options. To customize your payment preference, access [Checkout customization](/developers/en/docs/checkout-pro/additional-settings).
 
 [[[

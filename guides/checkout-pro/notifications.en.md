@@ -8,7 +8,13 @@ Check the general flow of a notification in the diagram below.
 
 ![Diagram](/images/cow/notifications-diagrama-es.jpg)
 
-Below, we present a step-by-step guide to configure payment creation and update notifications. Once configured, Webhook notifications will be sent every time a payment is created or its status is modified (Pending, Rejected, or Approved). In the process of integrating with Mercado Pago, you can configure notifications in two ways:
+Below, we present a step-by-step guide to configure payment creation and update notifications. Once configured, Webhook notifications will be sent every time a payment is created or its status is modified (Pending, Rejected, or Approved). 
+
+> NOTE 
+>  
+> This documentation exclusively covers the configuration of payment notifications, including creations and updates, through the **Payments** event. To obtain information about other notification events available for configuration, please refer to the general [Notifications documentation](/developers/en/docs/checkout-pro/additional-content/notifications).
+
+In the process of integrating with Mercado Pago, you can configure notifications in two ways:
 
 | Configuration Type | Description | Advantages | When to Use |
 |---|---|---|---|
@@ -717,6 +723,21 @@ Once notifications are configured, check the Necessary actions after receiving a
 When you receive a notification on your platform, Mercado Pago expects a response to validate that the reception was correct. For this, you must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
 
 The timeout for this confirmation will be 22 seconds. If this response is not sent, the system will understand that the notification was not received and will make a new attempt to send it every 15 minutes until it receives the response. After the third attempt, the interval will be extended, but the sending will continue.
+
+<pre class="mermaid">
+sequenceDiagram
+    participant MercadoPago as Mercado Pago
+    participant Integrator as Integrator
+
+    MercadoPago->>Integrator: retry: 1. Delay: 0 minutes
+    MercadoPago->>Integrator: retry: 2. Delay: 15 minutes
+    MercadoPago->>Integrator: retry: 3. Delay: 30 minutes
+    MercadoPago->>Integrator: retry: 4. Delay: 6 hours
+    MercadoPago->>Integrator: retry: 5. Delay: 48 hours
+    MercadoPago->>Integrator: retry: 6. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 7. Delay: 96 hours
+    MercadoPago->>Integrator: retry: 8. Delay: 96 hours
+</pre>
 
 After responding to the notification, confirming its receipt, you can obtain all information about the notified `payments` topic event by making a GET request to the endpoint [v1/payments/{id}](/developers/en/reference/payments/_payments_id/get).
 

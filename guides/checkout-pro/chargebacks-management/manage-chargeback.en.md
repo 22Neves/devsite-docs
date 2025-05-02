@@ -98,8 +98,6 @@ At this stage, you can submit the documentation proving that the sale is valid t
 
 > RED_MESSAGE
 >
-> Important
->
 > The files must be sent in .jpg, .png, or .pdf format and have a maximum size of up to 10MB.
 
 ```
@@ -122,8 +120,6 @@ Wait for the Webhook notification regarding the resolution and check the chargeb
 | `false` | Indicates that the decision was against the seller and the money will be deducted.  |
 
 > RED_MESSAGE
->
-> Important
 >
 > The chargeback resolution can take up to 6 months, depending on the card brand.
 

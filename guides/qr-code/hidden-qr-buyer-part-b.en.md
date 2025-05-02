@@ -9,7 +9,7 @@ To use this model, you must read the QR and send the code and the order informat
 For this integration to work correctly, you need to:
 
 - Crete [Stores](/developers/en/docs/qr-code/stores-pos/stores-and-pos).
-- Greate[QR](/developers/en/docs/qr-code/stores-pos/stores-and-pos).
+- Create [POS](/developers/en/docs/qr-code/stores-pos/stores-and-pos).
 - Have a QR CODE reader.
 - Enable your Mercado Pago account for this type of charge.
 
