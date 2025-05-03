@@ -12,7 +12,14 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 3. In the menu, click on **Payments**.
 4. Under "Accepted payment methods," click on **Add payment method**.
 
+----[mla, mlb, mlu, mpe, mco, mlc]----
 ![installation chopro 2](/images/shopify/installation-chopro-2-es.png)
+
+------------
+----[mlm]----
+![installation cards](/images/shopify/installation-chopro-2-es-mlm.png)
+
+------------
 
 5. In the **Search by provider** tab, look for the app "Mercado Pago Checkout Pro" and select it.
 
@@ -67,7 +74,50 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 
 14. Go to the **Settings** section and click on **Activate** to complete the installation.
 
+----[mlb]----
 ![installation chopro 9](/images/shopify/installation-chopro-9-2-es.png)
+
+------------
+----[mlm]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlm.png)
+
+------------
+----[mla]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mla.png)
+
+------------
+----[mla]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mla.png)
+
+------------
+----[mlc]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlc.png)
+
+------------
+----[mlc]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlc.png)
+
+------------
+----[mco]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mco.png)
+
+------------
+----[mpe]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mpe.png)
+
+------------
+----[mlu]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlu.png)
+
+------------
 
 > At this stage, you can select the images of the payment methods you want to display in your store for illustrative purposes.
 

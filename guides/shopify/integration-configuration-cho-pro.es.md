@@ -10,9 +10,16 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 ![installation chopro 1](/images/shopify/installation-chopro-1-es.png)
 
 3. En el menú, haz click en **Pagos**.
-4. En "Formas de pago admitidas", haz clic en **Agregar formas de pago**.
+4. En "Métodos de pago admitidos", haz clic en **Agregar formas de pago**.
 
+----[mla, mlb, mlu, mpe, mco, mlc]----
 ![installation chopro 2](/images/shopify/installation-chopro-2-es.png)
+
+------------
+----[mlm]----
+![installation cards](/images/shopify/installation-chopro-2-es-mlm.png)
+
+------------
 
 5. En la pestaña **Buscar por proveedor**, busca la aplicación "Mercado Pago Checkout Pro" y selecciónala.
 
@@ -28,31 +35,31 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 8. Accede al entorno de Mercado Pago haciendo clic en **Gestionar cuenta** y comienza el proceso de vinculación de tu tienda con tu cuenta para habilitar la recepción de pagos.
 
-![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
+![installation chopro 6](/images/shopify/installation-chopro-6-es.png)
 
 9. Al acceder al entorno de Mercado Pago, haz clic en **Iniciar vinculación** para comenzar el proceso.
 
-![installation chopro 7](/images/shopify/connect-account-1-pt.png)
+![installation chopro 7](/images/shopify/connect-account-1-es.png)
 
 10. Si ya has iniciado sesión en tu cuenta de Mercado Pago, omite este paso. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta.
 
-![installation chopro 8](/images/shopify/connect-account-2-pt.png)
+![installation chopro 8](/images/shopify/connect-account-2-es.png)
 
 11. Elige qué cuenta de Mercado Pago deseas vincular a la tienda.
 
-![installation chopro 9](/images/shopify/connect-account-3-pt.png)
+![installation chopro 9](/images/shopify/connect-account-3-es.png)
 
 12. Haz clic en **Vincular cuenta** y acepta los permisos solicitados. Estos permisos son esenciales para que Mercado Pago procese los pagos de tu tienda de manera segura e integrada.
 
-![installation chopro 10](/images/shopify/connect-account-4-pt.png)
+![installation chopro 10](/images/shopify/connect-account-4-es.png)
 
 13. El proceso se realizará automáticamente y podría tardar unos segundos.
 
-![installation chopro 11](/images/shopify/connect-account-5-pt.png)
+![installation chopro 11](/images/shopify/connect-account-5-es.png)
 
 14. Tras vincular tu tienda a tu cuenta de Mercado Pago, haz clic en **Activar app**.
 
-![installation chopro 12](/images/shopify/connect-account-pro-1-pt.png)
+![installation chopro 12](/images/shopify/connect-account-pro-1-es.png)
 
 > NOTE
 >
@@ -60,8 +67,47 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 15. Haz clic en **Ir a configuraciones** para volver al panel de Shopify.
 
-![installation chopro 13](/images/shopify/connect-account-pro-2-pt.png)
+![installation chopro 13](/images/shopify/connect-account-pro-2-es.png)
 
 16. En el panel administrativo de la tienda, ve a **Configuraciones > Pagos** y haz clic en **Activar** para activar Mercado Pago Checkout Pro.
+----[mlm]----
 
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlm.png)
+
+------------
+----[mla]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mla.png)
+
+------------
+----[mla]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mla.png)
+
+------------
+----[mlc]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlc.png)
+
+------------
+----[mlc]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlc.png)
+
+------------
+----[mco]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mco.png)
+
+------------
+----[mpe]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mpe.png)
+
+------------
+----[mlu]----
+
+![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlu.png)
+
+------------
 La aplicación **Mercado Pago Checkout Pro** se ha instalado y configurado con éxito, y ahora está lista para procesar los pagos de tu tienda directamente en tu cuenta de Mercado Pago.
