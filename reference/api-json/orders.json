@@ -316,6 +316,9 @@
                                                                         }
                                                                     }
                                                                 }
+                                                            },
+                                                            "date_of_expiration": {
+                                                                "$ref": "#/components/schemas/date_of_expiration"
                                                             }
                                                         }
                                                     }
@@ -3188,9 +3191,9 @@
             "date_of_expiration": {
                 "type": "string",
                 "description": {
-                    "en": "Date and time of the expiration of the Payment. It is returned in the response to the Create Order request.",
-                    "pt": "Data de expiração do Payment. É retornado na resposta à requisição Criar Order.",
-                    "es": "Fecha y hora de vencimiento del Payment. Se devuelve en la respuesta a la solicitud Crear Order."
+                    "en": "Date and time of the expiration of the payment. It is returned in the response to the Create Order request. In the case of offline payment methods, such as Pix, Pago Fácil, or OXXO, if an expiration_time is not sent, this field adopts a default value that depends on the payment method.",
+                    "pt": "Data de expiração do pagamento. É retornado na resposta à requisição Criar Order. No caso de meios de pagamento offline, como Pix, Pago Fácil ou OXXO, caso não seja enviado um expiration_time, ele adota um valor padrão que depende do meio de pagamento.",
+                    "es": "Fecha y hora de vencimiento del pago. Se devuelve en la respuesta a la solicitud Crear Order. En el caso de medios de pago offline, como Pix, Pago Fácil u OXXO, si no es enviado un expiration_time, adopta un valor por defecto que dependerá del medio de pago."
                 },
                 "example": "2023-03-01T10:00:00.000-04:00"
             },

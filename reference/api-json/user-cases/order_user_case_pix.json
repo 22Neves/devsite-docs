@@ -144,13 +144,7 @@
                                                     "example": "1000.00"
                                                 },
                                                 "date_of_expiration": {
-                                                    "type": "string",
-                                                    "description": {
-                                                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
-                                                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
-                                                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
-                                                    },
-                                                    "example": "P3Y6M4DT12H30M5S"
+                                                    "$ref": "2025-05-16T02:59:59.000+00:00"
                                                 },
                                                 "reference_id": {
                                                     "example": "123456789"
