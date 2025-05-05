@@ -83,48 +83,6 @@ product_landing_what_differentiates:
  - line_type: sites
  - line_values: all|all|all
 ---
-
-|||column1|||
----
-product_landing_how_integrate:
- - title: How to integrate
- - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440646258-apiintegrationflowchartcardform2en.png 
- - requirement_title: Previous requirements
- - requirement_table_title: Mercado Pago Account
- - requirement_table_list: You need to create a user on Mercado Pago or Mercado Libre to have a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
- - requirement_table_title: Pix key
- - requirement_table_list: If you want to offer Pix payments, register [Pix keys](https://www.youtube.com/watch?v=60tApKYVnkA).
- - list_title: Integration process
- - list_item: Create an application from [Your integrations](/developers/panel/app)
- - list_item: Configure the development environment
- - list_item: Configure the preferred payment methods
- - list_item: Configure payment notifications
- - list_item: Test your integration
- - list_item: Go to production
- - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api-v2/create-application
----
-|||column2|||
-<div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
-    A[Your integrations] --> B[Create an application]
-    B --> C[Configure development environment]
-    C --> D[Configure payment method]
-    D --> E[Configure payment notifications]
-    E --> F[Test your integration]
-
-    F --> G{Was the test successful?}
-    
-    G -- No --> H[Fix configuration] --> F
-
-    G -- Yes --> I{What do you want to do?}
-    I -- Go live --> J[Go to production]
-    I -- Configure another payment method --> D
-  </pre>
-</div>
-|||
 ------------
 ----[mla]----
 
@@ -211,48 +169,6 @@ product_landing_what_differentiates:
  - line_type: sites
  - line_values: all|all|all
 ---
-
-|||column1|||
----
-product_landing_how_integrate:
- - title: How to integrate
- - sub_title: Learn about the steps you need to follow to integrate this solution.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440646258-apiintegrationflowchartcardform2en.png
- - requirement_title: Previous requirements
- - requirement_table_title: Mercado Pago Account
- - requirement_table_list: You need to create a user on Mercado Pago or Mercado Libre to have a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
- - requirement_table_title: Pix key
- - requirement_table_list: If you want to offer Pix payments, register [Pix keys](https://www.youtube.com/watch?v=60tApKYVnkA).
- - list_title: Integration process
- - list_item: Create an application from [Your integrations](/developers/panel/app)
- - list_item: Configure the development environment
- - list_item: Configure your preferred payment methods
- - list_item: Configure payment notifications
- - list_item: Test your integration
- - list_item: Go to production
- - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api-v2/create-application
----
-|||column2|||
-<div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
-    A[Your integrations] --> B[Create an application]
-    B --> C[Configure development environment]
-    C --> D[Configure payment method]
-    D --> E[Configure payment notifications]
-    E --> F[Test your integration]
-
-    F --> G{Was the test successful?}
-    
-    G -- No --> H[Fix configuration] --> F
-
-    G -- Yes --> I{What do you want to do?}
-    I -- Go live --> J[Go to production]
-    I -- Configure another payment method --> D
-  </pre>
-</div>
-|||
 ------------
 ----[mlm]----
 
@@ -340,6 +256,8 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+------------
+
 |||column1|||
 ---
 product_landing_how_integrate:
@@ -381,4 +299,3 @@ product_landing_how_integrate:
   </pre>
 </div>
 |||
-------------
