@@ -1,4 +1,4 @@
-# Modo binário
+# Ativar modo binário
 
 É possível ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só poderá ser aprovado ou recusado.
 

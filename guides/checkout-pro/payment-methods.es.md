@@ -1,4 +1,4 @@
-# Medios de pago
+# Configurar medios de pago
 
 ----[mla, mco, mlb, mlu, mlc, mpe]----
 

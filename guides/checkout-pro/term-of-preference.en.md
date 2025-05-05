@@ -1,4 +1,4 @@
-# Term of preference
+# Configure term of preference
 
 Term is the validity period defined for a given payment preference. When defining the term of the preference, you choose a date for it to take effect and the expiration date defining a maximum payment limit.
 

@@ -1,4 +1,4 @@
-# Vigencia de preferencia
+# Definir vigencia de preferencia
 
 Vigencia es el período de validez definido para una determinada preferencia de pago. Al definir el plazo de la preferencia, eliges una fecha para que surta efecto y la fecha de vencimiento definiendo un límite máximo de pago.
 

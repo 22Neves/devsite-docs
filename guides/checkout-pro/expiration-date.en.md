@@ -1,4 +1,4 @@
-# Expiration date
+# Change expiration date
 
 Expiration date is the maximum period defined for making a payment. With Checkout Pro it is possible to change the default expiration date to **cash payments** by sending the `date_of_expiration` field in the preference creation request.
 

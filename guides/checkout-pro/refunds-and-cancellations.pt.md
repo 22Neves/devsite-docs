@@ -1,4 +1,4 @@
-# Reembolsos e cancelamentos
+# Configurar reembolsos e cancelamentos
 
 Os **reembolsos** e **cancelamentos** são ações disponíveis após a realização de um pagamento. Embora ambas envolvam a devolução de dinheiro, é crucial compreender suas diferenças para executar os processos corretamente.
 

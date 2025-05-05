@@ -1,4 +1,4 @@
-# Valor de envio
+# Mostrar valor de envio
 
 Valor de envio, ou frete, é o valor praticado para envio dos produtos vendidos. Se este valor já está definido, é possível exibi-lo separado do valor total da compra no momento do pagamento.
 
