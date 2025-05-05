@@ -79,7 +79,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 
 11. El proceso se realizará automáticamente y puede tardar unos segundos.  
 
-![installation cards 8](/images/shopify/connect-account-5-es.png)  
+![installation cards 8](/images/shopify/connect-account-5.1-es.png)  
 
 > NOTE
 >

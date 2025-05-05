@@ -40,7 +40,7 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 
 8. El proceso se realizará automáticamente y podría tardar unos segundos.
 
-![installation cards 8](/images/shopify/connect-account-5-es.png)
+![installation cards 8](/images/shopify/connect-account-5.1-es.png)
 
 > NOTA
 >

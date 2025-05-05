@@ -58,7 +58,7 @@ Para instalar Mercado Pago Pix a través del panel administrativo de Shopify, si
 
 13. El proceso se realizará automáticamente y podría tardar unos segundos.
 
-![installation chopro 11](/images/shopify/connect-account-5-es.png)
+![installation chopro 11](/images/shopify/connect-account-5.1-es.png)
 
 > NOTE
 >
