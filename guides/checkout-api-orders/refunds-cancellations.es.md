@@ -2,7 +2,8 @@
 
 Los reembolsos y las cancelaciones son gestiones que puedes realizar una vez que un pago haya sido efectuado. Por tratarse de acciones que implican una devolución del dinero, pueden resultar similares, pero es importante tener en cuenta qué las diferencia para poder realizar correctamente cada uno de los procesos.
 
-Una **cancelación** se realiza realiza cuando un pago todavía no fue aprobado, y el dinero es devuelto a la tarjeta del comprador dentro del período definido por el banco emisor, mientras que un **reembolso** se realiza después de la captura del pago, y la devolución del monto se hace directamente en la factura, en el caso de una tarjeta de crédito, o en la cuenta del pagador, cuando el pago se haya realizado por otros medios.
+- **Reembolso**: se realiza después de la captura del pago, y la devolución del monto se hace directamente en la factura, en el caso de una tarjeta de crédito, o en la cuenta del pagador, cuando el pago se haya realizado por otros medios.
+- **Cancelación**: se realiza realiza cuando un pago todavía no fue aprobado, y el dinero es devuelto a la tarjeta del comprador dentro del período definido por el banco emisor.
 
 Accede a continuación a más información sobre reembolsos y cancelaciones.
 

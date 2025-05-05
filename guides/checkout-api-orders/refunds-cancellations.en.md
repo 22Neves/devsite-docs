@@ -2,7 +2,8 @@
 
 Refunds and cancellations are processes you can initiate once a payment has been made. Since these actions involve a return of money, they may seem similar, but it is important to understand what differentiates them in order to correctly carry out each of the processes.
 
-A **cancellation** is made when a payment has not yet been approved, and the limit is returned to the buyer's card within the timeframe defined by the issuing bank, while a **refund** is made after the payment is processed, and the amount will be credited directly to the statement in the case of a credit card, or to the payer's account when the payment is made by other means.
+- **Refund**: is made after the payment is processed, and the amount will be credited directly to the statement in the case of a credit card, or to the payer's account when the payment is made by other means.
+- **Cancellation**: is made when a payment has not yet been approved, and the limit is returned to the buyer's card within the timeframe defined by the issuing bank.
 
 See below for more information on refunds and cancellations.
 

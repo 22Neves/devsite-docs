@@ -36,7 +36,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png 
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746458157448-overvieworderses.gif
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -142,7 +142,7 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746458157448-overvieworderses.gif
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -248,13 +248,13 @@ product_landing_how_works:
  - title: How it works
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196930362-landingrebranding.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746458157448-overvieworderses.gif
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
  - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-application
+ - button_link: /developers/en/docs/checkout-api-v2/create-application 
 ---
 
 ---

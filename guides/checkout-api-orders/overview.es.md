@@ -144,7 +144,7 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196982476-landing.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746458157448-overvieworderses.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
@@ -250,12 +250,12 @@ product_landing_how_works:
  - title: Cómo funciona
  - message: El cliente elige el producto o servicio y todo el proceso de compra y pago se realiza en tu tienda virtual, con la seguridad de Mercado Pago y sin salir de tu sitio.
  - sub_title: Proceso de cobro
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196930362-landingrebranding.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746458157448-overvieworderses.gif
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-application
+ - button_link: /developers/es/docs/checkout-api-v2/create-application 
 ---
 
 ---
@@ -302,7 +302,7 @@ product_landing_what_differentiates:
 product_landing_how_integrate:
  - title: Cómo integrar
  - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440686816-apiintegrationflowchartcardform2esrebranding.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746458157448-overvieworderses.gif
  - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
