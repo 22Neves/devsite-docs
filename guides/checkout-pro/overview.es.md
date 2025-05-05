@@ -138,7 +138,7 @@ product_landing_what_differentiates:
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
- - sub_title: Conoce los etapas que deberás seguir para integrar esta solución.
+ - sub_title: Conoce las etapas que deberás seguir para integrar esta solución.
  - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de vendedor
  - requirement_table_list: Para integrar Checkout Pro, necesitas ingresar a Mercado Pago y [crear una cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
