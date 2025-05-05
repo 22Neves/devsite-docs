@@ -170,31 +170,13 @@
                                                             "example": "bank_transfer"
                                                         },
                                                         "ticket_url": {
-                                                            "type": "string",
-                                                            "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
-                                                            "description": {
-                                                                "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                "pt": "URL do ticket. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                "es": "URL del ticket. Se devuelve para medios de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
-                                                            }
+                                                            "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e"
                                                         },
                                                         "qr_code": {
-                                                            "type": "string",
-                                                            "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0",
-                                                            "description": {
-                                                                "en": "QR code. It is returned for offline payment method pix.",
-                                                                "pt": "Código QR. É retornado para o meio de pagamento offline pix.",
-                                                                "es": "Código QR. Se devuelve para el método de pago offline pix."
-                                                            }
+                                                            "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0"
                                                         },
                                                         "qr_code_base64": {
-                                                            "type": "string",
-                                                            "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
-                                                            "description": {
-                                                                "en": "QR code in base64. It is returned for offline payment method pix.",
-                                                                "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
-                                                                "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
-                                                            }
+                                                             "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i"
                                                         },
                                                         "token": {
                                                             "example": "disabled"
