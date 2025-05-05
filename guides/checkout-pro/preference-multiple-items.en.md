@@ -1,4 +1,4 @@
-# Preference for multiple items
+# Create preference for multiple items
 
 If you need to create a preference for more than one item, you must add them as a list and their respective attributes.
 

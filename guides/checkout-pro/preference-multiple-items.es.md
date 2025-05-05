@@ -1,4 +1,4 @@
-# Preferencia para múltiples ítems
+# Crear preferencia para múltiples ítems
 
 Si necesitas crear una preferencia para más de un ítem, debes agregarlos como una lista y sus respectivos atributos.
 

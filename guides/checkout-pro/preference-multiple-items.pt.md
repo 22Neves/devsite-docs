@@ -1,4 +1,4 @@
-# Preferência para diversos itens
+# Criar preferência para diversos itens
 
 Se você precisar criar uma preferência para mais de um item, deverá adicioná-los como uma lista e seus respectivos atributos. 
 

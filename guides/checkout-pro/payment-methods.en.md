@@ -1,4 +1,4 @@
-# Payment methods
+# Configure payment methods
 
 By default, all payment methods are offered in Checkout Pro. Through the payment preference, you can configure a default payment method to be rendered, exclude any unwanted ones, or even choose a maximum number of installments to be offered.
 

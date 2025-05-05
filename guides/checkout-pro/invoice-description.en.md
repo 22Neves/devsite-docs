@@ -1,4 +1,4 @@
-# Invoice description
+# Configure invoice description
 
 Invoice description is a setting that allows you to define the name of the establishment that will be displayed on the buyer's invoice. This allows for business identification and avoids unnecessary disputes.
 
