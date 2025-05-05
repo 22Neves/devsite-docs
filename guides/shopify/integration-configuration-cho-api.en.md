@@ -237,46 +237,6 @@ To install Mercado Pago Tarjetas through the Marketplace, follow the steps below
 
 The Mercado Pago Tarjetas application has been successfully installed through the Marketplace. Now, follow the instructions starting from step 7 in the section [Install application via the Shopify panel](#bookmark_instalar_via_painel_da_shopify) to complete linking your store with your Mercado Pago account.
 
-----[mlm]----
-## Configure interest-free installments
-
-After installing and activating the **Mercado Pago Tarjetas** application, configure the option to offer your customers interest-free payments in installments with any credit card. To do so, follow the steps below.
-
-1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/home).
-
-2. Go to the **Your Business > Costs** section and select the **Checkout** option.
-
-3. Under "Interest-Free Installments," click **Configure installments**.
-
-4. Enable the option **Offer interest-free installments with credit card** and then choose up to how many months you want to offer.
-
-5. After configuring the interest-free installment options, go to your [Shopify store](https://accounts.shopify.com/store-login).
-
-6. In the admin panel, click **Settings** in the bottom-left corner of the page.
-
-![configure installments 4](/images/shopify/configure-installments-4-es.png)
-
-7. Once there, select the **Payments** option from the menu on the left side of the page.
-8. Under "Mercado Pago Tarjetas," click **Manage**.
-
-![configure installments 5](/images/shopify/configure-installments-5-es.png)
-
-9. Then, click **More actions > Manage**.
-
-![configure installments 6](/images/shopify/configure-installments-6-es.png)
-
-10. Finally, click **Sync** to ensure the interest-free installment settings are updated with your store.
-
-![configure installments 7](/images/shopify/configure-installments-7-es-mlm.png)
-
-> WARNING
->
-> Attention
->
-> Whenever you change the interest-free installment settings, it will be necessary to **sync** the changes with your store.
-
-------------
-----[mla, mco, mlc, mlb, mpe]----
 ## Configure interest-free installments
 
 After installing and activating the **Mercado Pago Tarjetas** application, configure the option to offer your customers interest-free payments in installments with any credit card. To do so, follow the steps below.
@@ -296,14 +256,6 @@ After installing and activating the **Mercado Pago Tarjetas** application, confi
 
 ![configure installments 6](/images/shopify/configure-installments-6-es.png)
 
-10. Finally, click **Sync** to ensure the interest-free installment settings are updated with your store.
+10. Finally, click **Sync** to ensure the interest-free installment settings are updated with your store. Whenever you change the interest-free installment settings, it will be necessary to **sync** the changes with your store.
 
 ![configure installments 7](/images/shopify/configure-installments-7-es-all.png)
-
-> WARNING
->
-> Attention
->
-> Whenever you change the interest-free installment settings, it will be necessary to **sync** the changes with your store.
-
-------------

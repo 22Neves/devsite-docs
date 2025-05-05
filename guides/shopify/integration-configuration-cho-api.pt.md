@@ -174,7 +174,7 @@ Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
 
 O aplicativo Mercado Pago Cartões foi instalado com sucesso através do Marketplace. Agora, siga as instruções a partir do passo 7 da sessão [Instalar aplicativo via painel da Shopify](#bookmark_instalar_via_painel_da_shopify) para completar a vinculação da sua loja à sua conta Mercado Pago.
 
-## Configurar parcelas sem acréscimo
+## Configurar parcelas sem acréscimos
 
 Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de parcelamento sem acréscimo para permitir que seus clientes parcelem suas compras sem acréscimos, utilizando qualquer cartão de crédito. Para isso, siga os passos abaixo.
 
@@ -202,12 +202,8 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção de 
 
 ![configure installments 7](/images/shopify/configure-installments-7-pt.png)
 
-11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja. 
+11. Por fim, clique em **Sincronizar** para que o parcelamento configurado seja sincronizado com a sua loja. Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
 
 ![configure installments 8](/images/shopify/configure-installments-8-pt.png)
-
-> RED_MESSAGE
->
-> Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
 
 Dessa forma, seus clientes poderão parcelar suas compras sem acréscimos.

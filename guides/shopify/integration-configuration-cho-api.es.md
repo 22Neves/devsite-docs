@@ -117,7 +117,7 @@ Para instalar Mercado Pago Tarjetas a través del panel administrativo de Shopif
 
 12. El proceso se realizará automáticamente y podría tardar unos segundos.
 
-![installation cards 8](/images/shopify/connect-account-5-es.png)
+![installation cards 8](/images/shopify/connect-account-5.1-es.png)
 
 > NOTE
 >
@@ -267,15 +267,9 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 
 ![configure installments 6](/images/shopify/configure-installments-6-es.png)
 
-10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de meses sin intereses se sincronicen con tu tienda.
+10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de meses sin intereses se sincronicen con tu tienda. Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ![configure installments 7](/images/shopify/configure-installments-7-es-mlm.png)
-
-> WARNING
->
-> Atención
->
-> Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ------------
 ----[mla, mco, mlc, mlb, mpe]----
@@ -298,14 +292,8 @@ Después de instalar y activar la aplicación **Mercado Pago Tarjetas**, configu
 
 ![configure installments 6](/images/shopify/configure-installments-6-es.png)
 
-10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de cuotas sin intereses se sincronicen con tu tienda.
+10. Finalmente, haz clic en **Sincronizar** para que las configuraciones de cuotas sin intereses se sincronicen con tu tienda. Siempre que se cambien las configuraciones de cuotas sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ![configure installments 7](/images/shopify/configure-installments-7-es-all.png)
-
-> WARNING
->
-> Atención
->
-> Siempre que se cambien las configuraciones de cuotas sin intereses, será necesario **sincronizar** los cambios con tu tienda.
 
 ------------
