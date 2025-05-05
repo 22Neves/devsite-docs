@@ -37,6 +37,8 @@ product_landing_how_works:
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746473018715-overvieworderspt.gif
+ - image_text:
+ - image_text_link:
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
@@ -143,6 +145,8 @@ product_landing_how_works:
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746473018715-overvieworderspt.gif
+ - image_text:
+ - image_text_link:
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout.
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.
@@ -247,6 +251,8 @@ product_landing_how_works:
  - message: O cliente escolhe o produto e todo o processo de compra e pagamento é feito dentro da loja com a segurança do Mercado Pago, sem sair do seu site.
  - sub_title: Processo de pagamento
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746473018715-overvieworderspt.gif
+ - image_text:
+ - image_text_link:
  - list_title: O comprador seleciona os produtos ou serviços desejados em sua loja.
  - list_title: Na tela de pagamento, deve selecionar um dos meios de pagamento integrados em seu checkout. 
  - list_title: Em seguida, informa os dados necessários e finaliza a compra sem sair do ambiente da sua loja.

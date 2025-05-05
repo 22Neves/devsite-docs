@@ -37,6 +37,8 @@ product_landing_how_works:
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746459185035-overvieworderses.gif
+ - image_text:
+ - image_text_link:
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -143,6 +145,8 @@ product_landing_how_works:
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746459185035-overvieworderses.gif
+ - image_text:
+ - image_text_link:
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
@@ -249,6 +253,8 @@ product_landing_how_works:
  - message: The customer chooses the product or service, and the entire purchase and payment process takes place in your store, with the security of Mercado Pago and without leaving your website.
  - sub_title: Payment process
  - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746459185035-overvieworderses.gif
+ - image_text:
+ - image_text_link:
  - list_title: Buyers select their preferred products or services on your website.
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
