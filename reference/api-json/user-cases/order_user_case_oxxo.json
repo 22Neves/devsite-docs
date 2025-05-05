@@ -85,12 +85,6 @@
                         "description": {
                             "example": "disabled"
                         },
-                        "integration_data": {
-                            "example": "disabled"
-                        },
-                        "expiration_time": {
-                            "example": "disabled"
-                        },
                         "items": {
                             "example": "disabled"
                         }
@@ -171,6 +165,9 @@
                                                 "amount": {
                                                     "example": "200.00"
                                                 },
+                                                "paid_amount": {
+                                                    "example": "disabled"
+                                                },
                                                 "reference_id": {
                                                     "example": "22dvqmsbq8c"
                                                 },
@@ -224,12 +221,6 @@
                                                                 "es": "Código de verificación. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer."
                                                             }
                                                         },
-                                                        "qr_code": {
-                                                            "example": "disabled"
-                                                        },
-                                                        "qr_code_base64": {
-                                                            "example": "disabled"
-                                                        },
                                                         "token": {
                                                             "example": "disabled"
                                                         },
@@ -237,12 +228,6 @@
                                                             "example": "disabled"
                                                         },
                                                         "statement_descriptor": {
-                                                            "example": "disabled"
-                                                        },
-                                                        "financial_institution": {
-                                                            "example": "disabled"
-                                                        },
-                                                        "digitable_line": {
                                                             "example": "disabled"
                                                         }
                                                     }
@@ -253,12 +238,6 @@
                                 }
                             },
                             "description": {
-                                "example": "disabled"
-                            },
-                            "expiration_time": {
-                                "example": "disabled"
-                            },
-                            "client_token": {
                                 "example": "disabled"
                             },
                             "items": {
