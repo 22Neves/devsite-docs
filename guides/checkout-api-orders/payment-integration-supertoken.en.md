@@ -427,7 +427,58 @@ Finally, to allow the buyer to view these payment options in your checkout and s
 
 After the buyer selects the payment method they want to use for the purchase, you must send a **POST** request with your :toolTipComponent[Access Token]{content="Private key of the application created in Mercado Pago, that is used in the backend. You can access it through *Your integrations > Application details > Testing > Testing credentials* or *Production > Production credentials*."} to the :TagComponent{tag="API" text="/v1/orders" href="/developers/en/reference/orders/online-payments/create/post"} endpoint to process the payment, using the buyer's payment method data obtained earlier through the `payment_method` node.
 
-```JavaScript
+[[[
+```curl
+curl --request POST \
+  --url https://api.mercadopago.com/v1/orders \
+  --header 'authorization: {{YOUR_ACCESS_TOKEN}} \
+  --header 'content-type: application/json' \
+  --header 'x-idempotency-key: {{V4_UUID_OR_RANDOM_STRING}} \
+  --data '{
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "description": "order description",
+  "marketplace": "NONE",
+  "marketplace_fee": "1.00",
+  "total_amount": "100.00",
+  "expiration_time": "P3Y6M4DT12H30M5S",
+  "type": "online",
+  "payer": {
+    "email": "{{MLA_PAYER_EMAIL}}",
+    "first_name": "first name",
+    "last_name": "last name",
+    "phone": {
+      "area_code": "55",
+      "number": "1112345678"
+    }
+  },
+  "transactions": {
+    "payments": [
+      {
+        "amount": "100.00",
+        "payment_method": {
+          "id": "{{PAYMENT_METHOD_ID}}",
+          "type": "{{PAYMENT_METHOD_TYPE}}",
+          "token": "{{PAYMENT_METHOD_HASH}}",
+          "installments": 1, // Required only when applicable
+        }
+      }
+    ]
+  },
+  "items": [
+    {
+      "title": "title",
+      "description": "description",
+      "unit_price": "10.00",
+      "external_code": "ABC",
+      "category_id": "category",
+      "picture_url": "https://www.mercadopago.com/img",
+      "quantity": 1
+    }
+  ]
+}'
+```
+```node
 async function createOrder() {
   try {
     const response = await fetch("https://api.mercadopago.com/v1/orders", {
@@ -473,6 +524,7 @@ async function createOrder() {
 
 createOrder();
 ```
+]]]
 
 If successful, the response to this request will look as the following example. 
 

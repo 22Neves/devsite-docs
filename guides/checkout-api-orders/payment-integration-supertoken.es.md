@@ -420,12 +420,64 @@ Por último, para que el comprador visualice estas opciones de pago en tu checko
 ![Ejemplo del frontend de la tienda con los medios de pago disponibles](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
 
+
 :::
 :::AccordionComponent{title="4. Procesar pago" pill="server-side"}
 
 Después de que el usuario seleccione con qué medio de pago desea realizar la compra, debes enviar un **POST** con tu :toolTipComponent[Access Token]{content="Clave privada de la aplicación creada en Mercado Pago, que es utilizada en el _backend_. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba* o *Producción > Credenciales de producción*."} al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"} para procesar el pago, utilizando los datos de los medios de pago del comprador obtenidos anteriormente a través del nodo `payment_method`.
 
-```JavaScript
+[[[
+```curl
+curl --request POST \
+  --url https://api.mercadopago.com/v1/orders \
+  --header 'authorization: {{YOUR_ACCESS_TOKEN}} \
+  --header 'content-type: application/json' \
+  --header 'x-idempotency-key: {{V4_UUID_OR_RANDOM_STRING}} \
+  --data '{
+  "processing_mode": "automatic",
+  "external_reference": "ext_ref_1234",
+  "description": "order description",
+  "marketplace": "NONE",
+  "marketplace_fee": "1.00",
+  "total_amount": "100.00",
+  "expiration_time": "P3Y6M4DT12H30M5S",
+  "type": "online",
+  "payer": {
+    "email": "{{MLA_PAYER_EMAIL}}",
+    "first_name": "first name",
+    "last_name": "last name",
+    "phone": {
+      "area_code": "55",
+      "number": "1112345678"
+    }
+  },
+  "transactions": {
+    "payments": [
+      {
+        "amount": "100.00",
+        "payment_method": {
+          "id": "{{PAYMENT_METHOD_ID}}",
+          "type": "{{PAYMENT_METHOD_TYPE}}",
+          "token": "{{PAYMENT_METHOD_HASH}}",
+          "installments": 1, // Required only when applicable
+        }
+      }
+    ]
+  },
+  "items": [
+    {
+      "title": "title",
+      "description": "description",
+      "unit_price": "10.00",
+      "external_code": "ABC",
+      "category_id": "category",
+      "picture_url": "https://www.mercadopago.com/img",
+      "quantity": 1
+    }
+  ]
+}'
+```
+```node
 async function createOrder() {
   try {
     const response = await fetch("https://api.mercadopago.com/v1/orders", {
@@ -471,6 +523,7 @@ async function createOrder() {
 
 createOrder();
 ```
+]]]
 
 En caso de éxito, la respuesta a esta solicitud se verá como el ejemplo a continuación. 
 
