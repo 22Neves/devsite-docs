@@ -141,26 +141,27 @@ El envío del pago debe ser realizado mediante la creación de una order que con
 Para eso, envía un **POST** con tu :toolTipComponent[Access Token de pruebas]{content="Clave privada de pruebas de la aplicación creada en Mercado Pago, que es utilizada en el backend. Puedes acceder a ella a través de *Tus integraciones > Detalles de aplicación > Pruebas > Credenciales de prueba*."} y los parámetros requeridos enumerados a continuación al endpoint :TagComponent{tag="API" text="/v1/orders" href="/developers/es/reference/orders/online-payments/create/post"} y ejecutes la requisición.
 
 ```curl
-curl --location 'https://api.mercadopago.com/v1/orders' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
---header 'X-Idempotency-Key: <SOME_UNIQUE_VALUE>' \
-{
-  "type": "online",
-  "external_reference": "ext_ref_1234",
-  "processing_mode": "automatic",
-  "total_amount": "200.00",
-  "description": "some description",
-  "payer": {
-    "email": "test@testuser.com",
-    "first_name": "John",
-    "last_name": "Doe",
-    "identification": {
-      "type": "CPF",
-      "number": "99999999999"
-    },
-    "address": [
-      {
+curl -X POST \
+  -H 'accept: application/json' \
+  -H 'content-type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
+  'https://api.mercadopago.com/v1/orders' \
+  -d '{
+    "type": "online",
+    "external_reference": "ext_ref_1234",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "description": "some description",
+    "payer": {
+      "email": "test@testuser.com",
+      "first_name": "John",
+      "last_name": "Doe",
+      "identification": {
+        "type": "CPF",
+        "number": "15635614680"
+      },
+      "address": {
         "street_name": "Av. das Nações Unidas",
         "street_number": "3003",
         "zip_code": "06233903",
@@ -168,21 +169,20 @@ curl --location 'https://api.mercadopago.com/v1/orders' \
         "state": "SP",
         "city": "Osasco"
       }
-    ]
-  },
-  "transactions": {
-    "payments": [
-      {
-        "amount": "200.00",
-        "payment_method": {
-          "id": "bolbradesco",
-          "type": "ticket"
-        },
-        "expiration_time": "P3D"
-      }
-    ]
-  }
-}
+    },
+    "transactions": {
+      "payments": [
+        {
+          "amount": "200.00",
+          "payment_method": {
+            "id": "bolbradesco",
+            "type": "ticket"
+          },
+          "expiration_time": "P3D"
+        }
+      ]
+    }
+  }'
 ```
 
 Consulta en la tabla a continuación las descripciones de los parámetros que son obligatorios en la solicitud y aquellos que, aunque son opcionales, tienen alguna particularidad importante que debe destacarse.

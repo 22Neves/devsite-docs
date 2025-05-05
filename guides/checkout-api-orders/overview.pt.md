@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integre Checkout Transparente e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746487800530-BR.PT.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -52,7 +52,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](/developers/pt/support/37740).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196453457-overviewmlbpt.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746487800530-BR.PT.png
  - column_product: Checkout Transparente
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api-v2/overview#:~:text=UY-,Como,-integrar
@@ -84,17 +84,19 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Como integrar
  - sub_title: Conheça as etapas necessárias para integrar esta solução.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/31/1743440768142-apiintegrationflowchartcardform2pt.png
  - requirement_title: Pré-requisitos
  - requirement_table_title: Conta de usuário Mercado Pago
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Chave Pix
  - requirement_table_list: Caso queira oferecer pagamentos via Pix, é necessário ter as [chaves Pix cadastradas](https://www.youtube.com/watch?v=60tApKYVnkA).
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Processo de integração
  - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
  - list_item: Configurar o ambiente de desenvolvimento
@@ -107,18 +109,15 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Suas integrações] --> B[Criar uma aplicação]
     B --> C[Configurar o ambiente de desenvolvimento]
     C --> D[Configurar meio de pagamento]
     D --> E[Configurar notificações de pagamento]
     E --> F[Testar sua integração]
-
     F --> G{O teste foi bem-sucedido?}
-    
     G -- Não --> H[Corrigir configuração] --> F
-
     G -- Sim --> I{O que deseja fazer?}
     I -- Subir em produção --> J[Subir em produção]
     I -- Configurar outro meio de pagamento --> D
@@ -212,7 +211,6 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -221,6 +219,10 @@ product_landing_how_integrate:
  - requirement_title: Pré-requisitos
  - requirement_table_title: Conta de usuário Mercado Pago
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Processo de integração
  - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
  - list_item: Configurar o ambiente de desenvolvimento
@@ -233,18 +235,15 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Suas integrações] --> B[Criar uma aplicação]
     B --> C[Configurar o ambiente de desenvolvimento]
     C --> D[Configurar meio de pagamento]
     D --> E[Configurar notificações de pagamento]
     E --> F[Testar sua integração]
-
     F --> G{O teste foi bem-sucedido?}
-    
     G -- Não --> H[Corrigir configuração] --> F
-
     G -- Sim --> I{O que deseja fazer?}
     I -- Subir em produção --> J[Subir em produção]
     I -- Configurar outro meio de pagamento --> D
@@ -337,7 +336,7 @@ product_landing_what_differentiates:
  - line_type: sites
  - line_values: all|all|all
 ---
-|||column1|||
+
 ---
 product_landing_how_integrate:
  - title: Como integrar
@@ -346,6 +345,10 @@ product_landing_how_integrate:
  - requirement_title: Pré-requisitos
  - requirement_table_title: Conta de usuário Mercado Pago
  - requirement_table_list: Você precisa criar um usuário no Mercado Pago (ou no Mercado Livre) para ter uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Processo de integração
  - list_item: Criar uma aplicação a partir de [Suas integrações](/developers/panel/app)
  - list_item: Configurar o ambiente de desenvolvimento
@@ -358,18 +361,15 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Suas integrações] --> B[Criar uma aplicação]
     B --> C[Configurar o ambiente de desenvolvimento]
     C --> D[Configurar meio de pagamento]
     D --> E[Configurar notificações de pagamento]
     E --> F[Testar sua integração]
-
     F --> G{O teste foi bem-sucedido?}
-    
     G -- Não --> H[Corrigir configuração] --> F
-
     G -- Sim --> I{O que deseja fazer?}
     I -- Subir em produção --> J[Subir em produção]
     I -- Configurar outro meio de pagamento --> D
