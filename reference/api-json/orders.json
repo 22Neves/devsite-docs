@@ -136,6 +136,9 @@
                                         "total_paid_amount": {
                                             "$ref": "#/components/schemas/total_paid_amount"
                                         },
+                                        "user_id": {
+                                            "$ref": "#/components/schemas/user_id"
+                                        },
                                         "integration_data": {
                                             "$ref": "#/components/schemas/integration_data_response"
                                         },
@@ -196,9 +199,6 @@
                                                             "paid_amount": {
                                                                 "$ref": "#/components/schemas/paid_amount"
                                                             },
-                                                            "date_of_expiration": {
-                                                                "$ref": "#/components/schemas/date_of_expiration"
-                                                            },
                                                             "reference_id": {
                                                                 "$ref": "#/components/schemas/reference_id"
                                                             },
@@ -254,83 +254,11 @@
                                                                     },
                                                                     "statement_descriptor": {
                                                                         "type": "string",
-                                                                        "example": "approved",
+                                                                        "example": "var",
                                                                         "description": {
                                                                             "en": "Description that the payment will appear with in the card statement.",
                                                                             "pt": "Descrição com a qual o pagamento aparecerá na fatura do cartão.",
                                                                             "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
-                                                                        }
-                                                                    },
-                                                                    "ticket_url": {
-                                                                        "type": "string",
-                                                                        "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
-                                                                        "description": {
-                                                                            "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                            "pt": "URL do ticket. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
-                                                                            "es": "URL del ticket. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
-                                                                        }
-                                                                    },
-                                                                    "barcode_content": {
-                                                                        "type": "string",
-                                                                        "example": "3335008800000000006004835002100020000242462010",
-                                                                        "description": {
-                                                                            "en": "Barcode content. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash.",
-                                                                            "pt": "Conteúdo do código de barras. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash.",
-                                                                            "es": "Contenido del código de barras. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash."
-                                                                        }
-                                                                    },
-                                                                    "reference": {
-                                                                      "type": "string",
-                                                                      "example": "6005407530",
-                                                                      "description": {
-                                                                        "en": "Reference number. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
-                                                                        "pt": "Número de referência. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
-                                                                        "es": "Número de referencia. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe."
-                                                                      }
-                                                                    },
-                                                                    "verification_code": {
-                                                                        "type": "string",
-                                                                        "example": "6005407530",
-                                                                        "description": {
-                                                                            "en": "Verification code. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
-                                                                            "pt": "Código de verificação. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
-                                                                            "es": "Código de verificación. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer."
-                                                                        }
-                                                                    },
-                                                                    "financial_institution": {
-                                                                        "type": "string",
-                                                                        "example": "bolbradesco",
-                                                                        "description": {
-                                                                            "en": "Financial institution. It is returned for offline payment methods, such as bolbradesco, banamex, bancomer.",
-                                                                            "pt": "Instituição financeira. É retornado para meios de pagamento offline, como bolbradesco, banamex, bancomer.",
-                                                                            "es": "Institución financiera. Se devuelve para métodos de pago offline, como bolbradesco, banamex, bancomer."
-                                                                        }
-                                                                    },
-                                                                    "digitable_line": {
-                                                                        "type": "string",
-                                                                        "example": "23793380296060054351030006333303799140000020000",
-                                                                        "description": {
-                                                                            "en": "Digitable line. It is returned for offline payment method bolbradesco.",
-                                                                            "pt": "Linha digitável. É retornado para o meio de pagamento offline bolbradesco.",
-                                                                            "es": "Línea digitable. Se devuelve para el método de pago offline bolbradesco."
-                                                                        }
-                                                                    },
-                                                                    "qr_code": {
-                                                                        "type": "string",
-                                                                        "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0",
-                                                                        "description": {
-                                                                            "en": "QR code. It is returned for offline payment method pix.",
-                                                                            "pt": "Código QR. É retornado para o meio de pagamento offline pix.",
-                                                                            "es": "Código QR. Se devuelve para el método de pago offline pix."
-                                                                        }
-                                                                    },
-                                                                    "qr_code_base64": {
-                                                                        "type": "string",
-                                                                        "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
-                                                                        "description": {
-                                                                            "en": "QR code in base64. It is returned for offline payment method pix.",
-                                                                            "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
-                                                                            "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
                                                                         }
                                                                     }
                                                                 }
@@ -1141,7 +1069,7 @@
                                                                     },
                                                                     "statement_descriptor": {
                                                                         "type": "string",
-                                                                        "example": "approved",
+                                                                        "example": "var",
                                                                         "description": {
                                                                             "en": "Description that the payment will appear with in the card statement.",
                                                                             "pt": "Descrição com a qual o pagamento aparecerá na fatura do cartão.",
@@ -1751,9 +1679,6 @@
                                                             "en": "Payment amount.",
                                                             "es": "Monto del pago."
                                                         }
-                                                    },
-                                                    "payment_expiration_time": {
-                                                        "$ref": "#/components/schemas/payment_expiration_time"
                                                     },
                                                     "date_of_expiration": {
                                                         "$ref": "#/components/schemas/date_of_expiration"

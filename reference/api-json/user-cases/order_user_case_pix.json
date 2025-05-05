@@ -140,6 +140,18 @@
                                                 "id": {
                                                     "example": "PAY01HRYFXQ53Q3JPEC48MYWMR0TE"
                                                 },
+                                                "amount": {
+                                                    "example": "1000.00"
+                                                },
+                                                "date_of_expiration": {
+                                                    "type": "string",
+                                                    "description": {
+                                                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
+                                                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
+                                                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
+                                                    },
+                                                    "example": "P3Y6M4DT12H30M5S"
+                                                },
                                                 "reference_id": {
                                                     "example": "123456789"
                                                 },
@@ -148,9 +160,6 @@
                                                 },
                                                 "status_detail": {
                                                     "example": "waiting_transfer"
-                                                },
-                                                "amount": {
-                                                    "example": "1000.00"
                                                 },
                                                 "payment_method": {
                                                     "properties": {
@@ -161,13 +170,31 @@
                                                             "example": "bank_transfer"
                                                         },
                                                         "ticket_url": {
-                                                            "example": "https://www.mercadopago.com.br/sandbox/payments/00000000000/ticket?caller_id=77777777777&hash=34cb0d7c-81d9-478c-92a5-767d0kakjja"
+                                                            "type": "string",
+                                                            "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+                                                            "description": {
+                                                                "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                "pt": "URL do ticket. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                "es": "URL del ticket. Se devuelve para medios de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
+                                                            }
                                                         },
                                                         "qr_code": {
-                                                            "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0"
+                                                            "type": "string",
+                                                            "example": "00020126580014br.gov.bcb.pix0136b76aa9c2-2ec4-4110-954e-ebfe34f05b61520400005303986540510.005802BR5912TESTPVBWOSBE6009Sao Paulo62240520mpqrinter715936942186304C3C0",
+                                                            "description": {
+                                                                "en": "QR code. It is returned for offline payment method pix.",
+                                                                "pt": "Código QR. É retornado para o meio de pagamento offline pix.",
+                                                                "es": "Código QR. Se devuelve para el método de pago offline pix."
+                                                            }
                                                         },
                                                         "qr_code_base64": {
-                                                            "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i"
+                                                            "type": "string",
+                                                            "example": "iVBORw0KGgoAAAANSUhEUgAABWQAAAVkAQAAAAB79i",
+                                                            "description": {
+                                                                "en": "QR code in base64. It is returned for offline payment method pix.",
+                                                                "pt": "Código QR em base64. É retornado para o meio de pagamento offline pix.",
+                                                                "es": "Código QR en base64. Se devuelve para el método de pago offline pix."
+                                                            }
                                                         },
                                                         "token": {
                                                             "example": "disabled"
@@ -233,9 +260,6 @@
                                 }
                             },
                             "description": {
-                                "example": "disabled"
-                            },
-                            "expiration_time": {
                                 "example": "disabled"
                             },
                             "client_token": {

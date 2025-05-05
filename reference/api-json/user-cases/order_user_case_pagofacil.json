@@ -76,9 +76,6 @@
                                                 "financial_institution": {
                                                     "example": "disabled"
                                                 },
-                                                "verification_code": {
-                                                    "example": "6005407568"
-                                                },
                                                 "ticket_url": {
                                                     "example": "disabled"
                                                 },
@@ -196,6 +193,15 @@
                                                 "amount": {
                                                     "example": "200.00"
                                                 },
+                                                "date_of_expiration": {
+                                                    "type": "string",
+                                                    "description": {
+                                                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
+                                                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
+                                                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
+                                                    },
+                                                    "example": "P3Y6M4DT12H30M5S"
+                                                },
                                                 "reference_id": {
                                                     "example": "22dvqmsbq8c"
                                                 },
@@ -214,16 +220,40 @@
                                                             "example": "ticket"
                                                         },
                                                         "ticket_url": {
-                                                            "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=pagofacil&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e"
+                                                            "type": "string",
+                                                            "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e",
+                                                            "description": {
+                                                                "en": "Ticket URL. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                "pt": "URL do ticket. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix.",
+                                                                "es": "URL del ticket. Se devuelve para medios de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe, pix."
+                                                            }
                                                         },
                                                         "barcode_content": {
-                                                            "example": "3335008800000000006004835002100020000242462010"
+                                                            "type": "string",
+                                                            "example": "3335008800000000006004835002100020000242462010",
+                                                            "description": {
+                                                                "en": "Barcode content. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash.",
+                                                                "pt": "Conteúdo do código de barras. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash.",
+                                                                "es": "Contenido del código de barras. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash."
+                                                            }
                                                         },
                                                         "reference": {
-                                                            "example": "6005407568"
+                                                            "type": "string",
+                                                            "example": "6005407530",
+                                                            "description": {
+                                                            "en": "Reference number. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
+                                                            "pt": "Número de referência. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe.",
+                                                            "es": "Número de referencia. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer, clabe."
+                                                            }
                                                         },
                                                         "verification_code": {
-                                                            "example": "6005407568"
+                                                            "type": "string",
+                                                            "example": "6005407530",
+                                                            "description": {
+                                                                "en": "Verification code. It is returned for offline payment methods, such as rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
+                                                                "pt": "Código de verificação. É retornado para meios de pagamento offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer.",
+                                                                "es": "Código de verificación. Se devuelve para métodos de pago offline, como rapipago, pagofacil, bolbradesco, oxxo, paycash, banamex, bancomer."
+                                                            }
                                                         },
                                                         "financial_institution": {
                                                             "example": "disabled"
