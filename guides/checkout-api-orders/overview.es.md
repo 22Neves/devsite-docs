@@ -86,6 +86,7 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -106,7 +107,26 @@ product_landing_how_integrate:
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-api/create-application
 ---
+|||column2|||
+<div class="mermaid-overview">
+  <pre class="mermaid">
+  flowchart TD
+    A[Tus integraciones] --> B[Crear una aplicación]
+    B --> C[Configurar el ambiente de desarrollo]
+    C --> D[Configurar medio de pago]
+    D --> E[Configurar las notificaciones de pago]
+    E --> F[Probar tu integración]
 
+    F --> G{¿La prueba fue exitosa?}
+    
+    G -- No --> H[Corregir configuración] --> F
+
+    G -- Sí --> I{¿Qué deseas hacer?}
+    I -- Salir a producción --> J[Salir a producción]
+    I -- Configurar otro medio de pago --> D
+  </pre>
+</div>
+|||
 ------------
 ----[mla]----
 
@@ -196,6 +216,7 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -214,7 +235,26 @@ product_landing_how_integrate:
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-api-v2/create-application
 ---
+|||column2|||
+<div class="mermaid-overview">
+  <pre class="mermaid">
+  flowchart TD
+    A[Tus integraciones] --> B[Crear una aplicación]
+    B --> C[Configurar el ambiente de desarrollo]
+    C --> D[Configurar medio de pago]
+    D --> E[Configurar las notificaciones de pago]
+    E --> F[Probar tu integración]
 
+    F --> G{¿La prueba fue exitosa?}
+    
+    G -- No --> H[Corregir configuración] --> F
+
+    G -- Sí --> I{¿Qué deseas hacer?}
+    I -- Salir a producción --> J[Salir a producción]
+    I -- Configurar otro medio de pago --> D
+  </pre>
+</div>
+|||
 ------------
 ----[mlm]----
 
@@ -304,6 +344,7 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -322,6 +363,25 @@ product_landing_how_integrate:
  - button_description: Quiero comenzar a integrar
  - button_link: /developers/es/docs/checkout-api-v2/create-application
 ---
+|||column2|||
+<div class="mermaid-overview">
+  <pre class="mermaid">
+  flowchart TD
+    A[Tus integraciones] --> B[Crear una aplicación]
+    B --> C[Configurar el ambiente de desarrollo]
+    C --> D[Configurar medio de pago]
+    D --> E[Configurar las notificaciones de pago]
+    E --> F[Probar tu integración]
 
+    F --> G{¿La prueba fue exitosa?}
+    
+    G -- No --> H[Corregir configuración] --> F
+
+    G -- Sí --> I{¿Qué deseas hacer?}
+    I -- Salir a producción --> J[Salir a producción]
+    I -- Configurar otro medio de pago --> D
+  </pre>
+</div>
+|||
 
 ------------
