@@ -20,42 +20,44 @@ Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 >
 > Si ya has instalado otra aplicación de Mercado Pago, como Mercado Pago Tarjetas----[mlb]----, Mercado Pago Pix------------ o Mercado Pago Checkout Pro, tu tienda ya estará automáticamente vinculada a tu cuenta. En ese caso, puedes avanzar al paso 11 de esta documentación.
 
-![installation cards 3](/images/shopify/installation-cards-3-1-pt.png)
+![installation cards 3](/images/shopify/installation-cards-3-1-es.png)
 
 4. Al acceder al entorno de Mercado Pago, haz clic en **Iniciar vinculación** para comenzar el proceso.
 
-![installation cards 4](/images/shopify/connect-account-1-pt.png)
+![installation cards 4](/images/shopify/connect-account-1-es.png)
 
 5. Si ya has iniciado sesión en tu cuenta de Mercado Pago, omite este paso. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta.
 
-![installation cards 5](/images/shopify/connect-account-2-pt.png)
+![installation cards 5](/images/shopify/connect-account-2-es.png)
 
 6. Elige qué cuenta de Mercado Pago deseas vincular a la tienda.
 
-![installation cards 6](/images/shopify/connect-account-3-pt.png)
+![installation cards 6](/images/shopify/connect-account-3-es.png)
 
 7. Haz clic en **Vincular cuenta** y acepta los permisos solicitados. Estos permisos son esenciales para que Mercado Pago procese los pagos de tu tienda de manera segura e integrada.
 
-![installation cards 7](/images/shopify/connect-account-4-pt.png)
+![installation cards 7](/images/shopify/connect-account-4-es.png)
 
 8. El proceso se realizará automáticamente y podría tardar unos segundos.
 
-![installation cards 8](/images/shopify/connect-account-5-pt.png)
+![installation cards 8](/images/shopify/connect-account-5-es.png)
+
+> NOTA
+>
+> Nota
+>
+> Una vez que la tienda esté vinculada a la cuenta de Mercado Pago en una aplicación, no será necesario repetir este proceso para otras aplicaciones de Mercado Pago para Shopify.
 
 9. Haz clic en la opción **Verificar activación** de Mercado Pago Antifraude Plus.
 
-> NOTE
->
-> En esta etapa, también puedes acceder a tu cuenta de Mercado Pago para configurar el número de cuotas disponibles y la tasa de interés que deseas ofrecer a tus clientes haciendo clic en **Configurar cuotas e interés**.
-
-![antifraude plus 3](/images/shopify/antifraude-plus-3-pt.png)
+![antifraude plus 3](/images/shopify/antifraude-plus-3-es.png)
 
 10. Para activar la aplicación, haz clic en **Ir a temas** de Shopify.
 
-![antifraude plus 3](/images/shopify/antifraude-plus-3.1-pt.png)
+![antifraude plus 3](/images/shopify/antifraude-plus-3.1-es.png)
 
 11. Por último, haz clic en **Guardar** para finalizar la instalación.
 
-![antifraude plus 4](/images/shopify/antifraude-plus-4-pt.png)
+![antifraude plus 4](/images/shopify/antifraude-plus-4-es.png)
 
 **Mercado Pago Antifraude Plus** se ha instalado con éxito.

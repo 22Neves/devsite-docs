@@ -24,7 +24,7 @@ Para **configurar Linha de Crédito en el checkout de la tienda**, sigue los pas
 ----[mlm]----
 Actualmente puedes ofrecer **Meses sin Tarjeta** a través de nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) o directamente desde el checkout de tu tienda con la app **Mercado Pago Meses sin Tarjeta**.
 
-Para mejorar la visibilidad de esta opción, puedes complementar la integración activando la aplicación **Mercado Pago Banner**, que promociona **Meses sin Tarjeta** durante el proceso de compra. Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Meses sin Tarjeta" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
+Para mejorar la visibilidad de esta opción, puedes complementar la integración activando la aplicación **Mercado Pago Banner**, que promociona **Meses sin Tarjeta** durante el proceso de compra. Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Meses sin Tarjeta" en tu tienda](/developers/es/docs/shopify/shopify/how-tos/banner).
 
 Para **configurar Meses sin Tarjeta en el checkout de la tienda**, sigue los pasos a continuación.
 
@@ -81,15 +81,21 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 
 ![installation cards 8](/images/shopify/connect-account-5-es.png)  
 
-12. Após a vinculação da sua loja à sua conta Mercado Pago, clique em **Ativar app**.
+> NOTE
+>
+> Nota
+>
+> Una vez que la tienda esté vinculada a la cuenta de Mercado Pago en una aplicación, no será necesario repetir este proceso para otras aplicaciones de Mercado Pago para Shopify.
 
-![installation cards 8](/images/shopify/connect-account-credits-6-pt.png)
+12. Después de vincular tu tienda a tu cuenta de Mercado Pago, haz clic en **Activar app**.
 
-13. Clique em **Ir para configurações** para retornar ao painel da Shopify. 
+![installation cards 8](/images/shopify/connect-account-credits-6-es.png)
 
-![installation cards 8](/images/shopify/connect-account-7-pt.png)
+13. Haz clic en **Ir a configuraciones** para volver al panel de Shopify.
 
-14. No painel administrativo da loja, vá até **Configurações > Pagamentos** e clique em **Ativar** para ativar o Mercado Pago Cartões.
+![installation cards 8](/images/shopify/connect-account-7-es.png)
+
+14. En el panel administrativo de la tienda, ve a **Configuraciones > Pagos** y haz clic en **Activar** para activar la aplicación.
 
 ----[mlb]----
 > RED_MESSAGE

@@ -50,6 +50,12 @@ Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga as segui
 
 ![installation chopro 11](/images/shopify/connect-account-5-pt.png)
 
+> NOTE
+>
+> Nota
+>
+> Após a loja ser vinculada à conta do Mercado Pago em um aplicativo, não será necessário repetir esse processo para outros aplicativos do Mercado Pago para Shopify.
+
 14. Após a vinculação da sua loja à sua conta Mercado Pago, clique em **Ativar app**.
 
 ![installation chopro 12](/images/shopify/connect-account-pro-1-pt.png)

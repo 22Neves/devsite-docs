@@ -38,7 +38,7 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 
 8. Clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja à sua conta para receber pagamentos.
 
-![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
+![installation chopro 6](/images/shopify/installation-pix-0-pt.png)
 
 9. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para iniciar o processo.
 
@@ -59,6 +59,12 @@ Para instalar o Mercado Pago Pix via painel administrativo da Shopify, siga os p
 13. O processo será realizado automaticamente e poderá levar alguns segundos.
 
 ![installation chopro 11](/images/shopify/connect-account-5-pt.png)
+
+> NOTE
+>
+> Nota
+>
+> Após a loja ser vinculada à conta do Mercado Pago em um aplicativo, não será necessário repetir esse processo para outros aplicativos do Mercado Pago para Shopify.
 
 14. Após a vinculação da sua loja à sua conta Mercado Pago, é necessário cadastrar uma chave Pix na sua conta Mercado Pago. Clique em **Cadastrar chave Pix** para cadastrá-la.
 

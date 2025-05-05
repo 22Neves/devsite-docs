@@ -40,11 +40,13 @@ Para instalar o Mercado Pago Antifraude Plus, siga as etapas abaixo.
 
 ![installation cards 8](/images/shopify/connect-account-5-pt.png)
 
-9. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus.
-
 > NOTE
 >
-> Nesta etapa, você também pode acessar sua conta Mercado Pago para configurar o número de parcelas disponíveis e a taxa de acréscimo que deseja oferecer aos seus clientes clicando em **Configurar parcelamento e acréscimo**.
+> Nota
+>
+> Após a loja ser vinculada à conta do Mercado Pago em um aplicativo, não será necessário repetir esse processo para outros aplicativos do Mercado Pago para Shopify.
+
+9. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus.
 
 ![antifraude plus 3](/images/shopify/antifraude-plus-3-pt.png)
 

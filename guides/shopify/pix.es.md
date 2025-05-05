@@ -38,39 +38,39 @@ Para instalar Mercado Pago Pix a través del panel administrativo de Shopify, si
 
 8. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta para recibir pagos.
 
-![installation chopro 6](/images/shopify/installation-chopro-6-pt.png)
+![installation chopro 6](/images/shopify/installation-pix-0-es.png)
 
 9. Al acceder al entorno de Mercado Pago, haz clic en **Iniciar vinculación** para comenzar el proceso.
 
-![installation chopro 7](/images/shopify/connect-account-1-pt.png)
+![installation chopro 7](/images/shopify/connect-account-1-es.png)
 
 10. Si ya has iniciado sesión en tu cuenta de Mercado Pago, omite este paso. De lo contrario, ingresa tu correo electrónico y contraseña para acceder a tu cuenta.
 
-![installation chopro 8](/images/shopify/connect-account-2-pt.png)
+![installation chopro 8](/images/shopify/connect-account-2-es.png)
 
 11. Elige qué cuenta de Mercado Pago deseas vincular a la tienda.
 
-![installation chopro 9](/images/shopify/connect-account-3-pt.png)
+![installation chopro 9](/images/shopify/connect-account-3-es.png)
 
 12. Haz clic en **Vincular cuenta** y acepta los permisos solicitados. Estos permisos son esenciales para que Mercado Pago procese los pagos de tu tienda de manera segura e integrada.
 
-![installation chopro 10](/images/shopify/connect-account-4-pt.png)
+![installation chopro 10](/images/shopify/connect-account-4-es.png)
 
 13. El proceso se realizará automáticamente y podría tardar unos segundos.
 
-![installation chopro 11](/images/shopify/connect-account-5-pt.png)
+![installation chopro 11](/images/shopify/connect-account-5-es.png)
+
+> NOTE
+>
+> Nota
+>
+> Una vez que la tienda esté vinculada a la cuenta de Mercado Pago en una aplicación, no será necesario repetir este proceso para otras aplicaciones de Mercado Pago para Shopify.
 
 14. Después de vincular tu tienda a tu cuenta de Mercado Pago, es necesario registrar una clave Pix en tu cuenta de Mercado Pago. Haz clic en **Registrar clave Pix** para registrarla.
 
-![Pix configuration](/images/shopify/connect-pix-1-pt.png)
-
 15. Después de registrar la clave Pix, haz clic en **Activar app**.
 
-![Pix configuration](/images/shopify/connect-pix-2-pt.png)
-
 16. Haz clic en **Ir a configuraciones** para volver al panel de Shopify.
-
-![Pix configuration](/images/shopify/connect-pix-3-pt.png)
 
 17. En el panel administrativo de la tienda, ve a **Configuraciones > Pagos** y haz clic en **Activar** para activar Mercado Pago Pix.
 
