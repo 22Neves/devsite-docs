@@ -157,7 +157,7 @@ Below, we show an example of how the `ID` attribute with the preference identifi
 
 ### Choose the type of integration
 
-Once you have completed the configurations in your backend and obtained your preference ID, you should proceed to the frontend configurations. To do this, you need to choose the type of integration that best suits your needs, whether it is for integrating a **website** or a **mobile application**.
+Once you have obtained your preference ID, you should proceed to the frontend configurations. To do this, you need to choose the type of integration that best suits your needs, whether it is for integrating a **website** or a **mobile application**.
 
 Select the type of integration you want to perform and follow the detailed steps to complete the Checkout Pro integration.
 

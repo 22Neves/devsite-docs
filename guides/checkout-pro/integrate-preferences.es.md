@@ -157,7 +157,7 @@ A continuación, te mostramos un ejemplo de cómo se ve el atributo `ID` con el 
 
 ### Elegir el tipo de integración
 
-Una vez que hayas terminado de realizar las configuraciones en tu backend y hayas obtenido tu ID de la preferencia, deberás avanzar a las configuraciones del frontend. Para eso, es necesario que elijas el tipo de integración que mejor se adapte a tus necesidades, ya sea para integrar un **sitio web** o para una **aplicación móvil**. 
+Una vez que hayas obtenido tu ID de la preferencia, deberás avanzar a las configuraciones del frontend. Para eso, es necesario que elijas el tipo de integración que mejor se adapte a tus necesidades, ya sea para integrar un **sitio web** o para una **aplicación móvil**. 
 
 Selecciona el tipo de integración que quieres hacer y sigue los pasos detallados para completar la integración de Checkout Pro.
 

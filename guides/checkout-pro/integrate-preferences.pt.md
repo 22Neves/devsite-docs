@@ -157,7 +157,7 @@ Veja abaixo um exemplo de como o atributo ID, contendo o identificador de prefer
 
 ### Escolher o tipo de integração
 
-Após concluir as configurações do backend e obter o ID da preferência, você deve prosseguir para a configuração do frontend. Para isso, escolha o tipo de integração que melhor atenda às suas necessidades, seja para um **site** ou um **aplicativo móvel**.
+Após obter o ID da preferência, você deve prosseguir para a configuração do frontend. Para isso, escolha o tipo de integração que melhor atenda às suas necessidades, seja para um **site** ou um **aplicativo móvel**.
 
 Selecione o tipo de integração que deseja realizar e siga os passos detalhados para completar a integração do Checkout Pro.
 Selecione a opção de integração desejada e siga as instruções detalhadas para completar a integração do Checkout Pro.
