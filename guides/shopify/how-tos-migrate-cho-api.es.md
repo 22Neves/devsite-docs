@@ -4,9 +4,7 @@ Ve a continuación cómo instalar la nueva app (**Mercado Pago Cartões**) y des
 
 **Mercado Pago Cartões** ([Checkout Transparente](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
 
-> WARNING
->
-> Atención
+> RED_MESSAGE
 >
 > Esta nueva aplicación es exclusiva para pagos con tarjetas. Para configurar pagos con Pix, consulta la [documentación correspondiente](/developers/es/docs/shopify/integration-configuration/pix). Para pagos con boleto bancário, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
@@ -66,9 +64,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 15. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
 
-> WARNING
->
-> Atención
+> RED_MESSAGE
 >
 > El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
 
@@ -76,9 +72,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 
-> WARNING
->
-> Importante
+> NOTE
 >
 > Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
@@ -129,9 +123,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 11. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
 
-> WARNING
->
-> Atención
+> RED_MESSAGE
 >
 > El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
 
@@ -139,9 +131,7 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 
-> WARNING
->
-> Importante
+> NOTE
 >
 > Después de finalizar la instalación de Mercado Pago Cartões, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
@@ -182,9 +172,7 @@ Después de instalar y activar la aplicación **Mercado Pago Cartões**, configu
 
 ![configure installments 7](/images/shopify/configure-installments-7-es.png)
 
-> WARNING
->
-> Atención
+> RED_MESSAGE
 >
 > Siempre que se cambien las configuraciones de meses sin intereses, será necesario **sincronizar** los cambios con su tienda.
 
