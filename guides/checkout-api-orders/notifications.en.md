@@ -37,7 +37,7 @@ To ensure that notifications are configured correctly, it is necessary to simula
 
 5. Finally, click on **Send test** to verify the request, the response provided by the server, and the event description. You will receive a response as shown in the example below, representing the _body_ of the notification received on your server.
 
-```
+```json
 {
   "action": "order.action_required",
   "api_version": "v1",

@@ -247,11 +247,8 @@ flowchart TD
     C --> D[Configurar medio de pago]
     D --> E[Configurar las notificaciones de pago]
     E --> F[Probar tu integración]
-
     F --> G{¿La prueba fue exitosa?}
-    
     G -- No --> H[Corregir configuración] --> F
-
     G -- Sí --> I{¿Qué deseas hacer?}
     I -- Salir a producción --> J[Salir a producción]
     I -- Configurar otro medio de pago --> D
