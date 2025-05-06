@@ -13,13 +13,11 @@ Both checkouts automatically split the amounts between the seller and the market
 
 > NOTE
 >
-> Important
->
 > The Mercado Pago commission is deducted from the amount received by the seller. In other words, the Mercado Pago commission is deducted first and the Marketplace commission is deducted from the remaining amount.
 
 To perform the integration, you will need to follow the usual integration flow of the chosen checkout, necessarily using an access token for each seller, obtained through OAuth. Below we list the steps required to integrate a checkout with the marketplace.
 
-1. Follow the steps described in the [OAuth documentation](/developers/en/guides/additional-content/security/oauth/introduction) to get each `access_token`. This information will be necessary during the checkout integration process with the _marketplace_.
+1. Follow the steps described in the [OAuth documentation](/developers/en/docs/security/oauth) to get each `access_token`. This information will be necessary during the checkout integration process with the _marketplace_.
 2. Choose the type of checkout you want ([Checkout Pro](/developers/en/guides/checkout-pro/landing) or ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/en/guides/checkout-api/introduction)----------------[mlb]----[Checkout Transparente](/developers/en/guides/checkout-api/introduction)------------) and follow the entire onboarding flow.
 3. In the checkout integration, use the seller's `public_key` and `access_token` (obtained in step 1) in the _backend_ or in the _header_ of the request.
 4. To determine the marketplace commission percentage:
