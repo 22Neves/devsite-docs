@@ -14,46 +14,20 @@ Para instalar o Mercado Pago Antifraude Plus, siga as etapas abaixo.
 
 ![antifraude plus 2](/images/shopify/antifraude-plus-2-pt.png)
 
-3. Após a instalação, clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja à sua conta para receber pagamentos.
+3. Se você já instalou o app [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards), não precisa inserir suas credenciais novamente, mas poderá alterá-las se necessário. 
 
-> RED_MESSAGE
+> WARNING
 >
-> Se você já instalou outro aplicativo do Mercado Pago, como Mercado Pago Cartões, ----[mlb]----Mercado Pago Pix ------------ou o Mercado Pago Checkout Pro, sua loja já estará automaticamente vinculada à sua conta. Nesse caso, você pode avançar para o passo 11 desta documentação.
-
-4. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para iniciar o processo.
-
-![installation cards 4](/images/shopify/connect-account-1-pt.png)
-
-5. Se você já estiver logado na sua conta do Mercado Pago, ignore esta etapa. Caso contrário, insira seu e-mail e senha para acessar sua conta.
-
-![installation cards 5](/images/shopify/connect-account-2-pt.png)
-
-6. Escolha qual conta do Mercado Pago deseja vincular à loja.
-
-![installation cards 6](/images/shopify/connect-account-3-pt.png)
-
-7. Clique em **Vincular conta** e aceite as permissões solicitadas. Essas permissões são essenciais para que o Mercado Pago processe os pagamentos da sua loja de maneira segura e integrada.
-
-![installation cards 7](/images/shopify/connect-account-4-pt.png)
-
-8. O processo será realizado automaticamente e poderá levar alguns segundos.
-
-![installation cards 8](/images/shopify/connect-account-5-pt.png)
-
-> NOTE
+> Importante
 >
-> Após a loja ser vinculada à conta do Mercado Pago em um aplicativo, não será necessário repetir esse processo para outros aplicativos do Mercado Pago para Shopify.
+> Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
 
-9. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus.
+4. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus e vá para a seção de "Ir para temas" da Shopify.
 
 ![antifraude plus 3](/images/shopify/antifraude-plus-3-pt.png)
 
-10. Para ativar o aplicativo, clique em **Ir para temas** da Shopify.
-
-![antifraude plus 3](/images/shopify/antifraude-plus-3.1-pt.png)
-
-11. Por fim, clique em **Salvar** para finalizar a instalação.
+5. Por fim, clique em **Salvar** para finalizar a instalação.
 
 ![antifraude plus 4](/images/shopify/antifraude-plus-4-pt.png)
 
-O **Mercado Pago Antifraude Plus** foi instalado com sucesso.
+Pronto! O **Mercado Pago Antifraude Plus** foi instalado com sucesso!

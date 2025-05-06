@@ -4,26 +4,17 @@ When installing ----[mlb]----[Mercado Pago Checkout Pro](/developers/en/docs/che
 
 To install **Mercado Pago Checkout Pro** on your Shopify store, follow these steps:
 
-1. Go to the [Shopify store admin panel](https://accounts.shopify.com/store-login).
+1. Go to the admin panel of your [Shopify](https://accounts.shopify.com/store-login) store.
 2. Click on **Settings**.
 
 ![installation chopro 1](/images/shopify/installation-chopro-1-es.png)
 
 3. In the menu, click on **Payments**.
+4. Under "Accepted payment methods," click on **Add payment method**.
 
-----[mla, mlb, mlu, mpe, mco, mlc]----
-4. Under "Supported Payment Methods," click on **Add payment methods**.
 ![installation chopro 2](/images/shopify/installation-chopro-2-es.png)
 
-------------
-----[mlm]----
-4. Under "Supported Payment Methods," click on **Add payment methods**.
-
-![installation cards](/images/shopify/installation-chopro-2-es-mlm.png)
-
-------------
-
-5. In the **Search by provider** tab, search for the application "Mercado Pago Checkout Pro" and select it.
+5. In the **Search by provider** tab, look for the app "Mercado Pago Checkout Pro" and select it.
 
 ![installation chopro 3](/images/shopify/installation-chopro-3-es.png)
 
@@ -31,89 +22,53 @@ To install **Mercado Pago Checkout Pro** on your Shopify store, follow these ste
 
 ![installation chopro 4](/images/shopify/installation-chopro-4-es.png)
 
-7. Carefully read the information about the requested permissions and click on **Install** again.
+7. Carefully read the information about the requested permissions and click **Install** again.
 
 ![installation chopro 5](/images/shopify/installation-chopro-5-es.png)
 
-8. Access the Mercado Pago environment by clicking on **Manage account** and start the process of linking your store with your account to enable payment reception.
+8. Click on **Manage account** to link your Mercado Pago account to your store using your credentials.
 
 ![installation chopro 6](/images/shopify/installation-chopro-6-es.png)
 
-9. Once inside the Mercado Pago environment, click on **Start linking** to begin the process.
+> WARNING
+>
+> Important
+>
+> The credentials identify the account that will receive payments made in your store. This means that you will only be able to activate the payment methods after entering your credentials.
 
-![installation chopro 7](/images/shopify/connect-account-1-es.png)
+![installation cards 5](/images/shopify/installation-chopro-6-2-es.png)
 
-10. If you are already logged into your Mercado Pago account, skip this step. Otherwise, enter your email and password to log in to your account.
+9. In a new tab of your browser, go to **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application to copy your credentials. If you haven't created an application yet, access the [developer Dashboard documentation](/developers/en/guides/additional-content/your-integrations/dashboard) to learn how to do it.
+10. Click on **Production credentials**. The credentials may be hidden for security reasons. To view them, locate the eye icon and click on it. Copy the credentials (Public Key and Access Token).
 
-![installation chopro 8](/images/shopify/connect-account-2-es.png)
-
-11. Choose which Mercado Pago account you want to link to the store.
-
-![installation chopro 9](/images/shopify/connect-account-3-es.png)
-
-12. Click on **Link account** and accept the requested permissions. These permissions are essential for Mercado Pago to securely and seamlessly process payments from your store.
-
-![installation chopro 10](/images/shopify/connect-account-4-es.png)
-
-13. The process will run automatically and might take a few seconds.
-
-![installation chopro 11](/images/shopify/connect-account-5-es.png)
+![installation chopro 7](/images/shopify/installation-chopro-7-es.png)
 
 > NOTE
 >
-> Once the store is linked to the Mercado Pago account in one application, it will not be necessary to repeat this process for other Mercado Pago applications for Shopify.
+> Nota
+>
+> Alternatively, you can also click on the link "[view them and copy them](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials)" in the Shopify admin to copy your credentials.
 
-14. After linking your store to your Mercado Pago account, click on **Activate app**.
+11. Return to your Shopify store settings and enter your production credentials (Public Key and Access Token) in the corresponding fields, **making sure not to reverse the fields when copying and pasting the credentials**.
 
-![installation chopro 12](/images/shopify/connect-account-pro-1-es.png)
+![installation cards 5](/images/shopify/installation-cards-5-es.png)
+
+12. Click **Save credentials**.
 
 > NOTE
 >
-> At this stage, you can also access your Mercado Pago account to configure the number of available installments and the interest rate you want to offer your customers by clicking on **Configure installments and interest**.
+> Note
+>
+> Once entered, the credentials will not be requested for future installations of the Mercado Pago apps on Shopify. However, if you change the password for your Shopify account, it will be necessary to **renew them**. To do this, follow the instructions in the documentation on [Keep your credentials safe](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Then, fill in the Public Key and Access Token fields again, as indicated in this documentation.
 
-15. Click on **Go to settings** to return to the Shopify panel.
+13. Finally, click on **Verify activation**.
 
-![installation chopro 13](/images/shopify/connect-account-pro-2-es.png)
+![installation chopro 9](/images/shopify/installation-chopro-9-es.png)
 
-16. In the store's admin panel, go to **Settings > Payments** and click on **Activate** to enable Mercado Pago Checkout Pro.
-----[mlm]----
+14. Go to the **Settings** section and click on **Activate** to complete the installation.
 
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlm.png)
+![installation chopro 9](/images/shopify/installation-chopro-9-2-es.png)
 
-------------
-----[mla]----
+> At this stage, you can select the images of the payment methods you want to display in your store for illustrative purposes.
 
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mla.png)
-
-------------
-----[mla]----
-
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mla.png)
-
-------------
-----[mlc]----
-
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlc.png)
-
-------------
-----[mlc]----
-
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlc.png)
-
-------------
-----[mco]----
-
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mco.png)
-
-------------
-----[mpe]----
-
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mpe.png)
-
-------------
-----[mlu]----
-
-![installation chopro 13](/images/shopify/connect-account-pro-3-es-mlu.png)
-
-------------
-The **Mercado Pago Checkout Pro** application has been successfully installed and configured, and it is now ready to process payments from your store directly into your Mercado Pago account.
+Ready! The **Mercado Pago Checkout Pro** is ready to process payments for your store.

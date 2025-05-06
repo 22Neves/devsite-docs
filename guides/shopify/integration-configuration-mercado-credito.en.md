@@ -35,90 +35,63 @@ You can currently offer a **Cuotas sin Tarjeta** through our [Checkout Pro](/dev
 If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the steps below.
 
 ------------
-1. Go to your [Shopify store](https://accounts.shopify.com/store-login).  
-2. In the store's admin panel, click on **Settings** in the bottom-left corner of the page.  
-3. Once there, select the **Payments** option from the menu on the left side of the page.    
+1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
+2. In the store's administrative panel, click on **Settings**.
+3. Once there, select the **Payments** option. 
+4. In "Additional payment methods", click on the **Add payment methods** option.
 ----[mlb]----
-4. Click on **Add payment method** and search for the app named "Mercado Pago Linha de Crédito". 
+5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Pago Linha de Crédito".
 
 ------------
 ----[mlm]----
-4. Click on **Add payment method** and search for the app named "Mercado Pago Meses sin Tarjeta". 
-
-![installation cards 3](/images/shopify/installation-credits-1-es.png)  
+5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Pago Meses sin Tarjeta".
 
 ------------
 ----[mla]----
-4. Click on **Add payment method** and search for the app named "Mercado Pago Cuotas sin Tarjeta". 
+5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Pago Cuotas sin Tarjeta".
 
 ------------
-5. Once you have found it, select it and click on **Install**. Carefully read the information about the requested permissions and click on **Install** again.  
+6. Once you have found it, select it and click **Install** and then **Connect**.
+7. Select **Install App > More actions** and then **Manage**.
+8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/your-integrations/credentials) handy.
+9. To finish the installation, select **Activate**.
+----[mlm]----
+![shopify-mercado-credito](/images/shopify/meses-sin-tarjeta-mlm.png)
 
-![installation cards 3](/images/shopify/installation-credits-2-es.png)  
-
-6. Click on **Manage account** to access the Mercado Pago environment and start the process of linking your store to your account to enable payments.  
-
-![installation cards 3](/images/shopify/installation-credits-3-es.png)   
-
-7. Once inside the Mercado Pago environment, click on **Start linking** to begin the process.  
-
-![installation cards 4](/images/shopify/connect-account-1-es.png)  
-
-8. If you are already logged into your Mercado Pago account, skip this step. Otherwise, enter your email and password to log in to your account.  
-
-![installation cards 5](/images/shopify/connect-account-2-es.png)  
-
-9. Choose which Mercado Pago account you want to link to the store.  
-
-![installation cards 6](/images/shopify/connect-account-3-es.png)  
-
-10. Click on **Link account** and accept the requested permissions. These permissions are essential for Mercado Pago to securely and seamlessly process payments from your store.  
-
-![installation cards 7](/images/shopify/connect-account-4-es.png)  
-
-11. The process will run automatically and might take a few seconds.  
-
-![installation cards 8](/images/shopify/connect-account-5-es.png)  
-
-> NOTE
->
-> Once the store is linked to the Mercado Pago account in one application, it will not be necessary to repeat this process for other Mercado Pago applications for Shopify.
-
-12. After linking your store to your Mercado Pago account, click on **Activate app**.
-
-![installation cards 8](/images/shopify/connect-account-credits-6-pt.png)
-
-13. Click on **Go to settings** to return to the Shopify panel.
-
-![installation cards 8](/images/shopify/connect-account-7-pt.png)
-
-14. In the store's admin panel, go to **Settings > Payments** and click on **Activate** to enable the application.
-
+------------
 ----[mlb]----
-> RED_MESSAGE
+> WARNING
 >
-> The application "Mercado Pago Linha de Crédito" **does not have a test flow**, so it is not necessary to check the option _"enable test mode"_. 
+> Attention
+>
+> It is important to note that in the "Mercado Pago Linha de Crédito" plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
+> <br/><br/>
+> In case you renew your credentials, remember to replace them in your integration.
+
+Ready! The financing method is enabled in your store.
 
 ------------
 ----[mlm]----
-> RED_MESSAGE
+> WARNING
 >
-> The application "Mercado Pago Meses sin Tarjeta" **does not have a test flow**, so it is not necessary to check the option _"enable test mode"_.  
+> Attention
+>
+> It is important to note that in the "Mercado Pago Meses sin Tarjeta" plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
+> <br/><br/>
+> In case you renew your credentials, remember to replace them in your integration.
+
+Ready! The financing method is enabled in your store.
 
 ------------
 ----[mla]----
-> RED_MESSAGE
+> WARNING
 >
-> The application "Mercado Pago Cuotas sin Tarjeta" **does not have a test flow**, so it is not necessary to check the option _"enable test mode"_.  
+> Attention
+>
+> It is important to note that in the "Mercado Pago Cuotas sin Tarjeta" plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
+> <br/><br/>
+> In case you renew your credentials, remember to replace them in your integration.
 
-------------
-----[mla, mlb]----
-
-The financing method is enabled in your store.
-
-------------
-----[mlm]----
-
-The financing method is enabled in your store.
+Ready! The financing method is enabled in your store.
 
 ------------

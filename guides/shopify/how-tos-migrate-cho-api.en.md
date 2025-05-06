@@ -4,7 +4,9 @@ See below for how to install the new app (**Mercado Pago Cartões**) and uninsta
 
 **Mercado Pago Cartões** ([Checkout Transparente](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards, where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
-> RED_MESSAGE
+> WARNING
+>
+> Attention
 >
 > This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
@@ -42,13 +44,17 @@ To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer t
 14. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 15. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
 
-> RED_MESSAGE
+> WARNING
+>
+> Attention
 >
 > The use of **email** as a contact method is mandatory for processing payments with Mercado Pago.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 > NOTE
+>
+> Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
@@ -80,13 +86,17 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 11. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
 
-> RED_MESSAGE
+> WARNING
+>
+> Attention
 >
 > The use of **email** as a contact method is mandatory for processing payments with Mercado Pago.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
+>
+> Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
@@ -108,7 +118,9 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 10. Then, click on **More actions > Manage**.
 11. Finally, click on **Sync** so that the configured installment options are synchronized with your store.
 
-> RED_MESSAGE
+> WARNING
+>
+> Attention
 >
 > Whenever installment settings are changed, it will be necessary to **synchronize** the changes with your store.
 

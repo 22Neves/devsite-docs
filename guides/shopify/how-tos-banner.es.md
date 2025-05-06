@@ -24,7 +24,9 @@ Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ 
 
 ------------
 
-> RED_MESSAGE
+> WARNING
+>
+> Atención
 >
 > Antes de instalar Mercado Pago Banner, es necesario haber instalado y activado la app ----[mlb]----[Mercado Pago Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ para exhibir este medio de pago en el checkout de tu tienda. 
 
@@ -38,7 +40,13 @@ Para instalar Mercado Pago Banner, sigue los pasos a continuación:
 
 ![banner shopify 2](/images/shopify/banner-2-es.png)
 
-3. Si ya has instalado la app ----[mlb]----[Mercado Pago Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, no necesitarás vincular tu cuenta de Mercado Pago a tu tienda nuevamente.
+3. Si ya has instalado la app ----[mlb]----[Mercado Pago Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, no necesitarás ingresar tus credenciales nuevamente, pero podrás cambiarlas si es necesario.
+
+> WARNING
+>
+> Importante
+>
+> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar tus credenciales**. Para hacerlo, sigue las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en la cuenta de Shopify, haz clic en **Administrar cuenta** y llena los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
 4. Haz clic en la opción **Guardar banner** y luego ve a la sección de "Temas" de Shopify. El _banner_ se añadirá automáticamente en la página del producto.
 
