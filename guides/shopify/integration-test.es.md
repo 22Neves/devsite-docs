@@ -30,8 +30,6 @@ Ve a continuación cómo probar la integración:
 >
 > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, se solicita autenticación por correo electrónico, accede a nuestra documentación para saber [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
-![Credenciais de produção](/images/shopify/test-prod-credentials-es.png)
-
 ----[mlb, mlm]----
 6. Accede a la configuración del panel de Shopify (**Configuraciones > Pagos**) y selecciona **Gestionar cuenta** en uno de los checkouts de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). Serás redirigido al entorno de Mercado Pago para iniciar el proceso de vinculación de tu tienda con tu cuenta de prueba.
 
@@ -86,7 +84,7 @@ Después de completar una compra de prueba utilizando uno de los checkouts, la a
 
 > RED_MESSAGE
 >
-> Al finalizar las pruebas, desactiva el campo **modo de prueba** (paso 10) y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
+> Al finalizar las pruebas, desactiva el campo **modo de prueba** y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
 > <br><br>
 > Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 
@@ -139,7 +137,7 @@ Después de completar una compra de prueba utilizando uno de los checkouts, la a
 
 > RED_MESSAGE
 >
-> Al finalizar las pruebas, desactiva el campo **modo de prueba** (paso 10) y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
+> Al finalizar las pruebas, desactiva el campo **modo de prueba** y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
 > <br><br>
 > Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 
@@ -197,7 +195,7 @@ Después de completar una compra de prueba utilizando uno de los checkouts, la a
 
 > RED_MESSAGE
 >
-> Al finalizar las pruebas, desactiva el campo **modo de prueba** (paso 10) y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
+> Al finalizar las pruebas, desactiva el campo **modo de prueba** y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
 > <br><br>
 > Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 
@@ -240,7 +238,7 @@ Después de completar una compra de prueba utilizando uno de los checkouts, la a
 
 > RED_MESSAGE
 >
-> Al finalizar las pruebas, desactiva el campo **modo de prueba** (paso 10) y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
+> Al finalizar las pruebas, desactiva el campo **modo de prueba** y asegúrate de desvincular la cuenta de prueba de tu tienda Shopify y conectar tu cuenta Mercado Pago real para continuar con las ventas.
 > <br><br>
 > Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
 

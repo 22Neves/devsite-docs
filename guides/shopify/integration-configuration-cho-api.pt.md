@@ -122,7 +122,7 @@ Por padrão, os campos **"Número da Casa"** e **"Bairro"** não são exibidos a
 
 ------------
 ----[mlm, mco, mlc, mla, mpe]----
-> WARNING
+> RED_MESSAGE
 >
 > Após concluir a instalação do **Mercado Pago Cartões**, recomendamos complementar a proteção da sua loja instalando o app **Mercado Pago Antifraude Plus**, que utiliza a tecnologia **3DS 2.0 (3-D Secure)** para reforçar a segurança das transações e aumentar a taxa de aprovação de pagamentos. Para mais detalhes, consulte a documentação [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 

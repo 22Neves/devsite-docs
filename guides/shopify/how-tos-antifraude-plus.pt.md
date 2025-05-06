@@ -42,8 +42,6 @@ Para instalar o Mercado Pago Antifraude Plus, siga as etapas abaixo.
 
 > NOTE
 >
-> Nota
->
 > Após a loja ser vinculada à conta do Mercado Pago em um aplicativo, não será necessário repetir esse processo para outros aplicativos do Mercado Pago para Shopify.
 
 9. Clique na opção **Verificar ativação** do Mercado Pago Antifraude Plus.

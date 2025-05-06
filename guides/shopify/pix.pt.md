@@ -6,8 +6,6 @@ Para integrar o Mercado Pago Pix, instale o aplicativo via [painel da Shopify](/
 
 > WARNING
 >
-> Importante
->
 > Para habilitar pagamentos com Pix, é necessário verificar se as chaves Pix foram criadas na sua conta do Mercado Pago. Se ainda não as criou, recomendamos assistir ao [vídeo tutorial](https://www.youtube.com/watch?v=60tApKYVnkA) para um guia passo a passo.
 
 ## Instalar aplicativo via painel da Shopify

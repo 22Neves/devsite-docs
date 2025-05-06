@@ -5,9 +5,7 @@
 
 Para integrar Mercado Pago Cartões, instala la aplicación a través del [panel de Shopify](/developers/es/docs/shopify/integration-configuration/checkout-cards#instalarvapaneldeshopify) o a través del [Marketplace](/developers/es/docs/shopify/integration-configuration/checkout-cards#instalarvamarketplace). Después de la instalación, podrás [configurar meses sin intereses](/developers/es/docs/shopify/integration-configuration/checkout-cards#bookmark_configura_meses_sin).
 
-> WARNING
->
-> Atención
+> RED_MESSAGE
 >
 > La integración con Mercado Pago Cartões no es compatible con la función _multi currency_ de la plataforma Shopify.
 > <br><br>

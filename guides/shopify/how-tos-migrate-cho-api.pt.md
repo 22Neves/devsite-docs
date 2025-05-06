@@ -4,9 +4,7 @@ Veja abaixo como instalar o novo app (**Mercado Pago Cartões**) e desinstalar o
 
 O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
 
-> WARNING
->
-> Atenção
+> RED_MESSAGE
 >
 > Este novo aplicativo é exclusivo para pagamentos com cartões. Para configurar pagamentos com Pix, consulte a [documentação correspondente](/developers/pt/docs/shopify/integration-configuration/pix). Para pagamentos com boleto bancário, utilize o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 
@@ -49,8 +47,6 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 > NOTE
 >
-> Nota
->
 > Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
 > <br><br>
 > Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
@@ -66,9 +62,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 15. Ainda nas "Configurações" do painel administrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
 
-> WARNING
->
-> Atenção
+> RED_MESSAGE
 >
 > A utilização do **e-mail** como forma de contato é obrigatório para o processamento de pagamentos com o Mercado Pago.
 
@@ -76,9 +70,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
-> WARNING
->
-> Importante
+> NOTE
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
@@ -112,8 +104,6 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 > NOTE
 >
-> Nota
->
 > Uma vez inseridas, as credencias não serão mais pedidas em futuras instalações de apps do Mercado Pago para Shopify.
 > <br><br>
 > Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
@@ -129,9 +119,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 11. Ainda nas "Configurações" do painel administrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
 
-> WARNING
->
-> Atenção
+> RED_MESSAGE
 >
 > A utilização do **e-mail** como forma de contato é obrigatório para o processamento de pagamentos com o Mercado Pago.
 
@@ -139,9 +127,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
-> WARNING
->
-> Importante
+> NOTE
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
@@ -186,9 +172,7 @@ Após instalar e ativar o app **Mercado Pago Cartões**, configure a opção cor
 
 ![configure installments 8](/images/shopify/configure-installments-8-pt.png)
 
-> WARNING
->
-> Atenção
+> RED_MESSAGE
 >
 > Sempre que forem alteradas as configurações de parcelamento, será necessário **sincronizar** as alterações com a sua loja.
 

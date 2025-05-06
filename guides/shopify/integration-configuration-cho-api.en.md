@@ -5,9 +5,7 @@
 
 To integrate Mercado Pago Cartões, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
 
-> WARNING
->
-> Attention
+> RED_MESSAGE
 >
 > The integration with Mercado Pago Cartões is not compatible with the **multi currency** feature of the Shopify platform.
 > <br><br>

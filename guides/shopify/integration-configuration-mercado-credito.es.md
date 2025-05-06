@@ -59,7 +59,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 
 6. Haz clic en **Gestionar cuenta** para acceder al entorno de Mercado Pago e iniciar el proceso de vinculación de tu tienda con tu cuenta para recibir pagos.  
 
-![installation cards 3](/images/shopify/installation-credits-3-es.png)   
+![installation cards 3](/images/shopify/installation-credits-3-es-new.png)   
 
 7. Al acceder al entorno de Mercado Pago, haz clic en **Comenzar vinculación** para comenzar el proceso.  
 
