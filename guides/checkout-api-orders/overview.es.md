@@ -86,7 +86,6 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -97,6 +96,10 @@ product_landing_how_integrate:
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
  - requirement_table_title: Clave Pix
  - requirement_table_list: Si deseas ofrecer pagos a través de Pix, es necesario tener las [claves Pix registradas](https://www.youtube.com/watch?v=60tApKYVnkA).
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Configurar el ambiente de desarrollo
@@ -109,18 +112,15 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Tus integraciones] --> B[Crear una aplicación]
     B --> C[Configurar el ambiente de desarrollo]
     C --> D[Configurar medio de pago]
     D --> E[Configurar las notificaciones de pago]
     E --> F[Probar tu integración]
-
     F --> G{¿La prueba fue exitosa?}
-    
     G -- No --> H[Corregir configuración] --> F
-
     G -- Sí --> I{¿Qué deseas hacer?}
     I -- Salir a producción --> J[Salir a producción]
     I -- Configurar otro medio de pago --> D
@@ -216,7 +216,6 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -225,6 +224,10 @@ product_landing_how_integrate:
  - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Configurar el ambiente de desarrollo
@@ -237,8 +240,8 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Tus integraciones] --> B[Crear una aplicación]
     B --> C[Configurar el ambiente de desarrollo]
     C --> D[Configurar medio de pago]
@@ -344,7 +347,6 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
-|||column1|||
 ---
 product_landing_how_integrate:
  - title: Cómo integrar
@@ -353,6 +355,10 @@ product_landing_how_integrate:
  - requirement_title: Requisitos previos
  - requirement_table_title: Cuenta de usuario Mercado Pago
  - requirement_table_list: Necesitas crear un usuario en Mercado Pago o Mercado Libre para tener una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+---
+|||column1|||
+---
+product_landing_how_integrate:
  - list_title: Proceso de integración
  - list_item: Crear una aplicación desde [Tus integraciones](/developers/panel/app)
  - list_item: Configurar el ambiente de desarrollo
@@ -365,18 +371,15 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Tus integraciones] --> B[Crear una aplicación]
     B --> C[Configurar el ambiente de desarrollo]
     C --> D[Configurar medio de pago]
     D --> E[Configurar las notificaciones de pago]
     E --> F[Probar tu integración]
-
-    F --> G{¿La prueba fue exitosa?}
-    
+    F --> G{¿La prueba fue exitosa?}  
     G -- No --> H[Corregir configuración] --> F
-
     G -- Sí --> I{¿Qué deseas hacer?}
     I -- Salir a producción --> J[Salir a producción]
     I -- Configurar otro medio de pago --> D
