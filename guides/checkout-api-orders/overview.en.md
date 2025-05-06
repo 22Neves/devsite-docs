@@ -109,8 +109,8 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Your integrations] --> B[Create an application]
     B --> C[Configure development environment]
     C --> D[Configure payment method]
@@ -234,8 +234,8 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+    <pre class="mermaid">
+flowchart TD
     A[Your integrations] --> B[Create an application]
     B --> C[Configure development environment]
     C --> D[Configure payment method]
@@ -359,8 +359,8 @@ product_landing_how_integrate:
 ---
 |||column2|||
 <div class="mermaid-overview">
-  <pre class="mermaid">
-  flowchart TD
+   <pre class="mermaid">
+flowchart TD
     A[Your integrations] --> B[Create an application]
     B --> C[Configure development environment]
     C --> D[Configure payment method]
@@ -374,4 +374,5 @@ product_landing_how_integrate:
   </pre>
 </div>
 |||
+
 ------------
