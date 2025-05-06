@@ -1,6 +1,6 @@
 
 1. Abra uma janela anônima, acesse [Mercado Pago Developers](/developers/pt/docs) e clique no botão **Entrar**, localizado no canto superior direito.
-2. Faça login utilizando o usuário e a senha do usuário de teste vendedor criado na etapa anterior. Para isso, utilize o usuário e a senha atribuídos ao mesmo. Você pode consultar esses dados na seção **Contas de teste**.
+2. Faça login utilizando o usuário e a senha do usuário de teste vendedor criado na etapa anterior. Para isso, utilize o usuário e a senha atribuídos a ele. Você pode consultar esses dados na seção **Contas de teste**.
 
 ![informações do usuário de teste](/images/snippets/testuser-login-pt.png)
  
