@@ -141,33 +141,3 @@ At this point, the payment is in a pending state because the user still needs to
 To provide more information to the buyer, we recommend that for `pending` payment statuses, you redirect the buyer to your website and share clear information on how to complete the payment.
 
 Once the user goes to the corresponding establishment and makes the cash payment with the generated voucher, Mercado Pago is notified and the payment status will change. We recommend that you [configure payment notifications](/developers/en/docs/checkout-pro/payment-notifications) so that your server can process this notification and update the order status in your database.
-
-### Choose the type of integration
-
-Once you have completed the configurations in your backend and obtained your preference ID, you should proceed to the frontend configurations. To do this, you need to choose the type of integration that best suits your needs, whether it is for integrating a **website** or a **mobile application**.
-
-Select the type of integration you want to perform and follow the detailed steps to complete the Checkout Pro integration.
-
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Laptop
- - card_title: Continue integration for websites
- - card_description: Offers payments with redirection to Mercado Pago on your website or online store.
- - card_button: /developers/en/docs/checkout-pro/web-integration/add-frontend-sdk
- - card_buttonDescription: Web integration
- - card_pillText: AVAILABLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
- - card_avaible: true
- - card_icon: Smartphone
- - card_title: Continue integration for mobile applications
- - card_description: Offers payments with redirection to Mercado Pago in your mobile application.
- - card_button: /developers/en/docs/checkout-pro/mobile-integration
- - card_buttonDescription: Mobile integration
- - card_pillText: AVAILABLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
----
