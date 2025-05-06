@@ -146,33 +146,3 @@ if err != nil {
 ]]]
 
 Con estas configuraciones, tu ambiente de desarrollo ya está listo para avanzar con la configuración de una preferencia de pago.
-
-### Elegir el tipo de integración
-
-Una vez que hayas terminado de realizar las configuraciones en tu backend y hayas obtenido tu ID de la preferencia, deberás avanzar a las configuraciones del frontend. Para eso, es necesario que elijas el tipo de integración que mejor se adapte a tus necesidades, ya sea para integrar un **sitio web** o para una **aplicación móvil**. 
-
-Selecciona el tipo de integración que quieres hacer y sigue los pasos detallados para completar la integración de Checkout Pro.
-
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Laptop
- - card_title: Continuar integración para sitios web
- - card_description: Ofrece cobros con redirección a Mercado Pago en tu sitio web o tienda online.
- - card_button: /developers/es/docs/checkout-pro/web-integration/add-frontend-sdk
- - card_buttonDescription: Integración web
- - card_pillText: DISPONIBLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
- - card_avaible: true
- - card_icon: Smartphone
- - card_title: Continuar integración para aplicaciones móviles
- - card_description: Ofrece cobros con redirección Mercado Pago en tu aplicación para dispositivos móviles.
- - card_button: /developers/es/docs/checkout-pro/mobile-integration
- - card_buttonDescription: Integración mobile
- - card_pillText: DISPONIBLE
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
----

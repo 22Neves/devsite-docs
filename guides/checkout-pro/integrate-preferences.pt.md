@@ -155,4 +155,33 @@ Veja abaixo um exemplo de como o atributo ID, contendo o identificador de prefer
 "id": "787997534-6dad21a1-6145-4f0d-ac21-66bf7a5e7a58"
 ```
 
-Após configurar a preferência de pagamento, o próximo passo será [configurar as URLs de retorno](/developers/pt/docs/checkout-pro/configure-back-urls) para redirecionar seus clientes ao final do processo de pagamento.
+### Escolher o tipo de integração
+
+Após concluir as configurações do backend e obter o ID da preferência, você deve prosseguir para a configuração do frontend. Para isso, escolha o tipo de integração que melhor atenda às suas necessidades, seja para um **site** ou um **aplicativo móvel**.
+
+Selecione o tipo de integração que deseja realizar e siga os passos detalhados para completar a integração do Checkout Pro.
+Selecione a opção de integração desejada e siga as instruções detalhadas para completar a integração do Checkout Pro.
+
+---
+future_product_avaible: 
+ - card_avaible: true
+ - card_icon: Laptop
+ - card_title: Continuar a integração para sites
+ - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu site ou loja online.
+ - card_button:  /developers/pt/docs/checkout-pro/configure-back-urls
+ - card_buttonDescription: Integração web
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+ - card_avaible: true
+ - card_icon: Smartphone
+ - card_title: Continuar a integração para aplicações móveis
+ - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu aplicativo para dispositivos móveis.
+ - card_button: /developers/pt/docs/checkout-pro/mobile-integration
+ - card_buttonDescription: Integração mobile
+ - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
+---
