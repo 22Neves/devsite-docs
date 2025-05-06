@@ -84,6 +84,7 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+---
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
@@ -124,6 +125,7 @@ flowchart TD
   </pre>
 </div>
 |||
+
 ------------
 ----[mla]----
 
@@ -211,6 +213,7 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+---
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
@@ -249,6 +252,7 @@ flowchart TD
   </pre>
 </div>
 |||
+
 ------------
 ----[mlm]----
 
@@ -336,6 +340,7 @@ product_landing_what_differentiates:
  - line_values: all|all|all
 ---
 
+---
 product_landing_how_integrate:
  - title: How to integrate
  - sub_title: Learn about the steps you need to follow to integrate this solution.
