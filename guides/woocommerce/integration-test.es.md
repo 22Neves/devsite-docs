@@ -2,9 +2,7 @@
 
 Las compras de prueba son esenciales para asegurar que los pagos se procesen correctamente antes de autorizar transacciones reales. Para verificar que tu tienda esté configurada correctamente, recomendamos realizar pruebas de pago antes de ponerla en producción.
 
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > La prueba solo se puede realizar después de la [configuración de la integración.](/developers/es/docs/woocommerce/integration-configuration/plugin-configuration)
 
@@ -20,9 +18,7 @@ A continuación, te explicamos cómo probar la integración:
 4. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del vendedor creada en el paso anterior.
 5. En la misma ventana de incógnito en la que iniciaste sesión como vendedor, accede al [Panel de desarrollador](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y crea una nueva aplicación, siguiendo las instrucciones detalladas en la [documentación del Panel de desarrollador.](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard)
 
-> WARNING
->
-> Importante
+> RED_MESSAGE
 >
 > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
@@ -50,9 +46,7 @@ A continuación, te explicamos cómo probar la integración:
 
 14. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago utilizando la cuenta de prueba del comprador creada en el paso 3.
 
-> WARNING
->
-> Importante
+> RED_MESSAGE
 >
 > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus Integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
@@ -65,9 +59,7 @@ A continuación, te explicamos cómo probar la integración:
 
 ------------
 ----[mlb]----
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que utilizarás credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en los pasos 8 y 10, con las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
 
@@ -77,9 +69,7 @@ Además, los pedidos se registrarán en el historial de la cuenta de prueba del 
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > Durante las pruebas en Checkout Pro, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que utilizarás credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en el paso 9, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción te permitirá seguir vendiendo en tu tienda y evitará confusiones.
 

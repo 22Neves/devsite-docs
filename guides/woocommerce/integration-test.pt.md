@@ -2,9 +2,7 @@
 
 Os testes de compras são essenciais para garantir que os pagamentos sejam processados corretamente antes de autorizar transações reais. Para verificar se a sua loja está configurada corretamente, recomendamos que você teste os pagamentos antes de iniciá-la em produção. 
 
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > O teste só poderá ser realizado após a etapa de [configuração da integração.](/developers/pt/docs/woocommerce/integration-configuration/plugin-configuration)
 
@@ -21,9 +19,7 @@ Veja abaixo como testar a integração:
 4. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do vendedor criada no passo anterior.
 5. Na mesma janela anônima logada como vendedor, acesse o [Painel do desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) e crie uma nova aplicação, seguindo as instruções detalhadas na [documentação do Painel do desenvolvedor.](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard)
 
-> WARNING
->
-> Importante
+> RED_MESSAGE
 >
 > Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste).
 
@@ -49,9 +45,7 @@ Veja abaixo como testar a integração:
 13. Clique em **Salvar mudanças**.
 14. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 
-> WARNING
->
-> Importante
+> RED_MESSAGE
 >
 > Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
 
@@ -64,9 +58,7 @@ Veja abaixo como testar a integração:
 
 ------------
 ----[mlb]----
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8 e 10, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 
@@ -76,9 +68,7 @@ Além disso, os pedidos serão registrados no histórico da conta de teste de ve
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-> WARNING
-> 
-> Importante
+> RED_MESSAGE
 >
 > Durante os testes em Checkout Pro, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin no passo 9, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
 

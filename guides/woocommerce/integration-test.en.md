@@ -2,9 +2,7 @@
 
 Purchase tests are essential to ensure that payments are processed correctly before authorizing real transactions. To verify if your store is configured correctly, we recommend testing payments before launching it in production.
 
-> WARNING
-> 
-> Important
+> RED_MESSAGE
 >
 > Testing can only be performed after the [integration configuration.](/developers/en/docs/woocommerce/integration-configuration/plugin-configuration)
 
@@ -21,9 +19,7 @@ Here's how to test the integration:
 5. In the same incognito window logged in as the seller, access the [Developer dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation.](/developers/en/docs/woocommerce/additional-content/your-integrations/dashboard)
 
 
-> WARNING
->
-> Important
+> RED_MESSAGE
 >
 > If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
@@ -50,9 +46,7 @@ Here's how to test the integration:
 13. Click on **Save changes**.
 14. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.
 
-> WARNING
->
-> Important
+> RED_MESSAGE
 >
 > If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
@@ -65,9 +59,7 @@ Here's how to test the integration:
 
 ------------
 ----[mlb]----
-> WARNING
-> 
-> Important
+> RED_MESSAGE
 >
 > During testing, you will be operating in the production environment. However, this is a test in which you will be using fictional credentials to simulate real scenarios. After completing the tests, remember to replace the seller's credentials (both production and test), entered in the plugin panel in steps 8 and 10, with the real credentials from your Mercado Pago account. This action will allow you to continue selling in your store and avoid confusion.
 
@@ -77,9 +69,7 @@ Additionally, the orders will be recorded in the order history of the Mercado Pa
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-> WARNING
-> 
-> Important
+> RED_MESSAGE
 >
 > During tests on Checkout Pro, you will be operating in the production environment; however, this is a test in which you will be using fictitious credentials to simulate real scenarios. Upon completing the tests, remember to replace the seller's credentials (both production and test) entered in the plugin panel in step 9 with the actual credentials of your Mercado Pago account. This action will allow you to continue selling in your store and avoid confusion.
 
