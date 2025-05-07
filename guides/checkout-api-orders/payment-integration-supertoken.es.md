@@ -261,8 +261,8 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
                 "id": 687,
                 "default": true,
                 "bank": {
-                    "country": "",
-                    "name": ""
+                    "country": "BRA",
+                    "name": "Elo card"
                 }
             },
             "installments": [
@@ -320,7 +320,7 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
                 "default": true,
                 "bank": {
                     "country": "BRA",
-                    "name": "WILL FINANCEIRA S.A. CREDITO,"
+                    "name": "CREDITO"
                 }
             },
             "installments": [
@@ -387,11 +387,11 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
         {
             "id": "account_money",
             "token": "STPRAPI01JP831Y0WCFTE0QTDBT34DR5Q",
-            "name": "Saldo no Mercado Pago",
+            "name": "Dinero en cuenta Mercado Pago",
             "type": "account_money",
             "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2007.gif",
             "issuer": {
-                "name": "Dinheiro na minha conta do MercadoPago\"",
+                "name": "Dinero en cuenta MercadoPago\"",
                 "id": 2007,
                 "default": false
             }
@@ -404,7 +404,7 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
 >
 > Es importante que estas llamadas estén envueltas en un bloque _try-catch_ para que posibles errores sean procesados adecuadamente. Si llegaras a recibir uno, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
-Por último, para que el comprador visualice estas opciones de pago en tu checkout y seleccione la que prefiera, debes renderizarlas en una pantalla. Ve a continuación un ejemplo de cómo exhibirlas. 
+Para que el comprador visualice estas opciones de pago en tu checkout y seleccione la que prefiera, debes renderizarlas en una pantalla. Ve a continuación un ejemplo de cómo exhibirlas. 
 
 ----[mlb]----  
 ![Ejemplo del frontend de la tienda con los medios de pago disponibles](/images/api-orders/supertoken-payment-methods-mlb.png)
@@ -420,6 +420,7 @@ Por último, para que el comprador visualice estas opciones de pago en tu checko
 ![Ejemplo del frontend de la tienda con los medios de pago disponibles](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
 
+Por último, asegúrate de disponibilizar en tu backend un endpoint que reciba los datos del pago una vez que el comprador realice su confirmación de compra.
 
 :::
 :::AccordionComponent{title="4. Procesar pago" pill="server-side"}
@@ -559,8 +560,8 @@ En caso de éxito, la respuesta a esta solicitud se verá como el ejemplo a cont
         "status": "processed",
         "status_detail": "accredited",
         "payment_method": {
-          "id": "account_money",
-          "type": "account_money",
+          "id": "master",
+          "type": "credit_card",
           "token": "STPRAPI01JSQ9E8H7ZRK4Q0KN4AE8MB7P",
           "statement_descriptor": "somedescription"
         }

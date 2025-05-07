@@ -262,8 +262,8 @@ Below, you can see an example of the structure of the response from the `userPay
                 "id": 687,
                 "default": true,
                 "bank": {
-                    "country": "",
-                    "name": ""
+                    "country": "BRA",
+                    "name": "Elo card"
                 }
             },
             "installments": [
@@ -388,11 +388,11 @@ Below, you can see an example of the structure of the response from the `userPay
         {
             "id": "account_money",
             "token": "STPRAPI01JP831Y0WCFTE0QTDBT34DR5Q",
-            "name": "Saldo no Mercado Pago",
+            "name": "Account money Mercado Pago",
             "type": "account_money",
             "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/2007.gif",
             "issuer": {
-                "name": "Dinheiro na minha conta do MercadoPago\"",
+                "name": "Account money in MercadoPago\"",
                 "id": 2007,
                 "default": false
             }
@@ -405,7 +405,7 @@ Below, you can see an example of the structure of the response from the `userPay
 >
 > It is important to wrap these requests in a _try-catch_ block to ensure that any potential errors are handled properly. If you encounter one, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
 
-Finally, to allow the buyer to view these payment options in your checkout and select their preferred one, you need to render them on a screen. Below is an example of how to display them.
+To allow the buyer to view these payment options in your checkout and select their preferred one, you need to render them on a screen. Below is an example of how to display them.
 
 ----[mlb]----  
 ![Example of the store frontend with the available payment methods](/images/api-orders/supertoken-payment-methods-mlb.png)
@@ -421,6 +421,7 @@ Finally, to allow the buyer to view these payment options in your checkout and s
 ![Example of the store frontend with the available payment methods](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
 
+Finally, make sure you have an endpoint in your backend that will receive payment information once the buyer confirms their purchase.
 
 :::
 :::AccordionComponent{title="4. Process Payment" pill="server-side"}
@@ -560,8 +561,8 @@ If successful, the response to this request will look as the following example.
         "status": "processed",
         "status_detail": "accredited",
         "payment_method": {
-          "id": "account_money",
-          "type": "account_money",
+          "id": "master",
+          "type": "credit_card",
           "token": "STPRAPI01JSQ9E8H7ZRK4Q0KN4AE8MB7P",
           "statement_descriptor": "somedescription"
         }

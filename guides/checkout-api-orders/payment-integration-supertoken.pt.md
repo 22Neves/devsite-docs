@@ -409,7 +409,7 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
 >
 > É importante que essas chamadas estejam envolvidas em um bloco _try-catch_ para que possíveis erros sejam processados adequadamente. Se você encontrar um, pode consultar nossa [lista de possíveis erros](/developers/pt/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Processar%20Pagamento-,Poss%C3%ADveis,-erros).
 
-Por fim, para que o comprador visualize essas opções de pagamento em seu checkout e selecione a que desejar, você deve renderizá-las em uma tela. Abaixo está um exemplo de como exibi-las. 
+Para que o comprador visualize essas opções de pagamento em seu checkout e selecione a que desejar, você deve renderizá-las em uma tela. Abaixo está um exemplo de como exibi-las. 
 
 ----[mlb]----  
 ![Exemplo do frontend da loja com os meios de pagamento disponíveis](/images/api-orders/supertoken-payment-methods-mlb.png)
@@ -424,6 +424,8 @@ Por fim, para que o comprador visualize essas opções de pagamento em seu check
 
 ![Exemplo do frontend da loja com os meios de pagamento disponíevis](/images/api-orders/supertoken-payment-methods-mlm.png)
 ------------
+
+Por fim, certifique-se de disponibilizar no seu backend um endpoint que receberá informações de pagamento assim que o comprador confirmar a compra.
 
 :::
 :::AccordionComponent{title="4. Processar Pagamento" pill="server-side"}
@@ -563,8 +565,8 @@ Se for bem-sucedida, a resposta à requisição  será semelhante ao exemplo aba
         "status": "processed",
         "status_detail": "accredited",
         "payment_method": {
-          "id": "account_money",
-          "type": "account_money",
+          "id": "master",
+          "type": "credit_card",
           "token": "STPRAPI01JSQ9E8H7ZRK4Q0KN4AE8MB7P",
           "statement_descriptor": "somedescription"
         }
