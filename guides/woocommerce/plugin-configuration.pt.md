@@ -2,7 +2,7 @@
 
 Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configurá-lo. Para isso, siga os seguintes passos:
 
-1. Acesse sua conta [Wordpress](https://wordpress.com/).
+1. Acesse sua conta [WordPress](https://wordpress.com/).
 2. Acesse o painel da sua conta e clique em **Plugins > Plugins instalados**.
 
 ![Add plugin](/images/woocomerce/installed-plugins-pt.png)
@@ -13,8 +13,6 @@ Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configu
 ![Plugin MP](/images/woocomerce/mp-plugin-pt.png)
 
 > NOTE
->
-> Nota
 >
 > Continuamos aprimorando constantemente o plugin para proporcionar a melhor experiência possível. Para aproveitar as últimas funcionalidades e garantir a segurança e o bom funcionamento do plugin, recomendamos que você o mantenha sempre atualizado clicando em **Ativar as atualizações automáticas** no passo anterior. 
 
@@ -28,15 +26,15 @@ Conecte sua conta do Mercado Pago à sua loja para começar a receber pagamentos
 
 ![Plugin MP](/images/woocomerce/automation-cred-0-pt.png)
 
-2. Clique em **1. Vincule sua loja a uma conta Mercado Pago** para ser redirecionado ao Mercado Pago e selecionar a conta onde você quer receber os pagamentos das suas vendas.
+2. Clique em **Iniciar vinculação** para ser redirecionado ao Mercado Pago e selecionar a conta onde você quer receber os pagamentos das suas vendas.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-pt.png)
 
-3. Se você já estiver conectado à sua conta, esta etapa será automaticamente ignorada. Caso contrário, insira seu e-mail e senha para fazer login e prosseguir com o processo de vinculação.
+3. Se você já estiver conectado à sua conta, ignore esta etapa. Caso contrário, insira seu e-mail e senha para fazer login e prosseguir com o processo de vinculação.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1.1-pt.png)
 
-4. Na nova aba aberta, selecione a conta que receberá os pagamentos, seja ela sua ou de outra pessoa. 
+4. Na nova aba, selecione a conta que receberá os pagamentos, seja ela sua ou de outra pessoa. 
 
 ![Plugin MP](/images/woocomerce/automation-cred-2-pt.png)
 
@@ -67,8 +65,6 @@ Em **Opções avançadas de integração**, clique em **Ver opções avançadas*
 * **Modo debug e log**: Habilite esta opção para permitir o registro de atividades da sua loja, possibilitando um suporte mais eficiente e a melhor depuração de problemas técnicos.
 
 > NOTE
->
-> Nota
 >
 > Para acessar os logs da sua loja, volte para o painel administrativo do plugin em **WooCommerce > Mercado Pago** e clique em "Precisa de ajuda?". Dentro deste componente, siga o passo 4 para encontrar e baixar o histórico de erros. Na página do **histórico de erros**, você terá acesso a todos os logs disponíveis para download.
 

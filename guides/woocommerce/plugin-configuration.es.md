@@ -2,7 +2,7 @@
 
 Una vez instalado el plugin de Mercado Pago para WooCommerce, es necesario configurarlo. Para ello, sigue estos pasos:
 
-1. Accede a tu cuenta de [Wordpress](https://wordpress.com/).
+1. Accede a tu cuenta de [WordPress](https://wordpress.com/).
 2. Ve al panel de tu cuenta y haz clic en **Plugins > Plugins instalados**.
 
 ![Agregar plugin](/images/woocomerce/installed-plugins-es.png)
@@ -28,7 +28,7 @@ Conecta tu cuenta de Mercado Pago a tu tienda para comenzar a recibir pagos por 
 
 ![Plugin MP](/images/woocomerce/automation-cred-0-es.png)
 
-2. Haz clic en **1. Vincule su tienda a una cuenta de Mercado Pago** para ser redirigido a Mercado Pago y seleccionar la cuenta donde deseas recibir los pagos de tus ventas.
+2. Haz clic en **Comenzar vinculación** para ser redirigido a Mercado Pago y seleccionar la cuenta donde deseas recibir los pagos de tus ventas.
 
 ![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 

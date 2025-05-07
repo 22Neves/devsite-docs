@@ -23,22 +23,28 @@ Veja abaixo como testar a integração:
 >
 > Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste).
 
-6. Acesse a aplicação criada no passo anterior e clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+6. Vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago > Vincule sua loja a uma conta Mercado Pago**).
+7. Clique em **Iniciar vinculação** para ser redirecionado ao Mercado Pago.
 
-![Credenciais de produção](/images/woocomerce/test-prod-credentials.png)
+![Plugin MP](/images/woocomerce/automation-cred-1-pt.png)
 
-7. Vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago > Integre a loja com o Mercado Pago**).
-8. Insira as credenciais produtivas `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de produção**.
-9. Na aplicação criada no passo 5, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+8. Se você já estiver logado na sua conta teste, ignore esta etapa. Caso contrário, insira o e-mail e senha da conta de teste de vendedor criada no passo 3 e clique em **Continuar**.
 
-![Credenciais de teste](/images/woocomerce/test-test-credentials.png)
+![Plugin MP](/images/woocomerce/automation-cred-1.1-pt.png)
 
-10. Insira também as credenciais de teste `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de teste**.
+9. Dentre as opções exibidas, selecione a conta de teste para vinculá-la à loja.
 
-![Painel](/images/woocomerce/test-woo.png)
+![Plugin MP](/images/woocomerce/automation-cred-2-pt.png)
 
-11. Clique em **Salvar e continuar**.
-12. Ainda no painel de Woocommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo vendas (produção)**.
+10. Aguarde até que a vinculação seja finalizada. Isso pode levar alguns segundos.
+
+![Plugin MP](/images/woocomerce/automation-cred-3-pt.png)
+
+11. A vinculação foi finalizada. Clique em **Continuar**.
+
+![Plugin MP](/images/woocomerce/automation-cred-4-pt.png)
+
+12. Ainda no painel de WooCommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo vendas (produção)**.
 
 ![Modo](/images/woocomerce/test-woo-modeprod-pt.png)
 
@@ -60,45 +66,41 @@ Veja abaixo como testar a integração:
 ----[mlb]----
 > RED_MESSAGE
 >
-> Durante os testes, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin nos passos 8 e 10, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
-
-Após concluir uma compra de teste utilizando o Checkout Pro ou o Checkout Transparente, a aprovação da compra será visível no Painel Administrativo de WooCommerce, com exceção das compras feitas por meios offline e Pix, que permanecerão com status pendente.
-
-Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
+> Após os testes, certifique-se de desvincular a conta de teste da sua loja WooCommerce e conectar sua conta Mercado Pago real para prosseguir com as vendas.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-> RED_MESSAGE
->
-> Durante os testes em Checkout Pro, você estará operando no ambiente de produção, no entanto, trata-se de um teste no qual você estará utilizando credenciais fictícias para simular cenários reais. Ao concluir os testes, lembre-se de substituir as credenciais do vendedor (tanto de produção quanto de teste), inseridas no painel do plugin no passo 9, pelas credenciais reais da sua conta no Mercado Pago. Essa ação permitirá que você continue vendendo em sua loja e evitará confusões.
-
-Após concluir uma compra de teste utilizando o Checkout Pro a aprovação da compra será visível no Painel Administrativo de WooCommerce, com exceção das compras feitas por meios offline, que permanecerão com status pendente.
-
-Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
-
 ## Checkout API
 
-1. Acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** no admin do Mercado Pago e selecione a aplicação que deseja testar. 
-2. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+1. Vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago > Vincule sua loja a uma conta Mercado Pago**).
+2. Clique em **Iniciar vinculação** para ser redirecionado ao Mercado Pago.
 
-![Credenciais de produção](/images/woocomerce/test-prod-credentials.png)
+![Plugin MP](/images/woocomerce/automation-cred-1-pt.png)
 
-3. Vá até as configurações do painel de WooCommerce (**WooCommerce > Mercado Pago > Integre a loja com o Mercado Pago**).
-4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**.
-5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+3. Se você já estiver logado na sua conta teste, ignore esta etapa. Caso contrário, insira o e-mail e senha da conta de teste de vendedor criada no passo 3 e clique em **Continuar**.
 
-![Credenciais de teste](/images/woocomerce/test-test-credentials-api.png)
+![Plugin MP](/images/woocomerce/automation-cred-1.1-pt.png)
 
-6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**.
+4. Dentre as opções exibidas, selecione a conta de teste para vinculá-la à loja.
 
-![Painel](/images/woocomerce/test-woo.png)
+![Plugin MP](/images/woocomerce/automation-cred-2-pt.png)
 
-7. Clique em **Salvar e continuar**.
-8. Ainda no painel de Woocommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo teste**.
+5. Aguarde até que a vinculação seja finalizada. Isso pode levar alguns segundos.
+
+![Plugin MP](/images/woocomerce/automation-cred-3-pt.png)
+
+6. A vinculação foi finalizada. Clique em **Continuar**.
+
+![Plugin MP](/images/woocomerce/automation-cred-4-pt.png)
+
+7. Ainda no painel de WooCommerce, vá até o passo "4. Teste sua loja antes de vender" e selecione a opção **Modo teste**.
 
 ![Modo](/images/woocomerce/test-woo-testmode-pt.png)
 
-9. Clique em **Salvar mudanças**.
-10. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
+8. Clique em **Salvar mudanças**.
+9. Acesse sua loja e efetue uma compra fornecendo informações de teste, como número de telefone e um endereço de e-mail diferente daquele associado à sua conta no Mercado Pago. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/woocommerce/additional-content/your-integrations/test/cards) correspondente.
 
+> RED_MESSAGE
+>
+> Após os testes, certifique-se de desvincular a conta de teste da sua loja WooCommerce e conectar sua conta Mercado Pago real para prosseguir com as vendas.
 ------------
