@@ -7,7 +7,8 @@ A integração com o ----[mlb]---- Checkout Transparente------------ ----[mla, m
 | --- | --- | --- | --- | 
 | [Checkout Bricks](/developers/pt/docs/checkout-bricks/landing) | Crédito, débito virtual Caixa, Pix, boleto, Conta Mercado Pago e Parcelamento sem cartão. Veja mais detalhes em nossa documentação [Meios de pagamento disponíveis](/developers/pt/docs/sales-processing/payment-methods). | Fácil  | Componentes com UI já definida e que pode ser personalizada caso necessário.  | 
 | [Cardform](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).  | Médio  | O formulário não possui nenhuma estilização, permitindo total flexibilidade para personalização dos estilos.  | 
-|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações  | 
+|  [Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](/developers/pt/docs/sales-processing/payment-methods).   | Alto | Crie seu formulário e suas estilizações.  | 
+|  [Métodos Core Native](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)  | [Todos os meios disponíveis](//docs/checkout-api/types-of-integration/core-methods-native).   | Alto | -  | 
 
 ------------
 
