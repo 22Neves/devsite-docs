@@ -8,7 +8,7 @@
 
 Las billeteras digitales externas a Mercado Pago tienen la posibilidad de solicitar el alta del flujo emisor de códigos QR interoperables. Es decir, solicitar a Mercado Pago que comience el proceso de pruebas necesario para que códigos QR de otras billeteras sean escaneados y pagados a través de Mercado Pago.
 
-Para iniciar esta solicitud, quien represente a la billetera digital interesada deberá contactarse con nuestro equipo de [Soporte](/developers/es/support/center/tickets#from=/mp_wcs_v2/needmorehelp&to=receive_technical_support_for_integrations) y brindar la siguiente información.
+Para iniciar esta solicitud, quien represente a la billetera digital interesada deberá contactarse con nuestro equipo de [Soporte](https://www.mercadopago.com.ar/cx/meli-chat) y brindar la siguiente información.
 
 ## Datos de la billetera
 

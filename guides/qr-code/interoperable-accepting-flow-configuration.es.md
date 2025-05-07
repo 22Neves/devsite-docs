@@ -33,7 +33,7 @@ Esto generará automáticamente una tarjeta en [Tus integraciones](/developers/p
 
 Para continuar con la configuración del QR interoperable, es necesario que la billetera digital solicite el alta y su incorporación a Mercado Pago. 
 
-Para ello, debes comunicarte con nuestro [Centro de ayuda](https://www.mercadopago.com.ar/ayuda/chat/v2?hasCreditRestriction=false) y solicitar que requieres apoyo para la configuración del flujo aceptador de QR interoperable, proporcionando la siguiente información.
+Para ello, debes comunicarte con nuestro [Centro de ayuda](https://www.mercadopago.com.ar/cx/meli-chat) y solicitar que requieres apoyo para la configuración del flujo aceptador de QR interoperable, proporcionando la siguiente información.
 
 | Dato | Descripción |
 |---|---|

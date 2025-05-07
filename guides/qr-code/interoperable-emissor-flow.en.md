@@ -8,7 +8,7 @@
 
 External digital wallets to Mercado Pago have the opportunity to request the registration of the issuer flow for interoperable QR codes. This means requesting Mercado Pago to begin the necessary testing process for QR codes from other wallets to be scanned and paid through Mercado Pago.
 
-To initiate this request, the representative of the interested digital wallet must contact our [Support team](/developers/en/support/center/tickets#from=/mp_wcs_v2/needmorehelp&to=receive_technical_support_for_integrations) and provide the following information.
+To initiate this request, the representative of the interested digital wallet must contact our [Support](https://www.mercadopago.com.ar/cx/meli-chat) team and provide the following information.
 
 ## Wallet information
 

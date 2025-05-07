@@ -36,7 +36,7 @@ Nesta etapa, você deverá usar sua :toolTipComponent[_Public Key_ de teste]{con
 
 > NOTE
 >
-> Se você estiver desenvolvendo para outra pessoa, poderá acessar as credenciais dos aplicativos que você não gerencia. Consulte [Compartilhar credenciais](/developers/pt/docs/checkout-api-v2/more-resources/credentials#bookmark_compartilhar_credenciais#bookmark_compartilhar_credenciais) para mais informações.
+> Se você estiver desenvolvendo para outra pessoa, poderá acessar as credenciais dos aplicativos que você não gerencia. Consulte [Compartilhar credenciais](/developers/pt/docs/checkout-api-v2/more-resources/credentials#bookmark_compartilhar_credenciais) para mais informações.
 
 Copie a :toolTipComponent[_Public Key_]{content="Chave pública de testes e que é utilizada no _frontend_ para acessar informações e criptografar dados, seja na fase de desenvolvimento ou na fase de testes. Você pode acessá-la através de *Suas integrações > Detalhes da aplicação > Testes > Credenciais de teste*."}, localizada e a inclua no _frontend_. Isso permitirá acessar as informações dos meios de pagamento e criptografar os dados do pagador e dos cartões utilizados.
 

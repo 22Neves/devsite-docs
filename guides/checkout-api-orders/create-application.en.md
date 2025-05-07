@@ -5,7 +5,7 @@
 5. Since you are creating an application for the ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ in "**Are you using an e-commerce platform?**", indicate that you are **not** using an [e-commerce platform](/developers/en/docs#platform-list), as this solution is for integration into self-developed sites.
 6. Then, choose ----[mlb]---- **CheckoutTransparente**------------ ----[mla, mlm]---- **CheckoutAPI** ------------  as the product you are integrating.
 7. In "Integration model", select the integration model that aligns with your business model.
-8. Accept the ----[mlb]---- [Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla, mlm]---- [Privacy Statement](https://www.mercadopago.com/privacidad) ------------ and the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) and click on **Create application**.
+8. Accept the ----[mlb]---- [Privacy Statement](https://www.mercadopago.com.br/privacidade) ------------ ----[mla]---- [Privacy Statement](https://www.mercadopago.com.ar/privacidad) ------------ ----[mlm]---- [Privacy Statement](https://www.mercadopago.com.mx/privacidad) ------------ and the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) and click on **Create application**.
 
 ----[mlb]----
 ![create-application-2](/images/api-orders/create-application-2-pt.png)
