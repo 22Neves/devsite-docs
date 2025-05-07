@@ -2,7 +2,7 @@
 
 Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configurá-lo. Para isso, siga os seguintes passos:
 
-1. Acesse sua conta [Wordpress](https://wordpress.com/).
+1. Acesse sua conta [WordPress](https://wordpress.com/).
 2. Acesse o painel da sua conta e clique em **Plugins > Plugins instalados**.
 
 ![Add plugin](/images/woocomerce/installed-plugins-pt.png)
@@ -14,46 +14,37 @@ Uma vez instalado o plugin Mercado Pago para WooCommerce, é necessário configu
 
 > NOTE
 >
-> Nota
->
 > Continuamos aprimorando constantemente o plugin para proporcionar a melhor experiência possível. Para aproveitar as últimas funcionalidades e garantir a segurança e o bom funcionamento do plugin, recomendamos que você o mantenha sempre atualizado clicando em **Ativar as atualizações automáticas** no passo anterior. 
 
 A seguir, explicaremos como configurar cada item do plugin. 
 
 ## Integrar loja ao Mercado Pago
 
-1. Clique em **1. Insira suas credenciais para integrar sua loja ao Mercado Pago**.
+Conecte sua conta do Mercado Pago à sua loja para começar a receber pagamentos pelas vendas. Siga as etapas abaixo para realizar a integração.
 
-![Plugin MP](/images/woocomerce/insert-credentials-pt.png)
+1. No menu suspenso, escolha o país onde sua loja está localizada.
 
-2. Agora, é preciso vincular sua conta Mercado Pago à sua loja através das suas credenciais. No admin do Mercado Pago, acesse **[Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** e selecione a sua aplicação. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do desenvolvedor](/developers/pt/docs/woocommerce/additional-content/your-integrations/dashboard) e saiba como criá-la. 
+![Plugin MP](/images/woocomerce/automation-cred-0-pt.png)
 
-> WARNING
->
-> Importante
->
-> As credenciais são responsáveis por identificar a conta coletora dos pagamentos que você receberá em sua loja. Caso não insira suas credenciais no painel administrativo da loja, você será automaticamente redirecionado para configurar essa etapa. **Lembre-se, a ativação dos meios de pagamento só será possível após a inserção bem-sucedida das suas credenciais**.
+2. Clique em **Iniciar vinculação** para ser redirecionado ao Mercado Pago e selecionar a conta onde você quer receber os pagamentos das suas vendas.
 
-3. Clique em **Credenciais de produção** no menu à esquerda. Copie o `access_token` e a `public_key`.
+![Plugin MP](/images/woocomerce/automation-cred-1-pt.png)
 
-![Credenciais de produção](/images/woocomerce/test-prod-credentials-api.png)
+3. Se você já estiver conectado à sua conta, ignore esta etapa. Caso contrário, insira seu e-mail e senha para fazer login e prosseguir com o processo de vinculação.
 
-4. Insira suas credenciais produtivas `access_token` e a `public_key` no campo **Credenciais de produção**, tomando **cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
-5. Na sua aplicação, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
+![Plugin MP](/images/woocomerce/automation-cred-1.1-pt.png)
 
-![Credenciais de teste](/images/woocomerce/test-test-credentials-api.png)
+4. Na nova aba, selecione a conta que receberá os pagamentos, seja ela sua ou de outra pessoa. 
 
-6. Insira também as credenciais de teste `access_token` e a `public_key` no campo **Credenciais de teste**, tomando **cuidado para não inverter os campos no momento de copiar e colar as credenciais**.
+![Plugin MP](/images/woocomerce/automation-cred-2-pt.png)
 
-![Painel](/images/woocomerce/test-woo.png)
+5. Aguarde até que a vinculação seja finalizada. Isso pode levar alguns segundos.
 
-7. Clique em **Salvar e continuar**.
+![Plugin MP](/images/woocomerce/automation-cred-3-pt.png)
 
-> NOTE
->
-> Nota
->
-> Renove suas credenciais conforme necessário, consultando a [documentação](/developers/pt/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) correspondente como guia. Após a renovação, é essencial atualizá-las no painel de WooCommerce. Lembre-se: ao alterar a senha da sua conta Mercado Pago, **é necessário renovar suas credenciais**. Para isso, exclua as credenciais antigas do painel, copie as novas e insira no painel administrativo da loja.
+6. A vinculação foi finalizada. Agora, você pode avançar para configurar e personalizar sua loja.
+
+![Plugin MP](/images/woocomerce/automation-cred-4-pt.png)
 
 ## Personalizar negócio
 
@@ -74,8 +65,6 @@ Em **Opções avançadas de integração**, clique em **Ver opções avançadas*
 * **Modo debug e log**: Habilite esta opção para permitir o registro de atividades da sua loja, possibilitando um suporte mais eficiente e a melhor depuração de problemas técnicos.
 
 > NOTE
->
-> Nota
 >
 > Para acessar os logs da sua loja, volte para o painel administrativo do plugin em **WooCommerce > Mercado Pago** e clique em "Precisa de ajuda?". Dentro deste componente, siga o passo 4 para encontrar e baixar o histórico de erros. Na página do **histórico de erros**, você terá acesso a todos os logs disponíveis para download.
 
