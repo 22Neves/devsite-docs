@@ -59,8 +59,8 @@ curl -X POST \
 -d '{
  "client_id": "client_id",
  "client_secret": "client_secret",
- "grant_type": "refresh-token",
- "refresh_token": "TG-XXXXXXXX-241983636",
+ "grant_type": "refresh_token",
+ "refresh_token": "TG-XXXXXXXX-241983636"
 }'
 ```
 ]]]
