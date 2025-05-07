@@ -141,34 +141,3 @@ Nesse momento, o pagamento estará em estado pendente, já que o comprador ainda
 > Para pagamentos com o estado `pending`, sugerimos redirecionar o comprador para o seu site e fornecer orientações claras sobre como concluir o pagamento.
 
 Assim que o pagamento for realizado no ponto físico com o comprovante gerado, o Mercado Pago será notificado, e o estado do pagamento será atualizado. Recomendamos que você [configure as notificações de pagamento](/developers/pt/docs/checkout-pro/payment-notifications) para que seu servidor receba essas atualizações e atualize o estado do pedido na sua base de dados.
-
-### Escolher o tipo de integração
-
-Após concluir as configurações do backend e obter o ID da preferência, você deve prosseguir para a configuração do frontend. Para isso, escolha o tipo de integração que melhor atenda às suas necessidades, seja para um **site** ou um **aplicativo móvel**.
-
-Selecione o tipo de integração que deseja realizar e siga os passos detalhados para completar a integração do Checkout Pro.
-Selecione a opção de integração desejada e siga as instruções detalhadas para completar a integração do Checkout Pro.
-
----
-future_product_avaible: 
- - card_avaible: true
- - card_icon: Laptop
- - card_title: Continuar a integração para sites
- - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu site ou loja online.
- - card_button:  /developers/pt/docs/checkout-pro/web-integration/add-frontend-sdk
- - card_buttonDescription: Integração web
- - card_pillText: DISPONÍVEL
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
- - card_avaible: true
- - card_icon: Smartphone
- - card_title: Continuar a integração para aplicações móveis
- - card_description: Oferece cobranças com redirecionamento para o Mercado Pago no seu aplicativo para dispositivos móveis.
- - card_button: /developers/pt/docs/checkout-pro/mobile-integration
- - card_buttonDescription: Integração mobile
- - card_pillText: DISPONÍVEL
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
----
