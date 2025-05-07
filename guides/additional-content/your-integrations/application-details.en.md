@@ -4,7 +4,7 @@ To access the general data of your application, navigate to the [Developer Dashb
 
 ## Application data
 
-* **Application data**: This section displays the basic data of the application, including:
+This section displays the basic data of the application, including:
   - **User ID**: Automatically generated user identification number.
   - **Application number**: Automatically generated application identification number.
   - **Integration with**: The product or platform integrated with the application.

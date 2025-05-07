@@ -1,0 +1,228 @@
+{
+    "name": {
+        "en": "Create payment with OXXO",
+        "pt": "Criar pagamento OXXO",
+        "es": "Crear pago con OXXO"
+    },
+    "siteId": [
+        "MLM"
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "schema": {
+                    "properties": {
+                        "type": {
+                            "example": "online"
+                        },
+                        "external_reference": {
+                            "example": "ext_ref_1234"
+                        },
+                        "processing_mode": {
+                            "example": "automatic"
+                        },
+                        "marketplace": {
+                            "example": "NONE"
+                        },
+                        "total_amount": {
+                            "example": "1000.00"
+                        },
+                        "payer": {
+                            "properties": {
+                                "email": {
+                                    "example": "test@testuser.com"
+                                },
+                                "first_name": {
+                                    "example": "disabled"
+                                },
+                                "last_name": {
+                                    "example": "disabled"
+                                },
+                                "identification": {
+                                    "example": "disabled"
+                                },
+                                "phone": {
+                                    "example": "disabled"
+                                },
+                                "address": {
+                                    "example": "disabled"
+                                }
+                            }
+                        },
+                        "transactions": {
+                            "properties": {
+                                "payments": {
+                                    "properties": {
+                                        "amount": {
+                                            "example": "1000.00"
+                                        },
+                                        "payment_method": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "oxxo"
+                                                },
+                                                "type": {
+                                                    "example": "ticket"
+                                                },
+                                                "token": {
+                                                    "example": "disabled"
+                                                },
+                                                "installments": {
+                                                    "example": "disabled"
+                                                },
+                                                "statement_descriptor": {
+                                                    "example": "disabled"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "capture_mode": {
+                            "example": "disabled"
+                        },
+                        "description": {
+                            "example": "disabled"
+                        },
+                        "items": {
+                            "example": "disabled"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "properties": {
+                            "id": {
+                                "example": "ORD01J6TC8BYRR0T4ZKY0QR39WGYE"
+                            },
+                            "type": {
+                                "example": "online"
+                            },
+                            "processing_mode": {
+                                "example": "automatic"
+                            },
+                            "external_reference": {
+                                "example": "ext_ref_1234"
+                            },
+                            "marketplace": {
+                                "example": "NONE"
+                            },
+                            "total_amount": {
+                                "example": "200.00"
+                            },
+                            "country_code": {
+                                "example": "MEX"
+                            },
+                            "user_id": {
+                                "example": "12345"
+                            },
+                            "status": {
+                                "example": "action_required"
+                            },
+                            "status_detail": {
+                                "example": "waiting_payment"
+                            },
+                            "capture_mode": {
+                                "example": "automatic"
+                            },
+                            "created_date": {
+                                "example": "2025-04-25T13:51:07.942Z"
+                            },
+                            "last_updated_date": {
+                                "example": "2025-04-25T13:51:07.942Z"
+                            },
+                            "integration_data": {
+                                "properties": {
+                                    "application_id": {
+                                        "example": "4599991948843755"
+                                    },
+                                    "integrator_id": {
+                                        "example": "disabled"
+                                    },
+                                    "platform_id": {
+                                        "example": "disabled"
+                                    },
+                                    "sponsor": {
+                                        "example": "disabled"
+                                    }
+                                }
+                            },
+                            "transactions": {
+                                "properties": {
+                                    "payments": {
+                                        "items": {
+                                            "properties": {
+                                                "id": {
+                                                    "example": "PAY01J6TC8BYRR0T4ZKY0QRTZ0E24"
+                                                },
+                                                "amount": {
+                                                    "example": "200.00"
+                                                },
+                                                "paid_amount": {
+                                                    "example": "disabled"
+                                                },
+                                                "reference_id": {
+                                                    "example": "22dvqmsbq8c"
+                                                },
+                                                "status": {
+                                                    "example": "action_required"
+                                                },
+                                                "status_detail": {
+                                                    "example": "waiting_payment"
+                                                },
+                                                "payment_method": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "example": "oxxo"
+                                                        },
+                                                        "type": {
+                                                            "example": "ticket"
+                                                        },
+                                                        "ticket_url": {
+                                                            "example": "https://www.mercadopago.com.ar/payments/86797024510/ticket?caller_id=1870026883&payment_method_id=rapipago&payment_id=86797024510&payment_method_reference_id=6004835002&hash=0331521a-9ddb-44a2-851c-65f77d8d394e"
+                                                        },
+                                                        "barcode_content": {
+                                                            "example": "3335008800000000006004835002100020000242462010"
+                                                        },
+                                                        "reference": {
+                                                            "example": "6005407530"
+                                                        },
+                                                        "verification_code": {
+                                                            "example": "6005407530"
+                                                        },
+                                                        "token": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "installments": {
+                                                            "example": "disabled"
+                                                        },
+                                                        "statement_descriptor": {
+                                                            "example": "disabled"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "description": {
+                                "example": "disabled"
+                            },
+                            "items": {
+                                "example": "disabled"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

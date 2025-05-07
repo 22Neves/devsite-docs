@@ -1,4 +1,4 @@
-# Vigência da preferência
+# Definir vigência da preferência
 
 Vigência é o período de validade definido para determinada preferência de pagamento. Ao definir a vigência da preferência, você escolhe uma data para que ela comece a valer e a data de expiração definindo um limite máximo para pagamento. 
 

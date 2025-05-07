@@ -1,4 +1,4 @@
-# Shipping cost
+# Display shipping cost
 
 Shipping cost is the value charged for shipping the products sold. If this amount is already set, it is possible to display it separately from the total purchase amount at the time of payment.
 

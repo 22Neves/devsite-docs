@@ -1,4 +1,4 @@
-# Refunds and cancellations
+# Configure refunds and cancellations
 
 **Refunds** and **cancellations** are actions available after a payment has been made. While both involve returning money, it is crucial to understand their differences to correctly execute each process.
 

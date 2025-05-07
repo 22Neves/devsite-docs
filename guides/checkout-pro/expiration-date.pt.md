@@ -1,4 +1,4 @@
-# Data de vencimento 
+# Alterar data de vencimento 
 
 Data de vencimento é o período máximo definido para realização de um pagamento. Com o Checkout Pro é possível alterar a data de vencimento padrão para **pagamentos em dinheiro** enviando o campo `date_of_expiration` na requisição de criação da preferência. 
 

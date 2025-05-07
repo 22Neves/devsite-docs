@@ -1,4 +1,4 @@
-# Fecha de vencimiento
+# Cambiar fecha de vencimiento
 
 La fecha de vencimiento es el período máximo definido para realizar un pago. Con Checkout Pro es posible cambiar la fecha de vencimiento predeterminada a **pagos en efectivo** enviando el campo `date_of_expiration` en el request de creación de preferencias.
 

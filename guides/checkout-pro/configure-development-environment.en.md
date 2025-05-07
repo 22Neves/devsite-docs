@@ -1,4 +1,4 @@
-# Set up development environment
+# Configure development environment
 
 To start integrating Mercado Pago's payment solutions, it is necessary to prepare your development environment with a series of configurations that will allow you to access Mercado Pago's functionalities from the backend.
 

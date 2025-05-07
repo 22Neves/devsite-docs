@@ -1,4 +1,4 @@
-# Descrição de fatura
+# Configurar descrição de fatura
 
 Descrição de fatura é uma configuração que permite definir o nome do estabelecimento que será exibido na fatura do comprador. Isto permite a identificação do negócio e evita contestações desnecessárias.
 

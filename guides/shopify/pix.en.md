@@ -6,129 +6,71 @@ To integrate Mercado Pago Pix, install the application through the [Shopify pane
 
 > WARNING
 >
-> Importante
->
 > To enable Pix payments, it's necessary to verify if the Pix keys have been created in your Mercado Pago account. If you haven't created them yet, we recommend watching the [video tutorial](https://www.youtube.com/watch?v=60tApKYVnkA) for a step-by-step guide.
 
 ## Install via Shopify admin panel
 
 To install Mercado Pago Pix through the Shopify admin panel, follow the steps below:
 
-1. Log in to you [Shopify](https://accounts.shopify.com/store-login) store.
-2. In the store's admin panel, click **Settings** in the lower-left corner of the page.
+1. Log in to your [Shopify store](https://accounts.shopify.com/store-login).
+2. In the store's admin panel, click on **Settings** in the bottom-left corner of the page.
 
 ![Configurations](/images/shopify/pix-configurations-es.png) 
 
-3. Once there, select the **Payments** option in the menu on the left side of the page.
-4. Under **Payment methods accepted**, click **Add payment method**.
+3. Once there, select the **Payments** option from the menu on the left side of the page.
+4. Under **Accepted payment methods**, click on **Add payment method**.
 
 ![Add payment method](/images/shopify/pix-add-payment-method-es.png) 
 
-5. Select the **Search by provider** tab, search for the "Mercado Pago Pix" app, and select the corresponding option.
+5. Select the **Search by provider** tab and search for the application "Mercado Pago Pix". When you find it, select it.
 
 ![Add](/images/shopify/pix-app-search-es.png) 
 
-6. Click **Install**.
+6. Click on **Install**.
 
 ![Install](/images/shopify/pix-install-es.png) 
 
-7. Carefully read the information about the requested permissions and click **Install** again.
+7. Carefully read the information about the requested permissions and click on **Install** again.
 
 ![Permissions](/images/shopify/pix-permissions-es.png) 
 
-8. After accepting the requested permissions, click **Manage account** to link your Mercado Pago account to the store using your credentials.
+8. Click on **Manage account** to access the Mercado Pago environment and start the process of linking your store to your account to enable payments.
 
-![Manage](/images/shopify/pix-manage-account-es.png) 
+![installation chopro 6](/images/shopify/installation-pix-0-es.png)
 
-> WARNING
->
-> Important
->
-> If you have already installed the [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) app, you do not need to enter your credentials again. Proceed to step 13 of this tutorial.
+9. Once inside the Mercado Pago environment, click on **Start linking** to begin the process.
 
-9. In the Mercado Pago admin, go to [Your integrations](https://www.mercadopago.com.br/developers/panel/app) and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard) to learn how to create one.
+![installation chopro 7](/images/shopify/connect-account-1-es.png)
 
-10. In the application, click  **Production credentials** in the left menu. Copy the `public_key` and the `access_token`.
+10. If you are already logged into your Mercado Pago account, skip this step. Otherwise, enter your email and password to log in to your account.
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
+![installation chopro 8](/images/shopify/connect-account-2-es.png)
 
-11. Enter your production credentials `access_token` and `public_key` in the corresponding fields. **Make sure not to swap the fields when copying and pasting the credentials**.
-12. Click **Save credentials**.
+11. Choose which Mercado Pago account you want to link to the store.
 
-![Save credentials](/images/shopify/pix-save-credentials-es.png)
+![installation chopro 9](/images/shopify/connect-account-3-es.png)
 
-> NOTE
->
-> Nota
->
-> Renew your credentials as needed by consulting the [documentación correspondiente](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) as a guide. After renewal, it is essential to update them in the Shopify panel. Remember: **when changing the password of your Mercado Pago account, it is necessary to renew your credentials**. To do this, delete the old credentials from the panel, copy the new ones, and enter them in the store's admin panel.
+12. Click on **Link account** and accept the requested permissions. These permissions are essential for Mercado Pago to securely and seamlessly process payments from your store.
 
-13. Click the **Check activation** option for Mercado Pago Pix.
+![installation chopro 10](/images/shopify/connect-account-4-es.png)
 
-![Check activation](/images/shopify/pix-check-activation-es.png)
+13. The process will run automatically and might take a few seconds.
 
-14. If the app is not yet activated, click **Go to Settings** to activate it.
-
-![Go to settings](/images/shopify/pix-go-to-settings-es.png)
-
-15. On the next screen, click **Activate**.
-
-![Activate](/images/shopify/pix-activate-es.png)
-
-Done! Mercado Pago Pix is ready to receive payments from your store.
-
-## Install via Marketplace
-
-To install Mercado Pago Pix via Marketplace, follow the steps below:
-
-1. Log in to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. Go to the [Mercado Pago Pix page](https://apps.shopify.com/mercado-pago-pix-1) on the Marketplace and click **Install**.
-
-![Marketplace](/images/shopify/pix-marketplace-install-es.png)
-
-3. Carefully read the information about the requested permissions and click **Install** again.
-
-![Permissions](/images/shopify/pix-permissions-es.png) 
-
-4. After accepting the requested permissions, click **Manage account** to link your Mercado Pago account to the store using your credentials.
-
-![Manage](/images/shopify/pix-manage-account-es.png) 
-
-> WARNING
->
-> Important
->
-> If you have already installed the [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) app, you do not need to enter your credentials again. Proceed to step 9 of this tutorial.
-
-5. In the Mercado Pago admin, go to [Your integrations](https://www.mercadopago.com.br/developers/panel/app) and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/shopify/additional-content/your-integrations/dashboard) to learn how to create one.
-6. In the application, click **Production credentials** in the left menu. Copy the `public_key` and the `access_token`.
-
-![Production credentials](/images/woocomerce/test-prod-credentials-api-es.png)
-
-7. Enter your production credentials `access_token` and `public_key` in the corresponding fields. **Make sure not to swap the fields when copying and pasting the credentials**.
-8. Click **Save credentials**.
-
-![Save credentials](/images/shopify/pix-save-credentials-es.png)
+![installation chopro 11](/images/shopify/connect-account-5-es.png)
 
 > NOTE
 >
-> Nota
->
-> Renew your credentials as needed by consulting the [corresponding documentation](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) as a guide. After renewal, it is essential to update them in the Shopify panel. Remember: **when changing the password of your Mercado Pago account, it is necessary to renew your credentials**. To do this, delete the old credentials from the panel, copy the new ones, and enter them in the store's admin panel.
+> Once the store is linked to the Mercado Pago account in one application, it will not be necessary to repeat this process for other Mercado Pago applications for Shopify.
 
-9. Click the **Check activation** option for Mercado Pago Pix.
+14. After linking your store to your Mercado Pago account, it is necessary to register a Pix key in your Mercado Pago account. Click on **Register Pix key** to register it.
 
-![Check activation](/images/shopify/pix-check-activation-es.png)
+15. After registering the Pix key, click on **Activate app**.
 
-10. If the app is not yet activated, click **Go to Settings** to activate it.
+16. Click on **Go to settings** to return to the Shopify panel.
 
-![Go to settings](/images/shopify/pix-go-to-settings-es.png)
+17. In the store's admin panel, go to **Settings > Payments** and click on **Activate** to enable Mercado Pago Pix.
 
-11. On the next screen, click **Activate**.
-
-![Activate](/images/shopify/pix-activate-es.png)
-
-Done! Mercado Pago Pix is ready to receive payments from your store.
+The **Mercado Pago Pix** application has been successfully installed and configured, and it is now ready to process payments from your store directly into your Mercado Pago account.
 
 ## Configure expiration period
 

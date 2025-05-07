@@ -22,71 +22,105 @@ Para **exibir a Linha de Crédito no checkout da sua loja**, siga os passos abai
 
 ------------
 ----[mlm]----
-Atualmente, você pode oferecer **Meses sin Tarjeta** através do nosso [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Meses sin Tarjeta**.
+Atualmente, você pode oferecer **Meses sin Tarjeta** através do [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Meses sin Tarjeta**.
 
-Além disso, você poderá complementar a integração com a habilitação do app **Mercado Pago Banner**, um app que permite promover durante o processo de compra, a opção de pagamento com **Mercado Pago Meses sin Tarjeta**. Para mais informações sobre o como habilitar o banner, acesse a documentação [Como promover "Meses sin Tarjeta" em sua loja](/developers/pt/docs/shopify/shopify/how-tos/banner).
+Além disso, é possível complementar a integração ativando o app **Mercado Pago Banner**, que permite destacar, durante o processo de compra, a opção de pagamento com **Mercado Pago Meses sin Tarjeta**. Para mais informações sobre o como habilitar o banner, acesse a documentação [Como promover "Meses sin Tarjeta" em sua loja](/developers/pt/docs/shopify/shopify/how-tos/banner).
 
 Para **exibir o Meses sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
 ------------
 ----[mla]----
-Atualmente, você pode oferecer **Cuotas sin Tarjeta** através do nosso [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Cuotas sin Tarjeta**.
+Atualmente, você pode oferecer **Cuotas sin Tarjeta** através do [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) ou diretamente do checkout da sua loja com o app **Mercado Pago Cuotas sin Tarjeta**.
 
 Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
 ------------
-1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Configurações**.
-3. Uma vez lá, selecione a opção **Pagamentos**. 
-4. Em "Formas de pagamento adicionais", clique em **Adicionar formas de pagamento**.
+1. Acesse sua [loja Shopify](https://accounts.shopify.com/store-login).  
+2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.  
+3. Uma vez lá, selecione a opção **Pagamentos** no menu do lado esquerdo da página.    
 ----[mlb]----
-5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Mercado Pago Linha de Crédito".
+4. Clique em **Adicionar forma de pagamento** e procure o aplicativo com o nome "Mercado Pago Linha de Crédito". 
 
 ------------
 ----[mlm]----
-5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Mercado Pago Meses sin Tarjeta".
+4. Clique em **Adicionar forma de pagamento** e procure o aplicativo com o nome "Mercado Pago Meses sem Tarjeta". 
+
+![installation cards 3](/images/shopify/installation-credits-1-es.png)  
 
 ------------
 ----[mla]----
-5. Acesse a aba **Pesquisar por fornecedor** e procure o novo app com o nome "Mercado Pago Cuotas sin Tarjeta".
+4. Clique em **Adicionar forma de pagamento** e procure o aplicativo com o nome "Mercado Pago Cuotas sin Tarjeta". 
 
 ------------
-6. Após localizá-lo, selecione-o, clique em **Instalar** e, por fim, em **Conectar**.
-7. Selecione **Instalar app > Mais ações** e, depois, clique em **Gerenciar**.
-8. Insira as suas **credenciais de produção** (`public key` e `access token`) nos campos solicitados e clique em **Salvar**. Lembre-se de ter suas [credenciais](/developers/pt/docs/shopify/additional-content/your-integrations/credentials) à mão.
-9. Para finalizar a instalação, clique em **Ativar**.
-----[mlm]----
-![shopify-mercado-credito](/images/shopify/meses-sin-tarjeta-mlm.png)
+5. Uma vez que o tenha encontrado, selecione-o e clique em **Instalar**. Leia atentamente as informações sobre as permissões solicitadas e clique em **Instalar** novamente.  
 
-------------
+![installation cards 3](/images/shopify/installation-credits-2-es.png)  
+
+6. Clique em **Gerenciar conta** para acessar o ambiente do Mercado Pago e iniciar o processo de vinculação da sua loja com sua conta para receber pagamentos.  
+
+![installation cards 3](/images/shopify/installation-credits-3-es.png)   
+
+7. Ao acessar o ambiente do Mercado Pago, clique em **Iniciar vinculação** para começar o processo.  
+
+![installation cards 4](/images/shopify/connect-account-1-es.png)  
+
+8. Se você já estiver logado em sua conta do Mercado Pago, ignore esta etapa. Caso contrário, insira seu e-mail e senha para acessar sua conta.  
+
+![installation cards 5](/images/shopify/connect-account-2-es.png)  
+
+9. Escolha qual conta do Mercado Pago deseja vincular à loja.  
+
+![installation cards 6](/images/shopify/connect-account-3-es.png)  
+
+10. Clique em **Vincular conta** e aceite as permissões solicitadas. Essas permissões são essenciais para que o Mercado Pago processe os pagamentos de sua loja de forma segura e integrada.  
+
+![installation cards 7](/images/shopify/connect-account-4-es.png)  
+
+11. O processo será realizado automaticamente e pode levar alguns segundos.  
+
+![installation cards 8](/images/shopify/connect-account-5-es.png)  
+
+> NOTE
+>
+> Nota
+>
+> Uma vez que a loja estiver vinculada à conta do Mercado Pago em um aplicativo, não será necessário repetir este processo para outros aplicativos do Mercado Pago para Shopify.
+
+12. Após vincular sua loja à sua conta do Mercado Pago, clique em **Ativar app**.
+
+![installation cards 8](/images/shopify/connect-account-credits-6-pt.png)
+
+13. Clique em **Ir para configurações** para retornar ao painel do Shopify. 
+
+![installation cards 8](/images/shopify/connect-account-7-pt.png)
+
+14. No painel administrativo da loja, vá até **Configurações > Pagamentos** e clique em **Ativar** para ativar o Mercado Pago Cartões.
+
 ----[mlb]----
-> WARNING
+> RED_MESSAGE
 >
-> Atenção
->
-> Importante salientar que no app "Mercado Pago Linha de Crédito" **não existe um fluxo de teste**, então não é necessário selecionar o _checkbox_ "habilite o modo de teste".
-> <br/><br/>
-> No caso de renovar suas credenciais, lembre-se de substituí-las em sua integração.
+> O aplicativo "Mercado Pago Linha de Crédito" **não possui um fluxo de teste**, portanto, não é necessário marcar a opção _"habilitar modo de teste"_. 
 
 ------------
 ----[mlm]----
-> WARNING
+> RED_MESSAGE
 >
-> Atenção
->
-> Importante salientar que no app "Mercado Pago Meses sin Tarjeta" **não existe um fluxo de teste**, então não é necessário selecionar o _checkbox_ "habilite o modo de teste".
-> <br/><br/>
-> No caso de renovar suas credenciais, lembre-se de substituí-las em sua integração.
+> O aplicativo "Mercado Pago Meses sem Tarjeta" **não possui um fluxo de teste**, portanto, não é necessário marcar a opção _"habilitar modo de teste"_.  
 
 ------------
 ----[mla]----
-> WARNING
+> RED_MESSAGE
 >
-> Atenção
->
-> Importante salientar que no app "Mercado Pago Cuotas sin Tarjeta" **não existe um fluxo de teste**, então não é necessário selecionar o _checkbox_ "habilite o modo de teste".
-> <br/><br/>
-> No caso de renovar suas credenciais, lembre-se de substituí-las em sua integração.
+> O aplicativo "Mercado Pago Cuotas sin Tarjeta" **não possui um fluxo de teste**, portanto, não é necessário marcar a opção _"habilitar modo de teste"_.  
 
 ------------
-Pronto! A modalidade de financiamento está habilitada em sua loja.
+----[mla, mlb]----
+
+A modalidade de financiamento está habilitada em sua loja.
+
+------------
+----[mlm]----
+
+A modalidade de financiamento está habilitada em sua loja.
+
+------------

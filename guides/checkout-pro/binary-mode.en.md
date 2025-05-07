@@ -1,4 +1,4 @@
-# Binary mode
+# Enable binary mode
 
 You can enable binary mode if your business model requires payment approval to be instantaneous. In this way, the payment can only be approved or declined.
 

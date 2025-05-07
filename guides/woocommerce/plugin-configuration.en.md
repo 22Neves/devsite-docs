@@ -2,7 +2,7 @@
 
 Once the Mercado Pago plugin for WooCommerce is installed, it needs to be configured. Follow these steps to do so:
 
-1. Access your [Wordpress](https://wordpress.com/) account.
+1. Access your [WordPress](https://wordpress.com/) account.
 2. Go to your account dashboard and click on **Plugins > Installed Plugins**.
 
 ![Add plugin](/images/woocomerce/installed-plugins-es.png)
@@ -20,38 +20,31 @@ Next, we'll explain how to configure each item of the plugin.
 
 ## Integrate store with Mercado Pago
 
-1. Click on **1. Enter your credentials to integrate your store with Mercado Pago**.
+Connect your Mercado Pago account to your store to start receiving payments for your sales. Follow the steps below to complete the integration.
 
-![Plugin MP](/images/woocomerce/insert-credentials-es.png)
+1. From the dropdown menu, choose the country where your store is located.
 
-2. Now, you need to link your Mercado Pago account to your store using your credentials. In the Mercado Pago admin panel, access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** and select your application. If you haven't created an application yet, refer to the [Developer Dashboard documentation](/developers/en/docs/woocommerce/additional-content/your-integrations/dashboard) to learn how to do it.
+![Plugin MP](/images/woocomerce/automation-cred-0-es.png)
 
-> WARNING
->
-> Important
->
-> The credentials are responsible for identifying the payment-receiving account for your store. If you don't enter your credentials in the store's admin panel, you'll be automatically redirected to configure this step. **Remember, activating payment methods will only be possible after successfully entering your credentials**.
+2. Click on **Start linking** to be redirected to Mercado Pago to select the account where you want to receive payments.
 
-3. Click on **Production credentials** in the left menu. Copy the `access_token` and the `public_key`.
+![Plugin MP](/images/woocomerce/automation-cred-1-es.png)
 
-![Production credentials](/images/woocomerce/test-prod-credentials-api.png)
+3. If you are already logged in, this step will be automatically skipped. Otherwise, enter your email and password to log in and proceed with the linking process.
 
-4. Enter your production credentials `access_token` and `public_key` in the **Production credentials** field, being **careful not to reverse the fields when copying and pasting the credentials**.
-5. In your application, click on **Test credentials** in the left menu. Copy the `access_token` and the `public_key`.
+![Plugin MP](/images/woocomerce/automation-cred-1.1-es.png)
 
-![Test credentials](/images/woocomerce/test-test-credentials-api.png)
+4. In the new tab that opens, select the account to receive payments, whether it's yours or someone else's.
 
-6. Also, enter the test credentials `access_token` and `public_key` in the **Test credentials** field, being **careful not to reverse the fields when copying and pasting the credentials**.
+![Plugin MP](/images/woocomerce/automation-cred-2-es.png)
 
-![Panel](/images/woocomerce/test-woo.png)
+5. Please wait until the linking process is completed. This may take a few seconds.
 
-7. Click on **Save and continue**.
+![Plugin MP](/images/woocomerce/automation-cred-3-es.png)
 
-> NOTE
->
-> Note
->
-> Renew your credentials as necessary, referring to the [documentation](/developers/en/docs/woocommerce/additional-content/best-practices/credentials-best-practices/secure-credentials) as a guide. After renewal, it's essential to update them in the WooCommerce panel. Remember: when changing your Mercado Pago account password, **you need to renew your credentials**. To do this, delete the old credentials from the panel, copy the new ones, and enter them in the store's admin panel.
+6. The process is finalized. You can now proceed to configure and customize your store.
+
+![Plugin MP](/images/woocomerce/automation-cred-4-es.png)
 
 ## Customize business
 

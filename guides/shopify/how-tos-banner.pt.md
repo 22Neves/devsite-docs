@@ -15,9 +15,7 @@ O **Mercado Pago Banner** é um app que permite promover a opção de pagamento 
 
 Uma vez instalado o app, os vendedores podem inserir facilmente um _banner_ personalizado em sua loja, comunicando de maneira eficaz aos compradores a opção de pagar em parcelas sem cartão, incentivando as vendas.
 
-> WARNING
->
-> Atenção
+> RED_MESSAGE
 >
 > Antes de instalar o Mercado Pago Banner, é necessário ter configurado a exibição de ----[mlb]----[Mercado Pago Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ no checkout da sua loja.
 
@@ -25,13 +23,7 @@ Para instalar o Mercado Pago Banner, siga os passos abaixo:
 
 1. Acesse a [página do app Mercado Pago Banner](https://apps.shopify.com/mercado-pago-banner?locale=pt-BR) e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
-3. Se você já instalou o app ----[mlb]----[Mercado Pago Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, não precisará inserir suas credenciais novamente, mas poderá alterá-las se necessário. 
-
-> WARNING
->
-> Importante
->
-> Lembre-se de que, ao alterar a senha do Shopify, **é necessário renovar suas credenciais**. Para isso, siga as instruções na documentação de [Boas práticas de segurança para suas credenciais](/developers/pt/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Em seguida, para atualizá-las na sua conta do Shopify, clique em Gerenciar conta e preencha os campos correspondentes com seu `access_token` e `public_key`, **tomando cuidado para não trocar os campos ao copiar e colar as credenciais**.
+3. Se você já instalou o app ----[mlb]----[Mercado Pago Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, não precisará vincular sua conta Mercado Pago à sua loja novamente.
 
 4. Clique na opção **Salvar banner** e, em seguida, vá para a seção de "Temas" da Shopify. O _banner_ será adicionado automaticamente na página do produto.
 5. Por fim, clique em **Salvar** para finalizar a configuração do _banner_.
