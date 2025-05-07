@@ -1,4 +1,4 @@
-# Integration via Core Methods
+# Integration via Core Methods Web
 
 In this integration method, the person in charge of the integration is responsible for defining how the information necessary to complete the payment will be searched, unlike the integration via Cardform, where the search for information is done automatically.
 

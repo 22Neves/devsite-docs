@@ -7,4 +7,4 @@ Além disso, crie e personalize seu próprio formulário, aplicando estilizaçõ
 Para integrar o SDK Nativo do Mercado Pago utilizando Métodos _Core_, consulte as documentações específicas para cada tecnologia:
 
 - [Android]()
-- [iOS](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/ios)
+- [iOS](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods-native/ios)
