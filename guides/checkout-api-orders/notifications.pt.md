@@ -37,7 +37,7 @@ Para garantir que as notificações sejam configuradas corretamente, é necessá
 
 5. Por fim, clique em **Enviar teste** para verificar a solicitação, a resposta fornecida pelo servidor e a descrição do evento. Você receberá uma resposta conforme o exemplo abaixo, que representa o _body_ da notificação recebida em seu servidor.
 
-```
+```json
 {
   "action": "order.action_required",
   "api_version": "v1",

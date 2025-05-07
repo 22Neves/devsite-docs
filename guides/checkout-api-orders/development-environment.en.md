@@ -43,7 +43,7 @@ At this stage, you should use your :toolTipComponent[test Public Key]{content="T
 
 > NOTE
 >
-> If you are developing for someone else, you will be able to access the credentials of the applications you do not manage. Refer to [Share credentials](/developers/en/docs/checkout-api-v2/more-resources/credentials#bookmark_share_credentials#bookmark_share_credentials) for more information.
+> If you are developing for someone else, you will be able to access the credentials of the applications you do not manage. Refer to [Share credentials](/developers/en/docs/checkout-api-v2/more-resources/credentials#bookmark_share_credentials) for more information.
 
 Once you have located the :toolTipComponent[Public Key]{content="Testing public key, used in the frontend to access information and encrypt data, whether in the development stage or the testing stage. You can access it through *Your integrations > Application details > Testing > Testing credentials*."}, copy it and include it in the frontend. By doing this, you will be able to access the necessary data for each payment method, as well as encrypt payer and card data.
 
