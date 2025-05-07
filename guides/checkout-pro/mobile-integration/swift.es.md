@@ -100,7 +100,7 @@ Para conocer más, puedes acceder a la documentación de [URLs de retorno](/deve
 
 ## Configuración de la aplicación para la gestión del Deep Link
 
-Para configurar un Deep Link nativo en iOS, dirígete al archivo `appname/Info.plist` y agrega el código que se muestra a continuación según sea tu caso.
+Para configurar un Deep Link nativo en iOS, dirígete al archivo `<appname>/Info.plist` y agrega el código que se muestra a continuación según sea tu caso.
 
 El siguiente ejemplo aplica para un deep link de la forma _iosapp://_:
 
@@ -138,7 +138,7 @@ Luego, ingresa el `identifier` de tu aplicación y la `URL Schemes` del Deep Lin
 
 ![deeplink-xcode-swift](/images/cow/deeplink-xcode-swift.png)
 
-Esto generará automáticamente el mismo código que se indicó anteriormente en el archivo `appname/Info.plist`.
+Esto generará automáticamente el mismo código que se indicó anteriormente en el archivo `<appname>/Info.plist`.
 
 ## Recepción y gestión del Deep Link 
 
@@ -170,7 +170,10 @@ struct ContentView: View {
         .sheet(isPresented: $showSuccessView) {
             SuccessView(isPresented: $showSuccessView)
         }
+        
+        
 // Aquí la recepción deep link
+
 .onOpenURL { url in
             if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
                components.scheme == "iosapp",
@@ -188,6 +191,7 @@ struct ContentView: View {
         .padding()
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
