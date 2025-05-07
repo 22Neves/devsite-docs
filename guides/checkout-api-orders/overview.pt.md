@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integre Checkout Transparente e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/6/1746557703608-BR.PT.svg
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/7/1746650884612-BR.PT.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
