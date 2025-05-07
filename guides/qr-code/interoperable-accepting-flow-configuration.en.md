@@ -33,7 +33,7 @@ This will automatically generate a card in [Your Integrations](/developers/panel
 
 To continue with the configuration of the interoperable QR, it is necessary for the digital wallet to request registration and its incorporation into Mercado Pago.
 
-To do this, you must contact our [Help Center](https://www.mercadopago.com.ar/ayuda/chat/v2?hasCreditRestriction=false) and request that you require support for the configuration of the interoperable QR acceptor flow, providing the following information.
+To do this, you must contact our [Help Center](https://www.mercadopago.com.ar/cx/meli-chat) and request that you require support for the configuration of the interoperable QR acceptor flow, providing the following information.
 
 | Field | Description |
 |---|---|

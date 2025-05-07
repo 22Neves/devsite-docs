@@ -6,10 +6,9 @@
 >
 > A funcionalidade de QR interoperável só pode ser configurada por **carteiras digitais** externas ao Mercado Pago. Se você não for representante de uma carteira digital, dirija-se à [Configuração de integração](/developers/pt/docs/qr-code/introduction) para configurar a opção que mais se adeque ao seu modelo de negócio.
 
-
 As carteiras digitais externas ao Mercado Pago têm a possibilidade de solicitar o cadastrodo fluxo emissor de códigos QR interoperáveis. Ou seja, solicitar ao Mercado Pago que inicie o processo de testes necessário para que códigos QR de outras carteiras sejam escaneados e pagos através do Mercado Pago.
 
-Para iniciar essa solicitação, quem representar a carteira digital interessada deverá entrar em contato com nossa equipe de Suporte e fornecer as seguintes informações.
+Para iniciar essa solicitação, quem representar a carteira digital interessada deverá entrar em contato com nossa equipe de [Suporte](https://www.mercadopago.com.ar/cx/meli-chat) e fornecer as seguintes informações.
 
 ## Dados da carteira
 
