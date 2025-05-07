@@ -170,10 +170,7 @@ struct ContentView: View {
         .sheet(isPresented: $showSuccessView) {
             SuccessView(isPresented: $showSuccessView)
         }
-        
-        
 // Aquí la recepción deep link
-
 .onOpenURL { url in
             if let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
                components.scheme == "iosapp",
@@ -191,7 +188,6 @@ struct ContentView: View {
         .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
