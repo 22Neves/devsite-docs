@@ -1,8 +1,8 @@
 # Gestionar contracargos
 
-Al recibir una notificación de inicio de contracargo, utilice los datos proporcionados para ayudar en la gestión del proceso. Estos datos serán fundamentales para preparar y enviar la documentación necesaria para la disputa.
+Al recibir una notificación de inicio de contracargo, utiliza los datos proporcionados para ayudar en la gestión del proceso. Estos datos serán fundamentales para preparar y enviar la documentación necesaria para la disputa.
 
-En esta etapa, analice la información detallada incluida en la notificación para comprender los aspectos específicos del contracargo. A continuación, presentamos un diagrama que ilustra cómo funciona el flujo de envío y recepción de la documentación:
+En esta etapa, analiza la información detallada incluida en la notificación para comprender los aspectos específicos del contracargo. A continuación, presentamos un diagrama que ilustra cómo funciona el flujo de envío y recepción de la documentación:
 
 <pre class="mermaid">
 sequenceDiagram
@@ -25,13 +25,13 @@ sequenceDiagram
 
 ## Consultar contracargo
 
-Inicie el proceso consultando la información del contracargo utilizando el `id` o el `payment_id` proporcionados en el cuerpo de la notificación. A partir de los detalles obtenidos, será posible evaluar si hay necesidad de enviar la documentación para dar continuidad al contracargo.
+Inicia el proceso consultando la información del contracargo utilizando el `id` o el `payment_id` proporcionados en el cuerpo de la notificación. A partir de los detalles obtenidos, será posible evaluar si hay necesidad de enviar la documentación para dar continuidad al contracargo.
 
 :::::TabsComponent
 
 ::::TabComponent{title="Consultar contracargo a través del id"}
 
-Para consultar más información sobre el contracargo, envíe un GET al endpoint [/v1/chargebacks/{id}](/developers/es/reference/chargebacks/_chargebacks_id/get), sustituyendo el campo `id` por el `id` del contracargo proporcionado en el `body` de la notificación:
+Para consultar más información sobre el contracargo, envía un GET al endpoint [/v1/chargebacks/{id}](/developers/es/reference/chargebacks/_chargebacks_id/get), sustituyendo el campo `id` por el `id` del contracargo proporcionado en el `body` de la notificación:
 
 ```
 curl --location --globoff 'https://api.mercadopago.com/v1/chargebacks/{id}' \
@@ -39,7 +39,7 @@ curl --location --globoff 'https://api.mercadopago.com/v1/chargebacks/{id}' \
 --header 'Authorization: Bearer {{access_token}}'
 ```
 
-A continuación, un ejemplo de respuesta a la solicitud:
+A continuación, compartimos un ejemplo de respuesta a la solicitud:
 
 ```
 {
@@ -64,7 +64,7 @@ A continuación, un ejemplo de respuesta a la solicitud:
 ::::
 
 ::::TabComponent{title="Consultar contracargo a través del payment_id"}
-Para consultar más información sobre el contracargo, ejecute un GET al endpoint [/v1/chargebacks/{id}](/developers/es/reference/chargebacks/_chargebacks_id/get), sustituyendo el campo `payment_id` por el `payment_id` del contracargo proporcionado en el cuerpo de la notificación:
+Para consultar más información sobre el contracargo, envía un GET al endpoint [/v1/chargebacks/{id}](/developers/es/reference/chargebacks/_chargebacks_id/get), sustituyendo el campo `payment_id` por el `payment_id` del contracargo proporcionado en el cuerpo de la notificación:
 
 ```
 curl --location 'https://api.mercadopago.com/v1/chargebacks/search?payment_id={payment_id}' \
@@ -72,7 +72,7 @@ curl --location 'https://api.mercadopago.com/v1/chargebacks/search?payment_id={p
 --header 'Authorization: Bearer {{access_token}}'
 ```
 
-A continuación, un ejemplo de respuesta a la solicitud:
+A continuación, compartimos un ejemplo de respuesta a la solicitud:
 
 ```
 {
@@ -115,8 +115,6 @@ En esta etapa, podrá enviar la documentación que demuestre que la venta es vá
 
 > RED_MESSAGE
 >
-> Importante
->
 > Los archivos deben enviarse en formato .jpg, .png o .pdf y tener un tamaño máximo de hasta 10MB.
 
 ```
@@ -131,7 +129,7 @@ Si los archivos se envían con éxito, la API devolverá un código `HTTP 200` y
 
 Después de recibir la documentación, Mercado Pago actúa como mediador en el proceso de resolución del contracargo. El análisis se inicia junto a la marca de la tarjeta, que luego envía la documentación recibida al banco emisor de la tarjeta. Una vez que el análisis del banco se completa, se determina la resolución del contracargo y se notifica a las partes involucradas.
 
-Espere la notificación Webhook referente a la resolución y verifique nuevamente el contracargo utilizando el endpoint [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get). Después de la resolución, el campo `coverage_applied` indicará el resultado y asumirá uno de los valores posibles:
+Espera la notificación Webhook referente a la resolución y verifica nuevamente el contracargo utilizando el endpoint [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get). Después de la resolución, el campo `coverage_applied` indicará el resultado y asumirá uno de los valores posibles:
 
 | Valor | Descripción                                                                |
 |-------|----------------------------------------------------------------------------|
@@ -139,8 +137,6 @@ Espere la notificación Webhook referente a la resolución y verifique nuevament
 | `false` | Indica que la decisión fue en contra del vendedor y el dinero será descontado. |
 
 > RED_MESSAGE
->
-> Importante
 >
 > La resolución del contracargo puede tardar hasta 6 meses, dependiendo de la marca de la tarjeta.
 

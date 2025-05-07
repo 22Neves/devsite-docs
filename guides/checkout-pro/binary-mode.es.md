@@ -1,4 +1,4 @@
-# Modo binario
+# Habilitar modo binario
 
 Puedes habilitar el modo binario si tu modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede ser aprobado o rechazado.
 

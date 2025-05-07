@@ -8,7 +8,13 @@ Consulte o fluxo geral de uma notificação no diagrama abaixo.
 
 ![Diagram](/images/cow/notifications-diagrama-pt.jpg)
 
-A seguir, apresentamos um passo a passo para configurar as notificações de criação e atualização de pagamentos. Depois de configuradas, as notificações Webhook serão enviadas sempre que um pagamento for criado ou seu estado for modificado (Pendente, Rejeitado ou Aprovado). No processo de integração com o Mercado Pago, as notificações podem ser configuradas de duas maneiras:
+A seguir, apresentamos um passo a passo para configurar as notificações de criação e atualização de pagamentos. Depois de configuradas, as notificações Webhook serão enviadas sempre que um pagamento for criado ou seu estado for modificado (Pendente, Rejeitado ou Aprovado).
+
+> NOTE
+>
+> Esta documentação trata exclusivamente da configuração de notificações de pagamento, incluindo criações e atualizações, por meio do evento **Pagamentos**. Para obter informações sobre outros eventos de notificações disponíveis para configuração, consulte a [documentação de Notificações](/developers/pt/docs/checkout-pro/additional-content/notifications) geral.
+
+ No processo de integração com o Mercado Pago, as notificações podem ser configuradas de duas maneiras:
 
 | Tipo de Configuração | Descrição | Vantagens | Quando Usar |
 |---|---|---|---|
@@ -717,6 +723,21 @@ Após configurar as notificações, acesse a seção **Ações necessárias apó
 Quando você recebe uma notificação na sua plataforma, o Mercado Pago espera uma resposta para validar que essa recepção foi correta. Para isso, você deve devolver um `HTTP STATUS 200 (OK)` ou `201 (CREATED)`.
 
 O tempo de espera para essa confirmação será de 22 segundos. Se não for enviada essa resposta, o sistema entenderá que a notificação não foi recebida e realizará uma nova tentativa de envio a cada 15 minutos, até que receba a resposta. Após a terceira tentativa, o prazo será prorrogado, mas os envios continuarão acontecendo.
+
+<pre class="mermaid">
+sequenceDiagram
+    participant MercadoPago as Mercado Pago
+    participant Integrador as Integrador
+
+    MercadoPago->>Integrador: tentativa: 1. Atraso: 0 minutos
+    MercadoPago->>Integrador: tentativa: 2. Atraso: 15 minutos
+    MercadoPago->>Integrador: tentativa: 3. Atraso: 30 minutos
+    MercadoPago->>Integrador: tentativa: 4. Atraso: 6 horas
+    MercadoPago->>Integrador: tentativa: 5. Atraso: 48 horas
+    MercadoPago->>Integrador: tentativa: 6. Atraso: 96 horas
+    MercadoPago->>Integrador: tentativa: 7. Atraso: 96 horas
+    MercadoPago->>Integrador: tentativa: 8. Atraso: 96 horas
+</pre>
 
 Após responder a notificação, confirmando seu recebimento, você pode obter todas as informações sobre o evento do tópico `payments` notificado fazendo um GET ao endpoint [v1/payments/{id}](/developers/pt/reference/payments/_payments_id/get). 
 

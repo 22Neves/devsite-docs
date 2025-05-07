@@ -1,4 +1,4 @@
-# Set up development environment
+# Configure development environment
 
 To start integrating Mercado Pago's payment solutions, it is necessary to prepare your development environment with a series of configurations that will allow you to access Mercado Pago's functionalities from the backend.
 
@@ -13,8 +13,6 @@ Next, you will need to install and configure the official Mercado Pago SDK:
 The **backend SDK** is designed to handle server-side operations, allowing you to create and manage payment preferences, process transactions, and perform other critical operations securely.
 
 > NOTE
->
-> Note
 >
 > If you prefer, you can download the Mercado Pago SDKs from our [official libraries](/developers/en/docs/sdks-library/server-side).
 

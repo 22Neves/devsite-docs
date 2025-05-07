@@ -10,7 +10,7 @@ Com o certificado ativado e o teste concluído, você pode tirar sua loja do mod
 
 Siga este passo a passo para fazer a alteração:
 
-1. Acesse sua conta [Wordpress](https://wordpress.com/).
+1. Acesse sua conta [WordPress](https://wordpress.com/).
 2. Acesse o Painel da sua conta e clique em **Plugins > Plugins instalados**.
 3. No buscador de plugins, procure por “Mercado Pago payments for WooCommerce”.
 4. Clique em **Configurar plug-in**.

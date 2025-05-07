@@ -13,8 +13,6 @@ A seguir, veja como instalar e configurar o SDK oficial do Mercado Pago:
 O **SDK de backend** é projetado para gerenciar as operações do lado do servidor, permitindo criar e gerenciar preferências de pagamento, processar transações e realizar outras operações críticas de forma segura.
 
 > NOTE
->
-> Note
 > 
 > Se preferir, você pode baixar os SDKs do Mercado Pago em nossas [bibliotecas oficiais](/developers/pt/docs/sdks-library/server-side).
 

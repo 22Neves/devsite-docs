@@ -1,4 +1,4 @@
-# Reembolsos y cancelaciones
+# Configurar reembolsos y cancelaciones
 
 Los **reembolsos** y las **cancelaciones** son acciones disponibles después de la realización de un pago. Aunque ambas implican la devolución de dinero, es crucial comprender sus diferencias para ejecutar correctamente los procesos.
 
@@ -9,8 +9,6 @@ Los **reembolsos** y las **cancelaciones** son acciones disponibles después de 
 A continuación, se detallan las informaciones esenciales sobre cada proceso.
 
 > RED_MESSAGE
->
-> Importante
 >
 > Esta documentación está **destinada a integradores**. Si eres comprador y necesitas cancelar o solicitar el reembolso de un pago, ingresa a tu cuenta de Mercado Pago, selecciona la compra para la que quieres solicitarlo, haz clic en "Necesito ayuda" y elige la opción de reembolso o cancelación.
 

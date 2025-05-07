@@ -28,7 +28,7 @@ Para obter mais informações sobre quais credenciais serão necessárias para a
 
 ### Client ID e Client Secret
 
-As credenciais **Client ID** e **Client Secret** são utilizadas, principalmente, nas integrações que utilizam [OAuth](/developers/pt/docs/security/oauth/introduction) como protocolo para obtenção de informação privada de contas do Mercado Pago. Em particular, são utilizadas durante o fluxo (_grant type_) de **Client Credentials**, que permite acessar um recurso em nome próprio e obter um Access Token sem interação do usuário.
+As credenciais **Client ID** e **Client Secret** são utilizadas, principalmente, nas integrações que possuem [OAuth](/developers/pt/docs/security/oauth) como protocolo para obtenção de informação privada de contas do Mercado Pago. Em particular, são utilizadas durante o fluxo (_grant type_) de **Client Credentials**, que permite acessar um recurso em nome próprio e obter um Access Token sem interação do usuário.
 
 Também podem ser requeridas em algumas integrações mais antigas com plataformas de e-commerce.
 
@@ -81,7 +81,7 @@ As credenciais do Mercado Pago são criadas a partir de uma aplicação do Merca
 
 A seguir, saiba como obter as credenciais.
 
-1. No canto superior direito do [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es), clique em **Entrar** e preencha os dados solicitados com as informações correspondentes à sua conta do Mercado Pago. Em seguida, clique no botão **Suas integrações** localizado no canto superior direito.
+1. No canto superior direito do [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), clique em **Entrar** e preencha os dados solicitados com as informações correspondentes à sua conta do Mercado Pago. Em seguida, clique no botão **Suas integrações** localizado no canto superior direito.
 2. Acesse sua aplicação ou crie uma, caso ainda não a tenha criado.
 3. Você encontrará suas credenciais sob o título **Testes > Credenciais de teste** ou **Produção > Credenciais de produção**, no menu localizado à esquerda da tela.
 
@@ -128,9 +128,9 @@ Além disso, se por questões de segurança você não desejar mais compartilhar
 
 A seguir, mostramos como compartilhar credenciais.
 
-1. No canto superior direito do [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference), clique em **Entrar** e insira os dados solicitados com as informações correspondentes à sua conta do Mercado Pago. Em seguida, clique em **Suas integrações** localizado no canto superior direito.
+1. No canto superior direito do [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), clique em **Entrar** e insira os dados solicitados com as informações correspondentes à sua conta do Mercado Pago. Em seguida, clique em **Suas integrações** localizado no canto superior direito.
 2. Acesse a aplicação da integração para a qual você precisa compartilhar as credenciais.
-3. Vá para a seção **Testes** ou **Produção**, dependendo do tipo de credencial que você deseja compartilhar. Lembre-se de que para acessar as credenciais de produção, você deverá ativá-las. Se não sabe como ativá-las, vá para [Ativar credenciais de produção](#ativar-credenciais-de-produção).
+3. Vá para a seção **Testes** ou **Produção**, dependendo do tipo de credencial que você deseja compartilhar. Lembre-se de que para acessar as credenciais de produção, você deverá ativá-las. Se não sabe como ativá-las, vá para [Ativar credenciais de produção](/developers/pt/docs/credentials#bookmark_ativar_credenciais_de_produção).
 4. Uma vez que você selecionar as credenciais, vá até a seção **Compartilhe as credenciais com um desenvolvedor** e clique em **Compartilhar credenciais**.
 5. Informe o endereço de e-mail da pessoa para quem você deseja conceder acesso. **Importante**: o endereço de e-mail deve, obrigatoriamente, estar vinculado a uma conta do Mercado Pago.
 

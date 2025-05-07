@@ -4,7 +4,7 @@ Para acessar os dados gerais da sua aplicação, navegue até o [Painel do desen
 
 ## Dados da aplicação
 
-* **Dados da aplicação**: esta seção exibe os dados básicos da aplicação, incluindo:
+Esta seção exibe os dados básicos da aplicação, incluindo:
   - **User ID**: número (criado automaticamente) de identificação do usuário.
   - **Número da aplicação**: número de identificação da aplicação criado automaticamente.
   - **Integração com**: o produto ou plataforma integrada com a aplicação. 

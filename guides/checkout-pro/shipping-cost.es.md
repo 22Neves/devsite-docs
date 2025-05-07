@@ -1,4 +1,4 @@
-# Valor del envío
+# Mostrar valor de envío
 
 Valor del envío, es el valor cobrado por el envío de los productos vendidos. Si este monto ya está establecido, es posible mostrarlo por separado del monto total de la compra en el momento del pago.
 

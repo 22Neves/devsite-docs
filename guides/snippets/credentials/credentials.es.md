@@ -27,7 +27,7 @@ Para obtener más información sobre qué credenciales serán necesarias para tu
 
 ### Client ID y Client Secret
 
-Las credenciales **Client ID** y **Client Secret** se utilizan, principalmente, en las integraciones que utilizan [OAuth](/developers/es/docs/security/oauth/introduction) como protocolo para obtención de información privada de cuentas de Mercado Pago. En particular, se utilizan durante el flujo (_grant type_) de **Client Credentials**, que permite acceder a un recurso en nombre propio y obtener un Access Token sin interacción del usuario.
+Las credenciales **Client ID** y **Client Secret** se utilizan, principalmente, en las integraciones que utilizan [OAuth](/developers/es/docs/security/oauth) como protocolo para obtención de información privada de cuentas de Mercado Pago. En particular, se utilizan durante el flujo (_grant type_) de **Client Credentials**, que permite acceder a un recurso en nombre propio y obtener un Access Token sin interacción del usuario.
 
 También pueden ser requeridas en algunas integraciones más antiguas con plataformas de e-commerce. 
 
@@ -81,7 +81,7 @@ Las credenciales de Mercado Pago son creadas a partir de una aplicación de Merc
 
 A continuación, conoce cómo obtener las credenciales.
 
-1. En la esquina superior derecha de [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es), haz clic en **Ingresar** y completa los datos requeridos con la información correspondiente a tu cuenta de Mercado Pago. Luego, haz clic en el botón **Tus integraciones** ubicado en la esquina superior derecha. 
+1. En la esquina superior derecha de [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), haz clic en **Ingresar** y completa los datos requeridos con la información correspondiente a tu cuenta de Mercado Pago. Luego, haz clic en el botón **Tus integraciones** ubicado en la esquina superior derecha. 
 2. Accede a tu aplicación o crea una si aún no lo has hecho.
 3. Encontrarás tus credenciales bajo el título **Pruebas > Credenciales de prueba** o **Producción > Credenciales de producción**, en el menú ubicado a la izquierda de la pantalla.
 
@@ -129,9 +129,9 @@ Además, si por cuestiones de seguridad no deseas seguir compartiendo tus creden
 
 A continuación, te mostramos cómo compartir credenciales.
 
-1. En la esquina superior derecha de [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference), haz clic en **Ingresar** e ingresa los datos requeridos con la información correspondiente a tu cuenta de Mercado Pago. Luego, haz clic en el botón **Tus integraciones** ubicado en la esquina superior derecha. 
+1. En la esquina superior derecha de [Mercado Pago Developers](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app), haz clic en **Ingresar** e ingresa los datos requeridos con la información correspondiente a tu cuenta de Mercado Pago. Luego, haz clic en el botón **Tus integraciones** ubicado en la esquina superior derecha. 
 2. Accede a la aplicación de la integración para la cual necesitas compartir las credenciales.
-3. Ve a la sección **Pruebas** o **Producción**, según el tipo de credencial que desees compartir. Recuerda que para acceder a las credenciales de producción, deberás activarlas. Si no sabes cómo activarlas, ve a [Activar credenciales de producción](#activar-credenciales-de-producción).
+3. Ve a la sección **Pruebas** o **Producción**, según el tipo de credencial que desees compartir. Recuerda que para acceder a las credenciales de producción, deberás activarlas. Si no sabes cómo activarlas, ve a [Activar credenciales de producción](/developers/es/docs/credentials#bookmark_activar_credenciales_de_producción).
 4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
 5. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. **Recuerda**: es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 

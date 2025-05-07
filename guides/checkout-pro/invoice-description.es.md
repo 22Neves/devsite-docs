@@ -1,4 +1,4 @@
-# Descripción de factura
+# Configurar descripción de factura
 
 Es una configuración que te permite definir el nombre del establecimiento que se mostrará en la factura del comprador. Esto permite la identificación comercial y evita disputas innecesarias.
 
