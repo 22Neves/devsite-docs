@@ -45,7 +45,7 @@ If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the 
 ----[mlm]----
 4. Click on **Add payment method** and search for the app named "Mercado Pago Meses sin Tarjeta". 
 
-![installation cards 3](/images/shopify/installation-credits-1-es.png)  
+![installation cards 3](/images/shopify/installation-credits-1-es-new.png)  
 
 ------------
 ----[mla]----
