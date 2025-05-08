@@ -46,7 +46,7 @@ bullet_section_with_media:
 ---
 bullet_section_with_media: 
  - type: reverse
- - title: Elegibilidad en el proceso de PCI SAQ A.
+ - title: Elegibilidad en el proceso de    PCI SAQ A
  - message: Aseguramos la confidencialidad, disponibilidad e integridad de todos nuestros procesos siguiendo las mejores prácticas del mercado para que puedas utilizar todos nuestros productos de forma segura.
  - image: /api/landing-es.png
 ---
