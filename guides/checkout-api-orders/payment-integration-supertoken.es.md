@@ -5,7 +5,7 @@
 Con la autorización del comprador, facilitaremos los métodos de pago disponibles en Mercado Pago o Mercado Libre para ofrecerlos directamente en el checkout de la tienda, creando una experiencia más rápida, segura y sin fricciones para el comprador.
 
 ----[mlb]----  
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlb.png)
 ------------
 
 ----[mla]---- 
@@ -15,7 +15,7 @@ Con la autorización del comprador, facilitaremos los métodos de pago disponibl
 
 ----[mlm]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlm.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlm.png)
 ------------
 
 > RED_MESSAGE
@@ -161,7 +161,11 @@ En caso de que el usuario esté impedido de continuar con el flujo, recibirás u
 
 Una vez inicializada la clase `Authenticator` es necesario hacer una solicitud para obtener el _token_ de autorización. Este _token_ es requerido para acceder a los medios de pago disponibles en la cuenta de Mercado Pago del comprador.
 
-La función que  realiza la solicitud es la siguiente.
+La función que realiza esta solicitud es `getAuthorizationToken` y, mediante el método `.show`, te permite elegir cómo quieres que se obtenga ese _token_: mediante la apertura de un modal de confirmación, u omiténdolo. Elige la opción que prefieras y utiliza el código asignado en cada caso como referencia.
+
+#### Obtener token mediante modal de confirmación
+
+Al llamar al método `.show` tal como muestra el bloque de código a continuación, se producirá la apertura de un _bottom sheet_ solicitando la confirmación del usuario. Cuando esto suceda, será redireccionado a la aplicación de Mercado Pago o Mercado Libre. Allí podrá autorizar el pago de forma segura, utilizando métodos como la lectura de huellas dactilares o el reconocimiento facial, dependiendo de lo que su dispositivo soporte.
 
 ```JavaScript
 async function getAuthorizationToken() {
@@ -179,9 +183,6 @@ const authorizationToken = await getAuthorizationToken();
 
 ```
 
-El método `.show` es el encargado de mostrar al comprador un modal de confirmación, que le permite elegir si quiere ser dirigido a Mercado Pago para utilizar sus métodos guardados. Allí, tienes dos opciones:
- * **Abrir modal de confirmación**: al llamar al método tal como muestra el bloque de código, se producirá la apertura de un _bottom sheet_ y, cuando el comprador realice la confirmación, será redireccionado a la aplicación de Mercado Pago o Mercado Libre. Allí podrá autorizar el pago de forma segura, utilizando métodos como la lectura de huellas dactilares o el reconocimiento facial, dependiendo de lo que su dispositivo soporte.
-
   ----[mlb]----  
   ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb.png)
   ------------
@@ -196,7 +197,26 @@ El método `.show` es el encargado de mostrar al comprador un modal de confirmac
   ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm.png)
   ------------
 
- * **Omitir el modal de confirmación**: este método también puede recibir opcionalmente el parámetro `hideRedirectionConfirmation`, que permite omitir el modal de confirmación y que el usuario sea redirigido automáticamente a la aplicación. Cuando este parámetro está activado, se recomienda usar `.getApplication` para identificar qué aplicación utilizará el usuario, lo que permite crear un modal de confirmación personalizado que mejore la experiencia del usuario.
+
+#### Obtener token omitiendo el modal de confirmación
+
+El método `.show` también puede recibir opcionalmente el valor booleano `true`, que permite omitir el modal de confirmación y que el usuario sea redirigido automáticamente a la aplicación. Cuando este parámetro está activado, se recomienda usar el metodo `authenticator.getApplication()` para identificar a qué aplicación podrá ser redirigido el usuario, Mercado Libre o Mercado Pago, lo que permite personalizar y mejorar su experiencia.
+
+```JavaScript
+async function getAuthorizationToken() {
+
+  try {
+    const token = await authenticator.show(true);
+    return token;
+  } catch (error) {
+    console.error("Error while obtaining the token:", error?.errorCode);
+  }
+}
+
+// Calling the function and receiving the authorization token
+const authorizationToken = await getAuthorizationToken();
+
+```
 
 > NOTE
 >

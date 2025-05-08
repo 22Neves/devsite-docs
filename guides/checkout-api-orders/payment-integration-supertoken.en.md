@@ -5,7 +5,7 @@ Mercado Pago's ----[mlb]----Checkout Transparente------------ ----[mla, mlm]----
 With the buyer's authorization, we will facilitate the payment methods available in Mercado Pago or Mercado Livre to offer them directly at the store's checkout, creating a faster, safer and frictionless experience for the buyer.
 
 ----[mlb]----  
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlb.png)
 ------------
 
 ----[mla]---- 
@@ -15,7 +15,7 @@ With the buyer's authorization, we will facilitate the payment methods available
 
 ----[mlm]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlm.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlm.png)
 ------------
 
 > RED_MESSAGE
@@ -161,9 +161,13 @@ If the user is unable to continue with the flow, you will receive an error. See 
 :::
 :::AccordionComponent{title="2. Obtain Account Authentication Token" pill="client-side"}
 
-Once the `Authenticator` class has been initialized, it is necessary to send a request to obtain the authorization token. This token is required to access the available payment methods in the buyer's Mercado Pago account. 
+Once the `Authenticator` class is initialized, it is necessary to make a request to obtain the authorization token. This token is required to access the available payment methods in the buyer's Mercado Pago account.
 
-The function that performs the request is the one that follows:
+The function that performs this request is `getAuthorizationToken`, and through the `.show` method, it allows you to choose how you want to obtain that token: by opening a confirmation modal, or by skipping it. Choose the option you prefer and use the assigned code in each case as a reference.
+
+#### Obtain token via confirmation modal
+
+By calling the `.show` method as shown in the code block below, a bottom sheet will open requesting user confirmation. When this happens, you will be redirected to the Mercado Pago or Mercado Libre application. There, you can securely authorize the payment using methods such as fingerprint scanning or facial recognition, depending on what your device supports.
 
 ```JavaScript
 async function getAuthorizationToken() {
@@ -181,8 +185,6 @@ const authorizationToken = await getAuthorizationToken();
 
 ```
 
-The `.show` method is responsible for displaying a confirmation modal to the buyer, allowing them to choose whether they want to be directed to Mercado Pago to use their saved methods. There are two options:
- * **Open confirmation modal:** when calling the method as shown in the code block, a bottom sheet will open, and when the buyer confirms, they will be redirected to the Mercado Pago or Mercado Libre app. There, they can securely authorize the payment using methods such as fingerprint scanning or facial recognition, depending on what their device supports.
   ----[mlb]----  
   ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb.png)
   ------------
@@ -196,7 +198,26 @@ The `.show` method is responsible for displaying a confirmation modal to the buy
 
   ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm.png)
   ------------
- * **Skip confirmation modal:** this method can also optionally receive the parameter `hideRedirectionConfirmation`, which allows the confirmation modal to be skipped and the user to be automatically redirected to the app. When this parameter is enabled, it is recommended to use `.getApplication` to identify which app the user will be using, allowing for the creation of a customized confirmation modal that enhances the user experience.
+
+#### Obtain token by skipping the confirmation modal
+
+The `.show` method can optionally receive the boolean value `true`, which allows skipping the confirmation modal and automatically redirecting the user to the application. When this parameter is enabled, it is recommended to use the method `authenticator.getApplication()` to identify which application the user can be redirected to, Mercado Libre or Mercado Pago, enhancing and customizing the user experience.
+
+```JavaScript
+async function getAuthorizationToken() {
+
+  try {
+    const token = await authenticator.show(true);
+    return token;
+  } catch (error) {
+    console.error("Error while obtaining the token:", error?.errorCode);
+  }
+}
+
+// Calling the function and receiving the authorization token
+const authorizationToken = await getAuthorizationToken();
+
+```
 
 > NOTE
 >

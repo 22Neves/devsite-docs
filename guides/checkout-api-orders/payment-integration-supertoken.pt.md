@@ -5,7 +5,7 @@ O ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm]---- Checkout A
 Com a autorização do comprador, facilitaremos os meios de pagamentos disponíveis em Mercado Pago ou Mercado Livre para ofereçe-los diretamente no checkout da loja, criando uma experiência mais rápida, segura e sem fricções para o comprador.
 
 ----[mlb]----  
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlb.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlb.png)
 ------------
 
 ----[mla]---- 
@@ -15,7 +15,7 @@ Com a autorização do comprador, facilitaremos os meios de pagamentos disponív
 
 ----[mlm]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mlm.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlm.png)
 ------------
 
 
@@ -164,9 +164,13 @@ Caso o usuário não esteja apto a seguir no fluxo, você receberá um erro. Con
 :::
 :::AccordionComponent{title="2. Obter token de autenticação de conta" pill="client-side"}
 
-Uma vez inicializada a classe `Authenticator`, é necessário fazer uma requisição para obter o _token_ de autorização. Este _token_ é necessário para acessar os meios de pagamento disponíveis na conta do comprador no Mercado Pago. 
+Uma vez inicializada a classe `Authenticator`, é necessário fazer uma solicitação para obter o _token_ de autorização. Este _token_ é exigido para acessar os meios de pagamento disponíveis na conta do comprador no Mercado Pago.
 
-A função que faz a requisição é a seguinte:
+A função que realiza essa solicitação é `getAuthorizationToken` e, por meio do método `.show`, permite escolher como gostaria de obter esse _token_: seja pela abertura de um modal de confirmação ou omitindo-o. Escolha a opção que preferir e utilize o código atribuído em cada caso como referência.
+
+#### Obter token por meio de modal de confirmação
+
+Ao chamar o método `.show`, como mostrado no bloco de código abaixo, será aberto um _bottom sheet_ solicitando a confirmação do usuário. Quando isso acontecer, ele será redirecionado para o aplicativo do Mercado Pago ou Mercado Livre, onde poderá autorizar o pagamento de forma segura, utilizando métodos como leitura de impressões digitais ou reconhecimento facial, dependendo do que seu dispositivo suportar.
 
 ```JavaScript
 async function getAuthorizationToken() {
@@ -184,8 +188,6 @@ const authorizationToken = await getAuthorizationToken();
 
 ```
 
-O método `.show` é responsável por exibir um modal de confirmação para o comprador, permitindo que ele escolha se deseja ser direcionado ao Mercado Pago para usar seus meios de pagamento disponíveis. Existem duas opções:
- * **Abrir modal de confirmação:** ao chamar o método conforme mostrado no bloco de código, será aberto um _bottom sheet_ e, quando o comprador fizer a confirmação, ele será redirecionado para o aplicativo do Mercado Pago ou Mercado Livre. Lá, poderá autorizar o pagamento de forma segura, utilizando métodos como leitura de impressões digitais ou reconhecimento facial, dependendo do que seu dispositivo suporta.
   ----[mlb]----  
   ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlb.png)
   ------------
@@ -200,7 +202,25 @@ O método `.show` é responsável por exibir um modal de confirmação para o co
   ![Example bottom sheet](/images/api-orders/supertoken-bottomsheet-mlm.png)
   ------------
 
- * **Omitir o modal de confirmação:** este método também pode opcionalmente receber o parâmetro `hideRedirectionConfirmation`, que permite ignorar o modal de confirmação e que o usuário seja redirecionado automaticamente para o aplicativo. Quando este parâmetro está ativado, recomenda-se usar `.getApplication` para identificar qual aplicativo o usuário utilizará, permitindo a criação de um modal de confirmação personalizado que melhore a experiência do usuário.
+#### Obter token omitindo o modal de confirmação
+
+O método `.show` também pode receber opcionalmente o valor booleano `true`, que permite omitir o modal de confirmação e redirecionar automaticamente o usuário para o aplicativo. Quando esse parâmetro está ativado, recomenda-se usar o método `authenticator.getApplication()` para identificar a qual aplicativo o usuário poderá ser redirecionado, Mercado Livre ou Mercado Pago, o que permite personalizar e melhorar sua experiência.
+
+```JavaScript
+async function getAuthorizationToken() {
+
+  try {
+    const token = await authenticator.show(true);
+    return token;
+  } catch (error) {
+    console.error("Error while obtaining the token:", error?.errorCode);
+  }
+}
+
+// Calling the function and receiving the authorization token
+const authorizationToken = await getAuthorizationToken();
+
+```
 
 > NOTE
 >
