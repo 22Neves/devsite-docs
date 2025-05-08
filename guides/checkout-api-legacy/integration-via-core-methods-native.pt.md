@@ -225,7 +225,7 @@ Os **Métodos _Core_** são uma das principais funcionalidades do SDK Nativo, fu
 | **GetIdentificationTypes**| Verifica os tipos de documentos obrigatórios por país.              |
 | **Generate Card Token**   | Cria o _token_ do cartão, essencial para concluir a transação.        |
 
-### GetInstallment
+:::AccordionComponent{title="GetInstallment" pill="client-side"} 
 
 A chamada do método **GetInstallment** retorna uma lista de objetos do tipo **Installment**. Cada objeto contém informações essenciais, como dados do emissor (*Issuer*), uma lista de opções de parcelamento (*PayerCosts*) e acordos (*Agreement*), entre outros valores necessários para a funcionalidade de parcelas no checkout.
 
@@ -250,8 +250,9 @@ Confira abaixo a  tabela de parâmetros:
 | `amount`        | Long             | Valor da ordem.                                        | Obrigatório |
 | `processingMode: ProcessingMode = ProcessingMode.Aggregator`| -   | Modo de processamento da ordem (`ProcessingMode.Aggregator` ou `ProcessingMode.Gateway`). | Obrigatório |
 
-### Generate Card Token
+:::
 
+:::AccordionComponent{title="Generate Card Token" pill="server-side"} 
 O método **Generate Card Token** retorna o _token_ do cartão, que é necessário para finalizar a transação. 
 
 > RED_MESSAGE
@@ -328,6 +329,7 @@ Confira os parâmetros na tabela abaixo:
 | - | - | - | - |
 | `cardID`       | String                  | Identificador do cartão salvo.                      | Obrigatoriedade |
 | `securityCode: SecurityCodeTextField` | -  | Classe do campo de código de segurança do cartão.  | Opcional |
+:::
 
 ::::
 
