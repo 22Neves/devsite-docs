@@ -46,7 +46,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 ----[mlm]----
 4. Haz clic en **Añadir forma de pago** y busca la app con el nombre "Mercado Pago Meses sin Tarjeta". 
 
-![installation cards 3](/images/shopify/installation-credits-1-es.png)  
+![installation cards 3](/images/shopify/installation-credits-1-es-new.png)  
 
 ------------
 ----[mla]----
