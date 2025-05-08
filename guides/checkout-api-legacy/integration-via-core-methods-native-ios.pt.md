@@ -81,7 +81,7 @@ Os parâmetros de inicialização estão detalhados na tabela abaixo.
 
 ## Métodos _Core_
 
-Os **Métodos _Core_** são uma das principais funcionalidades do SDK Nativo, fundamentais para a implementação de um checkout completamente integrado à API do Mercado Pago. Esses métodos utilizam dados capturados pelos [**_Secure Fields_**](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios), além de informações fornecidas por outros métodos _core_, para oferecer uma experiência de pagamento segura e eficiente.
+Os **Métodos _Core_** são uma das principais funcionalidades do SDK Nativo, fundamentais para a implementação de um checkout completamente integrado à API do Mercado Pago. Esses métodos utilizam dados capturados pelos [**_Secure Fields_**](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods-native/secure-fields), além de informações fornecidas por outros métodos _core_, para oferecer uma experiência de pagamento segura e eficiente.
 
 | Método                    | Descrição                                                         |
 | ------------------------- | ----------------------------------------------------------------- |
@@ -122,7 +122,7 @@ O método **Generate Card Token** retorna o _token_ do cartão, que é necessár
 
 > RED_MESSAGE
 > 
-> Esta chamada utiliza uma instância dos _Secure Fields_ configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os _Secure Fields_, como [CardNumberTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_card_number_text_field), [ExpirationDateTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_expiration_date_text_field) e [SecurityCodeTextField](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios#bookmark_security_code_text_field), estejam devidamente configurados antes de utilizar o método `generateCardToken`. 
+> Esta chamada utiliza uma instância dos _Secure Fields_ configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os _Secure Fields_, como [CardNumberTextField](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods-native/secure-fields#bookmark_card_number_text_field), [ExpirationDateTextField](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods-native/secure-fields#bookmark_expiration_date_text_field) e [SecurityCodeTextField](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods-native/secure-fields#bookmark_security_code_text_field), estejam devidamente configurados antes de utilizar o método `generateCardToken`. 
 
 #### Criar um _token_ para um novo cartão
 
