@@ -1,4 +1,4 @@
-# Integração via Métodos Core Web
+# Integrar via Métodos Core Web
 
 Neste método de integração, o responsável pela integração fica a cargo de definir a forma como as informações necessárias para completar o pagamento serão buscadas, diferentemente da integração via Cardform, onde a busca pelas informações é feita automaticamente.
 

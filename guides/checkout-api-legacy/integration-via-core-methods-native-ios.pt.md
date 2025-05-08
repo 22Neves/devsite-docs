@@ -1,6 +1,6 @@
 # iOS 
 
-O SDK Nativo do Mercado Pago para **iOS** oferece uma solução robusta e segura para integrar métodos de pagamento, garantindo total conformidade com as normas PCI. Esta documentação aborda os **Métodos Core**, ferramentas essenciais para operações como consulta de parcelamentos e criação de tokens, utilizando os dados capturados através dos **[_Secure Fields_](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-ios)**.
+O SDK Nativo do Mercado Pago para **iOS** oferece uma solução robusta e segura para integrar métodos de pagamento, garantindo total conformidade com as normas PCI. Esta documentação aborda os **Métodos Core**, ferramentas essenciais para operações como consulta de parcelamentos e criação de tokens, utilizando os dados capturados através dos **[_Secure Fields_](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods-native/secure-fields)**.
 
 ## Requisitos
 
