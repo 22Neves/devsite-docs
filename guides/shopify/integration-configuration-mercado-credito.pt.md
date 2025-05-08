@@ -45,7 +45,7 @@ Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos aba
 ----[mlm]----
 4. Clique em **Adicionar forma de pagamento** e procure o aplicativo com o nome "Mercado Pago Meses sem Tarjeta". 
 
-![installation cards 3](/images/shopify/installation-credits-1-es.png)  
+![installation cards 3](/images/shopify/installation-credits-1-es-new.png)  
 
 ------------
 ----[mla]----
