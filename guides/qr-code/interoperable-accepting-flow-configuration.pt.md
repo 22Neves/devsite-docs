@@ -31,7 +31,7 @@ Isso irá gerar automaticamente um *card* em [Suas integrações](https://www.me
 
 Para continuar com a configuração do QR interoperável, é necessário que a carteira digital solicite o cadastroe sua incorporação ao Mercado Pago.
 
-Para isso, você deve entrar em contato com nossa [Central de Ajuda](https://www.mercadopago.com.ar/ayuda/chat/v2?hasCreditRestriction=false) e solicitar suporte para a configuração do fluxo aceitador de QR interoperável, fornecendo as seguintes informações.
+Para isso, você deve entrar em contato com nossa [Central de Ajuda](https://www.mercadopago.com.ar/cx/meli-chat) e solicitar suporte para a configuração do fluxo aceitador de QR interoperável, fornecendo as seguintes informações.
 
 | Dado                | Descrição                                                                 |
 |---------------------|---------------------------------------------------------------------------|

@@ -37,7 +37,7 @@ Para avanzar con la configuración de pagos con tarjeta de débito y/o crédito 
 > NOTE
 >
 > Recuerda que, antes de configurar los medios de pago que deseas ofrecer, es necesario elegir el modo en el que serán procesadas las transacciones. Para más información, accede a la sección [ Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
-:::AccordionComponent{title="Añadir formulario de pago" pill="server-side"}
+:::AccordionComponent{title="Añadir formulario de pago" pill="client-side"}
 Para poder recibir pagos, es necesario que añadas en el *frontend* un formulario que permita capturar los datos del pagador de manera segura y permita la criptografía de la tarjeta. Esta inclusión debe realizarse por medio del _Card Payment Brick_, que  ofrece un formulario optimizado con temas variados, e incluye los campos necesarios para pagos con tarjetas. 
 
 Para añadir el _Card Payment Brick_, realiza primero su **configuración e inicialización** desde el *frontend*, como muestran los ejemplos a continuación.

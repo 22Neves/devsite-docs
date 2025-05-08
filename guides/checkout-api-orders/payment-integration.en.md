@@ -2,7 +2,7 @@
 
 With ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ you can choose which payment methods you want to make available in online stores.
 
-The integration process is based on the individual configuration of each of these payment methods within the previously established common environment, which facilitates the integration experience while allowing for a greater level of customization.
+The integration process is based on the **individual configuration of each of these payment methods within the previously established common environment**, which facilitates the integration experience while allowing for a greater level of customization.
 
 If you want to, you can check a detailed list of all these payment methods available for integration by sending a **GET** with your :toolTipComponent[Access Token]{content="Private key of the application created in Mercado Pago, that must be used in the backend. You can access it through *Your integrations > Application details > Testing > Testing Credentials* or *Production > Production Credentials*."} to the endpoint :TagComponent{tag="API" text="/v1/payment_methods" href="/developers/en/reference/payment_methods/_payment_methods/get"} and execute the request, or if you prefer, use one of the code snippets below.
 
@@ -81,7 +81,7 @@ future_product_avaible:
  - card_title: Cards
  - card_description: Securely receive payments with credit or debit cards through a payment form within the checkout.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/cards
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -91,7 +91,7 @@ future_product_avaible:
  - card_title: Pix
  - card_description: Receive instant electronic payments by offering your customers a QR code or a payment code.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/pix
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -101,7 +101,7 @@ future_product_avaible:
  - card_title: Boleto
  - card_description: Receive the payments that the customer makes through Boleto bancário in your account.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/boleto
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -118,7 +118,7 @@ future_product_avaible:
  - card_title: Cards
  - card_description: Securely receive payments with credit or debit cards through a payment form within the checkout.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/cards
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -128,7 +128,7 @@ future_product_avaible:
  - card_title: Other payment methods
  - card_description: Receive the deferred payments that the customer makes through Rapipago or Pago Fácil in your account.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/other-payment-methods
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -144,7 +144,7 @@ future_product_avaible:
  - card_title: Cards
  - card_description: Securely receive payments with credit or debit cards through a payment form within the checkout.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/cards
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -154,7 +154,7 @@ future_product_avaible:
  - card_title: Other payment methods
  - card_description: Receive the deferred payments that the customer makes through OXXO, Paycash, Citibanamex, Santander or BBVA Bancomer in your account.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/other-payment-methods
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 
@@ -164,7 +164,7 @@ future_product_avaible:
  - card_title: SPEI Transfers
  - card_description: Receive instant electronic payments by offering your customers the option to pay from any bank or financial institution using their CLABE.
  - card_button: /developers/es/docs/checkout-api-v2/payment-integration/spei
- - card_buttonDescription: Learn more
+ - card_buttonDescription: How to integrate
  - card_pillText: AVAILABLE
  - card_linkAvailable: false
  - card_linkProof: 

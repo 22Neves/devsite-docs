@@ -5335,7 +5335,7 @@
                 "description": {
                     "en": "Processing error.",
                     "pt": "Erro de processamento.",
-                    "es": "Rrror de procesamiento."
+                    "es": "Error de procesamiento."
                 },
                 "content": {
                     "application/json": {

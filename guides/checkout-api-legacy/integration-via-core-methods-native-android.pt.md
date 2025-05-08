@@ -1,34 +1,29 @@
-# Integração via Métodos Core - Android Native SDK
+# Android
 
-Neste método de integração, o responsável pela integração tem controle total sobre como as informações necessárias para completar o pagamento serão capturadas e processadas, utilizando os componentes seguros e métodos core fornecidos pela SDK Nativa do Mercado Pago para Android.
-
-Na integração via Métodos Core, você decide quando buscar as informações sobre o tipo de documento, além das informações do cartão (emissor e parcelas). Com isso, possui total flexibilidade na construção da experiência do fluxo de checkout em aplicativos Android nativos.
-
-> NOTE
->
-> Importante
->
-> Esta documentação é específica para a SDK Nativa do Android. Para outras plataformas, consulte as documentações específicas disponíveis em nossa [seção de desenvolvedores](/developers).
+O SDK Nativo do Mercado Pago para **Android** oferece uma solução robusta e segura para integrar métodos de pagamento, garantindo total conformidade com as normas PCI. Esta documentação aborda os **Métodos Core**, ferramentas essenciais para operações como consulta de parcelamentos e criação de tokens, utilizando os dados capturados através dos **[_Secure Fields_](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-android)**.
 
 ## Requisitos
 
 Antes de começar a integração, certifique-se de que seu projeto atende aos seguintes requisitos:
 
-* Android SDK mínima: 23
-* Chave Pública do Mercado Pago
-* Gradle configurado para seu projeto
+| Requisitos | Descrição |
+|-|-|
+| SDK | Versão 23 ou superior |
+| Jetpack Compose BoM | Versão 2024.12.01 ou superior |
+| Kotlin | Versão 2.0 ou superior |
+| Public Key | A Public Key está diretamente vinculada à :toolTipComponent[aplicação]{link="/developers/pt/docs/your-integrations/application-details" linkText="Detalhes da aplicação" content="Entidade registrada no Mercado Pago que atua como um identificador para gerenciar suas integrações. Para mais informações, acesse o link abaixo."} que você criou, por isso cada uma delas é única para cada integração. |
 
 ## Importar SDK
 
-A primeira etapa do processo de integração é importar a SDK Nativa do Mercado Pago para seu projeto. Adicione a seguinte dependência ao seu arquivo `build.gradle.kts`:
+A primeira etapa do processo de integração é importar o SDK Nativo do Mercado Pago para seu projeto. Para isso, adicione o seguinte no seu projeto:
 
 ```kotlin
 implementation("com.mercadopago.sdk.android")
 ```
 
-## Configurar SDK
+## Iniciar SDK
 
-Após importar a SDK, é necessário inicializá-la no início da execução do seu aplicativo. A inicialização deve ser feita apenas uma vez, preferencialmente na classe `Application` do seu projeto.
+Após importar o SDK, é essencial inicializá-lo logo no início da execução do aplicativo. Para isso, configure uma instância do SDK no seu projeto:
 
 ```kotlin
 import android.app.Application
@@ -40,249 +35,88 @@ class MainApplication : Application() {
         MercadoPagoSDK.initialize(
             context = this,
             publicKey = "YOUR-PUBLIC-KEY",
+            countryCode = "CountryCode of this public key"
         )
     }
 }
 ```
 
-### Parâmetros de Inicialização
-
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `context` | `Context` | Contexto da sua aplicação Android |
-| `publicKey` | `String` | Sua chave pública do Mercado Pago |
-| `country` | `Enum` | (Opcional) Enum que identifica o país onde serão processados os métodos core |
-
-> NOTE
+> RED_MESSAGE
 >
-> Importante
->
-> * O SDK deve ser inicializado apenas uma vez, quando o aplicativo é aberto
-> * Certifique-se de chamar `initialize()` antes de usar qualquer outra funcionalidade do SDK
-> * A chave pública não pode estar vazia
+> O SDK precisa ser inicializado uma única vez, no momento da abertura do aplicativo. Para garantir o funcionamento correto, é essencial chamar `initialize()` antes de utilizar qualquer outra funcionalidade do SDK.
 
-## Campos Seguros (PCI)
+Os parâmetros de inicialização estão detalhados na tabela abaixo.
 
-Os Campos Seguros são componentes especialmente desenvolvidos para capturar dados sensíveis do cartão de forma segura, seguindo as regras PCI DSS. São fornecidos três campos principais:
+| Parâmetro | Tipo | Descrição | Obrigatoriedade |
+| - | - | - | - |
+| `context` | Context | Contexto da sua aplicação. | Obrigatório |
+| `publicKey` | String | Chave pública do Mercado Pago. | Obrigatório |
+| `countryCode` | [CountryCode](https://mercadopago.github.io/sdk-android/sdk-android/com.mercadopago.sdk.android.domain.model/-country-code/index.html?query=enum%20CountryCode%20:%20Enum%3CCountryCode%3E) | Enum que identifica qual país será processado os métodos core. | Obrigatório |
 
-* Número do Cartão (`CardNumberTextField`)
-* Data de Validade (`ExpirationDateTextField`)
-* Código de Segurança (`SecurityCodeTextField`)
+## Métodos _Core_
 
-> NOTE
->
-> O que são as regras PCI?
->
-> O PCI Security Standards Council, conselho formado pelas empresas American Express, Discover Financial Services, JCB International, MasterCard e Visa, estabeleceu em 2006 as regras e normas que garantem a segurança durante o manuseio dos dados de cartões de crédito em transações eletrônicas.
+Os **Métodos _Core_** são uma das principais funcionalidades do SDK Nativo, fundamentais para a implementação de um checkout utilizando a API do Mercado Pago. Esses métodos utilizam dados capturados pelos [**_Secure Fields_**](/developers/pt/docs/checkout-api/types-of-integration/core-methods-native/secure-fields-android), além de informações fornecidas por outros métodos _core_, para oferecer uma experiência de pagamento segura e eficiente.
 
-### PCI Field State
-
-Para utilizar os campos seguros, é necessário primeiro entender o `PCIFieldState`, uma classe que gerencia o estado dos campos de forma segura. Para criar uma instância, utilize a extensão `rememberPCIFieldState()`:
-
-```kotlin
-val state: PCIFieldState = rememberPCIFieldState()
-```
-
-### Card Number Text Field
-
-O componente `CardNumberTextField` é responsável pela captura segura do número do cartão. Ele oferece validações automáticas e formatação do número inserido.
-
-```kotlin
-val state: PCIFieldState = rememberPCIFieldState()
-CardNumberTextField(
-    state = state,
-    onEvent = { event ->
-        // Tratamento dos eventos
-    },
-)
-```
-
-#### Parâmetros do CardNumberTextField
-
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `state` | `PCIFieldState` | Estado do campo seguro |
-| `onEvent` | `(CardNumberTextFieldEvent) -> Unit` | Callback para eventos do campo |
-| `modifier` | `Modifier` | Modificador para customização do campo |
-| `maxLength` | `Int` | Comprimento máximo (8-19 dígitos) |
-| `enabled` | `Boolean` | Define se o campo está habilitado |
-| `readOnly` | `Boolean` | Define se o campo é somente leitura |
-| `textStyle` | `TextStyle` | Estilo do texto |
-| `decorationBox` | `@Composable (innerTextField: @Composable () -> Unit) -> Unit` | Customização visual do campo |
-
-#### Eventos do CardNumberTextField
-
-| Evento | Parâmetros | Descrição |
-|--------|------------|-----------|
-| `OnBinChanged` | `cardBin: String?` | Informa alterações no BIN do cartão |
-| `OnLengthChanged` | `length: Int` | Informa mudanças no comprimento |
-| `OnFocusChanged` | `isFocused: Boolean` | Informa mudanças no foco |
-| `IsValid` | `isValid: Boolean` | Informa se o número é válido |
-| `OnLastFourDigitsFilled` | `lastFourDigits: String` | Informa os últimos 4 dígitos |
-
-### Expiration Date Text Field
-
-O componente `ExpirationDateTextField` gerencia a captura da data de validade do cartão, suportando diferentes formatos de data.
-
-```kotlin
-val state: PCIFieldState = rememberPCIFieldState()
-ExpirationDateTextField(
-    state = state,
-    onEvent = { event ->
-        // Tratamento dos eventos
-    },
-    dateFormat = ExpirationDateFormat.ShortFormat,
-)
-```
-
-#### Parâmetros do ExpirationDateTextField
-
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `state` | `PCIFieldState` | Estado do campo seguro |
-| `onEvent` | `(ExpirationDateTextFieldEvent) -> Unit` | Callback para eventos |
-| `dateFormat` | `ExpirationDateFormat` | Formato da data (ShortFormat ou LongFormat) |
-| `enabled` | `Boolean` | Define se o campo está habilitado |
-| `readOnly` | `Boolean` | Define se o campo é somente leitura |
-| `decorationBox` | `@Composable (innerTextField: @Composable () -> Unit) -> Unit` | Customização visual |
-
-#### Eventos do ExpirationDateTextField
-
-| Evento | Parâmetros | Descrição |
-|--------|------------|-----------|
-| `OnFocusChanged` | `isFocused: Boolean` | Informa mudanças no foco |
-| `OnInputFilled` | `isFilled: Boolean` | Informa se o campo está preenchido |
-| `IsValid` | `isValid: Boolean` | Informa se a data é válida |
-| `OnLengthChanged` | `length: Int` | Informa mudanças no comprimento |
-
-### Security Code Text Field
-
-O componente `SecurityCodeTextField` gerencia a captura do código de segurança (CVV) do cartão.
-
-```kotlin
-val state: PCIFieldState = rememberPCIFieldState()
-SecurityCodeTextField(
-    state = state,
-    onEvent = { event ->
-        // Tratamento dos eventos
-    },
-    securityCodeSize = 3,
-)
-```
-
-#### Parâmetros do SecurityCodeTextField
-
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `state` | `PCIFieldState` | Estado do campo seguro |
-| `onEvent` | `(SecurityCodeTextFieldEvent) -> Unit` | Callback para eventos |
-| `securityCodeSize` | `Int` | Tamanho do código de segurança |
-| `enabled` | `Boolean` | Define se o campo está habilitado |
-| `readOnly` | `Boolean` | Define se o campo é somente leitura |
-| `decorationBox` | `@Composable (innerTextField: @Composable () -> Unit) -> Unit` | Customização visual |
-
-#### Eventos do SecurityCodeTextField
-
-| Evento | Parâmetros | Descrição |
-|--------|------------|-----------|
-| `OnInputFilled` | `isFilled: Boolean` | Informa se o campo está preenchido |
-| `OnLengthChanged` | `length: Int` | Informa mudanças no comprimento |
-| `OnFocusChanged` | `isFocused: Boolean` | Informa mudanças no foco |
-
-## Customização Visual
-
-Os campos seguros podem ser customizados visualmente de duas formas principais:
-
-### 1. Usando Decoration Box
-
-```kotlin
-CardNumberTextField(
-    state = state,
-    onEvent = { _ -> },
-    decorationBox = { innerTextField ->
-        Box(
-            modifier = Modifier.border(
-                width = 2.dp,
-                color = Color.Blue,
-                shape = RoundedCornerShape(10.dp),
-            ),
-        ) {
-            innerTextField()
-        }
-    },
-)
-```
-
-### 2. Usando Mask Visual Transformation
-
-```kotlin
-class MaskVisualTransformation(
-    private val mask: String,
-) : VisualTransformation {
-    // Implementação da máscara
-}
-```
-
-## Métodos Core
-
-Os Métodos Core são essenciais para a construção de um checkout completo. Eles utilizam os valores obtidos através dos eventos dos componentes PCI e outros métodos.
-
-### GetInstallments
-
-Retorna as opções de parcelamento disponíveis para o cartão.
-
-```kotlin
-suspend fun getInstallments(
-    bin: String,
-    amount: Long,
-    processingMode: ProcessingMode = ProcessingMode.Aggregator,
-): Result<Installment, ResultError>
-```
-
-#### Parâmetros
-
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `bin` | `String` | Primeiros 8 dígitos do cartão |
-| `amount` | `Long` | Valor da transação |
-| `processingMode` | `ProcessingMode` | Modo de processamento |
+| Método                    | Descrição                                                         |
+| ------------------------- | ----------------------------------------------------------------- |
+| **Payment Methods**       | Lista os métodos de pagamento disponíveis.                        |
+| **GetInstallment**        | Consulta as opções de parcelamento para o cartão digitado.          |
+| **Card Issuers**          | Recupera os dados dos emissores do cartão.                          |
+| **GetIdentificationTypes**| Verifica os tipos de documentos obrigatórios por país.              |
+| **Generate Card Token**   | Cria o _token_ do cartão, essencial para concluir a transação.        |
 
 ### Generate Card Token
 
-Gera o token do cartão necessário para finalizar uma transação.
+O método **Generate Card Token** retorna o _token_ do cartão, que é necessário para finalizar a transação. 
+
+> RED_MESSAGE
+> 
+> Esta chamada utiliza uma instância dos _Secure Fields_ configurados previamente na interface do checkout para realizar sua chamada. Portanto, certifique-se de que os _Secure Fields_ estejam devidamente configurados antes de utilizar o método `generateCardToken`. 
+
+#### Criar um _token_ para um novo cartão
+
+Para criar um _token_ para um novo cartão, crie um formulário com os _Secure Fields_ do SDK e, em seguida, faça uma chamada ao método `generateCardToken`, passando as instâncias dos campos correspondentes. Confira o exemplo a seguir:
 
 ```kotlin
 suspend fun generateCardToken(
     cardNumberState: PCIFieldState,
     expirationDateState: PCIFieldState,
     securityCodeState: PCIFieldState,
-): Result<CardToken, ResultError>
+    buyerIdentification: BuyerIdentification
+): Result<CardToken, ResultError> {
+    // Corpo do método
+}
 ```
 
-#### Parâmetros
+Confira os parâmetros na tabela abaixo:
 
-| Parâmetro | Tipo | Descrição |
-|-----------|------|-----------|
-| `cardNumberState` | `PCIFieldState` | Estado do número do cartão |
-| `expirationDateState` | `PCIFieldState` | Estado da data de validade |
-| `securityCodeState` | `PCIFieldState` | Estado do código de segurança |
+| Parâmetro             | Tipo                    | Descrição                                    | Obrigatoriedade |
+| - | - | - | - |
+| `cardNumberState`: PCIFieldState     | -   | Estado do campo de número de cartão.      | Obrigatório |
+| `expirationDateState`: PCIFieldState | - | Estado do campo de expiração do cartão.      | Obrigatório |
+| `securityCodeState`: PCIFieldState   | - | Estado do campo de código de segurança do cartão.   | Obrigatório |
+| `buyerIdentification`: [BuyerIdentification](https://mercadopago.github.io/sdk-android/core-methods/com.mercadopago.sdk.android.coremethods.domain.model/-buyer-identification/index.html?query=data%20class%20BuyerIdentification(val%20name:%20String?,%20val%20number:%20String?,%20val%20type:%20String?)) | - | Classe de identificação do comprador. | Obrigatório |
 
-> NOTE
->
-> Importante
->
-> Para aumentar as chances de aprovação do pagamento, certifique-se de que todos os campos estejam devidamente validados antes de gerar o token do cartão.
+### Criar um _token_ para um cartão existente
 
-## Outros Métodos Core Disponíveis
+Também é possível criar um _token_ para um cartão existente utilizando seu ID. Confira o exemplo a seguir:
 
-| Método | Descrição |
-|--------|-----------|
-| `Search` | Lista métodos de pagamento disponíveis |
-| `Card Issuers` | Obtém dados dos emissores do cartão |
-| `Get IdentificationTypes` | Verifica tipos de documentos obrigatórios por país |
+```kotlin
+suspend fun generateCardToken(
+    cardId: String,
+    securityCodeState: PCIFieldState,
+    expirationDateState: PCIFieldState? = null,
+    buyerIdentification: BuyerIdentification
+): Result<CardToken, ResultError> {
+    // Corpo do método
+}
+```
 
-> WARNING
->
-> Importante
->
-> Mantenha sua SDK sempre atualizada para ter acesso às últimas funcionalidades e correções de segurança.
+Confira os parâmetros na tabela abaixo:
+
+| Parâmetro      | Tipo                    | Descrição                                      | Obrigatoriedade |
+| - | - | - | - |
+| `cardId`       | String                  | ID do cartão existente gerado.     | Obrigatório |
+| `securityCodeState`: PCIFieldState | - | Estado do campo de código de segurança do cartão | Obrigatório |
+| `expirationDateState`: PCIFieldState | - | Estado do campo de expiração do cartão | Opcional |
+| `buyerIdentification`: [BuyerIdentification](https://mercadopago.github.io/sdk-android/core-methods/com.mercadopago.sdk.android.coremethods.domain.model/-buyer-identification/index.html?query=data%20class%20BuyerIdentification(val%20name:%20String?,%20val%20number:%20String?,%20val%20type:%20String?)) | - | Classe de identificação do comprador | Obrigatório |
