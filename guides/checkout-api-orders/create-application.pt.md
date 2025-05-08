@@ -9,8 +9,8 @@
 
 ![create-application-2](api-orders/create-application-2-pt.png)
 
-Em [Suas integrações](/developers/panel/app), é possível consultar a lista de todas as suas aplicações criadas e acessar os [detalhes da aplicação](/developers/pt/docs/checkout-api-v2/more-resources/application-details) de cada uma delas.
+Em [Suas integrações](/developers/panel/app), é possível consultar a lista de todas as suas aplicações criadas e acessar os [detalhes da aplicação](/developers/pt/docs/checkout-api-v2/resources/application-details) de cada uma delas.
 
 > NOTE
 >
-> Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação](/developers/pt/docs/checkout-api-v2/more-resources/application-details).
+> Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação](/developers/pt/docs/checkout-api-v2/resources/application-details).

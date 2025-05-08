@@ -19,7 +19,7 @@ Para isso, acesse [Suas integrações](/developers/panel/app), selecione a aplic
 
 ------------
 
-Para obter mais informações, consulte nossa [documentação sobre Credenciais](/developers/pt/docs/checkout-api-v2/more-resources/credentials).
+Para obter mais informações, consulte nossa [documentação sobre Credenciais](/developers/pt/docs/checkout-api-v2/resources/credentials).
 
 ## Implementar certificado SSL
 
@@ -30,3 +30,11 @@ Adotar estas medidas não apenas reforça a segurança dos dados dos usuários, 
 Embora **a exigência do certificado SSL não se aplique durante o período de testes**, sua implementação é obrigatória para entrar em produção. 
 
 Para mais informações, confira os [Termos e Condições](/developers/pt/docs/resources/legal/terms-and-conditions) do Mercado Pago.
+
+## Verificar possíveis status e erros
+
+Veja a lista de possíveis `status` e `status_detail` que uma **transação** e/ou uma **order** pode tomar e também os possíveis **erros** que poderão ser retornados pela API, além de como corrigi-los. Para isso, acesse as respectivas documentações:
+
+- [Status da transação](/developers/pt/docs/checkout-api-v2/payment-management/status/transaction-status)
+- [Status da order](/developers/pt/docs/checkout-api-v2/payment-management/status/order-status)
+- [Possíveis erros](/developers/pt/docs/checkout-api-v2/payment-management/integration-errors)
