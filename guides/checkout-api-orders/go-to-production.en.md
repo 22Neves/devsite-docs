@@ -23,7 +23,7 @@ To do this, access [Your integrations](/developers/panel/app), select the desire
 
 ------------
 
-For more information, check our [Credentials documentation](/developers/en/docs/checkout-api-v2/more-resources/credentials).
+For more information, check our [Credentials documentation](/developers/en/docs/checkout-api-v2/resources/credentials).
 
 ## Implement SSL certificate
 
@@ -34,3 +34,11 @@ Adopting these measures not only enhances the security of user data but also ens
 Although the **requirement for the SSL certificate does not apply during the testing period**, its implementation is mandatory to go into production.
 
 For more information, please check the [Terms and Conditions](/developers/en/docs/resources/legal/terms-and-conditions) of Mercado Pago.
+
+## Verify possible statuses and errors
+
+You can view a list of the possible `status` and `status_detail` that a **transaction** and an **order** can have, as well as the **possible errors** that may be returned by the API and how to address them, by accessing their respective documentation:
+
+- [Transaction status](/developers/en/docs/checkout-api-v2/payment-management/status/transaction-status)
+- [Order status](/developers/en/docs/checkout-api-v2/payment-management/status/order-status)
+- [Possible errors](/developers/en/docs/checkout-api-v2/payment-management/integration-errors)
