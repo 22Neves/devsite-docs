@@ -32,13 +32,13 @@ El siguiente código puede ser colocado al abrir una actividad o al ejecutar una
 
 [[[
 ```Java
-String url = "URL-PREFERENCE";
+String url = "YOUR-init_point";
 CustomTabsIntent intent = new CustomTabsIntent.Builder()
        .build();
 intent.launchUrl(MainActivity.this, Uri.parse(url));
 ```
 ```Kotlin
-val url = "URL-PREFERENCE"
+val url = "YOUR-init_point"
     val intent = CustomTabsIntent.Builder()
         .build()
     intent.launchUrl(this@MainActivity, Uri.parse(url))
