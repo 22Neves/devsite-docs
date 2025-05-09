@@ -8,7 +8,7 @@ If you wish to continue with your integration after [setting up your environment
 
 > NOTE
 >
-> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether manual or automatic, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration Model](/developers/en/docs/checkout-api-v2/integration-model).
+> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether **manual or automatic**, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration Model](/developers/en/docs/checkout-api-v2/integration-model).
 
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 

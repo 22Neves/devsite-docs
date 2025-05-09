@@ -124,7 +124,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Cash
- - card_title: Outros meios de pagamento
+ - card_title: Rapipago e Pago Fácil
  - card_description: Receba em sua conta os pagamentos que o cliente realizar em dinheiro através do Rapipago ou Pago Fácil.
  - card_button: /developers/pt/docs/checkout-api-v2/payment-integration/other-payment-methods
  - card_buttonDescription: Como integrar

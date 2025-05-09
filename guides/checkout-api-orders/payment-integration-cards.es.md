@@ -36,7 +36,7 @@ Para avanzar con la configuración de pagos con tarjeta de débito y/o crédito 
 
 > NOTE
 >
-> Recuerda que, antes de configurar los medios de pago que deseas ofrecer, es necesario elegir el modo en el que serán procesadas las transacciones. Para más información, accede a la sección [ Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
+> Recuerda: antes de configurar los medios de pago, elija el modo en que procesará sus transacciones. La definición del modo de procesamiento, ya sea **manual o automático**, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Añadir formulario de pago" pill="client-side"}
 Para poder recibir pagos, es necesario que añadas en el *frontend* un formulario que permita capturar los datos del pagador de manera segura y permita la criptografía de la tarjeta. Esta inclusión debe realizarse por medio del _Card Payment Brick_, que  ofrece un formulario optimizado con temas variados, e incluye los campos necesarios para pagos con tarjetas. 
 
@@ -373,6 +373,11 @@ Consulta el diagrama que ilustra el proceso de pago con tarjeta a través de los
       Frontend->>Cliente: 3.8 Mostrar resultado
 </pre>
 
+Para avanzar con la configuración de pagos con tarjeta de débito y/o crédito vía _Core Methods_, sigue los pasos a continuación.
+
+> NOTE
+>
+> Recuerda: antes de configurar los medios de pago, elija el modo en que procesará sus transacciones. La definición del modo de procesamiento, ya sea **manual o automático**, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Añadir formulario de pago" pill="client-side"}
 
 La captura de los datos de la tarjeta (número de tarjeta, código de seguridad y fecha de expiración) se realiza a través de un formulario de pago que permite obtener y validar la información necesaria para procesar el pago.

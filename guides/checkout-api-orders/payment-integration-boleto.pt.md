@@ -8,7 +8,7 @@ Se você já [configurou seu ambiente](/developers/pt/docs/checkout-api-v2/devel
 
 > NOTE
 >
-> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. A definição do modo de processamento, seja manual ou automático, será realizada no momento da criação da order, por meio do parâmetro `processing_mode`. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
+> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. A definição do modo de processamento, seja **manual ou automático**, será realizada no momento da criação da order, por meio do parâmetro `processing_mode`. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"}
 
 Para poder receber pagamentos, é necessário que você adicione no _frontend_ um formulário que permita capturar os dados do pagador de maneira segura.
