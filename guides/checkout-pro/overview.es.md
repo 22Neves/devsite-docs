@@ -48,7 +48,6 @@ product_landing_what_it_offers:
  - benefit_bullet: Opción de pagar sin cuenta de Mercado Pago, como usuario invitado.
  - benefit_bullet: Medios de pago online y offline, como tarjetas y dinero en cuenta.
  - benefit_bullet: Recuperación de pagos rechazados.
- - benefit_bullet: Cupones y campañas promocionales.
  - benefit_title: Aprobación de pagos
  - benefit_bullet: Tecnología 3DS 2.0 para autenticación de operaciones.
  - benefit_bullet: Herramientas de prevención de fraudes y comprobación de identidad de cliente.

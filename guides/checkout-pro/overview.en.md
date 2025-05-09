@@ -28,7 +28,6 @@ product_landing_what_it_offers:
  - benefit_bullet: Option to pay without a Mercado Pago account, as a guest user
  - benefit_bullet: Online and offline payment methods, such as cards and account money
  - benefit_bullet: Recovery of rejected payments
- - benefit_bullet: Coupons and promotional campaigns
  - benefit_title: Payment approval
  - benefit_bullet: 3DS 2.0 technology for transaction authentication
  - benefit_bullet: Fraud prevention tools and customer identity verification
