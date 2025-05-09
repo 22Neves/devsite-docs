@@ -72,6 +72,10 @@ curl -X GET \
 
 With this information, you can now select the payment methods you want to offer and proceed with your integration.
 
+> NOTE
+>
+> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether **manual or automatic**, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model). 
+
 ----[mlb]----
 
 ---
@@ -125,7 +129,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Cash
- - card_title: Other payment methods
+ - card_title: Rapipago and Pago Fácil
  - card_description: Receive the deferred payments that the customer makes through Rapipago or Pago Fácil in your account.
  - card_button: /developers/en/docs/checkout-api-v2/payment-integration/other-payment-methods
  - card_buttonDescription: How to integrate

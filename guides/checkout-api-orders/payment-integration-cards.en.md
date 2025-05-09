@@ -37,7 +37,7 @@ To proceed with the setup of debit and/or credit card payments via _Card Payment
 
 > NOTE
 >
-> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
+> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether **manual or automatic**, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 To receive payments, you need to add a form in the frontend that allows for securely capturing the payer's information and enables card encryption. 
 
@@ -375,6 +375,11 @@ Check out the diagram below that illustrates the payment process using a card wi
       Frontend->>Client: 3.8 Show result
 </pre>
 
+To proceed with the setup of debit and/or credit card payments via _Core Methods_, follow the steps below.
+
+> NOTE
+>
+> Remember: before setting up the payment methods, choose the way you will process your transactions. The processing mode, whether **manual or automatic**, will be defined at the time of order creation, using the `processing_mode` parameter. For more information, visit the section [Integration model](/developers/en/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Add payment form" pill="client-side"}
 The capture of card data (card number, security code and expiration date) is done through a payment form that allows obtaining and validating the information necessary to process the payment.
 

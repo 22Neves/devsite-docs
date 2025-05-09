@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integre Checkout Transparente e personalize toda a experiência
  - message: Ofereça pagamentos seguros em seu site com uma API flexível do Mercado Pago, sem redirecionamentos para outro site.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/7/1746650884612-BR.PT.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/9/1746807991074-BR.PT.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagamentos online
  - benefit_icon: categories
@@ -52,7 +52,7 @@ product_landing_what_differentiates:
  - title: Quais os diferenciais
  - message: Compare nossos checkouts e escolha qual se adequa melhor ao seu negócio. Consulte as [taxas](/developers/pt/support/37740).
  - highlight_text: Você está aqui
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/5/1746487800530-BR.PT.png
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/9/1746807991074-BR.PT.png
  - column_product: Checkout Transparente
  - column_button_text: Como integrar
  - column_button_link: /developers/pt/docs/checkout-api-v2/overview#:~:text=UY-,Como,-integrar

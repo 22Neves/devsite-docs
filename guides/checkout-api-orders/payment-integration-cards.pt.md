@@ -35,7 +35,7 @@ Para avançar com a configuração de pagamentos com cartão de débito e/ou cr�
 
 > NOTE
 >
-> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
+> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. A definição do modo de processamento, seja **manual ou automático**, será realizada no momento da criação da order, por meio do parâmetro `processing_mode`. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} 
 Para poder receber pagamentos, é necessário que você adicione no *frontend* um formulário que permita capturar os dados do pagador de maneira segura e possibilite a criptografia do cartão. 
 
@@ -372,6 +372,11 @@ Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utiliz
       Frontend->>Cliente: 3.8 Mostrar resultado
 </pre>
 
+Para avançar com a configuração de pagamentos com cartão de débito e/ou crédito via _Core Methods_, siga os passos abaixo.
+
+> NOTE
+>
+> Lembre-se: antes de configurar os meios de pagamento, escolha o modo em que irá processar as suas transações. A definição do modo de processamento, seja **manual ou automático**, será realizada no momento da criação da order, por meio do parâmetro `processing_mode`. Para mais informações, acesse a seção [Modelo de integração](/developers/pt/docs/checkout-api-v2/integration-model).
 :::AccordionComponent{title="Adicionar formulário de pagamento" pill="client-side"} 
 A captura dos dados do cartão (número do cartão, código de segurança e data de validade) é feita através de um formulário de pagamento que permite obter e validar as informações necessárias para processar o pagamento.
 

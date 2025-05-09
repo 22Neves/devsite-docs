@@ -72,6 +72,10 @@ curl -X GET \
 
 Con esta información, ya puedes elegir qué medios de pago deseas ofrecer y continuar con tu integración.
 
+> NOTE
+>
+> Recuerda: antes de configurar los medios de pago, elige el modo en que procesarás tus transacciones. La definición del modo de procesamiento, ya sea **manual o automático**, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
+
 ----[mlb]----
 
 ---
@@ -125,7 +129,7 @@ future_product_avaible:
  - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Cash
- - card_title: Otros medios de pago
+ - card_title: Rapipago y Pago Fácil
  - card_description: Recibe en tu cuenta los pagos que el cliente realiza en diferido a través de Rapipago o Pago Fácil.
  - card_button: /developers/es/docs/checkout-api-v2/payment-integration/other-payment-methods
  - card_buttonDescription: Cómo integrar
