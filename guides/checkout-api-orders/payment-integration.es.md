@@ -74,7 +74,7 @@ Con esta información, ya puedes elegir qué medios de pago deseas ofrecer y con
 
 > NOTE
 >
-> Recuerda: antes de configurar los medios de pago, elija el modo en que procesará sus transacciones. La definición del modo de procesamiento, ya sea **manual o automático**, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
+> Recuerda: antes de configurar los medios de pago, elige el modo en que procesarás tus transacciones. La definición del modo de procesamiento, ya sea **manual o automático**, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
 
 ----[mlb]----
 
