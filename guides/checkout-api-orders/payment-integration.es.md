@@ -72,6 +72,10 @@ curl -X GET \
 
 Con esta información, ya puedes elegir qué medios de pago deseas ofrecer y continuar con tu integración.
 
+> NOTE
+>
+> Recuerda: antes de configurar los medios de pago, elija el modo en que procesará sus transacciones. La definición del modo de procesamiento, ya sea **manual o automático**, se realizará en el momento de la creación de la order, a través del parámetro `processing_mode`. Para más información, accede a la sección [Modelo de integración](/developers/es/docs/checkout-api-v2/integration-model).
+
 ----[mlb]----
 
 ---
