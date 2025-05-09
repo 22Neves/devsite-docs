@@ -4,7 +4,7 @@
 product_landing_hero:
  - title: Integra Checkout Transparente y personaliza toda la experiencia
  - message: Incorpora a tu web una API flexible para que los clientes compren en tu sitio o app sin tener que redirigirse a una página externa.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196416015-overviewmlbes.png 
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/9/1746807991074-BR.PT.png
  - benefit_icon: recurring-payments
  - benefit_title: Para pagos online
  - benefit_icon: categories
