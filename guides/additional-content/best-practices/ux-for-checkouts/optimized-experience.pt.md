@@ -115,22 +115,8 @@ Adicione um **componente de resumo** fixo ou um acesso direto ao carrinho de com
 
 Apesar da maioria dos usuários revisarem a compra no passo final, eles se sentem mais seguros quando podem controlar as etapas pelas quais passam durante todo o processo. 
 
-----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![pt da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-pt.png)
-
-------------
-----[mla]----
-![pt da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-pt.gif)
-
-------------
 
 Além disso, antes da conclusão da compra, permita que os usuários possam **revisar** todo o processo e o preço final. Para isso, inclua uma página de confirmação ou revisão, antes de o usuário concluir o pagamento. É importante dar a possibilidade de o usuário editar qualquer dado ali mesmo, sem precisar voltar às etapas anteriores.
 
-----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![pt da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-pt.png)
-
-------------
-----[mla]----
-![pt da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-pt.gif)
-
-------------

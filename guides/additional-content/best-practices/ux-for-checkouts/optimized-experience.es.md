@@ -114,22 +114,8 @@ Agrega un **componente de resumen** fijo o un acceso directo al carrito de compr
 
 Si bien la mayoría de los usuarios revisan su compra al final, se sienten más seguros si pueden ir controlando lo que van haciendo durante todo el proceso.
 
-----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![es da visibilidad del proceso 1](/images/best-practices-guide/visibility-to-process1-es.png)
-
-------------
-----[mla]----
-![es da visibilidad del proceso 1](/images/best-practices-guide/provide-visibility-to-process1-es.gif)
-
-------------
 
 Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar** todo el proceso y el precio final. Para esto, agrega una página de confirmación o revisión, previo a realizar el pago, que incluya un resumen de todas las decisiones tomadas, toda la información cargada y el detalle del total a pagar. Es importante dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
 
-----[mlb, mlc, mlm, mco, mpe, mlu]----
 ![es da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-es.png)
-
-------------
-----[mla]----
-![es da visibilidad del proceso 2](/images/best-practices-guide/provide-visibility-to-process2-es.gif)
-
-------------
