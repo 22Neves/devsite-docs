@@ -639,7 +639,7 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 ------------
 ----[mla]----
 
-![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.gif)
+![payment-Brick-layout-mla](checkout-bricks/payment-brick-layout-mla-es.jpg)
 
 ------------
 ----[mlm]----

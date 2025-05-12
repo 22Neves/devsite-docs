@@ -36,7 +36,7 @@ const customization = {
 ```
 ]]]
 
-----[mlc, mlm, mco, mlu]----
+----[mla, mlc, mlm, mlu, mco]----
 ![status-screen-brick-hide-processing-details](/images/checkout-bricks/status-screen-brick-hide-processing-details-all-es.jpg)
 
 ------------
@@ -46,9 +46,5 @@ const customization = {
 ------------
 ----[mpe]----
 ![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-mpe-es.jpg)
-
-------------
-----[mla]----
-![status-screen-brick-hide-processing-details](checkout-bricks/status-screen-brick-hide-processing-details-es.jpg)
 
 ------------
