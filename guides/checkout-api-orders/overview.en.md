@@ -133,7 +133,7 @@ flowchart TD
 product_landing_hero:
  - title: Integrate Checkout API and customize the whole experience
  - message: Incorporate a flexible API into your website so that customers can shop on your website or app without being redirected to an external page.
- - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
+ - image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/12/1747070656915-AR.EN.png
  - benefit_icon: recurring-payments
  - benefit_title: For online payments
  - benefit_icon: categories
@@ -181,7 +181,7 @@ product_landing_what_differentiates:
  - title: What sets it apart
  - message: Compare our checkouts and choose the option that best fits your business. Check the [rates](https://mercadopago.com.ar/developers/es/support/37740).
  - highlight_text: You're here
- - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png 
+ - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/12/1747070656915-AR.EN.png
  - column_product: Checkout API
  - column_button_text: How to integrate
  - column_button_link: /developers/en/docs/checkout-api-v2/overview#:~:text=UY-,How,-to%20integrate

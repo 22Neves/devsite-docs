@@ -8,14 +8,7 @@ Point Smart está en crecimiento constante, con nuevas aplicaciones integradas. 
 
 Para ingresar, solo tienes que entrar en la sección **Más opciones** y luego, seleccionar la pestaña "Apps", en la esquina superior derecha.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-access](/mini-apps/miniapps-access-es.png)
-
-------------
-----[mla]----
-![miniapps-access](/mini-apps/miniapps-access-es.gif)
-
-------------
 
 ## Estructura
 
@@ -30,37 +23,16 @@ Para conocer más sobre una app, haciendo clic en **Saber más**, la persona usu
 
 Muchas veces, este es el primer contacto, por eso, hay bastante espacio para una comunicación clara, objetiva y que explora los beneficios. Más adelante, daremos recomendaciones de cómo explorar todas estas oportunidades.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-detail](/mini-apps/miniapps-detail-es.png)
-
-------------
-----[mla]----
-![miniapps-detail](/mini-apps/miniapps-detail-es.gif)
-
-------------
 
 ## Instalación
 
 Con un toque en el botón **Instalar**, el download se inicia. Esa acción puede ser tomada tanto en la página de detalle como en la pantalla inicial de la sección “Apps”.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-installation](/mini-apps/miniapps-installation-es.png)
-
-------------
-----[mla]----
-![miniapps-installation](/mini-apps/miniapps-installation-es.gif)
-
-------------
 
 ## Desinstalación
 
 Desinstalar es igual de fácil: basta **presionar el ícono por algunos segundos** y seleccionar la opción **Desinstalar**.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-uninstall](/mini-apps/miniapps-uninstall-es.png)
-
-------------
-----[mla]----
-![miniapps-uninstall](/mini-apps/miniapps-uninstall-es.gif)
-
-------------

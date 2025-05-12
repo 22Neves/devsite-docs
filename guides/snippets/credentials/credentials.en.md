@@ -85,20 +85,16 @@ Below, learn how to get the credentials.
 2. Access your application or create one if you have not already done so.
 3. You will find your credentials under the title **Testing > Test credentials** or **Production > Production credentials**, in the menu located on the left side of the screen.
 
-----[mlb, mlc, mlu, mlm, mco, mpe]----
-![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-es.jpg)
+----[mlb]----
+![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.jpg)
+ 
+![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-prod-panel-pt.jpg)
 
 ------------
-----[mla]----
-![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.gif)
+----[mla, mlc, mlu, mlm, mco, mpe]----
+![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-test-panel-es.jpg)
 
-------------
-----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.jpg)
-
-------------
-----[mla]----
-![Cómo acceder a las credenciales a través de Tus Integraciones](/images/snippets/credentials-prod-panel-es-v2.gif)
 
 ------------
 
@@ -133,12 +129,12 @@ Below, we show you how to share credentials.
 4. Once you select the credentials, go to the *Share credentials with a developer* section and click on the **Share Credentials** button.
 5. Enter the email address of the person you want to grant access to. **Remember**: it is mandatory that the email address is associated with a Mercado Pago account.
 
-----[mla]----
-![Share credentials in Your Integrations](/images/snippets/share-credentials-panel-pt.gif)
+----[mlb]----
+![Compartilhar credenciais em Suas Integrações](/images/snippets/share-credentials-panel-pt.jpg)
 
 ------------
-----[mlb, mlc, mlu, mlm, mco, mpe]----
-![Share credentials in Your Integrations](/images/snippets/share-credentials-panel-es.jpg)
+----[mla, mlc, mlu, mlm, mco, mpe]----
+![Compartir credenciales en Tus Integraciones](/images/snippets/share-credentials-panel-es.jpg)
 
 ------------
 
@@ -156,12 +152,13 @@ To renew a credential pair, follow the steps below.
 2. Select the credential pair you want to renew. These can be **Public Key** and **Access Token** or **Client ID** and **Client Secret**. Keep in mind that both credentials in the pair you choose will be renewed.
 3. Click on the three dots located to the right of the credential you want to renew and select **Renew**. Click on **Renew now** to confirm the change.
 
-----[mla]----
-![Como renovar suas credenciais](/images/snippets/renew-credentials-pt.gif)
+----[mlb]----
+![Como renovar suas credenciais](/images/snippets/renew-credentials-pt.jpg)
 
 ------------
-----[mlb, mlc, mlu, mlm, mco, mpe]----
-![Como renovar suas credenciais](/images/snippets/renew-credentials-es.png)
+----[mla, mlc, mlu, mlm, mco, mpe]----
+![Cómo renovar tus credenciales](/images/snippets/renew-credentials-es.jpg)
 
 ------------
+
 Ready, your credentials have been renewed.

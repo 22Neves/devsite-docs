@@ -85,22 +85,9 @@ A seguir, saiba como obter as credenciais.
 2. Acesse sua aplicação ou crie uma, caso ainda não a tenha criado.
 3. Você encontrará suas credenciais sob o título **Testes > Credenciais de teste** ou **Produção > Credenciais de produção**, no menu localizado à esquerda da tela.
 
-----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.jpg)
-
------------- 
-----[mla]----
-![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-test-panel-pt.gif)
-
-------------
-----[mlb, mlc, mlu, mlm, mco, mpe]----
+ 
 ![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-prod-panel-pt.jpg)
-
-------------
-----[mla]----
-![Como acessar as credenciais através das Suas Integrações](/images/snippets/credentials-prod-panel-pt.gif)
-
-------------
 
 ### Ativar credenciais de produção
 
@@ -134,14 +121,7 @@ A seguir, mostramos como compartilhar credenciais.
 4. Uma vez que você selecionar as credenciais, vá até a seção **Compartilhe as credenciais com um desenvolvedor** e clique em **Compartilhar credenciais**.
 5. Informe o endereço de e-mail da pessoa para quem você deseja conceder acesso. **Importante**: o endereço de e-mail deve, obrigatoriamente, estar vinculado a uma conta do Mercado Pago.
 
-----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Compartilhar credenciais em Suas Integrações](/images/snippets/share-credentials-panel-pt.jpg)
-
-------------
-----[mla]----
-![Compartilhar credenciais em Suas Integrações](/images/snippets/share-credentials-panel-pt.gif)
-
-------------
 
 ## Renovar credenciais
 
@@ -157,13 +137,6 @@ Para renovar um par de credenciais, siga os passos abaixo.
 2. Selecione o par de credenciais que você deseja renovar, podendo ser **Public Key** e **Access Token** ou **Client ID** e **Client Secret**. Tenha em mente que ambas as credenciais do par que você escolher serão renovadas.
 3. Clique nos três pontos localizados à direita da credencial que você deseja renovar e selecione **Renovar**. Clique em **Renovar agora** para confirmar a alteração.
 
-----[mlb, mlc, mlu, mlm, mco, mpe]----
 ![Como renovar suas credenciais](/images/snippets/renew-credentials-pt.jpg)
-
-------------
-----[mla]----
-![Como renovar suas credenciais](/images/snippets/renew-credentials-pt.gif)
-
-------------
 
 As suas credenciais foram renovadas com sucesso e estão prontas para uso.

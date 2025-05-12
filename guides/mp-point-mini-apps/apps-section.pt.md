@@ -8,14 +8,7 @@ Ela está em constante crescimento, com novos aplicativos sendo integrados. A se
 
 Para acessá-la, basta entrar na seção **Mais opções** e, em seguida, selecionar a aba "Apps", no canto superior direito.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-access](/mini-apps/miniapps-access-pt.png)
-
-------------
-----[mla]----
-![miniapps-access](/mini-apps/miniapps-access-pt.gif)
-
-------------
 
 ## Estrutura
 
@@ -30,37 +23,16 @@ Para conhecer mais sobre um aplicativo, clicando em **Saber mais**, a pessoa usu
 
 Este costuma ser o primeiro contato, por isso, há bastante espaço para uma comunicação que explore os benefícios. Mais à frente, daremos recomendações de como explorar todas essas oportunidades.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-detail](/mini-apps/miniapps-detail-pt.png)
-
-------------
-----[mla]----
-![miniapps-detail](/mini-apps/miniapps-detail-pt.gif)
-
-------------
 
 ## Instalação
 
 Com um toque no botão **Instalar**, o download é iniciado. Essa ação pode ser tomada tanto na página de detalhe quanto na tela inicial da seção ”Apps”.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-installation](/mini-apps/miniapps-installation-pt.png)
-
-------------
-----[mla]----
-![miniapps-installation](/mini-apps/miniapps-installation-pt.gif)
-
-------------
 
 ## Desinstalação
 
 Desinstalar é igualmente fácil: basta **pressionar o ícone por alguns segundos** e selecionar a opcão **Desinstalar**.
 
-----[mlb, mlc, mlm, mpe, mlu, mco]----
 ![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.png)
-
-------------
-----[mla]----
-![miniapps-uninstall](/mini-apps/miniapps-uninstall-pt.gif) 
-
-------------
