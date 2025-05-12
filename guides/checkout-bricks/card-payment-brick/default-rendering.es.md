@@ -248,7 +248,7 @@ El resultado de renderizar el Brick debería parecerse a la imagen de abajo.
 
 ------------
 ----[mla]----
-![cardform](checkout-bricks/card-form-es.png)
+![cardform](checkout-bricks/card-form-mla-es.png)
 
 ------------
 ----[mlb]----

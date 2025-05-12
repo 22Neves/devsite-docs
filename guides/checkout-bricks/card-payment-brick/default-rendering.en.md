@@ -248,7 +248,7 @@ The result of rendering the Brick should look like the image below.
 
 ------------
 ----[mla]----
-![cardform](checkout-bricks/card-form-en.png)
+![cardform](checkout-bricks/card-form-mla-en.png)
 
 ------------
 ----[mlb]----

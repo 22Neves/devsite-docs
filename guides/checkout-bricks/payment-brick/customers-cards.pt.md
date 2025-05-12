@@ -40,7 +40,7 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 >
 > Somente os cartões dentro do prazo de validade serão mostrados para o comprador, cartões vencidos não serão disponibilizados.
 
-----[mlc, mpe, mlu, mco]----
+----[mla, mlc, mpe, mlu, mco]----
 
 ![payment-brick-c](checkout-bricks/payment-brick-cc-pt-all.jpg)
 
@@ -55,11 +55,6 @@ Apenas passando essas duas propriedades, o Brick automaticamente dará ao usuár
 ![payment-brick-c](checkout-bricks/payment-brick-cc-pt-mlb.jpg)
 
 ------------
-----[mla]----
-
-![payment-brick-saved-cards](checkout-bricks/payment-brick-saved-cards-pt.gif) 
-
------------- 
 
 ----[mlb]----
 Para saber como criar, modificar e obter o `customerId` e os `cardsIds`, consulte a seção [Gestão de cartões e clientes](/developers/pt/docs/checkout-api/customer-management) da documentação do Checkout Transparente.

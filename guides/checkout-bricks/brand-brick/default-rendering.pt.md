@@ -43,11 +43,4 @@ import { Brand } from '@mercadopago/sdk-react';
 
 O resultado de renderizar o Brick deve ser como na imagem abaixo.
 
-----[mlc]----
 ![brand-brick-pt](checkout-bricks/brick-brand-pt.png)
-
-------------
-----[mlb, mla, mlm, mpe, mlu, mco]----
-![brand-brick-pt](checkout-bricks/brick-brand-pt.gif)
-
-------------

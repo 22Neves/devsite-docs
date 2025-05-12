@@ -22,14 +22,14 @@ O Brick possui capacidades responsivas no que tange o tamanho do espaço em tela
 ------------
 ----[mlb]---- 
 
-![responsiveness-mlb](checkout-bricks/responsiveness-mlb-pt.gif)
+![responsiveness-mlb](checkout-bricks/responsiveness-mlb-pt.jpg)
 
 ------------
 ----[mla]---- 
 
-![responsiveness-mla](checkout-bricks/responsiveness-mla-pt.gif)
+![responsiveness-mla](checkout-bricks/responsiveness-mla-pt.jpg)
 
-------------
+------------ 
 
 ## Temas
 
