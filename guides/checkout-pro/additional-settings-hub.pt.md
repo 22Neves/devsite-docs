@@ -6,7 +6,6 @@ O Checkout Pro oferece diversas opções de customização, tanto visuais quanto
 
 * [Alterar textos do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-texts): Escolha os diferentes textos que você pode exibir no botão de pagamento.
 * [Alterar visual do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): Personalize a aparência do botão de pagamento.
-* [Alterar estilo de cores](/developers/pt/docs/checkout-pro/additional-settings/user-interface/color-style): Escolha uma das opções de cor disponíveis para o botão de pagamento.
 
 ## Personalização funcional do checkout
 

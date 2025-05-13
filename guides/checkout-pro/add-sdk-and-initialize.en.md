@@ -53,34 +53,29 @@ You will also need to use the payment preference ID that you obtained as a respo
 
 Next, to initialize the SDK using a CDN, you should execute this code within the `<script>` tag, replacing the value `YOUR_PUBLIC_KEY` with your key and `YOUR_PREFERENCE_ID` with the **payment preference ID**.
 
-```JavaScript
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Button - Mercado Pago</title>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-</head>
-<body>
-  <h1>Payment Button</h1>
-  
-  <!-- Container where the button will be rendered -->
-  <div id="wallet_container"></div>
+```Javascript
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  // Configure sua chave pública do Mercado Pago
+  const publicKey = "YOUR_PUBLIC_KEY";
+  // Configure o ID de preferência que você deve receber do seu backend
+  const preferenceId = "YOUR_PREFERENCE_ID";
 
-  <script>
-    // Initializes Mercado Pago with your public key
-    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+  // Inicializa o SDK do Mercado Pago
+  const mp = new MercadoPago(publicKey);
 
-    // Creates the payment button in the specified container
-    mp.bricks().create("wallet", "wallet_container", {
+  // Cria o botão de pagamento
+  const bricksBuilder = mp.bricks();
+  const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create("wallet", "walletBrick_container", {
       initialization: {
-        preferenceId: "YOUR_PREFERENCE_ID", // Replace with your preference ID
+        preferenceId: "<PREFERENCE_ID>",
       }
-    });
-  </script>
-</body>
-</html>
+});
+  };
+
+  renderWalletBrick(bricksBuilder);
+</script>
 ```
 
 > CLIENT_SIDE
@@ -92,8 +87,8 @@ Next, to initialize the SDK using a CDN, you should execute this code within the
 Finally, you will need to create a container in your HTML to define the location where the MercadoPago payment button will be displayed. The creation of the container is done by inserting an element in the HTML code of the page where the component will be rendered.
 
 ```html
-<!-- Container for the payment button -->
-<div id="wallet_container"></div>
+<!-- Container para o botão de pagamento -->
+<div id="walletBrick_container"></div>
 ```
 
 ## Render the payment button
@@ -120,17 +115,9 @@ This will create a new directory named `my-mercadopago-app` with a basic React a
 
 Install the MercadoPago.js SDK library in the `my-mercadopago-app` directory. You can do this by running the following command:
 
-----[mla]----
-```
-npm install @mercadopago/sdk-react@0.0.24
-```
-------------
-
-----[mlb, mlu, mlc, mco, mpe, mlm]----
 ```
 npm install @mercadopago/sdk-react
 ```
-------------
 
 ## Create a component for the payment button
 
@@ -184,6 +171,5 @@ If you wish, you can make some changes to the texts or a visual change to the Me
 
 - [Change button texts](/developers/en/docs/checkout-pro/additional-settings/user-interface/change-button-texts): choose the different texts you can display on the payment button.
 - [Change the appearance of the button](/developers/en/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): customize the appearance of the payment button.
-- [Change color style](/developers/en/docs/checkout-pro/additional-settings/user-interface/color-style): choose one of the available color options for the payment button.
 - [Auxiliary callbacks](/developers/en/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): add callbacks that will be executed at specific moments of the payment flow.
 :::
