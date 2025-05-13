@@ -53,34 +53,29 @@ Agora, será necessário utilizar o identificador da preferência de pagamento o
 
 Para inicializar o SDK via CDN, insira o código a seguir dentro da tag `<script>`. Substitua `YOUR_PUBLIC_KEY` pela `public_key` de produção da sua aplicação e `YOUR_PREFERENCE_ID` pelo **identificador da preferência de pagamento**.
 
-```JavaScript
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Botão de Pagamento - Mercado Pago</title>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-</head>
-<body>
-  <h1>Botão de Pagamento</h1>
-  
-  <!-- Container onde o botão será renderizado -->
-  <div id="wallet_container"></div>
+```Javascript
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+  // Configure sua chave pública do Mercado Pago
+  const publicKey = "YOUR_PUBLIC_KEY";
+  // Configure o ID de preferência que você deve receber do seu backend
+  const preferenceId = "YOUR_PREFERENCE_ID";
 
-  <script>
-    // Inicialize o Mercado Pago com sua chave pública
-    const mp = new MercadoPago('YOUR_PUBLIC_KEY');
+  // Inicializa o SDK do Mercado Pago
+  const mp = new MercadoPago(publicKey);
 
-    // Crie o botão de pagamento no container especificado
-    mp.bricks().create("wallet", "wallet_container", {
+  // Cria o botão de pagamento
+  const bricksBuilder = mp.bricks();
+  const renderWalletBrick = async (bricksBuilder) => {
+    await bricksBuilder.create("wallet", "walletBrick_container", {
       initialization: {
-        preferenceId: "YOUR_PREFERENCE_ID", // Substitua com seu ID de preferência
+        preferenceId: "<PREFERENCE_ID>",
       }
-    });
-  </script>
-</body>
-</html>
+});
+  };
+
+  renderWalletBrick(bricksBuilder);
+</script>
 ```
 
 > CLIENT_SIDE
@@ -93,7 +88,7 @@ Por fim, adicione um _container_ ao código HTML para definir a localização on
 
 ```html
 <!-- Container para o botão de pagamento -->
-<div id="wallet_container"></div>
+<div id="walletBrick_container"></div>
 ```
 
 ## Renderizar o botão de pagamento
@@ -120,17 +115,9 @@ Isso criará um novo diretório chamado `my-mercadopago-app` com uma estrutura b
 
 Instale a biblioteca SDK MercadoPago.js no diretório `my-mercadopago-app`. Você pode fazer isso executando o seguinte comando:
 
-----[mla]----
-```
-npm install @mercadopago/sdk-react@0.0.24
-```
-------------
-
-----[mlb, mlu, mlc, mco, mpe, mlm]----
 ```
 npm install @mercadopago/sdk-react
 ```
-------------
 
 ## Criar um componente para o botão de pagamento
 
@@ -184,6 +171,5 @@ Você pode personalizar o botão de pagamento do Mercado Pago para atender às s
 
 - [Alterar textos dos botões](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-texts): escolha os diferentes textos que você pode mostrar no botão de pagamento.
 - [Alterar a aparência do botão](/developers/pt/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): ajuste a aparência do botão de pagamento.
-- [Alterar estilo de cor](/developers/pt/docs/checkout-pro/additional-settings/user-interface/color-style): escolha entre diferentes opções de cores para o botão de pagamento.
 - [_Callbacks_ auxiliares](/developers/pt/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): adicione _callbacks_ executados em momentos específicos do fluxo de pagamento.
 :::

@@ -2,28 +2,14 @@
 
 Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. A partir de esto, a continuación se presentan las informaciones necesarias para que configures y renderices el Wallet Brick.
 
-----[mlb, mlc, mlm, mco, mlu, mpe]----
 > NOTE
->
-> Nota
 >
 > Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/wallet.md).
-
-------------
-----[mla]----
-> NOTE
->
-> Nota
->
-> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/docs/bricks/legacy/wallet.md).
-
-------------
 
 ## Configurar el Brick
 
 Crea la configuración de inicio de Brick
 
-----[mlb, mlc, mlm, mco, mlu, mpe]----
 [[[
 ```Javascript
 const renderWalletBrick = async (bricksBuilder) => {
@@ -70,56 +56,6 @@ const onReady = async () => {
 };
 ```
 ]]]
-
-------------
-----[mla]----
-[[[
-```Javascript
-const renderWalletBrick = async (bricksBuilder) => {
-    await bricksBuilder.create('wallet', 'walletBrick_container', {
-        initialization: {
-            preferenceId: "<PREFERENCE_ID>",
-        },
-        customization: {
-            texts: {
-                valueProp: 'smart_option'
-            },
-            ...
-        },
-    });
-};
-
-renderWalletBrick(bricksBuilder);
-```
-```react-jsx
-const initialization = {
-  preferenceId: '<PREFERENCE_ID>',
-}
-
-const customization = {
-  texts: {
-   valueProp: 'smart_option',
-  },
-}
-
-const onSubmit = async (formData) => {
- // callback llamado al hacer clic en Wallet Brick
- // esto es posible porque Brick es un botón 
-};
-
-const onError = async (error) => {
- // callback llamado para todos los casos de error de Brick
- console.log(error);
-};
-
-const onReady = async () => {
- // Callback llamado cuando Brick esté listo.
- // Aquí puedes ocultar loadings en tu sitio, por ejemplo.  
-};
-```
-]]]
-
-------------
 
 > WARNING
 > 
@@ -235,150 +171,7 @@ Luego establezca la preferencia de acuerdo a su producto o servicio.
 Los ejemplos de código a continuación establecen el **purpose de la preferencia** en `wallet_purchase`, donde el usuario debe iniciar sesión cuando es redirigido a su cuenta de Mercado Pago.
 
 ------------
-----[mla]----
-[[[
-```php
-<?php
-$client = new PreferenceClient();
-$preference = $client->create([
-  "items"=> array(
-    array(
-      "title" => "Mi producto",
-      "quantity" => 1,
-      "unit_price" => 25
-    )
-  )
-]);
-?>
-```
-```node
-// Crear un objeto de preferencia
-let preference = {
-  // el "purpose": "wallet_purchase" solo permite pagos registrados
-  // para permitir pagos de guests puede omitir esta propiedad
-  "purpose": "wallet_purchase",
-  "items": [
-    {
-      "id": "item-ID-1234",
-      "title": "Meu produto",
-      "quantity": 1,
-      "unit_price": 75
-    }
-  ]
-};
 
-mercadopago.preferences.create(preference)
-  .then(function (response) {
-    // Este valor es el ID de preferencia que se enviará al Brick al inicio
-    const preferenceId = response.body.id;
-  }).catch(function (error) {
-    console.log(error);
-  });
-```
-```java
-// Crear un objeto de preferencia
-PreferenceClient client = new PreferenceClient();
-
-// Crear un elemento en la preferencia
-List<PreferenceItemRequest> items = new ArrayList<>();
-PreferenceItemRequest item =
-   PreferenceItemRequest.builder()
-       .title("Meu produto")
-       .quantity(1)
-       .unitPrice(new BigDecimal("100"))
-       .build();
-items.add(item);
-
-PreferenceRequest request = PreferenceRequest.builder()
-  // el .purpose('wallet_purchase') solo permite pagos registrados
-  // para permitir pagos de guest, puede omitir esta línea
-  .purpose('wallet_purchase')
-  .items(items).build();
-
-client.create(request);
-```
-```ruby
-# Crear un objeto de preferencia
-preference_data = {
-  # el purpose: 'wallet_purchase', solo permite pagos registrados
-  # para permitir pagos de guests, puede omitir esta propiedad
-  purpose: 'wallet_purchase',
-  items: [
-    {
-      title: 'Meu produto',
-      unit_price: 75,
-      quantity: 1
-    }
-  ]
-}
-preference_response = sdk.preference.create(preference_data)
-preference = preference_response[:response]
-
-# Este valor es el ID de preferencia que usará en el HTML en el inicio del Brick
-@preference_id = preference['id']
-```
-```csharp
-// Crear el objeto de request de preferencia
-var request = new PreferenceRequest
-{
-  // el Purpose = 'wallet_purchase', solo permite pagos registrados
-  // para permitir pagos de invitados, puede omitir esta propiedad
-    Purpose = 'wallet_purchase',
-    Items = new List<PreferenceItemRequest>
-    {
-        new PreferenceItemRequest
-        {
-            Title = "Meu produto",
-            Quantity = 1,
-            CurrencyId = "BRL",
-            UnitPrice = 75,
-        },
-    },
-};
-
-// Crea la preferencia usando el cliente
-var client = new PreferenceClient();
-Preference preference = await client.CreateAsync(request);
-```
-```python
-# Crea un elemento en la preferencia
-preference_data = {
-  # el "purpose": "wallet_purchase", solo permite pagos registrados
-  # para permitir pagos de invitados, puede omitir esta propiedad
-    "purpose": "wallet_purchase",
-    "items": [
-        {
-            "title": "Mi elemento",
-            "quantity": 1,
-            "unit_price": 75
-        }
-    ]
-}
-
-preference_response = sdk.preference().create(preference_data)
-preference = preference_response["response"]
-```
-```curl
-curl -X POST \
-'https://api.mercadopago.com/checkout/preferences' \
--H 'Content-Type: application/json' \
--H 'cache-control: no-cache' \
--H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
--d '{
-  "purpose": "wallet_purchase",
-  "items": [
-      {
-          "title": "Mi producto",
-          "quantity": 1,
-          "unit_price": 75
-      }
-  ]
-}'
-```
-]]]
-
-------------
-----[mlb, mlc, mlm, mco, mlu, mpe]----
 [[[
 ```php
 <?php
@@ -519,8 +312,6 @@ curl -X POST \
 }'
 ```
 ]]]
-
-------------
 
 > WARNING
 >

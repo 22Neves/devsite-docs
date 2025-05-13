@@ -2,13 +2,12 @@
 
 Checkout Pro offers various customization options, both visual and functional, allowing you to tailor the payment solution to the specific needs of your integration.  Below, explore the additional configurations you can implement.
 
-## Visual Checkout Customization
+## Visual checkout customization
 
 * [Change button texts](/developers/en/docs/checkout-pro/additional-settings/user-interface/change-button-texts): Choose the different texts you can display on the payment button.
 * [Change button appearance](/developers/en/docs/checkout-pro/additional-settings/user-interface/change-button-appearance): Customize the look and feel of the payment button.
-* [Change color style](/developers/en/docs/checkout-pro/additional-settings/user-interface/color-style): Choose one of the available color options for the payment button.
 
-## Functional Checkout Customization
+## Functional checkout customization
 
 * [Opening schema](/developers/en/docs/checkout-pro/additional-settings/user-interface/opening-schema): Define how you want the checkout to open for your customers.
 * [Auxiliary callbacks](/developers/en/docs/checkout-pro/additional-settings/user-interface/auxiliary-callbacks): Add callbacks that will be executed at specific moments in the payment flow.

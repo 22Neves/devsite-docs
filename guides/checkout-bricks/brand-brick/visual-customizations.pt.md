@@ -38,7 +38,7 @@ const renderBrandBrick = async (bricksBuilder) => {
       visual: {
         hideMercadoPagoLogo: false, // optional boolean.
         contentAlign: "center", // optional "left" | "center" | "right".
-        backgroundColor: "white", // optional "white" | "mercado_pago_primary" | "mercado_pago_secondary" | "black" | "transparent"
+        backgroundColor: "white", // optional "white" | "mercado_pago_primary" | "black" | "transparent"
         border: false, // optional boolean
         borderColor: "dark", // optional "dark" | "light"
         borderWidth: "1px", // optional "1px" | "2px"
@@ -63,7 +63,7 @@ const customization = {
     visual: {
       hideMercadoPagoLogo: false, // optional boolean
       contentAlign: "center", // optional "left" | "center" | "right"
-      backgroundColor: "white", // optional "white" | "mercado_pago_primary" | "mercado_pago_secondary" | "black" | "transparent"
+      backgroundColor: "white", // optional "white" | "mercado_pago_primary" |  "black" | "transparent"
       border: false, // optional boolean
       borderColor: "dark", // optional "dark" | "light"
       borderWidth: "1px", // optional "1px" | "2px"
