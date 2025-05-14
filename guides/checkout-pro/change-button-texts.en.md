@@ -4,7 +4,7 @@
 >
 > Change button texts
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlc, mpe, mco, mlu]----
 The payment button is **composed of the button and the value proposition** (`valueProp`), which can be customized according to the options provided by Mercado Pago.
 
 There are two themes available: the **default** (also used when no configuration is specified) and **dark**. Choosing a theme affects the background color of the button, the value proposition, and the color of the images inside the button.
