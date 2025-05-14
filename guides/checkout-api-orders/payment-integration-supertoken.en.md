@@ -2,7 +2,7 @@
 
 Mercado Pago's ----[mlb]----Checkout Transparente------------ ----[mla, mlm]---- Checkout API ------------ now offers **Fast Payments with Mercado Pago**. With this solution, it is possible to provide buyers with an experience that speeds up the payment process using the data saved in our ecosystem.
 
-With the buyer's authorization, we will facilitate the payment methods available in Mercado Pago or Mercado Livre to offer them directly at the store's checkout, creating a faster, safer and frictionless experience for the buyer.
+With the buyer's authorization, we will facilitate the payment methods available in Mercado Pago or Mercado Livre to offer them directly at the store's checkout, creating a faster, safer and frictionless experience for the buyer. 
 
 ----[mlb]----  
 ![Experience from the frontend](/images/api-orders/supertoken-exp-2-mlb.png)
