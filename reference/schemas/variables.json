@@ -34,5 +34,41 @@
     "mpe": "5520",
     "mlu": "56101",
     "mlc": "561000"
+  },
+  "orders_amount_fields_en": {
+    "mla": "The field must contain two decimal places, even if it is a whole number. For example, 50.00.",
+    "mlb": "The field must contain two decimal places, even if it is a whole number. For example, 50.00.",
+    "mlm": "The field must contain two decimal places, even if it is a whole number. For example, 50.00.",
+    "mco": "The field must contain two decimal places, even if it is a whole number. For example, 50.00.",
+    "mpe": "The field must contain two decimal places, even if it is a whole number. For example, 50.00.",
+    "mlu": "The field must contain two decimal places, even if it is a whole number. For example, 50.00.",
+    "mlc": "It must be a whole number, with no decimals."
+  },
+  "orders_amount_fields_es": {
+    "mla": "Debe contener obligatoriamente dos decimales, incluso si es un número entero. Por ejemplo, 50.00.",
+    "mlb": "Debe contener obligatoriamente dos decimales, incluso si es un número entero. Por ejemplo, 50.00.",
+    "mlm": "Debe contener obligatoriamente dos decimales, incluso si es un número entero. Por ejemplo, 50.00.",
+    "mco": "Debe contener obligatoriamente dos decimales, incluso si es un número entero. Por ejemplo, 50.00.",
+    "mpe": "Debe contener obligatoriamente dos decimales, incluso si es un número entero. Por ejemplo, 50.00.",
+    "mlu": "Debe contener obligatoriamente dos decimales, incluso si es un número entero. Por ejemplo, 50.00.",
+    "mlc": "Debe ser un número entero, sin decimales."
+  },
+  "orders_amount_fields_pt": {
+    "mla": "Deve conter duas casas decimais, mesmo que seja um número inteiro. Por exemplo, 50,00.",
+    "mlb": "Deve conter duas casas decimais, mesmo que seja um número inteiro. Por exemplo, 50,00.",
+    "mlm": "Deve conter duas casas decimais, mesmo que seja um número inteiro. Por exemplo, 50,00.",
+    "mco": "Deve conter duas casas decimais, mesmo que seja um número inteiro. Por exemplo, 50,00.",
+    "mpe": "Deve conter duas casas decimais, mesmo que seja um número inteiro. Por exemplo, 50,00.",
+    "mlu": "Deve conter duas casas decimais, mesmo que seja um número inteiro. Por exemplo, 50,00.",
+    "mlc": "Deve ser um número inteiro, sem casas decimais."
+  },
+  "orders_instore_refund_time": {
+    "mla": "360",
+    "mlb": "180",
+    "mlm": " ",
+    "mco": " ",
+    "mpe": " ",
+    "mlu": "160",
+    "mlc": "330"
   }
 }
