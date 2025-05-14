@@ -1,4 +1,4 @@
-# Configurar meios de pagamento
+# Configurar outros meios de pagamento
 
 Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por meio da preferência de pagamento, você pode configurar um meio de pagamento padrão para ser renderizado, excluir algum indesejado, ou ainda escolher um número máximo de parcelas a serem ofertadas.
 
