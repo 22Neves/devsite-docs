@@ -200,7 +200,7 @@ Se a leitura foi correta, a resposta deverá ser semelhante ao exemplo abaixo.
     "collector": {
         "name": "Test Test",
         "account": "0000009388000001809754",
-        "identification_number": "27326594305",
+        "identification_number": "20000000001",
         "mcc": "5912",
         "postal_code": "c1430dnn"
     },
@@ -247,7 +247,6 @@ Se a leitura foi correta, a resposta deverá ser semelhante ao exemplo abaixo.
 >
 > Uma vez concluídos os testes, lembre-se de enviar à nossa equipe de Suporte o `coelsa_id` dos pagamentos aprovados dentro desses cenários, junto com uma captura de tela do pagamento, para validação.
 
-
 ## Considerações para ambientes produtivos
 
 Tenha em mente as seguintes considerações para operar em ambientes produtivos.
@@ -256,4 +255,3 @@ Tenha em mente as seguintes considerações para operar em ambientes produtivos.
 * Certifique-se de oferecer sempre uma experiência de usuário adequada: forneça mensagens claras para otimizar a compreensão de cada cenário de pagamento, falha ou erro que ocorrer ao escanear os códigos QR utilizando a carteira.
 * Lembre-se de incluir corretamente os padrões de códigos QR do Mercado Pago a partir de seu domínio. Na maioria dos casos, isso deve ser feito com um **domínio invertido**, como **com.mercadolibre**. Mas também é possível encontrar QRs não EMVCO, como **https://mpago.la/pos/<id>** ou **https://mpago.la/s/qr/<id1><id2>**.
 * Identifique as operações com códigos rastreáveis que permitam à COELSA reconhecer aquelas pertencentes ao Mercado Pago. Para isso, envie o `order.id` da IEP do Mercado Pago como `qr_trx_id` à API da COELSA.
-
