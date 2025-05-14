@@ -10,7 +10,7 @@ With the buyer's authorization, we will facilitate the payment methods available
 
 ----[mla]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mla.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mla.png)
 ------------
 
 ----[mlm]---- 
@@ -156,14 +156,14 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 
 This will validate whether the user's system is eligible for authentication with Mercado Pago or Mercado Libre and thus initialize the `Authenticator` class.
 
-If the user is unable to continue with the flow, you will receive an error. See our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors) for details.
+If the user is unable to continue with the flow, you will receive an error. See our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/fast-payments#:~:text=4.%20Process%20Payment-,Possible,-errors) for details.
 
 :::
 :::AccordionComponent{title="2. Obtain Account Authentication Token" pill="client-side"}
 
 Once the `Authenticator` class is initialized, it is necessary to make a request to obtain the authorization token. This token is required to access the available payment methods in the buyer's Mercado Pago account.
 
-The function that performs this request is `getAuthorizationToken`, and through the `.show` method, it allows you to choose how you want to obtain that token: by opening a confirmation modal, or by skipping it. Choose the option you prefer and use the assigned code in each case as a reference.
+Through the `.show` method it is possible to choose how you want to obtain that token: by opening a confirmation modal, or by skipping it. Choose the option you prefer and use the assigned code in each case as a reference.
 
 #### Obtain token via confirmation modal
 
@@ -207,7 +207,7 @@ The `.show` method can optionally receive the boolean value `true`, which allows
 async function getAuthorizationToken() {
 
   try {
-    const token = await authenticator.show(true);
+    const token = await authenticator.show({ hideRedirectionConfirmation: true });
     return token;
   } catch (error) {
     console.error("Error while obtaining the token:", error?.errorCode);
@@ -221,7 +221,7 @@ const authorizationToken = await getAuthorizationToken();
 
 > NOTE
 >
-> If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
+> If you encounter an error during this stage, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/fast-payments#:~:text=4.%20Process%20Payment-,Possible,-errors).
 
 ----[mlb]----  
 ![Authentication experience](/images/api-orders/supertoken-exp-2-mlb.png)
@@ -424,7 +424,7 @@ Below, you can see an example of the structure of the response from the `userPay
 
 > NOTE
 >
-> It is important to wrap these requests in a _try-catch_ block to ensure that any potential errors are handled properly. If you encounter one, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Process%20Payment-,Possible,-errors).
+> It is important to wrap these requests in a _try-catch_ block to ensure that any potential errors are handled properly. If you encounter one, you can refer to our [list of possible errors](/developers/en/docs/checkout-api-v2/payment-integration/fast-payments#:~:text=4.%20Process%20Payment-,Possible,-errors).
 
 To allow the buyer to view these payment options in your checkout and select their preferred one, you need to render them on a screen. Below is an example of how to display them.
 

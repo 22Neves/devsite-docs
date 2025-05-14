@@ -10,7 +10,7 @@ Con la autorización del comprador, facilitaremos los métodos de pago disponibl
 
 ----[mla]---- 
 
-![Experience from the frontend](/images/api-orders/supertoken-fullexp-mla.gif)
+![Experience from the frontend](/images/api-orders/supertoken-exp-2-mla.png)
 ------------
 
 ----[mlm]---- 
@@ -153,7 +153,7 @@ const authenticator = await initializeAuthenticator("<AMOUNT>", "<EMAIL>");
 ```
 Esto permitirá validar si el sistema del usuario es apto para realizar la autenticación con Mercado Pago o Mercado Libre, y así inicializar la clase `Authenticator`. 
 
-En caso de que el usuario esté impedido de continuar con el flujo, recibirás un error. Consulta nuestra nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores) para conocer los detalles.
+En caso de que el usuario esté impedido de continuar con el flujo, recibirás un error. Consulta nuestra nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/fast-payments#:~:text=4.%20Procesar%20pago-,Posibles,-errores) para conocer los detalles.
 
 
 :::
@@ -161,7 +161,7 @@ En caso de que el usuario esté impedido de continuar con el flujo, recibirás u
 
 Una vez inicializada la clase `Authenticator` es necesario hacer una solicitud para obtener el _token_ de autorización. Este _token_ es requerido para acceder a los medios de pago disponibles en la cuenta de Mercado Pago del comprador.
 
-La función que realiza esta solicitud es `getAuthorizationToken` y, mediante el método `.show`, te permite elegir cómo quieres que se obtenga ese _token_: mediante la apertura de un modal de confirmación, u omiténdolo. Elige la opción que prefieras y utiliza el código asignado en cada caso como referencia.
+Mediante el método `.show` es posible elegir cómo quieres que se obtenga ese _token_: mediante la apertura de un modal de confirmación, u omiténdolo. Elige la opción que prefieras y utiliza el código asignado en cada caso como referencia.
 
 #### Obtener token mediante modal de confirmación
 
@@ -200,13 +200,13 @@ const authorizationToken = await getAuthorizationToken();
 
 #### Obtener token omitiendo el modal de confirmación
 
-El método `.show` también puede recibir opcionalmente el valor booleano `true`, que permite omitir el modal de confirmación y que el usuario sea redirigido automáticamente a la aplicación. Cuando este parámetro está activado, se recomienda usar el metodo `authenticator.getApplication()` para identificar a qué aplicación podrá ser redirigido el usuario, Mercado Libre o Mercado Pago, lo que permite personalizar y mejorar su experiencia.
+El método `.show` también puede recibir opcionalmente el valor booleano `true`, que permite omitir el modal de confirmación y que el usuario sea redirigido automáticamente a la aplicación. Cuando este parámetro está activado, se recomienda usar el método `authenticator.getApplication()` para identificar a qué aplicación podrá ser redirigido el usuario, Mercado Libre o Mercado Pago, lo que permite personalizar y mejorar su experiencia.
 
 ```JavaScript
 async function getAuthorizationToken() {
 
   try {
-    const token = await authenticator.show(true);
+    const token = await authenticator.show({ hideRedirectionConfirmation: true });
     return token;
   } catch (error) {
     console.error("Error while obtaining the token:", error?.errorCode);
@@ -220,7 +220,7 @@ const authorizationToken = await getAuthorizationToken();
 
 > NOTE
 >
-> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
+> Si recibes un error durante esta etapa, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/fast-payments#:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
 ----[mlb]----  
 ![Experiencia de autenticación](/images/api-orders/supertoken-exp-2-mlb.png)
@@ -422,7 +422,7 @@ A continuación, puedes ver un ejemplo de la estructura de la respuesta del obje
 
 > NOTE
 >
-> Es importante que estas llamadas estén envueltas en un bloque _try-catch_ para que posibles errores sean procesados adecuadamente. Si llegaras a recibir uno, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/saved-payment-methods#editor_1:~:text=4.%20Procesar%20pago-,Posibles,-errores).
+> Es importante que estas llamadas estén envueltas en un bloque _try-catch_ para que posibles errores sean procesados adecuadamente. Si llegaras a recibir uno, puedes consultar nuestro [listado de posibles errores](/developers/es/docs/checkout-api-v2/payment-integration/fast-payments#:~:text=4.%20Procesar%20pago-,Posibles,-errores).
 
 Para que el comprador visualice estas opciones de pago en tu checkout y seleccione la que prefiera, debes renderizarlas en una pantalla. Ve a continuación un ejemplo de cómo exhibirlas. 
 
