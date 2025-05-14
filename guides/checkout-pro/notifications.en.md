@@ -61,13 +61,15 @@ To do this, follow the step-by-step instructions below:
 
 5. Finally, click on **Save configuration**. This will generate a **secret key** exclusive to the application, which will allow you to validate the authenticity of the received notifications, ensuring they were sent by Mercado Pago. Note that this generated key does not have an expiration date and its periodic renewal is not mandatory, although it is recommended. To do this, simply click the **Reset** button.
 
-### 2. Simular la recepción de la notificación
-Para garantizar que las notificaciones sean configuradas correctamente, es necesario simular su recepción. Para hacerlo, sigue el paso a paso a continuación.
-1. Después de configurar las URLs y los Eventos, haz clic en **Guardar configuración**.
-2. Luego, haz clic en **Simular** para probar si la URL indicada está recibiendo las notificaciones correctamente.
-3. En la pantalla de simulación, selecciona la URL que se va a probar, que puede ser **la URL de prueba o la de producción**.
-4. A continuación, elige el **tipo de evento** e ingresa la **identificación** que se enviará en el cuerpo de la notificación (Data ID).
-5. Por último, haz clic en **Enviar prueba** para verificar la solicitud, la respuesta proporcionada por el servidor y la descripción del evento. Recibirás una respuesta similar al ejemplo a continuación, que representa el `body` de la notificación recibida en tu servidor.
+### 2. Simulate notification reception
+
+To ensure that notifications are configured correctly, it is necessary to simulate their reception. Follow the steps below to perform the simulation:
+
+1. After configuring the URLs and Events, click **Save configuration**.
+2. Next, click **Simulate** to test whether the specified URL is receiving notifications correctly.
+3. On the simulation screen, select the URL to be tested, which can be **either the test URL or the production URL**.
+4. Then, choose the **event type** and enter the **ID** that will be sent in the notification body (Data ID).
+5. Finally, click **Send test** to verify the request, the response provided by the server, and the event description. You will receive a response similar to the example below, which represents the `body` of the notification received on your server.
 
 ```
 {
