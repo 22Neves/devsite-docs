@@ -10,7 +10,7 @@ A continuación, deberás instalar y configurar el SDK oficial de Mercado Pago:
 >
 > Instalar el SDK de Mercado Pago
 
-El **SDK de backend** está diseñado para manejar las operaciones del lado del servidor, permitiéndote crear y gestionar preferencias de pago, procesar transacciones y llevar a cabo otras operaciones críticas de manera segura. 
+El **SDK de backend** está diseñado para manejar las operaciones del lado del servidor, permitiéndote crear y gestionar :toolTipComponent[preferencias de pago]{content="Una preferencia de pago es un objeto o conjunto de información que representa el producto o servicio por el que deseas cobrar. Dentro del ecosistema de Mercado Pago, este objeto se conoce como `preference`."}, procesar transacciones y llevar a cabo otras operaciones críticas de manera segura. 
 
 > NOTE
 >

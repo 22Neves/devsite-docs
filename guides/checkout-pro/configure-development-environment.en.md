@@ -10,7 +10,7 @@ Next, you will need to install and configure the official Mercado Pago SDK:
 >
 > Install the Mercado Pago SDK
 
-The **backend SDK** is designed to handle server-side operations, allowing you to create and manage payment preferences, process transactions, and perform other critical operations securely.
+The **backend SDK** is designed to handle server-side operations, allowing you to create and manage :toolTipComponent[payment preferences]{content="A payment preference is an object or set of information that represents the product or service you want to charge for. Within the Mercado Pago ecosystem, this object is known as `preference`."}, process transactions, and perform other critical operations securely.
 
 > NOTE
 >
