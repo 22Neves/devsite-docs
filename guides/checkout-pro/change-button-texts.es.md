@@ -4,7 +4,7 @@
 >
 > Cambiar textos de los botones
 
-----[mlc, mlm, mpe, mco, mlu]----
+----[mlc, mpe, mco, mlu]----
 El botón de pago está **compuesto por el botón y la propuesta de valor** (`valueProp`), que puede ser personalizada de acuerdo con las opciones disponibles en Mercado Pago.
 
 Hay dos temas disponibles: el **default** (también utilizado cuando no se especifica ninguna configuración) y el **dark**. La elección del tema impacta el color de fondo del botón, de la propuesta de valor y el color de las imágenes dentro del botón.
