@@ -3568,8 +3568,8 @@
                         "example": "individual",
                         "description": {
                             "pt": "Tipo de entidade do pagador (somente para transferências bancárias)",
-                            "en": "Type of payer's entity (Only for bank transfers)",
-                            "es": "Tipo de entidad del pagador (Sólo para transferencias bancarias)"
+                            "en": "Type of payer's entity (only for bank transfers)",
+                            "es": "Tipo de entidad del pagador (solo para transferencias bancarias)"
                         },
                         "enum": [
                             {
