@@ -27,8 +27,8 @@ $preference = new MercadoPago\Preference();
 //...
 $preference->back_urls = array(
     "success" => "https://www.tu-sitio/success",
-    "failure" => "http://www.tu-sitio/failure",
-    "pending" => "http://www.tu-sitio/pending"
+    "failure" => "https://www.tu-sitio/failure",
+    "pending" => "https://www.tu-sitio/pending"
 );
 $preference->auto_return = "approved";
 // ...
@@ -40,8 +40,8 @@ preference = {
   // ...
   "back_urls": {
         "success": "https://www.tu-sitio/success",
-        "failure": "http://www.tu-sitio/failure",
-        "pending": "http://www.tu-sitio/pending"
+        "failure": "https://www.tu-sitio/failure",
+        "pending": "https://www.tu-sitio/pending"
     },
     "auto_return": "approved",
   // ...
@@ -51,9 +51,9 @@ preference = {
 PreferenceBackUrlsRequest backUrls =
 // ...
    PreferenceBackUrlsRequest.builder()
-       .success("https://www.seu-site/success")
-       .pending("https://www.seu-site/pending")
-       .failure("https://www.seu-site/failure")
+       .success("https://www.tu-sitio/success")
+       .pending("https://www.tu-sitio/pending")
+       .failure("https://www.tu-sitio/failure")
        .build();
 
 PreferenceRequest request = PreferenceRequest.builder().backUrls(backUrls).build();
@@ -80,8 +80,8 @@ var request = new PreferenceRequest
     BackUrls = new PreferenceBackUrlsRequest
     {
         Success = "https://www.tu-sitio/success",
-        Failure = "http://www.tu-sitio/failure",
-        Pending = "http://www.tu-sitio/pendings",
+        Failure = "https://www.tu-sitio/failure",
+        Pending = "https://www.tu-sitio/pendings",
     },
     AutoReturn = "approved",
 };

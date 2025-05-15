@@ -42,9 +42,9 @@ To define the `back_urls`, use one of the SDKs below informing the URLs where th
 $preference = new MercadoPago\Preference();
 //...
 $preference->back_urls = array(
-    "success" => "https://www.seu-site/success",
-    "failure" => "http://www.seu-site/failure",
-    "pending" => "http://www.seu-site/pending"
+    "success" => "https://www.your-site/success",
+    "failure" => "https://www.your-site/failure",
+    "pending" => "https://www.your-site/pending"
 );
 $preference->auto_return = "approved";
 // ...
@@ -55,9 +55,9 @@ var preference = {}
 preference = {
   // ...
   "back_urls": {
-        "success": "https://www.seu-site/success",
-        "failure": "http://www.seu-site/failure",
-        "pending": "http://www.seu-site/pending"
+        "success": "https://www.your-site/success",
+        "failure": "https://www.your-site/failure",
+        "pending": "https://www.your-site/pending"
     },
     "auto_return": "approved",
   // ...
@@ -67,9 +67,9 @@ preference = {
 PreferenceBackUrlsRequest backUrls =
 // ...
 PreferenceBackUrlsRequest.builder()
-       .success("https://www.seu-site/success")
-       .pending("https://www.seu-site/pending")
-       .failure("https://www.seu-site/failure")
+       .success("https://www.your-site/success")
+       .pending("https://www.your-site/pending")
+       .failure("https://www.your-site/failure")
        .build();
 
 PreferenceRequest request = PreferenceRequest.builder().backUrls(backUrls).build();
@@ -80,9 +80,9 @@ PreferenceRequest request = PreferenceRequest.builder().backUrls(backUrls).build
 preference_data = {
   # ...
   back_urls = {
-    success: 'https://www.tu-sitio/success',
-    failure: 'https://www.tu-sitio/failure',
-    pending: 'https://www.tu-sitio/pendings'
+    success: 'https://www.your-site/success',
+    failure: 'https://www.your-site/failure',
+    pending: 'https://www.your-site/pendings'
   },
   auto_return: 'approved'
   # ...
@@ -95,9 +95,9 @@ var request = new PreferenceRequest
     // ...
     BackUrls = new PreferenceBackUrlsRequest
     {
-        Success = "https://www.tu-sitio/success",
-        Failure = "http://www.tu-sitio/failure",
-        Pending = "http://www.tu-sitio/pendings",
+        Success = "https://www.your-site/success",
+        Failure = "https://www.your-site/failure",
+        Pending = "https://www.your-site/pendings",
     },
     AutoReturn = "approved",
 };
@@ -105,9 +105,9 @@ var request = new PreferenceRequest
 ```python
 preference_data = {
     "back_urls": {
-        "success": "https://www.tu-sitio/success",
-        "failure": "https://www.tu-sitio/failure",
-        "pending": "https://www.tu-sitio/pendings"
+        "success": "https://www.your-site/success",
+        "failure": "https://www.your-site/failure",
+        "pending": "https://www.your-site/pendings"
     },
     "auto_return": "approved"
 }
