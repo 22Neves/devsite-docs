@@ -362,7 +362,7 @@ npm install @mercadopago/sdk-react
 ```
 ]]]
 
-Luego, inicialice la integración configurando tu [clave pública](/developers/pt/docs/checkout-pro/additional-content/your-integrations/credentials) usando el siguiente código JavaScript.
+Luego, inicialice la integración configurando tu [clave pública](/developers/pt/docs/checkout-pro/resources/credentials) usando el siguiente código JavaScript.
 
 [[[
 ```Javascript

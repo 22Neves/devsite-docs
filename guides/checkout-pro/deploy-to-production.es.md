@@ -10,7 +10,7 @@ Para salir a producción, deberás **reemplazar las credenciales de prueba por l
 
 Para hacerlo, ingresa a [Tus integraciones](/developers/panel/app) y, el menú lateral, accede a **Producción > Credenciales de producción**. Allí encontrarás tu `public_key`  y `access_token` productivos, que deberás utilizar en lugar de los de la cuenta de prueba.
 
-Para más información, consulta nuestra documentación de [Credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials).
+Para más información, consulta nuestra documentación de [Credenciales](/developers/es/docs/checkout-pro/resources/credentials).
 
 ## Certificado SSL
 [TXTSNIPPET][/guides/snippets/ssl-certificate/ssl-certificate]

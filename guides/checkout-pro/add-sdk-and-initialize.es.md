@@ -47,7 +47,7 @@ Para continuar, deberás utilizar tu credencial `public key` de producción, a l
 >
 > Nota
 >
-> Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials) para más información.
+> Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/es/docs/checkout-pro/resources/credentials) para más información.
 
 También necesitarás utilizar el identificador de la preferencia de pago que obtuviste como respuesta en [Crear y configurar una preferencia de pago](/developers/es/docs/checkout-pro/create-payment-preference).
 
