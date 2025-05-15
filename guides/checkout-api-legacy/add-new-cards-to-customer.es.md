@@ -1,4 +1,4 @@
-# Agregar nuevas tarjetas a un cliente
+# Agregar nuevas tarjetas a un client
 
 Si es necesario, es posible agregar nuevas tarjetas a un cliente específico. Para ello, busque al cliente y defina los nuevos datos de la tarjeta utilizando uno de los códigos disponibles a continuación.
 
