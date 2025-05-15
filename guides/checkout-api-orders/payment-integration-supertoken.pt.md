@@ -275,6 +275,10 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
             "name": "Elo",
             "type": "credit_card",
             "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/elo.gif",
+            "security_code_settings": {
+                "length": "number",
+                "mode": "string"
+            },
             "card": {
                 "card_number": {
                     "last_four_digits": "3203",
@@ -333,6 +337,10 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
             "name": "Mastercard",
             "type": "credit_card",
             "thumbnail": "https://http2.mlstatic.com/storage/logos-api-admin/e2-xl.png",
+            "security_code_settings": {
+                "length": "number",
+                "mode": "string"
+            },
             "card": {
                 "card_number": {
                     "last_four_digits": "2969",
@@ -380,6 +388,10 @@ A seguir, você verá um exemplo da estrutura da resposta do objeto `userPayment
             "name": "Visa",
             "type": "credit_card",
             "thumbnail": "https://http2.mlstatic.com/storage/logos-api-admin/d589be70--xl.png",
+            "security_code_settings": {
+                "length": "number",
+                "mode": "string"
+            },
             "card": {
                 "card_number": {
                     "last_four_digits": "9867",
