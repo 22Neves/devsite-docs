@@ -13,4 +13,4 @@ Em [Suas integrações](/developers/panel/app), é possível consultar a lista d
 
 > NOTE
 >
-> Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação](/developers/pt/docs/checkout-pro/more-resources/application-details).
+> Caso necessário, é possível editar ou excluir uma aplicação. Neste último caso, tenha em mente que sua loja deixará de receber pagamentos por meio da integração com o Mercado Pago associada a essa aplicação. Para mais informações, acesse os [Detalhes da aplicação](/developers/pt/docs/checkout-pro/resources/application-details).

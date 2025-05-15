@@ -10,7 +10,7 @@ To go live, you need to **replace the test credentials with the production crede
 
 To do this, go to [Your integrations](/developers/panel/app) and, in the side menu, access **Production > Production credentials**. There you will find your productive `public_key` and `access_token`, which you should use instead of the test account credentials.
 
-For more information, check our [Credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials) documentation.
+For more information, check our [Credentials](/developers/en/docs/checkout-pro/resources/credentials) documentation.
 
 ## SSL Certificate
 
