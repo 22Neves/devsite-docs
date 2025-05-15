@@ -20,9 +20,8 @@ product_landing_hero:
 product_landing_what_it_offers:
  - title: Qué ofrece
  - message: Combina distintas funcionalidades para garantizar la seguridad y conversión de las operaciones.
- - benefit_title: API unificada
- - benefit_bullet: Ofrece múltiples experiencias de pago sin trabajar con varias APIs separadas.
- - benefit_bullet: Elige cómo procesar tus transacciones: [automática o manualmente](/developers/es/docs/checkout-api-v2/integration-model#bookmark_modos_de_procesamiento_de_orders).
+ - benefit_title: Flexibilidad para integrar
+ - benefit_bullet: Adapta a tus necesidades comerciales.
  - benefit_title: Personalización y seguridad
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
@@ -42,8 +41,8 @@ product_landing_how_works:
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en Checkout Transparente.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
- - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-application
+ - button_description: Conoce los tipos de integración
+ - button_link: /developers/es/docs/checkout-api/types-of-integration
 ---
 
 ---
@@ -54,7 +53,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/4/9/1746814244122-BR.ES.png
  - column_product: Checkout Transparente
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-v2/overview#:~:text=UY-,C%C3%B3mo,-integrar
+ - column_button_link: /developers/es/docs/checkout-api/overview#:~:text=UY-,C%C3%B3mo,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -107,8 +106,8 @@ product_landing_how_integrate:
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
- - button_description: Quiero comenzar a integrar
- - button_link: /developers/es/docs/checkout-api/create-application
+ - button_description: Conoce los tipos de integración
+ - button_link: /developers/es/docs/checkout-api/types-of-integration
 ---
 |||column2|||
 <div class="mermaid-overview">
@@ -150,9 +149,8 @@ product_landing_hero:
 product_landing_what_it_offers:
  - title: Qué ofrece
  - message: Combina distintas funcionalidades para garantizar la seguridad y conversión de las operaciones.
- - benefit_title: API unificada
- - benefit_bullet: Ofrece múltiples experiencias de pago sin trabajar con varias APIs separadas.
- - benefit_bullet: Elige cómo procesar tus transacciones: [automática o manualmente](/developers/es/docs/checkout-api-v2/integration-model#bookmark_modos_de_procesamiento_de_orders).
+ - benefit_title: Flexibilidad para integrar
+ - benefit_bullet: Adapta a tus necesidades comerciales.
  - benefit_title: Personalización y seguridad
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
@@ -173,7 +171,7 @@ product_landing_how_works:
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
  - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-application
+ - button_link: /developers/es/docs/checkout-api/types-of-integration
 ---
 
 ---
@@ -184,7 +182,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/28/1743196376445-overviewmlaes.png
  - column_product: Checkout API
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-v2/overview#:~:text=UY-,C%C3%B3mo,-integrar
+ - column_button_link: /developers/es/docs/checkout-api/overview#:~:text=UY-,C%C3%B3mo,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -235,8 +233,8 @@ product_landing_how_integrate:
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
- - button_description: Quiero comenzar a integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-application
+ - button_description: Conoce los tipos de integración
+ - button_link: /developers/es/docs/checkout-api/types-of-integration
 ---
 |||column2|||
 <div class="mermaid-overview">
@@ -278,9 +276,8 @@ product_landing_hero:
 product_landing_what_it_offers:
  - title: Qué ofrece
  - message: Combina distintas funcionalidades para garantizar la seguridad y conversión de las operaciones.
- - benefit_title: API unificada
- - benefit_bullet: Ofrece múltiples experiencias de pago sin trabajar con varias APIs separadas.
- - benefit_bullet: Elige cómo procesar tus transacciones: [automática o manualmente](/developers/es/docs/checkout-api-v2/integration-model#bookmark_modos_de_procesamiento_de_orders).
+ - benefit_title: Flexibilidad para integrar
+ - benefit_bullet: Adapta a tus necesidades comerciales.
  - benefit_title: Personalización y seguridad
  - benefit_bullet: Construye tu checkout a la medida de tus preferencias.
  - benefit_bullet: Garantiza la confidencialidad e integridad de los datos con la normativa PCI.
@@ -300,8 +297,8 @@ product_landing_how_works:
  - list_title: El comprador selecciona los productos o servicios deseados en tu tienda.
  - list_title: En la pantalla de pago, elige uno de los medios de pago configurados en tu checkout.
  - list_title: Ingresa los datos necesarios y finaliza la compra en el ambiente de tu tienda.
- - button_description: Cómo integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-application 
+ - button_description: Conoce los tipos de integración
+ - button_link: /developers/es/docs/checkout-api/types-of-integration
 ---
 
 ---
@@ -312,7 +309,7 @@ product_landing_what_differentiates:
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/3/1/1743539838808-overviewmlmes.png
  - column_product: Checkout API
  - column_button_text: Cómo integrar
- - column_button_link: /developers/es/docs/checkout-api-v2/overview#:~:text=UY-,C%C3%B3mo,-integrar
+ - column_button_link: /developers/es/docs/checkout-api/overview#:~:text=UY-,C%C3%B3mo,-integrar
  - column_image: https://http2.mlstatic.com/storage/dx-devsite/docs-assets/custom-upload/2025/2/10/1741608179479-prodchobricks4x.png
  - column_product: Checkout Bricks
  - column_button_text: Ir al resumen
@@ -363,8 +360,8 @@ product_landing_how_integrate:
  - list_item: Configurar las notificaciones de pago
  - list_item: Probar tu integración
  - list_item: Salir a producción
- - button_description: Quiero comenzar a integrar
- - button_link: /developers/es/docs/checkout-api-v2/create-application
+ - button_description: Conoce los tipos de integración
+ - button_link: /developers/es/docs/checkout-api/types-of-integration
 ---
 |||column2|||
 <div class="mermaid-overview">

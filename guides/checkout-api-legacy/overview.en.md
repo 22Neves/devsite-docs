@@ -25,7 +25,6 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
  - benefit_bullet: Offer a purchasing process with just a few steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
@@ -43,8 +42,8 @@ product_landing_how_works:
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
- - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-application
+ - button_description: Discover the types of integration
+ - button_link: /developers/en/docs/checkout-api/types-of-integration
 ---
 
 ---
@@ -105,8 +104,8 @@ product_landing_how_integrate:
  - list_item: Configure payment notifications
  - list_item: Test your integration
  - list_item: Go to production
- - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api-v2/create-application
+ - button_description: Discover the types of integration
+ - button_link: /developers/en/docs/checkout-api/types-of-integration
 ---
 |||column2|||
 <div class="mermaid-overview">
@@ -154,7 +153,6 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
  - benefit_bullet: Offer a purchasing process with just a few steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
@@ -172,8 +170,8 @@ product_landing_how_works:
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
- - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-application
+ - button_description: Discover the types of integration
+ - button_link: /developers/en/docs/checkout-api/types-of-integration
 ---
 
 ---
@@ -232,8 +230,8 @@ product_landing_how_integrate:
  - list_item: Configure payment notifications
  - list_item: Test your integration
  - list_item: Go to production
- - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api-v2/create-application
+ - button_description: Discover the types of integration
+ - button_link: /developers/en/docs/checkout-api/types-of-integration
 ---
 |||column2|||
 <div class="mermaid-overview">
@@ -281,7 +279,6 @@ product_landing_what_it_offers:
  - benefit_bullet: Receive card transaction data securely and with minimal hassle, enabling a simplified path to PCI certification.
  - benefit_title: Flexibility to integrate
  - benefit_bullet: Adapt the integration to your business needs.
- - benefit_bullet: Choose how transactions will be processed: [manually or automatically](/developers/en/docs/checkout-api-v2/integration-model#bookmark_processing_modes_for_orders).
  - benefit_title: Payment optimization
  - benefit_bullet: Offer a purchasing process with just a few steps.
  - benefit_bullet: Ensure a practical and secure completion of the purchase.
@@ -299,8 +296,8 @@ product_landing_how_works:
  - list_title: Once in the payment screen, they choose one of the payment methods integrated to your checkout.
  - list_title: Then, they must provide the necessary details and complete the purchase without leaving your store.
   - list_title: Once Mercado Pago’s APIs process the payment, the purchase is confirmed.
- - button_description: How to integrate
- - button_link: /developers/en/docs/checkout-api-v2/create-application 
+ - button_description: Discover the types of integration
+ - button_link: /developers/en/docs/checkout-api/types-of-integration
 ---
 
 ---
@@ -359,8 +356,8 @@ product_landing_how_integrate:
  - list_item: Configure payment notifications
  - list_item: Test your integration
  - list_item: Go to production
- - button_description: I want to start integrating
- - button_link: /developers/en/docs/checkout-api-v2/create-application
+ - button_description: Discover the types of integration
+ - button_link: /developers/en/docs/checkout-api/types-of-integration
 ---
 |||column2|||
 <div class="mermaid-overview">
