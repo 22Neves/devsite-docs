@@ -4,7 +4,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 > RED_MESSAGE
 >
-> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the [endpoints of the new Orders API](/developers/en/reference/order/in-person-payments/point/terminal/get). <br> 
+> Mercado Pago is evolving the way we integrate, and we're now offering a new API for integrations with Mercado Pago Point, which will replace the current one. If you're integrating this payment solution for the first time, we recommend using the [endpoints of the new Orders API](/developers/en/reference/orders/in-person-payments/point/terminal/get). <br> 
 > If you already have an integration with Point, you will soon receive more information about the migration process.
 
 ![Diagram 1](/images/point-api/1-diagram-en.png)

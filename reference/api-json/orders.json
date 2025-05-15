@@ -3563,6 +3563,33 @@
                             "es": "Correo electrónico del pagador"
                         }
                     },
+                    "entity_type": {
+                        "type": "string",
+                        "example": "individual",
+                        "description": {
+                            "pt": "Tipo de entidade do pagador (somente para transferências bancárias)",
+                            "en": "Type of payer's entity (only for bank transfers)",
+                            "es": "Tipo de entidad del pagador (solo para transferencias bancarias)"
+                        },
+                        "enum": [
+                            {
+                                "title": "individual",
+                                "description": {
+                                    "en": "Payer is individual.",
+                                    "es": "El pagador es un particular.",
+                                    "pt": "O pagador é um indivíduo privado."
+                                }
+                            },
+                            {
+                                "title": "association",
+                                "description": {
+                                    "en": "Payer is an association.",
+                                    "es": "El pagador es una asociación.",
+                                    "pt": "O pagador é uma associação."
+                                }
+                            }
+                        ]
+                    },
                     "first_name": {
                         "type": "string",
                         "example": "John",

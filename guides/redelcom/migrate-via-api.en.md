@@ -22,14 +22,14 @@ The Order API provides various endpoints that allow you to perform the same func
 > 
 > Important
 >
-> To use these endpoints, it is necessary for your terminal to be configured in `PDV` mode. If it is set to `STANDALONE` mode, it will be understood that you want to process payments in a non-integrated manner, which will prevent the use of our API. To configure your terminal in POS mode, use the endpoint [Update terminal operation mode](/developers/en/reference/order/in-person-payments/point/change-operation-mode/patch), which allows you to change the operating mode of the terminals.
+> To use these endpoints, it is necessary for your terminal to be configured in `PDV` mode. If it is set to `STANDALONE` mode, it will be understood that you want to process payments in a non-integrated manner, which will prevent the use of our API. To configure your terminal in POS mode, use the endpoint [Update terminal operation mode](/developers/en/reference/orders/in-person-payments/point/change-operation-mode/patch), which allows you to change the operating mode of the terminals.
 
-- [Get terminals](/developers/en/reference/order/in-person-payments/point/terminal/get): This endpoint allows you to obtain a list of the Point terminals associated with your Mercado Pago account. It will provide you with their respective ID and the operating mode in which they are functioning.
-- [Update terminal operation mode](/developers/en/reference/order/in-person-payments/point/change-operation-mode/patch):  If the terminal you are trying to integrate is in `STANDALONE` operational mode, you will need to update it to POS mode using this endpoint. This will allow you to operate in integrated mode with our API.
-- [Create order](/developers/en/reference/order/in-person-payments/point/create/post): This endpoint allows you to create an order that contains payment transactions for Mercado Pago Point. You can associate it with the desired terminal using its ID.
-- [Get order by ID](/developers/en/reference/order/in-person/point/get-order/get): This allows you to retrieve all the information about an order using the ID obtained in the response to its creation.
-- [Cancel order by ID](/developers/en/reference/order/in-person-payments/point/cancel-order/post): This allows you to cancel an order created for Mercado Pago Point using the reference ID obtained in the response to its creation.
-- [Refund order](/developers/en/reference/order/in-person-payments/point/refund-order/post): This endpoint allows to create a refund for payment transactions associated with an order for Mercado Pago Point.
+- [Get terminals](/developers/en/reference/orders/in-person-payments/point/terminal/get): This endpoint allows you to obtain a list of the Point terminals associated with your Mercado Pago account. It will provide you with their respective ID and the operating mode in which they are functioning.
+- [Update terminal operation mode](/developers/en/reference/orders/in-person-payments/point/change-operation-mode/patch):  If the terminal you are trying to integrate is in `STANDALONE` operational mode, you will need to update it to POS mode using this endpoint. This will allow you to operate in integrated mode with our API.
+- [Create order](/developers/en/reference/orders/in-person-payments/point/create/post): This endpoint allows you to create an order that contains payment transactions for Mercado Pago Point. You can associate it with the desired terminal using its ID.
+- [Get order by ID](/developers/en/reference/orders/in-person/point/get-order/get): This allows you to retrieve all the information about an order using the ID obtained in the response to its creation.
+- [Cancel order by ID](/developers/en/reference/orders/in-person-payments/point/cancel-order/post): This allows you to cancel an order created for Mercado Pago Point using the reference ID obtained in the response to its creation.
+- [Refund order](/developers/en/reference/orders/in-person-payments/point/refund-order/post): This endpoint allows to create a refund for payment transactions associated with an order for Mercado Pago Point.
 
 ## Print configuration
 

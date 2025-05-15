@@ -7,7 +7,7 @@ content_section_with_media:
 
 > RED_MESSAGE
 >
-> Mercado Pago está evolucionando la forma de integrar y ahora ofrecemos una nueva API para realizar integraciones con Mercado Pago Point, que descontinuará la actual. En caso de estar integrando esta solución de cobro por primera vez, recomendamos que utilices los [endpoints de la nueva API Orders](/developers/es/reference/order/in-person-payments/point/terminal/get). <br>
+> Mercado Pago está evolucionando la forma de integrar y ahora ofrecemos una nueva API para realizar integraciones con Mercado Pago Point, que descontinuará la actual. En caso de estar integrando esta solución de cobro por primera vez, recomendamos que utilices los [endpoints de la nueva API Orders](/developers/es/reference/orders/in-person-payments/point/terminal/get). <br>
 > Si, en cambio, ya cuentas con una integración con Mercado Pago Point, próximamente recibirás más información sobre el proceso de migración.
 
 --- mini_landing_separator ---

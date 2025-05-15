@@ -500,6 +500,34 @@ Após configurar a credencial, adicionar o formulário de pagamento e inicializa
 
 Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função abaixo.
 
+----[mlm]----
+[[[
+```javascript
+    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
+      const { label, value } = labelsAndKeys;
+
+      elem.options.length = 0;
+
+      const tempOptions = document.createDocumentFragment();
+
+      options.forEach(option => {
+        const optValue = option[value];
+        const optLabel = option[label];
+
+        const opt = document.createElement('option');
+        opt.value = optValue;
+        opt.textContent = optLabel;
+
+        tempOptions.appendChild(opt);
+      });
+
+      elem.appendChild(tempOptions);
+    }
+```
+]]]
+
+------------
+----[mla, mlb]----
 [[[
 ```javascript
 
@@ -537,6 +565,7 @@ Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationTy
 ```
 ]]]
 
+------------
 :::
 
 :::AccordionComponent{title="Obter métodos de pagamento do cartão" pill="client-side"} 

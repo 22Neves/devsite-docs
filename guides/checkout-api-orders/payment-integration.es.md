@@ -1,4 +1,4 @@
-# Configurar medios de pago
+# Integrar medios de pago
 
 Con ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ puedes elegir qué medios de pago deseas disponibilizar en tiendas online.
 
