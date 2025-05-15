@@ -22,14 +22,14 @@ A API de Order fornece diversos endpoints que permitem executar as mesmas funcio
 > 
 > Importante
 >
-> Para utilizar esses endpoints, é necessário que seu terminal esteja configurado no modo `PDV`. Se estiver configurado no modo `STANDALONE`, entenderemos que você deseja processar pagamentos de forma não integrada, o que impedirá o uso da nossa API. Para configurar seu terminal no modo PDV, utilize o endpoint [Atualizar o modo de operação do terminal](/developers/pt/reference/order/in-person-payments/point/change-operation-mode/patch), que permite modificar o modo de operação dos terminals.
+> Para utilizar esses endpoints, é necessário que seu terminal esteja configurado no modo `PDV`. Se estiver configurado no modo `STANDALONE`, entenderemos que você deseja processar pagamentos de forma não integrada, o que impedirá o uso da nossa API. Para configurar seu terminal no modo PDV, utilize o endpoint [Atualizar o modo de operação do terminal](/developers/pt/reference/orders/in-person-payments/point/change-operation-mode/patch), que permite modificar o modo de operação dos terminals.
 
-- [Obter terminals](/developers/pt/reference/order/in-person-payments/point/terminal/get): Este endpoint permite obter uma lista dos terminals Point associados à sua conta do Mercado Pago. Ele indicará seu respectivo ID e o modo de operação em que está funcionando.
-- [Atualizar o modo de operação do terminal](/developers/pt/reference/order/in-person-payments/point/change-operation-mode/patch): Caso o terminal com o qual você esteja tentando integrar esteja no modo operacional `STANDALONE`, será necessário atualizá-lo para o modo PDV utilizando este endpoint. Assim, você poderá operar de forma integrada com nossa API.
-- [Criar order](/developers/pt/reference/order/in-person-payments/point/create/post): Este endpoint permite criar uma order que contenha transações de pagamento para o Mercado Pago Point. Você poderá associá-lo ao terminal desejado por meio do seu ID.
-- [Obter order por ID](/developers/pt/reference/order/in-person/point/get-order/get): Permite consultar todas as informações sobre uma order utilizando o ID obtido na resposta à sua criação.
-- [Cancelar order por ID](/developers/pt/reference/order/in-person-payments/point/cancel-order/post): Permite cancelar uma order criada para o Mercado Pago Point utilizando o ID de referência obtido na resposta à sua criação.
-- [Reembolsar uma order](/developers/pt/reference/order/in-person-payments/point/refund-order/post): Permite criar uma devolução total de uma transação de pagamento associada a uma order para Mercado Pago Point. 
+- [Obter terminals](/developers/pt/reference/orders/in-person-payments/point/terminal/get): Este endpoint permite obter uma lista dos terminals Point associados à sua conta do Mercado Pago. Ele indicará seu respectivo ID e o modo de operação em que está funcionando.
+- [Atualizar o modo de operação do terminal](/developers/pt/reference/orders/in-person-payments/point/change-operation-mode/patch): Caso o terminal com o qual você esteja tentando integrar esteja no modo operacional `STANDALONE`, será necessário atualizá-lo para o modo PDV utilizando este endpoint. Assim, você poderá operar de forma integrada com nossa API.
+- [Criar order](/developers/pt/reference/orders/in-person-payments/point/create/post): Este endpoint permite criar uma order que contenha transações de pagamento para o Mercado Pago Point. Você poderá associá-lo ao terminal desejado por meio do seu ID.
+- [Obter order por ID](/developers/pt/reference/orders/in-person/point/get-order/get): Permite consultar todas as informações sobre uma order utilizando o ID obtido na resposta à sua criação.
+- [Cancelar order por ID](/developers/pt/reference/orders/in-person-payments/point/cancel-order/post): Permite cancelar uma order criada para o Mercado Pago Point utilizando o ID de referência obtido na resposta à sua criação.
+- [Reembolsar uma order](/developers/pt/reference/orders/in-person-payments/point/refund-order/post): Permite criar uma devolução total de uma transação de pagamento associada a uma order para Mercado Pago Point. 
 
 ## Configuração de impressões
 
