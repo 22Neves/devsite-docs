@@ -168,7 +168,7 @@ items: [
 PreferenceRequest preferenceRequest = PreferenceRequest.builder()
 .items(items).build();
 PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
+Preference preference = client.create(preferenceRequest);
 ```
 ```ruby
 # Cria um objeto de preferência
@@ -278,7 +278,7 @@ items: [
 PreferenceRequest preferenceRequest = PreferenceRequest.builder()
 .items(items).build();
 PreferenceClient client = new PreferenceClient();
-Preference preference = client.create(request);
+Preference preference = client.create(preferenceRequest);
 ```
 ```ruby
 # Cria um objeto de preferência
