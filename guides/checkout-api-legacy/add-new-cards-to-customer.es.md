@@ -197,5 +197,5 @@ La respuesta traerá el siguiente resultado.
     "customer_id": "255276729-yLOTNHQjpDWw1X",
     "user_id": "255276729",
     "live_mode": false
-}
+}a
 ```
