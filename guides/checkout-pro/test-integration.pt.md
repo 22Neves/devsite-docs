@@ -2,13 +2,13 @@
 
 O processo de testes permite verificar se as configurações realizadas durante a sua integração funcionam corretamente e se os pagamentos serão processados sem erros, evitando possíveis falhas ao disponibilizar o checkout para os compradores finais.
 
-Para validar sua integração, é necessário configurar o ambiente de testes, criando um usuário de teste comprador. Após essa etapa, você poderá simular um pagamento de teste utilizando a conta desse usuário.
+Para garantir o sucesso da sua integração, é fundamental configurar o ambiente de testes criando um usuário de teste de comprador. Após concluir essa configuração, será possível simular pagamentos de teste utilizando a conta desse usuário.
 
 A seguir, apresentamos o passo a passo:
 
 ## Criar conta de teste comprador
 
-Para testar sua integração, você deve realizar uma compra de teste utilizando um usuário de teste comprador, simulando a ação de um comprador real. Siga os passos abaixo para criar um usuário de teste comprador.
+Para testar sua integração, você deve realizar uma compra de teste utilizando um usuário de teste comprador. Para isso, siga os passos abaixo:
 
 1. No [Mercado Pago Developers](/developers/pt/docs), navegue até [Suas integrações](/developers/panel/app) na parte superior direita da tela e clique no cartão correspondente à aplicação com a qual você está desenvolvendo.
 2. Depois de acessar "Detalhes da aplicação", vá para a seção **Contas de teste** no menu lateral esquerdo e clique no botão **+ Criar conta de teste**.

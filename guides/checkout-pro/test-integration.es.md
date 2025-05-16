@@ -2,16 +2,13 @@
 
 El proceso de pruebas te permite verificar si las configuraciones realizadas durante tu integración funcionan correctamente, y si los pagos se procesarán sin errores, evitando posibles fallas al poner el checkout a disposición de los compradores finales.
 
-Para iniciar este proceso, es necesario que **configures tu ambiente de pruebas** creando usuarios de pruebas para vendedor y comprador. Esto te permitirá configurar una aplicación de pruebas, obtener las credenciales necesarias y aplicarlas en tu integración. Después de esto, podrás realizar un pago de prueba utilizando una cuenta de prueba de comprador. 
+Para probar tu integración, es fundamental configurar el entorno de pruebas creando un usuario de prueba del tipo comprador. Una vez completada esta configuración, será posible simular pagos de prueba utilizando la cuenta de dicho usuario.
 
-A continuación, te presentamos los pasos a seguir:
+A continuación, presentamos el paso a paso:
 
-## 1. Crear cuenta de prueba de vendedor
-[TXTSNIPPET][/guides/snippets/test-cross/configure-test-seller-user]
+## Crear cuenta de prueba comprador
 
-## 2. Crear cuenta de prueba comprador
-
-Para probar tu integración, deberás realizar una compra de prueba utilizando un usuario de prueba comprador, simulando la acción de un comprador real. Sigue los pasos a continuación para crear un usuario de prueba comprador.
+Para probar tu integración, debes realizar una compra de prueba utilizando un usuario de prueba comprador. Para ello, sigue los pasos a continuación:
 
 1. En [Mercado Pago Developers](/developers/es/docs), navega hasta [Tus integraciones](/developers/panel/app) en la pantalla superior derecha, y haz clic en la tarjeta correspondiente a la aplicación con la que estás desarrollando.
 2. Habiendo accedido a “Detalles de la aplicación”, dirígete a la sección **Cuentas de prueba** en el menú lateral izquierdo, y haz clic en el botón **+ Crear cuenta de prueba**.

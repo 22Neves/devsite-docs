@@ -2,16 +2,13 @@
 
 The testing process allows you to verify whether the configurations made during your integration work correctly, and whether payments will be processed without errors, avoiding potential failures when making the checkout available to end buyers.
 
-To start this process, it is necessary to set up your testing environment by creating test users for the seller and the buyer. This will allow you to configure a test application, obtain the required credentials, and apply them in your integration. After this, you can perform a test payment using a buyer's test account.
+To ensure the success of your integration, it is essential to set up the testing environment by creating a test user of the buyer type. Once this setup is complete, you will be able to simulate test payments using that user's account.
 
-Below are the steps to follow:
+Below, we present the step-by-step process:
 
-## 1. Create test seller account
-[TXTSNIPPET][/guides/snippets/test-cross/configure-test-seller-user]
+## Create a test buyer account
 
-## 2. Create test buyer account
-
-To test your integration, you need to perform a test purchase using a test buyer account, simulating the action of a real buyer. Follow the steps below to create a test buyer account.
+To test your integration, you must perform a test purchase using a test buyer user. To do this, follow the steps below:
 
 1. In [Mercado Pago Developers](/developers/en/docs), navigate to [Your integrations](/developers/panel/app) at the top right of the screen and click on the card corresponding to the application you are developing.
 2. After accessing "Application Details," go to the **Test Accounts** section in the left sidebar and click the **+ Create Test Account** button.
