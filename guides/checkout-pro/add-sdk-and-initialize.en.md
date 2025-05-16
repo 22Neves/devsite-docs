@@ -45,8 +45,6 @@ To continue, you must use your production `public key` credential, which can be 
 
 > NOTE
 >
-> Note
->
 > If you are developing for someone else, you will be able to access the credentials of applications you do not manage. See [Share credentials](/developers/en/docs/checkout-pro/resources/credentials) for more information.
 
 You will also need to use the payment preference ID that you obtained as a response in [Create and configure a payment preference](/developers/en/docs/checkout-pro/create-payment-preference).
