@@ -1,6 +1,6 @@
 # Obtain test credentials
 
-During integration, use test credentials provided by a test seller user. This will allow you to validate the process in a secure environment before using production credentials, ensuring everything works correctly.
+During integration, use **test credentials** provided by a test seller user. These will allow you to perform the necessary configurations and tests without creating real payments in production.
 
 To do this, follow the steps below:
 

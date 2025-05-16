@@ -1,6 +1,6 @@
 # Obter credenciais de teste
 
-Durante a integração, utilize credenciais de teste fornecidas por um usuário vendedor de teste. Isso permitirá que você valide o processo em um ambiente seguro antes de utilizar credenciais produtivas, garantindo que tudo funcione corretamente.
+Durante a integração, utilize **credenciais de teste** fornecidas por um usuário vendedor de teste. Isso permitirá que você realize as configurações e testes necessários sem criar pagamentos reais em produção.
 
 Para isso, siga os passos abaixo:
 

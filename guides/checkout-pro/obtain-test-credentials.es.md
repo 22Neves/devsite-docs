@@ -1,6 +1,6 @@
 # Obtener credenciales de prueba
 
-Durante la integración, utiliza credenciales de prueba proporcionadas por un usuario vendedor de prueba. Esto te permitirá validar el proceso en un entorno seguro antes de utilizar credenciales productivas, garantizando que todo funcione correctamente.
+Durante la integración, utiliza **credenciales de prueba** proporcionadas por un usuario vendedor de prueba. Estas te permitirán realizar las configuraciones y pruebas necesarias sin crear pagos reales en producción. 
 
 Para ello, sigue los pasos a continuación:
 
