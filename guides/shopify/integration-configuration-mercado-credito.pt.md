@@ -51,6 +51,8 @@ Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos aba
 ----[mla]----
 4. Clique em **Adicionar forma de pagamento** e procure o aplicativo com o nome "Mercado Pago Cuotas sin Tarjeta". 
 
+![installation cards 3](/images/shopify/installation-credits-1-es-new-mla.png)  
+
 ------------
 5. Uma vez que o tenha encontrado, selecione-o e clique em **Instalar**. Leia atentamente as informações sobre as permissões solicitadas e clique em **Instalar** novamente.  
 
