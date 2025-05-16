@@ -199,7 +199,7 @@ Si la lectura fue correcta, la respuesta debería verse como el ejemplo a contin
     "collector": {
         "name": "Test Test",
         "account": "0000009388000001809754",
-        "identification_number": "27326594305",
+        "identification_number": "20000000001",
         "mcc": "5912",
         "postal_code": "c1430dnn"
     },
@@ -253,4 +253,3 @@ Ten en cuenta las siguientes consideraciones para funcionar en ambientes product
  * Asegúrate de ofrecer siempre una experiencia de usuario adecuada: proporciona mensajes claros para optimizar la comprensión de cada escenario de pago, falla o error que suceda al escanear los códigos QRs utilizando la billetera.
  * Recuerda incluir correctamente los patrones de códigos QR de Mercado Pago a partir de su dominio. En la mayoría de los casos, se tratará de un **dominio invertido**, **com.mercadolibre**. Pero también es posible encontrar QRs no EMVCO, como **https://mpago.la/pos/<id>** o **https://mpago.la/s/qr/<id1><id2>**.
  * Identifica las operaciones con códigos trazables que permitan a COELSA reconocer aquellas pertenecientes a Mercado Pago. Para eso, envía el `order.id` de la IEP de Mercado Pago como `qr_trx_id` a la API de COELSA.
-

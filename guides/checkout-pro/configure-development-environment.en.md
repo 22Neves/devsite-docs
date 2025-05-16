@@ -81,7 +81,7 @@ To initialize the Mercado Pago library, you will need to use your **credentials*
 
 > NOTE
 >
-> If you are developing for someone else, you can access the credentials of applications you do not manage. See [Share credentials](/developers/en/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_share_credentials) for more information.
+> If you are developing for someone else, you can access the credentials of applications you do not manage. See [Share credentials](/developers/en/docs/checkout-pro/resources/credentials#bookmark_share_credentials) for more information.
 
 First, you will need to **activate the production credentials**. To do this, you will need to complete some information about your business by following the steps below.
 

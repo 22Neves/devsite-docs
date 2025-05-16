@@ -501,6 +501,34 @@ Después de configurar la credencial, añadir el formulario de pago y inicializa
 
 Al incluir el elemento del tipo `select` con el id: `form-checkout__identificationType`  que se encuentra en el formulario, será posible completar automáticamente las opciones disponibles al llamar la siguiente función.
 
+----[mlm]----
+[[[
+```javascript
+    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
+      const { label, value } = labelsAndKeys;
+
+      elem.options.length = 0;
+
+      const tempOptions = document.createDocumentFragment();
+
+      options.forEach(option => {
+        const optValue = option[value];
+        const optLabel = option[label];
+
+        const opt = document.createElement('option');
+        opt.value = optValue;
+        opt.textContent = optLabel;
+
+        tempOptions.appendChild(opt);
+      });
+
+      elem.appendChild(tempOptions);
+    }
+```
+]]]
+
+------------
+----[mla, mlb]----
 [[[
 ```javascript
 
@@ -538,6 +566,7 @@ Al incluir el elemento del tipo `select` con el id: `form-checkout__identificati
 ```
 ]]]
 
+------------
 :::
 :::AccordionComponent{title="Obtener métodos de pago de la tarjeta" pill="client-side"}
 En esta etapa se validan los datos de los compradores cuando rellenan los campos necesarios para realizar el pago. Para poder identificar el método de pago utilizado por el comprador, introduce el siguiente código directamente en tu proyecto. 

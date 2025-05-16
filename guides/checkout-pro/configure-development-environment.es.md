@@ -81,7 +81,7 @@ Para inicializar la biblioteca de Mercado Pago, deberás utilizar tus **credenci
 
 > NOTE
 >
-> Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/es/docs/checkout-pro/additional-content/your-integrations/credentials#bookmark_compartir_credenciales) para más información.
+> Si estás desarrollando para otra persona, podrás acceder a las credenciales de las aplicaciones que no administras. Consulta [Compartir credenciales](/developers/es/docs/checkout-pro/resources/credentials#bookmark_compartir_credenciales) para más información.
 
 Primero, deberás **activar las credenciales de producción**. Para hacerlo, deberás completar algunos datos datos sobre tu negocio siguiendo los pasos a continuación.
 

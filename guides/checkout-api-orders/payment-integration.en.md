@@ -1,4 +1,4 @@
-#  Configure payment methods
+# Integrate payment methods
 
 With ----[mlb]---- Checkout Transparente,------------ ----[mla, mlm]---- Checkout API,------------ you can choose which payment methods you want to make available in online stores.
 

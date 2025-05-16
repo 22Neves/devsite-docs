@@ -198,7 +198,7 @@ If the reading was correct, the response should look like the example below.
     "collector": {
         "name": "Test Test",
         "account": "0000009388000001809754",
-        "identification_number": "27326594305",
+        "identification_number": "20000000001",
         "mcc": "5912",
         "postal_code": "c1430dnn"
     },

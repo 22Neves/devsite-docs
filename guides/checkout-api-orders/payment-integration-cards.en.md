@@ -503,6 +503,34 @@ After configuring the credential, adding the payment form and initializing the c
 
 By including the element of type `select` with the id: `form-checkout__identificationType` that is in the form, it will be possible to automatically fill in the available options when calling the function below.
 
+----[mlm]----
+[[[
+```javascript
+    function createSelectOptions(elem, options, labelsAndKeys = { label: "name", value: "id" }) {
+      const { label, value } = labelsAndKeys;
+
+      elem.options.length = 0;
+
+      const tempOptions = document.createDocumentFragment();
+
+      options.forEach(option => {
+        const optValue = option[value];
+        const optLabel = option[label];
+
+        const opt = document.createElement('option');
+        opt.value = optValue;
+        opt.textContent = optLabel;
+
+        tempOptions.appendChild(opt);
+      });
+
+      elem.appendChild(tempOptions);
+    }
+```
+]]]
+
+------------
+----[mla, mlb]----
 [[[
 ```javascript
 
@@ -540,6 +568,7 @@ By including the element of type `select` with the id: `form-checkout__identific
 ```
 ]]]
 
+------------
 :::
 :::AccordionComponent{title="Get card payment methods" pill="client-side"}
 
