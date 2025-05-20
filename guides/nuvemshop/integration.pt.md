@@ -75,7 +75,7 @@ Ao revogar o acesso do Mercado Pago pela seção de integrações da sua conta, 
 
 Se o acesso ao Mercado Pago for revogado, sua loja deixará de processar pagamentos pelos meios integrados com a plataforma. Para reativar o processamento de pagamentos, siga os passos abaixo:
 
-1. Acesse a seção de **integrações** da sua loja na Nuvemshop e siga o fluxo de instalação do Mercado Pago para autorizar o acesso novamente. Para mais detalhes, consulte a documentação [Configuração da integração.] (/developers/pt/docs/nuvemshop/integration#bookmark_configuração_da_integração)
+1. Acesse a seção de **integrações** da sua loja na Nuvemshop e siga o fluxo de instalação do Mercado Pago para autorizar o acesso novamente. Para mais detalhes, consulte a documentação [Configuração da integração] (/developers/pt/docs/nuvemshop/integration#bookmark_configuração_da_integração).
 
 2. Após concluir a integração, revise as opções de pagamento configuradas. Verifique métodos de parcelamento, taxas e preferências para garantir que estejam adequadas às necessidades da sua loja.
 
