@@ -63,3 +63,24 @@ Done! Login with the new account you want to use. You can change it at any time.
 ------------
 
 Ready! Installation was successful and you can now receive payments.
+
+## Revoke Mercado Pago access
+
+When you revoke Mercado Pago access from the integrations section of your account, the connection between your store and Nuvemshop is removed. This prevents the processing of new payments until the integration is restored.
+
+> RED_MESSAGE
+> 
+> This action cannot be undone automatically. We recommend revoking access only when you are certain that you want to disable Mercado Pago as a payment method in your store.
+
+### After revoke permissions
+
+If access to Mercado Pago is revoked, your store will stop processing payments through the integrated methods on the platform. To reactivate payment processing, follow the steps below:
+
+1. Go to the **integrations** section of your store in Nuvemshop and follow the Mercado Pago installation flow to authorize access again. 
+For more details, check the documentation [Integration Setup.] (/developers/pt/docs/nuvemshop/integration#bookmark_configuração_da_integração)
+
+2. After completing the integration, review the configured payment options.
+Check payment methods, installments, and preferences to ensure they meet your store's needs.
+
+Access restored!  Your store is ready to start processing payments again with Mercado Pago.
+

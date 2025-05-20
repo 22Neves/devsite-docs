@@ -63,7 +63,7 @@ Pronto! Inicie a seção com a nova conta que deseja usar. Você poderá alterá
 5. Pronto! Basta você refazer o processo para **ativar uma nova conta**.
 
 ------------
-# Revogar acesso do Mercado Pago
+## Revogar acesso do Mercado Pago
 
 Ao revogar o acesso do Mercado Pago pela seção de integrações da sua conta, o vínculo da loja com a Nuvemshop é removido. Isso impede o processamento de novos pagamentos até que a integração seja restabelecida.
 
@@ -71,7 +71,7 @@ Ao revogar o acesso do Mercado Pago pela seção de integrações da sua conta, 
 > 
 > Esta ação não pode ser desfeita de forma automática. Recomendamos revogar o acesso apenas quando tiver certeza de que deseja desativar o Mercado Pago como meio de pagamento na sua loja.
 
-## Após revogar as permissões
+### Após revogar as permissões
 
 Se o acesso ao Mercado Pago for revogado, sua loja deixará de processar pagamentos pelos meios integrados com a plataforma. Para reativar o processamento de pagamentos, siga os passos abaixo:
 

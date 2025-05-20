@@ -61,3 +61,22 @@ Si quieres cambiar la cuenta de Mercado Pago asociada a tu tienda, es necesario 
 5. ¡Y listo! La desvinculación fue exitosa y ahora puedes **agregar una nueva cuenta**.
 
 ------------
+## Revocar acceso de Mercado Pago
+
+Al revocar el acceso de Mercado Pago desde la sección de integraciones de su cuenta, se elimina el vínculo de la tienda con Nuvemshop. Esto impide el procesamiento de nuevos pagos hasta que se restablezca la integración.
+
+> RED_MESSAGE
+> 
+> Esta acción no puede deshacerse de forma automática. Se recomienda revocar el acceso solo cuando esté seguro de que desea desactivar Mercado Pago como método de pago en su tienda.
+
+### Después de revocar los permisos
+
+Si se revoca el acceso a Mercado Pago, su tienda dejará de procesar pagos a través de los medios integrados con la plataforma. Para reactivar el procesamiento de pagos, siga los siguientes pasos:
+
+1. Acceda a la sección de **integraciones** de su tienda en Nuvemshop y siga el flujo de instalación de Mercado Pago para autorizar el acceso nuevamente.  
+Para más detalles, consulte la documentación [Configuración de la integración.] (/developers/pt/docs/nuvemshop/integration#bookmark_configuración_da_integração)
+
+2. Después de completar la integración, revise las opciones de pago configuradas.  
+Verifique los métodos de pago, cuotas y preferencias para asegurarse de que se adapten a las necesidades de su tienda.
+
+¡Acceso restablecido! La tienda está lista para recibir pagos nuevamente con Mercado Pago.
